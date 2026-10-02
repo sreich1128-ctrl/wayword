@@ -1,0 +1,13 @@
+{
+  "_doc": "Power-pattern helpers. 'related' lists existing concept IDs that are built on the pattern. 'substitutions' is keyed by language code; each item is {\"english\", \"target\", \"pronunciation_easy\"} and must come from a vetted source. Empty means not in the dataset yet; the UI says so instead of inventing words.",
+  "patterns": {
+    "where_is":          { "related": ["bathroom", "nearest", "how_get"], "substitutions": {} },
+    "nearest":           { "related": ["where_is", "is_far"], "substitutions": {} },
+    "how_get":           { "related": ["where_is", "is_far"], "substitutions": {} },
+    "can_i_have":        { "related": ["coffee", "water", "bill"], "substitutions": {} },
+    "i_would_like":      { "related": ["coffee", "water"], "substitutions": {} },
+    "how_say":           { "related": ["what_mean", "dont_understand"], "substitutions": {} },
+    "dont_speak_well":   { "related": ["know_a_little", "speak_english"], "substitutions": {} },
+    "learning_language": { "related": ["learning_by_trying", "love_languages"], "substitutions": {} }
+  }
+}

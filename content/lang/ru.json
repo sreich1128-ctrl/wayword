@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "language_code": "ru",
+  "name": "Russian",
+  "native_name": "Русский",
+  "region": "Russia",
+  "direction": "ltr",
+  "notes": {
+    "gender": "Some phrases have masculine/feminine variants; dataset flags visible variants in text."
+  },
+  "entries": [
+    {
+      "id": "hello",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Hello",
+      "type": "phrase",
+      "target": "Привет",
+      "pronunciation_easy": "pree-VYET"
+    },
+    {
+      "id": "good_morning",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Good morning",
+      "type": "phrase",
+      "target": "Доброе утро",
+      "pronunciation_easy": "DOH-brah-yeh OO-trah"
+    },
+    {
+      "id": "how_are_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "How are you?",
+      "type": "phrase",
+      "target": "Как дела?",
+      "pronunciation_easy": "kak dee-LAH"
+    },
+    {
+      "id": "please",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Please",
+      "type": "phrase",
+      "target": "Пожалуйста",
+      "pronunciation_easy": "pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "thank_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Thank you",
+      "type": "phrase",
+      "target": "Спасибо",
+      "pronunciation_easy": "spah-SEE-bah"
+    },
+    {
+      "id": "excuse_me",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Excuse me",
+      "type": "phrase",
+      "target": "Извините",
+      "pronunciation_easy": "eez-vee-NEE-tyeh"
+    },
+    {
+      "id": "yes",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Yes",
+      "type": "phrase",
+      "target": "Да",
+      "pronunciation_easy": "dah"
+    },
+    {
+      "id": "no",
+      "category": "essentials",
+      "priority": "core",
+      "english": "No",
+      "type": "phrase",
+      "target": "Нет",
+      "pronunciation_easy": "nyet"
+    },
+    {
+      "id": "speak_english",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Do you speak English?",
+      "type": "phrase",
+      "target": "Вы говорите по-английски?",
+      "pronunciation_easy": "vy gah-vah-REE-tyeh pah an-GLEE-skee"
+    },
+    {
+      "id": "dont_speak_well",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't speak [language] well.",
+      "type": "pattern",
+      "target": "Я плохо говорю по-русски.",
+      "pronunciation_easy": "ya PLOH-khah gah-vah-RYOO pah-ROOS-skee"
+    },
+    {
+      "id": "know_a_little",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I know a little.",
+      "type": "phrase",
+      "target": "Я немного знаю.",
+      "pronunciation_easy": "ya nee-MNOH-gah ZNAH-yoo"
+    },
+    {
+      "id": "dont_understand",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't understand.",
+      "type": "phrase",
+      "target": "Я не понимаю.",
+      "pronunciation_easy": "ya nee pah-nee-MAH-yoo"
+    },
+    {
+      "id": "say_again",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you say that again?",
+      "type": "phrase",
+      "target": "Можете повторить?",
+      "pronunciation_easy": "MOH-zhuh-tyeh pahf-tah-REET"
+    },
+    {
+      "id": "speak_slowly",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you speak more slowly?",
+      "type": "phrase",
+      "target": "Можете говорить помедленнее?",
+      "pronunciation_easy": "MOH-zhuh-tyeh gah-vah-REET pah-MYED-len-nee-yeh"
+    },
+    {
+      "id": "what_mean",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "What does that mean?",
+      "type": "phrase",
+      "target": "Что это значит?",
+      "pronunciation_easy": "shtoh EH-tah ZNAH-cheet"
+    },
+    {
+      "id": "how_say",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "How do you say ___?",
+      "type": "pattern",
+      "target": "Как сказать ___?",
+      "pronunciation_easy": "kak skah-ZAT"
+    },
+    {
+      "id": "learning_language",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "I'm learning [language].",
+      "type": "pattern",
+      "target": "Я учу русский.",
+      "pronunciation_easy": "ya oo-CHOO ROOS-skee"
+    },
+    {
+      "id": "learning_by_trying",
+      "category": "language_rescue",
+      "priority": "explore",
+      "english": "I'm learning by trying to speak.",
+      "type": "phrase",
+      "target": "Я учусь, пытаясь говорить.",
+      "pronunciation_easy": "ya oo-CHOOS, py-TAH-yas gah-vah-REET"
+    },
+    {
+      "id": "where_is",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Where is ___?",
+      "type": "pattern",
+      "target": "Где ___?",
+      "pronunciation_easy": "gdyeh"
+    },
+    {
+      "id": "nearest",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Where is the nearest ___?",
+      "type": "pattern",
+      "target": "Где ближайший/ближайшая ___?",
+      "pronunciation_easy": "gdyeh blee-ZHAI-shee/zhah-yah"
+    },
+    {
+      "id": "bathroom",
+      "category": "navigation",
+      "priority": "core",
+      "english": "Where is the bathroom?",
+      "type": "phrase",
+      "target": "Где туалет?",
+      "pronunciation_easy": "gdyeh too-ah-LYET"
+    },
+    {
+      "id": "how_get",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "How do I get to ___?",
+      "type": "pattern",
+      "target": "Как добраться до ___?",
+      "pronunciation_easy": "kak dah-BRAT-sah dah"
+    },
+    {
+      "id": "is_far",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Is it far?",
+      "type": "phrase",
+      "target": "Это далеко?",
+      "pronunciation_easy": "EH-tah dah-lee-KOH"
+    },
+    {
+      "id": "help_me",
+      "category": "problems",
+      "priority": "core",
+      "english": "Can you help me?",
+      "type": "phrase",
+      "target": "Можете мне помочь?",
+      "pronunciation_easy": "MOH-zhuh-tyeh mnyeh pah-MOCH"
+    },
+    {
+      "id": "can_i_have",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Can I have ___, please?",
+      "type": "pattern",
+      "target": "Можно мне ___, пожалуйста?",
+      "pronunciation_easy": "MOZH-nah mnyeh, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "i_would_like",
+      "category": "food",
+      "priority": "travel",
+      "english": "I'd like ___, please.",
+      "type": "pattern",
+      "target": "Я бы хотел ___, пожалуйста.",
+      "pronunciation_easy": "ya by khah-TYEL, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "coffee",
+      "category": "food",
+      "priority": "core",
+      "english": "A coffee, please.",
+      "type": "phrase",
+      "target": "Кофе, пожалуйста.",
+      "pronunciation_easy": "KOH-feh, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "water",
+      "category": "food",
+      "priority": "core",
+      "english": "Water, please.",
+      "type": "phrase",
+      "target": "Воду, пожалуйста.",
+      "pronunciation_easy": "VOH-doo, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "whats_in_this",
+      "category": "food",
+      "priority": "travel",
+      "english": "What's in this?",
+      "type": "phrase",
+      "target": "Что в этом?",
+      "pronunciation_easy": "shtoh v EH-tam"
+    },
+    {
+      "id": "dairy",
+      "category": "food",
+      "priority": "travel",
+      "english": "Does this have dairy in it?",
+      "type": "phrase",
+      "target": "Здесь есть молочные продукты?",
+      "pronunciation_easy": "zdyes yest mah-LOCH-ny-yeh prah-DOOK-ty"
+    },
+    {
+      "id": "recommend_food",
+      "category": "food",
+      "priority": "travel",
+      "english": "What do you recommend?",
+      "type": "phrase",
+      "target": "Что вы рекомендуете?",
+      "pronunciation_easy": "shtoh vy ree-kah-men-DOO-yeh-tyeh"
+    },
+    {
+      "id": "bill",
+      "category": "money",
+      "priority": "core",
+      "english": "The bill/check, please.",
+      "type": "phrase",
+      "target": "Счёт, пожалуйста.",
+      "pronunciation_easy": "shchyot, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "how_much",
+      "category": "money",
+      "priority": "core",
+      "english": "How much is this?",
+      "type": "phrase",
+      "target": "Сколько это стоит?",
+      "pronunciation_easy": "SKOL-kah EH-tah STOH-eet"
+    },
+    {
+      "id": "pay_card",
+      "category": "money",
+      "priority": "core",
+      "english": "Can I pay by card?",
+      "type": "phrase",
+      "target": "Можно оплатить картой?",
+      "pronunciation_easy": "MOZH-nah ahp-lah-TEET KAR-tai"
+    },
+    {
+      "id": "apple_pay",
+      "category": "money",
+      "priority": "travel",
+      "english": "Can I pay with Apple Pay?",
+      "type": "phrase",
+      "target": "Можно оплатить через Apple Pay?",
+      "pronunciation_easy": "MOZH-nah ahp-lah-TEET CHEH-rez Apple Pay"
+    },
+    {
+      "id": "cash_or_card",
+      "category": "money",
+      "priority": "travel",
+      "english": "Cash or card?",
+      "type": "phrase",
+      "target": "Наличные или карта?",
+      "pronunciation_easy": "nah-LEECH-ny-yeh EE-lee KAR-tah"
+    },
+    {
+      "id": "tip_included",
+      "category": "money",
+      "priority": "travel",
+      "english": "Is the tip included?",
+      "type": "phrase",
+      "target": "Чаевые включены?",
+      "pronunciation_easy": "chah-yeh-VY-yeh vklyoo-cheh-NY"
+    },
+    {
+      "id": "people_tip",
+      "category": "money",
+      "priority": "explore",
+      "english": "Do people tip here?",
+      "type": "phrase",
+      "target": "Здесь принято оставлять чаевые?",
+      "pronunciation_easy": "zdyes pree-NYAH-tah ah-stahv-LYAT chah-yeh-VY-yeh"
+    },
+    {
+      "id": "your_name",
+      "category": "social",
+      "priority": "travel",
+      "english": "What's your name?",
+      "type": "phrase",
+      "target": "Как тебя зовут?",
+      "pronunciation_easy": "kak tee-BYAH zah-VOOT"
+    },
+    {
+      "id": "where_from",
+      "category": "social",
+      "priority": "travel",
+      "english": "Where are you from?",
+      "type": "phrase",
+      "target": "Ты откуда?",
+      "pronunciation_easy": "ty at-KOO-dah"
+    },
+    {
+      "id": "live_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "Do you live here?",
+      "type": "phrase",
+      "target": "Ты здесь живёшь?",
+      "pronunciation_easy": "ty zdyes zhee-VYOSH"
+    },
+    {
+      "id": "what_do_you_do",
+      "category": "social",
+      "priority": "explore",
+      "english": "What do you do?",
+      "type": "phrase",
+      "target": "Чем ты занимаешься?",
+      "pronunciation_easy": "chem ty zah-nee-MAH-yesh-sah"
+    },
+    {
+      "id": "been_america",
+      "category": "social",
+      "priority": "explore",
+      "english": "Have you ever been to the United States?",
+      "type": "phrase",
+      "target": "Ты когда-нибудь был в США?",
+      "pronunciation_easy": "ty kahg-DAH-nee-boot byl v seh-sheh-AH"
+    },
+    {
+      "id": "im_visiting",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm visiting.",
+      "type": "phrase",
+      "target": "Я здесь в гостях.",
+      "pronunciation_easy": "ya zdyes v gah-STYAKH"
+    },
+    {
+      "id": "im_new_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm new here.",
+      "type": "phrase",
+      "target": "Я здесь недавно.",
+      "pronunciation_easy": "ya zdyes nee-DAHV-nah"
+    },
+    {
+      "id": "love_languages",
+      "category": "social",
+      "priority": "travel",
+      "english": "I love learning languages.",
+      "type": "phrase",
+      "target": "Я люблю учить языки.",
+      "pronunciation_easy": "ya lyoo-BLYOO oo-CHEET yah-zy-KEE"
+    },
+    {
+      "id": "really",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Really?",
+      "type": "phrase",
+      "target": "Правда?",
+      "pronunciation_easy": "PRAHV-dah"
+    },
+    {
+      "id": "interesting",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "That's interesting.",
+      "type": "phrase",
+      "target": "Интересно.",
+      "pronunciation_easy": "een-tee-RES-nah"
+    },
+    {
+      "id": "me_too",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Me too.",
+      "type": "phrase",
+      "target": "Я тоже.",
+      "pronunciation_easy": "ya TOH-zhuh"
+    },
+    {
+      "id": "and_you",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "And you?",
+      "type": "phrase",
+      "target": "А ты?",
+      "pronunciation_easy": "ah ty"
+    },
+    {
+      "id": "nice_meeting",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Nice meeting you.",
+      "type": "phrase",
+      "target": "Приятно познакомиться.",
+      "pronunciation_easy": "pree-YAHT-nah pahz-nah-KOH-meet-sah"
+    },
+    {
+      "id": "youre_funny",
+      "category": "connection",
+      "priority": "explore",
+      "english": "You're funny.",
+      "type": "phrase",
+      "target": "Ты смешная/смешной.",
+      "pronunciation_easy": "ty smeesh-NAH-yah/smeesh-NOY"
+    },
+    {
+      "id": "like_talking",
+      "category": "connection",
+      "priority": "explore",
+      "english": "I like talking to you.",
+      "type": "phrase",
+      "target": "Мне нравится с тобой разговаривать.",
+      "pronunciation_easy": "mnyeh NRAH-veet-sah s tah-BOY rahz-gah-VAH-ree-vat"
+    },
+    {
+      "id": "instagram",
+      "category": "connection",
+      "priority": "explore",
+      "english": "Can I get your Instagram?",
+      "type": "phrase",
+      "target": "Можно твой Instagram?",
+      "pronunciation_easy": "MOZH-nah tvoy Instagram"
+    },
+    {
+      "id": "very_helpful",
+      "category": "connection",
+      "priority": "travel",
+      "english": "You're very helpful.",
+      "type": "phrase",
+      "target": "Ты очень помогаешь.",
+      "pronunciation_easy": "ty OH-chen pah-mah-GAH-yesh"
+    },
+    {
+      "id": "thanks_help",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Thank you for your help.",
+      "type": "phrase",
+      "target": "Спасибо за помощь.",
+      "pronunciation_easy": "spah-SEE-bah zah POH-mashch"
+    }
+  ]
+}

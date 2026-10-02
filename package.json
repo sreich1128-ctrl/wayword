@@ -1,0 +1,9 @@
+{
+  "name": "wayword",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "dev": "npx --yes serve -l 5180 ."
+  }
+}

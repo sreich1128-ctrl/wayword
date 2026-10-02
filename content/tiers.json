@@ -1,0 +1,5 @@
+[
+  { "id": "core",    "label": "Core 20",     "blurb": "Know these before you land.",          "includes": ["core"] },
+  { "id": "travel",  "label": "Travel 50",   "blurb": "What you actually use on the trip.",   "includes": ["core", "travel"] },
+  { "id": "explore", "label": "Explore 100", "blurb": "The wider set for continued learning.", "includes": ["core", "travel", "explore"] }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "code": "pt-PT",
+    "name": "European Portuguese",
+    "native_name": "Português",
+    "region": "Portugal",
+    "direction": "ltr"
+  },
+  {
+    "code": "es",
+    "name": "Spanish",
+    "native_name": "Español",
+    "region": "Neutral",
+    "direction": "ltr"
+  },
+  {
+    "code": "fr",
+    "name": "French",
+    "native_name": "Français",
+    "region": "France",
+    "direction": "ltr"
+  },
+  {
+    "code": "it",
+    "name": "Italian",
+    "native_name": "Italiano",
+    "region": "Italy",
+    "direction": "ltr"
+  },
+  {
+    "code": "ru",
+    "name": "Russian",
+    "native_name": "Русский",
+    "region": "Russia",
+    "direction": "ltr"
+  },
+  {
+    "code": "ar-levantine",
+    "name": "Levantine Arabic",
+    "native_name": "العربية الشامية",
+    "region": "Palestinian/Jordanian-leaning",
+    "direction": "rtl"
+  },
+  {
+    "code": "he",
+    "name": "Hebrew",
+    "native_name": "עברית",
+    "region": "Israel",
+    "direction": "rtl"
+  }
+]

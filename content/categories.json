@@ -1,0 +1,12 @@
+[
+  { "id": "essentials",        "label": "Essentials",            "icon": "👋" },
+  { "id": "language_rescue",   "label": "Language Rescue",       "icon": "🛟" },
+  { "id": "power_patterns",    "label": "Power Patterns",        "icon": "🧩", "also_include_types": ["pattern"] },
+  { "id": "navigation",        "label": "Getting Around",        "icon": "🧭" },
+  { "id": "food",              "label": "Food & Drink",          "icon": "☕" },
+  { "id": "money",             "label": "Money & Paying",        "icon": "💳" },
+  { "id": "social",            "label": "Social Conversation",   "icon": "💬" },
+  { "id": "conversation_glue", "label": "Conversation Glue",     "icon": "🔗" },
+  { "id": "connection",        "label": "Connection / Flirting", "icon": "✨" },
+  { "id": "problems",          "label": "Problems & Help",       "icon": "🆘" }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "cafe", "label": "Café", "icon": "☕",
+    "concepts": ["hello", "good_morning", "coffee", "water", "can_i_have", "i_would_like", "please", "thank_you", "dairy", "how_much", "pay_card", "apple_pay", "bill", "bathroom", "speak_english", "dont_understand"]
+  },
+  {
+    "id": "restaurant", "label": "Restaurant", "icon": "🍽️",
+    "concepts": ["hello", "i_would_like", "can_i_have", "water", "recommend_food", "whats_in_this", "dairy", "what_mean", "bill", "pay_card", "apple_pay", "cash_or_card", "tip_included", "people_tip", "bathroom", "thank_you"]
+  },
+  {
+    "id": "transport", "label": "Transportation", "icon": "🚆",
+    "concepts": ["excuse_me", "how_get", "where_is", "nearest", "is_far", "how_much", "pay_card", "cash_or_card", "speak_english", "speak_slowly", "say_again", "help_me", "thank_you"]
+  },
+  {
+    "id": "directions", "label": "Lost / Directions", "icon": "🧭",
+    "concepts": ["excuse_me", "help_me", "speak_english", "where_is", "how_get", "nearest", "is_far", "bathroom", "dont_understand", "speak_slowly", "say_again", "thanks_help", "very_helpful"]
+  },
+  {
+    "id": "hotel", "label": "Hotel", "icon": "🛎️",
+    "concepts": ["hello", "good_morning", "speak_english", "help_me", "can_i_have", "i_would_like", "water", "where_is", "nearest", "bathroom", "how_much", "pay_card", "thanks_help", "very_helpful"]
+  },
+  {
+    "id": "shopping", "label": "Shopping", "icon": "🛍️",
+    "concepts": ["hello", "excuse_me", "how_much", "can_i_have", "i_would_like", "what_mean", "how_say", "pay_card", "apple_pay", "cash_or_card", "dont_understand", "say_again", "thank_you"]
+  },
+  {
+    "id": "meeting", "label": "Meeting People", "icon": "🤝",
+    "concepts": ["hello", "how_are_you", "your_name", "where_from", "and_you", "live_here", "im_visiting", "im_new_here", "what_do_you_do", "been_america", "learning_language", "dont_speak_well", "know_a_little", "love_languages", "really", "interesting", "me_too", "nice_meeting"]
+  },
+  {
+    "id": "flirting", "label": "Flirting", "icon": "💘",
+    "concepts": ["your_name", "where_from", "live_here", "and_you", "youre_funny", "like_talking", "instagram", "love_languages", "learning_by_trying", "really", "interesting", "me_too", "nice_meeting"]
+  },
+  {
+    "id": "barber", "label": "Barber", "icon": "💈",
+    "note": "The dataset has no haircut-specific vocabulary yet (short, trim, fade, sides). These are the general phrases that get you through the chair.",
+    "concepts": ["hello", "dont_speak_well", "know_a_little", "i_would_like", "how_say", "what_mean", "speak_slowly", "say_again", "dont_understand", "how_much", "pay_card", "cash_or_card", "tip_included", "very_helpful", "thank_you"]
+  }
+]

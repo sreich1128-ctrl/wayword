@@ -1,0 +1,394 @@
+[
+  {
+    "id": "hello",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Hello",
+    "type": "phrase"
+  },
+  {
+    "id": "good_morning",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Good morning",
+    "type": "phrase"
+  },
+  {
+    "id": "how_are_you",
+    "category": "essentials",
+    "priority": "core",
+    "english": "How are you?",
+    "type": "phrase"
+  },
+  {
+    "id": "please",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Please",
+    "type": "phrase"
+  },
+  {
+    "id": "thank_you",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Thank you",
+    "type": "phrase"
+  },
+  {
+    "id": "excuse_me",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Excuse me",
+    "type": "phrase"
+  },
+  {
+    "id": "yes",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Yes",
+    "type": "phrase"
+  },
+  {
+    "id": "no",
+    "category": "essentials",
+    "priority": "core",
+    "english": "No",
+    "type": "phrase"
+  },
+  {
+    "id": "speak_english",
+    "category": "language_rescue",
+    "priority": "core",
+    "english": "Do you speak English?",
+    "type": "phrase"
+  },
+  {
+    "id": "dont_speak_well",
+    "category": "language_rescue",
+    "priority": "core",
+    "english": "I don't speak [language] well.",
+    "type": "pattern"
+  },
+  {
+    "id": "know_a_little",
+    "category": "language_rescue",
+    "priority": "core",
+    "english": "I know a little.",
+    "type": "phrase"
+  },
+  {
+    "id": "dont_understand",
+    "category": "language_rescue",
+    "priority": "core",
+    "english": "I don't understand.",
+    "type": "phrase"
+  },
+  {
+    "id": "say_again",
+    "category": "language_rescue",
+    "priority": "core",
+    "english": "Can you say that again?",
+    "type": "phrase"
+  },
+  {
+    "id": "speak_slowly",
+    "category": "language_rescue",
+    "priority": "core",
+    "english": "Can you speak more slowly?",
+    "type": "phrase"
+  },
+  {
+    "id": "what_mean",
+    "category": "language_rescue",
+    "priority": "travel",
+    "english": "What does that mean?",
+    "type": "phrase"
+  },
+  {
+    "id": "how_say",
+    "category": "language_rescue",
+    "priority": "travel",
+    "english": "How do you say ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "learning_language",
+    "category": "language_rescue",
+    "priority": "travel",
+    "english": "I'm learning [language].",
+    "type": "pattern"
+  },
+  {
+    "id": "learning_by_trying",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "I'm learning by trying to speak.",
+    "type": "phrase"
+  },
+  {
+    "id": "where_is",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "Where is ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "nearest",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "Where is the nearest ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "bathroom",
+    "category": "navigation",
+    "priority": "core",
+    "english": "Where is the bathroom?",
+    "type": "phrase"
+  },
+  {
+    "id": "how_get",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "How do I get to ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "is_far",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "Is it far?",
+    "type": "phrase"
+  },
+  {
+    "id": "help_me",
+    "category": "problems",
+    "priority": "core",
+    "english": "Can you help me?",
+    "type": "phrase"
+  },
+  {
+    "id": "can_i_have",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "Can I have ___, please?",
+    "type": "pattern"
+  },
+  {
+    "id": "i_would_like",
+    "category": "food",
+    "priority": "travel",
+    "english": "I'd like ___, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "coffee",
+    "category": "food",
+    "priority": "core",
+    "english": "A coffee, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "water",
+    "category": "food",
+    "priority": "core",
+    "english": "Water, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "whats_in_this",
+    "category": "food",
+    "priority": "travel",
+    "english": "What's in this?",
+    "type": "phrase"
+  },
+  {
+    "id": "dairy",
+    "category": "food",
+    "priority": "travel",
+    "english": "Does this have dairy in it?",
+    "type": "phrase"
+  },
+  {
+    "id": "recommend_food",
+    "category": "food",
+    "priority": "travel",
+    "english": "What do you recommend?",
+    "type": "phrase"
+  },
+  {
+    "id": "bill",
+    "category": "money",
+    "priority": "core",
+    "english": "The bill/check, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "how_much",
+    "category": "money",
+    "priority": "core",
+    "english": "How much is this?",
+    "type": "phrase"
+  },
+  {
+    "id": "pay_card",
+    "category": "money",
+    "priority": "core",
+    "english": "Can I pay by card?",
+    "type": "phrase"
+  },
+  {
+    "id": "apple_pay",
+    "category": "money",
+    "priority": "travel",
+    "english": "Can I pay with Apple Pay?",
+    "type": "phrase"
+  },
+  {
+    "id": "cash_or_card",
+    "category": "money",
+    "priority": "travel",
+    "english": "Cash or card?",
+    "type": "phrase"
+  },
+  {
+    "id": "tip_included",
+    "category": "money",
+    "priority": "travel",
+    "english": "Is the tip included?",
+    "type": "phrase"
+  },
+  {
+    "id": "people_tip",
+    "category": "money",
+    "priority": "explore",
+    "english": "Do people tip here?",
+    "type": "phrase"
+  },
+  {
+    "id": "your_name",
+    "category": "social",
+    "priority": "travel",
+    "english": "What's your name?",
+    "type": "phrase"
+  },
+  {
+    "id": "where_from",
+    "category": "social",
+    "priority": "travel",
+    "english": "Where are you from?",
+    "type": "phrase"
+  },
+  {
+    "id": "live_here",
+    "category": "social",
+    "priority": "travel",
+    "english": "Do you live here?",
+    "type": "phrase"
+  },
+  {
+    "id": "what_do_you_do",
+    "category": "social",
+    "priority": "explore",
+    "english": "What do you do?",
+    "type": "phrase"
+  },
+  {
+    "id": "been_america",
+    "category": "social",
+    "priority": "explore",
+    "english": "Have you ever been to the United States?",
+    "type": "phrase"
+  },
+  {
+    "id": "im_visiting",
+    "category": "social",
+    "priority": "travel",
+    "english": "I'm visiting.",
+    "type": "phrase"
+  },
+  {
+    "id": "im_new_here",
+    "category": "social",
+    "priority": "travel",
+    "english": "I'm new here.",
+    "type": "phrase"
+  },
+  {
+    "id": "love_languages",
+    "category": "social",
+    "priority": "travel",
+    "english": "I love learning languages.",
+    "type": "phrase"
+  },
+  {
+    "id": "really",
+    "category": "conversation_glue",
+    "priority": "travel",
+    "english": "Really?",
+    "type": "phrase"
+  },
+  {
+    "id": "interesting",
+    "category": "conversation_glue",
+    "priority": "travel",
+    "english": "That's interesting.",
+    "type": "phrase"
+  },
+  {
+    "id": "me_too",
+    "category": "conversation_glue",
+    "priority": "travel",
+    "english": "Me too.",
+    "type": "phrase"
+  },
+  {
+    "id": "and_you",
+    "category": "conversation_glue",
+    "priority": "travel",
+    "english": "And you?",
+    "type": "phrase"
+  },
+  {
+    "id": "nice_meeting",
+    "category": "connection",
+    "priority": "travel",
+    "english": "Nice meeting you.",
+    "type": "phrase"
+  },
+  {
+    "id": "youre_funny",
+    "category": "connection",
+    "priority": "explore",
+    "english": "You're funny.",
+    "type": "phrase"
+  },
+  {
+    "id": "like_talking",
+    "category": "connection",
+    "priority": "explore",
+    "english": "I like talking to you.",
+    "type": "phrase"
+  },
+  {
+    "id": "instagram",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Can I get your Instagram?",
+    "type": "phrase"
+  },
+  {
+    "id": "very_helpful",
+    "category": "connection",
+    "priority": "travel",
+    "english": "You're very helpful.",
+    "type": "phrase"
+  },
+  {
+    "id": "thanks_help",
+    "category": "connection",
+    "priority": "travel",
+    "english": "Thank you for your help.",
+    "type": "phrase"
+  }
+]

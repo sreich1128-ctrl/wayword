@@ -1,0 +1,519 @@
+{
+  "schema_version": "1.0",
+  "language_code": "he",
+  "name": "Hebrew",
+  "native_name": "עברית",
+  "region": "Israel",
+  "direction": "rtl",
+  "notes": {
+    "register": "Modern conversational Israeli Hebrew.",
+    "gender": "v1 uses masculine singular forms for Steven's own speech and many direct-address examples. The UI/data model should later support feminine addressee variants.",
+    "pronunciation": "Easy learner pronunciation, not IPA."
+  },
+  "entries": [
+    {
+      "id": "hello",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Hello",
+      "type": "phrase",
+      "target": "שלום",
+      "pronunciation_easy": "sha-LOM"
+    },
+    {
+      "id": "good_morning",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Good morning",
+      "type": "phrase",
+      "target": "בוקר טוב",
+      "pronunciation_easy": "BO-ker tov"
+    },
+    {
+      "id": "how_are_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "How are you?",
+      "type": "phrase",
+      "target": "מה שלומך?",
+      "pronunciation_easy": "ma shlom-KHA"
+    },
+    {
+      "id": "please",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Please",
+      "type": "phrase",
+      "target": "בבקשה",
+      "pronunciation_easy": "be-va-ka-SHA"
+    },
+    {
+      "id": "thank_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Thank you",
+      "type": "phrase",
+      "target": "תודה",
+      "pronunciation_easy": "to-DA"
+    },
+    {
+      "id": "excuse_me",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Excuse me",
+      "type": "phrase",
+      "target": "סליחה",
+      "pronunciation_easy": "sli-KHA"
+    },
+    {
+      "id": "yes",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Yes",
+      "type": "phrase",
+      "target": "כן",
+      "pronunciation_easy": "ken"
+    },
+    {
+      "id": "no",
+      "category": "essentials",
+      "priority": "core",
+      "english": "No",
+      "type": "phrase",
+      "target": "לא",
+      "pronunciation_easy": "lo"
+    },
+    {
+      "id": "speak_english",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Do you speak English?",
+      "type": "phrase",
+      "target": "אתה מדבר אנגלית?",
+      "pronunciation_easy": "a-TA me-DA-ber ang-LEET"
+    },
+    {
+      "id": "dont_speak_well",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't speak [language] well.",
+      "type": "pattern",
+      "target": "אני לא מדבר עברית טוב.",
+      "pronunciation_easy": "a-NEE lo me-DA-ber iv-REET tov"
+    },
+    {
+      "id": "know_a_little",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I know a little.",
+      "type": "phrase",
+      "target": "אני יודע קצת.",
+      "pronunciation_easy": "a-NEE yo-DE-a KT-sat"
+    },
+    {
+      "id": "dont_understand",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't understand.",
+      "type": "phrase",
+      "target": "אני לא מבין.",
+      "pronunciation_easy": "a-NEE lo me-VEEN"
+    },
+    {
+      "id": "say_again",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you say that again?",
+      "type": "phrase",
+      "target": "אפשר להגיד את זה שוב?",
+      "pronunciation_easy": "ef-SHAR le-ha-GEED et ze shuv"
+    },
+    {
+      "id": "speak_slowly",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you speak more slowly?",
+      "type": "phrase",
+      "target": "אפשר לדבר יותר לאט?",
+      "pronunciation_easy": "ef-SHAR le-da-BER yo-TER le-AT"
+    },
+    {
+      "id": "what_mean",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "What does that mean?",
+      "type": "phrase",
+      "target": "מה זה אומר?",
+      "pronunciation_easy": "ma ze o-MER"
+    },
+    {
+      "id": "how_say",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "How do you say ___?",
+      "type": "pattern",
+      "target": "איך אומרים ___?",
+      "pronunciation_easy": "ekh om-REEM"
+    },
+    {
+      "id": "learning_language",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "I'm learning [language].",
+      "type": "pattern",
+      "target": "אני לומד עברית.",
+      "pronunciation_easy": "a-NEE lo-MED iv-REET"
+    },
+    {
+      "id": "learning_by_trying",
+      "category": "language_rescue",
+      "priority": "explore",
+      "english": "I'm learning by trying to speak.",
+      "type": "phrase",
+      "target": "אני לומד דרך זה שאני מנסה לדבר.",
+      "pronunciation_easy": "a-NEE lo-MED de-REKH ze she-a-NEE me-na-SE le-da-BER"
+    },
+    {
+      "id": "where_is",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Where is ___?",
+      "type": "pattern",
+      "target": "איפה ___?",
+      "pronunciation_easy": "EY-fo"
+    },
+    {
+      "id": "nearest",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Where is the nearest ___?",
+      "type": "pattern",
+      "target": "איפה ה___ הכי קרוב?",
+      "pronunciation_easy": "EY-fo ha-___ ha-KHEE ka-ROV"
+    },
+    {
+      "id": "bathroom",
+      "category": "navigation",
+      "priority": "core",
+      "english": "Where is the bathroom?",
+      "type": "phrase",
+      "target": "איפה השירותים?",
+      "pronunciation_easy": "EY-fo ha-she-ru-TEEM"
+    },
+    {
+      "id": "how_get",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "How do I get to ___?",
+      "type": "pattern",
+      "target": "איך מגיעים ל___?",
+      "pronunciation_easy": "ekh ma-gee-EEM le"
+    },
+    {
+      "id": "is_far",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Is it far?",
+      "type": "phrase",
+      "target": "זה רחוק?",
+      "pronunciation_easy": "ze ra-KHOK"
+    },
+    {
+      "id": "help_me",
+      "category": "problems",
+      "priority": "core",
+      "english": "Can you help me?",
+      "type": "phrase",
+      "target": "אפשר לעזור לי?",
+      "pronunciation_easy": "ef-SHAR la-a-ZOR lee"
+    },
+    {
+      "id": "can_i_have",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Can I have ___, please?",
+      "type": "pattern",
+      "target": "אפשר לקבל ___, בבקשה?",
+      "pronunciation_easy": "ef-SHAR le-ka-BEL, be-va-ka-SHA"
+    },
+    {
+      "id": "i_would_like",
+      "category": "food",
+      "priority": "travel",
+      "english": "I'd like ___, please.",
+      "type": "pattern",
+      "target": "אני רוצה ___, בבקשה.",
+      "pronunciation_easy": "a-NEE ro-TSE, be-va-ka-SHA"
+    },
+    {
+      "id": "coffee",
+      "category": "food",
+      "priority": "core",
+      "english": "A coffee, please.",
+      "type": "phrase",
+      "target": "קפה, בבקשה.",
+      "pronunciation_easy": "ka-FE, be-va-ka-SHA"
+    },
+    {
+      "id": "water",
+      "category": "food",
+      "priority": "core",
+      "english": "Water, please.",
+      "type": "phrase",
+      "target": "מים, בבקשה.",
+      "pronunciation_easy": "MA-yim, be-va-ka-SHA"
+    },
+    {
+      "id": "whats_in_this",
+      "category": "food",
+      "priority": "travel",
+      "english": "What's in this?",
+      "type": "phrase",
+      "target": "מה יש בזה?",
+      "pronunciation_easy": "ma yesh ba-ZE"
+    },
+    {
+      "id": "dairy",
+      "category": "food",
+      "priority": "travel",
+      "english": "Does this have dairy in it?",
+      "type": "phrase",
+      "target": "יש בזה מוצרי חלב?",
+      "pronunciation_easy": "yesh ba-ZE moo-tsa-REY kha-LAV"
+    },
+    {
+      "id": "recommend_food",
+      "category": "food",
+      "priority": "travel",
+      "english": "What do you recommend?",
+      "type": "phrase",
+      "target": "מה אתה ממליץ?",
+      "pronunciation_easy": "ma a-TA mam-LEETS"
+    },
+    {
+      "id": "bill",
+      "category": "money",
+      "priority": "core",
+      "english": "The bill/check, please.",
+      "type": "phrase",
+      "target": "חשבון, בבקשה.",
+      "pronunciation_easy": "khesh-BON, be-va-ka-SHA"
+    },
+    {
+      "id": "how_much",
+      "category": "money",
+      "priority": "core",
+      "english": "How much is this?",
+      "type": "phrase",
+      "target": "כמה זה עולה?",
+      "pronunciation_easy": "KA-ma ze o-LE"
+    },
+    {
+      "id": "pay_card",
+      "category": "money",
+      "priority": "core",
+      "english": "Can I pay by card?",
+      "type": "phrase",
+      "target": "אפשר לשלם בכרטיס?",
+      "pronunciation_easy": "ef-SHAR le-sha-LEM be-khar-TEES"
+    },
+    {
+      "id": "apple_pay",
+      "category": "money",
+      "priority": "travel",
+      "english": "Can I pay with Apple Pay?",
+      "type": "phrase",
+      "target": "אפשר לשלם באפל פיי?",
+      "pronunciation_easy": "ef-SHAR le-sha-LEM be-Apple Pay"
+    },
+    {
+      "id": "cash_or_card",
+      "category": "money",
+      "priority": "travel",
+      "english": "Cash or card?",
+      "type": "phrase",
+      "target": "מזומן או כרטיס?",
+      "pronunciation_easy": "me-zoo-MAN o khar-TEES"
+    },
+    {
+      "id": "tip_included",
+      "category": "money",
+      "priority": "travel",
+      "english": "Is the tip included?",
+      "type": "phrase",
+      "target": "השירות כלול?",
+      "pronunciation_easy": "ha-she-ROOT ka-LOOL"
+    },
+    {
+      "id": "people_tip",
+      "category": "money",
+      "priority": "explore",
+      "english": "Do people tip here?",
+      "type": "phrase",
+      "target": "נהוג לתת טיפ פה?",
+      "pronunciation_easy": "na-HOOG la-TET tip po"
+    },
+    {
+      "id": "your_name",
+      "category": "social",
+      "priority": "travel",
+      "english": "What's your name?",
+      "type": "phrase",
+      "target": "איך קוראים לך?",
+      "pronunciation_easy": "ekh kor-EEM le-KHA"
+    },
+    {
+      "id": "where_from",
+      "category": "social",
+      "priority": "travel",
+      "english": "Where are you from?",
+      "type": "phrase",
+      "target": "מאיפה אתה?",
+      "pronunciation_easy": "me-EY-fo a-TA"
+    },
+    {
+      "id": "live_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "Do you live here?",
+      "type": "phrase",
+      "target": "אתה גר פה?",
+      "pronunciation_easy": "a-TA gar po"
+    },
+    {
+      "id": "what_do_you_do",
+      "category": "social",
+      "priority": "explore",
+      "english": "What do you do?",
+      "type": "phrase",
+      "target": "במה אתה עובד?",
+      "pronunciation_easy": "ba-MA a-TA o-VED"
+    },
+    {
+      "id": "been_america",
+      "category": "social",
+      "priority": "explore",
+      "english": "Have you ever been to the United States?",
+      "type": "phrase",
+      "target": "היית פעם בארצות הברית?",
+      "pronunciation_easy": "ha-YEE-ta pa-AM be-ar-TSOT ha-BRIT"
+    },
+    {
+      "id": "im_visiting",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm visiting.",
+      "type": "phrase",
+      "target": "אני מבקר פה.",
+      "pronunciation_easy": "a-NEE me-va-KER po"
+    },
+    {
+      "id": "im_new_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm new here.",
+      "type": "phrase",
+      "target": "אני חדש פה.",
+      "pronunciation_easy": "a-NEE kha-DASH po"
+    },
+    {
+      "id": "love_languages",
+      "category": "social",
+      "priority": "travel",
+      "english": "I love learning languages.",
+      "type": "phrase",
+      "target": "אני אוהב ללמוד שפות.",
+      "pronunciation_easy": "a-NEE o-HEV lil-MOD sa-FOT"
+    },
+    {
+      "id": "really",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Really?",
+      "type": "phrase",
+      "target": "באמת?",
+      "pronunciation_easy": "be-e-MET"
+    },
+    {
+      "id": "interesting",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "That's interesting.",
+      "type": "phrase",
+      "target": "זה מעניין.",
+      "pronunciation_easy": "ze me-an-YEN"
+    },
+    {
+      "id": "me_too",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Me too.",
+      "type": "phrase",
+      "target": "גם אני.",
+      "pronunciation_easy": "gam a-NEE"
+    },
+    {
+      "id": "and_you",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "And you?",
+      "type": "phrase",
+      "target": "ואתה?",
+      "pronunciation_easy": "ve-a-TA"
+    },
+    {
+      "id": "nice_meeting",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Nice meeting you.",
+      "type": "phrase",
+      "target": "נעים להכיר.",
+      "pronunciation_easy": "na-EEM le-ha-KEER"
+    },
+    {
+      "id": "youre_funny",
+      "category": "connection",
+      "priority": "explore",
+      "english": "You're funny.",
+      "type": "phrase",
+      "target": "אתה מצחיק.",
+      "pronunciation_easy": "a-TA mats-KHEEK"
+    },
+    {
+      "id": "like_talking",
+      "category": "connection",
+      "priority": "explore",
+      "english": "I like talking to you.",
+      "type": "phrase",
+      "target": "אני אוהב לדבר איתך.",
+      "pronunciation_easy": "a-NEE o-HEV le-da-BER it-KHA"
+    },
+    {
+      "id": "instagram",
+      "category": "connection",
+      "priority": "explore",
+      "english": "Can I get your Instagram?",
+      "type": "phrase",
+      "target": "אפשר לקבל את האינסטגרם שלך?",
+      "pronunciation_easy": "ef-SHAR le-ka-BEL et ha-Instagram shel-KHA"
+    },
+    {
+      "id": "very_helpful",
+      "category": "connection",
+      "priority": "travel",
+      "english": "You're very helpful.",
+      "type": "phrase",
+      "target": "אתה ממש עוזר.",
+      "pronunciation_easy": "a-TA ma-MASH o-ZER"
+    },
+    {
+      "id": "thanks_help",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Thank you for your help.",
+      "type": "phrase",
+      "target": "תודה על העזרה.",
+      "pronunciation_easy": "to-DA al ha-ez-RA"
+    }
+  ]
+}

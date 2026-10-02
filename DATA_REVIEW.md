@@ -1,0 +1,20 @@
+# Dataset gaps and review notes
+
+Nothing below was changed in the data. These are things the app can't show yet, or entries worth a native speaker's look.
+
+## Gaps against the brief
+
+- **Tier sizes.** The dataset has 23 core, 26 travel and 7 explore concepts. Cumulatively that is 23 / 49 / 56, so "Explore 100" currently holds 56.
+- **No examples or likely replies.** No entry has an example or response field. The card supports them (`example`, `response`) once added.
+- **No usage notes.** Only 3 Portuguese entries have a regional (Brazil) note.
+- **No substitution words.** Patterns show related dataset phrases instead. Add vetted words in `content/patterns.json`.
+- **Patterns from the brief that aren't in the dataset:** "Can you ___?", "Do you have ___?", "What does ___ mean?" (the dataset has "What does *that* mean?"). "I want ___" is covered by "I'd like ___"; the Hebrew and Arabic forms are literally "I want".
+- **Problems & Help** has a single phrase ("Can you help me?"). Nothing for pharmacy, police, lost items, or "I'm sick".
+- **Barber** has no haircut vocabulary. The scenario uses general phrases and says so on screen.
+- **Gender variants.** Russian, Hebrew and Arabic are mostly masculine-speaker or masculine-addressee forms, as the dataset notes say.
+
+## Worth a native check (not changed)
+
+- **Levantine `excuse_me` = عفواً (AF-wan).** In Levantine speech this is often "pardon / you're welcome". To get someone's attention, لو سمحت is common, and the dataset already uses that for "please".
+- **Hebrew `help_me` = אפשר לעזור לי?** Understood colloquially, but אתה יכול לעזור לי? is the more standard way to ask.
+- **Register is mixed on purpose** (the dataset notes say so). Spanish "help me" uses tú; French uses vous.

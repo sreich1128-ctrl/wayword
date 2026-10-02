@@ -1,0 +1,517 @@
+{
+  "schema_version": "1.0",
+  "language_code": "fr",
+  "name": "French",
+  "native_name": "Français",
+  "region": "France",
+  "direction": "ltr",
+  "notes": {
+    "register": "Travel/service phrases lean polite; social phrases use informal tu."
+  },
+  "entries": [
+    {
+      "id": "hello",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Hello",
+      "type": "phrase",
+      "target": "Bonjour",
+      "pronunciation_easy": "bohn-ZHOOR"
+    },
+    {
+      "id": "good_morning",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Good morning",
+      "type": "phrase",
+      "target": "Bonjour",
+      "pronunciation_easy": "bohn-ZHOOR"
+    },
+    {
+      "id": "how_are_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "How are you?",
+      "type": "phrase",
+      "target": "Comment ça va ?",
+      "pronunciation_easy": "koh-MAHN sah VAH"
+    },
+    {
+      "id": "please",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Please",
+      "type": "phrase",
+      "target": "S'il vous plaît",
+      "pronunciation_easy": "seel voo PLEH"
+    },
+    {
+      "id": "thank_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Thank you",
+      "type": "phrase",
+      "target": "Merci",
+      "pronunciation_easy": "mehr-SEE"
+    },
+    {
+      "id": "excuse_me",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Excuse me",
+      "type": "phrase",
+      "target": "Excusez-moi",
+      "pronunciation_easy": "ex-kew-zay MWAH"
+    },
+    {
+      "id": "yes",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Yes",
+      "type": "phrase",
+      "target": "Oui",
+      "pronunciation_easy": "wee"
+    },
+    {
+      "id": "no",
+      "category": "essentials",
+      "priority": "core",
+      "english": "No",
+      "type": "phrase",
+      "target": "Non",
+      "pronunciation_easy": "nohn"
+    },
+    {
+      "id": "speak_english",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Do you speak English?",
+      "type": "phrase",
+      "target": "Vous parlez anglais ?",
+      "pronunciation_easy": "voo par-LAY ahn-GLAY"
+    },
+    {
+      "id": "dont_speak_well",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't speak [language] well.",
+      "type": "pattern",
+      "target": "Je ne parle pas bien français.",
+      "pronunciation_easy": "zhuh nuh parl pah byen frahn-SAY"
+    },
+    {
+      "id": "know_a_little",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I know a little.",
+      "type": "phrase",
+      "target": "J'en connais un peu.",
+      "pronunciation_easy": "zhahn koh-NAY uhn puh"
+    },
+    {
+      "id": "dont_understand",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't understand.",
+      "type": "phrase",
+      "target": "Je ne comprends pas.",
+      "pronunciation_easy": "zhuh nuh kohn-PRAHN pah"
+    },
+    {
+      "id": "say_again",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you say that again?",
+      "type": "phrase",
+      "target": "Vous pouvez répéter ?",
+      "pronunciation_easy": "voo poo-VAY ray-pay-TAY"
+    },
+    {
+      "id": "speak_slowly",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you speak more slowly?",
+      "type": "phrase",
+      "target": "Vous pouvez parler plus lentement ?",
+      "pronunciation_easy": "voo poo-VAY par-LAY plew lahn-tuh-MAHN"
+    },
+    {
+      "id": "what_mean",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "What does that mean?",
+      "type": "phrase",
+      "target": "Qu'est-ce que ça veut dire ?",
+      "pronunciation_easy": "kes-kuh sah vuh DEER"
+    },
+    {
+      "id": "how_say",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "How do you say ___?",
+      "type": "pattern",
+      "target": "Comment dit-on ___ ?",
+      "pronunciation_easy": "koh-MAHN dee-tohn"
+    },
+    {
+      "id": "learning_language",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "I'm learning [language].",
+      "type": "pattern",
+      "target": "J'apprends le français.",
+      "pronunciation_easy": "zhah-PRAHN luh frahn-SAY"
+    },
+    {
+      "id": "learning_by_trying",
+      "category": "language_rescue",
+      "priority": "explore",
+      "english": "I'm learning by trying to speak.",
+      "type": "phrase",
+      "target": "J'apprends en essayant de parler.",
+      "pronunciation_easy": "zhah-PRAHN ahn eh-say-YAHN duh par-LAY"
+    },
+    {
+      "id": "where_is",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Where is ___?",
+      "type": "pattern",
+      "target": "Où est ___ ?",
+      "pronunciation_easy": "oo eh"
+    },
+    {
+      "id": "nearest",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Where is the nearest ___?",
+      "type": "pattern",
+      "target": "Où est le/la ___ le/la plus proche ?",
+      "pronunciation_easy": "oo eh luh/lah plew PROSH"
+    },
+    {
+      "id": "bathroom",
+      "category": "navigation",
+      "priority": "core",
+      "english": "Where is the bathroom?",
+      "type": "phrase",
+      "target": "Où sont les toilettes ?",
+      "pronunciation_easy": "oo sohn lay twah-LET"
+    },
+    {
+      "id": "how_get",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "How do I get to ___?",
+      "type": "pattern",
+      "target": "Comment aller à ___ ?",
+      "pronunciation_easy": "koh-MAHN ah-LAY ah"
+    },
+    {
+      "id": "is_far",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Is it far?",
+      "type": "phrase",
+      "target": "C'est loin ?",
+      "pronunciation_easy": "say LWAN"
+    },
+    {
+      "id": "help_me",
+      "category": "problems",
+      "priority": "core",
+      "english": "Can you help me?",
+      "type": "phrase",
+      "target": "Vous pouvez m'aider ?",
+      "pronunciation_easy": "voo poo-VAY may-DAY"
+    },
+    {
+      "id": "can_i_have",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Can I have ___, please?",
+      "type": "pattern",
+      "target": "Je peux avoir ___, s'il vous plaît ?",
+      "pronunciation_easy": "zhuh puh ah-VWAHR, seel voo PLEH"
+    },
+    {
+      "id": "i_would_like",
+      "category": "food",
+      "priority": "travel",
+      "english": "I'd like ___, please.",
+      "type": "pattern",
+      "target": "Je voudrais ___, s'il vous plaît.",
+      "pronunciation_easy": "zhuh voo-DRAY, seel voo PLEH"
+    },
+    {
+      "id": "coffee",
+      "category": "food",
+      "priority": "core",
+      "english": "A coffee, please.",
+      "type": "phrase",
+      "target": "Un café, s'il vous plaît.",
+      "pronunciation_easy": "uhn kah-FAY, seel voo PLEH"
+    },
+    {
+      "id": "water",
+      "category": "food",
+      "priority": "core",
+      "english": "Water, please.",
+      "type": "phrase",
+      "target": "De l'eau, s'il vous plaît.",
+      "pronunciation_easy": "duh LOH, seel voo PLEH"
+    },
+    {
+      "id": "whats_in_this",
+      "category": "food",
+      "priority": "travel",
+      "english": "What's in this?",
+      "type": "phrase",
+      "target": "Qu'est-ce qu'il y a dedans ?",
+      "pronunciation_easy": "kes-keel yah duh-DAHN"
+    },
+    {
+      "id": "dairy",
+      "category": "food",
+      "priority": "travel",
+      "english": "Does this have dairy in it?",
+      "type": "phrase",
+      "target": "Est-ce qu'il y a des produits laitiers ?",
+      "pronunciation_easy": "es-keel yah day proh-DWEE lay-TYAY"
+    },
+    {
+      "id": "recommend_food",
+      "category": "food",
+      "priority": "travel",
+      "english": "What do you recommend?",
+      "type": "phrase",
+      "target": "Qu'est-ce que vous recommandez ?",
+      "pronunciation_easy": "kes-kuh voo ruh-koh-mahn-DAY"
+    },
+    {
+      "id": "bill",
+      "category": "money",
+      "priority": "core",
+      "english": "The bill/check, please.",
+      "type": "phrase",
+      "target": "L'addition, s'il vous plaît.",
+      "pronunciation_easy": "lah-dee-SYOHN, seel voo PLEH"
+    },
+    {
+      "id": "how_much",
+      "category": "money",
+      "priority": "core",
+      "english": "How much is this?",
+      "type": "phrase",
+      "target": "Ça coûte combien ?",
+      "pronunciation_easy": "sah koot kohm-BYEN"
+    },
+    {
+      "id": "pay_card",
+      "category": "money",
+      "priority": "core",
+      "english": "Can I pay by card?",
+      "type": "phrase",
+      "target": "Je peux payer par carte ?",
+      "pronunciation_easy": "zhuh puh pay-YAY par kart"
+    },
+    {
+      "id": "apple_pay",
+      "category": "money",
+      "priority": "travel",
+      "english": "Can I pay with Apple Pay?",
+      "type": "phrase",
+      "target": "Je peux payer avec Apple Pay ?",
+      "pronunciation_easy": "zhuh puh pay-YAY ah-VEK Apple Pay"
+    },
+    {
+      "id": "cash_or_card",
+      "category": "money",
+      "priority": "travel",
+      "english": "Cash or card?",
+      "type": "phrase",
+      "target": "Espèces ou carte ?",
+      "pronunciation_easy": "es-PESS oo kart"
+    },
+    {
+      "id": "tip_included",
+      "category": "money",
+      "priority": "travel",
+      "english": "Is the tip included?",
+      "type": "phrase",
+      "target": "Le service est compris ?",
+      "pronunciation_easy": "luh sehr-VEES eh kohn-PREE"
+    },
+    {
+      "id": "people_tip",
+      "category": "money",
+      "priority": "explore",
+      "english": "Do people tip here?",
+      "type": "phrase",
+      "target": "On laisse un pourboire ici ?",
+      "pronunciation_easy": "ohn less uhn poor-BWAHR ee-SEE"
+    },
+    {
+      "id": "your_name",
+      "category": "social",
+      "priority": "travel",
+      "english": "What's your name?",
+      "type": "phrase",
+      "target": "Comment tu t'appelles ?",
+      "pronunciation_easy": "koh-MAHN tew tah-PEL"
+    },
+    {
+      "id": "where_from",
+      "category": "social",
+      "priority": "travel",
+      "english": "Where are you from?",
+      "type": "phrase",
+      "target": "Tu viens d'où ?",
+      "pronunciation_easy": "tew vyahn DOO"
+    },
+    {
+      "id": "live_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "Do you live here?",
+      "type": "phrase",
+      "target": "Tu habites ici ?",
+      "pronunciation_easy": "tew ah-BEET ee-SEE"
+    },
+    {
+      "id": "what_do_you_do",
+      "category": "social",
+      "priority": "explore",
+      "english": "What do you do?",
+      "type": "phrase",
+      "target": "Tu fais quoi dans la vie ?",
+      "pronunciation_easy": "tew feh KWAH dahn lah VEE"
+    },
+    {
+      "id": "been_america",
+      "category": "social",
+      "priority": "explore",
+      "english": "Have you ever been to the United States?",
+      "type": "phrase",
+      "target": "Tu es déjà allé aux États-Unis ?",
+      "pronunciation_easy": "tew eh day-ZHAH ah-LAY oh zay-tah-zew-NEE"
+    },
+    {
+      "id": "im_visiting",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm visiting.",
+      "type": "phrase",
+      "target": "Je suis en visite.",
+      "pronunciation_easy": "zhuh swee ahn vee-ZEET"
+    },
+    {
+      "id": "im_new_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm new here.",
+      "type": "phrase",
+      "target": "Je suis nouveau ici.",
+      "pronunciation_easy": "zhuh swee noo-VOH ee-SEE"
+    },
+    {
+      "id": "love_languages",
+      "category": "social",
+      "priority": "travel",
+      "english": "I love learning languages.",
+      "type": "phrase",
+      "target": "J'adore apprendre les langues.",
+      "pronunciation_easy": "zhah-DOR ah-PRAHN-druh lay LAHNG"
+    },
+    {
+      "id": "really",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Really?",
+      "type": "phrase",
+      "target": "Vraiment ?",
+      "pronunciation_easy": "vray-MAHN"
+    },
+    {
+      "id": "interesting",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "That's interesting.",
+      "type": "phrase",
+      "target": "C'est intéressant.",
+      "pronunciation_easy": "say tan-tay-ray-SAHN"
+    },
+    {
+      "id": "me_too",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Me too.",
+      "type": "phrase",
+      "target": "Moi aussi.",
+      "pronunciation_easy": "mwah oh-SEE"
+    },
+    {
+      "id": "and_you",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "And you?",
+      "type": "phrase",
+      "target": "Et toi ?",
+      "pronunciation_easy": "ay TWAH"
+    },
+    {
+      "id": "nice_meeting",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Nice meeting you.",
+      "type": "phrase",
+      "target": "Enchanté.",
+      "pronunciation_easy": "ahn-shahn-TAY"
+    },
+    {
+      "id": "youre_funny",
+      "category": "connection",
+      "priority": "explore",
+      "english": "You're funny.",
+      "type": "phrase",
+      "target": "Tu es drôle.",
+      "pronunciation_easy": "tew eh DROL"
+    },
+    {
+      "id": "like_talking",
+      "category": "connection",
+      "priority": "explore",
+      "english": "I like talking to you.",
+      "type": "phrase",
+      "target": "J'aime bien parler avec toi.",
+      "pronunciation_easy": "zhem byen par-LAY ah-VEK twah"
+    },
+    {
+      "id": "instagram",
+      "category": "connection",
+      "priority": "explore",
+      "english": "Can I get your Instagram?",
+      "type": "phrase",
+      "target": "Je peux avoir ton Instagram ?",
+      "pronunciation_easy": "zhuh puh ah-VWAHR tohn Instagram"
+    },
+    {
+      "id": "very_helpful",
+      "category": "connection",
+      "priority": "travel",
+      "english": "You're very helpful.",
+      "type": "phrase",
+      "target": "Tu es très serviable.",
+      "pronunciation_easy": "tew eh tray sehr-vy-AH-bluh"
+    },
+    {
+      "id": "thanks_help",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Thank you for your help.",
+      "type": "phrase",
+      "target": "Merci pour ton aide.",
+      "pronunciation_easy": "mehr-SEE poor tohn ED"
+    }
+  ]
+}
