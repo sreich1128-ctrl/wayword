@@ -1,0 +1,19 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Israeli Hebrew has only five vowels and only a few sounds that English lacks. Written Hebrew usually leaves out the vowels, so you learn each word's sound by ear.",
+  "highlight": true,
+  "reading": [
+    "CAPITALS mark the stressed syllable. Most words stress the last syllable (sha-LOM), but common ones don't (BO-ker, MA-yim, EY-fo).",
+    "kh is the throaty sound. It is never the k in \"key\".",
+    "Vowels are short and clean: a, e, i, o, u. Never a lazy \"uh\"."
+  ],
+  "sounds": [
+    { "symbol": "ח  כ", "name": "Khet / Khaf", "spelled": "kh", "how": "Like the ch in Scottish \"loch\". Modern Israelis say ח and the soft כ (ך at the end of a word) the same way.", "examples": [{ "id": "excuse_me", "mark": "ח" }, { "id": "is_far", "mark": "ח" }, { "id": "bill", "mark": "ח" }, { "id": "how_are_you", "mark": "ך" }] },
+    { "symbol": "ר", "name": "Resh", "spelled": "r", "how": "Made at the back of the throat, like a French r: a light gargle. The English r (with the tongue curled) is understood but marks you as a tourist.", "examples": [{ "id": "good_morning", "mark": "ר" }, { "id": "learning_language", "mark": "ר" }, { "id": "thanks_help", "mark": "ר" }] },
+    { "symbol": "צ", "name": "Tsadi", "spelled": "ts", "how": "ts as in \"cats\", even at the start of a word. A final צ is written ץ.", "examples": [{ "id": "i_would_like", "mark": "צ" }, { "id": "youre_funny", "mark": "צ" }, { "id": "recommend_food", "mark": "ץ" }] },
+    { "symbol": "ע  א", "name": "Ayin / Alef", "spelled": "a bare vowel", "how": "In everyday Israeli speech both are silent, or at most a light catch. The vowel simply starts.", "examples": [{ "id": "help_me", "mark": "ע" }, { "id": "really", "mark": "א" }, { "id": "nice_meeting", "mark": "ע" }] },
+    { "symbol": "ב  ו", "name": "Bet / Vav", "spelled": "b or v", "how": "ב is b with a dot inside and v without one, but the dots are usually left out, so learn each word by ear. ו used as a consonant is v.", "examples": [{ "id": "please", "mark": "ב" }, { "id": "good_morning", "mark": "ב" }, { "id": "dont_understand", "mark": "ב" }] },
+    { "symbol": "פ", "name": "Pe", "spelled": "p or f", "how": "Same idea as ב: p with a dot, f without. A final פ is written ף and is always f.", "examples": [{ "id": "where_is", "mark": "פ" }, { "id": "coffee", "mark": "פ" }, { "id": "help_me", "mark": "פ" }] },
+    { "symbol": "ש", "name": "Shin / Sin", "spelled": "sh or s", "how": "Usually sh, but sometimes s. Again, the dot that tells them apart is usually left out.", "examples": [{ "id": "hello", "mark": "ש" }, { "id": "love_languages", "mark": "ש" }] }
+  ]
+}

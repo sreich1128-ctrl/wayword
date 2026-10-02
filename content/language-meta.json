@@ -6,6 +6,6 @@
   "fr":           { "bcp47": "fr-FR", "glyph": "Fr", "accent": "#6b47dc", "accent2": "#ff7aa8", "motif": "stripes", "tts": true },
   "it":           { "bcp47": "it-IT", "glyph": "It", "accent": "#2f8f4e", "accent2": "#f4d03f", "motif": "dots",    "tts": true },
   "ru":           { "bcp47": "ru-RU", "glyph": "Ж", "accent": "#c62f4b", "accent2": "#e8b04a", "motif": "diamond", "tts": true },
-  "ar-levantine": { "bcp47": "ar",    "glyph": "ع",  "accent": "#0e8a87", "accent2": "#e9a23b", "motif": "star",    "tts": false, "tts_note": "Device Arabic voices read Modern Standard Arabic; they can mispronounce dialect spelling, so audio is off for Levantine." },
+  "ar-levantine": { "bcp47": "ar", "glyph": "ع",  "accent": "#0e8a87", "accent2": "#e9a23b", "motif": "star", "tts": true, "voice_regions": ["ar-JO", "ar-PS", "ar-LB", "ar-SY"], "tts_warning": "Phone Arabic voices are trained on formal Arabic, not Levantine. They may say vowels or letters (like ق) differently from how people speak in Amman or Ramallah. Trust the pronunciation line over the audio." },
   "he":           { "bcp47": "he-IL", "glyph": "א",  "accent": "#b7791f", "accent2": "#3b5bdb", "motif": "stone",   "tts": true }
 }

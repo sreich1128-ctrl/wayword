@@ -55,6 +55,19 @@ for (const [pid, p] of Object.entries(patterns)) {
   for (const id of p.related || []) if (!ids.has(id)) errors.push(`patterns.json ${pid}: unknown related ${id}`);
 }
 
+// Sound guides: every example must be a real concept, and any highlighted text must appear in that phrase.
+for (const l of languages) {
+  let guide;
+  try { guide = read(`sounds/${l.code}.json`); } catch { warn.push(`${l.code}: no sound guide`); continue; }
+  const file = read(`lang/${l.code}.json`);
+  const byId = new Map(file.entries.map((e) => [e.id, e]));
+  for (const snd of guide.sounds) for (const ex of snd.examples) {
+    const e = byId.get(ex.id);
+    if (!e) errors.push(`sounds/${l.code}: "${snd.name}" uses unknown phrase ${ex.id}`);
+    else if (ex.mark && !e.target.includes(ex.mark)) errors.push(`sounds/${l.code}: "${ex.mark}" not found in ${ex.id} (${e.target})`);
+  }
+}
+
 const counts = Object.fromEntries(tiers.map((t) => [t.label, concepts.filter((c) => t.includes.includes(c.priority)).length]));
 console.log(`${languages.length} languages, ${concepts.length} concepts, ${scenarios.length} scenarios`);
 console.log('Tier sizes:', counts);

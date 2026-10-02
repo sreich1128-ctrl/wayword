@@ -1,0 +1,192 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Russian spelling is fairly regular once you know which syllable is stressed. Stress changes how the vowels sound, so learn it along with each word.",
+  "highlight": true,
+  "reading": [
+    "CAPITALS mark the stress. Russian stress can fall anywhere and isn't marked in normal writing.",
+    "\"y\" on its own (vy, ty, byl) means the ы sound, not \"why\".",
+    "\"yeh\", \"nyet\" and \"gdyeh\" mean the consonant is soft (see below)."
+  ],
+  "sounds": [
+    {
+      "symbol": "Р Н В С У Х",
+      "name": "Letters that lie",
+      "spelled": "r, n, v, s, oo, kh",
+      "how": "They look like Latin letters but sound different: Р = r, Н = n, В = v, С = s, У = oo, Х = kh. Also Е = ye and Я = ya.",
+      "examples": [
+        {
+          "id": "hello",
+          "mark": "в"
+        },
+        {
+          "id": "no",
+          "mark": "Н"
+        },
+        {
+          "id": "thank_you",
+          "mark": "С"
+        }
+      ]
+    },
+    {
+      "symbol": "ы",
+      "name": "Yery",
+      "spelled": "y",
+      "how": "Start saying \"ee\", then pull your tongue back and relax your lips. It sits between the i in \"bit\" and the u in \"put\".",
+      "examples": [
+        {
+          "id": "speak_english",
+          "mark": "Вы"
+        },
+        {
+          "id": "where_from",
+          "mark": "Ты"
+        },
+        {
+          "id": "cash_or_card",
+          "mark": "ы"
+        }
+      ]
+    },
+    {
+      "symbol": "ь  е ё и ю я",
+      "name": "Soft consonants",
+      "spelled": "y glide: nyet, gdyeh, tyeh",
+      "how": "Before these letters, a consonant is made with the middle of your tongue raised, which adds a faint y: Нет is \"nyet\", not \"net\".",
+      "examples": [
+        {
+          "id": "no",
+          "mark": "Не"
+        },
+        {
+          "id": "where_is",
+          "mark": "де"
+        },
+        {
+          "id": "excuse_me",
+          "mark": "те"
+        }
+      ]
+    },
+    {
+      "symbol": "о",
+      "name": "Unstressed O",
+      "spelled": "ah / uh",
+      "how": "An o that isn't stressed sounds like \"ah\", or a weak \"uh\" further from the stress. Only the stressed о sounds like \"oh\".",
+      "examples": [
+        {
+          "id": "thank_you",
+          "mark": "о"
+        },
+        {
+          "id": "dont_speak_well",
+          "mark": "го"
+        },
+        {
+          "id": "good_morning",
+          "mark": "ро"
+        }
+      ]
+    },
+    {
+      "symbol": "е  я",
+      "name": "Unstressed E / Ya",
+      "spelled": "ee",
+      "how": "When they aren't stressed, е and я shrink toward a short \"ee\": дела is \"dee-LAH\".",
+      "examples": [
+        {
+          "id": "how_are_you",
+          "mark": "е"
+        },
+        {
+          "id": "dont_understand",
+          "mark": "не"
+        },
+        {
+          "id": "your_name",
+          "mark": "я"
+        }
+      ]
+    },
+    {
+      "symbol": "х",
+      "name": "Kha",
+      "spelled": "kh",
+      "how": "Like the ch in Scottish \"loch\", but softer than the Arabic or Hebrew sound.",
+      "examples": [
+        {
+          "id": "dont_speak_well",
+          "mark": "х"
+        },
+        {
+          "id": "i_would_like",
+          "mark": "х"
+        },
+        {
+          "id": "im_visiting",
+          "mark": "х"
+        }
+      ]
+    },
+    {
+      "symbol": "р",
+      "name": "Er",
+      "spelled": "r",
+      "how": "A tapped or lightly rolled r made with the tip of the tongue, as in Spanish or Italian.",
+      "examples": [
+        {
+          "id": "hello",
+          "mark": "р"
+        },
+        {
+          "id": "really",
+          "mark": "р"
+        },
+        {
+          "id": "good_morning",
+          "mark": "р"
+        }
+      ]
+    },
+    {
+      "symbol": "ж ш щ ч",
+      "name": "Hushing sounds",
+      "spelled": "zh, sh, shch, ch",
+      "how": "ж = zh as in \"measure\", ш = a hard sh, щ = a longer, softer sh (shch), ч = ch. Exception: in что, ч is said as sh (\"shtoh\").",
+      "examples": [
+        {
+          "id": "please",
+          "mark": "ж"
+        },
+        {
+          "id": "bill",
+          "mark": "Сч"
+        },
+        {
+          "id": "what_mean",
+          "mark": "Что"
+        },
+        {
+          "id": "thanks_help",
+          "mark": "щ"
+        }
+      ]
+    },
+    {
+      "symbol": "д в б з",
+      "name": "Final devoicing",
+      "spelled": "t, f, p, s",
+      "how": "At the end of a word, or before a voiceless consonant, voiced letters turn voiceless: д sounds like t, в like f.",
+      "examples": [
+        {
+          "id": "been_america",
+          "mark": "дь"
+        },
+        {
+          "id": "say_again",
+          "mark": "вт"
+        }
+      ]
+    }
+  ]
+}

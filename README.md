@@ -22,7 +22,8 @@ All language content lives in `content/`. The UI code (`js/`, `css/`) has no phr
 | `tiers.json` | Core 20 / Travel 50 / Explore 100. Tiers are cumulative: Travel includes Core, Explore includes everything | UI taxonomy |
 | `scenarios.json` | Scenario buttons. Each lists **concept ids only**, never language text | Curation |
 | `patterns.json` | Power-pattern helpers: related phrases, and a slot for vetted substitution words per language | Curation |
-| `language-meta.json` | Accent colors, motif, BCP-47 tag, whether device text-to-speech is on | Presentation |
+| `sounds/<code>.json` | Sound guide per language. **Written for Wayword, not from the dataset.** Examples are concept ids plus an optional `mark` (the letters to highlight); `npm run validate` checks every mark exists in the phrase | Curation |
+| `language-meta.json` | Accent colors, motif, BCP-47 tag, device text-to-speech on/off, preferred voice regions and a warning shown before audio plays | Presentation |
 | `source/` | The dataset's own README and build spec, for reference | — |
 
 `concepts.json` is the canonical cross-language map. Each language file has one entry per concept `id`. If a language is missing a concept, the card says "Not in the dataset yet" instead of filling something in.

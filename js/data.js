@@ -111,3 +111,14 @@ export function inCategory(content, phrase, catId) {
   const cat = content.categoryById.get(catId);
   return !!(cat && cat.also_include_types && cat.also_include_types.includes(phrase.type));
 }
+
+const soundCache = new Map();
+
+// Optional per-language sound guide (content/sounds/<code>.json). Null if absent.
+export async function loadSounds(code) {
+  if (soundCache.has(code)) return soundCache.get(code);
+  let guide = null;
+  try { guide = await getJSON(`sounds/${code}.json`); } catch { guide = null; }
+  soundCache.set(code, guide);
+  return guide;
+}

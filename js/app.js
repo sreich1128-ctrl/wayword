@@ -1,4 +1,4 @@
-import { loadContent, loadLanguage, tierIncludes, inCategory } from './data.js';
+import { loadContent, loadLanguage, loadSounds, tierIncludes, inCategory } from './data.js';
 import { store } from './store.js';
 import * as tts from './speech.js';
 
@@ -45,6 +45,7 @@ const ICONS = {
   back: '<path d="M15 5 8 12l7 7"/>',
   star: '<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"/>',
   check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
+  ear: '<path d="M7 9a5 5 0 0 1 10 0c0 3-3 3.5-3 6.5a2.5 2.5 0 0 1-5 0"/><path d="M10 9.5a2 2 0 0 1 4 0"/>',
   sound: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>',
   shuffle: '<path d="M3 7h3.5c4 0 6 10 10 10H21M3 17h3.5c1.6 0 2.8-1.6 3.8-3.6M14 9.6C15 7.6 16 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/>',
@@ -219,6 +220,7 @@ function viewDashboard() {
       <a class="quick-btn primary" href="#/${lang.code}/practice/run?dir=en">${icon('cards')}<span>English → ${esc(lang.native_name)}</span></a>
       <a class="quick-btn" href="#/${lang.code}/practice/run?dir=target">${icon('cards')}<span><bdi>${esc(lang.native_name)}</bdi> → English</span></a>
       <a class="quick-btn" href="#/${lang.code}/phrases?cat=saved">${icon('star')}<span>Saved <small>${favs}</small></span></a>
+      <a class="quick-btn" href="#/${lang.code}/sounds">${icon('ear')}<span>Sound guide</span></a>
     </section>
 
     ${pick ? `<section class="block">
@@ -348,6 +350,54 @@ function patternCard(p) {
   </div>`;
 }
 
+// Highlights the first occurrence of `mark` in a phrase. Skipped for Arabic,
+// where wrapping a letter would break the joined letter shapes.
+function markText(text, mark, allow) {
+  const i = allow && mark ? text.indexOf(mark) : -1;
+  if (i < 0) return withSlots(text);
+  return withSlots(text.slice(0, i)) + `<mark class="hl">${esc(mark)}</mark>` + withSlots(text.slice(i + mark.length));
+}
+
+async function viewSounds() {
+  const lang = L.lang;
+  const g = await loadSounds(lang.code);
+  if (L.lang !== lang) return;
+  if (!g) {
+    page('home', `<section class="page-head"><h1>Sound guide</h1></section><div class="empty-state">No sound guide for ${esc(lang.name)} yet.</div>`, { back: `#/${lang.code}` });
+    return;
+  }
+  page('home', `
+    <section class="page-head"><h1>Sound guide</h1><p>${esc(g.intro)}</p></section>
+    <section class="about reading">
+      <h2>Reading the pronunciation line</h2>
+      <ul>${(g.reading || []).map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+    </section>
+    <div class="list sounds">${g.sounds.map((snd) => `
+      <article class="sound">
+        <div class="sound-head">
+          <span class="sound-sym" ${nativeAttrs(lang)}>${esc(snd.symbol)}</span>
+          <div><h2>${esc(snd.name)}</h2><span class="sound-spelled">Spelled <b>${esc(snd.spelled)}</b></span></div>
+        </div>
+        <p class="sound-how">${esc(snd.how)}</p>
+        <div class="sound-ex">${snd.examples.map((ex) => {
+          const p = L.byId.get(ex.id);
+          if (!p || p.missing) return '';
+          return `<div class="ex" data-key="${esc(p.key)}">
+            <div class="ex-text">
+              <b class="ex-native" ${nativeAttrs(lang)}>${markText(p.target, ex.mark, g.highlight !== false)}</b>
+              <i class="ex-pron" data-peek="pron">${withSlots(p.pron)}</i>
+              <span class="ex-en" data-peek="en">${withSlots(p.english)}</span>
+            </div>
+            ${canSpeak() ? `<button class="icon-btn listen ex-play" data-action="speak" data-say="${esc(p.key)}" data-id="${esc(p.id)}" data-state="idle" aria-label="Listen">${icon('sound', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
+          </div>`;
+        }).join('')}</div>
+      </article>`).join('')}
+    </div>
+    ${canSpeak() ? `<div class="sound-speed">Speed <button class="pill-btn speed" data-action="speed">${tts.speed().label}</button></div>` : ''}
+    <p class="fine">${esc(g.source)}</p>
+  `, { back: `#/${lang.code}` });
+}
+
 function viewPracticeSetup() {
   const lang = L.lang;
   const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
@@ -458,9 +508,33 @@ function canSpeak() {
   return !!(L && L.lang.meta.tts && tts.speechSupported);
 }
 
+const warned = new Set();
+
 function speakPhrase(id) {
   const p = L.byId.get(id);
-  if (p) tts.toggle(p.key, p.target, L.lang.code, L.lang.meta.bcp47);
+  if (!p) return;
+  const m = L.lang.meta;
+  if (m.tts_warning && !warned.has(L.lang.code)) {
+    warned.add(L.lang.code);
+    toast(m.tts_warning);
+  }
+  tts.toggle(p.key, p.target, L.lang.code, m.bcp47, m.voice_regions);
+}
+
+let toastTimer = null;
+function toast(text) {
+  let el = document.getElementById('toast');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'toast';
+    el.setAttribute('role', 'status');
+    el.addEventListener('click', () => el.classList.remove('show'));
+    document.body.appendChild(el);
+  }
+  el.textContent = text;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 7000);
 }
 
 // Voice + speed picker on the language dashboard.
@@ -471,6 +545,7 @@ function audioBlock() {
   }
   return `<section class="block about audio">
     <h2>Audio</h2>
+    ${lang.meta.tts_warning ? `<p class="callout warn">${esc(lang.meta.tts_warning)}</p>` : ''}
     <label class="field"><span>Voice</span><select id="voice" class="select"></select></label>
     <div class="field"><span>Speed</span><div class="seg">${tts.SPEEDS.map((sp) =>
       `<button class="seg-btn ${sp.id === tts.speed().id ? 'on' : ''}" data-action="set-speed" data-speed="${sp.id}">${sp.label}</button>`).join('')}</div></div>
@@ -481,7 +556,8 @@ function audioBlock() {
 function fillVoiceSelect() {
   const sel = document.getElementById('voice');
   if (!sel || !L) return;
-  const list = tts.voicesFor(L.lang.meta.bcp47);
+  const regions = L.lang.meta.voice_regions || [];
+  const list = tts.voicesFor(L.lang.meta.bcp47, regions);
   const saved = (store.prefs().voices || {})[L.lang.code];
   if (!list.length) {
     sel.innerHTML = '<option>No voice installed for this language</option>';
@@ -491,7 +567,7 @@ function fillVoiceSelect() {
   sel.disabled = false;
   const current = list.find((v) => v.voiceURI === saved) || list[0];
   sel.innerHTML = list.map((v, i) =>
-    `<option value="${esc(v.voiceURI)}" ${v === current ? 'selected' : ''}>${esc(v.name)} (${esc(v.lang)})${i === 0 ? ' · best' : ''}</option>`).join('');
+    `<option value="${esc(v.voiceURI)}" ${v === current ? 'selected' : ''}>${esc(v.name)} (${esc(v.lang)})${regions.length && tts.inRegions(v, regions) ? ' · Levantine' : ''}${i === 0 ? ' · best' : ''}</option>`).join('');
 }
 
 tts.onVoices(fillVoiceSelect);
@@ -501,7 +577,7 @@ document.addEventListener('change', (e) => {
   const voices = { ...(store.prefs().voices || {}), [L.lang.code]: e.target.value };
   store.setPref('voices', voices);
   const sample = L.byId.get('hello');
-  tts.preview(L.lang.code, L.lang.meta.bcp47, e.target.value, sample && !sample.missing ? sample.target : L.lang.native_name);
+  tts.preview(L.lang.code, L.lang.meta.bcp47, e.target.value, sample && !sample.missing ? sample.target : L.lang.native_name, L.lang.meta.voice_regions);
 });
 
 /* ---------- events ---------- */
@@ -611,6 +687,7 @@ async function route() {
   else if (section === 'scenarios') viewScenarios();
   else if (section === 'scenario') viewScenario(arg, query);
   else if (section === 'patterns') viewPatterns();
+  else if (section === 'sounds') await viewSounds();
   else if (section === 'practice' && arg === 'run') viewPracticeRun(query);
   else if (section === 'practice') viewPracticeSetup();
   else return go(`#/${code}`);

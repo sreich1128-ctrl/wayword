@@ -1,0 +1,166 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Most Arabic letters map onto English sounds. These are the ones that don't, plus a few Levantine habits. Spoken Levantine differs from formal Arabic, and this guide follows the city speech the dataset uses.",
+  "highlight": false,
+  "reading": [
+    "CAPITALS mark the stressed syllable: MAR-ha-ba.",
+    "Doubled vowels (aa, ee, oo) are long. Hold them.",
+    "In this dataset a capital H often marks the throaty ح (bteH-KEE, mneeH), but not always: ha-LEEB and HAM-maam are ح too.",
+    "An apostrophe or a vowel standing alone often marks ع: t'eed, ba-EED, A-ra-bee."
+  ],
+  "sounds": [
+    {
+      "symbol": "ح",
+      "name": "Ḥa",
+      "spelled": "H / h",
+      "how": "A strong, breathy h pushed from a tightened throat, like fogging up glasses with force. It is smooth, with no scrape or gargle.",
+      "examples": [
+        {
+          "id": "bathroom"
+        },
+        {
+          "id": "bill"
+        },
+        {
+          "id": "dont_speak_well"
+        },
+        {
+          "id": "like_talking"
+        }
+      ]
+    },
+    {
+      "symbol": "ع",
+      "name": "ʿAyn",
+      "spelled": "' or a bare vowel",
+      "how": "A squeeze deep in the throat with the voice on. Tighten the muscles you'd use to gag, then say \"ah\". As a beginner, a short catch in the voice is close enough to be understood.",
+      "examples": [
+        {
+          "id": "excuse_me"
+        },
+        {
+          "id": "say_again"
+        },
+        {
+          "id": "is_far"
+        },
+        {
+          "id": "really"
+        }
+      ]
+    },
+    {
+      "symbol": "خ",
+      "name": "Kha",
+      "spelled": "kh",
+      "how": "Like the ch in Scottish \"loch\" or German \"Bach\": air scraping at the back of the mouth.",
+      "examples": [
+        {
+          "id": "good_morning"
+        },
+        {
+          "id": "tip_included"
+        },
+        {
+          "id": "instagram"
+        }
+      ]
+    },
+    {
+      "symbol": "غ",
+      "name": "Ghayn",
+      "spelled": "gh",
+      "how": "The voiced partner of خ, close to a French r: a soft gargle with the voice on.",
+      "examples": [
+        {
+          "id": "what_do_you_do"
+        },
+        {
+          "id": "love_languages"
+        }
+      ]
+    },
+    {
+      "symbol": "ق",
+      "name": "Qaf",
+      "spelled": "a catch: AH-weh, ad-DAYSH",
+      "how": "In city Levantine (Amman, Jerusalem, Beirut, Damascus) ق usually becomes a glottal stop, the catch in the middle of \"uh-oh\". Rural Palestinians and many Jordanians say a hard g instead, and formal Arabic uses a deep k. The dataset uses the city catch.",
+      "examples": [
+        {
+          "id": "coffee"
+        },
+        {
+          "id": "how_much"
+        },
+        {
+          "id": "been_america"
+        }
+      ]
+    },
+    {
+      "symbol": "ص ض ط ظ",
+      "name": "Heavy letters",
+      "spelled": "s, d, t, z",
+      "how": "Heavy versions of s, d, t and z. Pull your tongue back and lower it so the sound comes out deeper. That also darkens nearby vowels toward \"ah\" and \"aw\". Using a plain s or t is understood, but sounds foreign.",
+      "examples": [
+        {
+          "id": "good_morning"
+        },
+        {
+          "id": "speak_slowly"
+        },
+        {
+          "id": "youre_funny"
+        },
+        {
+          "id": "recommend_food"
+        }
+      ]
+    },
+    {
+      "symbol": "ج",
+      "name": "Jim",
+      "spelled": "j",
+      "how": "Palestinians and Jordanians mostly say j as in \"jam\". In Lebanon and Syria you'll often hear zh, as in \"measure\". Both are fine.",
+      "examples": [
+        {
+          "id": "really"
+        },
+        {
+          "id": "im_new_here"
+        },
+        {
+          "id": "speak_english"
+        }
+      ]
+    },
+    {
+      "symbol": "ّ",
+      "name": "Doubled letters",
+      "spelled": "MM, DD (HAM-maam, BAD-dee)",
+      "how": "A doubled consonant is held for longer: linger on it before moving on. Shortening it can turn it into a different word.",
+      "examples": [
+        {
+          "id": "bathroom"
+        },
+        {
+          "id": "i_would_like"
+        },
+        {
+          "id": "help_me"
+        }
+      ]
+    },
+    {
+      "symbol": "ء",
+      "name": "Hamza (catch)",
+      "spelled": "end of \"la\"",
+      "how": "A quick stop in the throat, like the break in \"uh-oh\". The Levantine \"no\" (لأ) ends with one, which makes it sound clipped and firm.",
+      "examples": [
+        {
+          "id": "no"
+        }
+      ]
+    }
+  ]
+}

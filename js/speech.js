@@ -25,9 +25,10 @@ if (supported) {
 }
 export const onVoices = (fn) => { listeners.add(fn); return () => listeners.delete(fn); };
 
-function score(v, bcp47) {
+function score(v, bcp47, regions = []) {
   const lang = v.lang.replace('_', '-');
   let s = 0;
+  if (regions.some((r) => lang.toLowerCase() === r.toLowerCase())) s += 8;
   if (lang.toLowerCase() === bcp47.toLowerCase()) s += 4;
   if (/premium|enhanced|neural|natural|siri/i.test(v.name)) s += 6;
   if (/google/i.test(v.name)) s += 3;
@@ -37,15 +38,17 @@ function score(v, bcp47) {
 }
 
 // Voices for this language, best-sounding first.
-export function voicesFor(bcp47) {
+export function voicesFor(bcp47, regions = []) {
   const base = bcp47.split('-')[0].toLowerCase();
   return voices
     .filter((v) => v.lang.replace('_', '-').toLowerCase().split('-')[0] === base)
-    .sort((a, b) => score(b, bcp47) - score(a, bcp47));
+    .sort((a, b) => score(b, bcp47, regions) - score(a, bcp47, regions));
 }
 
-function chosenVoice(code, bcp47) {
-  const list = voicesFor(bcp47);
+export const inRegions = (v, regions = []) => regions.some((r) => v.lang.replace('_', '-').toLowerCase() === r.toLowerCase());
+
+function chosenVoice(code, bcp47, regions) {
+  const list = voicesFor(bcp47, regions);
   const saved = (store.prefs().voices || {})[code];
   return list.find((v) => v.voiceURI === saved) || list[0] || null;
 }
@@ -61,28 +64,27 @@ export function cycleSpeed() {
 /* ---------- playback ---------- */
 
 let current = { key: null, status: 'idle' }; // status: idle | playing | paused
-let last = null; // { key, text, code, bcp47 } so resume can restart if the browser dropped it
 
 function setStatus(key, status) {
   current = { key, status };
   syncButtons();
 }
 
-function start(key, text, code, bcp47) {
+function start(key, text, code, bcp47, regions) {
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text.replace(/_{2,}/g, ' … '));
   u.lang = bcp47;
-  u.voice = chosenVoice(code, bcp47);
+  u.voice = chosenVoice(code, bcp47, regions);
   u.rate = speed().rate;
   u.onstart = () => setStatus(key, 'playing');
   u.onend = u.onerror = () => { if (current.key === key && current.status !== 'paused') setStatus(null, 'idle'); };
-  last = { key, text, code, bcp47 };
+  
   setStatus(key, 'playing');
   speechSynthesis.speak(u);
 }
 
 // Tap once to play, again to pause, again to resume. A different phrase interrupts.
-export function toggle(key, text, code, bcp47) {
+export function toggle(key, text, code, bcp47, regions) {
   if (!supported || !text) return;
   if (current.key === key && current.status === 'playing') {
     speechSynthesis.pause();
@@ -92,9 +94,9 @@ export function toggle(key, text, code, bcp47) {
     if (speechSynthesis.paused && speechSynthesis.speaking) {
       speechSynthesis.resume();
       setStatus(key, 'playing');
-    } else start(key, text, code, bcp47);
+    } else start(key, text, code, bcp47, regions);
   } else {
-    start(key, text, code, bcp47);
+    start(key, text, code, bcp47, regions);
   }
 }
 
@@ -104,12 +106,12 @@ export function stop() {
   setStatus(null, 'idle');
 }
 
-export function preview(code, bcp47, voiceURI, text) {
+export function preview(code, bcp47, voiceURI, text, regions) {
   if (!supported) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.lang = bcp47;
-  u.voice = voicesFor(bcp47).find((v) => v.voiceURI === voiceURI) || null;
+  u.voice = voicesFor(bcp47, regions).find((v) => v.voiceURI === voiceURI) || null;
   u.rate = speed().rate;
   speechSynthesis.speak(u);
 }

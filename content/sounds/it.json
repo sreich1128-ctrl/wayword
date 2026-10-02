@@ -1,0 +1,19 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Italian is pronounced almost exactly as it's written. The two things to train are double consonants and the c/g rules.",
+  "highlight": true,
+  "reading": [
+    "CAPITALS mark the stress, usually on the second-to-last syllable.",
+    "Every vowel is said, including the last one: per favore ends in a clear \"eh\".",
+    "Doubled letters in the pronunciation (kahf-FEH, vor-RAY) mean hold the consonant."
+  ],
+  "sounds": [
+    { "symbol": "ff  rr  tt", "name": "Double consonants", "spelled": "kahf-FEH", "how": "Hold a doubled consonant for longer, with a tiny pause before releasing it. The difference changes meaning (pala/palla, caro/carro).", "examples": [{ "id": "coffee", "mark": "ff" }, { "id": "really", "mark": "vv" }, { "id": "i_would_like", "mark": "rr" }, { "id": "dairy", "mark": "tt" }] },
+    { "symbol": "ci ce gi ge", "name": "Soft C and G", "spelled": "ch, j", "how": "Before i or e, c = ch and g = j. The i is often just a spelling signal: ciao is \"chow\", giorno is \"JOR-noh\".", "examples": [{ "id": "hello", "mark": "Ci" }, { "id": "how_say", "mark": "ce" }, { "id": "good_morning", "mark": "gi" }] },
+    { "symbol": "chi che ghi", "name": "Hard C and G", "spelled": "k, g", "how": "Adding an h keeps them hard: chi is \"kee\", che is \"keh\".", "examples": [{ "id": "your_name", "mark": "chi" }, { "id": "me_too", "mark": "ch" }, { "id": "interesting", "mark": "Che" }] },
+    { "symbol": "gn  gli", "name": "GN and GLI", "spelled": "ny, ly", "how": "gn = ny as in \"canyon\" (bagno is \"BAH-nyoh\"). gli = a soft ly, like the lli in \"million\".", "examples": [{ "id": "bathroom", "mark": "gn" }, { "id": "what_mean", "mark": "gn" }, { "id": "recommend_food", "mark": "gli" }] },
+    { "symbol": "sc", "name": "SC", "spelled": "sh / sk", "how": "Before i or e, sc = sh (lascia is \"LAH-shah\"). Before other vowels it's sk (capisco).", "examples": [{ "id": "people_tip", "mark": "sci" }, { "id": "nice_meeting", "mark": "sce" }, { "id": "dont_understand", "mark": "sc" }] },
+    { "symbol": "z", "name": "Z", "spelled": "ts / dz", "how": "z is ts (grazie is \"GRAH-tsyeh\"), or dz in some words. It's never the English z.", "examples": [{ "id": "thank_you", "mark": "z" }, { "id": "tip_included", "mark": "z" }] },
+    { "symbol": "r", "name": "Rolled R", "spelled": "r", "how": "A tap, or a short trill, with the tip of the tongue. A double rr is a full trill.", "examples": [{ "id": "thank_you", "mark": "r" }, { "id": "please", "mark": "r" }, { "id": "how_get", "mark": "rr" }] }
+  ]
+}

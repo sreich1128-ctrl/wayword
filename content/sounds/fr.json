@@ -1,0 +1,160 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "French spelling has many silent letters, but it is consistent. Get the nasal vowels, the u, and the r right and you'll sound much better right away.",
+  "highlight": true,
+  "reading": [
+    "CAPITALS mark where the phrase lands. French stress is light and falls at the end of a word group.",
+    "\"ahn\", \"ohn\" and \"an\" at the end of a syllable are nasal vowels. Don't say the n.",
+    "\"ew\" means the French u (see below)."
+  ],
+  "sounds": [
+    {
+      "symbol": "an en on in un",
+      "name": "Nasal vowels",
+      "spelled": "ahn, ohn, an, uhn",
+      "how": "Push the vowel through your nose and stop before the n. Non is a single nasal \"oh\", not \"nonn\".",
+      "examples": [
+        {
+          "id": "dont_understand",
+          "mark": "en"
+        },
+        {
+          "id": "no",
+          "mark": "on"
+        },
+        {
+          "id": "is_far",
+          "mark": "in"
+        },
+        {
+          "id": "know_a_little",
+          "mark": "un"
+        }
+      ]
+    },
+    {
+      "symbol": "u  ou",
+      "name": "U vs OU",
+      "spelled": "ew vs oo",
+      "how": "For u, say \"ee\" and then round your lips tightly without moving your tongue. ou is a plain \"oo\". Tu (you) and tout (all) are different words.",
+      "examples": [
+        {
+          "id": "speak_slowly",
+          "mark": "u"
+        },
+        {
+          "id": "excuse_me",
+          "mark": "u"
+        },
+        {
+          "id": "where_is",
+          "mark": "Où"
+        },
+        {
+          "id": "please",
+          "mark": "ou"
+        }
+      ]
+    },
+    {
+      "symbol": "r",
+      "name": "French R",
+      "spelled": "r",
+      "how": "Made at the back of the throat with a light scrape, like a gentle gargle. The tip of your tongue stays down behind your bottom teeth.",
+      "examples": [
+        {
+          "id": "thank_you",
+          "mark": "r"
+        },
+        {
+          "id": "really",
+          "mark": "r"
+        },
+        {
+          "id": "say_again",
+          "mark": "r"
+        }
+      ]
+    },
+    {
+      "symbol": "-s -t -e -ent",
+      "name": "Silent endings",
+      "spelled": "(not written)",
+      "how": "Final consonants and the final e are usually silent: pas is \"pah\", toilettes is \"twah-LET\". The -ent ending on verbs is silent too.",
+      "examples": [
+        {
+          "id": "dont_understand",
+          "mark": "s"
+        },
+        {
+          "id": "bathroom",
+          "mark": "tes"
+        },
+        {
+          "id": "how_are_you",
+          "mark": "t"
+        }
+      ]
+    },
+    {
+      "symbol": "‿",
+      "name": "Liaison",
+      "spelled": "zay-tah-zew-NEE",
+      "how": "A normally silent final consonant is pronounced when the next word starts with a vowel, and joins onto it: États-Unis is \"zay-tah-zew-NEE\".",
+      "examples": [
+        {
+          "id": "been_america",
+          "mark": "s-U"
+        },
+        {
+          "id": "interesting",
+          "mark": "t i"
+        },
+        {
+          "id": "how_say",
+          "mark": "t-o"
+        }
+      ]
+    },
+    {
+      "symbol": "j  g",
+      "name": "Soft J and G",
+      "spelled": "zh",
+      "how": "j, and g before e or i, = zh as in \"measure\".",
+      "examples": [
+        {
+          "id": "hello",
+          "mark": "j"
+        },
+        {
+          "id": "dont_speak_well",
+          "mark": "J"
+        },
+        {
+          "id": "been_america",
+          "mark": "j"
+        }
+      ]
+    },
+    {
+      "symbol": "é  è  ai",
+      "name": "The E family",
+      "spelled": "ay / eh",
+      "how": "é is a tight \"ay\" with no glide at the end. è, ê and ai are an open \"eh\".",
+      "examples": [
+        {
+          "id": "say_again",
+          "mark": "é"
+        },
+        {
+          "id": "please",
+          "mark": "aî"
+        },
+        {
+          "id": "cash_or_card",
+          "mark": "è"
+        }
+      ]
+    }
+  ]
+}

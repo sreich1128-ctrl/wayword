@@ -18,3 +18,10 @@ Nothing below was changed in the data. These are things the app can't show yet, 
 - **Levantine `excuse_me` = عفواً (AF-wan).** In Levantine speech this is often "pardon / you're welcome". To get someone's attention, لو سمحت is common, and the dataset already uses that for "please".
 - **Hebrew `help_me` = אפשר לעזור לי?** Understood colloquially, but אתה יכול לעזור לי? is the more standard way to ask.
 - **Register is mixed on purpose** (the dataset notes say so). Spanish "help me" uses tú; French uses vous.
+
+## Pronunciation-line inconsistencies (found while writing the sound guides; not changed)
+
+- **Arabic ح isn't spelled consistently.** Sometimes it's a capital H (bteH-KEE, mneeH), sometimes lowercase (ha-LEEB, sa-BAAH), so it can't be told apart from a plain ه. The sound guide warns about this.
+- **Arabic `recommend_food` "shoo btin-SAHi"** has a stray final "i"; بتنصح is usually "btin-SAH".
+- **Arabic ع** is shown three ways: an apostrophe (t'eed), a capital vowel (A-ra-bee), or nothing (ba-EED).
+- **Hebrew `know_a_little` "KT-sat"** for קצת. It's said "ktsat", one syllable.

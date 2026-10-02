@@ -1,0 +1,18 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Spanish is very regular: five pure vowels and a handful of consonants to learn. The dataset uses neutral Latin American pronunciation.",
+  "highlight": true,
+  "reading": [
+    "CAPITALS mark the stress. A written accent (á, é, í, ó, ú) always marks it too.",
+    "Vowels are short and pure: \"oh\" without the English glide to \"ohw\"."
+  ],
+  "sounds": [
+    { "symbol": "r  rr", "name": "Tap vs trill", "spelled": "r", "how": "A single r between vowels is one quick tap, like the tt in American \"butter\". rr, and r at the start of a word, is a rolled trill.", "examples": [{ "id": "say_again", "mark": "r" }, { "id": "please", "mark": "r" }, { "id": "really", "mark": "r" }] },
+    { "symbol": "j  ge  gi", "name": "J and soft G", "spelled": "h", "how": "A throaty h, from mild (Caribbean) to scraping (Spain). Lejos is \"LEH-hos\".", "examples": [{ "id": "is_far", "mark": "j" }, { "id": "pay_card", "mark": "j" }, { "id": "people_tip", "mark": "j" }] },
+    { "symbol": "ll  y", "name": "LL and Y", "spelled": "y", "how": "Both are y as in \"yes\" in most places. In Argentina and Uruguay they become sh or zh.", "examples": [{ "id": "how_get", "mark": "ll" }, { "id": "your_name", "mark": "ll" }, { "id": "me_too", "mark": "Y" }] },
+    { "symbol": "ñ", "name": "Eñe", "spelled": "ny", "how": "ny as in \"canyon\": baño is \"BAN-yoh\".", "examples": [{ "id": "bathroom", "mark": "ñ" }, { "id": "dont_speak_well", "mark": "ñ" }] },
+    { "symbol": "h", "name": "Silent H", "spelled": "(not written)", "how": "h is always silent: hola is \"OH-lah\".", "examples": [{ "id": "hello", "mark": "H" }, { "id": "speak_english", "mark": "H" }] },
+    { "symbol": "c  z", "name": "C and Z", "spelled": "s", "how": "z, and c before e or i, = s in Latin America. In most of Spain they're a soft th, so gracias sounds like \"GRAH-thyas\". Both are correct.", "examples": [{ "id": "thank_you", "mark": "c" }, { "id": "speak_slowly", "mark": "c" }, { "id": "been_america", "mark": "z" }] },
+    { "symbol": "b  v", "name": "B and V", "spelled": "b / v", "how": "They sound the same: a b at the start, and a soft b with lips barely touching between vowels.", "examples": [{ "id": "really", "mark": "v" }, { "id": "live_here", "mark": "V" }, { "id": "dont_speak_well", "mark": "b" }] }
+  ]
+}
