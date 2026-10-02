@@ -1,5 +1,6 @@
 import { loadContent, loadLanguage, tierIncludes, inCategory } from './data.js';
 import { store } from './store.js';
+import * as tts from './speech.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -47,6 +48,7 @@ const ICONS = {
   sound: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>',
   shuffle: '<path d="M3 7h3.5c4 0 6 10 10 10H21M3 17h3.5c1.6 0 2.8-1.6 3.8-3.6M14 9.6C15 7.6 16 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
 };
 const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
@@ -78,6 +80,12 @@ const tierLabel = (id) => (C.tiers.find((t) => t.id === id) || {}).label || id;
 const priorityLabel = (pr) => ({ core: 'Core', travel: 'Travel', explore: 'Explore' }[pr] || pr);
 
 /* ---------- shared pieces ---------- */
+
+function audioControls(p) {
+  if (!canSpeak()) return '';
+  return `<button class="pill-btn listen" data-action="speak" data-say="${esc(p.key)}" data-id="${esc(p.id)}" data-state="idle" aria-label="Listen">${icon('sound', 'i-play')}${icon('pause', 'i-pause')}<span>Listen</span></button>
+    <button class="pill-btn speed" data-action="speed" aria-label="Speech speed ${tts.speed().label}">${tts.speed().label}</button>`;
+}
 
 function nativeAttrs(lang) {
   return `lang="${esc(lang.meta.bcp47)}" dir="${esc(lang.direction)}"`;
@@ -111,8 +119,8 @@ function phraseCard(p, { compact = false } = {}) {
     ${native}
     ${notes.length ? `<div class="notes">${notes.join('')}</div>` : ''}
     ${p.missing ? '' : `<div class="card-actions">
-      ${canSpeak() ? `<button class="pill-btn" data-action="speak">${icon('sound')}<span>Listen</span></button>` : ''}
-      <button class="pill-btn learn ${learned ? 'on' : ''}" data-action="learned" aria-pressed="${learned}">${icon('check')}<span>${learned ? 'Learned' : 'Mark learned'}</span></button>
+      ${audioControls(p)}
+      <button class="pill-btn learn ${learned ? 'on' : ''}" data-action="learned" aria-pressed="${learned}">${icon('check')}<span>Learned</span></button>
     </div>`}
   </article>`;
 }
@@ -155,6 +163,7 @@ function bottomNav(active) {
 
 function page(active, body, hdr = {}) {
   $app.innerHTML = `${header(hdr)}<main class="main">${body}</main>${bottomNav(active)}`;
+  tts.syncButtons();
 }
 
 /* ---------- views ---------- */
@@ -233,9 +242,10 @@ function viewDashboard() {
     ${L.generalNotes.length ? `<section class="block about">
       <h2>About this ${lang.direction === 'rtl' ? 'dialect' : 'set'}</h2>
       ${L.generalNotes.map((n) => `<p><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
-      ${lang.meta.tts_note ? `<p><span class="note-k">audio</span>${esc(lang.meta.tts_note)}</p>` : ''}
     </section>` : ''}
+    ${audioBlock()}
   `);
+  fillVoiceSelect();
 }
 
 function viewPhrases(query) {
@@ -436,8 +446,8 @@ function drawPractice() {
       <button class="fc-btn got" data-action="got" ${s.flipped ? '' : 'disabled'}>Got it</button>
     </div>
     <div class="fc-extra">
-      ${canSpeak() ? `<button class="pill-btn" data-action="speak-current">${icon('sound')}<span>Listen</span></button>` : ''}
-      <button class="pill-btn learn ${learned ? 'on' : ''}" data-action="learned-current">${icon('check')}<span>${learned ? 'Learned' : 'Mark learned'}</span></button>
+      ${audioControls(p)}
+      <button class="pill-btn learn ${learned ? 'on' : ''}" data-action="learned-current">${icon('check')}<span>Learned</span></button>
     </div>
   `, { back });
 }
@@ -445,21 +455,54 @@ function drawPractice() {
 /* ---------- speech (native device voices only) ---------- */
 
 function canSpeak() {
-  return !!(L && L.lang.meta.tts && 'speechSynthesis' in window);
+  return !!(L && L.lang.meta.tts && tts.speechSupported);
 }
 
-function speak(text) {
-  if (!canSpeak() || !text) return;
-  const lang = L.lang.meta.bcp47;
-  const u = new SpeechSynthesisUtterance(text.replace(/_{2,}/g, ' … '));
-  u.lang = lang;
-  const voices = speechSynthesis.getVoices();
-  const base = lang.split('-')[0];
-  u.voice = voices.find((v) => v.lang.replace('_', '-') === lang) || voices.find((v) => v.lang.startsWith(base)) || null;
-  u.rate = 0.85;
-  speechSynthesis.cancel();
-  speechSynthesis.speak(u);
+function speakPhrase(id) {
+  const p = L.byId.get(id);
+  if (p) tts.toggle(p.key, p.target, L.lang.code, L.lang.meta.bcp47);
 }
+
+// Voice + speed picker on the language dashboard.
+function audioBlock() {
+  const lang = L.lang;
+  if (!canSpeak()) {
+    return lang.meta.tts_note ? `<section class="block about"><h2>Audio</h2><p>${esc(lang.meta.tts_note)}</p></section>` : '';
+  }
+  return `<section class="block about audio">
+    <h2>Audio</h2>
+    <label class="field"><span>Voice</span><select id="voice" class="select"></select></label>
+    <div class="field"><span>Speed</span><div class="seg">${tts.SPEEDS.map((sp) =>
+      `<button class="seg-btn ${sp.id === tts.speed().id ? 'on' : ''}" data-action="set-speed" data-speed="${sp.id}">${sp.label}</button>`).join('')}</div></div>
+    <p class="tip">Device voices can sound robotic. For a more natural voice on iPhone: Settings → Accessibility → Spoken Content → Voices → ${esc(lang.name.replace('European ', ''))}, then download a voice marked <b>Enhanced</b> or <b>Premium</b>. It will show up here and be picked automatically.</p>
+  </section>`;
+}
+
+function fillVoiceSelect() {
+  const sel = document.getElementById('voice');
+  if (!sel || !L) return;
+  const list = tts.voicesFor(L.lang.meta.bcp47);
+  const saved = (store.prefs().voices || {})[L.lang.code];
+  if (!list.length) {
+    sel.innerHTML = '<option>No voice installed for this language</option>';
+    sel.disabled = true;
+    return;
+  }
+  sel.disabled = false;
+  const current = list.find((v) => v.voiceURI === saved) || list[0];
+  sel.innerHTML = list.map((v, i) =>
+    `<option value="${esc(v.voiceURI)}" ${v === current ? 'selected' : ''}>${esc(v.name)} (${esc(v.lang)})${i === 0 ? ' · best' : ''}</option>`).join('');
+}
+
+tts.onVoices(fillVoiceSelect);
+
+document.addEventListener('change', (e) => {
+  if (e.target.id !== 'voice' || !L) return;
+  const voices = { ...(store.prefs().voices || {}), [L.lang.code]: e.target.value };
+  store.setPref('voices', voices);
+  const sample = L.byId.get('hello');
+  tts.preview(L.lang.code, L.lang.meta.bcp47, e.target.value, sample && !sample.missing ? sample.target : L.lang.native_name);
+});
 
 /* ---------- events ---------- */
 
@@ -485,10 +528,16 @@ document.addEventListener('click', (e) => {
     const on = store.isLearned(key);
     btn.classList.toggle('on', on);
     btn.setAttribute('aria-pressed', on);
-    btn.querySelector('span').textContent = on ? 'Learned' : 'Mark learned';
+    btn.querySelector('span').textContent = 'Learned';
     card.classList.toggle('is-learned', on);
-  } else if (a === 'speak' && key) {
-    speak(L.byId.get(card.dataset.id)?.target);
+  } else if (a === 'speak') {
+    speakPhrase(btn.dataset.id);
+  } else if (a === 'speed') {
+    tts.cycleSpeed();
+  } else if (a === 'set-speed') {
+    store.setPref('speed', btn.dataset.speed);
+    document.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('on', b === btn));
+    tts.syncButtons();
   } else if (a === 'tier') {
     store.setPref('tier', btn.dataset.tier);
     practice = null;
@@ -521,8 +570,6 @@ document.addEventListener('click', (e) => {
   } else if (a === 'restart') {
     Object.assign(practice, { queue: shuffle(practice.all), done: 0, again: 0, flipped: false });
     drawPractice();
-  } else if (a === 'speak-current') {
-    speak(practice.queue[0]?.target);
   } else if (a === 'learned-current') {
     store.toggleLearned(practice.queue[0].key);
     drawPractice();
@@ -539,6 +586,7 @@ document.addEventListener('keydown', (e) => {
 /* ---------- router ---------- */
 
 async function route() {
+  tts.stop();
   const { parts, query } = parseRoute();
   const [code, section, arg] = parts;
 
