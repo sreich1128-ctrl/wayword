@@ -334,7 +334,7 @@ function patternCard(p) {
     ${subs.length ? `<div class="subs"><p class="subs-k">Fill the blank</p><div class="sub-chips">${subs.map((s) =>
       `<span class="sub"><b ${nativeAttrs(lang)}>${esc(s.target)}</b><i data-peek="pron">${esc(s.pronunciation_easy || '')}</i><em data-peek="en">${esc(s.english)}</em></span>`).join('')}</div></div>` : ''}
     ${related.length ? `<div class="related"><p class="subs-k">Built on this</p>${related.map((r) =>
-      `<a class="rel" href="#/${lang.code}/phrases?q=${encodeURIComponent(r.english)}"><b ${nativeAttrs(lang)}>${withSlots(r.target)}</b><span data-peek="en">${withSlots(r.english)}</span></a>`).join('')}</div>` : ''}
+      `<a class="rel" href="#/${lang.code}/phrases?q=${encodeURIComponent(r.english)}"><b ${nativeAttrs(lang)}>${withSlots(r.target)}</b><i class="rel-pron" data-peek="pron">${withSlots(r.pron)}</i><span data-peek="en">${withSlots(r.english)}</span></a>`).join('')}</div>` : ''}
   </div>`;
 }
 

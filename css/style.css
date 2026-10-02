@@ -350,6 +350,8 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .rel:first-of-type { border-top: 0; }
 .rel b { font-family: var(--font-native); font-size: 18px; }
 .rel b[dir="rtl"] { text-align: right; }
+.rel-pron { font-size: 15px; font-style: normal; font-weight: 600; color: var(--accent-ink); }
+.rel b[dir="rtl"] + .rel-pron { text-align: right; }
 .rel span { font-size: 13px; color: var(--muted); }
 .sub-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .sub { display: flex; flex-direction: column; background: var(--surface); border-radius: 12px; padding: 6px 10px; }
