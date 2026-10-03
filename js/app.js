@@ -1,6 +1,8 @@
 import { loadContent, loadLanguage, loadSounds, tierIncludes, inCategory } from './data.js';
 import { store } from './store.js';
 import * as tts from './speech.js';
+import * as mic from './speak.js';
+import { shortVoiceName } from './voices.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -43,13 +45,20 @@ const ICONS = {
   puzzle: '<path d="M10 4h4v3a2 2 0 1 0 4 0V4h2v6h-3a2 2 0 1 0 0 4h3v6h-6v-3a2 2 0 1 0-4 0v3H4v-6h3a2 2 0 1 0 0-4H4V4h6Z"/>',
   cards: '<rect x="3" y="6" width="13" height="15" rx="2"/><path d="M8 3h11a2 2 0 0 1 2 2v13"/>',
   back: '<path d="M15 5 8 12l7 7"/>',
+  chev: '<path d="m9 5 7 7-7 7"/>',
   star: '<path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5Z"/>',
   check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
   ear: '<path d="M7 9a5 5 0 0 1 10 0c0 3-3 3.5-3 6.5a2.5 2.5 0 0 1-5 0"/><path d="M10 9.5a2 2 0 0 1 4 0"/>',
-  sound: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>',
+  play: '<path d="M8 5.5v13l10.5-6.5L8 5.5Z"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
+  replay: '<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v5h5"/>',
+  loop: '<path d="M17 3l3 3-3 3"/><path d="M4 11V9a3 3 0 0 1 3-3h13"/><path d="M7 21l-3-3 3-3"/><path d="M20 13v2a3 3 0 0 1-3 3H4"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/>',
+  stop: '<rect x="6.5" y="6.5" width="11" height="11" rx="2"/>',
+  person: '<circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',
+  x: '<path d="M6 6l12 12M18 6 6 18"/>',
   shuffle: '<path d="M3 7h3.5c4 0 6 10 10 10H21M3 17h3.5c1.6 0 2.8-1.6 3.8-3.6M14 9.6C15 7.6 16 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/>',
-  pause: '<path d="M8 5v14M16 5v14"/>',
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
 };
 const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
@@ -62,7 +71,7 @@ function applyTheme(lang) {
     root.style.setProperty('--accent', lang.meta.accent);
     root.style.setProperty('--accent-2', lang.meta.accent2);
     root.dataset.motif = lang.meta.motif || '';
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', lang.meta.accent);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', getComputedStyle(root).getPropertyValue('--bg').trim() || '#f6f4ef');
   } else {
     root.style.removeProperty('--accent');
     root.style.removeProperty('--accent-2');
@@ -82,65 +91,74 @@ const priorityLabel = (pr) => ({ core: 'Core', travel: 'Travel', explore: 'Explo
 
 /* ---------- shared pieces ---------- */
 
-function audioControls(p) {
-  if (!canSpeak()) return '';
-  return `<button class="pill-btn listen" data-action="speak" data-say="${esc(p.key)}" data-id="${esc(p.id)}" data-state="idle" aria-label="Listen">${icon('sound', 'i-play')}${icon('pause', 'i-pause')}<span>Listen</span></button>
-    <button class="pill-btn speed" data-action="speed" aria-label="Speech speed ${tts.speed().label}">${tts.speed().label}</button>`;
-}
-
 function nativeAttrs(lang) {
   return `lang="${esc(lang.meta.bcp47)}" dir="${esc(lang.direction)}"`;
 }
 
-function phraseCard(p, { compact = false } = {}) {
-  const lang = L.lang;
-  const cat = C.categoryById.get(p.category);
+const langCtx = () => ({ code: L.lang.code, bcp47: L.lang.meta.bcp47, regions: L.lang.meta.voice_regions || [] });
+const speechItem = (p) => ({ key: p.key, id: p.id, text: p.target, lang: langCtx() });
+const canSpeak = () => !!(L && L.lang.meta.tts && tts.speechSupported);
+const canPracticeAloud = () => mic.canRecord || mic.canRecognize;
+
+// Every phrase, everywhere, reads the same way: native script, then the easy
+// pronunciation, then the meaning. `nativeHtml` lets a caller add highlights.
+function phraseLines(p, { size = '', nativeHtml } = {}) {
+  if (p.missing) return '<p class="native missing">Not in the dataset yet</p>';
+  return `<p class="native ${size}" ${nativeAttrs(L.lang)}>${nativeHtml ?? withSlots(p.target)}</p>
+    <p class="pron ${size}" data-peek="pron">${withSlots(p.pron)}</p>
+    <p class="en ${size}" data-peek="en">${withSlots(p.english)}</p>`;
+}
+
+function listenBtn(p, cls = '') {
+  if (!canSpeak() || p.missing) return '';
+  return `<button class="round-btn listen ${cls}" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>`;
+}
+
+function micBtn(p, cls = '') {
+  if (!canPracticeAloud() || p.missing) return '';
+  return `<button class="round-btn ${cls}" data-action="say-it" data-id="${esc(p.id)}" aria-label="Say it yourself">${icon('mic')}</button>`;
+}
+
+function phraseCard(p) {
   const fav = store.isFav(p.key);
   const learned = store.isLearned(p.key);
   const notes = [];
-  if (p.regional_note) notes.push(`<p class="note note-regional"><span class="note-k">${icon('globe')} Regional</span>${esc(p.regional_note)}</p>`);
+  if (p.regional_note) notes.push(`<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>`);
   if (p.usage_note) notes.push(`<p class="note"><span class="note-k">Usage</span>${esc(p.usage_note)}</p>`);
-  if (p.example) notes.push(`<p class="note"><span class="note-k">Example</span><span ${nativeAttrs(lang)}>${esc(p.example)}</span></p>`);
-  if (p.response) notes.push(`<p class="note"><span class="note-k">Likely reply</span><span ${nativeAttrs(lang)}>${esc(p.response)}</span></p>`);
-
-  const native = p.missing
-    ? '<p class="native missing">Not in the dataset yet</p>'
-    : `<p class="native" ${nativeAttrs(lang)}>${withSlots(p.target)}</p>
-       <p class="pron" data-peek="pron">${withSlots(p.pron)}</p>`;
+  if (p.example) notes.push(`<p class="note"><span class="note-k">Example</span><span ${nativeAttrs(L.lang)}>${esc(p.example)}</span></p>`);
+  if (p.response) notes.push(`<p class="note"><span class="note-k">Likely reply</span><span ${nativeAttrs(L.lang)}>${esc(p.response)}</span></p>`);
 
   return `
-  <article class="card ${p.type === 'pattern' ? 'is-pattern' : ''} ${learned ? 'is-learned' : ''} ${compact ? 'compact' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
-    <div class="card-top">
-      <span class="chip-mini">${cat ? cat.icon : ''} ${esc(cat ? cat.label : p.category)}</span>
-      <span class="prio prio-${esc(p.priority)}">${esc(priorityLabel(p.priority))}</span>
-      ${p.type === 'pattern' ? '<span class="prio prio-pattern">Pattern</span>' : ''}
-      <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Favorite">${icon('star')}</button>
+  <article class="card ${p.type === 'pattern' ? 'is-pattern' : ''} ${learned ? 'is-learned' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
+    <div class="card-meta">
+      <span>${p.type === 'pattern' ? 'Pattern · ' : ''}${esc(priorityLabel(p.priority))}</span>
+      <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Save">${icon('star')}</button>
     </div>
-    <p class="en" data-peek="en">${withSlots(p.english)}</p>
-    ${native}
+    ${phraseLines(p)}
     ${notes.length ? `<div class="notes">${notes.join('')}</div>` : ''}
     ${p.missing ? '' : `<div class="card-actions">
-      ${audioControls(p)}
-      <button class="pill-btn learn ${learned ? 'on' : ''}" data-action="learned" aria-pressed="${learned}">${icon('check')}<span>Learned</span></button>
+      ${listenBtn(p)}${micBtn(p)}
+      <button class="learn ${learned ? 'on' : ''}" data-action="learned" aria-pressed="${learned}">${icon('check')}<span>${learned ? 'Learned' : 'Learn'}</span></button>
     </div>`}
   </article>`;
 }
 
 function tierBar() {
-  return `<div class="tierbar" role="tablist" aria-label="Level">
-    ${C.tiers.map((t) => {
-      const n = L.phrases.filter((p) => t.includes.includes(p.priority)).length;
-      return `<button role="tab" class="tier-btn ${t.id === tier() ? 'on' : ''}" data-action="tier" data-tier="${t.id}" aria-selected="${t.id === tier()}">
-        <span>${esc(t.label)}</span><small>${n}</small></button>`;
+  const t = C.tiers.find((x) => x.id === tier());
+  return `<div class="tierwrap"><div class="tierbar" role="tablist" aria-label="Level">
+    ${C.tiers.map((x) => {
+      const n = L.phrases.filter((p) => x.includes.includes(p.priority)).length;
+      return `<button role="tab" class="tier-btn ${x.id === tier() ? 'on' : ''}" data-action="tier" data-tier="${x.id}" aria-selected="${x.id === tier()}">
+        <span>${esc(x.label)}</span><small>${n}</small></button>`;
     }).join('')}
-  </div>`;
+  </div>${t ? `<p class="tier-blurb">${esc(t.blurb)}</p>` : ''}</div>`;
 }
 
 function header({ title, back } = {}) {
   const p = store.prefs();
   const lang = L && L.lang;
   return `<header class="topbar">
-    ${back ? `<a class="icon-btn" href="${back}" aria-label="Back">${icon('back')}</a>` : lang ? '' : `<a class="brand" href="#/" aria-label="All languages">Wayword</a>`}
+    ${back ? `<a class="icon-btn quiet" href="${back}" aria-label="Back">${icon('back')}</a>` : lang ? '' : `<a class="brand" href="#/" aria-label="All languages">Wayword</a>`}
     ${lang ? `<a class="lang-chip" href="#/" title="Switch language"><span class="glyph" ${nativeAttrs(lang)}>${esc(lang.meta.glyph)}</span><span class="lang-chip-name">${esc(title || lang.name)}</span>${icon('globe', 'chip-switch')}</a>` : '<span></span>'}
     ${lang ? `<div class="toggles">
       <button class="tog ${p.showEnglish ? 'on' : ''}" data-action="toggle-en" aria-pressed="${p.showEnglish}" title="Show or hide English">EN</button>
@@ -164,8 +182,17 @@ function bottomNav(active) {
 
 function page(active, body, hdr = {}) {
   $app.innerHTML = `${header(hdr)}<main class="main">${body}</main>${bottomNav(active)}`;
-  tts.syncButtons();
+  syncListen();
 }
+
+const section = (title, body, extra = '') => `<section class="sect">${title ? `<div class="sect-head"><h2>${esc(title)}</h2>${extra}</div>` : ''}${body}</section>`;
+
+const row = ({ href, action, ic, emoji, title, sub, count, attrs = '' }) => {
+  const inner = `${ic ? `<span class="row-ic">${icon(ic)}</span>` : emoji ? `<span class="row-ic emoji">${emoji}</span>` : ''}
+    <span class="row-text"><span class="row-title">${title}</span>${sub ? `<span class="row-sub">${sub}</span>` : ''}</span>
+    ${count != null ? `<span class="row-count">${count}</span>` : ''}${icon('chev', 'row-chev')}`;
+  return href ? `<a class="row" href="${href}" ${attrs}>${inner}</a>` : `<button class="row" data-action="${action}" ${attrs}>${inner}</button>`;
+};
 
 /* ---------- views ---------- */
 
@@ -177,12 +204,12 @@ function viewHome() {
     <section class="home-hero">
       <p class="eyebrow">Your pocket travel phrasebook</p>
       <h1>Where are we<br>talking today?</h1>
-      ${last ? `<a class="continue" href="#/${encodeURIComponent(last.code)}" style="--accent:${last.meta.accent}">Continue with ${esc(last.name)} →</a>` : ''}
+      ${last ? `<a class="continue" href="#/${encodeURIComponent(last.code)}" style="--accent:${last.meta.accent}">Continue with ${esc(last.name)} ${icon('chev')}</a>` : ''}
     </section>
     <section class="lang-grid">
       ${C.languages.map((l) => {
         const learned = store.countFor('learned', l.code);
-        return `<a class="lang-card" href="#/${encodeURIComponent(l.code)}" style="--accent:${l.meta.accent};--accent-2:${l.meta.accent2}" data-motif="${esc(l.meta.motif || '')}">
+        return `<a class="lang-card" href="#/${encodeURIComponent(l.code)}" style="--accent:${l.meta.accent};--accent-2:${l.meta.accent2}">
           <span class="lang-glyph" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.meta.glyph)}</span>
           <span class="lang-native" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.native_name)}</span>
           <span class="lang-name">${esc(l.name)}</span>
@@ -196,19 +223,19 @@ function viewHome() {
 
 function viewDashboard() {
   const lang = L.lang;
+  const code = lang.code;
   const pool = L.phrases.filter(inTier);
   const learned = pool.filter((p) => store.isLearned(p.key)).length;
   const pct = pool.length ? Math.round((learned / pool.length) * 100) : 0;
-  const t = C.tiers.find((x) => x.id === tier());
-  const favs = store.countFor('fav', lang.code);
+  const favs = store.countFor('fav', code);
   const pick = shuffle(pool.filter((p) => !p.missing))[0];
+  const patterns = L.phrases.filter((p) => p.type === 'pattern' && inTier(p)).length;
 
   page('home', `
-    <section class="hero">
+    <section class="lang-hero">
       <div class="hero-text">
         <p class="eyebrow">${esc(lang.name)} · ${esc(lang.region)}</p>
         <h1 class="hero-native" ${nativeAttrs(lang)}>${esc(lang.native_name)}</h1>
-        <p class="hero-sub">${esc(t.blurb)}</p>
       </div>
       <div class="ring" style="--pct:${pct}" aria-label="${learned} of ${pool.length} learned">
         <strong>${learned}<small>/${pool.length}</small></strong><span>learned</span>
@@ -216,46 +243,58 @@ function viewDashboard() {
     </section>
     ${tierBar()}
 
-    <section class="quick">
-      <a class="quick-btn primary" href="#/${lang.code}/practice/run?dir=en">${icon('cards')}<span>English → ${esc(lang.native_name)}</span></a>
-      <a class="quick-btn" href="#/${lang.code}/practice/run?dir=target">${icon('cards')}<span><bdi>${esc(lang.native_name)}</bdi> → English</span></a>
-      <a class="quick-btn" href="#/${lang.code}/phrases?cat=saved">${icon('star')}<span>Saved <small>${favs}</small></span></a>
-      <a class="quick-btn" href="#/${lang.code}/sounds">${icon('ear')}<span>Sound guide</span></a>
-    </section>
+    ${section('Practice', `<div class="group">
+      ${row({ href: `#/${code}/practice/run?dir=en`, ic: 'cards', title: 'Flashcards', sub: `English → <bdi>${esc(lang.native_name)}</bdi>` })}
+      ${row({ href: `#/${code}/practice/run?dir=target`, ic: 'shuffle', title: 'Reverse flashcards', sub: `<bdi>${esc(lang.native_name)}</bdi> → English` })}
+      ${canPracticeAloud() ? row({ href: `#/${code}/practice/run?dir=speak`, ic: 'mic', title: 'Speak it', sub: 'See the English, say it aloud, hear it back' }) : ''}
+      ${row({ href: `#/${code}/sounds`, ic: 'ear', title: 'Sound guide', sub: 'The tricky sounds, and how to read the pronunciation' })}
+    </div>`)}
 
-    ${pick ? `<section class="block">
-      <div class="block-head"><h2>Phrase of the moment</h2><button class="link-btn" data-action="reroll">${icon('shuffle')} Another</button></div>
-      <div id="pick">${phraseCard(pick)}</div>
-    </section>` : ''}
+    ${pick ? section('Phrase of the moment', `<div id="pick">${phraseCard(pick)}</div>`, `<button class="link-btn" data-action="reroll">${icon('shuffle')} Another</button>`) : ''}
 
-    <section class="block">
-      <div class="block-head"><h2>Scenarios</h2><a class="link-btn" href="#/${lang.code}/scenarios">All</a></div>
-      <div class="scen-row">${C.scenarios.map((s) => `<a class="scen-btn" href="#/${lang.code}/scenario/${s.id}"><span class="scen-ic">${s.icon}</span>${esc(s.label)}</a>`).join('')}</div>
-    </section>
+    ${section('Where are you?', `<div class="scen-row">${C.scenarios.map((s) => `<a class="scen-btn" href="#/${code}/scenario/${s.id}"><span class="scen-ic">${s.icon}</span>${esc(s.label)}</a>`).join('')}</div>`,
+      `<a class="link-btn" href="#/${code}/scenarios">All</a>`)}
 
-    <section class="block">
-      <div class="block-head"><h2>Categories</h2></div>
-      <div class="cat-grid">${C.categories.map((c) => {
+    ${section('Browse', `<div class="group">
+      ${row({ href: `#/${code}/patterns`, ic: 'puzzle', title: 'Power patterns', count: patterns })}
+      ${row({ href: `#/${code}/phrases?cat=saved`, ic: 'star', title: 'Saved', count: favs })}
+    </div>
+    <div class="group">
+      ${C.categories.filter((c) => c.id !== 'power_patterns').map((c) => {
         const n = L.phrases.filter((p) => inTier(p) && inCategory(C, p, c.id)).length;
-        return `<a class="cat-tile ${n ? '' : 'empty'}" href="#/${lang.code}/phrases?cat=${c.id}"><span class="cat-ic">${c.icon}</span><span class="cat-label">${esc(c.label)}</span><small>${n}</small></a>`;
-      }).join('')}</div>
-    </section>
+        return row({ href: `#/${code}/phrases?cat=${c.id}`, emoji: c.icon, title: esc(c.label), count: n, attrs: n ? '' : 'data-empty' });
+      }).join('')}
+    </div>`)}
 
-    ${L.generalNotes.length ? `<section class="block about">
-      <h2>About this ${lang.direction === 'rtl' ? 'dialect' : 'set'}</h2>
-      ${L.generalNotes.map((n) => `<p><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
-    </section>` : ''}
-    ${audioBlock()}
+    ${canSpeak() || lang.meta.tts_note ? section('Audio', audioGroup()) : ''}
+
+    ${L.generalNotes.length ? section(`About this ${lang.direction === 'rtl' ? 'dialect' : 'set'}`, `<div class="group notes-group">
+      ${L.generalNotes.map((n) => `<p class="about-row"><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
+    </div>`) : ''}
   `);
-  fillVoiceSelect();
 }
+
+function audioGroup() {
+  const lang = L.lang;
+  if (!canSpeak()) return `<div class="group notes-group"><p class="about-row">${esc(lang.meta.tts_note || 'Audio is off for this language.')}</p></div>`;
+  const v = tts.chosenVoice(langCtx());
+  return `<div class="group">
+    ${row({ action: 'voice-sheet', ic: 'person', title: 'Voice', sub: v ? esc(shortVoiceName(v.name)) : 'No voice installed', attrs: 'id="voice-row"' })}
+    <div class="row static"><span class="row-ic">${icon('play')}</span><span class="row-text"><span class="row-title">Speed</span></span></div>
+    <div class="seg-wrap">${speedSeg()}</div>
+  </div>
+  ${lang.meta.tts_warning ? `<p class="callout">${esc(lang.meta.tts_warning)}</p>` : ''}`;
+}
+
+const speedSeg = () => `<div class="seg">${tts.SPEEDS.map((sp) =>
+  `<button class="seg-btn ${sp.id === tts.speed().id ? 'on' : ''}" data-action="set-speed" data-speed="${sp.id}">${sp.label}</button>`).join('')}</div>`;
 
 function viewPhrases(query) {
   const lang = L.lang;
   const cat = query.get('cat') || 'all';
   const q = (query.get('q') || '').trim();
   const chips = [
-    ['all', 'All', ''], ['saved', 'Saved', '★'], ['todo', 'Not learned', '○'],
+    ['all', 'All', ''], ['saved', 'Saved', '★'], ['todo', 'Not learned', ''],
     ...C.categories.map((c) => [c.id, c.label, c.icon]),
   ];
   page('phrases', `
@@ -291,12 +330,13 @@ function renderList(cat, q) {
     return;
   }
   el.innerHTML = `<p class="count">${items.length} phrase${items.length === 1 ? '' : 's'}</p>` + items.map((p) => phraseCard(p)).join('');
+  syncListen();
 }
 
 function viewScenarios() {
   const lang = L.lang;
   page('scenarios', `
-    <section class="page-head"><h1>Scenarios</h1><p>Pick where you are. Only the phrases that matter there.</p></section>
+    <section class="page-head"><h1>Where are you?</h1><p>Pick a place. You'll see only the phrases that matter there.</p></section>
     <div class="scen-grid">${C.scenarios.map((s) => {
       const n = s.concepts.filter((id) => L.byId.has(id) && inTier(L.byId.get(id))).length;
       return `<a class="scen-card" href="#/${lang.code}/scenario/${s.id}"><span class="scen-ic big">${s.icon}</span><strong>${esc(s.label)}</strong><small>${n} phrases</small></a>`;
@@ -316,7 +356,8 @@ function viewScenario(id, query) {
     <section class="page-head scen-head"><span class="scen-ic huge">${s.icon}</span><div><h1>${esc(s.label)}</h1><p>${shown.length} phrases${showAll ? ' · all levels' : ` · ${esc(tierLabel(tier()))}`}</p></div></section>
     ${s.note ? `<p class="callout">${esc(s.note)}</p>` : ''}
     <div class="scen-actions">
-      <a class="pill-btn solid" href="#/${lang.code}/practice/run?dir=en&scenario=${s.id}">${icon('cards')}<span>Practice this scene</span></a>
+      <a class="pill-btn" href="#/${lang.code}/practice/run?dir=en&scenario=${s.id}">${icon('cards')}<span>Flashcards</span></a>
+      ${canPracticeAloud() ? `<a class="pill-btn" href="#/${lang.code}/practice/run?dir=speak&scenario=${s.id}">${icon('mic')}<span>Speak it</span></a>` : ''}
     </div>
     <div class="list">${shown.map((p) => phraseCard(p)).join('')}</div>
     ${hidden > 0 ? `<a class="more-btn" href="#/${lang.code}/scenario/${s.id}?all=1">+${hidden} more at higher levels</a>` : ''}
@@ -330,10 +371,17 @@ function viewPatterns() {
   const anySubs = Object.values(C.patterns).some((x) => x.substitutions && x.substitutions[lang.code]?.length);
   page('patterns', `
     ${tierBar()}
-    <section class="page-head"><h1>Power Patterns</h1><p>Learn the frame once, then swap the blank to say new things.</p></section>
-    ${anySubs ? '' : '<p class="callout">Swap-in words aren’t in the dataset yet, so none are shown here. Below each pattern are the dataset phrases already built on it.</p>'}
+    <section class="page-head"><h1>Power patterns</h1><p>Learn the frame once, then swap the blank to say new things.</p></section>
+    ${anySubs ? '' : '<p class="callout">Swap-in words aren’t in the dataset yet. Under each pattern you’ll find dataset phrases already built on it.</p>'}
     <div class="list">${pats.map((p) => patternCard(p)).join('') || '<div class="empty-state">No patterns at this level. Try Travel 50.</div>'}</div>
   `);
+}
+
+function miniPhrase(p, { nativeHtml } = {}) {
+  return `<div class="mini" data-key="${esc(p.key)}">
+    <div class="mini-text">${phraseLines(p, { size: 'sm', nativeHtml })}</div>
+    <div class="mini-actions">${listenBtn(p, 'small')}${micBtn(p, 'small')}</div>
+  </div>`;
 }
 
 function patternCard(p) {
@@ -343,10 +391,9 @@ function patternCard(p) {
   const related = (conf.related || []).map((id) => L.byId.get(id)).filter((r) => r && !r.missing);
   return `<div class="pattern">
     ${phraseCard(p)}
-    ${subs.length ? `<div class="subs"><p class="subs-k">Fill the blank</p><div class="sub-chips">${subs.map((s) =>
+    ${subs.length ? `<div class="pattern-more"><p class="more-k">Fill the blank</p><div class="sub-chips">${subs.map((s) =>
       `<span class="sub"><b ${nativeAttrs(lang)}>${esc(s.target)}</b><i data-peek="pron">${esc(s.pronunciation_easy || '')}</i><em data-peek="en">${esc(s.english)}</em></span>`).join('')}</div></div>` : ''}
-    ${related.length ? `<div class="related"><p class="subs-k">Built on this</p>${related.map((r) =>
-      `<a class="rel" href="#/${lang.code}/phrases?q=${encodeURIComponent(r.english)}"><b ${nativeAttrs(lang)}>${withSlots(r.target)}</b><i class="rel-pron" data-peek="pron">${withSlots(r.pron)}</i><span data-peek="en">${withSlots(r.english)}</span></a>`).join('')}</div>` : ''}
+    ${related.length ? `<div class="pattern-more"><p class="more-k">Built on this</p>${related.map((r) => miniPhrase(r)).join('')}</div>` : ''}
   </div>`;
 }
 
@@ -368,10 +415,7 @@ async function viewSounds() {
   }
   page('home', `
     <section class="page-head"><h1>Sound guide</h1><p>${esc(g.intro)}</p></section>
-    <section class="about reading">
-      <h2>Reading the pronunciation line</h2>
-      <ul>${(g.reading || []).map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
-    </section>
+    ${section('Reading the pronunciation line', `<div class="group notes-group"><ul class="reading">${(g.reading || []).map((r) => `<li>${esc(r)}</li>`).join('')}</ul></div>`)}
     <div class="list sounds">${g.sounds.map((snd) => `
       <article class="sound">
         <div class="sound-head">
@@ -382,21 +426,15 @@ async function viewSounds() {
         <div class="sound-ex">${snd.examples.map((ex) => {
           const p = L.byId.get(ex.id);
           if (!p || p.missing) return '';
-          return `<div class="ex" data-key="${esc(p.key)}">
-            <div class="ex-text">
-              <b class="ex-native" ${nativeAttrs(lang)}>${markText(p.target, ex.mark, g.highlight !== false)}</b>
-              <i class="ex-pron" data-peek="pron">${withSlots(p.pron)}</i>
-              <span class="ex-en" data-peek="en">${withSlots(p.english)}</span>
-            </div>
-            ${canSpeak() ? `<button class="icon-btn listen ex-play" data-action="speak" data-say="${esc(p.key)}" data-id="${esc(p.id)}" data-state="idle" aria-label="Listen">${icon('sound', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
-          </div>`;
+          return miniPhrase(p, { nativeHtml: markText(p.target, ex.mark, g.highlight !== false) });
         }).join('')}</div>
       </article>`).join('')}
     </div>
-    ${canSpeak() ? `<div class="sound-speed">Speed <button class="pill-btn speed" data-action="speed">${tts.speed().label}</button></div>` : ''}
     <p class="fine">${esc(g.source)}</p>
   `, { back: `#/${lang.code}` });
 }
+
+/* ---------- practice ---------- */
 
 function viewPracticeSetup() {
   const lang = L.lang;
@@ -405,16 +443,17 @@ function viewPracticeSetup() {
   const todo = pool.filter((p) => !store.isLearned(p.key)).length;
   page('practice', `
     ${tierBar()}
-    <section class="page-head"><h1>Practice</h1><p>Five minutes, one thumb. Tap the card to flip it.</p></section>
+    <section class="page-head"><h1>Practice</h1><p>Five minutes, one thumb.</p></section>
     <form id="setup" class="setup">
-      <fieldset><legend>Direction</legend>
-        <label class="opt"><input type="radio" name="dir" value="en" checked><span>English → <bdi>${esc(lang.native_name)}</bdi></span></label>
-        <label class="opt"><input type="radio" name="dir" value="target"><span><bdi>${esc(lang.native_name)}</bdi> → English</span></label>
+      <fieldset><legend>How</legend>
+        <label class="opt"><input type="radio" name="dir" value="en" checked><span><b>Flashcards</b><small>English → <bdi>${esc(lang.native_name)}</bdi></small></span></label>
+        <label class="opt"><input type="radio" name="dir" value="target"><span><b>Reverse</b><small><bdi>${esc(lang.native_name)}</bdi> → English</small></span></label>
+        ${canPracticeAloud() ? `<label class="opt"><input type="radio" name="dir" value="speak"><span><b>Speak it</b><small>Say it aloud, then hear it back</small></span></label>` : ''}
       </fieldset>
       <fieldset><legend>Deck</legend>
-        <label class="opt"><input type="radio" name="deck" value="all" checked><span>All of ${esc(tierLabel(tier()))} <small>${pool.length}</small></span></label>
-        <label class="opt"><input type="radio" name="deck" value="todo"><span>Not learned yet <small>${todo}</small></span></label>
-        <label class="opt"><input type="radio" name="deck" value="saved" ${favs ? '' : 'disabled'}><span>Saved ★ <small>${favs}</small></span></label>
+        <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All of ${esc(tierLabel(tier()))}</b><small>${pool.length}</small></span></label>
+        <label class="opt"><input type="radio" name="deck" value="todo"><span><b>Not learned yet</b><small>${todo}</small></span></label>
+        <label class="opt"><input type="radio" name="deck" value="saved" ${favs ? '' : 'disabled'}><span><b>Saved</b><small>${favs}</small></span></label>
       </fieldset>
       <fieldset><legend>Category</legend>
         <select name="cat" class="select"><option value="">Any category</option>${C.categories.map((c) => `<option value="${c.id}">${c.icon} ${esc(c.label)}</option>`).join('')}</select>
@@ -450,9 +489,16 @@ function viewPracticeRun(query) {
   const sig = `${L.lang.code}|${query.toString()}|${tier()}`;
   if (!practice || practice.sig !== sig) {
     const deck = buildDeck(query);
-    practice = { sig, dir: query.get('dir') === 'target' ? 'target' : 'en', all: deck, queue: deck.slice(), total: deck.length, done: 0, again: 0, flipped: false };
+    const dir = ['target', 'speak'].includes(query.get('dir')) ? query.get('dir') : 'en';
+    practice = { sig, dir, all: deck, queue: deck.slice(), total: deck.length, done: 0, again: 0, flipped: false, take: null };
   }
   drawPractice();
+}
+
+function nextCard() {
+  practice.flipped = false;
+  practice.take = null;
+  tts.stop();
 }
 
 function drawPractice() {
@@ -476,40 +522,236 @@ function drawPractice() {
   const learned = store.isLearned(p.key);
   const nativeBlock = `<p class="native fc-native" ${nativeAttrs(lang)}>${withSlots(p.target)}</p><p class="pron fc-pron" data-peek="pron">${withSlots(p.pron)}</p>`;
   const englishBlock = `<p class="fc-en">${withSlots(p.english)}</p>`;
-  const front = s.dir === 'en' ? englishBlock : nativeBlock;
-  const backSide = s.dir === 'en' ? nativeBlock : englishBlock;
-  const notes = p.regional_note ? `<p class="note note-regional"><span class="note-k">${icon('globe')} Regional</span>${esc(p.regional_note)}</p>` : '';
+  const notes = p.regional_note ? `<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>` : '';
   const pct = Math.round((s.done / s.total) * 100);
+  const label = { en: `Say it in ${esc(lang.name)}`, target: 'What does it mean?', speak: `Say it aloud in ${esc(lang.name)}` }[s.dir];
+
+  let face;
+  if (s.dir === 'speak') {
+    face = `<span class="fc-label">${label}</span>${englishBlock}
+      ${s.flipped
+        ? `<span class="fc-divider"></span>${nativeBlock}${s.take ? takeResult(p, s.take) : ''}${notes}`
+        : `<button class="mic-big ${s.recording ? 'rec' : ''}" data-action="pr-mic" aria-label="${s.recording ? 'Stop' : 'Start speaking'}">${icon(s.recording ? 'stop' : 'mic')}</button>
+           <span class="fc-hint">${s.recording ? (s.interim ? `<bdi ${nativeAttrs(lang)}>${esc(s.interim)}</bdi>` : 'Listening… tap to stop') : 'Tap the mic and say it'}</span>`}`;
+  } else {
+    const front = s.dir === 'en' ? englishBlock : nativeBlock;
+    const backSide = s.dir === 'en' ? nativeBlock : englishBlock;
+    face = `<span class="fc-label">${label}</span>${front}
+      ${s.flipped ? `<span class="fc-divider"></span>${backSide}${notes}` : '<span class="fc-hint">Tap to reveal</span>'}`;
+  }
 
   page('practice', `
     <div class="fc-progress"><span style="width:${pct}%"></span></div>
-    <p class="fc-meta">${s.done} / ${s.total} · ${s.dir === 'en' ? 'English → ' + esc(lang.native_name) : esc(lang.native_name) + ' → English'}</p>
-    <div class="flashcard ${s.flipped ? 'flipped' : ''}" data-action="flip" role="button" tabindex="0" aria-live="polite">
-      <div class="fc-face">
-        <span class="fc-label">${s.dir === 'en' ? 'Say it in ' + esc(lang.name) : 'What does it mean?'}</span>
-        ${front}
-        ${s.flipped ? `<span class="fc-divider"></span>${backSide}${notes}` : '<span class="fc-hint">Tap to reveal</span>'}
-      </div>
+    <p class="fc-meta">${s.done} / ${s.total}</p>
+    <div class="flashcard ${s.flipped ? 'flipped' : ''}" ${s.dir === 'speak' && !s.flipped ? '' : 'data-action="flip" role="button" tabindex="0"'} aria-live="polite">
+      <div class="fc-face">${face}</div>
     </div>
+    ${s.dir === 'speak' && !s.flipped ? `<button class="link-btn center" data-action="flip">Show the answer without speaking</button>` : ''}
     <div class="fc-actions ${s.flipped ? '' : 'disabled'}">
       <button class="fc-btn again" data-action="again" ${s.flipped ? '' : 'disabled'}>Again</button>
       <button class="fc-btn got" data-action="got" ${s.flipped ? '' : 'disabled'}>Got it</button>
     </div>
     <div class="fc-extra">
-      ${audioControls(p)}
-      <button class="pill-btn learn ${learned ? 'on' : ''}" data-action="learned-current">${icon('check')}<span>Learned</span></button>
+      ${listenBtn(p)}${s.dir !== 'speak' ? micBtn(p) : ''}
+      <button class="learn ${learned ? 'on' : ''}" data-action="learned-current">${icon('check')}<span>${learned ? 'Learned' : 'Learn'}</span></button>
     </div>
   `, { back });
 }
 
-/* ---------- speech (native device voices only) ---------- */
+/* ---------- speaking: record, transcribe, compare ---------- */
 
-function canSpeak() {
-  return !!(L && L.lang.meta.tts && tts.speechSupported);
+let capture = null;
+
+// What you said vs the phrase: each word marked heard / nearly / not heard,
+// plus buttons to hear the native audio, your take, or both in a row.
+function takeResult(p, take) {
+  const lang = L.lang;
+  let verdict = '';
+  let words = '';
+  if (take.error === 'mic-blocked') {
+    verdict = 'Microphone access is blocked. Allow it in your browser settings to practise speaking.';
+  } else if (mic.canRecognize && take.transcript) {
+    const r = mic.compare(p.target, take.transcript);
+    const pct = Math.round(r.score * 100);
+    verdict = pct >= 80 ? 'Clear. Your phone understood almost every word.' : pct >= 50 ? 'Close. Some words came through, keep going.' : 'Not much came through. Listen once more, then try again.';
+    words = `<p class="heard-words" ${nativeAttrs(lang)}>${r.words.map((w) => `<span class="w-${w.status}">${withSlots(w.raw)}</span>`).join(' ')}</p>
+      <p class="heard">Your phone heard: <bdi ${nativeAttrs(lang)}>${esc(take.transcript)}</bdi></p>`;
+  } else if (mic.canRecognize) {
+    verdict = 'Your phone didn’t catch any words. Try again a little closer and louder.';
+  } else {
+    verdict = 'Compare your recording with the native audio.';
+  }
+  const note = L.lang.code === 'ar-levantine' && take.transcript ? '<p class="heard">Phone speech recognition writes formal Arabic, so dialect words may show up spelled differently even when you said them right.</p>' : '';
+  return `<div class="take">
+    <p class="take-verdict">${verdict}</p>${words}${note}
+    <div class="take-actions">
+      ${canSpeak() ? `<button class="pill-btn" data-action="hear-native" data-id="${esc(p.id)}">${icon('play')}<span>Native</span></button>` : ''}
+      ${take.url ? `<button class="pill-btn" data-action="hear-me">${icon('person')}<span>You</span></button>` : ''}
+      ${take.url && canSpeak() ? `<button class="pill-btn" data-action="hear-both" data-id="${esc(p.id)}">${icon('loop')}<span>Both</span></button>` : ''}
+    </div>
+  </div>`;
 }
 
-const warned = new Set();
+function startCapture(onUpdate, onDone) {
+  tts.stop();
+  const lang = L.lang;
+  capture = mic.capture({
+    asrLang: lang.meta.asr || lang.meta.bcp47,
+    onInterim: (text) => onUpdate(text),
+  });
+  capture.done.then((take) => { capture = null; onDone(take); });
+}
 
+let lastTakeUrl = null;
+function playTake(url, after) {
+  if (!url) return;
+  const a = new Audio(url);
+  a.onended = () => after?.();
+  a.play().catch(() => {});
+}
+
+/* the "Say it" sheet */
+
+let sheetPhrase = null;
+let sheetTake = null;
+let sheetRec = false;
+let sheetInterim = '';
+
+function openSayIt(p) {
+  sheetPhrase = p;
+  sheetTake = null;
+  sheetRec = false;
+  sheetInterim = '';
+  openSheet(sayItHtml());
+}
+
+function sayItHtml() {
+  const p = sheetPhrase;
+  return `<div class="sheet-head"><h2>Say it</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
+    <div class="say-phrase">${phraseLines(p, { size: 'lg' })}</div>
+    <ol class="steps">
+      <li><span class="step-n">1</span><span class="step-t">Listen</span>
+        <div class="step-body">${listenBtn(p)}${speedSeg()}</div></li>
+      <li><span class="step-n">2</span><span class="step-t">Your turn</span>
+        <div class="step-body">
+          <button class="mic-big ${sheetRec ? 'rec' : ''}" data-action="sheet-mic" aria-label="${sheetRec ? 'Stop' : 'Start speaking'}">${icon(sheetRec ? 'stop' : 'mic')}</button>
+          <span class="mic-hint">${sheetRec ? (sheetInterim ? `<bdi ${nativeAttrs(L.lang)}>${esc(sheetInterim)}</bdi>` : 'Listening… tap to stop') : sheetTake ? 'Tap to try again' : 'Tap and say the phrase'}</span>
+        </div></li>
+      ${sheetTake ? `<li><span class="step-n">3</span><span class="step-t">Compare</span><div class="step-body full">${takeResult(p, sheetTake)}</div></li>` : ''}
+    </ol>`;
+}
+
+function redrawSheet() {
+  const panel = document.querySelector('#sheet .sheet-panel');
+  if (panel && sheetPhrase) { panel.innerHTML = sayItHtml(); syncListen(); }
+}
+
+/* the voice sheet */
+
+let voiceFilter = 'all';
+
+function voiceSheetHtml() {
+  const list = tts.voicesFor(langCtx());
+  const current = tts.chosenVoice(langCtx());
+  const hasGender = list.some((x) => x.gender !== 'unknown');
+  const shown = list.filter((x) => voiceFilter === 'all' || x.gender === voiceFilter);
+  const tag = (x) => [x.gender !== 'unknown' ? x.gender : '', x.levantine ? 'Levantine' : '', /premium|enhanced|natural|neural/i.test(x.voice.name) ? 'natural' : '', x.voice.lang].filter(Boolean).join(' · ');
+  return `<div class="sheet-head"><h2>Voice</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
+    ${hasGender ? `<div class="seg filter">${['all', 'female', 'male'].map((g) =>
+      `<button class="seg-btn ${voiceFilter === g ? 'on' : ''}" data-action="voice-filter" data-g="${g}">${g === 'all' ? 'All' : g === 'female' ? 'Female' : 'Male'}</button>`).join('')}</div>` : ''}
+    <div class="group voice-list">${shown.length ? shown.map((x) => `
+      <button class="row ${current && x.voice.voiceURI === current.voiceURI ? 'picked' : ''}" data-action="pick-voice" data-uri="${esc(x.voice.voiceURI)}">
+        <span class="row-text"><span class="row-title">${esc(shortVoiceName(x.voice.name))}</span><span class="row-sub">${esc(tag(x))}</span></span>
+        ${current && x.voice.voiceURI === current.voiceURI ? icon('check', 'row-check') : ''}
+      </button>`).join('') : `<p class="about-row">${list.length ? 'No voices of that type on this device.' : 'No voice for this language is installed on this device.'}</p>`}
+    </div>
+    <p class="tip">Want a more natural voice, or a male/female option you don’t see? On iPhone: Settings → Accessibility → Spoken Content → Voices → ${esc(L.lang.name.replace('European ', ''))}. Download one marked <b>Enhanced</b> or <b>Premium</b> and it appears here. On Android: Settings → Text-to-speech → Google → Install voice data.</p>`;
+}
+
+/* bottom sheet + mini player + toast */
+
+function openSheet(html) {
+  let el = document.getElementById('sheet');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'sheet';
+    el.innerHTML = '<div class="sheet-backdrop" data-action="close-sheet"></div><div class="sheet-panel" role="dialog" aria-modal="true"></div>';
+    document.body.appendChild(el);
+  }
+  el.querySelector('.sheet-panel').innerHTML = html;
+  el.classList.add('open');
+  document.body.classList.add('sheet-open');
+  syncListen();
+}
+
+function closeSheet() {
+  capture?.stop();
+  sheetPhrase = null;
+  document.getElementById('sheet')?.classList.remove('open');
+  document.body.classList.remove('sheet-open');
+}
+
+function renderPlayer() {
+  let el = document.getElementById('player');
+  if (!el) {
+    el = document.createElement('div');
+    el.id = 'player';
+    document.body.appendChild(el);
+  }
+  const st = tts.getState();
+  const p = st.item && L && L.byId.get(st.item.id);
+  if (!p) {
+    el.className = '';
+    el.innerHTML = '';
+    document.body.classList.remove('has-player');
+    return;
+  }
+  const playing = st.status === 'playing' || st.status === 'gap';
+  const v = tts.chosenVoice(langCtx());
+  el.className = 'show';
+  document.body.classList.add('has-player');
+  el.innerHTML = `<div class="player">
+    <div class="pl-top">
+      <button class="pl-main" data-action="pl-toggle" aria-label="${playing ? 'Pause' : 'Play'}">${icon(playing ? 'pause' : 'play')}</button>
+      <div class="pl-text"><b ${nativeAttrs(L.lang)}>${withSlots(p.target)}</b><span>${withSlots(p.pron)}</span></div>
+      <button class="icon-btn quiet" data-action="pl-close" aria-label="Close player">${icon('x')}</button>
+    </div>
+    <div class="pl-row">
+      <button class="pl-btn" data-action="pl-replay" aria-label="Replay">${icon('replay')}</button>
+      <button class="pl-btn ${st.loop ? 'on' : ''}" data-action="pl-loop" aria-pressed="${st.loop}" aria-label="Repeat">${icon('loop')}</button>
+      <div class="pl-speed">
+        <button data-action="pl-slower" aria-label="Slower">−</button>
+        <span>${tts.speed().label}</span>
+        <button data-action="pl-faster" aria-label="Faster">+</button>
+      </div>
+      <button class="pl-voice" data-action="voice-sheet">${icon('person')}<span>${v ? esc(shortVoiceName(v.name)) : 'Voice'}</span></button>
+    </div>
+  </div>`;
+}
+
+// Listen buttons mirror whatever is playing.
+function syncListen() {
+  const st = tts.getState();
+  document.querySelectorAll('[data-action="speak"]').forEach((b) => {
+    const mine = st.item && b.dataset.key === st.item.key;
+    const s = !mine ? 'idle' : st.status === 'playing' || st.status === 'gap' ? 'playing' : st.status === 'paused' ? 'paused' : 'idle';
+    b.dataset.state = s;
+    b.setAttribute('aria-label', s === 'playing' ? 'Pause' : s === 'paused' ? 'Resume' : 'Listen');
+  });
+  document.querySelectorAll('[data-action="set-speed"]').forEach((b) => b.classList.toggle('on', b.dataset.speed === tts.speed().id));
+}
+
+tts.subscribe(() => { syncListen(); renderPlayer(); });
+tts.onVoices(() => {
+  const vr = document.getElementById('voice-row');
+  if (vr && L) {
+    const v = tts.chosenVoice(langCtx());
+    const sub = vr.querySelector('.row-sub');
+    if (sub) sub.textContent = v ? shortVoiceName(v.name) : 'No voice installed';
+  }
+});
+
+const warned = new Set();
 function speakPhrase(id) {
   const p = L.byId.get(id);
   if (!p) return;
@@ -518,7 +760,7 @@ function speakPhrase(id) {
     warned.add(L.lang.code);
     toast(m.tts_warning);
   }
-  tts.toggle(p.key, p.target, L.lang.code, m.bcp47, m.voice_regions);
+  tts.toggle(speechItem(p));
 }
 
 let toastTimer = null;
@@ -536,49 +778,6 @@ function toast(text) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => el.classList.remove('show'), 7000);
 }
-
-// Voice + speed picker on the language dashboard.
-function audioBlock() {
-  const lang = L.lang;
-  if (!canSpeak()) {
-    return lang.meta.tts_note ? `<section class="block about"><h2>Audio</h2><p>${esc(lang.meta.tts_note)}</p></section>` : '';
-  }
-  return `<section class="block about audio">
-    <h2>Audio</h2>
-    ${lang.meta.tts_warning ? `<p class="callout warn">${esc(lang.meta.tts_warning)}</p>` : ''}
-    <label class="field"><span>Voice</span><select id="voice" class="select"></select></label>
-    <div class="field"><span>Speed</span><div class="seg">${tts.SPEEDS.map((sp) =>
-      `<button class="seg-btn ${sp.id === tts.speed().id ? 'on' : ''}" data-action="set-speed" data-speed="${sp.id}">${sp.label}</button>`).join('')}</div></div>
-    <p class="tip">Device voices can sound robotic. For a more natural voice on iPhone: Settings → Accessibility → Spoken Content → Voices → ${esc(lang.name.replace('European ', ''))}, then download a voice marked <b>Enhanced</b> or <b>Premium</b>. It will show up here and be picked automatically.</p>
-  </section>`;
-}
-
-function fillVoiceSelect() {
-  const sel = document.getElementById('voice');
-  if (!sel || !L) return;
-  const regions = L.lang.meta.voice_regions || [];
-  const list = tts.voicesFor(L.lang.meta.bcp47, regions);
-  const saved = (store.prefs().voices || {})[L.lang.code];
-  if (!list.length) {
-    sel.innerHTML = '<option>No voice installed for this language</option>';
-    sel.disabled = true;
-    return;
-  }
-  sel.disabled = false;
-  const current = list.find((v) => v.voiceURI === saved) || list[0];
-  sel.innerHTML = list.map((v, i) =>
-    `<option value="${esc(v.voiceURI)}" ${v === current ? 'selected' : ''}>${esc(v.name)} (${esc(v.lang)})${regions.length && tts.inRegions(v, regions) ? ' · Levantine' : ''}${i === 0 ? ' · best' : ''}</option>`).join('');
-}
-
-tts.onVoices(fillVoiceSelect);
-
-document.addEventListener('change', (e) => {
-  if (e.target.id !== 'voice' || !L) return;
-  const voices = { ...(store.prefs().voices || {}), [L.lang.code]: e.target.value };
-  store.setPref('voices', voices);
-  const sample = L.byId.get('hello');
-  tts.preview(L.lang.code, L.lang.meta.bcp47, e.target.value, sample && !sample.missing ? sample.target : L.lang.native_name, L.lang.meta.voice_regions);
-});
 
 /* ---------- events ---------- */
 
@@ -604,16 +803,83 @@ document.addEventListener('click', (e) => {
     const on = store.isLearned(key);
     btn.classList.toggle('on', on);
     btn.setAttribute('aria-pressed', on);
-    btn.querySelector('span').textContent = 'Learned';
+    btn.querySelector('span').textContent = on ? 'Learned' : 'Learn';
     card.classList.toggle('is-learned', on);
   } else if (a === 'speak') {
     speakPhrase(btn.dataset.id);
-  } else if (a === 'speed') {
-    tts.cycleSpeed();
   } else if (a === 'set-speed') {
-    store.setPref('speed', btn.dataset.speed);
-    document.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('on', b === btn));
-    tts.syncButtons();
+    tts.setSpeed(btn.dataset.speed);
+    syncListen();
+  } else if (a === 'say-it') {
+    openSayIt(L.byId.get(btn.dataset.id));
+  } else if (a === 'sheet-mic') {
+    if (sheetRec) { capture?.stop(); return; }
+    sheetRec = true;
+    sheetInterim = '';
+    redrawSheet();
+    startCapture((t) => { sheetInterim = t; redrawSheet(); }, (take) => {
+      sheetRec = false;
+      if (!sheetPhrase) return;
+      if (lastTakeUrl && lastTakeUrl !== take.url) URL.revokeObjectURL(lastTakeUrl);
+      lastTakeUrl = take.url;
+      sheetTake = take;
+      redrawSheet();
+    });
+  } else if (a === 'pr-mic') {
+    if (practice.recording) { capture?.stop(); return; }
+    practice.recording = true;
+    practice.interim = '';
+    drawPractice();
+    const p = practice.queue[0];
+    startCapture((t) => { practice.interim = t; drawPractice(); }, (take) => {
+      if (practice.queue[0] !== p) return;
+      if (lastTakeUrl && lastTakeUrl !== take.url) URL.revokeObjectURL(lastTakeUrl);
+      lastTakeUrl = take.url;
+      Object.assign(practice, { recording: false, interim: '', take, flipped: true });
+      drawPractice();
+      if (canSpeak()) tts.play(speechItem(p)); // hear it back right away
+    });
+  } else if (a === 'hear-native') {
+    tts.play(speechItem(L.byId.get(btn.dataset.id)));
+  } else if (a === 'hear-me') {
+    tts.stop();
+    playTake(lastTakeUrl);
+  } else if (a === 'hear-both') {
+    const p = L.byId.get(btn.dataset.id);
+    tts.play(speechItem(p), () => setTimeout(() => playTake(lastTakeUrl), 350));
+  } else if (a === 'voice-sheet') {
+    sheetPhrase = null;
+    openSheet(voiceSheetHtml());
+  } else if (a === 'voice-filter') {
+    voiceFilter = btn.dataset.g;
+    openSheet(voiceSheetHtml());
+  } else if (a === 'pick-voice') {
+    const st = tts.getState();
+    tts.setVoice(langCtx(), btn.dataset.uri);
+    if (!st.item) {
+      const sample = L.byId.get('hello');
+      if (sample && !sample.missing) tts.play(speechItem(sample));
+    }
+    openSheet(voiceSheetHtml());
+    const vr = document.querySelector('#voice-row .row-sub');
+    if (vr) vr.textContent = shortVoiceName(tts.chosenVoice(langCtx())?.name || '');
+  } else if (a === 'close-sheet') {
+    closeSheet();
+  } else if (a === 'pl-toggle') {
+    const st = tts.getState();
+    if (st.status === 'playing' || st.status === 'gap') tts.pause();
+    else if (st.status === 'paused') tts.resume();
+    else tts.replay();
+  } else if (a === 'pl-replay') {
+    tts.replay();
+  } else if (a === 'pl-loop') {
+    tts.setLoop(!tts.getState().loop);
+  } else if (a === 'pl-slower') {
+    tts.stepSpeed(-1);
+  } else if (a === 'pl-faster') {
+    tts.stepSpeed(1);
+  } else if (a === 'pl-close') {
+    tts.stop();
   } else if (a === 'tier') {
     store.setPref('tier', btn.dataset.tier);
     practice = null;
@@ -629,22 +895,25 @@ document.addEventListener('click', (e) => {
   } else if (a === 'reroll') {
     const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
     document.getElementById('pick').innerHTML = phraseCard(pool[Math.floor(Math.random() * pool.length)]);
+    syncListen();
   } else if (a === 'flip') {
+    if (practice.recording) return;
     practice.flipped = !practice.flipped;
     drawPractice();
   } else if (a === 'again') {
     const c = practice.queue.shift();
     practice.queue.splice(Math.min(practice.queue.length, 3), 0, c);
     practice.again++;
-    practice.flipped = false;
+    nextCard();
     drawPractice();
   } else if (a === 'got') {
     practice.queue.shift();
     practice.done++;
-    practice.flipped = false;
+    nextCard();
     drawPractice();
   } else if (a === 'restart') {
-    Object.assign(practice, { queue: shuffle(practice.all), done: 0, again: 0, flipped: false });
+    Object.assign(practice, { queue: shuffle(practice.all), done: 0, again: 0 });
+    nextCard();
     drawPractice();
   } else if (a === 'learned-current') {
     store.toggleLearned(practice.queue[0].key);
@@ -653,7 +922,9 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && document.body.classList.contains('sheet-open')) { closeSheet(); return; }
   if (!practice || !location.hash.includes('/practice/run') || e.target.matches('input,select,textarea')) return;
+  if (practice.dir === 'speak' && !practice.flipped) return;
   if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); practice.flipped = !practice.flipped; drawPractice(); }
   if (practice.flipped && e.key === 'ArrowRight') document.querySelector('[data-action="got"]')?.click();
   if (practice.flipped && e.key === 'ArrowLeft') document.querySelector('[data-action="again"]')?.click();
@@ -663,8 +934,10 @@ document.addEventListener('keydown', (e) => {
 
 async function route() {
   tts.stop();
+  closeSheet();
+  capture?.stop();
   const { parts, query } = parseRoute();
-  const [code, section, arg] = parts;
+  const [code, sectionName, arg] = parts;
 
   if (!code) {
     L = null;
@@ -681,15 +954,15 @@ async function route() {
   store.setPref('lastLang', code);
   applyTheme(L.lang);
 
-  const keepScroll = section === 'practice' && arg === 'run';
-  if (!section) viewDashboard();
-  else if (section === 'phrases') viewPhrases(query);
-  else if (section === 'scenarios') viewScenarios();
-  else if (section === 'scenario') viewScenario(arg, query);
-  else if (section === 'patterns') viewPatterns();
-  else if (section === 'sounds') await viewSounds();
-  else if (section === 'practice' && arg === 'run') viewPracticeRun(query);
-  else if (section === 'practice') viewPracticeSetup();
+  const keepScroll = sectionName === 'practice' && arg === 'run';
+  if (!sectionName) viewDashboard();
+  else if (sectionName === 'phrases') viewPhrases(query);
+  else if (sectionName === 'scenarios') viewScenarios();
+  else if (sectionName === 'scenario') viewScenario(arg, query);
+  else if (sectionName === 'patterns') viewPatterns();
+  else if (sectionName === 'sounds') await viewSounds();
+  else if (sectionName === 'practice' && arg === 'run') viewPracticeRun(query);
+  else if (sectionName === 'practice') viewPracticeSetup();
   else return go(`#/${code}`);
   if (!keepScroll) window.scrollTo(0, 0);
 }

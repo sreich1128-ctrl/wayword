@@ -13,6 +13,23 @@ async function getJSON(path) {
 // Optional per-entry fields the UI knows how to show if a dataset provides them.
 export const OPTIONAL_FIELDS = ['regional_note', 'usage_note', 'example', 'response'];
 
+// Pattern transliterations in the dataset leave out the blank ("وين ___؟" = "wayn").
+// For display only, put a ___ where the blank falls, counted by words: the wording
+// itself is never changed. A blank glued to a prefix (Hebrew ל___) becomes "le-___".
+export function slotPron(target, pron) {
+  if (!pron || !/_{3}/.test(target) || /_{3}/.test(pron)) return pron;
+  const words = target.split(/\s+/);
+  const at = words.findIndex((w) => w.includes('___'));
+  const prefix = words[at].split('___')[0].replace(/[¿¡]/g, '');
+  const n = at + (prefix ? 1 : 0);
+  const p = pron.split(' ');
+  if (n === 0) return `___ ${pron}`;
+  if (n > p.length) return `${pron} ___`;
+  const [, word, punct] = p[n - 1].match(/^(.*?)([,.;!?]*)$/);
+  p[n - 1] = `${word}${prefix ? '-___' : ' ___'}${punct}`;
+  return p.join(' ');
+}
+
 export async function loadContent() {
   const [languages, concepts, categories, tiers, scenarios, patterns, meta] = await Promise.all([
     getJSON('languages.json'),
@@ -69,7 +86,7 @@ export async function loadLanguage(content, code) {
       english: c.english,
     };
     if (!e) return { ...base, missing: true };
-    const p = { ...base, target: e.target, pron: e.pronunciation_easy };
+    const p = { ...base, target: e.target, pron: slotPron(e.target, e.pronunciation_easy) };
     for (const f of OPTIONAL_FIELDS) if (e[f]) p[f] = e[f];
     return p;
   });
@@ -80,7 +97,7 @@ export async function loadLanguage(content, code) {
     phrases.push({
       key: `${code}:${e.id}`, id: e.id, order: 9999, category: e.category,
       priority: e.priority, type: e.type, english: e.english,
-      target: e.target, pron: e.pronunciation_easy,
+      target: e.target, pron: slotPron(e.target, e.pronunciation_easy),
       ...Object.fromEntries(OPTIONAL_FIELDS.filter((f) => e[f]).map((f) => [f, e[f]])),
     });
   }

@@ -49,6 +49,12 @@ All language content lives in `content/`. The UI code (`js/`, `css/`) has no phr
 
 After any content change, bump `VERSION` in `sw.js` so installed phones pick it up.
 
+## Audio and speaking
+
+- `js/speech.js`: device text-to-speech. Play, pause, resume, replay, loop, five speeds (0.5× to 1.5×), and a voice choice per language.
+- `js/voices.js`: labels voices female or male by first name, since browsers don't say.
+- `js/speak.js`: "Say it". Records your voice for playback and, where the browser supports speech recognition, transcribes it and marks which words came through. The recognition language per language is `asr` in `language-meta.json`.
+
 ## Progress
 
 Favorites, learned marks, the level filter and the EN/Aa toggles are stored in `localStorage` on each device (`wayword:v1`).

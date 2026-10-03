@@ -25,3 +25,8 @@ Nothing below was changed in the data. These are things the app can't show yet, 
 - **Arabic `recommend_food` "shoo btin-SAHi"** has a stray final "i"; بتنصح is usually "btin-SAH".
 - **Arabic ع** is shown three ways: an apostrophe (t'eed), a capital vowel (A-ra-bee), or nothing (ba-EED).
 - **Hebrew `know_a_little` "KT-sat"** for קצת. It's said "ktsat", one syllable.
+- **French `nearest` "oo eh luh/lah plew PROSH"** leaves out the second "le/la" that is in the French text.
+
+## Display-only adjustment
+
+Pattern transliterations in the dataset leave out the blank (وين ___؟ is spelled just "wayn"). The app adds a ___ where the blank falls, counted word by word ("wayn ___", "le-___" for Hebrew ל___). The dataset files themselves are unchanged; see `slotPron` in `js/data.js`.
