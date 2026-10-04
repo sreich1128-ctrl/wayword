@@ -554,14 +554,29 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .sheet-backdrop { position: absolute; inset: 0; background: rgb(0 0 0 / .35); opacity: 0; transition: opacity .2s; }
 .sheet-panel {
   position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 100%);
-  width: min(640px, 100%); max-height: 88dvh; overflow-y: auto; overscroll-behavior: contain;
-  background: var(--bg); border-radius: 24px 24px 0 0; padding: 8px 16px calc(24px + env(safe-area-inset-bottom));
+  width: min(640px, 100%);
+  max-height: calc(100vh - 32px); max-height: calc(100dvh - 32px);
+  overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+  background: var(--bg); border-radius: 24px 24px 0 0; padding: 8px 16px calc(40px + env(safe-area-inset-bottom));
   transition: transform .25s ease;
 }
+
 .sheet-panel::before { content: ""; display: block; width: 40px; height: 5px; border-radius: 3px; background: var(--line); margin: 4px auto 6px; }
 #sheet.open { pointer-events: auto; }
 #sheet.open .sheet-backdrop { opacity: 1; }
 #sheet.open .sheet-panel { transform: translate(-50%, 0); }
+/* Wider screens: a centred window with room above and below, so it never hides behind the Dock or window edge. */
+@media (min-width: 700px) {
+  .sheet-panel {
+    top: 50%; bottom: auto; transform: translate(-50%, -45%); opacity: 0;
+    max-height: calc(100vh - 64px); max-height: calc(100dvh - 64px);
+    border-radius: 24px; padding-bottom: 24px; box-shadow: 0 24px 60px rgb(0 0 0 / .25);
+    transition: transform .2s ease, opacity .2s ease;
+  }
+  #sheet.open .sheet-panel { transform: translate(-50%, -50%); opacity: 1; }
+  .sheet-panel::before { display: none; }
+}
+
 .sheet-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
 .sheet-head h2 { font-size: 20px; font-weight: 800; }
 .say-phrase { padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }

@@ -880,9 +880,15 @@ function sayItHtml() {
     </ol>`;
 }
 
-function redrawSheet() {
+function redrawSheet({ revealTake = false } = {}) {
   const panel = document.querySelector('#sheet .sheet-panel');
-  if (panel && sheetPhrase) { panel.innerHTML = sayItHtml(); syncListen(); }
+  if (!panel || !sheetPhrase) return;
+  const top = panel.scrollTop;
+  panel.innerHTML = sayItHtml();
+  panel.scrollTop = top; // redraws keep your place
+  syncListen();
+  // The Compare step is always last: bring the whole result into view.
+  if (revealTake) requestAnimationFrame(() => panel.scrollTo({ top: panel.scrollHeight, behavior: reducedMotion() ? 'auto' : 'smooth' }));
 }
 
 /* the voice sheet */
@@ -916,6 +922,11 @@ function openSheet(html) {
     el.id = 'sheet';
     el.innerHTML = '<div class="sheet-backdrop" data-action="close-sheet"></div><div class="sheet-panel" role="dialog" aria-modal="true"></div>';
     document.body.appendChild(el);
+    // Scrolling over the dimmed background scrolls the panel instead of doing nothing.
+    el.querySelector('.sheet-backdrop').addEventListener('wheel', (e) => {
+      el.querySelector('.sheet-panel').scrollBy({ top: e.deltaY });
+      e.preventDefault();
+    }, { passive: false });
   }
   el.querySelector('.sheet-panel').innerHTML = html;
   el.classList.add('open');
@@ -1068,7 +1079,7 @@ document.addEventListener('click', (e) => {
       sheetFinishing = false;
       if (!sheetPhrase) return;
       sheetTake = take;
-      redrawSheet();
+      redrawSheet({ revealTake: true });
     });
     redrawSheet();
   } else if (a === 'mic-mode') {
