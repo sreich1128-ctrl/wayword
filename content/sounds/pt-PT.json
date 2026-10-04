@@ -5,14 +5,136 @@
   "reading": [
     "CAPITALS mark the stress.",
     "\"uh\" and \"oo\" at the end of a word are short and weak: POH-duh, oh-bree-GAH-doo.",
-    "\"ng\" at the end (nowng, seeng, teng) means a nasal vowel. Don't actually say the g."
+    "An \"n\" or \"ng\" after a vowel (kohn, bohn, nowng, seeng, kong) usually just means that vowel is nasal: say it through your nose and don't actually pronounce the n or g. \"Com\" is a nasal \"koh\", whether it's spelled kohn or kong."
   ],
   "sounds": [
-    { "symbol": "e  o", "name": "Swallowed vowels", "spelled": "uh, oo, or nothing", "how": "An unstressed e shrinks to a faint \"uh\" or disappears; an unstressed o becomes \"oo\". Pode is \"POH-duh\", obrigado ends in \"doo\".", "examples": [{ "id": "say_again", "mark": "e" }, { "id": "thank_you", "mark": "o" }, { "id": "where_is", "mark": "e" }] },
-    { "symbol": "ão  ã  m  n", "name": "Nasal vowels", "spelled": "owng, ng, n", "how": "Let the vowel resonate through your nose and stop before a full m or n. Não is one nasal glide, \"nowng\".", "examples": [{ "id": "no", "mark": "ão" }, { "id": "pay_card", "mark": "ão" }, { "id": "yes", "mark": "im" }, { "id": "me_too", "mark": "ém" }] },
-    { "symbol": "s  z", "name": "S at the end of a syllable", "spelled": "sh / zh", "how": "At the end of a syllable or word, s (and z) becomes sh, or zh before a voiced sound: está is \"esh-TAH\", inglês is \"een-GLAYSH\". Most of Brazil keeps it as s.", "examples": [{ "id": "how_are_you", "mark": "s" }, { "id": "speak_english", "mark": "s" }, { "id": "speak_slowly", "mark": "s" }] },
-    { "symbol": "nh  lh", "name": "NH and LH", "spelled": "ny, ly", "how": "nh = ny as in \"canyon\"; lh = lli as in \"million\".", "examples": [{ "id": "bathroom", "mark": "nh" }, { "id": "cash_or_card", "mark": "nh" }, { "id": "nice_meeting", "mark": "nh" }] },
-    { "symbol": "r  rr", "name": "Two r sounds", "spelled": "r", "how": "Between vowels, r is a quick tap like the tt in American \"butter\". At the start of a word, and when doubled, it's throaty in Lisbon, close to a French r.", "examples": [{ "id": "say_again", "mark": "r" }, { "id": "i_would_like", "mark": "r" }, { "id": "really", "mark": "r" }] },
-    { "symbol": "ch  j  g  ç", "name": "Soft consonants", "spelled": "sh, zh, s", "how": "ch = sh. j, and g before e or i, = zh as in \"measure\". ç, and c before e or i, = s.", "examples": [{ "id": "how_get", "mark": "ch" }, { "id": "is_far", "mark": "g" }, { "id": "help_me", "mark": "j" }, { "id": "excuse_me", "mark": "ç" }] }
+    {
+      "symbol": "e  o",
+      "name": "Swallowed vowels",
+      "spelled": "uh, oo, or nothing",
+      "how": "An unstressed e shrinks to a faint \"uh\" or disappears; an unstressed o becomes \"oo\". Pode is \"POH-duh\", obrigado ends in \"doo\".",
+      "examples": [
+        {
+          "id": "say_again",
+          "mark": "e"
+        },
+        {
+          "id": "thank_you",
+          "mark": "o"
+        },
+        {
+          "id": "where_is",
+          "mark": "e"
+        }
+      ]
+    },
+    {
+      "symbol": "ão  ã  m  n",
+      "name": "Nasal vowels",
+      "spelled": "owng, ng, n",
+      "how": "Let the vowel resonate through your nose and stop before a full m or n. Não is one nasal glide, \"nowng\".",
+      "examples": [
+        {
+          "id": "no",
+          "mark": "ão"
+        },
+        {
+          "id": "pay_card",
+          "mark": "ão"
+        },
+        {
+          "id": "yes",
+          "mark": "im"
+        },
+        {
+          "id": "me_too",
+          "mark": "ém"
+        }
+      ]
+    },
+    {
+      "symbol": "s  z",
+      "name": "S at the end of a syllable",
+      "spelled": "sh / zh",
+      "how": "At the end of a syllable or word, s (and z) becomes sh, or zh before a voiced sound: está is \"esh-TAH\", inglês is \"een-GLAYSH\". Most of Brazil keeps it as s.",
+      "examples": [
+        {
+          "id": "how_are_you",
+          "mark": "s"
+        },
+        {
+          "id": "speak_english",
+          "mark": "s"
+        },
+        {
+          "id": "speak_slowly",
+          "mark": "s"
+        }
+      ]
+    },
+    {
+      "symbol": "nh  lh",
+      "name": "NH and LH",
+      "spelled": "ny, ly",
+      "how": "nh = ny as in \"canyon\"; lh = lli as in \"million\".",
+      "examples": [
+        {
+          "id": "bathroom",
+          "mark": "nh"
+        },
+        {
+          "id": "cash_or_card",
+          "mark": "nh"
+        },
+        {
+          "id": "nice_meeting",
+          "mark": "nh"
+        }
+      ]
+    },
+    {
+      "symbol": "r  rr",
+      "name": "Two r sounds",
+      "spelled": "r",
+      "how": "Between vowels, r is a quick tap like the tt in American \"butter\". At the start of a word, and when doubled, it's throaty in Lisbon, close to a French r.",
+      "examples": [
+        {
+          "id": "say_again",
+          "mark": "r"
+        },
+        {
+          "id": "i_would_like",
+          "mark": "r"
+        },
+        {
+          "id": "really",
+          "mark": "r"
+        }
+      ]
+    },
+    {
+      "symbol": "ch  j  g  ç",
+      "name": "Soft consonants",
+      "spelled": "sh, zh, s",
+      "how": "ch = sh. j, and g before e or i, = zh as in \"measure\". ç, and c before e or i, = s.",
+      "examples": [
+        {
+          "id": "how_get",
+          "mark": "ch"
+        },
+        {
+          "id": "is_far",
+          "mark": "g"
+        },
+        {
+          "id": "help_me",
+          "mark": "j"
+        },
+        {
+          "id": "excuse_me",
+          "mark": "ç"
+        }
+      ]
+    }
   ]
 }

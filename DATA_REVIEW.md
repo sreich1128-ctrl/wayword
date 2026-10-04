@@ -26,6 +26,7 @@ Nothing below was changed in the data. These are things the app can't show yet, 
 - **Arabic ع** is shown three ways: an apostrophe (t'eed), a capital vowel (A-ra-bee), or nothing (ba-EED).
 - **Hebrew `know_a_little` "KT-sat"** for קצת. It's said "ktsat", one syllable.
 - **French `nearest` "oo eh luh/lah plew PROSH"** leaves out the second "le/la" that is in the French text.
+- **Portuguese "com" is spelled two ways:** "kohn" in `excuse_me` (Com licença) and "kong" in `pay_card` / `apple_pay` (com cartão). It's the same nasal vowel [kõ] either way; one spelling would be clearer.
 
 ## Display-only adjustment
 
