@@ -1,71 +1,147 @@
 // "Say it" practice: records your voice for playback and, where the browser can,
 // transcribes it so you can see which words came through.
+//
+// Three capture modes, because phones differ:
+//   record    - MediaRecorder only: you hear yourself back, with a live level meter (default on iPhone/iPad)
+//   recognize - speech recognition only: shows which words came through, no playback
+//   both      - both at once (default elsewhere; works on desktop Chrome and most Android)
+// The Mic check screen tests the device and saves the mode that actually works.
+
+import { store } from './store.js';
 
 const SR = typeof window !== 'undefined' && (window.SpeechRecognition || window.webkitSpeechRecognition);
 export const canRecord = typeof navigator !== 'undefined' && !!(navigator.mediaDevices?.getUserMedia && window.MediaRecorder);
 export const canRecognize = !!SR;
+export const isAppleMobile = typeof navigator !== 'undefined'
+  && (/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
+
+export function micMode() {
+  const saved = store.prefs().micMode;
+  const ok = (m) => (m === 'record' && canRecord) || (m === 'recognize' && canRecognize) || (m === 'both' && canRecord && canRecognize);
+  if (saved && ok(saved)) return saved;
+  if (isAppleMobile && canRecord) return 'record';
+  if (canRecord && canRecognize) return 'both';
+  return canRecord ? 'record' : canRecognize ? 'recognize' : 'none';
+}
+export const setMicMode = (m) => store.setPref('micMode', m);
+
+// iOS: let playback ignore the silent switch, and switch to record mode only while recording.
+export function setAudioSession(type) {
+  try { if (navigator.audioSession) navigator.audioSession.type = type; } catch { /* unsupported */ }
+}
 
 function pickMime() {
-  for (const t of ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm']) {
+  for (const t of ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm', 'audio/ogg']) {
     if (window.MediaRecorder?.isTypeSupported?.(t)) return t;
   }
   return '';
 }
 
-// Starts listening. Returns { stop(), done } where done resolves to
-// { url, transcript, error }. Stops by itself after maxMs, or shortly after
-// the recognizer decides you've finished speaking.
-export function capture({ asrLang, maxMs = 9000, onInterim } = {}) {
+// Starts listening. Call it straight from a tap (phones require that).
+// Returns { stop(), done }. done resolves to a report:
+//   { mode, url, ms, mime, peak, transcript, recError, srError }
+// onLevel(0..1) fires ~30x/second while recording; onInterim(text) as words arrive.
+export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onInterim } = {}) {
+  const useRec = (mode === 'record' || mode === 'both') && canRecord;
+  const useSR = (mode === 'recognize' || mode === 'both') && canRecognize;
+  const report = { mode, url: null, ms: 0, mime: '', peak: 0, transcript: '', recError: null, srError: null };
+
   let recorder = null;
   let stream = null;
   let rec = null;
-  let transcript = '';
+  let ctx = null;
+  let raf = 0;
+  let started = 0;
+  let stopping = false;
   let finished = false;
+  let recDone = !useRec;
+  let srDone = !useSR;
   let resolveDone;
   const done = new Promise((r) => { resolveDone = r; });
   const chunks = [];
-  let recDone = !SR;
-  let micDone = !canRecord;
-  let url = null;
-  let error = null;
 
-  const maybeFinish = () => {
-    if (finished || !recDone || !micDone) return;
+  const finish = () => {
+    if (finished) return;
     finished = true;
-    clearTimeout(timer);
-    resolveDone({ url, transcript: transcript.trim(), error });
+    clearTimeout(maxTimer);
+    cancelAnimationFrame(raf);
+    try { ctx?.close(); } catch { /* ignore */ }
+    stream?.getTracks().forEach((t) => t.stop());
+    setAudioSession('playback');
+    report.transcript = report.transcript.trim();
+    resolveDone(report);
   };
+  const maybeFinish = () => { if (recDone && srDone) finish(); };
 
   const stop = () => {
-    try { if (recorder && recorder.state !== 'inactive') recorder.stop(); else micDone = true; } catch { micDone = true; }
-    try { rec?.stop(); } catch { recDone = true; }
-    setTimeout(() => { recDone = true; micDone = true; maybeFinish(); }, 2500); // safety net
+    if (stopping) return;
+    stopping = true;
+    try { if (recorder && recorder.state !== 'inactive') recorder.stop(); else recDone = true; } catch { recDone = true; }
+    try { rec?.stop(); } catch { srDone = true; }
+    // Don't keep the person waiting on a slow recognizer: give it a second, then move on.
+    setTimeout(() => { srDone = true; maybeFinish(); }, 1200);
+    setTimeout(() => { recDone = true; srDone = true; finish(); }, 3000);
     maybeFinish();
   };
-  const timer = setTimeout(stop, maxMs);
+  const maxTimer = setTimeout(stop, maxMs);
 
-  if (canRecord) {
-    navigator.mediaDevices.getUserMedia({ audio: true }).then((s) => {
+  if (useRec) {
+    setAudioSession('play-and-record');
+    // Create the audio context inside the tap so iOS lets it run.
+    try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch { ctx = null; }
+    navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } }).then((s) => {
       stream = s;
+      // Stopped while the permission prompt / mic was still opening: release it right away,
+      // or the mic stays on and the next try finds it busy.
+      if (stopping || finished) { s.getTracks().forEach((t) => t.stop()); recDone = true; maybeFinish(); return; }
       const mime = pickMime();
+      report.mime = mime;
       recorder = new MediaRecorder(s, mime ? { mimeType: mime } : undefined);
-      recorder.ondataavailable = (e) => { if (e.data.size) chunks.push(e.data); };
+      recorder.ondataavailable = (e) => { if (e.data && e.data.size) chunks.push(e.data); };
       recorder.onstop = () => {
-        stream.getTracks().forEach((t) => t.stop());
-        if (chunks.length) url = URL.createObjectURL(new Blob(chunks, { type: recorder.mimeType || mime || 'audio/webm' }));
-        micDone = true;
+        report.ms = Date.now() - started;
+        if (chunks.length) report.url = URL.createObjectURL(new Blob(chunks, { type: recorder.mimeType || mime || 'audio/webm' }));
+        else if (!report.recError) report.recError = 'empty';
+        recDone = true;
         maybeFinish();
       };
-      recorder.start();
-      if (finished) recorder.stop();
+      recorder.onerror = (e) => { report.recError = e.error?.name || 'recorder-error'; };
+      recorder.start(250); // small slices, so a quick stop still has audio
+      started = Date.now();
+
+      if (ctx) {
+        ctx.resume?.();
+        const analyser = ctx.createAnalyser();
+        analyser.fftSize = 512;
+        ctx.createMediaStreamSource(s).connect(analyser);
+        const buf = new Uint8Array(analyser.fftSize);
+        let heardVoice = false;
+        let quietSince = 0;
+        const tick = () => {
+          analyser.getByteTimeDomainData(buf);
+          let sum = 0;
+          for (const v of buf) { const x = (v - 128) / 128; sum += x * x; }
+          const level = Math.min(1, Math.sqrt(sum / buf.length) * 4);
+          report.peak = Math.max(report.peak, level);
+          onLevel?.(level);
+          // Hands-free: once you’ve spoken, ~1.2s of quiet ends the take.
+          if (level > 0.12) { heardVoice = true; quietSince = 0; }
+          else if (heardVoice && level < 0.04) {
+            quietSince ||= Date.now();
+            if (Date.now() - quietSince > 1200) stop();
+          }
+          if (!finished) raf = requestAnimationFrame(tick);
+        };
+        tick();
+      }
     }).catch((e) => {
-      error = e.name === 'NotAllowedError' ? 'mic-blocked' : 'mic-failed';
-      micDone = true;
+      report.recError = e.name || 'mic-failed';
+      recDone = true;
       maybeFinish();
     });
   }
 
-  if (SR) {
+  if (useSR) {
     try {
       rec = new SR();
       rec.lang = asrLang;
@@ -75,23 +151,47 @@ export function capture({ asrLang, maxMs = 9000, onInterim } = {}) {
       rec.onresult = (e) => {
         let text = '';
         for (let i = 0; i < e.results.length; i++) text += e.results[i][0].transcript + ' ';
-        transcript = text;
+        report.transcript = text;
         onInterim?.(text.trim());
       };
-      rec.onerror = (e) => { if (e.error === 'not-allowed' && !error) error = 'mic-blocked'; };
+      rec.onerror = (e) => { report.srError = e.error || 'error'; };
       rec.onend = () => {
-        recDone = true;
-        // The recognizer heard you finish: stop recording a moment later.
-        setTimeout(() => { if (recorder && recorder.state === 'recording') recorder.stop(); }, 350);
+        srDone = true;
+        // The recognizer decides you've finished: end the take (only if it heard words,
+        // so a recognizer error doesn't cut the recording short).
+        if (!useRec) stop();
+        else if (report.transcript.trim()) setTimeout(stop, 400);
         maybeFinish();
       };
       rec.start();
-    } catch {
-      recDone = true;
+    } catch (e) {
+      report.srError = e.name || 'start-failed';
+      srDone = true;
     }
   }
 
+  if (!useRec && !useSR) { report.recError = 'unsupported'; finish(); }
   return { stop, done };
+}
+
+// Plain-English reason for a failed capture, or '' if it worked.
+export function explain(r) {
+  const blocked = ['NotAllowedError', 'SecurityError'];
+  if (blocked.includes(r.recError) || (!r.url && ['not-allowed', 'service-not-allowed'].includes(r.srError))) {
+    return 'Microphone access is blocked. On iPhone: Settings → Safari → Microphone → Allow (or tap “aA” in the address bar → Website Settings → Microphone).';
+  }
+  if (r.recError === 'NotReadableError' || r.recError === 'NotFoundError') return 'Another app is using the microphone, or none was found. Close calls or voice memos and try again.';
+  if (!r.url && r.recError === 'empty') return 'The microphone sent no sound. Close other apps that might be using it, then try again (or restart Safari).';
+  if (r.url && r.peak < 0.03) return 'The recording is almost silent. Check that nothing is covering the mic, then speak a little louder.';
+  const sr = {
+    'audio-capture': 'the speech check couldn’t get the microphone. Run the Mic check to find the setting that works on this phone.',
+    'not-allowed': 'the speech check isn’t allowed. On iPhone it needs Settings → General → Keyboard → Enable Dictation.',
+    'service-not-allowed': 'the speech check isn’t allowed. On iPhone it needs Settings → General → Keyboard → Enable Dictation.',
+    network: 'the speech check needs an internet connection.',
+    'language-not-supported': 'this phone can’t check speech in this language.',
+  }[r.srError];
+  if (sr) return r.url ? `Recorded you, but ${sr}` : sr.charAt(0).toUpperCase() + sr.slice(1);
+  return '';
 }
 
 /* ---------- comparing what was heard with the phrase ---------- */

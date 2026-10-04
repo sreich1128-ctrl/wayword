@@ -55,6 +55,9 @@ After any content change, bump `VERSION` in `sw.js` so installed phones pick it 
 - `js/voices.js`: labels voices female or male by first name, since browsers don't say.
 - `js/speak.js`: "Say it". Records your voice for playback and, where the browser supports speech recognition, transcribes it and marks which words came through. The recognition language per language is `asr` in `language-meta.json`.
 
+- **Mic check** (`#/<lang>/mic`, linked under Audio): tests speaker, recording, speech check, and both together on the actual phone, saves the setting that works, and produces a copyable report.
+- **`tests/mic-stress.html`**: open on localhost and press Run. Drives the real capture code with a simulated mic (a recorded "Olá" + silence) and simulated recognizers that fail, hang or lag. Checks auto-stop, stop latency, mic release, error messages and word matching.
+
 ## Progress
 
 Favorites, learned marks, the level filter and the EN/Aa toggles are stored in `localStorage` on each device (`wayword:v1`).

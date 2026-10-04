@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mic stress test</title>
+<style>body{font:15px/1.4 system-ui;margin:16px;background:#fff;color:#111}pre{white-space:pre-wrap;background:#f4f4f4;padding:10px;border-radius:8px}.pass{color:#15803d}.fail{color:#b91c1c}</style></head>
+<body>
+<h1>Mic stress test</h1>
+<p>Runs the real recording, level-meter and auto-stop code from <code>js/speak.js</code> against a simulated microphone (a recorded "Olá" followed by silence) and simulated speech recognizers that succeed, fail, hang or lag. Open on localhost and press Run.</p>
+<button id="run">Run</button>
+<pre id="out"></pre>
+<script type="module">
+const out = document.getElementById('out');
+const log = (ok, name, detail) => { out.innerHTML += `<span class="${ok ? 'pass' : 'fail'}">${ok ? 'PASS' : 'FAIL'}</span> ${name}  ${detail}\n`; };
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+// --- simulated microphone: plays a WAV (or silence) into a MediaStream ---
+let ctx; let wav;
+const streams = [];
+async function fakeMic(kind) {
+  ctx ||= new AudioContext();
+  wav ||= await ctx.decodeAudioData(await (await fetch('ola.wav')).arrayBuffer());
+  const dest = ctx.createMediaStreamDestination();
+  if (kind === 'speech') { const src = ctx.createBufferSource(); src.buffer = wav; src.connect(dest); src.start(); }
+  streams.push(dest.stream);
+  return dest.stream;
+}
+let micKind = 'speech'; let micDelay = 0; let micFail = null;
+navigator.mediaDevices.getUserMedia = async () => {
+  await sleep(micDelay);
+  if (micFail) { const e = new Error(micFail); e.name = micFail; throw e; }
+  return fakeMic(micKind);
+};
+const liveTracks = () => streams.flatMap((s) => s.getTracks()).filter((t) => t.readyState === 'live').length;
+
+// --- simulated speech recognizers ---
+function makeSR(behavior) {
+  return class {
+    start() {
+      setTimeout(() => {
+        if (behavior === 'ok') {
+          this.onresult?.({ results: [[{ transcript: 'olá' }]] });
+          setTimeout(() => this.onend?.(), 300);
+        } else if (behavior === 'audio-capture') {
+          this.onerror?.({ error: 'audio-capture' }); this.onend?.();
+        } else if (behavior === 'not-allowed') {
+          this.onerror?.({ error: 'not-allowed' }); this.onend?.();
+        } else if (behavior === 'slow') {
+          this.onresult?.({ results: [[{ transcript: 'olá' }]] });
+        } // 'hang': never calls anything
+      }, 400);
+    }
+    stop() { if (behavior === 'slow') setTimeout(() => this.onend?.(), 5000); }
+  };
+}
+
+async function analyse(url) {
+  if (!url) return null;
+  const buf = await (await fetch(url)).arrayBuffer();
+  const a = await new AudioContext().decodeAudioData(buf.slice(0));
+  const d = a.getChannelData(0); let peak = 0; for (const x of d) peak = Math.max(peak, Math.abs(x));
+  return { secs: +a.duration.toFixed(2), peak: +peak.toFixed(2), kb: Math.round(buf.byteLength / 1024) };
+}
+
+async function load(sr) {
+  window.webkitSpeechRecognition = sr; window.SpeechRecognition = sr;
+  return import(`../js/speak.js?v=${Math.random()}`); // fresh module so it sees this recognizer
+}
+
+document.getElementById('run').onclick = async () => {
+  out.textContent = '';
+  let mic = await load(makeSR('ok'));
+
+  // 1. Record mode: speak, then silence -> stops by itself, audio is real
+  micKind = 'speech';
+  let t0 = performance.now();
+  let c = mic.capture({ mode: 'record', asrLang: 'pt-PT' });
+  let r = await c.done; let ms = performance.now() - t0; let a = await analyse(r.url);
+  log(!!a && a.peak > 0.05 && ms < 5000, 'record: auto-stops after you finish', `stopped after ${(ms / 1000).toFixed(1)}s, recording ${a?.secs}s peak ${a?.peak}, meter peak ${r.peak.toFixed(2)}`);
+  log(liveTracks() === 0, 'record: mic released', `${liveTracks()} live tracks`);
+
+  // 2. Record mode: manual stop is quick and keeps the audio
+  c = mic.capture({ mode: 'record', asrLang: 'pt-PT' }); await sleep(1200);
+  t0 = performance.now(); c.stop(); r = await c.done; ms = performance.now() - t0; a = await analyse(r.url);
+  log(ms < 400 && !!a, 'record: manual stop', `stop→result ${Math.round(ms)}ms, recording ${a?.secs}s`);
+
+  // 3. Silence: no auto-stop, max length ends it, explains "almost silent"
+  micKind = 'silence';
+  c = mic.capture({ mode: 'record', asrLang: 'pt-PT', maxMs: 2500 });
+  r = await c.done;
+  log(/almost silent|no sound/.test(mic.explain(r)), 'record: silent mic is explained', `${mic.explain(r)} [url ${!!r.url}, peak ${r.peak.toFixed(3)}, recError ${r.recError}]`);
+
+  // 4. Permission denied
+  micFail = 'NotAllowedError';
+  r = await mic.capture({ mode: 'record', asrLang: 'pt-PT' }).done;
+  log(/blocked/.test(mic.explain(r)), 'record: permission denied is explained', mic.explain(r).slice(0, 60) + '…');
+  micFail = 'NotReadableError';
+  r = await mic.capture({ mode: 'record', asrLang: 'pt-PT' }).done;
+  log(/Another app/.test(mic.explain(r)), 'record: mic busy is explained', mic.explain(r).slice(0, 60) + '…');
+  micFail = null; micKind = 'speech';
+
+  // 5. Slow permission prompt + stop before it resolves -> no stuck mic
+  micDelay = 1500;
+  c = mic.capture({ mode: 'record', asrLang: 'pt-PT' }); await sleep(300);
+  t0 = performance.now(); c.stop(); r = await c.done; ms = performance.now() - t0;
+  await sleep(1600);
+  log(ms < 400 && liveTracks() === 0, 'record: stop during permission prompt', `resolved in ${Math.round(ms)}ms, ${liveTracks()} live tracks after`);
+  micDelay = 0;
+
+  // 6. Rapid taps: 12 start/stop cycles
+  let worst = 0; let got = 0;
+  for (let i = 0; i < 12; i++) {
+    c = mic.capture({ mode: 'record', asrLang: 'pt-PT' }); await sleep(150 + (i % 4) * 120);
+    t0 = performance.now(); c.stop(); r = await c.done; worst = Math.max(worst, performance.now() - t0); if (r.url) got++;
+  }
+  await sleep(200);
+  log(worst < 500 && liveTracks() === 0, 'record: 12 rapid start/stops', `worst stop ${Math.round(worst)}ms, ${got}/12 with audio, ${liveTracks()} live tracks`);
+
+  // 7. Both modes with recognizers that behave well and badly
+  for (const beh of ['ok', 'audio-capture', 'not-allowed', 'hang', 'slow']) {
+    mic = await load(makeSR(beh));
+    c = mic.capture({ mode: 'both', asrLang: 'pt-PT' });
+    await sleep(1500);
+    t0 = performance.now(); c.stop(); r = await c.done; ms = performance.now() - t0;
+    const okRec = !!r.url;
+    log(ms < 1500 && (beh === 'not-allowed' ? true : okRec), `both + recognizer "${beh}"`, `stop→result ${Math.round(ms)}ms, recording ${okRec ? 'yes' : 'no'}, words "${r.transcript}", srError ${r.srError || '-'}`);
+  }
+
+  // 8. Recognize-only with a hanging recognizer still finishes
+  mic = await load(makeSR('hang'));
+  c = mic.capture({ mode: 'recognize', asrLang: 'pt-PT', maxMs: 3000 });
+  t0 = performance.now(); r = await c.done; ms = performance.now() - t0;
+  log(ms < 5000, 'recognize: hanging recognizer still ends', `ended after ${(ms / 1000).toFixed(1)}s`);
+
+  // 9. Word comparison
+  mic = await load(makeSR('ok'));
+  const cases = [['Olá', 'olá', 1], ['Onde fica a casa de banho?', 'onde fica a casa de banho', 1], ['Не понимаю', 'я не понимаю', 1], ['وين الحمّام؟', 'وين الحمام', 1], ['Pode repetir?', 'pode', 0.5], ['Obrigado', 'banana', 0]];
+  for (const [t, h, want] of cases) { const s = mic.compare(t, h).score; log(Math.abs(s - want) < 0.26, `compare "${t}" vs "${h}"`, `score ${s.toFixed(2)}`); }
+
+  out.innerHTML += '\nDONE';
+};
+</script>
+</body></html>

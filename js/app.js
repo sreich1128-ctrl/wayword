@@ -50,6 +50,7 @@ const ICONS = {
   check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
   ear: '<path d="M7 9a5 5 0 0 1 10 0c0 3-3 3.5-3 6.5a2.5 2.5 0 0 1-5 0"/><path d="M10 9.5a2 2 0 0 1 4 0"/>',
   play: '<path d="M8 5.5v13l10.5-6.5L8 5.5Z"/>',
+  sound: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4Z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>',
   pause: '<path d="M8 5v14M16 5v14"/>',
   replay: '<path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v5h5"/>',
   loop: '<path d="M17 3l3 3-3 3"/><path d="M4 11V9a3 3 0 0 1 3-3h13"/><path d="M7 21l-3-3 3-3"/><path d="M20 13v2a3 3 0 0 1-3 3H4"/>',
@@ -282,7 +283,9 @@ function audioGroup() {
     ${row({ action: 'voice-sheet', ic: 'person', title: 'Voice', sub: v ? esc(shortVoiceName(v.name)) : 'No voice installed', attrs: 'id="voice-row"' })}
     <div class="row static"><span class="row-ic">${icon('play')}</span><span class="row-text"><span class="row-title">Speed</span></span></div>
     <div class="seg-wrap">${speedSeg()}</div>
+    ${canPracticeAloud() ? row({ href: `#/${lang.code}/mic`, ic: 'mic', title: 'Mic check', sub: 'Test your speaker, microphone and speech check' }) : ''}
   </div>
+  <p class="tip">No sound? On iPhone the voice is muted when the side switch is on silent. Turn silent off and the volume up.</p>
   ${lang.meta.tts_warning ? `<p class="callout">${esc(lang.meta.tts_warning)}</p>` : ''}`;
 }
 
@@ -531,8 +534,8 @@ function drawPractice() {
     face = `<span class="fc-label">${label}</span>${englishBlock}
       ${s.flipped
         ? `<span class="fc-divider"></span>${nativeBlock}${s.take ? takeResult(p, s.take) : ''}${notes}`
-        : `<button class="mic-big ${s.recording ? 'rec' : ''}" data-action="pr-mic" aria-label="${s.recording ? 'Stop' : 'Start speaking'}">${icon(s.recording ? 'stop' : 'mic')}</button>
-           <span class="fc-hint">${s.recording ? (s.interim ? `<bdi ${nativeAttrs(lang)}>${esc(s.interim)}</bdi>` : 'Listening… tap to stop') : 'Tap the mic and say it'}</span>`}`;
+        : `<button class="mic-big ${s.recording ? 'rec' : ''} ${s.finishing ? 'finishing' : ''}" data-action="pr-mic" aria-label="${s.recording ? 'Stop' : 'Start speaking'}">${icon(s.recording ? 'stop' : 'mic')}</button>
+           <span class="fc-hint">${micState(s.recording, s.finishing, s.interim, 'Tap the mic, then say it')}</span>`}`;
   } else {
     const front = s.dir === 'en' ? englishBlock : nativeBlock;
     const backSide = s.dir === 'en' ? nativeBlock : englishBlock;
@@ -552,7 +555,7 @@ function drawPractice() {
       <button class="fc-btn got" data-action="got" ${s.flipped ? '' : 'disabled'}>Got it</button>
     </div>
     <div class="fc-extra">
-      ${listenBtn(p)}${s.dir !== 'speak' ? micBtn(p) : ''}
+      ${listenBtn(p)}${canSpeak() ? `<button class="pill-btn speed-pill" data-action="speed-cycle" aria-label="Speed">${tts.speed().label}</button>` : ''}${s.dir !== 'speak' ? micBtn(p) : ''}
       <button class="learn ${learned ? 'on' : ''}" data-action="learned-current">${icon('check')}<span>${learned ? 'Learned' : 'Learn'}</span></button>
     </div>
   `, { back });
@@ -563,51 +566,219 @@ function drawPractice() {
 let capture = null;
 
 // What you said vs the phrase: each word marked heard / nearly / not heard,
-// plus buttons to hear the native audio, your take, or both in a row.
+// plus buttons to hear the correct audio, your take, or both back to back.
 function takeResult(p, take) {
   const lang = L.lang;
+  const problem = mic.explain(take);
   let verdict = '';
   let words = '';
-  if (take.error === 'mic-blocked') {
-    verdict = 'Microphone access is blocked. Allow it in your browser settings to practise speaking.';
-  } else if (mic.canRecognize && take.transcript) {
+  if (take.transcript) {
     const r = mic.compare(p.target, take.transcript);
     const pct = Math.round(r.score * 100);
     verdict = pct >= 80 ? 'Clear. Your phone understood almost every word.' : pct >= 50 ? 'Close. Some words came through, keep going.' : 'Not much came through. Listen once more, then try again.';
     words = `<p class="heard-words" ${nativeAttrs(lang)}>${r.words.map((w) => `<span class="w-${w.status}">${withSlots(w.raw)}</span>`).join(' ')}</p>
       <p class="heard">Your phone heard: <bdi ${nativeAttrs(lang)}>${esc(take.transcript)}</bdi></p>`;
-  } else if (mic.canRecognize) {
-    verdict = 'Your phone didn’t catch any words. Try again a little closer and louder.';
+  } else if (problem) {
+    verdict = problem;
+  } else if (take.url) {
+    verdict = take.mode === 'record' ? 'Got it. Play yourself back next to the correct version.' : 'Recorded, but the phone didn’t pick out any words. Play yourself back to compare.';
   } else {
-    verdict = 'Compare your recording with the native audio.';
+    verdict = 'Nothing came through. Run the Mic check to see what’s going on.';
   }
-  const note = L.lang.code === 'ar-levantine' && take.transcript ? '<p class="heard">Phone speech recognition writes formal Arabic, so dialect words may show up spelled differently even when you said them right.</p>' : '';
-  return `<div class="take">
-    <p class="take-verdict">${verdict}</p>${words}${note}
+  const note = lang.code === 'ar-levantine' && take.transcript ? '<p class="heard">Phone speech recognition writes formal Arabic, so dialect words may show up spelled differently even when you said them right.</p>' : '';
+  const secs = take.ms ? ` · ${(take.ms / 1000).toFixed(1)}s` : '';
+  return `<div class="take ${!take.url && !take.transcript ? 'failed' : ''}">
+    <p class="take-verdict">${esc(verdict)}</p>${words}${note}
     <div class="take-actions">
-      ${canSpeak() ? `<button class="pill-btn" data-action="hear-native" data-id="${esc(p.id)}">${icon('play')}<span>Native</span></button>` : ''}
-      ${take.url ? `<button class="pill-btn" data-action="hear-me">${icon('person')}<span>You</span></button>` : ''}
-      ${take.url && canSpeak() ? `<button class="pill-btn" data-action="hear-both" data-id="${esc(p.id)}">${icon('loop')}<span>Both</span></button>` : ''}
+      ${canSpeak() ? `<button class="pill-btn" data-action="hear-native" data-id="${esc(p.id)}">${icon('play')}<span>Hear it</span></button>` : ''}
+      ${take.url ? `<button class="pill-btn" data-action="hear-me">${icon('person')}<span>Hear me${secs}</span></button>` : ''}
+      ${take.url && canSpeak() ? `<button class="pill-btn" data-action="hear-both" data-id="${esc(p.id)}">${icon('loop')}<span>Back to back</span></button>` : ''}
     </div>
+    ${!take.url && !take.transcript ? `<a class="link-btn" href="#/${lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
   </div>`;
 }
 
+// One take at a time. The mic button shows a live level ring while you speak.
 function startCapture(onUpdate, onDone) {
   tts.stop();
   const lang = L.lang;
   capture = mic.capture({
     asrLang: lang.meta.asr || lang.meta.bcp47,
     onInterim: (text) => onUpdate(text),
+    onLevel: (lvl) => document.querySelectorAll('.mic-big.rec').forEach((b) => b.style.setProperty('--lvl', lvl.toFixed(3))),
   });
-  capture.done.then((take) => { capture = null; onDone(take); });
+  capture.done.then((take) => {
+    capture = null;
+    if (lastTakeUrl && lastTakeUrl !== take.url) URL.revokeObjectURL(lastTakeUrl);
+    lastTakeUrl = take.url;
+    onDone(take);
+  });
 }
 
 let lastTakeUrl = null;
+let takeAudio = null;
 function playTake(url, after) {
   if (!url) return;
-  const a = new Audio(url);
-  a.onended = () => after?.();
-  a.play().catch(() => {});
+  takeAudio?.pause();
+  takeAudio = new Audio(url);
+  takeAudio.onended = () => after?.();
+  takeAudio.play().catch(() => toast('Couldn’t play your recording. Check the volume.'));
+}
+
+const micState = (rec, finishing, interim, idleText) => rec
+  ? (finishing ? 'Finishing…' : interim ? `<bdi ${nativeAttrs(L.lang)}>${esc(interim)}</bdi>` : 'Listening… stops when you pause')
+  : idleText;
+
+function micModeSeg() {
+  const opts = [];
+  if (mic.canRecord) opts.push(['record', 'Hear myself']);
+  if (mic.canRecognize) opts.push(['recognize', 'Check words']);
+  if (mic.canRecord && mic.canRecognize) opts.push(['both', 'Both']);
+  if (opts.length < 2) return '';
+  return `<div class="seg mode-seg">${opts.map(([id, label]) =>
+    `<button class="seg-btn ${mic.micMode() === id ? 'on' : ''}" data-action="mic-mode" data-mode="${id}">${label}</button>`).join('')}</div>`;
+}
+
+/* ---------- Mic check: tests each piece on this device ---------- */
+
+const mc = { speaker: null, beep: null, runs: {}, running: null };
+
+const TESTS = [
+  { mode: 'record', title: 'Microphone', ask: 'Tap, then say anything for a few seconds.', needs: () => mic.canRecord },
+  { mode: 'recognize', title: 'Speech check', ask: '', needs: () => mic.canRecognize },
+  { mode: 'both', title: 'Both at once', ask: '', needs: () => mic.canRecord && mic.canRecognize },
+];
+
+// A short tone as a WAV file. Plays through the media channel, unlike the voice,
+// so it tells a silent-switch problem apart from a voice problem.
+function beepUrl() {
+  const rate = 22050; const n = Math.floor(rate * 0.35);
+  const buf = new ArrayBuffer(44 + n * 2); const v = new DataView(buf);
+  const w = (o, str) => [...str].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+  w(0, 'RIFF'); v.setUint32(4, 36 + n * 2, true); w(8, 'WAVEfmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, rate, true); v.setUint32(28, rate * 2, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, n * 2, true);
+  for (let i = 0; i < n; i++) v.setInt16(44 + i * 2, Math.sin(2 * Math.PI * 660 * i / rate) * 9000 * Math.min(1, (n - i) / 800), true);
+  return URL.createObjectURL(new Blob([buf], { type: 'audio/wav' }));
+}
+
+function viewMicCheck() {
+  mc.runs = {}; mc.running = null; mc.speaker = null;
+  drawMicCheck();
+}
+
+function checkItem(ok, text) {
+  return `<li class="${ok === true ? 'ok' : ok === false ? 'bad' : ''}">${ok === true ? icon('check') : ok === false ? icon('x') : ''}<span>${text}</span></li>`;
+}
+
+function runResult(t, r) {
+  if (!r) return '';
+  const items = [];
+  if (t.mode !== 'recognize') {
+    items.push(checkItem(!['NotAllowedError', 'SecurityError'].includes(r.recError), 'Microphone permission'));
+    items.push(checkItem(!!r.url, r.url ? `Recorded ${(r.ms / 1000).toFixed(1)}s${r.mime ? ` (${esc(r.mime.split(';')[0])})` : ''}` : `No recording${r.recError ? ` (${esc(r.recError)})` : ''}`));
+    if (r.url) items.push(checkItem(r.peak >= 0.08, `Loudest level ${Math.round(r.peak * 100)}%${r.peak < 0.08 ? ', too quiet' : ''}`));
+  }
+  if (t.mode !== 'record') {
+    items.push(checkItem(!!r.transcript, r.transcript ? `Heard: <bdi ${nativeAttrs(L.lang)}>${esc(r.transcript)}</bdi>` : `No words${r.srError ? ` (${esc(r.srError)})` : ''}`));
+  }
+  const why = mic.explain(r);
+  return `<ul class="checks">${items.join('')}</ul>${why ? `<p class="heard">${esc(why)}</p>` : ''}
+    ${r.url ? `<button class="pill-btn" data-action="mc-play" data-url="${esc(r.url)}">${icon('person')}<span>Play my recording</span></button>` : ''}`;
+}
+
+function recommendation() {
+  const ok = (m) => { const r = mc.runs[m]; return r && (m === 'record' ? !!r.url && r.peak >= 0.08 : m === 'recognize' ? !!r.transcript : !!r.url && !!r.transcript); };
+  if (ok('both')) return { mode: 'both', text: 'Everything works at once on this phone: you’ll hear yourself back and see which words came through.' };
+  if (mc.runs.both && ok('record') && ok('recognize')) return { mode: 'record', text: 'Each works alone but not together on this phone. Say it will record you so you can hear yourself back; switch to “Check words” in the Say it panel when you want the word check.' };
+  if (ok('record')) return { mode: 'record', text: 'Recording works. Say it will record you so you can hear yourself back.' };
+  if (ok('recognize')) return { mode: 'recognize', text: 'The speech check works, but recording didn’t. Say it will show which words came through.' };
+  return null;
+}
+
+function drawMicCheck() {
+  const lang = L.lang;
+  const hello = L.byId.get('hello');
+  const rec = recommendation();
+  const current = mic.micMode();
+  page('practice', `
+    <section class="page-head"><h1>Mic check</h1><p>Run this on the phone you practise with. Each step tests one thing, so if something fails you’ll see which part.</p></section>
+
+    ${section('1 · Speaker', `<div class="group pad">
+      <p>Can you hear the voice and a short beep?</p>
+      <div class="take-actions">
+        ${canSpeak() ? `<button class="pill-btn" data-action="mc-speaker">${icon('play')}<span>Play “${esc(hello && !hello.missing ? hello.target : lang.native_name)}”</span></button>` : ''}
+        <button class="pill-btn" data-action="mc-beep">${icon('sound')}<span>Play beep</span></button>
+      </div>
+      <p class="heard">Beep plays but no voice: your iPhone is probably on silent. The voice follows the side switch; the beep doesn’t. Neither plays: turn the volume up, or check Bluetooth headphones.</p>
+    </div>`)}
+
+    ${TESTS.filter((t) => t.needs()).map((t, i) => {
+      const r = mc.runs[t.mode];
+      const running = mc.running === t.mode;
+      const ask = t.mode === 'record' ? t.ask : `Tap, then say “${esc(hello && !hello.missing ? hello.target : '')}”${hello && !hello.missing ? ` (${esc(hello.pron)})` : ''}.`;
+      return section(`${i + 2} · ${t.title}`, `<div class="group pad">
+        <p>${ask}</p>
+        <div class="mc-row">
+          <button class="mic-big ${running ? 'rec' : ''}" data-action="mc-run" data-mode="${t.mode}" ${mc.running && !running ? 'disabled' : ''} aria-label="${running ? 'Stop' : 'Start'}">${icon(running ? 'stop' : 'mic')}</button>
+          ${t.mode !== 'recognize' ? `<div class="meter" id="meter-${t.mode}"><span></span></div>` : `<span class="mic-hint" id="interim-${t.mode}">${running ? 'Listening…' : ''}</span>`}
+        </div>
+        ${runResult(t, r)}
+      </div>`);
+    }).join('')}
+
+    ${section('Result', `<div class="group pad">
+      ${rec ? `<p><b>${esc(rec.text)}</b></p>
+        ${rec.mode !== current ? `<button class="cta" data-action="mc-use" data-mode="${rec.mode}">Use this setting</button>` : `<p class="heard">${icon('check')} Say it is already using this setting.</p>`}`
+        : '<p>Run the steps above and the best setting for this phone appears here.</p>'}
+      <button class="pill-btn" data-action="mc-copy">${icon('cards')}<span>Copy report</span></button>
+      <p class="heard">If something still doesn’t work, copy the report and paste it into our chat.</p>
+    </div>`)}
+  `, { back: `#/${lang.code}` });
+}
+
+function micCheckSpeaker() {
+  const hello = L.byId.get('hello');
+  if (hello && !hello.missing) tts.play(speechItem(hello));
+  mc.speaker = 'played';
+}
+
+function micCheckRun(mode) {
+  if (mc.running === mode) { capture?.stop(); return; }
+  if (mc.running) return;
+  mc.running = mode;
+  const lang = L.lang;
+  tts.stop();
+  capture = mic.capture({
+    asrLang: lang.meta.asr || lang.meta.bcp47,
+    mode,
+    maxMs: 8000,
+    onLevel: (lvl) => { const bar = document.querySelector(`#meter-${mode} span`); if (bar) bar.style.width = `${Math.round(lvl * 100)}%`; },
+    onInterim: (t) => { const el = document.getElementById(`interim-${mode}`); if (el) el.textContent = t; },
+  });
+  drawMicCheck();
+  capture.done.then((r) => {
+    capture = null;
+    mc.running = null;
+    mc.runs[mode] = r;
+    drawMicCheck();
+  });
+}
+
+function micReport() {
+  const lines = [
+    'Wayword mic check',
+    `Language: ${L.lang.name} (speech check: ${L.lang.meta.asr || L.lang.meta.bcp47})`,
+    `Browser: ${navigator.userAgent}`,
+    `Supports: recording ${mic.canRecord ? 'yes' : 'no'}, speech check ${mic.canRecognize ? 'yes' : 'no'}, voice ${tts.speechSupported ? 'yes' : 'no'}, audioSession ${navigator.audioSession ? 'yes' : 'no'}`,
+    `Voice: ${tts.chosenVoice(langCtx())?.name || 'none'}`,
+    `Current setting: ${mic.micMode()}`,
+  ];
+  for (const t of TESTS) {
+    const r = mc.runs[t.mode];
+    if (!r) { lines.push(`${t.title}: not run`); continue; }
+    lines.push(`${t.title}: recording=${r.url ? `${(r.ms / 1000).toFixed(1)}s ${r.mime}` : 'none'} recError=${r.recError || '-'} peak=${Math.round(r.peak * 100)}% words="${r.transcript}" srError=${r.srError || '-'}`);
+  }
+  return lines.join('\n');
 }
 
 /* the "Say it" sheet */
@@ -615,12 +786,14 @@ function playTake(url, after) {
 let sheetPhrase = null;
 let sheetTake = null;
 let sheetRec = false;
+let sheetFinishing = false;
 let sheetInterim = '';
 
 function openSayIt(p) {
   sheetPhrase = p;
   sheetTake = null;
   sheetRec = false;
+  sheetFinishing = false;
   sheetInterim = '';
   openSheet(sayItHtml());
 }
@@ -634,9 +807,10 @@ function sayItHtml() {
         <div class="step-body">${listenBtn(p)}${speedSeg()}</div></li>
       <li><span class="step-n">2</span><span class="step-t">Your turn</span>
         <div class="step-body">
-          <button class="mic-big ${sheetRec ? 'rec' : ''}" data-action="sheet-mic" aria-label="${sheetRec ? 'Stop' : 'Start speaking'}">${icon(sheetRec ? 'stop' : 'mic')}</button>
-          <span class="mic-hint">${sheetRec ? (sheetInterim ? `<bdi ${nativeAttrs(L.lang)}>${esc(sheetInterim)}</bdi>` : 'Listening… tap to stop') : sheetTake ? 'Tap to try again' : 'Tap and say the phrase'}</span>
-        </div></li>
+          <button class="mic-big ${sheetRec ? 'rec' : ''} ${sheetFinishing ? 'finishing' : ''}" data-action="sheet-mic" aria-label="${sheetRec ? 'Stop' : 'Start speaking'}">${icon(sheetRec ? 'stop' : 'mic')}</button>
+          <span class="mic-hint">${micState(sheetRec, sheetFinishing, sheetInterim, sheetTake ? 'Tap to try again' : 'Tap, then say the phrase')}</span>
+        </div>
+        <div class="step-body full">${micModeSeg()}</div></li>
       ${sheetTake ? `<li><span class="step-n">3</span><span class="step-t">Compare</span><div class="step-body full">${takeResult(p, sheetTake)}</div></li>` : ''}
     </ol>`;
 }
@@ -700,7 +874,7 @@ function renderPlayer() {
   }
   const st = tts.getState();
   const p = st.item && L && L.byId.get(st.item.id);
-  if (!p) {
+  if (!p || location.hash.includes('/practice/run') || location.hash.endsWith('/mic')) {
     el.className = '';
     el.innerHTML = '';
     document.body.classList.remove('has-player');
@@ -813,37 +987,57 @@ document.addEventListener('click', (e) => {
   } else if (a === 'say-it') {
     openSayIt(L.byId.get(btn.dataset.id));
   } else if (a === 'sheet-mic') {
-    if (sheetRec) { capture?.stop(); return; }
+    if (sheetRec) { sheetFinishing = true; redrawSheet(); capture?.stop(); return; }
     sheetRec = true;
+    sheetFinishing = false;
     sheetInterim = '';
-    redrawSheet();
     startCapture((t) => { sheetInterim = t; redrawSheet(); }, (take) => {
       sheetRec = false;
+      sheetFinishing = false;
       if (!sheetPhrase) return;
-      if (lastTakeUrl && lastTakeUrl !== take.url) URL.revokeObjectURL(lastTakeUrl);
-      lastTakeUrl = take.url;
       sheetTake = take;
       redrawSheet();
     });
+    redrawSheet();
+  } else if (a === 'mic-mode') {
+    mic.setMicMode(btn.dataset.mode);
+    btn.parentElement.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('on', b === btn));
+  } else if (a === 'speed-cycle') {
+    const i = tts.SPEEDS.indexOf(tts.speed());
+    tts.setSpeed(tts.SPEEDS[(i + 1) % tts.SPEEDS.length].id);
+    btn.textContent = tts.speed().label;
   } else if (a === 'pr-mic') {
-    if (practice.recording) { capture?.stop(); return; }
+    if (practice.recording) { practice.finishing = true; drawPractice(); capture?.stop(); return; }
     practice.recording = true;
+    practice.finishing = false;
     practice.interim = '';
-    drawPractice();
     const p = practice.queue[0];
     startCapture((t) => { practice.interim = t; drawPractice(); }, (take) => {
       if (practice.queue[0] !== p) return;
-      if (lastTakeUrl && lastTakeUrl !== take.url) URL.revokeObjectURL(lastTakeUrl);
-      lastTakeUrl = take.url;
-      Object.assign(practice, { recording: false, interim: '', take, flipped: true });
+      Object.assign(practice, { recording: false, finishing: false, interim: '', take, flipped: true });
       drawPractice();
       if (canSpeak()) tts.play(speechItem(p)); // hear it back right away
     });
+    drawPractice();
   } else if (a === 'hear-native') {
     tts.play(speechItem(L.byId.get(btn.dataset.id)));
   } else if (a === 'hear-me') {
     tts.stop();
     playTake(lastTakeUrl);
+  } else if (a === 'mc-beep') {
+    playTake(beepUrl());
+  } else if (a === 'mc-speaker') {
+    micCheckSpeaker();
+  } else if (a === 'mc-run') {
+    micCheckRun(btn.dataset.mode);
+  } else if (a === 'mc-play') {
+    playTake(btn.dataset.url);
+  } else if (a === 'mc-use') {
+    mic.setMicMode(btn.dataset.mode);
+    toast('Saved. Say it will use this setting.');
+    drawMicCheck();
+  } else if (a === 'mc-copy') {
+    navigator.clipboard?.writeText(micReport()).then(() => toast('Copied. Paste it into your chat.'), () => toast('Couldn’t copy. Long-press the report to select it.'));
   } else if (a === 'hear-both') {
     const p = L.byId.get(btn.dataset.id);
     tts.play(speechItem(p), () => setTimeout(() => playTake(lastTakeUrl), 350));
@@ -961,6 +1155,7 @@ async function route() {
   else if (sectionName === 'scenario') viewScenario(arg, query);
   else if (sectionName === 'patterns') viewPatterns();
   else if (sectionName === 'sounds') await viewSounds();
+  else if (sectionName === 'mic') viewMicCheck();
   else if (sectionName === 'practice' && arg === 'run') viewPracticeRun(query);
   else if (sectionName === 'practice') viewPracticeSetup();
   else return go(`#/${code}`);
@@ -968,6 +1163,7 @@ async function route() {
 }
 
 async function boot() {
+  mic.setAudioSession('playback');
   try {
     C = await loadContent();
   } catch (err) {

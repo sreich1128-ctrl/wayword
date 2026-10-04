@@ -456,6 +456,27 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .heard { font-size: 13px; color: var(--muted); }
 .take-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 
+/* live level ring on the mic button, finishing state, mic check */
+.mic-big.rec { --lvl: 0; animation: none; box-shadow: 0 0 0 calc(4px + var(--lvl) * 22px) rgb(220 38 38 / .22); transition: box-shadow .08s linear; }
+.mic-big.finishing { opacity: .6; }
+.mic-big:disabled { opacity: .35; }
+.take.failed { background: color-mix(in srgb, #dc2626 8%, var(--surface-2)); }
+.mode-seg { margin-top: 10px; }
+.group.pad { padding: 14px; display: grid; gap: 10px; justify-items: start; }
+.group.pad > p { font-size: 15px; }
+.group.pad .cta { width: 100%; }
+.mc-row { display: flex; align-items: center; gap: 16px; width: 100%; }
+.mc-row .mic-big { margin: 6px; }
+.meter { flex: 1; height: 12px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.meter span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #22c55e, #eab308 70%, #dc2626); border-radius: 99px; transition: width .06s linear; }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 14px; }
+.checks li { display: flex; align-items: center; gap: 6px; color: var(--muted); }
+.checks li .ic { width: 16px; height: 16px; }
+.checks li.ok .ic { color: #16a34a; }
+.checks li.bad { color: var(--ink); }
+.checks li.bad .ic { color: #dc2626; }
+.speed-pill { min-width: 56px; justify-content: center; font-variant-numeric: tabular-nums; color: var(--accent-ink); }
+
 /* ---------- bottom sheet ---------- */
 #sheet { position: fixed; inset: 0; z-index: 60; pointer-events: none; }
 .sheet-backdrop { position: absolute; inset: 0; background: rgb(0 0 0 / .35); opacity: 0; transition: opacity .2s; }
