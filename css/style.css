@@ -124,22 +124,89 @@ h1, h2, p { margin: 0; }
   background: var(--surface); border: 1px solid var(--line); color: var(--accent-ink); font-weight: 700;
 }
 .continue .ic { width: 18px; height: 18px; }
-.lang-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-.lang-card {
-  display: flex; flex-direction: column; min-height: 150px; padding: 14px;
-  border-radius: 20px; background: color-mix(in srgb, var(--accent) 8%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--line));
-  transition: transform .15s ease;
+/* visa page: faint guilloché lines, one ink stamp per language */
+.visa-page {
+  position: relative; border-radius: 22px; padding: 18px 14px 22px;
+  background:
+    repeating-radial-gradient(circle at 20% 0%, transparent 0 11px, color-mix(in srgb, var(--ink) 4%, transparent) 11px 12px),
+    repeating-radial-gradient(circle at 90% 100%, transparent 0 13px, color-mix(in srgb, var(--ink) 3%, transparent) 13px 14px),
+    var(--surface);
+  border: 1px solid var(--line);
 }
-.lang-card:active { transform: scale(.98); }
-.lang-glyph {
-  font-family: var(--font-native); font-size: 20px; font-weight: 800; width: 40px; height: 40px;
-  display: grid; place-items: center; border-radius: 13px; background: var(--accent); color: #fff;
+.visa-label { position: absolute; top: 12px; right: 16px; font-size: 11px; font-weight: 800; letter-spacing: .3em; text-transform: uppercase; color: var(--faint); }
+.stamps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 12px; padding-top: 14px; }
+.stamp {
+  position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1px;
+  padding: 14px 10px 12px; color: color-mix(in srgb, var(--accent) 85%, var(--ink));
+  border: 2.5px solid currentColor; outline: 1px solid currentColor; outline-offset: -7px;
+  transform: rotate(var(--rot)); opacity: .9;
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+  transition: transform .2s ease, opacity .2s;
 }
-.lang-native { font-family: var(--font-native); font-size: 21px; font-weight: 800; margin-top: auto; padding-top: 14px; line-height: 1.2; }
-.lang-card .lang-native[dir="rtl"] { text-align: left; }
-.lang-name { font-size: 14px; font-weight: 700; color: var(--muted); }
-.lang-region { font-size: 12px; color: var(--faint); margin-top: 1px; }
+.stamp.shape-0 { border-radius: 18px; }
+.stamp.shape-1 { border-radius: 50% / 38%; padding-inline: 16px; }
+.stamp.shape-2 { border-radius: 6px; border-style: double; border-width: 5px; outline: 0; }
+.stamp:active { transform: rotate(var(--rot)) scale(.97); }
+.stamp-region { font-size: 9.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; max-width: 100%; line-height: 1.25; overflow-wrap: anywhere; }
+.stamp-glyph {
+  display: grid; place-items: center; width: 38px; height: 38px; margin: 6px 0 4px; border-radius: 50%;
+  border: 1.5px dashed currentColor; font-family: var(--font-native); font-size: 18px; font-weight: 800;
+}
+.stamp-native { font-family: var(--font-native); font-size: 19px; font-weight: 800; line-height: 1.2; }
+.stamp-name { font-size: 12px; font-weight: 700; opacity: .85; }
+.stamp-foot { margin-top: 6px; padding-top: 4px; border-top: 1px dashed currentColor; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+.stamp.stamping { animation: stamp-press .42s cubic-bezier(.3, 1.6, .5, 1) both; }
+@keyframes stamp-press {
+  0% { transform: rotate(var(--rot)) scale(1); }
+  35% { transform: rotate(calc(var(--rot) * .3)) scale(1.12); opacity: .7; }
+  70% { transform: rotate(var(--rot)) scale(.94); opacity: 1; background: color-mix(in srgb, var(--accent) 14%, transparent); }
+  100% { transform: rotate(var(--rot)) scale(1); opacity: 1; background: color-mix(in srgb, var(--accent) 10%, transparent); }
+}
+
+/* passport cover intro */
+body.intro-on { overflow: hidden; }
+#intro {
+  position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; align-content: center; gap: 22px;
+  background: var(--bg); cursor: pointer; transition: opacity .45s ease;
+}
+#intro.done { opacity: 0; pointer-events: none; }
+.passport {
+  position: relative; width: min(58vw, 250px); aspect-ratio: .7; perspective: 1600px;
+  transform: scale(.92); opacity: 0; transition: transform .9s cubic-bezier(.6, .05, .3, 1), opacity .35s ease;
+}
+#intro.in .passport { transform: scale(1); opacity: 1; }
+#intro.open .passport { transform: translateX(50%) scale(.9); }
+.pp-page, .pp-front, .pp-back { position: absolute; inset: 0; border-radius: 6px 14px 14px 6px; }
+.pp-page {
+  padding: 22px 18px; display: grid; align-content: start; gap: 2px;
+  background:
+    repeating-radial-gradient(circle at 30% 20%, transparent 0 9px, rgb(30 60 110 / .06) 9px 10px),
+    #f5f0e3;
+  color: #2a3550; box-shadow: inset 6px 0 12px rgb(0 0 0 / .08), 0 16px 40px rgb(0 0 0 / .18);
+}
+.pp-page-k { font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #8a8471; margin-top: 10px; }
+.pp-page-v { font-size: 15px; font-weight: 700; font-family: var(--font); }
+.pp-cover { position: absolute; inset: 0; transform-origin: left center; transform-style: preserve-3d; transition: transform 1s cubic-bezier(.6, .05, .3, 1); }
+#intro.open .pp-cover { transform: rotateY(-178deg); }
+.pp-front, .pp-back { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.pp-front {
+  display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 26px 16px 22px;
+  background:
+    radial-gradient(120% 90% at 30% 20%, rgb(255 255 255 / .07), transparent 60%),
+    radial-gradient(rgb(0 0 0 / .18) 1px, transparent 1.5px) 0 0 / 5px 5px,
+    #1d2a4a;
+  color: #d9bd74; box-shadow: 0 20px 50px rgb(0 0 0 / .3), inset -3px 0 0 rgb(0 0 0 / .25);
+}
+.pp-back { transform: rotateY(180deg); background: #f5f0e3; box-shadow: inset -6px 0 12px rgb(0 0 0 / .08); }
+.pp-title { font-size: 21px; font-weight: 800; letter-spacing: .32em; text-transform: uppercase; padding-left: .32em; }
+.pp-emblem { width: 58%; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.pp-emblem .fill { fill: currentColor; stroke: none; }
+.pp-sub { font-size: 11px; font-weight: 700; letter-spacing: .08em; font-style: italic; opacity: .9; text-align: center; }
+.pp-chip { width: 34px; fill: none; stroke: currentColor; stroke-width: 1.4; opacity: .8; }
+.intro-hint { font-size: 13px; font-weight: 600; color: var(--faint); opacity: 0; transition: opacity .3s .5s; }
+#intro.in .intro-hint { opacity: 1; }
+#intro.open .intro-hint { opacity: 0; transition-delay: 0s; }
+
 .fine { text-align: center; color: var(--faint); font-size: 13px; margin-top: 28px; }
 
 /* ---------- language home ---------- */
@@ -545,6 +612,6 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 #toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
 
 @media (min-width: 560px) {
-  .lang-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .stamps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

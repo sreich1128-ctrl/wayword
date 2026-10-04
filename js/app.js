@@ -197,29 +197,87 @@ const row = ({ href, action, ic, emoji, title, sub, count, attrs = '' }) => {
 
 /* ---------- views ---------- */
 
+// Home is the inside of a passport: one visa stamp per language.
+const STAMP_TILT = [-4, 3, -2, 5, -3, 2, -5, 4];
+const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+
 function viewHome() {
   const last = store.prefs().lastLang && C.languageByCode.get(store.prefs().lastLang);
   $app.innerHTML = `
   ${header()}
   <main class="main home">
     <section class="home-hero">
-      <p class="eyebrow">Your pocket travel phrasebook</p>
-      <h1>Where are we<br>talking today?</h1>
+      <p class="eyebrow">Wayword · finding your way with words</p>
+      <h1>Where to next?</h1>
       ${last ? `<a class="continue" href="#/${encodeURIComponent(last.code)}" style="--accent:${last.meta.accent}">Continue with ${esc(last.name)} ${icon('chev')}</a>` : ''}
     </section>
-    <section class="lang-grid">
-      ${C.languages.map((l) => {
+    <section class="visa-page">
+      <p class="visa-label">Visas</p>
+      <div class="stamps">
+      ${C.languages.map((l, i) => {
         const learned = store.countFor('learned', l.code);
-        return `<a class="lang-card" href="#/${encodeURIComponent(l.code)}" style="--accent:${l.meta.accent};--accent-2:${l.meta.accent2}">
-          <span class="lang-glyph" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.meta.glyph)}</span>
-          <span class="lang-native" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.native_name)}</span>
-          <span class="lang-name">${esc(l.name)}</span>
-          <span class="lang-region">${esc(l.region)}${learned ? ` · ${learned} learned` : ''}</span>
+        return `<a class="stamp shape-${i % 3}" href="#/${encodeURIComponent(l.code)}" data-stamp style="--accent:${l.meta.accent};--rot:${STAMP_TILT[i % STAMP_TILT.length]}deg">
+          <span class="stamp-region">${esc(l.region)}</span>
+          <span class="stamp-glyph" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.meta.glyph)}</span>
+          <span class="stamp-native" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.native_name)}</span>
+          <span class="stamp-name">${esc(l.name)}</span>
+          <span class="stamp-foot">${learned ? `${learned} learned` : 'First visit'}</span>
         </a>`;
       }).join('')}
+      </div>
     </section>
     <p class="fine">Progress is saved on this device only.</p>
   </main>`;
+  maybeIntro();
+}
+
+// The passport cover swings open once per session. Tap skips it; Reduce Motion turns it off.
+function maybeIntro() {
+  let seen = false;
+  try { seen = sessionStorage.getItem('wayword:intro') === '1'; sessionStorage.setItem('wayword:intro', '1'); } catch { seen = false; }
+  if (seen || reducedMotion() || document.getElementById('intro')) return;
+  const el = document.createElement('div');
+  el.id = 'intro';
+  el.setAttribute('aria-hidden', 'true');
+  el.innerHTML = `
+    <div class="passport">
+      <div class="pp-page">
+        <p class="pp-page-k">Holder</p><p class="pp-page-v">A curious traveller</p>
+        <p class="pp-page-k">Languages</p><p class="pp-page-v">${C.languages.length}</p>
+        <p class="pp-page-k">Valid for</p><p class="pp-page-v">Every conversation</p>
+      </div>
+      <div class="pp-cover">
+        <div class="pp-front">
+          <p class="pp-title">Wayword</p>
+          <svg class="pp-emblem" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="40"/><circle cx="50" cy="50" r="31"/>
+            <path d="M50 12 56 44 88 50 56 56 50 88 44 56 12 50 44 44Z"/>
+            <path d="M50 30 53 47 70 50 53 53 50 70 47 53 30 50 47 47Z" class="fill"/>
+          </svg>
+          <p class="pp-sub">finding your way with words</p>
+          <svg class="pp-chip" viewBox="0 0 40 26" aria-hidden="true"><rect x="1" y="1" width="38" height="24" rx="4"/><circle cx="20" cy="13" r="6"/><path d="M1 13h13M26 13h13"/></svg>
+        </div>
+        <div class="pp-back"></div>
+      </div>
+    </div>
+    <p class="intro-hint">Tap to open</p>`;
+  document.body.appendChild(el);
+  document.body.classList.add('intro-on');
+  let opened = false;
+  const close = () => {
+    el.classList.add('done');
+    document.body.classList.remove('intro-on');
+    setTimeout(() => el.remove(), 450);
+  };
+  const open = () => {
+    if (opened) { close(); return; } // second tap: skip straight in
+    opened = true;
+    el.classList.add('open');
+    setTimeout(close, 1050);
+  };
+  el.addEventListener('click', open);
+  requestAnimationFrame(() => el.classList.add('in'));
+  setTimeout(open, 900);
 }
 
 function viewDashboard() {
@@ -956,6 +1014,13 @@ function toast(text) {
 /* ---------- events ---------- */
 
 document.addEventListener('click', (e) => {
+  const stamp = e.target.closest('a[data-stamp]');
+  if (stamp && !reducedMotion() && !e.metaKey && !e.ctrlKey) {
+    e.preventDefault();
+    stamp.classList.add('stamping');
+    setTimeout(() => { location.hash = stamp.getAttribute('href'); }, 420);
+    return;
+  }
   const btn = e.target.closest('[data-action]');
   if (!btn) {
     // Tap a hidden English/pronunciation line to peek at it.
