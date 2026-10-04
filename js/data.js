@@ -11,7 +11,7 @@ async function getJSON(path) {
 }
 
 // Optional per-entry fields the UI knows how to show if a dataset provides them.
-export const OPTIONAL_FIELDS = ['regional_note', 'usage_note', 'example', 'response'];
+export const OPTIONAL_FIELDS = ['reading', 'regional_note', 'usage_note', 'example', 'response'];
 
 // Pattern transliterations in the dataset leave out the blank ("وين ___؟" = "wayn").
 // For display only, put a ___ where the blank falls, counted by words: the wording

@@ -223,8 +223,42 @@ function similarity(a, b) {
   return 1 - d[m][n] / Math.max(m, n);
 }
 
+// Languages written without spaces (Japanese): match character by character, using the
+// longest common subsequence, against the written form or its kana reading, whichever fits better.
+function compareChars(target, heard, alt) {
+  // NFKC keeps が as one character (NFD would split off the voicing mark); katakana folds to hiragana.
+  const strip = (x) => x.normalize('NFKC').toLowerCase()
+    .replace(/[\u30a1-\u30f6]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60))
+    .replace(/[\p{P}\p{S}\s]/gu, '');
+  const h = [...strip(heard)];
+  const lcsMarks = (t) => {
+    const n = t.length; const m = h.length;
+    const d = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+    for (let i = n - 1; i >= 0; i--) for (let j = m - 1; j >= 0; j--) d[i][j] = t[i] === h[j] ? d[i + 1][j + 1] + 1 : Math.max(d[i + 1][j], d[i][j + 1]);
+    const hit = new Array(n).fill(false);
+    for (let i = 0, j = 0; i < n && j < m;) { if (t[i] === h[j]) { hit[i] = true; i++; j++; } else if (d[i + 1][j] >= d[i][j + 1]) i++; else j++; }
+    return { hit, score: n ? d[0][0] / n : 0 };
+  };
+  const t = [...target.replace(/_{2,}/g, '\u0000')];
+  const keep = t.map((ch) => ch !== '\u0000' && strip(ch) !== '');
+  const main = lcsMarks(t.filter((_, i) => keep[i]).map((ch) => strip(ch)));
+  let k = 0;
+  const words = t.map((ch, i) => {
+    if (ch === '\u0000') return { raw: '___', status: 'slot' };
+    if (!keep[i]) return { raw: ch, status: 'skip' };
+    return { raw: ch, status: main.hit[k++] ? 'hit' : 'miss' };
+  });
+  const altScore = alt ? lcsMarks([...strip(alt.replace(/_{2,}/g, ''))]).score : 0;
+  // If the kana reading matched better (recognizer wrote kana), colour by that score instead.
+  if (altScore > main.score && altScore >= 0.8) {
+    words.forEach((w) => { if (w.status === 'miss') w.status = altScore >= 0.95 ? 'hit' : 'close'; });
+  }
+  return { words, score: Math.max(main.score, altScore) };
+}
+
 // Splits the phrase into words and marks each one: hit, close, miss, or slot (a ___ blank).
-export function compare(target, heard) {
+export function compare(target, heard, { charMode = false, alt = '' } = {}) {
+  if (charMode) return compareChars(target, heard, alt);
   const heardWords = normalize(heard).split(/\s+/).filter(Boolean);
   const words = target.split(/\s+/).filter(Boolean).map((raw) => {
     if (/_{2,}/.test(raw)) return { raw, status: 'slot' };

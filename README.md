@@ -31,12 +31,14 @@ All language content lives in `content/`. The UI code (`js/`, `css/`) has no phr
 ### Fields a phrase card shows
 
 `english`, `target`, `pronunciation_easy` are required. These optional fields render automatically when an entry has them:
-`regional_note`, `usage_note`, `example`, `response`. Today only `regional_note` appears in the data (3 Portuguese entries).
+`reading` (a kana/phonetic line shown under the native text when it differs, used by Japanese), `regional_note`, `usage_note`, `example`, `response`. Today only `regional_note` appears in the data (3 Portuguese entries).
 
 ### Add a language
 
+A ready-made prompt for building a new language file with another AI tool is in `docs/ADD_A_LANGUAGE_PROMPT.md`.
+
 1. Add `content/lang/<code>.json` in the same shape as the others, plus a row in `languages.json`. RTL languages use `"direction": "rtl"`.
-2. Add a block in `language-meta.json` (accent colors, glyph, `bcp47`).
+2. Add a block in `language-meta.json` (accent colors, glyph, `bcp47`, `asr`). For scripts written without spaces (Japanese, Chinese, Thai) set `"no_spaces": true` so the speech check compares character by character, and put `___` in the pronunciation of patterns yourself.
 3. Add the file to `LANGS` in `sw.js` and bump `VERSION`.
 4. Run `npm run validate`.
 

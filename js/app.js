@@ -106,8 +106,15 @@ const canPracticeAloud = () => mic.canRecord || mic.canRecognize;
 function phraseLines(p, { size = '', nativeHtml } = {}) {
   if (p.missing) return '<p class="native missing">Not in the dataset yet</p>';
   return `<p class="native ${size}" ${nativeAttrs(L.lang)}>${nativeHtml ?? withSlots(p.target)}</p>
+    ${readingLine(p, size)}
     <p class="pron ${size}" data-peek="pron">${withSlots(p.pron)}</p>
     <p class="en ${size}" data-peek="en">${withSlots(p.english)}</p>`;
+}
+
+// Kana reading for scripts like Japanese, shown only when it differs from the written form.
+function readingLine(p, size = '') {
+  if (!p.reading || p.reading === p.target) return '';
+  return `<p class="kana ${size}" data-peek="pron" ${nativeAttrs(L.lang)}>${withSlots(p.reading)}</p>`;
 }
 
 function listenBtn(p, cls = '') {
@@ -382,7 +389,7 @@ function renderList(cat, q) {
     return true;
   });
   if (needle) {
-    items = items.filter((p) => [p.english, p.target, p.pron, p.regional_note, p.usage_note]
+    items = items.filter((p) => [p.english, p.target, p.reading, p.pron, p.regional_note, p.usage_note]
       .some((s) => s && s.toLowerCase().includes(needle)));
   }
   const el = document.getElementById('list');
@@ -581,7 +588,7 @@ function drawPractice() {
   }
   const p = s.queue[0];
   const learned = store.isLearned(p.key);
-  const nativeBlock = `<p class="native fc-native" ${nativeAttrs(lang)}>${withSlots(p.target)}</p><p class="pron fc-pron" data-peek="pron">${withSlots(p.pron)}</p>`;
+  const nativeBlock = `<p class="native fc-native" ${nativeAttrs(lang)}>${withSlots(p.target)}</p>${readingLine(p, 'fc-kana')}<p class="pron fc-pron" data-peek="pron">${withSlots(p.pron)}</p>`;
   const englishBlock = `<p class="fc-en">${withSlots(p.english)}</p>`;
   const notes = p.regional_note ? `<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>` : '';
   const pct = Math.round((s.done / s.total) * 100);
@@ -631,10 +638,10 @@ function takeResult(p, take) {
   let verdict = '';
   let words = '';
   if (take.transcript) {
-    const r = mic.compare(p.target, take.transcript);
+    const r = mic.compare(p.target, take.transcript, { charMode: !!lang.meta.no_spaces, alt: p.reading });
     const pct = Math.round(r.score * 100);
     verdict = pct >= 80 ? 'Clear. Your phone understood almost every word.' : pct >= 50 ? 'Close. Some words came through, keep going.' : 'Not much came through. Listen once more, then try again.';
-    words = `<p class="heard-words" ${nativeAttrs(lang)}>${r.words.map((w) => `<span class="w-${w.status}">${withSlots(w.raw)}</span>`).join(' ')}</p>
+    words = `<p class="heard-words" ${nativeAttrs(lang)}>${r.words.map((w) => `<span class="w-${w.status}">${withSlots(w.raw)}</span>`).join(lang.meta.no_spaces ? '' : ' ')}</p>
       <p class="heard">Your phone heard: <bdi ${nativeAttrs(lang)}>${esc(take.transcript)}</bdi></p>`;
   } else if (problem) {
     verdict = problem;

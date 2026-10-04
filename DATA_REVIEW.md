@@ -31,3 +31,11 @@ Nothing below was changed in the data. These are things the app can't show yet, 
 ## Display-only adjustment
 
 Pattern transliterations in the dataset leave out the blank (وين ___؟ is spelled just "wayn"). The app adds a ___ where the blank falls, counted word by word ("wayn ___", "le-___" for Hebrew ל___). The dataset files themselves are unchanged; see `slotPron` in `js/data.js`.
+
+## Japanese (`ja.json`, added 2026-10-04, ChatGPT-built to the same framework)
+
+All 56 concepts present and matching. Not changed; worth a look:
+- **Small っ not doubled:** `whats_in_this` and `dairy` spell 入って "hai-teh"; it's said "hait-teh".
+- **Long ii dropped:** `like_talking` spells 楽しい "tah-noh-shee"; it's "tah-noh-shee-ee".
+- **Shared forms:** `can_i_have` and `i_would_like` are both ___をお願いします; `interesting` and `youre_funny` are both 面白いですね. The file's own usage notes explain this. It's how Japanese works, not an error.
+- `reading` for katakana words is given in hiragana (トイレ → といれ). Correct, just unusual to see.

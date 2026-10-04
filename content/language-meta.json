@@ -77,5 +77,15 @@
     "motif": "stone",
     "tts": true,
     "asr": "he-IL"
+  },
+  "ja": {
+    "bcp47": "ja-JP",
+    "glyph": "あ",
+    "accent": "#b5487a",
+    "accent2": "#e8b04a",
+    "motif": "waves",
+    "tts": true,
+    "asr": "ja-JP",
+    "no_spaces": true
   }
 }

@@ -239,6 +239,7 @@ body.intro-on { overflow: hidden; }
 :root[data-motif="dots"] .lang-hero::before { background: radial-gradient(currentColor 2.5px, transparent 3.5px) 0 0 / 18px 18px; }
 :root[data-motif="diamond"] .lang-hero::before { background: linear-gradient(135deg, currentColor 25%, transparent 25%) -12px 0 / 24px 24px, linear-gradient(225deg, currentColor 25%, transparent 25%) -12px 0 / 24px 24px; }
 :root[data-motif="star"] .lang-hero::before { background: conic-gradient(currentColor 0 12.5%, transparent 0 25%, currentColor 0 37.5%, transparent 0 50%, currentColor 0 62.5%, transparent 0 75%, currentColor 0 87.5%, transparent 0) 0 0 / 30px 30px; }
+:root[data-motif="waves"] .lang-hero::before { background: radial-gradient(circle at 50% 100%, transparent 0 8px, currentColor 8px 9.5px, transparent 9.5px 13px, currentColor 13px 14.5px, transparent 14.5px 18px, currentColor 18px 19.5px, transparent 19.5px) 0 0 / 40px 20px; }
 :root[data-motif="stone"] .lang-hero::before { background: linear-gradient(currentColor 1.5px, transparent 1.5px) 0 0 / 100% 22px, linear-gradient(90deg, currentColor 1.5px, transparent 1.5px) 0 0 / 44px 22px; }
 
 .tierwrap { margin: 6px 0 4px; }
@@ -347,6 +348,10 @@ body.intro-on { overflow: hidden; }
 }
 .native[dir="rtl"] { font-size: 29px; line-height: 1.5; text-align: right; }
 .native.missing { font-size: 16px; color: var(--muted); font-style: italic; font-weight: 600; }
+.kana { font-family: var(--font-native); font-size: 16px; color: var(--muted); margin-top: 1px; letter-spacing: .02em; }
+.kana.sm { font-size: 13px; }
+.kana.lg { font-size: 18px; }
+.kana.fc-kana { font-size: 18px; text-align: center; }
 .pron { font-size: 16px; color: var(--accent-ink); margin-top: 2px; font-weight: 600; letter-spacing: .01em; }
 .en { font-size: 15px; color: var(--muted); margin-top: 4px; }
 .native[dir="rtl"] ~ .pron, .native[dir="rtl"] ~ .en { text-align: right; }

@@ -1,0 +1,595 @@
+{
+  "schema_version": "1.0",
+  "language_code": "ja",
+  "name": "Japanese",
+  "native_name": "日本語",
+  "region": "Japan",
+  "direction": "ltr",
+  "notes": {
+    "register": "Natural spoken Japanese for travellers. Polite です/ます forms are the default for strangers and service staff; selected social phrases are warmer or more casual where natural.",
+    "pronunciation": "English-speaker respelling. Long vowels are shown approximately; double consonants are reflected where useful. The kana reading is authoritative for reading practice.",
+    "writing": "target uses natural kanji + kana; reading gives the complete phrase in kana."
+  },
+  "entries": [
+    {
+      "id": "hello",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Hello",
+      "type": "phrase",
+      "target": "こんにちは",
+      "reading": "こんにちは",
+      "pronunciation_easy": "kon-nee-chee-wah",
+      "usage_note": "Standard daytime greeting."
+    },
+    {
+      "id": "good_morning",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Good morning",
+      "type": "phrase",
+      "target": "おはようございます",
+      "reading": "おはようございます",
+      "pronunciation_easy": "oh-hah-yoh goh-zah-ee-mahs"
+    },
+    {
+      "id": "how_are_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "How are you?",
+      "type": "phrase",
+      "target": "お元気ですか？",
+      "reading": "おげんきですか？",
+      "pronunciation_easy": "oh-gen-kee des-kah",
+      "usage_note": "Grammatically natural, but Japanese speakers do not use this as routinely as English speakers use 'How are you?'"
+    },
+    {
+      "id": "please",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Please",
+      "type": "phrase",
+      "target": "お願いします",
+      "reading": "おねがいします",
+      "pronunciation_easy": "oh-neh-guy-shee-mahs",
+      "usage_note": "Useful polite 'please' when making a request."
+    },
+    {
+      "id": "thank_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Thank you",
+      "type": "phrase",
+      "target": "ありがとうございます",
+      "reading": "ありがとうございます",
+      "pronunciation_easy": "ah-ree-gah-toh goh-zah-ee-mahs"
+    },
+    {
+      "id": "excuse_me",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Excuse me",
+      "type": "phrase",
+      "target": "すみません",
+      "reading": "すみません",
+      "pronunciation_easy": "soo-mee-mah-sen",
+      "usage_note": "Extremely useful: excuse me, sorry, or getting someone's attention."
+    },
+    {
+      "id": "yes",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Yes",
+      "type": "phrase",
+      "target": "はい",
+      "reading": "はい",
+      "pronunciation_easy": "high"
+    },
+    {
+      "id": "no",
+      "category": "essentials",
+      "priority": "core",
+      "english": "No",
+      "type": "phrase",
+      "target": "いいえ",
+      "reading": "いいえ",
+      "pronunciation_easy": "ee-eh"
+    },
+    {
+      "id": "speak_english",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Do you speak English?",
+      "type": "phrase",
+      "target": "英語を話せますか？",
+      "reading": "えいごをはなせますか？",
+      "pronunciation_easy": "ay-goh oh hah-nah-seh-mahs-kah"
+    },
+    {
+      "id": "dont_speak_well",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't speak [language] well.",
+      "type": "pattern",
+      "target": "日本語はあまり話せません。",
+      "reading": "にほんごはあまりはなせません。",
+      "pronunciation_easy": "nee-hon-goh wah ah-mah-ree hah-nah-seh-mah-sen"
+    },
+    {
+      "id": "know_a_little",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I know a little.",
+      "type": "phrase",
+      "target": "少しだけ分かります。",
+      "reading": "すこしだけわかります。",
+      "pronunciation_easy": "skoo-shee dah-keh wah-kah-ree-mahs",
+      "usage_note": "Means 'I understand a little.' More natural here than literally saying 'I know a little.'"
+    },
+    {
+      "id": "dont_understand",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't understand.",
+      "type": "phrase",
+      "target": "分かりません。",
+      "reading": "わかりません。",
+      "pronunciation_easy": "wah-kah-ree-mah-sen"
+    },
+    {
+      "id": "say_again",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you say that again?",
+      "type": "phrase",
+      "target": "もう一度言ってもらえますか？",
+      "reading": "もういちどいってもらえますか？",
+      "pronunciation_easy": "moh ee-chee-doh eet-teh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "speak_slowly",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you speak more slowly?",
+      "type": "phrase",
+      "target": "もう少しゆっくり話してもらえますか？",
+      "reading": "もうすこしゆっくりはなしてもらえますか？",
+      "pronunciation_easy": "moh skoo-shee yook-koo-ree hah-nah-shee-teh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "what_mean",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "What does that mean?",
+      "type": "phrase",
+      "target": "それはどういう意味ですか？",
+      "reading": "それはどういういみですか？",
+      "pronunciation_easy": "soh-reh wah doh-yoo ee-mee des-kah"
+    },
+    {
+      "id": "how_say",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "How do you say ___?",
+      "type": "pattern",
+      "target": "___は日本語で何と言いますか？",
+      "reading": "___はにほんごでなんといいますか？",
+      "pronunciation_easy": "___ wah nee-hon-goh deh nan toh ee-ee-mahs-kah"
+    },
+    {
+      "id": "learning_language",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "I'm learning [language].",
+      "type": "pattern",
+      "target": "日本語を勉強しています。",
+      "reading": "にほんごをべんきょうしています。",
+      "pronunciation_easy": "nee-hon-goh oh ben-kyoh shee-teh ee-mahs"
+    },
+    {
+      "id": "learning_by_trying",
+      "category": "language_rescue",
+      "priority": "explore",
+      "english": "I'm learning by trying to speak.",
+      "type": "phrase",
+      "target": "話してみながら日本語を勉強しています。",
+      "reading": "はなしてみながらにほんごをべんきょうしています。",
+      "pronunciation_easy": "hah-nah-shee-teh mee-nah-gah-rah nee-hon-goh oh ben-kyoh shee-teh ee-mahs",
+      "usage_note": "Natural approximation of 'I learn by trying to speak.'"
+    },
+    {
+      "id": "where_is",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Where is ___?",
+      "type": "pattern",
+      "target": "___はどこですか？",
+      "reading": "___はどこですか？",
+      "pronunciation_easy": "___ wah doh-koh des-kah"
+    },
+    {
+      "id": "nearest",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Where is the nearest ___?",
+      "type": "pattern",
+      "target": "一番近い___はどこですか？",
+      "reading": "いちばんちかい___はどこですか？",
+      "pronunciation_easy": "ee-chee-bahn chee-kai ___ wah doh-koh des-kah"
+    },
+    {
+      "id": "bathroom",
+      "category": "navigation",
+      "priority": "core",
+      "english": "Where is the bathroom?",
+      "type": "phrase",
+      "target": "トイレはどこですか？",
+      "reading": "といれはどこですか？",
+      "pronunciation_easy": "toh-ee-reh wah doh-koh des-kah"
+    },
+    {
+      "id": "how_get",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "How do I get to ___?",
+      "type": "pattern",
+      "target": "___にはどうやって行けばいいですか？",
+      "reading": "___にはどうやっていけばいいですか？",
+      "pronunciation_easy": "___ nee wah doh-yat-teh ee-keh-bah ee-ee des-kah"
+    },
+    {
+      "id": "is_far",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Is it far?",
+      "type": "phrase",
+      "target": "遠いですか？",
+      "reading": "とおいですか？",
+      "pronunciation_easy": "toh-ee des-kah"
+    },
+    {
+      "id": "help_me",
+      "category": "problems",
+      "priority": "core",
+      "english": "Can you help me?",
+      "type": "phrase",
+      "target": "手伝ってもらえますか？",
+      "reading": "てつだってもらえますか？",
+      "pronunciation_easy": "teh-tsoo-daht-teh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "can_i_have",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Can I have ___, please?",
+      "type": "pattern",
+      "target": "___をお願いします。",
+      "reading": "___をおねがいします。",
+      "pronunciation_easy": "___ oh oh-neh-guy-shee-mahs",
+      "usage_note": "Very natural tourist request pattern: '___, please.'"
+    },
+    {
+      "id": "i_would_like",
+      "category": "food",
+      "priority": "travel",
+      "english": "I'd like ___, please.",
+      "type": "pattern",
+      "target": "___をお願いします。",
+      "reading": "___をおねがいします。",
+      "pronunciation_easy": "___ oh oh-neh-guy-shee-mahs",
+      "usage_note": "Japanese commonly uses the same polite request pattern rather than a literal 'I'd like.'"
+    },
+    {
+      "id": "coffee",
+      "category": "food",
+      "priority": "core",
+      "english": "A coffee, please.",
+      "type": "phrase",
+      "target": "コーヒーをお願いします。",
+      "reading": "こーひーをおねがいします。",
+      "pronunciation_easy": "koh-hee oh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "water",
+      "category": "food",
+      "priority": "core",
+      "english": "Water, please.",
+      "type": "phrase",
+      "target": "お水をお願いします。",
+      "reading": "おみずをおねがいします。",
+      "pronunciation_easy": "oh-mee-zoo oh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "whats_in_this",
+      "category": "food",
+      "priority": "travel",
+      "english": "What's in this?",
+      "type": "phrase",
+      "target": "これには何が入っていますか？",
+      "reading": "これにはなにがはいっていますか？",
+      "pronunciation_easy": "koh-reh nee wah nah-nee gah hai-teh ee-mahs-kah"
+    },
+    {
+      "id": "dairy",
+      "category": "food",
+      "priority": "travel",
+      "english": "Does this have dairy in it?",
+      "type": "phrase",
+      "target": "これに乳製品は入っていますか？",
+      "reading": "これににゅうせいひんははいっていますか？",
+      "pronunciation_easy": "koh-reh nee nyoo-say-heen wah hai-teh ee-mahs-kah",
+      "usage_note": "乳製品 means dairy products."
+    },
+    {
+      "id": "recommend_food",
+      "category": "food",
+      "priority": "travel",
+      "english": "What do you recommend?",
+      "type": "phrase",
+      "target": "おすすめは何ですか？",
+      "reading": "おすすめはなんですか？",
+      "pronunciation_easy": "oh-soo-soo-meh wah nan des-kah"
+    },
+    {
+      "id": "bill",
+      "category": "money",
+      "priority": "core",
+      "english": "The bill/check, please.",
+      "type": "phrase",
+      "target": "お会計をお願いします。",
+      "reading": "おかいけいをおねがいします。",
+      "pronunciation_easy": "oh-kai-kay oh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "how_much",
+      "category": "money",
+      "priority": "core",
+      "english": "How much is this?",
+      "type": "phrase",
+      "target": "これはいくらですか？",
+      "reading": "これはいくらですか？",
+      "pronunciation_easy": "koh-reh wah ee-koo-rah des-kah"
+    },
+    {
+      "id": "pay_card",
+      "category": "money",
+      "priority": "core",
+      "english": "Can I pay by card?",
+      "type": "phrase",
+      "target": "カードで払えますか？",
+      "reading": "かーどではらえますか？",
+      "pronunciation_easy": "kah-doh deh hah-rah-eh-mahs-kah"
+    },
+    {
+      "id": "apple_pay",
+      "category": "money",
+      "priority": "travel",
+      "english": "Can I pay with Apple Pay?",
+      "type": "phrase",
+      "target": "Apple Payで払えますか？",
+      "reading": "あっぷるぺいではらえますか？",
+      "pronunciation_easy": "ap-poo-roo pay deh hah-rah-eh-mahs-kah"
+    },
+    {
+      "id": "cash_or_card",
+      "category": "money",
+      "priority": "travel",
+      "english": "Cash or card?",
+      "type": "phrase",
+      "target": "現金ですか、カードですか？",
+      "reading": "げんきんですか、かーどですか？",
+      "pronunciation_easy": "gen-keen des-kah, kah-doh des-kah"
+    },
+    {
+      "id": "tip_included",
+      "category": "money",
+      "priority": "travel",
+      "english": "Is the tip included?",
+      "type": "phrase",
+      "target": "サービス料は含まれていますか？",
+      "reading": "さーびすりょうはふくまれていますか？",
+      "pronunciation_easy": "sah-bee-soo ryoh wah foo-koo-mah-reh-teh ee-mahs-kah",
+      "usage_note": "Japan generally does not have a US-style tipping culture; this asks whether a service charge is included."
+    },
+    {
+      "id": "people_tip",
+      "category": "money",
+      "priority": "explore",
+      "english": "Do people tip here?",
+      "type": "phrase",
+      "target": "日本ではチップを渡しますか？",
+      "reading": "にほんではちっぷをわたしますか？",
+      "pronunciation_easy": "nee-hon deh wah chip-poo oh wah-tah-shee-mahs-kah",
+      "usage_note": "Useful as a cultural question. Tipping is generally not customary in ordinary Japanese service settings."
+    },
+    {
+      "id": "your_name",
+      "category": "social",
+      "priority": "travel",
+      "english": "What's your name?",
+      "type": "phrase",
+      "target": "お名前は何ですか？",
+      "reading": "おなまえはなんですか？",
+      "pronunciation_easy": "oh-nah-mah-eh wah nan des-kah"
+    },
+    {
+      "id": "where_from",
+      "category": "social",
+      "priority": "travel",
+      "english": "Where are you from?",
+      "type": "phrase",
+      "target": "どちらのご出身ですか？",
+      "reading": "どちらのごしゅっしんですか？",
+      "pronunciation_easy": "doh-chee-rah noh goh-shoos-sheen des-kah"
+    },
+    {
+      "id": "live_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "Do you live here?",
+      "type": "phrase",
+      "target": "ここに住んでいますか？",
+      "reading": "ここにすんでいますか？",
+      "pronunciation_easy": "koh-koh nee soon-deh ee-mahs-kah"
+    },
+    {
+      "id": "what_do_you_do",
+      "category": "social",
+      "priority": "explore",
+      "english": "What do you do?",
+      "type": "phrase",
+      "target": "お仕事は何をしていますか？",
+      "reading": "おしごとはなにをしていますか？",
+      "pronunciation_easy": "oh-shee-goh-toh wah nah-nee oh shee-teh ee-mahs-kah"
+    },
+    {
+      "id": "been_america",
+      "category": "social",
+      "priority": "explore",
+      "english": "Have you ever been to the United States?",
+      "type": "phrase",
+      "target": "アメリカに行ったことがありますか？",
+      "reading": "あめりかにいったことがありますか？",
+      "pronunciation_easy": "ah-meh-ree-kah nee eet-tah koh-toh gah ah-ree-mahs-kah",
+      "usage_note": "Uses アメリカ, the ordinary conversational way to refer to the United States."
+    },
+    {
+      "id": "im_visiting",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm visiting.",
+      "type": "phrase",
+      "target": "旅行で来ています。",
+      "reading": "りょこうできています。",
+      "pronunciation_easy": "ryoh-koh deh kee-teh ee-mahs",
+      "usage_note": "Natural tourist phrasing: 'I'm here traveling.'"
+    },
+    {
+      "id": "im_new_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm new here.",
+      "type": "phrase",
+      "target": "ここは初めてです。",
+      "reading": "ここははじめてです。",
+      "pronunciation_easy": "koh-koh wah hah-jee-meh-teh des",
+      "usage_note": "Natural Japanese for 'I'm new here / It's my first time here.'"
+    },
+    {
+      "id": "love_languages",
+      "category": "social",
+      "priority": "travel",
+      "english": "I love learning languages.",
+      "type": "phrase",
+      "target": "言語を学ぶのが大好きです。",
+      "reading": "げんごをまなぶのがだいすきです。",
+      "pronunciation_easy": "gen-goh oh mah-nah-boo noh gah dai-skee des"
+    },
+    {
+      "id": "really",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Really?",
+      "type": "phrase",
+      "target": "本当ですか？",
+      "reading": "ほんとうですか？",
+      "pronunciation_easy": "hon-toh des-kah"
+    },
+    {
+      "id": "interesting",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "That's interesting.",
+      "type": "phrase",
+      "target": "面白いですね。",
+      "reading": "おもしろいですね。",
+      "pronunciation_easy": "oh-moh-shee-roh-ee des-neh",
+      "usage_note": "Can mean 'That's interesting,' with a friendly conversational tone."
+    },
+    {
+      "id": "me_too",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Me too.",
+      "type": "phrase",
+      "target": "私もです。",
+      "reading": "わたしもです。",
+      "pronunciation_easy": "wah-tah-shee moh des"
+    },
+    {
+      "id": "and_you",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "And you?",
+      "type": "phrase",
+      "target": "あなたは？",
+      "reading": "あなたは？",
+      "pronunciation_easy": "ah-nah-tah wah",
+      "usage_note": "Understandable, but Japanese often omits pronouns. In context, simply asking back with rising intonation can sound more natural."
+    },
+    {
+      "id": "nice_meeting",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Nice meeting you.",
+      "type": "phrase",
+      "target": "お会いできてよかったです。",
+      "reading": "おあいできてよかったです。",
+      "pronunciation_easy": "oh-ai deh-kee-teh yoh-kaht-tah des"
+    },
+    {
+      "id": "youre_funny",
+      "category": "connection",
+      "priority": "explore",
+      "english": "You're funny.",
+      "type": "phrase",
+      "target": "面白いですね。",
+      "reading": "おもしろいですね。",
+      "pronunciation_easy": "oh-moh-shee-roh-ee des-neh",
+      "usage_note": "Context determines whether this means 'interesting' or 'funny.' For explicitly 'funny person,' 面白い人ですね is clearer."
+    },
+    {
+      "id": "like_talking",
+      "category": "connection",
+      "priority": "explore",
+      "english": "I like talking to you.",
+      "type": "phrase",
+      "target": "話していて楽しいです。",
+      "reading": "はなしていてたのしいです。",
+      "pronunciation_easy": "hah-nah-shee-teh ee-teh tah-noh-shee des",
+      "usage_note": "Natural, warm way to say you enjoy talking with someone."
+    },
+    {
+      "id": "instagram",
+      "category": "connection",
+      "priority": "explore",
+      "english": "Can I get your Instagram?",
+      "type": "phrase",
+      "target": "インスタ交換しませんか？",
+      "reading": "いんすたこうかんしませんか？",
+      "pronunciation_easy": "een-stah koh-kahn shee-mah-sen-kah",
+      "usage_note": "Casual/social: literally suggests exchanging Instagram accounts."
+    },
+    {
+      "id": "very_helpful",
+      "category": "connection",
+      "priority": "travel",
+      "english": "You're very helpful.",
+      "type": "phrase",
+      "target": "本当に助かります。",
+      "reading": "ほんとうにたすかります。",
+      "pronunciation_easy": "hon-toh nee tah-soo-kah-ree-mahs",
+      "usage_note": "Natural way to say someone's help is really useful/appreciated."
+    },
+    {
+      "id": "thanks_help",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Thank you for your help.",
+      "type": "phrase",
+      "target": "手伝ってくれてありがとうございます。",
+      "reading": "てつだってくれてありがとうございます。",
+      "pronunciation_easy": "teh-tsoo-daht-teh koo-reh-teh ah-ree-gah-toh goh-zah-ee-mahs"
+    }
+  ]
+}

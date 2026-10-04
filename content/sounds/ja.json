@@ -1,0 +1,20 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Japanese has few sounds that English lacks, and spelling in kana is very regular. The challenges are timing and rhythm: long vowels, tiny pauses, and syllables said evenly rather than stressed.",
+  "highlight": true,
+  "reading": [
+    "Each phrase has three lines: as written (kanji and kana), the hiragana reading, then the easy pronunciation.",
+    "No capitals here: Japanese uses pitch (a slight rise and fall), not English-style stress. Give every syllable roughly the same length and weight.",
+    "\"mahs\" and \"des\" mean the final u of ます and です is whispered or dropped, the way most people say them.",
+    "Katakana words (コーヒー, トイレ, カード) are usually borrowed from English, so they're easy wins once you can sound them out."
+  ],
+  "sounds": [
+    { "symbol": "ー  う  い", "name": "Long vowels", "spelled": "oh, ee (koh-hee)", "how": "A long vowel is held for twice as long, and length changes meaning (おばさん aunt vs おばあさん grandmother). In katakana, ー marks it; in hiragana, an extra う or い after the vowel does.", "examples": [{ "id": "coffee", "mark": "ー" }, { "id": "thank_you", "mark": "とう" }, { "id": "pay_card", "mark": "ー" }] },
+    { "symbol": "っ", "name": "Small tsu (a tiny pause)", "spelled": "doubled letter: eet-teh", "how": "A small っ isn't a sound: it's a one-beat pause before the next consonant, as if you were about to say it and held it. 行って is \"it-te\", with a catch in the middle.", "examples": [{ "id": "say_again", "mark": "っ" }, { "id": "help_me", "mark": "っ" }, { "id": "been_america", "mark": "っ" }] },
+    { "symbol": "ら り る れ ろ", "name": "The R/L sound", "spelled": "r", "how": "A light flick of the tongue tip just behind the top teeth: somewhere between r, l and the quick d in American \"ladder\". Never the curled English r.", "examples": [{ "id": "thank_you", "mark": "り" }, { "id": "bathroom", "mark": "レ" }, { "id": "dont_understand", "mark": "り" }] },
+    { "symbol": "す  し", "name": "Whispered vowels", "spelled": "des, mahs, skoo-shee", "how": "Between voiceless consonants, or at the end after s, the vowels u and i go almost silent. です sounds like \"des\", 少し like \"skoshi\". Saying them fully isn't wrong, just a little stiff.", "examples": [{ "id": "how_much", "mark": "です" }, { "id": "please", "mark": "します" }, { "id": "know_a_little", "mark": "少し" }] },
+    { "symbol": "ん", "name": "N", "spelled": "n (sometimes m or ng)", "how": "ん is a full beat on its own, and it bends toward the next sound: m before b, p or m; ng before k or g; a nasal hum at the end of a word.", "examples": [{ "id": "excuse_me", "mark": "ん" }, { "id": "dont_speak_well", "mark": "日本語" }, { "id": "cash_or_card", "mark": "現金" }] },
+    { "symbol": "は  を", "name": "Particles: ha → wa, wo → o", "spelled": "wah, oh", "how": "When は marks the topic it's said \"wa\", and を is said \"o\". That's why こんにちは ends in \"wa\" and コーヒーを is \"koh-hee o\".", "examples": [{ "id": "hello", "mark": "は" }, { "id": "where_is", "mark": "は" }, { "id": "coffee", "mark": "を" }] },
+    { "symbol": "つ  ふ", "name": "Tsu and Fu", "spelled": "tsoo, foo", "how": "つ is \"ts\" as in \"cats\" plus a short u. ふ is a soft f made by blowing through relaxed lips, closer to an h than a hard English f.", "examples": [{ "id": "help_me" }, { "id": "tip_included" }] }
+  ]
+}

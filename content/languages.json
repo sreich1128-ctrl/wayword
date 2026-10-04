@@ -47,5 +47,12 @@
     "native_name": "עברית",
     "region": "Israel",
     "direction": "rtl"
+  },
+  {
+    "code": "ja",
+    "name": "Japanese",
+    "native_name": "日本語",
+    "region": "Japan",
+    "direction": "ltr"
   }
 ]
