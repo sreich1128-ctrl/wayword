@@ -39,3 +39,10 @@ All 56 concepts present and matching. Not changed; worth a look:
 - **Long ii dropped:** `like_talking` spells 楽しい "tah-noh-shee"; it's "tah-noh-shee-ee".
 - **Shared forms:** `can_i_have` and `i_would_like` are both ___をお願いします; `interesting` and `youre_funny` are both 面白いですね. The file's own usage notes explain this. It's how Japanese works, not an error.
 - `reading` for katakana words is given in hiragana (トイレ → といれ). Correct, just unusual to see.
+
+## Romanian (`ro.json`, added 2026-10-05, ChatGPT-built to the same framework)
+
+All 56 concepts present and matching. Not changed; worth a look:
+- **`learning_language` "roh-MOO-nuh"** for română: â is the "uh"-type vowel, so "roh-MUH-nuh".
+- **`love_languages` / `like_talking` "plah-CHEH"** for place: the stress is on the first syllable, "PLAH-cheh".
+- **`very_helpful` "ah-mah-BEEL"** for amabil: "ah-MAH-beel".

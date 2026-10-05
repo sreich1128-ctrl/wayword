@@ -87,5 +87,14 @@
     "tts": true,
     "asr": "ja-JP",
     "no_spaces": true
+  },
+  "ro": {
+    "bcp47": "ro-RO",
+    "glyph": "Ro",
+    "accent": "#3d5a80",
+    "accent2": "#f2c14e",
+    "motif": "stitch",
+    "tts": true,
+    "asr": "ro-RO"
   }
 }

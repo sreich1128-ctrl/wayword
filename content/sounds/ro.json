@@ -1,0 +1,184 @@
+{
+  "source": "Written for Wayword as a learner's guide; not part of the original dataset. Examples are dataset phrases.",
+  "intro": "Romanian is spelled almost exactly as it sounds, once you know a handful of letters with marks and two c/g rules. It sounds closer to Italian than you might expect.",
+  "highlight": true,
+  "reading": [
+    "CAPITALS mark the stressed syllable.",
+    "\"uh\" is the letter ă, \"ts\" is ț, and \"ch\" (as in church) is c before e or i.",
+    "A final i is often barely said: faci is \"fahch\", ești is \"yesht\"."
+  ],
+  "sounds": [
+    {
+      "symbol": "ă",
+      "name": "Ă",
+      "spelled": "uh",
+      "how": "The relaxed \"uh\" in the middle of \"sofa\". It's never \"a\" as in \"cat\".",
+      "examples": [
+        {
+          "id": "please",
+          "mark": "ă"
+        },
+        {
+          "id": "water",
+          "mark": "ă"
+        },
+        {
+          "id": "how_much",
+          "mark": "ă"
+        }
+      ]
+    },
+    {
+      "symbol": "â  î",
+      "name": "Â and Î",
+      "spelled": "uh / ih",
+      "how": "Two spellings of one sound English doesn't have: say \"ee\", then pull your tongue back without rounding your lips. A short, throaty \"ih\" is close enough to be understood.",
+      "examples": [
+        {
+          "id": "how_much",
+          "mark": "â"
+        },
+        {
+          "id": "dont_understand",
+          "mark": "î"
+        },
+        {
+          "id": "speak_slowly",
+          "mark": "î"
+        }
+      ]
+    },
+    {
+      "symbol": "ș",
+      "name": "Ș",
+      "spelled": "sh",
+      "how": "sh as in \"shoe\". The comma underneath is what makes it different from a plain s.",
+      "examples": [
+        {
+          "id": "know_a_little",
+          "mark": "Ș"
+        },
+        {
+          "id": "me_too",
+          "mark": "Ș"
+        },
+        {
+          "id": "tip_included",
+          "mark": "ș"
+        }
+      ]
+    },
+    {
+      "symbol": "ț",
+      "name": "Ț",
+      "spelled": "ts",
+      "how": "ts as in \"cats\", even at the start of a syllable.",
+      "examples": [
+        {
+          "id": "thank_you",
+          "mark": "ț"
+        },
+        {
+          "id": "dont_understand",
+          "mark": "ț"
+        },
+        {
+          "id": "speak_english",
+          "mark": "ț"
+        }
+      ]
+    },
+    {
+      "symbol": "ce ci · che chi",
+      "name": "Soft and hard C",
+      "spelled": "cheh / keh",
+      "how": "Before e or i, c is \"ch\" as in \"church\": ce = \"cheh\". Adding an h makes it hard again: che = \"keh\", chi = \"kee\". It's the same rule as Italian.",
+      "examples": [
+        {
+          "id": "how_are_you",
+          "mark": "Ce"
+        },
+        {
+          "id": "speak_slowly",
+          "mark": "ce"
+        },
+        {
+          "id": "your_name",
+          "mark": "che"
+        }
+      ]
+    },
+    {
+      "symbol": "j",
+      "name": "J",
+      "spelled": "zh",
+      "how": "zh as in \"measure\", never the English j.",
+      "examples": [
+        {
+          "id": "how_get",
+          "mark": "j"
+        },
+        {
+          "id": "help_me",
+          "mark": "j"
+        }
+      ]
+    },
+    {
+      "symbol": "e- ea oa",
+      "name": "Gliding vowels",
+      "spelled": "ye, yah, wah",
+      "how": "Este, ești and other forms of \"to be\" start with a y sound: \"YES-teh\". ea slides to \"yah\" and oa to \"wah\".",
+      "examples": [
+        {
+          "id": "is_far",
+          "mark": "E"
+        },
+        {
+          "id": "good_morning",
+          "mark": "ea"
+        },
+        {
+          "id": "very_helpful",
+          "mark": "oa"
+        }
+      ]
+    },
+    {
+      "symbol": "-i",
+      "name": "Whispered final i",
+      "spelled": "(often dropped)",
+      "how": "After a consonant at the end of a word, i is barely said; it just softens the consonant. Faci is \"fahch\", ești is \"yesht\", ocupi is \"oh-KOOP\".",
+      "examples": [
+        {
+          "id": "how_are_you",
+          "mark": "ci"
+        },
+        {
+          "id": "where_from",
+          "mark": "ești"
+        },
+        {
+          "id": "what_do_you_do",
+          "mark": "pi"
+        }
+      ]
+    },
+    {
+      "symbol": "r",
+      "name": "Rolled R",
+      "spelled": "r",
+      "how": "A quick tap or short trill with the tip of the tongue, as in Spanish or Italian.",
+      "examples": [
+        {
+          "id": "really",
+          "mark": "r"
+        },
+        {
+          "id": "please",
+          "mark": "r"
+        }
+      ]
+    }
+  ]
+}

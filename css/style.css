@@ -624,8 +624,8 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 
 /* ---------- toast ---------- */
 #toast {
-  position: fixed; left: 50%; top: calc(64px + env(safe-area-inset-top)); z-index: 70;
-  width: min(560px, calc(100% - 32px)); transform: translate(-50%, -10px); opacity: 0; pointer-events: none;
+  position: fixed; left: 50%; bottom: calc(var(--nav-h) + var(--player-h) + 22px + env(safe-area-inset-bottom)); z-index: 70;
+  width: min(560px, calc(100% - 32px)); transform: translate(-50%, 10px); opacity: 0; pointer-events: none; font-size: 13.5px;
   background: var(--ink); color: var(--bg); padding: 12px 14px; border-radius: 14px; font-size: 14px; font-weight: 600;
   box-shadow: 0 10px 30px rgb(0 0 0 / .2); transition: opacity .2s, transform .2s;
 }
@@ -752,3 +752,4 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .trip-row input { font: inherit; font-weight: 600; min-height: 44px; padding: 0 10px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); }
 .trip .heard b { color: var(--ink); }
 :root .card-actions .learn.on.locked, :root .fc-extra .learn.on.locked { color: #fff; background: var(--accent); border-color: var(--accent); }
+:root[data-motif="stitch"] .lang-hero::before { background: linear-gradient(45deg, transparent 44%, currentColor 44% 56%, transparent 56%) 0 0 / 16px 16px, linear-gradient(-45deg, transparent 44%, currentColor 44% 56%, transparent 56%) 0 0 / 16px 16px; }

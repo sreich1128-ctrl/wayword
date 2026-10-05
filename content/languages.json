@@ -54,5 +54,12 @@
     "native_name": "日本語",
     "region": "Japan",
     "direction": "ltr"
+  },
+  {
+    "code": "ro",
+    "name": "Romanian",
+    "native_name": "Română",
+    "region": "Romania",
+    "direction": "ltr"
   }
 ]

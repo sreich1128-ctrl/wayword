@@ -1410,15 +1410,18 @@ function speakPhrase(id) {
   const p = L.byId.get(id);
   if (!p) return;
   const m = L.lang.meta;
-  if (m.tts_warning && !warned.has(L.lang.code)) {
+  // Shown once per language, ever (it also stays in the Audio section on the language home).
+  const seen = store.prefs().ttsWarned || {};
+  if (m.tts_warning && !seen[L.lang.code] && !warned.has(L.lang.code)) {
     warned.add(L.lang.code);
-    toast(m.tts_warning);
+    store.setPref('ttsWarned', { ...seen, [L.lang.code]: true });
+    toast(m.tts_warning, 9000);
   }
   tts.toggle(speechItem(p));
 }
 
 let toastTimer = null;
-function toast(text) {
+function toast(text, ms = 7000) {
   let el = document.getElementById('toast');
   if (!el) {
     el = document.createElement('div');
@@ -1430,7 +1433,7 @@ function toast(text) {
   el.textContent = text;
   el.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => el.classList.remove('show'), 7000);
+  toastTimer = setTimeout(() => el.classList.remove('show'), ms);
 }
 
 /* ---------- events ---------- */

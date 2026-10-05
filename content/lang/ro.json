@@ -1,0 +1,528 @@
+{
+  "schema_version": "1.0",
+  "language_code": "ro",
+  "name": "Romanian",
+  "native_name": "Română",
+  "region": "Romania",
+  "direction": "ltr",
+  "notes": {
+    "register": "Natural Romanian for travellers in Romania. Polite forms are used with strangers and service staff; informal singular forms are used in social conversation.",
+    "pronunciation": "English-speaker respelling intended as a quick speaking scaffold, not IPA.",
+    "orthography": "Keep Romanian diacritics ă, â, î, ș and ț in target text."
+  },
+  "entries": [
+    {
+      "id": "hello",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Hello",
+      "type": "phrase",
+      "target": "Bună!",
+      "pronunciation_easy": "BOO-nuh"
+    },
+    {
+      "id": "good_morning",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Good morning",
+      "type": "phrase",
+      "target": "Bună dimineața!",
+      "pronunciation_easy": "BOO-nuh dee-mee-NYAH-tsah"
+    },
+    {
+      "id": "how_are_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "How are you?",
+      "type": "phrase",
+      "target": "Ce mai faci?",
+      "pronunciation_easy": "cheh my FAH-ch",
+      "usage_note": "Informal/social. Polite: Ce mai faceți?"
+    },
+    {
+      "id": "please",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Please",
+      "type": "phrase",
+      "target": "Vă rog.",
+      "pronunciation_easy": "vuh rohg",
+      "usage_note": "Polite form. Informal: te rog."
+    },
+    {
+      "id": "thank_you",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Thank you",
+      "type": "phrase",
+      "target": "Mulțumesc.",
+      "pronunciation_easy": "mool-tsoo-MESK"
+    },
+    {
+      "id": "excuse_me",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Excuse me",
+      "type": "phrase",
+      "target": "Scuzați-mă.",
+      "pronunciation_easy": "skoo-ZAHTS muh",
+      "usage_note": "Polite. Informal: Scuză-mă."
+    },
+    {
+      "id": "yes",
+      "category": "essentials",
+      "priority": "core",
+      "english": "Yes",
+      "type": "phrase",
+      "target": "Da.",
+      "pronunciation_easy": "dah"
+    },
+    {
+      "id": "no",
+      "category": "essentials",
+      "priority": "core",
+      "english": "No",
+      "type": "phrase",
+      "target": "Nu.",
+      "pronunciation_easy": "noo"
+    },
+    {
+      "id": "speak_english",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Do you speak English?",
+      "type": "phrase",
+      "target": "Vorbiți engleză?",
+      "pronunciation_easy": "vor-BEETS en-GLEH-zuh"
+    },
+    {
+      "id": "dont_speak_well",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't speak [language] well.",
+      "type": "pattern",
+      "target": "Nu vorbesc bine românește.",
+      "pronunciation_easy": "noo vor-BESK BEE-neh roh-muh-NESH-teh"
+    },
+    {
+      "id": "know_a_little",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I know a little.",
+      "type": "phrase",
+      "target": "Știu puțin.",
+      "pronunciation_easy": "shtee-oo poo-TSEEN"
+    },
+    {
+      "id": "dont_understand",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "I don't understand.",
+      "type": "phrase",
+      "target": "Nu înțeleg.",
+      "pronunciation_easy": "noo in-tseh-LEG"
+    },
+    {
+      "id": "say_again",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you say that again?",
+      "type": "phrase",
+      "target": "Puteți repeta?",
+      "pronunciation_easy": "poo-TETS reh-peh-TAH"
+    },
+    {
+      "id": "speak_slowly",
+      "category": "language_rescue",
+      "priority": "core",
+      "english": "Can you speak more slowly?",
+      "type": "phrase",
+      "target": "Puteți vorbi mai încet?",
+      "pronunciation_easy": "poo-TETS vor-BEE my in-CHET"
+    },
+    {
+      "id": "what_mean",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "What does that mean?",
+      "type": "phrase",
+      "target": "Ce înseamnă asta?",
+      "pronunciation_easy": "cheh in-SYAHM-nuh AS-tah"
+    },
+    {
+      "id": "how_say",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "How do you say ___?",
+      "type": "pattern",
+      "target": "Cum se spune ___?",
+      "pronunciation_easy": "koom seh SPOO-neh ___"
+    },
+    {
+      "id": "learning_language",
+      "category": "language_rescue",
+      "priority": "travel",
+      "english": "I'm learning [language].",
+      "type": "pattern",
+      "target": "Învăț română.",
+      "pronunciation_easy": "in-VUHTS roh-MOO-nuh"
+    },
+    {
+      "id": "learning_by_trying",
+      "category": "language_rescue",
+      "priority": "explore",
+      "english": "I'm learning by trying to speak.",
+      "type": "phrase",
+      "target": "Învăț încercând să vorbesc.",
+      "pronunciation_easy": "in-VUHTS in-cher-KUND suh vor-BESK"
+    },
+    {
+      "id": "where_is",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Where is ___?",
+      "type": "pattern",
+      "target": "Unde este ___?",
+      "pronunciation_easy": "OON-deh YES-teh ___"
+    },
+    {
+      "id": "nearest",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Where is the nearest ___?",
+      "type": "pattern",
+      "target": "Unde este cel mai apropiat / cea mai apropiată ___?",
+      "pronunciation_easy": "OON-deh YES-teh chel my ah-proh-pee-AHT / chah my ah-proh-pee-AH-tuh ___",
+      "usage_note": "Adjective form changes with the noun's gender."
+    },
+    {
+      "id": "bathroom",
+      "category": "navigation",
+      "priority": "core",
+      "english": "Where is the bathroom?",
+      "type": "phrase",
+      "target": "Unde este toaleta?",
+      "pronunciation_easy": "OON-deh YES-teh twah-LEH-tah"
+    },
+    {
+      "id": "how_get",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "How do I get to ___?",
+      "type": "pattern",
+      "target": "Cum ajung la ___?",
+      "pronunciation_easy": "koom ah-ZHOONG lah ___"
+    },
+    {
+      "id": "is_far",
+      "category": "navigation",
+      "priority": "travel",
+      "english": "Is it far?",
+      "type": "phrase",
+      "target": "Este departe?",
+      "pronunciation_easy": "YES-teh deh-PAR-teh"
+    },
+    {
+      "id": "help_me",
+      "category": "problems",
+      "priority": "core",
+      "english": "Can you help me?",
+      "type": "phrase",
+      "target": "Mă puteți ajuta?",
+      "pronunciation_easy": "muh poo-TETS ah-zhoo-TAH"
+    },
+    {
+      "id": "can_i_have",
+      "category": "power_patterns",
+      "priority": "core",
+      "english": "Can I have ___, please?",
+      "type": "pattern",
+      "target": "Pot să primesc ___, vă rog?",
+      "pronunciation_easy": "poht suh pree-MESK ___, vuh rohg",
+      "usage_note": "Useful general request. In restaurants, Aș dori ___ is often more natural."
+    },
+    {
+      "id": "i_would_like",
+      "category": "food",
+      "priority": "travel",
+      "english": "I'd like ___, please.",
+      "type": "pattern",
+      "target": "Aș dori ___, vă rog.",
+      "pronunciation_easy": "ash doh-REE ___, vuh rohg"
+    },
+    {
+      "id": "coffee",
+      "category": "food",
+      "priority": "core",
+      "english": "A coffee, please.",
+      "type": "phrase",
+      "target": "O cafea, vă rog.",
+      "pronunciation_easy": "oh kah-FYAH, vuh rohg"
+    },
+    {
+      "id": "water",
+      "category": "food",
+      "priority": "core",
+      "english": "Water, please.",
+      "type": "phrase",
+      "target": "Apă, vă rog.",
+      "pronunciation_easy": "AH-puh, vuh rohg"
+    },
+    {
+      "id": "whats_in_this",
+      "category": "food",
+      "priority": "travel",
+      "english": "What's in this?",
+      "type": "phrase",
+      "target": "Ce conține asta?",
+      "pronunciation_easy": "cheh kon-TSEE-neh AS-tah"
+    },
+    {
+      "id": "dairy",
+      "category": "food",
+      "priority": "travel",
+      "english": "Does this have dairy in it?",
+      "type": "phrase",
+      "target": "Conține lactate?",
+      "pronunciation_easy": "kon-TSEE-neh lak-TAH-teh"
+    },
+    {
+      "id": "recommend_food",
+      "category": "food",
+      "priority": "travel",
+      "english": "What do you recommend?",
+      "type": "phrase",
+      "target": "Ce recomandați?",
+      "pronunciation_easy": "cheh reh-koh-man-DAHTS"
+    },
+    {
+      "id": "bill",
+      "category": "money",
+      "priority": "core",
+      "english": "The bill/check, please.",
+      "type": "phrase",
+      "target": "Nota, vă rog.",
+      "pronunciation_easy": "NOH-tah, vuh rohg",
+      "usage_note": "Common restaurant phrasing for the bill."
+    },
+    {
+      "id": "how_much",
+      "category": "money",
+      "priority": "core",
+      "english": "How much is this?",
+      "type": "phrase",
+      "target": "Cât costă asta?",
+      "pronunciation_easy": "kuht KOS-tuh AS-tah"
+    },
+    {
+      "id": "pay_card",
+      "category": "money",
+      "priority": "core",
+      "english": "Can I pay by card?",
+      "type": "phrase",
+      "target": "Pot plăti cu cardul?",
+      "pronunciation_easy": "poht pluh-TEE koo KAR-dool"
+    },
+    {
+      "id": "apple_pay",
+      "category": "money",
+      "priority": "travel",
+      "english": "Can I pay with Apple Pay?",
+      "type": "phrase",
+      "target": "Pot plăti cu Apple Pay?",
+      "pronunciation_easy": "poht pluh-TEE koo Apple Pay"
+    },
+    {
+      "id": "cash_or_card",
+      "category": "money",
+      "priority": "travel",
+      "english": "Cash or card?",
+      "type": "phrase",
+      "target": "Numerar sau card?",
+      "pronunciation_easy": "noo-meh-RAR sow kard"
+    },
+    {
+      "id": "tip_included",
+      "category": "money",
+      "priority": "travel",
+      "english": "Is the tip included?",
+      "type": "phrase",
+      "target": "Bacșișul este inclus?",
+      "pronunciation_easy": "bak-SHEE-shool YES-teh een-KLOOS"
+    },
+    {
+      "id": "people_tip",
+      "category": "money",
+      "priority": "explore",
+      "english": "Do people tip here?",
+      "type": "phrase",
+      "target": "Se lasă bacșiș aici?",
+      "pronunciation_easy": "seh LAH-suh bak-SHEESH ah-EETCH"
+    },
+    {
+      "id": "your_name",
+      "category": "social",
+      "priority": "travel",
+      "english": "What's your name?",
+      "type": "phrase",
+      "target": "Cum te cheamă?",
+      "pronunciation_easy": "koom teh KYAH-muh"
+    },
+    {
+      "id": "where_from",
+      "category": "social",
+      "priority": "travel",
+      "english": "Where are you from?",
+      "type": "phrase",
+      "target": "De unde ești?",
+      "pronunciation_easy": "deh OON-deh yesht"
+    },
+    {
+      "id": "live_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "Do you live here?",
+      "type": "phrase",
+      "target": "Locuiești aici?",
+      "pronunciation_easy": "loh-koo-YESHT ah-EETCH"
+    },
+    {
+      "id": "what_do_you_do",
+      "category": "social",
+      "priority": "explore",
+      "english": "What do you do?",
+      "type": "phrase",
+      "target": "Cu ce te ocupi?",
+      "pronunciation_easy": "koo cheh teh oh-KOOP"
+    },
+    {
+      "id": "been_america",
+      "category": "social",
+      "priority": "explore",
+      "english": "Have you ever been to the United States?",
+      "type": "phrase",
+      "target": "Ai fost vreodată în Statele Unite?",
+      "pronunciation_easy": "eye fost vreh-oh-DAH-tuh in STAH-teh-leh oo-NEE-teh"
+    },
+    {
+      "id": "im_visiting",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm visiting.",
+      "type": "phrase",
+      "target": "Sunt aici în vizită.",
+      "pronunciation_easy": "soont ah-EETCH in vee-ZEE-tuh"
+    },
+    {
+      "id": "im_new_here",
+      "category": "social",
+      "priority": "travel",
+      "english": "I'm new here.",
+      "type": "phrase",
+      "target": "Sunt nou aici.",
+      "pronunciation_easy": "soont noh-oo ah-EETCH",
+      "usage_note": "Masculine speaker. Feminine: Sunt nouă aici."
+    },
+    {
+      "id": "love_languages",
+      "category": "social",
+      "priority": "travel",
+      "english": "I love learning languages.",
+      "type": "phrase",
+      "target": "Îmi place mult să învăț limbi.",
+      "pronunciation_easy": "im plah-CHEH moolt suh in-VUHTS LEEM-bee"
+    },
+    {
+      "id": "really",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Really?",
+      "type": "phrase",
+      "target": "Serios?",
+      "pronunciation_easy": "seh-ree-OHS"
+    },
+    {
+      "id": "interesting",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "That's interesting.",
+      "type": "phrase",
+      "target": "Interesant.",
+      "pronunciation_easy": "een-teh-reh-SANT"
+    },
+    {
+      "id": "me_too",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "Me too.",
+      "type": "phrase",
+      "target": "Și eu.",
+      "pronunciation_easy": "shee yeh-oo"
+    },
+    {
+      "id": "and_you",
+      "category": "conversation_glue",
+      "priority": "travel",
+      "english": "And you?",
+      "type": "phrase",
+      "target": "Dar tu?",
+      "pronunciation_easy": "dar too"
+    },
+    {
+      "id": "nice_meeting",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Nice meeting you.",
+      "type": "phrase",
+      "target": "Îmi pare bine să te cunosc.",
+      "pronunciation_easy": "im PAH-reh BEE-neh suh teh koo-NOSK"
+    },
+    {
+      "id": "youre_funny",
+      "category": "connection",
+      "priority": "explore",
+      "english": "You're funny.",
+      "type": "phrase",
+      "target": "Ești amuzantă / amuzant.",
+      "pronunciation_easy": "yesht ah-moo-ZAN-tuh / ah-moo-ZANT",
+      "usage_note": "Use amuzantă to a woman, amuzant to a man."
+    },
+    {
+      "id": "like_talking",
+      "category": "connection",
+      "priority": "explore",
+      "english": "I like talking to you.",
+      "type": "phrase",
+      "target": "Îmi place să vorbesc cu tine.",
+      "pronunciation_easy": "im plah-CHEH suh vor-BESK koo TEE-neh"
+    },
+    {
+      "id": "instagram",
+      "category": "connection",
+      "priority": "explore",
+      "english": "Can I get your Instagram?",
+      "type": "phrase",
+      "target": "Îmi dai Instagramul tău?",
+      "pronunciation_easy": "im dye Instagram-ool tuh-oo"
+    },
+    {
+      "id": "very_helpful",
+      "category": "connection",
+      "priority": "travel",
+      "english": "You're very helpful.",
+      "type": "phrase",
+      "target": "Sunteți foarte amabil.",
+      "pronunciation_easy": "soon-TETS FWAHR-teh ah-mah-BEEL",
+      "usage_note": "Polite to a man. To a woman: Sunteți foarte amabilă."
+    },
+    {
+      "id": "thanks_help",
+      "category": "connection",
+      "priority": "travel",
+      "english": "Thank you for your help.",
+      "type": "phrase",
+      "target": "Mulțumesc pentru ajutor.",
+      "pronunciation_easy": "mool-tsoo-MESK PEN-troo ah-zhoo-TOR"
+    }
+  ]
+}

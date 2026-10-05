@@ -4,7 +4,7 @@ A short orientation for whoever picks this up next (human or AI).
 
 ## What it is
 
-A mobile-first travel phrasebook for 8 languages: European Portuguese, Spanish, French, Italian, Russian, Levantine Arabic, Hebrew and Japanese. Plain HTML/CSS/JS with no build step; it works offline after the first visit.
+A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, French, Italian, Russian, Levantine Arabic, Hebrew, Japanese and Romanian. Plain HTML/CSS/JS with no build step; it works offline after the first visit.
 
 - Repo: `~/Projects/wayword` → github.com/sreich1128-ctrl/wayword (public).
 - Live: https://sreich1128-ctrl.github.io/wayword/ and https://wayword-sigma.vercel.app. Pushing to `main` redeploys both; Vercel is git-connected.
@@ -12,7 +12,7 @@ A mobile-first travel phrasebook for 8 languages: European Portuguese, Spanish, 
 
 ## Ground rules (from the owner)
 
-- **The dataset is the source of truth.** `content/languages.json`, `concepts.json` and `lang/*.json` are copied verbatim from the owner's dataset (and the owner's ChatGPT-built `ja.json`). Never rewrite translations or fill gaps; show "Not in the dataset yet". Log problems in `DATA_REVIEW.md` instead.
+- **The dataset is the source of truth.** `content/languages.json`, `concepts.json` and `lang/*.json` are copied verbatim from the owner's dataset (and the owner's ChatGPT-built `ja.json` and `ro.json`). Never rewrite translations or fill gaps; show "Not in the dataset yet". Log problems in `DATA_REVIEW.md` instead.
 - Curation files (`categories`, `tiers`, `scenarios`, `patterns`, `flight`, `language-meta`, `sounds/*`) may only reference **concept ids**, never language text. The exception is `sounds/*`, which explain sounds and say so on screen.
 - **Bump `VERSION` in `sw.js` on every change**, or installed phones keep the old copy. Phones may need to be closed and reopened (sometimes twice).
 - Accuracy over features. Don't add another queue or label system without checking `docs/lock-it-in.md`.
@@ -35,7 +35,7 @@ A mobile-first travel phrasebook for 8 languages: European Portuguese, Spanish, 
 - **Levels** (Core 23 / Travel 49 / Explore 56, cumulative). Lists show phrases new to the selected level first, then "Already in …" dividers. Places has the toggle.
 - **Learning flow:** next-step card, 5-minute sessions (listen → say it → quick check), Flying soon? (Core crash course, rescue kit, trip date, cheat sheet), flashcards (first-try Got it counts), Lock it in reviews.
 - **Audio:** player with pause/loop/speed 0.5–1.5×, voice picker (female/male), Mic check screen, Say it panel. Arabic audio is on with a warning that phone voices are formal Arabic.
-- **Sound guides** for all 8 languages.
+- **Sound guides** for all 9 languages.
 
 ## Tests
 
