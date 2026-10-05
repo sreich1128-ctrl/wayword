@@ -7,7 +7,7 @@ const defaults = () => ({
   v: 1,
   fav: {},
   learned: {},
-  prefs: { showEnglish: true, showPron: true, tier: 'travel', lastLang: null, theme: 'auto' },
+  prefs: { showEnglish: true, showPron: true, tier: 'core', lastLang: null, theme: 'auto' },
 });
 
 function read() {

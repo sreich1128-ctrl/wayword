@@ -635,3 +635,54 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
   .stamps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- flow & guidance ---------- */
+.next-step {
+  margin-top: 16px; padding: 18px; border-radius: 20px; display: grid; gap: 6px;
+  background: var(--surface); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.ns-k { font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); }
+.next-step h2 { font-size: 21px; font-weight: 800; letter-spacing: -.01em; }
+.ns-sub { font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+.next-step .cta { text-decoration: none; }
+.fc-tip, .step-tip { font-size: 14px; color: var(--muted); }
+.fc-tip { text-align: center; margin: -4px 8px 12px; }
+.step-tip { grid-column: 2; margin-top: 2px; }
+.primer {
+  font-size: 13px; color: var(--muted); background: var(--surface); border: 1px dashed color-mix(in srgb, var(--accent) 35%, var(--line));
+  border-radius: 12px; padding: 8px 10px; margin-top: 6px;
+}
+.session-card { padding: 18px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); margin-bottom: 4px; }
+.session-next { margin-top: 22px; }
+.session-next .ic { width: 20px; height: 20px; }
+.done-actions { display: grid; gap: 10px; width: 100%; margin-top: 14px; }
+.done-actions .more-btn { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0; width: 100%; font-size: 15px; }
+.done-actions .more-btn .ic { width: 18px; height: 18px; }
+.session-summary { margin-top: 18px; }
+.session-summary .row-ic.ok { background: #e8f7ee; color: #15803d; }
+.session-summary .row-title { font-family: var(--font-native); }
+
+/* labelled Listen / Say it pills */
+.pill-btn.listen .i-pause { display: none; }
+.pill-btn.listen[data-state="playing"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.pill-btn.listen[data-state="playing"] .ic { color: #fff; }
+.pill-btn.listen[data-state="playing"] .i-play { display: none; }
+.pill-btn.listen[data-state="playing"] .i-pause { display: block; }
+.card-actions .pill-btn { min-height: 38px; padding: 0 12px; font-size: 13.5px; }
+.card-actions .learn { margin-left: auto; }
+
+/* help */
+.help-btn { min-width: 38px; display: grid; place-items: center; text-decoration: none !important; color: var(--muted) !important; }
+.help-btn .ic { width: 19px; height: 19px; }
+.inline-ic { width: 16px; height: 16px; vertical-align: -3px; }
+.help-lead { font-size: 15px; color: var(--muted); margin-bottom: 12px; }
+.help { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 14px; }
+.help li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; }
+.help-t { font-size: 15px; }
+.help p { font-size: 14px; color: var(--muted); margin-top: 2px; }
+.help-sample { margin-top: 8px; padding: 10px 12px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 4px; }
+.hs-line { display: flex; align-items: baseline; gap: 10px; }
+.hs-k { flex: none; width: 76px; font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--faint); }
+.hs-line .en, .hs-line .pron, .hs-line .kana { margin: 0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .session-summary .row-ic.ok { background: #14351f; color: #bbf7d0; } }

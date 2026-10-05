@@ -51,6 +51,13 @@ A ready-made prompt for building a new language file with another AI tool is in 
 
 After any content change, bump `VERSION` in `sw.js` so installed phones pick it up.
 
+## Learning flow
+
+- **Next step card** on each language home: one action, always (start, keep going, or move up a level once a level is complete).
+- **5-minute session** (`#/<lang>/session`): the next 5 unlearned phrases in Core → Travel → Explore order. Each one: listen, say it, compare. Then a quick self-check; "Got it" on the first try marks the phrase learned, misses come back next session.
+- **Flashcards** mark a phrase learned on a first-try "Got it". The end screen offers the missed cards, a speaking round, or home.
+- **First-time guide** opens on the first language visit; the ? button in the header reopens it.
+
 ## Audio and speaking
 
 - `js/speech.js`: device text-to-speech. Play, pause, resume, replay, loop, five speeds (0.5× to 1.5×), and a voice choice per language.
