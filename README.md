@@ -19,7 +19,7 @@ All language content lives in `content/`. The UI code (`js/`, `css/`) has no phr
 |---|---|---|
 | `languages.json`, `concepts.json`, `lang/*.json` | **The dataset (source of truth).** Copied verbatim from `steven_travel_language_dataset_v1_1`. | Only when the dataset itself changes |
 | `categories.json` | The 10 category labels and icons, mapped to dataset category ids | UI taxonomy |
-| `tiers.json` | Core 20 / Travel 50 / Explore 100. Tiers are cumulative: Travel includes Core, Explore includes everything | UI taxonomy |
+| `tiers.json` | Core / Travel / Explore (23 / 49 / 56 phrases). Tiers are cumulative: Travel includes Core, Explore includes everything. Lists show phrases new to the selected level first, then an "Already in …" divider per earlier level | UI taxonomy |
 | `scenarios.json` | Scenario buttons. Each lists **concept ids only**, never language text | Curation |
 | `patterns.json` | Power-pattern helpers: related phrases, and a slot for vetted substitution words per language | Curation |
 | `sounds/<code>.json` | Sound guide per language. **Written for Wayword, not from the dataset.** Examples are concept ids plus an optional `mark` (the letters to highlight); `npm run validate` checks every mark exists in the phrase | Curation |

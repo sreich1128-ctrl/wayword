@@ -92,6 +92,32 @@ function applyTheme(lang) {
 const tier = () => store.prefs().tier;
 const inTier = (p) => tierIncludes(C, tier(), p.priority);
 const tierLabel = (id) => (C.tiers.find((t) => t.id === id) || {}).label || id;
+const tierIndex = () => Math.max(0, C.tiers.findIndex((t) => t.id === tier()));
+// The level that first includes a priority (0 = Core, 1 = Travel, ...), from tiers.json.
+const introducedAt = (priority) => C.tiers.findIndex((t) => t.includes.includes(priority));
+const isNewAtTier = (p) => tierIndex() > 0 && introducedAt(p.priority) === tierIndex();
+const newAtTierCount = (items) => items.filter(isNewAtTier).length;
+
+// Phrases new to the selected level first, then a divider per earlier level ("Already in Core").
+// Order inside each group is kept. If nothing is new, a note says so, so a switch is never a no-op.
+function renderGrouped(items, renderItem, { where = '', noun = 'phrases' } = {}) {
+  const cur = tierIndex();
+  if (cur === 0 || !items.length) return items.map((p) => renderItem(p, false)).join('');
+  const groups = [];
+  for (let i = cur; i >= 0; i--) groups.push({ t: C.tiers[i], items: items.filter((p) => introducedAt(p.priority) === i) });
+  const [fresh, ...earlier] = groups;
+  let html = '';
+  if (fresh.items.length) {
+    html += `<h3 class="tier-head">New in ${esc(fresh.t.label)} · ${fresh.items.length}</h3>` + fresh.items.map((p) => renderItem(p, true)).join('');
+  } else {
+    const from = earlier.filter((g) => g.items.length).map((g) => esc(g.t.label)).join(' or ');
+    html += `<p class="tier-note">No new ${noun}${where ? ` in ${esc(where)}` : ''} at ${esc(fresh.t.label)}. ${items.length === 1 ? 'This one is' : `All ${items.length} are`} already in ${from}.</p>`;
+  }
+  for (const g of earlier) {
+    if (g.items.length) html += `<h3 class="tier-divider">Already in ${esc(g.t.label)} · ${g.items.length}</h3>` + g.items.map((p) => renderItem(p, false)).join('');
+  }
+  return html;
+}
 const priorityLabel = (pr) => ({ core: 'Core', travel: 'Travel', explore: 'Explore' }[pr] || pr);
 
 /* ---------- shared pieces ---------- */
@@ -134,7 +160,7 @@ function micBtn(p, cls = '') {
   return `<button class="${labeled ? 'pill-btn' : 'round-btn'} ${cls}" data-action="say-it" data-id="${esc(p.id)}" aria-label="Say it yourself">${icon('mic')}${labeled ? '<span>Say it</span>' : ''}</button>`;
 }
 
-function phraseCard(p) {
+function phraseCard(p, { isNew = false } = {}) {
   const fav = store.isFav(p.key);
   const learned = store.isLearned(p.key);
   const notes = [];
@@ -146,7 +172,7 @@ function phraseCard(p) {
   return `
   <article class="card ${p.type === 'pattern' ? 'is-pattern' : ''} ${learned ? 'is-learned' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
     <div class="card-meta">
-      <span>${p.type === 'pattern' ? 'Pattern · ' : ''}${esc(priorityLabel(p.priority))}</span>
+      <span>${isNew ? `<span class="new-tag">New in ${esc(tierLabel(tier()))}</span>${p.type === 'pattern' ? 'Pattern' : ''}` : `${p.type === 'pattern' ? 'Pattern · ' : ''}${esc(priorityLabel(p.priority))}`}</span>
       <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Save">${icon('star')}</button>
     </div>
     ${phraseLines(p)}
@@ -166,7 +192,14 @@ function tierBar() {
       return `<button role="tab" class="tier-btn ${x.id === tier() ? 'on' : ''}" data-action="tier" data-tier="${x.id}" aria-selected="${x.id === tier()}">
         <span>${esc(x.label)}</span><small>${n}</small></button>`;
     }).join('')}
-  </div>${t ? `<p class="tier-blurb">${esc(t.blurb)}</p>` : ''}</div>`;
+  </div>${t ? `<p class="tier-blurb">${esc(t.blurb)}${tierBlurbDelta()}</p>` : ''}</div>`;
+}
+
+function tierBlurbDelta() {
+  const cur = tierIndex();
+  if (!cur) return '';
+  const n = L.phrases.filter((p) => !p.missing && introducedAt(p.priority) === cur).length;
+  return n ? ` · ${n} new on top of ${esc(C.tiers[cur - 1].label)}` : '';
 }
 
 function header({ title, back } = {}) {
@@ -449,17 +482,26 @@ function renderList(cat, q) {
     el.innerHTML = `<div class="empty-state">${cat === 'saved' ? 'Tap ★ on any phrase to save it here.' : `Nothing here at ${esc(tierLabel(tier()))}. Try a wider level.`}</div>`;
     return;
   }
-  el.innerHTML = `<p class="count">${items.length} phrase${items.length === 1 ? '' : 's'}</p>` + items.map((p) => phraseCard(p)).join('');
+  const fresh = cat === 'saved' ? 0 : newAtTierCount(items);
+  const where = cat === 'all' || cat === 'todo' ? '' : (C.categoryById.get(cat) || {}).label;
+  el.innerHTML = `<p class="count">${items.length} phrase${items.length === 1 ? '' : 's'}${fresh ? ` · ${fresh} new at ${esc(tierLabel(tier()))}` : ''}</p>`
+    + (cat === 'saved' ? items.map((p) => phraseCard(p)).join('') : renderGrouped(items, (p, isNew) => phraseCard(p, { isNew }), { where }));
   syncListen();
 }
 
 function viewScenarios() {
   const lang = L.lang;
+  const next = C.tiers[tierIndex() + 1];
   page('scenarios', `
+    ${tierBar()}
     <section class="page-head"><h1>Where are you?</h1><p>Pick a place. You'll see only the phrases that matter there.</p></section>
     <div class="scen-grid">${C.scenarios.map((s) => {
-      const n = s.concepts.filter((id) => L.byId.has(id) && inTier(L.byId.get(id))).length;
-      return `<a class="scen-card" href="#/${lang.code}/scenario/${s.id}"><span class="scen-ic big">${s.icon}</span><strong>${esc(s.label)}</strong><small>${n} phrases</small></a>`;
+      const ps = s.concepts.map((id) => L.byId.get(id)).filter((p) => p && !p.missing);
+      const n = ps.filter(inTier).length;
+      const fresh = newAtTierCount(ps.filter(inTier));
+      const nextN = next ? ps.filter((p) => next.includes.includes(p.priority)).length : 0;
+      const sub = n ? `${n} phrases${fresh ? `<em>+${fresh} new</em>` : ''}` : `0 at ${esc(tierLabel(tier()))}${nextN ? `<em>${nextN} at ${esc(next.label)}</em>` : ''}`;
+      return `<a class="scen-card ${n ? '' : 'empty'}" href="#/${lang.code}/scenario/${s.id}"><span class="scen-ic big">${s.icon}</span><strong>${esc(s.label)}</strong><small>${sub}</small></a>`;
     }).join('')}</div>
   `);
 }
@@ -479,7 +521,7 @@ function viewScenario(id, query) {
       <a class="pill-btn" href="#/${lang.code}/practice/run?dir=en&scenario=${s.id}">${icon('cards')}<span>Flashcards</span></a>
       ${canPracticeAloud() ? `<a class="pill-btn" href="#/${lang.code}/practice/run?dir=speak&scenario=${s.id}">${icon('mic')}<span>Speak it</span></a>` : ''}
     </div>
-    <div class="list">${shown.map((p) => phraseCard(p)).join('')}</div>
+    <div class="list">${showAll ? shown.map((p) => phraseCard(p)).join('') : renderGrouped(shown, (p, isNew) => phraseCard(p, { isNew }), { where: s.label })}</div>
     ${hidden > 0 ? `<a class="more-btn" href="#/${lang.code}/scenario/${s.id}?all=1">+${hidden} more at higher levels</a>` : ''}
   `, { back: `#/${lang.code}/scenarios` });
 }
@@ -493,7 +535,7 @@ function viewPatterns() {
     ${tierBar()}
     <section class="page-head"><h1>Power patterns</h1><p>Learn the frame once, then swap the blank to say new things.</p></section>
     ${anySubs ? '' : '<p class="callout">Swap-in words aren’t in the dataset yet. Under each pattern you’ll find dataset phrases already built on it.</p>'}
-    <div class="list">${pats.map((p) => patternCard(p)).join('') || '<div class="empty-state">No patterns at this level. Try Travel 50.</div>'}</div>
+    <div class="list">${renderGrouped(pats, (p, isNew) => patternCard(p, isNew), { noun: 'patterns' }) || `<div class="empty-state">No patterns at this level. Try ${esc(C.tiers[1]?.label || 'a wider level')}.</div>`}</div>
   `);
 }
 
@@ -504,13 +546,13 @@ function miniPhrase(p, { nativeHtml } = {}) {
   </div>`;
 }
 
-function patternCard(p) {
+function patternCard(p, isNew = false) {
   const lang = L.lang;
   const conf = C.patterns[p.id] || {};
   const subs = (conf.substitutions && conf.substitutions[lang.code]) || [];
   const related = (conf.related || []).map((id) => L.byId.get(id)).filter((r) => r && !r.missing);
   return `<div class="pattern">
-    ${phraseCard(p)}
+    ${phraseCard(p, { isNew })}
     ${subs.length ? `<div class="pattern-more"><p class="more-k">Fill the blank</p><div class="sub-chips">${subs.map((s) =>
       `<span class="sub"><b ${nativeAttrs(lang)}>${esc(s.target)}</b><i data-peek="pron">${esc(s.pronunciation_easy || '')}</i><em data-peek="en">${esc(s.english)}</em></span>`).join('')}</div></div>` : ''}
     ${related.length ? `<div class="pattern-more"><p class="more-k">Built on this</p>${related.map((r) => miniPhrase(r)).join('')}</div>` : ''}
@@ -571,7 +613,7 @@ function viewPracticeSetup() {
         ${canPracticeAloud() ? `<label class="opt"><input type="radio" name="dir" value="speak"><span><b>Speak it</b><small>Say it aloud, then hear it back</small></span></label>` : ''}
       </fieldset>
       <fieldset><legend>Deck</legend>
-        <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All of ${esc(tierLabel(tier()))}</b><small>${pool.length}</small></span></label>
+        <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All of ${esc(tierLabel(tier()))}</b><small>${pool.length}${newAtTierCount(pool) ? ` (${newAtTierCount(pool)} new)` : ''}</small></span></label>
         <label class="opt"><input type="radio" name="deck" value="todo"><span><b>Not learned yet</b><small>${todo}</small></span></label>
         <label class="opt"><input type="radio" name="deck" value="saved" ${favs ? '' : 'disabled'}><span><b>Saved</b><small>${favs}</small></span></label>
       </fieldset>
@@ -894,7 +936,7 @@ function helpHtml(first) {
       <div class="hs-line"><span class="hs-k">Meaning</span><span class="en sm">${esc(hello.english)}</span></div>
     </div>` : '';
   const items = [
-    ['Start with Core 20', 'The levels at the top grow from the must-knows (Core 20) to everyday travel (Travel 50) to the full set (Explore 100). Each level includes the one before.'],
+    ['Start with Core', `The levels at the top grow from the must-knows (Core, ${L.phrases.filter((p) => p.priority === 'core').length} phrases) to everyday travel (Travel) to the full set (Explore). Each level includes the one before; switching up shows what’s new first.`],
     ['Read each phrase top to bottom', `The phrase as it’s written, then how to say it, then what it means.${hello && /[A-Z]{2}/.test(hello.pron || '') ? ' Capitals in the pronunciation show the stressed part.' : ''}${sample}`],
     ['Listen, then say it', '<b>Listen</b> plays the phrase. A small player appears where you can pause, repeat, loop and change the speed. <b>Say it</b> records you so you can hear yourself next to the right version.'],
     ['Track what you know', '<b>Learned</b> fills your progress ring; ★ saves a phrase for later. Getting a phrase right the first time in a session or flashcards marks it learned for you.'],
