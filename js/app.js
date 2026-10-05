@@ -60,6 +60,8 @@ const ICONS = {
   x: '<path d="M6 6l12 12M18 6 6 18"/>',
   help: '<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.6"/><circle cx="12" cy="16.8" r=".6" fill="currentColor"/>',
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  plane: '<path d="M10.5 13.5 3 11l1.5-1.5 8 1L17 6c1-1 2.6-1.4 3.2-.8.6.6.2 2.2-.8 3.2l-4.5 4.5 1 8L14.5 22.4 12 15l-3.5 3.5V21l-1.5 1-1.2-3.3L2.5 17.5l1-1.5h2.5L9.5 12.5"/>',
+  printer: '<path d="M7 9V3h10v6M7 17H4v-7h16v7h-3M7 14h10v7H7z"/>',
   shuffle: '<path d="M3 7h3.5c4 0 6 10 10 10H21M3 17h3.5c1.6 0 2.8-1.6 3.8-3.6M14 9.6C15 7.6 16 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/>',
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
@@ -229,12 +231,13 @@ function viewHome() {
       <div class="stamps">
       ${C.languages.map((l, i) => {
         const learned = store.countFor('learned', l.code);
+        const due = store.dueKeys(l.code).length;
         return `<a class="stamp shape-${i % 3}" href="#/${encodeURIComponent(l.code)}" data-stamp style="--accent:${l.meta.accent};--rot:${STAMP_TILT[i % STAMP_TILT.length]}deg">
           <span class="stamp-region">${esc(l.region)}</span>
           <span class="stamp-glyph" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.meta.glyph)}</span>
           <span class="stamp-native" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.native_name)}</span>
           <span class="stamp-name">${esc(l.name)}</span>
-          <span class="stamp-foot">${learned ? `${learned} learned` : 'First visit'}</span>
+          <span class="stamp-foot">${due ? `${due} to review` : learned ? `${learned} learned` : 'First visit'}</span>
         </a>`;
       }).join('')}
       </div>
@@ -317,6 +320,7 @@ function viewDashboard() {
     ${nextStepCard()}
 
     ${section('More practice', `<div class="group">
+      ${row({ href: `#/${code}/flight`, ic: 'plane', title: 'Flying soon?', sub: 'Core crash course, rescue kit and a cheat sheet' })}
       ${row({ href: `#/${code}/practice/run?dir=en`, ic: 'cards', title: 'Flashcards', sub: `English → <bdi>${esc(lang.native_name)}</bdi>` })}
       ${row({ href: `#/${code}/practice/run?dir=target`, ic: 'shuffle', title: 'Reverse flashcards', sub: `<bdi>${esc(lang.native_name)}</bdi> → English` })}
       ${canPracticeAloud() ? row({ href: `#/${code}/practice/run?dir=speak`, ic: 'mic', title: 'Speak it', sub: 'See the English, say it aloud, hear it back' }) : ''}
@@ -354,6 +358,16 @@ function viewDashboard() {
 // One clear thing to do next: start, keep going, or move up a level.
 function nextStepCard() {
   const code = L.lang.code;
+  const due = dueItems().length;
+  if (due) {
+    return `<section class="next-step review-step">
+      <p class="ns-k">Review time</p>
+      <h2>${due} phrase${due === 1 ? '' : 's'} to review</h2>
+      <p class="ns-sub">About ${Math.max(1, Math.round(due / 4))} minute${due > 6 ? 's' : ''}. A quick check now keeps what you’ve learned from fading.</p>
+      <a class="cta" href="#/${code}/session?mode=due">${icon('replay')} Start review</a>
+      <a class="link-btn center" href="#/${code}/session">or learn 5 new phrases ${icon('chev')}</a>
+    </section>`;
+  }
   const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
   const left = pool.filter((p) => !store.isLearned(p.key));
   const learned = pool.length - left.length;
@@ -674,18 +688,29 @@ function drawPractice() {
 
 let session = null;
 
-function pickSession(review) {
+// Learned phrases whose review is due, most overdue first (any level).
+function dueItems() {
+  return store.dueKeys(L.lang.code).map((k) => L.byId.get(k.slice(L.lang.code.length + 1))).filter((p) => p && !p.missing);
+}
+
+// mode: learn (next unlearned in this level) · flight (Core only) · review (random, for a finished level) · due (reviews)
+function pickSession(mode) {
   const rank = { core: 0, travel: 1, explore: 2 };
-  const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
-  let items = review ? [] : pool.filter((p) => !store.isLearned(p.key)).sort((a, b) => rank[a.priority] - rank[b.priority] || a.order - b.order);
+  if (mode === 'due') return dueItems().slice(0, 10);
+  const pool = L.phrases.filter((p) => !p.missing && (mode === 'flight' ? p.priority === 'core' : inTier(p)));
+  let items = mode === 'review' ? [] : pool.filter((p) => !store.isLearned(p.key)).sort((a, b) => rank[a.priority] - rank[b.priority] || a.order - b.order);
   if (!items.length) items = shuffle(pool);
   return items.slice(0, 5);
 }
 
+const sessionMode = (query) => (query.get('review') === '1' ? 'review' : ['flight', 'due', 'review'].includes(query.get('mode')) ? query.get('mode') : 'learn');
+
 function viewSession(query) {
   const sig = `${L.lang.code}|${tier()}|${query.toString()}`;
   if (!session || session.sig !== sig) {
-    session = { sig, review: query.get('review') === '1', items: pickSession(query.get('review') === '1'), i: 0, phase: 'learn', take: null, rec: false, finishing: false, interim: '', queue: [], flipped: false, results: {}, missed: new Set() };
+    const mode = sessionMode(query);
+    const items = pickSession(mode);
+    session = { sig, mode, items, i: 0, phase: mode === 'due' ? 'recall' : 'learn', take: null, rec: false, finishing: false, interim: '', queue: mode === 'due' ? shuffle(items) : [], flipped: false, results: {}, missed: new Set() };
   }
   drawSession();
 }
@@ -695,14 +720,18 @@ function drawSession() {
   const s = session;
   const home = `#/${lang.code}`;
   const n = s.items.length;
-  if (!n) { page('home', '<div class="empty-state big">No phrases to learn at this level.</div>', { back: home }); return; }
+  if (!n) {
+    page('home', `<div class="empty-state big">${s.mode === 'due' ? 'Nothing to review right now. 🎉' : 'No phrases to learn at this level.'}<br><a href="${home}">Back to ${esc(lang.name)} home</a></div>`, { back: home });
+    return;
+  }
+  const modeLabel = { learn: 'Learn', flight: 'Crash course', review: 'Review', due: 'Review' }[s.mode];
 
   if (s.phase === 'learn') {
     const p = s.items[s.i];
     const notes = [p.usage_note, p.regional_note].filter(Boolean).map((t) => `<p class="note">${esc(t)}</p>`).join('');
     page('home', `
       <div class="fc-progress"><span style="width:${Math.round((s.i / (n + 1)) * 100)}%"></span></div>
-      <p class="fc-meta">Learn · phrase ${s.i + 1} of ${n}</p>
+      <p class="fc-meta">${modeLabel} · phrase ${s.i + 1} of ${n}</p>
       <article class="session-card">${phraseLines(p, { size: 'lg' })}${notes ? `<div class="notes">${notes}</div>` : ''}</article>
       <ol class="steps">
         ${canSpeak() ? `<li><span class="step-n">1</span><span class="step-t">Listen</span>
@@ -727,8 +756,8 @@ function drawSession() {
     const done = n - new Set(s.queue.map((x) => x.key)).size;
     page('home', `
       <div class="fc-progress"><span style="width:${Math.round(((n + done / n) / (n + 1)) * 100)}%"></span></div>
-      <p class="fc-meta">Quick check · ${done} of ${n}</p>
-      <p class="fc-tip">How do you say this? Answer in your head or out loud, then tap the card. “Got it” marks the phrase learned.</p>
+      <p class="fc-meta">${s.mode === 'due' ? 'Review' : 'Quick check'} · ${done} of ${n}</p>
+      <p class="fc-tip">How do you say this? Answer in your head or out loud, then tap the card. ${s.mode === 'due' ? 'Remembered phrases come back less often; missed ones come back tomorrow.' : '“Got it” marks the phrase learned.'}</p>
       <div class="flashcard ${s.flipped ? 'flipped' : ''}" data-action="ss-flip" role="button" tabindex="0" aria-live="polite">
         <div class="fc-face">
           <span class="fc-label">Say it in ${esc(lang.name)}</span>
@@ -749,11 +778,23 @@ function drawSession() {
   const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
   const learnedTotal = pool.filter((p) => store.isLearned(p.key)).length;
   const gotCount = s.items.filter((p) => s.results[p.key] === 'got').length;
+  const next = store.nextDue(lang.code);
+  const nextIn = next ? Math.max(1, Math.round((next - Date.now()) / 86400000)) : null;
+  const coreAll = L.phrases.filter((p) => p.priority === 'core' && !p.missing);
+  const coreLearned = coreAll.filter((p) => store.isLearned(p.key)).length;
+  const headline = s.mode === 'due'
+    ? (gotCount === n ? `All ${n} remembered` : `${gotCount} of ${n} remembered`)
+    : gotCount === n ? `All ${n === 5 ? 'five' : n}, nicely done` : `${gotCount} of ${n} on the first try`;
+  const sub = s.mode === 'due'
+    ? `Missed ones come back tomorrow.${nextIn ? ` Next review ${nextIn === 1 ? 'tomorrow' : `in ${nextIn} days`}.` : ''}`
+    : s.mode === 'flight'
+      ? `${coreLearned} of ${coreAll.length} Core phrases learned.${coreLearned === coreAll.length ? ' You’re ready for the trip. ✈️' : ''}`
+      : `${learnedTotal} of ${pool.length} ${esc(tierLabel(tier()))} phrases learned.`;
   page('home', `
     <section class="done">
       <div class="done-burst">${gotCount === n ? '🎉' : '👏'}</div>
-      <h1>${gotCount === n ? 'All five, nicely done' : `${gotCount} of ${n} on the first try`}</h1>
-      <p>${learnedTotal} of ${pool.length} ${esc(tierLabel(tier()))} phrases learned.</p>
+      <h1>${headline}</h1>
+      <p>${sub}</p>
     </section>
     <div class="group session-summary">${s.items.map((p) => `
       <div class="row static"><span class="row-ic ${s.results[p.key] === 'got' ? 'ok' : ''}">${icon(s.results[p.key] === 'got' ? 'check' : 'replay')}</span>
@@ -761,11 +802,84 @@ function drawSession() {
     </div>
     ${s.missed.size ? '<p class="fine">The ones marked ↻ come back in your next session until you get them first time.</p>' : ''}
     <div class="done-actions">
-      <button class="cta" data-action="ss-another">${icon('play')} ${learnedTotal < pool.length ? 'Learn 5 more' : 'Review 5 more'}</button>
+      ${s.mode === 'due'
+        ? `<a class="cta" href="#/${lang.code}/session">${icon('play')} Learn 5 new phrases</a>`
+        : s.mode === 'flight'
+          ? `<button class="cta" data-action="ss-another">${icon('plane')} ${coreLearned < coreAll.length ? 'Next 5 Core phrases' : 'Review 5 more'}</button>
+             <a class="more-btn" href="#/${lang.code}/cheatsheet">${icon('list')} Open the cheat sheet</a>`
+          : `<button class="cta" data-action="ss-another">${icon('play')} ${learnedTotal < pool.length ? 'Learn 5 more' : 'Review 5 more'}</button>`}
       <a class="more-btn" href="#/${lang.code}/practice/run?dir=en&deck=todo">${icon('cards')} Flashcards for what’s left</a>
       <a class="more-btn" href="${home}">Back to ${esc(lang.name)} home</a>
     </div>
   `, { back: home });
+}
+
+/* ---------- flight prep: Core crash course, rescue kit, cheat sheet ---------- */
+
+function viewFlight() {
+  const lang = L.lang;
+  const code = lang.code;
+  const core = L.phrases.filter((p) => p.priority === 'core' && !p.missing);
+  const learned = core.filter((p) => store.isLearned(p.key)).length;
+  const left = core.length - learned;
+  const pct = core.length ? Math.round((learned / core.length) * 100) : 0;
+  const rescue = (C.flight?.rescue || []).map((id) => L.byId.get(id)).filter((p) => p && !p.missing);
+  page('home', `
+    <section class="page-head flight-head">
+      <span class="flight-ic">${icon('plane')}</span>
+      <div><h1>Flying soon?</h1><p>The fastest way to be ready for ${esc(lang.name)}: the ${core.length} Core phrases, a rescue kit, and a cheat sheet for the trip.</p></div>
+    </section>
+
+    <section class="next-step">
+      <p class="ns-k">1 · Crash course</p>
+      <h2>${left ? `${left} Core phrase${left === 1 ? '' : 's'} to go` : 'All Core phrases learned ✓'}</h2>
+      <div class="bar" aria-label="${learned} of ${core.length} learned"><span style="width:${pct}%"></span></div>
+      <p class="ns-sub">${left
+        ? `About ${Math.max(5, Math.round(left * 1.2))} minutes in rounds of 5: listen, say it, quick check. Works whatever level you have selected.`
+        : 'Run a quick review before you land to keep them fresh.'}</p>
+      <a class="cta" href="#/${code}/session?mode=${left ? 'flight' : 'review'}">${icon('play')} ${left ? (learned ? 'Continue the crash course' : 'Start the crash course') : 'Quick review'}</a>
+    </section>
+
+    ${rescue.length ? section('2 · Rescue kit', `<p class="sect-lead">If you remember nothing else, remember these. They get you out of almost any jam.</p>
+      <div class="group mini-list">${rescue.map((p) => miniPhrase(p)).join('')}</div>`) : ''}
+
+    ${section(`${rescue.length ? 3 : 2} · Cheat sheet`, `<div class="group">
+      ${row({ href: `#/${code}/cheatsheet`, ic: 'list', title: 'Open the cheat sheet', sub: `All ${core.length} Core phrases on one screen. Works offline; screenshot or print it.` })}
+    </div>`)}
+  `, { back: `#/${code}` });
+}
+
+function viewCheatsheet(query) {
+  const lang = L.lang;
+  const code = lang.code;
+  const whole = query.get('all') === '1';
+  const items = L.phrases.filter((p) => !p.missing && (whole ? inTier(p) : p.priority === 'core'));
+  const groups = C.categories
+    .map((c) => ({ c, items: items.filter((p) => p.category === c.id) }))
+    .filter((g) => g.items.length);
+  page('home', `
+    <section class="page-head cs-head">
+      <h1>Cheat sheet</h1>
+      <p>${esc(lang.name)} · ${whole ? esc(tierLabel(tier())) : 'Core'} · ${items.length} phrases</p>
+      <div class="cs-actions">
+        <a class="pill-btn" href="#/${code}/cheatsheet${whole ? '' : '?all=1'}">${whole ? 'Core only' : `Whole ${esc(tierLabel(tier()))}`}</a>
+        <button class="pill-btn" data-action="print">${icon('printer')}<span>Print</span></button>
+      </div>
+    </section>
+    ${groups.map((g) => `<section class="cs-group">
+      <h2>${g.c.icon} ${esc(g.c.label)}</h2>
+      ${g.items.map((p) => `<div class="cs-row" data-key="${esc(p.key)}">
+        <div class="cs-text">
+          <b class="cs-native" ${nativeAttrs(lang)}>${withSlots(p.target)}</b>
+          ${p.reading && p.reading !== p.target ? `<span class="kana sm" ${nativeAttrs(lang)}>${withSlots(p.reading)}</span>` : ''}
+          <span class="cs-pron">${withSlots(p.pron)}</span>
+          <span class="cs-en">${withSlots(p.english)}</span>
+        </div>
+        ${listenBtn(p, 'small')}
+      </div>`).join('')}
+    </section>`).join('')}
+    <p class="fine cs-foot">Wayword · ${esc(lang.name)} · finding your way with words</p>
+  `, { back: `#/${code}/flight` });
 }
 
 /* ---------- first-time guide and help ---------- */
@@ -1359,6 +1473,7 @@ document.addEventListener('click', (e) => {
     drawPractice();
   } else if (a === 'again') {
     const c = practice.queue.shift();
+    if (!practice.missed.has(c.key) && store.isLearned(c.key)) store.review(c.key, false);
     practice.missed.add(c.key);
     practice.queue.splice(Math.min(practice.queue.length, 3), 0, c);
     practice.again++;
@@ -1367,10 +1482,15 @@ document.addEventListener('click', (e) => {
   } else if (a === 'got') {
     const c = practice.queue.shift();
     // Right on the first try counts as learned.
-    if (!practice.missed.has(c.key) && !store.isLearned(c.key)) { store.setLearned(c.key, true); practice.newly++; }
+    if (!practice.missed.has(c.key)) {
+      if (!store.isLearned(c.key)) { store.setLearned(c.key, true); practice.newly++; }
+      else if (store.isDue(c.key)) store.review(c.key, true); // a due phrase remembered counts as its review
+    }
     practice.done++;
     nextCard();
     drawPractice();
+  } else if (a === 'print') {
+    window.print();
   } else if (a === 'help') {
     sheetPhrase = null;
     openSheet(helpHtml(false));
@@ -1413,8 +1533,12 @@ document.addEventListener('click', (e) => {
     const p = s.queue.shift();
     tts.stop();
     if (a === 'ss-got') {
-      if (!s.missed.has(p.key)) { s.results[p.key] = 'got'; store.setLearned(p.key, true); }
+      if (!s.missed.has(p.key)) {
+        s.results[p.key] = 'got';
+        if (store.isLearned(p.key)) store.review(p.key, true); else store.setLearned(p.key, true);
+      }
     } else {
+      if (!s.missed.has(p.key) && store.isLearned(p.key)) store.review(p.key, false); // back to tomorrow
       s.missed.add(p.key);
       s.results[p.key] = 'again';
       s.queue.splice(Math.min(s.queue.length, 2), 0, p); // see it again shortly
@@ -1482,6 +1606,8 @@ async function route() {
   else if (sectionName === 'sounds') await viewSounds();
   else if (sectionName === 'mic') viewMicCheck();
   else if (sectionName === 'session') viewSession(query);
+  else if (sectionName === 'flight') viewFlight();
+  else if (sectionName === 'cheatsheet') viewCheatsheet(query);
   else if (sectionName === 'practice' && arg === 'run') viewPracticeRun(query);
   else if (sectionName === 'practice') viewPracticeSetup();
   else return go(`#/${code}`);

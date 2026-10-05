@@ -1,11 +1,11 @@
 // Offline cache. Bump VERSION whenever app or content files change so phones pick up the update.
-const VERSION = 'wayword-v12';
+const VERSION = 'wayword-v13';
 const LANGS = ['pt-PT', 'es', 'fr', 'it', 'ru', 'ar-levantine', 'he', 'ja'];
 const PRECACHE = [
   './', 'index.html', 'css/style.css', 'js/app.js', 'js/data.js', 'js/store.js', 'js/speech.js', 'js/speak.js', 'js/voices.js',
   'manifest.webmanifest', 'icons/icon.svg',
   'content/languages.json', 'content/concepts.json', 'content/categories.json', 'content/tiers.json',
-  'content/scenarios.json', 'content/patterns.json', 'content/language-meta.json',
+  'content/scenarios.json', 'content/patterns.json', 'content/language-meta.json', 'content/flight.json',
   ...LANGS.map((c) => `content/lang/${c}.json`),
   ...LANGS.map((c) => `content/sounds/${c}.json`),
 ];

@@ -57,6 +57,8 @@ After any content change, bump `VERSION` in `sw.js` so installed phones pick it 
 - **5-minute session** (`#/<lang>/session`): the next 5 unlearned phrases in Core → Travel → Explore order. Each one: listen, say it, compare. Then a quick self-check; "Got it" on the first try marks the phrase learned, misses come back next session.
 - **Flashcards** mark a phrase learned on a first-try "Got it". The end screen offers the missed cards, a speaking round, or home.
 - **First-time guide** opens on the first language visit; the ? button in the header reopens it.
+- **Reviews** (`js/store.js`): every learned phrase is checked again after 1, 3, 7, 16 and 35 days. Remembered = longer gap; missed = back to 1 day. Due reviews lead the Next step card (`#/<lang>/session?mode=due`), show on the passport stamps, and flashcards count as reviews.
+- **Flight prep** (`#/<lang>/flight`): Core-only crash course (`session?mode=flight`, ignores the level filter), the Rescue kit (concept ids in `content/flight.json`), and a printable **cheat sheet** (`#/<lang>/cheatsheet`, `?all=1` for the whole level).
 
 ## Audio and speaking
 

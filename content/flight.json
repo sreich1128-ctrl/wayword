@@ -1,0 +1,4 @@
+{
+  "_doc": "Flight prep: 'rescue' lists concept ids pinned as the Rescue kit (the phrases that get you out of any jam). Concept ids only, never language text.",
+  "rescue": ["excuse_me", "speak_english", "dont_understand", "speak_slowly", "say_again", "help_me", "bathroom", "how_much", "thank_you"]
+}

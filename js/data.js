@@ -31,7 +31,7 @@ export function slotPron(target, pron) {
 }
 
 export async function loadContent() {
-  const [languages, concepts, categories, tiers, scenarios, patterns, meta] = await Promise.all([
+  const [languages, concepts, categories, tiers, scenarios, patterns, meta, flight] = await Promise.all([
     getJSON('languages.json'),
     getJSON('concepts.json'),
     getJSON('categories.json'),
@@ -39,6 +39,7 @@ export async function loadContent() {
     getJSON('scenarios.json'),
     getJSON('patterns.json'),
     getJSON('language-meta.json'),
+    getJSON('flight.json').catch(() => ({ rescue: [] })),
   ]);
 
   const conceptById = new Map(concepts.map((c, i) => [c.id, { ...c, order: i }]));
@@ -60,6 +61,7 @@ export async function loadContent() {
     tiers,
     scenarios,
     patterns: patterns.patterns || {},
+    flight,
   };
 }
 

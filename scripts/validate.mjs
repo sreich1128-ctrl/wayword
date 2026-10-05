@@ -13,6 +13,7 @@ const tiers = read('tiers.json');
 const scenarios = read('scenarios.json');
 const patterns = read('patterns.json').patterns;
 const meta = read('language-meta.json');
+const flight = read('flight.json');
 
 const ids = new Set(concepts.map((c) => c.id));
 const catIds = new Set(categories.map((c) => c.id));
@@ -50,6 +51,7 @@ for (const l of languages) {
 for (const s of scenarios) for (const id of s.concepts) {
   if (!ids.has(id)) errors.push(`scenario ${s.id}: unknown concept ${id}`);
 }
+for (const id of flight.rescue || []) if (!ids.has(id)) errors.push(`flight.json: unknown rescue concept ${id}`);
 for (const [pid, p] of Object.entries(patterns)) {
   if (!ids.has(pid)) errors.push(`patterns.json: unknown pattern ${pid}`);
   for (const id of p.related || []) if (!ids.has(id)) errors.push(`patterns.json ${pid}: unknown related ${id}`);
