@@ -9,7 +9,7 @@ Plain HTML/CSS/JS with no build step, so the same files deploy to GitHub Pages a
 python3 -m http.server 5180
 ```
 
-Then open http://localhost:5180. Run `npm run validate` to check the content files.
+Then open http://localhost:5180. Run `npm run validate` to check the content files and `npm test` for the review-schedule tests. `tests/mic-stress.html` (open on localhost, press Run) covers the microphone code.
 
 ## How content is organized
 
@@ -57,7 +57,7 @@ After any content change, bump `VERSION` in `sw.js` so installed phones pick it 
 - **5-minute session** (`#/<lang>/session`): the next 5 unlearned phrases in Core → Travel → Explore order. Each one: listen, say it, compare. Then a quick self-check; "Got it" on the first try marks the phrase learned, misses come back next session.
 - **Flashcards** mark a phrase learned on a first-try "Got it". The end screen offers the missed cards, a speaking round, or home.
 - **First-time guide** opens on the first language visit; the ? button in the header reopens it.
-- **Reviews** (`js/store.js`): every learned phrase is checked again after 1, 3, 7, 16 and 35 days. Remembered = longer gap; missed = back to 1 day. Due reviews lead the Next step card (`#/<lang>/session?mode=due`), show on the passport stamps, and flashcards count as reviews.
+- **Lock it in** (`js/schedule.js`, `js/store.js`, plan and as-built notes in `docs/lock-it-in.md`): a first-try pass anywhere makes a phrase **Learning**; it's checked after 1, 3, 7 and 14 days, and passing the last check makes it **Locked in** (it leaves the queue). A miss goes back to tomorrow. Due today shows on the language home and the passport page. An optional per-language trip date (Flying soon?) compresses the gaps so phrases can be Locked in before departure. Progress rings count Learning + Locked in.
 - **Flight prep** (`#/<lang>/flight`): Core-only crash course (`session?mode=flight`, ignores the level filter), the Rescue kit (concept ids in `content/flight.json`), and a printable **cheat sheet** (`#/<lang>/cheatsheet`, `?all=1` for the whole level).
 
 ## Audio and speaking

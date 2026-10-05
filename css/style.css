@@ -732,3 +732,23 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .new-tag { display: inline-block; margin-right: 6px; padding: 1px 7px; border-radius: 999px; background: var(--tint-strong); color: var(--accent-ink); font-size: 11px; font-weight: 800; }
 .scen-card small em { display: block; font-style: normal; color: var(--accent-ink); font-weight: 700; }
 .scen-card.empty { opacity: .6; }
+
+/* ---------- Lock it in ---------- */
+.learn.locked { color: #fff; background: var(--accent); border-color: var(--accent); }
+.hero-counts { font-size: 13px; color: var(--muted); font-weight: 600; margin-top: 2px; }
+.ring span { text-transform: none; letter-spacing: 0; font-size: 11px; }
+.lock-hint { font-size: 13px; font-weight: 600; color: var(--accent-ink); margin-top: 6px; }
+.status-tag { flex: 0 0 auto; margin-left: 2px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 800; border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--line)); color: var(--accent-ink); }
+.status-tag.locked { background: var(--accent); border-color: var(--accent); color: #fff; }
+.due-strip {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 14px; padding: 12px 14px;
+  border-radius: 16px; background: var(--surface); border: 1px solid color-mix(in srgb, var(--accent-2) 55%, var(--line));
+}
+.due-k { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.due-k .ic { width: 15px; height: 15px; }
+.due-strip a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 11px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 10%, var(--surface)); color: color-mix(in srgb, var(--accent) 80%, var(--ink)); font-weight: 700; font-size: 14px; }
+.due-strip a b { min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 12px; display: grid; place-items: center; }
+.trip-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; font-weight: 700; }
+.trip-row input { font: inherit; font-weight: 600; min-height: 44px; padding: 0 10px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); color: var(--ink); }
+.trip .heard b { color: var(--ink); }
+:root .card-actions .learn.on.locked, :root .fc-extra .learn.on.locked { color: #fff; background: var(--accent); border-color: var(--accent); }

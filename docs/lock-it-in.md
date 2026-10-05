@@ -1,6 +1,6 @@
 # Lock it in: spaced review plan
 
-Status: **plan only, nothing built.** Written 2026-10-05.
+Status: **built 2026-10-05.** See "As built" at the end of this section for the decisions taken and where the build differs from the plan below. Labels in the plan's text ("Met", "Kept") were renamed to **Learning** and **Locked in** when built.
 
 ## Goal
 
@@ -170,11 +170,41 @@ state.prefs.trips = { 'pt-PT': '2026-11-12' }   // ISO local date, per language
 
 About half a day: roughly 2 hours of store/schedule work and tests, 2 hours of UI, 1 hour of verification.
 
+## As built (2026-10-05)
+
+Decisions taken (from the owner):
+1. **Replaced** the 1/3/7/16/35 review system. One queue.
+2. **Any first-try pass** enters the queue: session quick check, crash course, flashcards, plus the manual Learn button. `srs[key].via` records which (`session`, `crash`, `cards`, `manual`, `migrated`).
+3. **Locked in phrases leave the queue for good.** A later miss doesn't bring them back.
+4. **Due today** is on both the language home (next-step card) and the passport page (strip above the stamps; stamps also say "N due today").
+5. **Trip date is per language**, set on Flying soon?.
+6. **Existing review progress migrated:** old box 0/1/2/3/4 → new box 1/2/3/4/4; `last` = old due − old gap; new due = min(old due, last + new gap). State version is now `v: 2`.
+
+Labels (changed from this plan):
+- Only two labels: **Learning** (replaces "Learned" and "Met") and **Locked in** (replaces "Kept").
+- The card button reads Learn → Learning → Locked in (accent-filled with a lock icon). Tapping Learning or Locked in takes the phrase off your list.
+- Progress rings count Learning + Locked in. The hero line under the language name shows "N learning · M locked in"; the ring's caption is the level name.
+- Filters renamed "Not learned" → **Not started** (chip and practice deck).
+
+Feedback on flip: in session quick checks and Lock it in reviews, flipping the card plays the correct audio straight away, before Got it / Not yet. Under a flipped review card, a hint shows what passing does: "Got it → next check in 3 days" or "Got it → Locked in".
+
+Differences from the plan above:
+- **Compression applies to every Learning phrase in that language**, not only Core + the current level. It's simpler to reason about, and on a trip you want everything you've started to stick.
+- Daily cap: 20 per language, oldest first; the card says "+N more after these".
+- Trip projection on Flying soon? counts Core phrases: already Locked in, on track if every check is passed on time, and what starting the rest today would add (or that it wouldn't make it).
+- "Due today" counts everything due before local midnight (`endOfToday`).
+
+Where the code is:
+- `js/schedule.js`: pure maths (gaps, compression, boxes, lock time, migration, local-date helpers).
+- `js/store.js`: queue, labels, trip dates, migration on load. API: `status`, `setLearned(key, on, via)`, `review`, `previewPass`, `dueToday`, `dueTodayByLang`, `counts`, `trip`, `setTrip`, `gaps`.
+- `js/app.js`: `nextStepCard`, `viewHome` (strip and stamps), `statusBtn`, `lockHint`, session modes (`due`, `flight`), `viewFlight` (trip date and `tripProjection`), cheat-sheet tags, help text.
+- `tests/schedule.test.mjs` (`npm test`): the compression table, box walk, cram mode, migration, calendar helpers, store behaviour.
+
 ---
 
 # Tier toggle: make every switch visibly change something
 
-Status: **plan only, nothing built.** Written 2026-10-05.
+Status: **built 2026-10-05** (commit c70dbce). Tabs were also renamed Core / Travel / Explore with real counts (23 / 49 / 56).
 
 ## How it behaves today
 
