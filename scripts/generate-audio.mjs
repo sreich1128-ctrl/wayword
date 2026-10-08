@@ -2,7 +2,7 @@
 // Output: content/audio/<lang>/<voice slot>/<concept id>.mp3 + content/audio/<lang>/manifest.json
 // The app plays these when present and falls back to the phone's voice for anything missing.
 //
-// Two engines (set up whichever you have; keys live in .env.local, which is git-ignored):
+// Two engines (set up whichever you have; keys live in .env.local or Wayword.keys.info.local, both git-ignored):
 //
 //   ElevenLabs (default):  ELEVENLABS_API_KEY=...
 //     node scripts/generate-audio.mjs --list-voices          # your voices, with accent/gender, to pick from
@@ -28,8 +28,9 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function env() {
   const out = { ...process.env };
-  const f = join(root, '.env.local');
-  if (existsSync(f)) {
+  // Keys can live in .env.local or Wayword.keys.info.local (both git- and Vercel-ignored).
+  const f = ['.env.local', 'Wayword.keys.info.local'].map((n) => join(root, n)).find((p) => existsSync(p));
+  if (f) {
     for (const line of readFileSync(f, 'utf8').split('\n')) {
       const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
       if (m) out[m[1]] = m[2].replace(/^["']|["']$/g, '');

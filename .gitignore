@@ -2,3 +2,7 @@
 node_modules/
 .vercel
 .env.local
+
+# Private key files: never upload
+*.local
+*.keys.info*
