@@ -1,13 +1,124 @@
 {
   "_doc": "Voices used by scripts/generate-audio.mjs (Microsoft Azure neural text-to-speech). One female and one male voice per language. Spanish uses Mexican voices because the dataset's pronunciations follow Latin American Spanish (c/z = s).",
-  "pt-PT": { "locale": "pt-PT", "female": ["pt-PT-RaquelNeural", "Raquel"], "male": ["pt-PT-DuarteNeural", "Duarte"] },
-  "es": { "locale": "es-MX", "female": ["es-MX-DaliaNeural", "Dalia"], "male": ["es-MX-JorgeNeural", "Jorge"] },
-  "fr": { "locale": "fr-FR", "female": ["fr-FR-DeniseNeural", "Denise"], "male": ["fr-FR-HenriNeural", "Henri"] },
-  "it": { "locale": "it-IT", "female": ["it-IT-ElsaNeural", "Elsa"], "male": ["it-IT-DiegoNeural", "Diego"] },
-  "ru": { "locale": "ru-RU", "female": ["ru-RU-SvetlanaNeural", "Svetlana"], "male": ["ru-RU-DmitryNeural", "Dmitry"] },
-  "ar-levantine": { "locale": "ar-JO", "female": ["ar-JO-SanaNeural", "Sana"], "male": ["ar-JO-TaimNeural", "Taim"],
-    "note": "Jordanian voices. More natural than phone voices, but they read unvowelled text and can still say some dialect words the formal way. Trust the pronunciation line where they differ." },
-  "he": { "locale": "he-IL", "female": ["he-IL-HilaNeural", "Hila"], "male": ["he-IL-AvriNeural", "Avri"] },
-  "ja": { "locale": "ja-JP", "female": ["ja-JP-NanamiNeural", "Nanami"], "male": ["ja-JP-KeitaNeural", "Keita"] },
-  "ro": { "locale": "ro-RO", "female": ["ro-RO-AlinaNeural", "Alina"], "male": ["ro-RO-EmilNeural", "Emil"] }
+  "pt-PT": {
+    "locale": "pt-PT",
+    "female": [
+      "pt-PT-RaquelNeural",
+      "Raquel"
+    ],
+    "male": [
+      "pt-PT-DuarteNeural",
+      "Duarte"
+    ]
+  },
+  "es": {
+    "locale": "es-MX",
+    "female": [
+      "es-MX-DaliaNeural",
+      "Dalia"
+    ],
+    "male": [
+      "es-MX-JorgeNeural",
+      "Jorge"
+    ]
+  },
+  "fr": {
+    "locale": "fr-FR",
+    "female": [
+      "fr-FR-DeniseNeural",
+      "Denise"
+    ],
+    "male": [
+      "fr-FR-HenriNeural",
+      "Henri"
+    ]
+  },
+  "it": {
+    "locale": "it-IT",
+    "female": [
+      "it-IT-ElsaNeural",
+      "Elsa"
+    ],
+    "male": [
+      "it-IT-DiegoNeural",
+      "Diego"
+    ]
+  },
+  "ru": {
+    "locale": "ru-RU",
+    "female": [
+      "ru-RU-SvetlanaNeural",
+      "Svetlana"
+    ],
+    "male": [
+      "ru-RU-DmitryNeural",
+      "Dmitry"
+    ]
+  },
+  "ar-levantine": {
+    "locale": "ar-JO",
+    "female": [
+      "ar-JO-SanaNeural",
+      "Sana"
+    ],
+    "male": [
+      "ar-JO-TaimNeural",
+      "Taim"
+    ],
+    "note": "Jordanian voices. More natural than phone voices, but they read unvowelled text and can still say some dialect words the formal way. Trust the pronunciation line where they differ."
+  },
+  "he": {
+    "locale": "he-IL",
+    "female": [
+      "he-IL-HilaNeural",
+      "Hila"
+    ],
+    "male": [
+      "he-IL-AvriNeural",
+      "Avri"
+    ]
+  },
+  "ja": {
+    "locale": "ja-JP",
+    "female": [
+      "ja-JP-NanamiNeural",
+      "Nanami"
+    ],
+    "male": [
+      "ja-JP-KeitaNeural",
+      "Keita"
+    ]
+  },
+  "ro": {
+    "locale": "ro-RO",
+    "female": [
+      "ro-RO-AlinaNeural",
+      "Alina"
+    ],
+    "male": [
+      "ro-RO-EmilNeural",
+      "Emil"
+    ]
+  },
+  "elevenlabs": {
+    "_doc": "ElevenLabs voices for scripts/generate-audio.mjs (the default engine). 'name' must match a voice in your ElevenLabs account (run --list-voices). '*' is used for any language without its own entry. Hebrew is skipped: ElevenLabs' Hebrew failed the 2026-10-08 listening test, so Hebrew keeps the phone voice.",
+    "model": "eleven_multilingual_v2",
+    "skip": [
+      "he"
+    ],
+    "voices": {
+      "*": {
+        "name": "CHOOSE A VOICE",
+        "gender": "female"
+      },
+      "pt-PT": {
+        "name": "CHOOSE A EUROPEAN PORTUGUESE VOICE",
+        "gender": "female"
+      },
+      "ar-levantine": {
+        "name": "CHOOSE A VOICE",
+        "gender": "female"
+      }
+    }
+  }
 }

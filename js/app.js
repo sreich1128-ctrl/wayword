@@ -457,6 +457,7 @@ function audioGroup() {
     <div class="seg-wrap">${speedSeg()}</div>
     ${canPracticeAloud() ? row({ href: `#/${lang.code}/mic`, ic: 'mic', title: 'Mic check', sub: 'Test your speaker, microphone and speech check' }) : ''}
   </div>
+  ${tts.naturalFor(lang.code)?.source ? `<p class="tip">Natural voices by ${esc(tts.naturalFor(lang.code).source.replace(/ neural voices$/, ''))}.</p>` : ''}
   <p class="tip">No sound? On iPhone the voice is muted when the side switch is on silent. Turn silent off and the volume up.</p>
   ${lang.meta.tts_warning ? `<p class="callout">${esc(lang.meta.tts_warning)}</p>` : ''}`;
 }
