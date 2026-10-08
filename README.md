@@ -66,6 +66,8 @@ After any content change, bump `VERSION` in `sw.js` so installed phones pick it 
 - `js/voices.js`: labels voices female or male by first name, since browsers don't say.
 - `js/speak.js`: "Say it". Records your voice for playback and, where the browser supports speech recognition, transcribes it and marks which words came through. The recognition language per language is `asr` in `language-meta.json`.
 
+- **Natural voices** (`content/audio/<lang>/manifest.json` + one MP3 per phrase per voice): when present, Listen plays them (pause, speed, loop and Back to back all work) and falls back to the device voice for anything missing. Generate them once with `node scripts/generate-audio.mjs` (Azure neural voices listed in `content/audio-voices.json`; key in `.env.local`, which is git-ignored; `--dry-run` shows the size first). Native-speaker recordings can use the same manifest with `"native": true` on the voice.
+- **Type it** (`js/typecheck.js`, tests in `tests/typecheck.test.mjs`): practice mode where you type the phrase and get told exactly what differs (accents letter by letter, missing / extra / misspelt words, word order). Capitals and punctuation don't count; gender alternatives and pattern blanks are accepted; Japanese accepts the kana reading.
 - **Mic check** (`#/<lang>/mic`, linked under Audio): tests speaker, recording, speech check, and both together on the actual phone, saves the setting that works, and produces a copyable report.
 - **`tests/mic-stress.html`**: open on localhost and press Run. Drives the real capture code with a simulated mic (a recorded "Olá" + silence) and simulated recognizers that fail, hang or lag. Checks auto-stop, stop latency, mic release, error messages and word matching.
 

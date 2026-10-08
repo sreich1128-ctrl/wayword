@@ -3,6 +3,7 @@ import { store } from './store.js';
 import * as tts from './speech.js';
 import * as mic from './speak.js';
 import { shortVoiceName } from './voices.js';
+import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
 
 const $app = document.getElementById('app');
@@ -130,7 +131,9 @@ function nativeAttrs(lang) {
 
 const langCtx = () => ({ code: L.lang.code, bcp47: L.lang.meta.bcp47, regions: L.lang.meta.voice_regions || [] });
 const speechItem = (p) => ({ key: p.key, id: p.id, text: p.target, lang: langCtx() });
-const canSpeak = () => !!(L && L.lang.meta.tts && tts.speechSupported);
+// Audio exists if the language has natural recordings, or device speech is on for it.
+const canSpeak = () => !!(L && ((L.lang.meta.tts && tts.speechSupported) || tts.naturalFor(L.lang.code)));
+const voiceText = () => { const t = tts.voiceLabel(langCtx()); return t ? (t.includes(' · ') ? t : shortVoiceName(t)) : null; };
 const canPracticeAloud = () => mic.canRecord || mic.canRecognize;
 
 // Every phrase, everywhere, reads the same way: native script, then the easy
@@ -373,6 +376,7 @@ function viewDashboard() {
       ${row({ href: `#/${code}/practice/run?dir=en`, ic: 'cards', title: 'Flashcards', sub: `English → <bdi>${esc(lang.native_name)}</bdi>` })}
       ${row({ href: `#/${code}/practice/run?dir=target`, ic: 'shuffle', title: 'Reverse flashcards', sub: `<bdi>${esc(lang.native_name)}</bdi> → English` })}
       ${canPracticeAloud() ? row({ href: `#/${code}/practice/run?dir=speak`, ic: 'mic', title: 'Speak it', sub: 'See the English, say it aloud, hear it back' }) : ''}
+      ${row({ href: `#/${code}/practice/run?dir=type`, ic: 'list', title: 'Type it', sub: 'Write it out; get told exactly what to fix (accents too)' })}
       ${row({ href: `#/${code}/sounds`, ic: 'ear', title: 'Sound guide', sub: 'The tricky sounds, and how to read the pronunciation' })}
     </div>`)}
 
@@ -446,9 +450,9 @@ function nextStepCard() {
 function audioGroup() {
   const lang = L.lang;
   if (!canSpeak()) return `<div class="group notes-group"><p class="about-row">${esc(lang.meta.tts_note || 'Audio is off for this language.')}</p></div>`;
-  const v = tts.chosenVoice(langCtx());
+  const v = voiceText();
   return `<div class="group">
-    ${row({ action: 'voice-sheet', ic: 'person', title: 'Voice', sub: v ? esc(shortVoiceName(v.name)) : 'No voice installed', attrs: 'id="voice-row"' })}
+    ${row({ action: 'voice-sheet', ic: 'person', title: 'Voice', sub: v ? esc(v) : 'No voice installed', attrs: 'id="voice-row"' })}
     <div class="row static"><span class="row-ic">${icon('play')}</span><span class="row-text"><span class="row-title">Speed</span></span></div>
     <div class="seg-wrap">${speedSeg()}</div>
     ${canPracticeAloud() ? row({ href: `#/${lang.code}/mic`, ic: 'mic', title: 'Mic check', sub: 'Test your speaker, microphone and speech check' }) : ''}
@@ -629,6 +633,7 @@ function viewPracticeSetup() {
         <label class="opt"><input type="radio" name="dir" value="en" checked><span><b>Flashcards</b><small>English → <bdi>${esc(lang.native_name)}</bdi></small></span></label>
         <label class="opt"><input type="radio" name="dir" value="target"><span><b>Reverse</b><small><bdi>${esc(lang.native_name)}</bdi> → English</small></span></label>
         ${canPracticeAloud() ? `<label class="opt"><input type="radio" name="dir" value="speak"><span><b>Speak it</b><small>Say it aloud, then hear it back</small></span></label>` : ''}
+        <label class="opt"><input type="radio" name="dir" value="type"><span><b>Type it</b><small>Write it out; get told exactly what to fix</small></span></label>
       </fieldset>
       <fieldset><legend>Deck</legend>
         <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All of ${esc(tierLabel(tier()))}</b><small>${pool.length}${newAtTierCount(pool) ? ` (${newAtTierCount(pool)} new)` : ''}</small></span></label>
@@ -669,7 +674,7 @@ function viewPracticeRun(query) {
   const sig = `${L.lang.code}|${query.toString()}|${tier()}`;
   if (!practice || practice.sig !== sig) {
     const deck = buildDeck(query);
-    const dir = ['target', 'speak'].includes(query.get('dir')) ? query.get('dir') : 'en';
+    const dir = ['target', 'speak', 'type'].includes(query.get('dir')) ? query.get('dir') : 'en';
     practice = { sig, query: query.toString(), dir, all: deck, queue: deck.slice(), total: deck.length, done: 0, again: 0, flipped: false, take: null, missed: new Set(), newly: 0 };
   }
   drawPractice();
@@ -678,6 +683,8 @@ function viewPracticeRun(query) {
 function nextCard() {
   practice.flipped = false;
   practice.take = null;
+  practice.check = null;
+  practice.typed = '';
   tts.stop();
 }
 
@@ -709,10 +716,18 @@ function drawPractice() {
   const englishBlock = `<p class="fc-en">${withSlots(p.english)}</p>`;
   const notes = p.regional_note ? `<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>` : '';
   const pct = Math.round((s.done / s.total) * 100);
-  const label = { en: `Say it in ${esc(lang.name)}`, target: 'What does it mean?', speak: `Say it aloud in ${esc(lang.name)}` }[s.dir];
+  const label = { en: `Say it in ${esc(lang.name)}`, target: 'What does it mean?', speak: `Say it aloud in ${esc(lang.name)}`, type: `Type it in ${esc(lang.name)}` }[s.dir];
 
   let face;
-  if (s.dir === 'speak') {
+  if (s.dir === 'type') {
+    face = `<span class="fc-label">${label}</span>${englishBlock}
+      ${s.check
+        ? `<span class="fc-divider"></span>${nativeBlock}${typeResult(s)}${notes}`
+        : `<form class="type-form" data-type-form>
+             <input class="type-input" id="type-input" ${nativeAttrs(lang)} autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="Type it here" value="${esc(s.typed || '')}">
+             <button class="cta" type="submit">Check</button>
+           </form>${typeHint(p)}`}`;
+  } else if (s.dir === 'speak') {
     face = `<span class="fc-label">${label}</span>${englishBlock}
       ${s.flipped
         ? `<span class="fc-divider"></span>${nativeBlock}${s.take ? takeResult(p, s.take) : ''}${notes}`
@@ -728,11 +743,13 @@ function drawPractice() {
   page('practice', `
     <div class="fc-progress"><span style="width:${pct}%"></span></div>
     <p class="fc-meta">${s.done} / ${s.total}${s.newly ? ` · ${s.newly} now Learning` : ''}</p>
-    ${s.done === 0 && !s.flipped && !s.again ? `<p class="fc-tip">${s.dir === 'target' ? 'Work out the meaning, then tap the card to check.' : s.dir === 'speak' ? 'Read the English, tap the mic and say it. You’ll hear the right version straight after.' : 'Say it in your head (or out loud), then tap the card to check.'} “Got it” on the first try puts a phrase into Learning (or counts as its review if one is due).</p>` : ''}
-    <div class="flashcard ${s.flipped ? 'flipped' : ''}" ${s.dir === 'speak' && !s.flipped ? '' : 'data-action="flip" role="button" tabindex="0"'} aria-live="polite">
+    ${s.done === 0 && !s.flipped && !s.again ? `<p class="fc-tip">${s.dir === 'target' ? 'Work out the meaning, then tap the card to check.' : s.dir === 'speak' ? 'Read the English, tap the mic and say it. You’ll hear the right version straight after.' : s.dir === 'type' ? 'Read the English and type the phrase. Accents count; capitals and punctuation don’t.' : 'Say it in your head (or out loud), then tap the card to check.'} “Got it” on the first try puts a phrase into Learning (or counts as its review if one is due).</p>` : ''}
+    <div class="flashcard ${s.flipped ? 'flipped' : ''} ${s.dir === 'type' ? 'typing' : ''}" ${(s.dir === 'speak' && !s.flipped) || s.dir === 'type' ? '' : 'data-action="flip" role="button" tabindex="0"'} aria-live="polite">
       <div class="fc-face">${face}</div>
     </div>
     ${s.dir === 'speak' && !s.flipped ? `<button class="link-btn center" data-action="flip">Show the answer without speaking</button>` : ''}
+    ${s.dir === 'type' && !s.check ? `<button class="link-btn center" data-action="type-reveal">Show the answer</button>` : ''}
+    ${s.dir === 'type' && s.check && !['correct', 'marks'].includes(s.check.verdict) ? `<button class="link-btn center" data-action="type-retry">${icon('replay')} Try again</button>` : ''}
     <div class="fc-actions ${s.flipped ? '' : 'disabled'}">
       <button class="fc-btn again" data-action="again" ${s.flipped ? '' : 'disabled'}>Again</button>
       <button class="fc-btn got" data-action="got" ${s.flipped ? '' : 'disabled'}>Got it</button>
@@ -742,6 +759,46 @@ function drawPractice() {
       ${statusBtn(p, 'learned-current')}
     </div>
   `, { back });
+}
+
+// Type it: the verdict and what to fix, from js/typecheck.js.
+function typeResult(s) {
+  const r = s.check;
+  const head = {
+    correct: '✓ Correct', marks: '✓ Right words. Check the accents', close: 'Close. A few things to fix',
+    wrong: 'Not quite yet', revealed: 'Here’s the answer',
+  }[r.verdict] || '';
+  return `<div class="take type-take ${['correct', 'marks'].includes(r.verdict) ? 'good' : r.verdict === 'revealed' ? '' : 'failed'}">
+    <p class="take-verdict">${head}</p>
+    ${s.typed ? `<p class="heard">You wrote: <bdi ${nativeAttrs(L.lang)}>${esc(s.typed)}</bdi></p>` : ''}
+    ${r.notes.length ? `<ul class="type-notes">${r.notes.map((n) => `<li>${esc(n.text)}</li>`).join('')}</ul>` : ''}
+  </div>`;
+}
+
+function typeHint(p) {
+  const lang = L.lang;
+  const base = lang.meta.bcp47.split('-')[0];
+  const keyboards = { ru: 'Russian', ar: 'Arabic', he: 'Hebrew', ja: 'Japanese (kana is fine)' };
+  const tips = [];
+  if (keyboards[base]) tips.push(`Needs a ${keyboards[base]} keyboard: iPhone Settings → General → Keyboard → Keyboards → Add New Keyboard.`);
+  else tips.push('Hold a letter on the iPhone keyboard for accents (e → ê, é).');
+  if (p.type === 'pattern') tips.push('For the blank, type any word, or leave it out.');
+  return `<p class="fc-hint type-hint">${tips.join(' ')}</p>`;
+}
+
+function runTypeCheck(revealOnly = false) {
+  const s = practice;
+  const p = s.queue[0];
+  const typed = (document.getElementById('type-input')?.value ?? s.typed ?? '').trim();
+  if (!revealOnly && !typed) { document.getElementById('type-input')?.focus(); return; }
+  s.typed = revealOnly ? '' : typed;
+  s.check = revealOnly ? { verdict: 'revealed', notes: [] }
+    : L.lang.meta.no_spaces ? checkTypedChars(p.target, typed, p.reading) : checkTyped(p.target, typed);
+  // A wrong answer (or peeking) counts as a miss, so a later "Got it" won't mark it Learning.
+  if (!['correct', 'marks'].includes(s.check.verdict)) s.missed.add(p.key);
+  s.flipped = true;
+  drawPractice();
+  if (canSpeak()) tts.play(speechItem(p)); // hear the right version straight away
 }
 
 /* ---------- guided session: learn 5, then a quick check ---------- */
@@ -1235,7 +1292,7 @@ function micReport() {
     `Language: ${L.lang.name} (speech check: ${L.lang.meta.asr || L.lang.meta.bcp47})`,
     `Browser: ${navigator.userAgent}`,
     `Supports: recording ${mic.canRecord ? 'yes' : 'no'}, speech check ${mic.canRecognize ? 'yes' : 'no'}, voice ${tts.speechSupported ? 'yes' : 'no'}, audioSession ${navigator.audioSession ? 'yes' : 'no'}`,
-    `Voice: ${tts.chosenVoice(langCtx())?.name || 'none'}`,
+    `Voice: ${tts.voiceLabel(langCtx()) || 'none'}`,
     `Current setting: ${mic.micMode()}`,
   ];
   for (const t of TESTS) {
@@ -1298,13 +1355,27 @@ let voiceFilter = 'all';
 
 function voiceSheetHtml() {
   const list = tts.voicesFor(langCtx());
-  const current = tts.chosenVoice(langCtx());
-  const hasGender = list.some((x) => x.gender !== 'unknown');
+  const nat = tts.naturalFor(L.lang.code);
+  const saved = (store.prefs().voices || {})[L.lang.code];
+  const natPicked = nat && (!saved || saved.startsWith('audio:'));
+  const current = natPicked ? null : tts.chosenVoice(langCtx());
+  const natVoices = (nat?.voices || []).filter((v) => voiceFilter === 'all' || v.gender === voiceFilter);
+  const natRows = nat ? `<p class="voice-k">Natural voices · ${esc(nat.source || 'recorded')}</p>
+    <div class="group voice-list">${natVoices.map((v) => {
+      const on = natPicked && (saved ? saved === `audio:${v.id}` : v === nat.voices[0]);
+      return `<button class="row ${on ? 'picked' : ''}" data-action="pick-voice" data-uri="audio:${esc(v.id)}">
+        <span class="row-text"><span class="row-title">${esc(v.name)}</span><span class="row-sub">${esc([v.gender, v.native ? 'recorded by a native speaker' : 'natural voice'].filter(Boolean).join(' · '))}</span></span>
+        ${on ? icon('check', 'row-check') : ''}</button>`;
+    }).join('') || '<p class="about-row">No natural voice of that type.</p>'}</div>
+    ${nat.note ? `<p class="tip">${esc(nat.note)}</p>` : ''}
+    <p class="voice-k">This device’s voices</p>` : '';
+  const hasGender = list.some((x) => x.gender !== 'unknown') || !!nat;
   const shown = list.filter((x) => voiceFilter === 'all' || x.gender === voiceFilter);
   const tag = (x) => [x.gender !== 'unknown' ? x.gender : '', x.levantine ? 'Levantine' : '', /premium|enhanced|natural|neural/i.test(x.voice.name) ? 'natural' : '', x.voice.lang].filter(Boolean).join(' · ');
   return `<div class="sheet-head"><h2>Voice</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
     ${hasGender ? `<div class="seg filter">${['all', 'female', 'male'].map((g) =>
       `<button class="seg-btn ${voiceFilter === g ? 'on' : ''}" data-action="voice-filter" data-g="${g}">${g === 'all' ? 'All' : g === 'female' ? 'Female' : 'Male'}</button>`).join('')}</div>` : ''}
+    ${natRows}
     <div class="group voice-list">${shown.length ? shown.map((x) => `
       <button class="row ${current && x.voice.voiceURI === current.voiceURI ? 'picked' : ''}" data-action="pick-voice" data-uri="${esc(x.voice.voiceURI)}">
         <span class="row-text"><span class="row-title">${esc(shortVoiceName(x.voice.name))}</span><span class="row-sub">${esc(tag(x))}</span></span>
@@ -1358,7 +1429,7 @@ function renderPlayer() {
     return;
   }
   const playing = st.status === 'playing' || st.status === 'gap';
-  const v = tts.chosenVoice(langCtx());
+  const v = voiceText();
   el.className = 'show';
   document.body.classList.add('has-player');
   el.innerHTML = `<div class="player">
@@ -1375,7 +1446,7 @@ function renderPlayer() {
         <span>${tts.speed().label}</span>
         <button data-action="pl-faster" aria-label="Faster">+</button>
       </div>
-      <button class="pl-voice" data-action="voice-sheet">${icon('person')}<span>${v ? esc(shortVoiceName(v.name)) : 'Voice'}</span></button>
+      <button class="pl-voice" data-action="voice-sheet">${icon('person')}<span>${v ? esc(v.split(' · ')[0]) : 'Voice'}</span></button>
     </div>
   </div>`;
 }
@@ -1399,9 +1470,8 @@ tts.subscribe(() => { syncListen(); renderPlayer(); });
 tts.onVoices(() => {
   const vr = document.getElementById('voice-row');
   if (vr && L) {
-    const v = tts.chosenVoice(langCtx());
     const sub = vr.querySelector('.row-sub');
-    if (sub) sub.textContent = v ? shortVoiceName(v.name) : 'No voice installed';
+    if (sub) sub.textContent = voiceText() || 'No voice installed';
   }
 });
 
@@ -1437,6 +1507,15 @@ function toast(text, ms = 7000) {
 }
 
 /* ---------- events ---------- */
+
+document.addEventListener('submit', (e) => {
+  if (!e.target.matches('[data-type-form]')) return;
+  e.preventDefault();
+  runTypeCheck();
+});
+document.addEventListener('input', (e) => {
+  if (e.target.id === 'type-input' && practice) practice.typed = e.target.value;
+});
 
 // Trip date on the Flying soon? page.
 document.addEventListener('change', (e) => {
@@ -1551,7 +1630,7 @@ document.addEventListener('click', (e) => {
     }
     openSheet(voiceSheetHtml());
     const vr = document.querySelector('#voice-row .row-sub');
-    if (vr) vr.textContent = shortVoiceName(tts.chosenVoice(langCtx())?.name || '');
+    if (vr) vr.textContent = voiceText() || '';
   } else if (a === 'close-sheet') {
     closeSheet();
   } else if (a === 'pl-toggle') {
@@ -1674,6 +1753,13 @@ document.addEventListener('click', (e) => {
   } else if (a === 'ss-another') {
     session = null;
     route();
+  } else if (a === 'type-reveal') {
+    runTypeCheck(true);
+  } else if (a === 'type-retry') {
+    Object.assign(practice, { check: null, flipped: false });
+    tts.stop();
+    drawPractice();
+    document.getElementById('type-input')?.focus();
   } else if (a === 'retry-missed') {
     const missed = practice.all.filter((p) => practice.missed.has(p.key));
     Object.assign(practice, { all: missed, queue: shuffle(missed), total: missed.length, done: 0, again: 0, missed: new Set(), newly: 0 });
@@ -1693,6 +1779,7 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && document.body.classList.contains('sheet-open')) { closeSheet(); return; }
   if (!practice || !location.hash.includes('/practice/run') || e.target.matches('input,select,textarea')) return;
   if (practice.dir === 'speak' && !practice.flipped) return;
+  if (practice.dir === 'type' && (e.key === ' ' || e.key === 'Enter')) return; // typing mode: Enter submits the answer
   if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); practice.flipped = !practice.flipped; drawPractice(); }
   if (practice.flipped && e.key === 'ArrowRight') document.querySelector('[data-action="got"]')?.click();
   if (practice.flipped && e.key === 'ArrowLeft') document.querySelector('[data-action="again"]')?.click();
@@ -1717,6 +1804,7 @@ async function route() {
   if (!C.languageByCode.has(code)) return go('#/');
   if (!L || L.lang.code !== code) {
     L = await loadLanguage(C, code);
+    await tts.loadNatural(code);
     practice = null;
   }
   store.setPref('lastLang', code);

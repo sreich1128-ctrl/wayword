@@ -26,6 +26,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 | `js/schedule.js` | Lock it in maths: 1/3/7/14-day gaps, trip compression, box walk, migration. Pure functions, tested. |
 | `js/app.js` | Every view, plus routing (`#/<lang>/<section>`) and events. Big but sectioned. Look for `/* ---------- name ---------- */` markers. |
 | `js/speech.js` / `js/voices.js` | Device text-to-speech: voice ranking and gender labels, speed, pause/loop. |
+| `js/typecheck.js` | Type it: compares typed text with the phrase (accents, missing/extra/misspelt words, order); pure, tested. |
+| `scripts/generate-audio.mjs` | One-off natural-voice generation (Azure) into `content/audio/<lang>/`; reads `.env.local`. |
 | `js/speak.js` | Microphone: record / speech check / both, level meter, auto-stop, plain-English failure reasons, word comparison (character-level for Japanese). |
 | `css/style.css` | One design system; each language's accent comes from `language-meta.json`. |
 
@@ -39,7 +41,7 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 ## Tests
 
-- `npm test`: review schedule and store (8 tests).
+- `npm test`: review schedule, store, and the Type it checker (17 tests).
 - `npm run validate`: content consistency (concept ids, scenario/pattern/flight references, sound-guide highlights).
 - `tests/mic-stress.html`: open on localhost and press Run. 20 checks on the real capture code with a simulated mic.
 - **No automated UI tests.** Browser checks were done by hand in the preview pane at 375px, light and dark, Spanish, Arabic (right-to-left) and Japanese. Real microphones only work on a device; the owner's iPhone confirmed recording and the speech check work.
