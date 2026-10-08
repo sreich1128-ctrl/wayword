@@ -1,0 +1,183 @@
+{
+  "source": "ElevenLabs",
+  "generated": "2026-10-08",
+  "note": "",
+  "voices": [
+    {
+      "id": "f",
+      "name": "Claudia",
+      "gender": "female",
+      "engine": "elevenlabs:JGnWZj684pcXmK2SxYIv"
+    }
+  ],
+  "files": {
+    "hello": {
+      "f": "f/hello.mp3"
+    },
+    "good_morning": {
+      "f": "f/good_morning.mp3"
+    },
+    "how_are_you": {
+      "f": "f/how_are_you.mp3"
+    },
+    "please": {
+      "f": "f/please.mp3"
+    },
+    "thank_you": {
+      "f": "f/thank_you.mp3"
+    },
+    "excuse_me": {
+      "f": "f/excuse_me.mp3"
+    },
+    "yes": {
+      "f": "f/yes.mp3"
+    },
+    "no": {
+      "f": "f/no.mp3"
+    },
+    "speak_english": {
+      "f": "f/speak_english.mp3"
+    },
+    "dont_speak_well": {
+      "f": "f/dont_speak_well.mp3"
+    },
+    "know_a_little": {
+      "f": "f/know_a_little.mp3"
+    },
+    "dont_understand": {
+      "f": "f/dont_understand.mp3"
+    },
+    "say_again": {
+      "f": "f/say_again.mp3"
+    },
+    "speak_slowly": {
+      "f": "f/speak_slowly.mp3"
+    },
+    "what_mean": {
+      "f": "f/what_mean.mp3"
+    },
+    "how_say": {
+      "f": "f/how_say.mp3"
+    },
+    "learning_language": {
+      "f": "f/learning_language.mp3"
+    },
+    "learning_by_trying": {
+      "f": "f/learning_by_trying.mp3"
+    },
+    "where_is": {
+      "f": "f/where_is.mp3"
+    },
+    "nearest": {
+      "f": "f/nearest.mp3"
+    },
+    "bathroom": {
+      "f": "f/bathroom.mp3"
+    },
+    "how_get": {
+      "f": "f/how_get.mp3"
+    },
+    "is_far": {
+      "f": "f/is_far.mp3"
+    },
+    "help_me": {
+      "f": "f/help_me.mp3"
+    },
+    "can_i_have": {
+      "f": "f/can_i_have.mp3"
+    },
+    "i_would_like": {
+      "f": "f/i_would_like.mp3"
+    },
+    "coffee": {
+      "f": "f/coffee.mp3"
+    },
+    "water": {
+      "f": "f/water.mp3"
+    },
+    "whats_in_this": {
+      "f": "f/whats_in_this.mp3"
+    },
+    "dairy": {
+      "f": "f/dairy.mp3"
+    },
+    "recommend_food": {
+      "f": "f/recommend_food.mp3"
+    },
+    "bill": {
+      "f": "f/bill.mp3"
+    },
+    "how_much": {
+      "f": "f/how_much.mp3"
+    },
+    "pay_card": {
+      "f": "f/pay_card.mp3"
+    },
+    "apple_pay": {
+      "f": "f/apple_pay.mp3"
+    },
+    "cash_or_card": {
+      "f": "f/cash_or_card.mp3"
+    },
+    "tip_included": {
+      "f": "f/tip_included.mp3"
+    },
+    "people_tip": {
+      "f": "f/people_tip.mp3"
+    },
+    "your_name": {
+      "f": "f/your_name.mp3"
+    },
+    "where_from": {
+      "f": "f/where_from.mp3"
+    },
+    "live_here": {
+      "f": "f/live_here.mp3"
+    },
+    "what_do_you_do": {
+      "f": "f/what_do_you_do.mp3"
+    },
+    "been_america": {
+      "f": "f/been_america.mp3"
+    },
+    "im_visiting": {
+      "f": "f/im_visiting.mp3"
+    },
+    "im_new_here": {
+      "f": "f/im_new_here.mp3"
+    },
+    "love_languages": {
+      "f": "f/love_languages.mp3"
+    },
+    "really": {
+      "f": "f/really.mp3"
+    },
+    "interesting": {
+      "f": "f/interesting.mp3"
+    },
+    "me_too": {
+      "f": "f/me_too.mp3"
+    },
+    "and_you": {
+      "f": "f/and_you.mp3"
+    },
+    "nice_meeting": {
+      "f": "f/nice_meeting.mp3"
+    },
+    "youre_funny": {
+      "f": "f/youre_funny.mp3"
+    },
+    "like_talking": {
+      "f": "f/like_talking.mp3"
+    },
+    "instagram": {
+      "f": "f/instagram.mp3"
+    },
+    "very_helpful": {
+      "f": "f/very_helpful.mp3"
+    },
+    "thanks_help": {
+      "f": "f/thanks_help.mp3"
+    }
+  }
+}

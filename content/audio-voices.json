@@ -101,23 +101,52 @@
     ]
   },
   "elevenlabs": {
-    "_doc": "ElevenLabs voices for scripts/generate-audio.mjs (the default engine). 'name' must match a voice in your ElevenLabs account (run --list-voices). '*' is used for any language without its own entry. Hebrew is skipped: ElevenLabs' Hebrew failed the 2026-10-08 listening test, so Hebrew keeps the phone voice.",
+    "_doc": "ElevenLabs voices for scripts/generate-audio.mjs (the default engine). 'name' must exactly match a voice in your ElevenLabs account (run --list-voices); 'label' is what the app shows. Hebrew is skipped for now: ElevenLabs Hebrew failed the 2026-10-08 listening test (re-test with the native voices Michal/Tomer before enabling).",
     "model": "eleven_multilingual_v2",
     "skip": [
       "he"
     ],
     "voices": {
-      "*": {
-        "name": "CHOOSE A VOICE",
-        "gender": "female"
-      },
       "pt-PT": {
-        "name": "CHOOSE A EUROPEAN PORTUGUESE VOICE",
+        "name": "Claudia - Friendly",
+        "label": "Claudia",
         "gender": "female"
       },
       "ar-levantine": {
-        "name": "CHOOSE A VOICE",
+        "name": "Laloosh – Soothing Arabic Conversational Voice",
+        "label": "Laloosh",
         "gender": "female"
+      },
+      "es": {
+        "name": "Matilda Paz - Young Spanish woman",
+        "label": "Matilda",
+        "gender": "female",
+        "note": "Spanish voice from Spain: she says c/z as “th” (GRAH-thyas). The pronunciation line uses the Latin American “s”. Both are correct."
+      },
+      "fr": {
+        "name": "Greg - Authentic French Voice",
+        "label": "Greg",
+        "gender": "male"
+      },
+      "it": {
+        "name": "Rossana - Warm Italian Conversational",
+        "label": "Rossana",
+        "gender": "female"
+      },
+      "ru": {
+        "name": "Maxim - Conversational & Natural",
+        "label": "Maxim",
+        "gender": "male"
+      },
+      "ja": {
+        "name": "Takuya - Normal Japanese male",
+        "label": "Takuya",
+        "gender": "male"
+      },
+      "ro": {
+        "name": "Claudiu - Professional Romanian",
+        "label": "Claudiu",
+        "gender": "male"
       }
     }
   }

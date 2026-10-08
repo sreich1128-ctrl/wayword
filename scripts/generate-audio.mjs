@@ -90,11 +90,17 @@ async function elevenVoices(key) {
 
 async function elevenSynth({ key, voiceId, model, text }) {
   for (let attempt = 1; attempt <= 4; attempt++) {
-    const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_64`, {
-      method: 'POST',
-      headers: { 'xi-api-key': key, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
-      body: JSON.stringify({ text, model_id: model, voice_settings: { stability: 0.6, similarity_boost: 0.75, speed: 0.95 } }),
-    });
+    let res;
+    try {
+      res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_64`, {
+        method: 'POST',
+        headers: { 'xi-api-key': key, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
+        body: JSON.stringify({ text, model_id: model, voice_settings: { stability: 0.6, similarity_boost: 0.75, speed: 0.95 } }),
+      });
+    } catch (err) { // dropped connection: wait and retry
+      if (attempt === 4) throw new Error(`Network problem talking to ElevenLabs (${err.cause?.code || err.message}). Re-run to continue; finished files are kept.`);
+      await sleep(2000 * attempt); continue;
+    }
     if (res.ok) return Buffer.from(await res.arrayBuffer());
     const body = await res.text();
     if (res.status === 401) throw new Error('ElevenLabs rejected the key. Check ELEVENLABS_API_KEY in .env.local.');
