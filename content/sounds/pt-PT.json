@@ -5,7 +5,8 @@
   "reading": [
     "CAPITALS mark the stress.",
     "\"uh\" and \"oo\" at the end of a word are short and weak: POH-duh, oh-bree-GAH-doo.",
-    "An \"n\" or \"ng\" after a vowel (kohn, bohn, nowng, seeng, kong) usually just means that vowel is nasal: say it through your nose and don't actually pronounce the n or g. \"Com\" is a nasal \"koh\", whether it's spelled kohn or kong."
+    "An \"n\" or \"ng\" after a vowel (kohn, bohn, nowng, seeng, kong) usually just means that vowel is nasal: say it through your nose and don't actually pronounce the n or g. \"Com\" is a nasal \"koh\", whether it's spelled kohn or kong.",
+    "The pronunciation line is the slow, careful version, one word at a time. Real speech (and the recording) is faster: words run together and short vowels shrink or vanish. Read the line to learn the sounds, then copy the rhythm from the recording. Where the two differ a lot, the phrase has a \"How it's said\" tip."
   ],
   "sounds": [
     {
@@ -73,6 +74,30 @@
       ]
     },
     {
+      "symbol": "s‿u  e‿a",
+      "name": "Words run together",
+      "spelled": "linked, as one word",
+      "how": "Portuguese speakers don't pause between words. A final s before a vowel turns into z and joins the next word (Estados Unidos is \"esh-TAH-du-zoo-NEE-dush\"). A weak final e disappears into the next vowel, and a final o before a vowel turns into a quick w. If the recording seems to skip a sound, this is usually why.",
+      "examples": [
+        {
+          "id": "been_america",
+          "mark": "s U"
+        },
+        {
+          "id": "live_here",
+          "mark": "e a"
+        },
+        {
+          "id": "im_new_here",
+          "mark": "o a"
+        },
+        {
+          "id": "how_get",
+          "mark": "o a"
+        }
+      ]
+    },
+    {
       "symbol": "nh  lh",
       "name": "NH and LH",
       "spelled": "ny, ly",
@@ -136,5 +161,32 @@
         }
       ]
     }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a Lisbon speaker says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "how_are_you": "Said quickly, the e of está is often dropped: KOH-moo shTAH.",
+    "how_say": "Diz ends in sh, not z (a final z sounds like sh): KOH-moo suh DEESH.",
+    "say_again": "Pode loses its final e, and the first e of repetir almost vanishes: POHD rpuh-TEER. The r at the start is the throaty one.",
+    "dont_understand": "The e in per- nearly disappears: nowng pr-SEH-boo.",
+    "what_mean": "The que's are short and weak, \"kuh\", and the whole start runs together: oo-kee-EH-kuh EE-soo kehr dee-ZEHR.",
+    "whats_in_this": "The start runs together into one word, oo-kee-EH-kuh, with weak \"kuh\" sounds.",
+    "what_do_you_do": "Faz ends in sh (a final z sounds like sh), and que is a weak \"kuh\": oo kuh FAHSH.",
+    "recommend_food": "Que is a weak \"kuh\" here: oo kuh ruh-koo-MEN-dah.",
+    "learning_language": "Estou often drops its first e (shTOH), and \"a aprender\" blurs into one long \"ah\": shTOH-ah-pren-DEHR.",
+    "learning_by_trying": "Estou often drops its first e (shTOH), and \"a aprender\" blurs into one long \"ah\".",
+    "im_visiting": "Estou often drops its first e, and de shrinks to just d: shTOH d'vee-ZEE-tah.",
+    "is_far": "The final e of longe is barely there: eh LONZH.",
+    "help_me": "The final -me is almost just m: POHD ah-zhoo-DARM.",
+    "bathroom": "De shrinks to a quick d: ON-duh FEE-kah ah KAH-zah d'BAN-yoo.",
+    "how_get": "Chego and a join, the o turning into a quick w: KOH-moo SHEH-gwah.",
+    "where_from": "De and onde join up: DON-duh eh.",
+    "live_here": "Vive loses its final e and joins aqui: VEEV-ah-KEE.",
+    "im_new_here": "Novo and aqui join, the o turning into a quick w: soh NOH-vwah-KEE.",
+    "been_america": "In normal speech the s of Estados joins Unidos as a z, and the short vowels around it shrink: esh-TAH-du-zoo-NEE-dush. The recording says it this way, so it can sound like a syllable is missing.",
+    "love_languages": "Adoro and aprender join, the o turning into a quick w: ah-DOH-rwah-pren-DEHR.",
+    "like_talking": "Gosto's final o is weak, and de shrinks to a quick d: GOSH-too d'fah-LAR.",
+    "interesting": "Que and interessante run together, and the final e almost vanishes: keen-tuh-ruh-SANT.",
+    "nice_meeting": "Prazer em joins up: prah-ZEH-reng.",
+    "tip_included": "Está often drops its first e: ah goor-ZHEH-tah shTAH een-kloo-EE-dah."
+  }
 }

@@ -172,10 +172,16 @@ function statusBtn(p, action = 'learned') {
   return `<button class="learn ${st ? 'on' : ''} ${st === 'locked' ? 'locked' : ''}" data-action="${action}" data-key="${esc(p.key)}" aria-pressed="${!!st}" title="${st ? 'Tap to take it off your list' : 'Add to Learning'}">${icon(st === 'locked' ? 'lock' : 'check')}<span>${statusLabel(st) || 'Learn'}</span></button>`;
 }
 
+// "How it's said": natural-speed coaching from the sound guide, with a link to the guide.
+const sayTipNote = (p, link = true) => (p.say_tip
+  ? `<p class="note"><span class="note-k">How it’s said</span>${esc(p.say_tip)}${link ? ` <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a>` : ''}</p>`
+  : '');
+
 function phraseCard(p, { isNew = false } = {}) {
   const fav = store.isFav(p.key);
   const learned = store.isLearned(p.key);
   const notes = [];
+  if (p.say_tip) notes.push(sayTipNote(p));
   if (p.regional_note) notes.push(`<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>`);
   if (p.usage_note) notes.push(`<p class="note"><span class="note-k">Usage</span>${esc(p.usage_note)}</p>`);
   if (p.example) notes.push(`<p class="note"><span class="note-k">Example</span><span ${nativeAttrs(L.lang)}>${esc(p.example)}</span></p>`);
@@ -715,7 +721,7 @@ function drawPractice() {
   const learned = store.isLearned(p.key);
   const nativeBlock = `<p class="native fc-native" ${nativeAttrs(lang)}>${withSlots(p.target)}</p>${readingLine(p, 'fc-kana')}<p class="pron fc-pron" data-peek="pron">${withSlots(p.pron)}</p>`;
   const englishBlock = `<p class="fc-en">${withSlots(p.english)}</p>`;
-  const notes = p.regional_note ? `<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>` : '';
+  const notes = sayTipNote(p, false) + (p.regional_note ? `<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>` : '');
   const pct = Math.round((s.done / s.total) * 100);
   const label = { en: `Say it in ${esc(lang.name)}`, target: 'What does it mean?', speak: `Say it aloud in ${esc(lang.name)}`, type: `Type it in ${esc(lang.name)}` }[s.dir];
 
@@ -846,7 +852,7 @@ function drawSession() {
 
   if (s.phase === 'learn') {
     const p = s.items[s.i];
-    const notes = [p.usage_note, p.regional_note].filter(Boolean).map((t) => `<p class="note">${esc(t)}</p>`).join('');
+    const notes = sayTipNote(p) + [p.usage_note, p.regional_note].filter(Boolean).map((t) => `<p class="note">${esc(t)}</p>`).join('');
     page('home', `
       <div class="fc-progress"><span style="width:${Math.round((s.i / (n + 1)) * 100)}%"></span></div>
       <p class="fc-meta">${modeLabel} · phrase ${s.i + 1} of ${n}</p>

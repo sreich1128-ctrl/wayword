@@ -110,7 +110,11 @@
       "pt-PT": {
         "name": "Claudia - Friendly",
         "label": "Claudia",
-        "gender": "female"
+        "gender": "female",
+        "model": "eleven_v3",
+        "language_code": "pt",
+        "stability": 0.5,
+        "_why": "2026-10-08 listening test: eleven_v3 was the only option that kept the European 'esh' (estou, custa). Its 'robust' stability (1.0) dropped sounds in longer phrases."
       },
       "ar-levantine": {
         "name": "Laloosh – Soothing Arabic Conversational Voice",

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Audio review</title>
+<!-- Listen to every generated clip for one language and flag the bad ones.
+     Open /tests/audio-review.html?lang=pt-PT, then paste the "Redo" command it builds into the terminal. -->
+<style>
+  body{font:16px/1.4 system-ui,sans-serif;margin:0 auto;max-width:780px;padding:16px;background:#fff;color:#222}
+  h1{font-size:20px;margin:0 0 4px} small,.muted{color:#666}
+  .row{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid #eee}
+  .row.flagged{background:#fff4f2} .t{font-weight:600} audio{height:34px;max-width:230px}
+  .bar{position:sticky;top:0;background:#fff;padding:8px 0;border-bottom:2px solid #ddd;z-index:1}
+  code{display:block;background:#f4f4f4;padding:8px;border-radius:6px;word-break:break-all;margin-top:6px;font-size:13px}
+  button{font:inherit;padding:6px 12px;border-radius:8px;border:1px solid #aaa;background:#fafafa;cursor:pointer}
+  @media (max-width:560px){.row{grid-template-columns:28px 1fr}.row audio{grid-column:2;max-width:100%}}
+</style></head><body>
+<h1 id="title">Audio review</h1>
+<div class="bar">
+  <span id="count">0 flagged</span> · <button id="playall">Play all from top</button>
+  <code id="cmd">Tick a phrase that sounds wrong; the redo command appears here.</code>
+</div>
+<div id="list"></div>
+<script>
+const lang = new URLSearchParams(location.search).get('lang') || 'pt-PT';
+const key = `wayword-audio-flags-${lang}`;
+const load = () => { try { return new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch { return new Set(); } };
+const save = (s) => { try { localStorage.setItem(key, JSON.stringify([...s])); } catch {} };
+const flags = load();
+(async () => {
+  const [data, manifest] = await Promise.all([`../content/lang/${lang}.json`, `../content/audio/${lang}/manifest.json`].map((u) => fetch(u).then((r) => r.json())));
+  document.getElementById('title').textContent = `Audio review · ${lang} · ${manifest.voices.map((v) => v.name).join(', ')} · generated ${manifest.generated}`;
+  const list = document.getElementById('list');
+  for (const e of data.entries) {
+    for (const [slot, rel] of Object.entries(manifest.files[e.id] || {})) {
+      const row = document.createElement('div'); row.className = 'row'; row.dataset.id = e.id;
+      row.innerHTML = `<input type="checkbox" aria-label="Flag ${e.id}"><div><div class="t"></div><small class="p"></small><br><small class="muted"></small></div><audio controls preload="none"></audio>`;
+      row.querySelector('.t').textContent = e.target;
+      row.querySelector('.p').textContent = e.pronunciation_easy || '';
+      row.querySelector('.muted').textContent = `${e.english} · ${e.id}${Object.keys(manifest.files[e.id]).length > 1 ? ' · ' + slot : ''}`;
+      row.querySelector('audio').src = `../content/audio/${lang}/${rel}?v=${manifest.generated}-${Date.now()}`;
+      const cb = row.querySelector('input'); cb.checked = flags.has(e.id); row.classList.toggle('flagged', cb.checked);
+      cb.onchange = () => { cb.checked ? flags.add(e.id) : flags.delete(e.id); row.classList.toggle('flagged', cb.checked); save(flags); render(); };
+      list.append(row);
+    }
+  }
+  render();
+})();
+function render() {
+  document.getElementById('count').textContent = `${flags.size} flagged`;
+  document.getElementById('cmd').textContent = flags.size
+    ? `node scripts/generate-audio.mjs --lang=${lang} --force --only=${[...flags].join(',')}`
+    : 'Tick a phrase that sounds wrong; the redo command appears here.';
+}
+document.getElementById('playall').onclick = async () => {
+  for (const a of document.querySelectorAll('audio')) {
+    a.scrollIntoView({ block: 'center' });
+    await new Promise((res) => { a.onended = res; a.onerror = res; a.play().catch(res); });
+    await new Promise((r) => setTimeout(r, 600));
+  }
+};
+</script>
+</body></html>

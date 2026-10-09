@@ -9,6 +9,7 @@
 //     node scripts/generate-audio.mjs --dry-run              # what would be generated + character count
 //     node scripts/generate-audio.mjs --lang=pt-PT           # one language
 //     node scripts/generate-audio.mjs                        # every language in content/audio-voices.json
+//     node scripts/generate-audio.mjs --lang=pt-PT --force --only=id1,id2   # redo just these phrases
 //   Voices and skipped languages are set in content/audio-voices.json -> "elevenlabs".
 //
 //   Azure:  AZURE_SPEECH_KEY=...  AZURE_SPEECH_REGION=westeurope
@@ -17,8 +18,9 @@
 // Existing files are skipped unless --force. The text sent is the dataset's target text, with two
 // spoken-only tweaks: "___" becomes a short pause, and "word/ending" alternatives are read as the
 // first form (or both forms with a pause when they're whole words, e.g. ближайший/ближайшая).
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -88,14 +90,20 @@ async function elevenVoices(key) {
   return (await res.json()).voices || [];
 }
 
-async function elevenSynth({ key, voiceId, model, text }) {
+// Voice settings: stability/speed/language_code can be set per voice in content/audio-voices.json.
+// Speed is sent only when it isn't 1.0: slowing the voice down added a robotic tail (2026-10-08 listening test).
+async function elevenSynth({ key, voiceId, model, text, opts = {} }) {
+  const settings = { stability: opts.stability ?? 0.6, similarity_boost: 0.75 };
+  if (opts.speed && opts.speed !== 1) settings.speed = opts.speed;
+  const payload = { text, model_id: model, voice_settings: settings };
+  if (opts.language_code) payload.language_code = opts.language_code;
   for (let attempt = 1; attempt <= 4; attempt++) {
     let res;
     try {
-      res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_64`, {
+      res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}?output_format=mp3_44100_128`, {
         method: 'POST',
         headers: { 'xi-api-key': key, 'Content-Type': 'application/json', Accept: 'audio/mpeg' },
-        body: JSON.stringify({ text, model_id: model, voice_settings: { stability: 0.6, similarity_boost: 0.75, speed: 0.95 } }),
+        body: JSON.stringify(payload),
       });
     } catch (err) { // dropped connection: wait and retry
       if (attempt === 4) throw new Error(`Network problem talking to ElevenLabs (${err.cause?.code || err.message}). Re-run to continue; finished files are kept.`);
@@ -109,6 +117,26 @@ async function elevenSynth({ key, voiceId, model, text }) {
     throw new Error(`ElevenLabs error ${res.status}: ${body.slice(0, 300)}`);
   }
   throw new Error('ElevenLabs kept rate-limiting; try again in a minute.');
+}
+
+// eleven_v3 often leaves 1–2 s of silence after short phrases, sometimes ending in a faint click.
+// Find the last pause (≥0.4 s, below -40 dB) that runs to the end, and cut 0.15 s into it.
+// Stream copy, so no re-encoding. Needs ffmpeg; skipped if it isn't installed.
+function trimTail(file) {
+  try {
+    const log = spawnSync('ffmpeg', ['-hide_banner', '-i', file, '-af', 'silencedetect=noise=-40dB:d=0.4', '-f', 'null', '-']).stderr.toString();
+    const dur = +log.match(/Duration: (\d+):(\d+):([\d.]+)/).slice(1).reduce((a, x) => a * 60 + +x, 0);
+    const starts = [...log.matchAll(/silence_start: ([\d.]+)/g)].map((m) => +m[1]);
+    const ends = [...log.matchAll(/silence_end: ([\d.]+)/g)].map((m) => +m[1]);
+    const last = starts.at(-1);
+    if (last === undefined) return;
+    const runsToEnd = ends.length < starts.length || ends.at(-1) >= dur - 0.3;
+    const cut = last + 0.15;
+    if (!runsToEnd || cut >= dur - 0.05) return;
+    const tmp = `${file}.tmp.mp3`;
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', file, '-t', cut.toFixed(3), '-c', 'copy', tmp]);
+    execFileSync('mv', [tmp, file]);
+  } catch { /* no ffmpeg: keep the file as generated */ }
 }
 
 /* ---------- main ---------- */
@@ -135,6 +163,12 @@ async function main() {
       console.log(`${v.name.padEnd(28)} ${[l.gender, l.accent, l.language, l.age, l.description].filter(Boolean).join(' · ')}  [${v.voice_id}]`);
     }
     return;
+  }
+
+  if (args['trim-only']) { // re-trim files already generated: --trim-only --lang=pt-PT
+    const dir = join(root, 'content/audio', args.lang || '');
+    for (const slot of ['f', 'm']) if (existsSync(join(dir, slot))) for (const f of readdirSync(join(dir, slot))) if (f.endsWith('.mp3')) trimTail(join(dir, slot, f));
+    return console.log('trimmed', dir);
   }
 
   const all = read('content/languages.json').map((l) => l.code);
@@ -166,8 +200,8 @@ async function main() {
       const v = resolve ? resolve(pick.name) : { name: pick.name, voice_id: '(dry run)', labels: {} };
       const gender = pick.gender || v.labels?.gender || '';
       jobs.push({ slot: pick.slot || (gender === 'male' ? 'm' : 'f'), name: pick.label || v.name, gender, engineId: `elevenlabs:${v.voice_id}`,
-        synth: (text) => elevenSynth({ key: e.ELEVENLABS_API_KEY, voiceId: v.voice_id, model: el.model || 'eleven_multilingual_v2', text }),
-        style: 'plain', source: 'ElevenLabs', note: pick.note || cfg[code]?.note });
+        synth: (text) => elevenSynth({ key: e.ELEVENLABS_API_KEY, voiceId: v.voice_id, model: pick.model || el.model || 'eleven_multilingual_v2', text, opts: pick }),
+        style: 'plain', source: 'ElevenLabs', trim: true, note: pick.note || cfg[code]?.note });
     } else {
       const c = cfg[code];
       if (!c) { console.log(`- ${code}: no Azure voices configured, skipped`); continue; }
@@ -179,7 +213,9 @@ async function main() {
     for (const job of jobs) {
       const files = {};
       mkdirSync(join(root, 'content/audio', code, job.slot), { recursive: true });
+      const only = args.only ? String(args.only).split(',') : null;
       for (const entry of entries) {
+        if (only && !only.includes(entry.id)) { if (existsSync(join(root, 'content/audio', code, job.slot, `${entry.id}.mp3`))) files[entry.id] = { [job.slot]: `${job.slot}/${entry.id}.mp3` }; continue; }
         const rel = `${job.slot}/${entry.id}.mp3`;
         const out = join(root, 'content/audio', code, rel);
         const text = spokenText(entry.target, job.style);
@@ -187,6 +223,7 @@ async function main() {
         chars += text.length;
         if (args['dry-run']) continue;
         writeFileSync(out, await job.synth(text));
+        if (job.trim) trimTail(out);
         files[entry.id] = { [job.slot]: rel };
         made++;
         process.stdout.write('.');

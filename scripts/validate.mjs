@@ -63,6 +63,7 @@ for (const l of languages) {
   try { guide = read(`sounds/${l.code}.json`); } catch { warn.push(`${l.code}: no sound guide`); continue; }
   const file = read(`lang/${l.code}.json`);
   const byId = new Map(file.entries.map((e) => [e.id, e]));
+  for (const id of Object.keys(guide.tips || {})) if (!byId.has(id)) errors.push(`sounds/${l.code}: tip for unknown phrase ${id}`);
   for (const snd of guide.sounds) for (const ex of snd.examples) {
     const e = byId.get(ex.id);
     if (!e) errors.push(`sounds/${l.code}: "${snd.name}" uses unknown phrase ${ex.id}`);
