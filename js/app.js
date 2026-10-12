@@ -220,7 +220,8 @@ function tierBlurbDelta() {
   return n ? ` · ${n} new on top of ${esc(C.tiers[cur - 1].label)}` : '';
 }
 
-function header({ title, back } = {}) {
+function header({ title, back, focus } = {}) {
+  if (focus) return `<header class="topbar focus"><a class="icon-btn quiet" href="${back}" aria-label="Close">${icon('x')}</a></header>`;
   const p = store.prefs();
   const lang = L && L.lang;
   return `<header class="topbar">
@@ -248,7 +249,7 @@ function bottomNav(active) {
 }
 
 function page(active, body, hdr = {}) {
-  $app.innerHTML = `${header(hdr)}<main class="main">${body}</main>${bottomNav(active)}`;
+  $app.innerHTML = `${header(hdr)}<main class="main ${hdr.focus ? 'focus' : ''}">${body}</main>${hdr.focus ? '' : bottomNav(active)}`;
   syncListen();
 }
 
@@ -834,7 +835,7 @@ function viewSession(query) {
   if (!session || session.sig !== sig) {
     const mode = sessionMode(query);
     const items = pickSession(mode);
-    session = { sig, mode, items, i: 0, phase: mode === 'due' ? 'recall' : 'learn', take: null, rec: false, finishing: false, interim: '', queue: mode === 'due' ? shuffle(items) : [], flipped: false, results: {}, missed: new Set(), newlyLocked: 0 };
+    session = { sig, mode, items, i: 0, phase: mode === 'due' ? 'recall' : 'learn', queue: mode === 'due' ? shuffle(items) : [], flipped: false, results: {}, missed: new Set(), newlyLocked: 0 };
   }
   drawSession();
 }
@@ -852,26 +853,12 @@ function drawSession() {
 
   if (s.phase === 'learn') {
     const p = s.items[s.i];
-    const notes = sayTipNote(p) + [p.usage_note, p.regional_note].filter(Boolean).map((t) => `<p class="note">${esc(t)}</p>`).join('');
+    if (!pl || pl.p !== p || pl.where !== 'session') mountPlayer(p, 'session');
     page('home', `
       <div class="fc-progress"><span style="width:${Math.round((s.i / (n + 1)) * 100)}%"></span></div>
       <p class="fc-meta">${modeLabel} · phrase ${s.i + 1} of ${n}</p>
-      <article class="session-card">${phraseLines(p, { size: 'lg' })}${notes ? `<div class="notes">${notes}</div>` : ''}</article>
-      <ol class="steps">
-        ${canSpeak() ? `<li><span class="step-n">1</span><span class="step-t">Listen</span>
-          <div class="step-body">${listenBtn(p, 'labeled')}${speedSeg()}</div>
-          <p class="step-tip">Play it a couple of times. Slow it down if it helps, and follow along with the pronunciation line.</p></li>` : ''}
-        <li><span class="step-n">${canSpeak() ? 2 : 1}</span><span class="step-t">Say it</span>
-          ${canPracticeAloud() ? `<div class="step-body">
-              <button class="mic-big ${s.rec ? 'rec' : ''} ${s.finishing ? 'finishing' : ''}" data-action="ss-mic" aria-label="${s.rec ? 'Stop' : 'Start speaking'}">${icon(s.rec ? 'stop' : 'mic')}</button>
-              <span class="mic-hint">${micState(s.rec, s.finishing, s.interim, s.take ? 'Tap to try again' : 'Tap, then say the phrase')}</span>
-            </div>${micPrimer()}`
-          : '<p class="step-tip">Say it out loud two or three times.</p>'}</li>
-        ${s.take ? `<li><span class="step-n">${canSpeak() ? 3 : 2}</span><span class="step-t">Compare</span><div class="step-body full">${takeResult(p, s.take)}</div></li>` : ''}
-      </ol>
-      <button class="cta session-next" data-action="ss-next">${s.i < n - 1 ? 'Next phrase' : 'Quick check'} ${icon('arrow')}</button>
-      ${s.i === 0 && !s.take ? '<p class="fine">You can skip speaking. Tap Next when you’re ready.</p>' : ''}
-    `, { back: home });
+      <div id="pp" class="pp">${playerInner()}</div>
+    `, { back: home, focus: true });
     return;
   }
 
@@ -894,7 +881,7 @@ function drawSession() {
         <button class="fc-btn got" data-action="ss-got" ${s.flipped ? '' : 'disabled'}>Got it</button>
       </div>
       <div class="fc-extra">${listenBtn(p)}</div>
-    `, { back: home });
+    `, { back: home, focus: true });
     return;
   }
 
@@ -1144,8 +1131,11 @@ function playTake(url, after) {
   if (!url) return;
   takeAudio?.pause();
   takeAudio = new Audio(url);
-  takeAudio.onended = () => after?.();
-  takeAudio.play().catch(() => toast('Couldn’t play your recording. Check the volume.'));
+  let called = false;
+  const next = () => { if (!called) { called = true; after?.(); } };
+  takeAudio.onended = next;
+  takeAudio.onerror = next;
+  takeAudio.play().catch(() => { toast('Couldn’t play your recording. Check the volume.'); next(); });
 }
 
 const micState = (rec, finishing, interim, idleText) => rec
@@ -1156,16 +1146,6 @@ const micState = (rec, finishing, interim, idleText) => rec
 function micPrimer() {
   if (store.prefs().micPrimed) return '';
   return `<p class="primer step-body full">Your phone will ask to use the microphone. Tap <b>Allow</b>. Recordings stay on this device; the word check uses your phone’s own speech recognition.</p>`;
-}
-
-function micModeSeg() {
-  const opts = [];
-  if (mic.canRecord) opts.push(['record', 'Hear myself']);
-  if (mic.canRecognize) opts.push(['recognize', 'Check words']);
-  if (mic.canRecord && mic.canRecognize) opts.push(['both', 'Both']);
-  if (opts.length < 2) return '';
-  return `<div class="seg mode-seg">${opts.map(([id, label]) =>
-    `<button class="seg-btn ${mic.micMode() === id ? 'on' : ''}" data-action="mic-mode" data-mode="${id}">${label}</button>`).join('')}</div>`;
 }
 
 /* ---------- Mic check: tests each piece on this device ---------- */
@@ -1310,50 +1290,165 @@ function micReport() {
   return lines.join('\n');
 }
 
-/* the "Say it" sheet */
+/* ---------- the phrase player: one way to meet a phrase, everywhere ---------- */
+// Used by Learn sessions and the "Say it" sheet. Steps: listen → say → compare.
+// One big button follows the step. The phrase plays by itself when it appears (after a tap),
+// and after you record it plays native → you → native with one thing to listen for.
 
-let sheetPhrase = null;
-let sheetTake = null;
-let sheetRec = false;
-let sheetFinishing = false;
-let sheetInterim = '';
+let pl = null; // { p, where: 'session' | 'sheet', step, rec, finishing, interim, take, guide }
+
+function mountPlayer(p, where) {
+  pl = { p, where, step: canSpeak() ? 'listen' : canPracticeAloud() ? 'say' : 'done', rec: false, finishing: false, interim: '', take: null, guide: null };
+  return pl;
+}
+
+// Only call from a tap: phones block audio that starts on its own.
+function plListen() {
+  if (pl && canSpeak()) speakPhrase(pl.p.id);
+}
+
+function stopPlayerAudio() {
+  takeAudio?.pause();
+  if (pl) pl.guide = null;
+}
+
+// "Listen for": the phrase's "How it's said" tip, or the Sound guide entry it's an example of.
+function listenFor(p) {
+  if (p.say_tip) return esc(p.say_tip);
+  const c = p.sound_cue;
+  if (!c) return '';
+  return c.mark
+    ? `<b ${nativeAttrs(L.lang)}>${esc(c.mark)}</b> here sounds like <b>${esc(c.spelled)}</b> (${esc(c.name.toLowerCase())}).`
+    : `the <b>${esc(c.spelled)}</b> sound (${esc(c.name)}).`;
+}
+
+function playerInner() {
+  const { p, where, step } = pl;
+  const cue = listenFor(p);
+  const hl = !p.say_tip && p.sound_cue?.mark ? markText(p.target, p.sound_cue.mark, p.sound_cue.hl) : undefined;
+  const notes = [p.usage_note, p.regional_note].filter(Boolean).map((t) => `<p class="note">${esc(t)}</p>`).join('');
+  const failed = pl.take && !pl.take.url && !pl.take.transcript;
+
+  let stage;
+  if (step === 'listen') {
+    stage = `<button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>
+      <span class="pp-hint">Listen and follow the pronunciation line</span>`;
+  } else if (step === 'say' || (step === 'compare' && where === 'sheet') || pl.rec) {
+    const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : step === 'compare' ? 'Tap to try again' : 'Your turn: tap, then say it';
+    stage = `<button class="mic-big pp-big ${pl.rec ? 'rec' : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
+      <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle)}</span>
+      ${failed ? `<a class="link-btn" href="#/${L.lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
+      ${step === 'say' && !pl.rec ? micPrimer() : ''}`;
+  } else stage = '';
+
+  const compare = step === 'compare' && pl.take ? compareHtml() : '';
+  const small = [
+    step !== 'listen' && canSpeak() ? `<button class="pill-btn" data-action="hear-native" data-id="${esc(p.id)}">${icon('play')}<span>Hear it</span></button>` : '',
+    canSpeak() ? `<button class="pill-btn speed-pill" data-action="speed-cycle" aria-label="Speed">${tts.speed().label}</button>` : '',
+    step === 'listen' && canPracticeAloud() ? `<button class="pill-btn" data-action="pp-to-say">${icon('mic')}<span>Say it</span></button>` : '',
+  ].join('');
+  const ready = step === 'compare' || step === 'done';
+  const next = where === 'session'
+    ? `<button class="${ready ? 'cta' : 'more-btn'} pp-next" data-action="ss-next">${session && session.i < session.items.length - 1 ? 'Next phrase' : 'Quick check'} ${icon('arrow')}</button>
+       ${!ready && canPracticeAloud() ? '<p class="fine">Speaking is optional. Skip it whenever you like.</p>' : ''}`
+    : '';
+
+  return `<article class="pp-phrase">${phraseLines(p, { size: 'lg', nativeHtml: hl })}
+      ${cue ? `<p class="pp-cue"><span class="note-k">Listen for</span>${cue} <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a></p>` : ''}
+      ${notes ? `<div class="notes">${notes}</div>` : ''}
+    </article>
+    ${stage ? `<div class="pp-stage">${stage}</div>` : ''}
+    ${compare}
+    ${small ? `<div class="pp-small">${small}</div>` : ''}
+    ${next}`;
+}
+
+// After recording: the guided playback, and what the phone's speech check understood.
+function compareHtml() {
+  const { p, take, guide } = pl;
+  const lang = L.lang;
+  let heard = '';
+  if (take.transcript) {
+    const r = mic.compare(p.target, take.transcript, { charMode: !!lang.meta.no_spaces, alt: p.reading });
+    heard = `<p class="heard">Your phone understood (a word check, not a pronunciation score):</p>
+      <p class="heard-words sm" ${nativeAttrs(lang)}>${r.words.map((w) => `<span class="w-${w.status}">${withSlots(w.raw)}</span>`).join(lang.meta.no_spaces ? '' : ' ')}</p>
+      ${lang.code === 'ar-levantine' ? '<p class="heard">Phone speech recognition writes formal Arabic, so dialect words may look different even when you said them right.</p>' : ''}`;
+  }
+  const seq = take.url && canSpeak()
+    ? `<div class="pp-seq" aria-live="polite">${[['n1', 'Native'], ['me', 'You'], ['n2', 'Native']].map(([id, label]) => `<span class="${guide === id ? 'on' : ''}">${label}</span>`).join(icon('chev'))}</div>`
+    : '';
+  const secs = take.ms ? ` · ${(take.ms / 1000).toFixed(1)}s` : '';
+  return `<div class="pp-compare">
+    ${seq}
+    <div class="take-actions">
+      ${take.url && canSpeak() ? `<button class="pill-btn" data-action="pp-guide">${icon('loop')}<span>${guide ? 'Playing…' : 'Compare again'}</span></button>` : ''}
+      ${take.url ? `<button class="pill-btn" data-action="hear-me">${icon('person')}<span>Hear me${secs}</span></button>` : ''}
+      ${pl.where === 'session' ? `<button class="pill-btn" data-action="pp-mic">${icon('mic')}<span>Try again</span></button>` : ''}
+    </div>
+    ${heard}
+  </div>`;
+}
+
+function drawPlayer() {
+  const el = document.getElementById('pp');
+  if (!el || !pl) return;
+  el.innerHTML = playerInner();
+  syncListen();
+}
+
+// native → you → native, highlighting each part as it plays.
+function plGuide() {
+  if (!pl?.take?.url) return;
+  const run = pl;
+  const live = () => pl === run;
+  const mark = (g) => { if (live()) { pl.guide = g; drawPlayer(); } };
+  const pause = (fn) => setTimeout(() => { if (live() && pl.guide) fn(); }, 350);
+  const meThenNative = () => {
+    mark('me');
+    playTake(run.take.url, () => pause(() => {
+      if (!canSpeak()) { mark(null); return; }
+      mark('n2');
+      tts.play(speechItem(run.p)); // plSync clears the highlight when it ends
+    }));
+  };
+  tts.stop();
+  if (!canSpeak()) { meThenNative(); return; }
+  mark('n1');
+  tts.play(speechItem(run.p), () => pause(meThenNative));
+}
+
+// Audio events move the player along: listening done → your turn; guided playback done → idle.
+function plSync() {
+  if (!pl) return;
+  const st = tts.getState();
+  if (st.status !== 'done' || st.item?.key !== pl.p.key) return;
+  if (pl.step === 'listen') { pl.step = canPracticeAloud() ? 'say' : 'done'; drawPlayer(); }
+  else if (pl.guide === 'n2') { pl.guide = null; drawPlayer(); }
+}
+
+function plMic() {
+  if (pl.rec) { pl.finishing = true; drawPlayer(); capture?.stop(); return; }
+  stopPlayerAudio();
+  Object.assign(pl, { rec: true, finishing: false, interim: '', step: pl.step === 'compare' ? 'compare' : 'say' });
+  const run = pl;
+  startCapture((t) => { if (pl === run) { pl.interim = t; drawPlayer(); } }, (take) => {
+    if (pl !== run) return;
+    const ok = !!(take.url || take.transcript);
+    Object.assign(pl, { rec: false, finishing: false, interim: '', take, step: ok ? 'compare' : 'say' });
+    drawPlayer();
+    if (ok) {
+      document.querySelector('.pp-compare')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
+      plGuide();
+    }
+  });
+  drawPlayer();
+}
 
 function openSayIt(p) {
-  sheetPhrase = p;
-  sheetTake = null;
-  sheetRec = false;
-  sheetFinishing = false;
-  sheetInterim = '';
-  openSheet(sayItHtml());
-}
-
-function sayItHtml() {
-  const p = sheetPhrase;
-  return `<div class="sheet-head"><h2>Say it</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
-    <div class="say-phrase">${phraseLines(p, { size: 'lg' })}</div>
-    <ol class="steps">
-      <li><span class="step-n">1</span><span class="step-t">Listen</span>
-        <div class="step-body">${listenBtn(p)}${speedSeg()}</div></li>
-      <li><span class="step-n">2</span><span class="step-t">Your turn</span>
-        <div class="step-body">
-          <button class="mic-big ${sheetRec ? 'rec' : ''} ${sheetFinishing ? 'finishing' : ''}" data-action="sheet-mic" aria-label="${sheetRec ? 'Stop' : 'Start speaking'}">${icon(sheetRec ? 'stop' : 'mic')}</button>
-          <span class="mic-hint">${micState(sheetRec, sheetFinishing, sheetInterim, sheetTake ? 'Tap to try again' : 'Tap, then say the phrase')}</span>
-        </div>
-        ${micPrimer()}
-        <div class="step-body full">${micModeSeg()}</div></li>
-      ${sheetTake ? `<li><span class="step-n">3</span><span class="step-t">Compare</span><div class="step-body full">${takeResult(p, sheetTake)}</div></li>` : ''}
-    </ol>`;
-}
-
-function redrawSheet({ revealTake = false } = {}) {
-  const panel = document.querySelector('#sheet .sheet-panel');
-  if (!panel || !sheetPhrase) return;
-  const top = panel.scrollTop;
-  panel.innerHTML = sayItHtml();
-  panel.scrollTop = top; // redraws keep your place
-  syncListen();
-  // The Compare step is always last: bring the whole result into view.
-  if (revealTake) requestAnimationFrame(() => panel.scrollTo({ top: panel.scrollHeight, behavior: reducedMotion() ? 'auto' : 'smooth' }));
+  mountPlayer(p, 'sheet');
+  openSheet(`<div class="sheet-head"><h2>Say it</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
+    <div id="pp" class="pp">${playerInner()}</div>`);
+  plListen();
 }
 
 /* the voice sheet */
@@ -1415,7 +1510,7 @@ function openSheet(html) {
 
 function closeSheet() {
   capture?.stop();
-  sheetPhrase = null;
+  if (pl?.where === 'sheet') { stopPlayerAudio(); pl = null; }
   document.getElementById('sheet')?.classList.remove('open');
   document.body.classList.remove('sheet-open');
 }
@@ -1473,7 +1568,7 @@ function syncListen() {
   document.querySelectorAll('[data-action="set-speed"]').forEach((b) => b.classList.toggle('on', b.dataset.speed === tts.speed().id));
 }
 
-tts.subscribe(() => { syncListen(); renderPlayer(); });
+tts.subscribe(() => { syncListen(); renderPlayer(); plSync(); });
 tts.onVoices(() => {
   const vr = document.getElementById('voice-row');
   if (vr && L) {
@@ -1567,22 +1662,15 @@ document.addEventListener('click', (e) => {
     syncListen();
   } else if (a === 'say-it') {
     openSayIt(L.byId.get(btn.dataset.id));
-  } else if (a === 'sheet-mic') {
-    if (sheetRec) { sheetFinishing = true; redrawSheet(); capture?.stop(); return; }
-    sheetRec = true;
-    sheetFinishing = false;
-    sheetInterim = '';
-    startCapture((t) => { sheetInterim = t; redrawSheet(); }, (take) => {
-      sheetRec = false;
-      sheetFinishing = false;
-      if (!sheetPhrase) return;
-      sheetTake = take;
-      redrawSheet({ revealTake: true });
-    });
-    redrawSheet();
-  } else if (a === 'mic-mode') {
-    mic.setMicMode(btn.dataset.mode);
-    btn.parentElement.querySelectorAll('.seg-btn').forEach((b) => b.classList.toggle('on', b === btn));
+  } else if (a === 'pp-mic') {
+    if (pl) plMic();
+  } else if (a === 'pp-to-say') {
+    if (!pl) return;
+    tts.stop();
+    pl.step = 'say';
+    drawPlayer();
+  } else if (a === 'pp-guide') {
+    if (pl && !pl.guide) plGuide();
   } else if (a === 'speed-cycle') {
     const i = tts.SPEEDS.indexOf(tts.speed());
     tts.setSpeed(tts.SPEEDS[(i + 1) % tts.SPEEDS.length].id);
@@ -1601,10 +1689,13 @@ document.addEventListener('click', (e) => {
     });
     drawPractice();
   } else if (a === 'hear-native') {
+    takeAudio?.pause();
+    if (pl?.guide) { pl.guide = null; drawPlayer(); }
     tts.play(speechItem(L.byId.get(btn.dataset.id)));
   } else if (a === 'hear-me') {
     tts.stop();
-    playTake(lastTakeUrl);
+    if (pl?.guide) { pl.guide = null; drawPlayer(); }
+    playTake(pl?.take?.url || lastTakeUrl);
   } else if (a === 'mc-beep') {
     playTake(beepUrl());
   } else if (a === 'mc-speaker') {
@@ -1623,7 +1714,7 @@ document.addEventListener('click', (e) => {
     const p = L.byId.get(btn.dataset.id);
     tts.play(speechItem(p), () => setTimeout(() => playTake(lastTakeUrl), 350));
   } else if (a === 'voice-sheet') {
-    sheetPhrase = null;
+    if (pl?.where === 'sheet') { stopPlayerAudio(); pl = null; }
     openSheet(voiceSheetHtml());
   } else if (a === 'voice-filter') {
     voiceFilter = btn.dataset.g;
@@ -1699,33 +1790,22 @@ document.addEventListener('click', (e) => {
   } else if (a === 'print') {
     window.print();
   } else if (a === 'help') {
-    sheetPhrase = null;
+    if (pl?.where === 'sheet') { stopPlayerAudio(); pl = null; }
     openSheet(helpHtml(false));
   } else if (a === 'start-session') {
     closeSheet();
     go(`#/${L.lang.code}/session`);
-  } else if (a === 'ss-mic') {
-    const s = session;
-    if (s.rec) { s.finishing = true; drawSession(); capture?.stop(); return; }
-    s.rec = true; s.finishing = false; s.interim = '';
-    const p = s.items[s.i];
-    startCapture((t) => { s.interim = t; drawSession(); }, (take) => {
-      if (session !== s || s.items[s.i] !== p) return;
-      Object.assign(s, { rec: false, finishing: false, interim: '', take });
-      drawSession();
-      document.querySelector('.take')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' });
-    });
-    drawSession();
   } else if (a === 'ss-next') {
     const s = session;
     capture?.stop();
     tts.stop();
-    Object.assign(s, { take: null, rec: false, finishing: false, interim: '' });
+    stopPlayerAudio();
+    pl = null;
     if (s.i < s.items.length - 1) {
       s.i++;
       drawSession();
       window.scrollTo(0, 0);
-      if (canSpeak()) speakPhrase(s.items[s.i].id); // you tapped Next, so the next phrase plays straight away
+      plListen(); // you tapped Next, so the next phrase plays straight away
     } else {
       Object.assign(s, { phase: 'recall', queue: shuffle(s.items), flipped: false });
       drawSession();
@@ -1798,6 +1878,8 @@ async function route() {
   tts.stop();
   closeSheet();
   capture?.stop();
+  stopPlayerAudio();
+  pl = null;
   const { parts, query } = parseRoute();
   const [code, sectionName, arg] = parts;
 

@@ -509,6 +509,32 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .done h1 { font-size: 28px; font-weight: 800; }
 .done p { color: var(--muted); }
 
+/* ---------- phrase player (sessions and the Say it sheet) ---------- */
+.topbar.focus { padding-bottom: 4px; }
+.main.focus { padding-bottom: calc(40px + env(safe-area-inset-bottom)); }
+.pp-phrase { padding: 18px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: grid; gap: 2px; }
+.pp-cue { margin-top: 10px; font-size: 14px; color: var(--muted); background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
+.pp-phrase .notes { margin-top: 8px; }
+.pp-stage { display: grid; justify-items: center; gap: 10px; margin: 22px 0 6px; text-align: center; }
+.pp-stage .mic-big { margin-top: 0; width: 84px; height: 84px; }
+.pp-stage .mic-big.listen { border: 0; }
+.pp-stage .mic-big.listen .ic { width: 32px; height: 32px; fill: currentColor; stroke-width: 1.2; }
+.pp-stage .mic-big.listen[data-state="paused"] { background: var(--accent); opacity: .75; }
+.pp-hint { font-size: 15px; font-weight: 600; color: var(--muted); max-width: 30ch; }
+.pp-stage .primer { grid-column: auto; text-align: left; max-width: 34ch; }
+.pp-small { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 14px 0 0; }
+.pp-compare { margin-top: 14px; padding: 12px; border-radius: 14px; background: var(--surface-2); display: grid; gap: 10px; }
+.pp-compare .take-actions { justify-content: center; }
+.pp-seq { display: flex; align-items: center; justify-content: center; gap: 6px; font-weight: 700; font-size: 15px; color: var(--faint); }
+.pp-seq .ic { width: 14px; height: 14px; }
+.pp-seq span { padding: 4px 10px; border-radius: 99px; transition: background .15s, color .15s; }
+.pp-seq span.on { color: #fff; background: var(--accent); }
+.heard-words.sm { font-size: 17px; }
+.pp-next { margin-top: 20px; width: 100%; }
+.more-btn.pp-next { display: flex; align-items: center; justify-content: center; gap: 8px; }
+.pp-next .ic { width: 20px; height: 20px; }
+.pp-next + .fine { text-align: center; margin-top: 8px; }
+
 /* ---------- speaking ---------- */
 .mic-big {
   display: grid; place-items: center; width: 76px; height: 76px; border-radius: 50%; margin-top: 10px;

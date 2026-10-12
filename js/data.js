@@ -75,6 +75,11 @@ export async function loadLanguage(content, code) {
   if (!lang) throw new Error(`Unknown language ${code}`);
   const [file, guide] = await Promise.all([getJSON(`lang/${code}.json`), loadSounds(code)]);
   const tips = guide?.tips || {}; // "How it's said" coaching, written for Wayword (not dataset text)
+  // The first Sound guide entry that uses a phrase as an example: the player's "Listen for" cue.
+  const cues = {};
+  for (const snd of guide?.sounds || []) {
+    for (const ex of snd.examples) cues[ex.id] ||= { name: snd.name, spelled: snd.spelled, mark: ex.mark, hl: guide.highlight !== false };
+  }
   const entryById = new Map(file.entries.map((e) => [e.id, e]));
 
   const phrases = content.concepts.map((c) => {
@@ -92,6 +97,7 @@ export async function loadLanguage(content, code) {
     const p = { ...base, target: e.target, pron: slotPron(e.target, e.pronunciation_easy) };
     for (const f of OPTIONAL_FIELDS) if (e[f]) p[f] = e[f];
     if (tips[c.id]) p.say_tip = tips[c.id];
+    if (cues[c.id]) p.sound_cue = cues[c.id];
     return p;
   });
 
