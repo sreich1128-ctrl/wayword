@@ -1,5 +1,10 @@
 [
   {
+    "id": "basics", "label": "The basics", "icon": "👋",
+    "note": "The phrases that work everywhere. Start here.",
+    "concepts": ["hello", "good_morning", "how_are_you", "please", "thank_you", "excuse_me", "yes", "no", "speak_english", "dont_speak_well", "dont_understand", "say_again", "speak_slowly", "what_mean"]
+  },
+  {
     "id": "cafe", "label": "Café", "icon": "☕",
     "concepts": ["hello", "good_morning", "coffee", "water", "can_i_have", "i_would_like", "please", "thank_you", "dairy", "how_much", "pay_card", "apple_pay", "bill", "bathroom", "speak_english", "dont_understand"]
   },

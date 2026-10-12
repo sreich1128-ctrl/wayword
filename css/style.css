@@ -808,3 +808,32 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .type-take.good { background: color-mix(in srgb, #16a34a 10%, var(--surface-2)); }
 .type-notes { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px; color: var(--ink); text-align: left; }
 .voice-k { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin: 14px 4px 8px; }
+
+/* ---------- Today: Continue with a situation, situations with readiness ---------- */
+.today-hero { padding: 16px 18px; }
+.working {
+  display: flex; align-items: center; gap: 10px; width: 100%; margin: 6px 0 4px; padding: 10px 12px;
+  border-radius: 14px; background: var(--tint); border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--line)); text-align: left;
+}
+.working-text { flex: 1; min-width: 0; display: grid; }
+.working-text small { font-size: 12px; color: var(--muted); font-weight: 600; }
+.working-text b { font-size: 18px; font-weight: 800; }
+.working-n { font-size: 13px; font-weight: 700; color: var(--muted); }
+.working-change { font-size: 13px; font-weight: 800; color: var(--accent-ink); }
+.sit-list { display: grid; gap: 8px; }
+.sit-row {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px;
+  background: var(--surface); border: 1px solid var(--line);
+}
+.sit-text { flex: 1; min-width: 0; display: grid; gap: 3px; }
+.sit-text b { font-size: 16px; }
+.sit-text small { font-size: 13px; color: var(--muted); font-weight: 600; }
+.sit-row.done small { color: #15803d; }
+.ready-bar { display: block; height: 5px; border-radius: 99px; background: var(--surface-2); overflow: hidden; }
+.ready-bar span { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+.sit-row.done .ready-bar span { background: #15803d; }
+.scen-head .ready-bar { margin-top: 8px; max-width: 220px; }
+.sit-cta { margin: 4px 0 14px; }
+.pp-howto { font-size: 13px; color: var(--muted); margin: 0 2px 8px; }
+.pp-howto .pron-k { color: var(--accent-ink); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sit-row.done small { color: #4ade80; } }

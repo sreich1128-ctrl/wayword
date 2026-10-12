@@ -1,4 +1,4 @@
-import { loadContent, loadLanguage, loadSounds, tierIncludes, inCategory } from './data.js';
+import { loadContent, loadLanguage, loadSounds, inCategory } from './data.js';
 import { store } from './store.js';
 import * as tts from './speech.js';
 import * as mic from './speak.js';
@@ -69,6 +69,7 @@ const ICONS = {
   shuffle: '<path d="M3 7h3.5c4 0 6 10 10 10H21M3 17h3.5c1.6 0 2.8-1.6 3.8-3.6M14 9.6C15 7.6 16 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/>',
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  dots: '<circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/>',
 };
 const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
 
@@ -93,36 +94,40 @@ function applyTheme(lang) {
 
 /* ---------- filtering ---------- */
 
-const tier = () => store.prefs().tier;
-const inTier = (p) => tierIncludes(C, tier(), p.priority);
-const tierLabel = (id) => (C.tiers.find((t) => t.id === id) || {}).label || id;
-const tierIndex = () => Math.max(0, C.tiers.findIndex((t) => t.id === tier()));
-// The level that first includes a priority (0 = Core, 1 = Travel, ...), from tiers.json.
-const introducedAt = (priority) => C.tiers.findIndex((t) => t.includes.includes(priority));
-const isNewAtTier = (p) => tierIndex() > 0 && introducedAt(p.priority) === tierIndex();
-const newAtTierCount = (items) => items.filter(isNewAtTier).length;
+// Levels (Core/Travel/Explore) no longer hide anything: every screen shows every phrase.
+// They only set the teaching order, so Core phrases are taught first (see freshPool).
+const inTier = () => true;
 
-// Phrases new to the selected level first, then a divider per earlier level ("Already in Core").
-// Order inside each group is kept. If nothing is new, a note says so, so a switch is never a no-op.
-function renderGrouped(items, renderItem, { where = '', noun = 'phrases' } = {}) {
-  const cur = tierIndex();
-  if (cur === 0 || !items.length) return items.map((p) => renderItem(p, false)).join('');
-  const groups = [];
-  for (let i = cur; i >= 0; i--) groups.push({ t: C.tiers[i], items: items.filter((p) => introducedAt(p.priority) === i) });
-  const [fresh, ...earlier] = groups;
-  let html = '';
-  if (fresh.items.length) {
-    html += `<h3 class="tier-head">New in ${esc(fresh.t.label)} · ${fresh.items.length}</h3>` + fresh.items.map((p) => renderItem(p, true)).join('');
-  } else {
-    const from = earlier.filter((g) => g.items.length).map((g) => esc(g.t.label)).join(' or ');
-    html += `<p class="tier-note">No new ${noun}${where ? ` in ${esc(where)}` : ''} at ${esc(fresh.t.label)}. ${items.length === 1 ? 'This one is' : `All ${items.length} are`} already in ${from}.</p>`;
-  }
-  for (const g of earlier) {
-    if (g.items.length) html += `<h3 class="tier-divider">Already in ${esc(g.t.label)} · ${g.items.length}</h3>` + g.items.map((p) => renderItem(p, false)).join('');
-  }
-  return html;
+function renderGrouped(items, renderItem) {
+  return items.map((p) => renderItem(p, false)).join('');
 }
-const priorityLabel = (pr) => ({ core: 'Core', travel: 'Travel', explore: 'Explore' }[pr] || pr);
+
+/* ---------- situations ---------- */
+
+// A situation's phrases (missing ones dropped) and how many are Learning or Locked in.
+function sitPhrases(sit) { return sit.concepts.map((id) => L.byId.get(id)).filter((p) => p && !p.missing); }
+function sitReady(sit) {
+  const ps = sitPhrases(sit);
+  return { n: ps.length, ready: ps.filter((p) => store.isLearned(p.key)).length };
+}
+
+// The situation Continue teaches from: the one you picked, or automatically The basics first,
+// then the situation closest to ready (a near goal), in list order on ties.
+function focusSituation() {
+  const picked = (store.prefs().focus || {})[L.lang.code];
+  const sit = picked && C.scenarios.find((x) => x.id === picked);
+  if (sit) return { sit, auto: false };
+  const open = C.scenarios.map((x) => ({ x, r: sitReady(x) })).filter(({ r }) => r.n && r.ready < r.n);
+  const basics = open.find(({ x }) => x.id === 'basics');
+  const best = basics || open.sort((a, b) => b.r.ready / b.r.n - a.r.ready / a.r.n)[0];
+  return { sit: best ? best.x : null, auto: true };
+}
+
+function setFocus(id) {
+  store.setPref('focus', { ...(store.prefs().focus || {}), [L.lang.code]: id || undefined });
+}
+
+const readyBar = (r) => `<span class="ready-bar"><span style="width:${r.n ? Math.round((r.ready / r.n) * 100) : 0}%"></span></span>`;
 
 /* ---------- shared pieces ---------- */
 
@@ -191,7 +196,7 @@ function phraseCard(p, { isNew = false } = {}) {
   return `
   <article class="card ${p.type === 'pattern' ? 'is-pattern' : ''} ${learned ? 'is-learned' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
     <div class="card-meta">
-      <span>${isNew ? `<span class="new-tag">New in ${esc(tierLabel(tier()))}</span>${p.type === 'pattern' ? 'Pattern' : ''}` : `${p.type === 'pattern' ? 'Pattern · ' : ''}${esc(priorityLabel(p.priority))}`}</span>
+      <span>${p.type === 'pattern' ? 'Pattern' : ''}</span>
       <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Save">${icon('star')}</button>
     </div>
     ${phraseLines(p)}
@@ -201,24 +206,6 @@ function phraseCard(p, { isNew = false } = {}) {
       ${statusBtn(p)}
     </div>`}
   </article>`;
-}
-
-function tierBar() {
-  const t = C.tiers.find((x) => x.id === tier());
-  return `<div class="tierwrap"><div class="tierbar" role="tablist" aria-label="Level">
-    ${C.tiers.map((x) => {
-      const n = L.phrases.filter((p) => x.includes.includes(p.priority)).length;
-      return `<button role="tab" class="tier-btn ${x.id === tier() ? 'on' : ''}" data-action="tier" data-tier="${x.id}" aria-selected="${x.id === tier()}">
-        <span>${esc(x.label)}</span><small>${n}</small></button>`;
-    }).join('')}
-  </div>${t ? `<p class="tier-blurb">${esc(t.blurb)}${tierBlurbDelta()}</p>` : ''}</div>`;
-}
-
-function tierBlurbDelta() {
-  const cur = tierIndex();
-  if (!cur) return '';
-  const n = L.phrases.filter((p) => !p.missing && introducedAt(p.priority) === cur).length;
-  return n ? ` · ${n} new on top of ${esc(C.tiers[cur - 1].label)}` : '';
 }
 
 function header({ title, back, focus } = {}) {
@@ -239,11 +226,9 @@ function header({ title, back, focus } = {}) {
 function bottomNav(active) {
   const code = encodeURIComponent(L.lang.code);
   const items = [
-    ['home', `#/${code}`, 'home', 'Home'],
+    ['home', `#/${code}`, 'home', 'Today'],
     ['phrases', `#/${code}/phrases`, 'list', 'Phrases'],
-    ['scenarios', `#/${code}/scenarios`, 'map', 'Places'],
-    ['patterns', `#/${code}/patterns`, 'puzzle', 'Patterns'],
-    ['practice', `#/${code}/practice`, 'cards', 'Practice'],
+    ['more', `#/${code}/more`, 'dots', 'More'],
   ];
   return `<nav class="bottomnav" aria-label="Sections">${items.map(([id, href, ic, label]) =>
     `<a href="${href}" class="${active === id ? 'on' : ''}" ${active === id ? 'aria-current="page"' : ''}>${icon(ic)}<span>${label}</span></a>`).join('')}</nav>`;
@@ -354,69 +339,38 @@ function maybeIntro() {
   setTimeout(open, 900);
 }
 
+// Today: one Continue, a fast way to a phrase, and how ready you are for each situation.
 function viewDashboard() {
   const lang = L.lang;
   const code = lang.code;
-  const pool = L.phrases.filter(inTier);
-  const learned = pool.filter((p) => store.isLearned(p.key)).length; // Learning + Locked in
-  const lockedN = pool.filter((p) => store.status(p.key) === 'locked').length;
-  const pct = pool.length ? Math.round((learned / pool.length) * 100) : 0;
-  const favs = store.countFor('fav', code);
-  const pick = shuffle(pool.filter((p) => !p.missing))[0];
-  const patterns = L.phrases.filter((p) => p.type === 'pattern' && inTier(p)).length;
+  const pool = L.phrases.filter((p) => !p.missing);
+  const ready = pool.filter((p) => store.isLearned(p.key)).length;
+  const trip = store.trip(code);
+  const days = trip ? daysUntil(trip) : null;
+  const sits = C.scenarios.map((sit) => ({ sit, r: sitReady(sit) })).filter(({ r }) => r.n);
 
   page('home', `
-    <section class="lang-hero">
+    <section class="lang-hero today-hero">
       <div class="hero-text">
-        <p class="eyebrow">${esc(lang.name)} · ${esc(lang.region)}</p>
+        <p class="eyebrow">${esc(lang.name)}${days != null ? ` · ${days === 0 ? 'you fly today' : days === 1 ? 'you fly tomorrow' : `${days} days to your trip`}` : ''}</p>
         <h1 class="hero-native" ${nativeAttrs(lang)}>${esc(lang.native_name)}</h1>
-        <p class="hero-counts">${learned - lockedN} learning · ${lockedN} locked in</p>
-      </div>
-      <div class="ring" style="--pct:${pct}" aria-label="${learned} of ${pool.length} Learning or Locked in">
-        <strong>${learned}<small>/${pool.length}</small></strong><span>${esc(tierLabel(tier()))}</span>
+        <p class="hero-counts">${ready} of ${pool.length} phrases ready</p>
       </div>
     </section>
-    ${tierBar()}
     ${nextStepCard()}
 
-    ${section('More practice', `<div class="group">
-      ${row({ href: `#/${code}/flight`, ic: 'plane', title: 'Flying soon?', sub: 'Core crash course, rescue kit and a cheat sheet' })}
-      ${row({ href: `#/${code}/practice/run?dir=en`, ic: 'cards', title: 'Flashcards', sub: `English → <bdi>${esc(lang.native_name)}</bdi>` })}
-      ${row({ href: `#/${code}/practice/run?dir=target`, ic: 'shuffle', title: 'Reverse flashcards', sub: `<bdi>${esc(lang.native_name)}</bdi> → English` })}
-      ${canPracticeAloud() ? row({ href: `#/${code}/practice/run?dir=speak`, ic: 'mic', title: 'Speak it', sub: 'See the English, say it aloud, hear it back' }) : ''}
-      ${row({ href: `#/${code}/practice/run?dir=type`, ic: 'list', title: 'Type it', sub: 'Write it out; get told exactly what to fix (accents too)' })}
-      ${row({ href: `#/${code}/sounds`, ic: 'ear', title: 'Sound guide', sub: 'The tricky sounds, and how to read the pronunciation' })}
-    </div>`)}
+    ${section('Need a phrase now?', `<div class="scen-row">${sits.map(({ sit }) => `<a class="scen-btn" href="#/${code}/scenario/${sit.id}"><span class="scen-ic">${sit.icon}</span>${esc(sit.label)}</a>`).join('')}</div>`)}
 
-    ${pick ? section('Phrase of the moment', `<div id="pick">${phraseCard(pick)}</div>`, `<button class="link-btn" data-action="reroll">${icon('shuffle')} Another</button>`) : ''}
-
-    ${section('Where are you?', `<div class="scen-row">${C.scenarios.map((s) => `<a class="scen-btn" href="#/${code}/scenario/${s.id}"><span class="scen-ic">${s.icon}</span>${esc(s.label)}</a>`).join('')}</div>`,
-      `<a class="link-btn" href="#/${code}/scenarios">All</a>`)}
-
-    ${section('Browse', `<div class="group">
-      ${row({ href: `#/${code}/patterns`, ic: 'puzzle', title: 'Power patterns', count: patterns })}
-      ${row({ href: `#/${code}/phrases?cat=saved`, ic: 'star', title: 'Saved', count: favs })}
-    </div>
-    <div class="group">
-      ${C.categories.filter((c) => c.id !== 'power_patterns').map((c) => {
-        const n = L.phrases.filter((p) => inTier(p) && inCategory(C, p, c.id)).length;
-        return row({ href: `#/${code}/phrases?cat=${c.id}`, emoji: c.icon, title: esc(c.label), count: n, attrs: n ? '' : 'data-empty' });
-      }).join('')}
-    </div>`)}
-
-    ${canSpeak() || lang.meta.tts_note ? section('Audio', audioGroup()) : ''}
-
-    ${L.generalNotes.length ? section(`About this ${lang.direction === 'rtl' ? 'dialect' : 'set'}`, `<div class="group notes-group">
-      ${L.generalNotes.map((n) => `<p class="about-row"><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
-    </div>`) : ''}
+    ${section('Your situations', `<div class="sit-list">${sits.map(({ sit, r }) => `
+      <a class="sit-row ${r.ready === r.n ? 'done' : ''}" href="#/${code}/scenario/${sit.id}">
+        <span class="scen-ic">${sit.icon}</span>
+        <span class="sit-text"><b>${esc(sit.label)}</b><small>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</small>${readyBar(r)}</span>
+        ${icon('chev', 'row-chev')}
+      </a>`).join('')}</div>`)}
   `);
-  if (!store.prefs().onboarded) {
-    store.setPref('onboarded', true);
-    openSheet(helpHtml(true));
-  }
 }
 
-// One clear thing to do next: today's session (reviews + a few new phrases), or move up a level.
+// One clear thing to do next: today's session (reviews + a few new phrases from your situation).
 function nextStepCard() {
   const code = L.lang.code;
   const soon = leavingSoon();
@@ -424,26 +378,68 @@ function nextStepCard() {
   const fresh = freshPool(soon && freshPool(true).length > 0).length;
   const news = Math.min(fresh, Math.max(2, 5 - reviews));
   const started = L.phrases.some((p) => store.isLearned(p.key));
+  const { sit, auto } = focusSituation();
+  const r = sit ? sitReady(sit) : null;
+  const working = sit ? `<button class="working" data-action="focus-sheet">
+      <span class="scen-ic">${sit.icon}</span><span class="working-text"><small>${auto ? 'Working on' : 'You picked'}</small><b>${esc(sit.label)}</b></span>
+      <span class="working-n">${r.ready}/${r.n}</span><span class="working-change">Change</span></button>` : '';
   if (!reviews && !news) {
-    const ti = C.tiers.findIndex((t) => t.id === tier());
-    const next = C.tiers[ti + 1];
-    const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
     return `<section class="next-step">
-      <p class="ns-k">Level complete</p>
-      <h2>Every ${esc(tierLabel(tier()))} phrase is Learning or Locked in 🎉</h2>
-      ${next ? `<p class="ns-sub">Ready for more? ${esc(next.label)} adds ${L.phrases.filter((p) => next.includes.includes(p.priority) && !p.missing).length - pool.length} new phrases. ${esc(next.blurb)}</p>
-        <button class="cta" data-action="tier" data-tier="${next.id}">Move up to ${esc(next.label)}</button>` : '<p class="ns-sub">That’s the whole set. Keep it fresh with a quick practice round.</p>'}
-      <a class="link-btn center" href="#/${code}/session">Practise 5 you know ${icon('chev')}</a>
+      <p class="ns-k">All started</p>
+      <h2>Every phrase is Learning or Locked in 🎉</h2>
+      <p class="ns-sub">Keep them fresh with a quick practice round. Reviews come back on their own.</p>
+      <a class="cta" href="#/${code}/session">${icon('play')} Practise 5 you know</a>
     </section>`;
   }
   const parts = [reviews ? `${reviews} to review` : '', news ? `${news} new` : ''].filter(Boolean).join(' · ');
   const mins = Math.max(2, Math.round((reviews + news * 2) * 0.4));
   return `<section class="next-step">
     <p class="ns-k">${started ? (soon ? 'Leaving soon' : 'Today') : 'Start here'}</p>
-    <h2>${started ? 'Continue' : 'Learn your first phrases'}</h2>
+    ${working}
     <p class="ns-sub">${parts} · about ${mins} minutes. Listen, say it, compare yourself with the native voice.</p>
     <a class="cta" href="#/${code}/session">${icon('play')} ${started ? 'Continue' : 'Start'}</a>
   </section>`;
+}
+
+// Pick the situation Continue teaches from (or leave it automatic).
+function focusSheetHtml() {
+  const picked = (store.prefs().focus || {})[L.lang.code];
+  const rowFor = (id, iconTxt, label, sub) => `<button class="row ${picked === id || (!picked && !id) ? 'picked' : ''}" data-action="pick-focus" data-id="${id || ''}">
+      <span class="row-ic emoji">${iconTxt}</span><span class="row-text"><span class="row-title">${label}</span><span class="row-sub">${sub}</span></span>
+      ${picked === id || (!picked && !id) ? icon('check', 'row-check') : ''}</button>`;
+  return `<div class="sheet-head"><h2>What are you getting ready for?</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
+    <p class="help-lead">Continue teaches new phrases from this situation first. Reviews still come from everything you've learned.</p>
+    <div class="group">
+      ${rowFor('', '✨', 'Automatic', 'The basics first, then whichever situation is closest to ready')}
+      ${C.scenarios.map((sit) => { const r = sitReady(sit); return r.n ? rowFor(sit.id, sit.icon, esc(sit.label), r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`) : ''; }).join('')}
+    </div>`;
+}
+
+// More: everything that isn't the daily loop or looking a phrase up.
+function viewMore() {
+  const lang = L.lang;
+  const code = lang.code;
+  const favs = store.countFor('fav', code);
+  const patterns = L.phrases.filter((p) => p.type === 'pattern' && !p.missing).length;
+  page('more', `
+    <section class="page-head"><h1>More</h1></section>
+    ${section('Your trip', `<div class="group">
+      ${row({ href: `#/${code}/flight`, ic: 'plane', title: 'Flying soon?', sub: 'Set your trip date, rescue kit, crash course' })}
+      ${row({ href: `#/${code}/cheatsheet`, ic: 'printer', title: 'Cheat sheet', sub: 'Every Core phrase on one screen. Print or screenshot it' })}
+      ${row({ href: `#/${code}/phrases?cat=saved`, ic: 'star', title: 'Saved phrases', count: favs })}
+    </div>`)}
+    ${section('Go deeper', `<div class="group">
+      ${row({ href: `#/${code}/sounds`, ic: 'ear', title: 'Sound guide', sub: 'The tricky sounds, and how to read the pronunciation line' })}
+      ${row({ href: `#/${code}/patterns`, ic: 'puzzle', title: 'Power patterns', sub: 'One sentence frame, many uses', count: patterns })}
+      ${row({ href: `#/${code}/practice/run?dir=type`, ic: 'list', title: 'Type it', sub: 'Write phrases out; get told exactly what to fix' })}
+    </div>`)}
+    ${canSpeak() || lang.meta.tts_note ? section('Audio', audioGroup()) : ''}
+    ${L.generalNotes.length ? section(`About this ${lang.direction === 'rtl' ? 'dialect' : 'set'}`, `<div class="group notes-group">
+      ${L.generalNotes.map((n) => `<p class="about-row"><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
+    </div>`) : ''}
+    <div class="group">${row({ action: 'help', ic: 'help', title: 'How Wayword works' })}</div>
+    <p class="fine">Progress is saved on this device only.</p>
+  `);
 }
 
 function audioGroup() {
@@ -473,7 +469,6 @@ function viewPhrases(query) {
     ...C.categories.map((c) => [c.id, c.label, c.icon]),
   ];
   page('phrases', `
-    ${tierBar()}
     <div class="search">${icon('search')}<input id="q" type="search" inputmode="search" placeholder="Search English, ${esc(lang.native_name)} or sounds" value="${esc(q)}" autocomplete="off"></div>
     <div class="chips" role="tablist">${chips.map(([id, label, ic]) =>
       `<a class="chip ${cat === id ? 'on' : ''}" href="#/${lang.code}/phrases?cat=${id}">${ic ? `<span>${ic}</span>` : ''}${esc(label)}</a>`).join('')}</div>
@@ -501,51 +496,38 @@ function renderList(cat, q) {
   }
   const el = document.getElementById('list');
   if (!items.length) {
-    el.innerHTML = `<div class="empty-state">${cat === 'saved' ? 'Tap ★ on any phrase to save it here.' : `Nothing here at ${esc(tierLabel(tier()))}. Try a wider level.`}</div>`;
+    el.innerHTML = `<div class="empty-state">${cat === 'saved' ? 'Tap ★ on any phrase to save it here.' : `Nothing here yet.`}</div>`;
     return;
   }
-  const fresh = cat === 'saved' ? 0 : newAtTierCount(items);
   const where = cat === 'all' || cat === 'todo' ? '' : (C.categoryById.get(cat) || {}).label;
-  el.innerHTML = `<p class="count">${items.length} phrase${items.length === 1 ? '' : 's'}${fresh ? ` · ${fresh} new at ${esc(tierLabel(tier()))}` : ''}</p>`
+  el.innerHTML = `<p class="count">${items.length} phrase${items.length === 1 ? '' : 's'}</p>`
     + (cat === 'saved' ? items.map((p) => phraseCard(p)).join('') : renderGrouped(items, (p, isNew) => phraseCard(p, { isNew }), { where }));
   syncListen();
 }
 
 function viewScenarios() {
   const lang = L.lang;
-  const next = C.tiers[tierIndex() + 1];
-  page('scenarios', `
-    ${tierBar()}
-    <section class="page-head"><h1>Where are you?</h1><p>Pick a place. You'll see only the phrases that matter there.</p></section>
-    <div class="scen-grid">${C.scenarios.map((s) => {
-      const ps = s.concepts.map((id) => L.byId.get(id)).filter((p) => p && !p.missing);
-      const n = ps.filter(inTier).length;
-      const fresh = newAtTierCount(ps.filter(inTier));
-      const nextN = next ? ps.filter((p) => next.includes.includes(p.priority)).length : 0;
-      const sub = n ? `${n} phrases${fresh ? `<em>+${fresh} new</em>` : ''}` : `0 at ${esc(tierLabel(tier()))}${nextN ? `<em>${nextN} at ${esc(next.label)}</em>` : ''}`;
-      return `<a class="scen-card ${n ? '' : 'empty'}" href="#/${lang.code}/scenario/${s.id}"><span class="scen-ic big">${s.icon}</span><strong>${esc(s.label)}</strong><small>${sub}</small></a>`;
+  page('home', `
+    <section class="page-head"><h1>Where are you?</h1><p>Pick a place. You'll see the phrases that matter there.</p></section>
+    <div class="scen-grid">${C.scenarios.map((sit) => {
+      const r = sitReady(sit);
+      return `<a class="scen-card" href="#/${lang.code}/scenario/${sit.id}"><span class="scen-ic big">${sit.icon}</span><strong>${esc(sit.label)}</strong><small>${r.ready} of ${r.n} ready</small></a>`;
     }).join('')}</div>
-  `);
+  `, { back: `#/${lang.code}` });
 }
 
-function viewScenario(id, query) {
+function viewScenario(id) {
   const lang = L.lang;
-  const s = C.scenarios.find((x) => x.id === id);
-  if (!s) return go(`#/${lang.code}/scenarios`);
-  const all = s.concepts.map((cid) => L.byId.get(cid)).filter(Boolean);
-  const showAll = query.get('all') === '1';
-  const shown = showAll ? all : all.filter(inTier);
-  const hidden = all.length - shown.length;
-  page('scenarios', `
-    <section class="page-head scen-head"><span class="scen-ic huge">${s.icon}</span><div><h1>${esc(s.label)}</h1><p>${shown.length} phrases${showAll ? ' · all levels' : ` · ${esc(tierLabel(tier()))}`}</p></div></section>
-    ${s.note ? `<p class="callout">${esc(s.note)}</p>` : ''}
-    <div class="scen-actions">
-      <a class="pill-btn" href="#/${lang.code}/practice/run?dir=en&scenario=${s.id}">${icon('cards')}<span>Flashcards</span></a>
-      ${canPracticeAloud() ? `<a class="pill-btn" href="#/${lang.code}/practice/run?dir=speak&scenario=${s.id}">${icon('mic')}<span>Speak it</span></a>` : ''}
-    </div>
-    <div class="list">${showAll ? shown.map((p) => phraseCard(p)).join('') : renderGrouped(shown, (p, isNew) => phraseCard(p, { isNew }), { where: s.label })}</div>
-    ${hidden > 0 ? `<a class="more-btn" href="#/${lang.code}/scenario/${s.id}?all=1">+${hidden} more at higher levels</a>` : ''}
-  `, { back: `#/${lang.code}/scenarios` });
+  const sit = C.scenarios.find((x) => x.id === id);
+  if (!sit) return go(`#/${lang.code}`);
+  const ps = sitPhrases(sit);
+  const r = sitReady(sit);
+  page('home', `
+    <section class="page-head scen-head"><span class="scen-ic huge">${sit.icon}</span><div><h1>${esc(sit.label)}</h1><p>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</p>${readyBar(r)}</div></section>
+    ${sit.note ? `<p class="callout">${esc(sit.note)}</p>` : ''}
+    ${r.ready < r.n ? `<button class="cta sit-cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Get ready for ${esc(sit.label === 'The basics' ? 'the basics' : sit.label)}</button>` : ''}
+    <div class="list">${ps.map((p) => phraseCard(p)).join('')}</div>
+  `, { back: `#/${lang.code}` });
 }
 
 function viewPatterns() {
@@ -553,11 +535,10 @@ function viewPatterns() {
   const rank = (p) => (p.category === 'power_patterns' ? 0 : 1);
   const pats = L.phrases.filter((p) => p.type === 'pattern' && inTier(p)).sort((a, b) => rank(a) - rank(b) || a.order - b.order);
   const anySubs = Object.values(C.patterns).some((x) => x.substitutions && x.substitutions[lang.code]?.length);
-  page('patterns', `
-    ${tierBar()}
+  page('more', `
     <section class="page-head"><h1>Power patterns</h1><p>Learn the frame once, then swap the blank to say new things.</p></section>
     ${anySubs ? '' : '<p class="callout">Swap-in words aren’t in the dataset yet. Under each pattern you’ll find dataset phrases already built on it.</p>'}
-    <div class="list">${renderGrouped(pats, (p, isNew) => patternCard(p, isNew), { noun: 'patterns' }) || `<div class="empty-state">No patterns at this level. Try ${esc(C.tiers[1]?.label || 'a wider level')}.</div>`}</div>
+    <div class="list">${renderGrouped(pats, (p, isNew) => patternCard(p, isNew), { noun: 'patterns' }) || '<div class="empty-state">No patterns yet.</div>'}</div>
   `);
 }
 
@@ -625,8 +606,7 @@ function viewPracticeSetup() {
   const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
   const favs = L.phrases.filter((p) => store.isFav(p.key) && !p.missing).length;
   const todo = pool.filter((p) => !store.isLearned(p.key)).length;
-  page('practice', `
-    ${tierBar()}
+  page('more', `
     <section class="page-head"><h1>Practice</h1><p>Five minutes, one thumb.</p></section>
     <form id="setup" class="setup">
       <fieldset><legend>How</legend>
@@ -636,7 +616,7 @@ function viewPracticeSetup() {
         <label class="opt"><input type="radio" name="dir" value="type"><span><b>Type it</b><small>Write it out; get told exactly what to fix</small></span></label>
       </fieldset>
       <fieldset><legend>Deck</legend>
-        <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All of ${esc(tierLabel(tier()))}</b><small>${pool.length}${newAtTierCount(pool) ? ` (${newAtTierCount(pool)} new)` : ''}</small></span></label>
+        <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All phrases</b><small>${pool.length}</small></span></label>
         <label class="opt"><input type="radio" name="deck" value="todo"><span><b>Not started yet</b><small>${todo}</small></span></label>
         <label class="opt"><input type="radio" name="deck" value="saved" ${favs ? '' : 'disabled'}><span><b>Saved</b><small>${favs}</small></span></label>
       </fieldset>
@@ -671,7 +651,7 @@ function buildDeck(query) {
 }
 
 function viewPracticeRun(query) {
-  const sig = `${L.lang.code}|${query.toString()}|${tier()}`;
+  const sig = `${L.lang.code}|${query.toString()}`;
   if (!practice || practice.sig !== sig) {
     const deck = buildDeck(query);
     const dir = ['target', 'speak', 'type'].includes(query.get('dir')) ? query.get('dir') : 'en';
@@ -693,12 +673,12 @@ function drawPractice() {
   const s = practice;
   const back = `#/${lang.code}/practice`;
   if (!s.total) {
-    page('practice', `<div class="empty-state big">No cards in this deck.<br><a href="${back}">Change the deck</a></div>`, { back });
+    page('more', `<div class="empty-state big">No cards in this deck.<br><a href="${back}">Change the deck</a></div>`, { back });
     return;
   }
   if (!s.queue.length) {
     const speakQs = new URLSearchParams(s.query); speakQs.set('dir', 'speak');
-    page('practice', `<section class="done">
+    page('more', `<section class="done">
       <div class="done-burst">🎉</div><h1>Deck cleared</h1>
       <p>${s.total} cards${s.newly ? ` · <b>${s.newly} now Learning</b>` : ''}${s.missed.size ? ` · ${s.missed.size} to practise again` : ''}</p>
       <div class="done-actions">
@@ -740,7 +720,7 @@ function drawPractice() {
       ${s.flipped ? `<span class="fc-divider"></span>${backSide}${notes}` : '<span class="fc-hint">Tap to reveal</span>'}`;
   }
 
-  page('practice', `
+  page('more', `
     <div class="fc-progress"><span style="width:${pct}%"></span></div>
     <p class="fc-meta">${s.done} / ${s.total}${s.newly ? ` · ${s.newly} now Learning` : ''}</p>
     ${s.done === 0 && !s.flipped && !s.again ? `<p class="fc-tip">${s.dir === 'target' ? 'Work out the meaning, then tap the card to check.' : s.dir === 'speak' ? 'Read the English, tap the mic and say it. You’ll hear the right version straight after.' : s.dir === 'type' ? 'Read the English and type the phrase. Accents count; capitals and punctuation don’t.' : 'Say it in your head (or out loud), then tap the card to check.'} “Got it” on the first try puts a phrase into Learning (or counts as its review if one is due).</p>` : ''}
@@ -819,8 +799,12 @@ function leavingSoon() {
 // Not started yet, in teaching order (Core, then Travel, then Explore). Core only for the crash course.
 function freshPool(coreOnly = false) {
   const rank = { core: 0, travel: 1, explore: 2 };
-  const pool = L.phrases.filter((p) => !p.missing && !store.isLearned(p.key) && (coreOnly ? p.priority === 'core' : inTier(p)));
-  return pool.sort((a, b) => rank[a.priority] - rank[b.priority] || a.order - b.order);
+  const pool = L.phrases.filter((p) => !p.missing && !store.isLearned(p.key) && (!coreOnly || p.priority === 'core'));
+  pool.sort((a, b) => rank[a.priority] - rank[b.priority] || a.order - b.order);
+  const sit = focusSituation().sit;
+  if (!sit) return pool;
+  const inSit = new Set(sit.concepts);
+  return [...pool.filter((p) => inSit.has(p.id)), ...pool.filter((p) => !inSit.has(p.id))];
 }
 
 function sessionPlanFor(query) {
@@ -836,7 +820,7 @@ function sessionPlanFor(query) {
 }
 
 function viewSession(query) {
-  const sig = `${L.lang.code}|${tier()}|${query.get('mode') === 'flight' ? 'flight' : ''}`;
+  const sig = `${L.lang.code}|${focusSituation().sit?.id || ''}|${query.get('mode') === 'flight' ? 'flight' : ''}`;
   const stale = !session || session.sig !== sig || session.i >= session.steps.length || Date.now() - session.at > 3 * 3600000;
   if (stale) session = { sig, at: Date.now(), steps: sessionPlanFor(query), i: 0, results: {}, missed: new Set(), newly: 0, newlyLocked: 0, picked: null };
   pl = null;
@@ -920,6 +904,7 @@ function sessionAutoplay() {
 }
 
 function sessionAdvance() {
+  if (session.steps[session.i]?.kind === 'new' && !store.prefs().readHint) store.setPref('readHint', true);
   capture?.stop();
   tts.stop();
   stopPlayerAudio();
@@ -1030,9 +1015,9 @@ function viewCheatsheet(query) {
   page('home', `
     <section class="page-head cs-head">
       <h1>Cheat sheet</h1>
-      <p>${esc(lang.name)} · ${whole ? esc(tierLabel(tier())) : 'Core'} · ${items.length} phrases</p>
+      <p>${esc(lang.name)} · ${whole ? 'All phrases' : 'Core'} · ${items.length} phrases</p>
       <div class="cs-actions">
-        ${tierIndex() > 0 || whole ? `<a class="pill-btn" href="#/${code}/cheatsheet${whole ? '' : '?all=1'}">${whole ? 'Core only' : `Whole ${esc(tierLabel(tier()))}`}</a>` : ''}
+        <a class="pill-btn" href="#/${code}/cheatsheet${whole ? '' : '?all=1'}">${whole ? 'Core only' : 'All phrases'}</a>
         <button class="pill-btn" data-action="print">${icon('printer')}<span>Print</span></button>
       </div>
     </section>
@@ -1050,7 +1035,7 @@ function viewCheatsheet(query) {
       </div>`).join('')}
     </section>`).join('')}
     <p class="fine cs-foot">Wayword · ${esc(lang.name)} · finding your way with words</p>
-  `, { back: `#/${code}/flight` });
+  `, { back: `#/${code}/more` });
 }
 
 // Under a flipped review card: what passing it will do.
@@ -1079,12 +1064,11 @@ function helpHtml(first) {
       <div class="hs-line"><span class="hs-k">Meaning</span><span class="en sm">${esc(hello.english)}</span></div>
     </div>` : '';
   const items = [
-    ['Start with Core', `The levels at the top grow from the must-knows (Core, ${L.phrases.filter((p) => p.priority === 'core').length} phrases) to everyday travel (Travel) to the full set (Explore). Each level includes the one before; switching up shows what’s new first.`],
-    ['Read each phrase top to bottom', `The phrase as it’s written, then how to say it, then what it means.${hello && /[A-Z]{2}/.test(hello.pron || '') ? ' Capitals in the pronunciation show the stressed part.' : ''}${sample}`],
-    ['Listen, then say it', '<b>Listen</b> plays the phrase. A small player appears where you can pause, repeat, loop and change the speed. <b>Say it</b> records you so you can hear yourself next to the right version.'],
-    ['Lock it in', 'Get a phrase right first time (in a session, the crash course or flashcards) and it’s <b>Learning</b>. It comes back for a quick check after 1, 3, 7 and 14 days; pass the last one and it’s <b>Locked in</b> for good. A miss starts it again tomorrow. Flying soon? Set a trip date on the Flying soon? page and the checks speed up to fit before you go. ★ saves a phrase for later.'],
+    ['Read each phrase top to bottom', `How it’s written, then how to say it, then what it means.${hello && /[A-Z]{2}/.test(hello.pron || '') ? ' Capitals in the pronunciation show the stressed part.' : ''}${sample}`],
+    ['Tap Continue', 'Each session is a few minutes: phrases due for review first, then a few new ones. You hear each new phrase, say it, and the app plays the native voice, then you, then the native voice again so you can compare.'],
+    ['Say it before you hear it', 'A phrase you’ve met before starts with the English. Say it, then hear the right version. <b>Got it</b> means you knew it before you heard it. It comes back after 1, 3, 7 and 14 days, then it’s <b>Locked in</b>. Set a trip date (More → Flying soon?) and the reviews speed up to fit.'],
+    ['Get ready for situations', 'Café, hotel, getting around… Today shows how ready you are for each. Pick one under “Working on”, or tap a situation to see its phrases right away.'],
     ['Test yourself', '<b>EN</b> hides the English and <b>Aa</b> hides the pronunciation. Tap a blurred line to peek.'],
-    ['Find your way around', '<b>Places</b>: what to say at a café, hotel, barber… <b>Patterns</b>: one sentence frame, many uses. <b>Practice</b>: flashcards and speaking. The <b>Sound guide</b> on the home page covers tricky sounds.'],
   ];
   return `<div class="sheet-head"><h2>${first ? 'Welcome to Wayword' : 'How Wayword works'}</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
     ${first ? `<p class="help-lead">A quick tour before you start ${esc(L.lang.name)}. You can reopen it any time with the ${icon('help', 'inline-ic')} button.</p>` : ''}
@@ -1233,7 +1217,7 @@ function drawMicCheck() {
   const hello = L.byId.get('hello');
   const rec = recommendation();
   const current = mic.micMode();
-  page('practice', `
+  page('more', `
     <section class="page-head"><h1>Mic check</h1><p>Run this on the phone you practise with. Each step tests one thing, so if something fails you’ll see which part.</p></section>
 
     ${section('1 · Speaker', `<div class="group pad">
@@ -1402,7 +1386,10 @@ function playerInner() {
        ${!ready && canPracticeAloud() ? '<p class="fine">Speaking is optional. Skip it whenever you like.</p>' : ''}`;
   }
 
-  return `<article class="pp-phrase">${phraseLines(p, { size: 'lg', nativeHtml: hl })}
+  // First phrase ever: how to read the three lines (replaces the old welcome tour).
+  const howto = !store.prefs().readHint && pl.mode === 'learn'
+    ? `<p class="pp-howto">How to read it: <b>how it’s written</b> · <b class="pron-k">how to say it</b>${/[A-Z]{2}/.test(p.pron || '') ? ' (CAPITALS = stress)' : ''} · <b>what it means</b></p>` : '';
+  return `${howto}<article class="pp-phrase">${phraseLines(p, { size: 'lg', nativeHtml: hl })}
       ${cue ? `<p class="pp-cue"><span class="note-k">Listen for</span>${cue} <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a></p>` : ''}
       ${notes ? `<div class="notes">${notes}</div>` : ''}
     </article>
@@ -1796,10 +1783,16 @@ document.addEventListener('click', (e) => {
     tts.stepSpeed(1);
   } else if (a === 'pl-close') {
     tts.stop();
-  } else if (a === 'tier') {
-    store.setPref('tier', btn.dataset.tier);
-    practice = null;
+  } else if (a === 'focus-sheet') {
+    openSheet(focusSheetHtml());
+  } else if (a === 'pick-focus') {
+    setFocus(btn.dataset.id);
+    closeSheet();
     route();
+  } else if (a === 'practise-sit') {
+    setFocus(btn.dataset.id);
+    session = null;
+    go(`#/${L.lang.code}/session`);
   } else if (a === 'toggle-en') {
     store.setPref('showEnglish', !store.prefs().showEnglish);
     applyTheme(L && L.lang);
@@ -1925,7 +1918,8 @@ async function route() {
   if (!sectionName) viewDashboard();
   else if (sectionName === 'phrases') viewPhrases(query);
   else if (sectionName === 'scenarios') viewScenarios();
-  else if (sectionName === 'scenario') viewScenario(arg, query);
+  else if (sectionName === 'scenario') viewScenario(arg);
+  else if (sectionName === 'more') viewMore();
   else if (sectionName === 'patterns') viewPatterns();
   else if (sectionName === 'sounds') await viewSounds();
   else if (sectionName === 'mic') viewMicCheck();
