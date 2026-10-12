@@ -1,5 +1,6 @@
 // Offline cache. Bump VERSION whenever app or content files change so phones pick up the update.
-const VERSION = 'wayword-v26';
+const VERSION = 'wayword-v27';
+const AUDIO = 'wayword-audio';
 const LANGS = ['pt-PT', 'es', 'fr', 'it', 'ru', 'ar-levantine', 'he', 'ja', 'ro'];
 const PRECACHE = [
   './', 'index.html', 'css/style.css', 'js/app.js', 'js/data.js', 'js/store.js', 'js/speech.js', 'js/speak.js', 'js/voices.js', 'js/schedule.js', 'js/typecheck.js', 'js/plan.js',
@@ -17,17 +18,19 @@ self.addEventListener('install', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== VERSION).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => k !== VERSION && k !== AUDIO).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });
 
 // Stale-while-revalidate: open instantly from cache, refresh in the background.
+// Recordings live in their own cache that survives app updates ("Save for offline" keeps working).
 self.addEventListener('fetch', (e) => {
   const req = e.request;
-  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const url = new URL(req.url);
+  if (req.method !== 'GET' || url.origin !== location.origin) return;
   e.respondWith(
-    caches.open(VERSION).then(async (cache) => {
+    caches.open(url.pathname.includes('/content/audio/') ? AUDIO : VERSION).then(async (cache) => {
       const cached = await cache.match(req, { ignoreSearch: true });
       const network = fetch(req)
         .then((res) => { if (res.ok) cache.put(req, res.clone()); return res; })

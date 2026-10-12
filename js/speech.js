@@ -84,7 +84,8 @@ function naturalChoice(lang) {
   return m.voices.find((v) => `audio:${v.id}` === saved) || m.voices[0];
 }
 
-function naturalUrl(item) {
+// The recording a phrase would play (null if it uses the device voice). Also used to save audio for offline.
+export function naturalUrl(item) {
   const v = naturalChoice(item.lang);
   const file = v && naturalFor(item.lang.code)?.files?.[item.id]?.[v.id];
   return file ? `./content/audio/${item.lang.code}/${file}` : null;

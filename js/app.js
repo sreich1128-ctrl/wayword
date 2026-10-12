@@ -69,6 +69,8 @@ const ICONS = {
   shuffle: '<path d="M3 7h3.5c4 0 6 10 10 10H21M3 17h3.5c1.6 0 2.8-1.6 3.8-3.6M14 9.6C15 7.6 16 7 17 7h4M18 4l3 3-3 3M18 14l3 3-3 3"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/>',
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  expand: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+  download: '<path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/>',
   dots: '<circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/>',
 };
 const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
@@ -183,30 +185,89 @@ const sayTipNote = (p, link = true) => (p.say_tip
   ? `<p class="note"><span class="note-k">How it’s said</span>${esc(p.say_tip)}${link ? ` <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a>` : ''}</p>`
   : '');
 
-function phraseCard(p, { isNew = false } = {}) {
+function phraseCard(p) {
   const fav = store.isFav(p.key);
-  const learned = store.isLearned(p.key);
+  const st = store.status(p.key);
   const notes = [];
   if (p.say_tip) notes.push(sayTipNote(p));
   if (p.regional_note) notes.push(`<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>`);
   if (p.usage_note) notes.push(`<p class="note"><span class="note-k">Usage</span>${esc(p.usage_note)}</p>`);
   if (p.example) notes.push(`<p class="note"><span class="note-k">Example</span><span ${nativeAttrs(L.lang)}>${esc(p.example)}</span></p>`);
   if (p.response) notes.push(`<p class="note"><span class="note-k">Likely reply</span><span ${nativeAttrs(L.lang)}>${esc(p.response)}</span></p>`);
-
+  if (p.missing) return `<article class="card lk" data-key="${esc(p.key)}" data-id="${esc(p.id)}"><p class="en">${withSlots(p.english)}</p>${phraseLines(p)}</article>`;
   return `
-  <article class="card ${p.type === 'pattern' ? 'is-pattern' : ''} ${learned ? 'is-learned' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
-    <div class="card-meta">
-      <span>${p.type === 'pattern' ? 'Pattern' : ''}</span>
+  <article class="card lk ${p.type === 'pattern' ? 'is-pattern' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
+    <div class="lk-main">
+      <div class="lk-text">${phraseLines(p)}</div>
+      ${canSpeak() ? `<button class="round-btn lk-play listen" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
+    </div>
+    ${notes.length ? `<div class="notes">${notes.join('')}</div>` : ''}
+    <div class="card-actions">
+      <button class="pill-btn" data-action="show-it" data-id="${esc(p.id)}">${icon('expand')}<span>Show</span></button>
+      ${canPracticeAloud() ? `<button class="pill-btn" data-action="say-it" data-id="${esc(p.id)}">${icon('mic')}<span>Practise</span></button>` : ''}
+      <span class="lk-spacer"></span>
+      ${st ? `<span class="status-tag ${st}">${statusLabel(st)}</span>` : ''}
+      ${p.type === 'pattern' ? '<span class="lk-kind">Pattern</span>' : ''}
       <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Save">${icon('star')}</button>
     </div>
-    ${phraseLines(p)}
-    ${notes.length ? `<div class="notes">${notes.join('')}</div>` : ''}
-    ${p.missing ? '' : `<div class="card-actions">
-      ${listenBtn(p, 'labeled')}${micBtn(p, 'labeled')}
-      ${statusBtn(p)}
-    </div>`}
   </article>`;
 }
+
+// "Show this": one phrase, full-screen and large, to hand the phone to someone.
+function openShowIt(p) {
+  closeShowIt();
+  const el = document.createElement('div');
+  el.id = 'showit';
+  el.setAttribute('role', 'dialog');
+  el.setAttribute('aria-modal', 'true');
+  el.innerHTML = `
+    <button class="icon-btn showit-x" data-action="show-close" aria-label="Close">${icon('x')}</button>
+    <div class="showit-body">
+      <p class="showit-native" ${nativeAttrs(L.lang)}>${withSlots(p.target)}</p>
+      ${p.reading && p.reading !== p.target ? `<p class="showit-reading" ${nativeAttrs(L.lang)}>${withSlots(p.reading)}</p>` : ''}
+      <p class="showit-en">${withSlots(p.english)}</p>
+      ${canSpeak() ? `<button class="mic-big listen showit-play" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Play it for them">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
+    </div>`;
+  document.body.appendChild(el);
+  document.body.classList.add('showit-open');
+  syncListen();
+}
+function closeShowIt() {
+  document.getElementById('showit')?.remove();
+  document.body.classList.remove('showit-open');
+}
+
+// Save a set of phrases' recordings for offline use. The service worker caches whatever the page fetches.
+const audioUrls = (ps) => ps.map((p) => tts.naturalUrl(speechItem(p))).filter(Boolean);
+async function offlineState(ps) {
+  const urls = audioUrls(ps);
+  if (!urls.length || !('caches' in window)) return { urls, saved: 0 };
+  let saved = 0;
+  for (const u of urls) if (await caches.match(new URL(u, location.href).href, { ignoreSearch: true })) saved++;
+  return { urls, saved };
+}
+async function saveOffline(ps, btn) {
+  const urls = audioUrls(ps);
+  let done = 0;
+  const label = btn?.querySelector('span');
+  for (const u of urls) {
+    try { await fetch(u); } catch { /* offline right now: try again later */ }
+    done++;
+    if (label) label.textContent = `Saving… ${done}/${urls.length}`;
+  }
+  // Give the service worker a moment to finish writing to its cache, then re-check.
+  setTimeout(() => refreshOfflineBtn(ps), 400);
+}
+async function refreshOfflineBtn(ps) {
+  const btn = document.querySelector('[data-action="save-offline"]');
+  if (!btn) return;
+  const { urls, saved } = await offlineState(ps);
+  if (!urls.length) { btn.remove(); return; }
+  const all = saved === urls.length;
+  btn.classList.toggle('on', all);
+  btn.querySelector('span').textContent = all ? 'Saved for offline' : 'Save for offline';
+}
+
 
 function header({ title, back, focus } = {}) {
   if (focus) return `<header class="topbar focus"><a class="icon-btn quiet" href="${back}" aria-label="Close">${icon('x')}</a></header>`;
@@ -460,48 +521,45 @@ function audioGroup() {
 const speedSeg = () => `<div class="seg">${tts.SPEEDS.map((sp) =>
   `<button class="seg-btn ${sp.id === tts.speed().id ? 'on' : ''}" data-action="set-speed" data-speed="${sp.id}">${sp.label}</button>`).join('')}</div>`;
 
+// Phrases: search everything, or pick a situation. Every phrase, every level.
 function viewPhrases(query) {
   const lang = L.lang;
-  const cat = query.get('cat') || 'all';
+  const sel = query.get('s') || (query.get('cat') === 'saved' ? 'saved' : 'all');
   const q = (query.get('q') || '').trim();
-  const chips = [
-    ['all', 'All', ''], ['saved', 'Saved', '★'], ['todo', 'Not started', ''],
-    ...C.categories.map((c) => [c.id, c.label, c.icon]),
-  ];
+  const chips = [['all', 'All', ''], ['saved', 'Saved', '★'], ...C.scenarios.map((x) => [x.id, x.label, x.icon])];
   page('phrases', `
     <div class="search">${icon('search')}<input id="q" type="search" inputmode="search" placeholder="Search English, ${esc(lang.native_name)} or sounds" value="${esc(q)}" autocomplete="off"></div>
     <div class="chips" role="tablist">${chips.map(([id, label, ic]) =>
-      `<a class="chip ${cat === id ? 'on' : ''}" href="#/${lang.code}/phrases?cat=${id}">${ic ? `<span>${ic}</span>` : ''}${esc(label)}</a>`).join('')}</div>
+      `<a class="chip ${sel === id ? 'on' : ''}" href="#/${lang.code}/phrases?s=${id}">${ic ? `<span>${ic}</span>` : ''}${esc(label)}</a>`).join('')}</div>
     <div id="list" class="list"></div>
   `);
   const input = document.getElementById('q');
-  const draw = () => renderList(cat, input.value.trim());
+  const draw = () => renderList(sel, input.value.trim());
   input.addEventListener('input', draw);
   draw();
-  if (cat !== 'all') document.querySelector('.chip.on')?.scrollIntoView({ inline: 'center', block: 'nearest' });
+  if (sel !== 'all') document.querySelector('.chip.on')?.scrollIntoView({ inline: 'center', block: 'nearest' });
 }
 
-function renderList(cat, q) {
+function renderList(sel, q) {
   const needle = q.toLowerCase();
-  let items = L.phrases.filter((p) => {
-    if (cat === 'saved') return store.isFav(p.key);
-    if (!inTier(p)) return false;
-    if (cat === 'todo') return !store.isLearned(p.key);
-    if (cat !== 'all' && !inCategory(C, p, cat)) return false;
-    return true;
-  });
-  if (needle) {
-    items = items.filter((p) => [p.english, p.target, p.reading, p.pron, p.regional_note, p.usage_note]
-      .some((s) => s && s.toLowerCase().includes(needle)));
-  }
+  const sit = C.scenarios.find((x) => x.id === sel);
+  let items;
+  if (needle) { // searching looks through everything, whatever chip is on
+    items = L.phrases.filter((p) => [p.english, p.target, p.reading, p.pron, p.regional_note, p.usage_note]
+      .some((x) => x && x.toLowerCase().includes(needle)));
+  } else if (sel === 'saved') items = L.phrases.filter((p) => store.isFav(p.key));
+  else if (sit) items = sitPhrases(sit);
+  else items = L.phrases.filter((p) => !p.missing);
   const el = document.getElementById('list');
+  document.querySelector('.chips')?.classList.toggle('dim', !!needle);
   if (!items.length) {
-    el.innerHTML = `<div class="empty-state">${cat === 'saved' ? 'Tap ★ on any phrase to save it here.' : `Nothing here yet.`}</div>`;
+    el.innerHTML = `<div class="empty-state">${needle ? 'No phrase matches that.' : sel === 'saved' ? 'Tap ★ on any phrase to save it here.' : 'Nothing here yet.'}</div>`;
     return;
   }
-  const where = cat === 'all' || cat === 'todo' ? '' : (C.categoryById.get(cat) || {}).label;
-  el.innerHTML = `<p class="count">${items.length} phrase${items.length === 1 ? '' : 's'}</p>`
-    + (cat === 'saved' ? items.map((p) => phraseCard(p)).join('') : renderGrouped(items, (p, isNew) => phraseCard(p, { isNew }), { where }));
+  const head = needle ? `${items.length} match${items.length === 1 ? '' : 'es'} in all phrases`
+    : sit ? `${sit.icon} ${esc(sit.label)} · ${items.length} phrases · <a class="link-btn" href="#/${L.lang.code}/scenario/${sit.id}">Get ready ${icon('chev')}</a>`
+      : `${items.length} phrase${items.length === 1 ? '' : 's'}`;
+  el.innerHTML = `<p class="count">${head}</p>${items.map((p) => phraseCard(p)).join('')}`;
   syncListen();
 }
 
@@ -526,8 +584,10 @@ function viewScenario(id) {
     <section class="page-head scen-head"><span class="scen-ic huge">${sit.icon}</span><div><h1>${esc(sit.label)}</h1><p>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</p>${readyBar(r)}</div></section>
     ${sit.note ? `<p class="callout">${esc(sit.note)}</p>` : ''}
     ${r.ready < r.n ? `<button class="cta sit-cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Get ready for ${esc(sit.label === 'The basics' ? 'the basics' : sit.label)}</button>` : ''}
+    ${audioUrls(ps).length ? `<button class="pill-btn offline-btn" data-action="save-offline" data-id="${sit.id}">${icon('download')}<span>Save for offline</span></button>` : ''}
     <div class="list">${ps.map((p) => phraseCard(p)).join('')}</div>
   `, { back: `#/${lang.code}` });
+  refreshOfflineBtn(ps);
 }
 
 function viewPatterns() {
@@ -822,7 +882,10 @@ function sessionPlanFor(query) {
 function viewSession(query) {
   const sig = `${L.lang.code}|${focusSituation().sit?.id || ''}|${query.get('mode') === 'flight' ? 'flight' : ''}`;
   const stale = !session || session.sig !== sig || session.i >= session.steps.length || Date.now() - session.at > 3 * 3600000;
-  if (stale) session = { sig, at: Date.now(), steps: sessionPlanFor(query), i: 0, results: {}, missed: new Set(), newly: 0, newlyLocked: 0, picked: null };
+  if (stale) {
+    session = { sig, at: Date.now(), steps: sessionPlanFor(query), i: 0, results: {}, missed: new Set(), newly: 0, newlyLocked: 0, picked: null };
+    for (const u of audioUrls(session.steps.map((x) => x.p))) fetch(u).catch(() => {}); // preload + cache for offline
+  }
   pl = null;
   drawSession();
 }
@@ -1688,10 +1751,6 @@ document.addEventListener('click', (e) => {
     const on = store.isFav(key);
     btn.classList.toggle('on', on);
     btn.setAttribute('aria-pressed', on);
-  } else if (a === 'learned' && key) {
-    store.toggleLearned(key);
-    btn.outerHTML = statusBtn(L.byId.get(card.dataset.id));
-    card.classList.toggle('is-learned', store.isLearned(key));
   } else if (a === 'speak') {
     speakPhrase(btn.dataset.id);
   } else if (a === 'set-speed') {
@@ -1783,6 +1842,14 @@ document.addEventListener('click', (e) => {
     tts.stepSpeed(1);
   } else if (a === 'pl-close') {
     tts.stop();
+  } else if (a === 'show-it') {
+    openShowIt(L.byId.get(btn.dataset.id));
+  } else if (a === 'show-close') {
+    tts.stop();
+    closeShowIt();
+  } else if (a === 'save-offline') {
+    const sit = C.scenarios.find((x) => x.id === btn.dataset.id);
+    if (sit) saveOffline(sitPhrases(sit), btn);
   } else if (a === 'focus-sheet') {
     openSheet(focusSheetHtml());
   } else if (a === 'pick-focus') {
@@ -1801,10 +1868,6 @@ document.addEventListener('click', (e) => {
     store.setPref('showPron', !store.prefs().showPron);
     applyTheme(L && L.lang);
     btn.classList.toggle('on', store.prefs().showPron);
-  } else if (a === 'reroll') {
-    const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
-    document.getElementById('pick').innerHTML = phraseCard(pool[Math.floor(Math.random() * pool.length)]);
-    syncListen();
   } else if (a === 'flip') {
     if (practice.recording) return;
     practice.flipped = !practice.flipped;
@@ -1878,6 +1941,7 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && document.body.classList.contains('showit-open')) { tts.stop(); closeShowIt(); return; }
   if (e.key === 'Escape' && document.body.classList.contains('sheet-open')) { closeSheet(); return; }
   if (!practice || !location.hash.includes('/practice/run') || e.target.matches('input,select,textarea')) return;
   if (practice.dir === 'speak' && !practice.flipped) return;
@@ -1892,6 +1956,7 @@ document.addEventListener('keydown', (e) => {
 async function route() {
   tts.stop();
   closeSheet();
+  closeShowIt();
   capture?.stop();
   stopPlayerAudio();
   pl = null;

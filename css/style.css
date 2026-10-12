@@ -837,3 +837,32 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .pp-howto { font-size: 13px; color: var(--muted); margin: 0 2px 8px; }
 .pp-howto .pron-k { color: var(--accent-ink); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sit-row.done small { color: #4ade80; } }
+
+/* ---------- lookup cards, Show this, offline ---------- */
+.lk-main { display: flex; align-items: flex-start; gap: 12px; }
+.lk-text { flex: 1; min-width: 0; }
+.round-btn.lk-play { width: 52px; height: 52px; flex: none; background: var(--accent); border-color: var(--accent); color: #fff; }
+.round-btn.lk-play .ic { width: 22px; height: 22px; fill: currentColor; stroke-width: 1.2; }
+.round-btn.lk-play[data-state="paused"] { opacity: .75; }
+.lk-spacer { flex: 1; }
+.lk-kind { font-size: 11px; font-weight: 700; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; }
+.card.lk .card-actions { margin-top: 10px; }
+.card.lk .fav { margin-right: -8px; }
+.chips.dim { opacity: .45; }
+.count .link-btn { min-height: 0; padding: 0; font-size: 13px; }
+.offline-btn { margin: 0 0 12px; }
+.offline-btn.on { color: #15803d; border-color: #c6ead3; background: #e8f7ee; }
+.offline-btn.on .ic { color: #15803d; }
+
+#showit {
+  position: fixed; inset: 0; z-index: 60; background: var(--surface); color: var(--ink);
+  display: grid; place-items: center; padding: calc(24px + env(safe-area-inset-top)) 20px calc(24px + env(safe-area-inset-bottom));
+}
+body.showit-open { overflow: hidden; }
+.showit-x { position: absolute; top: calc(12px + env(safe-area-inset-top)); right: 12px; background: var(--surface-2); color: var(--ink); }
+.showit-body { display: grid; gap: 18px; justify-items: center; text-align: center; max-width: 30ch; }
+.showit-native { font-family: var(--font-native); font-size: clamp(36px, 11vw, 64px); font-weight: 800; line-height: 1.15; }
+.showit-reading { font-family: var(--font-native); font-size: 22px; color: var(--muted); }
+.showit-en { font-size: 18px; color: var(--muted); }
+.showit-play { margin-top: 8px; width: 84px; height: 84px; border: 0; }
+.showit-play .ic { width: 32px; height: 32px; fill: currentColor; stroke-width: 1.2; }

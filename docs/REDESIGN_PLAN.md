@@ -1,6 +1,6 @@
 # Wayword redesign plan: one loop, one next step
 
-2026-10-12. Follows `docs/FLOW_AUDIT.md` and the research in `docs/research/`. Status: **approved 2026-10-12.** Phases 1–3 shipped 2026-10-12.
+2026-10-12. Follows `docs/FLOW_AUDIT.md` and the research in `docs/research/`. Status: **approved 2026-10-12.** Phases 1–4 shipped 2026-10-12.
 
 ## The owner's answers that shape this
 
