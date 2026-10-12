@@ -26,6 +26,15 @@ Nothing below was changed in the data. These are things the app can't show yet, 
 - **Arabic ع** is shown three ways: an apostrophe (t'eed), a capital vowel (A-ra-bee), or nothing (ba-EED).
 - **Hebrew `know_a_little` "KT-sat"** for קצת. It's said "ktsat", one syllable.
 - **French `nearest` "oo eh luh/lah plew PROSH"** leaves out the second "le/la" that is in the French text.
+- **Stress errors found while writing "How it's said" tips (2026-10-12).** The tips give the right stress, so for now they look like they contradict the line:
+  - Italian `me_too`: "Anch'io" is stressed on io, ahng-KEE-oh; the line says AHN-kee-oh.
+  - Romanian `learning_language`: "română" is roh-MUH-nuh (the â vowel); the line says roh-MOO-nuh. The same file's `dont_speak_well` already writes â as "muh".
+  - Romanian `love_languages` and `like_talking`: "place" is PLAH-cheh; the lines say plah-CHEH.
+  - Romanian `very_helpful`: "amabil" is ah-MAH-beel; the line says ah-mah-BEEL.
+- **Possible issues, need a native check (flagged 2026-10-12, not changed):**
+  - Japanese `whats_in_this` and `dairy`: 入って is written "hai-teh", which leaves out the small-っ pause ("hait-teh"). The tips say "hait-teh".
+  - Hebrew `pay_card` and `cash_or_card`: כרטיס is written "khar-TEES". On its own (after או) it's "kar-TEES", and many Israelis keep the k after be- too.
+  - Arabic `bill`: "il-HI-saab" may more often be "il-H'SAAB" in Levantine speech.
 - **Portuguese "com" is spelled two ways:** "kohn" in `excuse_me` (Com licença) and "kong" in `pay_card` / `apple_pay` (com cartão). It's the same nasal vowel [kõ] either way; one spelling would be clearer.
 
 ## Display-only adjustment

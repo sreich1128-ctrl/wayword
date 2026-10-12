@@ -156,5 +156,27 @@
         }
       ]
     }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a speaker of standard (Parisian) French says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "please": "In everyday speech the l often drops out: see-voo-PLEH.",
+    "dont_speak_well": "At normal speed one of the two \"uh\" sounds drops: zhuhn parl pah byen frahn-SAY. In casual speech ne often disappears altogether: zhuh parl pah byen frahn-SAY.",
+    "dont_understand": "Ne shrinks to just n: zhuhn kohn-PRAHN pah. In casual speech it's often dropped altogether: zhuh kohn-PRAHN pah.",
+    "speak_slowly": "The middle e of lentement is silent at normal speed: lahnt-MAHN.",
+    "what_mean": "Qu'est-ce que is said as one quick word, kesk: kesk sah vuh DEER.",
+    "learning_by_trying": "En and essayant are always linked, the n carrying over: ahn-neh-say-YAHN. De loses its vowel: zhah-PRAHN ahn-neh-say-YAHN d'par-LAY.",
+    "can_i_have": "Je often loses its vowel and runs into peux, so it sounds like sh: shpuh ah-VWAHR.",
+    "i_would_like": "Je loses its vowel and runs into voudrais: zhvoo-DRAY.",
+    "whats_in_this": "Il y a is usually squeezed to \"ee-yah\", with no l: kes-kee-YAH duh-DAHN.",
+    "dairy": "Il y a is usually squeezed to \"ee-yah\", with no l: es-kee-YAH day proh-DWEE lay-TYAY.",
+    "recommend_food": "Qu'est-ce que shrinks to kesk, and the e of recommandez almost vanishes: kesk voo rkoh-mahn-DAY.",
+    "tip_included": "Service runs straight into est, its s starting the next syllable: luh sehr-VEE-seh kohn-PREE.",
+    "people_tip": "A sounded final consonant joins the next vowel: laisse un is \"leh-SUHN\", and pourboire ici is \"poor-BWAH-ree-SEE\".",
+    "live_here": "Habites runs into ici, its t starting the next syllable: tew ah-BEE-tee-SEE.",
+    "been_america": "In speech, tu es is usually squeezed to t'es, \"tay\": tay day-ZHAH ah-LAY oh zay-tah-zew-NEE.",
+    "im_visiting": "Suis usually links onto en with a z sound: zhuh swee-ZAHN vee-ZEET. In casual speech, je suis is often just \"shwee\".",
+    "love_languages": "The r of j'adore joins apprendre, and the -re at the end of apprendre is often clipped: zhah-DOH-rah-PRAHND lay LAHNG.",
+    "youre_funny": "In speech, tu es is usually squeezed to t'es: tay DROL.",
+    "thanks_help": "Ton links onto aide, its n starting the next syllable: mehr-SEE poor tohn-NED."
+  }
 }

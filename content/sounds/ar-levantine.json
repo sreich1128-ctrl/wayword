@@ -162,5 +162,13 @@
         }
       ]
     }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a Levantine city speaker says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "good_morning": "The H at the end of صباح carries over into il, so it sounds like one word: sa-BAA-Hil-khayr.",
+    "bathroom": "The n of وين carries over into il: way-nil-HAM-maam.",
+    "where_from": "The words link up, each final n carrying over into the next vowel: min-WAY-nin-ta.",
+    "me_too": "و joins straight onto أنا: WA-na ka-MAAN.",
+    "how_get": "على is often cut to a quick 'a and joined to the next word (the dataset writes it this way in عأمريكا): keef ba-ROOH 'a___."
+  }
 }

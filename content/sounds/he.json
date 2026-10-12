@@ -15,5 +15,15 @@
     { "symbol": "ב  ו", "name": "Bet / Vav", "spelled": "b or v", "how": "ב is b with a dot inside and v without one, but the dots are usually left out, so learn each word by ear. ו used as a consonant is v.", "examples": [{ "id": "please", "mark": "ב" }, { "id": "good_morning", "mark": "ב" }, { "id": "dont_understand", "mark": "ב" }] },
     { "symbol": "פ", "name": "Pe", "spelled": "p or f", "how": "Same idea as ב: p with a dot, f without. A final פ is written ף and is always f.", "examples": [{ "id": "where_is", "mark": "פ" }, { "id": "coffee", "mark": "פ" }, { "id": "help_me", "mark": "פ" }] },
     { "symbol": "ש", "name": "Shin / Sin", "spelled": "sh or s", "how": "Usually sh, but sometimes s. Again, the dot that tells them apart is usually left out.", "examples": [{ "id": "hello", "mark": "ש" }, { "id": "love_languages", "mark": "ש" }] }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how an Israeli speaker says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "please": "In quick everyday speech it often shrinks to three syllables: be-vak-SHA.",
+    "coffee": "בבקשה often shrinks in quick speech: ka-FE, be-vak-SHA.",
+    "know_a_little": "קצת is a single syllable, with k, t and s run together: a-NEE yo-DE-a ktsat.",
+    "say_again": "The h of להגיד is often light or dropped in everyday speech: ef-SHAR le-a-GEED et ze shuv.",
+    "nice_meeting": "The h of להכיר is often light or dropped: na-EEM le-a-KEER.",
+    "love_languages": "The h of אוהב is often light or dropped: a-NEE o-EV lil-MOD sa-FOT.",
+    "like_talking": "The h of אוהב is often light or dropped: a-NEE o-EV le-da-BER it-KHA."
+  }
 }

@@ -16,5 +16,26 @@
     { "symbol": "ん", "name": "N", "spelled": "n (sometimes m or ng)", "how": "ん is a full beat on its own, and it bends toward the next sound: m before b, p or m; ng before k or g; a nasal hum at the end of a word.", "examples": [{ "id": "excuse_me", "mark": "ん" }, { "id": "dont_speak_well", "mark": "日本語" }, { "id": "cash_or_card", "mark": "現金" }] },
     { "symbol": "は  を", "name": "Particles: ha → wa, wo → o", "spelled": "wah, oh", "how": "When は marks the topic it's said \"wa\", and を is said \"o\". That's why こんにちは ends in \"wa\" and コーヒーを is \"koh-hee o\".", "examples": [{ "id": "hello", "mark": "は" }, { "id": "where_is", "mark": "は" }, { "id": "coffee", "mark": "を" }] },
     { "symbol": "つ  ふ", "name": "Tsu and Fu", "spelled": "tsoo, foo", "how": "つ is \"ts\" as in \"cats\" plus a short u. ふ is a soft f made by blowing through relaxed lips, closer to an h than a hard English f.", "examples": [{ "id": "help_me" }, { "id": "tip_included" }] }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a native Japanese speaker says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "good_morning": "ござい runs together so it sounds like \"zai\" (rhymes with \"eye\"): oh-hah-yoh goh-zai-mahs.",
+    "thank_you": "とう is one long o, and ござい sounds like \"zai\": ah-ree-gah-toh goh-zai-mahs.",
+    "excuse_me": "In casual speech many people say すいません instead: swee-mah-sen. You'll hear both.",
+    "how_are_you": "The ん of 元気 comes before a k, so it's an ng sound: oh-geng-kee des-kah.",
+    "dont_speak_well": "The ん of 日本語 comes before a g, so it's an ng sound: nee-hong-goh wah ah-mah-ree hah-nah-seh-mah-sen.",
+    "speak_slowly": "The i of 話して is whispered (it sits between sh and t): hah-nahsh-teh moh-rah-eh-mahs-kah.",
+    "learning_language": "The i of して is whispered between sh and t, and ています often shrinks to てます in speech: ben-kyoh shteh-mahs.",
+    "learning_by_trying": "話して has a whispered i (hah-nahsh-teh), and ています often shrinks to てます: ben-kyoh shteh-mahs.",
+    "what_do_you_do": "して has a whispered i, and ています often shrinks to てます: nah-nee oh shteh-mahs-kah.",
+    "whats_in_this": "Keep the tiny pause of the small っ in 入って: hait-teh. In speech ています often shrinks too: hait-teh-mahs-kah.",
+    "dairy": "Keep the tiny pause of the small っ in 入って, and ています often shrinks: nyoo-say-heen wah hait-teh-mahs-kah.",
+    "live_here": "でいます often shrinks to でます in speech: koh-koh nee soon-deh-mahs-kah.",
+    "im_visiting": "The i of 来て is whispered (between k and t): ryoh-koh deh k'teh ee-mahs, often just k'teh-mahs.",
+    "nice_meeting": "The i of できて is whispered (between k and t): oh-ai deh-k'teh yoh-kaht-tah des.",
+    "tip_included": "The u of 含まれて is whispered (between f and k): f'koo-mah-reh-teh ee-mahs-kah.",
+    "very_helpful": "The u of 助かります is whispered (between s and k): hon-toh nee tahs-kah-ree-mahs.",
+    "recommend_food": "The first す is whispered (it sits between two s sounds): ohs-soo-meh wah nan des-kah.",
+    "like_talking": "話して has a whispered i: hah-nahsh-teh ee-teh tah-noh-shee des."
+  }
 }

@@ -180,5 +180,18 @@
         }
       ]
     }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a speaker of standard Romanian says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "know_a_little": "Știu is a single syllable, not two: SHTYOO poo-TSEEN.",
+    "learning_language": "The â in română is Romanian's throaty vowel (see Â and Î), not an \"oo\": in-VUHTS roh-MUH-nuh.",
+    "how_get": "Cum and ajung run together, the m starting the next syllable: koo-mah-ZHOONG lah.",
+    "tip_included": "Bacșișul runs into este, its l starting the next syllable: bak-SHEE-shoo-LYES-teh een-KLOOS.",
+    "im_new_here": "Nou is a single syllable, an \"oh\" closing into a quick w: soont NOHW ah-EETCH.",
+    "love_languages": "Place is stressed on its first syllable, and the final i of limbi is barely said: im PLAH-cheh moolt suh in-VUHTS LEEMB.",
+    "me_too": "Eu is a single syllable, a y sound, then an \"eh\" closing into a quick w: shee YEHW.",
+    "like_talking": "Place is stressed on its first syllable: im PLAH-cheh suh vor-BESK koo TEE-neh.",
+    "instagram": "Tău is a single syllable, an \"uh\" closing into a quick w: im dye Instagram-ool TUHW.",
+    "very_helpful": "Amabil is stressed in the middle: soon-TETS FWAHR-teh ah-MAH-beel."
+  }
 }

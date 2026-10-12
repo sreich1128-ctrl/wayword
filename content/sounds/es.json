@@ -7,12 +7,158 @@
     "Vowels are short and pure: \"oh\" without the English glide to \"ohw\"."
   ],
   "sounds": [
-    { "symbol": "r  rr", "name": "Tap vs trill", "spelled": "r", "how": "A single r between vowels is one quick tap, like the tt in American \"butter\". rr, and r at the start of a word, is a rolled trill.", "examples": [{ "id": "say_again", "mark": "r" }, { "id": "please", "mark": "r" }, { "id": "really", "mark": "r" }] },
-    { "symbol": "j  ge  gi", "name": "J and soft G", "spelled": "h", "how": "A throaty h, from mild (Caribbean) to scraping (Spain). Lejos is \"LEH-hos\".", "examples": [{ "id": "is_far", "mark": "j" }, { "id": "pay_card", "mark": "j" }, { "id": "people_tip", "mark": "j" }] },
-    { "symbol": "ll  y", "name": "LL and Y", "spelled": "y", "how": "Both are y as in \"yes\" in most places. In Argentina and Uruguay they become sh or zh.", "examples": [{ "id": "how_get", "mark": "ll" }, { "id": "your_name", "mark": "ll" }, { "id": "me_too", "mark": "Y" }] },
-    { "symbol": "ñ", "name": "Eñe", "spelled": "ny", "how": "ny as in \"canyon\": baño is \"BAN-yoh\".", "examples": [{ "id": "bathroom", "mark": "ñ" }, { "id": "dont_speak_well", "mark": "ñ" }] },
-    { "symbol": "h", "name": "Silent H", "spelled": "(not written)", "how": "h is always silent: hola is \"OH-lah\".", "examples": [{ "id": "hello", "mark": "H" }, { "id": "speak_english", "mark": "H" }] },
-    { "symbol": "c  z", "name": "C and Z", "spelled": "s", "how": "z, and c before e or i, = s in Latin America. In most of Spain they're a soft th, so gracias sounds like \"GRAH-thyas\". Both are correct.", "examples": [{ "id": "thank_you", "mark": "c" }, { "id": "speak_slowly", "mark": "c" }, { "id": "been_america", "mark": "z" }] },
-    { "symbol": "b  v", "name": "B and V", "spelled": "b / v", "how": "They sound the same: a b at the start, and a soft b with lips barely touching between vowels.", "examples": [{ "id": "really", "mark": "v" }, { "id": "live_here", "mark": "V" }, { "id": "dont_speak_well", "mark": "b" }] }
-  ]
+    {
+      "symbol": "r  rr",
+      "name": "Tap vs trill",
+      "spelled": "r",
+      "how": "A single r between vowels is one quick tap, like the tt in American \"butter\". rr, and r at the start of a word, is a rolled trill.",
+      "examples": [
+        {
+          "id": "say_again",
+          "mark": "r"
+        },
+        {
+          "id": "please",
+          "mark": "r"
+        },
+        {
+          "id": "really",
+          "mark": "r"
+        }
+      ]
+    },
+    {
+      "symbol": "j  ge  gi",
+      "name": "J and soft G",
+      "spelled": "h",
+      "how": "A throaty h, from mild (Caribbean) to scraping (Spain). Lejos is \"LEH-hos\".",
+      "examples": [
+        {
+          "id": "is_far",
+          "mark": "j"
+        },
+        {
+          "id": "pay_card",
+          "mark": "j"
+        },
+        {
+          "id": "people_tip",
+          "mark": "j"
+        }
+      ]
+    },
+    {
+      "symbol": "ll  y",
+      "name": "LL and Y",
+      "spelled": "y",
+      "how": "Both are y as in \"yes\" in most places. In Argentina and Uruguay they become sh or zh.",
+      "examples": [
+        {
+          "id": "how_get",
+          "mark": "ll"
+        },
+        {
+          "id": "your_name",
+          "mark": "ll"
+        },
+        {
+          "id": "me_too",
+          "mark": "Y"
+        }
+      ]
+    },
+    {
+      "symbol": "ñ",
+      "name": "Eñe",
+      "spelled": "ny",
+      "how": "ny as in \"canyon\": baño is \"BAN-yoh\".",
+      "examples": [
+        {
+          "id": "bathroom",
+          "mark": "ñ"
+        },
+        {
+          "id": "dont_speak_well",
+          "mark": "ñ"
+        }
+      ]
+    },
+    {
+      "symbol": "h",
+      "name": "Silent H",
+      "spelled": "(not written)",
+      "how": "h is always silent: hola is \"OH-lah\".",
+      "examples": [
+        {
+          "id": "hello",
+          "mark": "H"
+        },
+        {
+          "id": "speak_english",
+          "mark": "H"
+        }
+      ]
+    },
+    {
+      "symbol": "c  z",
+      "name": "C and Z",
+      "spelled": "s",
+      "how": "z, and c before e or i, = s in Latin America. In most of Spain they're a soft th, so gracias sounds like \"GRAH-thyas\". Both are correct.",
+      "examples": [
+        {
+          "id": "thank_you",
+          "mark": "c"
+        },
+        {
+          "id": "speak_slowly",
+          "mark": "c"
+        },
+        {
+          "id": "been_america",
+          "mark": "z"
+        }
+      ]
+    },
+    {
+      "symbol": "b  v",
+      "name": "B and V",
+      "spelled": "b / v",
+      "how": "They sound the same: a b at the start, and a soft b with lips barely touching between vowels.",
+      "examples": [
+        {
+          "id": "really",
+          "mark": "v"
+        },
+        {
+          "id": "live_here",
+          "mark": "V"
+        },
+        {
+          "id": "dont_speak_well",
+          "mark": "b"
+        }
+      ]
+    }
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a Latin American speaker says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "how_are_you": "Cómo and estás run together with no break between the o and the e: KOH-moh-es-TAS, said like one word.",
+    "speak_english": "The s of hablas joins onto inglés: AH-blah-seen-GLES.",
+    "dont_speak_well": "The h is silent, so no and hablo slide into each other, and the n of bien carries over onto español: noh-AH-bloh BYEH-nes-pah-NYOL, all in one breath.",
+    "say_again": "The d in puedes is soft, close to the th in \"this\": PWEH-thes reh-peh-TEER. Most d's between vowels sound like this.",
+    "speak_slowly": "The s of puedes joins onto hablar (the h is silent): PWEH-deh-sah-BLAR mas des-PAH-syoh.",
+    "learning_language": "The y of estoy starts the next syllable, and aprendiendo runs into español: es-TOH-yah-pren-DYEN-doh-es-pah-NYOL.",
+    "where_is": "The e at the end of dónde and the e at the start of está merge into one: DON-des-TAH.",
+    "how_get": "The g in llego is soft: between vowels the back of the tongue doesn't quite close, so it's a breathy g. Llego and a run together: KOH-moh YEH-goh-ah.",
+    "coffee": "The n of un sounds like ng before the k sound of café: oong kah-FEH.",
+    "water": "The g in agua is very soft, so it can sound almost like AH-wah. Keep a hint of g, but don't make it hard.",
+    "where_from": "The e at the end of dónde and the e of eres blend into one: deh DON-deh-res, said like a single word. The r is a single quick tap.",
+    "live_here": "The s of vives joins onto aquí: VEE-veh-sah-KEE. Both v's are a soft b.",
+    "been_america": "Every final s and z joins onto the next vowel, so the phrase becomes one chain: ah-ses-TAH-doh al-GOO-nah VEH-seh-nes-TAH-doh-soo-NEE-dos.",
+    "love_languages": "Matching vowels merge, and the r of aprender links onto idiomas: men-KAN-tah-pren-DEH-ree-DYOH-mas.",
+    "really": "The final d is very soft and often barely there: deh vehr-DAH. The v is a soft b.",
+    "interesting": "Qué and interesante blend at the start: kayn-teh-reh-SAN-teh.",
+    "like_talking": "Gusta and hablar share one a (the h is silent): meh GOOS-tah-BLAR kon-TEE-goh. The g in contigo is soft.",
+    "very_helpful": "Muy glides straight into amable, its y starting the next syllable: EH-res mwee-yah-MAH-bleh."
+  }
 }

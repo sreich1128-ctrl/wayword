@@ -188,5 +188,25 @@
         }
       ]
     }
-  ]
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a native Russian speaker says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "good_morning": "The endings are weak and quick: DOH-bruh-yuh OO-truh.",
+    "how_are_you": "The k of как turns into a g before the d of дела, so it comes out kag dee-LAH.",
+    "please": "In everyday speech the -уй- in the middle drops out: pah-ZHAHL-stuh. In a hurry it can shrink to just pzhahl-stuh.",
+    "thank_you": "The final o is a weak \"uh\": spah-SEE-buh.",
+    "dont_speak_well": "Only the syllable just before the stress keeps a clear \"ah\"; the one before that shrinks to \"uh\": guh-vah-RYOO. Русски has just one s sound: pah-ROO-skee.",
+    "dont_understand": "Не attaches to the verb like one long word, and the first o of понимаю is weak: ya nee-puh-nee-MAH-yoo.",
+    "learning_language": "Русский has just one s sound, despite the double letter: ya oo-CHOO ROO-skee.",
+    "where_is": "Где is a single syllable: the g and d go straight together, with no vowel in between.",
+    "bathroom": "Туа slides into one syllable, \"twah\": gdyeh twah-LYET.",
+    "how_get": "Как becomes kag before the d, and -ться is said as one ts sound: kag dah-BRAH-tsuh dah.",
+    "is_far": "Это's final o is weak, and the first syllable of далеко shrinks to \"duh\": EH-tuh duh-lee-KOH.",
+    "how_much": "The final o's are weak \"uh\" sounds: SKOL-kuh EH-tuh STOH-eet.",
+    "bill": "Most people say сч as one long, soft sh, without a clear ch in it: something like sh-shyot.",
+    "thanks_help": "The final щ is a long, soft sh, and the second o is weak: spah-SEE-buh zah POH-muhsh.",
+    "what_do_you_do": "The ш and с of -шься merge into one long sh, and за is weak: chem ty zuh-nee-MAH-yesh-shuh.",
+    "nice_meeting": "-ться is one ts sound, and the first o of познакомиться is weak: pree-YAHT-nuh puhz-nah-KOH-mee-tsuh.",
+    "like_talking": "-тся in нравится is one ts sound, and the first syllable of разговаривать shrinks: mnyeh NRAH-vee-tsuh s tah-BOY ruhz-gah-VAH-ree-vuht."
+  }
 }

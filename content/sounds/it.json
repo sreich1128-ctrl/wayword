@@ -8,12 +8,163 @@
     "Doubled letters in the pronunciation (kahf-FEH, vor-RAY) mean hold the consonant."
   ],
   "sounds": [
-    { "symbol": "ff  rr  tt", "name": "Double consonants", "spelled": "kahf-FEH", "how": "Hold a doubled consonant for longer, with a tiny pause before releasing it. The difference changes meaning (pala/palla, caro/carro).", "examples": [{ "id": "coffee", "mark": "ff" }, { "id": "really", "mark": "vv" }, { "id": "i_would_like", "mark": "rr" }, { "id": "dairy", "mark": "tt" }] },
-    { "symbol": "ci ce gi ge", "name": "Soft C and G", "spelled": "ch, j", "how": "Before i or e, c = ch and g = j. The i is often just a spelling signal: ciao is \"chow\", giorno is \"JOR-noh\".", "examples": [{ "id": "hello", "mark": "Ci" }, { "id": "how_say", "mark": "ce" }, { "id": "good_morning", "mark": "gi" }] },
-    { "symbol": "chi che ghi", "name": "Hard C and G", "spelled": "k, g", "how": "Adding an h keeps them hard: chi is \"kee\", che is \"keh\".", "examples": [{ "id": "your_name", "mark": "chi" }, { "id": "me_too", "mark": "ch" }, { "id": "interesting", "mark": "Che" }] },
-    { "symbol": "gn  gli", "name": "GN and GLI", "spelled": "ny, ly", "how": "gn = ny as in \"canyon\" (bagno is \"BAH-nyoh\"). gli = a soft ly, like the lli in \"million\".", "examples": [{ "id": "bathroom", "mark": "gn" }, { "id": "what_mean", "mark": "gn" }, { "id": "recommend_food", "mark": "gli" }] },
-    { "symbol": "sc", "name": "SC", "spelled": "sh / sk", "how": "Before i or e, sc = sh (lascia is \"LAH-shah\"). Before other vowels it's sk (capisco).", "examples": [{ "id": "people_tip", "mark": "sci" }, { "id": "nice_meeting", "mark": "sce" }, { "id": "dont_understand", "mark": "sc" }] },
-    { "symbol": "z", "name": "Z", "spelled": "ts / dz", "how": "z is ts (grazie is \"GRAH-tsyeh\"), or dz in some words. It's never the English z.", "examples": [{ "id": "thank_you", "mark": "z" }, { "id": "tip_included", "mark": "z" }] },
-    { "symbol": "r", "name": "Rolled R", "spelled": "r", "how": "A tap, or a short trill, with the tip of the tongue. A double rr is a full trill.", "examples": [{ "id": "thank_you", "mark": "r" }, { "id": "please", "mark": "r" }, { "id": "how_get", "mark": "rr" }] }
-  ]
+    {
+      "symbol": "ff  rr  tt",
+      "name": "Double consonants",
+      "spelled": "kahf-FEH",
+      "how": "Hold a doubled consonant for longer, with a tiny pause before releasing it. The difference changes meaning (pala/palla, caro/carro).",
+      "examples": [
+        {
+          "id": "coffee",
+          "mark": "ff"
+        },
+        {
+          "id": "really",
+          "mark": "vv"
+        },
+        {
+          "id": "i_would_like",
+          "mark": "rr"
+        },
+        {
+          "id": "dairy",
+          "mark": "tt"
+        }
+      ]
+    },
+    {
+      "symbol": "ci ce gi ge",
+      "name": "Soft C and G",
+      "spelled": "ch, j",
+      "how": "Before i or e, c = ch and g = j. The i is often just a spelling signal: ciao is \"chow\", giorno is \"JOR-noh\".",
+      "examples": [
+        {
+          "id": "hello",
+          "mark": "Ci"
+        },
+        {
+          "id": "how_say",
+          "mark": "ce"
+        },
+        {
+          "id": "good_morning",
+          "mark": "gi"
+        }
+      ]
+    },
+    {
+      "symbol": "chi che ghi",
+      "name": "Hard C and G",
+      "spelled": "k, g",
+      "how": "Adding an h keeps them hard: chi is \"kee\", che is \"keh\".",
+      "examples": [
+        {
+          "id": "your_name",
+          "mark": "chi"
+        },
+        {
+          "id": "me_too",
+          "mark": "ch"
+        },
+        {
+          "id": "interesting",
+          "mark": "Che"
+        }
+      ]
+    },
+    {
+      "symbol": "gn  gli",
+      "name": "GN and GLI",
+      "spelled": "ny, ly",
+      "how": "gn = ny as in \"canyon\" (bagno is \"BAH-nyoh\"). gli = a soft ly, like the lli in \"million\".",
+      "examples": [
+        {
+          "id": "bathroom",
+          "mark": "gn"
+        },
+        {
+          "id": "what_mean",
+          "mark": "gn"
+        },
+        {
+          "id": "recommend_food",
+          "mark": "gli"
+        }
+      ]
+    },
+    {
+      "symbol": "sc",
+      "name": "SC",
+      "spelled": "sh / sk",
+      "how": "Before i or e, sc = sh (lascia is \"LAH-shah\"). Before other vowels it's sk (capisco).",
+      "examples": [
+        {
+          "id": "people_tip",
+          "mark": "sci"
+        },
+        {
+          "id": "nice_meeting",
+          "mark": "sce"
+        },
+        {
+          "id": "dont_understand",
+          "mark": "sc"
+        }
+      ]
+    },
+    {
+      "symbol": "z",
+      "name": "Z",
+      "spelled": "ts / dz",
+      "how": "z is ts (grazie is \"GRAH-tsyeh\"), or dz in some words. It's never the English z.",
+      "examples": [
+        {
+          "id": "thank_you",
+          "mark": "z"
+        },
+        {
+          "id": "tip_included",
+          "mark": "z"
+        }
+      ]
+    },
+    {
+      "symbol": "r",
+      "name": "Rolled R",
+      "spelled": "r",
+      "how": "A tap, or a short trill, with the tip of the tongue. A double rr is a full trill.",
+      "examples": [
+        {
+          "id": "thank_you",
+          "mark": "r"
+        },
+        {
+          "id": "please",
+          "mark": "r"
+        },
+        {
+          "id": "how_get",
+          "mark": "rr"
+        }
+      ]
+    }
+  ],
+  "tips_source": "\"How it's said\" tips are written for Wayword (not part of the dataset): how a speaker of standard Italian says the phrase at normal speed, next to the careful pronunciation line.",
+  "tips": {
+    "dont_speak_well": "The n of non turns into m before the p of parlo: nom PAR-loh BEH-neh ee-tah-LYAH-noh.",
+    "dont_understand": "The n of non sounds like ng before the k sound: nong kah-PEE-skoh.",
+    "say_again": "In standard Italian, può doubles the r after it: pwor-ree-PEH-teh-reh. Stress the second syllable of ripetere, not the third.",
+    "speak_slowly": "In standard Italian, stressed words like può and più double the consonant after them: pwop-par-LAH-reh pyool-len-tah-MEN-teh.",
+    "how_say": "In standard Italian, come doubles the s of si: KOH-mehs-see DEE-cheh.",
+    "learning_by_trying": "In standard Italian, a doubles the p of parlare: ap-par-LAH-reh. Imparo is stressed on PAH, not on the last syllable.",
+    "is_far": "In standard Italian, è doubles the l that follows: el-lon-TAH-noh. Many northern speakers don't double it.",
+    "coffee": "The n of un sounds like ng before the k sound of caffè: oong kahf-FEH.",
+    "whats_in_this": "In standard Italian, c'è doubles the d of dentro: KOH-zah chehd-DEN-troh.",
+    "people_tip": "In standard Italian, qui doubles the s of si: kwees-see LAH-shah lah MAHN-chah.",
+    "your_name": "In standard Italian, come doubles the t of ti: KOH-meht-tee KYAH-mee.",
+    "where_from": "In standard Italian, dove doubles the s of sei: dee DOH-vehs-SAY.",
+    "what_do_you_do": "In standard Italian, che doubles the l of lavoro: kel-lah-VOH-roh fai.",
+    "me_too": "Anch'io is one word with the stress on io, and the n sounds like ng before the k: ahng-KEE-oh.",
+    "and_you": "In standard Italian, e doubles the t of tu: et-TOO."
+  }
 }
