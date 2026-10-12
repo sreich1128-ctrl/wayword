@@ -1070,11 +1070,12 @@ let capture = null;
 // What you said vs the phrase: each word marked heard / nearly / not heard,
 // plus buttons to hear the correct audio, your take, or both back to back.
 // One take at a time. The mic button shows a live level ring while you speak.
-function startCapture(onUpdate, onDone) {
+function startCapture(onUpdate, onDone, onReady) {
   tts.stop();
   const lang = L.lang;
   capture = mic.capture({
     asrLang: lang.meta.asr || lang.meta.bcp47,
+    onReady,
     onInterim: (text) => onUpdate(text),
     onLevel: (lvl) => document.querySelectorAll('.mic-big.rec').forEach((b) => b.style.setProperty('--lvl', lvl.toFixed(3))),
   });
@@ -1100,8 +1101,9 @@ function playTake(url, after) {
   takeAudio.play().catch(() => { toast('Couldn’t play your recording. Check the volume.'); next(); });
 }
 
-const micState = (rec, finishing, interim, idleText) => rec
-  ? (finishing ? 'Finishing…' : interim ? `<bdi ${nativeAttrs(L.lang)}>${esc(interim)}</bdi>` : 'Listening… stops when you pause')
+// While the mic is opening: "Wait…". Once it's live: "Speak now".
+const micState = (rec, finishing, interim, idleText, live = true) => rec
+  ? (finishing ? 'Finishing…' : interim ? `<bdi ${nativeAttrs(L.lang)}>${esc(interim)}</bdi>` : live ? '<b class="speak-now">Speak now</b> · stops when you pause' : 'Wait… opening the mic')
   : idleText;
 
 // Before the first recording: what the permission prompt is for, and where audio goes.
@@ -1293,8 +1295,8 @@ function promptInner() {
   const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : 'Say it out loud, then hear the right version';
   return `<article class="pp-phrase pp-prompt"><span class="fc-label">How do you say this in ${esc(L.lang.name)}?</span><p class="fc-en">${withSlots(p.english)}</p></article>
     ${canPracticeAloud() ? `<div class="pp-stage">
-      <button class="mic-big pp-big ${pl.rec ? 'rec' : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
-      <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle)}</span>
+      <button class="mic-big pp-big ${pl.rec ? (pl.live ? 'rec' : 'rec warming') : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
+      <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle, pl.live)}</span>
       ${failed ? `<a class="link-btn" href="#/${L.lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
       ${pl.rec ? '' : micPrimer()}
     </div>` : ''}
@@ -1315,8 +1317,8 @@ function playerInner() {
       <span class="pp-hint">Listen and follow the pronunciation line</span>`;
   } else if (step === 'say' || (step === 'compare' && where === 'sheet') || pl.rec) {
     const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : step === 'compare' ? 'Tap to try again' : 'Your turn: tap, then say it';
-    stage = `<button class="mic-big pp-big ${pl.rec ? 'rec' : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
-      <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle)}</span>
+    stage = `<button class="mic-big pp-big ${pl.rec ? (pl.live ? 'rec' : 'rec warming') : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
+      <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle, pl.live)}</span>
       ${failed ? `<a class="link-btn" href="#/${L.lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
       ${step === 'say' && !pl.rec ? micPrimer() : ''}`;
   } else stage = '';
@@ -1438,8 +1440,9 @@ function plSync() {
 function plMic() {
   if (pl.rec) { pl.finishing = true; drawPlayer(); capture?.stop(); return; }
   stopPlayerAudio();
-  Object.assign(pl, { rec: true, finishing: false, interim: '', step: pl.mode === 'recall' ? pl.step : pl.step === 'compare' ? 'compare' : 'say' });
+  Object.assign(pl, { rec: true, live: false, finishing: false, interim: '', step: pl.mode === 'recall' ? pl.step : pl.step === 'compare' ? 'compare' : 'say' });
   const run = pl;
+  const onReady = () => { if (pl === run && pl.rec) { pl.live = true; drawPlayer(); } };
   startCapture((t) => { if (pl === run) { pl.interim = t; drawPlayer(); } }, (take) => {
     if (pl !== run) return;
     const ok = !!(take.url || take.transcript);
@@ -1450,7 +1453,7 @@ function plMic() {
       document.querySelector('.pp-compare')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
       if (take.url) plGuide(); else plListen();
     }
-  });
+  }, onReady);
   drawPlayer();
 }
 

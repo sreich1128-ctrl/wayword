@@ -874,3 +874,8 @@ body.showit-open { overflow: hidden; }
 .pp-more-row > div { flex: 1; min-width: 0; display: grid; }
 .pp-more-row b { font-family: var(--font-native); font-size: 16px; }
 .pp-more-row small { font-size: 13px; color: var(--muted); }
+
+/* Mic opening: amber "wait" until the mic is really live, then red "speak now" */
+.mic-big.rec.warming { background: #f59e0b; box-shadow: 0 0 0 6px rgb(245 158 11 / .2); animation: none; }
+.speak-now { color: #dc2626; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .speak-now { color: #f87171; } }

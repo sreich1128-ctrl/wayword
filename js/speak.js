@@ -41,7 +41,9 @@ function pickMime() {
 // Returns { stop(), done }. done resolves to a report:
 //   { mode, url, ms, mime, peak, transcript, recError, srError }
 // onLevel(0..1) fires ~30x/second while recording; onInterim(text) as words arrive.
-export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onInterim } = {}) {
+// onReady() fires once the microphone (and the speech check) are really live. Opening the mic
+// takes a moment, especially on iPhone, so anything said before onReady is lost: show "wait" until then.
+export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onInterim, onReady } = {}) {
   const useRec = (mode === 'record' || mode === 'both') && canRecord;
   const useSR = (mode === 'recognize' || mode === 'both') && canRecognize;
   const report = { mode, url: null, ms: 0, mime: '', peak: 0, transcript: '', recError: null, srError: null };
@@ -59,11 +61,22 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
   let resolveDone;
   const done = new Promise((r) => { resolveDone = r; });
   const chunks = [];
+  let recLive = !useRec;
+  let srLive = !useSR;
+  let readyFired = false;
+  const ready = () => {
+    if (readyFired || finished || stopping || !(recLive && srLive)) return;
+    readyFired = true;
+    onReady?.();
+  };
+  // A recognizer that never reports its audio starting shouldn't keep you waiting forever.
+  const readyTimer = useSR ? setTimeout(() => { srLive = true; ready(); }, 1500) : 0;
 
   const finish = () => {
     if (finished) return;
     finished = true;
     clearTimeout(maxTimer);
+    clearTimeout(readyTimer);
     cancelAnimationFrame(raf);
     try { ctx?.close(); } catch { /* ignore */ }
     stream?.getTracks().forEach((t) => t.stop());
@@ -108,6 +121,8 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
       recorder.onerror = (e) => { report.recError = e.error?.name || 'recorder-error'; };
       recorder.start(250); // small slices, so a quick stop still has audio
       started = Date.now();
+      // The recorder needs a beat after start() before it captures sound.
+      setTimeout(() => { recLive = true; ready(); }, 150);
 
       if (ctx) {
         ctx.resume?.();
@@ -154,7 +169,8 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
         report.transcript = text;
         onInterim?.(text.trim());
       };
-      rec.onerror = (e) => { report.srError = e.error || 'error'; };
+      rec.onerror = (e) => { report.srError = e.error || 'error'; srLive = true; ready(); };
+      rec.onaudiostart = () => { srLive = true; ready(); };
       rec.onend = () => {
         srDone = true;
         // The recognizer decides you've finished: end the take (only if it heard words,
