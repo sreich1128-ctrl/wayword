@@ -866,3 +866,11 @@ body.showit-open { overflow: hidden; }
 .showit-en { font-size: 18px; color: var(--muted); }
 .showit-play { margin-top: 8px; width: 84px; height: 84px; border: 0; }
 .showit-play .ic { width: 32px; height: 32px; fill: currentColor; stroke-width: 1.2; }
+
+/* "Try another": patterns in context, inside the player */
+.pp-more { margin-top: 16px; padding: 12px; border-radius: 14px; border: 1px dashed color-mix(in srgb, var(--accent) 30%, var(--line)); display: grid; gap: 8px; }
+.pp-more .more-k { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-ink); }
+.pp-more-row { display: flex; align-items: center; gap: 10px; }
+.pp-more-row > div { flex: 1; min-width: 0; display: grid; }
+.pp-more-row b { font-family: var(--font-native); font-size: 16px; }
+.pp-more-row small { font-size: 13px; color: var(--muted); }

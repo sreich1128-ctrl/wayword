@@ -175,11 +175,6 @@ function micBtn(p, cls = '') {
 
 // Two labels only: Learning (started, being reviewed) and Locked in (passed every review).
 const statusLabel = (st) => (st === 'locked' ? 'Locked in' : st === 'learning' ? 'Learning' : '');
-function statusBtn(p, action = 'learned') {
-  const st = store.status(p.key);
-  return `<button class="learn ${st ? 'on' : ''} ${st === 'locked' ? 'locked' : ''}" data-action="${action}" data-key="${esc(p.key)}" aria-pressed="${!!st}" title="${st ? 'Tap to take it off your list' : 'Add to Learning'}">${icon(st === 'locked' ? 'lock' : 'check')}<span>${statusLabel(st) || 'Learn'}</span></button>`;
-}
-
 // "How it's said": natural-speed coaching from the sound guide, with a link to the guide.
 const sayTipNote = (p, link = true) => (p.say_tip
   ? `<p class="note"><span class="note-k">How it’s said</span>${esc(p.say_tip)}${link ? ` <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a>` : ''}</p>`
@@ -492,7 +487,7 @@ function viewMore() {
     ${section('Go deeper', `<div class="group">
       ${row({ href: `#/${code}/sounds`, ic: 'ear', title: 'Sound guide', sub: 'The tricky sounds, and how to read the pronunciation line' })}
       ${row({ href: `#/${code}/patterns`, ic: 'puzzle', title: 'Power patterns', sub: 'One sentence frame, many uses', count: patterns })}
-      ${row({ href: `#/${code}/practice/run?dir=type`, ic: 'list', title: 'Type it', sub: 'Write phrases out; get told exactly what to fix' })}
+      ${row({ href: `#/${code}/practice/run`, ic: 'list', title: 'Type it', sub: 'Write phrases out; get told exactly what to fix' })}
     </div>`)}
     ${canSpeak() || lang.meta.tts_note ? section('Audio', audioGroup()) : ''}
     ${L.generalNotes.length ? section(`About this ${lang.direction === 'rtl' ? 'dialect' : 'set'}`, `<div class="group notes-group">
@@ -661,68 +656,23 @@ async function viewSounds() {
 
 /* ---------- practice ---------- */
 
-function viewPracticeSetup() {
-  const lang = L.lang;
-  const pool = L.phrases.filter((p) => inTier(p) && !p.missing);
-  const favs = L.phrases.filter((p) => store.isFav(p.key) && !p.missing).length;
-  const todo = pool.filter((p) => !store.isLearned(p.key)).length;
-  page('more', `
-    <section class="page-head"><h1>Practice</h1><p>Five minutes, one thumb.</p></section>
-    <form id="setup" class="setup">
-      <fieldset><legend>How</legend>
-        <label class="opt"><input type="radio" name="dir" value="en" checked><span><b>Flashcards</b><small>English → <bdi>${esc(lang.native_name)}</bdi></small></span></label>
-        <label class="opt"><input type="radio" name="dir" value="target"><span><b>Reverse</b><small><bdi>${esc(lang.native_name)}</bdi> → English</small></span></label>
-        ${canPracticeAloud() ? `<label class="opt"><input type="radio" name="dir" value="speak"><span><b>Speak it</b><small>Say it aloud, then hear it back</small></span></label>` : ''}
-        <label class="opt"><input type="radio" name="dir" value="type"><span><b>Type it</b><small>Write it out; get told exactly what to fix</small></span></label>
-      </fieldset>
-      <fieldset><legend>Deck</legend>
-        <label class="opt"><input type="radio" name="deck" value="all" checked><span><b>All phrases</b><small>${pool.length}</small></span></label>
-        <label class="opt"><input type="radio" name="deck" value="todo"><span><b>Not started yet</b><small>${todo}</small></span></label>
-        <label class="opt"><input type="radio" name="deck" value="saved" ${favs ? '' : 'disabled'}><span><b>Saved</b><small>${favs}</small></span></label>
-      </fieldset>
-      <fieldset><legend>Category</legend>
-        <select name="cat" class="select"><option value="">Any category</option>${C.categories.map((c) => `<option value="${c.id}">${c.icon} ${esc(c.label)}</option>`).join('')}</select>
-      </fieldset>
-      <button class="cta" type="submit">${icon('shuffle')} Shuffle &amp; start</button>
-    </form>
-  `);
-  document.getElementById('setup').addEventListener('submit', (e) => {
-    e.preventDefault();
-    const f = new FormData(e.target);
-    const qs = new URLSearchParams({ dir: f.get('dir'), deck: f.get('deck') });
-    if (f.get('cat')) qs.set('cat', f.get('cat'));
-    go(`#/${lang.code}/practice/run?${qs}`);
-  });
-}
-
+// Type it: the one practice mode outside sessions (spelling, accents, scripts). From More.
+// ?s=<situation> limits the deck to one situation; otherwise every phrase, shuffled.
 function buildDeck(query) {
-  const deck = query.get('deck') || 'all';
-  const cat = query.get('cat');
-  const scen = query.get('scenario') && C.scenarios.find((s) => s.id === query.get('scenario'));
-  let items = scen ? scen.concepts.map((id) => L.byId.get(id)).filter(Boolean) : L.phrases;
-  items = items.filter((p) => !p.missing);
-  if (deck === 'saved') items = items.filter((p) => store.isFav(p.key));
-  else {
-    items = items.filter(inTier);
-    if (deck === 'todo') items = items.filter((p) => !store.isLearned(p.key));
-  }
-  if (cat) items = items.filter((p) => inCategory(C, p, cat));
-  return shuffle(items);
+  const sit = C.scenarios.find((x) => x.id === query.get('s'));
+  return shuffle((sit ? sitPhrases(sit) : L.phrases).filter((p) => !p.missing));
 }
 
 function viewPracticeRun(query) {
   const sig = `${L.lang.code}|${query.toString()}`;
   if (!practice || practice.sig !== sig) {
     const deck = buildDeck(query);
-    const dir = ['target', 'speak', 'type'].includes(query.get('dir')) ? query.get('dir') : 'en';
-    practice = { sig, query: query.toString(), dir, all: deck, queue: deck.slice(), total: deck.length, done: 0, again: 0, flipped: false, take: null, missed: new Set(), newly: 0 };
+    practice = { sig, query: query.toString(), all: deck, queue: deck.slice(), total: deck.length, done: 0, missed: new Set() };
   }
   drawPractice();
 }
 
 function nextCard() {
-  practice.flipped = false;
-  practice.take = null;
   practice.check = null;
   practice.typed = '';
   tts.stop();
@@ -731,74 +681,47 @@ function nextCard() {
 function drawPractice() {
   const lang = L.lang;
   const s = practice;
-  const back = `#/${lang.code}/practice`;
+  const back = `#/${lang.code}/more`;
   if (!s.total) {
-    page('more', `<div class="empty-state big">No cards in this deck.<br><a href="${back}">Change the deck</a></div>`, { back });
+    page('more', `<div class="empty-state big">Nothing to type yet.<br><a href="${back}">Back</a></div>`, { back, focus: true });
     return;
   }
   if (!s.queue.length) {
-    const speakQs = new URLSearchParams(s.query); speakQs.set('dir', 'speak');
     page('more', `<section class="done">
-      <div class="done-burst">🎉</div><h1>Deck cleared</h1>
-      <p>${s.total} cards${s.newly ? ` · <b>${s.newly} now Learning</b>` : ''}${s.missed.size ? ` · ${s.missed.size} to practise again` : ''}</p>
+      <div class="done-burst">🎉</div><h1>All typed</h1>
+      <p>${s.total} phrases${s.missed.size ? ` · ${s.missed.size} to try again` : ''}</p>
       <div class="done-actions">
-        ${s.missed.size ? `<button class="cta" data-action="retry-missed">${icon('replay')} Practise the ${s.missed.size} I missed</button>` : ''}
-        ${s.dir !== 'speak' && canPracticeAloud() ? `<a class="more-btn" href="#/${lang.code}/practice/run?${speakQs}">${icon('mic')} Now say them aloud</a>` : ''}
+        ${s.missed.size ? `<button class="cta" data-action="retry-missed">${icon('replay')} Try the ${s.missed.size} I missed</button>` : ''}
         <button class="more-btn" data-action="restart">${icon('shuffle')} Shuffle again</button>
-        <a class="more-btn" href="#/${lang.code}">Back to ${esc(lang.name)} home</a>
+        <a class="more-btn" href="${back}">Done</a>
       </div>
-    </section>`, { back });
+    </section>`, { back, focus: true });
     return;
   }
   const p = s.queue[0];
-  const learned = store.isLearned(p.key);
   const nativeBlock = `<p class="native fc-native" ${nativeAttrs(lang)}>${withSlots(p.target)}</p>${readingLine(p, 'fc-kana')}<p class="pron fc-pron" data-peek="pron">${withSlots(p.pron)}</p>`;
-  const englishBlock = `<p class="fc-en">${withSlots(p.english)}</p>`;
-  const notes = sayTipNote(p, false) + (p.regional_note ? `<p class="note"><span class="note-k">Regional</span>${esc(p.regional_note)}</p>` : '');
-  const pct = Math.round((s.done / s.total) * 100);
-  const label = { en: `Say it in ${esc(lang.name)}`, target: 'What does it mean?', speak: `Say it aloud in ${esc(lang.name)}`, type: `Type it in ${esc(lang.name)}` }[s.dir];
-
-  let face;
-  if (s.dir === 'type') {
-    face = `<span class="fc-label">${label}</span>${englishBlock}
-      ${s.check
-        ? `<span class="fc-divider"></span>${nativeBlock}${typeResult(s)}${notes}`
-        : `<form class="type-form" data-type-form>
-             <input class="type-input" id="type-input" ${nativeAttrs(lang)} autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="Type it here" value="${esc(s.typed || '')}">
-             <button class="cta" type="submit">Check</button>
-           </form>${typeHint(p)}`}`;
-  } else if (s.dir === 'speak') {
-    face = `<span class="fc-label">${label}</span>${englishBlock}
-      ${s.flipped
-        ? `<span class="fc-divider"></span>${nativeBlock}${s.take ? takeResult(p, s.take) : ''}${notes}`
-        : `<button class="mic-big ${s.recording ? 'rec' : ''} ${s.finishing ? 'finishing' : ''}" data-action="pr-mic" aria-label="${s.recording ? 'Stop' : 'Start speaking'}">${icon(s.recording ? 'stop' : 'mic')}</button>
-           <span class="fc-hint">${micState(s.recording, s.finishing, s.interim, 'Tap the mic, then say it')}</span>`}`;
-  } else {
-    const front = s.dir === 'en' ? englishBlock : nativeBlock;
-    const backSide = s.dir === 'en' ? nativeBlock : englishBlock;
-    face = `<span class="fc-label">${label}</span>${front}
-      ${s.flipped ? `<span class="fc-divider"></span>${backSide}${notes}` : '<span class="fc-hint">Tap to reveal</span>'}`;
-  }
-
+  const notes = sayTipNote(p, false);
   page('more', `
-    <div class="fc-progress"><span style="width:${pct}%"></span></div>
-    <p class="fc-meta">${s.done} / ${s.total}${s.newly ? ` · ${s.newly} now Learning` : ''}</p>
-    ${s.done === 0 && !s.flipped && !s.again ? `<p class="fc-tip">${s.dir === 'target' ? 'Work out the meaning, then tap the card to check.' : s.dir === 'speak' ? 'Read the English, tap the mic and say it. You’ll hear the right version straight after.' : s.dir === 'type' ? 'Read the English and type the phrase. Accents count; capitals and punctuation don’t.' : 'Say it in your head (or out loud), then tap the card to check.'} “Got it” on the first try puts a phrase into Learning (or counts as its review if one is due).</p>` : ''}
-    <div class="flashcard ${s.flipped ? 'flipped' : ''} ${s.dir === 'type' ? 'typing' : ''}" ${(s.dir === 'speak' && !s.flipped) || s.dir === 'type' ? '' : 'data-action="flip" role="button" tabindex="0"'} aria-live="polite">
-      <div class="fc-face">${face}</div>
+    <div class="fc-progress"><span style="width:${Math.round((s.done / s.total) * 100)}%"></span></div>
+    <p class="fc-meta">Type it · ${s.done + 1} of ${s.total}</p>
+    ${s.done === 0 && !s.check ? '<p class="fc-tip">Read the English and type the phrase. Accents count; capitals and punctuation don’t.</p>' : ''}
+    <div class="flashcard typing ${s.check ? 'flipped' : ''}" aria-live="polite">
+      <div class="fc-face">
+        <span class="fc-label">Type it in ${esc(lang.name)}</span>
+        <p class="fc-en">${withSlots(p.english)}</p>
+        ${s.check
+          ? `<span class="fc-divider"></span>${nativeBlock}${typeResult(s)}${notes}`
+          : `<form class="type-form" data-type-form>
+               <input class="type-input" id="type-input" ${nativeAttrs(lang)} autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="Type it here" value="${esc(s.typed || '')}">
+               <button class="cta" type="submit">Check</button>
+             </form>${typeHint(p)}`}
+      </div>
     </div>
-    ${s.dir === 'speak' && !s.flipped ? `<button class="link-btn center" data-action="flip">Show the answer without speaking</button>` : ''}
-    ${s.dir === 'type' && !s.check ? `<button class="link-btn center" data-action="type-reveal">Show the answer</button>` : ''}
-    ${s.dir === 'type' && s.check && !['correct', 'marks'].includes(s.check.verdict) ? `<button class="link-btn center" data-action="type-retry">${icon('replay')} Try again</button>` : ''}
-    <div class="fc-actions ${s.flipped ? '' : 'disabled'}">
-      <button class="fc-btn again" data-action="again" ${s.flipped ? '' : 'disabled'}>Again</button>
-      <button class="fc-btn got" data-action="got" ${s.flipped ? '' : 'disabled'}>Got it</button>
-    </div>
-    <div class="fc-extra">
-      ${listenBtn(p)}${canSpeak() ? `<button class="pill-btn speed-pill" data-action="speed-cycle" aria-label="Speed">${tts.speed().label}</button>` : ''}${s.dir !== 'speak' ? micBtn(p) : ''}
-      ${statusBtn(p, 'learned-current')}
-    </div>
-  `, { back });
+    ${!s.check ? '<button class="link-btn center" data-action="type-reveal">Show the answer</button>' : ''}
+    ${s.check && !['correct', 'marks'].includes(s.check.verdict) ? `<button class="link-btn center" data-action="type-retry">${icon('replay')} Try again</button>` : ''}
+    ${s.check ? `<button class="cta pp-next" data-action="type-next">Next ${icon('arrow')}</button>` : ''}
+    <div class="fc-extra">${listenBtn(p)}</div>
+  `, { back, focus: true });
 }
 
 // Type it: the verdict and what to fix, from js/typecheck.js.
@@ -836,7 +759,6 @@ function runTypeCheck(revealOnly = false) {
     : L.lang.meta.no_spaces ? checkTypedChars(p.target, typed, p.reading) : checkTyped(p.target, typed);
   // A wrong answer (or peeking) counts as a miss, so a later "Got it" won't mark it Learning.
   if (!['correct', 'marks'].includes(s.check.verdict)) s.missed.add(p.key);
-  s.flipped = true;
   drawPractice();
   if (canSpeak()) tts.play(speechItem(p)); // hear the right version straight away
 }
@@ -1147,37 +1069,6 @@ let capture = null;
 
 // What you said vs the phrase: each word marked heard / nearly / not heard,
 // plus buttons to hear the correct audio, your take, or both back to back.
-function takeResult(p, take) {
-  const lang = L.lang;
-  const problem = mic.explain(take);
-  let verdict = '';
-  let words = '';
-  if (take.transcript) {
-    const r = mic.compare(p.target, take.transcript, { charMode: !!lang.meta.no_spaces, alt: p.reading });
-    const pct = Math.round(r.score * 100);
-    verdict = pct >= 80 ? 'Clear. Your phone understood almost every word.' : pct >= 50 ? 'Close. Some words came through, keep going.' : 'Not much came through. Listen once more, then try again.';
-    words = `<p class="heard-words" ${nativeAttrs(lang)}>${r.words.map((w) => `<span class="w-${w.status}">${withSlots(w.raw)}</span>`).join(lang.meta.no_spaces ? '' : ' ')}</p>
-      <p class="heard">Your phone heard: <bdi ${nativeAttrs(lang)}>${esc(take.transcript)}</bdi></p>`;
-  } else if (problem) {
-    verdict = problem;
-  } else if (take.url) {
-    verdict = take.mode === 'record' ? 'Got it. Play yourself back next to the correct version.' : 'Recorded, but the phone didn’t pick out any words. Play yourself back to compare.';
-  } else {
-    verdict = 'Nothing came through. Run the Mic check to see what’s going on.';
-  }
-  const note = lang.code === 'ar-levantine' && take.transcript ? '<p class="heard">Phone speech recognition writes formal Arabic, so dialect words may show up spelled differently even when you said them right.</p>' : '';
-  const secs = take.ms ? ` · ${(take.ms / 1000).toFixed(1)}s` : '';
-  return `<div class="take ${!take.url && !take.transcript ? 'failed' : ''}">
-    <p class="take-verdict">${esc(verdict)}</p>${words}${note}
-    <div class="take-actions">
-      ${canSpeak() ? `<button class="pill-btn" data-action="hear-native" data-id="${esc(p.id)}">${icon('play')}<span>Hear it</span></button>` : ''}
-      ${take.url ? `<button class="pill-btn" data-action="hear-me">${icon('person')}<span>Hear me${secs}</span></button>` : ''}
-      ${take.url && canSpeak() ? `<button class="pill-btn" data-action="hear-both" data-id="${esc(p.id)}">${icon('loop')}<span>Back to back</span></button>` : ''}
-    </div>
-    ${!take.url && !take.transcript ? `<a class="link-btn" href="#/${lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
-  </div>`;
-}
-
 // One take at a time. The mic button shows a live level ring while you speak.
 function startCapture(onUpdate, onDone) {
   tts.stop();
@@ -1459,7 +1350,26 @@ function playerInner() {
     ${stage ? `<div class="pp-stage">${stage}</div>` : ''}
     ${compare}
     ${small ? `<div class="pp-small">${small}</div>` : ''}
+    ${['compare', 'reveal', 'done'].includes(step) ? tryAnotherHtml(p) : ''}
     ${next}`;
+}
+
+// Patterns in context: phrases that share a frame with this one (content/patterns.json).
+function relatedPhrases(p) {
+  const out = new Set();
+  const own = C.patterns[p.id];
+  if (own) for (const id of own.related || []) out.add(id);
+  for (const [frame, conf] of Object.entries(C.patterns)) if ((conf.related || []).includes(p.id)) { out.add(frame); for (const id of conf.related) out.add(id); }
+  out.delete(p.id);
+  return [...out].map((id) => L.byId.get(id)).filter((x) => x && !x.missing).slice(0, 3);
+}
+
+function tryAnotherHtml(p) {
+  const rel = relatedPhrases(p);
+  if (!rel.length) return '';
+  return `<div class="pp-more"><p class="more-k">${C.patterns[p.id] ? 'Same frame, other uses' : 'Goes with'}</p>
+    ${rel.map((r) => `<div class="pp-more-row"><div><b ${nativeAttrs(L.lang)}>${withSlots(r.target)}</b><small>${withSlots(r.english)}</small></div>${listenBtn(r, 'small')}</div>`).join('')}
+  </div>`;
 }
 
 // After recording: the guided playback, and what the phone's speech check understood.
@@ -1771,19 +1681,6 @@ document.addEventListener('click', (e) => {
     const i = tts.SPEEDS.indexOf(tts.speed());
     tts.setSpeed(tts.SPEEDS[(i + 1) % tts.SPEEDS.length].id);
     btn.textContent = tts.speed().label;
-  } else if (a === 'pr-mic') {
-    if (practice.recording) { practice.finishing = true; drawPractice(); capture?.stop(); return; }
-    practice.recording = true;
-    practice.finishing = false;
-    practice.interim = '';
-    const p = practice.queue[0];
-    startCapture((t) => { practice.interim = t; drawPractice(); }, (take) => {
-      if (practice.queue[0] !== p) return;
-      Object.assign(practice, { recording: false, finishing: false, interim: '', take, flipped: true });
-      drawPractice();
-      if (canSpeak()) tts.play(speechItem(p)); // hear it back right away
-    });
-    drawPractice();
   } else if (a === 'hear-native') {
     takeAudio?.pause();
     if (pl?.guide) { pl.guide = null; drawPlayer(); }
@@ -1868,28 +1765,6 @@ document.addEventListener('click', (e) => {
     store.setPref('showPron', !store.prefs().showPron);
     applyTheme(L && L.lang);
     btn.classList.toggle('on', store.prefs().showPron);
-  } else if (a === 'flip') {
-    if (practice.recording) return;
-    practice.flipped = !practice.flipped;
-    drawPractice();
-  } else if (a === 'again') {
-    const c = practice.queue.shift();
-    if (!practice.missed.has(c.key) && store.status(c.key) === 'learning') store.review(c.key, false);
-    practice.missed.add(c.key);
-    practice.queue.splice(Math.min(practice.queue.length, 3), 0, c);
-    practice.again++;
-    nextCard();
-    drawPractice();
-  } else if (a === 'got') {
-    const c = practice.queue.shift();
-    // Right on the first try: starts Learning, or counts as the review if one is due.
-    if (!practice.missed.has(c.key)) {
-      if (!store.isLearned(c.key)) { store.setLearned(c.key, true, 'cards'); practice.newly++; }
-      else if (store.isDue(c.key)) store.review(c.key, true); // a due phrase remembered counts as its review
-    }
-    practice.done++;
-    nextCard();
-    drawPractice();
   } else if (a === 'trip-clear') {
     store.setTrip(L.lang.code, null);
     viewFlight();
@@ -1918,24 +1793,27 @@ document.addEventListener('click', (e) => {
   } else if (a === 'ss-another') {
     session = null;
     route();
+  } else if (a === 'type-next') {
+    practice.queue.shift();
+    practice.done++;
+    nextCard();
+    drawPractice();
+    window.scrollTo(0, 0);
   } else if (a === 'type-reveal') {
     runTypeCheck(true);
   } else if (a === 'type-retry') {
-    Object.assign(practice, { check: null, flipped: false });
+    Object.assign(practice, { check: null });
     tts.stop();
     drawPractice();
     document.getElementById('type-input')?.focus();
   } else if (a === 'retry-missed') {
     const missed = practice.all.filter((p) => practice.missed.has(p.key));
-    Object.assign(practice, { all: missed, queue: shuffle(missed), total: missed.length, done: 0, again: 0, missed: new Set(), newly: 0 });
+    Object.assign(practice, { all: missed, queue: shuffle(missed), total: missed.length, done: 0, missed: new Set() });
     nextCard();
     drawPractice();
   } else if (a === 'restart') {
-    Object.assign(practice, { queue: shuffle(practice.all), done: 0, again: 0, missed: new Set(), newly: 0 });
+    Object.assign(practice, { queue: shuffle(practice.all), done: 0, missed: new Set() });
     nextCard();
-    drawPractice();
-  } else if (a === 'learned-current') {
-    store.toggleLearned(practice.queue[0].key);
     drawPractice();
   }
 });
@@ -1943,12 +1821,6 @@ document.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && document.body.classList.contains('showit-open')) { tts.stop(); closeShowIt(); return; }
   if (e.key === 'Escape' && document.body.classList.contains('sheet-open')) { closeSheet(); return; }
-  if (!practice || !location.hash.includes('/practice/run') || e.target.matches('input,select,textarea')) return;
-  if (practice.dir === 'speak' && !practice.flipped) return;
-  if (practice.dir === 'type' && (e.key === ' ' || e.key === 'Enter')) return; // typing mode: Enter submits the answer
-  if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); practice.flipped = !practice.flipped; drawPractice(); }
-  if (practice.flipped && e.key === 'ArrowRight') document.querySelector('[data-action="got"]')?.click();
-  if (practice.flipped && e.key === 'ArrowLeft') document.querySelector('[data-action="again"]')?.click();
 });
 
 /* ---------- router ---------- */
@@ -1992,7 +1864,7 @@ async function route() {
   else if (sectionName === 'flight') viewFlight();
   else if (sectionName === 'cheatsheet') viewCheatsheet(query);
   else if (sectionName === 'practice' && arg === 'run') viewPracticeRun(query);
-  else if (sectionName === 'practice') viewPracticeSetup();
+  else if (sectionName === 'practice') return go(`#/${code}/practice/run`);
   else return go(`#/${code}`);
   if (!keepScroll) window.scrollTo(0, 0);
 }
