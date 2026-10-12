@@ -535,6 +535,20 @@ body.hide-pron [data-peek="pron"]:not(.peeked) {
 .pp-next .ic { width: 20px; height: 20px; }
 .pp-next + .fine { text-align: center; margin-top: 8px; }
 
+/* recall prompt, listening check, rating inside the player */
+.pp-prompt { text-align: center; gap: 8px; padding: 22px 16px; }
+.pp-prompt .pp-stage { margin: 14px 0 0; }
+.pp .fc-actions { margin-top: 18px; }
+.pp .lock-hint { text-align: center; margin-top: 14px; }
+.pp .fine, .fine.center { margin-top: 8px; text-align: center; }
+.pp .link-btn.center { margin-top: 12px; }
+.lc-opts { display: grid; gap: 10px; margin-top: 14px; }
+.lc-opt { min-height: 56px; padding: 10px 14px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); font-weight: 700; font-size: 16px; text-align: left; }
+.lc-opt.right { border-color: #15803d; box-shadow: inset 0 0 0 1px #15803d; background: color-mix(in srgb, #15803d 10%, var(--surface)); }
+.lc-opt.wrong { border-color: #dc2626; box-shadow: inset 0 0 0 1px #dc2626; background: color-mix(in srgb, #dc2626 8%, var(--surface)); }
+.lc-opt:disabled { color: var(--ink); cursor: default; }
+.lc-answer { margin-top: 14px; }
+
 /* ---------- speaking ---------- */
 .mic-big {
   display: grid; place-items: center; width: 76px; height: 76px; border-radius: 50%; margin-top: 10px;
