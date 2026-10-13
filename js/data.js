@@ -73,6 +73,8 @@ export async function loadContent() {
 }
 
 const langCache = new Map();
+let crossCache;
+const crosscheck = async () => (crossCache ??= await getJSON('added/crosscheck.json').catch(() => null));
 
 // Returns the language's phrases as one list in concept order. A concept the
 // language file lacks comes back with `missing: true` so the UI can say so.
@@ -84,7 +86,9 @@ export async function loadLanguage(content, code) {
     getJSON(`lang/${code}.json`),
     loadSounds(code),
     getJSON(`added/${code}.json`).catch(() => null), // drafts, not yet checked (content/added/README.md)
+    crosscheck(),
   ]);
+  const checked = crossCache?.results?.[code] || {}; // drafts that match a native-written sentence (scripts/crosscheck.mjs)
   const tips = guide?.tips || {}; // "How it's said" coaching, written for Wayword (not dataset text)
   // The first Sound guide entry that uses a phrase as an example: the player's "Listen for" cue.
   const cues = {};
@@ -107,7 +111,7 @@ export async function loadLanguage(content, code) {
     if (!e) return { ...base, missing: true };
     const p = { ...base, target: e.target, pron: slotPron(e.target, e.pronunciation_easy) };
     for (const f of OPTIONAL_FIELDS) if (e[f]) p[f] = e[f];
-    if (e.draft) { p.draft = true; if (e.qa) p.qa = e.qa; }
+    if (e.draft) { p.draft = true; if (e.qa) p.qa = e.qa; if (checked[c.id]?.status === 'match') p.native_match = true; }
     if (tips[c.id]) p.say_tip = tips[c.id];
     if (cues[c.id]) p.sound_cue = cues[c.id];
     return p;
@@ -132,13 +136,18 @@ export async function loadLanguage(content, code) {
   // Things that aren't phrase cards but can be heard and shown: example sentences for the
   // frames, and replies you'll hear. Each looks like a phrase (id, key, target, pron, english).
   const extraById = new Map();
-  const wordEn = new Map((content.vocab.words || []).map((w) => [w.id, w.english]));
+  // English for an example: the frame with the word in it ("Where is the train station?").
+  // If the frame already has "the"/"a"/"my" just before the blank ("the nearest ___"), the bare word goes in.
+  const words = new Map((content.vocab.words || []).map((w) => [w.id, w]));
+  const fillEnglish = (frame, w) => frame.replace(/\b((?:the|a|an|my) (?:\w+ )?)?_{2,}/i, (m, art) => (art ? art + w.english : w.in_sentence || w.english));
   const examples = {};
   for (const [pid, list] of Object.entries(added?.examples || {})) {
     const frame = content.conceptById.get(pid);
     examples[pid] = list.map((x) => {
-      const en = frame && wordEn.get(x.word) ? frame.english.replace(/_{2,}/, wordEn.get(x.word)) : (wordEn.get(x.word) || '');
+      const w = words.get(x.word);
+      const en = frame && w ? fillEnglish(frame.english, w) : (w?.english || '');
       const item = { id: `${pid}~${x.word}`, key: `${code}:${pid}~${x.word}`, word: x.word, target: x.target, pron: x.pronunciation_easy, english: en, draft: true };
+      if (checked[item.id]?.status === 'match') item.native_match = true;
       if (x.reading) item.reading = x.reading;
       extraById.set(item.id, item);
       return item;
@@ -150,6 +159,7 @@ export async function loadLanguage(content, code) {
     if (!own?.target) continue;
     const item = { id: `reply~${r.id}`, key: `${code}:reply~${r.id}`, target: own.target, pron: own.pronunciation_easy, english: r.english, situations: r.situations || [], draft: !!(own.draft || !r.same_as) };
     if (own.reading) item.reading = own.reading;
+    if (checked[item.id]?.status === 'match') item.native_match = true;
     extraById.set(item.id, item);
     replies.push(item);
   }

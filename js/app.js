@@ -179,7 +179,10 @@ function micBtn(p, cls = '') {
 // Two labels only: Learning (started, being reviewed) and Locked in (passed every review).
 const statusLabel = (st) => (st === 'locked' ? 'Locked in' : st === 'learning' ? 'Learning' : '');
 // Drafts: written for Wayword, not yet checked by a native speaker (content/added/).
-const draftTag = (p) => (p.draft ? '<span class="draft-tag" title="Draft translation, not yet checked by a native speaker">Draft</span>' : '');
+// A draft that matches a sentence a native speaker wrote (Tatoeba) gets a lighter, green label.
+const draftTag = (p) => (!p.draft ? ''
+  : p.native_match ? '<span class="draft-tag native" title="Matches a translation written by a native speaker (Tatoeba)">Matches native</span>'
+    : '<span class="draft-tag" title="Draft translation, not yet checked by a native speaker">Draft</span>');
 
 // "How it's said": natural-speed coaching from the sound guide, with a link to the guide.
 const sayTipNote = (p, link = true) => (p.say_tip
@@ -1369,7 +1372,7 @@ function playerInner() {
   const howto = !store.prefs().readHint && pl.mode === 'learn'
     ? `<p class="pp-howto">How to read it: <b>how it’s written</b> · <b class="pron-k">how to say it</b>${/[A-Z]{2}/.test(p.pron || '') ? ' (CAPITALS = stress)' : ''} · <b>what it means</b></p>` : '';
   return `${howto}<article class="pp-phrase">${phraseLines(p, { size: 'lg', nativeHtml: hl })}
-      ${p.draft ? `<p class="pp-draft">${draftTag(p)} Not yet checked by a native speaker.</p>` : ''}
+      ${p.draft ? `<p class="pp-draft">${draftTag(p)} ${p.native_match ? 'A native speaker wrote this exact sentence (Tatoeba).' : 'Not yet checked by a native speaker.'}</p>` : ''}
       ${cue ? `<p class="pp-cue"><span class="note-k">Listen for</span>${cue} <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a></p>` : ''}
       ${notes ? `<div class="notes">${notes}</div>` : ''}
     </article>

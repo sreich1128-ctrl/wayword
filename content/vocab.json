@@ -1,5 +1,5 @@
 {
-  "_doc": "Word banks for filling sentence frames and for listening. English only; each language's words live in content/added/<code>.json under 'vocab'. Words are never phrase cards and never count toward progress. A word can sit in several banks.",
+  "_doc": "Word banks for filling sentence frames and for listening. English only; each language's words live in content/added/<code>.json under 'vocab'. Words are never phrase cards and never count toward progress. A word can sit in several banks. 'in_sentence' is the English as it reads inside a sentence ('the train station', 'a tea'); frames that already include the article use 'english'.",
   "banks": {
     "destinations": "Places to ask about or go to",
     "food_drink": "Things to order or ask for",
@@ -17,7 +17,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the train station"
     },
     {
       "id": "word_bus_stop",
@@ -25,7 +26,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the bus stop"
     },
     {
       "id": "word_airport",
@@ -33,7 +35,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the airport"
     },
     {
       "id": "word_metro_station",
@@ -41,7 +44,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the metro station"
     },
     {
       "id": "word_hotel",
@@ -49,7 +53,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the hotel"
     },
     {
       "id": "word_beach",
@@ -57,7 +62,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the beach"
     },
     {
       "id": "word_city_centre",
@@ -65,7 +71,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the city centre"
     },
     {
       "id": "word_pharmacy",
@@ -73,7 +80,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the pharmacy"
     },
     {
       "id": "word_atm",
@@ -81,7 +89,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "an ATM"
     },
     {
       "id": "word_supermarket",
@@ -89,7 +98,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the supermarket"
     },
     {
       "id": "word_platform",
@@ -97,7 +107,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the platform"
     },
     {
       "id": "word_ticket_office",
@@ -105,7 +116,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the ticket office"
     },
     {
       "id": "word_exit",
@@ -113,7 +125,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the exit"
     },
     {
       "id": "word_entrance",
@@ -121,7 +134,8 @@
       "banks": [
         "destinations"
       ],
-      "priority": "core"
+      "priority": "core",
+      "in_sentence": "the entrance"
     },
     {
       "id": "word_tea",
@@ -129,7 +143,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "a tea"
     },
     {
       "id": "word_beer",
@@ -137,7 +152,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "a beer"
     },
     {
       "id": "word_glass_of_wine",
@@ -145,7 +161,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "a glass of wine"
     },
     {
       "id": "word_orange_juice",
@@ -153,7 +170,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "an orange juice"
     },
     {
       "id": "word_menu",
@@ -161,7 +179,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "the menu"
     },
     {
       "id": "word_bill",
@@ -169,7 +188,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "the bill"
     },
     {
       "id": "word_bag",
@@ -185,7 +205,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "a receipt"
     },
     {
       "id": "word_water",
@@ -193,7 +214,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "some water"
     },
     {
       "id": "word_coffee",
@@ -201,7 +223,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "a coffee"
     },
     {
       "id": "word_bread",
@@ -209,7 +232,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "some bread"
     },
     {
       "id": "word_milk",
@@ -218,7 +242,8 @@
         "food_drink",
         "allergens_diet"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "milk"
     },
     {
       "id": "word_ice",
@@ -226,7 +251,8 @@
       "banks": [
         "food_drink"
       ],
-      "priority": "travel"
+      "priority": "travel",
+      "in_sentence": "ice"
     },
     {
       "id": "word_nuts",

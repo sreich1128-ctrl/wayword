@@ -891,3 +891,5 @@ body.showit-open { overflow: hidden; }
 .hear-list { display: grid; gap: 10px; padding: 12px; }
 .hear-list small { display: block; }
 .hear-list .draft-tag { margin: 2px 0; justify-self: start; }
+.draft-tag.native { color: #166534; background: #dcfce7; border-color: #86efac; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .draft-tag.native { color: #86efac; background: #052e16; border-color: #166534; } }
