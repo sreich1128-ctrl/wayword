@@ -1,0 +1,1039 @@
+{
+  "language_code": "fr",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "Au revoir.",
+      "pronunciation_easy": "oh ruh-VWAHR"
+    },
+    {
+      "id": "sorry",
+      "target": "Désolé.",
+      "pronunciation_easy": "day-zoh-LAY",
+      "qa": "Gender: masculine speaker form (matches 'Enchanté' in the vetted file); a woman writes 'Désolée', same pronunciation. For bumping into someone or getting past, 'Pardon.' is the usual word."
+    },
+    {
+      "id": "youre_welcome",
+      "target": "De rien.",
+      "pronunciation_easy": "duh RYEN"
+    },
+    {
+      "id": "no_thank_you",
+      "target": "Non, merci.",
+      "pronunciation_easy": "nohn, mehr-SEE"
+    },
+    {
+      "id": "okay",
+      "target": "D'accord.",
+      "pronunciation_easy": "dah-KOR"
+    },
+    {
+      "id": "good_evening",
+      "target": "Bonsoir.",
+      "pronunciation_easy": "bohn-SWAHR"
+    },
+    {
+      "id": "table_for",
+      "target": "Une table pour ___, s'il vous plaît.",
+      "pronunciation_easy": "ewn TAH-bluh poor, seel voo PLEH",
+      "qa": "Blank takes a bare number (deux, trois...). For one person say 'pour une personne' rather than 'pour un'. 'pour deux personnes' is equally natural."
+    },
+    {
+      "id": "menu_please",
+      "target": "La carte, s'il vous plaît.",
+      "pronunciation_easy": "lah KART, seel voo PLEH",
+      "qa": "'La carte' is the menu list. 'Le menu' in France usually means a fixed-price set menu, so 'la carte' is the safer word."
+    },
+    {
+      "id": "allergic_to",
+      "target": "Je suis allergique ___.",
+      "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK",
+      "qa": "SAFETY. Back-translation: 'I am allergic [to the] ___.' The blank must include à + article, which contracts and changes per word (au gluten, au lait, aux œufs, aux fruits à coque, à la ..., à l'...), so 'à' is not outside the blank. 'allergique' is the same for male and female speakers."
+    },
+    {
+      "id": "vegetarian",
+      "target": "Je suis végétarien.",
+      "pronunciation_easy": "zhuh swee vay-zhay-tah-RYEN",
+      "qa": "Gender: masculine speaker form; a woman says 'Je suis végétarienne' (vay-zhay-tah-RYEN, with the final n pronounced, not nasal)."
+    },
+    {
+      "id": "without",
+      "target": "Sans ___, s'il vous plaît.",
+      "pronunciation_easy": "sahn, seel voo PLEH",
+      "qa": "SAFETY. Back-translation: 'Without ___, please.' No article after 'sans' (sans viande, sans lait, sans gluten). This is a preference request; for a real allergy use allergic_to as well, since 'sans' alone may be read as taste, not medical need."
+    },
+    {
+      "id": "to_go",
+      "target": "À emporter, s'il vous plaît.",
+      "pronunciation_easy": "ah ahn-por-TAY, seel voo PLEH"
+    },
+    {
+      "id": "for_here",
+      "target": "Sur place, s'il vous plaît.",
+      "pronunciation_easy": "sewr PLASS, seel voo PLEH"
+    },
+    {
+      "id": "delicious",
+      "target": "C'était délicieux.",
+      "pronunciation_easy": "say-TEH day-lee-SYUH"
+    },
+    {
+      "id": "another_one",
+      "target": "Un autre, s'il vous plaît.",
+      "pronunciation_easy": "uh-NOH-truh, seel voo PLEH",
+      "qa": "Gender of the thing, not the speaker: 'Un autre' for a masculine item (un café, un verre), 'Une autre' (ew-NOH-truh) for a feminine one (une bière)."
+    },
+    {
+      "id": "ticket_to",
+      "target": "Un billet pour ___, s'il vous plaît.",
+      "pronunciation_easy": "uhn bee-YEH poor, seel voo PLEH",
+      "qa": "Usually filled with a city name (pour Lyon). 'pour' does not contract, so the word's own article stays (pour la gare, pour le centre-ville)."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "Est-ce qu'il va ___ ?",
+      "pronunciation_easy": "es-keel VAH",
+      "qa": "Blank takes à + article, which contracts per word (à l'aéroport, au centre-ville, à la gare), so 'à' stays inside the blank. 'il' = the bus/train/metro/tram, all masculine. Reviewer: 'Ce bus va à ___ ?' is an alternative if the vehicle is named."
+    },
+    {
+      "id": "take_me_to",
+      "target": "Emmenez-moi ___, s'il vous plaît.",
+      "pronunciation_easy": "ahn-muh-nay MWAH, seel voo PLEH",
+      "qa": "Blank takes à + article, contracting per word (à l'aéroport, au centre-ville). In a taxi people very often just say the destination: 'À l'aéroport, s'il vous plaît.' A softer option is 'Vous pouvez m'emmener ___ ?'"
+    },
+    {
+      "id": "stop_here",
+      "target": "Arrêtez-vous ici, s'il vous plaît.",
+      "pronunciation_easy": "ah-reh-tay-voo zee-SEE, seel voo PLEH",
+      "qa": "Reviewer: 'Vous pouvez vous arrêter ici ?' or simply 'Ici, s'il vous plaît.' are also common to a taxi driver."
+    },
+    {
+      "id": "next_departure",
+      "target": "Le prochain part à quelle heure ?",
+      "pronunciation_easy": "luh proh-SHAN par ah kel UHR",
+      "qa": "'Le prochain' assumes a masculine vehicle (train, bus). For a feminine one (une navette) it is 'La prochaine'."
+    },
+    {
+      "id": "which_platform",
+      "target": "C'est quel quai ?",
+      "pronunciation_easy": "say kel KAY",
+      "qa": "'quai' = platform, understood everywhere. French train departure boards show 'Voie' (track), so travellers may also hear/ask 'C'est quelle voie ?'"
+    },
+    {
+      "id": "how_long_trip",
+      "target": "Ça prend combien de temps ?",
+      "pronunciation_easy": "sah prahn kohm-byen duh TAHN"
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "Aller simple ou aller-retour ?",
+      "pronunciation_easy": "ah-LAY SAN-pluh oo ah-lay ruh-TOOR"
+    },
+    {
+      "id": "left",
+      "target": "À gauche.",
+      "pronunciation_easy": "ah GOHSH"
+    },
+    {
+      "id": "right",
+      "target": "À droite.",
+      "pronunciation_easy": "ah DRWAHT"
+    },
+    {
+      "id": "straight_ahead",
+      "target": "Tout droit.",
+      "pronunciation_easy": "too DRWAH"
+    },
+    {
+      "id": "im_lost",
+      "target": "Je suis perdu.",
+      "pronunciation_easy": "zhuh swee pehr-DEW",
+      "qa": "Gender: masculine speaker form; a woman writes 'Je suis perdue', same pronunciation."
+    },
+    {
+      "id": "show_on_map",
+      "target": "Vous pouvez me montrer sur la carte ?",
+      "pronunciation_easy": "voo poo-VAY muh mohn-TRAY sewr lah KART"
+    },
+    {
+      "id": "near_here",
+      "target": "C'est près d'ici ?",
+      "pronunciation_easy": "say preh dee-SEE"
+    },
+    {
+      "id": "have_reservation",
+      "target": "J'ai une réservation.",
+      "pronunciation_easy": "zhay ewn ray-zehr-vah-SYOHN"
+    },
+    {
+      "id": "under_name",
+      "target": "Au nom de ___.",
+      "pronunciation_easy": "oh nohn duh",
+      "qa": "'de' becomes d' before a name starting with a vowel or mute h (Au nom d'Anderson)."
+    },
+    {
+      "id": "wifi_password",
+      "target": "Quel est le mot de passe du wifi ?",
+      "pronunciation_easy": "kel eh luh moh duh PAHSS dew wee-FEE"
+    },
+    {
+      "id": "checkout_time",
+      "target": "À quelle heure faut-il libérer la chambre ?",
+      "pronunciation_easy": "ah kel uhr foh-TEEL lee-bay-RAY lah SHAHN-bruh",
+      "qa": "Reviewer: natural hotel phrasing is 'libérer la chambre' (vacate the room). 'Le check-out est à quelle heure ?' is also widely used in hotels."
+    },
+    {
+      "id": "leave_bags",
+      "target": "Je peux laisser mes bagages ici ?",
+      "pronunciation_easy": "zhuh puh leh-SAY may bah-GAHZH ee-SEE"
+    },
+    {
+      "id": "doesnt_work",
+      "target": "___ ne marche pas.",
+      "pronunciation_easy": "nuh marsh PAH",
+      "qa": "Blank takes the noun with its article (La douche ne marche pas). 'ne fonctionne pas' is a slightly more formal synonym. For hot water, 'Il n'y a pas d'eau chaude' (there's no hot water) is more idiomatic than the filled frame."
+    },
+    {
+      "id": "another_towel",
+      "target": "Je peux avoir une autre serviette ?",
+      "pronunciation_easy": "zhuh puh ah-vwahr ew-NOH-truh sehr-VYET",
+      "qa": "'serviette' is also a table napkin; in a hotel room it is understood as towel. 'serviette de bain' if it needs to be explicit."
+    },
+    {
+      "id": "just_looking",
+      "target": "Je regarde, merci.",
+      "pronunciation_easy": "zhuh ruh-GARD, mehr-SEE"
+    },
+    {
+      "id": "ill_take_it",
+      "target": "Je le prends.",
+      "pronunciation_easy": "zhuh luh PRAHN",
+      "qa": "Gender of the item, not the speaker: 'le' for a masculine item, 'la' for a feminine one (Je la prends), 'les' for plural."
+    },
+    {
+      "id": "too_expensive",
+      "target": "C'est trop cher.",
+      "pronunciation_easy": "say troh SHEHR"
+    },
+    {
+      "id": "try_it_on",
+      "target": "Je peux l'essayer ?",
+      "pronunciation_easy": "zhuh puh leh-say-YAY"
+    },
+    {
+      "id": "another_size",
+      "target": "Vous l'avez dans une autre taille ?",
+      "pronunciation_easy": "voo lah-VAY dahn zew-NOH-truh TIE",
+      "qa": "For shoes the word is 'pointure' (dans une autre pointure)."
+    },
+    {
+      "id": "bag_please",
+      "target": "Un sac, s'il vous plaît.",
+      "pronunciation_easy": "uhn SAK, seel voo PLEH"
+    },
+    {
+      "id": "haircut",
+      "target": "Une coupe, s'il vous plaît.",
+      "pronunciation_easy": "ewn KOOP, seel voo PLEH"
+    },
+    {
+      "id": "just_trim",
+      "target": "Juste rafraîchir, s'il vous plaît.",
+      "pronunciation_easy": "zhewst rah-freh-SHEER, seel voo PLEH",
+      "qa": "Reviewer: 'rafraîchir' (refresh) is the usual salon/barber word for a trim; 'juste égaliser' (just even it out) or 'juste les pointes' (just the ends) are alternatives. Not fully sure which is most natural at a men's barber."
+    },
+    {
+      "id": "not_too_short",
+      "target": "Pas trop court.",
+      "pronunciation_easy": "pah troh KOOR"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "Plus court sur les côtés.",
+      "pronunciation_easy": "plew koor sewr lay koh-TAY"
+    },
+    {
+      "id": "like_this",
+      "target": "Comme ça.",
+      "pronunciation_easy": "kom SAH"
+    },
+    {
+      "id": "beard_trim",
+      "target": "Une taille de barbe, s'il vous plaît.",
+      "pronunciation_easy": "ewn TIE duh BARB, seel voo PLEH",
+      "qa": "'Taille de barbe' is the usual barber-menu term. Reviewer: 'Vous pouvez me tailler la barbe ?' is a verb alternative."
+    },
+    {
+      "id": "help_shout",
+      "target": "Au secours !",
+      "pronunciation_easy": "oh suh-KOOR",
+      "qa": "SAFETY. Back-translation: 'Help!' (literally 'to the rescue'). The standard French cry for help."
+    },
+    {
+      "id": "call_police",
+      "target": "Appelez la police !",
+      "pronunciation_easy": "ah-play lah poh-LEESS",
+      "qa": "SAFETY. Back-translation: 'Call the police!' (polite/plural vous imperative, right for strangers). Emergency number in France: 17 or 112."
+    },
+    {
+      "id": "need_doctor",
+      "target": "J'ai besoin d'un médecin.",
+      "pronunciation_easy": "zhay buh-ZWAN duhn mayd-SAN",
+      "qa": "SAFETY. Back-translation: 'I have need of a doctor.' = I need a doctor. Same for male and female speakers."
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "Où est la pharmacie ?",
+      "pronunciation_easy": "oo eh lah far-mah-SEE",
+      "qa": "SAFETY. Back-translation: 'Where is the pharmacy?' For any pharmacy nearby, 'Il y a une pharmacie près d'ici ?' (Is there a pharmacy near here?) also works."
+    },
+    {
+      "id": "its_emergency",
+      "target": "C'est une urgence.",
+      "pronunciation_easy": "say tewn ewr-ZHAHNSS",
+      "qa": "SAFETY. Back-translation: 'It is an emergency.' Standard phrasing."
+    },
+    {
+      "id": "lost_my",
+      "target": "J'ai perdu ___.",
+      "pronunciation_easy": "zhay pehr-DEW",
+      "qa": "SAFETY. Back-translation: 'I have lost ___.' The blank takes a possessive that changes with the noun (mon passeport, ma valise, mes clés), so it stays inside the blank. 'perdu' does not change for speaker gender here."
+    },
+    {
+      "id": "not_well",
+      "target": "Je ne me sens pas bien.",
+      "pronunciation_easy": "zhuh nuh muh sahn pah BYEN",
+      "qa": "SAFETY. Back-translation: 'I don't feel myself well.' = I don't feel well. Same for male and female speakers."
+    },
+    {
+      "id": "call_someone",
+      "target": "Je dois appeler quelqu'un.",
+      "pronunciation_easy": "zhuh dwah ah-puh-LAY kel-KUHN",
+      "qa": "SAFETY. Back-translation: 'I must call someone.' 'J'ai besoin d'appeler quelqu'un' (I need to call someone) is an equally natural alternative."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "la gare",
+      "pronunciation_easy": "lah GAR"
+    },
+    "word_bus_stop": {
+      "target": "l'arrêt de bus",
+      "pronunciation_easy": "lah-REH duh BEWSS"
+    },
+    "word_airport": {
+      "target": "l'aéroport",
+      "pronunciation_easy": "lah-ay-roh-POR"
+    },
+    "word_metro_station": {
+      "target": "la station de métro",
+      "pronunciation_easy": "lah stah-SYOHN duh may-TROH"
+    },
+    "word_hotel": {
+      "target": "l'hôtel",
+      "pronunciation_easy": "loh-TEL"
+    },
+    "word_beach": {
+      "target": "la plage",
+      "pronunciation_easy": "lah PLAHZH"
+    },
+    "word_city_centre": {
+      "target": "le centre-ville",
+      "pronunciation_easy": "luh sahn-truh-VEEL"
+    },
+    "word_pharmacy": {
+      "target": "la pharmacie",
+      "pronunciation_easy": "lah far-mah-SEE"
+    },
+    "word_atm": {
+      "target": "le distributeur de billets",
+      "pronunciation_easy": "luh dees-tree-bew-TUHR duh bee-YEH"
+    },
+    "word_supermarket": {
+      "target": "le supermarché",
+      "pronunciation_easy": "luh sew-pehr-mar-SHAY"
+    },
+    "word_platform": {
+      "target": "le quai",
+      "pronunciation_easy": "luh KAY"
+    },
+    "word_ticket_office": {
+      "target": "le guichet",
+      "pronunciation_easy": "luh gee-SHEH"
+    },
+    "word_exit": {
+      "target": "la sortie",
+      "pronunciation_easy": "lah sor-TEE"
+    },
+    "word_entrance": {
+      "target": "l'entrée",
+      "pronunciation_easy": "lahn-TRAY"
+    },
+    "word_tea": {
+      "target": "un thé",
+      "pronunciation_easy": "uhn TAY"
+    },
+    "word_beer": {
+      "target": "une bière",
+      "pronunciation_easy": "ewn BYEHR"
+    },
+    "word_glass_of_wine": {
+      "target": "un verre de vin",
+      "pronunciation_easy": "uhn vehr duh VAN"
+    },
+    "word_orange_juice": {
+      "target": "un jus d'orange",
+      "pronunciation_easy": "uhn zhew doh-RAHNZH"
+    },
+    "word_menu": {
+      "target": "la carte",
+      "pronunciation_easy": "lah KART"
+    },
+    "word_bill": {
+      "target": "l'addition",
+      "pronunciation_easy": "lah-dee-SYOHN"
+    },
+    "word_bag": {
+      "target": "un sac",
+      "pronunciation_easy": "uhn SAK"
+    },
+    "word_receipt": {
+      "target": "un reçu",
+      "pronunciation_easy": "uhn ruh-SEW"
+    },
+    "word_water": {
+      "target": "de l'eau",
+      "pronunciation_easy": "duh LOH"
+    },
+    "word_coffee": {
+      "target": "un café",
+      "pronunciation_easy": "uhn kah-FAY"
+    },
+    "word_bread": {
+      "target": "du pain",
+      "pronunciation_easy": "dew PAN"
+    },
+    "word_milk": {
+      "target": "du lait",
+      "pronunciation_easy": "dew LEH"
+    },
+    "word_ice": {
+      "target": "des glaçons",
+      "pronunciation_easy": "day glah-SOHN"
+    },
+    "word_nuts": {
+      "target": "les fruits à coque",
+      "pronunciation_easy": "lay frwee ah KOK"
+    },
+    "word_gluten": {
+      "target": "le gluten",
+      "pronunciation_easy": "luh glew-TEN"
+    },
+    "word_shellfish": {
+      "target": "les fruits de mer",
+      "pronunciation_easy": "lay frwee duh MEHR"
+    },
+    "word_eggs": {
+      "target": "les œufs",
+      "pronunciation_easy": "lay ZUH"
+    },
+    "word_meat": {
+      "target": "la viande",
+      "pronunciation_easy": "lah VYAHND"
+    },
+    "word_dairy": {
+      "target": "les produits laitiers",
+      "pronunciation_easy": "lay proh-dwee lay-TYAY"
+    },
+    "word_peanuts": {
+      "target": "les arachides",
+      "pronunciation_easy": "lay zah-rah-SHEED"
+    },
+    "word_passport": {
+      "target": "le passeport",
+      "pronunciation_easy": "luh pahss-POR"
+    },
+    "word_phone": {
+      "target": "le téléphone",
+      "pronunciation_easy": "luh tay-lay-FON"
+    },
+    "word_wallet": {
+      "target": "le portefeuille",
+      "pronunciation_easy": "luh por-tuh-FUHY"
+    },
+    "word_keys": {
+      "target": "les clés",
+      "pronunciation_easy": "lay KLAY"
+    },
+    "word_ticket": {
+      "target": "le billet",
+      "pronunciation_easy": "luh bee-YEH"
+    },
+    "word_room_key": {
+      "target": "la clé de la chambre",
+      "pronunciation_easy": "lah KLAY duh lah SHAHN-bruh"
+    },
+    "word_air_conditioning": {
+      "target": "la climatisation",
+      "pronunciation_easy": "lah klee-mah-tee-zah-SYOHN"
+    },
+    "word_shower": {
+      "target": "la douche",
+      "pronunciation_easy": "lah DOOSH"
+    },
+    "word_wi_fi": {
+      "target": "le wifi",
+      "pronunciation_easy": "luh wee-FEE"
+    },
+    "word_tv": {
+      "target": "la télé",
+      "pronunciation_easy": "lah tay-LAY"
+    },
+    "word_hot_water": {
+      "target": "l'eau chaude",
+      "pronunciation_easy": "loh SHOHD"
+    },
+    "word_door_lock": {
+      "target": "la serrure",
+      "pronunciation_easy": "lah seh-REWR"
+    },
+    "word_one": {
+      "target": "un",
+      "pronunciation_easy": "uhn"
+    },
+    "word_two": {
+      "target": "deux",
+      "pronunciation_easy": "duh"
+    },
+    "word_three": {
+      "target": "trois",
+      "pronunciation_easy": "trwah"
+    },
+    "word_four": {
+      "target": "quatre",
+      "pronunciation_easy": "KAH-truh"
+    },
+    "word_five": {
+      "target": "cinq",
+      "pronunciation_easy": "sank"
+    },
+    "word_six": {
+      "target": "six",
+      "pronunciation_easy": "seess"
+    },
+    "word_seven": {
+      "target": "sept",
+      "pronunciation_easy": "set"
+    },
+    "word_eight": {
+      "target": "huit",
+      "pronunciation_easy": "weet"
+    },
+    "word_nine": {
+      "target": "neuf",
+      "pronunciation_easy": "nuhf"
+    },
+    "word_ten": {
+      "target": "dix",
+      "pronunciation_easy": "deess"
+    },
+    "word_twenty": {
+      "target": "vingt",
+      "pronunciation_easy": "van"
+    },
+    "word_fifty": {
+      "target": "cinquante",
+      "pronunciation_easy": "san-KAHNT"
+    },
+    "word_one_hundred": {
+      "target": "cent",
+      "pronunciation_easy": "sahn"
+    },
+    "word_upstairs": {
+      "target": "en haut",
+      "pronunciation_easy": "ahn OH"
+    },
+    "word_downstairs": {
+      "target": "en bas",
+      "pronunciation_easy": "ahn BAH"
+    },
+    "word_near": {
+      "target": "près",
+      "pronunciation_easy": "preh"
+    },
+    "word_far": {
+      "target": "loin",
+      "pronunciation_easy": "lwan"
+    },
+    "word_today": {
+      "target": "aujourd'hui",
+      "pronunciation_easy": "oh-zhoor-DWEE"
+    },
+    "word_tomorrow": {
+      "target": "demain",
+      "pronunciation_easy": "duh-MAN"
+    },
+    "word_now": {
+      "target": "maintenant",
+      "pronunciation_easy": "mant-NAHN"
+    },
+    "word_later": {
+      "target": "plus tard",
+      "pronunciation_easy": "plew TAR"
+    },
+    "word_open": {
+      "target": "ouvert",
+      "pronunciation_easy": "oo-VEHR"
+    },
+    "word_closed": {
+      "target": "fermé",
+      "pronunciation_easy": "fehr-MAY"
+    },
+    "word_yes": {
+      "target": "oui",
+      "pronunciation_easy": "wee"
+    },
+    "word_no": {
+      "target": "non",
+      "pronunciation_easy": "nohn"
+    },
+    "word_cash": {
+      "target": "les espèces",
+      "pronunciation_easy": "lay zes-PESS"
+    },
+    "word_card": {
+      "target": "la carte",
+      "pronunciation_easy": "lah KART"
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "Où est la gare ?",
+        "pronunciation_easy": "oo eh lah GAR"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Où est l'arrêt de bus ?",
+        "pronunciation_easy": "oo eh lah-REH duh BEWSS"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "Où est la pharmacie ?",
+        "pronunciation_easy": "oo eh lah far-mah-SEE"
+      },
+      {
+        "word": "word_atm",
+        "target": "Où est le distributeur de billets ?",
+        "pronunciation_easy": "oo eh luh dees-tree-bew-TUHR duh bee-YEH"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Où est le supermarché ?",
+        "pronunciation_easy": "oo eh luh sew-pehr-mar-SHAY"
+      },
+      {
+        "word": "word_exit",
+        "target": "Où est la sortie ?",
+        "pronunciation_easy": "oo eh lah sor-TEE"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "Où est la pharmacie la plus proche ?",
+        "pronunciation_easy": "oo eh lah far-mah-SEE lah plew PROSH"
+      },
+      {
+        "word": "word_atm",
+        "target": "Où est le distributeur de billets le plus proche ?",
+        "pronunciation_easy": "oo eh luh dees-tree-bew-TUHR duh bee-YEH luh plew PROSH"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Où est le supermarché le plus proche ?",
+        "pronunciation_easy": "oo eh luh sew-pehr-mar-SHAY luh plew PROSH"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "Où est la station de métro la plus proche ?",
+        "pronunciation_easy": "oo eh lah stah-SYOHN duh may-TROH lah plew PROSH"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Où est l'arrêt de bus le plus proche ?",
+        "pronunciation_easy": "oo eh lah-REH duh BEWSS luh plew PROSH"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "Comment aller à l'aéroport ?",
+        "pronunciation_easy": "koh-MAHN ah-LAY ah lah-ay-roh-POR"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Comment aller à la gare ?",
+        "pronunciation_easy": "koh-MAHN ah-LAY ah lah GAR"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Comment aller au centre-ville ?",
+        "pronunciation_easy": "koh-MAHN ah-LAY oh sahn-truh-VEEL"
+      },
+      {
+        "word": "word_beach",
+        "target": "Comment aller à la plage ?",
+        "pronunciation_easy": "koh-MAHN ah-LAY ah lah PLAHZH"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Comment aller à l'hôtel ?",
+        "pronunciation_easy": "koh-MAHN ah-LAY ah loh-TEL"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "Je peux avoir un thé, s'il vous plaît ?",
+        "pronunciation_easy": "zhuh puh ah-vwahr uhn TAY, seel voo PLEH"
+      },
+      {
+        "word": "word_beer",
+        "target": "Je peux avoir une bière, s'il vous plaît ?",
+        "pronunciation_easy": "zhuh puh ah-vwahr ewn BYEHR, seel voo PLEH"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Je peux avoir un verre de vin, s'il vous plaît ?",
+        "pronunciation_easy": "zhuh puh ah-vwahr uhn vehr duh VAN, seel voo PLEH"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Je peux avoir un jus d'orange, s'il vous plaît ?",
+        "pronunciation_easy": "zhuh puh ah-vwahr uhn zhew doh-RAHNZH, seel voo PLEH"
+      },
+      {
+        "word": "word_menu",
+        "target": "Je peux avoir la carte, s'il vous plaît ?",
+        "pronunciation_easy": "zhuh puh ah-vwahr lah KART, seel voo PLEH"
+      },
+      {
+        "word": "word_receipt",
+        "target": "Je peux avoir un reçu, s'il vous plaît ?",
+        "pronunciation_easy": "zhuh puh ah-vwahr uhn ruh-SEW, seel voo PLEH"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "Je voudrais un thé, s'il vous plaît.",
+        "pronunciation_easy": "zhuh voo-dray uhn TAY, seel voo PLEH"
+      },
+      {
+        "word": "word_beer",
+        "target": "Je voudrais une bière, s'il vous plaît.",
+        "pronunciation_easy": "zhuh voo-dray ewn BYEHR, seel voo PLEH"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Je voudrais un verre de vin, s'il vous plaît.",
+        "pronunciation_easy": "zhuh voo-dray uhn vehr duh VAN, seel voo PLEH"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Je voudrais un jus d'orange, s'il vous plaît.",
+        "pronunciation_easy": "zhuh voo-dray uhn zhew doh-RAHNZH, seel voo PLEH"
+      },
+      {
+        "word": "word_bread",
+        "target": "Je voudrais du pain, s'il vous plaît.",
+        "pronunciation_easy": "zhuh voo-dray dew PAN, seel voo PLEH"
+      },
+      {
+        "word": "word_water",
+        "target": "Je voudrais de l'eau, s'il vous plaît.",
+        "pronunciation_easy": "zhuh voo-dray duh LOH, seel voo PLEH"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "Une table pour une personne, s'il vous plaît.",
+        "pronunciation_easy": "ewn TAH-bluh poor ewn pehr-SON, seel voo PLEH"
+      },
+      {
+        "word": "word_two",
+        "target": "Une table pour deux, s'il vous plaît.",
+        "pronunciation_easy": "ewn TAH-bluh poor DUH, seel voo PLEH"
+      },
+      {
+        "word": "word_three",
+        "target": "Une table pour trois, s'il vous plaît.",
+        "pronunciation_easy": "ewn TAH-bluh poor TRWAH, seel voo PLEH"
+      },
+      {
+        "word": "word_four",
+        "target": "Une table pour quatre, s'il vous plaît.",
+        "pronunciation_easy": "ewn TAH-bluh poor KAH-truh, seel voo PLEH"
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "Je suis allergique aux fruits à coque.",
+        "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK oh frwee ah KOK"
+      },
+      {
+        "word": "word_peanuts",
+        "target": "Je suis allergique aux arachides.",
+        "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK oh zah-rah-SHEED"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Je suis allergique au gluten.",
+        "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK oh glew-TEN"
+      },
+      {
+        "word": "word_shellfish",
+        "target": "Je suis allergique aux fruits de mer.",
+        "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK oh frwee duh MEHR"
+      },
+      {
+        "word": "word_milk",
+        "target": "Je suis allergique au lait.",
+        "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK oh LEH"
+      },
+      {
+        "word": "word_eggs",
+        "target": "Je suis allergique aux œufs.",
+        "pronunciation_easy": "zhuh swee zah-lehr-ZHEEK oh ZUH"
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "Sans viande, s'il vous plaît.",
+        "pronunciation_easy": "sahn VYAHND, seel voo PLEH"
+      },
+      {
+        "word": "word_milk",
+        "target": "Sans lait, s'il vous plaît.",
+        "pronunciation_easy": "sahn LEH, seel voo PLEH"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Sans gluten, s'il vous plaît.",
+        "pronunciation_easy": "sahn glew-TEN, seel voo PLEH"
+      },
+      {
+        "word": "word_ice",
+        "target": "Sans glaçons, s'il vous plaît.",
+        "pronunciation_easy": "sahn glah-SOHN, seel voo PLEH"
+      },
+      {
+        "word": "word_nuts",
+        "target": "Sans fruits à coque, s'il vous plaît.",
+        "pronunciation_easy": "sahn frwee ah KOK, seel voo PLEH"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "Un billet pour l'aéroport, s'il vous plaît.",
+        "pronunciation_easy": "uhn bee-YEH poor lah-ay-roh-POR, seel voo PLEH"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Un billet pour le centre-ville, s'il vous plaît.",
+        "pronunciation_easy": "uhn bee-YEH poor luh sahn-truh-VEEL, seel voo PLEH"
+      },
+      {
+        "word": "word_beach",
+        "target": "Un billet pour la plage, s'il vous plaît.",
+        "pronunciation_easy": "uhn bee-YEH poor lah PLAHZH, seel voo PLEH"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Un billet pour la gare, s'il vous plaît.",
+        "pronunciation_easy": "uhn bee-YEH poor lah GAR, seel voo PLEH"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "Est-ce qu'il va à l'aéroport ?",
+        "pronunciation_easy": "es-keel vah ah lah-ay-roh-POR"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Est-ce qu'il va au centre-ville ?",
+        "pronunciation_easy": "es-keel vah oh sahn-truh-VEEL"
+      },
+      {
+        "word": "word_beach",
+        "target": "Est-ce qu'il va à la plage ?",
+        "pronunciation_easy": "es-keel vah ah lah PLAHZH"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Est-ce qu'il va à la gare ?",
+        "pronunciation_easy": "es-keel vah ah lah GAR"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "Emmenez-moi à l'aéroport, s'il vous plaît.",
+        "pronunciation_easy": "ahn-muh-nay mwah ah lah-ay-roh-POR, seel voo PLEH"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Emmenez-moi à l'hôtel, s'il vous plaît.",
+        "pronunciation_easy": "ahn-muh-nay mwah ah loh-TEL, seel voo PLEH"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Emmenez-moi à la gare, s'il vous plaît.",
+        "pronunciation_easy": "ahn-muh-nay mwah ah lah GAR, seel voo PLEH"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Emmenez-moi au centre-ville, s'il vous plaît.",
+        "pronunciation_easy": "ahn-muh-nay mwah oh sahn-truh-VEEL, seel voo PLEH"
+      },
+      {
+        "word": "word_beach",
+        "target": "Emmenez-moi à la plage, s'il vous plaît.",
+        "pronunciation_easy": "ahn-muh-nay mwah ah lah PLAHZH, seel voo PLEH"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "La climatisation ne marche pas.",
+        "pronunciation_easy": "lah klee-mah-tee-zah-SYOHN nuh marsh PAH"
+      },
+      {
+        "word": "word_shower",
+        "target": "La douche ne marche pas.",
+        "pronunciation_easy": "lah DOOSH nuh marsh PAH"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "Le wifi ne marche pas.",
+        "pronunciation_easy": "luh wee-FEE nuh marsh PAH"
+      },
+      {
+        "word": "word_tv",
+        "target": "La télé ne marche pas.",
+        "pronunciation_easy": "lah tay-LAY nuh marsh PAH"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "L'eau chaude ne marche pas.",
+        "pronunciation_easy": "loh SHOHD nuh marsh PAH"
+      },
+      {
+        "word": "word_door_lock",
+        "target": "La serrure ne marche pas.",
+        "pronunciation_easy": "lah seh-REWR nuh marsh PAH"
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "J'ai perdu mon passeport.",
+        "pronunciation_easy": "zhay pehr-dew mohn pahss-POR"
+      },
+      {
+        "word": "word_phone",
+        "target": "J'ai perdu mon téléphone.",
+        "pronunciation_easy": "zhay pehr-dew mohn tay-lay-FON"
+      },
+      {
+        "word": "word_wallet",
+        "target": "J'ai perdu mon portefeuille.",
+        "pronunciation_easy": "zhay pehr-dew mohn por-tuh-FUHY"
+      },
+      {
+        "word": "word_bag",
+        "target": "J'ai perdu mon sac.",
+        "pronunciation_easy": "zhay pehr-dew mohn SAK"
+      },
+      {
+        "word": "word_keys",
+        "target": "J'ai perdu mes clés.",
+        "pronunciation_easy": "zhay pehr-dew may KLAY"
+      },
+      {
+        "word": "word_room_key",
+        "target": "J'ai perdu la clé de ma chambre.",
+        "pronunciation_easy": "zhay pehr-dew lah KLAY duh mah SHAHN-bruh"
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "Sur place ou à emporter ?",
+      "pronunciation_easy": "sewr PLASS oo ah ahn-por-TAY"
+    },
+    "anything_else": {
+      "target": "Autre chose ?",
+      "pronunciation_easy": "OH-truh SHOHZ",
+      "qa": "Shop staff very often say 'Et avec ceci ?' (ay ah-vek suh-SEE), 'And with this?', meaning the same."
+    },
+    "here_you_go": {
+      "target": "Voilà.",
+      "pronunciation_easy": "vwah-LAH",
+      "qa": "'Tenez.' (tuh-NAY) is also common when handing something over."
+    },
+    "inside_or_outside": {
+      "target": "À l'intérieur ou en terrasse ?",
+      "pronunciation_easy": "ah lan-tay-RYUHR oo ahn teh-RASS",
+      "qa": "Waiters also say 'En salle ou en terrasse ?'"
+    },
+    "how_many_people": {
+      "target": "Vous êtes combien ?",
+      "pronunciation_easy": "voo ZET kohm-BYEN"
+    },
+    "have_booking": {
+      "target": "Vous avez une réservation ?",
+      "pronunciation_easy": "voo zah-VAY ewn ray-zehr-vah-SYOHN"
+    },
+    "this_way": {
+      "target": "Par ici.",
+      "pronunciation_easy": "par ee-SEE"
+    },
+    "next_stop": {
+      "target": "Prochain arrêt.",
+      "pronunciation_easy": "proh-sheh-nah-REH"
+    },
+    "its_closed": {
+      "target": "C'est fermé.",
+      "pronunciation_easy": "say fehr-MAY"
+    },
+    "one_moment": {
+      "target": "Un instant, s'il vous plaît.",
+      "pronunciation_easy": "uh-nan-STAHN, seel voo PLEH"
+    },
+    "what_size": {
+      "target": "Quelle taille ?",
+      "pronunciation_easy": "kel TIE",
+      "qa": "For shoes: 'Quelle pointure ?' (kel pwan-TEWR)."
+    },
+    "receipt_question": {
+      "target": "Vous voulez le ticket ?",
+      "pronunciation_easy": "voo voo-LAY luh tee-KEH",
+      "qa": "In shops and cafés the receipt is usually 'le ticket'; 'un reçu' is also heard."
+    },
+    "how_would_you_like_it": {
+      "target": "Je vous les coupe comment ?",
+      "pronunciation_easy": "zhuh voo lay koop koh-MAHN",
+      "qa": "Uncertain: also 'Qu'est-ce qu'on vous fait ?' (What are we doing for you?). Phrasing varies by barber."
+    }
+  }
+}

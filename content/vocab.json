@@ -1,0 +1,600 @@
+{
+  "_doc": "Word banks for filling sentence frames and for listening. English only; each language's words live in content/added/<code>.json under 'vocab'. Words are never phrase cards and never count toward progress. A word can sit in several banks.",
+  "banks": {
+    "destinations": "Places to ask about or go to",
+    "food_drink": "Things to order or ask for",
+    "allergens_diet": "Allergies and diet",
+    "belongings": "Things you might lose",
+    "hotel_facilities": "Things in a hotel room",
+    "numbers": "Numbers",
+    "directions": "Directions and distance",
+    "comprehension": "Words you will hear"
+  },
+  "words": [
+    {
+      "id": "word_train_station",
+      "english": "train station",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_bus_stop",
+      "english": "bus stop",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_airport",
+      "english": "airport",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_metro_station",
+      "english": "metro station",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_hotel",
+      "english": "hotel",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_beach",
+      "english": "beach",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_city_centre",
+      "english": "city centre",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_pharmacy",
+      "english": "pharmacy",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_atm",
+      "english": "ATM",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_supermarket",
+      "english": "supermarket",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_platform",
+      "english": "platform",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_ticket_office",
+      "english": "ticket office",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_exit",
+      "english": "exit",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_entrance",
+      "english": "entrance",
+      "banks": [
+        "destinations"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_tea",
+      "english": "tea",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_beer",
+      "english": "beer",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_glass_of_wine",
+      "english": "glass of wine",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_orange_juice",
+      "english": "orange juice",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_menu",
+      "english": "menu",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_bill",
+      "english": "bill",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_bag",
+      "english": "bag",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_receipt",
+      "english": "receipt",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_water",
+      "english": "water",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_coffee",
+      "english": "coffee",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_bread",
+      "english": "bread",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_milk",
+      "english": "milk",
+      "banks": [
+        "food_drink",
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_ice",
+      "english": "ice",
+      "banks": [
+        "food_drink"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_nuts",
+      "english": "nuts",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_gluten",
+      "english": "gluten",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_shellfish",
+      "english": "shellfish",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_eggs",
+      "english": "eggs",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_meat",
+      "english": "meat",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_dairy",
+      "english": "dairy",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_peanuts",
+      "english": "peanuts",
+      "banks": [
+        "allergens_diet"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_passport",
+      "english": "passport",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_phone",
+      "english": "phone",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_wallet",
+      "english": "wallet",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_keys",
+      "english": "keys",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_ticket",
+      "english": "ticket",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_room_key",
+      "english": "room key",
+      "banks": [
+        "belongings"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_air_conditioning",
+      "english": "air conditioning",
+      "banks": [
+        "hotel_facilities"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_shower",
+      "english": "shower",
+      "banks": [
+        "hotel_facilities"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_wi_fi",
+      "english": "Wi-Fi",
+      "banks": [
+        "hotel_facilities"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_tv",
+      "english": "TV",
+      "banks": [
+        "hotel_facilities"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_hot_water",
+      "english": "hot water",
+      "banks": [
+        "hotel_facilities"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_door_lock",
+      "english": "door lock",
+      "banks": [
+        "hotel_facilities"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_one",
+      "english": "one",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_two",
+      "english": "two",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_three",
+      "english": "three",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_four",
+      "english": "four",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_five",
+      "english": "five",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_six",
+      "english": "six",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_seven",
+      "english": "seven",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_eight",
+      "english": "eight",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_nine",
+      "english": "nine",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_ten",
+      "english": "ten",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_twenty",
+      "english": "twenty",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_fifty",
+      "english": "fifty",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_one_hundred",
+      "english": "one hundred",
+      "banks": [
+        "numbers"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_upstairs",
+      "english": "upstairs",
+      "banks": [
+        "directions"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_downstairs",
+      "english": "downstairs",
+      "banks": [
+        "directions"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_near",
+      "english": "near",
+      "banks": [
+        "directions"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_far",
+      "english": "far",
+      "banks": [
+        "directions"
+      ],
+      "priority": "core"
+    },
+    {
+      "id": "word_today",
+      "english": "today",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_tomorrow",
+      "english": "tomorrow",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_now",
+      "english": "now",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_later",
+      "english": "later",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_open",
+      "english": "open",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_closed",
+      "english": "closed",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_yes",
+      "english": "yes",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_no",
+      "english": "no",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_cash",
+      "english": "cash",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    },
+    {
+      "id": "word_card",
+      "english": "card",
+      "banks": [
+        "comprehension"
+      ],
+      "priority": "travel"
+    }
+  ]
+}

@@ -1,0 +1,1040 @@
+{
+  "language_code": "pt-PT",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "Adeus.",
+      "pronunciation_easy": "ah-DEH-oosh",
+      "qa": "Adeus is the standard goodbye; in everyday Portugal 'Até logo' (see you later) or 'Até já' is often used instead and sounds warmer."
+    },
+    {
+      "id": "sorry",
+      "target": "Desculpe.",
+      "pronunciation_easy": "dush-KOOL-puh",
+      "qa": "Polite (você/o senhor) form, matching the file's register. Informal 'tu' form is 'Desculpa.'"
+    },
+    {
+      "id": "youre_welcome",
+      "target": "De nada.",
+      "pronunciation_easy": "duh NAH-dah"
+    },
+    {
+      "id": "no_thank_you",
+      "target": "Não, obrigado.",
+      "pronunciation_easy": "nowng, oh-bree-GAH-doo",
+      "qa": "Speaker gender: masculine speaker (as in the existing 'Obrigado'). A woman says 'Não, obrigada.'"
+    },
+    {
+      "id": "okay",
+      "target": "Está bem.",
+      "pronunciation_easy": "esh-TAH beng",
+      "qa": "Neutral agreement. In speech often shortened to 'Tá bem.'; 'OK' is also widely used."
+    },
+    {
+      "id": "good_evening",
+      "target": "Boa noite.",
+      "pronunciation_easy": "BOH-ah NOY-tuh",
+      "qa": "Portugal uses 'Boa tarde' until it gets dark and 'Boa noite' after; 'Boa noite' also works as a goodbye at night. In early evening (still light) 'Boa tarde' is the natural greeting."
+    },
+    {
+      "id": "table_for",
+      "target": "Uma mesa para ___, por favor.",
+      "pronunciation_easy": "OO-mah MEH-zah PAH-rah, poor fah-VOR",
+      "qa": "The blank needs the number plus pessoa/pessoas, and the number agrees with feminine 'pessoa': uma pessoa, duas pessoas, três pessoas. A bare number ('para dois') is also heard but 'duas pessoas' is the safe form."
+    },
+    {
+      "id": "menu_please",
+      "target": "A ementa, por favor.",
+      "pronunciation_easy": "ah ee-MEN-tah, poor fah-VOR",
+      "qa": "Ementa is the Portugal word (Brazil: cardápio). 'A carta' is also used in restaurants; 'o menu' in Portugal often means a set meal."
+    },
+    {
+      "id": "allergic_to",
+      "target": "Sou alérgico a ___.",
+      "pronunciation_easy": "soh ah-LEHR-zhee-koo ah",
+      "qa": "SAFETY. Literal: 'I am allergic to ___.' Masculine speaker; a woman says 'Sou alérgica a ___.' The 'a' contracts with an article: a + o = ao (ao glúten, ao leite), a + a = à, a + os = aos; with a bare plural it stays 'a' (a frutos secos). 'Tenho alergia a ___' (I have an allergy to) is an equally common alternative."
+    },
+    {
+      "id": "vegetarian",
+      "target": "Sou vegetariano.",
+      "pronunciation_easy": "soh vuh-zhuh-tah-ree-AH-noo",
+      "qa": "Masculine speaker; a woman says 'Sou vegetariana.'"
+    },
+    {
+      "id": "without",
+      "target": "Sem ___, por favor.",
+      "pronunciation_easy": "seng, poor fah-VOR",
+      "qa": "SAFETY. Literal: 'Without ___, please.' The noun goes in with no article (sem carne, sem leite). For a real allergy, pair it with 'Sou alérgico a ___' so staff understand it is not just a preference."
+    },
+    {
+      "id": "to_go",
+      "target": "Para levar, por favor.",
+      "pronunciation_easy": "PAH-rah luh-VAR, poor fah-VOR"
+    },
+    {
+      "id": "for_here",
+      "target": "Para comer aqui, por favor.",
+      "pronunciation_easy": "PAH-rah koo-MEHR ah-KEE, poor fah-VOR",
+      "qa": "Literally 'to eat here'. For a drink only, 'Para beber aqui' fits better; 'É para aqui' is also heard."
+    },
+    {
+      "id": "delicious",
+      "target": "Estava delicioso.",
+      "pronunciation_easy": "esh-TAH-vah duh-lee-see-OH-zoo",
+      "qa": "Also very common: 'Estava ótimo' or 'Estava muito bom.'"
+    },
+    {
+      "id": "another_one",
+      "target": "Mais um, por favor.",
+      "pronunciation_easy": "mysh oong, poor fah-VOR",
+      "qa": "Agrees with the item: 'Mais um' for a masculine noun (café, copo), 'Mais uma' for a feminine one (cerveja, água). 'Outro/Outra, por favor' also works."
+    },
+    {
+      "id": "ticket_to",
+      "target": "Um bilhete para ___, por favor.",
+      "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah, poor fah-VOR",
+      "qa": "'para' never contracts in writing, so the article goes inside the blank (para o aeroporto, para a praia). City names usually take no article (para Sintra), except a few like o Porto."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "Vai para ___?",
+      "pronunciation_easy": "vy PAH-rah",
+      "qa": "Literally 'Does it go to ___?', said pointing at or to the driver of the bus/train; this avoids a gendered 'este/esta'. Fuller: 'Este autocarro vai para ___?' / 'Este comboio vai para ___?'. Article goes inside the blank (para o aeroporto)."
+    },
+    {
+      "id": "take_me_to",
+      "target": "Leve-me a ___, por favor.",
+      "pronunciation_easy": "LEH-vuh-muh ah, poor fah-VOR",
+      "qa": "'a' contracts with the article: ao aeroporto, à praia, ao hotel. In a taxi many people simply say 'Para o aeroporto, por favor.'"
+    },
+    {
+      "id": "stop_here",
+      "target": "Pare aqui, por favor.",
+      "pronunciation_easy": "PAH-ruh ah-KEE, poor fah-VOR"
+    },
+    {
+      "id": "next_departure",
+      "target": "Quando sai o próximo?",
+      "pronunciation_easy": "KWAN-doo sy oo PROH-see-moo",
+      "qa": "Masculine 'o próximo' assumes comboio/autocarro (both masculine); for a feminine noun (a camioneta) it is 'a próxima'. Note: próximo is said PROH-see-moo (x = s); the existing 'nearest' entry respells it PROK-see-moo, which a reviewer may want to fix."
+    },
+    {
+      "id": "which_platform",
+      "target": "Qual é a linha?",
+      "pronunciation_easy": "kwal eh ah LEE-nyah",
+      "qa": "Portuguese train stations (CP) label platforms 'Linha' (track). 'Plataforma' or 'cais' are understood but less used on signs."
+    },
+    {
+      "id": "how_long_trip",
+      "target": "Quanto tempo demora?",
+      "pronunciation_easy": "KWAN-too TEN-poo duh-MOH-rah"
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "Só ida ou ida e volta?",
+      "pronunciation_easy": "saw EE-dah oh EE-dah ee VOL-tah"
+    },
+    {
+      "id": "left",
+      "target": "À esquerda.",
+      "pronunciation_easy": "ah esh-KEHR-dah"
+    },
+    {
+      "id": "right",
+      "target": "À direita.",
+      "pronunciation_easy": "ah dee-RAY-tah"
+    },
+    {
+      "id": "straight_ahead",
+      "target": "Sempre em frente.",
+      "pronunciation_easy": "SEN-pruh eng FREN-tuh",
+      "qa": "'Sempre em frente' (keep going straight) is the stock direction phrase; plain 'Em frente' is also correct."
+    },
+    {
+      "id": "im_lost",
+      "target": "Estou perdido.",
+      "pronunciation_easy": "esh-TOH puhr-DEE-doo",
+      "qa": "Masculine speaker; a woman says 'Estou perdida.'"
+    },
+    {
+      "id": "show_on_map",
+      "target": "Pode mostrar-me no mapa?",
+      "pronunciation_easy": "POH-duh moosh-TRAR-muh noo MAH-pah"
+    },
+    {
+      "id": "near_here",
+      "target": "É perto daqui?",
+      "pronunciation_easy": "eh PEHR-too dah-KEE"
+    },
+    {
+      "id": "have_reservation",
+      "target": "Tenho uma reserva.",
+      "pronunciation_easy": "TAYN-yoo OO-mah ruh-ZEHR-vah"
+    },
+    {
+      "id": "under_name",
+      "target": "Em nome de ___.",
+      "pronunciation_easy": "eng NOH-muh duh",
+      "qa": "Names take no article here. Fuller form: 'Está em nome de ___.'"
+    },
+    {
+      "id": "wifi_password",
+      "target": "Qual é a palavra-passe do Wi-Fi?",
+      "pronunciation_easy": "kwal eh ah pah-LAH-vrah-PAH-suh doo WY-fy",
+      "qa": "Palavra-passe is the Portugal term (Brazil: senha); the English 'password' is also widely used. Wi-Fi is usually said 'WY-fy' in Portugal, though some say 'WEE-fee'; reviewer to confirm."
+    },
+    {
+      "id": "checkout_time",
+      "target": "A que horas é o check-out?",
+      "pronunciation_easy": "ah keh OH-rahsh eh oo check-out"
+    },
+    {
+      "id": "leave_bags",
+      "target": "Posso deixar as malas aqui?",
+      "pronunciation_easy": "POH-soo day-SHAR ahsh MAH-lahsh ah-KEE"
+    },
+    {
+      "id": "doesnt_work",
+      "target": "___ não funciona.",
+      "pronunciation_easy": "nowng foon-see-OH-nah",
+      "qa": "The blank is the noun with its article (O ar condicionado, A televisão). A plural noun needs 'não funcionam'. 'Não está a funcionar' (isn't working right now) is equally natural."
+    },
+    {
+      "id": "another_towel",
+      "target": "Pode dar-me outra toalha?",
+      "pronunciation_easy": "POH-duh DAR-muh OH-trah too-AH-lyah",
+      "qa": "Literally 'Can you give me another towel?', the natural request form; 'Posso ter outra toalha?' mirrors the English more closely but sounds a bit translated."
+    },
+    {
+      "id": "just_looking",
+      "target": "Estou só a ver.",
+      "pronunciation_easy": "esh-TOH saw ah VEHR"
+    },
+    {
+      "id": "ill_take_it",
+      "target": "Vou levar isto.",
+      "pronunciation_easy": "voh luh-VAR EESH-too",
+      "qa": "Neutral 'isto' avoids gender. Also common: 'Fico com este/esta' or just 'Levo.'"
+    },
+    {
+      "id": "too_expensive",
+      "target": "É demasiado caro.",
+      "pronunciation_easy": "eh duh-mah-zee-AH-doo KAH-roo",
+      "qa": "'Demasiado' = too; in casual speech 'É muito caro' (it's very expensive) is more common and softer."
+    },
+    {
+      "id": "try_it_on",
+      "target": "Posso experimentar?",
+      "pronunciation_easy": "POH-soo esh-puh-ree-men-TAR"
+    },
+    {
+      "id": "another_size",
+      "target": "Tem noutro tamanho?",
+      "pronunciation_easy": "teng NOH-troo tah-MAH-nyoo"
+    },
+    {
+      "id": "bag_please",
+      "target": "Um saco, por favor.",
+      "pronunciation_easy": "oong SAH-koo, poor fah-VOR"
+    },
+    {
+      "id": "haircut",
+      "target": "Queria cortar o cabelo, por favor.",
+      "pronunciation_easy": "kuh-REE-ah koor-TAR oo kah-BEH-loo, poor fah-VOR"
+    },
+    {
+      "id": "just_trim",
+      "target": "Só aparar as pontas.",
+      "pronunciation_easy": "saw ah-pah-RAR ahsh PON-tahsh",
+      "qa": "Literally 'Just trim the ends.' Natural at a hairdresser; a barber would also understand 'Só aparar.'"
+    },
+    {
+      "id": "not_too_short",
+      "target": "Não muito curto.",
+      "pronunciation_easy": "nowng MWEEN-too KOOR-too"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "Mais curto dos lados.",
+      "pronunciation_easy": "mysh KOOR-too doosh LAH-doosh"
+    },
+    {
+      "id": "like_this",
+      "target": "Assim.",
+      "pronunciation_easy": "ah-SEENG",
+      "qa": "Said while showing the photo. Fuller: 'Assim, como nesta foto.' (Like this, as in this photo.)"
+    },
+    {
+      "id": "beard_trim",
+      "target": "Aparar a barba, por favor.",
+      "pronunciation_easy": "ah-pah-RAR ah BAR-bah, poor fah-VOR"
+    },
+    {
+      "id": "help_shout",
+      "target": "Socorro!",
+      "pronunciation_easy": "soo-KOH-roo",
+      "qa": "SAFETY. Literal: 'Help!/Rescue!' The standard emergency shout. The rr is the throaty r."
+    },
+    {
+      "id": "call_police",
+      "target": "Chame a polícia!",
+      "pronunciation_easy": "SHAH-muh ah poo-LEE-see-ah",
+      "qa": "SAFETY. Literal: 'Call the police!' (addressing one person). To a group: 'Chamem a polícia!' Emergency number in Portugal is 112."
+    },
+    {
+      "id": "need_doctor",
+      "target": "Preciso de um médico.",
+      "pronunciation_easy": "pruh-SEE-zoo duh oong MEH-dee-koo",
+      "qa": "SAFETY. Literal: 'I need (of) a doctor.' Portugal keeps the 'de' after precisar. In speech 'de um' often becomes 'dum'."
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "Onde fica a farmácia?",
+      "pronunciation_easy": "ON-duh FEE-kah ah far-MAH-see-ah",
+      "qa": "SAFETY. Literal: 'Where is the pharmacy?' For any open one: 'Onde fica a farmácia mais próxima?' (nearest)."
+    },
+    {
+      "id": "its_emergency",
+      "target": "É uma emergência.",
+      "pronunciation_easy": "eh OO-mah ee-muhr-ZHEN-see-ah",
+      "qa": "SAFETY. Literal: 'It is an emergency.'"
+    },
+    {
+      "id": "lost_my",
+      "target": "Perdi ___.",
+      "pronunciation_easy": "puhr-DEE",
+      "qa": "SAFETY. Literal: 'I lost ___.' The possessive goes in the blank and agrees with the noun: o meu passaporte, a minha carteira, as minhas chaves. 'Perdi-me' would mean 'I got lost', so the object must follow."
+    },
+    {
+      "id": "not_well",
+      "target": "Não me sinto bem.",
+      "pronunciation_easy": "nowng muh SEEN-too beng",
+      "qa": "SAFETY. Literal: 'I don't feel myself well' = I don't feel well."
+    },
+    {
+      "id": "call_someone",
+      "target": "Preciso de ligar a alguém.",
+      "pronunciation_easy": "pruh-SEE-zoo duh lee-GAR ah al-GAYNG",
+      "qa": "SAFETY. Literal: 'I need to call (phone) someone.' 'Ligar a' = phone; 'telefonar a alguém' is an equivalent."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "a estação de comboios",
+      "pronunciation_easy": "ah esh-tah-SOWNG duh kong-BOY-oosh"
+    },
+    "word_bus_stop": {
+      "target": "a paragem de autocarro",
+      "pronunciation_easy": "ah pah-RAH-zhayng duh ow-toh-KAH-roo"
+    },
+    "word_airport": {
+      "target": "o aeroporto",
+      "pronunciation_easy": "oo ah-eh-roo-POR-too"
+    },
+    "word_metro_station": {
+      "target": "a estação de metro",
+      "pronunciation_easy": "ah esh-tah-SOWNG duh MEH-troo"
+    },
+    "word_hotel": {
+      "target": "o hotel",
+      "pronunciation_easy": "oo oh-TEL"
+    },
+    "word_beach": {
+      "target": "a praia",
+      "pronunciation_easy": "ah PRY-ah"
+    },
+    "word_city_centre": {
+      "target": "o centro da cidade",
+      "pronunciation_easy": "oo SEN-troo dah see-DAH-duh"
+    },
+    "word_pharmacy": {
+      "target": "a farmácia",
+      "pronunciation_easy": "ah far-MAH-see-ah"
+    },
+    "word_atm": {
+      "target": "o multibanco",
+      "pronunciation_easy": "oo mool-tee-BAN-koo"
+    },
+    "word_supermarket": {
+      "target": "o supermercado",
+      "pronunciation_easy": "oo soo-pehr-mehr-KAH-doo"
+    },
+    "word_platform": {
+      "target": "a linha",
+      "pronunciation_easy": "ah LEE-nyah"
+    },
+    "word_ticket_office": {
+      "target": "a bilheteira",
+      "pronunciation_easy": "ah bee-lyuh-TAY-rah"
+    },
+    "word_exit": {
+      "target": "a saída",
+      "pronunciation_easy": "ah sah-EE-dah"
+    },
+    "word_entrance": {
+      "target": "a entrada",
+      "pronunciation_easy": "ah en-TRAH-dah"
+    },
+    "word_tea": {
+      "target": "um chá",
+      "pronunciation_easy": "oong SHAH"
+    },
+    "word_beer": {
+      "target": "uma cerveja",
+      "pronunciation_easy": "OO-mah suhr-VAY-zhah"
+    },
+    "word_glass_of_wine": {
+      "target": "um copo de vinho",
+      "pronunciation_easy": "oong KOH-poo duh VEE-nyoo"
+    },
+    "word_orange_juice": {
+      "target": "um sumo de laranja",
+      "pronunciation_easy": "oong SOO-moo duh lah-RAN-zhah"
+    },
+    "word_menu": {
+      "target": "a ementa",
+      "pronunciation_easy": "ah ee-MEN-tah"
+    },
+    "word_bill": {
+      "target": "a conta",
+      "pronunciation_easy": "ah KON-tah"
+    },
+    "word_bag": {
+      "target": "a mala",
+      "pronunciation_easy": "ah MAH-lah"
+    },
+    "word_receipt": {
+      "target": "o recibo",
+      "pronunciation_easy": "oo ruh-SEE-boo"
+    },
+    "word_water": {
+      "target": "a água",
+      "pronunciation_easy": "ah AH-gwah"
+    },
+    "word_coffee": {
+      "target": "um café",
+      "pronunciation_easy": "oong kah-FEH"
+    },
+    "word_bread": {
+      "target": "o pão",
+      "pronunciation_easy": "oo POWNG"
+    },
+    "word_milk": {
+      "target": "o leite",
+      "pronunciation_easy": "oo LAY-tuh"
+    },
+    "word_ice": {
+      "target": "o gelo",
+      "pronunciation_easy": "oo ZHEH-loo"
+    },
+    "word_nuts": {
+      "target": "os frutos de casca rija",
+      "pronunciation_easy": "oosh FROO-toosh duh KASH-kah REE-zhah",
+      "qa": "Review edit: the allergen-label term for tree nuts. \"Frutos secos\" is the everyday word but can also mean dried fruit."
+    },
+    "word_gluten": {
+      "target": "o glúten",
+      "pronunciation_easy": "oo GLOO-ten"
+    },
+    "word_shellfish": {
+      "target": "o marisco",
+      "pronunciation_easy": "oo mah-REESH-koo"
+    },
+    "word_eggs": {
+      "target": "os ovos",
+      "pronunciation_easy": "oosh OH-voosh"
+    },
+    "word_meat": {
+      "target": "a carne",
+      "pronunciation_easy": "ah KAR-nuh"
+    },
+    "word_dairy": {
+      "target": "os laticínios",
+      "pronunciation_easy": "oosh lah-tee-SEE-nee-oosh"
+    },
+    "word_peanuts": {
+      "target": "os amendoins",
+      "pronunciation_easy": "oosh ah-men-doo-EENSH"
+    },
+    "word_passport": {
+      "target": "o passaporte",
+      "pronunciation_easy": "oo pah-sah-POR-tuh"
+    },
+    "word_phone": {
+      "target": "o telemóvel",
+      "pronunciation_easy": "oo tuh-luh-MOH-vel"
+    },
+    "word_wallet": {
+      "target": "a carteira",
+      "pronunciation_easy": "ah kar-TAY-rah"
+    },
+    "word_keys": {
+      "target": "as chaves",
+      "pronunciation_easy": "ahsh SHAH-vush"
+    },
+    "word_ticket": {
+      "target": "o bilhete",
+      "pronunciation_easy": "oo bee-LYEH-tuh"
+    },
+    "word_room_key": {
+      "target": "a chave do quarto",
+      "pronunciation_easy": "ah SHAH-vuh doo KWAR-too"
+    },
+    "word_air_conditioning": {
+      "target": "o ar condicionado",
+      "pronunciation_easy": "oo ar kon-dee-see-oo-NAH-doo"
+    },
+    "word_shower": {
+      "target": "o chuveiro",
+      "pronunciation_easy": "oo shoo-VAY-roo"
+    },
+    "word_wi_fi": {
+      "target": "o Wi-Fi",
+      "pronunciation_easy": "oo WY-fy"
+    },
+    "word_tv": {
+      "target": "a televisão",
+      "pronunciation_easy": "ah tuh-luh-vee-ZOWNG"
+    },
+    "word_hot_water": {
+      "target": "a água quente",
+      "pronunciation_easy": "ah AH-gwah KEN-tuh"
+    },
+    "word_door_lock": {
+      "target": "a fechadura",
+      "pronunciation_easy": "ah fuh-shah-DOO-rah"
+    },
+    "word_one": {
+      "target": "um",
+      "pronunciation_easy": "oong"
+    },
+    "word_two": {
+      "target": "dois",
+      "pronunciation_easy": "doysh"
+    },
+    "word_three": {
+      "target": "três",
+      "pronunciation_easy": "traysh"
+    },
+    "word_four": {
+      "target": "quatro",
+      "pronunciation_easy": "KWAH-troo"
+    },
+    "word_five": {
+      "target": "cinco",
+      "pronunciation_easy": "SEEN-koo"
+    },
+    "word_six": {
+      "target": "seis",
+      "pronunciation_easy": "saysh"
+    },
+    "word_seven": {
+      "target": "sete",
+      "pronunciation_easy": "SEH-tuh"
+    },
+    "word_eight": {
+      "target": "oito",
+      "pronunciation_easy": "OY-too"
+    },
+    "word_nine": {
+      "target": "nove",
+      "pronunciation_easy": "NOH-vuh"
+    },
+    "word_ten": {
+      "target": "dez",
+      "pronunciation_easy": "desh"
+    },
+    "word_twenty": {
+      "target": "vinte",
+      "pronunciation_easy": "VEEN-tuh"
+    },
+    "word_fifty": {
+      "target": "cinquenta",
+      "pronunciation_easy": "seen-KWEN-tah"
+    },
+    "word_one_hundred": {
+      "target": "cem",
+      "pronunciation_easy": "sayng"
+    },
+    "word_upstairs": {
+      "target": "lá em cima",
+      "pronunciation_easy": "lah eng SEE-mah"
+    },
+    "word_downstairs": {
+      "target": "lá em baixo",
+      "pronunciation_easy": "lah eng BY-shoo"
+    },
+    "word_near": {
+      "target": "perto",
+      "pronunciation_easy": "PEHR-too"
+    },
+    "word_far": {
+      "target": "longe",
+      "pronunciation_easy": "LON-zhuh"
+    },
+    "word_today": {
+      "target": "hoje",
+      "pronunciation_easy": "OH-zhuh"
+    },
+    "word_tomorrow": {
+      "target": "amanhã",
+      "pronunciation_easy": "ah-mah-NYAHNG"
+    },
+    "word_now": {
+      "target": "agora",
+      "pronunciation_easy": "ah-GOH-rah"
+    },
+    "word_later": {
+      "target": "mais tarde",
+      "pronunciation_easy": "mysh TAR-duh"
+    },
+    "word_open": {
+      "target": "aberto",
+      "pronunciation_easy": "ah-BEHR-too"
+    },
+    "word_closed": {
+      "target": "fechado",
+      "pronunciation_easy": "fuh-SHAH-doo"
+    },
+    "word_yes": {
+      "target": "sim",
+      "pronunciation_easy": "seeng"
+    },
+    "word_no": {
+      "target": "não",
+      "pronunciation_easy": "nowng"
+    },
+    "word_cash": {
+      "target": "dinheiro",
+      "pronunciation_easy": "dee-NYAY-roo"
+    },
+    "word_card": {
+      "target": "cartão",
+      "pronunciation_easy": "kar-TAWNG"
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "Onde fica a estação de comboios?",
+        "pronunciation_easy": "ON-duh FEE-kah ah esh-tah-SOWNG duh kong-BOY-oosh"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Onde fica a paragem de autocarro?",
+        "pronunciation_easy": "ON-duh FEE-kah ah pah-RAH-zhayng duh ow-toh-KAH-roo"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "Onde fica a farmácia?",
+        "pronunciation_easy": "ON-duh FEE-kah ah far-MAH-see-ah"
+      },
+      {
+        "word": "word_atm",
+        "target": "Onde fica o multibanco?",
+        "pronunciation_easy": "ON-duh FEE-kah oo mool-tee-BAN-koo"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Onde fica o supermercado?",
+        "pronunciation_easy": "ON-duh FEE-kah oo soo-pehr-mehr-KAH-doo"
+      },
+      {
+        "word": "word_exit",
+        "target": "Onde fica a saída?",
+        "pronunciation_easy": "ON-duh FEE-kah ah sah-EE-dah"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "Onde fica a farmácia mais próxima?",
+        "pronunciation_easy": "ON-duh FEE-kah ah far-MAH-see-ah mysh PROH-see-mah"
+      },
+      {
+        "word": "word_atm",
+        "target": "Onde fica o multibanco mais próximo?",
+        "pronunciation_easy": "ON-duh FEE-kah oo mool-tee-BAN-koo mysh PROH-see-moo"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Onde fica o supermercado mais próximo?",
+        "pronunciation_easy": "ON-duh FEE-kah oo soo-pehr-mehr-KAH-doo mysh PROH-see-moo"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "Onde fica a estação de metro mais próxima?",
+        "pronunciation_easy": "ON-duh FEE-kah ah esh-tah-SOWNG duh MEH-troo mysh PROH-see-mah"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Onde fica a paragem de autocarro mais próxima?",
+        "pronunciation_easy": "ON-duh FEE-kah ah pah-RAH-zhayng duh ow-toh-KAH-roo mysh PROH-see-mah"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "Como chego ao aeroporto?",
+        "pronunciation_easy": "KOH-moo SHEH-goo ow ah-eh-roo-POR-too"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Como chego à estação de comboios?",
+        "pronunciation_easy": "KOH-moo SHEH-goo ah esh-tah-SOWNG duh kong-BOY-oosh"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Como chego ao centro da cidade?",
+        "pronunciation_easy": "KOH-moo SHEH-goo ow SEN-troo dah see-DAH-duh"
+      },
+      {
+        "word": "word_beach",
+        "target": "Como chego à praia?",
+        "pronunciation_easy": "KOH-moo SHEH-goo ah PRY-ah"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Como chego ao hotel?",
+        "pronunciation_easy": "KOH-moo SHEH-goo ow oh-TEL"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "Posso ter um chá, por favor?",
+        "pronunciation_easy": "POH-soo tehr oong SHAH, poor fah-VOR"
+      },
+      {
+        "word": "word_beer",
+        "target": "Posso ter uma cerveja, por favor?",
+        "pronunciation_easy": "POH-soo tehr OO-mah suhr-VAY-zhah, poor fah-VOR"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Posso ter um copo de vinho, por favor?",
+        "pronunciation_easy": "POH-soo tehr oong KOH-poo duh VEE-nyoo, poor fah-VOR"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Posso ter um sumo de laranja, por favor?",
+        "pronunciation_easy": "POH-soo tehr oong SOO-moo duh lah-RAN-zhah, poor fah-VOR"
+      },
+      {
+        "word": "word_menu",
+        "target": "Posso ter a ementa, por favor?",
+        "pronunciation_easy": "POH-soo tehr ah ee-MEN-tah, poor fah-VOR"
+      },
+      {
+        "word": "word_receipt",
+        "target": "Posso ter o recibo, por favor?",
+        "pronunciation_easy": "POH-soo tehr oo ruh-SEE-boo, poor fah-VOR"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "Queria um chá, por favor.",
+        "pronunciation_easy": "kuh-REE-ah oong SHAH, poor fah-VOR"
+      },
+      {
+        "word": "word_beer",
+        "target": "Queria uma cerveja, por favor.",
+        "pronunciation_easy": "kuh-REE-ah OO-mah suhr-VAY-zhah, poor fah-VOR"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Queria um copo de vinho, por favor.",
+        "pronunciation_easy": "kuh-REE-ah oong KOH-poo duh VEE-nyoo, poor fah-VOR"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Queria um sumo de laranja, por favor.",
+        "pronunciation_easy": "kuh-REE-ah oong SOO-moo duh lah-RAN-zhah, poor fah-VOR"
+      },
+      {
+        "word": "word_bread",
+        "target": "Queria pão, por favor.",
+        "pronunciation_easy": "kuh-REE-ah POWNG, poor fah-VOR"
+      },
+      {
+        "word": "word_water",
+        "target": "Queria uma água, por favor.",
+        "pronunciation_easy": "kuh-REE-ah OO-mah AH-gwah, poor fah-VOR"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "Uma mesa para uma pessoa, por favor.",
+        "pronunciation_easy": "OO-mah MEH-zah PAH-rah OO-mah puh-SOH-ah, poor fah-VOR"
+      },
+      {
+        "word": "word_two",
+        "target": "Uma mesa para duas pessoas, por favor.",
+        "pronunciation_easy": "OO-mah MEH-zah PAH-rah DOO-ahsh puh-SOH-ahsh, poor fah-VOR"
+      },
+      {
+        "word": "word_three",
+        "target": "Uma mesa para três pessoas, por favor.",
+        "pronunciation_easy": "OO-mah MEH-zah PAH-rah traysh puh-SOH-ahsh, poor fah-VOR"
+      },
+      {
+        "word": "word_four",
+        "target": "Uma mesa para quatro pessoas, por favor.",
+        "pronunciation_easy": "OO-mah MEH-zah PAH-rah KWAH-troo puh-SOH-ahsh, poor fah-VOR"
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "Sou alérgico a frutos de casca rija.",
+        "pronunciation_easy": "soh ah-LEHR-zhee-koo ah FROO-toosh duh KASH-kah REE-zhah"
+      },
+      {
+        "word": "word_peanuts",
+        "target": "Sou alérgico ao amendoim.",
+        "pronunciation_easy": "soh ah-LEHR-zhee-koo ow ah-men-doo-EENG"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Sou alérgico ao glúten.",
+        "pronunciation_easy": "soh ah-LEHR-zhee-koo ow GLOO-ten"
+      },
+      {
+        "word": "word_shellfish",
+        "target": "Sou alérgico ao marisco.",
+        "pronunciation_easy": "soh ah-LEHR-zhee-koo ow mah-REESH-koo"
+      },
+      {
+        "word": "word_milk",
+        "target": "Sou alérgico ao leite.",
+        "pronunciation_easy": "soh ah-LEHR-zhee-koo ow LAY-tuh"
+      },
+      {
+        "word": "word_eggs",
+        "target": "Sou alérgico a ovos.",
+        "pronunciation_easy": "soh ah-LEHR-zhee-koo ah OH-voosh"
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "Sem carne, por favor.",
+        "pronunciation_easy": "seng KAR-nuh, poor fah-VOR"
+      },
+      {
+        "word": "word_milk",
+        "target": "Sem leite, por favor.",
+        "pronunciation_easy": "seng LAY-tuh, poor fah-VOR"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Sem glúten, por favor.",
+        "pronunciation_easy": "seng GLOO-ten, poor fah-VOR"
+      },
+      {
+        "word": "word_ice",
+        "target": "Sem gelo, por favor.",
+        "pronunciation_easy": "seng ZHEH-loo, poor fah-VOR"
+      },
+      {
+        "word": "word_nuts",
+        "target": "Sem frutos de casca rija, por favor.",
+        "pronunciation_easy": "seng FROO-toosh duh KASH-kah REE-zhah, poor fah-VOR"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "Um bilhete para o aeroporto, por favor.",
+        "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah oo ah-eh-roo-POR-too, poor fah-VOR"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Um bilhete para o centro da cidade, por favor.",
+        "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah oo SEN-troo dah see-DAH-duh, poor fah-VOR"
+      },
+      {
+        "word": "word_beach",
+        "target": "Um bilhete para a praia, por favor.",
+        "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah ah PRY-ah, poor fah-VOR"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Um bilhete para a estação de comboios, por favor.",
+        "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah ah esh-tah-SOWNG duh kong-BOY-oosh, poor fah-VOR"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "Vai para o aeroporto?",
+        "pronunciation_easy": "vy PAH-rah oo ah-eh-roo-POR-too"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Vai para o centro da cidade?",
+        "pronunciation_easy": "vy PAH-rah oo SEN-troo dah see-DAH-duh"
+      },
+      {
+        "word": "word_beach",
+        "target": "Vai para a praia?",
+        "pronunciation_easy": "vy PAH-rah ah PRY-ah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Vai para a estação de comboios?",
+        "pronunciation_easy": "vy PAH-rah ah esh-tah-SOWNG duh kong-BOY-oosh"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "Leve-me ao aeroporto, por favor.",
+        "pronunciation_easy": "LEH-vuh-muh ow ah-eh-roo-POR-too, poor fah-VOR"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Leve-me ao hotel, por favor.",
+        "pronunciation_easy": "LEH-vuh-muh ow oh-TEL, poor fah-VOR"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Leve-me à estação de comboios, por favor.",
+        "pronunciation_easy": "LEH-vuh-muh ah esh-tah-SOWNG duh kong-BOY-oosh, poor fah-VOR"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Leve-me ao centro da cidade, por favor.",
+        "pronunciation_easy": "LEH-vuh-muh ow SEN-troo dah see-DAH-duh, poor fah-VOR"
+      },
+      {
+        "word": "word_beach",
+        "target": "Leve-me à praia, por favor.",
+        "pronunciation_easy": "LEH-vuh-muh ah PRY-ah, poor fah-VOR"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "O ar condicionado não funciona.",
+        "pronunciation_easy": "oo ar kon-dee-see-oo-NAH-doo nowng foon-see-OH-nah"
+      },
+      {
+        "word": "word_shower",
+        "target": "O chuveiro não funciona.",
+        "pronunciation_easy": "oo shoo-VAY-roo nowng foon-see-OH-nah"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "O Wi-Fi não funciona.",
+        "pronunciation_easy": "oo WY-fy nowng foon-see-OH-nah"
+      },
+      {
+        "word": "word_tv",
+        "target": "A televisão não funciona.",
+        "pronunciation_easy": "ah tuh-luh-vee-ZOWNG nowng foon-see-OH-nah"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "A água quente não funciona.",
+        "pronunciation_easy": "ah AH-gwah KEN-tuh nowng foon-see-OH-nah"
+      },
+      {
+        "word": "word_door_lock",
+        "target": "A fechadura da porta não funciona.",
+        "pronunciation_easy": "ah fuh-shah-DOO-rah dah POR-tah nowng foon-see-OH-nah"
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "Perdi o meu passaporte.",
+        "pronunciation_easy": "puhr-DEE oo MEH-oo pah-sah-POR-tuh"
+      },
+      {
+        "word": "word_phone",
+        "target": "Perdi o meu telemóvel.",
+        "pronunciation_easy": "puhr-DEE oo MEH-oo tuh-luh-MOH-vel"
+      },
+      {
+        "word": "word_wallet",
+        "target": "Perdi a minha carteira.",
+        "pronunciation_easy": "puhr-DEE ah MEE-nyah kar-TAY-rah"
+      },
+      {
+        "word": "word_bag",
+        "target": "Perdi a minha mala.",
+        "pronunciation_easy": "puhr-DEE ah MEE-nyah MAH-lah"
+      },
+      {
+        "word": "word_keys",
+        "target": "Perdi as minhas chaves.",
+        "pronunciation_easy": "puhr-DEE ahsh MEE-nyahsh SHAH-vush"
+      },
+      {
+        "word": "word_room_key",
+        "target": "Perdi a chave do quarto.",
+        "pronunciation_easy": "puhr-DEE ah SHAH-vuh doo KWAR-too"
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "É para comer aqui ou para levar?",
+      "pronunciation_easy": "eh PAH-rah koo-MEHR ah-KEE oh PAH-rah luh-VAR"
+    },
+    "anything_else": {
+      "target": "Mais alguma coisa?",
+      "pronunciation_easy": "mysh al-GOO-mah KOY-zah"
+    },
+    "here_you_go": {
+      "target": "Aqui tem.",
+      "pronunciation_easy": "ah-KEE teng"
+    },
+    "inside_or_outside": {
+      "target": "Dentro ou na esplanada?",
+      "pronunciation_easy": "DEN-troo oh nah esh-plah-NAH-dah"
+    },
+    "how_many_people": {
+      "target": "Quantas pessoas?",
+      "pronunciation_easy": "KWAN-tahsh puh-SOH-ahsh"
+    },
+    "have_booking": {
+      "target": "Tem reserva?",
+      "pronunciation_easy": "teng ruh-ZEHR-vah"
+    },
+    "this_way": {
+      "target": "Por aqui.",
+      "pronunciation_easy": "poor ah-KEE"
+    },
+    "next_stop": {
+      "target": "Próxima paragem.",
+      "pronunciation_easy": "PROH-see-mah pah-RAH-zhayng"
+    },
+    "its_closed": {
+      "target": "Está fechado.",
+      "pronunciation_easy": "esh-TAH fuh-SHAH-doo"
+    },
+    "one_moment": {
+      "target": "Um momento, por favor.",
+      "pronunciation_easy": "oong moo-MEN-too, poor fah-VOR"
+    },
+    "what_size": {
+      "target": "Que tamanho veste?",
+      "pronunciation_easy": "keh tah-MAH-nyoo VESH-tuh"
+    },
+    "receipt_question": {
+      "target": "Quer fatura?",
+      "pronunciation_easy": "kehr fah-TOO-rah"
+    },
+    "how_would_you_like_it": {
+      "target": "Como é que quer o corte?",
+      "pronunciation_easy": "KOH-moo eh keh kehr oo KOR-tuh"
+    }
+  }
+}

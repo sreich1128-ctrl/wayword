@@ -49,3 +49,32 @@ test('a missed step comes back once, a little later', () => {
   requeue(steps, 0, steps[0]);
   assert.equal(kinds(steps), 'check,check,again');
 });
+
+import { readiness } from '../js/plan.js';
+import { mergeAdded } from '../js/data.js';
+
+test('readiness counts only a situation\'s own phrases', () => {
+  const sit = { concepts: ['hello', 'thank_you', 'have_reservation', 'wifi_password'], counts: ['have_reservation', 'wifi_password'] };
+  const learned = new Set(['hello', 'thank_you']);
+  assert.deepEqual(readiness(sit, (id) => learned.has(id)), { n: 2, ready: 0 }); // generic phrases don't count
+  learned.add('wifi_password');
+  assert.deepEqual(readiness(sit, (id) => learned.has(id)), { n: 2, ready: 1 });
+  assert.deepEqual(readiness({ concepts: ['hello', 'yes'] }, (id) => learned.has(id)), { n: 2, ready: 1 }); // no counts list: all count
+});
+
+test('drafts fill gaps but never replace the vetted dataset, and are marked', () => {
+  const vetted = new Map([['hello', { id: 'hello', target: 'Olá' }]]);
+  const merged = mergeAdded(vetted, { entries: [{ id: 'hello', target: 'Oi' }, { id: 'goodbye', target: 'Adeus' }] });
+  assert.equal(merged.get('hello').target, 'Olá');
+  assert.equal(merged.get('hello').draft, undefined);
+  assert.equal(merged.get('goodbye').target, 'Adeus');
+  assert.equal(merged.get('goodbye').draft, true);
+});
+
+test('listening check can use a reply from the situation', () => {
+  const replies = [{ key: 'r1', english: 'Anything else?' }, { key: 'r2', english: 'For here or to go?' }];
+  const steps = planSession({ fresh: ph(5), replies, rand: () => 0 });
+  const lc = steps.find((s) => s.kind === 'listen');
+  assert.ok(lc && lc.p.key.startsWith('r'));
+  assert.equal(lc.options.length, 2);
+});

@@ -1,0 +1,118 @@
+{
+  "_doc": "Things you'll hear (listening layer). English only; translations in content/added/<code>.json under 'replies'. 'same_as' reuses an existing phrase's translation instead of a second copy.",
+  "replies": [
+    {
+      "id": "for_here_or_to_go",
+      "english": "For here or to go?",
+      "situations": [
+        "cafe",
+        "restaurant"
+      ]
+    },
+    {
+      "id": "anything_else",
+      "english": "Anything else?",
+      "situations": [
+        "cafe",
+        "restaurant"
+      ]
+    },
+    {
+      "id": "here_you_go",
+      "english": "Here you go.",
+      "situations": [
+        "cafe",
+        "restaurant",
+        "shopping",
+        "hotel"
+      ]
+    },
+    {
+      "id": "card_or_cash",
+      "english": "Card or cash?",
+      "situations": [
+        "cafe",
+        "restaurant",
+        "shopping"
+      ],
+      "same_as": "cash_or_card"
+    },
+    {
+      "id": "inside_or_outside",
+      "english": "Inside or outside?",
+      "situations": [
+        "cafe",
+        "restaurant"
+      ]
+    },
+    {
+      "id": "how_many_people",
+      "english": "How many people?",
+      "situations": [
+        "restaurant",
+        "cafe"
+      ]
+    },
+    {
+      "id": "have_booking",
+      "english": "Do you have a reservation?",
+      "situations": [
+        "hotel"
+      ]
+    },
+    {
+      "id": "this_way",
+      "english": "This way.",
+      "situations": [
+        "directions"
+      ]
+    },
+    {
+      "id": "next_stop",
+      "english": "Next stop.",
+      "situations": [
+        "transport"
+      ]
+    },
+    {
+      "id": "its_closed",
+      "english": "It's closed.",
+      "situations": [
+        "shopping",
+        "directions"
+      ]
+    },
+    {
+      "id": "one_moment",
+      "english": "One moment, please.",
+      "situations": [
+        "hotel",
+        "restaurant",
+        "shopping"
+      ]
+    },
+    {
+      "id": "what_size",
+      "english": "What size?",
+      "situations": [
+        "shopping"
+      ]
+    },
+    {
+      "id": "receipt_question",
+      "english": "Would you like a receipt?",
+      "situations": [
+        "cafe",
+        "restaurant",
+        "shopping"
+      ]
+    },
+    {
+      "id": "how_would_you_like_it",
+      "english": "How would you like it cut?",
+      "situations": [
+        "barber"
+      ]
+    }
+  ]
+}

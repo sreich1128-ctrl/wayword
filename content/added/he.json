@@ -1,0 +1,1063 @@
+{
+  "language_code": "he",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "להתראות.",
+      "pronunciation_easy": "le-hit-ra-OT"
+    },
+    {
+      "id": "sorry",
+      "target": "סליחה.",
+      "pronunciation_easy": "sli-KHA",
+      "qa": "Same word as excuse_me; Israelis use סליחה for most apologies. For a fuller apology: אני מצטער (a-NEE mits-ta-ER), masculine; feminine אני מצטערת (mits-ta-E-ret)."
+    },
+    {
+      "id": "youre_welcome",
+      "target": "בבקשה.",
+      "pronunciation_easy": "be-va-ka-SHA",
+      "qa": "Same word as please; the everyday reply to תודה. Also heard: על לא דבר (al lo da-VAR), אין בעד מה (eyn be-AD ma)."
+    },
+    {
+      "id": "no_thank_you",
+      "target": "לא, תודה.",
+      "pronunciation_easy": "lo, to-DA"
+    },
+    {
+      "id": "okay",
+      "target": "בסדר.",
+      "pronunciation_easy": "be-SE-der",
+      "qa": "Literally 'in order'. אוקיי (o-KEY) is just as common in casual speech."
+    },
+    {
+      "id": "good_evening",
+      "target": "ערב טוב.",
+      "pronunciation_easy": "E-rev tov"
+    },
+    {
+      "id": "table_for",
+      "target": "שולחן ל___, בבקשה.",
+      "pronunciation_easy": "shul-KHAN le-___, be-va-ka-SHA",
+      "qa": "The prefix ל (le-) is fixed, but numbers for counting people take masculine forms (לשניים, לשלושה, לארבעה), not the counting forms in vocab. For one person, לאחד is usual for a man (feminine: לאחת). Also common: אנחנו שניים (a-NAKH-noo SHNA-yim, 'we are two')."
+    },
+    {
+      "id": "menu_please",
+      "target": "תפריט, בבקשה.",
+      "pronunciation_easy": "taf-REET, be-va-ka-SHA",
+      "qa": "Also natural: אפשר תפריט? (ef-SHAR taf-REET)."
+    },
+    {
+      "id": "allergic_to",
+      "target": "אני אלרגי ל___.",
+      "pronunciation_easy": "a-NEE a-LER-gee le-___",
+      "qa": "Back-translation: 'I [am] allergic to ___.' Masculine speaker; a woman says אני אלרגית (a-LER-geet). Prefix ל attaches to the allergen word. To stress severity add: זה מסוכן לי (ze me-su-KAN lee, 'it is dangerous for me')."
+    },
+    {
+      "id": "vegetarian",
+      "target": "אני צמחוני.",
+      "pronunciation_easy": "a-NEE tsim-kho-NEE",
+      "qa": "Masculine speaker; feminine אני צמחונית (tsim-kho-NEET). Vegan: טבעוני (tiv-o-NEE)."
+    },
+    {
+      "id": "without",
+      "target": "בלי ___, בבקשה.",
+      "pronunciation_easy": "blee ___, be-va-ka-SHA",
+      "qa": "Back-translation: 'Without ___, please.' בלי never changes form; for an allergy, say allergic_to as well, since בלי alone may be read as a preference."
+    },
+    {
+      "id": "to_go",
+      "target": "לקחת, בבקשה.",
+      "pronunciation_easy": "la-KA-khat, be-va-ka-SHA",
+      "qa": "Literally 'to take'. The standard café answer; טייק אווי is also understood."
+    },
+    {
+      "id": "for_here",
+      "target": "לשבת פה, בבקשה.",
+      "pronunciation_easy": "la-SHE-vet po, be-va-ka-SHA",
+      "qa": "Literally 'to sit here'. Pairs with the staff question לשבת או לקחת?"
+    },
+    {
+      "id": "delicious",
+      "target": "היה טעים מאוד.",
+      "pronunciation_easy": "ha-YA ta-EEM me-OD"
+    },
+    {
+      "id": "another_one",
+      "target": "עוד אחד, בבקשה.",
+      "pronunciation_easy": "od e-KHAD, be-va-ka-SHA",
+      "qa": "אחד agrees with the item, not the speaker: masculine item (קפה) עוד אחד; feminine item (בירה, כוס) עוד אחת (od a-KHAT)."
+    },
+    {
+      "id": "ticket_to",
+      "target": "כרטיס ל___, בבקשה.",
+      "pronunciation_easy": "kar-TEES le-___, be-va-ka-SHA",
+      "qa": "ל merges with ה: לשדה (li-SDE), לחוף (la-KHOF). In Israel most bus/train fares are paid with a Rav-Kav card, so this is mostly for abroad or intercity counters."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "זה מגיע ל___?",
+      "pronunciation_easy": "ze ma-GEE-a le-___",
+      "qa": "Literally 'Does this arrive to ___?'. Natural on a bus: האוטובוס הזה מגיע ל___? For a train (feminine רכבת): הרכבת הזאת מגיעה ל___? Reviewer: check whether זה נוסע ל___? is preferred."
+    },
+    {
+      "id": "take_me_to",
+      "target": "תיקח אותי ל___, בבקשה.",
+      "pronunciation_easy": "ti-KAKH o-TEE le-___, be-va-ka-SHA",
+      "qa": "Masculine addressee (driver); to a woman: תיקחי (ti-ke-KHEE). Many Israelis just say the destination: לשדה התעופה, בבקשה."
+    },
+    {
+      "id": "stop_here",
+      "target": "תעצור פה, בבקשה.",
+      "pronunciation_easy": "ta-a-TSOR po, be-va-ka-SHA",
+      "qa": "Masculine addressee; to a woman: תעצרי (ta-ats-REE). אפשר לעצור פה? (ef-SHAR la-a-TSOR po) is gender-neutral."
+    },
+    {
+      "id": "next_departure",
+      "target": "מתי יוצא האוטובוס הבא?",
+      "pronunciation_easy": "ma-TAI yo-TSE ha-O-to-boos ha-BA",
+      "qa": "Review edit: names the bus, since \"the next one\" alone sounds unnatural. For a train (רכבת, feminine): מתי יוצאת הרכבת הבאה? (ma-TAI yots-ET ha-ra-KE-vet ha-ba-A)."
+    },
+    {
+      "id": "which_platform",
+      "target": "איזה רציף?",
+      "pronunciation_easy": "EY-ze ra-TSEEF"
+    },
+    {
+      "id": "how_long_trip",
+      "target": "כמה זמן זה לוקח?",
+      "pronunciation_easy": "KA-ma zman ze lo-KE-akh"
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "הלוך או הלוך ושוב?",
+      "pronunciation_easy": "ha-LOKH o ha-LOKH va-SHUV"
+    },
+    {
+      "id": "left",
+      "target": "שמאלה.",
+      "pronunciation_easy": "SMO-la",
+      "qa": "Direction form ('to the left'). The adjective/side is שמאל (smol)."
+    },
+    {
+      "id": "right",
+      "target": "ימינה.",
+      "pronunciation_easy": "ya-MEE-na",
+      "qa": "Direction form ('to the right'). Not 'correct' (that is נכון)."
+    },
+    {
+      "id": "straight_ahead",
+      "target": "ישר.",
+      "pronunciation_easy": "ya-SHAR",
+      "qa": "Also heard: ישר ישר (keep going straight)."
+    },
+    {
+      "id": "im_lost",
+      "target": "הלכתי לאיבוד.",
+      "pronunciation_easy": "ha-LAKH-tee le-ee-BOOD",
+      "qa": "Literally 'I went to loss'. Past tense, same for men and women."
+    },
+    {
+      "id": "show_on_map",
+      "target": "אפשר להראות לי על המפה?",
+      "pronunciation_easy": "ef-SHAR le-har-OT lee al ha-ma-PA"
+    },
+    {
+      "id": "near_here",
+      "target": "זה קרוב לכאן?",
+      "pronunciation_easy": "ze ka-ROV le-KHAN",
+      "qa": "זה קרוב לפה? (le-PO) is equally common."
+    },
+    {
+      "id": "have_reservation",
+      "target": "יש לי הזמנה.",
+      "pronunciation_easy": "yesh lee haz-ma-NA"
+    },
+    {
+      "id": "under_name",
+      "target": "על שם ___.",
+      "pronunciation_easy": "al shem ___"
+    },
+    {
+      "id": "wifi_password",
+      "target": "מה הסיסמה לוויי-פיי?",
+      "pronunciation_easy": "ma ha-sis-MA la-WAI-fai",
+      "qa": "Stress on וויי-פיי varies (WAI-fai / wai-FAI). Some say לאינטרנט (la-IN-ter-net) instead."
+    },
+    {
+      "id": "checkout_time",
+      "target": "באיזו שעה הצ'ק-אאוט?",
+      "pronunciation_easy": "be-EY-zo sha-A ha-chek-AUT",
+      "qa": "Uses the English loan צ'ק-אאוט, which Israeli hotels use. Reviewer: check spelling/respelling of the loanword."
+    },
+    {
+      "id": "leave_bags",
+      "target": "אפשר להשאיר פה את המזוודות?",
+      "pronunciation_easy": "ef-SHAR le-hash-EER po et ha-miz-va-DOT",
+      "qa": "Uses מזוודות (suitcases); for backpacks/smaller bags: התיקים (ha-tee-KEEM)."
+    },
+    {
+      "id": "doesnt_work",
+      "target": "ה___ לא עובד.",
+      "pronunciation_easy": "ha-___ lo o-VED",
+      "qa": "Verb agrees with the noun: masculine עובד (o-VED), feminine עובדת (o-VE-det), plural עובדים (ov-DEEM). For a construct noun the ה moves to the second word. Hot water is more natural as אין מים חמים ('there is no hot water')."
+    },
+    {
+      "id": "another_towel",
+      "target": "אפשר לקבל עוד מגבת?",
+      "pronunciation_easy": "ef-SHAR le-ka-BEL od ma-GE-vet"
+    },
+    {
+      "id": "just_looking",
+      "target": "אני רק מסתכל.",
+      "pronunciation_easy": "a-NEE rak mis-ta-KEL",
+      "qa": "Masculine speaker; feminine אני רק מסתכלת (mis-ta-KE-let)."
+    },
+    {
+      "id": "ill_take_it",
+      "target": "אני אקח את זה.",
+      "pronunciation_easy": "a-NEE e-KAKH et ze"
+    },
+    {
+      "id": "too_expensive",
+      "target": "זה יקר מדי.",
+      "pronunciation_easy": "ze ya-KAR mi-DAI"
+    },
+    {
+      "id": "try_it_on",
+      "target": "אפשר למדוד?",
+      "pronunciation_easy": "ef-SHAR lim-DOD"
+    },
+    {
+      "id": "another_size",
+      "target": "יש את זה במידה אחרת?",
+      "pronunciation_easy": "yesh et ze be-mi-DA a-khe-RET"
+    },
+    {
+      "id": "bag_please",
+      "target": "שקית, בבקשה.",
+      "pronunciation_easy": "sa-KEET, be-va-ka-SHA",
+      "qa": "שקית is a plastic/carrier bag (often charged for). Not תיק (handbag/backpack)."
+    },
+    {
+      "id": "haircut",
+      "target": "תספורת, בבקשה.",
+      "pronunciation_easy": "tis-po-RET, be-va-ka-SHA"
+    },
+    {
+      "id": "just_trim",
+      "target": "רק לקצר קצת.",
+      "pronunciation_easy": "rak le-ka-TSER KT-sat",
+      "qa": "Literally 'just to shorten a little'. Reviewer: check against barber usage; רק לסדר (rak le-sa-DER, 'just tidy it') is also common."
+    },
+    {
+      "id": "not_too_short",
+      "target": "לא קצר מדי.",
+      "pronunciation_easy": "lo ka-TSAR mi-DAI"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "יותר קצר בצדדים.",
+      "pronunciation_easy": "yo-TER ka-TSAR ba-tsda-DEEM"
+    },
+    {
+      "id": "like_this",
+      "target": "ככה.",
+      "pronunciation_easy": "KA-kha",
+      "qa": "Said while showing the photo. כמו בתמונה (kmo ba-tmu-NA, 'like in the picture') is a clearer alternative."
+    },
+    {
+      "id": "beard_trim",
+      "target": "לסדר את הזקן, בבקשה.",
+      "pronunciation_easy": "le-sa-DER et ha-za-KAN, be-va-ka-SHA",
+      "qa": "Literally 'to tidy the beard, please'. Reviewer: check; לקצר את הזקן (shorten) is the alternative."
+    },
+    {
+      "id": "help_shout",
+      "target": "הצילו!",
+      "pronunciation_easy": "ha-TSEE-loo",
+      "qa": "Back-translation: 'Save [me]!' / 'Rescue!' The standard shout for help, said the same by anyone. Israel emergency numbers: police 100, ambulance (Magen David Adom) 101."
+    },
+    {
+      "id": "call_police",
+      "target": "תתקשרו למשטרה!",
+      "pronunciation_easy": "tit-kash-ROO la-mish-ta-RA",
+      "qa": "Back-translation: '(You all) call to the police!' Plural, addressed to bystanders, same for any gender. To one man: תתקשר (tit-ka-SHER); to one woman: תתקשרי (tit-kash-REE). Police number in Israel: 100."
+    },
+    {
+      "id": "need_doctor",
+      "target": "אני צריך רופא.",
+      "pronunciation_easy": "a-NEE tsa-REEKH ro-FE",
+      "qa": "Back-translation: 'I need a doctor.' Masculine speaker; feminine אני צריכה (tsree-KHA). If urgent: אני צריך אמבולנס (am-bu-LANS), number 101."
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "איפה בית המרקחת?",
+      "pronunciation_easy": "EY-fo beyt ha-mir-KA-khat",
+      "qa": "Back-translation: 'Where [is] the pharmacy?' בית מרקחת is the standard word; many Israelis just say סופר-פארם (the main chain) or ask איפה יש פה בית מרקחת? ('where is there a pharmacy here?')."
+    },
+    {
+      "id": "its_emergency",
+      "target": "זה מקרה חירום.",
+      "pronunciation_easy": "ze mik-RE khe-ROOM",
+      "qa": "Back-translation: 'This is an emergency case.' Shorter and very common: זה דחוף! (ze da-KHOOF, 'it's urgent!')."
+    },
+    {
+      "id": "lost_my",
+      "target": "איבדתי את ה___ שלי.",
+      "pronunciation_easy": "ee-BAD-tee et ha-___ she-LEE",
+      "qa": "Back-translation: 'I lost the ___ of mine.' Past tense, same for men and women. ה goes on the noun; for a two-word noun (room key) it becomes את המפתח של החדר שלי."
+    },
+    {
+      "id": "not_well",
+      "target": "אני לא מרגיש טוב.",
+      "pronunciation_easy": "a-NEE lo mar-GEESH tov",
+      "qa": "Back-translation: 'I don't feel good.' Masculine speaker; feminine אני לא מרגישה טוב (mar-gee-SHA)."
+    },
+    {
+      "id": "call_someone",
+      "target": "אני צריך להתקשר למישהו.",
+      "pronunciation_easy": "a-NEE tsa-REEKH le-hit-ka-SHER le-MEE-she-hu",
+      "qa": "Back-translation: 'I need to call to someone.' Masculine speaker; feminine צריכה (tsree-KHA). To borrow a phone: אפשר להתקשר מהטלפון שלך? (ef-SHAR le-hit-ka-SHER me-ha-TE-le-fon shel-KHA)."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "תחנת הרכבת",
+      "pronunciation_easy": "ta-kha-NAT ha-ra-KE-vet"
+    },
+    "word_bus_stop": {
+      "target": "תחנת האוטובוס",
+      "pronunciation_easy": "ta-kha-NAT ha-O-to-boos"
+    },
+    "word_airport": {
+      "target": "שדה התעופה",
+      "pronunciation_easy": "sde ha-te-oo-FA"
+    },
+    "word_metro_station": {
+      "target": "תחנת המטרו",
+      "pronunciation_easy": "ta-kha-NAT ha-MET-ro",
+      "qa": "Israel has no metro yet (Tel Aviv has a light rail: הרכבת הקלה); מטרו is understood for abroad."
+    },
+    "word_hotel": {
+      "target": "המלון",
+      "pronunciation_easy": "ha-ma-LON"
+    },
+    "word_beach": {
+      "target": "החוף",
+      "pronunciation_easy": "ha-KHOF",
+      "qa": "Israelis often say הים (ha-YAM, 'the sea') for going to the beach."
+    },
+    "word_city_centre": {
+      "target": "מרכז העיר",
+      "pronunciation_easy": "mer-KAZ ha-EER"
+    },
+    "word_pharmacy": {
+      "target": "בית המרקחת",
+      "pronunciation_easy": "beyt ha-mir-KA-khat"
+    },
+    "word_atm": {
+      "target": "הכספומט",
+      "pronunciation_easy": "ha-kas-po-MAT"
+    },
+    "word_supermarket": {
+      "target": "הסופר",
+      "pronunciation_easy": "ha-SOO-per",
+      "qa": "Short for סופרמרקט, the everyday word."
+    },
+    "word_platform": {
+      "target": "הרציף",
+      "pronunciation_easy": "ha-ra-TSEEF"
+    },
+    "word_ticket_office": {
+      "target": "הקופה",
+      "pronunciation_easy": "ha-koo-PA"
+    },
+    "word_exit": {
+      "target": "היציאה",
+      "pronunciation_easy": "ha-ye-tsee-A"
+    },
+    "word_entrance": {
+      "target": "הכניסה",
+      "pronunciation_easy": "ha-knee-SA"
+    },
+    "word_tea": {
+      "target": "תה",
+      "pronunciation_easy": "te"
+    },
+    "word_beer": {
+      "target": "בירה",
+      "pronunciation_easy": "BEE-ra"
+    },
+    "word_glass_of_wine": {
+      "target": "כוס יין",
+      "pronunciation_easy": "kos YA-yin"
+    },
+    "word_orange_juice": {
+      "target": "מיץ תפוזים",
+      "pronunciation_easy": "mits ta-poo-ZEEM"
+    },
+    "word_menu": {
+      "target": "תפריט",
+      "pronunciation_easy": "taf-REET"
+    },
+    "word_bill": {
+      "target": "חשבון",
+      "pronunciation_easy": "khesh-BON"
+    },
+    "word_bag": {
+      "target": "תיק",
+      "pronunciation_easy": "teek",
+      "qa": "Handbag/backpack (for lost_my). A shopping/carrier bag is שקית (sa-KEET)."
+    },
+    "word_receipt": {
+      "target": "קבלה",
+      "pronunciation_easy": "ka-ba-LA"
+    },
+    "word_water": {
+      "target": "מים",
+      "pronunciation_easy": "MA-yim"
+    },
+    "word_coffee": {
+      "target": "קפה",
+      "pronunciation_easy": "ka-FE"
+    },
+    "word_bread": {
+      "target": "לחם",
+      "pronunciation_easy": "LE-khem"
+    },
+    "word_milk": {
+      "target": "חלב",
+      "pronunciation_easy": "kha-LAV",
+      "qa": "Back-translation: 'milk'."
+    },
+    "word_ice": {
+      "target": "קרח",
+      "pronunciation_easy": "KE-rakh"
+    },
+    "word_nuts": {
+      "target": "אגוזים",
+      "pronunciation_easy": "e-go-ZEEM",
+      "qa": "Back-translation: 'nuts' (tree nuts in general; peanuts are separate, בוטנים)."
+    },
+    "word_gluten": {
+      "target": "גלוטן",
+      "pronunciation_easy": "GLOO-ten",
+      "qa": "Back-translation: 'gluten'. Gluten-free is ללא גלוטן (le-LO GLOO-ten). Stress: check."
+    },
+    "word_shellfish": {
+      "target": "פירות ים",
+      "pronunciation_easy": "pey-ROT yam",
+      "qa": "Back-translation: 'fruits of the sea' (seafood). Covers shellfish; not kosher, so rarely on kosher menus."
+    },
+    "word_eggs": {
+      "target": "ביצים",
+      "pronunciation_easy": "bey-TSEEM",
+      "qa": "Back-translation: 'eggs'."
+    },
+    "word_meat": {
+      "target": "בשר",
+      "pronunciation_easy": "ba-SAR",
+      "qa": "Back-translation: 'meat'. Note chicken (עוף) is often not thought of as בשר; say בלי בשר ובלי עוף if needed."
+    },
+    "word_dairy": {
+      "target": "מוצרי חלב",
+      "pronunciation_easy": "moo-tsa-REY kha-LAV",
+      "qa": "Back-translation: 'milk products'. Menus mark this as חלבי (kha-la-VEE)."
+    },
+    "word_peanuts": {
+      "target": "בוטנים",
+      "pronunciation_easy": "bot-NEEM",
+      "qa": "Back-translation: 'peanuts'. Snacks like Bamba are peanut-based."
+    },
+    "word_passport": {
+      "target": "דרכון",
+      "pronunciation_easy": "dar-KON"
+    },
+    "word_phone": {
+      "target": "טלפון",
+      "pronunciation_easy": "TE-le-fon"
+    },
+    "word_wallet": {
+      "target": "ארנק",
+      "pronunciation_easy": "ar-NAK"
+    },
+    "word_keys": {
+      "target": "מפתחות",
+      "pronunciation_easy": "maf-te-KHOT"
+    },
+    "word_ticket": {
+      "target": "כרטיס",
+      "pronunciation_easy": "kar-TEES"
+    },
+    "word_room_key": {
+      "target": "המפתח של החדר",
+      "pronunciation_easy": "ha-maf-TE-akh shel ha-KHE-der"
+    },
+    "word_air_conditioning": {
+      "target": "המזגן",
+      "pronunciation_easy": "ha-maz-GAN"
+    },
+    "word_shower": {
+      "target": "המקלחת",
+      "pronunciation_easy": "ha-mik-LA-khat"
+    },
+    "word_wi_fi": {
+      "target": "הוויי-פיי",
+      "pronunciation_easy": "ha-WAI-fai"
+    },
+    "word_tv": {
+      "target": "הטלוויזיה",
+      "pronunciation_easy": "ha-te-le-VEEZ-ya"
+    },
+    "word_hot_water": {
+      "target": "המים החמים",
+      "pronunciation_easy": "ha-MA-yim ha-kha-MEEM"
+    },
+    "word_door_lock": {
+      "target": "המנעול של הדלת",
+      "pronunciation_easy": "ha-man-OOL shel ha-DE-let"
+    },
+    "word_one": {
+      "target": "אחת",
+      "pronunciation_easy": "a-KHAT",
+      "qa": "Counting forms (feminine), as used when counting or reading numbers. Counting people or masculine nouns uses אחד, שניים, שלושה, ארבעה, חמישה... (see table_for examples)."
+    },
+    "word_two": {
+      "target": "שתיים",
+      "pronunciation_easy": "SHTA-yim"
+    },
+    "word_three": {
+      "target": "שלוש",
+      "pronunciation_easy": "sha-LOSH"
+    },
+    "word_four": {
+      "target": "ארבע",
+      "pronunciation_easy": "AR-ba"
+    },
+    "word_five": {
+      "target": "חמש",
+      "pronunciation_easy": "kha-MESH"
+    },
+    "word_six": {
+      "target": "שש",
+      "pronunciation_easy": "shesh"
+    },
+    "word_seven": {
+      "target": "שבע",
+      "pronunciation_easy": "SHE-va"
+    },
+    "word_eight": {
+      "target": "שמונה",
+      "pronunciation_easy": "shmo-NE"
+    },
+    "word_nine": {
+      "target": "תשע",
+      "pronunciation_easy": "TE-sha"
+    },
+    "word_ten": {
+      "target": "עשר",
+      "pronunciation_easy": "E-ser"
+    },
+    "word_twenty": {
+      "target": "עשרים",
+      "pronunciation_easy": "es-REEM"
+    },
+    "word_fifty": {
+      "target": "חמישים",
+      "pronunciation_easy": "kha-mee-SHEEM"
+    },
+    "word_one_hundred": {
+      "target": "מאה",
+      "pronunciation_easy": "me-A"
+    },
+    "word_upstairs": {
+      "target": "למעלה",
+      "pronunciation_easy": "le-MA-la"
+    },
+    "word_downstairs": {
+      "target": "למטה",
+      "pronunciation_easy": "le-MA-ta"
+    },
+    "word_near": {
+      "target": "קרוב",
+      "pronunciation_easy": "ka-ROV"
+    },
+    "word_far": {
+      "target": "רחוק",
+      "pronunciation_easy": "ra-KHOK"
+    },
+    "word_today": {
+      "target": "היום",
+      "pronunciation_easy": "ha-YOM"
+    },
+    "word_tomorrow": {
+      "target": "מחר",
+      "pronunciation_easy": "ma-KHAR"
+    },
+    "word_now": {
+      "target": "עכשיו",
+      "pronunciation_easy": "akh-SHAV"
+    },
+    "word_later": {
+      "target": "אחר כך",
+      "pronunciation_easy": "a-khar-KAKH"
+    },
+    "word_open": {
+      "target": "פתוח",
+      "pronunciation_easy": "pa-TOO-akh"
+    },
+    "word_closed": {
+      "target": "סגור",
+      "pronunciation_easy": "sa-GOOR"
+    },
+    "word_yes": {
+      "target": "כן",
+      "pronunciation_easy": "ken"
+    },
+    "word_no": {
+      "target": "לא",
+      "pronunciation_easy": "lo"
+    },
+    "word_cash": {
+      "target": "מזומן",
+      "pronunciation_easy": "me-zoo-MAN"
+    },
+    "word_card": {
+      "target": "כרטיס",
+      "pronunciation_easy": "kar-TEES",
+      "qa": "You will very often hear אשראי (ash-RAI, 'credit') instead."
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "איפה תחנת הרכבת?",
+        "pronunciation_easy": "EY-fo ta-kha-NAT ha-ra-KE-vet"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "איפה תחנת האוטובוס?",
+        "pronunciation_easy": "EY-fo ta-kha-NAT ha-O-to-boos"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "איפה בית המרקחת?",
+        "pronunciation_easy": "EY-fo beyt ha-mir-KA-khat"
+      },
+      {
+        "word": "word_atm",
+        "target": "איפה הכספומט?",
+        "pronunciation_easy": "EY-fo ha-kas-po-MAT"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "איפה הסופר?",
+        "pronunciation_easy": "EY-fo ha-SOO-per"
+      },
+      {
+        "word": "word_exit",
+        "target": "איפה היציאה?",
+        "pronunciation_easy": "EY-fo ha-ye-tsee-A"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "איפה בית המרקחת הכי קרוב?",
+        "pronunciation_easy": "EY-fo beyt ha-mir-KA-khat ha-KHEE ka-ROV"
+      },
+      {
+        "word": "word_atm",
+        "target": "איפה הכספומט הכי קרוב?",
+        "pronunciation_easy": "EY-fo ha-kas-po-MAT ha-KHEE ka-ROV"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "איפה הסופר הכי קרוב?",
+        "pronunciation_easy": "EY-fo ha-SOO-per ha-KHEE ka-ROV"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "איפה תחנת המטרו הכי קרובה?",
+        "pronunciation_easy": "EY-fo ta-kha-NAT ha-MET-ro ha-KHEE kro-VA"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "איפה תחנת האוטובוס הכי קרובה?",
+        "pronunciation_easy": "EY-fo ta-kha-NAT ha-O-to-boos ha-KHEE kro-VA"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "איך מגיעים לשדה התעופה?",
+        "pronunciation_easy": "ekh ma-gee-EEM li-SDE ha-te-oo-FA"
+      },
+      {
+        "word": "word_train_station",
+        "target": "איך מגיעים לתחנת הרכבת?",
+        "pronunciation_easy": "ekh ma-gee-EEM le-ta-kha-NAT ha-ra-KE-vet"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "איך מגיעים למרכז העיר?",
+        "pronunciation_easy": "ekh ma-gee-EEM le-mer-KAZ ha-EER"
+      },
+      {
+        "word": "word_beach",
+        "target": "איך מגיעים לחוף?",
+        "pronunciation_easy": "ekh ma-gee-EEM la-KHOF"
+      },
+      {
+        "word": "word_hotel",
+        "target": "איך מגיעים למלון?",
+        "pronunciation_easy": "ekh ma-gee-EEM la-ma-LON"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "אפשר לקבל תה, בבקשה?",
+        "pronunciation_easy": "ef-SHAR le-ka-BEL te, be-va-ka-SHA"
+      },
+      {
+        "word": "word_beer",
+        "target": "אפשר לקבל בירה, בבקשה?",
+        "pronunciation_easy": "ef-SHAR le-ka-BEL BEE-ra, be-va-ka-SHA"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "אפשר לקבל כוס יין, בבקשה?",
+        "pronunciation_easy": "ef-SHAR le-ka-BEL kos YA-yin, be-va-ka-SHA"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "אפשר לקבל מיץ תפוזים, בבקשה?",
+        "pronunciation_easy": "ef-SHAR le-ka-BEL mits ta-poo-ZEEM, be-va-ka-SHA"
+      },
+      {
+        "word": "word_menu",
+        "target": "אפשר לקבל תפריט, בבקשה?",
+        "pronunciation_easy": "ef-SHAR le-ka-BEL taf-REET, be-va-ka-SHA"
+      },
+      {
+        "word": "word_receipt",
+        "target": "אפשר לקבל קבלה, בבקשה?",
+        "pronunciation_easy": "ef-SHAR le-ka-BEL ka-ba-LA, be-va-ka-SHA"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "אני רוצה תה, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE te, be-va-ka-SHA"
+      },
+      {
+        "word": "word_beer",
+        "target": "אני רוצה בירה, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE BEE-ra, be-va-ka-SHA"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "אני רוצה כוס יין, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE kos YA-yin, be-va-ka-SHA"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "אני רוצה מיץ תפוזים, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE mits ta-poo-ZEEM, be-va-ka-SHA"
+      },
+      {
+        "word": "word_bread",
+        "target": "אני רוצה לחם, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE LE-khem, be-va-ka-SHA"
+      },
+      {
+        "word": "word_water",
+        "target": "אני רוצה מים, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE MA-yim, be-va-ka-SHA"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "שולחן לאחד, בבקשה.",
+        "pronunciation_easy": "shul-KHAN le-e-KHAD, be-va-ka-SHA"
+      },
+      {
+        "word": "word_two",
+        "target": "שולחן לשניים, בבקשה.",
+        "pronunciation_easy": "shul-KHAN lish-NA-yim, be-va-ka-SHA"
+      },
+      {
+        "word": "word_three",
+        "target": "שולחן לשלושה, בבקשה.",
+        "pronunciation_easy": "shul-KHAN lish-lo-SHA, be-va-ka-SHA"
+      },
+      {
+        "word": "word_four",
+        "target": "שולחן לארבעה, בבקשה.",
+        "pronunciation_easy": "shul-KHAN le-ar-ba-A, be-va-ka-SHA"
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "אני אלרגי לאגוזים.",
+        "pronunciation_easy": "a-NEE a-LER-gee le-e-go-ZEEM"
+      },
+      {
+        "word": "word_peanuts",
+        "target": "אני אלרגי לבוטנים.",
+        "pronunciation_easy": "a-NEE a-LER-gee le-bot-NEEM"
+      },
+      {
+        "word": "word_gluten",
+        "target": "אני אלרגי לגלוטן.",
+        "pronunciation_easy": "a-NEE a-LER-gee le-GLOO-ten"
+      },
+      {
+        "word": "word_shellfish",
+        "target": "אני אלרגי לפירות ים.",
+        "pronunciation_easy": "a-NEE a-LER-gee le-fey-ROT yam"
+      },
+      {
+        "word": "word_milk",
+        "target": "אני אלרגי לחלב.",
+        "pronunciation_easy": "a-NEE a-LER-gee le-kha-LAV"
+      },
+      {
+        "word": "word_eggs",
+        "target": "אני אלרגי לביצים.",
+        "pronunciation_easy": "a-NEE a-LER-gee le-bey-TSEEM"
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "בלי בשר, בבקשה.",
+        "pronunciation_easy": "blee ba-SAR, be-va-ka-SHA"
+      },
+      {
+        "word": "word_milk",
+        "target": "בלי חלב, בבקשה.",
+        "pronunciation_easy": "blee kha-LAV, be-va-ka-SHA"
+      },
+      {
+        "word": "word_gluten",
+        "target": "בלי גלוטן, בבקשה.",
+        "pronunciation_easy": "blee GLOO-ten, be-va-ka-SHA"
+      },
+      {
+        "word": "word_ice",
+        "target": "בלי קרח, בבקשה.",
+        "pronunciation_easy": "blee KE-rakh, be-va-ka-SHA"
+      },
+      {
+        "word": "word_nuts",
+        "target": "בלי אגוזים, בבקשה.",
+        "pronunciation_easy": "blee e-go-ZEEM, be-va-ka-SHA"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "כרטיס לשדה התעופה, בבקשה.",
+        "pronunciation_easy": "kar-TEES li-SDE ha-te-oo-FA, be-va-ka-SHA"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "כרטיס למרכז העיר, בבקשה.",
+        "pronunciation_easy": "kar-TEES le-mer-KAZ ha-EER, be-va-ka-SHA"
+      },
+      {
+        "word": "word_beach",
+        "target": "כרטיס לחוף, בבקשה.",
+        "pronunciation_easy": "kar-TEES la-KHOF, be-va-ka-SHA"
+      },
+      {
+        "word": "word_train_station",
+        "target": "כרטיס לתחנת הרכבת, בבקשה.",
+        "pronunciation_easy": "kar-TEES le-ta-kha-NAT ha-ra-KE-vet, be-va-ka-SHA"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "זה מגיע לשדה התעופה?",
+        "pronunciation_easy": "ze ma-GEE-a li-SDE ha-te-oo-FA"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "זה מגיע למרכז העיר?",
+        "pronunciation_easy": "ze ma-GEE-a le-mer-KAZ ha-EER"
+      },
+      {
+        "word": "word_beach",
+        "target": "זה מגיע לחוף?",
+        "pronunciation_easy": "ze ma-GEE-a la-KHOF"
+      },
+      {
+        "word": "word_train_station",
+        "target": "זה מגיע לתחנת הרכבת?",
+        "pronunciation_easy": "ze ma-GEE-a le-ta-kha-NAT ha-ra-KE-vet"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "תיקח אותי לשדה התעופה, בבקשה.",
+        "pronunciation_easy": "ti-KAKH o-TEE li-SDE ha-te-oo-FA, be-va-ka-SHA"
+      },
+      {
+        "word": "word_hotel",
+        "target": "תיקח אותי למלון, בבקשה.",
+        "pronunciation_easy": "ti-KAKH o-TEE la-ma-LON, be-va-ka-SHA"
+      },
+      {
+        "word": "word_train_station",
+        "target": "תיקח אותי לתחנת הרכבת, בבקשה.",
+        "pronunciation_easy": "ti-KAKH o-TEE le-ta-kha-NAT ha-ra-KE-vet, be-va-ka-SHA"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "תיקח אותי למרכז העיר, בבקשה.",
+        "pronunciation_easy": "ti-KAKH o-TEE le-mer-KAZ ha-EER, be-va-ka-SHA"
+      },
+      {
+        "word": "word_beach",
+        "target": "תיקח אותי לחוף, בבקשה.",
+        "pronunciation_easy": "ti-KAKH o-TEE la-KHOF, be-va-ka-SHA"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "המזגן לא עובד.",
+        "pronunciation_easy": "ha-maz-GAN lo o-VED"
+      },
+      {
+        "word": "word_shower",
+        "target": "המקלחת לא עובדת.",
+        "pronunciation_easy": "ha-mik-LA-khat lo o-VE-det"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "הוויי-פיי לא עובד.",
+        "pronunciation_easy": "ha-WAI-fai lo o-VED"
+      },
+      {
+        "word": "word_tv",
+        "target": "הטלוויזיה לא עובדת.",
+        "pronunciation_easy": "ha-te-le-VEEZ-ya lo o-VE-det"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "אין מים חמים.",
+        "pronunciation_easy": "eyn MA-yim kha-MEEM"
+      },
+      {
+        "word": "word_door_lock",
+        "target": "המנעול של הדלת לא עובד.",
+        "pronunciation_easy": "ha-man-OOL shel ha-DE-let lo o-VED"
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "איבדתי את הדרכון שלי.",
+        "pronunciation_easy": "ee-BAD-tee et ha-dar-KON she-LEE"
+      },
+      {
+        "word": "word_phone",
+        "target": "איבדתי את הטלפון שלי.",
+        "pronunciation_easy": "ee-BAD-tee et ha-TE-le-fon she-LEE"
+      },
+      {
+        "word": "word_wallet",
+        "target": "איבדתי את הארנק שלי.",
+        "pronunciation_easy": "ee-BAD-tee et ha-ar-NAK she-LEE"
+      },
+      {
+        "word": "word_bag",
+        "target": "איבדתי את התיק שלי.",
+        "pronunciation_easy": "ee-BAD-tee et ha-TEEK she-LEE"
+      },
+      {
+        "word": "word_keys",
+        "target": "איבדתי את המפתחות שלי.",
+        "pronunciation_easy": "ee-BAD-tee et ha-maf-te-KHOT she-LEE"
+      },
+      {
+        "word": "word_room_key",
+        "target": "איבדתי את המפתח של החדר שלי.",
+        "pronunciation_easy": "ee-BAD-tee et ha-maf-TE-akh shel ha-KHE-der she-LEE"
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "לשבת או לקחת?",
+      "pronunciation_easy": "la-SHE-vet o la-KA-khat"
+    },
+    "anything_else": {
+      "target": "עוד משהו?",
+      "pronunciation_easy": "od MASH-hu"
+    },
+    "here_you_go": {
+      "target": "בבקשה.",
+      "pronunciation_easy": "be-va-ka-SHA",
+      "qa": "Also heard: הנה (HI-ne, 'here')."
+    },
+    "inside_or_outside": {
+      "target": "בפנים או בחוץ?",
+      "pronunciation_easy": "bif-NEEM o ba-KHOOTS"
+    },
+    "how_many_people": {
+      "target": "כמה אתם?",
+      "pronunciation_easy": "KA-ma a-TEM",
+      "qa": "Literally 'How many are you?'; the usual host question. Also: כמה אנשים? (KA-ma a-na-SHEEM)."
+    },
+    "have_booking": {
+      "target": "יש לך הזמנה?",
+      "pronunciation_easy": "yesh le-KHA haz-ma-NA",
+      "qa": "To a man; to a woman: יש לך (yesh lakh); to a group: יש לכם (la-KHEM)."
+    },
+    "this_way": {
+      "target": "מכאן, בבקשה.",
+      "pronunciation_easy": "mi-KAN, be-va-ka-SHA",
+      "qa": "Also heard: בוא אחריי (bo a-kha-RAI, 'follow me', to a man)."
+    },
+    "next_stop": {
+      "target": "התחנה הבאה.",
+      "pronunciation_easy": "ha-ta-kha-NA ha-ba-A"
+    },
+    "its_closed": {
+      "target": "זה סגור.",
+      "pronunciation_easy": "ze sa-GOOR",
+      "qa": "Agrees with the place: masculine סגור (sa-GOOR), feminine סגורה (sgoo-RA), e.g. הקופה סגורה (the ticket office is closed)."
+    },
+    "one_moment": {
+      "target": "רגע אחד, בבקשה.",
+      "pronunciation_easy": "RE-ga e-KHAD, be-va-ka-SHA",
+      "qa": "Often just רגע (RE-ga)."
+    },
+    "what_size": {
+      "target": "איזו מידה?",
+      "pronunciation_easy": "EY-zo mi-DA"
+    },
+    "receipt_question": {
+      "target": "צריך קבלה?",
+      "pronunciation_easy": "tsa-REEKH ka-ba-LA",
+      "qa": "Literally 'Need a receipt?'; the usual till question."
+    },
+    "how_would_you_like_it": {
+      "target": "איך לספר?",
+      "pronunciation_easy": "ekh le-sa-PER",
+      "qa": "Literally 'How to cut?'. Also: איך אתה רוצה את זה? (to a man)."
+    }
+  }
+}

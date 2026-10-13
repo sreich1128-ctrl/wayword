@@ -1,13 +1,247 @@
 {
-  "_doc": "Power-pattern helpers. 'related' lists existing concept IDs that are built on the pattern. 'substitutions' is keyed by language code; each item is {\"english\", \"target\", \"pronunciation_easy\"} and must come from a vetted source. Empty means not in the dataset yet; the UI says so instead of inventing words.",
+  "_doc": "Power-pattern helpers. 'related' lists existing concept IDs that are built on the pattern. 'substitutions' is keyed by language code; each item is {\"english\", \"target\", \"pronunciation_easy\"} and must come from a vetted source. Empty means not in the dataset yet; the UI says so instead of inventing words. 'banks' says which word banks (content/vocab.json) fit the blank; 'examples' lists the words each language writes out as full sentences in content/added/<code>.json under 'examples' (grammar-aware: never built by joining strings).",
   "patterns": {
-    "where_is":          { "related": ["bathroom", "nearest", "how_get"], "substitutions": {} },
-    "nearest":           { "related": ["where_is", "is_far"], "substitutions": {} },
-    "how_get":           { "related": ["where_is", "is_far"], "substitutions": {} },
-    "can_i_have":        { "related": ["coffee", "water", "bill"], "substitutions": {} },
-    "i_would_like":      { "related": ["coffee", "water"], "substitutions": {} },
-    "how_say":           { "related": ["what_mean", "dont_understand"], "substitutions": {} },
-    "dont_speak_well":   { "related": ["know_a_little", "speak_english"], "substitutions": {} },
-    "learning_language": { "related": ["learning_by_trying", "love_languages"], "substitutions": {} }
+    "where_is": {
+      "related": [
+        "bathroom",
+        "nearest",
+        "how_get"
+      ],
+      "substitutions": {},
+      "banks": [
+        "destinations"
+      ],
+      "examples": [
+        "word_train_station",
+        "word_bus_stop",
+        "word_pharmacy",
+        "word_atm",
+        "word_supermarket",
+        "word_exit"
+      ]
+    },
+    "nearest": {
+      "related": [
+        "where_is",
+        "is_far"
+      ],
+      "substitutions": {},
+      "banks": [
+        "destinations"
+      ],
+      "examples": [
+        "word_pharmacy",
+        "word_atm",
+        "word_supermarket",
+        "word_metro_station",
+        "word_bus_stop"
+      ]
+    },
+    "how_get": {
+      "related": [
+        "where_is",
+        "is_far"
+      ],
+      "substitutions": {},
+      "banks": [
+        "destinations"
+      ],
+      "examples": [
+        "word_airport",
+        "word_train_station",
+        "word_city_centre",
+        "word_beach",
+        "word_hotel"
+      ]
+    },
+    "can_i_have": {
+      "related": [
+        "coffee",
+        "water",
+        "bill"
+      ],
+      "substitutions": {},
+      "banks": [
+        "food_drink"
+      ],
+      "examples": [
+        "word_tea",
+        "word_beer",
+        "word_glass_of_wine",
+        "word_orange_juice",
+        "word_menu",
+        "word_receipt"
+      ]
+    },
+    "i_would_like": {
+      "related": [
+        "coffee",
+        "water"
+      ],
+      "substitutions": {},
+      "banks": [
+        "food_drink"
+      ],
+      "examples": [
+        "word_tea",
+        "word_beer",
+        "word_glass_of_wine",
+        "word_orange_juice",
+        "word_bread",
+        "word_water"
+      ]
+    },
+    "how_say": {
+      "related": [
+        "what_mean",
+        "dont_understand"
+      ],
+      "substitutions": {}
+    },
+    "dont_speak_well": {
+      "related": [
+        "know_a_little",
+        "speak_english"
+      ],
+      "substitutions": {}
+    },
+    "learning_language": {
+      "related": [
+        "learning_by_trying",
+        "love_languages"
+      ],
+      "substitutions": {}
+    },
+    "table_for": {
+      "related": [],
+      "substitutions": {},
+      "banks": [
+        "numbers"
+      ],
+      "examples": [
+        "word_one",
+        "word_two",
+        "word_three",
+        "word_four"
+      ]
+    },
+    "allergic_to": {
+      "related": [
+        "dairy",
+        "without"
+      ],
+      "substitutions": {},
+      "banks": [
+        "allergens_diet"
+      ],
+      "examples": [
+        "word_nuts",
+        "word_peanuts",
+        "word_gluten",
+        "word_shellfish",
+        "word_milk",
+        "word_eggs"
+      ]
+    },
+    "without": {
+      "related": [
+        "allergic_to"
+      ],
+      "substitutions": {},
+      "banks": [
+        "allergens_diet"
+      ],
+      "examples": [
+        "word_meat",
+        "word_milk",
+        "word_gluten",
+        "word_ice",
+        "word_nuts"
+      ]
+    },
+    "ticket_to": {
+      "related": [
+        "does_this_go_to",
+        "how_get"
+      ],
+      "substitutions": {},
+      "banks": [
+        "destinations"
+      ],
+      "examples": [
+        "word_airport",
+        "word_city_centre",
+        "word_beach",
+        "word_train_station"
+      ]
+    },
+    "does_this_go_to": {
+      "related": [
+        "ticket_to",
+        "take_me_to"
+      ],
+      "substitutions": {},
+      "banks": [
+        "destinations"
+      ],
+      "examples": [
+        "word_airport",
+        "word_city_centre",
+        "word_beach",
+        "word_train_station"
+      ]
+    },
+    "take_me_to": {
+      "related": [
+        "how_get",
+        "stop_here"
+      ],
+      "substitutions": {},
+      "banks": [
+        "destinations"
+      ],
+      "examples": [
+        "word_airport",
+        "word_hotel",
+        "word_train_station",
+        "word_city_centre",
+        "word_beach"
+      ]
+    },
+    "doesnt_work": {
+      "related": [
+        "have_reservation"
+      ],
+      "substitutions": {},
+      "banks": [
+        "hotel_facilities"
+      ],
+      "examples": [
+        "word_air_conditioning",
+        "word_shower",
+        "word_wi_fi",
+        "word_tv",
+        "word_hot_water",
+        "word_door_lock"
+      ]
+    },
+    "lost_my": {
+      "related": [
+        "help_me",
+        "call_police"
+      ],
+      "substitutions": {},
+      "banks": [
+        "belongings"
+      ],
+      "examples": [
+        "word_passport",
+        "word_phone",
+        "word_wallet",
+        "word_bag",
+        "word_keys",
+        "word_room_key"
+      ]
+    }
   }
 }

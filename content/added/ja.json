@@ -1,0 +1,1280 @@
+{
+  "language_code": "ja",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "さようなら",
+      "reading": "さようなら",
+      "pronunciation_easy": "sah-yoh-nah-rah",
+      "qa": "Correct, but さようなら can sound final or formal. Leaving a shop or restaurant, people more often say ありがとうございました or 失礼します; with friends, じゃあね / またね. Reviewer: confirm this is the best card-level choice."
+    },
+    {
+      "id": "sorry",
+      "target": "すみません。",
+      "reading": "すみません。",
+      "pronunciation_easy": "soo-mee-mah-sen",
+      "qa": "Same word as the existing excuse_me card; すみません is the everyday apology to strangers. ごめんなさい is also common, a bit more personal (friends, children)."
+    },
+    {
+      "id": "youre_welcome",
+      "target": "どういたしまして。",
+      "reading": "どういたしまして。",
+      "pronunciation_easy": "doh ee-tah-shee-mah-shee-teh",
+      "qa": "Textbook standard and correct; in casual speech people often just say いえいえ (no, no)."
+    },
+    {
+      "id": "no_thank_you",
+      "target": "大丈夫です、ありがとうございます。",
+      "reading": "だいじょうぶです、ありがとうございます。",
+      "pronunciation_easy": "dai-joh-boo des, ah-ree-gah-toh goh-zah-ee-mahs",
+      "qa": "Literally 'I'm fine, thank you': the most common polite way to decline an offer (a bag, a refill). いいえ、結構です is also correct but can sound stiff."
+    },
+    {
+      "id": "okay",
+      "target": "分かりました。",
+      "reading": "わかりました。",
+      "pronunciation_easy": "wah-kah-ree-mah-shee-tah",
+      "qa": "Literally 'Understood.' Neutral, polite agreement. オーケー / はい、大丈夫です are also used."
+    },
+    {
+      "id": "good_evening",
+      "target": "こんばんは",
+      "reading": "こんばんは",
+      "pronunciation_easy": "kon-bahn-wah"
+    },
+    {
+      "id": "table_for",
+      "target": "___でお願いします。",
+      "reading": "___でおねがいします。",
+      "pronunciation_easy": "___ deh oh-neh-guy-shee-mahs",
+      "qa": "Literally '(We are) ___, please.' The blank takes a number of people with the people counter (一人 hitori, 二人 futari, 三人 sannin, 四人 yonin), not a bare number; one and two are irregular. Often said in reply to staff asking 何名様ですか？"
+    },
+    {
+      "id": "menu_please",
+      "target": "メニューをお願いします。",
+      "reading": "めにゅーをおねがいします。",
+      "pronunciation_easy": "meh-nyoo oh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "allergic_to",
+      "target": "___アレルギーがあります。",
+      "reading": "___あれるぎーがあります。",
+      "pronunciation_easy": "___ ah-reh-roo-gee gah ah-ree-mahs",
+      "qa": "SAFETY. Back-translation: 'I have a ___ allergy.' The food word attaches directly as a compound (卵アレルギー = egg allergy). Standard, widely understood. For severe allergies, travellers should also show this in writing and ask about traces; this phrase does not say how severe the allergy is."
+    },
+    {
+      "id": "vegetarian",
+      "target": "ベジタリアンです。",
+      "reading": "べじたりあんです。",
+      "pronunciation_easy": "beh-jee-tah-ree-ahn des",
+      "qa": "Literally 'I am a vegetarian.' Understood, but the concept is applied loosely in Japan: dashi (fish stock) is in many dishes. Clearer add-on: 肉と魚は食べられません (I can't eat meat or fish)."
+    },
+    {
+      "id": "without",
+      "target": "___抜きでお願いします。",
+      "reading": "___ぬきでおねがいします。",
+      "pronunciation_easy": "___ noo-kee deh oh-neh-guy-shee-mahs",
+      "qa": "SAFETY. Back-translation: 'With ___ left out, please.' Standard ordering phrase (氷抜き, 肉抜き). ___なしで is an equally common alternative. It is a preference request only: it does not tell staff it is an allergy, so for allergies pair it with allergic_to."
+    },
+    {
+      "id": "to_go",
+      "target": "持ち帰りでお願いします。",
+      "reading": "もちかえりでおねがいします。",
+      "pronunciation_easy": "moh-chee-kah-eh-ree deh oh-neh-guy-shee-mahs",
+      "qa": "テイクアウトで is also common, especially at chains."
+    },
+    {
+      "id": "for_here",
+      "target": "店内でお願いします。",
+      "reading": "てんないでおねがいします。",
+      "pronunciation_easy": "ten-nai deh oh-neh-guy-shee-mahs",
+      "qa": "Literally 'In the shop, please.' Some chains say イートインで."
+    },
+    {
+      "id": "delicious",
+      "target": "おいしかったです。",
+      "reading": "おいしかったです。",
+      "pronunciation_easy": "oh-ee-shee-kaht-tah des",
+      "qa": "On leaving a restaurant, ごちそうさまでした (thank you for the meal) is the customary phrase and pairs well with this."
+    },
+    {
+      "id": "another_one",
+      "target": "もう一つお願いします。",
+      "reading": "もうひとつおねがいします。",
+      "pronunciation_easy": "moh hee-toh-tsoo oh-neh-guy-shee-mahs",
+      "qa": "一つ is the general counter. For a drink, もう一杯 (moh eep-pai) is more precise; for a refill, おかわり."
+    },
+    {
+      "id": "ticket_to",
+      "target": "___までの切符をお願いします。",
+      "reading": "___までのきっぷをおねがいします。",
+      "pronunciation_easy": "___ mah-deh noh keep-poo oh oh-neh-guy-shee-mahs",
+      "qa": "Literally 'A ticket as far as ___, please.' In practice the blank is a station name; most tickets come from machines or IC cards."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "これは___に行きますか？",
+      "reading": "これは___にいきますか？",
+      "pronunciation_easy": "koh-reh wah ___ nee ee-kee-mahs-kah",
+      "qa": "この電車 (this train) / このバス (this bus) in place of これ is more specific; ___に止まりますか？ (does it stop at ___) is also common."
+    },
+    {
+      "id": "take_me_to",
+      "target": "___までお願いします。",
+      "reading": "___までおねがいします。",
+      "pronunciation_easy": "___ mah-deh oh-neh-guy-shee-mahs",
+      "qa": "Literally '(Up) to ___, please': the standard taxi phrase."
+    },
+    {
+      "id": "stop_here",
+      "target": "ここで止めてください。",
+      "reading": "ここでとめてください。",
+      "pronunciation_easy": "koh-koh deh toh-meh-teh koo-dah-sai",
+      "qa": "In a taxi, ここでお願いします is an equally common, softer alternative."
+    },
+    {
+      "id": "next_departure",
+      "target": "次は何時に出ますか？",
+      "reading": "つぎはなんじにでますか？",
+      "pronunciation_easy": "tsoo-gee wah nan-jee nee deh-mahs-kah",
+      "qa": "Literally 'What time does the next one leave?' Clearer with the vehicle named: 次の電車は何時ですか？ (next train) / 次のバス (next bus)."
+    },
+    {
+      "id": "which_platform",
+      "target": "何番線ですか？",
+      "reading": "なんばんせんですか？",
+      "pronunciation_easy": "nan-bahn-sen des-kah",
+      "qa": "番線 is for train tracks. For buses, ask 何番乗り場ですか？ (which boarding bay)."
+    },
+    {
+      "id": "how_long_trip",
+      "target": "どのくらいかかりますか？",
+      "reading": "どのくらいかかりますか？",
+      "pronunciation_easy": "doh-noh koo-rai kah-kah-ree-mahs-kah"
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "片道ですか、往復ですか？",
+      "reading": "かたみちですか、おうふくですか？",
+      "pronunciation_easy": "kah-tah-mee-chee des-kah, oh-foo-koo des-kah"
+    },
+    {
+      "id": "left",
+      "target": "左です。",
+      "reading": "ひだりです。",
+      "pronunciation_easy": "hee-dah-ree des",
+      "qa": "Direction: '(It's to the) left.' To a taxi driver: 左に曲がってください (please turn left)."
+    },
+    {
+      "id": "right",
+      "target": "右です。",
+      "reading": "みぎです。",
+      "pronunciation_easy": "mee-gee des",
+      "qa": "Direction: '(It's to the) right.' To a taxi driver: 右に曲がってください (please turn right)."
+    },
+    {
+      "id": "straight_ahead",
+      "target": "まっすぐです。",
+      "reading": "まっすぐです。",
+      "pronunciation_easy": "mahs-soo-goo des",
+      "qa": "Direction: '(It's) straight ahead.' To a taxi driver: まっすぐ行ってください."
+    },
+    {
+      "id": "im_lost",
+      "target": "道に迷いました。",
+      "reading": "みちにまよいました。",
+      "pronunciation_easy": "mee-chee nee mah-yoh-ee-mah-shee-tah"
+    },
+    {
+      "id": "show_on_map",
+      "target": "地図で教えてもらえますか？",
+      "reading": "ちずでおしえてもらえますか？",
+      "pronunciation_easy": "chee-zoo deh oh-shee-eh-teh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "near_here",
+      "target": "この近くですか？",
+      "reading": "このちかくですか？",
+      "pronunciation_easy": "koh-noh chee-kah-koo des-kah"
+    },
+    {
+      "id": "have_reservation",
+      "target": "予約しています。",
+      "reading": "よやくしています。",
+      "pronunciation_easy": "yoh-yah-koo shee-teh ee-mahs"
+    },
+    {
+      "id": "under_name",
+      "target": "___の名前で予約しています。",
+      "reading": "___のなまえでよやくしています。",
+      "pronunciation_easy": "___ noh nah-mah-eh deh yoh-yah-koo shee-teh ee-mahs",
+      "qa": "Literally 'I've booked under the name ___.' A foreign name in the blank is said as-is (written in katakana)."
+    },
+    {
+      "id": "wifi_password",
+      "target": "Wi-Fiのパスワードは何ですか？",
+      "reading": "わいふぁいのぱすわーどはなんですか？",
+      "pronunciation_easy": "wai-fai noh pah-soo-wah-doh wah nan des-kah"
+    },
+    {
+      "id": "checkout_time",
+      "target": "チェックアウトは何時ですか？",
+      "reading": "ちぇっくあうとはなんじですか？",
+      "pronunciation_easy": "chek-koo-ah-oo-toh wah nan-jee des-kah"
+    },
+    {
+      "id": "leave_bags",
+      "target": "荷物を預かってもらえますか？",
+      "reading": "にもつをあずかってもらえますか？",
+      "pronunciation_easy": "nee-moh-tsoo oh ah-zoo-kaht-teh moh-rah-eh-mahs-kah",
+      "qa": "Literally 'Could you look after my luggage?': the standard hotel phrasing."
+    },
+    {
+      "id": "doesnt_work",
+      "target": "___が使えません。",
+      "reading": "___がつかえません。",
+      "pronunciation_easy": "___ gah tsoo-kah-eh-mah-sen",
+      "qa": "Literally 'I can't use the ___': a general-purpose frame. Japanese prefers a specific verb per item, so the examples use つきません (won't turn on), 出ません (nothing comes out), つながりません (won't connect), 壊れています (is broken)."
+    },
+    {
+      "id": "another_towel",
+      "target": "タオルをもう一枚もらえますか？",
+      "reading": "たおるをもういちまいもらえますか？",
+      "pronunciation_easy": "tah-oh-roo oh moh ee-chee-mai moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "just_looking",
+      "target": "見ているだけです。",
+      "reading": "みているだけです。",
+      "pronunciation_easy": "mee-teh ee-roo dah-keh des"
+    },
+    {
+      "id": "ill_take_it",
+      "target": "これにします。",
+      "reading": "これにします。",
+      "pronunciation_easy": "koh-reh nee shee-mahs",
+      "qa": "Literally 'I'll go with this one.' これください is also common."
+    },
+    {
+      "id": "too_expensive",
+      "target": "ちょっと高いです。",
+      "reading": "ちょっとたかいです。",
+      "pronunciation_easy": "chot-toh tah-kai des",
+      "qa": "Literally 'It's a bit expensive': the natural, softened way to say it. The literal 高すぎます (too expensive) is blunt. Haggling is uncommon in Japanese shops."
+    },
+    {
+      "id": "try_it_on",
+      "target": "試着してもいいですか？",
+      "reading": "しちゃくしてもいいですか？",
+      "pronunciation_easy": "shee-chah-koo shee-teh moh ee-ee des-kah"
+    },
+    {
+      "id": "another_size",
+      "target": "他のサイズはありますか？",
+      "reading": "ほかのさいずはありますか？",
+      "pronunciation_easy": "hoh-kah noh sai-zoo wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "bag_please",
+      "target": "袋をお願いします。",
+      "reading": "ふくろをおねがいします。",
+      "pronunciation_easy": "foo-koo-roh oh oh-neh-guy-shee-mahs",
+      "qa": "Shopping bags usually cost a few yen; staff often ask 袋はご利用ですか？ first."
+    },
+    {
+      "id": "haircut",
+      "target": "カットをお願いします。",
+      "reading": "かっとをおねがいします。",
+      "pronunciation_easy": "kat-toh oh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "just_trim",
+      "target": "少しだけ切ってください。",
+      "reading": "すこしだけきってください。",
+      "pronunciation_easy": "skoo-shee dah-keh keet-teh koo-dah-sai",
+      "qa": "Literally 'Please cut just a little.' Salons also say 毛先を整える程度で (just tidy the ends); reviewer may prefer that."
+    },
+    {
+      "id": "not_too_short",
+      "target": "あまり短くしないでください。",
+      "reading": "あまりみじかくしないでください。",
+      "pronunciation_easy": "ah-mah-ree mee-jee-kah-koo shee-nai-deh koo-dah-sai"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "横を短めにしてください。",
+      "reading": "よこをみじかめにしてください。",
+      "pronunciation_easy": "yoh-koh oh mee-jee-kah-meh nee shee-teh koo-dah-sai",
+      "qa": "横 (sides); サイド is also used at salons."
+    },
+    {
+      "id": "like_this",
+      "target": "こんな感じでお願いします。",
+      "reading": "こんなかんじでおねがいします。",
+      "pronunciation_easy": "kon-nah kahn-jee deh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "beard_trim",
+      "target": "ひげを整えてください。",
+      "reading": "ひげをととのえてください。",
+      "pronunciation_easy": "hee-geh oh toh-toh-noh-eh-teh koo-dah-sai",
+      "qa": "Literally 'Please tidy my beard.' Barbers (理容室) usually offer this; many hair salons (美容院) do not."
+    },
+    {
+      "id": "help_shout",
+      "target": "助けて！",
+      "reading": "たすけて！",
+      "pronunciation_easy": "tah-soo-keh-teh",
+      "qa": "SAFETY. Back-translation: 'Help (me)!' / 'Save me!' The standard shout. 誰か！ (Someone!) is also shouted."
+    },
+    {
+      "id": "call_police",
+      "target": "警察を呼んでください！",
+      "reading": "けいさつをよんでください！",
+      "pronunciation_easy": "kay-sah-tsoo oh yon-deh koo-dah-sai",
+      "qa": "SAFETY. Back-translation: 'Please call the police!' Police number in Japan is 110; ambulance and fire is 119. A local police box is a 交番 (koban)."
+    },
+    {
+      "id": "need_doctor",
+      "target": "医者が必要です。",
+      "reading": "いしゃがひつようです。",
+      "pronunciation_easy": "ee-shah gah hee-tsoo-yoh des",
+      "qa": "SAFETY. Back-translation: 'A doctor is necessary.' Clear and understood. In an urgent case, 救急車を呼んでください (please call an ambulance) is what people actually shout; 病院に行きたいです = 'I want to go to a hospital.'"
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "薬局はどこですか？",
+      "reading": "やっきょくはどこですか？",
+      "pronunciation_easy": "yak-kyoh-koo wah doh-koh des-kah",
+      "qa": "SAFETY. Back-translation: 'Where is the pharmacy?' Over-the-counter medicine is mostly sold at ドラッグストア (drugstores), which locals may point you to."
+    },
+    {
+      "id": "its_emergency",
+      "target": "緊急です！",
+      "reading": "きんきゅうです！",
+      "pronunciation_easy": "keen-kyoo des",
+      "qa": "SAFETY. Back-translation: 'It's urgent / an emergency!' Understood; 急いでください (please hurry) is a natural follow-up."
+    },
+    {
+      "id": "lost_my",
+      "target": "___をなくしました。",
+      "reading": "___をなくしました。",
+      "pronunciation_easy": "___ oh nah-koo-shee-mah-shee-tah",
+      "qa": "SAFETY. Back-translation: 'I lost ___.' If it was stolen: ___を盗まれました. Lost property goes to the 交番 (police box) or the station's 忘れ物 (lost and found)."
+    },
+    {
+      "id": "not_well",
+      "target": "体調が悪いです。",
+      "reading": "たいちょうがわるいです。",
+      "pronunciation_easy": "tai-choh gah wah-roo-ee des",
+      "qa": "SAFETY. Back-translation: 'My physical condition is bad' = I'm unwell. 気分が悪いです ('I feel bad/sick') is also common and leans toward nausea or feeling faint."
+    },
+    {
+      "id": "call_someone",
+      "target": "電話をかけないといけません。",
+      "reading": "でんわをかけないといけません。",
+      "pronunciation_easy": "den-wah oh kah-keh-nai toh ee-keh-mah-sen",
+      "qa": "SAFETY. Back-translation: 'I have to make a phone call.' Not fully sure this is the most natural card choice; to borrow a phone, 電話を貸してもらえますか？ (could you lend me a phone?) is more useful in practice."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "駅",
+      "reading": "えき",
+      "pronunciation_easy": "eh-kee"
+    },
+    "word_bus_stop": {
+      "target": "バス停",
+      "reading": "ばすてい",
+      "pronunciation_easy": "bah-soo-tay"
+    },
+    "word_airport": {
+      "target": "空港",
+      "reading": "くうこう",
+      "pronunciation_easy": "koo-koh"
+    },
+    "word_metro_station": {
+      "target": "地下鉄の駅",
+      "reading": "ちかてつのえき",
+      "pronunciation_easy": "chee-kah-teh-tsoo noh eh-kee"
+    },
+    "word_hotel": {
+      "target": "ホテル",
+      "reading": "ほてる",
+      "pronunciation_easy": "hoh-teh-roo"
+    },
+    "word_beach": {
+      "target": "ビーチ",
+      "reading": "びーち",
+      "pronunciation_easy": "bee-chee",
+      "qa": "海 (sea) is also commonly used for 'the beach'."
+    },
+    "word_city_centre": {
+      "target": "中心街",
+      "reading": "ちゅうしんがい",
+      "pronunciation_easy": "choo-sheen-guy",
+      "qa": "Understood as 'downtown', but Japanese speakers usually name the district or main station (e.g. 新宿, 博多駅) rather than 'city centre'."
+    },
+    "word_pharmacy": {
+      "target": "薬局",
+      "reading": "やっきょく",
+      "pronunciation_easy": "yak-kyoh-koo"
+    },
+    "word_atm": {
+      "target": "ATM",
+      "reading": "えーてぃーえむ",
+      "pronunciation_easy": "eh-tee-eh-moo"
+    },
+    "word_supermarket": {
+      "target": "スーパー",
+      "reading": "すーぱー",
+      "pronunciation_easy": "soo-pah"
+    },
+    "word_platform": {
+      "target": "ホーム",
+      "reading": "ほーむ",
+      "pronunciation_easy": "hoh-moo"
+    },
+    "word_ticket_office": {
+      "target": "切符売り場",
+      "reading": "きっぷうりば",
+      "pronunciation_easy": "keep-poo oo-ree-bah",
+      "qa": "At JR stations the staffed ticket office is みどりの窓口."
+    },
+    "word_exit": {
+      "target": "出口",
+      "reading": "でぐち",
+      "pronunciation_easy": "deh-goo-chee"
+    },
+    "word_entrance": {
+      "target": "入口",
+      "reading": "いりぐち",
+      "pronunciation_easy": "ee-ree-goo-chee"
+    },
+    "word_tea": {
+      "target": "お茶",
+      "reading": "おちゃ",
+      "pronunciation_easy": "oh-chah",
+      "qa": "お茶 is usually green tea; black tea is 紅茶 (koh-chah)."
+    },
+    "word_beer": {
+      "target": "ビール",
+      "reading": "びーる",
+      "pronunciation_easy": "bee-roo"
+    },
+    "word_glass_of_wine": {
+      "target": "グラスワイン",
+      "reading": "ぐらすわいん",
+      "pronunciation_easy": "goo-rah-soo wain"
+    },
+    "word_orange_juice": {
+      "target": "オレンジジュース",
+      "reading": "おれんじじゅーす",
+      "pronunciation_easy": "oh-ren-jee joo-soo"
+    },
+    "word_menu": {
+      "target": "メニュー",
+      "reading": "めにゅー",
+      "pronunciation_easy": "meh-nyoo"
+    },
+    "word_bill": {
+      "target": "お会計",
+      "reading": "おかいけい",
+      "pronunciation_easy": "oh-kai-kay"
+    },
+    "word_bag": {
+      "target": "かばん",
+      "reading": "かばん",
+      "pronunciation_easy": "kah-bahn",
+      "qa": "かばん = one's own bag (belongings sense). A shopping/carrier bag is 袋 (foo-koo-roh)."
+    },
+    "word_receipt": {
+      "target": "レシート",
+      "reading": "れしーと",
+      "pronunciation_easy": "reh-shee-toh",
+      "qa": "A formal receipt for expenses is 領収書 (ryoh-shoo-shoh)."
+    },
+    "word_water": {
+      "target": "お水",
+      "reading": "おみず",
+      "pronunciation_easy": "oh-mee-zoo"
+    },
+    "word_coffee": {
+      "target": "コーヒー",
+      "reading": "こーひー",
+      "pronunciation_easy": "koh-hee"
+    },
+    "word_bread": {
+      "target": "パン",
+      "reading": "ぱん",
+      "pronunciation_easy": "pahn"
+    },
+    "word_milk": {
+      "target": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "pronunciation_easy": "gyoo-nyoo",
+      "qa": "SAFETY. Literally 'cow's milk'. ミルク is also used (e.g. for coffee)."
+    },
+    "word_ice": {
+      "target": "氷",
+      "reading": "こおり",
+      "pronunciation_easy": "koh-ree"
+    },
+    "word_nuts": {
+      "target": "ナッツ",
+      "reading": "なっつ",
+      "pronunciation_easy": "nat-tsoo",
+      "qa": "SAFETY. Back-translation: 'nuts' (loanword). Standard; covers tree nuts generally. Peanuts are a separate word (ピーナッツ / 落花生)."
+    },
+    "word_gluten": {
+      "target": "グルテン",
+      "reading": "ぐるてん",
+      "pronunciation_easy": "goo-roo-ten",
+      "qa": "SAFETY. Back-translation: 'gluten' (loanword). Less widely understood than 小麦 (koh-moo-gee, wheat), which is the allergen Japanese food labels list. Consider teaching 小麦 alongside it."
+    },
+    "word_shellfish": {
+      "target": "甲殻類",
+      "reading": "こうかくるい",
+      "pronunciation_easy": "koh-kah-koo-roo-ee",
+      "qa": "SAFETY. Back-translation: 'crustaceans' (shrimp, crab, lobster): the standard allergy term. Molluscs (clams, oysters, scallops) are 貝類 (kai-roo-ee); English 'shellfish' covers both. Labels list えび (shrimp) and かに (crab)."
+    },
+    "word_eggs": {
+      "target": "卵",
+      "reading": "たまご",
+      "pronunciation_easy": "tah-mah-goh",
+      "qa": "SAFETY. Back-translation: 'egg(s)'."
+    },
+    "word_meat": {
+      "target": "肉",
+      "reading": "にく",
+      "pronunciation_easy": "nee-koo",
+      "qa": "SAFETY. Back-translation: 'meat'. Does not include fish or fish stock (dashi)."
+    },
+    "word_dairy": {
+      "target": "乳製品",
+      "reading": "にゅうせいひん",
+      "pronunciation_easy": "nyoo-say-heen",
+      "qa": "SAFETY. Back-translation: 'milk products'. Same word as the existing dairy card."
+    },
+    "word_peanuts": {
+      "target": "ピーナッツ",
+      "reading": "ぴーなっつ",
+      "pronunciation_easy": "pee-nat-tsoo",
+      "qa": "SAFETY. Back-translation: 'peanuts' (loanword). Food labels use 落花生 (rak-kah-say)."
+    },
+    "word_passport": {
+      "target": "パスポート",
+      "reading": "ぱすぽーと",
+      "pronunciation_easy": "pah-soo-poh-toh"
+    },
+    "word_phone": {
+      "target": "携帯",
+      "reading": "けいたい",
+      "pronunciation_easy": "kay-tai",
+      "qa": "Short for 携帯電話 (mobile phone). スマホ (smartphone) is equally common."
+    },
+    "word_wallet": {
+      "target": "財布",
+      "reading": "さいふ",
+      "pronunciation_easy": "sai-foo"
+    },
+    "word_keys": {
+      "target": "鍵",
+      "reading": "かぎ",
+      "pronunciation_easy": "kah-gee"
+    },
+    "word_ticket": {
+      "target": "切符",
+      "reading": "きっぷ",
+      "pronunciation_easy": "keep-poo",
+      "qa": "切符 is a transport ticket; for events, チケット."
+    },
+    "word_room_key": {
+      "target": "部屋の鍵",
+      "reading": "へやのかぎ",
+      "pronunciation_easy": "heh-yah noh kah-gee"
+    },
+    "word_air_conditioning": {
+      "target": "エアコン",
+      "reading": "えあこん",
+      "pronunciation_easy": "eh-ah-kon"
+    },
+    "word_shower": {
+      "target": "シャワー",
+      "reading": "しゃわー",
+      "pronunciation_easy": "shah-wah"
+    },
+    "word_wi_fi": {
+      "target": "Wi-Fi",
+      "reading": "わいふぁい",
+      "pronunciation_easy": "wai-fai"
+    },
+    "word_tv": {
+      "target": "テレビ",
+      "reading": "てれび",
+      "pronunciation_easy": "teh-reh-bee"
+    },
+    "word_hot_water": {
+      "target": "お湯",
+      "reading": "おゆ",
+      "pronunciation_easy": "oh-yoo"
+    },
+    "word_door_lock": {
+      "target": "ドアの鍵",
+      "reading": "どあのかぎ",
+      "pronunciation_easy": "doh-ah noh kah-gee"
+    },
+    "word_one": {
+      "target": "一",
+      "reading": "いち",
+      "pronunciation_easy": "ee-chee"
+    },
+    "word_two": {
+      "target": "二",
+      "reading": "に",
+      "pronunciation_easy": "nee"
+    },
+    "word_three": {
+      "target": "三",
+      "reading": "さん",
+      "pronunciation_easy": "sahn"
+    },
+    "word_four": {
+      "target": "四",
+      "reading": "よん",
+      "pronunciation_easy": "yon",
+      "qa": "し (shee) is the other reading; よん is safer in speech."
+    },
+    "word_five": {
+      "target": "五",
+      "reading": "ご",
+      "pronunciation_easy": "goh"
+    },
+    "word_six": {
+      "target": "六",
+      "reading": "ろく",
+      "pronunciation_easy": "roh-koo"
+    },
+    "word_seven": {
+      "target": "七",
+      "reading": "なな",
+      "pronunciation_easy": "nah-nah",
+      "qa": "しち (shee-chee) is the other reading; なな is clearer in speech."
+    },
+    "word_eight": {
+      "target": "八",
+      "reading": "はち",
+      "pronunciation_easy": "hah-chee"
+    },
+    "word_nine": {
+      "target": "九",
+      "reading": "きゅう",
+      "pronunciation_easy": "kyoo",
+      "qa": "く (koo) is the other reading."
+    },
+    "word_ten": {
+      "target": "十",
+      "reading": "じゅう",
+      "pronunciation_easy": "joo"
+    },
+    "word_twenty": {
+      "target": "二十",
+      "reading": "にじゅう",
+      "pronunciation_easy": "nee-joo"
+    },
+    "word_fifty": {
+      "target": "五十",
+      "reading": "ごじゅう",
+      "pronunciation_easy": "goh-joo"
+    },
+    "word_one_hundred": {
+      "target": "百",
+      "reading": "ひゃく",
+      "pronunciation_easy": "hyah-koo"
+    },
+    "word_upstairs": {
+      "target": "上の階",
+      "reading": "うえのかい",
+      "pronunciation_easy": "oo-eh noh kai"
+    },
+    "word_downstairs": {
+      "target": "下の階",
+      "reading": "したのかい",
+      "pronunciation_easy": "shee-tah noh kai"
+    },
+    "word_near": {
+      "target": "近い",
+      "reading": "ちかい",
+      "pronunciation_easy": "chee-kai"
+    },
+    "word_far": {
+      "target": "遠い",
+      "reading": "とおい",
+      "pronunciation_easy": "toh-ee"
+    },
+    "word_today": {
+      "target": "今日",
+      "reading": "きょう",
+      "pronunciation_easy": "kyoh"
+    },
+    "word_tomorrow": {
+      "target": "明日",
+      "reading": "あした",
+      "pronunciation_easy": "ah-shee-tah"
+    },
+    "word_now": {
+      "target": "今",
+      "reading": "いま",
+      "pronunciation_easy": "ee-mah"
+    },
+    "word_later": {
+      "target": "後で",
+      "reading": "あとで",
+      "pronunciation_easy": "ah-toh-deh"
+    },
+    "word_open": {
+      "target": "開いています",
+      "reading": "あいています",
+      "pronunciation_easy": "ai-teh ee-mahs",
+      "qa": "Spoken form ('it's open'). Shop signs say 営業中 (ay-gyoh-choo)."
+    },
+    "word_closed": {
+      "target": "閉まっています",
+      "reading": "しまっています",
+      "pronunciation_easy": "shee-maht-teh ee-mahs",
+      "qa": "Spoken form ('it's closed'). Signs say 準備中 (preparing) or 定休日 (regular day off)."
+    },
+    "word_yes": {
+      "target": "はい",
+      "reading": "はい",
+      "pronunciation_easy": "high"
+    },
+    "word_no": {
+      "target": "いいえ",
+      "reading": "いいえ",
+      "pronunciation_easy": "ee-eh"
+    },
+    "word_cash": {
+      "target": "現金",
+      "reading": "げんきん",
+      "pronunciation_easy": "gen-keen"
+    },
+    "word_card": {
+      "target": "カード",
+      "reading": "かーど",
+      "pronunciation_easy": "kah-doh"
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "駅はどこですか？",
+        "reading": "えきはどこですか？",
+        "pronunciation_easy": "eh-kee wah doh-koh des-kah"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "バス停はどこですか？",
+        "reading": "ばすていはどこですか？",
+        "pronunciation_easy": "bah-soo-tay wah doh-koh des-kah"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "薬局はどこですか？",
+        "reading": "やっきょくはどこですか？",
+        "pronunciation_easy": "yak-kyoh-koo wah doh-koh des-kah"
+      },
+      {
+        "word": "word_atm",
+        "target": "ATMはどこですか？",
+        "reading": "えーてぃーえむはどこですか？",
+        "pronunciation_easy": "eh-tee-eh-moo wah doh-koh des-kah"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "スーパーはどこですか？",
+        "reading": "すーぱーはどこですか？",
+        "pronunciation_easy": "soo-pah wah doh-koh des-kah"
+      },
+      {
+        "word": "word_exit",
+        "target": "出口はどこですか？",
+        "reading": "でぐちはどこですか？",
+        "pronunciation_easy": "deh-goo-chee wah doh-koh des-kah"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "一番近い薬局はどこですか？",
+        "reading": "いちばんちかいやっきょくはどこですか？",
+        "pronunciation_easy": "ee-chee-bahn chee-kai yak-kyoh-koo wah doh-koh des-kah"
+      },
+      {
+        "word": "word_atm",
+        "target": "一番近いATMはどこですか？",
+        "reading": "いちばんちかいえーてぃーえむはどこですか？",
+        "pronunciation_easy": "ee-chee-bahn chee-kai eh-tee-eh-moo wah doh-koh des-kah"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "一番近いスーパーはどこですか？",
+        "reading": "いちばんちかいすーぱーはどこですか？",
+        "pronunciation_easy": "ee-chee-bahn chee-kai soo-pah wah doh-koh des-kah"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "一番近い地下鉄の駅はどこですか？",
+        "reading": "いちばんちかいちかてつのえきはどこですか？",
+        "pronunciation_easy": "ee-chee-bahn chee-kai chee-kah-teh-tsoo noh eh-kee wah doh-koh des-kah"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "一番近いバス停はどこですか？",
+        "reading": "いちばんちかいばすていはどこですか？",
+        "pronunciation_easy": "ee-chee-bahn chee-kai bah-soo-tay wah doh-koh des-kah"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "空港にはどうやって行けばいいですか？",
+        "reading": "くうこうにはどうやっていけばいいですか？",
+        "pronunciation_easy": "koo-koh nee wah doh-yat-teh ee-keh-bah ee-ee des-kah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "駅にはどうやって行けばいいですか？",
+        "reading": "えきにはどうやっていけばいいですか？",
+        "pronunciation_easy": "eh-kee nee wah doh-yat-teh ee-keh-bah ee-ee des-kah"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "中心街にはどうやって行けばいいですか？",
+        "reading": "ちゅうしんがいにはどうやっていけばいいですか？",
+        "pronunciation_easy": "choo-sheen-guy nee wah doh-yat-teh ee-keh-bah ee-ee des-kah"
+      },
+      {
+        "word": "word_beach",
+        "target": "ビーチにはどうやって行けばいいですか？",
+        "reading": "びーちにはどうやっていけばいいですか？",
+        "pronunciation_easy": "bee-chee nee wah doh-yat-teh ee-keh-bah ee-ee des-kah"
+      },
+      {
+        "word": "word_hotel",
+        "target": "ホテルにはどうやって行けばいいですか？",
+        "reading": "ほてるにはどうやっていけばいいですか？",
+        "pronunciation_easy": "hoh-teh-roo nee wah doh-yat-teh ee-keh-bah ee-ee des-kah"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "お茶をお願いします。",
+        "reading": "おちゃをおねがいします。",
+        "pronunciation_easy": "oh-chah oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_beer",
+        "target": "ビールをお願いします。",
+        "reading": "びーるをおねがいします。",
+        "pronunciation_easy": "bee-roo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "グラスワインをお願いします。",
+        "reading": "ぐらすわいんをおねがいします。",
+        "pronunciation_easy": "goo-rah-soo wain oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "オレンジジュースをお願いします。",
+        "reading": "おれんじじゅーすをおねがいします。",
+        "pronunciation_easy": "oh-ren-jee joo-soo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_menu",
+        "target": "メニューをお願いします。",
+        "reading": "めにゅーをおねがいします。",
+        "pronunciation_easy": "meh-nyoo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_receipt",
+        "target": "レシートをお願いします。",
+        "reading": "れしーとをおねがいします。",
+        "pronunciation_easy": "reh-shee-toh oh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "お茶をお願いします。",
+        "reading": "おちゃをおねがいします。",
+        "pronunciation_easy": "oh-chah oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_beer",
+        "target": "ビールをお願いします。",
+        "reading": "びーるをおねがいします。",
+        "pronunciation_easy": "bee-roo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "グラスワインをお願いします。",
+        "reading": "ぐらすわいんをおねがいします。",
+        "pronunciation_easy": "goo-rah-soo wain oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "オレンジジュースをお願いします。",
+        "reading": "おれんじじゅーすをおねがいします。",
+        "pronunciation_easy": "oh-ren-jee joo-soo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_bread",
+        "target": "パンをお願いします。",
+        "reading": "ぱんをおねがいします。",
+        "pronunciation_easy": "pahn oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_water",
+        "target": "お水をお願いします。",
+        "reading": "おみずをおねがいします。",
+        "pronunciation_easy": "oh-mee-zoo oh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "一人でお願いします。",
+        "reading": "ひとりでおねがいします。",
+        "pronunciation_easy": "hee-toh-ree deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_two",
+        "target": "二人でお願いします。",
+        "reading": "ふたりでおねがいします。",
+        "pronunciation_easy": "foo-tah-ree deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_three",
+        "target": "三人でお願いします。",
+        "reading": "さんにんでおねがいします。",
+        "pronunciation_easy": "sahn-neen deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_four",
+        "target": "四人でお願いします。",
+        "reading": "よにんでおねがいします。",
+        "pronunciation_easy": "yoh-neen deh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "ナッツアレルギーがあります。",
+        "reading": "なっつあれるぎーがあります。",
+        "pronunciation_easy": "nat-tsoo ah-reh-roo-gee gah ah-ree-mahs"
+      },
+      {
+        "word": "word_peanuts",
+        "target": "ピーナッツアレルギーがあります。",
+        "reading": "ぴーなっつあれるぎーがあります。",
+        "pronunciation_easy": "pee-nat-tsoo ah-reh-roo-gee gah ah-ree-mahs"
+      },
+      {
+        "word": "word_gluten",
+        "target": "グルテンアレルギーがあります。",
+        "reading": "ぐるてんあれるぎーがあります。",
+        "pronunciation_easy": "goo-roo-ten ah-reh-roo-gee gah ah-ree-mahs"
+      },
+      {
+        "word": "word_shellfish",
+        "target": "甲殻類アレルギーがあります。",
+        "reading": "こうかくるいあれるぎーがあります。",
+        "pronunciation_easy": "koh-kah-koo-roo-ee ah-reh-roo-gee gah ah-ree-mahs"
+      },
+      {
+        "word": "word_milk",
+        "target": "牛乳アレルギーがあります。",
+        "reading": "ぎゅうにゅうあれるぎーがあります。",
+        "pronunciation_easy": "gyoo-nyoo ah-reh-roo-gee gah ah-ree-mahs"
+      },
+      {
+        "word": "word_eggs",
+        "target": "卵アレルギーがあります。",
+        "reading": "たまごあれるぎーがあります。",
+        "pronunciation_easy": "tah-mah-goh ah-reh-roo-gee gah ah-ree-mahs"
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "肉抜きでお願いします。",
+        "reading": "にくぬきでおねがいします。",
+        "pronunciation_easy": "nee-koo noo-kee deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_milk",
+        "target": "牛乳抜きでお願いします。",
+        "reading": "ぎゅうにゅうぬきでおねがいします。",
+        "pronunciation_easy": "gyoo-nyoo noo-kee deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_gluten",
+        "target": "グルテン抜きでお願いします。",
+        "reading": "ぐるてんぬきでおねがいします。",
+        "pronunciation_easy": "goo-roo-ten noo-kee deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_ice",
+        "target": "氷抜きでお願いします。",
+        "reading": "こおりぬきでおねがいします。",
+        "pronunciation_easy": "koh-ree noo-kee deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_nuts",
+        "target": "ナッツ抜きでお願いします。",
+        "reading": "なっつぬきでおねがいします。",
+        "pronunciation_easy": "nat-tsoo noo-kee deh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "空港までの切符をお願いします。",
+        "reading": "くうこうまでのきっぷをおねがいします。",
+        "pronunciation_easy": "koo-koh mah-deh noh keep-poo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "中心街までの切符をお願いします。",
+        "reading": "ちゅうしんがいまでのきっぷをおねがいします。",
+        "pronunciation_easy": "choo-sheen-guy mah-deh noh keep-poo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_beach",
+        "target": "ビーチまでの切符をお願いします。",
+        "reading": "びーちまでのきっぷをおねがいします。",
+        "pronunciation_easy": "bee-chee mah-deh noh keep-poo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_train_station",
+        "target": "駅までの切符をお願いします。",
+        "reading": "えきまでのきっぷをおねがいします。",
+        "pronunciation_easy": "eh-kee mah-deh noh keep-poo oh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "これは空港に行きますか？",
+        "reading": "これはくうこうにいきますか？",
+        "pronunciation_easy": "koh-reh wah koo-koh nee ee-kee-mahs-kah"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "これは中心街に行きますか？",
+        "reading": "これはちゅうしんがいにいきますか？",
+        "pronunciation_easy": "koh-reh wah choo-sheen-guy nee ee-kee-mahs-kah"
+      },
+      {
+        "word": "word_beach",
+        "target": "これはビーチに行きますか？",
+        "reading": "これはびーちにいきますか？",
+        "pronunciation_easy": "koh-reh wah bee-chee nee ee-kee-mahs-kah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "これは駅に行きますか？",
+        "reading": "これはえきにいきますか？",
+        "pronunciation_easy": "koh-reh wah eh-kee nee ee-kee-mahs-kah"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "空港までお願いします。",
+        "reading": "くうこうまでおねがいします。",
+        "pronunciation_easy": "koo-koh mah-deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_hotel",
+        "target": "ホテルまでお願いします。",
+        "reading": "ほてるまでおねがいします。",
+        "pronunciation_easy": "hoh-teh-roo mah-deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_train_station",
+        "target": "駅までお願いします。",
+        "reading": "えきまでおねがいします。",
+        "pronunciation_easy": "eh-kee mah-deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "中心街までお願いします。",
+        "reading": "ちゅうしんがいまでおねがいします。",
+        "pronunciation_easy": "choo-sheen-guy mah-deh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "word_beach",
+        "target": "ビーチまでお願いします。",
+        "reading": "びーちまでおねがいします。",
+        "pronunciation_easy": "bee-chee mah-deh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "エアコンがつきません。",
+        "reading": "えあこんがつきません。",
+        "pronunciation_easy": "eh-ah-kon gah tsoo-kee-mah-sen"
+      },
+      {
+        "word": "word_shower",
+        "target": "シャワーが出ません。",
+        "reading": "しゃわーがでません。",
+        "pronunciation_easy": "shah-wah gah deh-mah-sen"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "Wi-Fiがつながりません。",
+        "reading": "わいふぁいがつながりません。",
+        "pronunciation_easy": "wai-fai gah tsoo-nah-gah-ree-mah-sen"
+      },
+      {
+        "word": "word_tv",
+        "target": "テレビがつきません。",
+        "reading": "てれびがつきません。",
+        "pronunciation_easy": "teh-reh-bee gah tsoo-kee-mah-sen"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "お湯が出ません。",
+        "reading": "おゆがでません。",
+        "pronunciation_easy": "oh-yoo gah deh-mah-sen"
+      },
+      {
+        "word": "word_door_lock",
+        "target": "ドアの鍵が壊れています。",
+        "reading": "どあのかぎがこわれています。",
+        "pronunciation_easy": "doh-ah noh kah-gee gah koh-wah-reh-teh ee-mahs"
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "パスポートをなくしました。",
+        "reading": "ぱすぽーとをなくしました。",
+        "pronunciation_easy": "pah-soo-poh-toh oh nah-koo-shee-mah-shee-tah"
+      },
+      {
+        "word": "word_phone",
+        "target": "携帯をなくしました。",
+        "reading": "けいたいをなくしました。",
+        "pronunciation_easy": "kay-tai oh nah-koo-shee-mah-shee-tah"
+      },
+      {
+        "word": "word_wallet",
+        "target": "財布をなくしました。",
+        "reading": "さいふをなくしました。",
+        "pronunciation_easy": "sai-foo oh nah-koo-shee-mah-shee-tah"
+      },
+      {
+        "word": "word_bag",
+        "target": "かばんをなくしました。",
+        "reading": "かばんをなくしました。",
+        "pronunciation_easy": "kah-bahn oh nah-koo-shee-mah-shee-tah"
+      },
+      {
+        "word": "word_keys",
+        "target": "鍵をなくしました。",
+        "reading": "かぎをなくしました。",
+        "pronunciation_easy": "kah-gee oh nah-koo-shee-mah-shee-tah"
+      },
+      {
+        "word": "word_room_key",
+        "target": "部屋の鍵をなくしました。",
+        "reading": "へやのかぎをなくしました。",
+        "pronunciation_easy": "heh-yah noh kah-gee oh nah-koo-shee-mah-shee-tah"
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "店内でお召し上がりですか、お持ち帰りですか？",
+      "reading": "てんないでおめしあがりですか、おもちかえりですか？",
+      "pronunciation_easy": "ten-nai deh oh-meh-shee-ah-gah-ree des-kah, oh-moh-chee-kah-eh-ree des-kah"
+    },
+    "anything_else": {
+      "target": "ご注文は以上でよろしいですか？",
+      "reading": "ごちゅうもんはいじょうでよろしいですか？",
+      "pronunciation_easy": "goh-choo-mon wah ee-joh deh yoh-roh-shee des-kah",
+      "qa": "Literally 'Is that everything for your order?': what staff actually say."
+    },
+    "here_you_go": {
+      "target": "どうぞ。",
+      "reading": "どうぞ。",
+      "pronunciation_easy": "doh-zoh"
+    },
+    "inside_or_outside": {
+      "target": "中の席と外の席、どちらがよろしいですか？",
+      "reading": "なかのせきとそとのせき、どちらがよろしいですか？",
+      "pronunciation_easy": "nah-kah noh seh-kee toh soh-toh noh seh-kee, doh-chee-rah gah yoh-roh-shee des-kah",
+      "qa": "Literally 'Inside seats or outside seats, which would you prefer?' Outdoor seating is less common in Japan; some places say 店内とテラス席."
+    },
+    "how_many_people": {
+      "target": "何名様ですか？",
+      "reading": "なんめいさまですか？",
+      "pronunciation_easy": "nan-may-sah-mah des-kah"
+    },
+    "have_booking": {
+      "target": "ご予約はされていますか？",
+      "reading": "ごよやくはされていますか？",
+      "pronunciation_easy": "goh-yoh-yah-koo wah sah-reh-teh ee-mahs-kah",
+      "qa": "ご予約はございますか？ is an equally common, more formal variant."
+    },
+    "this_way": {
+      "target": "こちらへどうぞ。",
+      "reading": "こちらへどうぞ。",
+      "pronunciation_easy": "koh-chee-rah eh doh-zoh"
+    },
+    "next_stop": {
+      "target": "次、止まります。",
+      "reading": "つぎ、とまります。",
+      "pronunciation_easy": "tsoo-gee, toh-mah-ree-mahs",
+      "qa": "Bus recording after someone presses the stop button: 'Stopping at the next stop.' Train announcements instead say 次は___です (next is ___). Reviewer: confirm this is the best fit for 'Next stop.'"
+    },
+    "its_closed": {
+      "target": "閉まっています。",
+      "reading": "しまっています。",
+      "pronunciation_easy": "shee-maht-teh ee-mahs"
+    },
+    "one_moment": {
+      "target": "少々お待ちください。",
+      "reading": "しょうしょうおまちください。",
+      "pronunciation_easy": "shoh-shoh oh-mah-chee koo-dah-sai"
+    },
+    "what_size": {
+      "target": "サイズはおいくつですか？",
+      "reading": "さいずはおいくつですか？",
+      "pronunciation_easy": "sai-zoo wah oh-ee-koo-tsoo des-kah",
+      "qa": "Clothing/shoe size. At a café, staff ask サイズはいかがなさいますか？ instead."
+    },
+    "receipt_question": {
+      "target": "レシートはご入用ですか？",
+      "reading": "れしーとはごいりようですか？",
+      "pronunciation_easy": "reh-shee-toh wah goh-ee-ree-yoh des-kah",
+      "qa": "Several variants are common: レシートはご利用ですか？, レシートはいりますか？ Note レシートはよろしいですか？ usually means 'You don't need a receipt, right?'"
+    },
+    "how_would_you_like_it": {
+      "target": "今日はどうなさいますか？",
+      "reading": "きょうはどうなさいますか？",
+      "pronunciation_easy": "kyoh wah doh nah-sai-mahs-kah",
+      "qa": "Literally 'What will you have done today?': the usual salon opener."
+    }
+  }
+}

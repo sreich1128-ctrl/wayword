@@ -390,5 +390,397 @@
     "priority": "travel",
     "english": "Thank you for your help.",
     "type": "phrase"
+  },
+  {
+    "id": "goodbye",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Goodbye.",
+    "type": "phrase"
+  },
+  {
+    "id": "sorry",
+    "category": "essentials",
+    "priority": "core",
+    "english": "Sorry.",
+    "type": "phrase"
+  },
+  {
+    "id": "youre_welcome",
+    "category": "essentials",
+    "priority": "core",
+    "english": "You're welcome.",
+    "type": "phrase"
+  },
+  {
+    "id": "no_thank_you",
+    "category": "essentials",
+    "priority": "core",
+    "english": "No, thank you.",
+    "type": "phrase"
+  },
+  {
+    "id": "okay",
+    "category": "essentials",
+    "priority": "travel",
+    "english": "Okay.",
+    "type": "phrase"
+  },
+  {
+    "id": "good_evening",
+    "category": "essentials",
+    "priority": "travel",
+    "english": "Good evening.",
+    "type": "phrase"
+  },
+  {
+    "id": "table_for",
+    "category": "food",
+    "priority": "core",
+    "english": "A table for ___, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "menu_please",
+    "category": "food",
+    "priority": "core",
+    "english": "The menu, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "allergic_to",
+    "category": "food",
+    "priority": "core",
+    "english": "I'm allergic to ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "vegetarian",
+    "category": "food",
+    "priority": "travel",
+    "english": "I'm vegetarian.",
+    "type": "phrase"
+  },
+  {
+    "id": "without",
+    "category": "food",
+    "priority": "travel",
+    "english": "Without ___, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "to_go",
+    "category": "food",
+    "priority": "travel",
+    "english": "To go, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "for_here",
+    "category": "food",
+    "priority": "travel",
+    "english": "For here, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "delicious",
+    "category": "food",
+    "priority": "travel",
+    "english": "It was delicious.",
+    "type": "phrase"
+  },
+  {
+    "id": "another_one",
+    "category": "food",
+    "priority": "explore",
+    "english": "Another one, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "ticket_to",
+    "category": "transportation",
+    "priority": "core",
+    "english": "A ticket to ___, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "does_this_go_to",
+    "category": "transportation",
+    "priority": "core",
+    "english": "Does this go to ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "take_me_to",
+    "category": "transportation",
+    "priority": "core",
+    "english": "Take me to ___, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "stop_here",
+    "category": "transportation",
+    "priority": "core",
+    "english": "Stop here, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "next_departure",
+    "category": "transportation",
+    "priority": "travel",
+    "english": "When does the next one leave?",
+    "type": "phrase"
+  },
+  {
+    "id": "which_platform",
+    "category": "transportation",
+    "priority": "travel",
+    "english": "Which platform?",
+    "type": "phrase"
+  },
+  {
+    "id": "how_long_trip",
+    "category": "transportation",
+    "priority": "travel",
+    "english": "How long does it take?",
+    "type": "phrase"
+  },
+  {
+    "id": "one_way_or_return",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "One way or return?",
+    "type": "phrase"
+  },
+  {
+    "id": "left",
+    "category": "navigation",
+    "priority": "core",
+    "english": "Left.",
+    "type": "phrase"
+  },
+  {
+    "id": "right",
+    "category": "navigation",
+    "priority": "core",
+    "english": "Right.",
+    "type": "phrase"
+  },
+  {
+    "id": "straight_ahead",
+    "category": "navigation",
+    "priority": "core",
+    "english": "Straight ahead.",
+    "type": "phrase"
+  },
+  {
+    "id": "im_lost",
+    "category": "navigation",
+    "priority": "core",
+    "english": "I'm lost.",
+    "type": "phrase"
+  },
+  {
+    "id": "show_on_map",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "Can you show me on the map?",
+    "type": "phrase"
+  },
+  {
+    "id": "near_here",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "Is it near here?",
+    "type": "phrase"
+  },
+  {
+    "id": "have_reservation",
+    "category": "hotel",
+    "priority": "core",
+    "english": "I have a reservation.",
+    "type": "phrase"
+  },
+  {
+    "id": "under_name",
+    "category": "hotel",
+    "priority": "core",
+    "english": "Under the name ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "wifi_password",
+    "category": "hotel",
+    "priority": "core",
+    "english": "What's the Wi-Fi password?",
+    "type": "phrase"
+  },
+  {
+    "id": "checkout_time",
+    "category": "hotel",
+    "priority": "travel",
+    "english": "What time is checkout?",
+    "type": "phrase"
+  },
+  {
+    "id": "leave_bags",
+    "category": "hotel",
+    "priority": "travel",
+    "english": "Can I leave my bags here?",
+    "type": "phrase"
+  },
+  {
+    "id": "doesnt_work",
+    "category": "hotel",
+    "priority": "travel",
+    "english": "The ___ doesn't work.",
+    "type": "pattern"
+  },
+  {
+    "id": "another_towel",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "Can I have another towel?",
+    "type": "phrase"
+  },
+  {
+    "id": "just_looking",
+    "category": "shopping",
+    "priority": "core",
+    "english": "I'm just looking.",
+    "type": "phrase"
+  },
+  {
+    "id": "ill_take_it",
+    "category": "shopping",
+    "priority": "core",
+    "english": "I'll take it.",
+    "type": "phrase"
+  },
+  {
+    "id": "too_expensive",
+    "category": "shopping",
+    "priority": "travel",
+    "english": "It's too expensive.",
+    "type": "phrase"
+  },
+  {
+    "id": "try_it_on",
+    "category": "shopping",
+    "priority": "travel",
+    "english": "Can I try it on?",
+    "type": "phrase"
+  },
+  {
+    "id": "another_size",
+    "category": "shopping",
+    "priority": "travel",
+    "english": "Do you have it in another size?",
+    "type": "phrase"
+  },
+  {
+    "id": "bag_please",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "A bag, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "haircut",
+    "category": "barber",
+    "priority": "core",
+    "english": "A haircut, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "just_trim",
+    "category": "barber",
+    "priority": "core",
+    "english": "Just a trim.",
+    "type": "phrase"
+  },
+  {
+    "id": "not_too_short",
+    "category": "barber",
+    "priority": "core",
+    "english": "Not too short.",
+    "type": "phrase"
+  },
+  {
+    "id": "shorter_sides",
+    "category": "barber",
+    "priority": "travel",
+    "english": "Shorter on the sides.",
+    "type": "phrase"
+  },
+  {
+    "id": "like_this",
+    "category": "barber",
+    "priority": "travel",
+    "english": "Like this.",
+    "type": "phrase"
+  },
+  {
+    "id": "beard_trim",
+    "category": "barber",
+    "priority": "explore",
+    "english": "A beard trim, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "help_shout",
+    "category": "emergency",
+    "priority": "core",
+    "english": "Help!",
+    "type": "phrase"
+  },
+  {
+    "id": "call_police",
+    "category": "emergency",
+    "priority": "core",
+    "english": "Call the police.",
+    "type": "phrase"
+  },
+  {
+    "id": "need_doctor",
+    "category": "emergency",
+    "priority": "core",
+    "english": "I need a doctor.",
+    "type": "phrase"
+  },
+  {
+    "id": "where_pharmacy",
+    "category": "emergency",
+    "priority": "core",
+    "english": "Where is the pharmacy?",
+    "type": "phrase"
+  },
+  {
+    "id": "its_emergency",
+    "category": "emergency",
+    "priority": "core",
+    "english": "It's an emergency.",
+    "type": "phrase"
+  },
+  {
+    "id": "lost_my",
+    "category": "emergency",
+    "priority": "travel",
+    "english": "I lost my ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "not_well",
+    "category": "emergency",
+    "priority": "travel",
+    "english": "I don't feel well.",
+    "type": "phrase"
+  },
+  {
+    "id": "call_someone",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "I need to call someone.",
+    "type": "phrase"
   }
 ]

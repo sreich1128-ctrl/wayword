@@ -41,6 +41,11 @@ export async function loadContent() {
     getJSON('language-meta.json'),
     getJSON('flight.json').catch(() => ({ rescue: [] })),
   ]);
+  // Word banks and replies (2026-10-13 expansion). Optional: the app works without them.
+  const [vocab, replies] = await Promise.all([
+    getJSON('vocab.json').catch(() => ({ banks: {}, words: [] })),
+    getJSON('replies.json').catch(() => ({ replies: [] })),
+  ]);
 
   const conceptById = new Map(concepts.map((c, i) => [c.id, { ...c, order: i }]));
   const categoryById = new Map(categories.map((c) => [c.id, c]));
@@ -62,6 +67,8 @@ export async function loadContent() {
     scenarios,
     patterns: patterns.patterns || {},
     flight,
+    vocab,
+    replies: replies.replies || [],
   };
 }
 
@@ -73,14 +80,18 @@ export async function loadLanguage(content, code) {
   if (langCache.has(code)) return langCache.get(code);
   const lang = content.languageByCode.get(code);
   if (!lang) throw new Error(`Unknown language ${code}`);
-  const [file, guide] = await Promise.all([getJSON(`lang/${code}.json`), loadSounds(code)]);
+  const [file, guide, added] = await Promise.all([
+    getJSON(`lang/${code}.json`),
+    loadSounds(code),
+    getJSON(`added/${code}.json`).catch(() => null), // drafts, not yet checked (content/added/README.md)
+  ]);
   const tips = guide?.tips || {}; // "How it's said" coaching, written for Wayword (not dataset text)
   // The first Sound guide entry that uses a phrase as an example: the player's "Listen for" cue.
   const cues = {};
   for (const snd of guide?.sounds || []) {
     for (const ex of snd.examples) cues[ex.id] ||= { name: snd.name, spelled: snd.spelled, mark: ex.mark, hl: guide.highlight !== false };
   }
-  const entryById = new Map(file.entries.map((e) => [e.id, e]));
+  const entryById = mergeAdded(new Map(file.entries.map((e) => [e.id, e])), added);
 
   const phrases = content.concepts.map((c) => {
     const e = entryById.get(c.id);
@@ -96,6 +107,7 @@ export async function loadLanguage(content, code) {
     if (!e) return { ...base, missing: true };
     const p = { ...base, target: e.target, pron: slotPron(e.target, e.pronunciation_easy) };
     for (const f of OPTIONAL_FIELDS) if (e[f]) p[f] = e[f];
+    if (e.draft) { p.draft = true; if (e.qa) p.qa = e.qa; }
     if (tips[c.id]) p.say_tip = tips[c.id];
     if (cues[c.id]) p.sound_cue = cues[c.id];
     return p;
@@ -117,15 +129,53 @@ export async function loadLanguage(content, code) {
     .filter(([k]) => !content.conceptById.has(k))
     .map(([k, v]) => ({ key: k, text: v }));
 
+  // Things that aren't phrase cards but can be heard and shown: example sentences for the
+  // frames, and replies you'll hear. Each looks like a phrase (id, key, target, pron, english).
+  const extraById = new Map();
+  const wordEn = new Map((content.vocab.words || []).map((w) => [w.id, w.english]));
+  const examples = {};
+  for (const [pid, list] of Object.entries(added?.examples || {})) {
+    const frame = content.conceptById.get(pid);
+    examples[pid] = list.map((x) => {
+      const en = frame && wordEn.get(x.word) ? frame.english.replace(/_{2,}/, wordEn.get(x.word)) : (wordEn.get(x.word) || '');
+      const item = { id: `${pid}~${x.word}`, key: `${code}:${pid}~${x.word}`, word: x.word, target: x.target, pron: x.pronunciation_easy, english: en, draft: true };
+      if (x.reading) item.reading = x.reading;
+      extraById.set(item.id, item);
+      return item;
+    });
+  }
+  const replies = [];
+  for (const r of content.replies) {
+    const own = r.same_as ? entryById.get(r.same_as) : added?.replies?.[r.id];
+    if (!own?.target) continue;
+    const item = { id: `reply~${r.id}`, key: `${code}:reply~${r.id}`, target: own.target, pron: own.pronunciation_easy, english: r.english, situations: r.situations || [], draft: !!(own.draft || !r.same_as) };
+    if (own.reading) item.reading = own.reading;
+    extraById.set(item.id, item);
+    replies.push(item);
+  }
+
   const result = {
     lang,
     file,
     phrases,
     byId: new Map(phrases.map((p) => [p.id, p])),
+    extraById,
+    examples,
+    replies,
+    vocab: added?.vocab || {},
     generalNotes,
   };
   langCache.set(code, result);
   return result;
+}
+
+// Drafts (content/added/<code>.json) fill in concepts the vetted file doesn't have yet.
+// The vetted entry always wins; a draft is marked so the UI can label it.
+export function mergeAdded(entryById, added) {
+  for (const e of added?.entries || []) {
+    if (!entryById.has(e.id) && e.target) entryById.set(e.id, { ...e, draft: true });
+  }
+  return entryById;
 }
 
 export function tierIncludes(content, tierId, priority) {

@@ -5,7 +5,7 @@ import * as mic from './speak.js';
 import { shortVoiceName } from './voices.js';
 import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
-import { planSession, requeue } from './plan.js';
+import { planSession, requeue, readiness } from './plan.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -109,8 +109,8 @@ function renderGrouped(items, renderItem) {
 // A situation's phrases (missing ones dropped) and how many are Learning or Locked in.
 function sitPhrases(sit) { return sit.concepts.map((id) => L.byId.get(id)).filter((p) => p && !p.missing); }
 function sitReady(sit) {
-  const ps = sitPhrases(sit);
-  return { n: ps.length, ready: ps.filter((p) => store.isLearned(p.key)).length };
+  const ok = (id) => { const p = L.byId.get(id); return !!p && !p.missing; };
+  return readiness(sit, (id) => store.isLearned(L.byId.get(id).key), ok);
 }
 
 // The situation Continue teaches from: the one you picked, or automatically The basics first,
@@ -128,6 +128,9 @@ function focusSituation() {
 function setFocus(id) {
   store.setPref('focus', { ...(store.prefs().focus || {}), [L.lang.code]: id || undefined });
 }
+
+// Replies you'll hear in a situation (content/replies.json), in this language.
+const repliesFor = (sit) => (sit ? L.replies.filter((r) => r.situations.includes(sit.id)) : []);
 
 const readyBar = (r) => `<span class="ready-bar"><span style="width:${r.n ? Math.round((r.ready / r.n) * 100) : 0}%"></span></span>`;
 
@@ -175,6 +178,9 @@ function micBtn(p, cls = '') {
 
 // Two labels only: Learning (started, being reviewed) and Locked in (passed every review).
 const statusLabel = (st) => (st === 'locked' ? 'Locked in' : st === 'learning' ? 'Learning' : '');
+// Drafts: written for Wayword, not yet checked by a native speaker (content/added/).
+const draftTag = (p) => (p.draft ? '<span class="draft-tag" title="Draft translation, not yet checked by a native speaker">Draft</span>' : '');
+
 // "How it's said": natural-speed coaching from the sound guide, with a link to the guide.
 const sayTipNote = (p, link = true) => (p.say_tip
   ? `<p class="note"><span class="note-k">How it’s said</span>${esc(p.say_tip)}${link ? ` <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a>` : ''}</p>`
@@ -197,15 +203,27 @@ function phraseCard(p) {
       ${canSpeak() ? `<button class="round-btn lk-play listen" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
     </div>
     ${notes.length ? `<div class="notes">${notes.join('')}</div>` : ''}
+    ${examplesHtml(p)}
     <div class="card-actions">
       <button class="pill-btn" data-action="show-it" data-id="${esc(p.id)}">${icon('expand')}<span>Show</span></button>
       ${canPracticeAloud() ? `<button class="pill-btn" data-action="say-it" data-id="${esc(p.id)}">${icon('mic')}<span>Practise</span></button>` : ''}
       <span class="lk-spacer"></span>
+      ${draftTag(p)}
       ${st ? `<span class="status-tag ${st}">${statusLabel(st)}</span>` : ''}
       ${p.type === 'pattern' ? '<span class="lk-kind">Pattern</span>' : ''}
       <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Save">${icon('star')}</button>
     </div>
   </article>`;
+}
+
+// A frame's written-out examples ("Um bilhete para o aeroporto"), each playable.
+function exampleRow(x) {
+  return `<div class="pp-more-row"><div><b ${nativeAttrs(L.lang)}>${withSlots(x.target)}</b><small>${withSlots(x.english)}</small></div>${canSpeak() ? `<button class="round-btn small listen" data-action="speak" data-id="${esc(x.id)}" data-key="${esc(x.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}</div>`;
+}
+function examplesHtml(p) {
+  const list = L.examples[p.id];
+  if (!list?.length) return '';
+  return `<details class="examples"><summary>Fill the blank · ${list.length} examples ${draftTag({ draft: true })}</summary>${list.map(exampleRow).join('')}</details>`;
 }
 
 // "Show this": one phrase, full-screen and large, to hand the phone to someone.
@@ -221,6 +239,7 @@ function openShowIt(p) {
       <p class="showit-native" ${nativeAttrs(L.lang)}>${withSlots(p.target)}</p>
       ${p.reading && p.reading !== p.target ? `<p class="showit-reading" ${nativeAttrs(L.lang)}>${withSlots(p.reading)}</p>` : ''}
       <p class="showit-en">${withSlots(p.english)}</p>
+      ${p.draft ? '<p class="showit-draft">Draft translation, not yet checked</p>' : ''}
       ${canSpeak() ? `<button class="mic-big listen showit-play" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Play it for them">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
     </div>`;
   document.body.appendChild(el);
@@ -581,6 +600,7 @@ function viewScenario(id) {
     ${r.ready < r.n ? `<button class="cta sit-cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Get ready for ${esc(sit.label === 'The basics' ? 'the basics' : sit.label)}</button>` : ''}
     ${audioUrls(ps).length ? `<button class="pill-btn offline-btn" data-action="save-offline" data-id="${sit.id}">${icon('download')}<span>Save for offline</span></button>` : ''}
     <div class="list">${ps.map((p) => phraseCard(p)).join('')}</div>
+    ${repliesFor(sit).length ? section('You might hear', `<div class="group pad hear-list">${repliesFor(sit).map((x) => exampleRow(x).replace('<small>', `${draftTag(x)}<small>`)).join('')}</div>`) : ''}
   `, { back: `#/${lang.code}` });
   refreshOfflineBtn(ps);
 }
@@ -592,7 +612,7 @@ function viewPatterns() {
   const anySubs = Object.values(C.patterns).some((x) => x.substitutions && x.substitutions[lang.code]?.length);
   page('more', `
     <section class="page-head"><h1>Power patterns</h1><p>Learn the frame once, then swap the blank to say new things.</p></section>
-    ${anySubs ? '' : '<p class="callout">Swap-in words aren’t in the dataset yet. Under each pattern you’ll find dataset phrases already built on it.</p>'}
+    ${anySubs || Object.keys(L.examples).length ? '' : '<p class="callout">Swap-in words aren’t in the dataset yet. Under each pattern you’ll find dataset phrases already built on it.</p>'}
     <div class="list">${renderGrouped(pats, (p, isNew) => patternCard(p, isNew), { noun: 'patterns' }) || '<div class="empty-state">No patterns yet.</div>'}</div>
   `);
 }
@@ -785,8 +805,10 @@ function freshPool(coreOnly = false) {
   pool.sort((a, b) => rank[a.priority] - rank[b.priority] || a.order - b.order);
   const sit = focusSituation().sit;
   if (!sit) return pool;
+  // The situation's own phrases first (its `counts`), then its general ones, then everything else.
+  const own = new Set(sit.counts || sit.concepts);
   const inSit = new Set(sit.concepts);
-  return [...pool.filter((p) => inSit.has(p.id)), ...pool.filter((p) => !inSit.has(p.id))];
+  return [...pool.filter((p) => own.has(p.id)), ...pool.filter((p) => inSit.has(p.id) && !own.has(p.id)), ...pool.filter((p) => !inSit.has(p.id))];
 }
 
 function sessionPlanFor(query) {
@@ -796,6 +818,7 @@ function sessionPlanFor(query) {
     due: dueItems(),
     fresh: freshPool((query.get('mode') === 'flight' || soon) && coreLeft),
     known: L.phrases.filter((p) => !p.missing && store.isLearned(p.key)),
+    replies: repliesFor(focusSituation().sit),
     leavingSoon: soon,
     canListen: canSpeak(),
   });
@@ -836,7 +859,7 @@ function drawSession() {
         <span class="pp-hint">Listen, then pick the meaning</span></div>
       </article>
       <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right' : picked === i ? 'wrong' : ''}" data-action="lc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
-      ${picked == null ? '' : `<article class="pp-phrase lc-answer"><p class="take-verdict">${st.options[picked].ok ? '✓ Right' : 'Not quite. This one:'}</p>${phraseLines(p)}</article>
+      ${picked == null ? '' : `<article class="pp-phrase lc-answer"><p class="take-verdict">${st.options[picked].ok ? '✓ Right' : 'Not quite. This one:'} ${draftTag(p)}</p>${phraseLines(p)}</article>
         <button class="cta pp-next" data-action="ss-next">Next ${icon('arrow')}</button>`}
     `, { back: home, focus: true });
     return;
@@ -1346,6 +1369,7 @@ function playerInner() {
   const howto = !store.prefs().readHint && pl.mode === 'learn'
     ? `<p class="pp-howto">How to read it: <b>how it’s written</b> · <b class="pron-k">how to say it</b>${/[A-Z]{2}/.test(p.pron || '') ? ' (CAPITALS = stress)' : ''} · <b>what it means</b></p>` : '';
   return `${howto}<article class="pp-phrase">${phraseLines(p, { size: 'lg', nativeHtml: hl })}
+      ${p.draft ? `<p class="pp-draft">${draftTag(p)} Not yet checked by a native speaker.</p>` : ''}
       ${cue ? `<p class="pp-cue"><span class="note-k">Listen for</span>${cue} <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a></p>` : ''}
       ${notes ? `<div class="notes">${notes}</div>` : ''}
     </article>
@@ -1367,6 +1391,8 @@ function relatedPhrases(p) {
 }
 
 function tryAnotherHtml(p) {
+  const ex = L.examples[p.id];
+  if (ex?.length) return `<div class="pp-more"><p class="more-k">Fill the blank ${draftTag({ draft: true })}</p>${ex.slice(0, 4).map(exampleRow).join('')}</div>`;
   const rel = relatedPhrases(p);
   if (!rel.length) return '';
   return `<div class="pp-more"><p class="more-k">${C.patterns[p.id] ? 'Same frame, other uses' : 'Goes with'}</p>
@@ -1592,7 +1618,7 @@ tts.onVoices(() => {
 
 const warned = new Set();
 function speakPhrase(id) {
-  const p = L.byId.get(id);
+  const p = L.byId.get(id) || L.extraById.get(id);
   if (!p) return;
   const m = L.lang.meta;
   // Shown once per language, ever (it also stays in the Audio section on the language home).

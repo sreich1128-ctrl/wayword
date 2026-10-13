@@ -35,6 +35,7 @@ Nothing below was changed in the data. These are things the app can't show yet, 
   - Japanese `whats_in_this` and `dairy`: 入って is written "hai-teh", which leaves out the small-っ pause ("hait-teh"). The tips say "hait-teh".
   - Hebrew `pay_card` and `cash_or_card`: כרטיס is written "khar-TEES". On its own (after או) it's "kar-TEES", and many Israelis keep the k after be- too.
   - Arabic `bill`: "il-HI-saab" may more often be "il-H'SAAB" in Levantine speech.
+- **Portuguese `nearest`: "próximo" is respelled PROK-see-moo**, but the x sounds like s: PROH-see-moo (found 2026-10-13 while drafting new content, which uses PROH-see-moo).
 - **Portuguese "com" is spelled two ways:** "kohn" in `excuse_me` (Com licença) and "kong" in `pay_card` / `apple_pay` (com cartão). It's the same nasal vowel [kõ] either way; one spelling would be clearer.
 
 ## Display-only adjustment

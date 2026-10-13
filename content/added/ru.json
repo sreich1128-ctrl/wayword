@@ -1,0 +1,1040 @@
+{
+  "language_code": "ru",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "До свидания.",
+      "pronunciation_easy": "dah svee-DAH-nee-yah"
+    },
+    {
+      "id": "sorry",
+      "target": "Простите.",
+      "pronunciation_easy": "prah-STEE-tyeh",
+      "qa": "Извините (eez-vee-NEE-tyeh) is equally common for a small apology; Простите is slightly more personal."
+    },
+    {
+      "id": "youre_welcome",
+      "target": "Пожалуйста.",
+      "pronunciation_easy": "pah-ZHAH-loo-stah",
+      "qa": "Не за что (NYEH-zah-shtah, lit. 'not for anything') is also very common in reply to thanks."
+    },
+    {
+      "id": "no_thank_you",
+      "target": "Нет, спасибо.",
+      "pronunciation_easy": "nyet, spah-SEE-bah"
+    },
+    {
+      "id": "okay",
+      "target": "Хорошо.",
+      "pronunciation_easy": "khah-rah-SHOH",
+      "qa": "Lit. 'good'; the standard neutral agreement. Ладно (LAHD-nah) and Окей are also heard; Хорошо is the most neutral."
+    },
+    {
+      "id": "good_evening",
+      "target": "Добрый вечер.",
+      "pronunciation_easy": "DOH-bry VYEH-cheer"
+    },
+    {
+      "id": "table_for",
+      "target": "Столик на ___, пожалуйста.",
+      "pronunciation_easy": "STOH-leek nah, pah-ZHAH-loo-stah",
+      "qa": "The number after на takes a collective/case form, not the plain number: на одного, на двоих, на троих, на четверых. See examples."
+    },
+    {
+      "id": "menu_please",
+      "target": "Меню, пожалуйста.",
+      "pronunciation_easy": "mee-NYOO, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "allergic_to",
+      "target": "У меня аллергия на ___.",
+      "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah",
+      "qa": "Back-translation: 'I have an allergy to ___' (lit. 'at me [is] allergy on ___'). The allergen takes the accusative case (на орехи, на молоко, на яйца). Gender-neutral."
+    },
+    {
+      "id": "vegetarian",
+      "target": "Я вегетарианец/вегетарианка.",
+      "pronunciation_easy": "ya vee-gee-tah-ree-AH-neets/vee-gee-tah-ree-AHN-kah",
+      "qa": "Speaker gender: вегетарианец (man) / вегетарианка (woman)."
+    },
+    {
+      "id": "without",
+      "target": "Без ___, пожалуйста.",
+      "pronunciation_easy": "byez, pah-ZHAH-loo-stah",
+      "qa": "Back-translation: 'Without ___, please.' Без takes the genitive: без мяса, без молока, без глютена, без льда, без орехов. For an allergy, pair it with 'У меня аллергия на ___' so staff know it is medical, not a preference."
+    },
+    {
+      "id": "to_go",
+      "target": "С собой, пожалуйста.",
+      "pronunciation_easy": "s sah-BOY, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "for_here",
+      "target": "Здесь, пожалуйста.",
+      "pronunciation_easy": "zdyes, pah-ZHAH-loo-stah",
+      "qa": "Lit. 'Here, please'; the natural answer to 'Здесь или с собой?'. Fuller: Я буду есть здесь (I'll eat here)."
+    },
+    {
+      "id": "delicious",
+      "target": "Было очень вкусно.",
+      "pronunciation_easy": "BY-lah OH-cheen FKOOS-nah"
+    },
+    {
+      "id": "another_one",
+      "target": "Ещё один, пожалуйста.",
+      "pronunciation_easy": "yee-SHCHYO ah-DEEN, pah-ZHAH-loo-stah",
+      "qa": "один agrees with the item's gender: ещё одну for a feminine noun (чашку, бутылку, кружку пива), ещё одно for neuter (пиво, вино). Ещё один fits masculine items (чай, кофе, бокал). Reviewer: consider whether a neutral form is preferable."
+    },
+    {
+      "id": "ticket_to",
+      "target": "Билет до ___, пожалуйста.",
+      "pronunciation_easy": "bee-LYET dah, pah-ZHAH-loo-stah",
+      "qa": "До takes the genitive (до аэропорта, до вокзала). For trains/buses between cities, the city name also goes in the genitive: до Москвы."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "Этот идёт до ___?",
+      "pronunciation_easy": "EH-tat ee-DYOT dah",
+      "qa": "Lit. 'Does this one go to ___?', said pointing at a bus or train (автобус, поезд, трамвай are masculine). For a commuter train (электричка, feminine) it would be Эта идёт до ___? To a driver: Вы едете до ___? (Are you going to ___?). Not sure which is best as a single default."
+    },
+    {
+      "id": "take_me_to",
+      "target": "Довезите меня до ___, пожалуйста.",
+      "pronunciation_easy": "dah-vee-ZEE-tyeh mee-NYAH dah, pah-ZHAH-loo-stah",
+      "qa": "Lit. 'Drive me as far as ___, please' (taxi). До always takes the genitive. Отвезите меня в/на ___ is equally natural but its preposition changes per place (в аэропорт, на вокзал), so до was chosen to keep the frame fixed. In practice drivers also accept just 'До аэропорта, пожалуйста.'"
+    },
+    {
+      "id": "stop_here",
+      "target": "Остановите здесь, пожалуйста.",
+      "pronunciation_easy": "ah-stah-nah-VEE-tyeh zdyes, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "next_departure",
+      "target": "Когда отправляется следующий?",
+      "pronunciation_easy": "kahg-DAH aht-prahv-LYAH-eet-sah SLYEH-doo-yoo-shchee",
+      "qa": "следующий is masculine (поезд, автобус); for a feminine vehicle (электричка, маршрутка) use следующая."
+    },
+    {
+      "id": "which_platform",
+      "target": "Какая платформа?",
+      "pronunciation_easy": "kah-KAH-yah plaht-FOR-mah",
+      "qa": "At big long-distance stations the track is often called путь: Какой путь? (kah-KOY poot)."
+    },
+    {
+      "id": "how_long_trip",
+      "target": "Сколько времени ехать?",
+      "pronunciation_easy": "SKOL-kah VRYEH-mee-nee YEH-khat",
+      "qa": "Lit. 'How much time to travel?'. Shorter Сколько ехать? is also common."
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "В одну сторону или туда и обратно?",
+      "pronunciation_easy": "v ahd-NOO STOH-rah-noo EE-lee too-DAH ee ah-BRAHT-nah"
+    },
+    {
+      "id": "left",
+      "target": "Налево.",
+      "pronunciation_easy": "nah-LYEH-vah",
+      "qa": "Direction 'to the left' (where to go). Location 'on the left' is слева (SLYEH-vah)."
+    },
+    {
+      "id": "right",
+      "target": "Направо.",
+      "pronunciation_easy": "nah-PRAH-vah",
+      "qa": "Direction 'to the right'. Location 'on the right' is справа (SPRAH-vah)."
+    },
+    {
+      "id": "straight_ahead",
+      "target": "Прямо.",
+      "pronunciation_easy": "PRYAH-mah"
+    },
+    {
+      "id": "im_lost",
+      "target": "Я заблудился/заблудилась.",
+      "pronunciation_easy": "ya zah-bloo-DEEL-sah/zah-bloo-DEE-lahs",
+      "qa": "Speaker gender: заблудился (man) / заблудилась (woman)."
+    },
+    {
+      "id": "show_on_map",
+      "target": "Можете показать на карте?",
+      "pronunciation_easy": "MOH-zhuh-tyeh pah-kah-ZAHT nah KAR-tyeh"
+    },
+    {
+      "id": "near_here",
+      "target": "Это рядом?",
+      "pronunciation_easy": "EH-tah RYAH-dahm",
+      "qa": "Lit. 'Is it nearby?'. Это недалеко? (is it not far?) is equally common."
+    },
+    {
+      "id": "have_reservation",
+      "target": "У меня бронь.",
+      "pronunciation_easy": "oo mee-NYAH bron",
+      "qa": "Lit. 'I have a booking'. бронь is the everyday word at hotels and restaurants; more formal: У меня забронирован номер (I have a room booked)."
+    },
+    {
+      "id": "under_name",
+      "target": "На имя ___.",
+      "pronunciation_easy": "nah EE-myah"
+    },
+    {
+      "id": "wifi_password",
+      "target": "Какой пароль от Wi-Fi?",
+      "pronunciation_easy": "kah-KOY pah-ROL at vai-FAI",
+      "qa": "Wi-Fi is said 'вайфай' (vai-FAI) and often written in Latin letters."
+    },
+    {
+      "id": "checkout_time",
+      "target": "Во сколько выезд?",
+      "pronunciation_easy": "vah SKOL-kah VY-yeest",
+      "qa": "Lit. 'At what time is departure?'. Hotels also say расчётный час (checkout hour): Во сколько расчётный час?"
+    },
+    {
+      "id": "leave_bags",
+      "target": "Можно оставить здесь багаж?",
+      "pronunciation_easy": "MOZH-nah ah-STAH-veet zdyes bah-GAHSH",
+      "qa": "Lit. 'Can I leave luggage here?'. Вещи (things) is also used: Можно оставить здесь вещи?"
+    },
+    {
+      "id": "doesnt_work",
+      "target": "___ не работает.",
+      "pronunciation_easy": "nee rah-BOH-tah-yeet",
+      "qa": "Plural subjects take не работают. For hot water the natural sentence is Нет горячей воды (There is no hot water), used in the examples instead of the frame."
+    },
+    {
+      "id": "another_towel",
+      "target": "Можно ещё одно полотенце?",
+      "pronunciation_easy": "MOZH-nah yee-SHCHYO ahd-NOH pah-lah-TYEN-tseh"
+    },
+    {
+      "id": "just_looking",
+      "target": "Я просто смотрю.",
+      "pronunciation_easy": "ya PROS-tah smah-TRYOO"
+    },
+    {
+      "id": "ill_take_it",
+      "target": "Я это возьму.",
+      "pronunciation_easy": "ya EH-tah vahz-MOO",
+      "qa": "Беру! (bee-ROO, 'I'm taking it') is a shorter everyday alternative."
+    },
+    {
+      "id": "too_expensive",
+      "target": "Это слишком дорого.",
+      "pronunciation_easy": "EH-tah SLEESH-kahm DOH-rah-gah"
+    },
+    {
+      "id": "try_it_on",
+      "target": "Можно примерить?",
+      "pronunciation_easy": "MOZH-nah pree-MYEH-reet"
+    },
+    {
+      "id": "another_size",
+      "target": "У вас есть другой размер?",
+      "pronunciation_easy": "oo vahs yest droo-GOY rahz-MYER"
+    },
+    {
+      "id": "bag_please",
+      "target": "Пакет, пожалуйста.",
+      "pronunciation_easy": "pah-KYET, pah-ZHAH-loo-stah",
+      "qa": "пакет = shop bag (plastic or paper); shops often charge a few roubles for it."
+    },
+    {
+      "id": "haircut",
+      "target": "Подстригите меня, пожалуйста.",
+      "pronunciation_easy": "paht-stree-GEE-tyeh mee-NYAH, pah-ZHAH-loo-stah",
+      "qa": "Lit. 'Cut my hair, please'. Мне нужна стрижка (I need a haircut) is also fine."
+    },
+    {
+      "id": "just_trim",
+      "target": "Только подровнять.",
+      "pronunciation_easy": "TOL-kah pahd-rahv-NYAHT",
+      "qa": "Lit. 'Just even it up'; the usual way to ask for a trim."
+    },
+    {
+      "id": "not_too_short",
+      "target": "Не слишком коротко.",
+      "pronunciation_easy": "nee SLEESH-kahm KOH-raht-kah"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "По бокам покороче.",
+      "pronunciation_easy": "pah bah-KAHM pah-kah-ROH-cheh"
+    },
+    {
+      "id": "like_this",
+      "target": "Как на фото.",
+      "pronunciation_easy": "kak nah FOH-tah",
+      "qa": "Lit. 'Like in the photo', said while showing it. Вот так (vot TAHK, 'like this') also works."
+    },
+    {
+      "id": "beard_trim",
+      "target": "Подровняйте бороду, пожалуйста.",
+      "pronunciation_easy": "pahd-rahv-NYAI-tyeh BOH-rah-doo, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "help_shout",
+      "target": "Помогите!",
+      "pronunciation_easy": "pah-mah-GEE-tyeh",
+      "qa": "Back-translation: 'Help!' (lit. 'help [me]!', polite/plural imperative). The standard shout for help."
+    },
+    {
+      "id": "call_police",
+      "target": "Вызовите полицию!",
+      "pronunciation_easy": "VY-zah-vee-tyeh pah-LEE-tsy-yoo",
+      "qa": "Back-translation: 'Call the police!' (вызвать = summon). Emergency number 112; police direct 102."
+    },
+    {
+      "id": "need_doctor",
+      "target": "Мне нужен врач.",
+      "pronunciation_easy": "mnyeh NOO-zheen vrahch",
+      "qa": "Back-translation: 'I need a doctor' (lit. 'to me [is] needed a doctor'). Gender-neutral. For an ambulance: Вызовите скорую! (Call an ambulance!), number 103 or 112."
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "Где аптека?",
+      "pronunciation_easy": "gdyeh ahp-TYEH-kah",
+      "qa": "Back-translation: 'Where is [the] pharmacy?'. For the nearest one: Где ближайшая аптека?"
+    },
+    {
+      "id": "its_emergency",
+      "target": "Это срочно!",
+      "pronunciation_easy": "EH-tah SROCH-nah",
+      "qa": "Back-translation: 'It's urgent!'. This is the everyday way to say it; Это экстренный случай (it's an emergency case) is more formal and less often shouted."
+    },
+    {
+      "id": "lost_my",
+      "target": "Я потерял/потеряла ___.",
+      "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah",
+      "qa": "Back-translation: 'I lost ___.' Speaker gender: потерял (man) / потеряла (woman). The object takes the accusative (паспорт, сумку). Russian normally omits 'my' here."
+    },
+    {
+      "id": "not_well",
+      "target": "Я плохо себя чувствую.",
+      "pronunciation_easy": "ya PLOH-khah see-BYAH CHOOST-voo-yoo",
+      "qa": "Back-translation: 'I feel bad (unwell)' (lit. 'I badly myself feel'). Gender-neutral. Shorter and more urgent: Мне плохо (I feel sick/faint). The first в in чувствую is silent."
+    },
+    {
+      "id": "call_someone",
+      "target": "Мне нужно позвонить.",
+      "pronunciation_easy": "mnyeh NOOZH-nah pah-zvah-NEET",
+      "qa": "Back-translation: 'I need to make a phone call' (lit. 'to me [it is] necessary to call'). Add Можно с вашего телефона? to ask to use someone's phone."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "вокзал",
+      "pronunciation_easy": "vahk-ZAHL"
+    },
+    "word_bus_stop": {
+      "target": "автобусная остановка",
+      "pronunciation_easy": "af-TOH-boos-nah-yah ah-stah-NOF-kah"
+    },
+    "word_airport": {
+      "target": "аэропорт",
+      "pronunciation_easy": "ah-eh-rah-PORT"
+    },
+    "word_metro_station": {
+      "target": "станция метро",
+      "pronunciation_easy": "STAHN-tsy-yah mee-TROH"
+    },
+    "word_hotel": {
+      "target": "гостиница",
+      "pronunciation_easy": "gah-STEE-nee-tsah"
+    },
+    "word_beach": {
+      "target": "пляж",
+      "pronunciation_easy": "plyahsh"
+    },
+    "word_city_centre": {
+      "target": "центр города",
+      "pronunciation_easy": "TSENTR GOH-rah-dah"
+    },
+    "word_pharmacy": {
+      "target": "аптека",
+      "pronunciation_easy": "ahp-TYEH-kah"
+    },
+    "word_atm": {
+      "target": "банкомат",
+      "pronunciation_easy": "bahn-kah-MAHT"
+    },
+    "word_supermarket": {
+      "target": "супермаркет",
+      "pronunciation_easy": "soo-peer-MAR-keet"
+    },
+    "word_platform": {
+      "target": "платформа",
+      "pronunciation_easy": "plaht-FOR-mah"
+    },
+    "word_ticket_office": {
+      "target": "касса",
+      "pronunciation_easy": "KAHS-sah"
+    },
+    "word_exit": {
+      "target": "выход",
+      "pronunciation_easy": "VY-khat"
+    },
+    "word_entrance": {
+      "target": "вход",
+      "pronunciation_easy": "fkhot"
+    },
+    "word_tea": {
+      "target": "чай",
+      "pronunciation_easy": "chai"
+    },
+    "word_beer": {
+      "target": "пиво",
+      "pronunciation_easy": "PEE-vah"
+    },
+    "word_glass_of_wine": {
+      "target": "бокал вина",
+      "pronunciation_easy": "bah-KAHL vee-NAH"
+    },
+    "word_orange_juice": {
+      "target": "апельсиновый сок",
+      "pronunciation_easy": "ah-peel-SEE-nah-vy sok"
+    },
+    "word_menu": {
+      "target": "меню",
+      "pronunciation_easy": "mee-NYOO"
+    },
+    "word_bill": {
+      "target": "счёт",
+      "pronunciation_easy": "shchyot"
+    },
+    "word_bag": {
+      "target": "сумка",
+      "pronunciation_easy": "SOOM-kah"
+    },
+    "word_receipt": {
+      "target": "чек",
+      "pronunciation_easy": "chek"
+    },
+    "word_water": {
+      "target": "вода",
+      "pronunciation_easy": "vah-DAH"
+    },
+    "word_coffee": {
+      "target": "кофе",
+      "pronunciation_easy": "KOH-feh"
+    },
+    "word_bread": {
+      "target": "хлеб",
+      "pronunciation_easy": "khlyep"
+    },
+    "word_milk": {
+      "target": "молоко",
+      "pronunciation_easy": "mah-lah-KOH"
+    },
+    "word_ice": {
+      "target": "лёд",
+      "pronunciation_easy": "lyot"
+    },
+    "word_nuts": {
+      "target": "орехи",
+      "pronunciation_easy": "ah-RYEH-khee"
+    },
+    "word_gluten": {
+      "target": "глютен",
+      "pronunciation_easy": "glyoo-TEN"
+    },
+    "word_shellfish": {
+      "target": "морепродукты",
+      "pronunciation_easy": "mah-ree-prah-DOOK-ty"
+    },
+    "word_eggs": {
+      "target": "яйца",
+      "pronunciation_easy": "YAI-tsah"
+    },
+    "word_meat": {
+      "target": "мясо",
+      "pronunciation_easy": "MYAH-sah"
+    },
+    "word_dairy": {
+      "target": "молочные продукты",
+      "pronunciation_easy": "mah-LOCH-ny-yeh prah-DOOK-ty"
+    },
+    "word_peanuts": {
+      "target": "арахис",
+      "pronunciation_easy": "ah-RAH-khees"
+    },
+    "word_passport": {
+      "target": "паспорт",
+      "pronunciation_easy": "PAHS-pahrt"
+    },
+    "word_phone": {
+      "target": "телефон",
+      "pronunciation_easy": "tee-lee-FON"
+    },
+    "word_wallet": {
+      "target": "кошелёк",
+      "pronunciation_easy": "kah-shee-LYOK"
+    },
+    "word_keys": {
+      "target": "ключи",
+      "pronunciation_easy": "klyoo-CHEE"
+    },
+    "word_ticket": {
+      "target": "билет",
+      "pronunciation_easy": "bee-LYET"
+    },
+    "word_room_key": {
+      "target": "ключ от номера",
+      "pronunciation_easy": "klyooch at NOH-mee-rah"
+    },
+    "word_air_conditioning": {
+      "target": "кондиционер",
+      "pronunciation_easy": "kahn-dee-tsy-ah-NYER"
+    },
+    "word_shower": {
+      "target": "душ",
+      "pronunciation_easy": "doosh"
+    },
+    "word_wi_fi": {
+      "target": "Wi-Fi",
+      "pronunciation_easy": "vai-FAI"
+    },
+    "word_tv": {
+      "target": "телевизор",
+      "pronunciation_easy": "tee-lee-VEE-zahr"
+    },
+    "word_hot_water": {
+      "target": "горячая вода",
+      "pronunciation_easy": "gah-RYAH-chah-yah vah-DAH"
+    },
+    "word_door_lock": {
+      "target": "дверной замок",
+      "pronunciation_easy": "dveer-NOY zah-MOK"
+    },
+    "word_one": {
+      "target": "один",
+      "pronunciation_easy": "ah-DEEN"
+    },
+    "word_two": {
+      "target": "два",
+      "pronunciation_easy": "dvah"
+    },
+    "word_three": {
+      "target": "три",
+      "pronunciation_easy": "tree"
+    },
+    "word_four": {
+      "target": "четыре",
+      "pronunciation_easy": "chee-TY-ree"
+    },
+    "word_five": {
+      "target": "пять",
+      "pronunciation_easy": "pyaht"
+    },
+    "word_six": {
+      "target": "шесть",
+      "pronunciation_easy": "shest"
+    },
+    "word_seven": {
+      "target": "семь",
+      "pronunciation_easy": "syem"
+    },
+    "word_eight": {
+      "target": "восемь",
+      "pronunciation_easy": "VOH-seem"
+    },
+    "word_nine": {
+      "target": "девять",
+      "pronunciation_easy": "DYEH-veet"
+    },
+    "word_ten": {
+      "target": "десять",
+      "pronunciation_easy": "DYEH-seet"
+    },
+    "word_twenty": {
+      "target": "двадцать",
+      "pronunciation_easy": "DVAH-tsat"
+    },
+    "word_fifty": {
+      "target": "пятьдесят",
+      "pronunciation_easy": "pee-dee-SYAHT"
+    },
+    "word_one_hundred": {
+      "target": "сто",
+      "pronunciation_easy": "stoh"
+    },
+    "word_upstairs": {
+      "target": "наверху",
+      "pronunciation_easy": "nah-veer-KHOO"
+    },
+    "word_downstairs": {
+      "target": "внизу",
+      "pronunciation_easy": "vnee-ZOO"
+    },
+    "word_near": {
+      "target": "близко",
+      "pronunciation_easy": "BLEES-kah"
+    },
+    "word_far": {
+      "target": "далеко",
+      "pronunciation_easy": "dah-lee-KOH"
+    },
+    "word_today": {
+      "target": "сегодня",
+      "pronunciation_easy": "see-VOD-nyah"
+    },
+    "word_tomorrow": {
+      "target": "завтра",
+      "pronunciation_easy": "ZAHF-trah"
+    },
+    "word_now": {
+      "target": "сейчас",
+      "pronunciation_easy": "see-CHAHS"
+    },
+    "word_later": {
+      "target": "позже",
+      "pronunciation_easy": "POZH-zheh"
+    },
+    "word_open": {
+      "target": "открыто",
+      "pronunciation_easy": "aht-KRY-tah"
+    },
+    "word_closed": {
+      "target": "закрыто",
+      "pronunciation_easy": "zah-KRY-tah"
+    },
+    "word_yes": {
+      "target": "да",
+      "pronunciation_easy": "dah"
+    },
+    "word_no": {
+      "target": "нет",
+      "pronunciation_easy": "nyet"
+    },
+    "word_cash": {
+      "target": "наличные",
+      "pronunciation_easy": "nah-LEECH-ny-yeh"
+    },
+    "word_card": {
+      "target": "карта",
+      "pronunciation_easy": "KAR-tah"
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "Где вокзал?",
+        "pronunciation_easy": "gdyeh vahk-ZAHL"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Где автобусная остановка?",
+        "pronunciation_easy": "gdyeh af-TOH-boos-nah-yah ah-stah-NOF-kah"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "Где аптека?",
+        "pronunciation_easy": "gdyeh ahp-TYEH-kah"
+      },
+      {
+        "word": "word_atm",
+        "target": "Где банкомат?",
+        "pronunciation_easy": "gdyeh bahn-kah-MAHT"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Где супермаркет?",
+        "pronunciation_easy": "gdyeh soo-peer-MAR-keet"
+      },
+      {
+        "word": "word_exit",
+        "target": "Где выход?",
+        "pronunciation_easy": "gdyeh VY-khat"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "Где ближайшая аптека?",
+        "pronunciation_easy": "gdyeh blee-ZHAI-shah-yah ahp-TYEH-kah"
+      },
+      {
+        "word": "word_atm",
+        "target": "Где ближайший банкомат?",
+        "pronunciation_easy": "gdyeh blee-ZHAI-shee bahn-kah-MAHT"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Где ближайший супермаркет?",
+        "pronunciation_easy": "gdyeh blee-ZHAI-shee soo-peer-MAR-keet"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "Где ближайшая станция метро?",
+        "pronunciation_easy": "gdyeh blee-ZHAI-shah-yah STAHN-tsy-yah mee-TROH"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Где ближайшая автобусная остановка?",
+        "pronunciation_easy": "gdyeh blee-ZHAI-shah-yah af-TOH-boos-nah-yah ah-stah-NOF-kah"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "Как добраться до аэропорта?",
+        "pronunciation_easy": "kak dah-BRAHT-sah dah ah-eh-rah-POR-tah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Как добраться до вокзала?",
+        "pronunciation_easy": "kak dah-BRAHT-sah dah vahk-ZAH-lah"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Как добраться до центра города?",
+        "pronunciation_easy": "kak dah-BRAHT-sah dah TSEN-trah GOH-rah-dah"
+      },
+      {
+        "word": "word_beach",
+        "target": "Как добраться до пляжа?",
+        "pronunciation_easy": "kak dah-BRAHT-sah dah PLYAH-zhah"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Как добраться до гостиницы?",
+        "pronunciation_easy": "kak dah-BRAHT-sah dah gah-STEE-nee-tsy"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "Можно мне чай, пожалуйста?",
+        "pronunciation_easy": "MOZH-nah mnyeh chai, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_beer",
+        "target": "Можно мне пиво, пожалуйста?",
+        "pronunciation_easy": "MOZH-nah mnyeh PEE-vah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Можно мне бокал вина, пожалуйста?",
+        "pronunciation_easy": "MOZH-nah mnyeh bah-KAHL vee-NAH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Можно мне апельсиновый сок, пожалуйста?",
+        "pronunciation_easy": "MOZH-nah mnyeh ah-peel-SEE-nah-vy sok, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_menu",
+        "target": "Можно мне меню, пожалуйста?",
+        "pronunciation_easy": "MOZH-nah mnyeh mee-NYOO, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_receipt",
+        "target": "Можно мне чек, пожалуйста?",
+        "pronunciation_easy": "MOZH-nah mnyeh chek, pah-ZHAH-loo-stah"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "Я бы хотел чаю, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL CHAH-yoo, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_beer",
+        "target": "Я бы хотел пива, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL PEE-vah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Я бы хотел бокал вина, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL bah-KAHL vee-NAH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Я бы хотел апельсиновый сок, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL ah-peel-SEE-nah-vy sok, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_bread",
+        "target": "Я бы хотел хлеба, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL KHLYEH-bah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_water",
+        "target": "Я бы хотел воды, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL vah-DY, pah-ZHAH-loo-stah"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "Столик на одного, пожалуйста.",
+        "pronunciation_easy": "STOH-leek nah ahd-nah-VOH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_two",
+        "target": "Столик на двоих, пожалуйста.",
+        "pronunciation_easy": "STOH-leek nah dvah-EEKH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_three",
+        "target": "Столик на троих, пожалуйста.",
+        "pronunciation_easy": "STOH-leek nah trah-EEKH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_four",
+        "target": "Столик на четверых, пожалуйста.",
+        "pronunciation_easy": "STOH-leek nah cheet-vee-RYKH, pah-ZHAH-loo-stah"
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "У меня аллергия на орехи.",
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah ah-RYEH-khee"
+      },
+      {
+        "word": "word_peanuts",
+        "target": "У меня аллергия на арахис.",
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah ah-RAH-khees"
+      },
+      {
+        "word": "word_gluten",
+        "target": "У меня аллергия на глютен.",
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah glyoo-TEN"
+      },
+      {
+        "word": "word_shellfish",
+        "target": "У меня аллергия на морепродукты.",
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah mah-ree-prah-DOOK-ty"
+      },
+      {
+        "word": "word_milk",
+        "target": "У меня аллергия на молоко.",
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah mah-lah-KOH"
+      },
+      {
+        "word": "word_eggs",
+        "target": "У меня аллергия на яйца.",
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah YAI-tsah"
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "Без мяса, пожалуйста.",
+        "pronunciation_easy": "byez MYAH-sah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_milk",
+        "target": "Без молока, пожалуйста.",
+        "pronunciation_easy": "byez mah-lah-KAH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Без глютена, пожалуйста.",
+        "pronunciation_easy": "byez glyoo-TEH-nah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_ice",
+        "target": "Без льда, пожалуйста.",
+        "pronunciation_easy": "byez LDAH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_nuts",
+        "target": "Без орехов, пожалуйста.",
+        "pronunciation_easy": "byez ah-RYEH-khaf, pah-ZHAH-loo-stah"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "Билет до аэропорта, пожалуйста.",
+        "pronunciation_easy": "bee-LYET dah ah-eh-rah-POR-tah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Билет до центра города, пожалуйста.",
+        "pronunciation_easy": "bee-LYET dah TSEN-trah GOH-rah-dah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_beach",
+        "target": "Билет до пляжа, пожалуйста.",
+        "pronunciation_easy": "bee-LYET dah PLYAH-zhah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Билет до вокзала, пожалуйста.",
+        "pronunciation_easy": "bee-LYET dah vahk-ZAH-lah, pah-ZHAH-loo-stah"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "Этот идёт до аэропорта?",
+        "pronunciation_easy": "EH-tat ee-DYOT dah ah-eh-rah-POR-tah"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Этот идёт до центра города?",
+        "pronunciation_easy": "EH-tat ee-DYOT dah TSEN-trah GOH-rah-dah"
+      },
+      {
+        "word": "word_beach",
+        "target": "Этот идёт до пляжа?",
+        "pronunciation_easy": "EH-tat ee-DYOT dah PLYAH-zhah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Этот идёт до вокзала?",
+        "pronunciation_easy": "EH-tat ee-DYOT dah vahk-ZAH-lah"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "Довезите меня до аэропорта, пожалуйста.",
+        "pronunciation_easy": "dah-vee-ZEE-tyeh mee-NYAH dah ah-eh-rah-POR-tah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Довезите меня до гостиницы, пожалуйста.",
+        "pronunciation_easy": "dah-vee-ZEE-tyeh mee-NYAH dah gah-STEE-nee-tsy, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Довезите меня до вокзала, пожалуйста.",
+        "pronunciation_easy": "dah-vee-ZEE-tyeh mee-NYAH dah vahk-ZAH-lah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Довезите меня до центра города, пожалуйста.",
+        "pronunciation_easy": "dah-vee-ZEE-tyeh mee-NYAH dah TSEN-trah GOH-rah-dah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "word_beach",
+        "target": "Довезите меня до пляжа, пожалуйста.",
+        "pronunciation_easy": "dah-vee-ZEE-tyeh mee-NYAH dah PLYAH-zhah, pah-ZHAH-loo-stah"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "Кондиционер не работает.",
+        "pronunciation_easy": "kahn-dee-tsy-ah-NYER nee rah-BOH-tah-yeet"
+      },
+      {
+        "word": "word_shower",
+        "target": "Душ не работает.",
+        "pronunciation_easy": "doosh nee rah-BOH-tah-yeet"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "Wi-Fi не работает.",
+        "pronunciation_easy": "vai-FAI nee rah-BOH-tah-yeet"
+      },
+      {
+        "word": "word_tv",
+        "target": "Телевизор не работает.",
+        "pronunciation_easy": "tee-lee-VEE-zahr nee rah-BOH-tah-yeet"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "Нет горячей воды.",
+        "pronunciation_easy": "nyet gah-RYAH-chey vah-DY"
+      },
+      {
+        "word": "word_door_lock",
+        "target": "Дверной замок не работает.",
+        "pronunciation_easy": "dveer-NOY zah-MOK nee rah-BOH-tah-yeet"
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "Я потерял/потеряла паспорт.",
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah PAHS-pahrt"
+      },
+      {
+        "word": "word_phone",
+        "target": "Я потерял/потеряла телефон.",
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah tee-lee-FON"
+      },
+      {
+        "word": "word_wallet",
+        "target": "Я потерял/потеряла кошелёк.",
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah kah-shee-LYOK"
+      },
+      {
+        "word": "word_bag",
+        "target": "Я потерял/потеряла сумку.",
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah SOOM-koo"
+      },
+      {
+        "word": "word_keys",
+        "target": "Я потерял/потеряла ключи.",
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah klyoo-CHEE"
+      },
+      {
+        "word": "word_room_key",
+        "target": "Я потерял/потеряла ключ от номера.",
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah klyooch at NOH-mee-rah"
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "Здесь или с собой?",
+      "pronunciation_easy": "zdyes EE-lee s sah-BOY"
+    },
+    "anything_else": {
+      "target": "Что-нибудь ещё?",
+      "pronunciation_easy": "SHTOH-nee-boot yee-SHCHYO"
+    },
+    "here_you_go": {
+      "target": "Вот, пожалуйста.",
+      "pronunciation_easy": "vot, pah-ZHAH-loo-stah"
+    },
+    "inside_or_outside": {
+      "target": "Внутри или на улице?",
+      "pronunciation_easy": "vnoo-TREE EE-lee nah OO-lee-tseh"
+    },
+    "how_many_people": {
+      "target": "На сколько человек?",
+      "pronunciation_easy": "nah SKOL-kah chee-lah-VYEK"
+    },
+    "have_booking": {
+      "target": "У вас есть бронь?",
+      "pronunciation_easy": "oo vahs yest bron"
+    },
+    "this_way": {
+      "target": "Сюда, пожалуйста.",
+      "pronunciation_easy": "syoo-DAH, pah-ZHAH-loo-stah"
+    },
+    "next_stop": {
+      "target": "Следующая остановка.",
+      "pronunciation_easy": "SLYEH-doo-yoo-shchah-yah ah-stah-NOF-kah"
+    },
+    "its_closed": {
+      "target": "Закрыто.",
+      "pronunciation_easy": "zah-KRY-tah"
+    },
+    "one_moment": {
+      "target": "Одну минуту, пожалуйста.",
+      "pronunciation_easy": "ahd-NOO mee-NOO-too, pah-ZHAH-loo-stah"
+    },
+    "what_size": {
+      "target": "Какой размер?",
+      "pronunciation_easy": "kah-KOY rahz-MYER"
+    },
+    "receipt_question": {
+      "target": "Чек нужен?",
+      "pronunciation_easy": "chek NOO-zheen"
+    },
+    "how_would_you_like_it": {
+      "target": "Как вас подстричь?",
+      "pronunciation_easy": "kak vahs paht-STREECH"
+    }
+  }
+}

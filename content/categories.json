@@ -8,5 +8,10 @@
   { "id": "social",            "label": "Social Conversation",   "icon": "💬" },
   { "id": "conversation_glue", "label": "Conversation Glue",     "icon": "🔗" },
   { "id": "connection",        "label": "Connection / Flirting", "icon": "✨" },
-  { "id": "problems",          "label": "Problems & Help",       "icon": "🆘" }
+  { "id": "problems",          "label": "Problems & Help",       "icon": "🆘" },
+  { "id": "transportation",    "label": "Transportation",        "icon": "🚆" },
+  { "id": "hotel",             "label": "Hotel",                 "icon": "🏨" },
+  { "id": "shopping",          "label": "Shopping",              "icon": "🛍️" },
+  { "id": "barber",            "label": "Barber",                "icon": "💈" },
+  { "id": "emergency",         "label": "Help & Emergencies",    "icon": "🆘" }
 ]

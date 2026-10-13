@@ -1,0 +1,1087 @@
+{
+  "language_code": "ar-levantine",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "مع السلامة.",
+      "pronunciation_easy": "ma-is-sa-LAA-meh",
+      "qa": "Reply to it is usually الله معك (al-LAH MA-ak). Lebanese also say باي."
+    },
+    {
+      "id": "sorry",
+      "target": "آسف.",
+      "pronunciation_easy": "AA-sef",
+      "qa": "Masculine form (file convention: masculine speaker/listener). A female speaker says آسفة (AAS-feh). سوري (SOR-ree) is also very common in casual speech."
+    },
+    {
+      "id": "youre_welcome",
+      "target": "عفواً.",
+      "pronunciation_easy": "AF-wan",
+      "qa": "Same word as excuse_me in the vetted file. Also common: ولو (wa-LAW) and أهلا وسهلا."
+    },
+    {
+      "id": "no_thank_you",
+      "target": "لأ، شكراً.",
+      "pronunciation_easy": "la, SHUK-ran"
+    },
+    {
+      "id": "okay",
+      "target": "ماشي.",
+      "pronunciation_easy": "MAA-shee",
+      "qa": "Neutral agreement. طيب (TAY-yeb) and أوكي are equally common; ماشي is most typical in Palestine/Jordan."
+    },
+    {
+      "id": "good_evening",
+      "target": "مسا الخير.",
+      "pronunciation_easy": "MA-sa il-khayr"
+    },
+    {
+      "id": "table_for",
+      "target": "طاولة لـ___، لو سمحت.",
+      "pronunciation_easy": "TAA-wleh la-___, law sa-MAHT",
+      "qa": "Blank takes number + 'person' (شخص), and the noun changes with the number: لشخص واحد (1), لشخصين (dual, 2), لتلات/لأربع أشخاص (3-10, plural). See examples. Waiters may simply hear the number with fingers."
+    },
+    {
+      "id": "menu_please",
+      "target": "المنيو، لو سمحت.",
+      "pronunciation_easy": "il-MEN-yoo, law sa-MAHT",
+      "qa": "منيو is the everyday word; formal قائمة الطعام appears in print."
+    },
+    {
+      "id": "allergic_to",
+      "target": "عندي حساسية من ___.",
+      "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min ___",
+      "qa": "ALLERGY. Literal: 'I have an allergy from ___' (= I'm allergic to ___). حساسية على ___ is also heard. Blank takes the allergen with the article (المكسرات, البيض). Gender-neutral."
+    },
+    {
+      "id": "vegetarian",
+      "target": "أنا نباتي.",
+      "pronunciation_easy": "ANA na-BAA-tee",
+      "qa": "Masculine form (file convention: masculine speaker/listener). Female speaker: أنا نباتية (na-baa-TEE-yeh). Literal: 'I am vegetarian'. Note: some people assume chicken/fish are fine; add ما باكل لحمة ولا جاج (I don't eat meat or chicken) if needed."
+    },
+    {
+      "id": "without",
+      "target": "بدون ___، لو سمحت.",
+      "pronunciation_easy": "bi-DOON ___, law sa-MAHT",
+      "qa": "ALLERGY/DIET. Literal: 'Without ___, please.' Blank takes the noun with no article (بدون لحمة, بدون حليب). بلا (BA-la) ___ is a common alternative."
+    },
+    {
+      "id": "to_go",
+      "target": "سفري، لو سمحت.",
+      "pronunciation_easy": "SAF-ree, law sa-MAHT",
+      "qa": "سفري ('for travel') is the standard takeaway word in Jordan/Palestine/Syria; in Lebanon 'take away' (in English) is common too."
+    },
+    {
+      "id": "for_here",
+      "target": "هون، لو سمحت.",
+      "pronunciation_easy": "hoon, law sa-MAHT",
+      "qa": "Literal: 'Here, please.' Natural as an answer to هون ولا سفري؟. Fuller: بدي آكل هون (I want to eat here)."
+    },
+    {
+      "id": "delicious",
+      "target": "كان كتير طيب.",
+      "pronunciation_easy": "kaan kTEER TAY-yeb",
+      "qa": "Refers to the meal (masc). For a feminine dish (e.g. الأكلة) كانت كتير طيبة. Palestinians also say زاكي (ZAA-kee)."
+    },
+    {
+      "id": "another_one",
+      "target": "كمان واحد، لو سمحت.",
+      "pronunciation_easy": "ka-MAAN WAA-hed, law sa-MAHT",
+      "qa": "Gender agrees with the item, not the speaker: كمان واحدة (WAH-deh) for feminine items like قهوة or بيرة."
+    },
+    {
+      "id": "ticket_to",
+      "target": "تذكرة لـ___، لو سمحت.",
+      "pronunciation_easy": "TAZ-ka-ra la-___, law sa-MAHT",
+      "qa": "لـ + ال merges to لل (للمطار). Colloquially تكت/تيكت is also heard. Blank takes the destination with its article."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "هاد بيروح على ___؟",
+      "pronunciation_easy": "haad bi-ROOH a-la ___",
+      "qa": "هاد/بيروح assume a masculine vehicle (باص, سرفيس, قطار). For a feminine noun (e.g. السيارة) هاي بتروح. على + ال contracts to عال (عالمطار)."
+    },
+    {
+      "id": "take_me_to",
+      "target": "وصّلني على ___، لو سمحت.",
+      "pronunciation_easy": "was-SIL-nee a-la ___, law sa-MAHT",
+      "qa": "Masculine form (file convention: masculine speaker/listener). Addressed to a male driver; to a female driver وصّليني (was-si-LEE-nee). ودّيني على ___ is also common in Palestine/Jordan. على + ال contracts to عال."
+    },
+    {
+      "id": "stop_here",
+      "target": "وقّف هون، لو سمحت.",
+      "pronunciation_easy": "WA'-'if hoon, law sa-MAHT",
+      "qa": "Masculine form (file convention: masculine speaker/listener). Addressed to a male driver; female: وقّفي. نزّلني هون (naz-ZIL-nee hoon, 'let me off here') is equally common."
+    },
+    {
+      "id": "next_departure",
+      "target": "إمتى بيطلع الجاي؟",
+      "pronunciation_easy": "EM-ta bi-TLA ij-JAAY",
+      "qa": "Literal: 'When does the coming one leave?' Masculine (bus/train). For a feminine noun: إمتى بتطلع الجاية. Jordanian/Palestinian also أيمتى."
+    },
+    {
+      "id": "which_platform",
+      "target": "أي رصيف؟",
+      "pronunciation_easy": "ay ra-SEEF",
+      "qa": "Uncertain: rail is rare in the Levant and travellers may not need this; رصيف is the standard word for platform (also 'sidewalk'). Some say أي منصة."
+    },
+    {
+      "id": "how_long_trip",
+      "target": "قديش بدها وقت؟",
+      "pronunciation_easy": "ad-DAYSH BAD-ha wa't",
+      "qa": "Literal: 'How much time does it need?' Also: قديش بتاخد وقت؟"
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "رايح بس ولا رايح جاي؟",
+      "pronunciation_easy": "RAA-yeH bas wa-la RAA-yeH JAAY",
+      "qa": "Colloquial; signs/tickets use ذهاب فقط / ذهاب وإياب."
+    },
+    {
+      "id": "left",
+      "target": "عالشمال.",
+      "pronunciation_easy": "ash-SHMAAL",
+      "qa": "Direction 'to the left'. شمال also means north; يسار (ya-SAAR) is understood everywhere."
+    },
+    {
+      "id": "right",
+      "target": "عاليمين.",
+      "pronunciation_easy": "al-ya-MEEN",
+      "qa": "Direction 'to the right'."
+    },
+    {
+      "id": "straight_ahead",
+      "target": "دغري.",
+      "pronunciation_easy": "DUGH-ree",
+      "qa": "Direction. على طول (a-la TOOL) is equally common across the Levant."
+    },
+    {
+      "id": "im_lost",
+      "target": "أنا ضايع.",
+      "pronunciation_easy": "ANA DAA-ye",
+      "qa": "Masculine form (file convention: masculine speaker/listener). Female speaker: أنا ضايعة (DAY-'a). Literal: 'I am lost'."
+    },
+    {
+      "id": "show_on_map",
+      "target": "ممكن توريني عالخريطة؟",
+      "pronunciation_easy": "MUM-kin t-war-REE-nee al-kha-REE-ta",
+      "qa": "Same form for male and female listener."
+    },
+    {
+      "id": "near_here",
+      "target": "قريب من هون؟",
+      "pronunciation_easy": "a-REEB min hoon"
+    },
+    {
+      "id": "have_reservation",
+      "target": "عندي حجز.",
+      "pronunciation_easy": "AN-dee HAJZ"
+    },
+    {
+      "id": "under_name",
+      "target": "باسم ___.",
+      "pronunciation_easy": "b-ISM ___",
+      "qa": "Fuller: الحجز باسم ___ (the reservation is under the name ___). Blank takes a name."
+    },
+    {
+      "id": "wifi_password",
+      "target": "شو باسورد الواي فاي؟",
+      "pronunciation_easy": "shoo PAS-word il-WAY-fay",
+      "qa": "Also: شو كلمة السر تبع الواي فاي؟"
+    },
+    {
+      "id": "checkout_time",
+      "target": "الساعة قديش لازم أطلع من الغرفة؟",
+      "pronunciation_easy": "is-SAA-a ad-DAYSH LAA-zim AT-la min il-GHUR-feh",
+      "qa": "Literal: 'At what time must I leave the room?' Hotel staff also understand إمتى الـ check out؟. Not fully sure which is more natural at reception; flag for review."
+    },
+    {
+      "id": "leave_bags",
+      "target": "فيني أترك الشنط هون؟",
+      "pronunciation_easy": "FEE-nee AT-rok ish-SHU-nat hoon",
+      "qa": "Literal: 'Can I leave the bags here?' (no possessive, more natural)."
+    },
+    {
+      "id": "doesnt_work",
+      "target": "___ ما بيشتغل.",
+      "pronunciation_easy": "___ ma bish-TA-ghal",
+      "qa": "Verb agrees with the noun's gender: masculine ما بيشتغل, feminine ما بتشتغل. Blank takes the noun with its article. مش شغّال / خربان (broken) are also common."
+    },
+    {
+      "id": "another_towel",
+      "target": "ممكن تعطيني منشفة تانية؟",
+      "pronunciation_easy": "MUM-kin ta-TEE-nee MAN-sha-feh TAAN-yeh",
+      "qa": "Towel: منشفة in Palestine/Syria/Lebanon; Jordanians often say بشكير."
+    },
+    {
+      "id": "just_looking",
+      "target": "بس عم بتفرّج.",
+      "pronunciation_easy": "bas am bat-FAR-raj",
+      "qa": "عم is Syrian/Lebanese/Palestinian; Jordanians often drop it: بس بتفرّج."
+    },
+    {
+      "id": "ill_take_it",
+      "target": "باخده.",
+      "pronunciation_easy": "BAA-khdo",
+      "qa": "Object pronoun agrees with the item: باخدها (BAAKH-d-ha) for a feminine item."
+    },
+    {
+      "id": "too_expensive",
+      "target": "كتير غالي.",
+      "pronunciation_easy": "kTEER GHAA-lee",
+      "qa": "Adjective agrees with the item: غالية for a feminine item."
+    },
+    {
+      "id": "try_it_on",
+      "target": "فيني أجرّبه؟",
+      "pronunciation_easy": "FEE-nee a-JAR-ri-bo",
+      "qa": "Object pronoun agrees with the item: أجرّبها for a feminine item (e.g. جاكيت is masc, بلوزة fem)."
+    },
+    {
+      "id": "another_size",
+      "target": "في قياس تاني؟",
+      "pronunciation_easy": "fee ee-YAAS TAA-nee",
+      "qa": "Literal: 'Is there another size?' مقاس is also used; for shoes people say نمرة."
+    },
+    {
+      "id": "bag_please",
+      "target": "كيس، لو سمحت.",
+      "pronunciation_easy": "kees, law sa-MAHT",
+      "qa": "كيس = plastic/shopping bag."
+    },
+    {
+      "id": "haircut",
+      "target": "بدي أقص شعري، لو سمحت.",
+      "pronunciation_easy": "BAD-dee a-USS SHA-ree, law sa-MAHT",
+      "qa": "Literal: 'I want to cut my hair, please' (the normal way to ask at a barber)."
+    },
+    {
+      "id": "just_trim",
+      "target": "بس قص خفيف.",
+      "pronunciation_easy": "bas USS kha-FEEF",
+      "qa": "Uncertain: literal 'just a light cut'. Barbers also say ترتيب (tidy-up) or شوي من فوق. Reviewer to confirm most natural."
+    },
+    {
+      "id": "not_too_short",
+      "target": "مش كتير قصير.",
+      "pronunciation_easy": "mish kTEER a-SEER"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "الجنبين أقصر، لو سمحت.",
+      "pronunciation_easy": "ij-jan-BAYN A-sar, law sa-MAHT",
+      "qa": "Uncertain: literal 'the two sides shorter, please'. Alternative: قصّر عالجناب أكتر. Reviewer to confirm barber usage."
+    },
+    {
+      "id": "like_this",
+      "target": "متل هيك.",
+      "pronunciation_easy": "MI-tel hayk",
+      "qa": "Said while showing a photo. Just هيك also works."
+    },
+    {
+      "id": "beard_trim",
+      "target": "ظبّطلي دقني، لو سمحت.",
+      "pronunciation_easy": "zab-BIT-lee DA'-nee, law sa-MAHT",
+      "qa": "Masculine form (file convention: masculine speaker/listener). Addressed to a male barber (female: ظبّطيلي). Literal: 'Fix my beard for me, please.' Not fully sure this is the most common barber phrasing; تحديد دقن is used for shaping."
+    },
+    {
+      "id": "help_shout",
+      "target": "ساعدوني!",
+      "pronunciation_easy": "saa-'DOO-nee",
+      "qa": "EMERGENCY. Literal: 'Help me!' (addressed to everyone, plural). Also shouted: الحقوني! (il-Ha-'OO-nee, 'come quickly to me'). Gender-neutral."
+    },
+    {
+      "id": "call_police",
+      "target": "اتصل بالشرطة!",
+      "pronunciation_easy": "it-TI-sil bish-SHUR-ta",
+      "qa": "EMERGENCY. Literal: 'Call the police!' Masculine form (file convention: masculine speaker/listener). Female listener: اتصلي (it-TSI-lee); to a group: اتصلوا. In Lebanon البوليس is also heard. Police number: 911 in Jordan/Palestine, 112 in Lebanon."
+    },
+    {
+      "id": "need_doctor",
+      "target": "بدي دكتور.",
+      "pronunciation_easy": "BAD-dee duk-TOOR",
+      "qa": "EMERGENCY. Literal: 'I want/need a doctor.' Gender-neutral. محتاج دكتور (masc) / محتاجة (fem) is also used."
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "وين الصيدلية؟",
+      "pronunciation_easy": "wayn is-say-da-LEE-yeh",
+      "qa": "EMERGENCY. Literal: 'Where is the pharmacy?'"
+    },
+    {
+      "id": "its_emergency",
+      "target": "هاي حالة طارئة!",
+      "pronunciation_easy": "hay HAA-leh TAA-ri-'a",
+      "qa": "EMERGENCY. Literal: 'This is an emergency case!' Slightly formal but widely understood; in speech ضروري كتير! ('very urgent') is also used."
+    },
+    {
+      "id": "lost_my",
+      "target": "ضيّعت ___.",
+      "pronunciation_easy": "day-YA'T ___",
+      "qa": "EMERGENCY. Literal: 'I lost ___.' The possessive 'my' is a suffix on the noun (-ee), so the word changes: ضيّعت جواز سفري ('I lost my passport'). See examples. Gender-neutral."
+    },
+    {
+      "id": "not_well",
+      "target": "مش حاسس حالي منيح.",
+      "pronunciation_easy": "mish HAA-ses HAA-lee mneeH",
+      "qa": "EMERGENCY. Literal: 'I'm not feeling myself well.' Masculine form (file convention: masculine speaker/listener). Female speaker: مش حاسة حالي منيح (HAAS-seh). Shorter: أنا تعبان (masc) / تعبانة (fem), 'I'm unwell/tired'."
+    },
+    {
+      "id": "call_someone",
+      "target": "لازم أتصل بحدا.",
+      "pronunciation_easy": "LAA-zim at-TI-sil b-HA-da",
+      "qa": "EMERGENCY. Literal: 'I must call someone.' Gender-neutral."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "محطة القطار",
+      "pronunciation_easy": "ma-HAT-tit il-i-TAAR"
+    },
+    "word_bus_stop": {
+      "target": "موقف الباص",
+      "pronunciation_easy": "MAW-af il-BAAS"
+    },
+    "word_airport": {
+      "target": "المطار",
+      "pronunciation_easy": "il-ma-TAAR"
+    },
+    "word_metro_station": {
+      "target": "محطة المترو",
+      "pronunciation_easy": "ma-HAT-tit il-MET-ro"
+    },
+    "word_hotel": {
+      "target": "الفندق",
+      "pronunciation_easy": "il-FUN-du'"
+    },
+    "word_beach": {
+      "target": "البحر",
+      "pronunciation_easy": "il-BAHR"
+    },
+    "word_city_centre": {
+      "target": "وسط البلد",
+      "pronunciation_easy": "WUST il-BA-lad"
+    },
+    "word_pharmacy": {
+      "target": "الصيدلية",
+      "pronunciation_easy": "is-say-da-LEE-yeh"
+    },
+    "word_atm": {
+      "target": "الصراف الآلي",
+      "pronunciation_easy": "is-sar-RAAF il-AA-lee"
+    },
+    "word_supermarket": {
+      "target": "السوبرماركت",
+      "pronunciation_easy": "is-soo-ber-MAR-ket"
+    },
+    "word_platform": {
+      "target": "الرصيف",
+      "pronunciation_easy": "ir-ra-SEEF"
+    },
+    "word_ticket_office": {
+      "target": "شباك التذاكر",
+      "pronunciation_easy": "shub-BAAK it-ta-ZAA-kir"
+    },
+    "word_exit": {
+      "target": "المخرج",
+      "pronunciation_easy": "il-MAKH-raj"
+    },
+    "word_entrance": {
+      "target": "المدخل",
+      "pronunciation_easy": "il-MAD-khal"
+    },
+    "word_tea": {
+      "target": "شاي",
+      "pronunciation_easy": "shaay"
+    },
+    "word_beer": {
+      "target": "بيرة",
+      "pronunciation_easy": "BEE-ra"
+    },
+    "word_glass_of_wine": {
+      "target": "كاسة نبيد",
+      "pronunciation_easy": "KAA-set na-BEED"
+    },
+    "word_orange_juice": {
+      "target": "عصير برتقان",
+      "pronunciation_easy": "a-SEER bur-ta-AAN"
+    },
+    "word_menu": {
+      "target": "المنيو",
+      "pronunciation_easy": "il-MEN-yoo"
+    },
+    "word_bill": {
+      "target": "الحساب",
+      "pronunciation_easy": "il-HI-saab"
+    },
+    "word_bag": {
+      "target": "الشنطة",
+      "pronunciation_easy": "ish-SHAN-ta"
+    },
+    "word_receipt": {
+      "target": "الفاتورة",
+      "pronunciation_easy": "il-FAA-too-ra"
+    },
+    "word_water": {
+      "target": "مي",
+      "pronunciation_easy": "may"
+    },
+    "word_coffee": {
+      "target": "قهوة",
+      "pronunciation_easy": "AH-weh"
+    },
+    "word_bread": {
+      "target": "خبز",
+      "pronunciation_easy": "KHUB-ez"
+    },
+    "word_milk": {
+      "target": "حليب",
+      "pronunciation_easy": "ha-LEEB"
+    },
+    "word_ice": {
+      "target": "تلج",
+      "pronunciation_easy": "talj"
+    },
+    "word_nuts": {
+      "target": "مكسرات",
+      "pronunciation_easy": "mu-kas-sa-RAAT"
+    },
+    "word_gluten": {
+      "target": "غلوتين",
+      "pronunciation_easy": "ghloo-TEEN"
+    },
+    "word_shellfish": {
+      "target": "ثمار البحر",
+      "pronunciation_easy": "tha-MAAR il-BAHR"
+    },
+    "word_eggs": {
+      "target": "بيض",
+      "pronunciation_easy": "bayd"
+    },
+    "word_meat": {
+      "target": "لحمة",
+      "pronunciation_easy": "LAH-meh"
+    },
+    "word_dairy": {
+      "target": "مشتقات حليب",
+      "pronunciation_easy": "moosh-ta-AAT ha-LEEB"
+    },
+    "word_peanuts": {
+      "target": "فستق سوداني",
+      "pronunciation_easy": "FUS-tu' soo-DAA-nee"
+    },
+    "word_passport": {
+      "target": "جواز السفر",
+      "pronunciation_easy": "ja-WAAZ is-SA-far"
+    },
+    "word_phone": {
+      "target": "التلفون",
+      "pronunciation_easy": "it-til-FOON"
+    },
+    "word_wallet": {
+      "target": "الجزدان",
+      "pronunciation_easy": "ij-jiz-DAAN"
+    },
+    "word_keys": {
+      "target": "المفاتيح",
+      "pronunciation_easy": "il-ma-fa-TEEH"
+    },
+    "word_ticket": {
+      "target": "التذكرة",
+      "pronunciation_easy": "it-TAZ-ka-ra"
+    },
+    "word_room_key": {
+      "target": "مفتاح الغرفة",
+      "pronunciation_easy": "mif-TAAH il-GHUR-feh"
+    },
+    "word_air_conditioning": {
+      "target": "المكيّف",
+      "pronunciation_easy": "il-mu-KAY-yef"
+    },
+    "word_shower": {
+      "target": "الدوش",
+      "pronunciation_easy": "id-DOOSH"
+    },
+    "word_wi_fi": {
+      "target": "الواي فاي",
+      "pronunciation_easy": "il-WAY-fay"
+    },
+    "word_tv": {
+      "target": "التلفزيون",
+      "pronunciation_easy": "it-til-fiz-YOON"
+    },
+    "word_hot_water": {
+      "target": "المي السخنة",
+      "pronunciation_easy": "il-may is-SUKH-neh"
+    },
+    "word_door_lock": {
+      "target": "قفل الباب",
+      "pronunciation_easy": "IF-l il-BAAB"
+    },
+    "word_one": {
+      "target": "واحد",
+      "pronunciation_easy": "WAA-hed"
+    },
+    "word_two": {
+      "target": "تنين",
+      "pronunciation_easy": "tnayn"
+    },
+    "word_three": {
+      "target": "تلاتة",
+      "pronunciation_easy": "ta-LAA-teh"
+    },
+    "word_four": {
+      "target": "أربعة",
+      "pronunciation_easy": "AR-ba-a"
+    },
+    "word_five": {
+      "target": "خمسة",
+      "pronunciation_easy": "KHAM-seh"
+    },
+    "word_six": {
+      "target": "ستة",
+      "pronunciation_easy": "SIT-teh"
+    },
+    "word_seven": {
+      "target": "سبعة",
+      "pronunciation_easy": "SAB-a"
+    },
+    "word_eight": {
+      "target": "تمانية",
+      "pronunciation_easy": "ta-MAN-yeh"
+    },
+    "word_nine": {
+      "target": "تسعة",
+      "pronunciation_easy": "TIS-a"
+    },
+    "word_ten": {
+      "target": "عشرة",
+      "pronunciation_easy": "A-sha-ra"
+    },
+    "word_twenty": {
+      "target": "عشرين",
+      "pronunciation_easy": "ish-REEN"
+    },
+    "word_fifty": {
+      "target": "خمسين",
+      "pronunciation_easy": "kham-SEEN"
+    },
+    "word_one_hundred": {
+      "target": "مية",
+      "pronunciation_easy": "MEE-yeh"
+    },
+    "word_upstairs": {
+      "target": "فوق",
+      "pronunciation_easy": "fo'"
+    },
+    "word_downstairs": {
+      "target": "تحت",
+      "pronunciation_easy": "taht"
+    },
+    "word_near": {
+      "target": "قريب",
+      "pronunciation_easy": "a-REEB"
+    },
+    "word_far": {
+      "target": "بعيد",
+      "pronunciation_easy": "ba-EED"
+    },
+    "word_today": {
+      "target": "اليوم",
+      "pronunciation_easy": "il-YOM"
+    },
+    "word_tomorrow": {
+      "target": "بكرة",
+      "pronunciation_easy": "BUK-ra"
+    },
+    "word_now": {
+      "target": "هلأ",
+      "pronunciation_easy": "HA-la'"
+    },
+    "word_later": {
+      "target": "بعدين",
+      "pronunciation_easy": "ba-DAYN"
+    },
+    "word_open": {
+      "target": "مفتوح",
+      "pronunciation_easy": "maf-TOOH"
+    },
+    "word_closed": {
+      "target": "مسكّر",
+      "pronunciation_easy": "m-SAK-kar"
+    },
+    "word_yes": {
+      "target": "آه",
+      "pronunciation_easy": "aah"
+    },
+    "word_no": {
+      "target": "لأ",
+      "pronunciation_easy": "la"
+    },
+    "word_cash": {
+      "target": "كاش",
+      "pronunciation_easy": "kaash"
+    },
+    "word_card": {
+      "target": "كرت",
+      "pronunciation_easy": "kart"
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "وين محطة القطار؟",
+        "pronunciation_easy": "wayn ma-HAT-tit il-i-TAAR"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "وين موقف الباص؟",
+        "pronunciation_easy": "wayn MAW-af il-BAAS"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "وين الصيدلية؟",
+        "pronunciation_easy": "wayn is-say-da-LEE-yeh"
+      },
+      {
+        "word": "word_atm",
+        "target": "وين الصراف الآلي؟",
+        "pronunciation_easy": "wayn is-sar-RAAF il-AA-lee"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "وين السوبرماركت؟",
+        "pronunciation_easy": "wayn is-soo-ber-MAR-ket"
+      },
+      {
+        "word": "word_exit",
+        "target": "وين المخرج؟",
+        "pronunciation_easy": "wayn il-MAKH-raj"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "وين أقرب صيدلية؟",
+        "pronunciation_easy": "wayn AK-rab say-da-LEE-yeh"
+      },
+      {
+        "word": "word_atm",
+        "target": "وين أقرب صراف آلي؟",
+        "pronunciation_easy": "wayn AK-rab sar-RAAF AA-lee"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "وين أقرب سوبرماركت؟",
+        "pronunciation_easy": "wayn AK-rab soo-ber-MAR-ket"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "وين أقرب محطة مترو؟",
+        "pronunciation_easy": "wayn AK-rab ma-HAT-tit MET-ro"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "وين أقرب موقف باص؟",
+        "pronunciation_easy": "wayn AK-rab MAW-af BAAS"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "كيف بروح عالمطار؟",
+        "pronunciation_easy": "keef ba-ROOH al-ma-TAAR"
+      },
+      {
+        "word": "word_train_station",
+        "target": "كيف بروح على محطة القطار؟",
+        "pronunciation_easy": "keef ba-ROOH a-la ma-HAT-tit il-i-TAAR"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "كيف بروح على وسط البلد؟",
+        "pronunciation_easy": "keef ba-ROOH a-la WUST il-BA-lad"
+      },
+      {
+        "word": "word_beach",
+        "target": "كيف بروح عالبحر؟",
+        "pronunciation_easy": "keef ba-ROOH al-BAHR"
+      },
+      {
+        "word": "word_hotel",
+        "target": "كيف بروح عالفندق؟",
+        "pronunciation_easy": "keef ba-ROOH al-FUN-du'"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "ممكن تعطيني شاي، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin ta-TEE-nee shaay, law sa-MAHT"
+      },
+      {
+        "word": "word_beer",
+        "target": "ممكن تعطيني بيرة، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin ta-TEE-nee BEE-ra, law sa-MAHT"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "ممكن تعطيني كاسة نبيد، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin ta-TEE-nee KAA-set na-BEED, law sa-MAHT"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "ممكن تعطيني عصير برتقان، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin ta-TEE-nee a-SEER bur-ta-AAN, law sa-MAHT"
+      },
+      {
+        "word": "word_menu",
+        "target": "ممكن تعطيني المنيو، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin ta-TEE-nee il-MEN-yoo, law sa-MAHT"
+      },
+      {
+        "word": "word_receipt",
+        "target": "ممكن تعطيني الفاتورة، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin ta-TEE-nee il-FAA-too-ra, law sa-MAHT"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "بدي شاي، لو سمحت.",
+        "pronunciation_easy": "BAD-dee shaay, law sa-MAHT"
+      },
+      {
+        "word": "word_beer",
+        "target": "بدي بيرة، لو سمحت.",
+        "pronunciation_easy": "BAD-dee BEE-ra, law sa-MAHT"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "بدي كاسة نبيد، لو سمحت.",
+        "pronunciation_easy": "BAD-dee KAA-set na-BEED, law sa-MAHT"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "بدي عصير برتقان، لو سمحت.",
+        "pronunciation_easy": "BAD-dee a-SEER bur-ta-AAN, law sa-MAHT"
+      },
+      {
+        "word": "word_bread",
+        "target": "بدي خبز، لو سمحت.",
+        "pronunciation_easy": "BAD-dee KHUB-ez, law sa-MAHT"
+      },
+      {
+        "word": "word_water",
+        "target": "بدي مي، لو سمحت.",
+        "pronunciation_easy": "BAD-dee may, law sa-MAHT"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "طاولة لشخص واحد، لو سمحت.",
+        "pronunciation_easy": "TAA-wleh la-SHAKHS WAA-hed, law sa-MAHT"
+      },
+      {
+        "word": "word_two",
+        "target": "طاولة لشخصين، لو سمحت.",
+        "pronunciation_easy": "TAA-wleh la-shakh-SAYN, law sa-MAHT",
+        "qa": "Dual form: 'for two persons' is one word, شخصين."
+      },
+      {
+        "word": "word_three",
+        "target": "طاولة لتلات أشخاص، لو سمحت.",
+        "pronunciation_easy": "TAA-wleh la-TLAT ash-KHAAS, law sa-MAHT",
+        "qa": "Before a plural noun تلاتة shortens to تلات."
+      },
+      {
+        "word": "word_four",
+        "target": "طاولة لأربع أشخاص، لو سمحت.",
+        "pronunciation_easy": "TAA-wleh la-AR-ba ash-KHAAS, law sa-MAHT",
+        "qa": "Before a plural noun أربعة shortens to أربع."
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "عندي حساسية من المكسرات.",
+        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-mu-kas-sa-RAAT",
+        "qa": "ALLERGY. Literal: 'I have an allergy from nuts (mixed nuts)'."
+      },
+      {
+        "word": "word_peanuts",
+        "target": "عندي حساسية من الفستق السوداني.",
+        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-FUS-tu' is-soo-DAA-nee",
+        "qa": "ALLERGY. Literal: 'I have an allergy from peanuts ('Sudanese pistachio'). Lebanese also say فستق عبيد; plain فستق means pistachio, so keep سوداني'."
+      },
+      {
+        "word": "word_gluten",
+        "target": "عندي حساسية من الغلوتين.",
+        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-ghloo-TEEN",
+        "qa": "ALLERGY. Literal: 'I have an allergy from gluten (loanword; staff may not know it, add القمح 'wheat' if needed)'."
+      },
+      {
+        "word": "word_shellfish",
+        "target": "عندي حساسية من ثمار البحر.",
+        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min tha-MAAR il-BAHR",
+        "qa": "ALLERGY. Literal: 'I have an allergy from 'fruits of the sea' = shellfish/seafood; may be taken to include fish. Crustaceans specifically: القشريات'."
+      },
+      {
+        "word": "word_milk",
+        "target": "عندي حساسية من الحليب.",
+        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-ha-LEEB",
+        "qa": "ALLERGY. Literal: 'I have an allergy from milk'."
+      },
+      {
+        "word": "word_eggs",
+        "target": "عندي حساسية من البيض.",
+        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-BAYD",
+        "qa": "ALLERGY. Literal: 'I have an allergy from eggs'."
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "بدون لحمة، لو سمحت.",
+        "pronunciation_easy": "bi-DOON LAH-meh, law sa-MAHT",
+        "qa": "DIET. Literal: 'Without meat (some cooks don't count chicken as لحمة; add ولا جاج 'nor chicken'), please.'"
+      },
+      {
+        "word": "word_milk",
+        "target": "بدون حليب، لو سمحت.",
+        "pronunciation_easy": "bi-DOON ha-LEEB, law sa-MAHT",
+        "qa": "DIET. Literal: 'Without milk, please.'"
+      },
+      {
+        "word": "word_gluten",
+        "target": "بدون غلوتين، لو سمحت.",
+        "pronunciation_easy": "bi-DOON ghloo-TEEN, law sa-MAHT",
+        "qa": "DIET. Literal: 'Without gluten, please.'"
+      },
+      {
+        "word": "word_ice",
+        "target": "بدون تلج، لو سمحت.",
+        "pronunciation_easy": "bi-DOON talj, law sa-MAHT",
+        "qa": "DIET. Literal: 'Without ice, please.'"
+      },
+      {
+        "word": "word_nuts",
+        "target": "بدون مكسرات، لو سمحت.",
+        "pronunciation_easy": "bi-DOON mu-kas-sa-RAAT, law sa-MAHT",
+        "qa": "DIET. Literal: 'Without nuts, please.'"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "تذكرة للمطار، لو سمحت.",
+        "pronunciation_easy": "TAZ-ka-ra lil-ma-TAAR, law sa-MAHT"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "تذكرة لوسط البلد، لو سمحت.",
+        "pronunciation_easy": "TAZ-ka-ra la-WUST il-BA-lad, law sa-MAHT"
+      },
+      {
+        "word": "word_beach",
+        "target": "تذكرة للبحر، لو سمحت.",
+        "pronunciation_easy": "TAZ-ka-ra lil-BAHR, law sa-MAHT"
+      },
+      {
+        "word": "word_train_station",
+        "target": "تذكرة لمحطة القطار، لو سمحت.",
+        "pronunciation_easy": "TAZ-ka-ra la-ma-HAT-tit il-i-TAAR, law sa-MAHT"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "هاد بيروح عالمطار؟",
+        "pronunciation_easy": "haad bi-ROOH al-ma-TAAR"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "هاد بيروح على وسط البلد؟",
+        "pronunciation_easy": "haad bi-ROOH a-la WUST il-BA-lad"
+      },
+      {
+        "word": "word_beach",
+        "target": "هاد بيروح عالبحر؟",
+        "pronunciation_easy": "haad bi-ROOH al-BAHR"
+      },
+      {
+        "word": "word_train_station",
+        "target": "هاد بيروح على محطة القطار؟",
+        "pronunciation_easy": "haad bi-ROOH a-la ma-HAT-tit il-i-TAAR"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "وصّلني عالمطار، لو سمحت.",
+        "pronunciation_easy": "was-SIL-nee al-ma-TAAR, law sa-MAHT"
+      },
+      {
+        "word": "word_hotel",
+        "target": "وصّلني عالفندق، لو سمحت.",
+        "pronunciation_easy": "was-SIL-nee al-FUN-du', law sa-MAHT"
+      },
+      {
+        "word": "word_train_station",
+        "target": "وصّلني على محطة القطار، لو سمحت.",
+        "pronunciation_easy": "was-SIL-nee a-la ma-HAT-tit il-i-TAAR, law sa-MAHT"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "وصّلني على وسط البلد، لو سمحت.",
+        "pronunciation_easy": "was-SIL-nee a-la WUST il-BA-lad, law sa-MAHT"
+      },
+      {
+        "word": "word_beach",
+        "target": "وصّلني عالبحر، لو سمحت.",
+        "pronunciation_easy": "was-SIL-nee al-BAHR, law sa-MAHT"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "المكيّف ما بيشتغل.",
+        "pronunciation_easy": "il-mu-KAY-yef ma bish-TA-ghal"
+      },
+      {
+        "word": "word_shower",
+        "target": "الدوش ما بيشتغل.",
+        "pronunciation_easy": "id-DOOSH ma bish-TA-ghal"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "الواي فاي ما بيشتغل.",
+        "pronunciation_easy": "il-WAY-fay ma bish-TA-ghal"
+      },
+      {
+        "word": "word_tv",
+        "target": "التلفزيون ما بيشتغل.",
+        "pronunciation_easy": "it-til-fiz-YOON ma bish-TA-ghal"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "ما في مي سخنة.",
+        "pronunciation_easy": "ma fee may SUKH-neh",
+        "qa": "Frame not used literally: 'the hot water doesn't work' is unnatural; Levantine says 'there's no hot water'."
+      },
+      {
+        "word": "word_door_lock",
+        "target": "قفل الباب ما بيشتغل.",
+        "pronunciation_easy": "IF-l il-BAAB ma bish-TA-ghal",
+        "qa": "Uncertain: قفل الباب خربان ('the door lock is broken') may be more natural."
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "ضيّعت جواز سفري.",
+        "pronunciation_easy": "day-YA'T ja-WAAZ SAF-ree",
+        "qa": "EMERGENCY. Literal: 'I lost my passport ('my travel permit')'."
+      },
+      {
+        "word": "word_phone",
+        "target": "ضيّعت تلفوني.",
+        "pronunciation_easy": "day-YA'T tal-FOO-nee",
+        "qa": "EMERGENCY. Literal: 'I lost my phone. Jordan/Palestine also جوالي / موبايلي'."
+      },
+      {
+        "word": "word_wallet",
+        "target": "ضيّعت جزداني.",
+        "pronunciation_easy": "day-YA'T jiz-DAA-nee",
+        "qa": "EMERGENCY. Literal: 'I lost my wallet. محفظتي also understood'."
+      },
+      {
+        "word": "word_bag",
+        "target": "ضيّعت شنطتي.",
+        "pronunciation_easy": "day-YA'T SHAN-ti-tee",
+        "qa": "EMERGENCY. Literal: 'I lost my bag'."
+      },
+      {
+        "word": "word_keys",
+        "target": "ضيّعت مفاتيحي.",
+        "pronunciation_easy": "day-YA'T ma-fa-TEE-hee",
+        "qa": "EMERGENCY. Literal: 'I lost my keys'."
+      },
+      {
+        "word": "word_room_key",
+        "target": "ضيّعت مفتاح غرفتي.",
+        "pronunciation_easy": "day-YA'T mif-TAAH GHUR-fi-tee",
+        "qa": "EMERGENCY. Literal: 'I lost my room key ('key of my room')'."
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "هون ولا سفري؟",
+      "pronunciation_easy": "hoon wa-la SAF-ree"
+    },
+    "anything_else": {
+      "target": "بدك شي تاني؟",
+      "pronunciation_easy": "BAD-dak shee TAA-nee",
+      "qa": "Said to a male customer; to a female: بدِك (BID-dek). Palestinians/Jordanians also say إشي (ISH-ee) for شي."
+    },
+    "here_you_go": {
+      "target": "تفضّل.",
+      "pronunciation_easy": "taf-DAL",
+      "qa": "To a male customer; to a female: تفضّلي (taf-DAL-ee)."
+    },
+    "inside_or_outside": {
+      "target": "جوا ولا برا؟",
+      "pronunciation_easy": "JUW-wa wa-la BAR-ra"
+    },
+    "how_many_people": {
+      "target": "كم شخص؟",
+      "pronunciation_easy": "kam SHAKHS",
+      "qa": "Also heard: قديش واحد؟ / كم واحد؟"
+    },
+    "have_booking": {
+      "target": "عندك حجز؟",
+      "pronunciation_easy": "AN-dak HAJZ",
+      "qa": "To a male guest; to a female: عندِك (AN-dek)."
+    },
+    "this_way": {
+      "target": "من هون.",
+      "pronunciation_easy": "min hoon",
+      "qa": "Often تفضّل من هون (please, this way)."
+    },
+    "next_stop": {
+      "target": "المحطة الجاية.",
+      "pronunciation_easy": "il-ma-HAT-ta ij-JAY-yeh",
+      "qa": "Spoken form; recorded announcements use formal المحطة القادمة."
+    },
+    "its_closed": {
+      "target": "مسكّر.",
+      "pronunciation_easy": "m-SAK-kar",
+      "qa": "Agrees with the place: مسكّرة (m-sak-KA-ra) for a feminine noun like الصيدلية."
+    },
+    "one_moment": {
+      "target": "لحظة، لو سمحت.",
+      "pronunciation_easy": "LAH-za, law sa-MAHT",
+      "qa": "Also: دقيقة (da-EE-a), 'a minute'."
+    },
+    "what_size": {
+      "target": "أي قياس؟",
+      "pronunciation_easy": "ay ee-YAAS",
+      "qa": "Also: شو قياسك؟ / شو نمرتك؟ (shoes)."
+    },
+    "receipt_question": {
+      "target": "بدك الفاتورة؟",
+      "pronunciation_easy": "BAD-dak il-FAA-too-ra",
+      "qa": "To a male customer; female: بدِك. Jordan/Palestine also say الوصل (il-WASL) for receipt."
+    },
+    "how_would_you_like_it": {
+      "target": "كيف بدك القصة؟",
+      "pronunciation_easy": "keef BAD-dak il-US-sa",
+      "qa": "Literal: 'How do you want the cut?' To a male customer (barber context)."
+    }
+  }
+}

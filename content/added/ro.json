@@ -1,0 +1,1047 @@
+{
+  "language_code": "ro",
+  "review": "draft",
+  "source": "Claude draft, 2026-10-13. Not yet checked by a native speaker.",
+  "entries": [
+    {
+      "id": "goodbye",
+      "target": "La revedere.",
+      "pronunciation_easy": "lah reh-veh-DEH-reh"
+    },
+    {
+      "id": "sorry",
+      "target": "Îmi pare rău.",
+      "pronunciation_easy": "im PAH-reh ruhw",
+      "qa": "Apology ('I'm sorry'). To get past someone or after bumping into them, Pardon! or Scuze! is more natural."
+    },
+    {
+      "id": "youre_welcome",
+      "target": "Cu plăcere.",
+      "pronunciation_easy": "koo pluh-CHEH-reh"
+    },
+    {
+      "id": "no_thank_you",
+      "target": "Nu, mulțumesc.",
+      "pronunciation_easy": "noo, mool-tsoo-MESK"
+    },
+    {
+      "id": "okay",
+      "target": "Bine.",
+      "pronunciation_easy": "BEE-neh",
+      "qa": "Neutral agreement ('fine/good'). OK and În regulă ('all right') are equally common; reviewer may prefer one."
+    },
+    {
+      "id": "good_evening",
+      "target": "Bună seara!",
+      "pronunciation_easy": "BOO-nuh SYAH-rah"
+    },
+    {
+      "id": "table_for",
+      "target": "O masă pentru ___, vă rog.",
+      "pronunciation_easy": "oh MAH-suh PEN-troo ___, vuh rohg",
+      "qa": "Blank takes a number + persoane (feminine), so the number changes form: o persoană, două persoane (not doi). Colloquially people also say O masă pentru doi."
+    },
+    {
+      "id": "menu_please",
+      "target": "Meniul, vă rog.",
+      "pronunciation_easy": "meh-NEE-ool, vuh rohg"
+    },
+    {
+      "id": "allergic_to",
+      "target": "Sunt alergic la ___.",
+      "pronunciation_easy": "soont ah-LER-jeek lah ___",
+      "qa": "Masculine speaker. Feminine: Sunt alergică la ___. Literal: 'I am allergic to ___.' Noun after la is used without the article (la nuci, la lapte)."
+    },
+    {
+      "id": "vegetarian",
+      "target": "Sunt vegetarian.",
+      "pronunciation_easy": "soont veh-jeh-tah-ree-AHN",
+      "qa": "Masculine speaker. Feminine: Sunt vegetariană (veh-jeh-tah-ree-AH-nuh)."
+    },
+    {
+      "id": "without",
+      "target": "Fără ___, vă rog.",
+      "pronunciation_easy": "FUH-ruh ___, vuh rohg",
+      "qa": "Literal: 'Without ___, please.' Noun without article (fără carne, fără gheață)."
+    },
+    {
+      "id": "to_go",
+      "target": "La pachet, vă rog.",
+      "pronunciation_easy": "lah pah-KET, vuh rohg"
+    },
+    {
+      "id": "for_here",
+      "target": "Aici, vă rog.",
+      "pronunciation_easy": "ah-EETCH, vuh rohg",
+      "qa": "Answer to 'Aici sau la pachet?'. Fuller: Servesc aici ('I'll eat here'). Check which a reviewer finds most natural."
+    },
+    {
+      "id": "delicious",
+      "target": "A fost delicios.",
+      "pronunciation_easy": "ah fost deh-lee-chee-OHS",
+      "qa": "Delicios refers to the dish generically (masculine/neuter). About mâncarea or a feminine dish: A fost delicioasă. A fost foarte bun is also very common."
+    },
+    {
+      "id": "another_one",
+      "target": "Încă unul, vă rog.",
+      "pronunciation_easy": "IN-kuh OO-nool, vuh rohg",
+      "qa": "Depends on the item's gender: unul for masculine/neuter (un ceai, un suc), una for feminine (o bere, o cafea): Încă una, vă rog."
+    },
+    {
+      "id": "ticket_to",
+      "target": "Un bilet pentru ___, vă rog.",
+      "pronunciation_easy": "oon bee-LET PEN-troo ___, vuh rohg",
+      "qa": "Pentru + noun without article works for places and towns (pentru Brașov, pentru aeroport). Până la ___ is also common."
+    },
+    {
+      "id": "does_this_go_to",
+      "target": "Merge la ___?",
+      "pronunciation_easy": "MEHR-jeh lah ___",
+      "qa": "Subject left implicit; can add Autobuzul ăsta / Trenul ăsta ('this bus/train'). The preposition changes for the city centre: Merge în centru? (not la)."
+    },
+    {
+      "id": "take_me_to",
+      "target": "Duceți-mă la ___, vă rog.",
+      "pronunciation_easy": "DOO-chets muh lah ___, vuh rohg",
+      "qa": "Polite imperative. Preposition changes for the city centre: Duceți-mă în centru. A softer alternative: Mă duceți la ___, vă rog?"
+    },
+    {
+      "id": "stop_here",
+      "target": "Opriți aici, vă rog.",
+      "pronunciation_easy": "oh-PREETS ah-EETCH, vuh rohg"
+    },
+    {
+      "id": "next_departure",
+      "target": "Când pleacă următorul?",
+      "pronunciation_easy": "kuhnd PLYAH-kuh oor-muh-TOH-rool",
+      "qa": "Următorul fits masculine/neuter vehicles (tren, autobuz). For a feminine noun (cursa, the next run): Când pleacă următoarea?"
+    },
+    {
+      "id": "which_platform",
+      "target": "De la ce peron pleacă?",
+      "pronunciation_easy": "deh lah cheh peh-RON PLYAH-kuh",
+      "qa": "Literal: 'From which platform does it leave?' Romanian stations announce the track as linia, so De la ce linie pleacă? is equally common; reviewer may prefer it."
+    },
+    {
+      "id": "how_long_trip",
+      "target": "Cât durează drumul?",
+      "pronunciation_easy": "kuht doo-RYAH-zuh DROO-mool"
+    },
+    {
+      "id": "one_way_or_return",
+      "target": "Dus sau dus-întors?",
+      "pronunciation_easy": "doos sow doos-in-TORS"
+    },
+    {
+      "id": "left",
+      "target": "La stânga.",
+      "pronunciation_easy": "lah STUHN-gah"
+    },
+    {
+      "id": "right",
+      "target": "La dreapta.",
+      "pronunciation_easy": "lah DRYAHP-tah"
+    },
+    {
+      "id": "straight_ahead",
+      "target": "Drept înainte.",
+      "pronunciation_easy": "drept ih-nah-EEN-teh"
+    },
+    {
+      "id": "im_lost",
+      "target": "M-am rătăcit.",
+      "pronunciation_easy": "mahm ruh-tuh-CHEET"
+    },
+    {
+      "id": "show_on_map",
+      "target": "Îmi puteți arăta pe hartă?",
+      "pronunciation_easy": "im poo-TETS ah-ruh-TAH peh HAR-tuh"
+    },
+    {
+      "id": "near_here",
+      "target": "Este aproape de aici?",
+      "pronunciation_easy": "YES-teh ah-PRWAH-peh deh ah-EETCH"
+    },
+    {
+      "id": "have_reservation",
+      "target": "Am o rezervare.",
+      "pronunciation_easy": "ahm oh reh-zer-VAH-reh"
+    },
+    {
+      "id": "under_name",
+      "target": "Pe numele ___.",
+      "pronunciation_easy": "peh NOO-meh-leh ___"
+    },
+    {
+      "id": "wifi_password",
+      "target": "Care este parola de la Wi-Fi?",
+      "pronunciation_easy": "KAH-reh YES-teh pah-ROH-lah deh lah WAI-fai"
+    },
+    {
+      "id": "checkout_time",
+      "target": "La ce oră este check-out-ul?",
+      "pronunciation_easy": "lah cheh OH-ruh YES-teh chek-OW-tool",
+      "qa": "Hotels use the English loan check-out. Without it: Până la ce oră trebuie să eliberez camera? ('By what time must I vacate the room?')."
+    },
+    {
+      "id": "leave_bags",
+      "target": "Pot să las bagajele aici?",
+      "pronunciation_easy": "poht suh lahs bah-GAH-zheh-leh ah-EETCH"
+    },
+    {
+      "id": "doesnt_work",
+      "target": "___ nu funcționează.",
+      "pronunciation_easy": "___ noo foonk-tsyoh-NYAH-zuh",
+      "qa": "Blank takes the noun with its definite article (Dușul, Aerul condiționat). Colloquially nu merge. For hot water the natural sentence is different: Nu este apă caldă ('There is no hot water')."
+    },
+    {
+      "id": "another_towel",
+      "target": "Pot să mai primesc un prosop?",
+      "pronunciation_easy": "poht suh my pree-MESK oon proh-SOP"
+    },
+    {
+      "id": "just_looking",
+      "target": "Doar mă uit.",
+      "pronunciation_easy": "dwar muh ooyt"
+    },
+    {
+      "id": "ill_take_it",
+      "target": "Îl iau.",
+      "pronunciation_easy": "il yow",
+      "qa": "Depends on the item's gender: Îl iau for masculine/neuter (pantoful, tricoul), O iau for feminine (rochia, geanta)."
+    },
+    {
+      "id": "too_expensive",
+      "target": "Este prea scump.",
+      "pronunciation_easy": "YES-teh pryah skoomp",
+      "qa": "Adjective agrees with the item: scump (masculine/neuter), scumpă (feminine), scumpe (plural)."
+    },
+    {
+      "id": "try_it_on",
+      "target": "Pot să probez?",
+      "pronunciation_easy": "poht suh proh-BEZ",
+      "qa": "Object left out so it fits any item; with an object: Pot să-l probez? / Pot s-o probez?"
+    },
+    {
+      "id": "another_size",
+      "target": "Aveți și altă mărime?",
+      "pronunciation_easy": "ah-VETS shee AL-tuh muh-REE-meh"
+    },
+    {
+      "id": "bag_please",
+      "target": "O pungă, vă rog.",
+      "pronunciation_easy": "oh POON-guh, vuh rohg",
+      "qa": "Pungă is a plastic/paper shop bag; a sturdier reusable bag is sacoșă."
+    },
+    {
+      "id": "haircut",
+      "target": "Un tuns, vă rog.",
+      "pronunciation_easy": "oon toons, vuh rohg",
+      "qa": "Fuller and very natural: Aș vrea să mă tund ('I'd like to get my hair cut')."
+    },
+    {
+      "id": "just_trim",
+      "target": "Doar puțin scurtat, vă rog.",
+      "pronunciation_easy": "dwar poo-TSEEN skoor-TAHT, vuh rohg",
+      "qa": "Unsure of the most natural barber phrasing. Literal: 'Just a little shortened, please.' Alternatives: Doar vârfurile ('just the ends'), Doar să le aranjați puțin."
+    },
+    {
+      "id": "not_too_short",
+      "target": "Nu prea scurt.",
+      "pronunciation_easy": "noo pryah skoort"
+    },
+    {
+      "id": "shorter_sides",
+      "target": "Mai scurt pe părți.",
+      "pronunciation_easy": "my skoort peh PUHRTS",
+      "qa": "Barbers also say pe lateral ('on the sides'); reviewer may prefer it."
+    },
+    {
+      "id": "like_this",
+      "target": "Ca în poza asta.",
+      "pronunciation_easy": "kah in POH-zah AS-tah",
+      "qa": "Literal: 'Like in this photo.' Said while showing the photo; Uite, așa ('Look, like this') also works."
+    },
+    {
+      "id": "beard_trim",
+      "target": "Aranjați-mi barba, vă rog.",
+      "pronunciation_easy": "ah-ran-ZHAHTS-mee BAR-bah, vuh rohg",
+      "qa": "Literal: 'Tidy my beard, please.' Check this is the usual barber phrasing."
+    },
+    {
+      "id": "help_shout",
+      "target": "Ajutor!",
+      "pronunciation_easy": "ah-zhoo-TOR",
+      "qa": "Literal: 'Help!' (the noun). The standard shout."
+    },
+    {
+      "id": "call_police",
+      "target": "Chemați poliția!",
+      "pronunciation_easy": "keh-MAHTS poh-LEE-tsyah",
+      "qa": "Literal: 'Call the police!' (polite/plural imperative). Emergency number in Romania is 112."
+    },
+    {
+      "id": "need_doctor",
+      "target": "Am nevoie de un doctor.",
+      "pronunciation_easy": "ahm neh-VOH-yeh deh oon DOK-tor",
+      "qa": "Literal: 'I have need of a doctor.' Medic is also common: Am nevoie de un medic."
+    },
+    {
+      "id": "where_pharmacy",
+      "target": "Unde este farmacia?",
+      "pronunciation_easy": "OON-deh YES-teh far-mah-CHEE-ah",
+      "qa": "Literal: 'Where is the pharmacy?' For the closest: Unde este cea mai apropiată farmacie?"
+    },
+    {
+      "id": "its_emergency",
+      "target": "Este o urgență.",
+      "pronunciation_easy": "YES-teh oh oor-JEN-tsuh",
+      "qa": "Literal: 'It is an emergency.'"
+    },
+    {
+      "id": "lost_my",
+      "target": "Mi-am pierdut ___.",
+      "pronunciation_easy": "myahm pyer-DOOT ___",
+      "qa": "Literal: 'I have lost (to myself) ___.' Blank takes the noun with its definite article (pașaportul, cheile); no possessive needed. If stolen: Mi s-a furat ___."
+    },
+    {
+      "id": "not_well",
+      "target": "Nu mă simt bine.",
+      "pronunciation_easy": "noo muh simt BEE-neh",
+      "qa": "Literal: 'I don't feel myself well.' Gender-neutral."
+    },
+    {
+      "id": "call_someone",
+      "target": "Trebuie să sun pe cineva.",
+      "pronunciation_easy": "TREH-boo-yeh suh soon peh chee-neh-VAH",
+      "qa": "Literal: 'I must call someone.' Alternative: Am nevoie să sun pe cineva ('I need to call someone')."
+    }
+  ],
+  "vocab": {
+    "word_train_station": {
+      "target": "gara",
+      "pronunciation_easy": "GAH-rah"
+    },
+    "word_bus_stop": {
+      "target": "stația de autobuz",
+      "pronunciation_easy": "STAH-tsyah deh ow-toh-BOOZ"
+    },
+    "word_airport": {
+      "target": "aeroportul",
+      "pronunciation_easy": "ah-eh-roh-POR-tool"
+    },
+    "word_metro_station": {
+      "target": "stația de metrou",
+      "pronunciation_easy": "STAH-tsyah deh meh-TROW"
+    },
+    "word_hotel": {
+      "target": "hotelul",
+      "pronunciation_easy": "hoh-TEH-lool"
+    },
+    "word_beach": {
+      "target": "plaja",
+      "pronunciation_easy": "PLAH-zhah"
+    },
+    "word_city_centre": {
+      "target": "centrul orașului",
+      "pronunciation_easy": "CHEN-trool oh-RAH-shoo-looy"
+    },
+    "word_pharmacy": {
+      "target": "farmacia",
+      "pronunciation_easy": "far-mah-CHEE-ah"
+    },
+    "word_atm": {
+      "target": "bancomatul",
+      "pronunciation_easy": "ban-koh-MAH-tool"
+    },
+    "word_supermarket": {
+      "target": "supermarketul",
+      "pronunciation_easy": "soo-per-MAR-keh-tool"
+    },
+    "word_platform": {
+      "target": "peronul",
+      "pronunciation_easy": "peh-ROH-nool"
+    },
+    "word_ticket_office": {
+      "target": "casa de bilete",
+      "pronunciation_easy": "KAH-sah deh bee-LEH-teh"
+    },
+    "word_exit": {
+      "target": "ieșirea",
+      "pronunciation_easy": "yeh-SHEE-ryah"
+    },
+    "word_entrance": {
+      "target": "intrarea",
+      "pronunciation_easy": "een-TRAH-ryah"
+    },
+    "word_tea": {
+      "target": "un ceai",
+      "pronunciation_easy": "oon chye"
+    },
+    "word_beer": {
+      "target": "o bere",
+      "pronunciation_easy": "oh BEH-reh"
+    },
+    "word_glass_of_wine": {
+      "target": "un pahar de vin",
+      "pronunciation_easy": "oon pah-HAR deh veen"
+    },
+    "word_orange_juice": {
+      "target": "un suc de portocale",
+      "pronunciation_easy": "oon sook deh por-toh-KAH-leh"
+    },
+    "word_menu": {
+      "target": "meniul",
+      "pronunciation_easy": "meh-NEE-ool"
+    },
+    "word_bill": {
+      "target": "nota",
+      "pronunciation_easy": "NOH-tah"
+    },
+    "word_bag": {
+      "target": "geanta",
+      "pronunciation_easy": "JAHN-tah",
+      "qa": "Geanta is a handbag/bag you carry (fits 'I lost my bag'). A shop bag is punga; a backpack is rucsacul."
+    },
+    "word_receipt": {
+      "target": "bonul",
+      "pronunciation_easy": "BOH-nool",
+      "qa": "Bonul (fiscal) is the till receipt; chitanța is a handwritten/formal receipt."
+    },
+    "word_water": {
+      "target": "apă",
+      "pronunciation_easy": "AH-puh"
+    },
+    "word_coffee": {
+      "target": "o cafea",
+      "pronunciation_easy": "oh kah-FYAH"
+    },
+    "word_bread": {
+      "target": "pâine",
+      "pronunciation_easy": "PUY-neh"
+    },
+    "word_milk": {
+      "target": "lapte",
+      "pronunciation_easy": "LAHP-teh",
+      "qa": "Literal: 'milk'. Allergen word; used without article after la / fără."
+    },
+    "word_ice": {
+      "target": "gheață",
+      "pronunciation_easy": "GYAH-tsuh"
+    },
+    "word_nuts": {
+      "target": "fructe cu coajă lemnoasă",
+      "pronunciation_easy": "FROOK-teh koo KWAH-zhuh lem-NWAH-suh",
+      "qa": "Review edit: the allergen-label term for tree nuts. \"Nuci\" usually means walnuts only."
+    },
+    "word_gluten": {
+      "target": "gluten",
+      "pronunciation_easy": "GLOO-ten",
+      "qa": "Literal: 'gluten'. Same word as English."
+    },
+    "word_shellfish": {
+      "target": "fructe de mare",
+      "pronunciation_easy": "FROOK-teh deh MAH-reh",
+      "qa": "Literal: 'fruits of the sea' = seafood (shellfish, crustaceans, molluscs; usually not fish). Narrower: crustacee (crustaceans), moluște (molluscs)."
+    },
+    "word_eggs": {
+      "target": "ouă",
+      "pronunciation_easy": "OH-wuh",
+      "qa": "Literal: 'eggs'."
+    },
+    "word_meat": {
+      "target": "carne",
+      "pronunciation_easy": "KAR-neh",
+      "qa": "Literal: 'meat'. Some people don't count chicken or fish as carne; for strict vegetarian needs, also say fără pui, fără pește."
+    },
+    "word_dairy": {
+      "target": "lactate",
+      "pronunciation_easy": "lak-TAH-teh",
+      "qa": "Literal: 'dairy products'."
+    },
+    "word_peanuts": {
+      "target": "arahide",
+      "pronunciation_easy": "ah-rah-HEE-deh",
+      "qa": "Literal: 'peanuts'. Kept separate from nuci."
+    },
+    "word_passport": {
+      "target": "pașaportul",
+      "pronunciation_easy": "pah-shah-POR-tool"
+    },
+    "word_phone": {
+      "target": "telefonul",
+      "pronunciation_easy": "teh-leh-FOH-nool"
+    },
+    "word_wallet": {
+      "target": "portofelul",
+      "pronunciation_easy": "por-toh-FEH-lool"
+    },
+    "word_keys": {
+      "target": "cheile",
+      "pronunciation_easy": "KAY-leh"
+    },
+    "word_ticket": {
+      "target": "biletul",
+      "pronunciation_easy": "bee-LEH-tool"
+    },
+    "word_room_key": {
+      "target": "cheia de la cameră",
+      "pronunciation_easy": "KAY-ah deh lah KAH-meh-ruh"
+    },
+    "word_air_conditioning": {
+      "target": "aerul condiționat",
+      "pronunciation_easy": "AH-eh-rool kon-dee-tsyoh-NAHT"
+    },
+    "word_shower": {
+      "target": "dușul",
+      "pronunciation_easy": "DOO-shool"
+    },
+    "word_wi_fi": {
+      "target": "Wi-Fi-ul",
+      "pronunciation_easy": "WAI-fai-ool"
+    },
+    "word_tv": {
+      "target": "televizorul",
+      "pronunciation_easy": "teh-leh-vee-ZOH-rool"
+    },
+    "word_hot_water": {
+      "target": "apa caldă",
+      "pronunciation_easy": "AH-pah KAL-duh"
+    },
+    "word_door_lock": {
+      "target": "încuietoarea",
+      "pronunciation_easy": "in-koo-yeh-TWAH-ryah"
+    },
+    "word_one": {
+      "target": "unu",
+      "pronunciation_easy": "OO-noo"
+    },
+    "word_two": {
+      "target": "doi",
+      "pronunciation_easy": "doy"
+    },
+    "word_three": {
+      "target": "trei",
+      "pronunciation_easy": "tray"
+    },
+    "word_four": {
+      "target": "patru",
+      "pronunciation_easy": "PAH-troo"
+    },
+    "word_five": {
+      "target": "cinci",
+      "pronunciation_easy": "cheench"
+    },
+    "word_six": {
+      "target": "șase",
+      "pronunciation_easy": "SHAH-seh"
+    },
+    "word_seven": {
+      "target": "șapte",
+      "pronunciation_easy": "SHAHP-teh"
+    },
+    "word_eight": {
+      "target": "opt",
+      "pronunciation_easy": "opt"
+    },
+    "word_nine": {
+      "target": "nouă",
+      "pronunciation_easy": "NOH-wuh"
+    },
+    "word_ten": {
+      "target": "zece",
+      "pronunciation_easy": "ZEH-cheh"
+    },
+    "word_twenty": {
+      "target": "douăzeci",
+      "pronunciation_easy": "doh-wuh-ZECH"
+    },
+    "word_fifty": {
+      "target": "cincizeci",
+      "pronunciation_easy": "cheench-ZECH"
+    },
+    "word_one_hundred": {
+      "target": "o sută",
+      "pronunciation_easy": "oh SOO-tuh"
+    },
+    "word_upstairs": {
+      "target": "sus",
+      "pronunciation_easy": "soos"
+    },
+    "word_downstairs": {
+      "target": "jos",
+      "pronunciation_easy": "zhos"
+    },
+    "word_near": {
+      "target": "aproape",
+      "pronunciation_easy": "ah-PRWAH-peh"
+    },
+    "word_far": {
+      "target": "departe",
+      "pronunciation_easy": "deh-PAR-teh"
+    },
+    "word_today": {
+      "target": "azi",
+      "pronunciation_easy": "ahz"
+    },
+    "word_tomorrow": {
+      "target": "mâine",
+      "pronunciation_easy": "MUY-neh"
+    },
+    "word_now": {
+      "target": "acum",
+      "pronunciation_easy": "ah-KOOM"
+    },
+    "word_later": {
+      "target": "mai târziu",
+      "pronunciation_easy": "my tuhr-ZEEW"
+    },
+    "word_open": {
+      "target": "deschis",
+      "pronunciation_easy": "des-KEES"
+    },
+    "word_closed": {
+      "target": "închis",
+      "pronunciation_easy": "in-KEES"
+    },
+    "word_yes": {
+      "target": "da",
+      "pronunciation_easy": "dah"
+    },
+    "word_no": {
+      "target": "nu",
+      "pronunciation_easy": "noo"
+    },
+    "word_cash": {
+      "target": "numerar",
+      "pronunciation_easy": "noo-meh-RAR"
+    },
+    "word_card": {
+      "target": "card",
+      "pronunciation_easy": "kard"
+    }
+  },
+  "examples": {
+    "where_is": [
+      {
+        "word": "word_train_station",
+        "target": "Unde este gara?",
+        "pronunciation_easy": "OON-deh YES-teh GAH-rah"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Unde este stația de autobuz?",
+        "pronunciation_easy": "OON-deh YES-teh STAH-tsyah deh ow-toh-BOOZ"
+      },
+      {
+        "word": "word_pharmacy",
+        "target": "Unde este farmacia?",
+        "pronunciation_easy": "OON-deh YES-teh far-mah-CHEE-ah"
+      },
+      {
+        "word": "word_atm",
+        "target": "Unde este un bancomat?",
+        "pronunciation_easy": "OON-deh YES-teh oon ban-koh-MAHT"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Unde este un supermarket?",
+        "pronunciation_easy": "OON-deh YES-teh oon soo-per-MAR-ket"
+      },
+      {
+        "word": "word_exit",
+        "target": "Unde este ieșirea?",
+        "pronunciation_easy": "OON-deh YES-teh yeh-SHEE-ryah"
+      }
+    ],
+    "nearest": [
+      {
+        "word": "word_pharmacy",
+        "target": "Unde este cea mai apropiată farmacie?",
+        "pronunciation_easy": "OON-deh YES-teh chah my ah-proh-pee-AH-tuh far-mah-CHEE-eh"
+      },
+      {
+        "word": "word_atm",
+        "target": "Unde este cel mai apropiat bancomat?",
+        "pronunciation_easy": "OON-deh YES-teh chel my ah-proh-pee-AHT ban-koh-MAHT"
+      },
+      {
+        "word": "word_supermarket",
+        "target": "Unde este cel mai apropiat supermarket?",
+        "pronunciation_easy": "OON-deh YES-teh chel my ah-proh-pee-AHT soo-per-MAR-ket"
+      },
+      {
+        "word": "word_metro_station",
+        "target": "Unde este cea mai apropiată stație de metrou?",
+        "pronunciation_easy": "OON-deh YES-teh chah my ah-proh-pee-AH-tuh STAH-tsyeh deh meh-TROW"
+      },
+      {
+        "word": "word_bus_stop",
+        "target": "Unde este cea mai apropiată stație de autobuz?",
+        "pronunciation_easy": "OON-deh YES-teh chah my ah-proh-pee-AH-tuh STAH-tsyeh deh ow-toh-BOOZ"
+      }
+    ],
+    "how_get": [
+      {
+        "word": "word_airport",
+        "target": "Cum ajung la aeroport?",
+        "pronunciation_easy": "koom ah-ZHOONG lah ah-eh-roh-PORT"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Cum ajung la gară?",
+        "pronunciation_easy": "koom ah-ZHOONG lah GAH-ruh"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Cum ajung în centru?",
+        "pronunciation_easy": "koom ah-ZHOONG in CHEN-troo"
+      },
+      {
+        "word": "word_beach",
+        "target": "Cum ajung la plajă?",
+        "pronunciation_easy": "koom ah-ZHOONG lah PLAH-zhuh"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Cum ajung la hotel?",
+        "pronunciation_easy": "koom ah-ZHOONG lah hoh-TEL"
+      }
+    ],
+    "can_i_have": [
+      {
+        "word": "word_tea",
+        "target": "Pot să primesc un ceai, vă rog?",
+        "pronunciation_easy": "poht suh pree-MESK oon chye, vuh rohg"
+      },
+      {
+        "word": "word_beer",
+        "target": "Pot să primesc o bere, vă rog?",
+        "pronunciation_easy": "poht suh pree-MESK oh BEH-reh, vuh rohg"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Pot să primesc un pahar de vin, vă rog?",
+        "pronunciation_easy": "poht suh pree-MESK oon pah-HAR deh veen, vuh rohg"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Pot să primesc un suc de portocale, vă rog?",
+        "pronunciation_easy": "poht suh pree-MESK oon sook deh por-toh-KAH-leh, vuh rohg"
+      },
+      {
+        "word": "word_menu",
+        "target": "Pot să primesc meniul, vă rog?",
+        "pronunciation_easy": "poht suh pree-MESK meh-NEE-ool, vuh rohg"
+      },
+      {
+        "word": "word_receipt",
+        "target": "Pot să primesc bonul, vă rog?",
+        "pronunciation_easy": "poht suh pree-MESK BOH-nool, vuh rohg"
+      }
+    ],
+    "i_would_like": [
+      {
+        "word": "word_tea",
+        "target": "Aș dori un ceai, vă rog.",
+        "pronunciation_easy": "ash doh-REE oon chye, vuh rohg"
+      },
+      {
+        "word": "word_beer",
+        "target": "Aș dori o bere, vă rog.",
+        "pronunciation_easy": "ash doh-REE oh BEH-reh, vuh rohg"
+      },
+      {
+        "word": "word_glass_of_wine",
+        "target": "Aș dori un pahar de vin, vă rog.",
+        "pronunciation_easy": "ash doh-REE oon pah-HAR deh veen, vuh rohg"
+      },
+      {
+        "word": "word_orange_juice",
+        "target": "Aș dori un suc de portocale, vă rog.",
+        "pronunciation_easy": "ash doh-REE oon sook deh por-toh-KAH-leh, vuh rohg"
+      },
+      {
+        "word": "word_bread",
+        "target": "Aș dori niște pâine, vă rog.",
+        "pronunciation_easy": "ash doh-REE NEESH-teh PUY-neh, vuh rohg"
+      },
+      {
+        "word": "word_water",
+        "target": "Aș dori apă, vă rog.",
+        "pronunciation_easy": "ash doh-REE AH-puh, vuh rohg"
+      }
+    ],
+    "table_for": [
+      {
+        "word": "word_one",
+        "target": "O masă pentru o persoană, vă rog.",
+        "pronunciation_easy": "oh MAH-suh PEN-troo oh per-SWAH-nuh, vuh rohg"
+      },
+      {
+        "word": "word_two",
+        "target": "O masă pentru două persoane, vă rog.",
+        "pronunciation_easy": "oh MAH-suh PEN-troo DOH-wuh per-SWAH-neh, vuh rohg"
+      },
+      {
+        "word": "word_three",
+        "target": "O masă pentru trei persoane, vă rog.",
+        "pronunciation_easy": "oh MAH-suh PEN-troo tray per-SWAH-neh, vuh rohg"
+      },
+      {
+        "word": "word_four",
+        "target": "O masă pentru patru persoane, vă rog.",
+        "pronunciation_easy": "oh MAH-suh PEN-troo PAH-troo per-SWAH-neh, vuh rohg"
+      }
+    ],
+    "allergic_to": [
+      {
+        "word": "word_nuts",
+        "target": "Sunt alergic la fructe cu coajă lemnoasă.",
+        "pronunciation_easy": "soont ah-LER-jeek lah FROOK-teh koo KWAH-zhuh lem-NWAH-suh"
+      },
+      {
+        "word": "word_peanuts",
+        "target": "Sunt alergic la arahide.",
+        "pronunciation_easy": "soont ah-LER-jeek lah ah-rah-HEE-deh"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Sunt alergic la gluten.",
+        "pronunciation_easy": "soont ah-LER-jeek lah GLOO-ten"
+      },
+      {
+        "word": "word_shellfish",
+        "target": "Sunt alergic la fructe de mare.",
+        "pronunciation_easy": "soont ah-LER-jeek lah FROOK-teh deh MAH-reh"
+      },
+      {
+        "word": "word_milk",
+        "target": "Sunt alergic la lapte.",
+        "pronunciation_easy": "soont ah-LER-jeek lah LAHP-teh"
+      },
+      {
+        "word": "word_eggs",
+        "target": "Sunt alergic la ouă.",
+        "pronunciation_easy": "soont ah-LER-jeek lah OH-wuh"
+      }
+    ],
+    "without": [
+      {
+        "word": "word_meat",
+        "target": "Fără carne, vă rog.",
+        "pronunciation_easy": "FUH-ruh KAR-neh, vuh rohg"
+      },
+      {
+        "word": "word_milk",
+        "target": "Fără lapte, vă rog.",
+        "pronunciation_easy": "FUH-ruh LAHP-teh, vuh rohg"
+      },
+      {
+        "word": "word_gluten",
+        "target": "Fără gluten, vă rog.",
+        "pronunciation_easy": "FUH-ruh GLOO-ten, vuh rohg"
+      },
+      {
+        "word": "word_ice",
+        "target": "Fără gheață, vă rog.",
+        "pronunciation_easy": "FUH-ruh GYAH-tsuh, vuh rohg"
+      },
+      {
+        "word": "word_nuts",
+        "target": "Fără fructe cu coajă lemnoasă, vă rog.",
+        "pronunciation_easy": "FUH-ruh FROOK-teh koo KWAH-zhuh lem-NWAH-suh, vuh rohg"
+      }
+    ],
+    "ticket_to": [
+      {
+        "word": "word_airport",
+        "target": "Un bilet pentru aeroport, vă rog.",
+        "pronunciation_easy": "oon bee-LET PEN-troo ah-eh-roh-PORT, vuh rohg"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Un bilet pentru centru, vă rog.",
+        "pronunciation_easy": "oon bee-LET PEN-troo CHEN-troo, vuh rohg"
+      },
+      {
+        "word": "word_beach",
+        "target": "Un bilet pentru plajă, vă rog.",
+        "pronunciation_easy": "oon bee-LET PEN-troo PLAH-zhuh, vuh rohg"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Un bilet pentru gară, vă rog.",
+        "pronunciation_easy": "oon bee-LET PEN-troo GAH-ruh, vuh rohg"
+      }
+    ],
+    "does_this_go_to": [
+      {
+        "word": "word_airport",
+        "target": "Merge la aeroport?",
+        "pronunciation_easy": "MEHR-jeh lah ah-eh-roh-PORT"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Merge în centru?",
+        "pronunciation_easy": "MEHR-jeh in CHEN-troo"
+      },
+      {
+        "word": "word_beach",
+        "target": "Merge la plajă?",
+        "pronunciation_easy": "MEHR-jeh lah PLAH-zhuh"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Merge la gară?",
+        "pronunciation_easy": "MEHR-jeh lah GAH-ruh"
+      }
+    ],
+    "take_me_to": [
+      {
+        "word": "word_airport",
+        "target": "Duceți-mă la aeroport, vă rog.",
+        "pronunciation_easy": "DOO-chets muh lah ah-eh-roh-PORT, vuh rohg"
+      },
+      {
+        "word": "word_hotel",
+        "target": "Duceți-mă la hotel, vă rog.",
+        "pronunciation_easy": "DOO-chets muh lah hoh-TEL, vuh rohg"
+      },
+      {
+        "word": "word_train_station",
+        "target": "Duceți-mă la gară, vă rog.",
+        "pronunciation_easy": "DOO-chets muh lah GAH-ruh, vuh rohg"
+      },
+      {
+        "word": "word_city_centre",
+        "target": "Duceți-mă în centru, vă rog.",
+        "pronunciation_easy": "DOO-chets muh in CHEN-troo, vuh rohg"
+      },
+      {
+        "word": "word_beach",
+        "target": "Duceți-mă la plajă, vă rog.",
+        "pronunciation_easy": "DOO-chets muh lah PLAH-zhuh, vuh rohg"
+      }
+    ],
+    "doesnt_work": [
+      {
+        "word": "word_air_conditioning",
+        "target": "Aerul condiționat nu funcționează.",
+        "pronunciation_easy": "AH-eh-rool kon-dee-tsyoh-NAHT noo foonk-tsyoh-NYAH-zuh"
+      },
+      {
+        "word": "word_shower",
+        "target": "Dușul nu funcționează.",
+        "pronunciation_easy": "DOO-shool noo foonk-tsyoh-NYAH-zuh"
+      },
+      {
+        "word": "word_wi_fi",
+        "target": "Wi-Fi-ul nu funcționează.",
+        "pronunciation_easy": "WAI-fai-ool noo foonk-tsyoh-NYAH-zuh"
+      },
+      {
+        "word": "word_tv",
+        "target": "Televizorul nu funcționează.",
+        "pronunciation_easy": "teh-leh-vee-ZOH-rool noo foonk-tsyoh-NYAH-zuh"
+      },
+      {
+        "word": "word_hot_water",
+        "target": "Nu este apă caldă.",
+        "pronunciation_easy": "noo YES-teh AH-puh KAL-duh"
+      },
+      {
+        "word": "word_door_lock",
+        "target": "Încuietoarea nu funcționează.",
+        "pronunciation_easy": "in-koo-yeh-TWAH-ryah noo foonk-tsyoh-NYAH-zuh"
+      }
+    ],
+    "lost_my": [
+      {
+        "word": "word_passport",
+        "target": "Mi-am pierdut pașaportul.",
+        "pronunciation_easy": "myahm pyer-DOOT pah-shah-POR-tool"
+      },
+      {
+        "word": "word_phone",
+        "target": "Mi-am pierdut telefonul.",
+        "pronunciation_easy": "myahm pyer-DOOT teh-leh-FOH-nool"
+      },
+      {
+        "word": "word_wallet",
+        "target": "Mi-am pierdut portofelul.",
+        "pronunciation_easy": "myahm pyer-DOOT por-toh-FEH-lool"
+      },
+      {
+        "word": "word_bag",
+        "target": "Mi-am pierdut geanta.",
+        "pronunciation_easy": "myahm pyer-DOOT JAHN-tah"
+      },
+      {
+        "word": "word_keys",
+        "target": "Mi-am pierdut cheile.",
+        "pronunciation_easy": "myahm pyer-DOOT KAY-leh"
+      },
+      {
+        "word": "word_room_key",
+        "target": "Mi-am pierdut cheia de la cameră.",
+        "pronunciation_easy": "myahm pyer-DOOT KAY-ah deh lah KAH-meh-ruh"
+      }
+    ]
+  },
+  "replies": {
+    "for_here_or_to_go": {
+      "target": "Aici sau la pachet?",
+      "pronunciation_easy": "ah-EETCH sow lah pah-KET"
+    },
+    "anything_else": {
+      "target": "Mai doriți ceva?",
+      "pronunciation_easy": "my doh-REETS cheh-VAH"
+    },
+    "here_you_go": {
+      "target": "Poftiți.",
+      "pronunciation_easy": "pof-TEETS"
+    },
+    "inside_or_outside": {
+      "target": "Înăuntru sau afară?",
+      "pronunciation_easy": "in-uh-OON-troo sow ah-FAH-ruh",
+      "qa": "Staff often say pe terasă ('on the terrace') for outside."
+    },
+    "how_many_people": {
+      "target": "Pentru câte persoane?",
+      "pronunciation_easy": "PEN-troo KUH-teh per-SWAH-neh"
+    },
+    "have_booking": {
+      "target": "Aveți rezervare?",
+      "pronunciation_easy": "ah-VETS reh-zer-VAH-reh"
+    },
+    "this_way": {
+      "target": "Pe aici.",
+      "pronunciation_easy": "peh ah-EETCH"
+    },
+    "next_stop": {
+      "target": "Următoarea stație.",
+      "pronunciation_easy": "oor-muh-TWAH-ryah STAH-tsyeh"
+    },
+    "its_closed": {
+      "target": "Este închis.",
+      "pronunciation_easy": "YES-teh in-KEES"
+    },
+    "one_moment": {
+      "target": "Un moment, vă rog.",
+      "pronunciation_easy": "oon moh-MENT, vuh rohg"
+    },
+    "what_size": {
+      "target": "Ce mărime purtați?",
+      "pronunciation_easy": "cheh muh-REE-meh poor-TAHTS"
+    },
+    "receipt_question": {
+      "target": "Doriți bonul?",
+      "pronunciation_easy": "doh-REETS BOH-nool"
+    },
+    "how_would_you_like_it": {
+      "target": "Cum doriți să vă tund?",
+      "pronunciation_easy": "koom doh-REETS suh vuh toond"
+    }
+  }
+}

@@ -68,6 +68,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Content audit (2026-10-13): `docs/CONTENT_AUDIT.md`.** All 9 languages have all 56 phrases, but 5 of 10 situations (Transportation, Directions, Hotel, Shopping, Barber) have no phrase of their own, the sentence frames have no swap-in words, and goodbye/sorry/you're welcome/emergencies are missing. It proposes ~55 new phrases + swap-in lists to generate with the owner's dataset tool. Waiting on the owner.
 
+**Content expansion v2 shipped 2026-10-13** (`docs/EXPANSION_PLAN.md`, QA in `docs/EXPANSION_QA.md`): +56 phrases (112 total), 73 swap-in words in 8 banks (`content/vocab.json`), 14 likely replies (`content/replies.json`), 68 written-out frame examples per language, new categories and a "Help & emergencies" situation. All translations for the new content are **Claude drafts** in `content/added/<code>.json` (the vetted `content/lang/*.json` files are untouched); the app tags them "Draft". Readiness now counts only each situation's `counts` list; Continue teaches a situation's own phrases first; listening checks sometimes use replies; situation pages show "You might hear". Promote a draft by moving it into the lang file after a native check.
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**

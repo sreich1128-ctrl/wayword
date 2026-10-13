@@ -20,7 +20,9 @@ function shuffled(a, rand) {
 
 // due: phrases due for review, most overdue first. fresh: not started yet, in teaching order.
 // known: started phrases (Learning or Locked in). Phrases are objects with `key` and `english`.
-export function planSession({ due = [], fresh = [], known = [], leavingSoon = false, canListen = true, rand = Math.random } = {}) {
+// replies: things you'll hear in the situation you're working on ({ key, english }). The listening
+// check uses one of them about half the time, so you practise understanding staff, not just yourself.
+export function planSession({ due = [], fresh = [], known = [], replies = [], leavingSoon = false, canListen = true, rand = Math.random } = {}) {
   const reviews = due.slice(0, leavingSoon ? SESSION.reviewsLeavingSoon : SESSION.reviews);
   const news = fresh.slice(0, Math.max(SESSION.minNew, SESSION.size - reviews.length));
   const inSession = new Set([...reviews, ...news].map((p) => p.key));
@@ -32,9 +34,11 @@ export function planSession({ due = [], fresh = [], known = [], leavingSoon = fa
   }
 
   const others = known.filter((p) => !inSession.has(p.key));
-  if (canListen && others.length) {
-    const p = others[Math.floor(rand() * others.length)];
-    const pool = [...known, ...fresh, ...due].filter((x) => x.key !== p.key && x.english !== p.english);
+  const useReply = replies.length >= 2 && (!others.length || rand() < 0.5);
+  if (canListen && (others.length || useReply)) {
+    const from = useReply ? replies : others;
+    const p = from[Math.floor(rand() * from.length)];
+    const pool = (useReply ? replies : [...known, ...fresh, ...due]).filter((x) => x.key !== p.key && x.english !== p.english);
     const wrong = pool[Math.floor(rand() * pool.length)];
     if (wrong) steps.push({ kind: 'listen', p, options: shuffled([{ text: p.english, ok: true }, { text: wrong.english, ok: false }], rand) });
   }
@@ -49,4 +53,11 @@ export function requeue(steps, i, step) {
   const at = Math.min(steps.length, i + 3);
   steps.splice(at, 0, { ...step, kind: 'again' });
   return steps;
+}
+
+// How ready you are for a situation: only its own phrases count (scenario.counts), so learning
+// "hello" and "thank you" doesn't make Hotel look half done. Without a counts list, all of them count.
+export function readiness(sit, isLearned, has = () => true) {
+  const ids = (sit.counts || sit.concepts).filter(has);
+  return { n: ids.length, ready: ids.filter(isLearned).length };
 }
