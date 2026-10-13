@@ -1055,9 +1055,9 @@
       "qa": "Literally 'Need a receipt?'; the usual till question."
     },
     "how_would_you_like_it": {
-      "target": "איך לספר?",
-      "pronunciation_easy": "ekh le-sa-PER",
-      "qa": "Literally 'How to cut?'. Also: איך אתה רוצה את זה? (to a man)."
+      "target": "איך אתה רוצה שנספר אותך?",
+      "pronunciation_easy": "ekh a-TA ro-TSE she-ne-sa-PER ot-KHA",
+      "qa": "Literally 'How to cut?'. Also: איך אתה רוצה את זה? (to a man). [Fixed 2026-10-14 per ChatGPT review.]"
     }
   }
 }

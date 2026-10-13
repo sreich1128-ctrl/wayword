@@ -51,9 +51,9 @@
     },
     {
       "id": "allergic_to",
-      "target": "Sono allergico a ___.",
-      "pronunciation_easy": "SOH-noh al-LEHR-jee-koh ah",
-      "qa": "SAFETY. Back-translation: 'I am allergic to ___'. Gender: masculine speaker form; a woman says 'Sono allergica a ___' (al-LEHR-jee-kah). The fixed 'a' merges with the article of the food: al glutine, alla frutta a guscio, ai frutti di mare, alle uova, al latte, alle arachidi; see the examples, don't paste the word after 'a'."
+      "target": "Sono allergico ___.",
+      "pronunciation_easy": "SOH-noh al-LEHR-jee-koh",
+      "qa": "SAFETY. Back-translation: 'I am allergic to ___'. Gender: masculine speaker form; a woman says 'Sono allergica a ___' (al-LEHR-jee-kah). The fixed 'a' merges with the article of the food: al glutine, alla frutta a guscio, ai frutti di mare, alle uova, al latte, alle arachidi; see the examples, don't paste the word after 'a'. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "vegetarian",
@@ -75,9 +75,9 @@
     },
     {
       "id": "for_here",
-      "target": "Da mangiare qui, per favore.",
-      "pronunciation_easy": "dah mahn-JAH-reh kwee, pehr fah-VOH-reh",
-      "qa": "Literally 'to eat here'. Staff often say 'da consumare qui'; for a drink, 'Da bere qui'. In an Italian bar you'd more often just say 'Qui'. Reviewer: check naturalness."
+      "target": "Qui, per favore.",
+      "pronunciation_easy": "kwee, pehr fah-VOH-reh",
+      "qa": "Literally 'to eat here'. Staff often say 'da consumare qui'; for a drink, 'Da bere qui'. In an Italian bar you'd more often just say 'Qui'. Reviewer: check naturalness. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "delicious",
@@ -99,15 +99,15 @@
     },
     {
       "id": "does_this_go_to",
-      "target": "Questo va a ___?",
-      "pronunciation_easy": "KWEH-stoh vah ah",
-      "qa": "Literally 'Does this (one) go to ___?'. Clearer as 'Questo autobus va a ___?' / 'Questo treno va a ___?'. The 'a' merges with the article (all'aeroporto, alla stazione) and the city centre is 'in centro'; see examples. City names: 'a Roma'."
+      "target": "Questo va ___?",
+      "pronunciation_easy": "KWEH-stoh vah",
+      "qa": "Literally 'Does this (one) go to ___?'. Clearer as 'Questo autobus va a ___?' / 'Questo treno va a ___?'. The 'a' merges with the article (all'aeroporto, alla stazione) and the city centre is 'in centro'; see examples. City names: 'a Roma'. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "take_me_to",
-      "target": "Mi porti a ___, per favore.",
-      "pronunciation_easy": "mee POR-tee ah, pehr fah-VOH-reh",
-      "qa": "Formal (Lei) to a driver. The 'a' merges with the article (all'aeroporto, alla stazione) and the centre is 'in centro'; see examples."
+      "target": "Mi porti ___, per favore.",
+      "pronunciation_easy": "mee POR-tee, pehr fah-VOH-reh",
+      "qa": "Formal (Lei) to a driver. The 'a' merges with the article (all'aeroporto, alla stazione) and the centre is 'in centro'; see examples. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "stop_here",
@@ -952,8 +952,8 @@
       },
       {
         "word": "word_hot_water",
-        "target": "L'acqua calda non funziona.",
-        "pronunciation_easy": "LAHK-kwah KAHL-dah non foon-TSYOH-nah"
+        "target": "Non c'è acqua calda.",
+        "pronunciation_easy": "non cheh AH-kwah KAHL-dah"
       },
       {
         "word": "word_door_lock",

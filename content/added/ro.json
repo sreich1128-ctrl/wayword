@@ -252,15 +252,15 @@
     },
     {
       "id": "shorter_sides",
-      "target": "Mai scurt pe părți.",
-      "pronunciation_easy": "my skoort peh PUHRTS",
-      "qa": "Barbers also say pe lateral ('on the sides'); reviewer may prefer it."
+      "target": "Mai scurt pe laterale.",
+      "pronunciation_easy": "my skoort peh lah-teh-RAH-leh",
+      "qa": "Barbers also say pe lateral ('on the sides'); reviewer may prefer it. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "like_this",
-      "target": "Ca în poza asta.",
-      "pronunciation_easy": "kah in POH-zah AS-tah",
-      "qa": "Literal: 'Like in this photo.' Said while showing the photo; Uite, așa ('Look, like this') also works."
+      "target": "Așa.",
+      "pronunciation_easy": "ah-SHAH",
+      "qa": "Literal: 'Like in this photo.' Said while showing the photo; Uite, așa ('Look, like this') also works. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "beard_trim",

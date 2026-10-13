@@ -188,3 +188,49 @@ Phrasing they weren't fully sure of, regional alternatives, and frames whose gra
 - **Audio:** new items play in the phone's voice. Natural recordings need an ElevenLabs run (about 56 phrases + 68 examples + 13 replies per language).
 - **"How it's said" tips** for the new phrases.
 - **Promotion:** once a native speaker (or the dataset tool) confirms an item, move it from `content/added/<code>.json` into `content/lang/<code>.json`; the vetted version always wins.
+
+## ChatGPT review (2026-10-14)
+
+ChatGPT reviewed all 1,658 drafts not confirmed by a native-written sentence (`docs/review/<code>.chatgpt.json`): 1,580 ok, 29 fix, 23 unsure. Its own caveat: an AI desk review, not native sign-off.
+
+### Fixes applied
+- ar-levantine `can_i_have` + word_glass_of_wine: ممكن تعطيني كاسة نبيد، لو سمحت؟ → ممكن تعطيني كاسة نبيذ، لو سمحت؟
+- ar-levantine `i_would_like` + word_glass_of_wine: بدي كاسة نبيد، لو سمحت. → بدي كاسة نبيذ، لو سمحت.
+- ar-levantine word `word_glass_of_wine`: كاسة نبيد → كاسة نبيذ
+- ar-levantine word `word_dairy`: مشتقات حليب → مشتقات الحليب
+- es `allergic_to`: Soy alérgico a ___. → Soy alérgico ___.
+- es `ticket_to`: Un boleto a ___, por favor. → Un boleto ___, por favor.
+- es `does_this_go_to`: ¿Este va a ___? → ¿Este va ___?
+- es `take_me_to`: Llévame a ___, por favor. → Llévame ___, por favor.
+- es `for_here`: Para comer aquí, por favor. → Aquí, por favor.
+- fr `doesnt_work` + word_hot_water: L'eau chaude ne marche pas. → Il n'y a pas d'eau chaude.
+- he reply `how_would_you_like_it`: איך לספר? → איך אתה רוצה שנספר אותך?
+- it `allergic_to`: Sono allergico a ___. → Sono allergico ___.
+- it `does_this_go_to`: Questo va a ___? → Questo va ___?
+- it `take_me_to`: Mi porti a ___, per favore. → Mi porti ___, per favore.
+- it `for_here`: Da mangiare qui, per favore. → Qui, per favore.
+- it `doesnt_work` + word_hot_water: L'acqua calda non funziona. → Non c'è acqua calda.
+- ja `allergic_to` + word_shellfish: 甲殻類アレルギーがあります。 → 甲殻類・貝類・イカ・タコにアレルギーがあります。
+- ja word `word_shellfish`: 甲殻類 → 甲殻類・貝類・イカ・タコ
+- pt-PT `allergic_to`: Sou alérgico a ___. → Sou alérgico ___.
+- pt-PT `take_me_to`: Leve-me a ___, por favor. → Leve-me ___, por favor.
+- pt-PT `for_here`: Para comer aqui, por favor. → É para aqui, por favor.
+- pt-PT `doesnt_work` + word_shower: O chuveiro não funciona. → O duche não funciona.
+- pt-PT `doesnt_work` + word_hot_water: A água quente não funciona. → Não há água quente.
+- pt-PT word `word_shower`: o chuveiro → o duche
+- ro `shorter_sides`: Mai scurt pe părți. → Mai scurt pe laterale.
+- ro `like_this`: Ca în poza asta. → Așa.
+- ru `like_this`: Как на фото. → Вот так.
+- ru `its_emergency`: Это срочно! → У меня экстренная ситуация!
+- ru `call_someone`: Мне нужно позвонить. → Мне нужно кому-то позвонить.
+
+### Fixes not applied
+- Spanish `take_me_to` "Llévame hasta ___": changes the wording; the example sentences use "Llévame al/a la…". The preposition was moved into the blank instead.
+- Spanish `ticket_to` "Un boleto para ___": same; kept "boleto" with the preposition inside the blank ("Un boleto al aeropuerto").
+- French `word_two` "deuh": the existing dataset writes this vowel "uh" (peu = puh); kept for consistency.
+
+### Still open (marked unsure, for a native speaker)
+- **Shellfish is broad in most languages** (mariscos, fruits de mer, frutti di mare, fructe de mare, פירות ים, ثمار البحر): fine for "seafood", too vague for a severe allergy. For a serious allergy, name the food (shrimp, crab, mussels) and ask about cross-contact. Japanese now lists the categories explicitly.
+- **Tree nuts vs peanuts:** "frutos secos" / "fruits à coque" exclude peanuts; the app has a separate peanuts word, so someone allergic to both should say both.
+- **"Bag" is ambiguous** (handbag, suitcase, shopping bag) in Spanish, Portuguese and Romanian.
+- Train "platform" wording (Portugal "linha", Levantine رصيف), Japanese "city centre" and "next stop", Portuguese "Quer fatura?" (invoice vs receipt), French and Arabic barber phrasing, Levantine checkout and trim wording, Hebrew "metro station" (Israel has light rail).

@@ -50,9 +50,9 @@
     },
     {
       "id": "allergic_to",
-      "target": "Soy alérgico a ___.",
-      "pronunciation_easy": "soy ah-LEHR-hee-koh ah",
-      "qa": "Back-translation: \"I am allergic to ___.\" Masculine speaker (file convention); a woman says \"Soy alérgica a ___\" (ah-LEHR-hee-kah). a + el contracts to al (al gluten, al maní), so the article goes with the word, not the frame. Safety item: please verify. Word notes: peanuts = \"maní\" (most of Latin America), \"cacahuate\" (Mexico), \"cacahuete\" (Spain). Nuts = \"frutos secos\" (tree nuts generally); \"nueces\" strictly means walnuts but is used loosely in Mexico. Back-translations of examples: \"I am allergic to the nuts / the peanut / the gluten / the shellfish / the milk / the eggs\" (Spanish uses the article here). Dairy = \"los lácteos\"."
+      "target": "Soy alérgico ___.",
+      "pronunciation_easy": "soy ah-LEHR-hee-koh",
+      "qa": "Back-translation: \"I am allergic to ___.\" Masculine speaker (file convention); a woman says \"Soy alérgica a ___\" (ah-LEHR-hee-kah). a + el contracts to al (al gluten, al maní), so the article goes with the word, not the frame. Safety item: please verify. Word notes: peanuts = \"maní\" (most of Latin America), \"cacahuate\" (Mexico), \"cacahuete\" (Spain). Nuts = \"frutos secos\" (tree nuts generally); \"nueces\" strictly means walnuts but is used loosely in Mexico. Back-translations of examples: \"I am allergic to the nuts / the peanut / the gluten / the shellfish / the milk / the eggs\" (Spanish uses the article here). Dairy = \"los lácteos\". [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "vegetarian",
@@ -73,9 +73,9 @@
     },
     {
       "id": "for_here",
-      "target": "Para comer aquí, por favor.",
-      "pronunciation_easy": "PAH-rah koh-MEHR ah-KEE, por fah-VOR",
-      "qa": "Literally \"to eat here\". For a drink only, \"Para tomar aquí\" fits better."
+      "target": "Aquí, por favor.",
+      "pronunciation_easy": "ah-KEE, por fah-VOR",
+      "qa": "Literally \"to eat here\". For a drink only, \"Para tomar aquí\" fits better. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "delicious",
@@ -91,21 +91,21 @@
     },
     {
       "id": "ticket_to",
-      "target": "Un boleto a ___, por favor.",
-      "pronunciation_easy": "oon boh-LEH-toh ah, por fah-VOR",
-      "qa": "\"Boleto\" is Latin American; Spain says \"billete\", and Argentina/Chile often \"pasaje\" for long-distance. a + el contracts to al (al aeropuerto)."
+      "target": "Un boleto ___, por favor.",
+      "pronunciation_easy": "oon boh-LEH-toh, por fah-VOR",
+      "qa": "\"Boleto\" is Latin American; Spain says \"billete\", and Argentina/Chile often \"pasaje\" for long-distance. a + el contracts to al (al aeropuerto). [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "does_this_go_to",
-      "target": "¿Este va a ___?",
-      "pronunciation_easy": "ES-teh vah ah",
-      "qa": "\"Este\" = this one (bus/train, masculine). a + el contracts to al."
+      "target": "¿Este va ___?",
+      "pronunciation_easy": "ES-teh vah",
+      "qa": "\"Este\" = this one (bus/train, masculine). a + el contracts to al. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "take_me_to",
-      "target": "Llévame a ___, por favor.",
-      "pronunciation_easy": "YEH-vah-meh ah, por fah-VOR",
-      "qa": "Uses tú like the rest of the file. With taxi drivers in much of Latin America usted is more usual: \"¿Me lleva a ___, por favor?\". a + el contracts to al."
+      "target": "Llévame ___, por favor.",
+      "pronunciation_easy": "YEH-vah-meh, por fah-VOR",
+      "qa": "Uses tú like the rest of the file. With taxi drivers in much of Latin America usted is more usual: \"¿Me lleva a ___, por favor?\". a + el contracts to al. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "stop_here",

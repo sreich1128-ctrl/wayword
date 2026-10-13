@@ -263,9 +263,9 @@
     },
     {
       "id": "like_this",
-      "target": "Как на фото.",
-      "pronunciation_easy": "kak nah FOH-tah",
-      "qa": "Lit. 'Like in the photo', said while showing it. Вот так (vot TAHK, 'like this') also works."
+      "target": "Вот так.",
+      "pronunciation_easy": "vot tahk",
+      "qa": "Lit. 'Like in the photo', said while showing it. Вот так (vot TAHK, 'like this') also works. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "beard_trim",
@@ -298,9 +298,9 @@
     },
     {
       "id": "its_emergency",
-      "target": "Это срочно!",
-      "pronunciation_easy": "EH-tah SROCH-nah",
-      "qa": "Back-translation: 'It's urgent!'. This is the everyday way to say it; Это экстренный случай (it's an emergency case) is more formal and less often shouted."
+      "target": "У меня экстренная ситуация!",
+      "pronunciation_easy": "oo mee-NYAH EKS-tren-nah-yah see-too-AH-tsy-yah",
+      "qa": "Back-translation: 'It's urgent!'. This is the everyday way to say it; Это экстренный случай (it's an emergency case) is more formal and less often shouted. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "lost_my",
@@ -316,9 +316,9 @@
     },
     {
       "id": "call_someone",
-      "target": "Мне нужно позвонить.",
-      "pronunciation_easy": "mnyeh NOOZH-nah pah-zvah-NEET",
-      "qa": "Back-translation: 'I need to make a phone call' (lit. 'to me [it is] necessary to call'). Add Можно с вашего телефона? to ask to use someone's phone."
+      "target": "Мне нужно кому-то позвонить.",
+      "pronunciation_easy": "mnyeh NOOZH-nah kah-MOO-tah pah-zvah-NEET",
+      "qa": "Back-translation: 'I need to make a phone call' (lit. 'to me [it is] necessary to call'). Add Можно с вашего телефона? to ask to use someone's phone. [Fixed 2026-10-14 per ChatGPT review.]"
     }
   ],
   "vocab": {

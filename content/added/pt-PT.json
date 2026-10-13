@@ -52,9 +52,9 @@
     },
     {
       "id": "allergic_to",
-      "target": "Sou alérgico a ___.",
-      "pronunciation_easy": "soh ah-LEHR-zhee-koo ah",
-      "qa": "SAFETY. Literal: 'I am allergic to ___.' Masculine speaker; a woman says 'Sou alérgica a ___.' The 'a' contracts with an article: a + o = ao (ao glúten, ao leite), a + a = à, a + os = aos; with a bare plural it stays 'a' (a frutos secos). 'Tenho alergia a ___' (I have an allergy to) is an equally common alternative."
+      "target": "Sou alérgico ___.",
+      "pronunciation_easy": "soh ah-LEHR-zhee-koo",
+      "qa": "SAFETY. Literal: 'I am allergic to ___.' Masculine speaker; a woman says 'Sou alérgica a ___.' The 'a' contracts with an article: a + o = ao (ao glúten, ao leite), a + a = à, a + os = aos; with a bare plural it stays 'a' (a frutos secos). 'Tenho alergia a ___' (I have an allergy to) is an equally common alternative. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "vegetarian",
@@ -75,9 +75,9 @@
     },
     {
       "id": "for_here",
-      "target": "Para comer aqui, por favor.",
-      "pronunciation_easy": "PAH-rah koo-MEHR ah-KEE, poor fah-VOR",
-      "qa": "Literally 'to eat here'. For a drink only, 'Para beber aqui' fits better; 'É para aqui' is also heard."
+      "target": "É para aqui, por favor.",
+      "pronunciation_easy": "eh PAH-rah ah-KEE, poor fah-VOR",
+      "qa": "Literally 'to eat here'. For a drink only, 'Para beber aqui' fits better; 'É para aqui' is also heard. [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "delicious",
@@ -105,9 +105,9 @@
     },
     {
       "id": "take_me_to",
-      "target": "Leve-me a ___, por favor.",
-      "pronunciation_easy": "LEH-vuh-muh ah, poor fah-VOR",
-      "qa": "'a' contracts with the article: ao aeroporto, à praia, ao hotel. In a taxi many people simply say 'Para o aeroporto, por favor.'"
+      "target": "Leve-me ___, por favor.",
+      "pronunciation_easy": "LEH-vuh-muh, poor fah-VOR",
+      "qa": "'a' contracts with the article: ao aeroporto, à praia, ao hotel. In a taxi many people simply say 'Para o aeroporto, por favor.' [Fixed 2026-10-14 per ChatGPT review.]"
     },
     {
       "id": "stop_here",
@@ -487,8 +487,9 @@
       "pronunciation_easy": "oo ar kon-dee-see-oo-NAH-doo"
     },
     "word_shower": {
-      "target": "o chuveiro",
-      "pronunciation_easy": "oo shoo-VAY-roo"
+      "target": "o duche",
+      "pronunciation_easy": "oo DOO-shuh",
+      "qa": "[Fixed 2026-10-14 per ChatGPT review.]"
     },
     "word_wi_fi": {
       "target": "o Wi-Fi",
@@ -926,8 +927,8 @@
       },
       {
         "word": "word_shower",
-        "target": "O chuveiro não funciona.",
-        "pronunciation_easy": "oo shoo-VAY-roo nowng foon-see-OH-nah"
+        "target": "O duche não funciona.",
+        "pronunciation_easy": "oo DOO-shuh nowng foon-see-OH-nah"
       },
       {
         "word": "word_wi_fi",
@@ -941,8 +942,8 @@
       },
       {
         "word": "word_hot_water",
-        "target": "A água quente não funciona.",
-        "pronunciation_easy": "ah AH-gwah KEN-tuh nowng foon-see-OH-nah"
+        "target": "Não há água quente.",
+        "pronunciation_easy": "nowng ah AH-gwah KEN-tuh"
       },
       {
         "word": "word_door_lock",

@@ -535,10 +535,10 @@
       "qa": "SAFETY. Back-translation: 'gluten' (loanword). Less widely understood than 小麦 (koh-moo-gee, wheat), which is the allergen Japanese food labels list. Consider teaching 小麦 alongside it."
     },
     "word_shellfish": {
-      "target": "甲殻類",
-      "reading": "こうかくるい",
-      "pronunciation_easy": "koh-kah-koo-roo-ee",
-      "qa": "SAFETY. Back-translation: 'crustaceans' (shrimp, crab, lobster): the standard allergy term. Molluscs (clams, oysters, scallops) are 貝類 (kai-roo-ee); English 'shellfish' covers both. Labels list えび (shrimp) and かに (crab)."
+      "target": "甲殻類・貝類・イカ・タコ",
+      "reading": "こうかくるい・かいるい・いか・たこ",
+      "pronunciation_easy": "koh-kah-koo-roo-ee, kai-roo-ee, ee-kah, tah-koh",
+      "qa": "SAFETY. Back-translation: 'crustaceans' (shrimp, crab, lobster): the standard allergy term. Molluscs (clams, oysters, scallops) are 貝類 (kai-roo-ee); English 'shellfish' covers both. Labels list えび (shrimp) and かに (crab). [Fixed 2026-10-14 per ChatGPT review.]"
     },
     "word_eggs": {
       "target": "卵",
@@ -993,9 +993,9 @@
       },
       {
         "word": "word_shellfish",
-        "target": "甲殻類アレルギーがあります。",
-        "reading": "こうかくるいあれるぎーがあります。",
-        "pronunciation_easy": "koh-kah-koo-roo-ee ah-reh-roo-gee gah ah-ree-mahs"
+        "target": "甲殻類・貝類・イカ・タコにアレルギーがあります。",
+        "reading": "こうかくるい・かいるい・いか・たこにあれるぎーがあります。",
+        "pronunciation_easy": "koh-kah-koo-roo-ee, kai-roo-ee, ee-kah, tah-koh nee ah-reh-roo-gee gah ah-ree-mahs"
       },
       {
         "word": "word_milk",

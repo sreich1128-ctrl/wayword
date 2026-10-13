@@ -43,7 +43,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | I'm allergic to gluten. | Sou alérgico ao glúten. | Eu tenho alergia a glúten. | differs |
 | I'm allergic to milk. | Sou alérgico ao leite. | Sou alérgico a leite. · Tenho alergia ao leite. | close |
 | The air conditioning doesn't work. | O ar condicionado não funciona. | O ar-condicionado não está funcionando. | differs |
-| The shower doesn't work. | O chuveiro não funciona. | O chuveiro está quebrado. · A ducha está quebrada. | differs |
+| The shower doesn't work. | O duche não funciona. | O chuveiro está quebrado. · A ducha está quebrada. | differs |
 | I lost my wallet. | Perdi a minha carteira. | Perdi minha carteira. · Não encontro minha carteira. | close |
 | Do you have a reservation? | Tem reserva? | Você fez reserva? · Vocês fizeram reserva? | differs |
 
@@ -131,7 +131,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | I have a reservation. | У меня бронь. | У меня есть бро́ня. | differs |
 | I'll take it. | Я это возьму. | Я его возьму. · Беру. | close |
 | Can I try it on? | Можно примерить? | Могу я это примерить? · Могу я его примерить? | differs |
-| It's an emergency. | Это срочно! | Это очень срочно! · Это экстренная ситуация. | differs |
+| It's an emergency. | У меня экстренная ситуация! | Это очень срочно! · Это экстренная ситуация. | differs |
 | How do I get to the train station? | Как добраться до вокзала? | Как мне добраться до вокзала? · Как мне доехать до вокзала? | close |
 | How do I get to the hotel? | Как добраться до гостиницы? | Как мне добраться до отеля? · Как мне добраться до гостиницы? | close |
 | Can I have a beer, please? | Можно мне пиво, пожалуйста? | Можно мне одно пиво, пожалуйста? · Пожалуйста, можно мне пиво? | close |
@@ -170,7 +170,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | How do I get to the train station? | 駅にはどうやって行けばいいですか？ | 駅へはどのように行けばよいですか。 · 駅へはどう行けばいいですか？ | differs |
 | How do I get to the beach? | ビーチにはどうやって行けばいいですか？ | どうやって海岸に行けばいいですか。 · 海岸への行き方を教えてください。 | differs |
 | I'm allergic to gluten. | グルテンアレルギーがあります。 | 僕はグルテンアレルギーだ。 · 僕はグルテンにアレルギーがある。 | differs |
-| I'm allergic to shellfish. | 甲殻類アレルギーがあります。 | 魚介アレルギーなんです。 | differs |
+| I'm allergic to shellfish. | 甲殻類・貝類・イカ・タコにアレルギーがあります。 | 魚介アレルギーなんです。 | differs |
 | I'm allergic to milk. | 牛乳アレルギーがあります。 | ミルクアレルギーなんです。 · 俺、牛乳アレルギーなんだ。 | differs |
 | The shower doesn't work. | シャワーが出ません。 | シャワーが壊れています。 · シャワーが壊れた。 | differs |
 | The TV doesn't work. | テレビがつきません。 | テレビがつかないよ。 · テレビが故障しています。 | differs |

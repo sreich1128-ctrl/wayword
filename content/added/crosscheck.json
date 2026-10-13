@@ -281,7 +281,7 @@
       "for_here": {
         "status": "none",
         "english": "For here, please.",
-        "draft": "Para comer aqui, por favor.",
+        "draft": "É para aqui, por favor.",
         "native": []
       },
       "delicious": {
@@ -1147,7 +1147,7 @@
       "doesnt_work~word_shower": {
         "status": "differs",
         "english": "The shower doesn't work.",
-        "draft": "O chuveiro não funciona.",
+        "draft": "O duche não funciona.",
         "native": [
           {
             "text": "O chuveiro está quebrado.",
@@ -1182,7 +1182,7 @@
       "doesnt_work~word_hot_water": {
         "status": "none",
         "english": "The hot water doesn't work.",
-        "draft": "A água quente não funciona.",
+        "draft": "Não há água quente.",
         "native": []
       },
       "doesnt_work~word_door_lock": {
@@ -1620,7 +1620,7 @@
       "for_here": {
         "status": "none",
         "english": "For here, please.",
-        "draft": "Para comer aquí, por favor.",
+        "draft": "Aquí, por favor.",
         "native": []
       },
       "delicious": {
@@ -4166,7 +4166,7 @@
       "doesnt_work~word_hot_water": {
         "status": "none",
         "english": "The hot water doesn't work.",
-        "draft": "L'eau chaude ne marche pas.",
+        "draft": "Il n'y a pas d'eau chaude.",
         "native": []
       },
       "doesnt_work~word_door_lock": {
@@ -4642,7 +4642,7 @@
       "for_here": {
         "status": "none",
         "english": "For here, please.",
-        "draft": "Da mangiare qui, per favore.",
+        "draft": "Qui, per favore.",
         "native": []
       },
       "delicious": {
@@ -5635,7 +5635,7 @@
       "doesnt_work~word_hot_water": {
         "status": "none",
         "english": "The hot water doesn't work.",
-        "draft": "L'acqua calda non funziona.",
+        "draft": "Non c'è acqua calda.",
         "native": []
       },
       "doesnt_work~word_door_lock": {
@@ -6264,13 +6264,13 @@
       "shorter_sides": {
         "status": "none",
         "english": "Shorter on the sides.",
-        "draft": "Mai scurt pe părți.",
+        "draft": "Mai scurt pe laterale.",
         "native": []
       },
       "like_this": {
         "status": "none",
         "english": "Like this.",
-        "draft": "Ca în poza asta.",
+        "draft": "Așa.",
         "native": []
       },
       "beard_trim": {
@@ -7476,7 +7476,7 @@
       "like_this": {
         "status": "none",
         "english": "Like this.",
-        "draft": "Как на фото.",
+        "draft": "Вот так.",
         "native": []
       },
       "beard_trim": {
@@ -7575,7 +7575,7 @@
       "its_emergency": {
         "status": "differs",
         "english": "It's an emergency.",
-        "draft": "Это срочно!",
+        "draft": "У меня экстренная ситуация!",
         "native": [
           {
             "text": "Это очень срочно!",
@@ -7629,7 +7629,7 @@
       "call_someone": {
         "status": "none",
         "english": "I need to call someone.",
-        "draft": "Мне нужно позвонить.",
+        "draft": "Мне нужно кому-то позвонить.",
         "native": []
       },
       "where_is~word_train_station": {
@@ -9515,7 +9515,7 @@
       "allergic_to~word_shellfish": {
         "status": "differs",
         "english": "I'm allergic to shellfish.",
-        "draft": "甲殻類アレルギーがあります。",
+        "draft": "甲殻類・貝類・イカ・タコにアレルギーがあります。",
         "native": [
           {
             "text": "魚介アレルギーなんです。",
@@ -11042,7 +11042,7 @@
       "reply~how_would_you_like_it": {
         "status": "none",
         "english": "How would you like it cut?",
-        "draft": "איך לספר?",
+        "draft": "איך אתה רוצה שנספר אותך?",
         "native": []
       }
     },
@@ -11656,7 +11656,7 @@
       "can_i_have~word_glass_of_wine": {
         "status": "none",
         "english": "Can I have a glass of wine, please?",
-        "draft": "ممكن تعطيني كاسة نبيد، لو سمحت؟",
+        "draft": "ممكن تعطيني كاسة نبيذ، لو سمحت؟",
         "native": []
       },
       "can_i_have~word_orange_juice": {
@@ -11692,7 +11692,7 @@
       "i_would_like~word_glass_of_wine": {
         "status": "none",
         "english": "I'd like a glass of wine, please.",
-        "draft": "بدي كاسة نبيد، لو سمحت.",
+        "draft": "بدي كاسة نبيذ، لو سمحت.",
         "native": []
       },
       "i_would_like~word_orange_juice": {

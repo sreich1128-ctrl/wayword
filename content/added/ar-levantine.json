@@ -401,8 +401,9 @@
       "pronunciation_easy": "BEE-ra"
     },
     "word_glass_of_wine": {
-      "target": "كاسة نبيد",
-      "pronunciation_easy": "KAA-set na-BEED"
+      "target": "كاسة نبيذ",
+      "pronunciation_easy": "KAA-set na-BEED",
+      "qa": "[Fixed 2026-10-14 per ChatGPT review.]"
     },
     "word_orange_juice": {
       "target": "عصير برتقان",
@@ -465,8 +466,9 @@
       "pronunciation_easy": "LAH-meh"
     },
     "word_dairy": {
-      "target": "مشتقات حليب",
-      "pronunciation_easy": "moosh-ta-AAT ha-LEEB"
+      "target": "مشتقات الحليب",
+      "pronunciation_easy": "mush-ta-AAT il-ha-LEEB",
+      "qa": "[Fixed 2026-10-14 per ChatGPT review.]"
     },
     "word_peanuts": {
       "target": "فستق سوداني",
@@ -729,7 +731,7 @@
       },
       {
         "word": "word_glass_of_wine",
-        "target": "ممكن تعطيني كاسة نبيد، لو سمحت؟",
+        "target": "ممكن تعطيني كاسة نبيذ، لو سمحت؟",
         "pronunciation_easy": "MUM-kin ta-TEE-nee KAA-set na-BEED, law sa-MAHT"
       },
       {
@@ -761,7 +763,7 @@
       },
       {
         "word": "word_glass_of_wine",
-        "target": "بدي كاسة نبيد، لو سمحت.",
+        "target": "بدي كاسة نبيذ، لو سمحت.",
         "pronunciation_easy": "BAD-dee KAA-set na-BEED, law sa-MAHT"
       },
       {
