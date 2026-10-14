@@ -5,7 +5,7 @@ import * as mic from './speak.js';
 import { shortVoiceName } from './voices.js';
 import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
-import { planSession, requeue, readiness } from './plan.js';
+import { planSession, requeue, readiness, reviewMode } from './plan.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -71,6 +71,7 @@ const ICONS = {
   search: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
   expand: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   download: '<path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/>',
+  bell: '<path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16Z"/><path d="M10 20a2 2 0 0 0 4 0"/>',
   dots: '<circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/>',
 };
 const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
@@ -493,6 +494,52 @@ function focusSheetHtml() {
     </div>`;
 }
 
+// Daily reminder: a repeating calendar event that opens today's session. No account or server:
+// your calendar does the reminding (the habit research's "prompt" at a time you choose).
+function reminderSheetHtml() {
+  const t = store.prefs().reminder || '08:30';
+  return `<div class="sheet-head"><h2>Daily reminder</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
+    <p class="help-lead">Reviews only work if they happen on the day they’re due. Pick a time you’re usually free for 3 minutes (with coffee, on the commute) and add a daily reminder to your calendar. It opens straight into today’s ${esc(L.lang.name)} session.</p>
+    <label class="trip-row reminder-row"><span>Remind me at</span><input type="time" id="reminder-time" value="${esc(t)}"></label>
+    <button class="cta" data-action="reminder-ics">${icon('bell')} Add to iPhone / Apple Calendar</button>
+    <button class="more-btn" data-action="reminder-google">Add to Google Calendar</button>
+    <p class="fine">On iPhone, tap “Add to Calendar” on the screen that opens. To stop, delete the event in your calendar.</p>`;
+}
+
+function reminderEvent() {
+  const t = (document.getElementById('reminder-time')?.value || '08:30').split(':');
+  store.setPref('reminder', `${t[0]}:${t[1]}`);
+  const d = new Date();
+  const ymd = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
+  const start = `${ymd}T${t[0]}${t[1]}00`;
+  const end = `${ymd}T${t[0]}${String(Math.min(59, Number(t[1]) + 5)).padStart(2, '0')}00`;
+  const url = `${location.origin}${location.pathname}#/${L.lang.code}/session`;
+  return { start, end, url, title: `Wayword: 3 minutes of ${L.lang.name}`, details: `Open Wayword and tap Continue. Reviews due today are waiting: ${url}` };
+}
+
+function reminderIcs() {
+  const e = reminderEvent();
+  const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Wayword//Daily reminder//EN', 'BEGIN:VEVENT',
+    `UID:wayword-daily-${L.lang.code}@wayword`, `DTSTAMP:${stamp}`, `DTSTART:${e.start}`, `DTEND:${e.end}`, 'RRULE:FREQ=DAILY',
+    `SUMMARY:${e.title}`, `DESCRIPTION:${e.details}`, `URL:${e.url}`,
+    'BEGIN:VALARM', 'TRIGGER:PT0M', 'ACTION:DISPLAY', `DESCRIPTION:${e.title}`, 'END:VALARM', 'END:VEVENT', 'END:VCALENDAR'].join('\r\n');
+  const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `wayword-${L.lang.code}-reminder.ics`;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+}
+
+function reminderGoogle() {
+  const e = reminderEvent();
+  const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const q = new URLSearchParams({ action: 'TEMPLATE', text: e.title, details: e.details, dates: `${e.start}/${e.end}`, recur: 'RRULE:FREQ=DAILY', ctz: tz });
+  window.open(`https://calendar.google.com/calendar/render?${q}`, '_blank', 'noopener');
+}
+
 // More: everything that isn't the daily loop or looking a phrase up.
 function viewMore() {
   const lang = L.lang;
@@ -501,6 +548,9 @@ function viewMore() {
   const patterns = L.phrases.filter((p) => p.type === 'pattern' && !p.missing).length;
   page('more', `
     <section class="page-head"><h1>More</h1></section>
+    ${section('Stay on it', `<div class="group">
+      ${row({ action: 'reminder-sheet', ic: 'bell', title: 'Daily reminder', sub: store.prefs().reminder ? `Set for ${esc(store.prefs().reminder)} · add it again to change the time` : 'A repeating calendar reminder, so reviews happen on the day they’re due' })}
+    </div>`)}
     ${section('Your trip', `<div class="group">
       ${row({ href: `#/${code}/flight`, ic: 'plane', title: 'Flying soon?', sub: 'Set your trip date, rescue kit, crash course' })}
       ${row({ href: `#/${code}/cheatsheet`, ic: 'printer', title: 'Cheat sheet', sub: 'Every Core phrase on one screen. Print or screenshot it' })}
@@ -856,20 +906,26 @@ function drawSession() {
   if (st.kind === 'listen') {
     const p = st.p;
     const picked = s.picked;
+    // Recognising isn't enough: once you've picked, you repeat it (production beats recognition).
+    if (picked != null && (!pl || pl.p !== p)) Object.assign(mountPlayer(p, 'session', 'learn'), { step: canPracticeAloud() ? 'say' : 'done', echo: true });
     page('home', `${top}
       <article class="pp-phrase pp-prompt"><span class="fc-label">What did they say?</span>
         <div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>
         <span class="pp-hint">Listen, then pick the meaning</span></div>
       </article>
       <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right' : picked === i ? 'wrong' : ''}" data-action="lc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
-      ${picked == null ? '' : `<article class="pp-phrase lc-answer"><p class="take-verdict">${st.options[picked].ok ? '✓ Right' : 'Not quite. This one:'} ${draftTag(p)}</p>${phraseLines(p)}</article>
-        <button class="cta pp-next" data-action="ss-next">Next ${icon('arrow')}</button>`}
+      ${picked == null ? '' : `<p class="take-verdict lc-verdict">${st.options[picked].ok ? '✓ Right. Now say it back.' : 'Not quite. Here it is: say it back.'} ${draftTag(p)}</p>
+        <div id="pp" class="pp">${playerInner()}</div>`}
     `, { back: home, focus: true });
     return;
   }
 
   const recall = st.kind !== 'new';
-  if (!pl || pl.p !== st.p || pl.where !== 'session') mountPlayer(st.p, 'session', recall ? 'recall' : 'learn');
+  if (recall && !st.ask) st.ask = askFor(st);
+  if (!pl || pl.p !== st.p || pl.where !== 'session') {
+    mountPlayer(st.p, 'session', recall ? 'recall' : 'learn');
+    if (recall) Object.assign(pl, { ask: st.ask, reply: st.reply });
+  }
   page('home', `${top}<div id="pp" class="pp">${playerInner()}</div>`, { back: home, focus: true });
 }
 
@@ -906,12 +962,23 @@ function drawSessionDone() {
   `, { back: home, focus: true });
 }
 
+// How a recall step asks for its phrase. Reviews get harder as the phrase gets stronger (js/plan.js);
+// the quick check of brand-new phrases is always "say it".
+function askFor(st) {
+  if (st.kind !== 'review' && st.kind !== 'practice') return 'say';
+  const r = store.get().srs[st.p.key];
+  const fits = canSpeak() ? L.replies.filter((x) => x.answer_with.includes(st.p.id)) : [];
+  if (fits.length) st.reply = fits[Math.floor(Math.random() * fits.length)];
+  return reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern' });
+}
+
 // After a tap moves the session on: play what the new step needs.
 function sessionAutoplay() {
   const st = session?.steps[session.i];
   if (!st || !canSpeak()) return;
   if (st.kind === 'new') plListen();
   else if (st.kind === 'listen') speakPhrase(st.p.id);
+  else if (st.ask === 'answer' && st.reply) speakPhrase(st.reply.id); // they speak first
 }
 
 function sessionAdvance() {
@@ -932,9 +999,12 @@ function sessionRate(got) {
   const s = session;
   const st = s.steps[s.i];
   const p = st.p;
-  const learning = store.status(p.key) === 'learning';
   if (st.kind === 'review' || (st.kind === 'practice' && store.isDue(p.key))) {
-    if (learning) { const r = store.review(p.key, got); if (r?.locked) s.newlyLocked++; }
+    if (store.get().srs[p.key]) {
+      const wasLocked = store.status(p.key) === 'locked';
+      const r = store.review(p.key, got);
+      if (r?.locked && !wasLocked) s.newlyLocked++;
+    }
   } else if (st.kind === 'check' && got && !s.missed.has(p.key) && !store.isLearned(p.key)) {
     store.setLearned(p.key, true, 'session');
     s.newly++;
@@ -1051,9 +1121,10 @@ function viewCheatsheet(query) {
 
 // Under a flipped review card: what passing it will do.
 function lockHint(p) {
-  if (store.status(p.key) !== 'learning' || session?.missed.has(p.key)) return '';
+  if (!store.status(p.key) || session?.missed.has(p.key)) return '';
   const r = store.previewPass(p.key);
   if (!r) return '';
+  if (r.keep) return `<p class="lock-hint">${icon('lock', 'inline-ic')} Locked in · Got it → next check ${fmtGap(r.inMs)}</p>`;
   return `<p class="lock-hint">${icon('lock', 'inline-ic')} Got it → ${r.locked ? '<b>Locked in</b>' : `next check ${fmtGap(r.inMs)}`}</p>`;
 }
 
@@ -1316,17 +1387,48 @@ function listenFor(p) {
 
 // Recall, before the answer: the English only. Say it (or just think it), then reveal.
 function promptInner() {
-  const { p } = pl;
+  const { p, ask, reply } = pl;
+  const lang = L.lang;
   const failed = pl.take && !pl.take.url && !pl.take.transcript;
-  const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : 'Say it out loud, then hear the right version';
-  return `<article class="pp-phrase pp-prompt"><span class="fc-label">How do you say this in ${esc(L.lang.name)}?</span><p class="fc-en">${withSlots(p.english)}</p></article>
+  if (ask === 'type') {
+    return `<article class="pp-phrase pp-prompt"><span class="fc-label">Type it in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>
+        <form class="type-form" data-pp-type>
+          <input class="type-input" id="pp-type-input" ${nativeAttrs(lang)} autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="Type it here">
+          <button class="cta" type="submit">Check</button>
+        </form>${typeHint(p)}
+      </article>
+      <p class="fine center">Writing it out from memory is the strongest practice there is. Accents count.</p>
+      <button class="more-btn pp-next" data-action="pp-reveal">Show me</button>
+      ${canPracticeAloud() ? '<button class="link-btn center" data-action="pp-ask-say">No keyboard for this? Say it instead</button>' : ''}`;
+  }
+  const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : ask === 'answer' ? 'Answer out loud, then hear the right version' : 'Say it out loud, then hear the right version';
+  const head = ask === 'answer' && reply
+    ? `<span class="fc-label">They say</span>
+       <div class="reply-row">${canSpeak() ? `<button class="round-btn lk-play listen" data-action="speak" data-id="${esc(reply.id)}" data-key="${esc(reply.key)}" data-state="idle" aria-label="Play">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
+         <div><b class="reply-native" ${nativeAttrs(lang)}>${withSlots(reply.target)}</b><small data-peek="en">${withSlots(reply.english)}</small></div></div>
+       <span class="fc-label">Answer: say this in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>`
+    : `<span class="fc-label">How do you say this in ${esc(lang.name)}?</span><p class="fc-en">${withSlots(p.english)}</p>`;
+  return `<article class="pp-phrase pp-prompt">${head}</article>
     ${canPracticeAloud() ? `<div class="pp-stage">
       <button class="mic-big pp-big ${pl.rec ? (pl.live ? 'rec' : 'rec warming') : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
       <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle, pl.live)}</span>
-      ${failed ? `<a class="link-btn" href="#/${L.lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
+      ${failed ? `<a class="link-btn" href="#/${lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
       ${pl.rec ? '' : micPrimer()}
     </div>` : ''}
     <button class="${canPracticeAloud() ? 'more-btn' : 'cta'} pp-next" data-action="pp-reveal">${canPracticeAloud() ? 'Show me without speaking' : 'Show me'}</button>`;
+}
+
+// Type it, inside a review: checked letter by letter; only a correct answer counts as Got it.
+function plType(reveal = false) {
+  if (!pl) return;
+  const p = pl.p;
+  const typed = reveal ? '' : (document.getElementById('pp-type-input')?.value || '').trim();
+  if (!reveal && !typed) { document.getElementById('pp-type-input')?.focus(); return; }
+  pl.typed = typed;
+  pl.check = reveal ? { verdict: 'revealed', notes: [] } : L.lang.meta.no_spaces ? checkTypedChars(p.target, typed, p.reading) : checkTyped(p.target, typed);
+  pl.step = 'reveal';
+  drawPlayer();
+  plListen(); // hear the right version straight away
 }
 
 function playerInner() {
@@ -1342,7 +1444,7 @@ function playerInner() {
     stage = `<button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>
       <span class="pp-hint">Listen and follow the pronunciation line</span>`;
   } else if (step === 'say' || (step === 'compare' && where === 'sheet') || pl.rec) {
-    const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : step === 'compare' ? 'Tap to try again' : 'Your turn: tap, then say it';
+    const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : step === 'compare' ? 'Tap to try again' : pl.echo ? 'Say it back, the way you heard it' : 'Your turn: tap, then say it';
     stage = `<button class="mic-big pp-big ${pl.rec ? (pl.live ? 'rec' : 'rec warming') : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
       <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle, pl.live)}</span>
       ${failed ? `<a class="link-btn" href="#/${L.lang.code}/mic">Run the Mic check ${icon('chev')}</a>` : ''}
@@ -1358,11 +1460,21 @@ function playerInner() {
   const ready = step === 'compare' || step === 'done';
   const upNext = session?.steps[session.i + 1]?.kind;
   let next = '';
-  if (where === 'session' && step === 'reveal') {
+  if (where === 'session' && step === 'reveal' && pl.check) {
+    // Typed: the checker decides. Exactly right (accents may be off) counts; anything else comes back sooner.
+    const ok = ['correct', 'marks'].includes(pl.check.verdict);
+    next = `${typeResult({ check: pl.check, typed: pl.typed })}
+      ${ok ? lockHint(p) : ''}
+      <button class="cta pp-next" data-action="${ok ? 'ss-got' : 'ss-again'}">${ok ? `${icon('check')} Next` : `Next ${icon('arrow')}`}</button>
+      <p class="fine center">${ok ? 'Counted as Got it.' : 'Counted as Not yet: it comes back sooner, which is how it sticks.'}</p>`;
+  } else if (where === 'session' && step === 'reveal') {
+    // Said: you judge, but if the phone's speech check heard little of it, Not yet is the honest default.
+    const score = pl.take?.transcript ? mic.compare(p.target, pl.take.transcript, { charMode: !!L.lang.meta.no_spaces, alt: p.reading }).score : null;
+    const weak = score != null && score < 0.5;
     next = `${pl.take ? '' : (pl.rec ? '' : `<button class="link-btn center" data-action="pp-mic">${icon('mic')} Say it and compare</button>`)}
-      ${lockHint(p)}
-      <div class="fc-actions"><button class="fc-btn again" data-action="ss-again">Not yet</button><button class="fc-btn got" data-action="ss-got">Got it</button></div>
-      <p class="fine center">Got it = you knew it before you heard it.</p>`;
+      ${weak ? '<p class="honest">Your phone only caught part of it. If you weren’t sure, Not yet brings it back sooner, which is how it sticks.</p>' : lockHint(p)}
+      <div class="fc-actions"><button class="fc-btn ${weak ? 'got' : 'again'}" data-action="ss-again">Not yet</button><button class="fc-btn ${weak ? 'again' : 'got'}" data-action="ss-got">Got it</button></div>
+      <p class="fine center">Got it = you said it right before you heard it.</p>`;
   } else if (where === 'session') {
     next = `<button class="${ready ? 'cta' : 'more-btn'} pp-next" data-action="ss-next">${upNext === 'check' ? 'Quick check' : upNext ? 'Next' : 'Finish'} ${icon('arrow')}</button>
        ${!ready && canPracticeAloud() ? '<p class="fine">Speaking is optional. Skip it whenever you like.</p>' : ''}`;
@@ -1653,6 +1765,7 @@ function toast(text, ms = 7000) {
 /* ---------- events ---------- */
 
 document.addEventListener('submit', (e) => {
+  if (e.target.matches('[data-pp-type]')) { e.preventDefault(); plType(); return; }
   if (!e.target.matches('[data-type-form]')) return;
   e.preventDefault();
   runTypeCheck();
@@ -1779,6 +1892,13 @@ document.addEventListener('click', (e) => {
   } else if (a === 'save-offline') {
     const sit = C.scenarios.find((x) => x.id === btn.dataset.id);
     if (sit) saveOffline(sitPhrases(sit), btn);
+  } else if (a === 'reminder-sheet') {
+    openSheet(reminderSheetHtml());
+  } else if (a === 'reminder-ics') {
+    reminderIcs();
+    toast('Reminder file ready. On iPhone, tap Add to Calendar.');
+  } else if (a === 'reminder-google') {
+    reminderGoogle();
   } else if (a === 'focus-sheet') {
     openSheet(focusSheetHtml());
   } else if (a === 'pick-focus') {
@@ -1812,8 +1932,14 @@ document.addEventListener('click', (e) => {
     sessionAdvance();
   } else if (a === 'ss-got' || a === 'ss-again') {
     sessionRate(a === 'ss-got');
+  } else if (a === 'pp-ask-say') {
+    if (!pl) return;
+    pl.ask = 'say';
+    if (session?.steps[session.i]) session.steps[session.i].ask = 'say';
+    drawPlayer();
   } else if (a === 'pp-reveal') {
     if (!pl) return;
+    if (pl.ask === 'type') { plType(true); return; }
     capture?.stop();
     pl.step = 'reveal';
     drawPlayer();
@@ -1822,6 +1948,7 @@ document.addEventListener('click', (e) => {
     if (session.picked != null) return;
     session.picked = Number(btn.dataset.i);
     drawSession();
+    document.querySelector('.lc-verdict')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' });
   } else if (a === 'ss-another') {
     session = null;
     route();

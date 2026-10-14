@@ -299,3 +299,13 @@ In the browser at 375px, for Spanish and Arabic:
 ## Estimate
 
 About 2 hours, plus 30 minutes of checking. Independent of Lock it in, so either can ship first.
+
+## Retention update (2026-10-15)
+
+The owner found phrases weren't sticking. Changes, grounded in the memory research in `docs/research/`:
+
+- **Keep checks instead of "Locked in for good".** A Locked in phrase comes back after 30, 60, 120, then every 180 days (`KEEP_DAYS` in `js/schedule.js`; `state.srs[key] = { keep: true, stage, due }`). Passing moves to the next gap; missing sends it back to Learning, box 1. Phrases locked before this get their first check 30 days after they were locked.
+- **Reviews get harder as a phrase gets stronger** (`reviewMode` in `js/plan.js`): box 1 = see the English and say it; box 2 and 4 = type it (checked letter by letter); box 3 = hear something staff say ("Tem reserva?") and answer with the phrase (`answer_with` in `content/replies.json`), or type when no reply fits; keep checks rotate type → answer → say. Frames with a blank are never typed. "No keyboard? Say it instead" switches a typing step to speaking.
+- **Honest grading.** Typed answers grade themselves: right words (accents may be off) = Got it, anything else = Not yet. For spoken answers, if the phone's speech check caught less than half, "Not yet" becomes the highlighted choice.
+- **Listening checks end with saying it back** (production, not just recognition).
+- **Daily reminder** (More → Daily reminder): a repeating calendar event (.ics for Apple Calendar, or a Google Calendar link) at a chosen time, opening today's session.

@@ -61,3 +61,15 @@ export function readiness(sit, isLearned, has = () => true) {
   const ids = (sit.counts || sit.concepts).filter(has);
   return { n: ids.length, ready: ids.filter(isLearned).length };
 }
+
+// How a review asks for a phrase, getting harder as the phrase gets stronger ("desirable difficulty"):
+//   say    - see the English, say it, then hear it (box 1)
+//   type   - see the English, type it; checked letter by letter (box 2, box 4)
+//   answer - hear something staff say, answer with this phrase (box 3, when a reply fits)
+// Keep checks on Locked in phrases rotate through all three.
+export function reviewMode({ box = 1, keep = false, stage = 0, hasReply = false, canType = true } = {}) {
+  let mode = keep ? ['type', 'answer', 'say'][stage % 3] : box <= 1 ? 'say' : box === 3 ? 'answer' : 'type';
+  if (mode === 'answer' && !hasReply) mode = keep ? 'say' : 'type';
+  if (mode === 'type' && !canType) mode = 'say';
+  return mode;
+}

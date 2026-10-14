@@ -1,5 +1,5 @@
 {
-  "_doc": "Things you'll hear (listening layer). English only; translations in content/added/<code>.json under 'replies'. 'same_as' reuses an existing phrase's translation instead of a second copy.",
+  "_doc": "Things you'll hear (listening layer). English only; translations in content/added/<code>.json under 'replies'. 'same_as' reuses an existing phrase's translation instead of a second copy. 'answer_with' lists phrases that answer the reply; harder reviews play the reply and ask you to answer with one of them.",
   "replies": [
     {
       "id": "for_here_or_to_go",
@@ -7,6 +7,10 @@
       "situations": [
         "cafe",
         "restaurant"
+      ],
+      "answer_with": [
+        "to_go",
+        "for_here"
       ]
     },
     {
@@ -15,6 +19,10 @@
       "situations": [
         "cafe",
         "restaurant"
+      ],
+      "answer_with": [
+        "no_thank_you",
+        "bill"
       ]
     },
     {
@@ -25,6 +33,9 @@
         "restaurant",
         "shopping",
         "hotel"
+      ],
+      "answer_with": [
+        "thank_you"
       ]
     },
     {
@@ -35,7 +46,11 @@
         "restaurant",
         "shopping"
       ],
-      "same_as": "cash_or_card"
+      "same_as": "cash_or_card",
+      "answer_with": [
+        "pay_card",
+        "apple_pay"
+      ]
     },
     {
       "id": "inside_or_outside",
@@ -58,6 +73,9 @@
       "english": "Do you have a reservation?",
       "situations": [
         "hotel"
+      ],
+      "answer_with": [
+        "have_reservation"
       ]
     },
     {
@@ -65,6 +83,9 @@
       "english": "This way.",
       "situations": [
         "directions"
+      ],
+      "answer_with": [
+        "thank_you"
       ]
     },
     {
@@ -72,6 +93,9 @@
       "english": "Next stop.",
       "situations": [
         "transport"
+      ],
+      "answer_with": [
+        "stop_here"
       ]
     },
     {
@@ -89,6 +113,9 @@
         "hotel",
         "restaurant",
         "shopping"
+      ],
+      "answer_with": [
+        "thank_you"
       ]
     },
     {
@@ -105,6 +132,9 @@
         "cafe",
         "restaurant",
         "shopping"
+      ],
+      "answer_with": [
+        "no_thank_you"
       ]
     },
     {
@@ -112,6 +142,12 @@
       "english": "How would you like it cut?",
       "situations": [
         "barber"
+      ],
+      "answer_with": [
+        "just_trim",
+        "not_too_short",
+        "shorter_sides",
+        "like_this"
       ]
     }
   ]

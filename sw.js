@@ -1,5 +1,5 @@
 // Offline cache. Bump VERSION whenever app or content files change so phones pick up the update.
-const VERSION = 'wayword-v32';
+const VERSION = 'wayword-v33';
 const AUDIO = 'wayword-audio';
 const LANGS = ['pt-PT', 'es', 'fr', 'it', 'ru', 'ar-levantine', 'he', 'ja', 'ro'];
 const PRECACHE = [

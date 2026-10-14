@@ -157,7 +157,7 @@ export async function loadLanguage(content, code) {
   for (const r of content.replies) {
     const own = r.same_as ? entryById.get(r.same_as) : added?.replies?.[r.id];
     if (!own?.target) continue;
-    const item = { id: `reply~${r.id}`, key: `${code}:reply~${r.id}`, target: own.target, pron: own.pronunciation_easy, english: r.english, situations: r.situations || [], draft: !!(own.draft || !r.same_as) };
+    const item = { id: `reply~${r.id}`, key: `${code}:reply~${r.id}`, target: own.target, pron: own.pronunciation_easy, english: r.english, situations: r.situations || [], answer_with: r.answer_with || [], draft: !!(own.draft || !r.same_as) };
     if (own.reading) item.reading = own.reading;
     if (checked[item.id]?.status === 'match') item.native_match = true;
     extraById.set(item.id, item);

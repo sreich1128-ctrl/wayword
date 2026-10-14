@@ -6,7 +6,7 @@
 //   Locked in - passed all its reviews; it leaves the queue for good
 // `learned` holds every started phrase (Learning or Locked in), so progress rings count both.
 
-import { DAY, gapsFor, gapFor, afterPass, daysUntil, endOfToday, migrateOld } from './schedule.js';
+import { DAY, gapsFor, gapFor, afterPass, daysUntil, endOfToday, migrateOld, keepGap } from './schedule.js';
 
 const KEY = 'wayword:v1';
 const VERSION = 2;
@@ -15,7 +15,7 @@ const defaults = () => ({
   v: VERSION,
   fav: {},
   learned: {}, // key -> first started (Learning or Locked in)
-  srs: {},     // key -> { box 1..4, due, last, met, via }  (the queue: Learning only)
+  srs: {},     // key -> { box 1..4, due, last, met, via } while Learning; { keep: true, stage, due, last, met } once Locked in
   locked: {},  // key -> when it was Locked in
   prefs: { showEnglish: true, showPron: true, tier: 'core', lastLang: null, theme: 'auto', trips: {} },
 });
@@ -31,7 +31,7 @@ function gapsForLang(state, lang) {
 function recompute(state, lang) {
   const gaps = gapsForLang(state, lang);
   for (const [k, r] of Object.entries(state.srs)) {
-    if (langOf(k) === lang) r.due = r.last + gapFor(r.box, gaps);
+    if (langOf(k) === lang && !r.keep) r.due = r.last + gapFor(r.box, gaps);
   }
 }
 
@@ -57,6 +57,10 @@ function read() {
         : old && old.last !== undefined ? old : { box: 1, due: learnedAt + DAY, last: learnedAt, met: learnedAt, via: 'migrated' };
     }
     state.v = VERSION;
+  }
+  // Locked in phrases from before keep checks existed: first check 30 days after locking.
+  for (const [k, at] of Object.entries(state.locked)) {
+    if (!state.srs[k]) state.srs[k] = { keep: true, stage: 0, due: (typeof at === 'number' ? at : Date.now()) + keepGap(0), last: at, met: state.learned[k] || at };
   }
   // Trip dates that have passed go back to the normal schedule.
   for (const [lang, iso] of Object.entries(state.prefs.trips)) {
@@ -90,7 +94,7 @@ export const store = {
     if (on) {
       const now = Date.now();
       if (!state.learned[key]) state.learned[key] = now;
-      if (!state.locked[key] && !state.srs[key]) {
+      if (!state.locked[key] && !state.srs[key]) { // (a Locked in phrase keeps its keep-check entry)
         state.srs[key] = { box: 1, due: now + gapFor(1, gapsForLang(state, langOf(key))), last: now, met: now, via };
       }
     } else {
@@ -103,15 +107,29 @@ export const store = {
   toggleLearned(key) { this.setLearned(key, !state.learned[key]); },
 
   // A review result. Passed: up a box, or Locked in after the last. Missed: back to box 1.
+  // Locked in phrases still get keep checks (30, 60, 120, 180 days); a miss there means Learning again.
   review(key, passed) {
     const r = state.srs[key];
-    if (!r) return null; // not in the queue (not started, or already Locked in)
+    if (!r) return null; // not started
     const now = Date.now();
     const gaps = gapsForLang(state, langOf(key));
+    if (r.keep) {
+      if (passed) {
+        r.stage += 1;
+        r.last = now;
+        r.due = now + keepGap(r.stage);
+        save();
+        return { locked: true, keep: true, due: r.due };
+      }
+      delete state.locked[key];
+      state.srs[key] = { box: 1, due: now + gapFor(1, gaps), last: now, met: r.met || now, via: 'relearn' };
+      save();
+      return { locked: false, box: 1, due: state.srs[key].due, relearn: true };
+    }
     if (passed) {
       const next = afterPass(r.box, gaps);
       if (next.locked) {
-        delete state.srs[key];
+        state.srs[key] = { keep: true, stage: 0, due: now + keepGap(0), last: now, met: r.met };
         state.locked[key] = now;
         save();
         return { locked: true };
@@ -129,6 +147,7 @@ export const store = {
   previewPass(key) {
     const r = state.srs[key];
     if (!r) return null;
+    if (r.keep) return { locked: true, keep: true, inMs: keepGap(r.stage + 1) };
     const gaps = gapsForLang(state, langOf(key));
     const next = afterPass(r.box, gaps);
     return next.locked ? { locked: true } : { locked: false, inMs: gapFor(next.box, gaps) };
@@ -154,7 +173,7 @@ export const store = {
     return dues.length ? Math.min(...dues) : null;
   },
   counts(lang) {
-    const learning = Object.keys(state.srs).filter((k) => langOf(k) === lang).length;
+    const learning = Object.keys(state.srs).filter((k) => langOf(k) === lang && !state.locked[k]).length;
     const locked = Object.keys(state.locked).filter((k) => langOf(k) === lang).length;
     return { learning, locked, started: learning + locked };
   },

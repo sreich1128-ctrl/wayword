@@ -68,3 +68,9 @@ export function migrateOld(old, learnedAt) {
   const due = Math.min(Number.isFinite(old.due) ? old.due : Infinity, last + GAP_DAYS[box - 1] * DAY);
   return { box, due, last, met: learnedAt, via: 'migrated' };
 }
+
+// Locked in isn't "never again": a light check after 30, 60, 120, then every 180 days keeps it
+// (spacing research: retention keeps fading, so gaps should keep growing rather than stop).
+// Passing moves to the next gap; missing sends the phrase back to Learning, box 1.
+export const KEEP_DAYS = [30, 60, 120, 180];
+export const keepGap = (stage) => KEEP_DAYS[Math.min(stage, KEEP_DAYS.length - 1)] * DAY;

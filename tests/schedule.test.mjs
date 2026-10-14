@@ -85,10 +85,22 @@ test('first pass enters Learning, passes walk to Locked in, a miss resets', asyn
   assert.equal(store.get().srs[k].box, 1, 'miss goes back to box 1');
   for (let i = 0; i < 4; i++) store.review(k, true);
   assert.equal(store.status(k), 'locked');
-  assert.equal(store.get().srs[k], undefined, 'Locked in leaves the queue');
-  store.review(k, false);
-  assert.equal(store.status(k), 'locked', 'Locked in stays locked');
+  assert.equal(store.get().srs[k].keep, true, 'Locked in gets keep checks, not "never again"');
+  assert.ok(Math.abs(store.get().srs[k].due - (Date.now() + 30 * DAY)) < 5000, 'first keep check after 30 days');
   assert.deepEqual(store.counts('pt-PT'), { learning: 0, locked: 1, started: 1 });
+  store.review(k, true);
+  assert.ok(Math.abs(store.get().srs[k].due - (Date.now() + 60 * DAY)) < 5000, 'then 60 days');
+  assert.equal(store.status(k), 'locked');
+  store.review(k, false);
+  assert.equal(store.status(k), 'learning', 'a missed keep check sends it back to Learning');
+  assert.equal(store.get().srs[k].box, 1);
+});
+
+test('phrases locked in before keep checks existed get one 30 days after locking', async () => {
+  const lockedAt = Date.now() - 40 * DAY;
+  const store = await freshStore({ v: 2, fav: {}, prefs: {}, learned: { 'fr:hello': lockedAt - DAY }, srs: {}, locked: { 'fr:hello': lockedAt } });
+  assert.equal(store.get().srs['fr:hello'].keep, true);
+  assert.ok(store.isDue('fr:hello'), 'already due: locked 40 days ago');
 });
 
 test('due today, daily cap, and trip date compression', async () => {

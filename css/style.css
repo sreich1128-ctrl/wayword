@@ -893,3 +893,15 @@ body.showit-open { overflow: hidden; }
 .hear-list .draft-tag { margin: 2px 0; justify-self: start; }
 .draft-tag.native { color: #166534; background: #dcfce7; border-color: #86efac; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .draft-tag.native { color: #86efac; background: #052e16; border-color: #166534; } }
+
+/* Retention: answer-a-reply prompt, honest grading note, reminder */
+.reply-row { display: flex; align-items: center; gap: 12px; justify-content: center; margin: 4px 0 12px; text-align: left; }
+.reply-row > div { display: grid; }
+.reply-native { font-family: var(--font-native); font-size: 22px; }
+.reply-row small { color: var(--muted); font-size: 13px; }
+.pp-prompt .type-form { margin-top: 12px; }
+.honest { margin-top: 12px; font-size: 14px; color: #92400e; background: #fef3c7; border-radius: 10px; padding: 8px 10px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .honest { color: #fcd34d; background: #422006; } }
+.lc-verdict { margin: 14px 2px 8px; }
+.reminder-row { margin: 14px 0; }
+.reminder-row input { font: inherit; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }

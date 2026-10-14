@@ -78,3 +78,15 @@ test('listening check can use a reply from the situation', () => {
   assert.ok(lc && lc.p.key.startsWith('r'));
   assert.equal(lc.options.length, 2);
 });
+
+import { reviewMode } from '../js/plan.js';
+
+test('reviews get harder as a phrase gets stronger', () => {
+  assert.equal(reviewMode({ box: 1 }), 'say');
+  assert.equal(reviewMode({ box: 2 }), 'type');
+  assert.equal(reviewMode({ box: 3, hasReply: true }), 'answer');
+  assert.equal(reviewMode({ box: 3 }), 'type', 'no reply fits: type instead');
+  assert.equal(reviewMode({ box: 4 }), 'type');
+  assert.equal(reviewMode({ box: 2, canType: false }), 'say');
+  assert.deepEqual([0, 1, 2].map((stage) => reviewMode({ keep: true, stage, hasReply: true })), ['type', 'answer', 'say']);
+});
