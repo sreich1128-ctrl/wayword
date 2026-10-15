@@ -5,7 +5,7 @@ import * as mic from './speak.js';
 import { shortVoiceName } from './voices.js';
 import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
-import { planSession, requeue, readiness, reviewMode } from './plan.js';
+import { planSession, requeue, readiness, reviewMode, LADDER } from './plan.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -566,8 +566,13 @@ function viewMore() {
       ${L.generalNotes.map((n) => `<p class="about-row"><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
     </div>`) : ''}
     <div class="group">${row({ action: 'help', ic: 'help', title: 'How Wayword works' })}</div>
-    <p class="fine">Progress is saved on this device only.</p>
+    <p class="fine">Progress is saved on this device only. <span id="app-version"></span></p>
   `);
+  fetch('./sw.js').then((r) => r.text()).then((t) => {
+    const v = t.match(/wayword-v(\d+)/);
+    const el = document.getElementById('app-version');
+    if (v && el) el.textContent = `Version ${v[1]}.`;
+  }).catch(() => {});
 }
 
 function audioGroup() {
@@ -901,7 +906,7 @@ function drawSession() {
   if (s.i >= s.steps.length) { drawSessionDone(); return; }
   const st = s.steps[s.i];
   const top = `<div class="fc-progress"><span style="width:${Math.round((s.i / s.steps.length) * 100)}%"></span></div>
-    <p class="fc-meta">${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length}</p>`;
+    <p class="fc-meta">${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length} ${['review', 'practice'].includes(st.kind) ? ladderHtml(st.ask || (st.ask = askFor(st))) : ''}</p>`;
 
   if (st.kind === 'listen') {
     const p = st.p;
@@ -916,6 +921,23 @@ function drawSession() {
       <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right' : picked === i ? 'wrong' : ''}" data-action="lc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
       ${picked == null ? '' : `<p class="take-verdict lc-verdict">${st.options[picked].ok ? '✓ Right. Now say it back.' : 'Not quite. Here it is: say it back.'} ${draftTag(p)}</p>
         <div id="pp" class="pp">${playerInner()}</div>`}
+    `, { back: home, focus: true });
+    return;
+  }
+
+  if (st.ask === 'recognize') {
+    const p = st.p;
+    const picked = st.picked;
+    const ok = picked != null && st.options[picked].ok;
+    page('home', `${top}
+      <article class="pp-phrase pp-prompt"><span class="fc-label">What does this mean?</span>
+        <p class="native lg" ${nativeAttrs(L.lang)}>${withSlots(p.target)}</p>${readingLine(p, 'lg')}
+        ${canSpeak() ? `<div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>` : ''}
+      </article>
+      <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right' : picked === i ? 'wrong' : ''}" data-action="rc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
+      ${picked == null ? '' : `<p class="take-verdict lc-verdict">${ok ? '✓ Right' : 'Not quite. It means: ' + withSlots(p.english)}</p>
+        <button class="cta pp-next" data-action="${ok ? 'ss-got' : 'ss-again'}">${ok ? `${icon('check')} Next` : `Next ${icon('arrow')}`}</button>
+        <p class="fine center">${ok ? 'Counted as Got it. Next time: say it.' : 'Counted as Not yet: again in a minute, and tomorrow.'}</p>`}
     `, { back: home, focus: true });
     return;
   }
@@ -969,7 +991,38 @@ function askFor(st) {
   const r = store.get().srs[st.p.key];
   const fits = canSpeak() ? L.replies.filter((x) => x.answer_with.includes(st.p.id)) : [];
   if (fits.length) st.reply = fits[Math.floor(Math.random() * fits.length)];
-  return reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern' });
+  const mode = reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern' });
+  if (mode === 'recognize') st.options = recognizeOptions(st.p);
+  return mode;
+}
+
+// Recognize: the right meaning and two others, preferring phrases from the same category.
+function recognizeOptions(p) {
+  const pool = L.phrases.filter((x) => !x.missing && x.id !== p.id && x.english !== p.english);
+  const near = shuffle(pool.filter((x) => x.category === p.category));
+  const wrong = [...near, ...shuffle(pool)].filter((x, i, a) => a.findIndex((y) => y.english === x.english) === i).slice(0, 2);
+  return shuffle([{ text: p.english, ok: true }, ...wrong.map((x) => ({ text: x.english, ok: false }))]);
+}
+
+// The ladder under a review: where this phrase is (Recognize · Say · Write · Answer).
+const RUNG = { recognize: 'Recognize', say: 'Say', type: 'Write', answer: 'Answer' };
+function ladderHtml(ask) {
+  if (!ask) return '';
+  return `<span class="ladder" aria-label="Level: ${RUNG[ask]}">${LADDER.map((r) => `<span class="${r === ask ? 'on' : ''}">${RUNG[r]}</span>`).join('')}</span>`;
+}
+
+// What each rating does, said on the button, so Not yet reads as "keep it coming", not "fail".
+function ratingButtons(st, p, { weak = false } = {}) {
+  const prev = store.get().srs[p.key] ? store.previewPass(p.key) : null;
+  const gotSub = st.kind === 'check' ? 'Starts reviews: back tomorrow'
+    : st.kind === 'again' ? 'Done for this session'
+      : prev?.keep ? `Next check ${fmtGap(prev.inMs)}` : prev?.locked ? 'Locked in' : prev ? `Next check ${fmtGap(prev.inMs)}` : 'Back later';
+  const againSub = st.kind === 'again' || st.kind === 'check' ? 'Again in a minute' : 'Again in a minute, and tomorrow';
+  return `<div class="fc-actions rate">
+      <button class="fc-btn ${weak ? 'got' : 'again'}" data-action="ss-again"><b>Not yet</b><small>${againSub}</small></button>
+      <button class="fc-btn ${weak ? 'again' : 'got'}" data-action="ss-got"><b>Got it</b><small>${gotSub}</small></button>
+    </div>
+    <p class="fine center">Not sure? Choose Not yet. It isn't failing: seeing it again soon is how it sticks.</p>`;
 }
 
 // After a tap moves the session on: play what the new step needs.
@@ -979,6 +1032,7 @@ function sessionAutoplay() {
   if (st.kind === 'new') plListen();
   else if (st.kind === 'listen') speakPhrase(st.p.id);
   else if (st.ask === 'answer' && st.reply) speakPhrase(st.reply.id); // they speak first
+  else if (st.ask === 'recognize') speakPhrase(st.p.id);
 }
 
 function sessionAdvance() {
@@ -1466,15 +1520,14 @@ function playerInner() {
     next = `${typeResult({ check: pl.check, typed: pl.typed })}
       ${ok ? lockHint(p) : ''}
       <button class="cta pp-next" data-action="${ok ? 'ss-got' : 'ss-again'}">${ok ? `${icon('check')} Next` : `Next ${icon('arrow')}`}</button>
-      <p class="fine center">${ok ? 'Counted as Got it.' : 'Counted as Not yet: it comes back sooner, which is how it sticks.'}</p>`;
+      <p class="fine center">${ok ? 'Counted as Got it.' : 'Counted as Not yet: again in a minute, and tomorrow. That’s how it sticks.'}</p>`;
   } else if (where === 'session' && step === 'reveal') {
     // Said: you judge, but if the phone's speech check heard little of it, Not yet is the honest default.
     const score = pl.take?.transcript ? mic.compare(p.target, pl.take.transcript, { charMode: !!L.lang.meta.no_spaces, alt: p.reading }).score : null;
     const weak = score != null && score < 0.5;
     next = `${pl.take ? '' : (pl.rec ? '' : `<button class="link-btn center" data-action="pp-mic">${icon('mic')} Say it and compare</button>`)}
-      ${weak ? '<p class="honest">Your phone only caught part of it. If you weren’t sure, Not yet brings it back sooner, which is how it sticks.</p>' : lockHint(p)}
-      <div class="fc-actions"><button class="fc-btn ${weak ? 'got' : 'again'}" data-action="ss-again">Not yet</button><button class="fc-btn ${weak ? 'again' : 'got'}" data-action="ss-got">Got it</button></div>
-      <p class="fine center">Got it = you said it right before you heard it.</p>`;
+      ${weak ? '<p class="honest">Your phone only caught part of it. If you weren’t sure, choose Not yet.</p>' : ''}
+      ${ratingButtons(session.steps[session.i], p, { weak })}`;
   } else if (where === 'session') {
     next = `<button class="${ready ? 'cta' : 'more-btn'} pp-next" data-action="ss-next">${upNext === 'check' ? 'Quick check' : upNext ? 'Next' : 'Finish'} ${icon('arrow')}</button>
        ${!ready && canPracticeAloud() ? '<p class="fine">Speaking is optional. Skip it whenever you like.</p>' : ''}`;
@@ -1746,6 +1799,14 @@ function speakPhrase(id) {
   tts.toggle(speechItem(p));
 }
 
+function updateBanner() {
+  if (document.getElementById('update-banner')) return;
+  const el = document.createElement('div');
+  el.id = 'update-banner';
+  el.innerHTML = '<span>A new version of Wayword is ready.</span><button class="pill-btn" data-action="do-update">Update</button>';
+  document.body.appendChild(el);
+}
+
 let toastTimer = null;
 function toast(text, ms = 7000) {
   let el = document.getElementById('toast');
@@ -1892,6 +1953,8 @@ document.addEventListener('click', (e) => {
   } else if (a === 'save-offline') {
     const sit = C.scenarios.find((x) => x.id === btn.dataset.id);
     if (sit) saveOffline(sitPhrases(sit), btn);
+  } else if (a === 'do-update') {
+    location.reload();
   } else if (a === 'reminder-sheet') {
     openSheet(reminderSheetHtml());
   } else if (a === 'reminder-ics') {
@@ -1944,6 +2007,12 @@ document.addEventListener('click', (e) => {
     pl.step = 'reveal';
     drawPlayer();
     plListen();
+  } else if (a === 'rc-pick') {
+    const st = session?.steps[session.i];
+    if (!st || st.picked != null) return;
+    st.picked = Number(btn.dataset.i);
+    drawSession();
+    document.querySelector('.lc-verdict')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' });
   } else if (a === 'lc-pick') {
     if (session.picked != null) return;
     session.picked = Number(btn.dataset.i);
@@ -2039,7 +2108,14 @@ async function boot() {
   window.addEventListener('hashchange', route);
   route();
   if ('serviceWorker' in navigator && location.protocol === 'https:') {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    const hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register('./sw.js').then((reg) => reg.update()).catch(() => {});
+    // A new version took over: reload now, unless you're mid-session (then offer it).
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!hadController) return; // first install, nothing changed for you
+      if (/\/(session|practice\/run)/.test(location.hash)) updateBanner();
+      else location.reload();
+    });
   }
 }
 

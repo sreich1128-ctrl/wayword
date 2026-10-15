@@ -81,12 +81,13 @@ test('listening check can use a reply from the situation', () => {
 
 import { reviewMode } from '../js/plan.js';
 
-test('reviews get harder as a phrase gets stronger', () => {
-  assert.equal(reviewMode({ box: 1 }), 'say');
-  assert.equal(reviewMode({ box: 2 }), 'type');
-  assert.equal(reviewMode({ box: 3, hasReply: true }), 'answer');
-  assert.equal(reviewMode({ box: 3 }), 'type', 'no reply fits: type instead');
-  assert.equal(reviewMode({ box: 4 }), 'type');
-  assert.equal(reviewMode({ box: 2, canType: false }), 'say');
+test('reviews climb a ladder: recognize, say, write, answer', () => {
+  assert.equal(reviewMode({ box: 1 }), 'recognize');
+  assert.equal(reviewMode({ box: 2 }), 'say');
+  assert.equal(reviewMode({ box: 3 }), 'type');
+  assert.equal(reviewMode({ box: 4, hasReply: true }), 'answer');
+  assert.equal(reviewMode({ box: 4 }), 'say', 'no reply fits: say it instead');
+  assert.equal(reviewMode({ box: 3, canType: false }), 'say');
   assert.deepEqual([0, 1, 2].map((stage) => reviewMode({ keep: true, stage, hasReply: true })), ['type', 'answer', 'say']);
+  assert.equal(reviewMode({ keep: true, stage: 1 }), 'type', 'keep check without a reply: type');
 });

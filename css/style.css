@@ -905,3 +905,13 @@ body.showit-open { overflow: hidden; }
 .lc-verdict { margin: 14px 2px 8px; }
 .reminder-row { margin: 14px 0; }
 .reminder-row input { font: inherit; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); }
+
+/* Review ladder (Recognize · Say · Write · Answer) and rating buttons that say what they do */
+.ladder { display: inline-flex; gap: 3px; margin-left: 6px; vertical-align: middle; }
+.ladder span { font-size: 10px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase; padding: 2px 6px; border-radius: 99px; background: var(--surface-2); color: var(--faint); }
+.ladder span.on { background: var(--accent); color: #fff; }
+.fc-actions.rate .fc-btn { display: grid; place-content: center; gap: 2px; min-height: 64px; padding: 6px 8px; }
+.fc-actions.rate .fc-btn b { font-size: 16px; }
+.fc-actions.rate .fc-btn small { font-size: 12px; font-weight: 600; opacity: .85; }
+#update-banner { position: fixed; left: 12px; right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 70; display: flex; align-items: center; gap: 10px; justify-content: space-between; padding: 10px 12px; border-radius: 14px; background: var(--ink); color: var(--bg); font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgb(0 0 0 / .2); }
+#update-banner .pill-btn { background: var(--accent); color: #fff; border-color: var(--accent); }

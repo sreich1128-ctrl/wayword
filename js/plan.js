@@ -62,14 +62,16 @@ export function readiness(sit, isLearned, has = () => true) {
   return { n: ids.length, ready: ids.filter(isLearned).length };
 }
 
-// How a review asks for a phrase, getting harder as the phrase gets stronger ("desirable difficulty"):
-//   say    - see the English, say it, then hear it (box 1)
-//   type   - see the English, type it; checked letter by letter (box 2, box 4)
-//   answer - hear something staff say, answer with this phrase (box 3, when a reply fits)
-// Keep checks on Locked in phrases rotate through all three.
+// How a review asks for a phrase: a ladder from easiest to hardest, one rung per review box.
+//   recognize - hear and see it, pick the meaning (graded by the app)        box 1
+//   say       - see the English, say it, then hear the native voice           box 2
+//   type      - see the English, type it from memory (graded by the app)      box 3
+//   answer    - hear something staff say and answer with it                   box 4
+// Keep checks on Locked in phrases rotate through the hard rungs (type, answer, say).
+export const LADDER = ['recognize', 'say', 'type', 'answer'];
 export function reviewMode({ box = 1, keep = false, stage = 0, hasReply = false, canType = true } = {}) {
-  let mode = keep ? ['type', 'answer', 'say'][stage % 3] : box <= 1 ? 'say' : box === 3 ? 'answer' : 'type';
-  if (mode === 'answer' && !hasReply) mode = keep ? 'say' : 'type';
+  let mode = keep ? ['type', 'answer', 'say'][stage % 3] : LADDER[Math.min(Math.max(box, 1), 4) - 1];
+  if (mode === 'answer' && !hasReply) mode = keep ? 'type' : 'say';
   if (mode === 'type' && !canType) mode = 'say';
   return mode;
 }

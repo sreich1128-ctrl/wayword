@@ -309,3 +309,10 @@ The owner found phrases weren't sticking. Changes, grounded in the memory resear
 - **Honest grading.** Typed answers grade themselves: right words (accents may be off) = Got it, anything else = Not yet. For spoken answers, if the phone's speech check caught less than half, "Not yet" becomes the highlighted choice.
 - **Listening checks end with saying it back** (production, not just recognition).
 - **Daily reminder** (More → Daily reminder): a repeating calendar event (.ics for Apple Calendar, or a Google Calendar link) at a chosen time, opening today's session.
+
+### Ladder and clearer ratings (2026-10-15, same day)
+
+The owner kept pressing "Got it" because it wasn't clear what "Not yet" did. Changes:
+- **The ladder is now Recognize → Say → Write → Answer** (box 1 → 4; `LADDER` in `js/plan.js`). Recognize (hear and see it, pick the meaning from 3) and Write (type it) are graded by the app, so self-rating only happens on the speaking rungs. A small indicator above each review shows the four rungs and the current one.
+- **Rating buttons say what they do:** "Not yet: again in a minute, and tomorrow" / "Got it: next check in 7 days" (or "Locked in", or "Starts reviews: back tomorrow" for new phrases), plus "Not sure? Choose Not yet. It isn't failing: seeing it again soon is how it sticks."
+- **Updates:** when a new version takes over, the app reloads itself (or offers "Update" mid-session). More shows the version number.
