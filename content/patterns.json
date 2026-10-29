@@ -1,5 +1,5 @@
 {
-  "_doc": "Power-pattern helpers. 'related' lists existing concept IDs that are built on the pattern. 'substitutions' is keyed by language code; each item is {\"english\", \"target\", \"pronunciation_easy\"} and must come from a vetted source. Empty means not in the dataset yet; the UI says so instead of inventing words. 'banks' says which word banks (content/vocab.json) fit the blank; 'examples' lists the words each language writes out as full sentences in content/added/<code>.json under 'examples' (grammar-aware: never built by joining strings).",
+  "_doc": "Power-pattern helpers. 'related' lists existing concept IDs that are built on the pattern. 'substitutions' is keyed by language code; each item is {\"english\", \"target\", \"pronunciation_easy\"} and must come from a vetted source. Empty means not in the dataset yet; the UI says so instead of inventing words. 'banks' says which word banks (content/vocab.json) fit the blank; 'examples' lists the Swap it variants in chip order (see js/variants.js): a vocab word id, or { id, label, english, same_as? } for a whole-sentence variant; same_as reuses an existing phrase. Each language writes them out as full sentences in content/added/<code>.json under 'examples'.",
   "patterns": {
     "where_is": {
       "related": [
@@ -16,8 +16,7 @@
         "word_bus_stop",
         "word_pharmacy",
         "word_atm",
-        "word_supermarket",
-        "word_exit"
+        "word_supermarket"
       ]
     },
     "nearest": {
@@ -68,7 +67,6 @@
         "word_tea",
         "word_beer",
         "word_glass_of_wine",
-        "word_orange_juice",
         "word_menu",
         "word_receipt"
       ]
@@ -85,7 +83,6 @@
       "examples": [
         "word_tea",
         "word_beer",
-        "word_glass_of_wine",
         "word_orange_juice",
         "word_bread",
         "word_water"
@@ -139,8 +136,7 @@
         "word_peanuts",
         "word_gluten",
         "word_shellfish",
-        "word_milk",
-        "word_eggs"
+        "word_milk"
       ]
     },
     "without": {
@@ -221,8 +217,7 @@
         "word_shower",
         "word_wi_fi",
         "word_tv",
-        "word_hot_water",
-        "word_door_lock"
+        "word_hot_water"
       ]
     },
     "lost_my": {
@@ -238,7 +233,6 @@
         "word_passport",
         "word_phone",
         "word_wallet",
-        "word_bag",
         "word_keys",
         "word_room_key"
       ]

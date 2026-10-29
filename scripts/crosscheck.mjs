@@ -3,6 +3,7 @@
 //   content/added/crosscheck.json  status per draft: match · close · differs · none (+ native wordings)
 //   docs/CROSSCHECK.md             the report, with native wordings to compare where we differ
 // Run: node scripts/crosscheck.mjs   (responses are cached in .cache/tatoeba.json, so reruns are fast)
+import { variantDefs, variantEnglish } from '../js/variants.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 
 const root = new URL('..', import.meta.url);
@@ -23,6 +24,8 @@ const NOTE = {
 
 const concepts = new Map(read('content/concepts.json').map((c) => [c.id, c]));
 const words = new Map(read('content/vocab.json').words.map((w) => [w.id, w]));
+const patternsConf = read('content/patterns.json').patterns;
+const exampleEnglish = (pid, variantId) => { const d = variantDefs(patternsConf[pid], words).find((x) => x.id === variantId); return d ? variantEnglish(concepts.get(pid).english, d) : ''; };
 const replies = read('content/replies.json').replies;
 const AMBIGUOUS = new Set(['left', 'right']);
 const fillEnglish = (frame, w) => frame.replace(/\b((?:the|a|an|my) (?:\w+ )?)?_{2,}/i, (m, art) => (art ? art + w.english : w.in_sentence || w.english));
@@ -37,7 +40,7 @@ function draftsFor(code) {
     out.push({ key: e.id, english: c.english, target: e.target });
   }
   for (const [pid, list] of Object.entries(a.examples || {})) {
-    for (const x of list) out.push({ key: `${pid}~${x.word}`, english: fillEnglish(concepts.get(pid).english, words.get(x.word)), target: x.target });
+    for (const x of list) out.push({ key: `${pid}~${x.word}`, english: exampleEnglish(pid, x.word), target: x.target });
   }
   for (const r of replies) if (a.replies?.[r.id]) out.push({ key: `reply~${r.id}`, english: r.english, target: a.replies[r.id].target });
   return out;

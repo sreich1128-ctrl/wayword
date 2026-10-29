@@ -915,3 +915,13 @@ body.showit-open { overflow: hidden; }
 .fc-actions.rate .fc-btn small { font-size: 12px; font-weight: 600; opacity: .85; }
 #update-banner { position: fixed; left: 12px; right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 70; display: flex; align-items: center; gap: 10px; justify-content: space-between; padding: 10px 12px; border-radius: 14px; background: var(--ink); color: var(--bg); font-size: 14px; font-weight: 600; box-shadow: 0 8px 24px rgb(0 0 0 / .2); }
 #update-banner .pill-btn { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Swap it: one row of thumb-sized chips under a pattern phrase; scrolls sideways, never wraps off-screen */
+.swap { margin-top: 10px; display: grid; gap: 6px; }
+.swap-k { font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--accent-ink); }
+.swap { min-width: 0; }
+.swap-row { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; max-width: 100%; padding: 2px 0 4px; scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; }
+.swap-row::-webkit-scrollbar { display: none; }
+.swap-chip { flex: none; scroll-snap-align: start; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); font-weight: 700; font-size: 15px; color: var(--ink); white-space: nowrap; }
+.swap-chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.swap-chip:focus-visible { outline: 3px solid var(--tint-strong); }

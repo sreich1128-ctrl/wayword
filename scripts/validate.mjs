@@ -1,6 +1,7 @@
 // Checks content/ for structural problems. Never edits anything.
 // Run: node scripts/validate.mjs
 import { readFileSync, existsSync } from 'node:fs';
+import { variantDefs } from '../js/variants.js';
 
 const read = (p) => JSON.parse(readFileSync(new URL(`../content/${p}`, import.meta.url), 'utf8'));
 const errors = [];
@@ -19,6 +20,7 @@ const ids = new Set(concepts.map((c) => c.id));
 const vocab = read('vocab.json');
 const replies = read('replies.json').replies;
 const wordIds = new Set(vocab.words.map((w) => w.id));
+const wordsById = new Map(vocab.words.map((w) => [w.id, w]));
 const readAdded = (code) => (existsSync(new URL(`../content/added/${code}.json`, import.meta.url)) ? read(`added/${code}.json`) : null);
 const catIds = new Set(categories.map((c) => c.id));
 const prios = new Set(tiers.flatMap((t) => t.includes));
@@ -71,7 +73,9 @@ for (const l of languages) {
     }
     for (const k of Object.keys(added.vocab || {})) if (!wordIds.has(k)) errors.push(`added/${l.code}: unknown word ${k}`);
     for (const [pid, p] of Object.entries(patterns)) {
-      for (const w of p.examples || []) {
+      for (const def of variantDefs(p, wordsById)) {
+        if (def.same_as) continue; // reuses an existing phrase
+        const w = def.id;
         const x = (added.examples?.[pid] || []).find((e) => e.word === w);
         if (!x?.target || !x?.pronunciation_easy) errors.push(`added/${l.code}: example ${pid} + ${w} missing`);
         else if (x.target.includes('___')) errors.push(`added/${l.code}: example ${pid} + ${w} still has a blank`);
@@ -100,7 +104,12 @@ for (const id of flight.rescue || []) if (!ids.has(id)) errors.push(`flight.json
 for (const [pid, p] of Object.entries(patterns)) {
   if (!ids.has(pid)) errors.push(`patterns.json: unknown pattern ${pid}`);
   for (const id of p.related || []) if (!ids.has(id)) errors.push(`patterns.json ${pid}: unknown related ${id}`);
-  for (const w of p.examples || []) if (!wordIds.has(w)) errors.push(`patterns.json ${pid}: unknown example word ${w}`);
+  for (const v of p.examples || []) {
+    if (typeof v === 'string') { if (!wordIds.has(v)) errors.push(`patterns.json ${pid}: unknown example word ${v}`); continue; }
+    if (!v.id || !v.label) errors.push(`patterns.json ${pid}: a variant needs an id and a label`);
+    if (v.same_as && !ids.has(v.same_as)) errors.push(`patterns.json ${pid}: variant ${v.id} same_as unknown concept ${v.same_as}`);
+    if (!v.same_as && !v.english) errors.push(`patterns.json ${pid}: variant ${v.id} needs its English sentence`);
+  }
 }
 
 // Sound guides: every example must be a real concept, and any highlighted text must appear in that phrase.

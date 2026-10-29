@@ -190,6 +190,27 @@ const sayTipNote = (p, link = true) => (p.say_tip
   ? `<p class="note"><span class="note-k">How it’s said</span>${esc(p.say_tip)}${link ? ` <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a>` : ''}</p>`
   : '');
 
+/* ---------- Swap it: pattern variations (js/variants.js) ---------- */
+
+// The variant picked for each frame, kept while the app is open ('' = the frame itself).
+const swapSel = {};
+const variantsOf = (p) => (L.examples[p.id] || []);
+function shownFor(p) {
+  const id = swapSel[p.id];
+  return (id && variantsOf(p).find((v) => v.id === id)) || p;
+}
+
+// One row of chips: the frame first (its default), then each variant. Scrolls sideways on narrow screens.
+function swapChips(p, selectedId, action) {
+  const vs = variantsOf(p);
+  if (!vs.length) return '';
+  const chip = (id, label, on) => `<button class="swap-chip ${on ? 'on' : ''}" data-action="${action}" data-pid="${esc(p.id)}" data-v="${esc(id)}" aria-pressed="${on}">${esc(label)}</button>`;
+  return `<div class="swap" role="group" aria-label="Swap the blank">
+      <span class="swap-k">Swap it</span>
+      <div class="swap-row">${chip('', '___', !selectedId)}${vs.map((v) => chip(v.id, v.label, selectedId === v.id)).join('')}</div>
+    </div>`;
+}
+
 function phraseCard(p) {
   const fav = store.isFav(p.key);
   const st = store.status(p.key);
@@ -200,19 +221,20 @@ function phraseCard(p) {
   if (p.example) notes.push(`<p class="note"><span class="note-k">Example</span><span ${nativeAttrs(L.lang)}>${esc(p.example)}</span></p>`);
   if (p.response) notes.push(`<p class="note"><span class="note-k">Likely reply</span><span ${nativeAttrs(L.lang)}>${esc(p.response)}</span></p>`);
   if (p.missing) return `<article class="card lk" data-key="${esc(p.key)}" data-id="${esc(p.id)}"><p class="en">${withSlots(p.english)}</p>${phraseLines(p)}</article>`;
+  const d = shownFor(p); // the frame, or the variant picked with Swap it
   return `
   <article class="card lk ${p.type === 'pattern' ? 'is-pattern' : ''}" data-key="${esc(p.key)}" data-id="${esc(p.id)}">
     <div class="lk-main">
-      <div class="lk-text">${phraseLines(p)}</div>
-      ${canSpeak() ? `<button class="round-btn lk-play listen" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
+      <div class="lk-text">${phraseLines(d)}</div>
+      ${canSpeak() ? `<button class="round-btn lk-play listen" data-action="speak" data-id="${esc(d.id)}" data-key="${esc(d.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}
     </div>
-    ${notes.length ? `<div class="notes">${notes.join('')}</div>` : ''}
-    ${examplesHtml(p)}
+    ${swapChips(p, d === p ? '' : d.id, 'swap')}
+    ${d === p && notes.length ? `<div class="notes">${notes.join('')}</div>` : d !== p && d.say_tip ? `<div class="notes">${sayTipNote(d)}</div>` : ''}
     <div class="card-actions">
-      <button class="pill-btn" data-action="show-it" data-id="${esc(p.id)}">${icon('expand')}<span>Show</span></button>
-      ${canPracticeAloud() ? `<button class="pill-btn" data-action="say-it" data-id="${esc(p.id)}">${icon('mic')}<span>Practise</span></button>` : ''}
+      <button class="pill-btn" data-action="show-it" data-id="${esc(d.id)}">${icon('expand')}<span>Show</span></button>
+      ${canPracticeAloud() ? `<button class="pill-btn" data-action="say-it" data-id="${esc(p.id)}" data-v="${d === p ? '' : esc(d.id)}">${icon('mic')}<span>Practise</span></button>` : ''}
       <span class="lk-spacer"></span>
-      ${draftTag(p)}
+      ${draftTag(d)}
       ${st ? `<span class="status-tag ${st}">${statusLabel(st)}</span>` : ''}
       ${p.type === 'pattern' ? '<span class="lk-kind">Pattern</span>' : ''}
       <button class="icon-btn fav ${fav ? 'on' : ''}" data-action="fav" aria-pressed="${fav}" aria-label="Save">${icon('star')}</button>
@@ -223,11 +245,6 @@ function phraseCard(p) {
 // A frame's written-out examples ("Um bilhete para o aeroporto"), each playable.
 function exampleRow(x) {
   return `<div class="pp-more-row"><div><b ${nativeAttrs(L.lang)}>${withSlots(x.target)}</b><small>${withSlots(x.english)}</small></div>${canSpeak() ? `<button class="round-btn small listen" data-action="speak" data-id="${esc(x.id)}" data-key="${esc(x.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>` : ''}</div>`;
-}
-function examplesHtml(p) {
-  const list = L.examples[p.id];
-  if (!list?.length) return '';
-  return `<details class="examples"><summary>Fill the blank · ${list.length} examples ${draftTag({ draft: true })}</summary>${list.map(exampleRow).join('')}</details>`;
 }
 
 // "Show this": one phrase, full-screen and large, to hand the phone to someone.
@@ -1421,7 +1438,7 @@ function mountPlayer(p, where, mode = 'learn') {
 
 // Only call from a tap: phones block audio that starts on its own.
 function plListen() {
-  if (pl && canSpeak()) speakPhrase(pl.p.id);
+  if (pl && canSpeak()) speakPhrase((pl.view || pl.p).id);
 }
 
 function stopPlayerAudio() {
@@ -1487,7 +1504,9 @@ function plType(reveal = false) {
 
 function playerInner() {
   if (pl.mode === 'recall' && pl.step === 'prompt') return promptInner();
-  const { p, where, step } = pl;
+  const { where, step } = pl;
+  const frame = pl.p;
+  const p = pl.view || pl.p; // Swap it: everything below shows, plays and compares the picked variant
   const cue = listenFor(p);
   const hl = !p.say_tip && p.sound_cue?.mark ? markText(p.target, p.sound_cue.mark, p.sound_cue.hl) : undefined;
   const notes = [p.usage_note, p.regional_note].filter(Boolean).map((t) => `<p class="note">${esc(t)}</p>`).join('');
@@ -1540,11 +1559,11 @@ function playerInner() {
       ${p.draft ? `<p class="pp-draft">${draftTag(p)} ${p.native_match ? 'A native speaker wrote this exact sentence (Tatoeba).' : 'Not yet checked by a native speaker.'}</p>` : ''}
       ${cue ? `<p class="pp-cue"><span class="note-k">Listen for</span>${cue} <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a></p>` : ''}
       ${notes ? `<div class="notes">${notes}</div>` : ''}
-    </article>
+    ${swapChips(frame, pl.view ? pl.view.id : '', 'pp-swap')}</article>
     ${stage ? `<div class="pp-stage">${stage}</div>` : ''}
     ${compare}
     ${small ? `<div class="pp-small">${small}</div>` : ''}
-    ${['compare', 'reveal', 'done'].includes(step) ? tryAnotherHtml(p) : ''}
+    ${['compare', 'reveal', 'done'].includes(step) ? tryAnotherHtml(frame) : ''}
     ${next}`;
 }
 
@@ -1559,8 +1578,7 @@ function relatedPhrases(p) {
 }
 
 function tryAnotherHtml(p) {
-  const ex = L.examples[p.id];
-  if (ex?.length) return `<div class="pp-more"><p class="more-k">Fill the blank ${draftTag({ draft: true })}</p>${ex.slice(0, 4).map(exampleRow).join('')}</div>`;
+  if (variantsOf(p).length) return ''; // frames with variants have Swap it chips instead
   const rel = relatedPhrases(p);
   if (!rel.length) return '';
   return `<div class="pp-more"><p class="more-k">${C.patterns[p.id] ? 'Same frame, other uses' : 'Goes with'}</p>
@@ -1570,7 +1588,8 @@ function tryAnotherHtml(p) {
 
 // After recording: the guided playback, and what the phone's speech check understood.
 function compareHtml() {
-  const { p, take, guide } = pl;
+  const { take, guide } = pl;
+  const p = pl.view || pl.p;
   const lang = L.lang;
   let heard = '';
   if (take.transcript) {
@@ -1613,20 +1632,20 @@ function plGuide() {
     playTake(run.take.url, () => pause(() => {
       if (!canSpeak()) { mark(null); return; }
       mark('n2');
-      tts.play(speechItem(run.p)); // plSync clears the highlight when it ends
+      tts.play(speechItem(run.view || run.p)); // plSync clears the highlight when it ends
     }));
   };
   tts.stop();
   if (!canSpeak()) { meThenNative(); return; }
   mark('n1');
-  tts.play(speechItem(run.p), () => pause(meThenNative));
+  tts.play(speechItem(run.view || run.p), () => pause(meThenNative));
 }
 
 // Audio events move the player along: listening done → your turn; guided playback done → idle.
 function plSync() {
   if (!pl) return;
   const st = tts.getState();
-  if (st.status !== 'done' || st.item?.key !== pl.p.key) return;
+  if (st.status !== 'done' || st.item?.key !== (pl.view || pl.p).key) return;
   if (pl.step === 'listen') { pl.step = canPracticeAloud() ? 'say' : 'done'; drawPlayer(); }
   else if (pl.guide === 'n2') { pl.guide = null; drawPlayer(); }
 }
@@ -1651,8 +1670,9 @@ function plMic() {
   drawPlayer();
 }
 
-function openSayIt(p) {
+function openSayIt(p, variantId = '') {
   mountPlayer(p, 'sheet');
+  if (variantId) pl.view = variantsOf(p).find((v) => v.id === variantId) || null;
   openSheet(`<div class="sheet-head"><h2>Say it</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
     <div id="pp" class="pp">${playerInner()}</div>`);
   plListen();
@@ -1873,7 +1893,7 @@ document.addEventListener('click', (e) => {
     tts.setSpeed(btn.dataset.speed);
     syncListen();
   } else if (a === 'say-it') {
-    openSayIt(L.byId.get(btn.dataset.id));
+    openSayIt(L.byId.get(btn.dataset.id), btn.dataset.v || '');
   } else if (a === 'pp-mic') {
     if (pl) plMic();
   } else if (a === 'pp-to-say') {
@@ -1946,7 +1966,7 @@ document.addEventListener('click', (e) => {
   } else if (a === 'pl-close') {
     tts.stop();
   } else if (a === 'show-it') {
-    openShowIt(L.byId.get(btn.dataset.id));
+    openShowIt(L.byId.get(btn.dataset.id) || L.extraById.get(btn.dataset.id));
   } else if (a === 'show-close') {
     tts.stop();
     closeShowIt();
@@ -1995,6 +2015,30 @@ document.addEventListener('click', (e) => {
     sessionAdvance();
   } else if (a === 'ss-got' || a === 'ss-again') {
     sessionRate(a === 'ss-got');
+  } else if (a === 'pp-swap') {
+    // Swap it inside the player: show, play, record and compare the picked variant.
+    if (!pl) return;
+    const v = variantsOf(pl.p).find((x) => x.id === btn.dataset.v) || null;
+    capture?.stop();
+    stopPlayerAudio();
+    tts.stop();
+    Object.assign(pl, { view: v, take: null, guide: null, rec: false, finishing: false, interim: '' });
+    if (pl.mode === 'learn') pl.step = canSpeak() ? 'listen' : canPracticeAloud() ? 'say' : 'done';
+    drawPlayer();
+    plListen();
+  } else if (a === 'swap') {
+    // Swap it on a phrase card: the card shows the picked sentence, and plays it.
+    const p = L.byId.get(btn.dataset.pid);
+    if (!p) return;
+    swapSel[p.id] = btn.dataset.v || '';
+    const card = btn.closest('.card');
+    const row = card.querySelector('.swap-row');
+    const scroll = row ? row.scrollLeft : 0;
+    card.outerHTML = phraseCard(p);
+    const fresh = document.querySelector(`.card[data-id="${CSS.escape(p.id)}"] .swap-row`);
+    if (fresh) fresh.scrollLeft = scroll;
+    syncListen();
+    if (btn.dataset.v && canSpeak()) speakPhrase(shownFor(p).id);
   } else if (a === 'pp-ask-say') {
     if (!pl) return;
     pl.ask = 'say';

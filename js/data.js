@@ -2,6 +2,8 @@
 // concept list by `id`. Language strings are passed through untouched: this
 // module never edits, normalizes or fills in translations.
 
+import { buildVariants } from './variants.js';
+
 const BASE = './content/';
 
 async function getJSON(path) {
@@ -133,26 +135,15 @@ export async function loadLanguage(content, code) {
     .filter(([k]) => !content.conceptById.has(k))
     .map(([k, v]) => ({ key: k, text: v }));
 
-  // Things that aren't phrase cards but can be heard and shown: example sentences for the
-  // frames, and replies you'll hear. Each looks like a phrase (id, key, target, pron, english).
+  // Things that aren't phrase cards but can be heard and shown: pattern variations ("Swap it",
+  // js/variants.js) and replies you'll hear. Each looks like a phrase (id, key, target, pron, english).
   const extraById = new Map();
-  // English for an example: the frame with the word in it ("Where is the train station?").
-  // If the frame already has "the"/"a"/"my" just before the blank ("the nearest ___"), the bare word goes in.
-  const words = new Map((content.vocab.words || []).map((w) => [w.id, w]));
-  const fillEnglish = (frame, w) => frame.replace(/\b((?:the|a|an|my) (?:\w+ )?)?_{2,}/i, (m, art) => (art ? art + w.english : w.in_sentence || w.english));
-  const examples = {};
-  for (const [pid, list] of Object.entries(added?.examples || {})) {
-    const frame = content.conceptById.get(pid);
-    examples[pid] = list.map((x) => {
-      const w = words.get(x.word);
-      const en = frame && w ? fillEnglish(frame.english, w) : (w?.english || '');
-      const item = { id: `${pid}~${x.word}`, key: `${code}:${pid}~${x.word}`, word: x.word, target: x.target, pron: x.pronunciation_easy, english: en, draft: true };
-      if (checked[item.id]?.status === 'match') item.native_match = true;
-      if (x.reading) item.reading = x.reading;
-      extraById.set(item.id, item);
-      return item;
-    });
-  }
+  const byIdAll = new Map(phrases.map((p) => [p.id, p]));
+  const examples = buildVariants({
+    code, concepts: content.conceptById, patterns: content.patterns,
+    words: new Map((content.vocab.words || []).map((w) => [w.id, w])), added, phraseById: byIdAll, checked,
+  });
+  for (const list of Object.values(examples)) for (const x of list) if (!x.same_as) extraById.set(x.id, x);
   const replies = [];
   for (const r of content.replies) {
     const own = r.same_as ? entryById.get(r.same_as) : added?.replies?.[r.id];
@@ -168,7 +159,7 @@ export async function loadLanguage(content, code) {
     lang,
     file,
     phrases,
-    byId: new Map(phrases.map((p) => [p.id, p])),
+    byId: byIdAll,
     extraById,
     examples,
     replies,

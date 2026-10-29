@@ -2,12 +2,15 @@
 // (ChatGPT, Gemini). Each sheet lists the drafts that no native-written sentence confirmed
 // (content/added/crosscheck.json), and asks for answers as JSON that scripts/import-review.mjs reads.
 // Run: node scripts/review-sheets.mjs
+import { variantDefs, variantEnglish } from '../js/variants.js';
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 
 const root = new URL('..', import.meta.url);
 const read = (p) => JSON.parse(readFileSync(new URL(p, root), 'utf8'));
 const concepts = new Map(read('content/concepts.json').map((c) => [c.id, c]));
 const words = new Map(read('content/vocab.json').words.map((w) => [w.id, w]));
+const patternsConf = read('content/patterns.json').patterns;
+const exampleEnglish = (pid, variantId) => { const d = variantDefs(patternsConf[pid], words).find((x) => x.id === variantId); return d ? variantEnglish(concepts.get(pid).english, d) : ''; };
 const replies = read('content/replies.json').replies;
 const cross = read('content/added/crosscheck.json').results;
 const langs = read('content/languages.json');
@@ -26,7 +29,7 @@ for (const l of langs) {
     const c = concepts.get(e.id);
     add(e.id, c.english, e, [c.english.includes('___') ? 'Frame: ___ is filled with a word.' : '', SAFETY.has(e.id) ? 'SAFETY: allergy/emergency.' : '', e.id === 'left' || e.id === 'right' ? 'Direction (turn left/right), not "correct".' : ''].filter(Boolean).join(' '));
   }
-  for (const [pid, list] of Object.entries(a.examples || {})) for (const x of list) add(`${pid}~${x.word}`, fillEnglish(concepts.get(pid).english, words.get(x.word)), x, SAFETY.has(pid) ? 'SAFETY: allergy/emergency.' : '');
+  for (const [pid, list] of Object.entries(a.examples || {})) for (const x of list) add(`${pid}~${x.word}`, exampleEnglish(pid, x.word), x, SAFETY.has(pid) ? 'SAFETY: allergy/emergency.' : '');
   for (const r of replies) if (a.replies?.[r.id]) add(`reply~${r.id}`, r.english, a.replies[r.id], 'Said TO the traveller by staff.');
   for (const [id, w] of Object.entries(a.vocab || {})) add(`word~${id}`, words.get(id).english, w, 'A single word, as it would appear inside a sentence.');
   total += rows.length;

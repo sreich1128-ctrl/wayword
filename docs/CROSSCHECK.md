@@ -1,6 +1,6 @@
 # Cross-check against native-written sentences
 
-Generated 2026-10-13 by `node scripts/crosscheck.mjs`. Source: [Tatoeba](https://tatoeba.org), sentences translated by native-speaker volunteers (CC BY 2.0 FR). Each draft phrase, example and reply is looked up by its exact English.
+Generated 2026-10-29 by `node scripts/crosscheck.mjs`. Source: [Tatoeba](https://tatoeba.org), sentences translated by native-speaker volunteers (CC BY 2.0 FR). Each draft phrase, example and reply is looked up by its exact English.
 
 - **match:** a native wrote exactly our draft.
 - **close:** at least 80% the same (often punctuation, an article, or word order).
