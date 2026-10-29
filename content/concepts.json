@@ -782,5 +782,82 @@
     "priority": "explore",
     "english": "I need to call someone.",
     "type": "phrase"
+  },
+  {
+    "id": "do_you_have",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "Do you have ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "how_much_is",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "How much is ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "i_need",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "I need ___, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "is_there_nearby",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "Is there a ___ nearby?",
+    "type": "pattern"
+  },
+  {
+    "id": "pay_with",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "Can I pay with ___?",
+    "type": "pattern"
+  },
+  {
+    "id": "can_you",
+    "category": "power_patterns",
+    "priority": "core",
+    "english": "Can you ___, please?",
+    "type": "pattern"
+  },
+  {
+    "id": "like_without",
+    "category": "power_patterns",
+    "priority": "travel",
+    "english": "I'd like ___ without ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "can_i_here",
+    "category": "power_patterns",
+    "priority": "travel",
+    "english": "Can I ___ here?",
+    "type": "pattern"
+  },
+  {
+    "id": "looking_for",
+    "category": "power_patterns",
+    "priority": "travel",
+    "english": "I'm looking for ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "is_included",
+    "category": "power_patterns",
+    "priority": "travel",
+    "english": "Is ___ included?",
+    "type": "pattern"
+  },
+  {
+    "id": "where_can_i",
+    "category": "power_patterns",
+    "priority": "travel",
+    "english": "Where can I ___?",
+    "type": "pattern"
   }
 ]

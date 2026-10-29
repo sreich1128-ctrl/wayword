@@ -1,4 +1,4 @@
-# Review sheet: European Portuguese (184 items)
+# Review sheet: European Portuguese (229 items)
 
 Paste everything below the line into ChatGPT or Gemini (a fresh chat). Save the JSON it returns as `docs/review/pt-PT.<tool>.json` (for example `pt-PT.chatgpt.json`), or paste it back to Claude Code.
 
@@ -18,20 +18,20 @@ For EVERY item, reply with one JSON object per line inside a single ```json code
 - "ok" = a native speaker would say exactly this (or it's one of the normal ways to say it).
 - "fix" = wrong, unnatural, wrong variety/register, or a meaning error. Give the better version.
 - "unsure" = you can't tell; say why.
-Return all 184 keys, in order, and nothing else after the code block.
+Return all 229 keys, in order, and nothing else after the code block.
 
 | key | English | draft | pronunciation_easy | note |
 |---|---|---|---|---|
 | table_for | A table for ___, please. | Uma mesa para ___, por favor. | OO-mah MEH-zah PAH-rah, poor fah-VOR | Frame: ___ is filled with a word. The blank needs the number plus pessoa/pessoas, and the number agrees with feminine 'pessoa': uma pessoa, duas pessoas, três pessoas. A bare number ('para dois') is also heard but 'duas pessoas' is the safe form. |
 | menu_please | The menu, please. | A ementa, por favor. | ah ee-MEN-tah, poor fah-VOR | Ementa is the Portugal word (Brazil: cardápio). 'A carta' is also used in restaurants; 'o menu' in Portugal often means a set meal. |
-| allergic_to | I'm allergic to ___. | Sou alérgico a ___. | soh ah-LEHR-zhee-koo ah | Frame: ___ is filled with a word. SAFETY: allergy/emergency. SAFETY. Literal: 'I am allergic to ___.' Masculine speaker; a woman says 'Sou alérgica a ___.' The 'a' contracts with an article: a + o = ao (ao glúten, ao leite), a + a = à, a + os = aos; with a bare plural it stays 'a' (a frutos secos). 'Tenho alergia a ___' (I have an allergy to) is an equally common alternative. |
+| allergic_to | I'm allergic to ___. | Sou alérgico ___. | soh ah-LEHR-zhee-koo | Frame: ___ is filled with a word. SAFETY: allergy/emergency. SAFETY. Literal: 'I am allergic to ___.' Masculine speaker; a woman says 'Sou alérgica a ___.' The 'a' contracts with an article: a + o = ao (ao glúten, ao leite), a + a = à, a + os = aos; with a bare plural it stays 'a' (a frutos secos). 'Tenho alergia a ___' (I have an allergy to) is an equally common alternative. [Fixed 2026-10-14 per ChatGPT review.] |
 | without | Without ___, please. | Sem ___, por favor. | seng, poor fah-VOR | Frame: ___ is filled with a word. SAFETY: allergy/emergency. SAFETY. Literal: 'Without ___, please.' The noun goes in with no article (sem carne, sem leite). For a real allergy, pair it with 'Sou alérgico a ___' so staff understand it is not just a preference. |
 | to_go | To go, please. | Para levar, por favor. | PAH-rah luh-VAR, poor fah-VOR |  |
-| for_here | For here, please. | Para comer aqui, por favor. | PAH-rah koo-MEHR ah-KEE, poor fah-VOR | Literally 'to eat here'. For a drink only, 'Para beber aqui' fits better; 'É para aqui' is also heard. |
+| for_here | For here, please. | É para aqui, por favor. | eh PAH-rah ah-KEE, poor fah-VOR | Literally 'to eat here'. For a drink only, 'Para beber aqui' fits better; 'É para aqui' is also heard. [Fixed 2026-10-14 per ChatGPT review.] |
 | another_one | Another one, please. | Mais um, por favor. | mysh oong, poor fah-VOR | Agrees with the item: 'Mais um' for a masculine noun (café, copo), 'Mais uma' for a feminine one (cerveja, água). 'Outro/Outra, por favor' also works. |
 | ticket_to | A ticket to ___, please. | Um bilhete para ___, por favor. | oong bee-LYEH-tuh PAH-rah, poor fah-VOR | Frame: ___ is filled with a word. 'para' never contracts in writing, so the article goes inside the blank (para o aeroporto, para a praia). City names usually take no article (para Sintra), except a few like o Porto. |
 | does_this_go_to | Does this go to ___? | Vai para ___? | vy PAH-rah | Frame: ___ is filled with a word. Literally 'Does it go to ___?', said pointing at or to the driver of the bus/train; this avoids a gendered 'este/esta'. Fuller: 'Este autocarro vai para ___?' / 'Este comboio vai para ___?'. Article goes inside the blank (para o aeroporto). |
-| take_me_to | Take me to ___, please. | Leve-me a ___, por favor. | LEH-vuh-muh ah, poor fah-VOR | Frame: ___ is filled with a word. 'a' contracts with the article: ao aeroporto, à praia, ao hotel. In a taxi many people simply say 'Para o aeroporto, por favor.' |
+| take_me_to | Take me to ___, please. | Leve-me ___, por favor. | LEH-vuh-muh, poor fah-VOR | Frame: ___ is filled with a word. 'a' contracts with the article: ao aeroporto, à praia, ao hotel. In a taxi many people simply say 'Para o aeroporto, por favor.' [Fixed 2026-10-14 per ChatGPT review.] |
 | stop_here | Stop here, please. | Pare aqui, por favor. | PAH-ruh ah-KEE, poor fah-VOR |  |
 | next_departure | When does the next one leave? | Quando sai o próximo? | KWAN-doo sy oo PROH-see-moo | Masculine 'o próximo' assumes comboio/autocarro (both masculine); for a feminine noun (a camioneta) it is 'a próxima'. Note: próximo is said PROH-see-moo (x = s); the existing 'nearest' entry respells it PROK-see-moo, which a reviewer may want to fix. |
 | which_platform | Which platform? | Qual é a linha? | kwal eh ah LEE-nyah | Portuguese train stations (CP) label platforms 'Linha' (track). 'Plataforma' or 'cais' are understood but less used on signs. |
@@ -63,11 +63,23 @@ Return all 184 keys, in order, and nothing else after the code block.
 | lost_my | I lost my ___. | Perdi ___. | puhr-DEE | Frame: ___ is filled with a word. SAFETY: allergy/emergency. SAFETY. Literal: 'I lost ___.' The possessive goes in the blank and agrees with the noun: o meu passaporte, a minha carteira, as minhas chaves. 'Perdi-me' would mean 'I got lost', so the object must follow. |
 | not_well | I don't feel well. | Não me sinto bem. | nowng muh SEEN-too beng | SAFETY: allergy/emergency. SAFETY. Literal: 'I don't feel myself well' = I don't feel well. |
 | call_someone | I need to call someone. | Preciso de ligar a alguém. | pruh-SEE-zoo duh lee-GAR ah al-GAYNG | SAFETY: allergy/emergency. SAFETY. Literal: 'I need to call (phone) someone.' 'Ligar a' = phone; 'telefonar a alguém' is an equivalent. |
+| do_you_have | Do you have ___? | Tem ___? | teng | Frame: ___ is filled with a word. Polite você/o senhor form, matching the file's register (informal: 'Tens ___?'). The blank takes the noun with its article where English has one: Tem um mapa? Tem Wi-Fi? (uncountables take none). |
+| how_much_is | How much is ___? | Quanto custa ___? | KWAN-too KOOSH-tah | Frame: ___ is filled with a word. The blank is the noun with its article (um bilhete, o quarto). A plural noun needs 'Quanto custam ___?'. 'Quanto é ___?' is an equally common alternative. |
+| i_need | I need ___, please. | Preciso ___, por favor. | pruh-SEE-zoo, poor fah-VOR | Frame: ___ is filled with a word. SAFETY. Literal: 'I need (of) ___, please.' Portugal keeps 'de' after precisar, and it contracts with a definite article (de + o = do, de + a = da), so 'de' goes inside the blank: de ajuda, de água, de um táxi, do meu passaporte. 'Preciso de ajuda' = 'I need (of) help'; 'Preciso de um médico' = 'I need (of) a doctor' (already the need_doctor phrase). In speech 'de um' often becomes 'dum'. |
+| is_there_nearby | Is there a ___ nearby? | Há ___ aqui perto? | ah, ah-KEE PEHR-too | Frame: ___ is filled with a word. Literal: 'Is there ___ here near?' The blank takes um/uma agreeing with the noun's gender: um multibanco, uma farmácia. 'Há' is silent-h 'ah'. 'Há algum/alguma ___ aqui perto?' (any ___) is also very common. |
+| pay_with | Can I pay with ___? | Posso pagar com ___? | POH-soo pah-GAR kong | Frame: ___ is filled with a word. Cash breaks the pattern: Portugal says 'pagar em dinheiro' (pay in cash), not 'com dinheiro'. Card: 'com cartão' (no article); phone: 'com o telemóvel' (article goes in the blank). |
+| can_you | Can you ___, please? | Pode ___, por favor? | POH-duh, poor fah-VOR | Frame: ___ is filled with a word. Polite você/o senhor form (informal: 'Podes'). The blank is an infinitive; object pronouns attach with a hyphen in Portugal: ajudar-me, escrever-me isso. |
+| like_without | I'd like ___ without ___. | Queria ___ sem ___. | kuh-REE-ah seng | Frame: ___ is filled with a word. First blank takes um/uma agreeing with the noun (um café, uma cerveja; water usually without: 'água'); second blank is a bare noun with no article (sem leite, sem açúcar, sem gelo). Adding ', por favor' at the end is natural. |
+| can_i_here | Can I ___ here? | Posso ___ aqui? | POH-soo ah-KEE | Frame: ___ is filled with a word. The blank is an infinitive phrase; reflexive verbs attach the pronoun with a hyphen (sentar-me). |
+| looking_for | I'm looking for ___. | Estou à procura ___. | esh-TOH ah proo-KOO-rah | Frame: ___ is filled with a word. 'à procura de' contracts with the article, so 'de' goes inside the blank: do meu hotel, da entrada, da saída, de um restaurante. 'Procuro ___' (no preposition) is a shorter alternative. 'Estou à procura' is the Portugal form (Brazil: 'Estou procurando'). |
+| is_included | Is ___ included? | ___ está incluído/a? | esh-TAH een-kloo-EE-doo/dah | Frame: ___ is filled with a word. The blank is the noun with its article, and incluído agrees with it: O pequeno-almoço está incluído? / A bagagem está incluída? (as in the vetted 'A gorjeta está incluída?'). Plural: incluídos/incluídas. |
+| where_can_i | Where can I ___? | Onde posso ___? | ON-duh POH-soo | Frame: ___ is filled with a word. The blank is an infinitive phrase (comprar bilhetes, trocar dinheiro). |
 | where_is~word_train_station | Where is the train station? | Onde fica a estação de comboios? | ON-duh FEE-kah ah esh-tah-SOWNG duh kong-BOY-oosh |  |
 | where_is~word_bus_stop | Where is the bus stop? | Onde fica a paragem de autocarro? | ON-duh FEE-kah ah pah-RAH-zhayng duh ow-toh-KAH-roo |  |
 | where_is~word_pharmacy | Where is the pharmacy? | Onde fica a farmácia? | ON-duh FEE-kah ah far-MAH-see-ah |  |
 | where_is~word_atm | Where is an ATM? | Onde fica o multibanco? | ON-duh FEE-kah oo mool-tee-BAN-koo |  |
 | where_is~word_supermarket | Where is the supermarket? | Onde fica o supermercado? | ON-duh FEE-kah oo soo-pehr-mehr-KAH-doo |  |
+| where_is~word_exit |  | Onde fica a saída? | ON-duh FEE-kah ah sah-EE-dah |  |
 | nearest~word_atm | Where is the nearest ATM? | Onde fica o multibanco mais próximo? | ON-duh FEE-kah oo mool-tee-BAN-koo mysh PROH-see-moo |  |
 | nearest~word_metro_station | Where is the nearest metro station? | Onde fica a estação de metro mais próxima? | ON-duh FEE-kah ah esh-tah-SOWNG duh MEH-troo mysh PROH-see-mah |  |
 | nearest~word_bus_stop | Where is the nearest bus stop? | Onde fica a paragem de autocarro mais próxima? | ON-duh FEE-kah ah pah-RAH-zhayng duh ow-toh-KAH-roo mysh PROH-see-mah |  |
@@ -79,12 +91,12 @@ Return all 184 keys, in order, and nothing else after the code block.
 | can_i_have~word_tea | Can I have a tea, please? | Posso ter um chá, por favor? | POH-soo tehr oong SHAH, poor fah-VOR |  |
 | can_i_have~word_beer | Can I have a beer, please? | Posso ter uma cerveja, por favor? | POH-soo tehr OO-mah suhr-VAY-zhah, poor fah-VOR |  |
 | can_i_have~word_glass_of_wine | Can I have a glass of wine, please? | Posso ter um copo de vinho, por favor? | POH-soo tehr oong KOH-poo duh VEE-nyoo, poor fah-VOR |  |
-| can_i_have~word_orange_juice | Can I have an orange juice, please? | Posso ter um sumo de laranja, por favor? | POH-soo tehr oong SOO-moo duh lah-RAN-zhah, poor fah-VOR |  |
+| can_i_have~word_orange_juice |  | Posso ter um sumo de laranja, por favor? | POH-soo tehr oong SOO-moo duh lah-RAN-zhah, poor fah-VOR |  |
 | can_i_have~word_menu | Can I have the menu, please? | Posso ter a ementa, por favor? | POH-soo tehr ah ee-MEN-tah, poor fah-VOR |  |
 | can_i_have~word_receipt | Can I have a receipt, please? | Posso ter o recibo, por favor? | POH-soo tehr oo ruh-SEE-boo, poor fah-VOR |  |
 | i_would_like~word_tea | I'd like a tea, please. | Queria um chá, por favor. | kuh-REE-ah oong SHAH, poor fah-VOR |  |
 | i_would_like~word_beer | I'd like a beer, please. | Queria uma cerveja, por favor. | kuh-REE-ah OO-mah suhr-VAY-zhah, poor fah-VOR |  |
-| i_would_like~word_glass_of_wine | I'd like a glass of wine, please. | Queria um copo de vinho, por favor. | kuh-REE-ah oong KOH-poo duh VEE-nyoo, poor fah-VOR |  |
+| i_would_like~word_glass_of_wine |  | Queria um copo de vinho, por favor. | kuh-REE-ah oong KOH-poo duh VEE-nyoo, poor fah-VOR |  |
 | i_would_like~word_orange_juice | I'd like an orange juice, please. | Queria um sumo de laranja, por favor. | kuh-REE-ah oong SOO-moo duh lah-RAN-zhah, poor fah-VOR |  |
 | i_would_like~word_bread | I'd like some bread, please. | Queria pão, por favor. | kuh-REE-ah POWNG, poor fah-VOR |  |
 | i_would_like~word_water | I'd like some water, please. | Queria uma água, por favor. | kuh-REE-ah OO-mah AH-gwah, poor fah-VOR |  |
@@ -97,7 +109,7 @@ Return all 184 keys, in order, and nothing else after the code block.
 | allergic_to~word_gluten | I'm allergic to gluten. | Sou alérgico ao glúten. | soh ah-LEHR-zhee-koo ow GLOO-ten | SAFETY: allergy/emergency. |
 | allergic_to~word_shellfish | I'm allergic to shellfish. | Sou alérgico ao marisco. | soh ah-LEHR-zhee-koo ow mah-REESH-koo | SAFETY: allergy/emergency. |
 | allergic_to~word_milk | I'm allergic to milk. | Sou alérgico ao leite. | soh ah-LEHR-zhee-koo ow LAY-tuh | SAFETY: allergy/emergency. |
-| allergic_to~word_eggs | I'm allergic to eggs. | Sou alérgico a ovos. | soh ah-LEHR-zhee-koo ah OH-voosh | SAFETY: allergy/emergency. |
+| allergic_to~word_eggs |  | Sou alérgico a ovos. | soh ah-LEHR-zhee-koo ah OH-voosh | SAFETY: allergy/emergency. |
 | without~word_meat | Without meat, please. | Sem carne, por favor. | seng KAR-nuh, poor fah-VOR | SAFETY: allergy/emergency. |
 | without~word_milk | Without milk, please. | Sem leite, por favor. | seng LAY-tuh, poor fah-VOR | SAFETY: allergy/emergency. |
 | without~word_gluten | Without gluten, please. | Sem glúten, por favor. | seng GLOO-ten, poor fah-VOR | SAFETY: allergy/emergency. |
@@ -117,14 +129,47 @@ Return all 184 keys, in order, and nothing else after the code block.
 | take_me_to~word_city_centre | Take me to the city centre, please. | Leve-me ao centro da cidade, por favor. | LEH-vuh-muh ow SEN-troo dah see-DAH-duh, poor fah-VOR |  |
 | take_me_to~word_beach | Take me to the beach, please. | Leve-me à praia, por favor. | LEH-vuh-muh ah PRY-ah, poor fah-VOR |  |
 | doesnt_work~word_air_conditioning | The air conditioning doesn't work. | O ar condicionado não funciona. | oo ar kon-dee-see-oo-NAH-doo nowng foon-see-OH-nah |  |
-| doesnt_work~word_shower | The shower doesn't work. | O chuveiro não funciona. | oo shoo-VAY-roo nowng foon-see-OH-nah |  |
+| doesnt_work~word_shower | The shower doesn't work. | O duche não funciona. | oo DOO-shuh nowng foon-see-OH-nah |  |
 | doesnt_work~word_wi_fi | The Wi-Fi doesn't work. | O Wi-Fi não funciona. | oo WY-fy nowng foon-see-OH-nah |  |
-| doesnt_work~word_hot_water | The hot water doesn't work. | A água quente não funciona. | ah AH-gwah KEN-tuh nowng foon-see-OH-nah |  |
-| doesnt_work~word_door_lock | The door lock doesn't work. | A fechadura da porta não funciona. | ah fuh-shah-DOO-rah dah POR-tah nowng foon-see-OH-nah |  |
+| doesnt_work~word_hot_water | The hot water doesn't work. | Não há água quente. | nowng ah AH-gwah KEN-tuh |  |
+| doesnt_work~word_door_lock |  | A fechadura da porta não funciona. | ah fuh-shah-DOO-rah dah POR-tah nowng foon-see-OH-nah |  |
 | lost_my~word_wallet | I lost my wallet. | Perdi a minha carteira. | puhr-DEE ah MEE-nyah kar-TAY-rah | SAFETY: allergy/emergency. |
-| lost_my~word_bag | I lost my bag. | Perdi a minha mala. | puhr-DEE ah MEE-nyah MAH-lah | SAFETY: allergy/emergency. |
+| lost_my~word_bag |  | Perdi a minha mala. | puhr-DEE ah MEE-nyah MAH-lah | SAFETY: allergy/emergency. |
 | lost_my~word_keys | I lost my keys. | Perdi as minhas chaves. | puhr-DEE ahsh MEE-nyahsh SHAH-vush | SAFETY: allergy/emergency. |
 | lost_my~word_room_key | I lost my room key. | Perdi a chave do quarto. | puhr-DEE ah SHAH-vuh doo KWAR-too | SAFETY: allergy/emergency. |
+| do_you_have~wifi | Do you have Wi-Fi? | Tem Wi-Fi? | teng WY-fy |  |
+| do_you_have~vegetarian_food | Do you have vegetarian food? | Tem comida vegetariana? | teng koo-MEE-dah vuh-zhuh-tah-ree-AH-nah | In a restaurant 'Tem pratos vegetarianos?' (vegetarian dishes) is also natural; reviewer to pick. |
+| do_you_have~charger | Do you have a phone charger? | Tem um carregador de telemóvel? | teng oong kah-ruh-gah-DOR duh tuh-luh-MOH-vel | Telemóvel is the Portugal word for mobile phone (Brazil: celular). |
+| do_you_have~map | Do you have a map? | Tem um mapa? | teng oong MAH-pah |  |
+| how_much_is~coffee | How much is a coffee? | Quanto custa um café? | KWAN-too KOOSH-tah oong kah-FEH |  |
+| i_need~help | I need help, please. | Preciso de ajuda, por favor. | pruh-SEE-zoo duh ah-ZHOO-dah, poor fah-VOR | SAFETY. Literal: 'I need (of) help, please.' In a real emergency the shout is 'Socorro!' |
+| i_need~water | I need water, please. | Preciso de água, por favor. | pruh-SEE-zoo duh AH-gwah, poor fah-VOR |  |
+| i_need~taxi | I need a taxi, please. | Preciso de um táxi, por favor. | pruh-SEE-zoo duh oong TAK-see, poor fah-VOR | Correct, but to ask someone to call one, 'Pode chamar-me um táxi?' is more natural. |
+| is_there_nearby~bathroom | Is there a bathroom nearby? | Há uma casa de banho aqui perto? | ah OO-mah KAH-zah duh BAN-yoo ah-KEE PEHR-too | Casa de banho is the Portugal word (Brazil: banheiro). Public toilets are scarce; in practice people ask a café 'Posso usar a casa de banho?' |
+| is_there_nearby~pharmacy | Is there a pharmacy nearby? | Há uma farmácia aqui perto? | ah OO-mah far-MAH-see-ah ah-KEE PEHR-too |  |
+| is_there_nearby~atm | Is there an ATM nearby? | Há um multibanco aqui perto? | ah oong mool-tee-BAN-koo ah-KEE PEHR-too | Multibanco (the national ATM network) is the everyday word for an ATM in Portugal; 'caixa automático' is also understood. |
+| is_there_nearby~supermarket | Is there a supermarket nearby? | Há um supermercado aqui perto? | ah oong soo-pehr-mehr-KAH-doo ah-KEE PEHR-too |  |
+| pay_with~cash | Can I pay with cash? | Posso pagar em dinheiro? | POH-soo pah-GAR eng dee-NYAY-roo | Uses 'em' (in cash), not the frame's 'com'; 'com dinheiro' sounds translated. |
+| pay_with~phone | Can I pay with my phone? | Posso pagar com o telemóvel? | POH-soo pah-GAR kong oo tuh-luh-MOH-vel | Literal 'with the phone'; the possessive is dropped as is natural ('com o meu telemóvel' is also fine). |
+| can_you~write | Can you write it down, please? | Pode escrever isso, por favor? | POH-duh esh-kruh-VEHR EE-soo, poor fah-VOR | Literal: 'Can you write that, please?' ('down' is implied). 'Pode escrever-me isso?' (write it for me) is also common. |
+| like_without~coffee_milk | I'd like a coffee without milk. | Queria um café sem leite. | kuh-REE-ah oong kah-FEH seng LAY-tuh | In Portugal 'um café' is an espresso and comes without milk anyway; with milk it is a 'galão' or 'meia de leite'. Grammatically fine, but a reviewer may want a better example. |
+| like_without~tea_sugar | I'd like a tea without sugar. | Queria um chá sem açúcar. | kuh-REE-ah oong SHAH seng ah-SOO-kar |  |
+| like_without~water_ice | I'd like water without ice. | Queria água sem gelo. | kuh-REE-ah AH-gwah seng ZHEH-loo | Waiters often ask 'natural ou fresca?' (room temperature or chilled); 'água natural' answers the no-ice wish too. |
+| can_i_here~sit | Can I sit here? | Posso sentar-me aqui? | POH-soo sen-TAR-muh ah-KEE | At a table or seat, 'Este lugar está livre?' (Is this seat free?) is just as common. |
+| can_i_here~park | Can I park here? | Posso estacionar aqui? | POH-soo esh-tah-see-oo-NAR ah-KEE |  |
+| can_i_here~photos | Can I take photos here? | Posso tirar fotos aqui? | POH-soo tee-RAR FOH-toosh ah-KEE | 'Fotos' is the everyday word; 'fotografias' is more formal. |
+| can_i_here~charge | Can I charge my phone here? | Posso carregar o telemóvel aqui? | POH-soo kah-ruh-GAR oo tuh-luh-MOH-vel ah-KEE | Literal 'charge the phone'; the possessive is dropped as is natural. |
+| looking_for~my_hotel | I'm looking for my hotel. | Estou à procura do meu hotel. | esh-TOH ah proo-KOO-rah doo MEH-oo oh-TEL |  |
+| looking_for~entrance | I'm looking for the entrance. | Estou à procura da entrada. | esh-TOH ah proo-KOO-rah dah en-TRAH-dah |  |
+| looking_for~restaurant | I'm looking for a restaurant. | Estou à procura de um restaurante. | esh-TOH ah proo-KOO-rah duh oong rush-tow-RAN-tuh |  |
+| looking_for~exit | I'm looking for the exit. | Estou à procura da saída. | esh-TOH ah proo-KOO-rah dah sah-EE-dah |  |
+| is_included~breakfast | Is breakfast included? | O pequeno-almoço está incluído? | oo puh-KEH-noo al-MOH-soo esh-TAH een-kloo-EE-doo | Pequeno-almoço is the Portugal word (Brazil: café da manhã). |
+| is_included~tax | Is tax included? | O IVA está incluído? | oo EE-vah esh-TAH een-kloo-EE-doo | IVA = VAT, normally already in Portuguese prices. At hotels the likelier question is 'A taxa turística está incluída?' (city tourist tax); reviewer to choose. |
+| is_included~wifi | Is Wi-Fi included? | O Wi-Fi está incluído? | oo WY-fy esh-TAH een-kloo-EE-doo |  |
+| is_included~luggage | Is luggage included? | A bagagem está incluída? | ah bah-GAH-zhayng esh-TAH een-kloo-EE-dah | For flights, 'bagagem de porão' is checked luggage and 'bagagem de mão' is hand luggage. |
+| where_can_i~taxi | Where can I get a taxi? | Onde posso apanhar um táxi? | ON-duh POH-soo ah-pah-NYAR oong TAK-see | 'Apanhar' (catch) is the Portugal verb for taking a taxi/bus. |
+| where_can_i~change_money | Where can I change money? | Onde posso trocar dinheiro? | ON-duh POH-soo troo-KAR dee-NYAY-roo |  |
+| where_can_i~sim | Where can I buy a SIM card? | Onde posso comprar um cartão SIM? | ON-duh POH-soo kon-PRAR oong kar-TAWNG seem |  |
 | reply~here_you_go | Here you go. | Aqui tem. | ah-KEE teng | Said TO the traveller by staff. |
 | reply~inside_or_outside | Inside or outside? | Dentro ou na esplanada? | DEN-troo oh nah esh-plah-NAH-dah | Said TO the traveller by staff. |
 | reply~have_booking | Do you have a reservation? | Tem reserva? | teng ruh-ZEHR-vah | Said TO the traveller by staff. |
@@ -174,7 +219,7 @@ Return all 184 keys, in order, and nothing else after the code block.
 | word~word_ticket | ticket | o bilhete | oo bee-LYEH-tuh | A single word, as it would appear inside a sentence. |
 | word~word_room_key | room key | a chave do quarto | ah SHAH-vuh doo KWAR-too | A single word, as it would appear inside a sentence. |
 | word~word_air_conditioning | air conditioning | o ar condicionado | oo ar kon-dee-see-oo-NAH-doo | A single word, as it would appear inside a sentence. |
-| word~word_shower | shower | o chuveiro | oo shoo-VAY-roo | A single word, as it would appear inside a sentence. |
+| word~word_shower | shower | o duche | oo DOO-shuh | A single word, as it would appear inside a sentence. [Fixed 2026-10-14 per ChatGPT review.] |
 | word~word_wi_fi | Wi-Fi | o Wi-Fi | oo WY-fy | A single word, as it would appear inside a sentence. |
 | word~word_tv | TV | a televisão | ah tuh-luh-vee-ZOWNG | A single word, as it would appear inside a sentence. |
 | word~word_hot_water | hot water | a água quente | ah AH-gwah KEN-tuh | A single word, as it would appear inside a sentence. |

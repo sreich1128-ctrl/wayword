@@ -1,4 +1,4 @@
-# Review sheet: Spanish (173 items)
+# Review sheet: Spanish (215 items)
 
 Paste everything below the line into ChatGPT or Gemini (a fresh chat). Save the JSON it returns as `docs/review/es.<tool>.json` (for example `es.chatgpt.json`), or paste it back to Claude Code.
 
@@ -16,20 +16,20 @@ For EVERY item, reply with one JSON object per line inside a single ```json code
 - "ok" = a native speaker would say exactly this (or it's one of the normal ways to say it).
 - "fix" = wrong, unnatural, wrong variety/register, or a meaning error. Give the better version.
 - "unsure" = you can't tell; say why.
-Return all 173 keys, in order, and nothing else after the code block.
+Return all 215 keys, in order, and nothing else after the code block.
 
 | key | English | draft | pronunciation_easy | note |
 |---|---|---|---|---|
 | table_for | A table for ___, please. | Una mesa para ___, por favor. | OO-nah MEH-sah PAH-rah, por fah-VOR | Frame: ___ is filled with a word. Blank takes the bare number (uno, dos...). "Para uno" is fine; "para una persona" is an equally common alternative. |
 | menu_please | The menu, please. | La carta, por favor. | lah KAR-tah, por fah-VOR | "La carta" is understood everywhere. "El menú" is very common in Latin America, but in Spain "el menú" usually means the set lunch (menú del día). |
-| allergic_to | I'm allergic to ___. | Soy alérgico a ___. | soy ah-LEHR-hee-koh ah | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Back-translation: "I am allergic to ___." Masculine speaker (file convention); a woman says "Soy alérgica a ___" (ah-LEHR-hee-kah). a + el contracts to al (al gluten, al maní), so the article goes with the word, not the frame. Safety item: please verify. Word notes: peanuts = "maní" (most of Latin America), "cacahuate" (Mexico), "cacahuete" (Spain). Nuts = "frutos secos" (tree nuts generally); "nueces" strictly means walnuts but is used loosely in Mexico. Back-translations of examples: "I am allergic to the nuts / the peanut / the gluten / the shellfish / the milk / the eggs" (Spanish uses the article here). Dairy = "los lácteos". |
+| allergic_to | I'm allergic to ___. | Soy alérgico ___. | soy ah-LEHR-hee-koh | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Back-translation: "I am allergic to ___." Masculine speaker (file convention); a woman says "Soy alérgica a ___" (ah-LEHR-hee-kah). a + el contracts to al (al gluten, al maní), so the article goes with the word, not the frame. Safety item: please verify. Word notes: peanuts = "maní" (most of Latin America), "cacahuate" (Mexico), "cacahuete" (Spain). Nuts = "frutos secos" (tree nuts generally); "nueces" strictly means walnuts but is used loosely in Mexico. Back-translations of examples: "I am allergic to the nuts / the peanut / the gluten / the shellfish / the milk / the eggs" (Spanish uses the article here). Dairy = "los lácteos". [Fixed 2026-10-14 per ChatGPT review.] |
 | without | Without ___, please. | Sin ___, por favor. | seen, por fah-VOR | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Back-translation: "Without ___, please." The noun after sin normally drops its article (sin leche, sin gluten), so examples omit it. Safety item (used for allergies/diet): please verify. Examples back-translate as "Without meat / milk / gluten / ice / nuts, please". |
 | to_go | To go, please. | Para llevar, por favor. | PAH-rah yeh-VAR, por fah-VOR |  |
-| for_here | For here, please. | Para comer aquí, por favor. | PAH-rah koh-MEHR ah-KEE, por fah-VOR | Literally "to eat here". For a drink only, "Para tomar aquí" fits better. |
+| for_here | For here, please. | Aquí, por favor. | ah-KEE, por fah-VOR | Literally "to eat here". For a drink only, "Para tomar aquí" fits better. [Fixed 2026-10-14 per ChatGPT review.] |
 | another_one | Another one, please. | Otro, por favor. | OH-troh, por fah-VOR | Agrees with the thing ordered: "Otra, por favor" for a feminine noun (otra cerveza, otra copa). |
-| ticket_to | A ticket to ___, please. | Un boleto a ___, por favor. | oon boh-LEH-toh ah, por fah-VOR | Frame: ___ is filled with a word. "Boleto" is Latin American; Spain says "billete", and Argentina/Chile often "pasaje" for long-distance. a + el contracts to al (al aeropuerto). |
-| does_this_go_to | Does this go to ___? | ¿Este va a ___? | ES-teh vah ah | Frame: ___ is filled with a word. "Este" = this one (bus/train, masculine). a + el contracts to al. |
-| take_me_to | Take me to ___, please. | Llévame a ___, por favor. | YEH-vah-meh ah, por fah-VOR | Frame: ___ is filled with a word. Uses tú like the rest of the file. With taxi drivers in much of Latin America usted is more usual: "¿Me lleva a ___, por favor?". a + el contracts to al. |
+| ticket_to | A ticket to ___, please. | Un boleto ___, por favor. | oon boh-LEH-toh, por fah-VOR | Frame: ___ is filled with a word. "Boleto" is Latin American; Spain says "billete", and Argentina/Chile often "pasaje" for long-distance. a + el contracts to al (al aeropuerto). [Fixed 2026-10-14 per ChatGPT review.] |
+| does_this_go_to | Does this go to ___? | ¿Este va ___? | ES-teh vah | Frame: ___ is filled with a word. "Este" = this one (bus/train, masculine). a + el contracts to al. [Fixed 2026-10-14 per ChatGPT review.] |
+| take_me_to | Take me to ___, please. | Llévame ___, por favor. | YEH-vah-meh, por fah-VOR | Frame: ___ is filled with a word. Uses tú like the rest of the file. With taxi drivers in much of Latin America usted is more usual: "¿Me lleva a ___, por favor?". a + el contracts to al. [Fixed 2026-10-14 per ChatGPT review.] |
 | stop_here | Stop here, please. | Para aquí, por favor. | PAH-rah ah-KEE, por fah-VOR | tú form; usted form is "Pare aquí, por favor" (common with taxi drivers). |
 | next_departure | When does the next one leave? | ¿Cuándo sale el próximo? | KWAN-doh SAH-leh el PROK-see-moh | "El próximo" assumes a masculine vehicle (tren, autobús); "la próxima" if referring to a feminine one. |
 | which_platform | Which platform? | ¿De qué andén sale? | deh keh an-DEN SAH-leh | Literally "From which platform does it leave?". Spanish train stations often say "vía" (track) instead of andén; bus stations may use "plataforma". |
@@ -59,21 +59,33 @@ Return all 173 keys, in order, and nothing else after the code block.
 | where_pharmacy | Where is the pharmacy? | ¿Dónde está la farmacia? | DON-deh es-TAH lah far-MAH-syah | SAFETY: allergy/emergency. Back-translation: "Where is the pharmacy?" To ask for any pharmacy nearby, "¿Dónde hay una farmacia?" (where is there a pharmacy) is more natural. Safety item: please verify. |
 | lost_my | I lost my ___. | Perdí ___. | pehr-DEE | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Back-translation: "I lost ___." The blank takes a possessive that changes per word (mi pasaporte, mis llaves), so it is not fixed in the frame. Spain more often says "He perdido ___". Safety item: please verify. Word notes: wallet = "billetera" ("cartera" in Mexico and Spain, but cartera is a handbag in parts of South America); phone = "teléfono" ("celular" in Latin America, "móvil" in Spain); bag = "bolsa" (Spain: "bolso" for a handbag, "mochila" for a backpack). Room key example says "the key to my room". |
 | call_someone | I need to call someone. | Necesito llamar a alguien. | neh-seh-SEE-toh yah-MAR ah AL-gyen | SAFETY: allergy/emergency. Back-translation: "I need to call someone." Safety item: please verify. |
+| do_you_have | Do you have ___? | ¿Tienes ___? | TYEH-nes | Frame: ___ is filled with a word. Uses tú like the rest of the file. Asking a shop, café or hotel (the business), "¿Tienen ___?" (TYEH-nen, plural) is the most natural; usted form is "¿Tiene ___?". The blank takes an article only when English has one (wifi, comida vegetariana, but un cargador, un mapa), so the article goes with the word. |
+| how_much_is | How much is ___? | ¿Cuánto cuesta ___? | KWAN-toh KWES-tah | Frame: ___ is filled with a word. Blank takes the word with its article (un café, la habitación). Plural nouns need "¿Cuánto cuestan ___?". "¿Cuánto es?" is also common at the till. |
+| i_need | I need ___, please. | Necesito ___, por favor. | neh-seh-SEE-toh, por fah-VOR | Frame: ___ is filled with a word. Back-translation: "I need ___, please." Blank takes the word with its article when English has one (un taxi; ayuda and agua take none). Safety item: please verify. Help example back-translates as "I need help, please."; in a real emergency people shout "¡Ayuda!" or "¡Socorro!" instead. The doctor variant reuses the existing need_doctor phrase. |
+| is_there_nearby | Is there a ___ nearby? | ¿Hay ___ cerca? | eye SEHR-kah | Frame: ___ is filled with a word. Blank takes un/una with the word (un baño, una farmacia), so the article is part of the blank. "Por aquí" (por ah-KEE) instead of "cerca" is equally common. Bathroom: "baño" in Latin America; Spain says "aseo" or "servicio" in public places. |
+| pay_with | Can I pay with ___? | ¿Puedo pagar ___? | PWEH-doh pah-GAR | Frame: ___ is filled with a word. The preposition changes with the filler, so it is inside the blank: cash is "en efectivo" (con efectivo is heard but less standard), card and phone take "con" (con tarjeta, con el teléfono). |
+| can_you | Can you ___, please? | ¿Puedes ___, por favor? | PWEH-des, por fah-VOR | Frame: ___ is filled with a word. Uses tú like the rest of the file (usted: "¿Puede ___?"). Object pronouns attach to the verb (escribirlo) or move before puedes ("¿Me lo puedes escribir?"), both natural. |
+| like_without | I'd like ___ without ___. | Quisiera ___ sin ___. | kee-SYEH-rah ... seen | Frame: ___ is filled with a word. First blank takes un/una with the item (un café, un té, agua with no article); the noun after sin drops its article (sin leche). Coffee without milk is often ordered as "un café solo" (Spain) or "un café negro / americano" (Latin America). |
+| can_i_here | Can I ___ here? | ¿Puedo ___ aquí? | PWEH-doh ah-KEE | Frame: ___ is filled with a word. Blank takes an infinitive phrase. Regional verbs: park = "estacionar" (Latin America), "aparcar" (Spain); take photos = "tomar fotos" (Latin America), "hacer/sacar fotos" (Spain). For a seat, "¿Está libre?" (is it free?) is also very common. |
+| looking_for | I'm looking for ___. | Estoy buscando ___. | es-TOY boos-KAHN-doh | Frame: ___ is filled with a word. Blank takes the word with its article or possessive (mi hotel, la entrada, un restaurante). "Busco ___" (BOOS-koh) is shorter and equally correct. |
+| is_included | Is ___ included? | ¿Está incluido ___? | es-TAH een-kloo-EE-doh | Frame: ___ is filled with a word. Incluido agrees with the noun, so the frame is only literal for masculine singular words: feminine "¿Está incluida la propina?", plural "¿Están incluidos los impuestos?". Blank takes the word with its article (el desayuno). Tax: "los impuestos" is general; Spain and Mexico usually say "el IVA". |
+| where_can_i | Where can I ___? | ¿Dónde puedo ___? | DON-deh PWEH-doh | Frame: ___ is filled with a word. Blank takes an infinitive phrase. Regional: get a taxi = "tomar un taxi" (Latin America), "coger un taxi" (Spain; avoid coger in Mexico/Argentina); tickets = "boletos" (Latin America), "billetes"/"entradas" (Spain; entradas for shows/museums). |
 | where_is~word_pharmacy | Where is the pharmacy? | ¿Dónde está la farmacia? | DON-deh es-TAH lah far-MAH-syah |  |
 | where_is~word_atm | Where is an ATM? | ¿Dónde está el cajero automático? | DON-deh es-TAH el kah-HEH-roh ow-toh-MAH-tee-koh |  |
 | where_is~word_supermarket | Where is the supermarket? | ¿Dónde está el supermercado? | DON-deh es-TAH el soo-pehr-mehr-KAH-doh |  |
+| where_is~word_exit |  | ¿Dónde está la salida? | DON-deh es-TAH lah sah-LEE-dah |  |
 | nearest~word_atm | Where is the nearest ATM? | ¿Dónde está el cajero automático más cercano? | DON-deh es-TAH el kah-HEH-roh ow-toh-MAH-tee-koh mas sehr-KAH-noh |  |
 | how_get~word_city_centre | How do I get to the city centre? | ¿Cómo llego al centro? | KOH-moh YEH-goh al SEN-troh |  |
 | how_get~word_beach | How do I get to the beach? | ¿Cómo llego a la playa? | KOH-moh YEH-goh ah lah PLAH-yah |  |
 | can_i_have~word_tea | Can I have a tea, please? | ¿Me das un té, por favor? | meh das oon teh, por fah-VOR |  |
 | can_i_have~word_beer | Can I have a beer, please? | ¿Me das una cerveza, por favor? | meh das OO-nah sehr-VEH-sah, por fah-VOR |  |
 | can_i_have~word_glass_of_wine | Can I have a glass of wine, please? | ¿Me das una copa de vino, por favor? | meh das OO-nah KOH-pah deh VEE-noh, por fah-VOR |  |
-| can_i_have~word_orange_juice | Can I have an orange juice, please? | ¿Me das un jugo de naranja, por favor? | meh das oon HOO-goh deh nah-RAN-hah, por fah-VOR |  |
+| can_i_have~word_orange_juice |  | ¿Me das un jugo de naranja, por favor? | meh das oon HOO-goh deh nah-RAN-hah, por fah-VOR |  |
 | can_i_have~word_menu | Can I have the menu, please? | ¿Me das la carta, por favor? | meh das lah KAR-tah, por fah-VOR |  |
 | can_i_have~word_receipt | Can I have a receipt, please? | ¿Me das el recibo, por favor? | meh das el reh-SEE-boh, por fah-VOR |  |
 | i_would_like~word_tea | I'd like a tea, please. | Quisiera un té, por favor. | kee-SYEH-rah oon teh, por fah-VOR |  |
 | i_would_like~word_beer | I'd like a beer, please. | Quisiera una cerveza, por favor. | kee-SYEH-rah OO-nah sehr-VEH-sah, por fah-VOR |  |
-| i_would_like~word_glass_of_wine | I'd like a glass of wine, please. | Quisiera una copa de vino, por favor. | kee-SYEH-rah OO-nah KOH-pah deh VEE-noh, por fah-VOR |  |
+| i_would_like~word_glass_of_wine |  | Quisiera una copa de vino, por favor. | kee-SYEH-rah OO-nah KOH-pah deh VEE-noh, por fah-VOR |  |
 | i_would_like~word_orange_juice | I'd like an orange juice, please. | Quisiera un jugo de naranja, por favor. | kee-SYEH-rah oon HOO-goh deh nah-RAN-hah, por fah-VOR |  |
 | i_would_like~word_bread | I'd like some bread, please. | Quisiera pan, por favor. | kee-SYEH-rah pan, por fah-VOR |  |
 | i_would_like~word_water | I'd like some water, please. | Quisiera agua, por favor. | kee-SYEH-rah AH-gwah, por fah-VOR |  |
@@ -85,7 +97,7 @@ Return all 173 keys, in order, and nothing else after the code block.
 | allergic_to~word_gluten | I'm allergic to gluten. | Soy alérgico al gluten. | soy ah-LEHR-hee-koh al GLOO-ten | SAFETY: allergy/emergency. |
 | allergic_to~word_shellfish | I'm allergic to shellfish. | Soy alérgico a los mariscos. | soy ah-LEHR-hee-koh ah los mah-REES-kos | SAFETY: allergy/emergency. |
 | allergic_to~word_milk | I'm allergic to milk. | Soy alérgico a la leche. | soy ah-LEHR-hee-koh ah lah LEH-cheh | SAFETY: allergy/emergency. |
-| allergic_to~word_eggs | I'm allergic to eggs. | Soy alérgico a los huevos. | soy ah-LEHR-hee-koh ah los WEH-vos | SAFETY: allergy/emergency. |
+| allergic_to~word_eggs |  | Soy alérgico a los huevos. | soy ah-LEHR-hee-koh ah los WEH-vos | SAFETY: allergy/emergency. |
 | without~word_meat | Without meat, please. | Sin carne, por favor. | seen KAR-neh, por fah-VOR | SAFETY: allergy/emergency. |
 | without~word_milk | Without milk, please. | Sin leche, por favor. | seen LEH-cheh, por fah-VOR | SAFETY: allergy/emergency. |
 | without~word_gluten | Without gluten, please. | Sin gluten, por favor. | seen GLOO-ten, por fah-VOR | SAFETY: allergy/emergency. |
@@ -107,9 +119,39 @@ Return all 173 keys, in order, and nothing else after the code block.
 | doesnt_work~word_air_conditioning | The air conditioning doesn't work. | El aire acondicionado no funciona. | el EYE-reh ah-kon-dee-syoh-NAH-doh noh foon-SYOH-nah |  |
 | doesnt_work~word_wi_fi | The Wi-Fi doesn't work. | El wifi no funciona. | el WAI-fai noh foon-SYOH-nah |  |
 | doesnt_work~word_hot_water | The hot water doesn't work. | No hay agua caliente. | noh eye AH-gwah kah-LYEN-teh |  |
-| doesnt_work~word_door_lock | The door lock doesn't work. | La cerradura no funciona. | lah seh-rah-DOO-rah noh foon-SYOH-nah |  |
-| lost_my~word_bag | I lost my bag. | Perdí mi bolsa. | pehr-DEE mee BOL-sah | SAFETY: allergy/emergency. |
+| doesnt_work~word_door_lock |  | La cerradura no funciona. | lah seh-rah-DOO-rah noh foon-SYOH-nah |  |
+| lost_my~word_bag |  | Perdí mi bolsa. | pehr-DEE mee BOL-sah | SAFETY: allergy/emergency. |
 | lost_my~word_room_key | I lost my room key. | Perdí la llave de mi habitación. | pehr-DEE lah YAH-veh deh mee ah-bee-tah-SYON | SAFETY: allergy/emergency. |
+| do_you_have~wifi | Do you have Wi-Fi? | ¿Tienes wifi? | TYEH-nes WAI-fai |  |
+| do_you_have~vegetarian_food | Do you have vegetarian food? | ¿Tienes comida vegetariana? | TYEH-nes koh-MEE-dah beh-heh-tah-RYAH-nah |  |
+| do_you_have~charger | Do you have a phone charger? | ¿Tienes un cargador de teléfono? | TYEH-nes oon kar-gah-DOR deh teh-LEH-foh-noh | Phone: "celular" in Latin America, "móvil" in Spain. |
+| how_much_is~ticket | How much is a ticket? | ¿Cuánto cuesta un boleto? | KWAN-toh KWES-tah oon boh-LEH-toh | "Boleto" Latin America; Spain says "billete" (transport) or "entrada" (shows). |
+| how_much_is~coffee | How much is a coffee? | ¿Cuánto cuesta un café? | KWAN-toh KWES-tah oon kah-FEH |  |
+| how_much_is~room | How much is the room? | ¿Cuánto cuesta la habitación? | KWAN-toh KWES-tah lah ah-bee-tah-SYON | Add "por noche" (por NOH-cheh) for per night. |
+| i_need~help | I need help, please. | Necesito ayuda, por favor. | neh-seh-SEE-toh ah-YOO-dah, por fah-VOR | Back-translation: "I need help, please." Safety item: please verify. |
+| i_need~water | I need water, please. | Necesito agua, por favor. | neh-seh-SEE-toh AH-gwah, por fah-VOR |  |
+| i_need~taxi | I need a taxi, please. | Necesito un taxi, por favor. | neh-seh-SEE-toh oon TAHK-see, por fah-VOR |  |
+| is_there_nearby~bathroom | Is there a bathroom nearby? | ¿Hay un baño cerca? | eye oon BAN-yoh SEHR-kah |  |
+| is_there_nearby~atm | Is there an ATM nearby? | ¿Hay un cajero automático cerca? | eye oon kah-HEH-roh ow-toh-MAH-tee-koh SEHR-kah |  |
+| is_there_nearby~supermarket | Is there a supermarket nearby? | ¿Hay un supermercado cerca? | eye oon soo-pehr-mehr-KAH-doh SEHR-kah |  |
+| pay_with~cash | Can I pay with cash? | ¿Puedo pagar en efectivo? | PWEH-doh pah-GAR en eh-fek-TEE-boh |  |
+| pay_with~phone | Can I pay with my phone? | ¿Puedo pagar con el teléfono? | PWEH-doh pah-GAR kon el teh-LEH-foh-noh | Spanish uses the article for your own phone (con el teléfono = with my phone). Locals say "con el celular" (Latin America) or "con el móvil" (Spain). |
+| can_you~write | Can you write it down, please? | ¿Puedes escribirlo, por favor? | PWEH-des es-kree-BEER-loh, por fah-VOR |  |
+| like_without~coffee_milk | I'd like a coffee without milk. | Quisiera un café sin leche. | kee-SYEH-rah oon kah-FEH seen LEH-cheh |  |
+| like_without~tea_sugar | I'd like a tea without sugar. | Quisiera un té sin azúcar. | kee-SYEH-rah oon teh seen ah-SOO-kar |  |
+| like_without~water_ice | I'd like water without ice. | Quisiera agua sin hielo. | kee-SYEH-rah AH-gwah seen YEH-loh |  |
+| can_i_here~park | Can I park here? | ¿Puedo estacionar aquí? | PWEH-doh es-tah-syoh-NAR ah-KEE | Spain: "¿Puedo aparcar aquí?" (ah-par-KAR). |
+| can_i_here~photos | Can I take photos here? | ¿Puedo tomar fotos aquí? | PWEH-doh toh-MAR FOH-tos ah-KEE | Spain: "¿Puedo hacer fotos aquí?". |
+| can_i_here~charge | Can I charge my phone here? | ¿Puedo cargar mi teléfono aquí? | PWEH-doh kar-GAR mee teh-LEH-foh-noh ah-KEE |  |
+| looking_for~my_hotel | I'm looking for my hotel. | Estoy buscando mi hotel. | es-TOY boos-KAHN-doh mee oh-TEL |  |
+| looking_for~entrance | I'm looking for the entrance. | Estoy buscando la entrada. | es-TOY boos-KAHN-doh lah en-TRAH-dah |  |
+| looking_for~restaurant | I'm looking for a restaurant. | Estoy buscando un restaurante. | es-TOY boos-KAHN-doh oon res-tow-RAHN-teh |  |
+| looking_for~exit | I'm looking for the exit. | Estoy buscando la salida. | es-TOY boos-KAHN-doh lah sah-LEE-dah |  |
+| is_included~breakfast | Is breakfast included? | ¿Está incluido el desayuno? | es-TAH een-kloo-EE-doh el deh-sah-YOO-noh |  |
+| is_included~tax | Is tax included? | ¿Están incluidos los impuestos? | es-TAHN een-kloo-EE-dos los eem-PWES-tos | Plural agreement. Spain/Mexico usually: "¿Está incluido el IVA?" (EE-bah). |
+| is_included~wifi | Is Wi-Fi included? | ¿Está incluido el wifi? | es-TAH een-kloo-EE-doh el WAI-fai |  |
+| is_included~luggage | Is luggage included? | ¿Está incluido el equipaje? | es-TAH een-kloo-EE-doh el eh-kee-PAH-heh |  |
+| where_can_i~sim | Where can I buy a SIM card? | ¿Dónde puedo comprar una tarjeta SIM? | DON-deh PWEH-doh kom-PRAR OO-nah tar-HEH-tah seem | Also "un chip" in much of Latin America. |
 | reply~for_here_or_to_go | For here or to go? | ¿Para comer aquí o para llevar? | PAH-rah koh-MEHR ah-KEE oh PAH-rah yeh-VAR | Said TO the traveller by staff. |
 | reply~here_you_go | Here you go. | Aquí tiene. | ah-KEE TYEH-neh | Said TO the traveller by staff. |
 | reply~inside_or_outside | Inside or outside? | ¿Adentro o afuera? | ah-DEN-troh oh ah-FWEH-rah | Said TO the traveller by staff. |

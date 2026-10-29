@@ -10,6 +10,7 @@
 //     node scripts/generate-audio.mjs --lang=pt-PT           # one language
 //     node scripts/generate-audio.mjs                        # every language in content/audio-voices.json
 //     node scripts/generate-audio.mjs --lang=pt-PT --force --only=id1,id2   # redo just these phrases
+//     node scripts/generate-audio.mjs --lang=pt-PT --swaps                 # also Swap it frames + variant sentences
 //   Voices and skipped languages are set in content/audio-voices.json -> "elevenlabs".
 //
 //   Azure:  AZURE_SPEECH_KEY=...  AZURE_SPEECH_REGION=westeurope
@@ -139,6 +140,32 @@ function trimTail(file) {
   } catch { /* no ffmpeg: keep the file as generated */ }
 }
 
+// Swap it: draft frames (type pattern) and variant sentences from content/added/<code>.json.
+// same_as variants are existing phrases and already have their own recording.
+function swapEntries(code, have) {
+  const addedPath = join(root, 'content/added', `${code}.json`);
+  if (!existsSync(addedPath)) return [];
+  const added = JSON.parse(readFileSync(addedPath, 'utf8'));
+  const concepts = new Map(read('content/concepts.json').map((c) => [c.id, c]));
+  const patterns = read('content/patterns.json').patterns;
+  const out = [];
+  for (const e of added.entries || []) if (concepts.get(e.id)?.type === 'pattern' && patterns[e.id] && !have.has(e.id)) out.push({ id: e.id, target: e.target });
+  for (const [pid, conf] of Object.entries(patterns)) {
+    const written = new Map((added.examples?.[pid] || []).map((x) => [x.word, x]));
+    for (const v of conf.examples || []) {
+      if (typeof v !== 'string' && v.same_as) { // an existing phrase: record it if it's a draft without a recording
+        const e = (added.entries || []).find((x) => x.id === v.same_as);
+        if (e && !have.has(e.id) && !out.some((o) => o.id === e.id)) out.push({ id: e.id, target: e.target });
+        continue;
+      }
+      const vid = typeof v === 'string' ? v : v.id;
+      const x = written.get(vid);
+      if (x?.target) out.push({ id: `${pid}~${vid}`, target: x.target });
+    }
+  }
+  return out;
+}
+
 /* ---------- main ---------- */
 
 function writeManifest(code, voice, files, source, note) {
@@ -193,6 +220,9 @@ async function main() {
   let chars = 0; let made = 0; let skipped = 0;
   for (const code of langs) {
     const entries = read(`content/lang/${code}.json`).entries;
+    // --swaps: also the Swap it material: draft pattern frames and every variant sentence
+    // (saved under the id the app plays it by, e.g. where_is~word_pharmacy).
+    if (args.swaps) entries.push(...swapEntries(code, new Set(entries.map((e) => e.id))));
     const jobs = [];
     if (engine === 'elevenlabs') {
       const pick = (el.voices || {})[code] || (el.voices || {})['*'];

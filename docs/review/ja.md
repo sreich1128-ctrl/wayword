@@ -1,4 +1,4 @@
-# Review sheet: Japanese (198 items)
+# Review sheet: Japanese (242 items)
 
 Paste everything below the line into ChatGPT or Gemini (a fresh chat). Save the JSON it returns as `docs/review/ja.<tool>.json` (for example `ja.chatgpt.json`), or paste it back to Claude Code.
 
@@ -18,7 +18,7 @@ For EVERY item, reply with one JSON object per line inside a single ```json code
 - "ok" = a native speaker would say exactly this (or it's one of the normal ways to say it).
 - "fix" = wrong, unnatural, wrong variety/register, or a meaning error. Give the better version.
 - "unsure" = you can't tell; say why.
-Return all 198 keys, in order, and nothing else after the code block.
+Return all 242 keys, in order, and nothing else after the code block.
 
 | key | English | draft | reading | pronunciation_easy | note |
 |---|---|---|---|---|---|
@@ -70,10 +70,22 @@ Return all 198 keys, in order, and nothing else after the code block.
 | lost_my | I lost my ___. | ___をなくしました。 | ___をなくしました。 | ___ oh nah-koo-shee-mah-shee-tah | Frame: ___ is filled with a word. SAFETY: allergy/emergency. SAFETY. Back-translation: 'I lost ___.' If it was stolen: ___を盗まれました. Lost property goes to the 交番 (police box) or the station's 忘れ物 (lost and found). |
 | not_well | I don't feel well. | 体調が悪いです。 | たいちょうがわるいです。 | tai-choh gah wah-roo-ee des | SAFETY: allergy/emergency. SAFETY. Back-translation: 'My physical condition is bad' = I'm unwell. 気分が悪いです ('I feel bad/sick') is also common and leans toward nausea or feeling faint. |
 | call_someone | I need to call someone. | 電話をかけないといけません。 | でんわをかけないといけません。 | den-wah oh kah-keh-nai toh ee-keh-mah-sen | SAFETY: allergy/emergency. SAFETY. Back-translation: 'I have to make a phone call.' Not fully sure this is the most natural card choice; to borrow a phone, 電話を貸してもらえますか？ (could you lend me a phone?) is more useful in practice. |
+| do_you_have | Do you have ___? | ___はありますか？ | ___はありますか？ | ___ wah ah-ree-mahs-kah | Frame: ___ is filled with a word. Literally 'Is there ___?' The standard way to ask a shop or restaurant whether they have something; the noun goes in directly, no article. |
+| how_much_is | How much is ___? | ___はいくらですか？ | ___はいくらですか？ | ___ wah ee-koo-rah des-kah | Frame: ___ is filled with a word. Literally 'As for ___, how much is it?' Same shape as the vetted これはいくらですか？ |
+| i_need | I need ___, please. | ___が必要です。 | ___がひつようです。 | ___ gah hee-tsoo-yoh des | Frame: ___ is filled with a word. SAFETY. Back-translation: '___ is necessary (for me).' Matches need_doctor, but Japanese rarely says 'I need X' for everyday requests: the examples use what a local would say instead (Please help / Water, please / Please call a taxi). Check that the frame itself reads naturally. |
+| is_there_nearby | Is there a ___ nearby? | この近くに___はありますか？ | このちかくに___はありますか？ | koh-noh chee-kah-koo nee ___ wah ah-ree-mahs-kah | Frame: ___ is filled with a word. Literally 'Is there a ___ near here?' The noun goes in directly. |
+| pay_with | Can I pay with ___? | ___で払えますか？ | ___ではらえますか？ | ___ deh hah-rah-eh-mahs-kah | Frame: ___ is filled with a word. Literally 'Can I pay by means of ___?' Same shape as the vetted カードで払えますか？ |
+| can_you | Can you ___, please? | ___もらえますか？ | ___もらえますか？ | ___ moh-rah-eh-mahs-kah | Frame: ___ is filled with a word. The blank takes a verb in its て-form (書いて, 言って), not a noun, because Japanese builds 'could you do X for me' as X-te + もらえますか. Same pattern as the vetted 手伝ってもらえますか？ and もう一度言ってもらえますか？ |
+| like_without | I'd like ___ without ___. | ___を___抜きでお願いします。 | ___を___ぬきでおねがいします。 | ___ oh ___ noo-kee deh oh-neh-guy-shee-mahs | Frame: ___ is filled with a word. Literally '___, with ___ left out, please.' First blank is the item, second the thing to leave out; order matches the English. ___なしで is an equally common alternative to 抜きで. A preference, not an allergy statement. |
+| can_i_here | Can I ___ here? | ここ___もいいですか？ | ここ___もいいですか？ | koh-koh ___ moh ee-ee des-kah | Frame: ___ is filled with a word. Literally 'Is it OK if (I) ___ here?' The blank holds the particle after ここ plus a て-form verb, because the particle changes: に for where you put yourself or your car (ここに座って, ここに停めて), で for actions done here (ここで写真を撮って). Not a noun slot. |
+| looking_for | I'm looking for ___. | ___を探しています。 | ___をさがしています。 | ___ oh sah-gah-shee-teh ee-mahs | Frame: ___ is filled with a word. Literally 'I am searching for ___.' The noun goes in directly; Japanese drops 'my/the/a'. |
+| is_included | Is ___ included? | ___は含まれていますか？ | ___はふくまれていますか？ | ___ wah foo-koo-mah-reh-teh ee-mahs-kah | Frame: ___ is filled with a word. Literally 'Is ___ included?' Same shape as the vetted tip_included. ___付きですか？ ('does it come with ___') is also very common for meals at hotels. |
+| where_can_i | Where can I ___? | どこで___ますか？ | どこで___ますか？ | doh-koh deh ___ mahs-kah | Frame: ___ is filled with a word. Literally 'Where can (I) ___?' The blank holds the object, its particle and a potential-form verb stem (切符を買え, タクシーに乗れ, 両替でき), so it is not a noun slot. Putting the thing first as a topic (切符はどこで買えますか？) is equally natural. |
 | where_is~word_bus_stop | Where is the bus stop? | バス停はどこですか？ | ばすていはどこですか？ | bah-soo-tay wah doh-koh des-kah |  |
 | where_is~word_pharmacy | Where is the pharmacy? | 薬局はどこですか？ | やっきょくはどこですか？ | yak-kyoh-koo wah doh-koh des-kah |  |
 | where_is~word_atm | Where is an ATM? | ATMはどこですか？ | えーてぃーえむはどこですか？ | eh-tee-eh-moo wah doh-koh des-kah |  |
 | where_is~word_supermarket | Where is the supermarket? | スーパーはどこですか？ | すーぱーはどこですか？ | soo-pah wah doh-koh des-kah |  |
+| where_is~word_exit |  | 出口はどこですか？ | でぐちはどこですか？ | deh-goo-chee wah doh-koh des-kah |  |
 | nearest~word_pharmacy | Where is the nearest pharmacy? | 一番近い薬局はどこですか？ | いちばんちかいやっきょくはどこですか？ | ee-chee-bahn chee-kai yak-kyoh-koo wah doh-koh des-kah |  |
 | nearest~word_atm | Where is the nearest ATM? | 一番近いATMはどこですか？ | いちばんちかいえーてぃーえむはどこですか？ | ee-chee-bahn chee-kai eh-tee-eh-moo wah doh-koh des-kah |  |
 | nearest~word_supermarket | Where is the nearest supermarket? | 一番近いスーパーはどこですか？ | いちばんちかいすーぱーはどこですか？ | ee-chee-bahn chee-kai soo-pah wah doh-koh des-kah |  |
@@ -86,12 +98,12 @@ Return all 198 keys, in order, and nothing else after the code block.
 | can_i_have~word_tea | Can I have a tea, please? | お茶をお願いします。 | おちゃをおねがいします。 | oh-chah oh oh-neh-guy-shee-mahs |  |
 | can_i_have~word_beer | Can I have a beer, please? | ビールをお願いします。 | びーるをおねがいします。 | bee-roo oh oh-neh-guy-shee-mahs |  |
 | can_i_have~word_glass_of_wine | Can I have a glass of wine, please? | グラスワインをお願いします。 | ぐらすわいんをおねがいします。 | goo-rah-soo wain oh oh-neh-guy-shee-mahs |  |
-| can_i_have~word_orange_juice | Can I have an orange juice, please? | オレンジジュースをお願いします。 | おれんじじゅーすをおねがいします。 | oh-ren-jee joo-soo oh oh-neh-guy-shee-mahs |  |
+| can_i_have~word_orange_juice |  | オレンジジュースをお願いします。 | おれんじじゅーすをおねがいします。 | oh-ren-jee joo-soo oh oh-neh-guy-shee-mahs |  |
 | can_i_have~word_menu | Can I have the menu, please? | メニューをお願いします。 | めにゅーをおねがいします。 | meh-nyoo oh oh-neh-guy-shee-mahs |  |
 | can_i_have~word_receipt | Can I have a receipt, please? | レシートをお願いします。 | れしーとをおねがいします。 | reh-shee-toh oh oh-neh-guy-shee-mahs |  |
 | i_would_like~word_tea | I'd like a tea, please. | お茶をお願いします。 | おちゃをおねがいします。 | oh-chah oh oh-neh-guy-shee-mahs |  |
 | i_would_like~word_beer | I'd like a beer, please. | ビールをお願いします。 | びーるをおねがいします。 | bee-roo oh oh-neh-guy-shee-mahs |  |
-| i_would_like~word_glass_of_wine | I'd like a glass of wine, please. | グラスワインをお願いします。 | ぐらすわいんをおねがいします。 | goo-rah-soo wain oh oh-neh-guy-shee-mahs |  |
+| i_would_like~word_glass_of_wine |  | グラスワインをお願いします。 | ぐらすわいんをおねがいします。 | goo-rah-soo wain oh oh-neh-guy-shee-mahs |  |
 | i_would_like~word_orange_juice | I'd like an orange juice, please. | オレンジジュースをお願いします。 | おれんじじゅーすをおねがいします。 | oh-ren-jee joo-soo oh oh-neh-guy-shee-mahs |  |
 | i_would_like~word_bread | I'd like some bread, please. | パンをお願いします。 | ぱんをおねがいします。 | pahn oh oh-neh-guy-shee-mahs |  |
 | i_would_like~word_water | I'd like some water, please. | お水をお願いします。 | おみずをおねがいします。 | oh-mee-zoo oh oh-neh-guy-shee-mahs |  |
@@ -102,9 +114,9 @@ Return all 198 keys, in order, and nothing else after the code block.
 | allergic_to~word_nuts | I'm allergic to nuts. | ナッツアレルギーがあります。 | なっつあれるぎーがあります。 | nat-tsoo ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
 | allergic_to~word_peanuts | I'm allergic to peanuts. | ピーナッツアレルギーがあります。 | ぴーなっつあれるぎーがあります。 | pee-nat-tsoo ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
 | allergic_to~word_gluten | I'm allergic to gluten. | グルテンアレルギーがあります。 | ぐるてんあれるぎーがあります。 | goo-roo-ten ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
-| allergic_to~word_shellfish | I'm allergic to shellfish. | 甲殻類アレルギーがあります。 | こうかくるいあれるぎーがあります。 | koh-kah-koo-roo-ee ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
+| allergic_to~word_shellfish | I'm allergic to shellfish. | 甲殻類・貝類・イカ・タコにアレルギーがあります。 | こうかくるい・かいるい・いか・たこにあれるぎーがあります。 | koh-kah-koo-roo-ee, kai-roo-ee, ee-kah, tah-koh nee ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
 | allergic_to~word_milk | I'm allergic to milk. | 牛乳アレルギーがあります。 | ぎゅうにゅうあれるぎーがあります。 | gyoo-nyoo ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
-| allergic_to~word_eggs | I'm allergic to eggs. | 卵アレルギーがあります。 | たまごあれるぎーがあります。 | tah-mah-goh ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
+| allergic_to~word_eggs |  | 卵アレルギーがあります。 | たまごあれるぎーがあります。 | tah-mah-goh ah-reh-roo-gee gah ah-ree-mahs | SAFETY: allergy/emergency. |
 | without~word_meat | Without meat, please. | 肉抜きでお願いします。 | にくぬきでおねがいします。 | nee-koo noo-kee deh oh-neh-guy-shee-mahs | SAFETY: allergy/emergency. |
 | without~word_milk | Without milk, please. | 牛乳抜きでお願いします。 | ぎゅうにゅうぬきでおねがいします。 | gyoo-nyoo noo-kee deh oh-neh-guy-shee-mahs | SAFETY: allergy/emergency. |
 | without~word_gluten | Without gluten, please. | グルテン抜きでお願いします。 | ぐるてんぬきでおねがいします。 | goo-roo-ten noo-kee deh oh-neh-guy-shee-mahs | SAFETY: allergy/emergency. |
@@ -128,13 +140,45 @@ Return all 198 keys, in order, and nothing else after the code block.
 | doesnt_work~word_wi_fi | The Wi-Fi doesn't work. | Wi-Fiがつながりません。 | わいふぁいがつながりません。 | wai-fai gah tsoo-nah-gah-ree-mah-sen |  |
 | doesnt_work~word_tv | The TV doesn't work. | テレビがつきません。 | てれびがつきません。 | teh-reh-bee gah tsoo-kee-mah-sen |  |
 | doesnt_work~word_hot_water | The hot water doesn't work. | お湯が出ません。 | おゆがでません。 | oh-yoo gah deh-mah-sen |  |
-| doesnt_work~word_door_lock | The door lock doesn't work. | ドアの鍵が壊れています。 | どあのかぎがこわれています。 | doh-ah noh kah-gee gah koh-wah-reh-teh ee-mahs |  |
+| doesnt_work~word_door_lock |  | ドアの鍵が壊れています。 | どあのかぎがこわれています。 | doh-ah noh kah-gee gah koh-wah-reh-teh ee-mahs |  |
 | lost_my~word_passport | I lost my passport. | パスポートをなくしました。 | ぱすぽーとをなくしました。 | pah-soo-poh-toh oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
 | lost_my~word_phone | I lost my phone. | 携帯をなくしました。 | けいたいをなくしました。 | kay-tai oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
 | lost_my~word_wallet | I lost my wallet. | 財布をなくしました。 | さいふをなくしました。 | sai-foo oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
-| lost_my~word_bag | I lost my bag. | かばんをなくしました。 | かばんをなくしました。 | kah-bahn oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
+| lost_my~word_bag |  | かばんをなくしました。 | かばんをなくしました。 | kah-bahn oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
 | lost_my~word_keys | I lost my keys. | 鍵をなくしました。 | かぎをなくしました。 | kah-gee oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
 | lost_my~word_room_key | I lost my room key. | 部屋の鍵をなくしました。 | へやのかぎをなくしました。 | heh-yah noh kah-gee oh nah-koo-shee-mah-shee-tah | SAFETY: allergy/emergency. |
+| do_you_have~wifi | Do you have Wi-Fi? | Wi-Fiはありますか？ | わいふぁいはありますか？ | wai-fai wah ah-ree-mahs-kah |  |
+| do_you_have~vegetarian_food | Do you have vegetarian food? | ベジタリアン料理はありますか？ | べじたりあんりょうりはありますか？ | beh-jee-tah-ree-ahn ryoh-ree wah ah-ree-mahs-kah | Understood, but many 'vegetarian' dishes still use dashi (fish stock); see the vegetarian entry. |
+| do_you_have~charger | Do you have a phone charger? | スマホの充電器はありますか？ | すまほのじゅうでんきはありますか？ | soo-mah-hoh noh joo-den-kee wah ah-ree-mahs-kah | スマホ = smartphone. To borrow one: 充電器を貸してもらえますか？ ('Could you lend me a charger?'). |
+| do_you_have~map | Do you have a map? | 地図はありますか？ | ちずはありますか？ | chee-zoo wah ah-ree-mahs-kah |  |
+| how_much_is~ticket | How much is a ticket? | 切符はいくらですか？ | きっぷはいくらですか？ | keep-poo wah ee-koo-rah des-kah | 切符 is a train/bus ticket; for events or museums チケット is more usual. For fares people often say ___までいくらですか？ ('How much to ___?'). |
+| how_much_is~coffee | How much is a coffee? | コーヒーはいくらですか？ | こーひーはいくらですか？ | koh-hee wah ee-koo-rah des-kah |  |
+| how_much_is~room | How much is the room? | 部屋はいくらですか？ | へやはいくらですか？ | heh-yah wah ee-koo-rah des-kah | At a hotel, 一泊いくらですか？ ('How much per night?') is the more natural question. |
+| i_need~help | I need help, please. | 助けてください。 | たすけてください。 | tah-soo-keh-teh koo-dah-sai | SAFETY. Back-translation: 'Please help (me).' Not the literal 'I need help' (助けが必要です sounds stiff); this is what people actually say. For non-urgent help (directions, carrying something) 手伝ってください is gentler. |
+| i_need~water | I need water, please. | お水をください。 | おみずをください。 | oh-mee-zoo oh koo-dah-sai | Literally 'Please give me water.' 水が必要です would sound odd for an ordinary request. If someone is unwell, 水が欲しいです ('I want water') also works. |
+| i_need~taxi | I need a taxi, please. | タクシーを呼んでください。 | たくしーをよんでください。 | tah-koo-shee oh yohn-deh koo-dah-sai | Literally 'Please call a taxi.' Said to hotel or restaurant staff; the literal 'I need a taxi' is not idiomatic. |
+| is_there_nearby~bathroom | Is there a bathroom nearby? | この近くにトイレはありますか？ | このちかくにといれはありますか？ | koh-noh chee-kah-koo nee toh-ee-reh wah ah-ree-mahs-kah |  |
+| is_there_nearby~supermarket | Is there a supermarket nearby? | この近くにスーパーはありますか？ | このちかくにすーぱーはありますか？ | koh-noh chee-kah-koo nee soo-pah wah ah-ree-mahs-kah |  |
+| pay_with~cash | Can I pay with cash? | 現金で払えますか？ | げんきんではらえますか？ | gen-keen deh hah-rah-eh-mahs-kah |  |
+| pay_with~phone | Can I pay with my phone? | スマホで払えますか？ | すまほではらえますか？ | soo-mah-hoh deh hah-rah-eh-mahs-kah | Understood, but staff may ask which method (Apple Pay, IC card, QR payment like PayPay); naming it is clearer. |
+| can_you~write | Can you write it down, please? | 紙に書いてもらえますか？ | かみにかいてもらえますか？ | kah-mee nee kai-teh moh-rah-eh-mahs-kah | Literally 'Could you write it on paper for me?' 紙に is added for clarity; 書いてもらえますか？ alone also works, e.g. when handing over your phone. |
+| like_without~coffee_milk | I'd like a coffee without milk. | コーヒーをミルク抜きでお願いします。 | こーひーをみるくぬきでおねがいします。 | koh-hee oh mee-roo-koo noo-kee deh oh-neh-guy-shee-mahs | ブラックでお願いします ('Black, please') is the shorter everyday way. |
+| like_without~tea_sugar | I'd like a tea without sugar. | 紅茶を砂糖抜きでお願いします。 | こうちゃをさとうぬきでおねがいします。 | koh-chah oh sah-toh noo-kee deh oh-neh-guy-shee-mahs | 紅茶 = black (Western-style) tea; Japanese green tea (お茶) is unsweetened anyway. |
+| like_without~water_ice | I'd like water without ice. | お水を氷抜きでお願いします。 | おみずをこおりぬきでおねがいします。 | oh-mee-zoo oh koh-ree noo-kee deh oh-neh-guy-shee-mahs |  |
+| can_i_here~park | Can I park here? | ここに車を停めてもいいですか？ | ここにくるまをとめてもいいですか？ | koh-koh nee koo-roo-mah oh toh-meh-teh moh ee-ee des-kah | Literally 'May I stop my car here?': the everyday way. ここに駐車してもいいですか？ is more formal; for a bicycle, 車 becomes 自転車. |
+| can_i_here~photos | Can I take photos here? | ここで写真を撮ってもいいですか？ | ここでしゃしんをとってもいいですか？ | koh-koh deh shah-sheen oh toht-teh moh ee-ee des-kah |  |
+| can_i_here~charge | Can I charge my phone here? | ここでスマホを充電してもいいですか？ | ここですまほをじゅうでんしてもいいですか？ | koh-koh deh soo-mah-hoh oh joo-den shee-teh moh ee-ee des-kah |  |
+| looking_for~my_hotel | I'm looking for my hotel. | 泊まっているホテルを探しています。 | とまっているほてるをさがしています。 | toh-maht-teh ee-roo hoh-teh-roo oh sah-gah-shee-teh ee-mahs | Literally 'I'm looking for the hotel I'm staying at.' Japanese does not say 'my hotel'; adding the hotel name is even clearer. |
+| looking_for~entrance | I'm looking for the entrance. | 入口を探しています。 | いりぐちをさがしています。 | ee-ree-goo-chee oh sah-gah-shee-teh ee-mahs |  |
+| looking_for~restaurant | I'm looking for a restaurant. | レストランを探しています。 | れすとらんをさがしています。 | reh-soo-toh-rahn oh sah-gah-shee-teh ee-mahs |  |
+| looking_for~exit | I'm looking for the exit. | 出口を探しています。 | でぐちをさがしています。 | deh-goo-chee oh sah-gah-shee-teh ee-mahs |  |
+| is_included~breakfast | Is breakfast included? | 朝食は含まれていますか？ | ちょうしょくはふくまれていますか？ | choh-shoh-koo wah foo-koo-mah-reh-teh ee-mahs-kah | 朝食付きですか？ ('Does it come with breakfast?') is equally common at hotels. |
+| is_included~tax | Is tax included? | 税込みですか？ | ぜいこみですか？ | zay-koh-mee des-kah | Literally 'Is it tax-inclusive?': what people actually say about prices. 税金は含まれていますか？ is understood but wordier. Prices in Japan are usually shown tax-included. |
+| is_included~wifi | Is Wi-Fi included? | Wi-Fiは含まれていますか？ | わいふぁいはふくまれていますか？ | wai-fai wah foo-koo-mah-reh-teh ee-mahs-kah | Wi-Fi is usually free in hotels; Wi-Fiは無料ですか？ ('Is Wi-Fi free?') may be the more natural question. |
+| is_included~luggage | Is luggage included? | 荷物の料金は含まれていますか？ | にもつのりょうきんはふくまれていますか？ | nee-moh-tsoo noh ryoh-keen wah foo-koo-mah-reh-teh ee-mahs-kah | Literally 'Is the luggage fee included?' Added 料金 (fee) so it reads as a fare question; for flights, 預け荷物 (checked baggage) is the specific term. Not sure this is the most natural phrasing. |
+| where_can_i~buy_tickets | Where can I buy tickets? | どこで切符を買えますか？ | どこできっぷをかえますか？ | doh-koh deh keep-poo oh kah-eh-mahs-kah | 切符 = train/bus tickets; for events use チケット. |
+| where_can_i~change_money | Where can I change money? | どこで両替できますか？ | どこでりょうがえできますか？ | doh-koh deh ryoh-gah-eh deh-kee-mahs-kah |  |
+| where_can_i~sim | Where can I buy a SIM card? | どこでSIMカードを買えますか？ | どこでしむかーどをかえますか？ | doh-koh deh shee-moo kah-doh oh kah-eh-mahs-kah |  |
 | reply~for_here_or_to_go | For here or to go? | 店内でお召し上がりですか、お持ち帰りですか？ | てんないでおめしあがりですか、おもちかえりですか？ | ten-nai deh oh-meh-shee-ah-gah-ree des-kah, oh-moh-chee-kah-eh-ree des-kah | Said TO the traveller by staff. |
 | reply~anything_else | Anything else? | ご注文は以上でよろしいですか？ | ごちゅうもんはいじょうでよろしいですか？ | goh-choo-mon wah ee-joh deh yoh-roh-shee des-kah | Said TO the traveller by staff. Literally 'Is that everything for your order?': what staff actually say. |
 | reply~here_you_go | Here you go. | どうぞ。 | どうぞ。 | doh-zoh | Said TO the traveller by staff. |
@@ -176,7 +220,7 @@ Return all 198 keys, in order, and nothing else after the code block.
 | word~word_ice | ice | 氷 | こおり | koh-ree | A single word, as it would appear inside a sentence. |
 | word~word_nuts | nuts | ナッツ | なっつ | nat-tsoo | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'nuts' (loanword). Standard; covers tree nuts generally. Peanuts are a separate word (ピーナッツ / 落花生). |
 | word~word_gluten | gluten | グルテン | ぐるてん | goo-roo-ten | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'gluten' (loanword). Less widely understood than 小麦 (koh-moo-gee, wheat), which is the allergen Japanese food labels list. Consider teaching 小麦 alongside it. |
-| word~word_shellfish | shellfish | 甲殻類 | こうかくるい | koh-kah-koo-roo-ee | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'crustaceans' (shrimp, crab, lobster): the standard allergy term. Molluscs (clams, oysters, scallops) are 貝類 (kai-roo-ee); English 'shellfish' covers both. Labels list えび (shrimp) and かに (crab). |
+| word~word_shellfish | shellfish | 甲殻類・貝類・イカ・タコ | こうかくるい・かいるい・いか・たこ | koh-kah-koo-roo-ee, kai-roo-ee, ee-kah, tah-koh | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'crustaceans' (shrimp, crab, lobster): the standard allergy term. Molluscs (clams, oysters, scallops) are 貝類 (kai-roo-ee); English 'shellfish' covers both. Labels list えび (shrimp) and かに (crab). [Fixed 2026-10-14 per ChatGPT review.] |
 | word~word_eggs | eggs | 卵 | たまご | tah-mah-goh | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'egg(s)'. |
 | word~word_meat | meat | 肉 | にく | nee-koo | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'meat'. Does not include fish or fish stock (dashi). |
 | word~word_dairy | dairy | 乳製品 | にゅうせいひん | nyoo-say-heen | A single word, as it would appear inside a sentence. SAFETY. Back-translation: 'milk products'. Same word as the existing dairy card. |

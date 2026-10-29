@@ -323,6 +323,72 @@
       "target": "Necesito llamar a alguien.",
       "pronunciation_easy": "neh-seh-SEE-toh yah-MAR ah AL-gyen",
       "qa": "Back-translation: \"I need to call someone.\" Safety item: please verify."
+    },
+    {
+      "id": "do_you_have",
+      "target": "¿Tienes ___?",
+      "pronunciation_easy": "TYEH-nes",
+      "qa": "Uses tú like the rest of the file. Asking a shop, café or hotel (the business), \"¿Tienen ___?\" (TYEH-nen, plural) is the most natural; usted form is \"¿Tiene ___?\". The blank takes an article only when English has one (wifi, comida vegetariana, but un cargador, un mapa), so the article goes with the word."
+    },
+    {
+      "id": "how_much_is",
+      "target": "¿Cuánto cuesta ___?",
+      "pronunciation_easy": "KWAN-toh KWES-tah",
+      "qa": "Blank takes the word with its article (un café, la habitación). Plural nouns need \"¿Cuánto cuestan ___?\". \"¿Cuánto es?\" is also common at the till."
+    },
+    {
+      "id": "i_need",
+      "target": "Necesito ___, por favor.",
+      "pronunciation_easy": "neh-seh-SEE-toh, por fah-VOR",
+      "qa": "Back-translation: \"I need ___, please.\" Blank takes the word with its article when English has one (un taxi; ayuda and agua take none). Safety item: please verify. Help example back-translates as \"I need help, please.\"; in a real emergency people shout \"¡Ayuda!\" or \"¡Socorro!\" instead. The doctor variant reuses the existing need_doctor phrase."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "¿Hay ___ cerca?",
+      "pronunciation_easy": "eye SEHR-kah",
+      "qa": "Blank takes un/una with the word (un baño, una farmacia), so the article is part of the blank. \"Por aquí\" (por ah-KEE) instead of \"cerca\" is equally common. Bathroom: \"baño\" in Latin America; Spain says \"aseo\" or \"servicio\" in public places."
+    },
+    {
+      "id": "pay_with",
+      "target": "¿Puedo pagar ___?",
+      "pronunciation_easy": "PWEH-doh pah-GAR",
+      "qa": "The preposition changes with the filler, so it is inside the blank: cash is \"en efectivo\" (con efectivo is heard but less standard), card and phone take \"con\" (con tarjeta, con el teléfono)."
+    },
+    {
+      "id": "can_you",
+      "target": "¿Puedes ___, por favor?",
+      "pronunciation_easy": "PWEH-des, por fah-VOR",
+      "qa": "Uses tú like the rest of the file (usted: \"¿Puede ___?\"). Object pronouns attach to the verb (escribirlo) or move before puedes (\"¿Me lo puedes escribir?\"), both natural."
+    },
+    {
+      "id": "like_without",
+      "target": "Quisiera ___ sin ___.",
+      "pronunciation_easy": "kee-SYEH-rah ... seen",
+      "qa": "First blank takes un/una with the item (un café, un té, agua with no article); the noun after sin drops its article (sin leche). Coffee without milk is often ordered as \"un café solo\" (Spain) or \"un café negro / americano\" (Latin America)."
+    },
+    {
+      "id": "can_i_here",
+      "target": "¿Puedo ___ aquí?",
+      "pronunciation_easy": "PWEH-doh ah-KEE",
+      "qa": "Blank takes an infinitive phrase. Regional verbs: park = \"estacionar\" (Latin America), \"aparcar\" (Spain); take photos = \"tomar fotos\" (Latin America), \"hacer/sacar fotos\" (Spain). For a seat, \"¿Está libre?\" (is it free?) is also very common."
+    },
+    {
+      "id": "looking_for",
+      "target": "Estoy buscando ___.",
+      "pronunciation_easy": "es-TOY boos-KAHN-doh",
+      "qa": "Blank takes the word with its article or possessive (mi hotel, la entrada, un restaurante). \"Busco ___\" (BOOS-koh) is shorter and equally correct."
+    },
+    {
+      "id": "is_included",
+      "target": "¿Está incluido ___?",
+      "pronunciation_easy": "es-TAH een-kloo-EE-doh",
+      "qa": "Incluido agrees with the noun, so the frame is only literal for masculine singular words: feminine \"¿Está incluida la propina?\", plural \"¿Están incluidos los impuestos?\". Blank takes the word with its article (el desayuno). Tax: \"los impuestos\" is general; Spain and Mexico usually say \"el IVA\"."
+    },
+    {
+      "id": "where_can_i",
+      "target": "¿Dónde puedo ___?",
+      "pronunciation_easy": "DON-deh PWEH-doh",
+      "qa": "Blank takes an infinitive phrase. Regional: get a taxi = \"tomar un taxi\" (Latin America), \"coger un taxi\" (Spain; avoid coger in Mexico/Argentina); tickets = \"boletos\" (Latin America), \"billetes\"/\"entradas\" (Spain; entradas for shows/museums)."
     }
   ],
   "vocab": {
@@ -984,6 +1050,219 @@
         "word": "word_room_key",
         "target": "Perdí la llave de mi habitación.",
         "pronunciation_easy": "pehr-DEE lah YAH-veh deh mee ah-bee-tah-SYON"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "¿Tienes wifi?",
+        "pronunciation_easy": "TYEH-nes WAI-fai"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "¿Tienes comida vegetariana?",
+        "pronunciation_easy": "TYEH-nes koh-MEE-dah beh-heh-tah-RYAH-nah"
+      },
+      {
+        "word": "charger",
+        "target": "¿Tienes un cargador de teléfono?",
+        "pronunciation_easy": "TYEH-nes oon kar-gah-DOR deh teh-LEH-foh-noh",
+        "qa": "Phone: \"celular\" in Latin America, \"móvil\" in Spain."
+      },
+      {
+        "word": "map",
+        "target": "¿Tienes un mapa?",
+        "pronunciation_easy": "TYEH-nes oon MAH-pah"
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "¿Cuánto cuesta un boleto?",
+        "pronunciation_easy": "KWAN-toh KWES-tah oon boh-LEH-toh",
+        "qa": "\"Boleto\" Latin America; Spain says \"billete\" (transport) or \"entrada\" (shows)."
+      },
+      {
+        "word": "coffee",
+        "target": "¿Cuánto cuesta un café?",
+        "pronunciation_easy": "KWAN-toh KWES-tah oon kah-FEH"
+      },
+      {
+        "word": "room",
+        "target": "¿Cuánto cuesta la habitación?",
+        "pronunciation_easy": "KWAN-toh KWES-tah lah ah-bee-tah-SYON",
+        "qa": "Add \"por noche\" (por NOH-cheh) for per night."
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "Necesito ayuda, por favor.",
+        "pronunciation_easy": "neh-seh-SEE-toh ah-YOO-dah, por fah-VOR",
+        "qa": "Back-translation: \"I need help, please.\" Safety item: please verify."
+      },
+      {
+        "word": "water",
+        "target": "Necesito agua, por favor.",
+        "pronunciation_easy": "neh-seh-SEE-toh AH-gwah, por fah-VOR"
+      },
+      {
+        "word": "taxi",
+        "target": "Necesito un taxi, por favor.",
+        "pronunciation_easy": "neh-seh-SEE-toh oon TAHK-see, por fah-VOR"
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "¿Hay un baño cerca?",
+        "pronunciation_easy": "eye oon BAN-yoh SEHR-kah"
+      },
+      {
+        "word": "pharmacy",
+        "target": "¿Hay una farmacia cerca?",
+        "pronunciation_easy": "eye OO-nah far-MAH-syah SEHR-kah"
+      },
+      {
+        "word": "atm",
+        "target": "¿Hay un cajero automático cerca?",
+        "pronunciation_easy": "eye oon kah-HEH-roh ow-toh-MAH-tee-koh SEHR-kah"
+      },
+      {
+        "word": "supermarket",
+        "target": "¿Hay un supermercado cerca?",
+        "pronunciation_easy": "eye oon soo-pehr-mehr-KAH-doh SEHR-kah"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "¿Puedo pagar en efectivo?",
+        "pronunciation_easy": "PWEH-doh pah-GAR en eh-fek-TEE-boh"
+      },
+      {
+        "word": "phone",
+        "target": "¿Puedo pagar con el teléfono?",
+        "pronunciation_easy": "PWEH-doh pah-GAR kon el teh-LEH-foh-noh",
+        "qa": "Spanish uses the article for your own phone (con el teléfono = with my phone). Locals say \"con el celular\" (Latin America) or \"con el móvil\" (Spain)."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "¿Puedes escribirlo, por favor?",
+        "pronunciation_easy": "PWEH-des es-kree-BEER-loh, por fah-VOR"
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "Quisiera un café sin leche.",
+        "pronunciation_easy": "kee-SYEH-rah oon kah-FEH seen LEH-cheh"
+      },
+      {
+        "word": "tea_sugar",
+        "target": "Quisiera un té sin azúcar.",
+        "pronunciation_easy": "kee-SYEH-rah oon teh seen ah-SOO-kar"
+      },
+      {
+        "word": "water_ice",
+        "target": "Quisiera agua sin hielo.",
+        "pronunciation_easy": "kee-SYEH-rah AH-gwah seen YEH-loh"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "¿Puedo sentarme aquí?",
+        "pronunciation_easy": "PWEH-doh sen-TAR-meh ah-KEE"
+      },
+      {
+        "word": "park",
+        "target": "¿Puedo estacionar aquí?",
+        "pronunciation_easy": "PWEH-doh es-tah-syoh-NAR ah-KEE",
+        "qa": "Spain: \"¿Puedo aparcar aquí?\" (ah-par-KAR)."
+      },
+      {
+        "word": "photos",
+        "target": "¿Puedo tomar fotos aquí?",
+        "pronunciation_easy": "PWEH-doh toh-MAR FOH-tos ah-KEE",
+        "qa": "Spain: \"¿Puedo hacer fotos aquí?\"."
+      },
+      {
+        "word": "charge",
+        "target": "¿Puedo cargar mi teléfono aquí?",
+        "pronunciation_easy": "PWEH-doh kar-GAR mee teh-LEH-foh-noh ah-KEE"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "Estoy buscando mi hotel.",
+        "pronunciation_easy": "es-TOY boos-KAHN-doh mee oh-TEL"
+      },
+      {
+        "word": "entrance",
+        "target": "Estoy buscando la entrada.",
+        "pronunciation_easy": "es-TOY boos-KAHN-doh lah en-TRAH-dah"
+      },
+      {
+        "word": "restaurant",
+        "target": "Estoy buscando un restaurante.",
+        "pronunciation_easy": "es-TOY boos-KAHN-doh oon res-tow-RAHN-teh"
+      },
+      {
+        "word": "exit",
+        "target": "Estoy buscando la salida.",
+        "pronunciation_easy": "es-TOY boos-KAHN-doh lah sah-LEE-dah"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "¿Está incluido el desayuno?",
+        "pronunciation_easy": "es-TAH een-kloo-EE-doh el deh-sah-YOO-noh"
+      },
+      {
+        "word": "tax",
+        "target": "¿Están incluidos los impuestos?",
+        "pronunciation_easy": "es-TAHN een-kloo-EE-dos los eem-PWES-tos",
+        "qa": "Plural agreement. Spain/Mexico usually: \"¿Está incluido el IVA?\" (EE-bah)."
+      },
+      {
+        "word": "wifi",
+        "target": "¿Está incluido el wifi?",
+        "pronunciation_easy": "es-TAH een-kloo-EE-doh el WAI-fai"
+      },
+      {
+        "word": "luggage",
+        "target": "¿Está incluido el equipaje?",
+        "pronunciation_easy": "es-TAH een-kloo-EE-doh el eh-kee-PAH-heh"
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "¿Dónde puedo comprar boletos?",
+        "pronunciation_easy": "DON-deh PWEH-doh kom-PRAR boh-LEH-tos",
+        "qa": "Spain: \"billetes\" (transport) or \"entradas\" (shows, museums)."
+      },
+      {
+        "word": "taxi",
+        "target": "¿Dónde puedo tomar un taxi?",
+        "pronunciation_easy": "DON-deh PWEH-doh toh-MAR oon TAHK-see",
+        "qa": "Spain: \"coger un taxi\"; avoid coger in Mexico and Argentina."
+      },
+      {
+        "word": "change_money",
+        "target": "¿Dónde puedo cambiar dinero?",
+        "pronunciation_easy": "DON-deh PWEH-doh kam-BYAR dee-NEH-roh"
+      },
+      {
+        "word": "sim",
+        "target": "¿Dónde puedo comprar una tarjeta SIM?",
+        "pronunciation_easy": "DON-deh PWEH-doh kom-PRAR OO-nah tar-HEH-tah seem",
+        "qa": "Also \"un chip\" in much of Latin America."
       }
     ]
   },

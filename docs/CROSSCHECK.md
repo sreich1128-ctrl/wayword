@@ -9,15 +9,15 @@ Generated 2026-10-29 by `node scripts/crosscheck.mjs`. Source: [Tatoeba](https:/
 
 | Language | Drafts | Match | Close | Differs | None |
 |---|---|---|---|---|---|
-| European Portuguese | 126 | 26 | 6 | 15 | 79 |
-| Spanish | 126 | 37 | 6 | 10 | 73 |
-| French | 126 | 39 | 3 | 11 | 73 |
-| Italian | 126 | 36 | 6 | 10 | 74 |
-| Romanian | 126 | 15 | 3 | 4 | 104 |
-| Russian | 126 | 39 | 5 | 16 | 66 |
-| Japanese | 126 | 12 | 2 | 28 | 84 |
-| Hebrew | 126 | 20 | 1 | 7 | 98 |
-| Levantine Arabic | 126 | 8 | 3 | 14 (12 formal-only) | 101 |
+| European Portuguese | 162 | 28 | 9 | 20 | 105 |
+| Spanish | 162 | 42 | 10 | 11 | 99 |
+| French | 162 | 40 | 6 | 17 | 99 |
+| Italian | 162 | 40 | 7 | 13 | 102 |
+| Romanian | 162 | 16 | 4 | 6 | 136 |
+| Russian | 162 | 43 | 7 | 19 | 93 |
+| Japanese | 162 | 15 | 3 | 32 | 112 |
+| Hebrew | 162 | 20 | 3 | 9 | 130 |
+| Levantine Arabic | 162 | 8 | 2 | 16 (14 formal-only) | 136 |
 
 ## European Portuguese
 
@@ -45,6 +45,14 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | The air conditioning doesn't work. | O ar condicionado não funciona. | O ar-condicionado não está funcionando. | differs |
 | The shower doesn't work. | O duche não funciona. | O chuveiro está quebrado. · A ducha está quebrada. | differs |
 | I lost my wallet. | Perdi a minha carteira. | Perdi minha carteira. · Não encontro minha carteira. | close |
+| Do you have a map? | Tem um mapa? | O senhor tem um mapa? · A senhora tem um mapa? | differs |
+| Is there a pharmacy nearby? | Há uma farmácia aqui perto? | Há alguma farmácia por aqui? · Há uma farmácia nas proximidades? | differs |
+| Is there an ATM nearby? | Há um multibanco aqui perto? | Tem um caixa automático por aqui? · Há um caixa automático por aqui? | differs |
+| Is there a supermarket nearby? | Há um supermercado aqui perto? | Existe um supermercado nas proximidades? | differs |
+| Can I sit here? | Posso sentar-me aqui? | Posso sentar aqui? · Eu posso me sentar aqui? | close |
+| Can I park here? | Posso estacionar aqui? | Eu posso estacionar aqui? | close |
+| Is breakfast included? | O pequeno-almoço está incluído? | O café da manhã está incluído no preço? | differs |
+| Where can I get a taxi? | Onde posso apanhar um táxi? | Onde eu consigo pegar um taxi? · Onde posso conseguir um táxi? | close |
 | Do you have a reservation? | Tem reserva? | Você fez reserva? · Vocês fizeram reserva? | differs |
 
 ## Spanish
@@ -63,6 +71,11 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | I'm allergic to peanuts. | Soy alérgico al maní. | Soy alérgico a los cacahuates. · Soy alérgica a los cacahuates. | differs |
 | I'm allergic to gluten. | Soy alérgico al gluten. | Soy alérgica al gluten. · Soy intolerante al gluten. | close |
 | I'm allergic to milk. | Soy alérgico a la leche. | Tengo alergia a la leche. | differs |
+| How much is a ticket? | ¿Cuánto cuesta un boleto? | ¿Cuánto cuesta el billete? · ¿Cuánto cuesta un tiquete? | close |
+| How much is the room? | ¿Cuánto cuesta la habitación? | ¿Cuánto cuesta el cuarto? · ¿Cuánto cuesta una habitación? | close |
+| Is there an ATM nearby? | ¿Hay un cajero automático cerca? | ¿Hay un cajero automático por aquí? · ¿Hay algún cajero automático por acá? | close |
+| Can I park here? | ¿Puedo estacionar aquí? | ¿Puedo aparcar aquí? · ¿Puedo aparcar mi coche aquí? | differs |
+| Is breakfast included? | ¿Está incluido el desayuno? | ¿Eso incluye el desayuno? · ¿Viene incluido el desayuno? | close |
 | For here or to go? | ¿Para comer aquí o para llevar? | ¿Para llevar o para comer aquí? · ¿Para servir o para llevar? | close |
 | Here you go. | Aquí tiene. | Tenga usted. · ¡Por favor! | differs |
 | Do you have a reservation? | ¿Tiene reserva? | ¿Tienen una reserva? · Ha hecha una reserva? | differs |
@@ -83,6 +96,15 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | How do I get to the hotel? | Comment aller à l'hôtel ? | Comment est-ce que je vais à l'hôtel ? · Comment puis-je arriver à l'hôtel ? | differs |
 | Can I have a beer, please? | Je peux avoir une bière, s'il vous plaît ? | Puis-je avoir une bière, s'il vous plaît ? · Puis-je avoir une bière, s'il vous plaît ? | close |
 | The shower doesn't work. | La douche ne marche pas. | La douche est cassée. · La douche ne fonctionne pas. | differs |
+| How much is a ticket? | Combien coûte un billet ? | Combien coûte le billet ? · Combien coûte un ticket ? | close |
+| How much is the room? | Combien coûte la chambre ? | Combien coûte une chambre ? | close |
+| Is there a pharmacy nearby? | Il y a une pharmacie près d'ici ? | Y a-t-il une pharmacie près d'ici ? · Y a-t-il une pharmacie par ici ? | close |
+| Is there an ATM nearby? | Il y a un distributeur de billets près d'ici ? | Y a-t-il un automate bancaire dans les environs ? · Y a-t-il un distributeur de billets dans les environs ? | differs |
+| Is there a supermarket nearby? | Il y a un supermarché près d'ici ? | Y a-t-il un supermarché à proximité ? | differs |
+| Is breakfast included? | Le petit-déjeuner est compris ? | Le petit déjeuner est-il inclus ? · Est-ce que le prix inclut le petit déjeuner ? | differs |
+| Where can I buy tickets? | Où est-ce que je peux acheter des billets ? | Où puis-je acheter des tickets ? · Où puis-je acheter des billets ? | differs |
+| Where can I get a taxi? | Où est-ce que je peux prendre un taxi ? | Où puis-je prendre un taxi ? · Où puis-je trouver un taxi ? | differs |
+| Where can I change money? | Où est-ce que je peux changer de l'argent ? | Où peux-je changer de l'argent ? · Où puis-je changer de l'argent ? | differs |
 | How many people? | Vous êtes combien ? | Combien de personnes ? | differs |
 | Do you have a reservation? | Vous avez une réservation ? | Avez-vous réservé ? · Vous avez réservé ? | differs |
 | Would you like a receipt? | Vous voulez le ticket ? | Vous voulez un reçu ? | differs |
@@ -102,6 +124,10 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | I lost my passport. | Ho perso il passaporto. | Ho perso il mio passaporto. · Persi il mio passaporto. | close |
 | I lost my phone. | Ho perso il telefono. | Ho perso il mio telefono. · Persi il mio telefono. | close |
 | I lost my wallet. | Ho perso il portafoglio. | Ho perso il mio portafoglio. · Persi il mio portafoglio. | close |
+| How much is the room? | Quanto costa la camera? | Quanto viene la stanza? | differs |
+| Is there a pharmacy nearby? | C'è una farmacia qui vicino? | C'è una farmacia da queste parti? | differs |
+| Is there a supermarket nearby? | C'è un supermercato qui vicino? | C'è un supermercato nei paraggi? · C'è un supermercato nei dintorni? | differs |
+| Where can I buy tickets? | Dove posso comprare i biglietti? | Dove posso comprare dei biglietti? · Mi puoi dire dove comprare dei biglietti? | close |
 | For here or to go? | Qui o da portare via? | È per asporto o lo mangia qui? | differs |
 | Anything else? | Altro? | Qualcos'altro? | differs |
 | Here you go. | Ecco a lei. | Tieni. · Ecco. | differs |
@@ -116,6 +142,9 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | It's too expensive. | Este prea scump. | E prea scump! · E prea scump! | close |
 | It's an emergency. | Este o urgență. | Este un caz extrem. | differs |
 | I lost my keys. | Mi-am pierdut cheile. | Mi-am pierdut cheile mele. | close |
+| How much is a ticket? | Cât costă un bilet? | Cât costă biletul? | differs |
+| How much is the room? | Cât costă camera? | Cât costă o cameră? | close |
+| Can I sit here? | Pot să stau aici? | Pot să mă așez aici? | differs |
 | Anything else? | Mai doriți ceva? | Altceva? | differs |
 | Here you go. | Poftiți. | Vă rog. · Te rog. | differs |
 | How many people? | Pentru câte persoane? | Câți oameni? | differs |
@@ -135,12 +164,17 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | How do I get to the train station? | Как добраться до вокзала? | Как мне добраться до вокзала? · Как мне доехать до вокзала? | close |
 | How do I get to the hotel? | Как добраться до гостиницы? | Как мне добраться до отеля? · Как мне добраться до гостиницы? | close |
 | Can I have a beer, please? | Можно мне пиво, пожалуйста? | Можно мне одно пиво, пожалуйста? · Пожалуйста, можно мне пиво? | close |
-| I'd like a glass of wine, please. | Я бы хотел бокал вина, пожалуйста. | Мне бокал вина, пожалуйста. | differs |
 | I lost my passport. | Я потерял/потеряла паспорт. | Я паспорт потерял. · Я потерял паспорт. | differs |
 | I lost my phone. | Я потерял/потеряла телефон. | Я потерял свой телефон. | differs |
 | I lost my wallet. | Я потерял/потеряла кошелёк. | Я потерял бумажник. · Я потеряла кошелёк. | differs |
-| I lost my bag. | Я потерял/потеряла сумку. | Я потерял свою сумку. · Я потерял сумку. | differs |
 | I lost my keys. | Я потерял/потеряла ключи. | Я потерял свои ключи. · Я ключи потерял. | differs |
+| Do you have a map? | У вас есть карта города? | У тебя есть карта? · У вас есть карта? | differs |
+| Is there a pharmacy nearby? | Здесь рядом есть аптека? | Здесь поблизости есть аптека? · Тут поблизости есть аптека? | differs |
+| Is there an ATM nearby? | Здесь рядом есть банкомат? | Здесь поблизости есть банкомат? · Здесь есть поблизости банкомат? | differs |
+| Is there a supermarket nearby? | Здесь рядом есть супермаркет? | Поблизости есть какой-нибудь супермаркет? · Поблизости есть супермаркет? | differs |
+| Can I sit here? | Можно здесь сесть? | Можно я здесь сяду? · Можно мне здесь сесть? | close |
+| Is breakfast included? | Завтрак входит в стоимость? | Завтрак включён? · Завтрак включён в стоимость? | differs |
+| Where can I get a taxi? | Где можно взять такси? | Где можно найти такси? · Где можно поймать такси? | close |
 | Here you go. | Вот, пожалуйста. | Вот, берите. · Я вложился. | differs |
 | How many people? | На сколько человек? | Сколько человек? | close |
 | This way. | Сюда, пожалуйста. | Сюда. · Туда. | differs |
@@ -176,6 +210,11 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | The TV doesn't work. | テレビがつきません。 | テレビがつかないよ。 · テレビが故障しています。 | differs |
 | I lost my passport. | パスポートをなくしました。 | パスポートを無くしてしまいました！ | differs |
 | I lost my wallet. | 財布をなくしました。 | 私の財布が無くなった。 · 財布をなくしたの。 | differs |
+| Is there a supermarket nearby? | この近くにスーパーはありますか？ | 近くにスーパーはありますか？ | close |
+| Can I park here? | ここに車を停めてもいいですか？ | ここに駐車してもよろしいですか。 · ここに駐車してもいいですか？ | differs |
+| Is breakfast included? | 朝食は含まれていますか？ | 朝食はついてますか？ · それには朝食は含まれていますか。 | differs |
+| Where can I buy tickets? | どこで切符を買えますか？ | 切符は、どこで買えばいいですか。 · チケットはどこで買えますか。 | differs |
+| Where can I change money? | どこで両替できますか？ | 両替はどこでできますか？ | differs |
 | For here or to go? | 店内でお召し上がりですか、お持ち帰りですか？ | ここで召し上がりますか、それともお持ち帰りですか。 · 持ち帰りですか。それともここでたべますか。 | differs |
 | Anything else? | ご注文は以上でよろしいですか？ | 他に何かありますか。 · 他に何かいりますか。 | differs |
 | Here you go. | どうぞ。 | はいどうぞ。 | differs |
@@ -191,6 +230,10 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | I'm allergic to milk. | אני אלרגי לחלב. | יש לי רגישות לחלב. · יש לי אלרגיה לחלב. | differs |
 | The shower doesn't work. | המקלחת לא עובדת. | המקלחת מקולקלת. | differs |
 | The TV doesn't work. | הטלוויזיה לא עובדת. | הטלוויזיה לא פועלת. | close |
+| How much is the room? | כמה עולה החדר? | כמה עולה חדר? | close |
+| Is breakfast included? | ארוחת הבוקר כלולה? | האם ארוחת בוקר כלולה? · ארוחת בוקר כלולה? | close |
+| Where can I buy tickets? | איפה אפשר לקנות כרטיסים? | איפה אני יכול לקנות כרטיסים? · איפה אני יכולה לקנות כרטיסים? | differs |
+| Where can I get a taxi? | איפה אפשר לתפוס מונית? | איפה אוכל להשיג מונית? | differs |
 | How many people? | כמה אתם? | כמה אנשים? | differs |
 | This way. | מכאן, בבקשה. | לכאן. | differs |
 
@@ -202,6 +245,5 @@ _Tatoeba has few Levantine sentences; most matches are formal Arabic (ara), whic
 |---|---|---|---|
 | Okay. | ماشي. | Mnih. · حسناً. (formal) | differs |
 | Help! | ساعدوني! | مساعدة! · النجدة! (formal) | differs |
-| Where is the exit? | وين المخرج؟ | أين المخرج؟ (formal) | close |
 | I'm allergic to milk. | عندي حساسية من الحليب. | لديّ حساسيّة من الحليب. (formal) | close |
 | I lost my keys. | ضيّعت مفاتيحي. | أضعت مفاتيحي. (formal) | close |

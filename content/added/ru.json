@@ -319,6 +319,72 @@
       "target": "Мне нужно кому-то позвонить.",
       "pronunciation_easy": "mnyeh NOOZH-nah kah-MOO-tah pah-zvah-NEET",
       "qa": "Back-translation: 'I need to make a phone call' (lit. 'to me [it is] necessary to call'). Add Можно с вашего телефона? to ask to use someone's phone. [Fixed 2026-10-14 per ChatGPT review.]"
+    },
+    {
+      "id": "do_you_have",
+      "target": "У вас есть ___?",
+      "pronunciation_easy": "oo vahs YEST",
+      "qa": "Lit. 'At you is there ___?'. The noun stays in the nominative, so the blank takes the plain word."
+    },
+    {
+      "id": "how_much_is",
+      "target": "Сколько стоит ___?",
+      "pronunciation_easy": "SKOL-kah STOH-eet",
+      "qa": "Plural items take стоят (STOH-yaht): Сколько стоят билеты?"
+    },
+    {
+      "id": "i_need",
+      "target": "Мне ___, пожалуйста.",
+      "pronunciation_easy": "mnyeh, pah-ZHAH-loo-stah",
+      "qa": "Back-translation: 'To me [is] needed ___, please.' The word for 'needed' agrees with the noun (нужен masc., нужна fem., нужно neut., нужны plural), so it is inside the blank: Мне нужна помощь, Мне нужно такси. Gender-neutral for the speaker. Safety: 'I need help' = Мне нужна помощь (lit. 'to me [is] needed help'); shouted, Помогите! (Help!). 'I need a doctor' = Мне нужен врач (lit. 'to me [is] needed a doctor')."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "Здесь рядом есть ___?",
+      "pronunciation_easy": "zdyes RYAH-dahm yest",
+      "qa": "Lit. 'Here nearby is there ___?'. Noun stays nominative. Тут поблизости есть ___? is equally common."
+    },
+    {
+      "id": "pay_with",
+      "target": "Можно оплатить ___?",
+      "pronunciation_easy": "MOZH-nah ahp-lah-TEET",
+      "qa": "Lit. 'Can [one] pay ___?'. The means of payment goes in the instrumental with no preposition (наличными, картой, телефоном), so 'with' is inside the blank. Matches the vetted Можно оплатить картой?"
+    },
+    {
+      "id": "can_you",
+      "target": "Можете ___, пожалуйста?",
+      "pronunciation_easy": "MOH-zhuh-tyeh, pah-ZHAH-loo-stah",
+      "qa": "Lit. 'Can [you] ___, please?' + infinitive; matches the vetted Можете повторить? / Можете мне помочь?"
+    },
+    {
+      "id": "like_without",
+      "target": "Мне ___ без ___, пожалуйста.",
+      "pronunciation_easy": "mnyeh byez, pah-ZHAH-loo-stah",
+      "qa": "Lit. 'For me ___ without ___, please' (the usual way to order; gender-neutral, unlike Я бы хотел/хотела). First blank is accusative (воду, кофе, чай), second is genitive after без (молока, сахара, льда), so case changes are inside the blanks."
+    },
+    {
+      "id": "can_i_here",
+      "target": "Можно здесь ___?",
+      "pronunciation_easy": "MOZH-nah zdyes",
+      "qa": "Lit. 'Is it allowed here to ___?' + infinitive; same pattern as the vetted Можно оставить здесь багаж?"
+    },
+    {
+      "id": "looking_for",
+      "target": "Я ищу ___.",
+      "pronunciation_easy": "ya ee-SHCHOO",
+      "qa": "The object takes the accusative (feminine nouns change: гостиницу), so the case form is inside the blank. Gender-neutral."
+    },
+    {
+      "id": "is_included",
+      "target": "___ входит в стоимость?",
+      "pronunciation_easy": "FKHOH-deet f STOH-ee-mahst",
+      "qa": "Lit. 'Does ___ go into the price?'. Chosen over ___ включён? because включён/включена/включено/включены changes with the noun's gender; входит only changes for plural (входят). Not sure which a native would pick as the default; both are common."
+    },
+    {
+      "id": "where_can_i",
+      "target": "Где можно ___?",
+      "pronunciation_easy": "gdyeh MOZH-nah",
+      "qa": "Lit. 'Where is it possible to ___?' + infinitive. Gender-neutral."
     }
   ],
   "vocab": {
@@ -980,6 +1046,224 @@
         "word": "word_room_key",
         "target": "Я потерял/потеряла ключ от номера.",
         "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah klyooch at NOH-mee-rah"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "У вас есть Wi-Fi?",
+        "pronunciation_easy": "oo vahs yest vai-FAI"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "У вас есть вегетарианские блюда?",
+        "pronunciation_easy": "oo vahs yest vee-gee-tah-ree-AHN-skee-yeh BLYOO-dah",
+        "qa": "Lit. 'vegetarian dishes', the natural restaurant wording; вегетарианская еда (food) also works."
+      },
+      {
+        "word": "charger",
+        "target": "У вас есть зарядка для телефона?",
+        "pronunciation_easy": "oo vahs yest zah-RYAHT-kah dlyah tee-lee-FOH-nah"
+      },
+      {
+        "word": "map",
+        "target": "У вас есть карта города?",
+        "pronunciation_easy": "oo vahs yest KAR-tah GOH-rah-dah",
+        "qa": "Lit. 'a map of the city'; plain карта can also mean a bank card, so города was added."
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "Сколько стоит билет?",
+        "pronunciation_easy": "SKOL-kah STOH-eet bee-LYET"
+      },
+      {
+        "word": "coffee",
+        "target": "Сколько стоит кофе?",
+        "pronunciation_easy": "SKOL-kah STOH-eet KOH-fyeh"
+      },
+      {
+        "word": "room",
+        "target": "Сколько стоит номер?",
+        "pronunciation_easy": "SKOL-kah STOH-eet NOH-meer",
+        "qa": "номер = hotel room. Per night: Сколько стоит номер за ночь?"
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "Мне нужна помощь.",
+        "pronunciation_easy": "mnyeh noozh-NAH POH-mahshch",
+        "qa": "Back-translation: 'To me [is] needed help.' пожалуйста dropped: it sounds odd in an urgent request. In real danger shout Помогите!"
+      },
+      {
+        "word": "water",
+        "target": "Мне нужна вода, пожалуйста.",
+        "pronunciation_easy": "mnyeh noozh-NAH vah-DAH, pah-ZHAH-loo-stah",
+        "qa": "To ask for some to drink, Дайте, пожалуйста, воды (Give me some water, please) is more usual."
+      },
+      {
+        "word": "taxi",
+        "target": "Мне нужно такси, пожалуйста.",
+        "pronunciation_easy": "mnyeh NOOZH-nah tahk-SEE, pah-ZHAH-loo-stah",
+        "qa": "такси is neuter, hence нужно. Asking staff to order one: Вызовите мне такси, пожалуйста (Call me a taxi)."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "Здесь рядом есть туалет?",
+        "pronunciation_easy": "zdyes RYAH-dahm yest too-ah-LYET"
+      },
+      {
+        "word": "pharmacy",
+        "target": "Здесь рядом есть аптека?",
+        "pronunciation_easy": "zdyes RYAH-dahm yest ahp-TYEH-kah"
+      },
+      {
+        "word": "atm",
+        "target": "Здесь рядом есть банкомат?",
+        "pronunciation_easy": "zdyes RYAH-dahm yest bahn-kah-MAHT"
+      },
+      {
+        "word": "supermarket",
+        "target": "Здесь рядом есть супермаркет?",
+        "pronunciation_easy": "zdyes RYAH-dahm yest soo-peer-MAR-keet"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "Можно оплатить наличными?",
+        "pronunciation_easy": "MOZH-nah ahp-lah-TEET nah-LEECH-ny-mee"
+      },
+      {
+        "word": "phone",
+        "target": "Можно оплатить телефоном?",
+        "pronunciation_easy": "MOZH-nah ahp-lah-TEET tee-lee-FOH-nahm",
+        "qa": "Lit. 'pay by phone'; Russian omits 'my'. Note: foreign-issued cards and phone wallets generally don't work in Russia, so cash may be the real answer."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "Можете это написать, пожалуйста?",
+        "pronunciation_easy": "MOH-zhuh-tyeh EH-tah nah-pee-SAHT, pah-ZHAH-loo-stah",
+        "qa": "Lit. 'Can you write this, please?'. Shorter and just as polite: Напишите, пожалуйста (nah-pee-SHEE-tyeh)."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "Мне кофе без молока, пожалуйста.",
+        "pronunciation_easy": "mnyeh KOH-fyeh byez mah-lah-KAH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "tea_sugar",
+        "target": "Мне чай без сахара, пожалуйста.",
+        "pronunciation_easy": "mnyeh chai byez SAH-khah-rah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "water_ice",
+        "target": "Мне воду без льда, пожалуйста.",
+        "pronunciation_easy": "mnyeh VOH-doo byez LDAH, pah-ZHAH-loo-stah"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "Можно здесь сесть?",
+        "pronunciation_easy": "MOZH-nah zdyes SYEST",
+        "qa": "For a free seat people usually ask Здесь свободно? (zdyes svah-BOD-nah, 'Is it free here?')."
+      },
+      {
+        "word": "park",
+        "target": "Можно здесь припарковаться?",
+        "pronunciation_easy": "MOZH-nah zdyes pree-par-kah-VAHT-sah"
+      },
+      {
+        "word": "photos",
+        "target": "Можно здесь фотографировать?",
+        "pronunciation_easy": "MOZH-nah zdyes fah-tah-grah-FEE-rah-vat"
+      },
+      {
+        "word": "charge",
+        "target": "Можно здесь зарядить телефон?",
+        "pronunciation_easy": "MOZH-nah zdyes zah-ryah-DEET tee-lee-FON"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "Я ищу свою гостиницу.",
+        "pronunciation_easy": "ya ee-SHCHOO svah-YOO gah-STEE-nee-tsoo",
+        "qa": "свою = 'my own' (accusative); отель (ah-TEL, masc.: свой отель) is also common for hotels."
+      },
+      {
+        "word": "entrance",
+        "target": "Я ищу вход.",
+        "pronunciation_easy": "ya ee-SHCHOO FKHOT",
+        "qa": "Где вход? (Where is the entrance?) is what most people would actually say."
+      },
+      {
+        "word": "restaurant",
+        "target": "Я ищу ресторан.",
+        "pronunciation_easy": "ya ee-SHCHOO ree-stah-RAHN"
+      },
+      {
+        "word": "exit",
+        "target": "Я ищу выход.",
+        "pronunciation_easy": "ya ee-SHCHOO VY-khat"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "Завтрак входит в стоимость?",
+        "pronunciation_easy": "ZAHF-trak FKHOH-deet f STOH-ee-mahst",
+        "qa": "Hotels equally say Завтрак включён? (ZAHF-trak fklyoo-CHYON)."
+      },
+      {
+        "word": "tax",
+        "target": "Налог входит в стоимость?",
+        "pronunciation_easy": "nah-LOK FKHOH-deet f STOH-ee-mahst",
+        "qa": "Russian shelf prices normally include VAT (НДС), so this is rarely asked; a tourist/hotel tax would be туристический налог."
+      },
+      {
+        "word": "wifi",
+        "target": "Wi-Fi входит в стоимость?",
+        "pronunciation_easy": "vai-FAI FKHOH-deet f STOH-ee-mahst"
+      },
+      {
+        "word": "luggage",
+        "target": "Багаж входит в стоимость?",
+        "pronunciation_easy": "bah-GAHSH FKHOH-deet f STOH-ee-mahst",
+        "qa": "For a flight ticket, Багаж включён в билет? (Is luggage included in the ticket?) is more specific."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "Где можно купить билеты?",
+        "pronunciation_easy": "gdyeh MOZH-nah koo-PEET bee-LYEH-ty"
+      },
+      {
+        "word": "taxi",
+        "target": "Где можно взять такси?",
+        "pronunciation_easy": "gdyeh MOZH-nah VZYAHT tahk-SEE",
+        "qa": "Lit. 'Where can one take a taxi?'. In Russian cities taxis are mostly ordered by app (Яндекс Go)."
+      },
+      {
+        "word": "change_money",
+        "target": "Где можно поменять деньги?",
+        "pronunciation_easy": "gdyeh MOZH-nah pah-mee-NYAHT DYEN-gee"
+      },
+      {
+        "word": "sim",
+        "target": "Где можно купить сим-карту?",
+        "pronunciation_easy": "gdyeh MOZH-nah koo-PEET seem-KAR-too",
+        "qa": "Foreigners need a passport to buy a SIM in Russia."
       }
     ]
   },

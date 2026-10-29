@@ -1,4 +1,4 @@
-# Review sheet: Romanian (195 items)
+# Review sheet: Romanian (241 items)
 
 Paste everything below the line into ChatGPT or Gemini (a fresh chat). Save the JSON it returns as `docs/review/ro.<tool>.json` (for example `ro.chatgpt.json`), or paste it back to Claude Code.
 
@@ -18,7 +18,7 @@ For EVERY item, reply with one JSON object per line inside a single ```json code
 - "ok" = a native speaker would say exactly this (or it's one of the normal ways to say it).
 - "fix" = wrong, unnatural, wrong variety/register, or a meaning error. Give the better version.
 - "unsure" = you can't tell; say why.
-Return all 195 keys, in order, and nothing else after the code block.
+Return all 241 keys, in order, and nothing else after the code block.
 
 | key | English | draft | pronunciation_easy | note |
 |---|---|---|---|---|
@@ -61,18 +61,29 @@ Return all 195 keys, in order, and nothing else after the code block.
 | haircut | A haircut, please. | Un tuns, vă rog. | oon toons, vuh rohg | Fuller and very natural: Aș vrea să mă tund ('I'd like to get my hair cut'). |
 | just_trim | Just a trim. | Doar puțin scurtat, vă rog. | dwar poo-TSEEN skoor-TAHT, vuh rohg | Unsure of the most natural barber phrasing. Literal: 'Just a little shortened, please.' Alternatives: Doar vârfurile ('just the ends'), Doar să le aranjați puțin. |
 | not_too_short | Not too short. | Nu prea scurt. | noo pryah skoort |  |
-| shorter_sides | Shorter on the sides. | Mai scurt pe părți. | my skoort peh PUHRTS | Barbers also say pe lateral ('on the sides'); reviewer may prefer it. |
-| like_this | Like this. | Ca în poza asta. | kah in POH-zah AS-tah | Literal: 'Like in this photo.' Said while showing the photo; Uite, așa ('Look, like this') also works. |
+| shorter_sides | Shorter on the sides. | Mai scurt pe laterale. | my skoort peh lah-teh-RAH-leh | Barbers also say pe lateral ('on the sides'); reviewer may prefer it. [Fixed 2026-10-14 per ChatGPT review.] |
+| like_this | Like this. | Așa. | ah-SHAH | Literal: 'Like in this photo.' Said while showing the photo; Uite, așa ('Look, like this') also works. [Fixed 2026-10-14 per ChatGPT review.] |
 | beard_trim | A beard trim, please. | Aranjați-mi barba, vă rog. | ah-ran-ZHAHTS-mee BAR-bah, vuh rohg | Literal: 'Tidy my beard, please.' Check this is the usual barber phrasing. |
 | need_doctor | I need a doctor. | Am nevoie de un doctor. | ahm neh-VOH-yeh deh oon DOK-tor | SAFETY: allergy/emergency. Literal: 'I have need of a doctor.' Medic is also common: Am nevoie de un medic. |
 | where_pharmacy | Where is the pharmacy? | Unde este farmacia? | OON-deh YES-teh far-mah-CHEE-ah | SAFETY: allergy/emergency. Literal: 'Where is the pharmacy?' For the closest: Unde este cea mai apropiată farmacie? |
 | its_emergency | It's an emergency. | Este o urgență. | YES-teh oh oor-JEN-tsuh | SAFETY: allergy/emergency. Literal: 'It is an emergency.' |
 | lost_my | I lost my ___. | Mi-am pierdut ___. | myahm pyer-DOOT ___ | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Literal: 'I have lost (to myself) ___.' Blank takes the noun with its definite article (pașaportul, cheile); no possessive needed. If stolen: Mi s-a furat ___. |
 | call_someone | I need to call someone. | Trebuie să sun pe cineva. | TREH-boo-yeh suh soon peh chee-neh-VAH | SAFETY: allergy/emergency. Literal: 'I must call someone.' Alternative: Am nevoie să sun pe cineva ('I need to call someone'). |
+| do_you_have | Do you have ___? | Aveți ___? | ah-VETS ___ | Frame: ___ is filled with a word. Blank takes a mass noun bare (Aveți apă?) or a countable noun with un/o (Aveți o hartă?, Aveți un încărcător?). |
+| how_much_is | How much is ___? | Cât costă ___? | kuht KOS-tuh ___ | Frame: ___ is filled with a word. Blank takes un/o for 'a' (un bilet, o cafea) or the definite article for 'the' (camera). Costă is the same for singular and plural (Cât costă biletele?). |
+| i_need | I need ___, please. | Am nevoie de ___, vă rog. | ahm neh-VOH-yeh deh ___, vuh rohg | Frame: ___ is filled with a word. Safety phrase. Literal: 'I have need of ___, please.' After de the noun is bare (de ajutor, de apă) or with un/o (de un taxi, de un doctor). Gender-neutral. The doctor variant reuses need_doctor (Am nevoie de un doctor = 'I have need of a doctor'); in a real emergency the number is 112. |
+| is_there_nearby | Is there a ___ nearby? | Este ___ pe aproape? | YES-teh ___ peh ah-PRWAH-peh | Frame: ___ is filled with a word. Blank takes vreun (masculine/neuter) or vreo (feminine) + noun, i.e. 'any': vreun bancomat, vreo farmacie. Un/o also works. Pe aici ('around here') is an equally common ending. |
+| pay_with | Can I pay with ___? | Pot plăti cu ___? | poht pluh-TEE koo ___ | Frame: ___ is filled with a word. Matches pay_card. Blank takes the noun with its definite article (cu cardul, cu telefonul). Cash is different: Pot plăti cash? (no cu); formal: în numerar. |
+| can_you | Can you ___, please? | Puteți ___, vă rog? | poo-TETS ___, vuh rohg | Frame: ___ is filled with a word. Blank takes a verb: bare infinitive (vorbi mai rar) or să + subjunctive (să repetați). Object pronouns go before puteți (Mă puteți ajuta?) or attach to să (să-mi scrieți). |
+| like_without | I'd like ___ without ___. | Aș dori ___ fără ___. | ash doh-REE ___ FUH-ruh ___ | Frame: ___ is filled with a word. First blank takes un/o + noun (o cafea, un ceai) or a bare mass noun (apă); after fără the noun is bare (fără lapte). Gender-neutral. |
+| can_i_here | Can I ___ here? | Pot să ___ aici? | poht suh ___ ah-EETCH | Frame: ___ is filled with a word. Blank takes a first-person verb in the subjunctive (să parchez, să fac poze). Reflexive/object pronouns attach to să (să-mi încarc). |
+| looking_for | I'm looking for ___. | Caut ___. | KAH-oot ___ | Frame: ___ is filled with a word. Blank takes the noun with its definite article (intrarea, hotelul meu) or with un/o (un restaurant). For a person add pe: Caut pe cineva. |
+| is_included | Is ___ included? | ___ este inclus? | ___ YES-teh een-KLOOS | Frame: ___ is filled with a word. Matches tip_included. Blank takes the noun with its definite article. Inclus agrees: inclus (masculine/neuter), inclusă (feminine), incluse / sunt incluse (plural). |
+| where_can_i | Where can I ___? | Unde pot să ___? | OON-deh poht suh ___ | Frame: ___ is filled with a word. Blank takes a first-person subjunctive verb (să cumpăr, să schimb). Bare infinitive also works: Unde pot cumpăra bilete? |
 | where_is~word_pharmacy | Where is the pharmacy? | Unde este farmacia? | OON-deh YES-teh far-mah-CHEE-ah |  |
 | where_is~word_atm | Where is an ATM? | Unde este un bancomat? | OON-deh YES-teh oon ban-koh-MAHT |  |
 | where_is~word_supermarket | Where is the supermarket? | Unde este un supermarket? | OON-deh YES-teh oon soo-per-MAR-ket |  |
-| where_is~word_exit | Where is the exit? | Unde este ieșirea? | OON-deh YES-teh yeh-SHEE-ryah |  |
+| where_is~word_exit |  | Unde este ieșirea? | OON-deh YES-teh yeh-SHEE-ryah |  |
 | nearest~word_pharmacy | Where is the nearest pharmacy? | Unde este cea mai apropiată farmacie? | OON-deh YES-teh chah my ah-proh-pee-AH-tuh far-mah-CHEE-eh |  |
 | nearest~word_atm | Where is the nearest ATM? | Unde este cel mai apropiat bancomat? | OON-deh YES-teh chel my ah-proh-pee-AHT ban-koh-MAHT |  |
 | nearest~word_supermarket | Where is the nearest supermarket? | Unde este cel mai apropiat supermarket? | OON-deh YES-teh chel my ah-proh-pee-AHT soo-per-MAR-ket |  |
@@ -85,12 +96,12 @@ Return all 195 keys, in order, and nothing else after the code block.
 | can_i_have~word_tea | Can I have a tea, please? | Pot să primesc un ceai, vă rog? | poht suh pree-MESK oon chye, vuh rohg |  |
 | can_i_have~word_beer | Can I have a beer, please? | Pot să primesc o bere, vă rog? | poht suh pree-MESK oh BEH-reh, vuh rohg |  |
 | can_i_have~word_glass_of_wine | Can I have a glass of wine, please? | Pot să primesc un pahar de vin, vă rog? | poht suh pree-MESK oon pah-HAR deh veen, vuh rohg |  |
-| can_i_have~word_orange_juice | Can I have an orange juice, please? | Pot să primesc un suc de portocale, vă rog? | poht suh pree-MESK oon sook deh por-toh-KAH-leh, vuh rohg |  |
+| can_i_have~word_orange_juice |  | Pot să primesc un suc de portocale, vă rog? | poht suh pree-MESK oon sook deh por-toh-KAH-leh, vuh rohg |  |
 | can_i_have~word_menu | Can I have the menu, please? | Pot să primesc meniul, vă rog? | poht suh pree-MESK meh-NEE-ool, vuh rohg |  |
 | can_i_have~word_receipt | Can I have a receipt, please? | Pot să primesc bonul, vă rog? | poht suh pree-MESK BOH-nool, vuh rohg |  |
 | i_would_like~word_tea | I'd like a tea, please. | Aș dori un ceai, vă rog. | ash doh-REE oon chye, vuh rohg |  |
 | i_would_like~word_beer | I'd like a beer, please. | Aș dori o bere, vă rog. | ash doh-REE oh BEH-reh, vuh rohg |  |
-| i_would_like~word_glass_of_wine | I'd like a glass of wine, please. | Aș dori un pahar de vin, vă rog. | ash doh-REE oon pah-HAR deh veen, vuh rohg |  |
+| i_would_like~word_glass_of_wine |  | Aș dori un pahar de vin, vă rog. | ash doh-REE oon pah-HAR deh veen, vuh rohg |  |
 | i_would_like~word_orange_juice | I'd like an orange juice, please. | Aș dori un suc de portocale, vă rog. | ash doh-REE oon sook deh por-toh-KAH-leh, vuh rohg |  |
 | i_would_like~word_bread | I'd like some bread, please. | Aș dori niște pâine, vă rog. | ash doh-REE NEESH-teh PUY-neh, vuh rohg |  |
 | i_would_like~word_water | I'd like some water, please. | Aș dori apă, vă rog. | ash doh-REE AH-puh, vuh rohg |  |
@@ -103,7 +114,7 @@ Return all 195 keys, in order, and nothing else after the code block.
 | allergic_to~word_gluten | I'm allergic to gluten. | Sunt alergic la gluten. | soont ah-LER-jeek lah GLOO-ten | SAFETY: allergy/emergency. |
 | allergic_to~word_shellfish | I'm allergic to shellfish. | Sunt alergic la fructe de mare. | soont ah-LER-jeek lah FROOK-teh deh MAH-reh | SAFETY: allergy/emergency. |
 | allergic_to~word_milk | I'm allergic to milk. | Sunt alergic la lapte. | soont ah-LER-jeek lah LAHP-teh | SAFETY: allergy/emergency. |
-| allergic_to~word_eggs | I'm allergic to eggs. | Sunt alergic la ouă. | soont ah-LER-jeek lah OH-wuh | SAFETY: allergy/emergency. |
+| allergic_to~word_eggs |  | Sunt alergic la ouă. | soont ah-LER-jeek lah OH-wuh | SAFETY: allergy/emergency. |
 | without~word_meat | Without meat, please. | Fără carne, vă rog. | FUH-ruh KAR-neh, vuh rohg | SAFETY: allergy/emergency. |
 | without~word_milk | Without milk, please. | Fără lapte, vă rog. | FUH-ruh LAHP-teh, vuh rohg | SAFETY: allergy/emergency. |
 | without~word_gluten | Without gluten, please. | Fără gluten, vă rog. | FUH-ruh GLOO-ten, vuh rohg | SAFETY: allergy/emergency. |
@@ -126,12 +137,47 @@ Return all 195 keys, in order, and nothing else after the code block.
 | doesnt_work~word_shower | The shower doesn't work. | Dușul nu funcționează. | DOO-shool noo foonk-tsyoh-NYAH-zuh |  |
 | doesnt_work~word_wi_fi | The Wi-Fi doesn't work. | Wi-Fi-ul nu funcționează. | WAI-fai-ool noo foonk-tsyoh-NYAH-zuh |  |
 | doesnt_work~word_hot_water | The hot water doesn't work. | Nu este apă caldă. | noo YES-teh AH-puh KAL-duh |  |
-| doesnt_work~word_door_lock | The door lock doesn't work. | Încuietoarea nu funcționează. | in-koo-yeh-TWAH-ryah noo foonk-tsyoh-NYAH-zuh |  |
+| doesnt_work~word_door_lock |  | Încuietoarea nu funcționează. | in-koo-yeh-TWAH-ryah noo foonk-tsyoh-NYAH-zuh |  |
 | lost_my~word_passport | I lost my passport. | Mi-am pierdut pașaportul. | myahm pyer-DOOT pah-shah-POR-tool | SAFETY: allergy/emergency. |
 | lost_my~word_phone | I lost my phone. | Mi-am pierdut telefonul. | myahm pyer-DOOT teh-leh-FOH-nool | SAFETY: allergy/emergency. |
-| lost_my~word_bag | I lost my bag. | Mi-am pierdut geanta. | myahm pyer-DOOT JAHN-tah | SAFETY: allergy/emergency. |
+| lost_my~word_bag |  | Mi-am pierdut geanta. | myahm pyer-DOOT JAHN-tah | SAFETY: allergy/emergency. |
 | lost_my~word_keys | I lost my keys. | Mi-am pierdut cheile. | myahm pyer-DOOT KAY-leh | SAFETY: allergy/emergency. |
 | lost_my~word_room_key | I lost my room key. | Mi-am pierdut cheia de la cameră. | myahm pyer-DOOT KAY-ah deh lah KAH-meh-ruh | SAFETY: allergy/emergency. |
+| do_you_have~wifi | Do you have Wi-Fi? | Aveți Wi-Fi? | ah-VETS WAI-fai | Said as in English (wai-fai); some say wee-fee. |
+| do_you_have~vegetarian_food | Do you have vegetarian food? | Aveți mâncare vegetariană? | ah-VETS muhn-KAH-reh veh-jeh-tah-ree-AH-nuh | In a restaurant also: Aveți preparate vegetariene? ('vegetarian dishes'). |
+| do_you_have~charger | Do you have a phone charger? | Aveți un încărcător de telefon? | ah-VETS oon in-kuhr-kuh-TOR deh teh-leh-FON |  |
+| do_you_have~map | Do you have a map? | Aveți o hartă? | ah-VETS oh HAR-tuh |  |
+| how_much_is~ticket | How much is a ticket? | Cât costă un bilet? | kuht KOS-tuh oon bee-LET |  |
+| how_much_is~coffee | How much is a coffee? | Cât costă o cafea? | kuht KOS-tuh oh kah-FYAH |  |
+| how_much_is~room | How much is the room? | Cât costă camera? | kuht KOS-tuh KAH-meh-rah | Per night: Cât costă camera pe noapte? |
+| i_need~help | I need help, please. | Am nevoie de ajutor, vă rog. | ahm neh-VOH-yeh deh ah-zhoo-TOR, vuh rohg | Safety. Literal: 'I have need of help, please.' Natural and clear; urgently people shout Ajutor! or ask Mă puteți ajuta? |
+| i_need~water | I need water, please. | Am nevoie de apă, vă rog. | ahm neh-VOH-yeh deh AH-puh, vuh rohg |  |
+| i_need~taxi | I need a taxi, please. | Am nevoie de un taxi, vă rog. | ahm neh-VOH-yeh deh oon tak-SEE, vuh rohg | To ask someone to call one: Îmi puteți chema un taxi? |
+| is_there_nearby~bathroom | Is there a bathroom nearby? | Este vreo toaletă pe aproape? | YES-teh vryoh toh-ah-LEH-tuh peh ah-PRWAH-peh | Toaletă is the neutral word; signs often say WC. |
+| is_there_nearby~pharmacy | Is there a pharmacy nearby? | Este vreo farmacie pe aproape? | YES-teh vryoh far-mah-CHEE-eh peh ah-PRWAH-peh |  |
+| is_there_nearby~atm | Is there an ATM nearby? | Este vreun bancomat pe aproape? | YES-teh vryoon ban-koh-MAHT peh ah-PRWAH-peh |  |
+| is_there_nearby~supermarket | Is there a supermarket nearby? | Este vreun supermarket pe aproape? | YES-teh vryoon soo-per-MAR-ket peh ah-PRWAH-peh |  |
+| pay_with~cash | Can I pay with cash? | Pot plăti cash? | poht pluh-TEE kesh | Cash (said kesh) is the everyday word, with no cu. Formal: Pot plăti în numerar? |
+| pay_with~phone | Can I pay with my phone? | Pot plăti cu telefonul? | poht pluh-TEE koo teh-leh-FOH-nool |  |
+| can_you~write | Can you write it down, please? | Puteți să-mi scrieți, vă rog? | poo-TETS suh-mee SKREE-ets, vuh rohg | Literal: 'Can you write (it) for me, please?' Object left out so it fits any thing (price, address); unsure if a reviewer prefers Mi-l puteți scrie? / Puteți să-mi scrieți asta? |
+| like_without~coffee_milk | I'd like a coffee without milk. | Aș dori o cafea fără lapte. | ash doh-REE oh kah-FYAH FUH-ruh LAHP-teh |  |
+| like_without~tea_sugar | I'd like a tea without sugar. | Aș dori un ceai fără zahăr. | ash doh-REE oon chye FUH-ruh ZAH-huhr |  |
+| like_without~water_ice | I'd like water without ice. | Aș dori apă fără gheață. | ash doh-REE AH-puh FUH-ruh GYAH-tsuh | For a bottle: o apă; you may be asked plată sau minerală? (still or sparkling). |
+| can_i_here~sit | Can I sit here? | Pot să stau aici? | poht suh stow ah-EETCH | For a free seat, E liber? ('Is it free?') is the most common question. |
+| can_i_here~park | Can I park here? | Pot să parchez aici? | poht suh par-KEZ ah-EETCH |  |
+| can_i_here~photos | Can I take photos here? | Pot să fac poze aici? | poht suh fahk POH-zeh ah-EETCH | Poze is everyday; formal signs say fotografii. |
+| can_i_here~charge | Can I charge my phone here? | Pot să-mi încarc telefonul aici? | poht suh-mee in-KARK teh-leh-FOH-nool ah-EETCH |  |
+| looking_for~my_hotel | I'm looking for my hotel. | Caut hotelul meu. | KAH-oot hoh-TEH-lool mehw |  |
+| looking_for~entrance | I'm looking for the entrance. | Caut intrarea. | KAH-oot een-TRAH-ryah |  |
+| looking_for~restaurant | I'm looking for a restaurant. | Caut un restaurant. | KAH-oot oon res-tow-RANT |  |
+| looking_for~exit | I'm looking for the exit. | Caut ieșirea. | KAH-oot yeh-SHEE-ryah |  |
+| is_included~tax | Is tax included? | TVA-ul este inclus? | teh-veh-AH-ool YES-teh een-KLOOS | TVA is VAT, normally already in Romanian prices. For hotel/city taxes ask Taxele sunt incluse? Reviewer may prefer that. |
+| is_included~wifi | Is Wi-Fi included? | Wi-Fi-ul este inclus? | WAI-fai-ool YES-teh een-KLOOS |  |
+| is_included~luggage | Is luggage included? | Bagajul este inclus? | bah-GAH-zhool YES-teh een-KLOOS | For flights, checked luggage is bagajul de cală. |
+| where_can_i~buy_tickets | Where can I buy tickets? | Unde pot să cumpăr bilete? | OON-deh poht suh KOOM-puhr bee-LEH-teh |  |
+| where_can_i~taxi | Where can I get a taxi? | Unde pot să găsesc un taxi? | OON-deh poht suh guh-SESK oon tak-SEE | Literal: 'Where can I find a taxi?' (Romanian uses găsi, not 'get'). |
+| where_can_i~change_money | Where can I change money? | Unde pot să schimb bani? | OON-deh poht suh skeemb bahn | An exchange office is a casă de schimb (valutar). |
+| where_can_i~sim | Where can I buy a SIM card? | Unde pot să cumpăr o cartelă SIM? | OON-deh poht suh KOOM-puhr oh kar-TEH-luh seem |  |
 | reply~for_here_or_to_go | For here or to go? | Aici sau la pachet? | ah-EETCH sow lah pah-KET | Said TO the traveller by staff. |
 | reply~anything_else | Anything else? | Mai doriți ceva? | my doh-REETS cheh-VAH | Said TO the traveller by staff. |
 | reply~here_you_go | Here you go. | Poftiți. | pof-TEETS | Said TO the traveller by staff. |

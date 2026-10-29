@@ -1,4 +1,4 @@
-# Review sheet: Hebrew (190 items)
+# Review sheet: Hebrew (237 items)
 
 Paste everything below the line into ChatGPT or Gemini (a fresh chat). Save the JSON it returns as `docs/review/he.<tool>.json` (for example `he.chatgpt.json`), or paste it back to Claude Code.
 
@@ -18,7 +18,7 @@ For EVERY item, reply with one JSON object per line inside a single ```json code
 - "ok" = a native speaker would say exactly this (or it's one of the normal ways to say it).
 - "fix" = wrong, unnatural, wrong variety/register, or a meaning error. Give the better version.
 - "unsure" = you can't tell; say why.
-Return all 190 keys, in order, and nothing else after the code block.
+Return all 237 keys, in order, and nothing else after the code block.
 
 | key | English | draft | pronunciation_easy | note |
 |---|---|---|---|---|
@@ -63,9 +63,21 @@ Return all 190 keys, in order, and nothing else after the code block.
 | its_emergency | It's an emergency. | זה מקרה חירום. | ze mik-RE khe-ROOM | SAFETY: allergy/emergency. Back-translation: 'This is an emergency case.' Shorter and very common: זה דחוף! (ze da-KHOOF, 'it's urgent!'). |
 | lost_my | I lost my ___. | איבדתי את ה___ שלי. | ee-BAD-tee et ha-___ she-LEE | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Back-translation: 'I lost the ___ of mine.' Past tense, same for men and women. ה goes on the noun; for a two-word noun (room key) it becomes את המפתח של החדר שלי. |
 | call_someone | I need to call someone. | אני צריך להתקשר למישהו. | a-NEE tsa-REEKH le-hit-ka-SHER le-MEE-she-hu | SAFETY: allergy/emergency. Back-translation: 'I need to call to someone.' Masculine speaker; feminine צריכה (tsree-KHA). To borrow a phone: אפשר להתקשר מהטלפון שלך? (ef-SHAR le-hit-ka-SHER me-ha-TE-le-fon shel-KHA). |
+| do_you_have | Do you have ___? | יש לכם ___? | yesh la-KHEM ___ | Frame: ___ is filled with a word. Literally 'Is there to you (plural) ___?'. Plural לכם is the normal way to ask a shop, café or hotel. To one person: יש לך (le-KHA to a man, LAKH to a woman). The noun goes in bare, no article. |
+| how_much_is | How much is ___? | כמה עולה ___? | KA-ma o-LE ___ | Frame: ___ is filled with a word. Verb agrees with the item: masculine עולה (o-LE), feminine same spelling but said o-LA, plural עולים (o-LEEM). Indefinite items are bare; definite ones take ה (החדר). |
+| i_need | I need ___, please. | אני צריך ___, בבקשה. | a-NEE tsa-REEKH ___, be-va-ka-SHA | Frame: ___ is filled with a word. Back-translation: 'I need ___, please.' Masculine speaker; feminine אני צריכה (tsree-KHA). Noun goes in bare. |
+| is_there_nearby | Is there a ___ nearby? | יש פה ___ בסביבה? | yesh po ___ ba-svi-VA | Frame: ___ is filled with a word. Literally 'Is there here ___ in the area?'. Chosen because nothing agrees with the noun. Alternative יש ___ קרוב? needs קרובה (kro-VA) for feminine nouns. Reviewer: check naturalness vs. יש ___ באזור? (ba-e-ZOR). |
+| pay_with | Can I pay with ___? | אפשר לשלם ___? | ef-SHAR le-sha-LEM ___ | Frame: ___ is filled with a word. The preposition is inside the blank because it changes: ב for cash/card (במזומן, בכרטיס), עם for a phone (עם הטלפון). Gender-neutral. |
+| can_you | Can you ___, please? | אפשר ___, בבקשה? | ef-SHAR ___, be-va-ka-SHA | Frame: ___ is filled with a word. Literally 'Is it possible to ___, please?'. Same gender-neutral אפשר + infinitive structure as the vetted help_me / say_again / speak_slowly. The blank takes an infinitive verb phrase, not a noun. |
+| like_without | I'd like ___ without ___. | אני רוצה ___ בלי ___, בבקשה. | a-NEE ro-TSE ___ blee ___, be-va-ka-SHA | Frame: ___ is filled with a word. Adds בבקשה, as the vetted i_would_like does; bare אני רוצה sounds blunt. רוצה is spelled the same for both genders but a woman says ro-TSA. בלי never changes. |
+| can_i_here | Can I ___ here? | אפשר ___ פה? | ef-SHAR ___ po | Frame: ___ is filled with a word. Literally 'Is it possible to ___ here?'. Blank takes an infinitive; gender-neutral. כאן (kan) is a more formal synonym of פה. |
+| looking_for | I'm looking for ___. | אני מחפש ___. | a-NEE me-kha-PES ___ | Frame: ___ is filled with a word. Masculine speaker; feminine אני מחפשת (me-kha-PE-set). The object marker את is inside the blank: definite objects take את ה (את היציאה), indefinite ones are bare (מסעדה). |
+| is_included | Is ___ included? | ___ כלול? | ___ ka-LOOL | Frame: ___ is filled with a word. Adjective agrees with the noun: masculine כלול (ka-LOOL), feminine כלולה (klu-LA), plural כלולים (klu-LEEM). The noun takes ה. Also common: זה כולל ___? (ze ko-LEL, 'does it include ___?'), which never changes. |
+| where_can_i | Where can I ___? | איפה אפשר ___? | EY-fo ef-SHAR ___ | Frame: ___ is filled with a word. Literally 'Where is it possible to ___?'. Blank takes an infinitive; gender-neutral. |
 | where_is~word_pharmacy | Where is the pharmacy? | איפה בית המרקחת? | EY-fo beyt ha-mir-KA-khat |  |
 | where_is~word_atm | Where is an ATM? | איפה הכספומט? | EY-fo ha-kas-po-MAT |  |
 | where_is~word_supermarket | Where is the supermarket? | איפה הסופר? | EY-fo ha-SOO-per |  |
+| where_is~word_exit |  | איפה היציאה? | EY-fo ha-ye-tsee-A |  |
 | nearest~word_pharmacy | Where is the nearest pharmacy? | איפה בית המרקחת הכי קרוב? | EY-fo beyt ha-mir-KA-khat ha-KHEE ka-ROV |  |
 | nearest~word_atm | Where is the nearest ATM? | איפה הכספומט הכי קרוב? | EY-fo ha-kas-po-MAT ha-KHEE ka-ROV |  |
 | nearest~word_supermarket | Where is the nearest supermarket? | איפה הסופר הכי קרוב? | EY-fo ha-SOO-per ha-KHEE ka-ROV |  |
@@ -78,12 +90,12 @@ Return all 190 keys, in order, and nothing else after the code block.
 | can_i_have~word_tea | Can I have a tea, please? | אפשר לקבל תה, בבקשה? | ef-SHAR le-ka-BEL te, be-va-ka-SHA |  |
 | can_i_have~word_beer | Can I have a beer, please? | אפשר לקבל בירה, בבקשה? | ef-SHAR le-ka-BEL BEE-ra, be-va-ka-SHA |  |
 | can_i_have~word_glass_of_wine | Can I have a glass of wine, please? | אפשר לקבל כוס יין, בבקשה? | ef-SHAR le-ka-BEL kos YA-yin, be-va-ka-SHA |  |
-| can_i_have~word_orange_juice | Can I have an orange juice, please? | אפשר לקבל מיץ תפוזים, בבקשה? | ef-SHAR le-ka-BEL mits ta-poo-ZEEM, be-va-ka-SHA |  |
+| can_i_have~word_orange_juice |  | אפשר לקבל מיץ תפוזים, בבקשה? | ef-SHAR le-ka-BEL mits ta-poo-ZEEM, be-va-ka-SHA |  |
 | can_i_have~word_menu | Can I have the menu, please? | אפשר לקבל תפריט, בבקשה? | ef-SHAR le-ka-BEL taf-REET, be-va-ka-SHA |  |
 | can_i_have~word_receipt | Can I have a receipt, please? | אפשר לקבל קבלה, בבקשה? | ef-SHAR le-ka-BEL ka-ba-LA, be-va-ka-SHA |  |
 | i_would_like~word_tea | I'd like a tea, please. | אני רוצה תה, בבקשה. | a-NEE ro-TSE te, be-va-ka-SHA |  |
 | i_would_like~word_beer | I'd like a beer, please. | אני רוצה בירה, בבקשה. | a-NEE ro-TSE BEE-ra, be-va-ka-SHA |  |
-| i_would_like~word_glass_of_wine | I'd like a glass of wine, please. | אני רוצה כוס יין, בבקשה. | a-NEE ro-TSE kos YA-yin, be-va-ka-SHA |  |
+| i_would_like~word_glass_of_wine |  | אני רוצה כוס יין, בבקשה. | a-NEE ro-TSE kos YA-yin, be-va-ka-SHA |  |
 | i_would_like~word_orange_juice | I'd like an orange juice, please. | אני רוצה מיץ תפוזים, בבקשה. | a-NEE ro-TSE mits ta-poo-ZEEM, be-va-ka-SHA |  |
 | i_would_like~word_bread | I'd like some bread, please. | אני רוצה לחם, בבקשה. | a-NEE ro-TSE LE-khem, be-va-ka-SHA |  |
 | i_would_like~word_water | I'd like some water, please. | אני רוצה מים, בבקשה. | a-NEE ro-TSE MA-yim, be-va-ka-SHA |  |
@@ -96,7 +108,7 @@ Return all 190 keys, in order, and nothing else after the code block.
 | allergic_to~word_gluten | I'm allergic to gluten. | אני אלרגי לגלוטן. | a-NEE a-LER-gee le-GLOO-ten | SAFETY: allergy/emergency. |
 | allergic_to~word_shellfish | I'm allergic to shellfish. | אני אלרגי לפירות ים. | a-NEE a-LER-gee le-fey-ROT yam | SAFETY: allergy/emergency. |
 | allergic_to~word_milk | I'm allergic to milk. | אני אלרגי לחלב. | a-NEE a-LER-gee le-kha-LAV | SAFETY: allergy/emergency. |
-| allergic_to~word_eggs | I'm allergic to eggs. | אני אלרגי לביצים. | a-NEE a-LER-gee le-bey-TSEEM | SAFETY: allergy/emergency. |
+| allergic_to~word_eggs |  | אני אלרגי לביצים. | a-NEE a-LER-gee le-bey-TSEEM | SAFETY: allergy/emergency. |
 | without~word_meat | Without meat, please. | בלי בשר, בבקשה. | blee ba-SAR, be-va-ka-SHA | SAFETY: allergy/emergency. |
 | without~word_milk | Without milk, please. | בלי חלב, בבקשה. | blee kha-LAV, be-va-ka-SHA | SAFETY: allergy/emergency. |
 | without~word_gluten | Without gluten, please. | בלי גלוטן, בבקשה. | blee GLOO-ten, be-va-ka-SHA | SAFETY: allergy/emergency. |
@@ -120,13 +132,48 @@ Return all 190 keys, in order, and nothing else after the code block.
 | doesnt_work~word_wi_fi | The Wi-Fi doesn't work. | הוויי-פיי לא עובד. | ha-WAI-fai lo o-VED |  |
 | doesnt_work~word_tv | The TV doesn't work. | הטלוויזיה לא עובדת. | ha-te-le-VEEZ-ya lo o-VE-det |  |
 | doesnt_work~word_hot_water | The hot water doesn't work. | אין מים חמים. | eyn MA-yim kha-MEEM |  |
-| doesnt_work~word_door_lock | The door lock doesn't work. | המנעול של הדלת לא עובד. | ha-man-OOL shel ha-DE-let lo o-VED |  |
+| doesnt_work~word_door_lock |  | המנעול של הדלת לא עובד. | ha-man-OOL shel ha-DE-let lo o-VED |  |
 | lost_my~word_passport | I lost my passport. | איבדתי את הדרכון שלי. | ee-BAD-tee et ha-dar-KON she-LEE | SAFETY: allergy/emergency. |
 | lost_my~word_phone | I lost my phone. | איבדתי את הטלפון שלי. | ee-BAD-tee et ha-TE-le-fon she-LEE | SAFETY: allergy/emergency. |
 | lost_my~word_wallet | I lost my wallet. | איבדתי את הארנק שלי. | ee-BAD-tee et ha-ar-NAK she-LEE | SAFETY: allergy/emergency. |
-| lost_my~word_bag | I lost my bag. | איבדתי את התיק שלי. | ee-BAD-tee et ha-TEEK she-LEE | SAFETY: allergy/emergency. |
+| lost_my~word_bag |  | איבדתי את התיק שלי. | ee-BAD-tee et ha-TEEK she-LEE | SAFETY: allergy/emergency. |
 | lost_my~word_keys | I lost my keys. | איבדתי את המפתחות שלי. | ee-BAD-tee et ha-maf-te-KHOT she-LEE | SAFETY: allergy/emergency. |
 | lost_my~word_room_key | I lost my room key. | איבדתי את המפתח של החדר שלי. | ee-BAD-tee et ha-maf-TE-akh shel ha-KHE-der she-LEE | SAFETY: allergy/emergency. |
+| do_you_have~wifi | Do you have Wi-Fi? | יש לכם וויי-פיי? | yesh la-KHEM WAI-fai |  |
+| do_you_have~vegetarian_food | Do you have vegetarian food? | יש לכם אוכל צמחוני? | yesh la-KHEM O-khel tsim-kho-NEE |  |
+| do_you_have~charger | Do you have a phone charger? | יש לכם מטען לטלפון? | yesh la-KHEM mit-AN la-TE-le-fon |  |
+| how_much_is~ticket | How much is a ticket? | כמה עולה כרטיס? | KA-ma o-LE kar-TEES |  |
+| how_much_is~coffee | How much is a coffee? | כמה עולה קפה? | KA-ma o-LE ka-FE |  |
+| how_much_is~room | How much is the room? | כמה עולה החדר? | KA-ma o-LE ha-KHE-der | Per night: כמה עולה החדר ללילה? (la-LAI-la). |
+| i_need~help | I need help, please. | אני צריך עזרה, בבקשה. | a-NEE tsa-REEKH ez-RA, be-va-ka-SHA | Back-translation: 'I need help, please.' Masculine speaker; feminine צריכה (tsree-KHA). In real danger shout הצילו! instead; ambulance 101, police 100. |
+| i_need~water | I need water, please. | אני צריך מים, בבקשה. | a-NEE tsa-REEKH MA-yim, be-va-ka-SHA |  |
+| i_need~taxi | I need a taxi, please. | אני צריך מונית, בבקשה. | a-NEE tsa-REEKH mo-NEET, be-va-ka-SHA | Most Israelis order taxis by app (Gett); to a hotel desk: אפשר להזמין לי מונית? (ef-SHAR le-haz-MEEN lee mo-NEET). |
+| is_there_nearby~bathroom | Is there a bathroom nearby? | יש פה שירותים בסביבה? | yesh po she-ru-TEEM ba-svi-VA |  |
+| is_there_nearby~pharmacy | Is there a pharmacy nearby? | יש פה בית מרקחת בסביבה? | yesh po beyt mir-KA-khat ba-svi-VA |  |
+| is_there_nearby~atm | Is there an ATM nearby? | יש פה כספומט בסביבה? | yesh po kas-po-MAT ba-svi-VA |  |
+| is_there_nearby~supermarket | Is there a supermarket nearby? | יש פה סופר בסביבה? | yesh po SOO-per ba-svi-VA |  |
+| pay_with~cash | Can I pay with cash? | אפשר לשלם במזומן? | ef-SHAR le-sha-LEM bi-mzu-MAN |  |
+| pay_with~phone | Can I pay with my phone? | אפשר לשלם עם הטלפון? | ef-SHAR le-sha-LEM im ha-TE-le-fon | Uses עם ('with'), not ב. Reviewer: check whether בטלפון is equally natural. |
+| can_you~write | Can you write it down, please? | אפשר לכתוב לי את זה, בבקשה? | ef-SHAR likh-TOV lee et ze, be-va-ka-SHA | Literally 'Is it possible to write it for me, please?'. |
+| like_without~coffee_milk | I'd like a coffee without milk. | אני רוצה קפה בלי חלב, בבקשה. | a-NEE ro-TSE ka-FE blee kha-LAV, be-va-ka-SHA | Israeli default coffee often has milk; for black coffee also: קפה שחור (ka-FE sha-KHOR). |
+| like_without~tea_sugar | I'd like a tea without sugar. | אני רוצה תה בלי סוכר, בבקשה. | a-NEE ro-TSE te blee SOO-kar, be-va-ka-SHA |  |
+| like_without~water_ice | I'd like water without ice. | אני רוצה מים בלי קרח, בבקשה. | a-NEE ro-TSE MA-yim blee KE-rakh, be-va-ka-SHA |  |
+| can_i_here~sit | Can I sit here? | אפשר לשבת פה? | ef-SHAR la-SHE-vet po | For a free seat next to someone, also just: פנוי? (pa-NOO-y, 'free?'). |
+| can_i_here~park | Can I park here? | אפשר לחנות פה? | ef-SHAR la-kha-NOT po |  |
+| can_i_here~photos | Can I take photos here? | אפשר לצלם פה? | ef-SHAR le-tsa-LEM po | Literally 'Is it possible to photograph here?'. |
+| can_i_here~charge | Can I charge my phone here? | אפשר להטעין פה את הטלפון? | ef-SHAR le-hat-EEN po et ha-TE-le-fon | Literally 'Can [one] charge the phone here?'; Hebrew says 'the phone' rather than 'my phone'. Word order: פה before the object. |
+| looking_for~my_hotel | I'm looking for my hotel. | אני מחפש את המלון שלי. | a-NEE me-kha-PES et ha-ma-LON she-LEE | Masculine speaker; feminine מחפשת (me-kha-PE-set). |
+| looking_for~entrance | I'm looking for the entrance. | אני מחפש את הכניסה. | a-NEE me-kha-PES et ha-kni-SA | Masculine speaker; feminine מחפשת. |
+| looking_for~restaurant | I'm looking for a restaurant. | אני מחפש מסעדה. | a-NEE me-kha-PES mis-a-DA | Masculine speaker; feminine מחפשת. |
+| looking_for~exit | I'm looking for the exit. | אני מחפש את היציאה. | a-NEE me-kha-PES et ha-ye-tsee-A | Masculine speaker; feminine מחפשת. |
+| is_included~breakfast | Is breakfast included? | ארוחת הבוקר כלולה? | a-ru-KHAT ha-BO-ker klu-LA | Feminine (ארוחה), so כלולה. |
+| is_included~tax | Is tax included? | המע״מ כלול? | ha-MA-am ka-LOOL | מע״מ = VAT, the tax people ask about in Israel. Foreign tourists are often exempt from VAT on hotel stays. |
+| is_included~wifi | Is Wi-Fi included? | הוויי-פיי כלול? | ha-WAI-fai ka-LOOL |  |
+| is_included~luggage | Is luggage included? | המזוודה כלולה? | ha-miz-va-DA klu-LA | Uses מזוודה ('suitcase', feminine). Airlines say כבודה (kvu-DA, 'baggage'): הכבודה כלולה? Reviewer: check which reads more naturally for a flight booking. |
+| where_can_i~buy_tickets | Where can I buy tickets? | איפה אפשר לקנות כרטיסים? | EY-fo ef-SHAR lik-NOT kar-tee-SEEM |  |
+| where_can_i~taxi | Where can I get a taxi? | איפה אפשר לתפוס מונית? | EY-fo ef-SHAR lit-POS mo-NEET | Literally 'Where can one catch a taxi?'. |
+| where_can_i~change_money | Where can I change money? | איפה אפשר להחליף כסף? | EY-fo ef-SHAR le-ha-kha-LEEF KE-sef |  |
+| where_can_i~sim | Where can I buy a SIM card? | איפה אפשר לקנות כרטיס סים? | EY-fo ef-SHAR lik-NOT kar-TEES sim |  |
 | reply~for_here_or_to_go | For here or to go? | לשבת או לקחת? | la-SHE-vet o la-KA-khat | Said TO the traveller by staff. |
 | reply~here_you_go | Here you go. | בבקשה. | be-va-ka-SHA | Said TO the traveller by staff. Also heard: הנה (HI-ne, 'here'). |
 | reply~inside_or_outside | Inside or outside? | בפנים או בחוץ? | bif-NEEM o ba-KHOOTS | Said TO the traveller by staff. |
@@ -138,7 +185,7 @@ Return all 190 keys, in order, and nothing else after the code block.
 | reply~one_moment | One moment, please. | רגע אחד, בבקשה. | RE-ga e-KHAD, be-va-ka-SHA | Said TO the traveller by staff. Often just רגע (RE-ga). |
 | reply~what_size | What size? | איזו מידה? | EY-zo mi-DA | Said TO the traveller by staff. |
 | reply~receipt_question | Would you like a receipt? | צריך קבלה? | tsa-REEKH ka-ba-LA | Said TO the traveller by staff. Literally 'Need a receipt?'; the usual till question. |
-| reply~how_would_you_like_it | How would you like it cut? | איך לספר? | ekh le-sa-PER | Said TO the traveller by staff. Literally 'How to cut?'. Also: איך אתה רוצה את זה? (to a man). |
+| reply~how_would_you_like_it | How would you like it cut? | איך אתה רוצה שנספר אותך? | ekh a-TA ro-TSE she-ne-sa-PER ot-KHA | Said TO the traveller by staff. Literally 'How to cut?'. Also: איך אתה רוצה את זה? (to a man). [Fixed 2026-10-14 per ChatGPT review.] |
 | word~word_train_station | train station | תחנת הרכבת | ta-kha-NAT ha-ra-KE-vet | A single word, as it would appear inside a sentence. |
 | word~word_bus_stop | bus stop | תחנת האוטובוס | ta-kha-NAT ha-O-to-boos | A single word, as it would appear inside a sentence. |
 | word~word_airport | airport | שדה התעופה | sde ha-te-oo-FA | A single word, as it would appear inside a sentence. |

@@ -10,68 +10,68 @@
   },
   "summary": {
     "pt-PT": {
-      "match": 26,
-      "close": 6,
-      "differs": 15,
-      "none": 79,
-      "total": 126
+      "match": 28,
+      "close": 9,
+      "differs": 20,
+      "none": 105,
+      "total": 162
     },
     "es": {
-      "match": 37,
-      "close": 6,
-      "differs": 10,
-      "none": 73,
-      "total": 126
+      "match": 42,
+      "close": 10,
+      "differs": 11,
+      "none": 99,
+      "total": 162
     },
     "fr": {
-      "match": 39,
-      "close": 3,
-      "differs": 11,
-      "none": 73,
-      "total": 126
+      "match": 40,
+      "close": 6,
+      "differs": 17,
+      "none": 99,
+      "total": 162
     },
     "it": {
-      "match": 36,
-      "close": 6,
-      "differs": 10,
-      "none": 74,
-      "total": 126
+      "match": 40,
+      "close": 7,
+      "differs": 13,
+      "none": 102,
+      "total": 162
     },
     "ro": {
-      "match": 15,
-      "close": 3,
-      "differs": 4,
-      "none": 104,
-      "total": 126
+      "match": 16,
+      "close": 4,
+      "differs": 6,
+      "none": 136,
+      "total": 162
     },
     "ru": {
-      "match": 39,
-      "close": 5,
-      "differs": 16,
-      "none": 66,
-      "total": 126
+      "match": 43,
+      "close": 7,
+      "differs": 19,
+      "none": 93,
+      "total": 162
     },
     "ja": {
-      "match": 12,
-      "close": 2,
-      "differs": 28,
-      "none": 84,
-      "total": 126
+      "match": 15,
+      "close": 3,
+      "differs": 32,
+      "none": 112,
+      "total": 162
     },
     "he": {
       "match": 20,
-      "close": 1,
-      "differs": 7,
-      "none": 98,
-      "total": 126
+      "close": 3,
+      "differs": 9,
+      "none": 130,
+      "total": 162
     },
     "ar-levantine": {
       "match": 8,
-      "close": 3,
+      "close": 2,
       "differs": 2,
-      "none": 101,
-      "total": 126,
-      "formal-only": 12
+      "none": 136,
+      "total": 162,
+      "formal-only": 14
     }
   },
   "results": {
@@ -736,26 +736,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "Onde fica a saída?",
-        "native": [
-          {
-            "text": "Onde está a saída?",
-            "lang": "por",
-            "id": 1200523
-          },
-          {
-            "text": "Onde é a saída?",
-            "lang": "por",
-            "id": 1235360
-          },
-          {
-            "text": "Onde fica a saída?",
-            "lang": "por",
-            "id": 3575539
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -889,7 +873,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "Posso ter um sumo de laranja, por favor?",
         "native": []
       },
@@ -919,7 +903,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "Queria um copo de vinho, por favor.",
         "native": []
       },
@@ -1020,7 +1004,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "Sou alérgico a ovos.",
         "native": []
       },
@@ -1187,7 +1171,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "A fechadura da porta não funciona.",
         "native": []
       },
@@ -1269,7 +1253,7 @@
       },
       "lost_my~word_bag": {
         "status": "none",
-        "english": "I lost my bag.",
+        "english": "",
         "draft": "Perdi a minha mala.",
         "native": []
       },
@@ -1283,6 +1267,338 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "Perdi a chave do quarto.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "Tem Wi-Fi?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "Tem comida vegetariana?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "Tem um carregador de telemóvel?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "differs",
+        "english": "Do you have a map?",
+        "draft": "Tem um mapa?",
+        "native": [
+          {
+            "text": "O senhor tem um mapa?",
+            "lang": "por",
+            "id": 2599175
+          },
+          {
+            "text": "A senhora tem um mapa?",
+            "lang": "por",
+            "id": 2599176
+          },
+          {
+            "text": "Vocês têm um mapa?",
+            "lang": "por",
+            "id": 5248091
+          }
+        ]
+      },
+      "how_much_is~ticket": {
+        "status": "match",
+        "english": "How much is a ticket?",
+        "draft": "Quanto custa um bilhete?",
+        "native": [
+          {
+            "text": "Quanto custa um ingresso?",
+            "lang": "por",
+            "id": 8502651
+          },
+          {
+            "text": "Quanto custa um bilhete?",
+            "lang": "por",
+            "id": 8502652
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "Quanto custa um café?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "match",
+        "english": "How much is the room?",
+        "draft": "Quanto custa o quarto?",
+        "native": [
+          {
+            "text": "Quanto custa o quarto?",
+            "lang": "por",
+            "id": 7002945
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "Preciso de ajuda, por favor.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "Preciso de água, por favor.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "Preciso de um táxi, por favor.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "Há uma casa de banho aqui perto?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "differs",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "Há uma farmácia aqui perto?",
+        "native": [
+          {
+            "text": "Há alguma farmácia por aqui?",
+            "lang": "por",
+            "id": 1632208
+          },
+          {
+            "text": "Há uma farmácia nas proximidades?",
+            "lang": "por",
+            "id": 11920206
+          }
+        ]
+      },
+      "is_there_nearby~atm": {
+        "status": "differs",
+        "english": "Is there an ATM nearby?",
+        "draft": "Há um multibanco aqui perto?",
+        "native": [
+          {
+            "text": "Tem um caixa automático por aqui?",
+            "lang": "por",
+            "id": 964105
+          },
+          {
+            "text": "Há um caixa automático por aqui?",
+            "lang": "por",
+            "id": 964106
+          }
+        ]
+      },
+      "is_there_nearby~supermarket": {
+        "status": "differs",
+        "english": "Is there a supermarket nearby?",
+        "draft": "Há um supermercado aqui perto?",
+        "native": [
+          {
+            "text": "Existe um supermercado nas proximidades?",
+            "lang": "por",
+            "id": 5557387
+          }
+        ]
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "Posso pagar em dinheiro?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "Posso pagar com o telemóvel?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "Pode escrever isso, por favor?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "Queria um café sem leite.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "Queria um chá sem açúcar.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "Queria água sem gelo.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "close",
+        "english": "Can I sit here?",
+        "draft": "Posso sentar-me aqui?",
+        "native": [
+          {
+            "text": "Posso sentar aqui?",
+            "lang": "por",
+            "id": 1560289
+          },
+          {
+            "text": "Eu posso me sentar aqui?",
+            "lang": "por",
+            "id": 6959192
+          },
+          {
+            "text": "Posso me sentar aqui?",
+            "lang": "por",
+            "id": 6959193
+          }
+        ]
+      },
+      "can_i_here~park": {
+        "status": "close",
+        "english": "Can I park here?",
+        "draft": "Posso estacionar aqui?",
+        "native": [
+          {
+            "text": "Eu posso estacionar aqui?",
+            "lang": "por",
+            "id": 5305062
+          }
+        ]
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "Posso tirar fotos aqui?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "Posso carregar o telemóvel aqui?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "Estou à procura do meu hotel.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "Estou à procura da entrada.",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "Estou à procura de um restaurante.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "Estou à procura da saída.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "differs",
+        "english": "Is breakfast included?",
+        "draft": "O pequeno-almoço está incluído?",
+        "native": [
+          {
+            "text": "O café da manhã está incluído no preço?",
+            "lang": "por",
+            "id": 731502
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "O IVA está incluído?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "O Wi-Fi está incluído?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "A bagagem está incluída?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "match",
+        "english": "Where can I buy tickets?",
+        "draft": "Onde posso comprar bilhetes?",
+        "native": [
+          {
+            "text": "Onde posso comprar bilhetes?",
+            "lang": "por",
+            "id": 2213562
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "close",
+        "english": "Where can I get a taxi?",
+        "draft": "Onde posso apanhar um táxi?",
+        "native": [
+          {
+            "text": "Onde eu consigo pegar um taxi?",
+            "lang": "por",
+            "id": 11099254
+          },
+          {
+            "text": "Onde posso conseguir um táxi?",
+            "lang": "por",
+            "id": 884369
+          },
+          {
+            "text": "Onde posso pegar um táxi?",
+            "lang": "por",
+            "id": 5095944
+          },
+          {
+            "text": "Onde posso tomar um táxi?",
+            "lang": "por",
+            "id": 5095945
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "none",
+        "english": "Where can I change money?",
+        "draft": "Onde posso trocar dinheiro?",
+        "native": []
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "Onde posso comprar um cartão SIM?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -2133,31 +2449,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "¿Dónde está la salida?",
-        "native": [
-          {
-            "text": "¿Dónde está la salida?",
-            "lang": "spa",
-            "id": 687649
-          },
-          {
-            "text": "¿Dónde se encuentra la salida?",
-            "lang": "spa",
-            "id": 1237279
-          },
-          {
-            "text": "¿Por dónde está la salida?",
-            "lang": "spa",
-            "id": 2270190
-          },
-          {
-            "text": "¿Dónde hay una salida?",
-            "lang": "spa",
-            "id": 6768742
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -2317,7 +2612,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "¿Me das un jugo de naranja, por favor?",
         "native": []
       },
@@ -2347,7 +2642,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "Quisiera una copa de vino, por favor.",
         "native": []
       },
@@ -2475,7 +2770,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "Soy alérgico a los huevos.",
         "native": []
       },
@@ -2651,7 +2946,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "La cerradura no funciona.",
         "native": []
       },
@@ -2723,7 +3018,7 @@
       },
       "lost_my~word_bag": {
         "status": "none",
-        "english": "I lost my bag.",
+        "english": "",
         "draft": "Perdí mi bolsa.",
         "native": []
       },
@@ -2758,6 +3053,363 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "Perdí la llave de mi habitación.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "¿Tienes wifi?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "¿Tienes comida vegetariana?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "¿Tienes un cargador de teléfono?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "match",
+        "english": "Do you have a map?",
+        "draft": "¿Tienes un mapa?",
+        "native": [
+          {
+            "text": "¿Tiene un mapa?",
+            "lang": "spa",
+            "id": 434545
+          },
+          {
+            "text": "¿Tiene usted un mapa?",
+            "lang": "spa",
+            "id": 859370
+          },
+          {
+            "text": "¿Tienes un mapa?",
+            "lang": "spa",
+            "id": 2224498
+          }
+        ]
+      },
+      "how_much_is~ticket": {
+        "status": "close",
+        "english": "How much is a ticket?",
+        "draft": "¿Cuánto cuesta un boleto?",
+        "native": [
+          {
+            "text": "¿Cuánto cuesta el billete?",
+            "lang": "spa",
+            "id": 1619556
+          },
+          {
+            "text": "¿Cuánto cuesta un tiquete?",
+            "lang": "spa",
+            "id": 5116302
+          },
+          {
+            "text": "¿Cuál es el precio del billete?",
+            "lang": "spa",
+            "id": 6206118
+          },
+          {
+            "text": "¿Cuánto cuesta el boleto?",
+            "lang": "spa",
+            "id": 436226
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "¿Cuánto cuesta un café?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "close",
+        "english": "How much is the room?",
+        "draft": "¿Cuánto cuesta la habitación?",
+        "native": [
+          {
+            "text": "¿Cuánto cuesta el cuarto?",
+            "lang": "spa",
+            "id": 6992395
+          },
+          {
+            "text": "¿Cuánto cuesta una habitación?",
+            "lang": "spa",
+            "id": 504469
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "Necesito ayuda, por favor.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "Necesito agua, por favor.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "Necesito un taxi, por favor.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "¿Hay un baño cerca?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "match",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "¿Hay una farmacia cerca?",
+        "native": [
+          {
+            "text": "¿Hay una farmacia cerca?",
+            "lang": "spa",
+            "id": 1542238
+          }
+        ]
+      },
+      "is_there_nearby~atm": {
+        "status": "close",
+        "english": "Is there an ATM nearby?",
+        "draft": "¿Hay un cajero automático cerca?",
+        "native": [
+          {
+            "text": "¿Hay un cajero automático por aquí?",
+            "lang": "spa",
+            "id": 456052
+          },
+          {
+            "text": "¿Hay algún cajero automático por acá?",
+            "lang": "spa",
+            "id": 1439501
+          }
+        ]
+      },
+      "is_there_nearby~supermarket": {
+        "status": "none",
+        "english": "Is there a supermarket nearby?",
+        "draft": "¿Hay un supermercado cerca?",
+        "native": []
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "¿Puedo pagar en efectivo?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "¿Puedo pagar con el teléfono?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "¿Puedes escribirlo, por favor?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "Quisiera un café sin leche.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "Quisiera un té sin azúcar.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "Quisiera agua sin hielo.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "match",
+        "english": "Can I sit here?",
+        "draft": "¿Puedo sentarme aquí?",
+        "native": [
+          {
+            "text": "¿Puedo sentarme aquí?",
+            "lang": "spa",
+            "id": 596048
+          },
+          {
+            "text": "¿Me puedo sentar aquí?",
+            "lang": "spa",
+            "id": 7916831
+          },
+          {
+            "text": "¿Se puede uno sentar aquí?",
+            "lang": "spa",
+            "id": 7916832
+          },
+          {
+            "text": "¿Me puedo sentar?",
+            "lang": "spa",
+            "id": 1280036
+          }
+        ]
+      },
+      "can_i_here~park": {
+        "status": "differs",
+        "english": "Can I park here?",
+        "draft": "¿Puedo estacionar aquí?",
+        "native": [
+          {
+            "text": "¿Puedo aparcar aquí?",
+            "lang": "spa",
+            "id": 356834
+          },
+          {
+            "text": "¿Puedo aparcar mi coche aquí?",
+            "lang": "spa",
+            "id": 528543
+          },
+          {
+            "text": "¿Puedo aparcar aquí mi coche?",
+            "lang": "spa",
+            "id": 742433
+          }
+        ]
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "¿Puedo tomar fotos aquí?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "¿Puedo cargar mi teléfono aquí?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "Estoy buscando mi hotel.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "Estoy buscando la entrada.",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "Estoy buscando un restaurante.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "Estoy buscando la salida.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "close",
+        "english": "Is breakfast included?",
+        "draft": "¿Está incluido el desayuno?",
+        "native": [
+          {
+            "text": "¿Eso incluye el desayuno?",
+            "lang": "spa",
+            "id": 736762
+          },
+          {
+            "text": "¿Viene incluido el desayuno?",
+            "lang": "spa",
+            "id": 1649490
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "¿Están incluidos los impuestos?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "¿Está incluido el wifi?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "¿Está incluido el equipaje?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "match",
+        "english": "Where can I buy tickets?",
+        "draft": "¿Dónde puedo comprar boletos?",
+        "native": [
+          {
+            "text": "¿Dónde puedo comprar boletos?",
+            "lang": "spa",
+            "id": 687577
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "match",
+        "english": "Where can I get a taxi?",
+        "draft": "¿Dónde puedo tomar un taxi?",
+        "native": [
+          {
+            "text": "¿Dónde puedo conseguir un taxi?",
+            "lang": "spa",
+            "id": 482405
+          },
+          {
+            "text": "¿Dónde puedo coger un taxi?",
+            "lang": "spa",
+            "id": 2231498
+          },
+          {
+            "text": "¿Dónde puedo tomar un taxi?",
+            "lang": "spa",
+            "id": 687587
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "match",
+        "english": "Where can I change money?",
+        "draft": "¿Dónde puedo cambiar dinero?",
+        "native": [
+          {
+            "text": "¿Dónde puedo cambiar dinero?",
+            "lang": "spa",
+            "id": 687581
+          }
+        ]
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "¿Dónde puedo comprar una tarjeta SIM?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -3632,21 +4284,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "Où est la sortie ?",
-        "native": [
-          {
-            "text": "Où est la sortie ?",
-            "lang": "fra",
-            "id": 882364
-          },
-          {
-            "text": "Où se trouve la sortie ?",
-            "lang": "fra",
-            "id": 1234004
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -3852,7 +4493,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "Je peux avoir un jus d'orange, s'il vous plaît ?",
         "native": []
       },
@@ -3882,7 +4523,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "Je voudrais un verre de vin, s'il vous plaît.",
         "native": []
       },
@@ -3990,7 +4631,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "Je suis allergique aux œufs.",
         "native": []
       },
@@ -4171,7 +4812,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "La serrure ne marche pas.",
         "native": []
       },
@@ -4217,21 +4858,10 @@
         ]
       },
       "lost_my~word_bag": {
-        "status": "match",
-        "english": "I lost my bag.",
+        "status": "none",
+        "english": "",
         "draft": "J'ai perdu mon sac.",
-        "native": [
-          {
-            "text": "J’ai perdu mon sac.",
-            "lang": "fra",
-            "id": 10689698
-          },
-          {
-            "text": "J'ai perdu mon sac.",
-            "lang": "fra",
-            "id": 1419768
-          }
-        ]
+        "native": []
       },
       "lost_my~word_keys": {
         "status": "match",
@@ -4259,6 +4889,394 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "J'ai perdu la clé de ma chambre.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "Vous avez le Wi-Fi ?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "Vous avez des plats végétariens ?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "Vous avez un chargeur de téléphone ?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "match",
+        "english": "Do you have a map?",
+        "draft": "Vous avez un plan ?",
+        "native": [
+          {
+            "text": "Est-ce que vous avez une carte ?",
+            "lang": "fra",
+            "id": 7970983
+          },
+          {
+            "text": "Est-ce que tu as une carte ?",
+            "lang": "fra",
+            "id": 7970984
+          },
+          {
+            "text": "Vous avez un plan ?",
+            "lang": "fra",
+            "id": 7415237
+          },
+          {
+            "text": "Vous avez une carte ?",
+            "lang": "fra",
+            "id": 7415238
+          }
+        ]
+      },
+      "how_much_is~ticket": {
+        "status": "close",
+        "english": "How much is a ticket?",
+        "draft": "Combien coûte un billet ?",
+        "native": [
+          {
+            "text": "Combien coûte le billet ?",
+            "lang": "fra",
+            "id": 1390337
+          },
+          {
+            "text": "Combien coûte un ticket ?",
+            "lang": "fra",
+            "id": 8984052
+          },
+          {
+            "text": "Quel est le prix d'un billet ?",
+            "lang": "fra",
+            "id": 11153620
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "Combien coûte un café ?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "close",
+        "english": "How much is the room?",
+        "draft": "Combien coûte la chambre ?",
+        "native": [
+          {
+            "text": "Combien coûte une chambre ?",
+            "lang": "fra",
+            "id": 479022
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "J'ai besoin d'aide, s'il vous plaît.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "J'ai besoin d'eau, s'il vous plaît.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "J'ai besoin d'un taxi, s'il vous plaît.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "Il y a des toilettes près d'ici ?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "close",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "Il y a une pharmacie près d'ici ?",
+        "native": [
+          {
+            "text": "Y a-t-il une pharmacie près d'ici ?",
+            "lang": "fra",
+            "id": 7416524
+          },
+          {
+            "text": "Y a-t-il une pharmacie par ici ?",
+            "lang": "fra",
+            "id": 3555987
+          }
+        ]
+      },
+      "is_there_nearby~atm": {
+        "status": "differs",
+        "english": "Is there an ATM nearby?",
+        "draft": "Il y a un distributeur de billets près d'ici ?",
+        "native": [
+          {
+            "text": "Y a-t-il un automate bancaire dans les environs ?",
+            "lang": "fra",
+            "id": 1115232
+          },
+          {
+            "text": "Y a-t-il un distributeur de billets dans les environs ?",
+            "lang": "fra",
+            "id": 1115234
+          },
+          {
+            "text": "Y a-t-il dans les environs un automate bancaire ?",
+            "lang": "fra",
+            "id": 916259
+          }
+        ]
+      },
+      "is_there_nearby~supermarket": {
+        "status": "differs",
+        "english": "Is there a supermarket nearby?",
+        "draft": "Il y a un supermarché près d'ici ?",
+        "native": [
+          {
+            "text": "Y a-t-il un supermarché à proximité ?",
+            "lang": "fra",
+            "id": 3273058
+          }
+        ]
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "Je peux payer en espèces ?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "Je peux payer avec mon téléphone ?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "Vous pouvez me l'écrire, s'il vous plaît ?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "Je voudrais un café sans lait.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "Je voudrais un thé sans sucre.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "Je voudrais de l'eau sans glaçons.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "match",
+        "english": "Can I sit here?",
+        "draft": "Je peux m'asseoir ici ?",
+        "native": [
+          {
+            "text": "Puis-je m'asseoir ici ?",
+            "lang": "fra",
+            "id": 11211
+          },
+          {
+            "text": "Je peux m'asseoir ici ?",
+            "lang": "fra",
+            "id": 8961174
+          },
+          {
+            "text": "Je peux m’asseoir ici ?",
+            "lang": "fra",
+            "id": 3563229
+          }
+        ]
+      },
+      "can_i_here~park": {
+        "status": "match",
+        "english": "Can I park here?",
+        "draft": "Je peux me garer ici ?",
+        "native": [
+          {
+            "text": "Je peux me garer ici ?",
+            "lang": "fra",
+            "id": 11096705
+          },
+          {
+            "text": "Puis-je me garer ici ?",
+            "lang": "fra",
+            "id": 1542395
+          },
+          {
+            "text": "Je peux garer ma voiture ici ?",
+            "lang": "fra",
+            "id": 7686729
+          },
+          {
+            "text": "Ai-je le droit de me garer ici ?",
+            "lang": "fra",
+            "id": 1542391
+          }
+        ]
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "Je peux prendre des photos ici ?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "Je peux recharger mon téléphone ici ?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "Je cherche mon hôtel.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "Je cherche l'entrée.",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "Je cherche un restaurant.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "Je cherche la sortie.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "differs",
+        "english": "Is breakfast included?",
+        "draft": "Le petit-déjeuner est compris ?",
+        "native": [
+          {
+            "text": "Le petit déjeuner est-il inclus ?",
+            "lang": "fra",
+            "id": 3399295
+          },
+          {
+            "text": "Est-ce que le prix inclut le petit déjeuner ?",
+            "lang": "fra",
+            "id": 136036
+          },
+          {
+            "text": "Le petit-déjeuner est-il inclus dans le prix ?",
+            "lang": "fra",
+            "id": 730345
+          },
+          {
+            "text": "Est-ce que le déjeuner est inclus dans le prix ?",
+            "lang": "fra",
+            "id": 1190979
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "Les taxes sont comprises ?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "Le Wi-Fi est compris ?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "Les bagages sont compris ?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "differs",
+        "english": "Where can I buy tickets?",
+        "draft": "Où est-ce que je peux acheter des billets ?",
+        "native": [
+          {
+            "text": "Où puis-je acheter des tickets ?",
+            "lang": "fra",
+            "id": 427644
+          },
+          {
+            "text": "Où puis-je acheter des billets ?",
+            "lang": "fra",
+            "id": 13184355
+          },
+          {
+            "text": "Où puis-je acheter les billets ?",
+            "lang": "fra",
+            "id": 13184359
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "differs",
+        "english": "Where can I get a taxi?",
+        "draft": "Où est-ce que je peux prendre un taxi ?",
+        "native": [
+          {
+            "text": "Où puis-je prendre un taxi ?",
+            "lang": "fra",
+            "id": 432936
+          },
+          {
+            "text": "Où puis-je trouver un taxi ?",
+            "lang": "fra",
+            "id": 1398425
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "differs",
+        "english": "Where can I change money?",
+        "draft": "Où est-ce que je peux changer de l'argent ?",
+        "native": [
+          {
+            "text": "Où peux-je changer de l'argent ?",
+            "lang": "fra",
+            "id": 1904190
+          },
+          {
+            "text": "Où puis-je changer de l'argent ?",
+            "lang": "fra",
+            "id": 1904192
+          }
+        ]
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "Où est-ce que je peux acheter une carte SIM ?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -5133,16 +6151,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "Dov'è l'uscita?",
-        "native": [
-          {
-            "text": "Dov'è l'uscita?",
-            "lang": "ita",
-            "id": 791406
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -5280,7 +6292,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "Posso avere un succo d'arancia, per favore?",
         "native": []
       },
@@ -5310,7 +6322,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "Vorrei un bicchiere di vino, per favore.",
         "native": []
       },
@@ -5474,7 +6486,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "Sono allergico alle uova.",
         "native": []
       },
@@ -5640,7 +6652,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "La serratura non funziona.",
         "native": []
       },
@@ -5701,21 +6713,10 @@
         ]
       },
       "lost_my~word_bag": {
-        "status": "match",
-        "english": "I lost my bag.",
+        "status": "none",
+        "english": "",
         "draft": "Ho perso la borsa.",
-        "native": [
-          {
-            "text": "Ho perso la mia borsa.",
-            "lang": "ita",
-            "id": 634329
-          },
-          {
-            "text": "Ho perso la borsa.",
-            "lang": "ita",
-            "id": 10844681
-          }
-        ]
+        "native": []
       },
       "lost_my~word_keys": {
         "status": "match",
@@ -5743,6 +6744,327 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "Ho perso la chiave della camera.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "Avete il Wi-Fi?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "Avete piatti vegetariani?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "Avete un caricabatterie per il telefono?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "none",
+        "english": "Do you have a map?",
+        "draft": "Avete una cartina?",
+        "native": []
+      },
+      "how_much_is~ticket": {
+        "status": "match",
+        "english": "How much is a ticket?",
+        "draft": "Quanto costa un biglietto?",
+        "native": [
+          {
+            "text": "Quanto costa un biglietto?",
+            "lang": "ita",
+            "id": 6133689
+          },
+          {
+            "text": "Quanto viene un biglietto?",
+            "lang": "ita",
+            "id": 6133690
+          },
+          {
+            "text": "Quant'è un biglietto?",
+            "lang": "ita",
+            "id": 6133691
+          },
+          {
+            "text": "Quant'è il biglietto?",
+            "lang": "ita",
+            "id": 2272539
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "Quanto costa un caffè?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "differs",
+        "english": "How much is the room?",
+        "draft": "Quanto costa la camera?",
+        "native": [
+          {
+            "text": "Quanto viene la stanza?",
+            "lang": "ita",
+            "id": 11560596
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "Ho bisogno di aiuto, per favore.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "Ho bisogno di acqua, per favore.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "Ho bisogno di un taxi, per favore.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "C'è un bagno qui vicino?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "differs",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "C'è una farmacia qui vicino?",
+        "native": [
+          {
+            "text": "C'è una farmacia da queste parti?",
+            "lang": "ita",
+            "id": 5092782
+          }
+        ]
+      },
+      "is_there_nearby~atm": {
+        "status": "match",
+        "english": "Is there an ATM nearby?",
+        "draft": "C'è un bancomat qui vicino?",
+        "native": [
+          {
+            "text": "C'è un bancomat qui vicino?",
+            "lang": "ita",
+            "id": 5433978
+          }
+        ]
+      },
+      "is_there_nearby~supermarket": {
+        "status": "differs",
+        "english": "Is there a supermarket nearby?",
+        "draft": "C'è un supermercato qui vicino?",
+        "native": [
+          {
+            "text": "C'è un supermercato nei paraggi?",
+            "lang": "ita",
+            "id": 13163648
+          },
+          {
+            "text": "C'è un supermercato nei dintorni?",
+            "lang": "ita",
+            "id": 13163650
+          }
+        ]
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "Posso pagare in contanti?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "Posso pagare con il telefono?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "Può scriverlo, per favore?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "Vorrei un caffè senza latte.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "Vorrei un tè senza zucchero.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "Vorrei dell'acqua senza ghiaccio.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "none",
+        "english": "Can I sit here?",
+        "draft": "Posso sedermi qui?",
+        "native": []
+      },
+      "can_i_here~park": {
+        "status": "match",
+        "english": "Can I park here?",
+        "draft": "Posso parcheggiare qui?",
+        "native": [
+          {
+            "text": "Posso parcheggiare qui?",
+            "lang": "ita",
+            "id": 3533213
+          }
+        ]
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "Posso fare foto qui?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "Posso caricare il telefono qui?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "Cerco il mio hotel.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "match",
+        "english": "I'm looking for the entrance.",
+        "draft": "Cerco l'ingresso.",
+        "native": [
+          {
+            "text": "Cerco l'ingresso.",
+            "lang": "ita",
+            "id": 14084518
+          }
+        ]
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "Cerco un ristorante.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "Cerco l'uscita.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "match",
+        "english": "Is breakfast included?",
+        "draft": "La colazione è inclusa?",
+        "native": [
+          {
+            "text": "La colazione è inclusa?",
+            "lang": "ita",
+            "id": 7843351
+          },
+          {
+            "text": "Include la colazione?",
+            "lang": "ita",
+            "id": 11728161
+          },
+          {
+            "text": "È inclusa la colazione?",
+            "lang": "ita",
+            "id": 7843350
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "Le tasse sono incluse?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "Il Wi-Fi è incluso?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "Il bagaglio è incluso?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "close",
+        "english": "Where can I buy tickets?",
+        "draft": "Dove posso comprare i biglietti?",
+        "native": [
+          {
+            "text": "Dove posso comprare dei biglietti?",
+            "lang": "ita",
+            "id": 5266460
+          },
+          {
+            "text": "Mi puoi dire dove comprare dei biglietti?",
+            "lang": "ita",
+            "id": 3492523
+          },
+          {
+            "text": "Dove posso comprare il biglietto?",
+            "lang": "ita",
+            "id": 4223607
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "match",
+        "english": "Where can I get a taxi?",
+        "draft": "Dove posso prendere un taxi?",
+        "native": [
+          {
+            "text": "Dove posso prendere un taxi?",
+            "lang": "ita",
+            "id": 666766
+          },
+          {
+            "text": "Dove posso trovare un taxi?",
+            "lang": "ita",
+            "id": 3357401
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "none",
+        "english": "Where can I change money?",
+        "draft": "Dove posso cambiare i soldi?",
+        "native": []
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "Dove posso comprare una SIM?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -6419,7 +7741,7 @@
       },
       "where_is~word_exit": {
         "status": "none",
-        "english": "Where is the exit?",
+        "english": "",
         "draft": "Unde este ieșirea?",
         "native": []
       },
@@ -6509,7 +7831,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "Pot să primesc un suc de portocale, vă rog?",
         "native": []
       },
@@ -6539,7 +7861,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "Aș dori un pahar de vin, vă rog.",
         "native": []
       },
@@ -6617,7 +7939,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "Sunt alergic la ouă.",
         "native": []
       },
@@ -6767,7 +8089,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "Încuietoarea nu funcționează.",
         "native": []
       },
@@ -6797,7 +8119,7 @@
       },
       "lost_my~word_bag": {
         "status": "none",
-        "english": "I lost my bag.",
+        "english": "",
         "draft": "Mi-am pierdut geanta.",
         "native": []
       },
@@ -6817,6 +8139,251 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "Mi-am pierdut cheia de la cameră.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "Aveți Wi-Fi?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "Aveți mâncare vegetariană?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "Aveți un încărcător de telefon?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "none",
+        "english": "Do you have a map?",
+        "draft": "Aveți o hartă?",
+        "native": []
+      },
+      "how_much_is~ticket": {
+        "status": "differs",
+        "english": "How much is a ticket?",
+        "draft": "Cât costă un bilet?",
+        "native": [
+          {
+            "text": "Cât costă biletul?",
+            "lang": "ron",
+            "id": 12786978
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "Cât costă o cafea?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "close",
+        "english": "How much is the room?",
+        "draft": "Cât costă camera?",
+        "native": [
+          {
+            "text": "Cât costă o cameră?",
+            "lang": "ron",
+            "id": 1143147
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "Am nevoie de ajutor, vă rog.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "Am nevoie de apă, vă rog.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "Am nevoie de un taxi, vă rog.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "Este vreo toaletă pe aproape?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "none",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "Este vreo farmacie pe aproape?",
+        "native": []
+      },
+      "is_there_nearby~atm": {
+        "status": "none",
+        "english": "Is there an ATM nearby?",
+        "draft": "Este vreun bancomat pe aproape?",
+        "native": []
+      },
+      "is_there_nearby~supermarket": {
+        "status": "none",
+        "english": "Is there a supermarket nearby?",
+        "draft": "Este vreun supermarket pe aproape?",
+        "native": []
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "Pot plăti cash?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "Pot plăti cu telefonul?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "Puteți să-mi scrieți, vă rog?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "Aș dori o cafea fără lapte.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "Aș dori un ceai fără zahăr.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "Aș dori apă fără gheață.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "differs",
+        "english": "Can I sit here?",
+        "draft": "Pot să stau aici?",
+        "native": [
+          {
+            "text": "Pot să mă așez aici?",
+            "lang": "ron",
+            "id": 8914723
+          }
+        ]
+      },
+      "can_i_here~park": {
+        "status": "none",
+        "english": "Can I park here?",
+        "draft": "Pot să parchez aici?",
+        "native": []
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "Pot să fac poze aici?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "Pot să-mi încarc telefonul aici?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "Caut hotelul meu.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "Caut intrarea.",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "Caut un restaurant.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "Caut ieșirea.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "match",
+        "english": "Is breakfast included?",
+        "draft": "Micul dejun este inclus?",
+        "native": [
+          {
+            "text": "Micul dejun este inclus?",
+            "lang": "ron",
+            "id": 10525983
+          },
+          {
+            "text": "Micul dejun e inclus?",
+            "lang": "ron",
+            "id": 10525984
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "TVA-ul este inclus?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "Wi-Fi-ul este inclus?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "Bagajul este inclus?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "none",
+        "english": "Where can I buy tickets?",
+        "draft": "Unde pot să cumpăr bilete?",
+        "native": []
+      },
+      "where_can_i~taxi": {
+        "status": "none",
+        "english": "Where can I get a taxi?",
+        "draft": "Unde pot să găsesc un taxi?",
+        "native": []
+      },
+      "where_can_i~change_money": {
+        "status": "none",
+        "english": "Where can I change money?",
+        "draft": "Unde pot să schimb bani?",
+        "native": []
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "Unde pot să cumpăr o cartelă SIM?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -7716,26 +9283,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "Где выход?",
-        "native": [
-          {
-            "text": "Где выход?",
-            "lang": "rus",
-            "id": 652345
-          },
-          {
-            "text": "Где тут выход?",
-            "lang": "rus",
-            "id": 4751574
-          },
-          {
-            "text": "Где восток?",
-            "lang": "rus",
-            "id": 4709335
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -7941,7 +9492,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "Можно мне апельсиновый сок, пожалуйста?",
         "native": []
       },
@@ -7970,16 +9521,10 @@
         "native": []
       },
       "i_would_like~word_glass_of_wine": {
-        "status": "differs",
-        "english": "I'd like a glass of wine, please.",
+        "status": "none",
+        "english": "",
         "draft": "Я бы хотел бокал вина, пожалуйста.",
-        "native": [
-          {
-            "text": "Мне бокал вина, пожалуйста.",
-            "lang": "rus",
-            "id": 12858553
-          }
-        ]
+        "native": []
       },
       "i_would_like~word_orange_juice": {
         "status": "none",
@@ -8107,7 +9652,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "У меня аллергия на яйца.",
         "native": []
       },
@@ -8273,7 +9818,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "Дверной замок не работает.",
         "native": []
       },
@@ -8344,21 +9889,10 @@
         ]
       },
       "lost_my~word_bag": {
-        "status": "differs",
-        "english": "I lost my bag.",
+        "status": "none",
+        "english": "",
         "draft": "Я потерял/потеряла сумку.",
-        "native": [
-          {
-            "text": "Я потерял свою сумку.",
-            "lang": "rus",
-            "id": 10844581
-          },
-          {
-            "text": "Я потерял сумку.",
-            "lang": "rus",
-            "id": 10844582
-          }
-        ]
+        "native": []
       },
       "lost_my~word_keys": {
         "status": "differs",
@@ -8391,6 +9925,409 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "Я потерял/потеряла ключ от номера.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "У вас есть Wi-Fi?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "У вас есть вегетарианские блюда?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "У вас есть зарядка для телефона?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "differs",
+        "english": "Do you have a map?",
+        "draft": "У вас есть карта города?",
+        "native": [
+          {
+            "text": "У тебя есть карта?",
+            "lang": "rus",
+            "id": 1677403
+          },
+          {
+            "text": "У вас есть карта?",
+            "lang": "rus",
+            "id": 4218346
+          },
+          {
+            "text": "Карта есть?",
+            "lang": "rus",
+            "id": 5638263
+          },
+          {
+            "text": "Есть ли у Вас карта?",
+            "lang": "rus",
+            "id": 469609
+          }
+        ]
+      },
+      "how_much_is~ticket": {
+        "status": "match",
+        "english": "How much is a ticket?",
+        "draft": "Сколько стоит билет?",
+        "native": [
+          {
+            "text": "Сколько стоит билет?",
+            "lang": "rus",
+            "id": 862021
+          },
+          {
+            "text": "Сколько за билет?",
+            "lang": "rus",
+            "id": 5116307
+          },
+          {
+            "text": "Сколько стоит один билет?",
+            "lang": "rus",
+            "id": 11153644
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "Сколько стоит кофе?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "match",
+        "english": "How much is the room?",
+        "draft": "Сколько стоит номер?",
+        "native": [
+          {
+            "text": "Сколько стоит комната?",
+            "lang": "rus",
+            "id": 3866906
+          },
+          {
+            "text": "Сколько стоит номер?",
+            "lang": "rus",
+            "id": 1514699
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "Мне нужна помощь.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "Мне нужна вода, пожалуйста.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "Мне нужно такси, пожалуйста.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "Здесь рядом есть туалет?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "differs",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "Здесь рядом есть аптека?",
+        "native": [
+          {
+            "text": "Здесь поблизости есть аптека?",
+            "lang": "rus",
+            "id": 4061683
+          },
+          {
+            "text": "Тут поблизости есть аптека?",
+            "lang": "rus",
+            "id": 7419855
+          },
+          {
+            "text": "Поблизости есть аптека?",
+            "lang": "rus",
+            "id": 7419857
+          },
+          {
+            "text": "Рядом есть аптека?",
+            "lang": "rus",
+            "id": 7419859
+          }
+        ]
+      },
+      "is_there_nearby~atm": {
+        "status": "differs",
+        "english": "Is there an ATM nearby?",
+        "draft": "Здесь рядом есть банкомат?",
+        "native": [
+          {
+            "text": "Здесь поблизости есть банкомат?",
+            "lang": "rus",
+            "id": 2141112
+          },
+          {
+            "text": "Здесь есть поблизости банкомат?",
+            "lang": "rus",
+            "id": 5433720
+          },
+          {
+            "text": "Тут есть поблизости банкомат?",
+            "lang": "rus",
+            "id": 10602063
+          }
+        ]
+      },
+      "is_there_nearby~supermarket": {
+        "status": "differs",
+        "english": "Is there a supermarket nearby?",
+        "draft": "Здесь рядом есть супермаркет?",
+        "native": [
+          {
+            "text": "Поблизости есть какой-нибудь супермаркет?",
+            "lang": "rus",
+            "id": 6571979
+          },
+          {
+            "text": "Поблизости есть супермаркет?",
+            "lang": "rus",
+            "id": 1434611
+          }
+        ]
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "Можно оплатить наличными?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "Можно оплатить телефоном?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "Можете это написать, пожалуйста?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "Мне кофе без молока, пожалуйста.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "Мне чай без сахара, пожалуйста.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "Мне воду без льда, пожалуйста.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "close",
+        "english": "Can I sit here?",
+        "draft": "Можно здесь сесть?",
+        "native": [
+          {
+            "text": "Можно я здесь сяду?",
+            "lang": "rus",
+            "id": 2893861
+          },
+          {
+            "text": "Можно мне здесь сесть?",
+            "lang": "rus",
+            "id": 2893862
+          },
+          {
+            "text": "Можно я здесь присяду?",
+            "lang": "rus",
+            "id": 5209696
+          },
+          {
+            "text": "Можно я здесь посижу?",
+            "lang": "rus",
+            "id": 5802578
+          }
+        ]
+      },
+      "can_i_here~park": {
+        "status": "match",
+        "english": "Can I park here?",
+        "draft": "Можно здесь припарковаться?",
+        "native": [
+          {
+            "text": "Могу я здесь припарковаться?",
+            "lang": "rus",
+            "id": 466557
+          },
+          {
+            "text": "Я могу здесь припарковаться?",
+            "lang": "rus",
+            "id": 11852741
+          },
+          {
+            "text": "Можно здесь припарковаться?",
+            "lang": "rus",
+            "id": 2447628
+          }
+        ]
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "Можно здесь фотографировать?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "Можно здесь зарядить телефон?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "Я ищу свою гостиницу.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "match",
+        "english": "I'm looking for the entrance.",
+        "draft": "Я ищу вход.",
+        "native": [
+          {
+            "text": "Я ищу вход.",
+            "lang": "rus",
+            "id": 12569100
+          }
+        ]
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "Я ищу ресторан.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "Я ищу выход.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "differs",
+        "english": "Is breakfast included?",
+        "draft": "Завтрак входит в стоимость?",
+        "native": [
+          {
+            "text": "Завтрак включён?",
+            "lang": "rus",
+            "id": 4398252
+          },
+          {
+            "text": "Завтрак включён в стоимость?",
+            "lang": "rus",
+            "id": 2777407
+          },
+          {
+            "text": "Цена включает в себя завтрак?",
+            "lang": "rus",
+            "id": 2777404
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "Налог входит в стоимость?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "Wi-Fi входит в стоимость?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "Багаж входит в стоимость?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "match",
+        "english": "Where can I buy tickets?",
+        "draft": "Где можно купить билеты?",
+        "native": [
+          {
+            "text": "Где я могу купить билеты?",
+            "lang": "rus",
+            "id": 2213565
+          },
+          {
+            "text": "Где можно купить билеты?",
+            "lang": "rus",
+            "id": 7835030
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "close",
+        "english": "Where can I get a taxi?",
+        "draft": "Где можно взять такси?",
+        "native": [
+          {
+            "text": "Где можно найти такси?",
+            "lang": "rus",
+            "id": 8300924
+          },
+          {
+            "text": "Где можно поймать такси?",
+            "lang": "rus",
+            "id": 9032397
+          },
+          {
+            "text": "Где можно сесть в такси?",
+            "lang": "rus",
+            "id": 4080347
+          },
+          {
+            "text": "Где здесь можно поймать такси?",
+            "lang": "rus",
+            "id": 3348533
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "none",
+        "english": "Where can I change money?",
+        "draft": "Где можно поменять деньги?",
+        "native": []
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "Где можно купить сим-карту?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -9255,16 +11192,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "出口はどこですか？",
-        "native": [
-          {
-            "text": "出口はどこですか？",
-            "lang": "jpn",
-            "id": 3549611
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "differs",
@@ -9407,7 +11338,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "オレンジジュースをお願いします。",
         "native": []
       },
@@ -9437,7 +11368,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "グラスワインをお願いします。",
         "native": []
       },
@@ -9543,7 +11474,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "卵アレルギーがあります。",
         "native": []
       },
@@ -9709,7 +11640,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "ドアの鍵が壊れています。",
         "native": []
       },
@@ -9755,7 +11686,7 @@
       },
       "lost_my~word_bag": {
         "status": "none",
-        "english": "I lost my bag.",
+        "english": "",
         "draft": "かばんをなくしました。",
         "native": []
       },
@@ -9769,6 +11700,341 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "部屋の鍵をなくしました。",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "Wi-Fiはありますか？",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "ベジタリアン料理はありますか？",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "スマホの充電器はありますか？",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "none",
+        "english": "Do you have a map?",
+        "draft": "地図はありますか？",
+        "native": []
+      },
+      "how_much_is~ticket": {
+        "status": "none",
+        "english": "How much is a ticket?",
+        "draft": "切符はいくらですか？",
+        "native": []
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "コーヒーはいくらですか？",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "none",
+        "english": "How much is the room?",
+        "draft": "部屋はいくらですか？",
+        "native": []
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "助けてください。",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "お水をください。",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "タクシーを呼んでください。",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "この近くにトイレはありますか？",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "match",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "この近くに薬局はありますか？",
+        "native": [
+          {
+            "text": "この近くに薬局はありますか？",
+            "lang": "jpn",
+            "id": 3554825
+          }
+        ]
+      },
+      "is_there_nearby~atm": {
+        "status": "match",
+        "english": "Is there an ATM nearby?",
+        "draft": "この近くにATMはありますか？",
+        "native": [
+          {
+            "text": "この近辺にATMはありますか？",
+            "lang": "jpn",
+            "id": 912159
+          },
+          {
+            "text": "この辺りにATMはありますか？",
+            "lang": "jpn",
+            "id": 2701316
+          },
+          {
+            "text": "この近くにATMはありますか？",
+            "lang": "jpn",
+            "id": 2748990
+          },
+          {
+            "text": "この辺に、ATMはありますか？",
+            "lang": "jpn",
+            "id": 12324628
+          }
+        ]
+      },
+      "is_there_nearby~supermarket": {
+        "status": "close",
+        "english": "Is there a supermarket nearby?",
+        "draft": "この近くにスーパーはありますか？",
+        "native": [
+          {
+            "text": "近くにスーパーはありますか？",
+            "lang": "jpn",
+            "id": 8747091
+          }
+        ]
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "現金で払えますか？",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "スマホで払えますか？",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "紙に書いてもらえますか？",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "コーヒーをミルク抜きでお願いします。",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "紅茶を砂糖抜きでお願いします。",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "お水を氷抜きでお願いします。",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "match",
+        "english": "Can I sit here?",
+        "draft": "ここに座ってもいいですか？",
+        "native": [
+          {
+            "text": "ここに座ってもいいですか。",
+            "lang": "jpn",
+            "id": 224426
+          },
+          {
+            "text": "ここに座ってもいいですか？",
+            "lang": "jpn",
+            "id": 3495546
+          },
+          {
+            "text": "ここ座ってもいいですか？",
+            "lang": "jpn",
+            "id": 3561927
+          },
+          {
+            "text": "ここ座っていいですか？",
+            "lang": "jpn",
+            "id": 4842955
+          }
+        ]
+      },
+      "can_i_here~park": {
+        "status": "differs",
+        "english": "Can I park here?",
+        "draft": "ここに車を停めてもいいですか？",
+        "native": [
+          {
+            "text": "ここに駐車してもよろしいですか。",
+            "lang": "jpn",
+            "id": 224397
+          },
+          {
+            "text": "ここに駐車してもいいですか？",
+            "lang": "jpn",
+            "id": 11140860
+          }
+        ]
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "ここで写真を撮ってもいいですか？",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "ここでスマホを充電してもいいですか？",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "泊まっているホテルを探しています。",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "入口を探しています。",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "レストランを探しています。",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "出口を探しています。",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "differs",
+        "english": "Is breakfast included?",
+        "draft": "朝食は含まれていますか？",
+        "native": [
+          {
+            "text": "朝食はついてますか？",
+            "lang": "jpn",
+            "id": 8726938
+          },
+          {
+            "text": "それには朝食は含まれていますか。",
+            "lang": "jpn",
+            "id": 205652
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "税込みですか？",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "Wi-Fiは含まれていますか？",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "荷物の料金は含まれていますか？",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "differs",
+        "english": "Where can I buy tickets?",
+        "draft": "どこで切符を買えますか？",
+        "native": [
+          {
+            "text": "切符は、どこで買えばいいですか。",
+            "lang": "jpn",
+            "id": 142101
+          },
+          {
+            "text": "チケットはどこで買えますか。",
+            "lang": "jpn",
+            "id": 202993
+          },
+          {
+            "text": "チケットはどこで買うのですか。",
+            "lang": "jpn",
+            "id": 202994
+          },
+          {
+            "text": "チケットはどこで買えばいいですか？",
+            "lang": "jpn",
+            "id": 10172153
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "match",
+        "english": "Where can I get a taxi?",
+        "draft": "どこでタクシーに乗れますか？",
+        "native": [
+          {
+            "text": "どこでタクシーに乗れますか。",
+            "lang": "jpn",
+            "id": 200988
+          },
+          {
+            "text": "タクシーはどこで拾えますか。",
+            "lang": "jpn",
+            "id": 203712
+          },
+          {
+            "text": "この辺でタクシーが拾えるところはどこですか。",
+            "lang": "jpn",
+            "id": 219888
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "differs",
+        "english": "Where can I change money?",
+        "draft": "どこで両替できますか？",
+        "native": [
+          {
+            "text": "両替はどこでできますか？",
+            "lang": "jpn",
+            "id": 10647172
+          }
+        ]
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "どこでSIMカードを買えますか？",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -10521,16 +12787,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "match",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "איפה היציאה?",
-        "native": [
-          {
-            "text": "איפה היציאה?",
-            "lang": "heb",
-            "id": 1945695
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "none",
@@ -10634,7 +12894,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "אפשר לקבל מיץ תפוזים, בבקשה?",
         "native": []
       },
@@ -10664,7 +12924,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "אני רוצה כוס יין, בבקשה.",
         "native": []
       },
@@ -10753,7 +13013,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "אני אלרגי לביצים.",
         "native": []
       },
@@ -10909,7 +13169,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "המנעול של הדלת לא עובד.",
         "native": []
       },
@@ -10933,7 +13193,7 @@
       },
       "lost_my~word_bag": {
         "status": "none",
-        "english": "I lost my bag.",
+        "english": "",
         "draft": "איבדתי את התיק שלי.",
         "native": []
       },
@@ -10947,6 +13207,272 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "איבדתי את המפתח של החדר שלי.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "יש לכם וויי-פיי?",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "יש לכם אוכל צמחוני?",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "יש לכם מטען לטלפון?",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "match",
+        "english": "Do you have a map?",
+        "draft": "יש לכם מפה?",
+        "native": [
+          {
+            "text": "יש לך מפה?",
+            "lang": "heb",
+            "id": 2118885
+          },
+          {
+            "text": "יש לכם מפה?",
+            "lang": "heb",
+            "id": 2118886
+          }
+        ]
+      },
+      "how_much_is~ticket": {
+        "status": "none",
+        "english": "How much is a ticket?",
+        "draft": "כמה עולה כרטיס?",
+        "native": []
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "כמה עולה קפה?",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "close",
+        "english": "How much is the room?",
+        "draft": "כמה עולה החדר?",
+        "native": [
+          {
+            "text": "כמה עולה חדר?",
+            "lang": "heb",
+            "id": 1432665
+          }
+        ]
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "אני צריך עזרה, בבקשה.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "אני צריך מים, בבקשה.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "אני צריך מונית, בבקשה.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "יש פה שירותים בסביבה?",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "none",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "יש פה בית מרקחת בסביבה?",
+        "native": []
+      },
+      "is_there_nearby~atm": {
+        "status": "none",
+        "english": "Is there an ATM nearby?",
+        "draft": "יש פה כספומט בסביבה?",
+        "native": []
+      },
+      "is_there_nearby~supermarket": {
+        "status": "none",
+        "english": "Is there a supermarket nearby?",
+        "draft": "יש פה סופר בסביבה?",
+        "native": []
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "אפשר לשלם במזומן?",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "אפשר לשלם עם הטלפון?",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "אפשר לכתוב לי את זה, בבקשה?",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "אני רוצה קפה בלי חלב, בבקשה.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "אני רוצה תה בלי סוכר, בבקשה.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "אני רוצה מים בלי קרח, בבקשה.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "none",
+        "english": "Can I sit here?",
+        "draft": "אפשר לשבת פה?",
+        "native": []
+      },
+      "can_i_here~park": {
+        "status": "none",
+        "english": "Can I park here?",
+        "draft": "אפשר לחנות פה?",
+        "native": []
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "אפשר לצלם פה?",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "אפשר להטעין פה את הטלפון?",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "אני מחפש את המלון שלי.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "אני מחפש את הכניסה.",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "אני מחפש מסעדה.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "אני מחפש את היציאה.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "close",
+        "english": "Is breakfast included?",
+        "draft": "ארוחת הבוקר כלולה?",
+        "native": [
+          {
+            "text": "האם ארוחת בוקר כלולה?",
+            "lang": "heb",
+            "id": 4896278
+          },
+          {
+            "text": "ארוחת בוקר כלולה?",
+            "lang": "heb",
+            "id": 4896280
+          },
+          {
+            "text": "כולל ארוחת בוקר?",
+            "lang": "heb",
+            "id": 4896281
+          }
+        ]
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "המע״מ כלול?",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "הוויי-פיי כלול?",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "המזוודה כלולה?",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "differs",
+        "english": "Where can I buy tickets?",
+        "draft": "איפה אפשר לקנות כרטיסים?",
+        "native": [
+          {
+            "text": "איפה אני יכול לקנות כרטיסים?",
+            "lang": "heb",
+            "id": 7761013
+          },
+          {
+            "text": "איפה אני יכולה לקנות כרטיסים?",
+            "lang": "heb",
+            "id": 7761014
+          }
+        ]
+      },
+      "where_can_i~taxi": {
+        "status": "differs",
+        "english": "Where can I get a taxi?",
+        "draft": "איפה אפשר לתפוס מונית?",
+        "native": [
+          {
+            "text": "איפה אוכל להשיג מונית?",
+            "lang": "heb",
+            "id": 584590
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "none",
+        "english": "Where can I change money?",
+        "draft": "איפה אפשר להחליף כסף?",
+        "native": []
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "איפה אפשר לקנות כרטיס סים?",
         "native": []
       },
       "reply~for_here_or_to_go": {
@@ -11558,16 +14084,10 @@
         "native": []
       },
       "where_is~word_exit": {
-        "status": "close",
-        "english": "Where is the exit?",
+        "status": "none",
+        "english": "",
         "draft": "وين المخرج؟",
-        "native": [
-          {
-            "text": "أين المخرج؟",
-            "lang": "ara",
-            "id": 4940198
-          }
-        ]
+        "native": []
       },
       "nearest~word_pharmacy": {
         "status": "none",
@@ -11661,7 +14181,7 @@
       },
       "can_i_have~word_orange_juice": {
         "status": "none",
-        "english": "Can I have an orange juice, please?",
+        "english": "",
         "draft": "ممكن تعطيني عصير برتقان، لو سمحت؟",
         "native": []
       },
@@ -11691,7 +14211,7 @@
       },
       "i_would_like~word_glass_of_wine": {
         "status": "none",
-        "english": "I'd like a glass of wine, please.",
+        "english": "",
         "draft": "بدي كاسة نبيذ، لو سمحت.",
         "native": []
       },
@@ -11775,7 +14295,7 @@
       },
       "allergic_to~word_eggs": {
         "status": "none",
-        "english": "I'm allergic to eggs.",
+        "english": "",
         "draft": "عندي حساسية من البيض.",
         "native": []
       },
@@ -11930,7 +14450,7 @@
       },
       "doesnt_work~word_door_lock": {
         "status": "none",
-        "english": "The door lock doesn't work.",
+        "english": "",
         "draft": "قفل الباب ما بيشتغل.",
         "native": []
       },
@@ -11960,7 +14480,7 @@
       },
       "lost_my~word_bag": {
         "status": "none",
-        "english": "I lost my bag.",
+        "english": "",
         "draft": "ضيّعت شنطتي.",
         "native": []
       },
@@ -11980,6 +14500,239 @@
         "status": "none",
         "english": "I lost my room key.",
         "draft": "ضيّعت مفتاح غرفتي.",
+        "native": []
+      },
+      "do_you_have~wifi": {
+        "status": "none",
+        "english": "Do you have Wi-Fi?",
+        "draft": "عندكم واي فاي؟",
+        "native": []
+      },
+      "do_you_have~vegetarian_food": {
+        "status": "none",
+        "english": "Do you have vegetarian food?",
+        "draft": "عندكم أكل نباتي؟",
+        "native": []
+      },
+      "do_you_have~charger": {
+        "status": "none",
+        "english": "Do you have a phone charger?",
+        "draft": "عندكم شاحن تلفون؟",
+        "native": []
+      },
+      "do_you_have~map": {
+        "status": "none",
+        "english": "Do you have a map?",
+        "draft": "عندكم خريطة؟",
+        "native": []
+      },
+      "how_much_is~ticket": {
+        "status": "formal-only",
+        "english": "How much is a ticket?",
+        "draft": "قديش التذكرة؟",
+        "native": [
+          {
+            "text": "كم سعر التذكرة؟",
+            "lang": "ara",
+            "id": 11669252
+          }
+        ]
+      },
+      "how_much_is~coffee": {
+        "status": "none",
+        "english": "How much is a coffee?",
+        "draft": "قديش القهوة؟",
+        "native": []
+      },
+      "how_much_is~room": {
+        "status": "none",
+        "english": "How much is the room?",
+        "draft": "قديش الغرفة؟",
+        "native": []
+      },
+      "i_need~help": {
+        "status": "none",
+        "english": "I need help, please.",
+        "draft": "محتاج مساعدة، لو سمحت.",
+        "native": []
+      },
+      "i_need~water": {
+        "status": "none",
+        "english": "I need water, please.",
+        "draft": "محتاج مي، لو سمحت.",
+        "native": []
+      },
+      "i_need~taxi": {
+        "status": "none",
+        "english": "I need a taxi, please.",
+        "draft": "محتاج تاكسي، لو سمحت.",
+        "native": []
+      },
+      "is_there_nearby~bathroom": {
+        "status": "none",
+        "english": "Is there a bathroom nearby?",
+        "draft": "في حمّام هون قريب؟",
+        "native": []
+      },
+      "is_there_nearby~pharmacy": {
+        "status": "none",
+        "english": "Is there a pharmacy nearby?",
+        "draft": "في صيدلية هون قريب؟",
+        "native": []
+      },
+      "is_there_nearby~atm": {
+        "status": "none",
+        "english": "Is there an ATM nearby?",
+        "draft": "في صراف آلي هون قريب؟",
+        "native": []
+      },
+      "is_there_nearby~supermarket": {
+        "status": "none",
+        "english": "Is there a supermarket nearby?",
+        "draft": "في سوبرماركت هون قريب؟",
+        "native": []
+      },
+      "pay_with~cash": {
+        "status": "none",
+        "english": "Can I pay with cash?",
+        "draft": "فيني أدفع كاش؟",
+        "native": []
+      },
+      "pay_with~phone": {
+        "status": "none",
+        "english": "Can I pay with my phone?",
+        "draft": "فيني أدفع بتلفوني؟",
+        "native": []
+      },
+      "can_you~write": {
+        "status": "none",
+        "english": "Can you write it down, please?",
+        "draft": "ممكن تكتبلي ياه، لو سمحت؟",
+        "native": []
+      },
+      "like_without~coffee_milk": {
+        "status": "none",
+        "english": "I'd like a coffee without milk.",
+        "draft": "بدي قهوة بدون حليب، لو سمحت.",
+        "native": []
+      },
+      "like_without~tea_sugar": {
+        "status": "none",
+        "english": "I'd like a tea without sugar.",
+        "draft": "بدي شاي بدون سكر، لو سمحت.",
+        "native": []
+      },
+      "like_without~water_ice": {
+        "status": "none",
+        "english": "I'd like water without ice.",
+        "draft": "بدي مي بدون تلج، لو سمحت.",
+        "native": []
+      },
+      "can_i_here~sit": {
+        "status": "none",
+        "english": "Can I sit here?",
+        "draft": "فيني أقعد هون؟",
+        "native": []
+      },
+      "can_i_here~park": {
+        "status": "none",
+        "english": "Can I park here?",
+        "draft": "فيني صفّ السيارة هون؟",
+        "native": []
+      },
+      "can_i_here~photos": {
+        "status": "none",
+        "english": "Can I take photos here?",
+        "draft": "فيني صوّر هون؟",
+        "native": []
+      },
+      "can_i_here~charge": {
+        "status": "none",
+        "english": "Can I charge my phone here?",
+        "draft": "فيني أشحن تلفوني هون؟",
+        "native": []
+      },
+      "looking_for~my_hotel": {
+        "status": "none",
+        "english": "I'm looking for my hotel.",
+        "draft": "عم دوّر على الفندق تبعي.",
+        "native": []
+      },
+      "looking_for~entrance": {
+        "status": "none",
+        "english": "I'm looking for the entrance.",
+        "draft": "عم دوّر عالمدخل.",
+        "native": []
+      },
+      "looking_for~restaurant": {
+        "status": "none",
+        "english": "I'm looking for a restaurant.",
+        "draft": "عم دوّر على مطعم.",
+        "native": []
+      },
+      "looking_for~exit": {
+        "status": "none",
+        "english": "I'm looking for the exit.",
+        "draft": "عم دوّر عالمخرج.",
+        "native": []
+      },
+      "is_included~breakfast": {
+        "status": "none",
+        "english": "Is breakfast included?",
+        "draft": "الفطور ضمن السعر؟",
+        "native": []
+      },
+      "is_included~tax": {
+        "status": "none",
+        "english": "Is tax included?",
+        "draft": "الضريبة ضمن السعر؟",
+        "native": []
+      },
+      "is_included~wifi": {
+        "status": "none",
+        "english": "Is Wi-Fi included?",
+        "draft": "الواي فاي ضمن السعر؟",
+        "native": []
+      },
+      "is_included~luggage": {
+        "status": "none",
+        "english": "Is luggage included?",
+        "draft": "الشنط ضمن السعر؟",
+        "native": []
+      },
+      "where_can_i~buy_tickets": {
+        "status": "none",
+        "english": "Where can I buy tickets?",
+        "draft": "وين فيني أشتري تذاكر؟",
+        "native": []
+      },
+      "where_can_i~taxi": {
+        "status": "formal-only",
+        "english": "Where can I get a taxi?",
+        "draft": "وين فيني لاقي تاكسي؟",
+        "native": [
+          {
+            "text": "أين أستطيع أن أجد سيارة أجرة؟",
+            "lang": "ara",
+            "id": 1569041
+          },
+          {
+            "text": "أين يمكنني أن أجد سيارة أجرة؟",
+            "lang": "ara",
+            "id": 1398418
+          }
+        ]
+      },
+      "where_can_i~change_money": {
+        "status": "none",
+        "english": "Where can I change money?",
+        "draft": "وين فيني صرّف مصاري؟",
+        "native": []
+      },
+      "where_can_i~sim": {
+        "status": "none",
+        "english": "Where can I buy a SIM card?",
+        "draft": "وين فيني أشتري شريحة؟",
         "native": []
       },
       "reply~for_here_or_to_go": {

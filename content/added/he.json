@@ -320,6 +320,72 @@
       "target": "אני צריך להתקשר למישהו.",
       "pronunciation_easy": "a-NEE tsa-REEKH le-hit-ka-SHER le-MEE-she-hu",
       "qa": "Back-translation: 'I need to call to someone.' Masculine speaker; feminine צריכה (tsree-KHA). To borrow a phone: אפשר להתקשר מהטלפון שלך? (ef-SHAR le-hit-ka-SHER me-ha-TE-le-fon shel-KHA)."
+    },
+    {
+      "id": "do_you_have",
+      "target": "יש לכם ___?",
+      "pronunciation_easy": "yesh la-KHEM ___",
+      "qa": "Literally 'Is there to you (plural) ___?'. Plural לכם is the normal way to ask a shop, café or hotel. To one person: יש לך (le-KHA to a man, LAKH to a woman). The noun goes in bare, no article."
+    },
+    {
+      "id": "how_much_is",
+      "target": "כמה עולה ___?",
+      "pronunciation_easy": "KA-ma o-LE ___",
+      "qa": "Verb agrees with the item: masculine עולה (o-LE), feminine same spelling but said o-LA, plural עולים (o-LEEM). Indefinite items are bare; definite ones take ה (החדר)."
+    },
+    {
+      "id": "i_need",
+      "target": "אני צריך ___, בבקשה.",
+      "pronunciation_easy": "a-NEE tsa-REEKH ___, be-va-ka-SHA",
+      "qa": "Back-translation: 'I need ___, please.' Masculine speaker; feminine אני צריכה (tsree-KHA). Noun goes in bare."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "יש פה ___ בסביבה?",
+      "pronunciation_easy": "yesh po ___ ba-svi-VA",
+      "qa": "Literally 'Is there here ___ in the area?'. Chosen because nothing agrees with the noun. Alternative יש ___ קרוב? needs קרובה (kro-VA) for feminine nouns. Reviewer: check naturalness vs. יש ___ באזור? (ba-e-ZOR)."
+    },
+    {
+      "id": "pay_with",
+      "target": "אפשר לשלם ___?",
+      "pronunciation_easy": "ef-SHAR le-sha-LEM ___",
+      "qa": "The preposition is inside the blank because it changes: ב for cash/card (במזומן, בכרטיס), עם for a phone (עם הטלפון). Gender-neutral."
+    },
+    {
+      "id": "can_you",
+      "target": "אפשר ___, בבקשה?",
+      "pronunciation_easy": "ef-SHAR ___, be-va-ka-SHA",
+      "qa": "Literally 'Is it possible to ___, please?'. Same gender-neutral אפשר + infinitive structure as the vetted help_me / say_again / speak_slowly. The blank takes an infinitive verb phrase, not a noun."
+    },
+    {
+      "id": "like_without",
+      "target": "אני רוצה ___ בלי ___, בבקשה.",
+      "pronunciation_easy": "a-NEE ro-TSE ___ blee ___, be-va-ka-SHA",
+      "qa": "Adds בבקשה, as the vetted i_would_like does; bare אני רוצה sounds blunt. רוצה is spelled the same for both genders but a woman says ro-TSA. בלי never changes."
+    },
+    {
+      "id": "can_i_here",
+      "target": "אפשר ___ פה?",
+      "pronunciation_easy": "ef-SHAR ___ po",
+      "qa": "Literally 'Is it possible to ___ here?'. Blank takes an infinitive; gender-neutral. כאן (kan) is a more formal synonym of פה."
+    },
+    {
+      "id": "looking_for",
+      "target": "אני מחפש ___.",
+      "pronunciation_easy": "a-NEE me-kha-PES ___",
+      "qa": "Masculine speaker; feminine אני מחפשת (me-kha-PE-set). The object marker את is inside the blank: definite objects take את ה (את היציאה), indefinite ones are bare (מסעדה)."
+    },
+    {
+      "id": "is_included",
+      "target": "___ כלול?",
+      "pronunciation_easy": "___ ka-LOOL",
+      "qa": "Adjective agrees with the noun: masculine כלול (ka-LOOL), feminine כלולה (klu-LA), plural כלולים (klu-LEEM). The noun takes ה. Also common: זה כולל ___? (ze ko-LEL, 'does it include ___?'), which never changes."
+    },
+    {
+      "id": "where_can_i",
+      "target": "איפה אפשר ___?",
+      "pronunciation_easy": "EY-fo ef-SHAR ___",
+      "qa": "Literally 'Where is it possible to ___?'. Blank takes an infinitive; gender-neutral."
     }
   ],
   "vocab": {
@@ -995,6 +1061,225 @@
         "word": "word_room_key",
         "target": "איבדתי את המפתח של החדר שלי.",
         "pronunciation_easy": "ee-BAD-tee et ha-maf-TE-akh shel ha-KHE-der she-LEE"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "יש לכם וויי-פיי?",
+        "pronunciation_easy": "yesh la-KHEM WAI-fai"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "יש לכם אוכל צמחוני?",
+        "pronunciation_easy": "yesh la-KHEM O-khel tsim-kho-NEE"
+      },
+      {
+        "word": "charger",
+        "target": "יש לכם מטען לטלפון?",
+        "pronunciation_easy": "yesh la-KHEM mit-AN la-TE-le-fon"
+      },
+      {
+        "word": "map",
+        "target": "יש לכם מפה?",
+        "pronunciation_easy": "yesh la-KHEM ma-PA"
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "כמה עולה כרטיס?",
+        "pronunciation_easy": "KA-ma o-LE kar-TEES"
+      },
+      {
+        "word": "coffee",
+        "target": "כמה עולה קפה?",
+        "pronunciation_easy": "KA-ma o-LE ka-FE"
+      },
+      {
+        "word": "room",
+        "target": "כמה עולה החדר?",
+        "pronunciation_easy": "KA-ma o-LE ha-KHE-der",
+        "qa": "Per night: כמה עולה החדר ללילה? (la-LAI-la)."
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "אני צריך עזרה, בבקשה.",
+        "pronunciation_easy": "a-NEE tsa-REEKH ez-RA, be-va-ka-SHA",
+        "qa": "Back-translation: 'I need help, please.' Masculine speaker; feminine צריכה (tsree-KHA). In real danger shout הצילו! instead; ambulance 101, police 100."
+      },
+      {
+        "word": "water",
+        "target": "אני צריך מים, בבקשה.",
+        "pronunciation_easy": "a-NEE tsa-REEKH MA-yim, be-va-ka-SHA"
+      },
+      {
+        "word": "taxi",
+        "target": "אני צריך מונית, בבקשה.",
+        "pronunciation_easy": "a-NEE tsa-REEKH mo-NEET, be-va-ka-SHA",
+        "qa": "Most Israelis order taxis by app (Gett); to a hotel desk: אפשר להזמין לי מונית? (ef-SHAR le-haz-MEEN lee mo-NEET)."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "יש פה שירותים בסביבה?",
+        "pronunciation_easy": "yesh po she-ru-TEEM ba-svi-VA"
+      },
+      {
+        "word": "pharmacy",
+        "target": "יש פה בית מרקחת בסביבה?",
+        "pronunciation_easy": "yesh po beyt mir-KA-khat ba-svi-VA"
+      },
+      {
+        "word": "atm",
+        "target": "יש פה כספומט בסביבה?",
+        "pronunciation_easy": "yesh po kas-po-MAT ba-svi-VA"
+      },
+      {
+        "word": "supermarket",
+        "target": "יש פה סופר בסביבה?",
+        "pronunciation_easy": "yesh po SOO-per ba-svi-VA"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "אפשר לשלם במזומן?",
+        "pronunciation_easy": "ef-SHAR le-sha-LEM bi-mzu-MAN"
+      },
+      {
+        "word": "phone",
+        "target": "אפשר לשלם עם הטלפון?",
+        "pronunciation_easy": "ef-SHAR le-sha-LEM im ha-TE-le-fon",
+        "qa": "Uses עם ('with'), not ב. Reviewer: check whether בטלפון is equally natural."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "אפשר לכתוב לי את זה, בבקשה?",
+        "pronunciation_easy": "ef-SHAR likh-TOV lee et ze, be-va-ka-SHA",
+        "qa": "Literally 'Is it possible to write it for me, please?'."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "אני רוצה קפה בלי חלב, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE ka-FE blee kha-LAV, be-va-ka-SHA",
+        "qa": "Israeli default coffee often has milk; for black coffee also: קפה שחור (ka-FE sha-KHOR)."
+      },
+      {
+        "word": "tea_sugar",
+        "target": "אני רוצה תה בלי סוכר, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE te blee SOO-kar, be-va-ka-SHA"
+      },
+      {
+        "word": "water_ice",
+        "target": "אני רוצה מים בלי קרח, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE MA-yim blee KE-rakh, be-va-ka-SHA"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "אפשר לשבת פה?",
+        "pronunciation_easy": "ef-SHAR la-SHE-vet po",
+        "qa": "For a free seat next to someone, also just: פנוי? (pa-NOO-y, 'free?')."
+      },
+      {
+        "word": "park",
+        "target": "אפשר לחנות פה?",
+        "pronunciation_easy": "ef-SHAR la-kha-NOT po"
+      },
+      {
+        "word": "photos",
+        "target": "אפשר לצלם פה?",
+        "pronunciation_easy": "ef-SHAR le-tsa-LEM po",
+        "qa": "Literally 'Is it possible to photograph here?'."
+      },
+      {
+        "word": "charge",
+        "target": "אפשר להטעין פה את הטלפון?",
+        "pronunciation_easy": "ef-SHAR le-hat-EEN po et ha-TE-le-fon",
+        "qa": "Literally 'Can [one] charge the phone here?'; Hebrew says 'the phone' rather than 'my phone'. Word order: פה before the object."
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "אני מחפש את המלון שלי.",
+        "pronunciation_easy": "a-NEE me-kha-PES et ha-ma-LON she-LEE",
+        "qa": "Masculine speaker; feminine מחפשת (me-kha-PE-set)."
+      },
+      {
+        "word": "entrance",
+        "target": "אני מחפש את הכניסה.",
+        "pronunciation_easy": "a-NEE me-kha-PES et ha-kni-SA",
+        "qa": "Masculine speaker; feminine מחפשת."
+      },
+      {
+        "word": "restaurant",
+        "target": "אני מחפש מסעדה.",
+        "pronunciation_easy": "a-NEE me-kha-PES mis-a-DA",
+        "qa": "Masculine speaker; feminine מחפשת."
+      },
+      {
+        "word": "exit",
+        "target": "אני מחפש את היציאה.",
+        "pronunciation_easy": "a-NEE me-kha-PES et ha-ye-tsee-A",
+        "qa": "Masculine speaker; feminine מחפשת."
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "ארוחת הבוקר כלולה?",
+        "pronunciation_easy": "a-ru-KHAT ha-BO-ker klu-LA",
+        "qa": "Feminine (ארוחה), so כלולה."
+      },
+      {
+        "word": "tax",
+        "target": "המע״מ כלול?",
+        "pronunciation_easy": "ha-MA-am ka-LOOL",
+        "qa": "מע״מ = VAT, the tax people ask about in Israel. Foreign tourists are often exempt from VAT on hotel stays."
+      },
+      {
+        "word": "wifi",
+        "target": "הוויי-פיי כלול?",
+        "pronunciation_easy": "ha-WAI-fai ka-LOOL"
+      },
+      {
+        "word": "luggage",
+        "target": "המזוודה כלולה?",
+        "pronunciation_easy": "ha-miz-va-DA klu-LA",
+        "qa": "Uses מזוודה ('suitcase', feminine). Airlines say כבודה (kvu-DA, 'baggage'): הכבודה כלולה? Reviewer: check which reads more naturally for a flight booking."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "איפה אפשר לקנות כרטיסים?",
+        "pronunciation_easy": "EY-fo ef-SHAR lik-NOT kar-tee-SEEM"
+      },
+      {
+        "word": "taxi",
+        "target": "איפה אפשר לתפוס מונית?",
+        "pronunciation_easy": "EY-fo ef-SHAR lit-POS mo-NEET",
+        "qa": "Literally 'Where can one catch a taxi?'."
+      },
+      {
+        "word": "change_money",
+        "target": "איפה אפשר להחליף כסף?",
+        "pronunciation_easy": "EY-fo ef-SHAR le-ha-kha-LEEF KE-sef"
+      },
+      {
+        "word": "sim",
+        "target": "איפה אפשר לקנות כרטיס סים?",
+        "pronunciation_easy": "EY-fo ef-SHAR lik-NOT kar-TEES sim"
       }
     ]
   },

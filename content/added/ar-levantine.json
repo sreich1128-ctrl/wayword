@@ -333,6 +333,72 @@
       "target": "لازم أتصل بحدا.",
       "pronunciation_easy": "LAA-zim at-TI-sil b-HA-da",
       "qa": "EMERGENCY. Literal: 'I must call someone.' Gender-neutral."
+    },
+    {
+      "id": "do_you_have",
+      "target": "عندكم ___؟",
+      "pronunciation_easy": "in-DKUM ___",
+      "qa": "Plural 'you' (عندكم), the normal way to ask a shop, café or hotel, and gender-neutral. To one person: عندك (IN-dak to a man, IN-dik to a woman). Blank takes the noun with no article."
+    },
+    {
+      "id": "how_much_is",
+      "target": "قديش ___؟",
+      "pronunciation_easy": "ad-DAYSH ___",
+      "qa": "Blank takes the noun WITH the article (قديش التذكرة؟), where English says 'a'. قديش حق ___ / قديش سعر ___ also common. Jordan/Palestine also بقديش."
+    },
+    {
+      "id": "i_need",
+      "target": "محتاج ___، لو سمحت.",
+      "pronunciation_easy": "muh-TAAJ ___, law sa-MAHT",
+      "qa": "Masculine speaker (file convention); a woman says محتاجة (muh-TAA-jeh). Literal: 'I (m.) need ___, please.' بدي ___ ('I want') is often used instead and is gender-neutral. Blank takes the noun with no article."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "في ___ هون قريب؟",
+      "pronunciation_easy": "fee ___ hoon a-REEB",
+      "qa": "Literal: 'Is there ___ here near?' قريب used as an adverb so it stays the same for every noun. Not fully sure this is the most natural; 'في ___ قريب من هون؟' is also common but then قريب agrees (قريبة for feminine nouns like صيدلية). Blank takes the noun with no article."
+    },
+    {
+      "id": "pay_with",
+      "target": "فيني أدفع ___؟",
+      "pronunciation_easy": "FEE-nee AD-fa ___",
+      "qa": "Preposition بـ ('with') is inside the blank because it merges with the article/possessive: بالكرت, بتلفوني; 'cash' is just كاش. فيني matches the vetted pay_card; Jordan/Palestine also بقدر أدفع (BA'-dar). Gender-neutral."
+    },
+    {
+      "id": "can_you",
+      "target": "ممكن ___، لو سمحت؟",
+      "pronunciation_easy": "MUM-kin ___, law sa-MAHT",
+      "qa": "Blank takes a 'you' verb form, which is masculine here (file convention: male listener); to a woman add -ee (تكتبيلي). Matches vetted help_me / say_again / speak_slowly."
+    },
+    {
+      "id": "like_without",
+      "target": "بدي ___ بدون ___، لو سمحت.",
+      "pronunciation_easy": "BAD-dee ___ bi-DOON ___, law sa-MAHT",
+      "qa": "Two blanks: the item, then what to leave out, both with no article. Gender-neutral. بلا (BA-la) is a common alternative to بدون."
+    },
+    {
+      "id": "can_i_here",
+      "target": "فيني ___ هون؟",
+      "pronunciation_easy": "FEE-nee ___ hoon",
+      "qa": "Blank takes an 'I' verb form (أقعد, أصوّر), which is gender-neutral. Jordan/Palestine also بقدر ___ هون؟ / مسموح ___ هون؟ ('is it allowed')."
+    },
+    {
+      "id": "looking_for",
+      "target": "عم دوّر على ___.",
+      "pronunciation_easy": "am DOW-wir a-la ___",
+      "qa": "Gender-neutral. على + ال contracts to عال (عالمدخل), like take_me_to. Jordan/Palestine often بدوّر على (ba-DOW-wir) instead of عم دوّر."
+    },
+    {
+      "id": "is_included",
+      "target": "___ ضمن السعر؟",
+      "pronunciation_easy": "___ DUM-n is-SI'-er",
+      "qa": "Literal: 'Is ___ within the price?' Chosen because it stays the same for every noun; the vetted tip_included uses محسوبة, which would need to agree (محسوب/محسوبة) with each noun. Blank takes the noun with its article."
+    },
+    {
+      "id": "where_can_i",
+      "target": "وين فيني ___؟",
+      "pronunciation_easy": "wayn FEE-nee ___",
+      "qa": "Blank takes an 'I' verb form, gender-neutral. منين (min-NAYN, 'from where') is also very natural for buying/getting things: منين بشتري تذاكر؟"
     }
   ],
   "vocab": {
@@ -1018,6 +1084,227 @@
         "target": "ضيّعت مفتاح غرفتي.",
         "pronunciation_easy": "day-YA'T mif-TAAH GHUR-fi-tee",
         "qa": "EMERGENCY. Literal: 'I lost my room key ('key of my room')'."
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "عندكم واي فاي؟",
+        "pronunciation_easy": "in-DKUM WAY-fay"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "عندكم أكل نباتي؟",
+        "pronunciation_easy": "in-DKUM akl na-BAA-tee"
+      },
+      {
+        "word": "charger",
+        "target": "عندكم شاحن تلفون؟",
+        "pronunciation_easy": "in-DKUM SHAA-hen til-FOON"
+      },
+      {
+        "word": "map",
+        "target": "عندكم خريطة؟",
+        "pronunciation_easy": "in-DKUM kha-REE-ta"
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "قديش التذكرة؟",
+        "pronunciation_easy": "ad-DAYSH it-TAZ-ka-ra"
+      },
+      {
+        "word": "coffee",
+        "target": "قديش القهوة؟",
+        "pronunciation_easy": "ad-DAYSH il-AH-weh",
+        "qa": "Literal: 'How much is the coffee?' Natural way to ask the price of one coffee."
+      },
+      {
+        "word": "room",
+        "target": "قديش الغرفة؟",
+        "pronunciation_easy": "ad-DAYSH il-GHUR-feh",
+        "qa": "For a per-night price: قديش الغرفة بالليلة؟"
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "محتاج مساعدة، لو سمحت.",
+        "pronunciation_easy": "muh-TAAJ mu-SAA-deh, law sa-MAHT",
+        "qa": "SAFETY. Literal: 'I (m.) need help, please.' Woman: محتاجة مساعدة. In a real emergency people shout ساعدوني! (sa-a-DOO-nee, 'help me!')."
+      },
+      {
+        "word": "water",
+        "target": "محتاج مي، لو سمحت.",
+        "pronunciation_easy": "muh-TAAJ may, law sa-MAHT",
+        "qa": "Woman: محتاجة. بدي مي is just as natural."
+      },
+      {
+        "word": "taxi",
+        "target": "محتاج تاكسي، لو سمحت.",
+        "pronunciation_easy": "muh-TAAJ TAK-see, law sa-MAHT",
+        "qa": "Woman: محتاجة. بدي تاكسي ('I want a taxi') is the more everyday phrasing."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "في حمّام هون قريب؟",
+        "pronunciation_easy": "fee HAM-maam hoon a-REEB",
+        "qa": "تواليت (twa-LEET) is also widely used for a public toilet."
+      },
+      {
+        "word": "pharmacy",
+        "target": "في صيدلية هون قريب؟",
+        "pronunciation_easy": "fee say-da-LEE-yeh hoon a-REEB"
+      },
+      {
+        "word": "atm",
+        "target": "في صراف آلي هون قريب؟",
+        "pronunciation_easy": "fee sar-RAAF AA-lee hoon a-REEB"
+      },
+      {
+        "word": "supermarket",
+        "target": "في سوبرماركت هون قريب؟",
+        "pronunciation_easy": "fee soo-ber-MAR-ket hoon a-REEB"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "فيني أدفع كاش؟",
+        "pronunciation_easy": "FEE-nee AD-fa kaash",
+        "qa": "نقدي / نقداً (NAK-dan) is also understood."
+      },
+      {
+        "word": "phone",
+        "target": "فيني أدفع بتلفوني؟",
+        "pronunciation_easy": "FEE-nee AD-fa bi-tal-FOO-nee",
+        "qa": "Literal: 'Can I pay with my phone?' Contactless phone payment may not be accepted in smaller shops."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "ممكن تكتبلي ياه، لو سمحت؟",
+        "pronunciation_easy": "MUM-kin tik-TIB-lee yaah, law sa-MAHT",
+        "qa": "Literal: 'Can you write it for me, please?' Masculine (male listener); to a woman تكتبيلي ياه. Palestine/Jordan also تكتبهولي."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "بدي قهوة بدون حليب، لو سمحت.",
+        "pronunciation_easy": "BAD-dee AH-weh bi-DOON ha-LEEB, law sa-MAHT",
+        "qa": "Plain قهوة usually means Arabic coffee, which never has milk; this makes most sense for نسكافيه / قهوة أمريكية."
+      },
+      {
+        "word": "tea_sugar",
+        "target": "بدي شاي بدون سكر، لو سمحت.",
+        "pronunciation_easy": "BAD-dee shaay bi-DOON SUK-kar, law sa-MAHT",
+        "qa": "Tea is served very sweet by default, so this is worth saying. سادة (SAA-deh, 'plain') also means no sugar."
+      },
+      {
+        "word": "water_ice",
+        "target": "بدي مي بدون تلج، لو سمحت.",
+        "pronunciation_easy": "BAD-dee may bi-DOON talj, law sa-MAHT"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "فيني أقعد هون؟",
+        "pronunciation_easy": "FEE-nee O'-'od hoon"
+      },
+      {
+        "word": "park",
+        "target": "فيني صفّ السيارة هون؟",
+        "pronunciation_easy": "FEE-nee SUFF is-say-YAA-ra hoon",
+        "qa": "Literal: 'Can I park the car here?' أصفّ written colloquially as صفّ after فيني. Lebanon also أركن (ER-kon)."
+      },
+      {
+        "word": "photos",
+        "target": "فيني صوّر هون؟",
+        "pronunciation_easy": "FEE-nee SOW-wir hoon",
+        "qa": "Literal: 'Can I photograph here?' (أصوّر, colloquially صوّر)."
+      },
+      {
+        "word": "charge",
+        "target": "فيني أشحن تلفوني هون؟",
+        "pronunciation_easy": "FEE-nee ASH-han tal-FOO-nee hoon"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "عم دوّر على الفندق تبعي.",
+        "pronunciation_easy": "am DOW-wir al-FUN-du' TA-ba-ee",
+        "qa": "Literal: 'I'm looking for the hotel of mine.' فندقي (FUN-du-'ee) also correct but less colloquial."
+      },
+      {
+        "word": "entrance",
+        "target": "عم دوّر عالمدخل.",
+        "pronunciation_easy": "am DOW-wir al-MAD-khal"
+      },
+      {
+        "word": "restaurant",
+        "target": "عم دوّر على مطعم.",
+        "pronunciation_easy": "am DOW-wir a-la MAT-am"
+      },
+      {
+        "word": "exit",
+        "target": "عم دوّر عالمخرج.",
+        "pronunciation_easy": "am DOW-wir al-MAKH-raj"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "الفطور ضمن السعر؟",
+        "pronunciation_easy": "il-fu-TOOR DUM-n is-SI'-er",
+        "qa": "Hotels also: الفطور مع الغرفة؟ ('Is breakfast with the room?')."
+      },
+      {
+        "word": "tax",
+        "target": "الضريبة ضمن السعر؟",
+        "pronunciation_easy": "id-da-REE-beh DUM-n is-SI'-er"
+      },
+      {
+        "word": "wifi",
+        "target": "الواي فاي ضمن السعر؟",
+        "pronunciation_easy": "il-WAY-fay DUM-n is-SI'-er"
+      },
+      {
+        "word": "luggage",
+        "target": "الشنط ضمن السعر؟",
+        "pronunciation_easy": "ish-SHU-nat DUM-n is-SI'-er",
+        "qa": "For a flight/bus ticket people may say الشنطة مع التذكرة؟ ('Is the bag with the ticket?')."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "وين فيني أشتري تذاكر؟",
+        "pronunciation_easy": "wayn FEE-nee ash-TI-ree ta-ZAA-kir"
+      },
+      {
+        "word": "taxi",
+        "target": "وين فيني لاقي تاكسي؟",
+        "pronunciation_easy": "wayn FEE-nee LAA-'ee TAK-see",
+        "qa": "Literal: 'Where can I find a taxi?' (the usual way to say 'get' one)."
+      },
+      {
+        "word": "change_money",
+        "target": "وين فيني صرّف مصاري؟",
+        "pronunciation_easy": "wayn FEE-nee SAR-rif ma-SAA-ree",
+        "qa": "Literal: 'Where can I change money?' مصاري = money; فلوس (floos) also common in Jordan."
+      },
+      {
+        "word": "sim",
+        "target": "وين فيني أشتري شريحة؟",
+        "pronunciation_easy": "wayn FEE-nee ash-TI-ree sha-REE-ha",
+        "qa": "شريحة = SIM card; سيم كارد also understood."
       }
     ]
   },

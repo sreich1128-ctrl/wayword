@@ -330,6 +330,72 @@
       "target": "Devo chiamare qualcuno.",
       "pronunciation_easy": "DEH-voh kyah-MAH-reh kwahl-KOO-noh",
       "qa": "SAFETY. Back-translation: 'I must call someone.' To ask to borrow a phone: 'Posso fare una telefonata?'"
+    },
+    {
+      "id": "do_you_have",
+      "target": "Avete ___?",
+      "pronunciation_easy": "ah-VEH-teh",
+      "qa": "'Avete' (you plural) addresses the shop/restaurant as a business, the usual way to ask. To one person formally: 'Ha ___?' (ah). The blank takes the noun with whatever article fits (il Wi-Fi, una cartina, piatti vegetariani); see examples."
+    },
+    {
+      "id": "how_much_is",
+      "target": "Quanto costa ___?",
+      "pronunciation_easy": "KWAN-toh KOS-tah",
+      "qa": "The blank takes the noun with its article (un biglietto, la camera). A plural noun needs 'Quanto costano ___?' (KWAN-toh KOS-tah-noh)."
+    },
+    {
+      "id": "i_need",
+      "target": "Ho bisogno di ___, per favore.",
+      "pronunciation_easy": "oh bee-ZOH-nyoh dee, pehr fah-VOH-reh",
+      "qa": "SAFETY. Back-translation: 'I have need of ___, please.' 'Di' merges with a definite article (del, dell', della), so the blank can need adjusting; with 'un/una' it stays 'di un taxi'. For a doctor the app reuses the vetted need_doctor phrase. In a real emergency shout 'Aiuto!' (ah-YOO-toh)."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "C'è ___ qui vicino?",
+      "pronunciation_easy": "cheh, kwee vee-CHEE-noh",
+      "qa": "The blank takes 'un' or 'una' + noun by gender (un bagno, una farmacia), so the article is inside the blank. 'Qui vicino' = 'near here'."
+    },
+    {
+      "id": "pay_with",
+      "target": "Posso pagare ___?",
+      "pronunciation_easy": "POS-soh pah-GAH-reh",
+      "qa": "The preposition is inside the blank because it changes: cash is 'in contanti' (not 'con'), while card and phone take 'con' + article (con la carta, con il telefono)."
+    },
+    {
+      "id": "can_you",
+      "target": "Può ___, per favore?",
+      "pronunciation_easy": "pwoh, pehr fah-VOH-reh",
+      "qa": "Formal (Lei), matching the vetted 'Può aiutarmi?' and 'Può parlare più lentamente?'. The blank takes an infinitive; object pronouns attach to it (scriverlo = write it)."
+    },
+    {
+      "id": "like_without",
+      "target": "Vorrei ___ senza ___.",
+      "pronunciation_easy": "vor-RAY, SEN-tsah",
+      "qa": "First blank: the drink/dish with its article (un tè, dell'acqua). Second blank: bare noun, no article after 'senza' (senza zucchero). For a serious allergy use allergic_to instead, so staff know it's not a preference."
+    },
+    {
+      "id": "can_i_here",
+      "target": "Posso ___ qui?",
+      "pronunciation_easy": "POS-soh, kwee",
+      "qa": "The blank takes an infinitive (sedermi, parcheggiare, fare foto). For a free seat in a café, 'È libero?' (Is it free?) is the most natural question."
+    },
+    {
+      "id": "looking_for",
+      "target": "Cerco ___.",
+      "pronunciation_easy": "CHEHR-koh",
+      "qa": "Literally 'I look for ___'; 'Sto cercando ___' (stoh chehr-KAHN-doh) is equally natural. The blank takes the noun with its article (l'uscita, un ristorante, il mio hotel)."
+    },
+    {
+      "id": "is_included",
+      "target": "___ è incluso?",
+      "pronunciation_easy": "eh een-KLOO-zoh",
+      "qa": "The blank takes the noun with its article, so the sentence starts with it. 'Incluso' agrees in gender and number: feminine 'inclusa' (La colazione è inclusa?), plural 'sono inclusi/incluse' (Le tasse sono incluse?); see examples, don't paste the word."
+    },
+    {
+      "id": "where_can_i",
+      "target": "Dove posso ___?",
+      "pronunciation_easy": "DOH-veh POS-soh",
+      "qa": "The blank takes an infinitive + object (comprare i biglietti, prendere un taxi)."
     }
   ],
   "vocab": {
@@ -991,6 +1057,224 @@
         "word": "word_room_key",
         "target": "Ho perso la chiave della camera.",
         "pronunciation_easy": "oh PEHR-soh lah KYAH-veh DEL-lah KAH-meh-rah"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "Avete il Wi-Fi?",
+        "pronunciation_easy": "ah-VEH-teh eel WAI-fai"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "Avete piatti vegetariani?",
+        "pronunciation_easy": "ah-VEH-teh PYAHT-tee veh-jeh-tah-RYAH-nee",
+        "qa": "Literally 'Do you have vegetarian dishes?'. 'Avete qualcosa di vegetariano?' (anything vegetarian) is also very common."
+      },
+      {
+        "word": "charger",
+        "target": "Avete un caricabatterie per il telefono?",
+        "pronunciation_easy": "ah-VEH-teh oon kah-ree-kah-baht-TEH-ryeh pehr eel teh-LEH-foh-noh"
+      },
+      {
+        "word": "map",
+        "target": "Avete una cartina?",
+        "pronunciation_easy": "ah-VEH-teh OO-nah kar-TEE-nah",
+        "qa": "'Cartina' is the usual word for a tourist/city map; 'una mappa' is also understood."
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "Quanto costa un biglietto?",
+        "pronunciation_easy": "KWAN-toh KOS-tah oon bee-LYET-toh"
+      },
+      {
+        "word": "coffee",
+        "target": "Quanto costa un caffè?",
+        "pronunciation_easy": "KWAN-toh KOS-tah oon kahf-FEH"
+      },
+      {
+        "word": "room",
+        "target": "Quanto costa la camera?",
+        "pronunciation_easy": "KWAN-toh KOS-tah lah KAH-meh-rah",
+        "qa": "Add 'a notte' (ah NOT-teh) for 'per night'."
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "Ho bisogno di aiuto, per favore.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee ah-YOO-toh, pehr fah-VOH-reh",
+        "qa": "SAFETY. Back-translation: 'I have need of help, please.' In an emergency the shout is just 'Aiuto!'."
+      },
+      {
+        "word": "water",
+        "target": "Ho bisogno di acqua, per favore.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee AHK-kwah, pehr fah-VOH-reh",
+        "qa": "'Ho bisogno d'acqua' (elided) is also common."
+      },
+      {
+        "word": "taxi",
+        "target": "Ho bisogno di un taxi, per favore.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee oon TAHK-see, pehr fah-VOH-reh",
+        "qa": "To ask someone to call one: 'Mi può chiamare un taxi?' (mee pwoh kyah-MAH-reh oon TAHK-see)."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "C'è un bagno qui vicino?",
+        "pronunciation_easy": "cheh oon BAH-nyoh kwee vee-CHEE-noh",
+        "qa": "For a public toilet specifically: 'un bagno pubblico'. In a bar/café, 'Dov'è il bagno?' is the normal question."
+      },
+      {
+        "word": "pharmacy",
+        "target": "C'è una farmacia qui vicino?",
+        "pronunciation_easy": "cheh OO-nah far-mah-CHEE-ah kwee vee-CHEE-noh"
+      },
+      {
+        "word": "atm",
+        "target": "C'è un bancomat qui vicino?",
+        "pronunciation_easy": "cheh oon BAHN-koh-maht kwee vee-CHEE-noh"
+      },
+      {
+        "word": "supermarket",
+        "target": "C'è un supermercato qui vicino?",
+        "pronunciation_easy": "cheh oon soo-pehr-mehr-KAH-toh kwee vee-CHEE-noh"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "Posso pagare in contanti?",
+        "pronunciation_easy": "POS-soh pah-GAH-reh een kon-TAHN-tee"
+      },
+      {
+        "word": "phone",
+        "target": "Posso pagare con il telefono?",
+        "pronunciation_easy": "POS-soh pah-GAH-reh kon eel teh-LEH-foh-noh",
+        "qa": "'col telefono' (contracted) is also common in speech."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "Può scriverlo, per favore?",
+        "pronunciation_easy": "pwoh SKREE-vehr-loh, pehr fah-VOH-reh",
+        "qa": "'Me lo può scrivere?' (meh loh pwoh SKREE-veh-reh) is equally natural."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "Vorrei un caffè senza latte.",
+        "pronunciation_easy": "vor-RAY oon kahf-FEH SEN-tsah LAHT-teh",
+        "qa": "In Italy 'un caffè' is an espresso, which has no milk anyway; for a long black coffee ask for 'un caffè americano senza latte'."
+      },
+      {
+        "word": "tea_sugar",
+        "target": "Vorrei un tè senza zucchero.",
+        "pronunciation_easy": "vor-RAY oon teh SEN-tsah TSOOK-keh-roh"
+      },
+      {
+        "word": "water_ice",
+        "target": "Vorrei dell'acqua senza ghiaccio.",
+        "pronunciation_easy": "vor-RAY del-LAHK-kwah SEN-tsah GYAHT-choh"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "Posso sedermi qui?",
+        "pronunciation_easy": "POS-soh seh-DEHR-mee kwee"
+      },
+      {
+        "word": "park",
+        "target": "Posso parcheggiare qui?",
+        "pronunciation_easy": "POS-soh par-ked-JAH-reh kwee"
+      },
+      {
+        "word": "photos",
+        "target": "Posso fare foto qui?",
+        "pronunciation_easy": "POS-soh FAH-reh FOH-toh kwee",
+        "qa": "'fare delle foto' is also common."
+      },
+      {
+        "word": "charge",
+        "target": "Posso caricare il telefono qui?",
+        "pronunciation_easy": "POS-soh kah-ree-KAH-reh eel teh-LEH-foh-noh kwee"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "Cerco il mio hotel.",
+        "pronunciation_easy": "CHEHR-koh eel MEE-oh oh-TEL",
+        "qa": "'il mio albergo' (al-BEHR-goh) is also common."
+      },
+      {
+        "word": "entrance",
+        "target": "Cerco l'ingresso.",
+        "pronunciation_easy": "CHEHR-koh leen-GREHS-soh",
+        "qa": "'l'entrata' is also used."
+      },
+      {
+        "word": "restaurant",
+        "target": "Cerco un ristorante.",
+        "pronunciation_easy": "CHEHR-koh oon ree-stoh-RAHN-teh"
+      },
+      {
+        "word": "exit",
+        "target": "Cerco l'uscita.",
+        "pronunciation_easy": "CHEHR-koh loo-SHEE-tah"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "La colazione è inclusa?",
+        "pronunciation_easy": "lah koh-lah-TSYOH-neh eh een-KLOO-zah"
+      },
+      {
+        "word": "tax",
+        "target": "Le tasse sono incluse?",
+        "pronunciation_easy": "leh TAHS-seh SOH-noh een-KLOO-zeh",
+        "qa": "Plural is the natural way to ask. At hotels the extra is usually the city tax: 'La tassa di soggiorno è inclusa?'. Shop prices already include IVA (VAT)."
+      },
+      {
+        "word": "wifi",
+        "target": "Il Wi-Fi è incluso?",
+        "pronunciation_easy": "eel WAI-fai eh een-KLOO-zoh"
+      },
+      {
+        "word": "luggage",
+        "target": "Il bagaglio è incluso?",
+        "pronunciation_easy": "eel bah-GAH-lyoh eh een-KLOO-zoh",
+        "qa": "For flights, checked luggage is 'il bagaglio da stiva'."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "Dove posso comprare i biglietti?",
+        "pronunciation_easy": "DOH-veh POS-soh kom-PRAH-reh ee bee-LYET-tee"
+      },
+      {
+        "word": "taxi",
+        "target": "Dove posso prendere un taxi?",
+        "pronunciation_easy": "DOH-veh POS-soh PREN-deh-reh oon TAHK-see"
+      },
+      {
+        "word": "change_money",
+        "target": "Dove posso cambiare i soldi?",
+        "pronunciation_easy": "DOH-veh POS-soh kahm-BYAH-reh ee SOL-dee",
+        "qa": "'cambiare valuta' (currency) is also heard, especially on signs ('Cambio')."
+      },
+      {
+        "word": "sim",
+        "target": "Dove posso comprare una SIM?",
+        "pronunciation_easy": "DOH-veh POS-soh kom-PRAH-reh OO-nah seem"
       }
     ]
   },

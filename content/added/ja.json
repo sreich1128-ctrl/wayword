@@ -377,6 +377,83 @@
       "reading": "でんわをかけないといけません。",
       "pronunciation_easy": "den-wah oh kah-keh-nai toh ee-keh-mah-sen",
       "qa": "SAFETY. Back-translation: 'I have to make a phone call.' Not fully sure this is the most natural card choice; to borrow a phone, 電話を貸してもらえますか？ (could you lend me a phone?) is more useful in practice."
+    },
+    {
+      "id": "do_you_have",
+      "target": "___はありますか？",
+      "reading": "___はありますか？",
+      "pronunciation_easy": "___ wah ah-ree-mahs-kah",
+      "qa": "Literally 'Is there ___?' The standard way to ask a shop or restaurant whether they have something; the noun goes in directly, no article."
+    },
+    {
+      "id": "how_much_is",
+      "target": "___はいくらですか？",
+      "reading": "___はいくらですか？",
+      "pronunciation_easy": "___ wah ee-koo-rah des-kah",
+      "qa": "Literally 'As for ___, how much is it?' Same shape as the vetted これはいくらですか？"
+    },
+    {
+      "id": "i_need",
+      "target": "___が必要です。",
+      "reading": "___がひつようです。",
+      "pronunciation_easy": "___ gah hee-tsoo-yoh des",
+      "qa": "SAFETY. Back-translation: '___ is necessary (for me).' Matches need_doctor, but Japanese rarely says 'I need X' for everyday requests: the examples use what a local would say instead (Please help / Water, please / Please call a taxi). Check that the frame itself reads naturally."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "この近くに___はありますか？",
+      "reading": "このちかくに___はありますか？",
+      "pronunciation_easy": "koh-noh chee-kah-koo nee ___ wah ah-ree-mahs-kah",
+      "qa": "Literally 'Is there a ___ near here?' The noun goes in directly."
+    },
+    {
+      "id": "pay_with",
+      "target": "___で払えますか？",
+      "reading": "___ではらえますか？",
+      "pronunciation_easy": "___ deh hah-rah-eh-mahs-kah",
+      "qa": "Literally 'Can I pay by means of ___?' Same shape as the vetted カードで払えますか？"
+    },
+    {
+      "id": "can_you",
+      "target": "___もらえますか？",
+      "reading": "___もらえますか？",
+      "pronunciation_easy": "___ moh-rah-eh-mahs-kah",
+      "qa": "The blank takes a verb in its て-form (書いて, 言って), not a noun, because Japanese builds 'could you do X for me' as X-te + もらえますか. Same pattern as the vetted 手伝ってもらえますか？ and もう一度言ってもらえますか？"
+    },
+    {
+      "id": "like_without",
+      "target": "___を___抜きでお願いします。",
+      "reading": "___を___ぬきでおねがいします。",
+      "pronunciation_easy": "___ oh ___ noo-kee deh oh-neh-guy-shee-mahs",
+      "qa": "Literally '___, with ___ left out, please.' First blank is the item, second the thing to leave out; order matches the English. ___なしで is an equally common alternative to 抜きで. A preference, not an allergy statement."
+    },
+    {
+      "id": "can_i_here",
+      "target": "ここ___もいいですか？",
+      "reading": "ここ___もいいですか？",
+      "pronunciation_easy": "koh-koh ___ moh ee-ee des-kah",
+      "qa": "Literally 'Is it OK if (I) ___ here?' The blank holds the particle after ここ plus a て-form verb, because the particle changes: に for where you put yourself or your car (ここに座って, ここに停めて), で for actions done here (ここで写真を撮って). Not a noun slot."
+    },
+    {
+      "id": "looking_for",
+      "target": "___を探しています。",
+      "reading": "___をさがしています。",
+      "pronunciation_easy": "___ oh sah-gah-shee-teh ee-mahs",
+      "qa": "Literally 'I am searching for ___.' The noun goes in directly; Japanese drops 'my/the/a'."
+    },
+    {
+      "id": "is_included",
+      "target": "___は含まれていますか？",
+      "reading": "___はふくまれていますか？",
+      "pronunciation_easy": "___ wah foo-koo-mah-reh-teh ee-mahs-kah",
+      "qa": "Literally 'Is ___ included?' Same shape as the vetted tip_included. ___付きですか？ ('does it come with ___') is also very common for meals at hotels."
+    },
+    {
+      "id": "where_can_i",
+      "target": "どこで___ますか？",
+      "reading": "どこで___ますか？",
+      "pronunciation_easy": "doh-koh deh ___ mahs-kah",
+      "qa": "Literally 'Where can (I) ___?' The blank holds the object, its particle and a potential-form verb stem (切符を買え, タクシーに乗れ, 両替でき), so it is not a noun slot. Putting the thing first as a topic (切符はどこで買えますか？) is equally natural."
     }
   ],
   "vocab": {
@@ -1200,6 +1277,264 @@
         "target": "部屋の鍵をなくしました。",
         "reading": "へやのかぎをなくしました。",
         "pronunciation_easy": "heh-yah noh kah-gee oh nah-koo-shee-mah-shee-tah"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "Wi-Fiはありますか？",
+        "reading": "わいふぁいはありますか？",
+        "pronunciation_easy": "wai-fai wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "ベジタリアン料理はありますか？",
+        "reading": "べじたりあんりょうりはありますか？",
+        "pronunciation_easy": "beh-jee-tah-ree-ahn ryoh-ree wah ah-ree-mahs-kah",
+        "qa": "Understood, but many 'vegetarian' dishes still use dashi (fish stock); see the vegetarian entry."
+      },
+      {
+        "word": "charger",
+        "target": "スマホの充電器はありますか？",
+        "reading": "すまほのじゅうでんきはありますか？",
+        "pronunciation_easy": "soo-mah-hoh noh joo-den-kee wah ah-ree-mahs-kah",
+        "qa": "スマホ = smartphone. To borrow one: 充電器を貸してもらえますか？ ('Could you lend me a charger?')."
+      },
+      {
+        "word": "map",
+        "target": "地図はありますか？",
+        "reading": "ちずはありますか？",
+        "pronunciation_easy": "chee-zoo wah ah-ree-mahs-kah"
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "切符はいくらですか？",
+        "reading": "きっぷはいくらですか？",
+        "pronunciation_easy": "keep-poo wah ee-koo-rah des-kah",
+        "qa": "切符 is a train/bus ticket; for events or museums チケット is more usual. For fares people often say ___までいくらですか？ ('How much to ___?')."
+      },
+      {
+        "word": "coffee",
+        "target": "コーヒーはいくらですか？",
+        "reading": "こーひーはいくらですか？",
+        "pronunciation_easy": "koh-hee wah ee-koo-rah des-kah"
+      },
+      {
+        "word": "room",
+        "target": "部屋はいくらですか？",
+        "reading": "へやはいくらですか？",
+        "pronunciation_easy": "heh-yah wah ee-koo-rah des-kah",
+        "qa": "At a hotel, 一泊いくらですか？ ('How much per night?') is the more natural question."
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "助けてください。",
+        "reading": "たすけてください。",
+        "pronunciation_easy": "tah-soo-keh-teh koo-dah-sai",
+        "qa": "SAFETY. Back-translation: 'Please help (me).' Not the literal 'I need help' (助けが必要です sounds stiff); this is what people actually say. For non-urgent help (directions, carrying something) 手伝ってください is gentler."
+      },
+      {
+        "word": "water",
+        "target": "お水をください。",
+        "reading": "おみずをください。",
+        "pronunciation_easy": "oh-mee-zoo oh koo-dah-sai",
+        "qa": "Literally 'Please give me water.' 水が必要です would sound odd for an ordinary request. If someone is unwell, 水が欲しいです ('I want water') also works."
+      },
+      {
+        "word": "taxi",
+        "target": "タクシーを呼んでください。",
+        "reading": "たくしーをよんでください。",
+        "pronunciation_easy": "tah-koo-shee oh yohn-deh koo-dah-sai",
+        "qa": "Literally 'Please call a taxi.' Said to hotel or restaurant staff; the literal 'I need a taxi' is not idiomatic."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "この近くにトイレはありますか？",
+        "reading": "このちかくにといれはありますか？",
+        "pronunciation_easy": "koh-noh chee-kah-koo nee toh-ee-reh wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "pharmacy",
+        "target": "この近くに薬局はありますか？",
+        "reading": "このちかくにやっきょくはありますか？",
+        "pronunciation_easy": "koh-noh chee-kah-koo nee yak-kyoh-koo wah ah-ree-mahs-kah",
+        "qa": "ドラッグストア (drugstore) is also common and often what you will find."
+      },
+      {
+        "word": "atm",
+        "target": "この近くにATMはありますか？",
+        "reading": "このちかくにえーてぃーえむはありますか？",
+        "pronunciation_easy": "koh-noh chee-kah-koo nee eh-tee-eh-moo wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "supermarket",
+        "target": "この近くにスーパーはありますか？",
+        "reading": "このちかくにすーぱーはありますか？",
+        "pronunciation_easy": "koh-noh chee-kah-koo nee soo-pah wah ah-ree-mahs-kah"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "現金で払えますか？",
+        "reading": "げんきんではらえますか？",
+        "pronunciation_easy": "gen-keen deh hah-rah-eh-mahs-kah"
+      },
+      {
+        "word": "phone",
+        "target": "スマホで払えますか？",
+        "reading": "すまほではらえますか？",
+        "pronunciation_easy": "soo-mah-hoh deh hah-rah-eh-mahs-kah",
+        "qa": "Understood, but staff may ask which method (Apple Pay, IC card, QR payment like PayPay); naming it is clearer."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "紙に書いてもらえますか？",
+        "reading": "かみにかいてもらえますか？",
+        "pronunciation_easy": "kah-mee nee kai-teh moh-rah-eh-mahs-kah",
+        "qa": "Literally 'Could you write it on paper for me?' 紙に is added for clarity; 書いてもらえますか？ alone also works, e.g. when handing over your phone."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "コーヒーをミルク抜きでお願いします。",
+        "reading": "こーひーをみるくぬきでおねがいします。",
+        "pronunciation_easy": "koh-hee oh mee-roo-koo noo-kee deh oh-neh-guy-shee-mahs",
+        "qa": "ブラックでお願いします ('Black, please') is the shorter everyday way."
+      },
+      {
+        "word": "tea_sugar",
+        "target": "紅茶を砂糖抜きでお願いします。",
+        "reading": "こうちゃをさとうぬきでおねがいします。",
+        "pronunciation_easy": "koh-chah oh sah-toh noo-kee deh oh-neh-guy-shee-mahs",
+        "qa": "紅茶 = black (Western-style) tea; Japanese green tea (お茶) is unsweetened anyway."
+      },
+      {
+        "word": "water_ice",
+        "target": "お水を氷抜きでお願いします。",
+        "reading": "おみずをこおりぬきでおねがいします。",
+        "pronunciation_easy": "oh-mee-zoo oh koh-ree noo-kee deh oh-neh-guy-shee-mahs"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "ここに座ってもいいですか？",
+        "reading": "ここにすわってもいいですか？",
+        "pronunciation_easy": "koh-koh nee soo-waht-teh moh ee-ee des-kah"
+      },
+      {
+        "word": "park",
+        "target": "ここに車を停めてもいいですか？",
+        "reading": "ここにくるまをとめてもいいですか？",
+        "pronunciation_easy": "koh-koh nee koo-roo-mah oh toh-meh-teh moh ee-ee des-kah",
+        "qa": "Literally 'May I stop my car here?': the everyday way. ここに駐車してもいいですか？ is more formal; for a bicycle, 車 becomes 自転車."
+      },
+      {
+        "word": "photos",
+        "target": "ここで写真を撮ってもいいですか？",
+        "reading": "ここでしゃしんをとってもいいですか？",
+        "pronunciation_easy": "koh-koh deh shah-sheen oh toht-teh moh ee-ee des-kah"
+      },
+      {
+        "word": "charge",
+        "target": "ここでスマホを充電してもいいですか？",
+        "reading": "ここですまほをじゅうでんしてもいいですか？",
+        "pronunciation_easy": "koh-koh deh soo-mah-hoh oh joo-den shee-teh moh ee-ee des-kah"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "泊まっているホテルを探しています。",
+        "reading": "とまっているほてるをさがしています。",
+        "pronunciation_easy": "toh-maht-teh ee-roo hoh-teh-roo oh sah-gah-shee-teh ee-mahs",
+        "qa": "Literally 'I'm looking for the hotel I'm staying at.' Japanese does not say 'my hotel'; adding the hotel name is even clearer."
+      },
+      {
+        "word": "entrance",
+        "target": "入口を探しています。",
+        "reading": "いりぐちをさがしています。",
+        "pronunciation_easy": "ee-ree-goo-chee oh sah-gah-shee-teh ee-mahs"
+      },
+      {
+        "word": "restaurant",
+        "target": "レストランを探しています。",
+        "reading": "れすとらんをさがしています。",
+        "pronunciation_easy": "reh-soo-toh-rahn oh sah-gah-shee-teh ee-mahs"
+      },
+      {
+        "word": "exit",
+        "target": "出口を探しています。",
+        "reading": "でぐちをさがしています。",
+        "pronunciation_easy": "deh-goo-chee oh sah-gah-shee-teh ee-mahs"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "朝食は含まれていますか？",
+        "reading": "ちょうしょくはふくまれていますか？",
+        "pronunciation_easy": "choh-shoh-koo wah foo-koo-mah-reh-teh ee-mahs-kah",
+        "qa": "朝食付きですか？ ('Does it come with breakfast?') is equally common at hotels."
+      },
+      {
+        "word": "tax",
+        "target": "税込みですか？",
+        "reading": "ぜいこみですか？",
+        "pronunciation_easy": "zay-koh-mee des-kah",
+        "qa": "Literally 'Is it tax-inclusive?': what people actually say about prices. 税金は含まれていますか？ is understood but wordier. Prices in Japan are usually shown tax-included."
+      },
+      {
+        "word": "wifi",
+        "target": "Wi-Fiは含まれていますか？",
+        "reading": "わいふぁいはふくまれていますか？",
+        "pronunciation_easy": "wai-fai wah foo-koo-mah-reh-teh ee-mahs-kah",
+        "qa": "Wi-Fi is usually free in hotels; Wi-Fiは無料ですか？ ('Is Wi-Fi free?') may be the more natural question."
+      },
+      {
+        "word": "luggage",
+        "target": "荷物の料金は含まれていますか？",
+        "reading": "にもつのりょうきんはふくまれていますか？",
+        "pronunciation_easy": "nee-moh-tsoo noh ryoh-keen wah foo-koo-mah-reh-teh ee-mahs-kah",
+        "qa": "Literally 'Is the luggage fee included?' Added 料金 (fee) so it reads as a fare question; for flights, 預け荷物 (checked baggage) is the specific term. Not sure this is the most natural phrasing."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "どこで切符を買えますか？",
+        "reading": "どこできっぷをかえますか？",
+        "pronunciation_easy": "doh-koh deh keep-poo oh kah-eh-mahs-kah",
+        "qa": "切符 = train/bus tickets; for events use チケット."
+      },
+      {
+        "word": "taxi",
+        "target": "どこでタクシーに乗れますか？",
+        "reading": "どこでたくしーにのれますか？",
+        "pronunciation_easy": "doh-koh deh tah-koo-shee nee noh-reh-mahs-kah",
+        "qa": "Literally 'Where can I board a taxi?' タクシー乗り場はどこですか？ ('Where is the taxi stand?') is the most common way to ask."
+      },
+      {
+        "word": "change_money",
+        "target": "どこで両替できますか？",
+        "reading": "どこでりょうがえできますか？",
+        "pronunciation_easy": "doh-koh deh ryoh-gah-eh deh-kee-mahs-kah"
+      },
+      {
+        "word": "sim",
+        "target": "どこでSIMカードを買えますか？",
+        "reading": "どこでしむかーどをかえますか？",
+        "pronunciation_easy": "doh-koh deh shee-moo kah-doh oh kah-eh-mahs-kah"
       }
     ]
   },

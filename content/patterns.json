@@ -236,6 +236,287 @@
         "word_keys",
         "word_room_key"
       ]
+    },
+    "do_you_have": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "wifi",
+          "label": "Wi-Fi",
+          "english": "Do you have Wi-Fi?"
+        },
+        {
+          "id": "vegetarian_food",
+          "label": "vegetarian food",
+          "english": "Do you have vegetarian food?"
+        },
+        {
+          "id": "charger",
+          "label": "a charger",
+          "english": "Do you have a phone charger?"
+        },
+        {
+          "id": "map",
+          "label": "a map",
+          "english": "Do you have a map?"
+        }
+      ]
+    },
+    "how_much_is": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "this",
+          "label": "this",
+          "same_as": "how_much"
+        },
+        {
+          "id": "ticket",
+          "label": "a ticket",
+          "english": "How much is a ticket?"
+        },
+        {
+          "id": "coffee",
+          "label": "a coffee",
+          "english": "How much is a coffee?"
+        },
+        {
+          "id": "room",
+          "label": "the room",
+          "english": "How much is the room?"
+        }
+      ]
+    },
+    "i_need": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "help",
+          "label": "help",
+          "english": "I need help, please."
+        },
+        {
+          "id": "water",
+          "label": "water",
+          "english": "I need water, please."
+        },
+        {
+          "id": "taxi",
+          "label": "a taxi",
+          "english": "I need a taxi, please."
+        },
+        {
+          "id": "doctor",
+          "label": "a doctor",
+          "same_as": "need_doctor"
+        }
+      ]
+    },
+    "is_there_nearby": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "bathroom",
+          "label": "a bathroom",
+          "english": "Is there a bathroom nearby?"
+        },
+        {
+          "id": "pharmacy",
+          "label": "a pharmacy",
+          "english": "Is there a pharmacy nearby?"
+        },
+        {
+          "id": "atm",
+          "label": "an ATM",
+          "english": "Is there an ATM nearby?"
+        },
+        {
+          "id": "supermarket",
+          "label": "a supermarket",
+          "english": "Is there a supermarket nearby?"
+        }
+      ]
+    },
+    "pay_with": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "cash",
+          "label": "cash",
+          "english": "Can I pay with cash?"
+        },
+        {
+          "id": "card",
+          "label": "card",
+          "same_as": "pay_card"
+        },
+        {
+          "id": "phone",
+          "label": "my phone",
+          "english": "Can I pay with my phone?"
+        }
+      ]
+    },
+    "like_without": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "coffee_milk",
+          "label": "coffee, no milk",
+          "english": "I'd like a coffee without milk."
+        },
+        {
+          "id": "tea_sugar",
+          "label": "tea, no sugar",
+          "english": "I'd like a tea without sugar."
+        },
+        {
+          "id": "water_ice",
+          "label": "water, no ice",
+          "english": "I'd like water without ice."
+        }
+      ]
+    },
+    "can_i_here": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "sit",
+          "label": "sit",
+          "english": "Can I sit here?"
+        },
+        {
+          "id": "park",
+          "label": "park",
+          "english": "Can I park here?"
+        },
+        {
+          "id": "photos",
+          "label": "take photos",
+          "english": "Can I take photos here?"
+        },
+        {
+          "id": "charge",
+          "label": "charge my phone",
+          "english": "Can I charge my phone here?"
+        }
+      ]
+    },
+    "looking_for": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "my_hotel",
+          "label": "my hotel",
+          "english": "I'm looking for my hotel."
+        },
+        {
+          "id": "entrance",
+          "label": "the entrance",
+          "english": "I'm looking for the entrance."
+        },
+        {
+          "id": "restaurant",
+          "label": "a restaurant",
+          "english": "I'm looking for a restaurant."
+        },
+        {
+          "id": "exit",
+          "label": "the exit",
+          "english": "I'm looking for the exit."
+        }
+      ]
+    },
+    "is_included": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "breakfast",
+          "label": "breakfast",
+          "english": "Is breakfast included?"
+        },
+        {
+          "id": "tax",
+          "label": "tax",
+          "english": "Is tax included?"
+        },
+        {
+          "id": "wifi",
+          "label": "Wi-Fi",
+          "english": "Is Wi-Fi included?"
+        },
+        {
+          "id": "luggage",
+          "label": "luggage",
+          "english": "Is luggage included?"
+        },
+        {
+          "id": "tip",
+          "label": "the tip",
+          "same_as": "tip_included"
+        }
+      ]
+    },
+    "where_can_i": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "buy_tickets",
+          "label": "buy tickets",
+          "english": "Where can I buy tickets?"
+        },
+        {
+          "id": "taxi",
+          "label": "get a taxi",
+          "english": "Where can I get a taxi?"
+        },
+        {
+          "id": "change_money",
+          "label": "change money",
+          "english": "Where can I change money?"
+        },
+        {
+          "id": "sim",
+          "label": "buy a SIM card",
+          "english": "Where can I buy a SIM card?"
+        }
+      ]
+    },
+    "can_you": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "help",
+          "label": "help me",
+          "same_as": "help_me"
+        },
+        {
+          "id": "repeat",
+          "label": "say it again",
+          "same_as": "say_again"
+        },
+        {
+          "id": "write",
+          "label": "write it down",
+          "english": "Can you write it down, please?"
+        },
+        {
+          "id": "slowly",
+          "label": "speak slowly",
+          "same_as": "speak_slowly"
+        }
+      ]
     }
   }
 }

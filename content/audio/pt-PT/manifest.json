@@ -1,6 +1,6 @@
 {
   "source": "ElevenLabs",
-  "generated": "2026-10-08",
+  "generated": "2026-10-29",
   "note": "",
   "voices": [
     {
@@ -178,6 +178,360 @@
     },
     "thanks_help": {
       "f": "f/thanks_help.mp3"
+    },
+    "table_for": {
+      "f": "f/table_for.mp3"
+    },
+    "allergic_to": {
+      "f": "f/allergic_to.mp3"
+    },
+    "without": {
+      "f": "f/without.mp3"
+    },
+    "ticket_to": {
+      "f": "f/ticket_to.mp3"
+    },
+    "does_this_go_to": {
+      "f": "f/does_this_go_to.mp3"
+    },
+    "take_me_to": {
+      "f": "f/take_me_to.mp3"
+    },
+    "doesnt_work": {
+      "f": "f/doesnt_work.mp3"
+    },
+    "lost_my": {
+      "f": "f/lost_my.mp3"
+    },
+    "where_is~word_train_station": {
+      "f": "f/where_is~word_train_station.mp3"
+    },
+    "where_is~word_bus_stop": {
+      "f": "f/where_is~word_bus_stop.mp3"
+    },
+    "where_is~word_pharmacy": {
+      "f": "f/where_is~word_pharmacy.mp3"
+    },
+    "where_is~word_atm": {
+      "f": "f/where_is~word_atm.mp3"
+    },
+    "where_is~word_supermarket": {
+      "f": "f/where_is~word_supermarket.mp3"
+    },
+    "nearest~word_pharmacy": {
+      "f": "f/nearest~word_pharmacy.mp3"
+    },
+    "nearest~word_atm": {
+      "f": "f/nearest~word_atm.mp3"
+    },
+    "nearest~word_supermarket": {
+      "f": "f/nearest~word_supermarket.mp3"
+    },
+    "nearest~word_metro_station": {
+      "f": "f/nearest~word_metro_station.mp3"
+    },
+    "nearest~word_bus_stop": {
+      "f": "f/nearest~word_bus_stop.mp3"
+    },
+    "how_get~word_airport": {
+      "f": "f/how_get~word_airport.mp3"
+    },
+    "how_get~word_train_station": {
+      "f": "f/how_get~word_train_station.mp3"
+    },
+    "how_get~word_city_centre": {
+      "f": "f/how_get~word_city_centre.mp3"
+    },
+    "how_get~word_beach": {
+      "f": "f/how_get~word_beach.mp3"
+    },
+    "how_get~word_hotel": {
+      "f": "f/how_get~word_hotel.mp3"
+    },
+    "can_i_have~word_tea": {
+      "f": "f/can_i_have~word_tea.mp3"
+    },
+    "can_i_have~word_beer": {
+      "f": "f/can_i_have~word_beer.mp3"
+    },
+    "can_i_have~word_glass_of_wine": {
+      "f": "f/can_i_have~word_glass_of_wine.mp3"
+    },
+    "can_i_have~word_menu": {
+      "f": "f/can_i_have~word_menu.mp3"
+    },
+    "can_i_have~word_receipt": {
+      "f": "f/can_i_have~word_receipt.mp3"
+    },
+    "i_would_like~word_tea": {
+      "f": "f/i_would_like~word_tea.mp3"
+    },
+    "i_would_like~word_beer": {
+      "f": "f/i_would_like~word_beer.mp3"
+    },
+    "i_would_like~word_orange_juice": {
+      "f": "f/i_would_like~word_orange_juice.mp3"
+    },
+    "i_would_like~word_bread": {
+      "f": "f/i_would_like~word_bread.mp3"
+    },
+    "i_would_like~word_water": {
+      "f": "f/i_would_like~word_water.mp3"
+    },
+    "table_for~word_one": {
+      "f": "f/table_for~word_one.mp3"
+    },
+    "table_for~word_two": {
+      "f": "f/table_for~word_two.mp3"
+    },
+    "table_for~word_three": {
+      "f": "f/table_for~word_three.mp3"
+    },
+    "table_for~word_four": {
+      "f": "f/table_for~word_four.mp3"
+    },
+    "allergic_to~word_nuts": {
+      "f": "f/allergic_to~word_nuts.mp3"
+    },
+    "allergic_to~word_peanuts": {
+      "f": "f/allergic_to~word_peanuts.mp3"
+    },
+    "allergic_to~word_gluten": {
+      "f": "f/allergic_to~word_gluten.mp3"
+    },
+    "allergic_to~word_shellfish": {
+      "f": "f/allergic_to~word_shellfish.mp3"
+    },
+    "allergic_to~word_milk": {
+      "f": "f/allergic_to~word_milk.mp3"
+    },
+    "without~word_meat": {
+      "f": "f/without~word_meat.mp3"
+    },
+    "without~word_milk": {
+      "f": "f/without~word_milk.mp3"
+    },
+    "without~word_gluten": {
+      "f": "f/without~word_gluten.mp3"
+    },
+    "without~word_ice": {
+      "f": "f/without~word_ice.mp3"
+    },
+    "without~word_nuts": {
+      "f": "f/without~word_nuts.mp3"
+    },
+    "ticket_to~word_airport": {
+      "f": "f/ticket_to~word_airport.mp3"
+    },
+    "ticket_to~word_city_centre": {
+      "f": "f/ticket_to~word_city_centre.mp3"
+    },
+    "ticket_to~word_beach": {
+      "f": "f/ticket_to~word_beach.mp3"
+    },
+    "ticket_to~word_train_station": {
+      "f": "f/ticket_to~word_train_station.mp3"
+    },
+    "does_this_go_to~word_airport": {
+      "f": "f/does_this_go_to~word_airport.mp3"
+    },
+    "does_this_go_to~word_city_centre": {
+      "f": "f/does_this_go_to~word_city_centre.mp3"
+    },
+    "does_this_go_to~word_beach": {
+      "f": "f/does_this_go_to~word_beach.mp3"
+    },
+    "does_this_go_to~word_train_station": {
+      "f": "f/does_this_go_to~word_train_station.mp3"
+    },
+    "take_me_to~word_airport": {
+      "f": "f/take_me_to~word_airport.mp3"
+    },
+    "take_me_to~word_hotel": {
+      "f": "f/take_me_to~word_hotel.mp3"
+    },
+    "take_me_to~word_train_station": {
+      "f": "f/take_me_to~word_train_station.mp3"
+    },
+    "take_me_to~word_city_centre": {
+      "f": "f/take_me_to~word_city_centre.mp3"
+    },
+    "take_me_to~word_beach": {
+      "f": "f/take_me_to~word_beach.mp3"
+    },
+    "doesnt_work~word_air_conditioning": {
+      "f": "f/doesnt_work~word_air_conditioning.mp3"
+    },
+    "doesnt_work~word_shower": {
+      "f": "f/doesnt_work~word_shower.mp3"
+    },
+    "doesnt_work~word_wi_fi": {
+      "f": "f/doesnt_work~word_wi_fi.mp3"
+    },
+    "doesnt_work~word_tv": {
+      "f": "f/doesnt_work~word_tv.mp3"
+    },
+    "doesnt_work~word_hot_water": {
+      "f": "f/doesnt_work~word_hot_water.mp3"
+    },
+    "lost_my~word_passport": {
+      "f": "f/lost_my~word_passport.mp3"
+    },
+    "lost_my~word_phone": {
+      "f": "f/lost_my~word_phone.mp3"
+    },
+    "lost_my~word_wallet": {
+      "f": "f/lost_my~word_wallet.mp3"
+    },
+    "lost_my~word_keys": {
+      "f": "f/lost_my~word_keys.mp3"
+    },
+    "lost_my~word_room_key": {
+      "f": "f/lost_my~word_room_key.mp3"
+    },
+    "do_you_have": {
+      "f": "f/do_you_have.mp3"
+    },
+    "how_much_is": {
+      "f": "f/how_much_is.mp3"
+    },
+    "i_need": {
+      "f": "f/i_need.mp3"
+    },
+    "is_there_nearby": {
+      "f": "f/is_there_nearby.mp3"
+    },
+    "pay_with": {
+      "f": "f/pay_with.mp3"
+    },
+    "can_you": {
+      "f": "f/can_you.mp3"
+    },
+    "like_without": {
+      "f": "f/like_without.mp3"
+    },
+    "can_i_here": {
+      "f": "f/can_i_here.mp3"
+    },
+    "looking_for": {
+      "f": "f/looking_for.mp3"
+    },
+    "is_included": {
+      "f": "f/is_included.mp3"
+    },
+    "where_can_i": {
+      "f": "f/where_can_i.mp3"
+    },
+    "do_you_have~wifi": {
+      "f": "f/do_you_have~wifi.mp3"
+    },
+    "do_you_have~vegetarian_food": {
+      "f": "f/do_you_have~vegetarian_food.mp3"
+    },
+    "do_you_have~charger": {
+      "f": "f/do_you_have~charger.mp3"
+    },
+    "do_you_have~map": {
+      "f": "f/do_you_have~map.mp3"
+    },
+    "how_much_is~ticket": {
+      "f": "f/how_much_is~ticket.mp3"
+    },
+    "how_much_is~coffee": {
+      "f": "f/how_much_is~coffee.mp3"
+    },
+    "how_much_is~room": {
+      "f": "f/how_much_is~room.mp3"
+    },
+    "i_need~help": {
+      "f": "f/i_need~help.mp3"
+    },
+    "i_need~water": {
+      "f": "f/i_need~water.mp3"
+    },
+    "i_need~taxi": {
+      "f": "f/i_need~taxi.mp3"
+    },
+    "is_there_nearby~bathroom": {
+      "f": "f/is_there_nearby~bathroom.mp3"
+    },
+    "is_there_nearby~pharmacy": {
+      "f": "f/is_there_nearby~pharmacy.mp3"
+    },
+    "is_there_nearby~atm": {
+      "f": "f/is_there_nearby~atm.mp3"
+    },
+    "is_there_nearby~supermarket": {
+      "f": "f/is_there_nearby~supermarket.mp3"
+    },
+    "pay_with~cash": {
+      "f": "f/pay_with~cash.mp3"
+    },
+    "pay_with~phone": {
+      "f": "f/pay_with~phone.mp3"
+    },
+    "like_without~coffee_milk": {
+      "f": "f/like_without~coffee_milk.mp3"
+    },
+    "like_without~tea_sugar": {
+      "f": "f/like_without~tea_sugar.mp3"
+    },
+    "like_without~water_ice": {
+      "f": "f/like_without~water_ice.mp3"
+    },
+    "can_i_here~sit": {
+      "f": "f/can_i_here~sit.mp3"
+    },
+    "can_i_here~park": {
+      "f": "f/can_i_here~park.mp3"
+    },
+    "can_i_here~photos": {
+      "f": "f/can_i_here~photos.mp3"
+    },
+    "can_i_here~charge": {
+      "f": "f/can_i_here~charge.mp3"
+    },
+    "looking_for~my_hotel": {
+      "f": "f/looking_for~my_hotel.mp3"
+    },
+    "looking_for~entrance": {
+      "f": "f/looking_for~entrance.mp3"
+    },
+    "looking_for~restaurant": {
+      "f": "f/looking_for~restaurant.mp3"
+    },
+    "looking_for~exit": {
+      "f": "f/looking_for~exit.mp3"
+    },
+    "is_included~breakfast": {
+      "f": "f/is_included~breakfast.mp3"
+    },
+    "is_included~tax": {
+      "f": "f/is_included~tax.mp3"
+    },
+    "is_included~wifi": {
+      "f": "f/is_included~wifi.mp3"
+    },
+    "is_included~luggage": {
+      "f": "f/is_included~luggage.mp3"
+    },
+    "where_can_i~buy_tickets": {
+      "f": "f/where_can_i~buy_tickets.mp3"
+    },
+    "where_can_i~taxi": {
+      "f": "f/where_can_i~taxi.mp3"
+    },
+    "where_can_i~change_money": {
+      "f": "f/where_can_i~change_money.mp3"
+    },
+    "where_can_i~sim": {
+      "f": "f/where_can_i~sim.mp3"
+    },
+    "can_you~write": {
+      "f": "f/can_you~write.mp3"
+    },
+    "need_doctor": {
+      "f": "f/need_doctor.mp3"
     }
   }
 }

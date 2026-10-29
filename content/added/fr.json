@@ -312,6 +312,72 @@
       "target": "Je dois appeler quelqu'un.",
       "pronunciation_easy": "zhuh dwah ah-puh-LAY kel-KUHN",
       "qa": "SAFETY. Back-translation: 'I must call someone.' 'J'ai besoin d'appeler quelqu'un' (I need to call someone) is an equally natural alternative."
+    },
+    {
+      "id": "do_you_have",
+      "target": "Vous avez ___ ?",
+      "pronunciation_easy": "voo zah-VAY",
+      "qa": "Blank takes the noun with its article, which varies (le Wi-Fi, des plats végétariens, un chargeur), so the article is inside the blank. The liaison 'vous_avez' (voo zah-VAY) is obligatory."
+    },
+    {
+      "id": "how_much_is",
+      "target": "Combien coûte ___ ?",
+      "pronunciation_easy": "kohm-BYEN KOOT",
+      "qa": "Blank takes the noun with its article (un billet, la chambre). Plural nouns need 'coûtent' (same pronunciation). Casual alternative everywhere: 'C'est combien, ___ ?'"
+    },
+    {
+      "id": "i_need",
+      "target": "J'ai besoin ___, s'il vous plaît.",
+      "pronunciation_easy": "zhay buh-ZWAN, seel voo PLEH",
+      "qa": "SAFETY (help/doctor). Back-translation: 'I have need [of] ___, please.' The blank includes 'de', which elides and combines per word (d'aide, d'eau, d'un taxi, d'un médecin), so it is inside the blank. Same for male and female speakers."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "Il y a ___ près d'ici ?",
+      "pronunciation_easy": "eel yah ... preh dee-SEE",
+      "qa": "Blank takes the article as well as the noun (un/une/des), since gender and number vary: 'des toilettes' is plural in French. The English frame has 'a' before the blank; in French the article goes inside it."
+    },
+    {
+      "id": "pay_with",
+      "target": "Je peux payer ___ ?",
+      "pronunciation_easy": "zhuh puh pay-YAY",
+      "qa": "The preposition changes with the means of payment and goes inside the blank: en espèces (cash), par carte (card), avec mon téléphone (phone)."
+    },
+    {
+      "id": "can_you",
+      "target": "Vous pouvez ___, s'il vous plaît ?",
+      "pronunciation_easy": "voo poo-VAY, seel voo PLEH",
+      "qa": "Blank takes an infinitive; object pronouns go before it inside the blank (me l'écrire, m'aider, répéter). Polite vous, matching the vetted 'Vous pouvez répéter ?'."
+    },
+    {
+      "id": "like_without",
+      "target": "Je voudrais ___ sans ___.",
+      "pronunciation_easy": "zhuh voo-DRAY ... sahn",
+      "qa": "First blank takes the item with its article (un café, un thé, de l'eau); second blank takes a bare noun, no article after 'sans' (sans lait, sans sucre, sans glaçons)."
+    },
+    {
+      "id": "can_i_here",
+      "target": "Je peux ___ ici ?",
+      "pronunciation_easy": "zhuh puh ... ee-SEE",
+      "qa": "Blank takes an infinitive; reflexive verbs bring 'me' inside the blank (m'asseoir, me garer)."
+    },
+    {
+      "id": "looking_for",
+      "target": "Je cherche ___.",
+      "pronunciation_easy": "zhuh SHEHRSH",
+      "qa": "Blank takes the noun with its article or possessive (mon hôtel, l'entrée, un restaurant). No preposition after 'chercher'."
+    },
+    {
+      "id": "is_included",
+      "target": "___ est compris ?",
+      "pronunciation_easy": "eh kohn-PREE",
+      "qa": "The verb and 'compris' agree with the noun: 'est compris' (masc. sing.), 'est comprise' (fem. sing.), 'sont compris/comprises' (plural). Blank takes the noun with its article. 'compris' matches the vetted 'Le service est compris ?'; 'inclus' is an equally common synonym, especially for flights and fares."
+    },
+    {
+      "id": "where_can_i",
+      "target": "Où est-ce que je peux ___ ?",
+      "pronunciation_easy": "oo es-kuh zhuh PUH",
+      "qa": "Blank takes an infinitive phrase. 'Où est-ce que je peux' is neutral and polite; 'Où puis-je ___ ?' is more formal, 'Où je peux ___ ?' more casual."
     }
   ],
   "vocab": {
@@ -973,6 +1039,225 @@
         "word": "word_room_key",
         "target": "J'ai perdu la clé de ma chambre.",
         "pronunciation_easy": "zhay pehr-dew lah KLAY duh mah SHAHN-bruh"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "Vous avez le Wi-Fi ?",
+        "pronunciation_easy": "voo zah-vay luh wee-FEE",
+        "qa": "French says 'le Wi-Fi' (the Wi-Fi). Usually pronounced 'wee-fee'."
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "Vous avez des plats végétariens ?",
+        "pronunciation_easy": "voo zah-vay day plah vay-zhay-tah-RYEN",
+        "qa": "Literally 'vegetarian dishes', the natural way to ask in a restaurant. 'Vous avez un menu végétarien ?' is also common."
+      },
+      {
+        "word": "charger",
+        "target": "Vous avez un chargeur de téléphone ?",
+        "pronunciation_easy": "voo zah-vay uhn shar-ZHUHR duh tay-lay-FON"
+      },
+      {
+        "word": "map",
+        "target": "Vous avez un plan ?",
+        "pronunciation_easy": "voo zah-vay uhn PLAHN",
+        "qa": "'un plan' = a town/metro map. 'une carte' is a map of a region or country."
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "Combien coûte un billet ?",
+        "pronunciation_easy": "kohm-byen koot uhn bee-YEH",
+        "qa": "For metro/bus tickets 'un ticket' is also used in some cities (Paris metro)."
+      },
+      {
+        "word": "coffee",
+        "target": "Combien coûte un café ?",
+        "pronunciation_easy": "kohm-byen koot uhn kah-FAY"
+      },
+      {
+        "word": "room",
+        "target": "Combien coûte la chambre ?",
+        "pronunciation_easy": "kohm-byen koot lah SHAHN-bruh",
+        "qa": "To ask per night: 'C'est combien la nuit ?'"
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "J'ai besoin d'aide, s'il vous plaît.",
+        "pronunciation_easy": "zhay buh-zwan DED, seel voo PLEH",
+        "qa": "SAFETY. Back-translation: 'I have need of help, please.' = I need help. Natural and urgent enough; in a real emergency 'Au secours !' (help_shout) is the shout."
+      },
+      {
+        "word": "water",
+        "target": "J'ai besoin d'eau, s'il vous plaît.",
+        "pronunciation_easy": "zhay buh-zwan DOH, seel voo PLEH"
+      },
+      {
+        "word": "taxi",
+        "target": "J'ai besoin d'un taxi, s'il vous plaît.",
+        "pronunciation_easy": "zhay buh-zwan duhn tahk-SEE, seel voo PLEH",
+        "qa": "Grammatical and clear; to ask someone to call one, 'Vous pouvez m'appeler un taxi ?' is more natural."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "Il y a des toilettes près d'ici ?",
+        "pronunciation_easy": "eel yah day twah-LET preh dee-SEE",
+        "qa": "'toilettes' is always plural in this sense, hence 'des'."
+      },
+      {
+        "word": "pharmacy",
+        "target": "Il y a une pharmacie près d'ici ?",
+        "pronunciation_easy": "eel yah ewn far-mah-SEE preh dee-SEE"
+      },
+      {
+        "word": "atm",
+        "target": "Il y a un distributeur de billets près d'ici ?",
+        "pronunciation_easy": "eel yah uhn dees-tree-bew-TUHR duh bee-YEH preh dee-SEE",
+        "qa": "Matches the vetted ATM word; 'un distributeur' alone and 'un DAB' are also heard."
+      },
+      {
+        "word": "supermarket",
+        "target": "Il y a un supermarché près d'ici ?",
+        "pronunciation_easy": "eel yah uhn sew-pehr-mar-SHAY preh dee-SEE"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "Je peux payer en espèces ?",
+        "pronunciation_easy": "zhuh puh pay-yay ahn ness-PESS",
+        "qa": "'en liquide' (ahn lee-KEED) is an equally common, more casual alternative."
+      },
+      {
+        "word": "phone",
+        "target": "Je peux payer avec mon téléphone ?",
+        "pronunciation_easy": "zhuh puh pay-yay ah-vek mohn tay-lay-FON",
+        "qa": "'payer sans contact' (pay contactless) is also widely understood."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "Vous pouvez me l'écrire, s'il vous plaît ?",
+        "pronunciation_easy": "voo poo-vay muh lay-KREER, seel voo PLEH",
+        "qa": "Literally 'Can you write it for me?'; the natural way to ask for something to be written down."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "Je voudrais un café sans lait.",
+        "pronunciation_easy": "zhuh voo-dray uhn kah-FAY sahn LEH",
+        "qa": "In France 'un café' is an espresso, served black by default, so 'sans lait' mostly matters when ordering a longer coffee ('un café allongé sans lait')."
+      },
+      {
+        "word": "tea_sugar",
+        "target": "Je voudrais un thé sans sucre.",
+        "pronunciation_easy": "zhuh voo-dray uhn TAY sahn SEW-kruh"
+      },
+      {
+        "word": "water_ice",
+        "target": "Je voudrais de l'eau sans glaçons.",
+        "pronunciation_easy": "zhuh voo-dray duh LOH sahn glah-SOHN"
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "Je peux m'asseoir ici ?",
+        "pronunciation_easy": "zhuh puh mah-SWAHR ee-SEE",
+        "qa": "Reflexive verb. For a free seat people also just ask 'C'est libre ?' (Is it free?)."
+      },
+      {
+        "word": "park",
+        "target": "Je peux me garer ici ?",
+        "pronunciation_easy": "zhuh puh muh gah-RAY ee-SEE"
+      },
+      {
+        "word": "photos",
+        "target": "Je peux prendre des photos ici ?",
+        "pronunciation_easy": "zhuh puh prahn-druh day foh-TOH ee-SEE"
+      },
+      {
+        "word": "charge",
+        "target": "Je peux recharger mon téléphone ici ?",
+        "pronunciation_easy": "zhuh puh ruh-shar-ZHAY mohn tay-lay-FON ee-SEE"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "Je cherche mon hôtel.",
+        "pronunciation_easy": "zhuh shehrsh mohn noh-TEL"
+      },
+      {
+        "word": "entrance",
+        "target": "Je cherche l'entrée.",
+        "pronunciation_easy": "zhuh shehrsh lahn-TRAY"
+      },
+      {
+        "word": "restaurant",
+        "target": "Je cherche un restaurant.",
+        "pronunciation_easy": "zhuh shehrsh uhn ress-toh-RAHN"
+      },
+      {
+        "word": "exit",
+        "target": "Je cherche la sortie.",
+        "pronunciation_easy": "zhuh shehrsh lah sor-TEE"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "Le petit-déjeuner est compris ?",
+        "pronunciation_easy": "luh puh-tee day-zhuh-NAY eh kohn-PREE"
+      },
+      {
+        "word": "tax",
+        "target": "Les taxes sont comprises ?",
+        "pronunciation_easy": "lay TAHKS sohn kohn-PREEZ",
+        "qa": "Plural form (sont comprises). In France sales tax (TVA) is always in the shown price; at hotels the question is usually about 'la taxe de séjour' (tourist tax): 'La taxe de séjour est comprise ?'"
+      },
+      {
+        "word": "wifi",
+        "target": "Le Wi-Fi est compris ?",
+        "pronunciation_easy": "luh wee-FEE eh kohn-PREE"
+      },
+      {
+        "word": "luggage",
+        "target": "Les bagages sont compris ?",
+        "pronunciation_easy": "lay bah-GAHZH sohn kohn-PREE",
+        "qa": "Plural form (sont compris). For a flight, 'Le bagage en soute est inclus ?' (Is checked baggage included?) is the more specific airline phrasing."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "Où est-ce que je peux acheter des billets ?",
+        "pronunciation_easy": "oo es-kuh zhuh puh ahsh-TAY day bee-YEH"
+      },
+      {
+        "word": "taxi",
+        "target": "Où est-ce que je peux prendre un taxi ?",
+        "pronunciation_easy": "oo es-kuh zhuh puh prahn-druh uhn tahk-SEE",
+        "qa": "'prendre un taxi' (take a taxi) is the natural verb for 'get a taxi'."
+      },
+      {
+        "word": "change_money",
+        "target": "Où est-ce que je peux changer de l'argent ?",
+        "pronunciation_easy": "oo es-kuh zhuh puh shahn-zhay duh lar-ZHAHN"
+      },
+      {
+        "word": "sim",
+        "target": "Où est-ce que je peux acheter une carte SIM ?",
+        "pronunciation_easy": "oo es-kuh zhuh puh ahsh-tay ewn kart SEEM"
       }
     ]
   },

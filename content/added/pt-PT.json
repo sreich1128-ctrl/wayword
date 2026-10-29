@@ -318,6 +318,72 @@
       "target": "Preciso de ligar a alguém.",
       "pronunciation_easy": "pruh-SEE-zoo duh lee-GAR ah al-GAYNG",
       "qa": "SAFETY. Literal: 'I need to call (phone) someone.' 'Ligar a' = phone; 'telefonar a alguém' is an equivalent."
+    },
+    {
+      "id": "do_you_have",
+      "target": "Tem ___?",
+      "pronunciation_easy": "teng",
+      "qa": "Polite você/o senhor form, matching the file's register (informal: 'Tens ___?'). The blank takes the noun with its article where English has one: Tem um mapa? Tem Wi-Fi? (uncountables take none)."
+    },
+    {
+      "id": "how_much_is",
+      "target": "Quanto custa ___?",
+      "pronunciation_easy": "KWAN-too KOOSH-tah",
+      "qa": "The blank is the noun with its article (um bilhete, o quarto). A plural noun needs 'Quanto custam ___?'. 'Quanto é ___?' is an equally common alternative."
+    },
+    {
+      "id": "i_need",
+      "target": "Preciso ___, por favor.",
+      "pronunciation_easy": "pruh-SEE-zoo, poor fah-VOR",
+      "qa": "SAFETY. Literal: 'I need (of) ___, please.' Portugal keeps 'de' after precisar, and it contracts with a definite article (de + o = do, de + a = da), so 'de' goes inside the blank: de ajuda, de água, de um táxi, do meu passaporte. 'Preciso de ajuda' = 'I need (of) help'; 'Preciso de um médico' = 'I need (of) a doctor' (already the need_doctor phrase). In speech 'de um' often becomes 'dum'."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "Há ___ aqui perto?",
+      "pronunciation_easy": "ah, ah-KEE PEHR-too",
+      "qa": "Literal: 'Is there ___ here near?' The blank takes um/uma agreeing with the noun's gender: um multibanco, uma farmácia. 'Há' is silent-h 'ah'. 'Há algum/alguma ___ aqui perto?' (any ___) is also very common."
+    },
+    {
+      "id": "pay_with",
+      "target": "Posso pagar com ___?",
+      "pronunciation_easy": "POH-soo pah-GAR kong",
+      "qa": "Cash breaks the pattern: Portugal says 'pagar em dinheiro' (pay in cash), not 'com dinheiro'. Card: 'com cartão' (no article); phone: 'com o telemóvel' (article goes in the blank)."
+    },
+    {
+      "id": "can_you",
+      "target": "Pode ___, por favor?",
+      "pronunciation_easy": "POH-duh, poor fah-VOR",
+      "qa": "Polite você/o senhor form (informal: 'Podes'). The blank is an infinitive; object pronouns attach with a hyphen in Portugal: ajudar-me, escrever-me isso."
+    },
+    {
+      "id": "like_without",
+      "target": "Queria ___ sem ___.",
+      "pronunciation_easy": "kuh-REE-ah seng",
+      "qa": "First blank takes um/uma agreeing with the noun (um café, uma cerveja; water usually without: 'água'); second blank is a bare noun with no article (sem leite, sem açúcar, sem gelo). Adding ', por favor' at the end is natural."
+    },
+    {
+      "id": "can_i_here",
+      "target": "Posso ___ aqui?",
+      "pronunciation_easy": "POH-soo ah-KEE",
+      "qa": "The blank is an infinitive phrase; reflexive verbs attach the pronoun with a hyphen (sentar-me)."
+    },
+    {
+      "id": "looking_for",
+      "target": "Estou à procura ___.",
+      "pronunciation_easy": "esh-TOH ah proo-KOO-rah",
+      "qa": "'à procura de' contracts with the article, so 'de' goes inside the blank: do meu hotel, da entrada, da saída, de um restaurante. 'Procuro ___' (no preposition) is a shorter alternative. 'Estou à procura' is the Portugal form (Brazil: 'Estou procurando')."
+    },
+    {
+      "id": "is_included",
+      "target": "___ está incluído/a?",
+      "pronunciation_easy": "esh-TAH een-kloo-EE-doo/dah",
+      "qa": "The blank is the noun with its article, and incluído agrees with it: O pequeno-almoço está incluído? / A bagagem está incluída? (as in the vetted 'A gorjeta está incluída?'). Plural: incluídos/incluídas."
+    },
+    {
+      "id": "where_can_i",
+      "target": "Onde posso ___?",
+      "pronunciation_easy": "ON-duh POH-soo",
+      "qa": "The blank is an infinitive phrase (comprar bilhetes, trocar dinheiro)."
     }
   ],
   "vocab": {
@@ -981,6 +1047,227 @@
         "word": "word_room_key",
         "target": "Perdi a chave do quarto.",
         "pronunciation_easy": "puhr-DEE ah SHAH-vuh doo KWAR-too"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "Tem Wi-Fi?",
+        "pronunciation_easy": "teng WY-fy"
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "Tem comida vegetariana?",
+        "pronunciation_easy": "teng koo-MEE-dah vuh-zhuh-tah-ree-AH-nah",
+        "qa": "In a restaurant 'Tem pratos vegetarianos?' (vegetarian dishes) is also natural; reviewer to pick."
+      },
+      {
+        "word": "charger",
+        "target": "Tem um carregador de telemóvel?",
+        "pronunciation_easy": "teng oong kah-ruh-gah-DOR duh tuh-luh-MOH-vel",
+        "qa": "Telemóvel is the Portugal word for mobile phone (Brazil: celular)."
+      },
+      {
+        "word": "map",
+        "target": "Tem um mapa?",
+        "pronunciation_easy": "teng oong MAH-pah"
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "Quanto custa um bilhete?",
+        "pronunciation_easy": "KWAN-too KOOSH-tah oong bee-LYEH-tuh"
+      },
+      {
+        "word": "coffee",
+        "target": "Quanto custa um café?",
+        "pronunciation_easy": "KWAN-too KOOSH-tah oong kah-FEH"
+      },
+      {
+        "word": "room",
+        "target": "Quanto custa o quarto?",
+        "pronunciation_easy": "KWAN-too KOOSH-tah oo KWAR-too",
+        "qa": "Per night: 'Quanto custa o quarto por noite?'"
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "Preciso de ajuda, por favor.",
+        "pronunciation_easy": "pruh-SEE-zoo duh ah-ZHOO-dah, poor fah-VOR",
+        "qa": "SAFETY. Literal: 'I need (of) help, please.' In a real emergency the shout is 'Socorro!'"
+      },
+      {
+        "word": "water",
+        "target": "Preciso de água, por favor.",
+        "pronunciation_easy": "pruh-SEE-zoo duh AH-gwah, poor fah-VOR"
+      },
+      {
+        "word": "taxi",
+        "target": "Preciso de um táxi, por favor.",
+        "pronunciation_easy": "pruh-SEE-zoo duh oong TAK-see, poor fah-VOR",
+        "qa": "Correct, but to ask someone to call one, 'Pode chamar-me um táxi?' is more natural."
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "Há uma casa de banho aqui perto?",
+        "pronunciation_easy": "ah OO-mah KAH-zah duh BAN-yoo ah-KEE PEHR-too",
+        "qa": "Casa de banho is the Portugal word (Brazil: banheiro). Public toilets are scarce; in practice people ask a café 'Posso usar a casa de banho?'"
+      },
+      {
+        "word": "pharmacy",
+        "target": "Há uma farmácia aqui perto?",
+        "pronunciation_easy": "ah OO-mah far-MAH-see-ah ah-KEE PEHR-too"
+      },
+      {
+        "word": "atm",
+        "target": "Há um multibanco aqui perto?",
+        "pronunciation_easy": "ah oong mool-tee-BAN-koo ah-KEE PEHR-too",
+        "qa": "Multibanco (the national ATM network) is the everyday word for an ATM in Portugal; 'caixa automático' is also understood."
+      },
+      {
+        "word": "supermarket",
+        "target": "Há um supermercado aqui perto?",
+        "pronunciation_easy": "ah oong soo-pehr-mehr-KAH-doo ah-KEE PEHR-too"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "Posso pagar em dinheiro?",
+        "pronunciation_easy": "POH-soo pah-GAR eng dee-NYAY-roo",
+        "qa": "Uses 'em' (in cash), not the frame's 'com'; 'com dinheiro' sounds translated."
+      },
+      {
+        "word": "phone",
+        "target": "Posso pagar com o telemóvel?",
+        "pronunciation_easy": "POH-soo pah-GAR kong oo tuh-luh-MOH-vel",
+        "qa": "Literal 'with the phone'; the possessive is dropped as is natural ('com o meu telemóvel' is also fine)."
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "Pode escrever isso, por favor?",
+        "pronunciation_easy": "POH-duh esh-kruh-VEHR EE-soo, poor fah-VOR",
+        "qa": "Literal: 'Can you write that, please?' ('down' is implied). 'Pode escrever-me isso?' (write it for me) is also common."
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "Queria um café sem leite.",
+        "pronunciation_easy": "kuh-REE-ah oong kah-FEH seng LAY-tuh",
+        "qa": "In Portugal 'um café' is an espresso and comes without milk anyway; with milk it is a 'galão' or 'meia de leite'. Grammatically fine, but a reviewer may want a better example."
+      },
+      {
+        "word": "tea_sugar",
+        "target": "Queria um chá sem açúcar.",
+        "pronunciation_easy": "kuh-REE-ah oong SHAH seng ah-SOO-kar"
+      },
+      {
+        "word": "water_ice",
+        "target": "Queria água sem gelo.",
+        "pronunciation_easy": "kuh-REE-ah AH-gwah seng ZHEH-loo",
+        "qa": "Waiters often ask 'natural ou fresca?' (room temperature or chilled); 'água natural' answers the no-ice wish too."
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "Posso sentar-me aqui?",
+        "pronunciation_easy": "POH-soo sen-TAR-muh ah-KEE",
+        "qa": "At a table or seat, 'Este lugar está livre?' (Is this seat free?) is just as common."
+      },
+      {
+        "word": "park",
+        "target": "Posso estacionar aqui?",
+        "pronunciation_easy": "POH-soo esh-tah-see-oo-NAR ah-KEE"
+      },
+      {
+        "word": "photos",
+        "target": "Posso tirar fotos aqui?",
+        "pronunciation_easy": "POH-soo tee-RAR FOH-toosh ah-KEE",
+        "qa": "'Fotos' is the everyday word; 'fotografias' is more formal."
+      },
+      {
+        "word": "charge",
+        "target": "Posso carregar o telemóvel aqui?",
+        "pronunciation_easy": "POH-soo kah-ruh-GAR oo tuh-luh-MOH-vel ah-KEE",
+        "qa": "Literal 'charge the phone'; the possessive is dropped as is natural."
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "Estou à procura do meu hotel.",
+        "pronunciation_easy": "esh-TOH ah proo-KOO-rah doo MEH-oo oh-TEL"
+      },
+      {
+        "word": "entrance",
+        "target": "Estou à procura da entrada.",
+        "pronunciation_easy": "esh-TOH ah proo-KOO-rah dah en-TRAH-dah"
+      },
+      {
+        "word": "restaurant",
+        "target": "Estou à procura de um restaurante.",
+        "pronunciation_easy": "esh-TOH ah proo-KOO-rah duh oong rush-tow-RAN-tuh"
+      },
+      {
+        "word": "exit",
+        "target": "Estou à procura da saída.",
+        "pronunciation_easy": "esh-TOH ah proo-KOO-rah dah sah-EE-dah"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "O pequeno-almoço está incluído?",
+        "pronunciation_easy": "oo puh-KEH-noo al-MOH-soo esh-TAH een-kloo-EE-doo",
+        "qa": "Pequeno-almoço is the Portugal word (Brazil: café da manhã)."
+      },
+      {
+        "word": "tax",
+        "target": "O IVA está incluído?",
+        "pronunciation_easy": "oo EE-vah esh-TAH een-kloo-EE-doo",
+        "qa": "IVA = VAT, normally already in Portuguese prices. At hotels the likelier question is 'A taxa turística está incluída?' (city tourist tax); reviewer to choose."
+      },
+      {
+        "word": "wifi",
+        "target": "O Wi-Fi está incluído?",
+        "pronunciation_easy": "oo WY-fy esh-TAH een-kloo-EE-doo"
+      },
+      {
+        "word": "luggage",
+        "target": "A bagagem está incluída?",
+        "pronunciation_easy": "ah bah-GAH-zhayng esh-TAH een-kloo-EE-dah",
+        "qa": "For flights, 'bagagem de porão' is checked luggage and 'bagagem de mão' is hand luggage."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "Onde posso comprar bilhetes?",
+        "pronunciation_easy": "ON-duh POH-soo kon-PRAR bee-LYEH-tush"
+      },
+      {
+        "word": "taxi",
+        "target": "Onde posso apanhar um táxi?",
+        "pronunciation_easy": "ON-duh POH-soo ah-pah-NYAR oong TAK-see",
+        "qa": "'Apanhar' (catch) is the Portugal verb for taking a taxi/bus."
+      },
+      {
+        "word": "change_money",
+        "target": "Onde posso trocar dinheiro?",
+        "pronunciation_easy": "ON-duh POH-soo troo-KAR dee-NYAY-roo"
+      },
+      {
+        "word": "sim",
+        "target": "Onde posso comprar um cartão SIM?",
+        "pronunciation_easy": "ON-duh POH-soo kon-PRAR oong kar-TAWNG seem"
       }
     ]
   },

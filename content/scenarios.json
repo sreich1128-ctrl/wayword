@@ -4,56 +4,56 @@
     "label": "The basics",
     "icon": "👋",
     "note": "The phrases that work everywhere. Start here.",
-    "concepts": ["hello", "good_morning", "how_are_you", "please", "thank_you", "excuse_me", "yes", "no", "speak_english", "dont_speak_well", "dont_understand", "say_again", "speak_slowly", "what_mean", "goodbye", "sorry", "youre_welcome", "no_thank_you", "okay", "good_evening"]
+    "concepts": ["hello", "good_morning", "how_are_you", "please", "thank_you", "excuse_me", "yes", "no", "speak_english", "dont_speak_well", "dont_understand", "say_again", "speak_slowly", "what_mean", "goodbye", "sorry", "youre_welcome", "no_thank_you", "okay", "good_evening", "can_you", "i_need"]
   },
   {
     "id": "emergency",
     "label": "Help & emergencies",
     "icon": "🆘",
     "note": "Phrases for when something goes wrong. Worth learning before you fly; these drafts are the first in line for a native speaker's check.",
-    "concepts": ["help_shout", "call_police", "need_doctor", "where_pharmacy", "its_emergency", "help_me", "lost_my", "not_well", "call_someone", "speak_english", "dont_understand"],
+    "concepts": ["help_shout", "call_police", "need_doctor", "where_pharmacy", "its_emergency", "help_me", "lost_my", "not_well", "call_someone", "speak_english", "dont_understand", "i_need", "is_there_nearby"],
     "counts": ["help_shout", "call_police", "need_doctor", "where_pharmacy", "its_emergency", "help_me", "lost_my", "not_well", "call_someone"]
   },
   {
     "id": "cafe",
     "label": "Café",
     "icon": "☕",
-    "concepts": ["hello", "good_morning", "coffee", "water", "can_i_have", "i_would_like", "please", "thank_you", "dairy", "how_much", "pay_card", "apple_pay", "bill", "bathroom", "speak_english", "dont_understand", "menu_please", "to_go", "for_here", "another_one"],
-    "counts": ["coffee", "water", "menu_please", "to_go", "for_here", "another_one", "dairy", "bill"]
+    "concepts": ["hello", "good_morning", "coffee", "water", "can_i_have", "i_would_like", "please", "thank_you", "dairy", "how_much", "pay_card", "apple_pay", "bill", "bathroom", "speak_english", "dont_understand", "menu_please", "to_go", "for_here", "another_one", "do_you_have", "how_much_is", "pay_with", "like_without", "can_i_here"],
+    "counts": ["coffee", "water", "menu_please", "to_go", "for_here", "another_one", "dairy", "bill", "like_without"]
   },
   {
     "id": "restaurant",
     "label": "Restaurant",
     "icon": "🍽️",
-    "concepts": ["hello", "i_would_like", "can_i_have", "water", "recommend_food", "whats_in_this", "dairy", "what_mean", "bill", "pay_card", "apple_pay", "cash_or_card", "tip_included", "people_tip", "bathroom", "thank_you", "table_for", "menu_please", "allergic_to", "vegetarian", "without", "delicious"],
+    "concepts": ["hello", "i_would_like", "can_i_have", "water", "recommend_food", "whats_in_this", "dairy", "what_mean", "bill", "pay_card", "apple_pay", "cash_or_card", "tip_included", "people_tip", "bathroom", "thank_you", "table_for", "menu_please", "allergic_to", "vegetarian", "without", "delicious", "do_you_have", "pay_with", "like_without", "is_included"],
     "counts": ["recommend_food", "whats_in_this", "people_tip", "table_for", "menu_please", "allergic_to", "vegetarian", "without", "delicious", "bill", "tip_included"]
   },
   {
     "id": "transport",
     "label": "Transportation",
     "icon": "🚆",
-    "concepts": ["excuse_me", "how_get", "where_is", "nearest", "is_far", "how_much", "pay_card", "cash_or_card", "speak_english", "speak_slowly", "say_again", "help_me", "thank_you", "ticket_to", "does_this_go_to", "take_me_to", "stop_here", "next_departure", "which_platform", "how_long_trip", "one_way_or_return"],
-    "counts": ["ticket_to", "does_this_go_to", "take_me_to", "stop_here", "next_departure", "which_platform", "how_long_trip", "one_way_or_return", "how_get"]
+    "concepts": ["excuse_me", "how_get", "where_is", "nearest", "is_far", "how_much", "pay_card", "cash_or_card", "speak_english", "speak_slowly", "say_again", "help_me", "thank_you", "ticket_to", "does_this_go_to", "take_me_to", "stop_here", "next_departure", "which_platform", "how_long_trip", "one_way_or_return", "how_much_is", "where_can_i", "pay_with"],
+    "counts": ["ticket_to", "does_this_go_to", "take_me_to", "stop_here", "next_departure", "which_platform", "how_long_trip", "one_way_or_return", "how_get", "where_can_i"]
   },
   {
     "id": "directions",
     "label": "Lost / Directions",
     "icon": "🧭",
-    "concepts": ["excuse_me", "help_me", "speak_english", "where_is", "how_get", "nearest", "is_far", "bathroom", "dont_understand", "speak_slowly", "say_again", "thanks_help", "very_helpful", "left", "right", "straight_ahead", "im_lost", "show_on_map", "near_here"],
-    "counts": ["left", "right", "straight_ahead", "im_lost", "show_on_map", "near_here", "where_is", "nearest", "is_far"]
+    "concepts": ["excuse_me", "help_me", "speak_english", "where_is", "how_get", "nearest", "is_far", "bathroom", "dont_understand", "speak_slowly", "say_again", "thanks_help", "very_helpful", "left", "right", "straight_ahead", "im_lost", "show_on_map", "near_here", "is_there_nearby", "looking_for", "where_can_i"],
+    "counts": ["left", "right", "straight_ahead", "im_lost", "show_on_map", "near_here", "where_is", "nearest", "is_far", "is_there_nearby", "looking_for"]
   },
   {
     "id": "hotel",
     "label": "Hotel",
     "icon": "🛎️",
-    "concepts": ["hello", "good_morning", "speak_english", "help_me", "can_i_have", "i_would_like", "water", "where_is", "nearest", "bathroom", "how_much", "pay_card", "thanks_help", "very_helpful", "have_reservation", "under_name", "wifi_password", "checkout_time", "leave_bags", "doesnt_work", "another_towel"],
-    "counts": ["have_reservation", "under_name", "wifi_password", "checkout_time", "leave_bags", "doesnt_work", "another_towel"]
+    "concepts": ["hello", "good_morning", "speak_english", "help_me", "can_i_have", "i_would_like", "water", "where_is", "nearest", "bathroom", "how_much", "pay_card", "thanks_help", "very_helpful", "have_reservation", "under_name", "wifi_password", "checkout_time", "leave_bags", "doesnt_work", "another_towel", "do_you_have", "how_much_is", "is_included", "looking_for"],
+    "counts": ["have_reservation", "under_name", "wifi_password", "checkout_time", "leave_bags", "doesnt_work", "another_towel", "is_included"]
   },
   {
     "id": "shopping",
     "label": "Shopping",
     "icon": "🛍️",
-    "concepts": ["hello", "excuse_me", "how_much", "can_i_have", "i_would_like", "what_mean", "how_say", "pay_card", "apple_pay", "cash_or_card", "dont_understand", "say_again", "thank_you", "just_looking", "ill_take_it", "too_expensive", "try_it_on", "another_size", "bag_please"],
+    "concepts": ["hello", "excuse_me", "how_much", "can_i_have", "i_would_like", "what_mean", "how_say", "pay_card", "apple_pay", "cash_or_card", "dont_understand", "say_again", "thank_you", "just_looking", "ill_take_it", "too_expensive", "try_it_on", "another_size", "bag_please", "do_you_have", "how_much_is", "pay_with"],
     "counts": ["just_looking", "ill_take_it", "too_expensive", "try_it_on", "another_size", "bag_please", "how_much"]
   },
   {

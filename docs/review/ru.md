@@ -1,4 +1,4 @@
-# Review sheet: Russian (171 items)
+# Review sheet: Russian (214 items)
 
 Paste everything below the line into ChatGPT or Gemini (a fresh chat). Save the JSON it returns as `docs/review/ru.<tool>.json` (for example `ru.chatgpt.json`), or paste it back to Claude Code.
 
@@ -16,7 +16,7 @@ For EVERY item, reply with one JSON object per line inside a single ```json code
 - "ok" = a native speaker would say exactly this (or it's one of the normal ways to say it).
 - "fix" = wrong, unnatural, wrong variety/register, or a meaning error. Give the better version.
 - "unsure" = you can't tell; say why.
-Return all 171 keys, in order, and nothing else after the code block.
+Return all 214 keys, in order, and nothing else after the code block.
 
 | key | English | draft | pronunciation_easy | note |
 |---|---|---|---|---|
@@ -54,14 +54,26 @@ Return all 171 keys, in order, and nothing else after the code block.
 | just_trim | Just a trim. | Только подровнять. | TOL-kah pahd-rahv-NYAHT | Lit. 'Just even it up'; the usual way to ask for a trim. |
 | not_too_short | Not too short. | Не слишком коротко. | nee SLEESH-kahm KOH-raht-kah |  |
 | shorter_sides | Shorter on the sides. | По бокам покороче. | pah bah-KAHM pah-kah-ROH-cheh |  |
-| like_this | Like this. | Как на фото. | kak nah FOH-tah | Lit. 'Like in the photo', said while showing it. Вот так (vot TAHK, 'like this') also works. |
+| like_this | Like this. | Вот так. | vot tahk | Lit. 'Like in the photo', said while showing it. Вот так (vot TAHK, 'like this') also works. [Fixed 2026-10-14 per ChatGPT review.] |
 | beard_trim | A beard trim, please. | Подровняйте бороду, пожалуйста. | pahd-rahv-NYAI-tyeh BOH-rah-doo, pah-ZHAH-loo-stah |  |
 | where_pharmacy | Where is the pharmacy? | Где аптека? | gdyeh ahp-TYEH-kah | SAFETY: allergy/emergency. Back-translation: 'Where is [the] pharmacy?'. For the nearest one: Где ближайшая аптека? |
-| its_emergency | It's an emergency. | Это срочно! | EH-tah SROCH-nah | SAFETY: allergy/emergency. Back-translation: 'It's urgent!'. This is the everyday way to say it; Это экстренный случай (it's an emergency case) is more formal and less often shouted. |
+| its_emergency | It's an emergency. | У меня экстренная ситуация! | oo mee-NYAH EKS-tren-nah-yah see-too-AH-tsy-yah | SAFETY: allergy/emergency. Back-translation: 'It's urgent!'. This is the everyday way to say it; Это экстренный случай (it's an emergency case) is more formal and less often shouted. [Fixed 2026-10-14 per ChatGPT review.] |
 | lost_my | I lost my ___. | Я потерял/потеряла ___. | ya pah-tee-RYAHL/pah-tee-RYAH-lah | Frame: ___ is filled with a word. SAFETY: allergy/emergency. Back-translation: 'I lost ___.' Speaker gender: потерял (man) / потеряла (woman). The object takes the accusative (паспорт, сумку). Russian normally omits 'my' here. |
-| call_someone | I need to call someone. | Мне нужно позвонить. | mnyeh NOOZH-nah pah-zvah-NEET | SAFETY: allergy/emergency. Back-translation: 'I need to make a phone call' (lit. 'to me [it is] necessary to call'). Add Можно с вашего телефона? to ask to use someone's phone. |
+| call_someone | I need to call someone. | Мне нужно кому-то позвонить. | mnyeh NOOZH-nah kah-MOO-tah pah-zvah-NEET | SAFETY: allergy/emergency. Back-translation: 'I need to make a phone call' (lit. 'to me [it is] necessary to call'). Add Можно с вашего телефона? to ask to use someone's phone. [Fixed 2026-10-14 per ChatGPT review.] |
+| do_you_have | Do you have ___? | У вас есть ___? | oo vahs YEST | Frame: ___ is filled with a word. Lit. 'At you is there ___?'. The noun stays in the nominative, so the blank takes the plain word. |
+| how_much_is | How much is ___? | Сколько стоит ___? | SKOL-kah STOH-eet | Frame: ___ is filled with a word. Plural items take стоят (STOH-yaht): Сколько стоят билеты? |
+| i_need | I need ___, please. | Мне ___, пожалуйста. | mnyeh, pah-ZHAH-loo-stah | Frame: ___ is filled with a word. Back-translation: 'To me [is] needed ___, please.' The word for 'needed' agrees with the noun (нужен masc., нужна fem., нужно neut., нужны plural), so it is inside the blank: Мне нужна помощь, Мне нужно такси. Gender-neutral for the speaker. Safety: 'I need help' = Мне нужна помощь (lit. 'to me [is] needed help'); shouted, Помогите! (Help!). 'I need a doctor' = Мне нужен врач (lit. 'to me [is] needed a doctor'). |
+| is_there_nearby | Is there a ___ nearby? | Здесь рядом есть ___? | zdyes RYAH-dahm yest | Frame: ___ is filled with a word. Lit. 'Here nearby is there ___?'. Noun stays nominative. Тут поблизости есть ___? is equally common. |
+| pay_with | Can I pay with ___? | Можно оплатить ___? | MOZH-nah ahp-lah-TEET | Frame: ___ is filled with a word. Lit. 'Can [one] pay ___?'. The means of payment goes in the instrumental with no preposition (наличными, картой, телефоном), so 'with' is inside the blank. Matches the vetted Можно оплатить картой? |
+| can_you | Can you ___, please? | Можете ___, пожалуйста? | MOH-zhuh-tyeh, pah-ZHAH-loo-stah | Frame: ___ is filled with a word. Lit. 'Can [you] ___, please?' + infinitive; matches the vetted Можете повторить? / Можете мне помочь? |
+| like_without | I'd like ___ without ___. | Мне ___ без ___, пожалуйста. | mnyeh byez, pah-ZHAH-loo-stah | Frame: ___ is filled with a word. Lit. 'For me ___ without ___, please' (the usual way to order; gender-neutral, unlike Я бы хотел/хотела). First blank is accusative (воду, кофе, чай), second is genitive after без (молока, сахара, льда), so case changes are inside the blanks. |
+| can_i_here | Can I ___ here? | Можно здесь ___? | MOZH-nah zdyes | Frame: ___ is filled with a word. Lit. 'Is it allowed here to ___?' + infinitive; same pattern as the vetted Можно оставить здесь багаж? |
+| looking_for | I'm looking for ___. | Я ищу ___. | ya ee-SHCHOO | Frame: ___ is filled with a word. The object takes the accusative (feminine nouns change: гостиницу), so the case form is inside the blank. Gender-neutral. |
+| is_included | Is ___ included? | ___ входит в стоимость? | FKHOH-deet f STOH-ee-mahst | Frame: ___ is filled with a word. Lit. 'Does ___ go into the price?'. Chosen over ___ включён? because включён/включена/включено/включены changes with the noun's gender; входит only changes for plural (входят). Not sure which a native would pick as the default; both are common. |
+| where_can_i | Where can I ___? | Где можно ___? | gdyeh MOZH-nah | Frame: ___ is filled with a word. Lit. 'Where is it possible to ___?' + infinitive. Gender-neutral. |
 | where_is~word_pharmacy | Where is the pharmacy? | Где аптека? | gdyeh ahp-TYEH-kah |  |
 | where_is~word_supermarket | Where is the supermarket? | Где супермаркет? | gdyeh soo-peer-MAR-keet |  |
+| where_is~word_exit |  | Где выход? | gdyeh VY-khat |  |
 | nearest~word_atm | Where is the nearest ATM? | Где ближайший банкомат? | gdyeh blee-ZHAI-shee bahn-kah-MAHT |  |
 | how_get~word_train_station | How do I get to the train station? | Как добраться до вокзала? | kak dah-BRAHT-sah dah vahk-ZAH-lah |  |
 | how_get~word_city_centre | How do I get to the city centre? | Как добраться до центра города? | kak dah-BRAHT-sah dah TSEN-trah GOH-rah-dah |  |
@@ -69,18 +81,18 @@ Return all 171 keys, in order, and nothing else after the code block.
 | can_i_have~word_tea | Can I have a tea, please? | Можно мне чай, пожалуйста? | MOZH-nah mnyeh chai, pah-ZHAH-loo-stah |  |
 | can_i_have~word_beer | Can I have a beer, please? | Можно мне пиво, пожалуйста? | MOZH-nah mnyeh PEE-vah, pah-ZHAH-loo-stah |  |
 | can_i_have~word_glass_of_wine | Can I have a glass of wine, please? | Можно мне бокал вина, пожалуйста? | MOZH-nah mnyeh bah-KAHL vee-NAH, pah-ZHAH-loo-stah |  |
-| can_i_have~word_orange_juice | Can I have an orange juice, please? | Можно мне апельсиновый сок, пожалуйста? | MOZH-nah mnyeh ah-peel-SEE-nah-vy sok, pah-ZHAH-loo-stah |  |
+| can_i_have~word_orange_juice |  | Можно мне апельсиновый сок, пожалуйста? | MOZH-nah mnyeh ah-peel-SEE-nah-vy sok, pah-ZHAH-loo-stah |  |
 | can_i_have~word_menu | Can I have the menu, please? | Можно мне меню, пожалуйста? | MOZH-nah mnyeh mee-NYOO, pah-ZHAH-loo-stah |  |
 | can_i_have~word_receipt | Can I have a receipt, please? | Можно мне чек, пожалуйста? | MOZH-nah mnyeh chek, pah-ZHAH-loo-stah |  |
 | i_would_like~word_tea | I'd like a tea, please. | Я бы хотел чаю, пожалуйста. | ya by khah-TYEL CHAH-yoo, pah-ZHAH-loo-stah |  |
 | i_would_like~word_beer | I'd like a beer, please. | Я бы хотел пива, пожалуйста. | ya by khah-TYEL PEE-vah, pah-ZHAH-loo-stah |  |
-| i_would_like~word_glass_of_wine | I'd like a glass of wine, please. | Я бы хотел бокал вина, пожалуйста. | ya by khah-TYEL bah-KAHL vee-NAH, pah-ZHAH-loo-stah |  |
+| i_would_like~word_glass_of_wine |  | Я бы хотел бокал вина, пожалуйста. | ya by khah-TYEL bah-KAHL vee-NAH, pah-ZHAH-loo-stah |  |
 | i_would_like~word_orange_juice | I'd like an orange juice, please. | Я бы хотел апельсиновый сок, пожалуйста. | ya by khah-TYEL ah-peel-SEE-nah-vy sok, pah-ZHAH-loo-stah |  |
 | i_would_like~word_bread | I'd like some bread, please. | Я бы хотел хлеба, пожалуйста. | ya by khah-TYEL KHLYEH-bah, pah-ZHAH-loo-stah |  |
 | i_would_like~word_water | I'd like some water, please. | Я бы хотел воды, пожалуйста. | ya by khah-TYEL vah-DY, pah-ZHAH-loo-stah |  |
 | table_for~word_one | A table for one, please. | Столик на одного, пожалуйста. | STOH-leek nah ahd-nah-VOH, pah-ZHAH-loo-stah |  |
 | table_for~word_three | A table for three, please. | Столик на троих, пожалуйста. | STOH-leek nah trah-EEKH, pah-ZHAH-loo-stah |  |
-| allergic_to~word_eggs | I'm allergic to eggs. | У меня аллергия на яйца. | oo mee-NYAH ah-leer-GEE-yah nah YAI-tsah | SAFETY: allergy/emergency. |
+| allergic_to~word_eggs |  | У меня аллергия на яйца. | oo mee-NYAH ah-leer-GEE-yah nah YAI-tsah | SAFETY: allergy/emergency. |
 | without~word_meat | Without meat, please. | Без мяса, пожалуйста. | byez MYAH-sah, pah-ZHAH-loo-stah | SAFETY: allergy/emergency. |
 | without~word_milk | Without milk, please. | Без молока, пожалуйста. | byez mah-lah-KAH, pah-ZHAH-loo-stah | SAFETY: allergy/emergency. |
 | without~word_gluten | Without gluten, please. | Без глютена, пожалуйста. | byez glyoo-TEH-nah, pah-ZHAH-loo-stah | SAFETY: allergy/emergency. |
@@ -102,13 +114,44 @@ Return all 171 keys, in order, and nothing else after the code block.
 | doesnt_work~word_air_conditioning | The air conditioning doesn't work. | Кондиционер не работает. | kahn-dee-tsy-ah-NYER nee rah-BOH-tah-yeet |  |
 | doesnt_work~word_wi_fi | The Wi-Fi doesn't work. | Wi-Fi не работает. | vai-FAI nee rah-BOH-tah-yeet |  |
 | doesnt_work~word_hot_water | The hot water doesn't work. | Нет горячей воды. | nyet gah-RYAH-chey vah-DY |  |
-| doesnt_work~word_door_lock | The door lock doesn't work. | Дверной замок не работает. | dveer-NOY zah-MOK nee rah-BOH-tah-yeet |  |
+| doesnt_work~word_door_lock |  | Дверной замок не работает. | dveer-NOY zah-MOK nee rah-BOH-tah-yeet |  |
 | lost_my~word_passport | I lost my passport. | Я потерял/потеряла паспорт. | ya pah-tee-RYAHL/pah-tee-RYAH-lah PAHS-pahrt | SAFETY: allergy/emergency. |
 | lost_my~word_phone | I lost my phone. | Я потерял/потеряла телефон. | ya pah-tee-RYAHL/pah-tee-RYAH-lah tee-lee-FON | SAFETY: allergy/emergency. |
 | lost_my~word_wallet | I lost my wallet. | Я потерял/потеряла кошелёк. | ya pah-tee-RYAHL/pah-tee-RYAH-lah kah-shee-LYOK | SAFETY: allergy/emergency. |
-| lost_my~word_bag | I lost my bag. | Я потерял/потеряла сумку. | ya pah-tee-RYAHL/pah-tee-RYAH-lah SOOM-koo | SAFETY: allergy/emergency. |
+| lost_my~word_bag |  | Я потерял/потеряла сумку. | ya pah-tee-RYAHL/pah-tee-RYAH-lah SOOM-koo | SAFETY: allergy/emergency. |
 | lost_my~word_keys | I lost my keys. | Я потерял/потеряла ключи. | ya pah-tee-RYAHL/pah-tee-RYAH-lah klyoo-CHEE | SAFETY: allergy/emergency. |
 | lost_my~word_room_key | I lost my room key. | Я потерял/потеряла ключ от номера. | ya pah-tee-RYAHL/pah-tee-RYAH-lah klyooch at NOH-mee-rah | SAFETY: allergy/emergency. |
+| do_you_have~wifi | Do you have Wi-Fi? | У вас есть Wi-Fi? | oo vahs yest vai-FAI |  |
+| do_you_have~vegetarian_food | Do you have vegetarian food? | У вас есть вегетарианские блюда? | oo vahs yest vee-gee-tah-ree-AHN-skee-yeh BLYOO-dah | Lit. 'vegetarian dishes', the natural restaurant wording; вегетарианская еда (food) also works. |
+| do_you_have~charger | Do you have a phone charger? | У вас есть зарядка для телефона? | oo vahs yest zah-RYAHT-kah dlyah tee-lee-FOH-nah |  |
+| do_you_have~map | Do you have a map? | У вас есть карта города? | oo vahs yest KAR-tah GOH-rah-dah | Lit. 'a map of the city'; plain карта can also mean a bank card, so города was added. |
+| how_much_is~coffee | How much is a coffee? | Сколько стоит кофе? | SKOL-kah STOH-eet KOH-fyeh |  |
+| i_need~help | I need help, please. | Мне нужна помощь. | mnyeh noozh-NAH POH-mahshch | Back-translation: 'To me [is] needed help.' пожалуйста dropped: it sounds odd in an urgent request. In real danger shout Помогите! |
+| i_need~water | I need water, please. | Мне нужна вода, пожалуйста. | mnyeh noozh-NAH vah-DAH, pah-ZHAH-loo-stah | To ask for some to drink, Дайте, пожалуйста, воды (Give me some water, please) is more usual. |
+| i_need~taxi | I need a taxi, please. | Мне нужно такси, пожалуйста. | mnyeh NOOZH-nah tahk-SEE, pah-ZHAH-loo-stah | такси is neuter, hence нужно. Asking staff to order one: Вызовите мне такси, пожалуйста (Call me a taxi). |
+| is_there_nearby~bathroom | Is there a bathroom nearby? | Здесь рядом есть туалет? | zdyes RYAH-dahm yest too-ah-LYET |  |
+| is_there_nearby~pharmacy | Is there a pharmacy nearby? | Здесь рядом есть аптека? | zdyes RYAH-dahm yest ahp-TYEH-kah |  |
+| is_there_nearby~atm | Is there an ATM nearby? | Здесь рядом есть банкомат? | zdyes RYAH-dahm yest bahn-kah-MAHT |  |
+| is_there_nearby~supermarket | Is there a supermarket nearby? | Здесь рядом есть супермаркет? | zdyes RYAH-dahm yest soo-peer-MAR-keet |  |
+| pay_with~cash | Can I pay with cash? | Можно оплатить наличными? | MOZH-nah ahp-lah-TEET nah-LEECH-ny-mee |  |
+| pay_with~phone | Can I pay with my phone? | Можно оплатить телефоном? | MOZH-nah ahp-lah-TEET tee-lee-FOH-nahm | Lit. 'pay by phone'; Russian omits 'my'. Note: foreign-issued cards and phone wallets generally don't work in Russia, so cash may be the real answer. |
+| can_you~write | Can you write it down, please? | Можете это написать, пожалуйста? | MOH-zhuh-tyeh EH-tah nah-pee-SAHT, pah-ZHAH-loo-stah | Lit. 'Can you write this, please?'. Shorter and just as polite: Напишите, пожалуйста (nah-pee-SHEE-tyeh). |
+| like_without~coffee_milk | I'd like a coffee without milk. | Мне кофе без молока, пожалуйста. | mnyeh KOH-fyeh byez mah-lah-KAH, pah-ZHAH-loo-stah |  |
+| like_without~tea_sugar | I'd like a tea without sugar. | Мне чай без сахара, пожалуйста. | mnyeh chai byez SAH-khah-rah, pah-ZHAH-loo-stah |  |
+| like_without~water_ice | I'd like water without ice. | Мне воду без льда, пожалуйста. | mnyeh VOH-doo byez LDAH, pah-ZHAH-loo-stah |  |
+| can_i_here~sit | Can I sit here? | Можно здесь сесть? | MOZH-nah zdyes SYEST | For a free seat people usually ask Здесь свободно? (zdyes svah-BOD-nah, 'Is it free here?'). |
+| can_i_here~photos | Can I take photos here? | Можно здесь фотографировать? | MOZH-nah zdyes fah-tah-grah-FEE-rah-vat |  |
+| can_i_here~charge | Can I charge my phone here? | Можно здесь зарядить телефон? | MOZH-nah zdyes zah-ryah-DEET tee-lee-FON |  |
+| looking_for~my_hotel | I'm looking for my hotel. | Я ищу свою гостиницу. | ya ee-SHCHOO svah-YOO gah-STEE-nee-tsoo | свою = 'my own' (accusative); отель (ah-TEL, masc.: свой отель) is also common for hotels. |
+| looking_for~restaurant | I'm looking for a restaurant. | Я ищу ресторан. | ya ee-SHCHOO ree-stah-RAHN |  |
+| looking_for~exit | I'm looking for the exit. | Я ищу выход. | ya ee-SHCHOO VY-khat |  |
+| is_included~breakfast | Is breakfast included? | Завтрак входит в стоимость? | ZAHF-trak FKHOH-deet f STOH-ee-mahst | Hotels equally say Завтрак включён? (ZAHF-trak fklyoo-CHYON). |
+| is_included~tax | Is tax included? | Налог входит в стоимость? | nah-LOK FKHOH-deet f STOH-ee-mahst | Russian shelf prices normally include VAT (НДС), so this is rarely asked; a tourist/hotel tax would be туристический налог. |
+| is_included~wifi | Is Wi-Fi included? | Wi-Fi входит в стоимость? | vai-FAI FKHOH-deet f STOH-ee-mahst |  |
+| is_included~luggage | Is luggage included? | Багаж входит в стоимость? | bah-GAHSH FKHOH-deet f STOH-ee-mahst | For a flight ticket, Багаж включён в билет? (Is luggage included in the ticket?) is more specific. |
+| where_can_i~taxi | Where can I get a taxi? | Где можно взять такси? | gdyeh MOZH-nah VZYAHT tahk-SEE | Lit. 'Where can one take a taxi?'. In Russian cities taxis are mostly ordered by app (Яндекс Go). |
+| where_can_i~change_money | Where can I change money? | Где можно поменять деньги? | gdyeh MOZH-nah pah-mee-NYAHT DYEN-gee |  |
+| where_can_i~sim | Where can I buy a SIM card? | Где можно купить сим-карту? | gdyeh MOZH-nah koo-PEET seem-KAR-too | Foreigners need a passport to buy a SIM in Russia. |
 | reply~here_you_go | Here you go. | Вот, пожалуйста. | vot, pah-ZHAH-loo-stah | Said TO the traveller by staff. |
 | reply~inside_or_outside | Inside or outside? | Внутри или на улице? | vnoo-TREE EE-lee nah OO-lee-tseh | Said TO the traveller by staff. |
 | reply~how_many_people | How many people? | На сколько человек? | nah SKOL-kah chee-lah-VYEK | Said TO the traveller by staff. |

@@ -315,6 +315,72 @@
       "target": "Trebuie să sun pe cineva.",
       "pronunciation_easy": "TREH-boo-yeh suh soon peh chee-neh-VAH",
       "qa": "Literal: 'I must call someone.' Alternative: Am nevoie să sun pe cineva ('I need to call someone')."
+    },
+    {
+      "id": "do_you_have",
+      "target": "Aveți ___?",
+      "pronunciation_easy": "ah-VETS ___",
+      "qa": "Blank takes a mass noun bare (Aveți apă?) or a countable noun with un/o (Aveți o hartă?, Aveți un încărcător?)."
+    },
+    {
+      "id": "how_much_is",
+      "target": "Cât costă ___?",
+      "pronunciation_easy": "kuht KOS-tuh ___",
+      "qa": "Blank takes un/o for 'a' (un bilet, o cafea) or the definite article for 'the' (camera). Costă is the same for singular and plural (Cât costă biletele?)."
+    },
+    {
+      "id": "i_need",
+      "target": "Am nevoie de ___, vă rog.",
+      "pronunciation_easy": "ahm neh-VOH-yeh deh ___, vuh rohg",
+      "qa": "Safety phrase. Literal: 'I have need of ___, please.' After de the noun is bare (de ajutor, de apă) or with un/o (de un taxi, de un doctor). Gender-neutral. The doctor variant reuses need_doctor (Am nevoie de un doctor = 'I have need of a doctor'); in a real emergency the number is 112."
+    },
+    {
+      "id": "is_there_nearby",
+      "target": "Este ___ pe aproape?",
+      "pronunciation_easy": "YES-teh ___ peh ah-PRWAH-peh",
+      "qa": "Blank takes vreun (masculine/neuter) or vreo (feminine) + noun, i.e. 'any': vreun bancomat, vreo farmacie. Un/o also works. Pe aici ('around here') is an equally common ending."
+    },
+    {
+      "id": "pay_with",
+      "target": "Pot plăti cu ___?",
+      "pronunciation_easy": "poht pluh-TEE koo ___",
+      "qa": "Matches pay_card. Blank takes the noun with its definite article (cu cardul, cu telefonul). Cash is different: Pot plăti cash? (no cu); formal: în numerar."
+    },
+    {
+      "id": "can_you",
+      "target": "Puteți ___, vă rog?",
+      "pronunciation_easy": "poo-TETS ___, vuh rohg",
+      "qa": "Blank takes a verb: bare infinitive (vorbi mai rar) or să + subjunctive (să repetați). Object pronouns go before puteți (Mă puteți ajuta?) or attach to să (să-mi scrieți)."
+    },
+    {
+      "id": "like_without",
+      "target": "Aș dori ___ fără ___.",
+      "pronunciation_easy": "ash doh-REE ___ FUH-ruh ___",
+      "qa": "First blank takes un/o + noun (o cafea, un ceai) or a bare mass noun (apă); after fără the noun is bare (fără lapte). Gender-neutral."
+    },
+    {
+      "id": "can_i_here",
+      "target": "Pot să ___ aici?",
+      "pronunciation_easy": "poht suh ___ ah-EETCH",
+      "qa": "Blank takes a first-person verb in the subjunctive (să parchez, să fac poze). Reflexive/object pronouns attach to să (să-mi încarc)."
+    },
+    {
+      "id": "looking_for",
+      "target": "Caut ___.",
+      "pronunciation_easy": "KAH-oot ___",
+      "qa": "Blank takes the noun with its definite article (intrarea, hotelul meu) or with un/o (un restaurant). For a person add pe: Caut pe cineva."
+    },
+    {
+      "id": "is_included",
+      "target": "___ este inclus?",
+      "pronunciation_easy": "___ YES-teh een-KLOOS",
+      "qa": "Matches tip_included. Blank takes the noun with its definite article. Inclus agrees: inclus (masculine/neuter), inclusă (feminine), incluse / sunt incluse (plural)."
+    },
+    {
+      "id": "where_can_i",
+      "target": "Unde pot să ___?",
+      "pronunciation_easy": "OON-deh poht suh ___",
+      "qa": "Blank takes a first-person subjunctive verb (să cumpăr, să schimb). Bare infinitive also works: Unde pot cumpăra bilete?"
     }
   ],
   "vocab": {
@@ -986,6 +1052,223 @@
         "word": "word_room_key",
         "target": "Mi-am pierdut cheia de la cameră.",
         "pronunciation_easy": "myahm pyer-DOOT KAY-ah deh lah KAH-meh-ruh"
+      }
+    ],
+    "do_you_have": [
+      {
+        "word": "wifi",
+        "target": "Aveți Wi-Fi?",
+        "pronunciation_easy": "ah-VETS WAI-fai",
+        "qa": "Said as in English (wai-fai); some say wee-fee."
+      },
+      {
+        "word": "vegetarian_food",
+        "target": "Aveți mâncare vegetariană?",
+        "pronunciation_easy": "ah-VETS muhn-KAH-reh veh-jeh-tah-ree-AH-nuh",
+        "qa": "In a restaurant also: Aveți preparate vegetariene? ('vegetarian dishes')."
+      },
+      {
+        "word": "charger",
+        "target": "Aveți un încărcător de telefon?",
+        "pronunciation_easy": "ah-VETS oon in-kuhr-kuh-TOR deh teh-leh-FON"
+      },
+      {
+        "word": "map",
+        "target": "Aveți o hartă?",
+        "pronunciation_easy": "ah-VETS oh HAR-tuh"
+      }
+    ],
+    "how_much_is": [
+      {
+        "word": "ticket",
+        "target": "Cât costă un bilet?",
+        "pronunciation_easy": "kuht KOS-tuh oon bee-LET"
+      },
+      {
+        "word": "coffee",
+        "target": "Cât costă o cafea?",
+        "pronunciation_easy": "kuht KOS-tuh oh kah-FYAH"
+      },
+      {
+        "word": "room",
+        "target": "Cât costă camera?",
+        "pronunciation_easy": "kuht KOS-tuh KAH-meh-rah",
+        "qa": "Per night: Cât costă camera pe noapte?"
+      }
+    ],
+    "i_need": [
+      {
+        "word": "help",
+        "target": "Am nevoie de ajutor, vă rog.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh ah-zhoo-TOR, vuh rohg",
+        "qa": "Safety. Literal: 'I have need of help, please.' Natural and clear; urgently people shout Ajutor! or ask Mă puteți ajuta?"
+      },
+      {
+        "word": "water",
+        "target": "Am nevoie de apă, vă rog.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh AH-puh, vuh rohg"
+      },
+      {
+        "word": "taxi",
+        "target": "Am nevoie de un taxi, vă rog.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh oon tak-SEE, vuh rohg",
+        "qa": "To ask someone to call one: Îmi puteți chema un taxi?"
+      }
+    ],
+    "is_there_nearby": [
+      {
+        "word": "bathroom",
+        "target": "Este vreo toaletă pe aproape?",
+        "pronunciation_easy": "YES-teh vryoh toh-ah-LEH-tuh peh ah-PRWAH-peh",
+        "qa": "Toaletă is the neutral word; signs often say WC."
+      },
+      {
+        "word": "pharmacy",
+        "target": "Este vreo farmacie pe aproape?",
+        "pronunciation_easy": "YES-teh vryoh far-mah-CHEE-eh peh ah-PRWAH-peh"
+      },
+      {
+        "word": "atm",
+        "target": "Este vreun bancomat pe aproape?",
+        "pronunciation_easy": "YES-teh vryoon ban-koh-MAHT peh ah-PRWAH-peh"
+      },
+      {
+        "word": "supermarket",
+        "target": "Este vreun supermarket pe aproape?",
+        "pronunciation_easy": "YES-teh vryoon soo-per-MAR-ket peh ah-PRWAH-peh"
+      }
+    ],
+    "pay_with": [
+      {
+        "word": "cash",
+        "target": "Pot plăti cash?",
+        "pronunciation_easy": "poht pluh-TEE kesh",
+        "qa": "Cash (said kesh) is the everyday word, with no cu. Formal: Pot plăti în numerar?"
+      },
+      {
+        "word": "phone",
+        "target": "Pot plăti cu telefonul?",
+        "pronunciation_easy": "poht pluh-TEE koo teh-leh-FOH-nool"
+      }
+    ],
+    "can_you": [
+      {
+        "word": "write",
+        "target": "Puteți să-mi scrieți, vă rog?",
+        "pronunciation_easy": "poo-TETS suh-mee SKREE-ets, vuh rohg",
+        "qa": "Literal: 'Can you write (it) for me, please?' Object left out so it fits any thing (price, address); unsure if a reviewer prefers Mi-l puteți scrie? / Puteți să-mi scrieți asta?"
+      }
+    ],
+    "like_without": [
+      {
+        "word": "coffee_milk",
+        "target": "Aș dori o cafea fără lapte.",
+        "pronunciation_easy": "ash doh-REE oh kah-FYAH FUH-ruh LAHP-teh"
+      },
+      {
+        "word": "tea_sugar",
+        "target": "Aș dori un ceai fără zahăr.",
+        "pronunciation_easy": "ash doh-REE oon chye FUH-ruh ZAH-huhr"
+      },
+      {
+        "word": "water_ice",
+        "target": "Aș dori apă fără gheață.",
+        "pronunciation_easy": "ash doh-REE AH-puh FUH-ruh GYAH-tsuh",
+        "qa": "For a bottle: o apă; you may be asked plată sau minerală? (still or sparkling)."
+      }
+    ],
+    "can_i_here": [
+      {
+        "word": "sit",
+        "target": "Pot să stau aici?",
+        "pronunciation_easy": "poht suh stow ah-EETCH",
+        "qa": "For a free seat, E liber? ('Is it free?') is the most common question."
+      },
+      {
+        "word": "park",
+        "target": "Pot să parchez aici?",
+        "pronunciation_easy": "poht suh par-KEZ ah-EETCH"
+      },
+      {
+        "word": "photos",
+        "target": "Pot să fac poze aici?",
+        "pronunciation_easy": "poht suh fahk POH-zeh ah-EETCH",
+        "qa": "Poze is everyday; formal signs say fotografii."
+      },
+      {
+        "word": "charge",
+        "target": "Pot să-mi încarc telefonul aici?",
+        "pronunciation_easy": "poht suh-mee in-KARK teh-leh-FOH-nool ah-EETCH"
+      }
+    ],
+    "looking_for": [
+      {
+        "word": "my_hotel",
+        "target": "Caut hotelul meu.",
+        "pronunciation_easy": "KAH-oot hoh-TEH-lool mehw"
+      },
+      {
+        "word": "entrance",
+        "target": "Caut intrarea.",
+        "pronunciation_easy": "KAH-oot een-TRAH-ryah"
+      },
+      {
+        "word": "restaurant",
+        "target": "Caut un restaurant.",
+        "pronunciation_easy": "KAH-oot oon res-tow-RANT"
+      },
+      {
+        "word": "exit",
+        "target": "Caut ieșirea.",
+        "pronunciation_easy": "KAH-oot yeh-SHEE-ryah"
+      }
+    ],
+    "is_included": [
+      {
+        "word": "breakfast",
+        "target": "Micul dejun este inclus?",
+        "pronunciation_easy": "MEE-kool deh-ZHOON YES-teh een-KLOOS"
+      },
+      {
+        "word": "tax",
+        "target": "TVA-ul este inclus?",
+        "pronunciation_easy": "teh-veh-AH-ool YES-teh een-KLOOS",
+        "qa": "TVA is VAT, normally already in Romanian prices. For hotel/city taxes ask Taxele sunt incluse? Reviewer may prefer that."
+      },
+      {
+        "word": "wifi",
+        "target": "Wi-Fi-ul este inclus?",
+        "pronunciation_easy": "WAI-fai-ool YES-teh een-KLOOS"
+      },
+      {
+        "word": "luggage",
+        "target": "Bagajul este inclus?",
+        "pronunciation_easy": "bah-GAH-zhool YES-teh een-KLOOS",
+        "qa": "For flights, checked luggage is bagajul de cală."
+      }
+    ],
+    "where_can_i": [
+      {
+        "word": "buy_tickets",
+        "target": "Unde pot să cumpăr bilete?",
+        "pronunciation_easy": "OON-deh poht suh KOOM-puhr bee-LEH-teh"
+      },
+      {
+        "word": "taxi",
+        "target": "Unde pot să găsesc un taxi?",
+        "pronunciation_easy": "OON-deh poht suh guh-SESK oon tak-SEE",
+        "qa": "Literal: 'Where can I find a taxi?' (Romanian uses găsi, not 'get')."
+      },
+      {
+        "word": "change_money",
+        "target": "Unde pot să schimb bani?",
+        "pronunciation_easy": "OON-deh poht suh skeemb bahn",
+        "qa": "An exchange office is a casă de schimb (valutar)."
+      },
+      {
+        "word": "sim",
+        "target": "Unde pot să cumpăr o cartelă SIM?",
+        "pronunciation_easy": "OON-deh poht suh KOOM-puhr oh kar-TEH-luh seem"
       }
     ]
   },

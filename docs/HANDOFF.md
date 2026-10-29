@@ -73,6 +73,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Retention update shipped 2026-10-15** (details at the end of `docs/lock-it-in.md`): keep checks on Locked in phrases (30/60/120/180 days), reviews that get harder (say → type → answer a reply), self-grading typed answers, say-it-back after listening checks, and a daily calendar reminder in More. Known gap: typed answers are checked against the dataset's one form, so a woman typing "Obrigada" is marked wrong (gender variants are a v2 item).
 
+**Swap it shipped 2026-10-29** (`js/variants.js`): pattern phrases show a row of chips ("___" default, then 3–5 variations); tapping one swaps the phrase, pronunciation, English, audio and the record-and-compare target, on lookup cards and in the phrase player (Say it, sessions). Variations are complete sentences per language (content/added/<code>.json → examples), never word-in-template; `same_as` variations reuse an existing phrase and its recording. 24 patterns / 105 variations in all 9 languages (13 earlier frames + 11 new: do_you_have, how_much_is, i_need, is_there_nearby, pay_with, can_you, like_without, can_i_here, looking_for, is_included, where_can_i). All new text is Claude drafts. Portuguese: Claudia recordings for every frame and variation (`node scripts/generate-audio.mjs --lang=pt-PT --swaps`); still phone voice in pt-PT: 48 draft phrases and 13 replies.
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**
