@@ -929,3 +929,13 @@ body.showit-open { overflow: hidden; }
 /* Cards never push the page wider than the screen: the action row wraps, and list items may shrink */
 .list > * { min-width: 0; }
 .card-actions { flex-wrap: wrap; row-gap: 6px; }
+
+/* Build it: tap word tiles into order */
+.bd-answer { display: flex; flex-wrap: wrap; gap: 8px; min-height: 56px; margin: 14px 0 10px; padding: 8px; border-radius: 14px; border: 2px dashed color-mix(in srgb, var(--accent) 35%, var(--line)); background: var(--surface-2); align-content: flex-start; justify-content: center; }
+.bd-answer.empty { align-items: center; }
+.bd-placeholder { color: var(--faint); font-size: 14px; font-weight: 600; }
+.bd-bank { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.bd-tile { min-height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-family: var(--font-native); font-weight: 700; font-size: 17px; color: var(--ink); box-shadow: 0 2px 0 var(--line); }
+.bd-tile.placed { background: var(--tint); border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
+.bd-tile:disabled { opacity: .25; box-shadow: none; }
+.pp-next[disabled] { opacity: .5; }

@@ -316,3 +316,10 @@ The owner kept pressing "Got it" because it wasn't clear what "Not yet" did. Cha
 - **The ladder is now Recognize → Say → Write → Answer** (box 1 → 4; `LADDER` in `js/plan.js`). Recognize (hear and see it, pick the meaning from 3) and Write (type it) are graded by the app, so self-rating only happens on the speaking rungs. A small indicator above each review shows the four rungs and the current one.
 - **Rating buttons say what they do:** "Not yet: again in a minute, and tomorrow" / "Got it: next check in 7 days" (or "Locked in", or "Starts reviews: back tomorrow" for new phrases), plus "Not sure? Choose Not yet. It isn't failing: seeing it again soon is how it sticks."
 - **Updates:** when a new version takes over, the app reloads itself (or offers "Update" mid-session). More shows the version number.
+
+### Build it (2026-10-29)
+
+A sentence-building step: the English is shown and the phrase's words are shuffled tiles (plus one decoy word for 3+ word phrases); tap them in order, tap a placed one to take it back, then Check. Graded by the app (`buildIsRight` in `js/plan.js`).
+- **Quick check** of a new phrase now uses Build (graded) instead of "say it and rate yourself", when the phrase has 2+ words.
+- **The ladder is Recognize → Build → Say → Write** (box 1 → 4); **Answer** moved to the keep checks on Locked in phrases (rotating Answer → Write → Say).
+- Skipped (falls back to Say) for one-word phrases, frames with a blank, and Japanese (no spaces to split words on).

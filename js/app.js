@@ -5,7 +5,7 @@ import * as mic from './speak.js';
 import { shortVoiceName } from './voices.js';
 import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
-import { planSession, requeue, readiness, reviewMode, LADDER } from './plan.js';
+import { planSession, requeue, readiness, reviewMode, LADDER, buildTiles, buildIsRight, canBuildPhrase } from './plan.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -828,7 +828,7 @@ function typeResult(s) {
   }[r.verdict] || '';
   return `<div class="take type-take ${['correct', 'marks'].includes(r.verdict) ? 'good' : r.verdict === 'revealed' ? '' : 'failed'}">
     <p class="take-verdict">${head}</p>
-    ${s.typed ? `<p class="heard">You wrote: <bdi ${nativeAttrs(L.lang)}>${esc(s.typed)}</bdi></p>` : ''}
+    ${s.typed ? `<p class="heard">${s.built ? 'You built' : 'You wrote'}: <bdi ${nativeAttrs(L.lang)}>${esc(s.typed)}</bdi></p>` : ''}
     ${r.notes.length ? `<ul class="type-notes">${r.notes.map((n) => `<li>${esc(n.text)}</li>`).join('')}</ul>` : ''}
   </div>`;
 }
@@ -923,7 +923,7 @@ function drawSession() {
   if (s.i >= s.steps.length) { drawSessionDone(); return; }
   const st = s.steps[s.i];
   const top = `<div class="fc-progress"><span style="width:${Math.round((s.i / s.steps.length) * 100)}%"></span></div>
-    <p class="fc-meta">${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length} ${['review', 'practice'].includes(st.kind) ? ladderHtml(st.ask || (st.ask = askFor(st))) : ''}</p>`;
+    <p class="fc-meta">${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length} ${['review', 'practice', 'check'].includes(st.kind) ? ladderHtml(st.ask || (st.ask = askFor(st))) : ''}</p>`;
 
   if (st.kind === 'listen') {
     const p = st.p;
@@ -1004,11 +1004,13 @@ function drawSessionDone() {
 // How a recall step asks for its phrase. Reviews get harder as the phrase gets stronger (js/plan.js);
 // the quick check of brand-new phrases is always "say it".
 function askFor(st) {
+  const canBuild = canBuildPhrase(st.p.target, !!L.lang.meta.no_spaces);
+  if (st.kind === 'check') return canBuild ? 'build' : 'say'; // right after learning: rebuild it, graded
   if (st.kind !== 'review' && st.kind !== 'practice') return 'say';
   const r = store.get().srs[st.p.key];
   const fits = canSpeak() ? L.replies.filter((x) => x.answer_with.includes(st.p.id)) : [];
   if (fits.length) st.reply = fits[Math.floor(Math.random() * fits.length)];
-  const mode = reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern' });
+  const mode = reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern', canBuild });
   if (mode === 'recognize') st.options = recognizeOptions(st.p);
   return mode;
 }
@@ -1022,7 +1024,7 @@ function recognizeOptions(p) {
 }
 
 // The ladder under a review: where this phrase is (Recognize · Say · Write · Answer).
-const RUNG = { recognize: 'Recognize', say: 'Say', type: 'Write', answer: 'Answer' };
+const RUNG = { recognize: 'Recognize', build: 'Build', say: 'Say', type: 'Write', answer: 'Answer' };
 function ladderHtml(ask) {
   if (!ask) return '';
   return `<span class="ladder" aria-label="Level: ${RUNG[ask]}">${LADDER.map((r) => `<span class="${r === ask ? 'on' : ''}">${RUNG[r]}</span>`).join('')}</span>`;
@@ -1461,6 +1463,25 @@ function promptInner() {
   const { p, ask, reply } = pl;
   const lang = L.lang;
   const failed = pl.take && !pl.take.url && !pl.take.transcript;
+  if (ask === 'build') {
+    // Build it: tap the words in order; tap a placed word to take it back.
+    if (!pl.build) {
+      const others = shuffle(L.phrases.filter((x) => !x.missing && x.id !== p.id)).slice(0, 12).map((x) => x.target);
+      pl.build = { tiles: buildTiles(p.target, { decoyFrom: others }), picked: [] };
+    }
+    const { tiles, picked } = pl.build;
+    const byId = new Map(tiles.map((t) => [t.id, t]));
+    const hasDecoy = tiles.some((t) => t.decoy);
+    return `<article class="pp-phrase pp-prompt"><span class="fc-label">Build it in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>
+        <div class="bd-answer ${picked.length ? '' : 'empty'}" ${nativeAttrs(lang)} aria-label="Your sentence">${picked.length
+          ? picked.map((id, i) => `<button class="bd-tile placed" data-action="bd-unpick" data-i="${i}">${esc(byId.get(id).text)}</button>`).join('')
+          : '<span class="bd-placeholder">Tap the words in order</span>'}</div>
+        <div class="bd-bank" ${nativeAttrs(lang)}>${tiles.map((t) => `<button class="bd-tile" data-action="bd-pick" data-id="${t.id}" ${picked.includes(t.id) ? 'disabled' : ''}>${esc(t.text)}</button>`).join('')}</div>
+        ${hasDecoy ? '<p class="fine center">One word doesn’t belong.</p>' : ''}
+      </article>
+      <button class="cta pp-next" data-action="bd-check" ${picked.length ? '' : 'disabled'}>Check</button>
+      <button class="more-btn pp-next" data-action="pp-reveal">Show me</button>`;
+  }
   if (ask === 'type') {
     return `<article class="pp-phrase pp-prompt"><span class="fc-label">Type it in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>
         <form class="type-form" data-pp-type>
@@ -1487,6 +1508,21 @@ function promptInner() {
       ${pl.rec ? '' : micPrimer()}
     </div>` : ''}
     <button class="${canPracticeAloud() ? 'more-btn' : 'cta'} pp-next" data-action="pp-reveal">${canPracticeAloud() ? 'Show me without speaking' : 'Show me'}</button>`;
+}
+
+// Build it: graded like typing. Right order = Got it; anything else comes back sooner.
+function plBuildCheck(reveal = false) {
+  if (!pl?.build) return;
+  const p = pl.p;
+  const byId = new Map(pl.build.tiles.map((t) => [t.id, t]));
+  const words = pl.build.picked.map((id) => byId.get(id).text);
+  const ok = !reveal && buildIsRight(p.target, words);
+  pl.typed = reveal ? '' : words.join(L.lang.meta.no_spaces ? '' : ' ');
+  pl.built = true;
+  pl.check = reveal ? { verdict: 'revealed', notes: [] } : ok ? { verdict: 'correct', notes: [] } : { verdict: 'wrong', notes: [{ text: 'Compare the word order with the right version above.' }] };
+  pl.step = 'reveal';
+  drawPlayer();
+  plListen(); // hear the right version straight away
 }
 
 // Type it, inside a review: checked letter by letter; only a correct answer counts as Got it.
@@ -1536,10 +1572,10 @@ function playerInner() {
   if (where === 'session' && step === 'reveal' && pl.check) {
     // Typed: the checker decides. Exactly right (accents may be off) counts; anything else comes back sooner.
     const ok = ['correct', 'marks'].includes(pl.check.verdict);
-    next = `${typeResult({ check: pl.check, typed: pl.typed })}
+    next = `${typeResult({ check: pl.check, typed: pl.typed, built: pl.built })}
       ${ok ? lockHint(p) : ''}
       <button class="cta pp-next" data-action="${ok ? 'ss-got' : 'ss-again'}">${ok ? `${icon('check')} Next` : `Next ${icon('arrow')}`}</button>
-      <p class="fine center">${ok ? 'Counted as Got it.' : 'Counted as Not yet: again in a minute, and tomorrow. That’s how it sticks.'}</p>`;
+      <p class="fine center">${ok ? 'Counted as Got it.' : session?.steps[session.i]?.kind === 'check' ? 'Counted as Not yet: it comes back in a minute.' : 'Counted as Not yet: again in a minute, and tomorrow. That’s how it sticks.'}</p>`;
   } else if (where === 'session' && step === 'reveal') {
     // Said: you judge, but if the phone's speech check heard little of it, Not yet is the honest default.
     const score = pl.take?.transcript ? mic.compare(p.target, pl.take.transcript, { charMode: !!L.lang.meta.no_spaces, alt: p.reading }).score : null;
@@ -2039,6 +2075,16 @@ document.addEventListener('click', (e) => {
     if (fresh) fresh.scrollLeft = scroll;
     syncListen();
     if (btn.dataset.v && canSpeak()) speakPhrase(shownFor(p).id);
+  } else if (a === 'bd-pick') {
+    if (!pl?.build) return;
+    if (!pl.build.picked.includes(btn.dataset.id)) pl.build.picked.push(btn.dataset.id);
+    drawPlayer();
+  } else if (a === 'bd-unpick') {
+    if (!pl?.build) return;
+    pl.build.picked.splice(Number(btn.dataset.i), 1);
+    drawPlayer();
+  } else if (a === 'bd-check') {
+    plBuildCheck();
   } else if (a === 'pp-ask-say') {
     if (!pl) return;
     pl.ask = 'say';
@@ -2047,6 +2093,7 @@ document.addEventListener('click', (e) => {
   } else if (a === 'pp-reveal') {
     if (!pl) return;
     if (pl.ask === 'type') { plType(true); return; }
+    if (pl.ask === 'build') { plBuildCheck(true); return; }
     capture?.stop();
     pl.step = 'reveal';
     drawPlayer();

@@ -63,15 +63,47 @@ export function readiness(sit, isLearned, has = () => true) {
 }
 
 // How a review asks for a phrase: a ladder from easiest to hardest, one rung per review box.
-//   recognize - hear and see it, pick the meaning (graded by the app)        box 1
-//   say       - see the English, say it, then hear the native voice           box 2
-//   type      - see the English, type it from memory (graded by the app)      box 3
-//   answer    - hear something staff say and answer with it                   box 4
-// Keep checks on Locked in phrases rotate through the hard rungs (type, answer, say).
-export const LADDER = ['recognize', 'say', 'type', 'answer'];
-export function reviewMode({ box = 1, keep = false, stage = 0, hasReply = false, canType = true } = {}) {
-  let mode = keep ? ['type', 'answer', 'say'][stage % 3] : LADDER[Math.min(Math.max(box, 1), 4) - 1];
+//   recognize - hear and see it, pick the meaning (graded by the app)          box 1
+//   build     - put its words in order from shuffled tiles (graded by the app)  box 2
+//   say       - see the English, say it, then hear the native voice             box 3
+//   type      - see the English, type it from memory (graded by the app)        box 4
+//   answer    - hear something staff say and answer with it                     keep checks
+// Keep checks on Locked in phrases rotate through the hardest rungs (answer, type, say).
+// A rung that can't apply (no tiles for one word or Japanese, no reply, a frame can't be typed) falls back to say.
+export const LADDER = ['recognize', 'build', 'say', 'type', 'answer'];
+export function reviewMode({ box = 1, keep = false, stage = 0, hasReply = false, canType = true, canBuild = true } = {}) {
+  let mode = keep ? ['answer', 'type', 'say'][stage % 3] : LADDER[Math.min(Math.max(box, 1), 4) - 1];
   if (mode === 'answer' && !hasReply) mode = keep ? 'type' : 'say';
   if (mode === 'type' && !canType) mode = 'say';
+  if (mode === 'build' && !canBuild) mode = 'say';
   return mode;
+}
+
+/* ---------- Build it: put the words in order ---------- */
+
+// The words of a phrase as tiles, without punctuation ("¿Dónde está el baño?" → Dónde · está · el · baño).
+const PUNCT = /^[\s¿¡«»"“”'‘’(]+|[\s.,!?;:…»"“”'‘’)،؟]+$/gu;
+export function buildTokens(target) {
+  return String(target).split(/\s+/).map((w) => w.replace(PUNCT, '')).filter(Boolean);
+}
+// Worth building: two or more words, no blank, written with spaces between words.
+export const canBuildPhrase = (target, noSpaces = false) => !noSpaces && !/_{2,}/.test(target) && buildTokens(target).length >= 2;
+
+// Shuffled tiles: the phrase's words plus, for 3+ words, one decoy from another phrase.
+export function buildTiles(target, { decoyFrom = [], rand = Math.random } = {}) {
+  const words = buildTokens(target);
+  const tiles = words.map((text, i) => ({ id: `w${i}`, text }));
+  if (words.length >= 3) {
+    const lower = new Set(words.map((w) => w.toLowerCase()));
+    const pool = decoyFrom.flatMap(buildTokens).filter((w) => !lower.has(w.toLowerCase()));
+    if (pool.length) tiles.push({ id: 'decoy', text: pool[Math.floor(rand() * pool.length)], decoy: true });
+  }
+  for (let i = tiles.length - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [tiles[i], tiles[j]] = [tiles[j], tiles[i]]; }
+  return tiles;
+}
+// Right if the picked words spell the phrase (case-insensitive; repeated words can come in either copy).
+export function buildIsRight(target, pickedTexts) {
+  const want = buildTokens(target).map((w) => w.toLowerCase());
+  const got = pickedTexts.map((w) => w.toLowerCase());
+  return want.length === got.length && want.every((w, i) => w === got[i]);
 }

@@ -81,13 +81,35 @@ test('listening check can use a reply from the situation', () => {
 
 import { reviewMode } from '../js/plan.js';
 
-test('reviews climb a ladder: recognize, say, write, answer', () => {
+test('reviews climb a ladder: recognize, build, say, write; keep checks answer', () => {
   assert.equal(reviewMode({ box: 1 }), 'recognize');
-  assert.equal(reviewMode({ box: 2 }), 'say');
-  assert.equal(reviewMode({ box: 3 }), 'type');
-  assert.equal(reviewMode({ box: 4, hasReply: true }), 'answer');
-  assert.equal(reviewMode({ box: 4 }), 'say', 'no reply fits: say it instead');
-  assert.equal(reviewMode({ box: 3, canType: false }), 'say');
-  assert.deepEqual([0, 1, 2].map((stage) => reviewMode({ keep: true, stage, hasReply: true })), ['type', 'answer', 'say']);
-  assert.equal(reviewMode({ keep: true, stage: 1 }), 'type', 'keep check without a reply: type');
+  assert.equal(reviewMode({ box: 2 }), 'build');
+  assert.equal(reviewMode({ box: 2, canBuild: false }), 'say', 'one word or Japanese: say it instead');
+  assert.equal(reviewMode({ box: 3 }), 'say');
+  assert.equal(reviewMode({ box: 4 }), 'type');
+  assert.equal(reviewMode({ box: 4, canType: false }), 'say');
+  assert.deepEqual([0, 1, 2].map((stage) => reviewMode({ keep: true, stage, hasReply: true })), ['answer', 'type', 'say']);
+  assert.equal(reviewMode({ keep: true, stage: 0 }), 'type', 'keep check without a reply: type');
+});
+
+import { buildTokens, buildTiles, buildIsRight, canBuildPhrase } from '../js/plan.js';
+
+test('build it: tiles are the words without punctuation, plus one decoy for longer phrases', () => {
+  assert.deepEqual(buildTokens('¿Dónde está el baño?'), ['Dónde', 'está', 'el', 'baño']);
+  assert.deepEqual(buildTokens('Где аптека?'), ['Где', 'аптека']);
+  assert.deepEqual(buildTokens('وين الصيدلية؟'), ['وين', 'الصيدلية']);
+  const tiles = buildTiles('Onde fica a farmácia?', { decoyFrom: ['Um café, por favor.'], rand: () => 0 });
+  assert.equal(tiles.length, 5);
+  assert.equal(tiles.filter((t) => t.decoy).length, 1);
+  assert.equal(buildTiles('Obrigado pela ajuda.', { decoyFrom: [] }).length, 3, 'no decoy available: just the words');
+});
+
+test('build it: right only in the right order; one word, frames and Japanese are skipped', () => {
+  assert.equal(buildIsRight('Onde fica a farmácia?', ['onde', 'fica', 'a', 'farmácia']), true);
+  assert.equal(buildIsRight('Onde fica a farmácia?', ['fica', 'onde', 'a', 'farmácia']), false);
+  assert.equal(buildIsRight('O que é que isto leva?', ['O', 'que', 'é', 'que', 'isto', 'leva']), true, 'repeated words');
+  assert.equal(canBuildPhrase('Sim'), false);
+  assert.equal(canBuildPhrase('Onde fica ___?'), false);
+  assert.equal(canBuildPhrase('バス停はどこですか？', true), false);
+  assert.equal(canBuildPhrase('Com licença'), true);
 });
