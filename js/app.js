@@ -615,7 +615,7 @@ function viewPhrases(query) {
   const lang = L.lang;
   const sel = query.get('s') || (query.get('cat') === 'saved' ? 'saved' : 'all');
   const q = (query.get('q') || '').trim();
-  const chips = [['all', 'All', ''], ['saved', 'Saved', '★'], ...C.scenarios.map((x) => [x.id, x.label, x.icon])];
+  const chips = [['all', 'All', ''], ['saved', 'Saved', '★'], ['patterns', 'Patterns', '🧩'], ...C.scenarios.map((x) => [x.id, x.label, x.icon])];
   page('phrases', `
     <div class="search">${icon('search')}<input id="q" type="search" inputmode="search" placeholder="Search English, ${esc(lang.native_name)} or sounds" value="${esc(q)}" autocomplete="off"></div>
     <div class="chips" role="tablist">${chips.map(([id, label, ic]) =>
@@ -637,6 +637,7 @@ function renderList(sel, q) {
     items = L.phrases.filter((p) => [p.english, p.target, p.reading, p.pron, p.regional_note, p.usage_note]
       .some((x) => x && x.toLowerCase().includes(needle)));
   } else if (sel === 'saved') items = L.phrases.filter((p) => store.isFav(p.key));
+  else if (sel === 'patterns') items = L.phrases.filter((p) => !p.missing && variantsOf(p).length); // Swap it frames
   else if (sit) items = sitPhrases(sit);
   else items = L.phrases.filter((p) => !p.missing);
   const el = document.getElementById('list');
@@ -646,6 +647,7 @@ function renderList(sel, q) {
     return;
   }
   const head = needle ? `${items.length} match${items.length === 1 ? '' : 'es'} in all phrases`
+    : sel === 'patterns' ? `${items.length} patterns · tap a chip to swap the blank`
     : sit ? `${sit.icon} ${esc(sit.label)} · ${items.length} phrases · <a class="link-btn" href="#/${L.lang.code}/scenario/${sit.id}">Get ready ${icon('chev')}</a>`
       : `${items.length} phrase${items.length === 1 ? '' : 's'}`;
   el.innerHTML = `<p class="count">${head}</p>${items.map((p) => phraseCard(p)).join('')}`;
