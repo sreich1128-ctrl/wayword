@@ -3,6 +3,7 @@ import { store } from './store.js';
 import * as tts from './speech.js';
 import * as mic from './speak.js';
 import { shortVoiceName } from './voices.js';
+import { sfx } from './sfx.js';
 import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
 import { planSession, requeue, readiness, reviewMode, LADDER, buildTiles, buildIsRight, canBuildPhrase } from './plan.js';
@@ -557,6 +558,27 @@ function reminderGoogle() {
   window.open(`https://calendar.google.com/calendar/render?${q}`, '_blank', 'noopener');
 }
 
+// Your scoreboard for this language: personal bests, no leaderboard, no streak to lose.
+function scoreboardHtml() {
+  const code = L.lang.code;
+  const sc = scoresFor(code);
+  const c = store.counts(code);
+  const month = todayIso().slice(0, 7);
+  const days = Object.keys(sc.days || {}).filter((d) => d.startsWith(month)).length;
+  if (!sc.sessions && !c.started) return '';
+  const cell = (v, k) => `<div><b>${v}</b><small>${k}</small></div>`;
+  return section('Scoreboard', `<div class="board big">
+      ${cell(sc.sessions || 0, 'sessions')}
+      ${cell(sc.totalRight || 0, 'right answers')}
+      ${cell(`🔥 ${sc.bestCombo || 0}`, 'best combo')}
+      ${cell(sc.fastestPerfect ? fmtTime(sc.fastestPerfect) : '–', 'fastest perfect')}
+      ${cell(c.locked, 'locked in')}
+      ${cell(days, 'days this month')}
+      ${sc.race?.best != null ? cell(`${sc.race.best}/8`, 'Swap race best') : ''}
+      ${sc.race?.fastest ? cell(fmtTime(sc.race.fastest), 'fastest race') : ''}
+    </div>`);
+}
+
 // More: everything that isn't the daily loop or looking a phrase up.
 function viewMore() {
   const lang = L.lang;
@@ -565,7 +587,9 @@ function viewMore() {
   const patterns = L.phrases.filter((p) => p.type === 'pattern' && !p.missing).length;
   page('more', `
     <section class="page-head"><h1>More</h1></section>
+    ${scoreboardHtml()}
     ${section('Stay on it', `<div class="group">
+      ${row({ action: 'toggle-sfx', ic: 'sound', title: 'Sounds', sub: sfx.enabled() ? 'On: a ding for right, a soft note for not quite' : 'Off', attrs: 'id="sfx-row"' })}
       ${row({ action: 'reminder-sheet', ic: 'bell', title: 'Daily reminder', sub: store.prefs().reminder ? `Set for ${esc(store.prefs().reminder)} · add it again to change the time` : 'A repeating calendar reminder, so reviews happen on the day they’re due' })}
     </div>`)}
     ${section('Your trip', `<div class="group">
@@ -576,6 +600,7 @@ function viewMore() {
     ${section('Go deeper', `<div class="group">
       ${row({ href: `#/${code}/sounds`, ic: 'ear', title: 'Sound guide', sub: 'The tricky sounds, and how to read the pronunciation line' })}
       ${row({ href: `#/${code}/patterns`, ic: 'puzzle', title: 'Power patterns', sub: 'One sentence frame, many uses', count: patterns })}
+      ${row({ href: `#/${code}/race`, ic: 'shuffle', title: 'Swap race', sub: 'Hear it, tap the swapped word. 8 rounds against the clock' })}
       ${row({ href: `#/${code}/practice/run`, ic: 'list', title: 'Type it', sub: 'Write phrases out; get told exactly what to fix' })}
     </div>`)}
     ${canSpeak() || lang.meta.tts_note ? section('Audio', audioGroup()) : ''}
@@ -647,7 +672,7 @@ function renderList(sel, q) {
     return;
   }
   const head = needle ? `${items.length} match${items.length === 1 ? '' : 'es'} in all phrases`
-    : sel === 'patterns' ? `${items.length} patterns · tap a chip to swap the blank`
+    : sel === 'patterns' ? `${items.length} patterns · tap a chip to swap the blank · <a class="link-btn" href="#/${L.lang.code}/race">🏁 Swap race ${icon('chev')}</a>`
     : sit ? `${sit.icon} ${esc(sit.label)} · ${items.length} phrases · <a class="link-btn" href="#/${L.lang.code}/scenario/${sit.id}">Get ready ${icon('chev')}</a>`
       : `${items.length} phrase${items.length === 1 ? '' : 's'}`;
   el.innerHTML = `<p class="count">${head}</p>${items.map((p) => phraseCard(p)).join('')}`;
@@ -925,7 +950,7 @@ function drawSession() {
   if (s.i >= s.steps.length) { drawSessionDone(); return; }
   const st = s.steps[s.i];
   const top = `<div class="fc-progress"><span style="width:${Math.round((s.i / s.steps.length) * 100)}%"></span></div>
-    <p class="fc-meta">${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length} ${['review', 'practice', 'check'].includes(st.kind) ? ladderHtml(st.ask || (st.ask = askFor(st))) : ''}</p>`;
+    <p class="fc-meta">${s.combo >= 2 ? `<span class="combo-chip">🔥 ${s.combo}</span>` : ''}${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length} ${['review', 'practice', 'check'].includes(st.kind) ? ladderHtml(st.ask || (st.ask = askFor(st))) : ''}</p>`;
 
   if (st.kind === 'listen') {
     const p = st.p;
@@ -937,7 +962,7 @@ function drawSession() {
         <div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>
         <span class="pp-hint">Listen, then pick the meaning</span></div>
       </article>
-      <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right' : picked === i ? 'wrong' : ''}" data-action="lc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
+      <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right pop' : picked === i ? 'wrong shake' : ''}" data-action="lc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
       ${picked == null ? '' : `<p class="take-verdict lc-verdict">${st.options[picked].ok ? '✓ Right. Now say it back.' : 'Not quite. Here it is: say it back.'} ${draftTag(p)}</p>
         <div id="pp" class="pp">${playerInner()}</div>`}
     `, { back: home, focus: true });
@@ -953,10 +978,8 @@ function drawSession() {
         <p class="native lg" ${nativeAttrs(L.lang)}>${withSlots(p.target)}</p>${readingLine(p, 'lg')}
         ${canSpeak() ? `<div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>` : ''}
       </article>
-      <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right' : picked === i ? 'wrong' : ''}" data-action="rc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
-      ${picked == null ? '' : `<p class="take-verdict lc-verdict">${ok ? '✓ Right' : 'Not quite. It means: ' + withSlots(p.english)}</p>
-        <button class="cta pp-next" data-action="${ok ? 'ss-got' : 'ss-again'}">${ok ? `${icon('check')} Next` : `Next ${icon('arrow')}`}</button>
-        <p class="fine center">${ok ? 'Counted as Got it. Next time: say it.' : 'Counted as Not yet: again in a minute, and tomorrow.'}</p>`}
+      <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right pop' : picked === i ? 'wrong shake' : ''}" data-action="rc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
+      ${picked == null ? '' : feedbackSheet(ok, { sub: ok ? '' : `It means: <b>${withSlots(p.english)}</b>. ${missSub(st.kind)}`, action: ok ? 'ss-got' : 'ss-again' })}
     `, { back: home, focus: true });
     return;
   }
@@ -987,6 +1010,14 @@ function drawSessionDone() {
     again.length ? 'The ones marked ↻ come back next time.' : '',
     nextIn != null ? `Next review ${nextIn === 0 ? 'later today' : nextIn === 1 ? 'tomorrow' : `in ${nextIn} days`}.` : '',
   ].filter(Boolean).join(' ');
+  if (!s.result) { s.result = recordSession(s); sfx.done(); }
+  const { ms, perfect, pb } = s.result;
+  const board = s.answered ? `<div class="board">
+      <div><b>${s.right || 0}/${s.answered}</b><small>right</small></div>
+      <div><b>${fmtTime(ms)}</b><small>time</small></div>
+      <div><b>🔥 ${s.bestCombo || 0}</b><small>best combo</small></div>
+    </div>
+    ${pb.length ? `<p class="pb pop">🏆 New personal best: ${pb.join(', ')}!</p>` : perfect ? '<p class="pb">✨ A perfect session.</p>' : ''}` : '';
   const row = (p, ok) => `<div class="row static"><span class="row-ic ${ok ? 'ok' : ''}">${icon(ok ? 'check' : 'replay')}</span>
     <span class="row-text"><span class="row-title">${withSlots(p.english)}</span><span class="row-sub" ${nativeAttrs(lang)}>${withSlots(p.target)}</span></span></div>`;
   page('home', `
@@ -995,6 +1026,7 @@ function drawSessionDone() {
       <h1>${got.length ? 'You can now say' : 'Nice work'}</h1>
       ${notes ? `<p>${notes}</p>` : ''}
     </section>
+    ${board}
     ${got.length || again.length || learnedOnly.length ? `<div class="group session-summary">${got.map((p) => row(p, true)).join('')}${again.map((p) => row(p, false)).join('')}${learnedOnly.map((p) => row(p, true)).join('')}</div>` : ''}
     <div class="done-actions">
       <button class="cta" data-action="ss-another">${icon('play')} Keep going</button>
@@ -1002,6 +1034,157 @@ function drawSessionDone() {
     </div>
   `, { back: home, focus: true });
 }
+
+/* ---------- Swap race: hear a sentence, tap the word that was swapped in ---------- */
+
+const RACE_ROUNDS = 8;
+let race = null;
+let raceTimer = 0;
+
+function newRace() {
+  const frames = L.phrases.filter((p) => !p.missing && variantsOf(p).length >= 3);
+  const rounds = [];
+  for (let i = 0; i < RACE_ROUNDS && frames.length; i++) {
+    const f = frames[Math.floor(Math.random() * frames.length)];
+    const vs = variantsOf(f);
+    const ans = vs[Math.floor(Math.random() * vs.length)];
+    const options = shuffle([ans, ...shuffle(vs.filter((v) => v.id !== ans.id)).slice(0, 3)]);
+    rounds.push({ f, ans, options });
+  }
+  return { code: L.lang.code, rounds, i: 0, right: 0, start: Date.now(), picked: null, done: false };
+}
+
+function viewRace() {
+  clearInterval(raceTimer);
+  if (race && race.code !== L.lang.code) race = null;
+  const lang = L.lang;
+  const back = `#/${lang.code}/phrases?s=patterns`;
+  const best = scoresFor(lang.code).race || {};
+  if (!canSpeak()) {
+    page('home', '<div class="empty-state big">Swap race needs audio, and this language has no voice on this device.</div>', { back, focus: true });
+    return;
+  }
+  if (!race) {
+    page('home', `<section class="race-intro">
+        <div class="done-burst">🏁</div><h1>Swap race</h1>
+        <p>Hear a sentence, tap the word that was swapped into the blank. ${RACE_ROUNDS} rounds, as fast as you can.</p>
+        ${best.best != null ? `<div class="board"><div><b>${best.best}/${RACE_ROUNDS}</b><small>best score</small></div><div><b>${best.fastest ? fmtTime(best.fastest) : '–'}</b><small>fastest perfect</small></div><div><b>${best.plays || 0}</b><small>races</small></div></div>` : ''}
+        <button class="cta" data-action="race-start">${icon('play')} Start</button>
+      </section>`, { back, focus: true });
+    return;
+  }
+  if (race.done) {
+    page('home', `<section class="done">
+        <div class="done-burst">${race.right === RACE_ROUNDS ? '🏆' : '🏁'}</div>
+        <h1>${race.right}/${RACE_ROUNDS}</h1>
+        <p>${fmtTime(race.ms)}${race.pb ? ' · <b>new personal best!</b>' : ''}</p>
+      </section>
+      <div class="done-actions">
+        <button class="cta" data-action="race-start">${icon('replay')} Race again</button>
+        <a class="more-btn" href="${back}">Back to patterns</a>
+      </div>`, { back, focus: true });
+    return;
+  }
+  const r = race.rounds[race.i];
+  const picked = race.picked;
+  page('home', `
+    <div class="fc-progress"><span style="width:${Math.round((race.i / RACE_ROUNDS) * 100)}%"></span></div>
+    <p class="fc-meta race-meta"><span>Round ${race.i + 1} of ${RACE_ROUNDS} · ${race.right} right</span><span id="race-time">${fmtTime(Date.now() - race.start)}</span></p>
+    <article class="pp-phrase pp-prompt"><span class="fc-label">Which word was swapped in?</span>
+      <p class="native" ${nativeAttrs(lang)}>${withSlots(r.f.target)}</p>
+      <p class="en">${withSlots(r.f.english)}</p>
+      <div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(r.ans.id)}" data-key="${esc(r.ans.key)}" data-state="idle" aria-label="Hear it">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>
+    </article>
+    <div class="lc-opts race-opts">${r.options.map((o) => `<button class="lc-opt ${picked == null ? '' : o.id === r.ans.id ? 'right pop' : picked === o.id ? 'wrong shake' : ''}" data-action="race-pick" data-v="${esc(o.id)}" ${picked == null ? '' : 'disabled'}>${esc(o.label)}</button>`).join('')}</div>
+    ${picked != null ? `<p class="fine center race-answer" ${nativeAttrs(lang)}>${withSlots(r.ans.target)}</p>` : ''}
+  `, { back, focus: true });
+  raceTimer = setInterval(() => {
+    const el = document.getElementById('race-time');
+    if (!el || !race || race.done) { clearInterval(raceTimer); return; }
+    el.textContent = fmtTime(Date.now() - race.start);
+  }, 500);
+}
+
+function raceNext() {
+  if (!race) return;
+  race.i++;
+  race.picked = null;
+  if (race.i >= race.rounds.length) {
+    race.done = true;
+    race.ms = Date.now() - race.start;
+    const code = L.lang.code;
+    const all = store.prefs().scores || {};
+    const sc = all[code] || {};
+    const prev = sc.race || {};
+    const perfect = race.right === RACE_ROUNDS;
+    race.pb = !!prev.plays && (race.right > (prev.best ?? -1) || (perfect && (!prev.fastest || race.ms < prev.fastest)));
+    const next = { plays: (prev.plays || 0) + 1, best: Math.max(prev.best ?? 0, race.right), fastest: perfect ? Math.min(prev.fastest || Infinity, race.ms) : prev.fastest || null };
+    store.setPref('scores', { ...all, [code]: { ...sc, race: next } });
+    sfx.done();
+    viewRace();
+    return;
+  }
+  viewRace();
+  speakPhrase(race.rounds[race.i].ans.id); // the next sentence plays straight away
+}
+
+/* ---------- the game feel: one feedback panel, sounds, combo, scoreboard ---------- */
+
+const PRAISE = ['Nice!', 'Spot on!', 'Exactly!', 'Great!', 'Yes!'];
+// The panel that slides up after every graded answer: same place, same Continue, every time.
+function feedbackSheet(ok, { sub = '', action }) {
+  const s = session;
+  const combo = ok && s?.combo >= 2 ? `<span class="fb-combo">🔥 ${s.combo} in a row</span>` : '';
+  const title = ok ? PRAISE[(s?.i || 0) % PRAISE.length] : 'Not quite';
+  document.body.classList.add('has-fb');
+  return `<div class="fb ${ok ? 'ok' : 'no'}" role="status">
+      <div class="fb-head"><span class="fb-ic">${ok ? '✓' : '↻'}</span><b>${title}</b>${combo}</div>
+      ${sub ? `<p class="fb-sub">${sub}</p>` : ''}
+      <button class="cta fb-go" data-action="${action}">Continue</button>
+    </div>`;
+}
+const missSub = (kind) => (kind === 'check' ? 'It comes back in a minute.' : 'It comes back in a minute, and tomorrow. That’s how it sticks.');
+
+// Score the answer for the session's tally and combo (the 'again' repeats don't count).
+function scoreAnswer(got) {
+  const s = session;
+  const st = s.steps[s.i];
+  if (!st || st.kind === 'again' || st.scored) return;
+  st.scored = true;
+  s.answered = (s.answered || 0) + 1;
+  if (got && !s.missed.has(st.p.key)) {
+    s.right = (s.right || 0) + 1;
+    s.combo = (s.combo || 0) + 1;
+    s.bestCombo = Math.max(s.bestCombo || 0, s.combo);
+    if ([3, 5, 10, 15].includes(s.combo)) { sfx.combo(); toast(`🔥 ${s.combo} in a row`, 1800); }
+  } else s.combo = 0;
+}
+
+// Personal bests per language (no accounts, so no leaderboard): stored with your progress.
+function scoresFor(code) { return (store.prefs().scores || {})[code] || {}; }
+function recordSession(s) {
+  const code = L.lang.code;
+  const prev = scoresFor(code);
+  const ms = Date.now() - s.at;
+  const perfect = s.answered >= 5 && s.right === s.answered;
+  const pb = [];
+  if ((s.bestCombo || 0) > (prev.bestCombo || 0) && s.bestCombo >= 3) pb.push('longest combo');
+  if ((s.right || 0) > (prev.bestRight || 0) && s.right >= 3) pb.push('most right in one session');
+  if (perfect && (!prev.fastestPerfect || ms < prev.fastestPerfect)) pb.push('fastest perfect session');
+  const today = todayIso();
+  const next = {
+    sessions: (prev.sessions || 0) + 1,
+    totalRight: (prev.totalRight || 0) + (s.right || 0),
+    bestCombo: Math.max(prev.bestCombo || 0, s.bestCombo || 0),
+    bestRight: Math.max(prev.bestRight || 0, s.right || 0),
+    fastestPerfect: perfect ? Math.min(prev.fastestPerfect || Infinity, ms) : prev.fastestPerfect || null,
+    days: { ...(prev.days || {}), [today]: true },
+    race: prev.race || null,
+  };
+  store.setPref('scores', { ...(store.prefs().scores || {}), [code]: next });
+  return { ms, perfect, pb: prev.sessions ? pb : [] }; // no "personal best" fanfare on the very first session
+}
+const fmtTime = (ms) => { const t = Math.round(ms / 1000); return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; };
 
 // How a recall step asks for its phrase. Reviews get harder as the phrase gets stronger (js/plan.js);
 // the quick check of brand-new phrases is always "say it".
@@ -1057,6 +1240,7 @@ function sessionAutoplay() {
 }
 
 function sessionAdvance() {
+  document.body.classList.remove('has-fb');
   if (session.steps[session.i]?.kind === 'new' && !store.prefs().readHint) store.setPref('readHint', true);
   capture?.stop();
   tts.stop();
@@ -1074,6 +1258,7 @@ function sessionRate(got) {
   const s = session;
   const st = s.steps[s.i];
   const p = st.p;
+  if (!st.graded) { scoreAnswer(got); if (got) sfx.right(); else sfx.tap(); } // self-rated: Not yet is honest, never punished
   if (st.kind === 'review' || (st.kind === 'practice' && store.isDue(p.key))) {
     if (store.get().srs[p.key]) {
       const wasLocked = store.status(p.key) === 'locked';
@@ -1512,6 +1697,15 @@ function promptInner() {
     <button class="${canPracticeAloud() ? 'more-btn' : 'cta'} pp-next" data-action="pp-reveal">${canPracticeAloud() ? 'Show me without speaking' : 'Show me'}</button>`;
 }
 
+// A graded answer (build, type): score it and play its sound once.
+function gradeStep(ok) {
+  const st = session?.steps[session.i];
+  if (!st) return;
+  st.graded = true;
+  scoreAnswer(ok);
+  if (ok) sfx.right(); else sfx.wrong();
+}
+
 // Build it: graded like typing. Right order = Got it; anything else comes back sooner.
 function plBuildCheck(reveal = false) {
   if (!pl?.build) return;
@@ -1522,6 +1716,7 @@ function plBuildCheck(reveal = false) {
   pl.typed = reveal ? '' : words.join(L.lang.meta.no_spaces ? '' : ' ');
   pl.built = true;
   pl.check = reveal ? { verdict: 'revealed', notes: [] } : ok ? { verdict: 'correct', notes: [] } : { verdict: 'wrong', notes: [{ text: 'Compare the word order with the right version above.' }] };
+  gradeStep(ok);
   pl.step = 'reveal';
   drawPlayer();
   plListen(); // hear the right version straight away
@@ -1535,6 +1730,7 @@ function plType(reveal = false) {
   if (!reveal && !typed) { document.getElementById('pp-type-input')?.focus(); return; }
   pl.typed = typed;
   pl.check = reveal ? { verdict: 'revealed', notes: [] } : L.lang.meta.no_spaces ? checkTypedChars(p.target, typed, p.reading) : checkTyped(p.target, typed);
+  gradeStep(['correct', 'marks'].includes(pl.check.verdict));
   pl.step = 'reveal';
   drawPlayer();
   plListen(); // hear the right version straight away
@@ -1574,10 +1770,9 @@ function playerInner() {
   if (where === 'session' && step === 'reveal' && pl.check) {
     // Typed: the checker decides. Exactly right (accents may be off) counts; anything else comes back sooner.
     const ok = ['correct', 'marks'].includes(pl.check.verdict);
+    const kind = session?.steps[session.i]?.kind;
     next = `${typeResult({ check: pl.check, typed: pl.typed, built: pl.built })}
-      ${ok ? lockHint(p) : ''}
-      <button class="cta pp-next" data-action="${ok ? 'ss-got' : 'ss-again'}">${ok ? `${icon('check')} Next` : `Next ${icon('arrow')}`}</button>
-      <p class="fine center">${ok ? 'Counted as Got it.' : session?.steps[session.i]?.kind === 'check' ? 'Counted as Not yet: it comes back in a minute.' : 'Counted as Not yet: again in a minute, and tomorrow. That’s how it sticks.'}</p>`;
+      ${feedbackSheet(ok, { sub: ok ? (pl.check.verdict === 'marks' ? 'Right words. Check the accents above.' : '') : missSub(kind), action: ok ? 'ss-got' : 'ss-again' })}`;
   } else if (where === 'session' && step === 'reveal') {
     // Said: you judge, but if the phone's speech check heard little of it, Not yet is the honest default.
     const score = pl.take?.transcript ? mic.compare(p.target, pl.take.transcript, { charMode: !!L.lang.meta.no_spaces, alt: p.reading }).score : null;
@@ -1902,6 +2097,7 @@ document.addEventListener('change', (e) => {
 });
 
 document.addEventListener('click', (e) => {
+  if (Date.now() < noClickUntil) return; // the end of a drag, not a tap
   const stamp = e.target.closest('a[data-stamp]');
   if (stamp && !reducedMotion() && !e.metaKey && !e.ctrlKey) {
     e.preventDefault();
@@ -2013,6 +2209,23 @@ document.addEventListener('click', (e) => {
     if (sit) saveOffline(sitPhrases(sit), btn);
   } else if (a === 'do-update') {
     location.reload();
+  } else if (a === 'race-start') {
+    race = newRace();
+    viewRace();
+    speakPhrase(race.rounds[0].ans.id);
+  } else if (a === 'race-pick') {
+    if (!race || race.picked != null) return;
+    const r = race.rounds[race.i];
+    race.picked = btn.dataset.v;
+    const ok = race.picked === r.ans.id;
+    if (ok) { race.right++; sfx.right(); } else sfx.wrong();
+    viewRace();
+    setTimeout(raceNext, ok ? 650 : 1500);
+  } else if (a === 'toggle-sfx') {
+    sfx.set(!sfx.enabled());
+    sfx.right(); // so you hear what you turned on
+    const sub = document.querySelector('#sfx-row .row-sub');
+    if (sub) sub.textContent = sfx.enabled() ? 'On: a ding for right, a soft note for not quite' : 'Off';
   } else if (a === 'reminder-sheet') {
     openSheet(reminderSheetHtml());
   } else if (a === 'reminder-ics') {
@@ -2054,6 +2267,7 @@ document.addEventListener('click', (e) => {
   } else if (a === 'ss-got' || a === 'ss-again') {
     sessionRate(a === 'ss-got');
   } else if (a === 'pp-swap') {
+    sfx.tap();
     // Swap it inside the player: show, play, record and compare the picked variant.
     if (!pl) return;
     const v = variantsOf(pl.p).find((x) => x.id === btn.dataset.v) || null;
@@ -2065,6 +2279,7 @@ document.addEventListener('click', (e) => {
     drawPlayer();
     plListen();
   } else if (a === 'swap') {
+    sfx.tap();
     // Swap it on a phrase card: the card shows the picked sentence, and plays it.
     const p = L.byId.get(btn.dataset.pid);
     if (!p) return;
@@ -2079,10 +2294,12 @@ document.addEventListener('click', (e) => {
     if (btn.dataset.v && canSpeak()) speakPhrase(shownFor(p).id);
   } else if (a === 'bd-pick') {
     if (!pl?.build) return;
+    sfx.tap();
     if (!pl.build.picked.includes(btn.dataset.id)) pl.build.picked.push(btn.dataset.id);
     drawPlayer();
   } else if (a === 'bd-unpick') {
     if (!pl?.build) return;
+    sfx.tap();
     pl.build.picked.splice(Number(btn.dataset.i), 1);
     drawPlayer();
   } else if (a === 'bd-check') {
@@ -2104,11 +2321,15 @@ document.addEventListener('click', (e) => {
     const st = session?.steps[session.i];
     if (!st || st.picked != null) return;
     st.picked = Number(btn.dataset.i);
+    const ok = st.options[st.picked].ok;
+    st.graded = true;
+    scoreAnswer(ok);
+    if (ok) sfx.right(); else sfx.wrong();
     drawSession();
-    document.querySelector('.lc-verdict')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' });
   } else if (a === 'lc-pick') {
     if (session.picked != null) return;
     session.picked = Number(btn.dataset.i);
+    if (session.steps[session.i].options[session.picked].ok) sfx.right(); else sfx.wrong();
     drawSession();
     document.querySelector('.lc-verdict')?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' });
   } else if (a === 'ss-another') {
@@ -2144,9 +2365,54 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && document.body.classList.contains('sheet-open')) { closeSheet(); return; }
 });
 
+/* ---------- Build it: drag a tile into the sentence (tapping works too) ---------- */
+
+let drag = null;
+let noClickUntil = 0;
+const overAnswer = (e) => {
+  const box = document.querySelector('.bd-answer')?.getBoundingClientRect();
+  return !!box && e.clientX >= box.left - 12 && e.clientX <= box.right + 12 && e.clientY >= box.top - 12 && e.clientY <= box.bottom + 12;
+};
+document.addEventListener('pointerdown', (e) => {
+  const t = e.target.closest('.bd-bank .bd-tile:not([disabled])');
+  if (t) drag = { t, id: t.dataset.id, x: e.clientX, y: e.clientY, ghost: null };
+});
+document.addEventListener('pointermove', (e) => {
+  if (!drag) return;
+  if (!drag.ghost) {
+    if (Math.hypot(e.clientX - drag.x, e.clientY - drag.y) < 8) return;
+    drag.ghost = drag.t.cloneNode(true);
+    drag.ghost.classList.add('bd-ghost');
+    document.body.appendChild(drag.ghost);
+    drag.t.classList.add('dragging');
+  }
+  const g = drag.ghost;
+  g.style.transform = `translate(${e.clientX - g.offsetWidth / 2}px, ${e.clientY - g.offsetHeight / 2}px)`;
+  document.querySelector('.bd-answer')?.classList.toggle('over', overAnswer(e));
+});
+const endDrag = (e, drop) => {
+  if (!drag) return;
+  const d = drag;
+  drag = null;
+  if (!d.ghost) return; // a plain tap: the click handler places it
+  d.ghost.remove();
+  d.t.classList.remove('dragging');
+  document.querySelector('.bd-answer')?.classList.remove('over');
+  noClickUntil = Date.now() + 300;
+  if (drop && overAnswer(e) && pl?.build && !pl.build.picked.includes(d.id)) {
+    pl.build.picked.push(d.id);
+    sfx.tap();
+    drawPlayer();
+  }
+};
+document.addEventListener('pointerup', (e) => endDrag(e, true));
+document.addEventListener('pointercancel', (e) => endDrag(e, false));
+
 /* ---------- router ---------- */
 
 async function route() {
+  document.body.classList.remove('has-fb');
+  clearInterval(raceTimer);
   tts.stop();
   closeSheet();
   closeShowIt();
@@ -2178,6 +2444,7 @@ async function route() {
   else if (sectionName === 'scenarios') viewScenarios();
   else if (sectionName === 'scenario') viewScenario(arg);
   else if (sectionName === 'more') viewMore();
+  else if (sectionName === 'race') viewRace();
   else if (sectionName === 'patterns') viewPatterns();
   else if (sectionName === 'sounds') await viewSounds();
   else if (sectionName === 'mic') viewMicCheck();
