@@ -987,3 +987,100 @@ body.has-fb .main { padding-bottom: 200px; }
 #race-time { font-variant-numeric: tabular-nums; font-weight: 800; color: var(--accent-ink); }
 .race-opts { grid-template-columns: 1fr 1fr; }
 .race-answer { font-size: 15px; color: var(--ink); }
+
+/* ---------- Progress ---------- */
+.week-card { display: flex; align-items: center; gap: 12px; margin-top: 12px; padding: 12px 14px; border-radius: 18px; background: var(--surface); border: 2px solid var(--line); }
+.week-ic { font-size: 24px; }
+.week-text { flex: 1; display: grid; }
+.week-text small { color: var(--muted); font-weight: 600; }
+.chart { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; align-items: end; height: 150px; padding: 12px 10px 6px; border-radius: 18px; background: var(--surface); border: 2px solid var(--line); }
+.cbar { height: 100%; display: grid; grid-template-rows: 16px 1fr 16px; justify-items: center; }
+.cbar-track { width: 100%; display: flex; align-items: flex-end; }
+.cbar-fill { width: 100%; min-height: 3px; border-radius: 7px 7px 3px 3px; background: var(--accent); box-shadow: inset 0 -3px 0 var(--lip); }
+.cbar.today .cbar-fill { background: #f59e0b; box-shadow: inset 0 -3px 0 #b45309; }
+.cbar-n { font-size: 10px; font-weight: 800; color: var(--muted); align-self: end; }
+.cbar-d { font-size: 10px; font-weight: 800; color: var(--faint); align-self: end; }
+.stages { display: flex; height: 16px; border-radius: 99px; overflow: hidden; background: var(--surface-2); border: 2px solid var(--line); }
+.st-locked { background: var(--accent); }
+.st-learning { background: #f59e0b; }
+.stage-keys { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; font-size: 13px; font-weight: 700; color: var(--muted); }
+.stage-keys i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.k-locked { background: var(--accent); } .k-learning { background: #f59e0b; } .k-new { background: var(--surface-2); border: 1px solid var(--line); }
+
+/* =====================================================================
+   Chunky, cartoony layer (2026-11-01): 3D "lip" buttons that press down,
+   thick rounded outlines, bolder type, squishy taps. Duolingo-style depth.
+   ===================================================================== */
+:root {
+  --lip: color-mix(in srgb, var(--accent) 62%, #000);
+  --edge: color-mix(in srgb, var(--line) 70%, #b8b1a3);
+  --radius: 22px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --edge: #3a3e48; } }
+body { font-weight: 500; }
+h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
+.native { font-weight: 800; }
+
+/* Primary buttons: solid, with a darker lip; pressing sinks them */
+.cta {
+  border-radius: 18px; font-weight: 900; letter-spacing: .02em; text-transform: none;
+  box-shadow: 0 5px 0 var(--lip); transform: translateY(0); transition: transform .06s, box-shadow .06s, filter .1s;
+}
+.cta:active:not(:disabled) { transform: translateY(5px); box-shadow: 0 0 0 var(--lip); }
+.cta:hover { filter: brightness(1.05); }
+.cta:disabled, .pp-next[disabled] { box-shadow: 0 5px 0 color-mix(in srgb, var(--lip) 40%, transparent); }
+
+/* Secondary buttons, chips, options, tiles: white with a thick outline and a grey lip */
+.more-btn, .pill-btn, .lc-opt, .bd-tile, .swap-chip, .fc-btn.again, .scen-btn, .chip, .round-btn:not(.lk-play) {
+  border: 2px solid var(--edge); border-bottom-width: 2px;
+  box-shadow: 0 4px 0 var(--edge); transform: translateY(0); transition: transform .06s, box-shadow .06s, background .15s;
+}
+.more-btn:active, .pill-btn:active, .lc-opt:active:not(:disabled), .bd-tile:active:not(:disabled), .swap-chip:active, .fc-btn.again:active, .scen-btn:active, .chip:active, .round-btn:not(.lk-play):active {
+  transform: translateY(4px); box-shadow: 0 0 0 var(--edge);
+}
+.more-btn { border-radius: 18px; font-weight: 800; }
+.pill-btn { font-weight: 800; }
+.lc-opt { border-radius: 18px; font-weight: 800; font-size: 17px; min-height: 60px; }
+.lc-opt.right { border-color: #22c55e; box-shadow: 0 4px 0 #16a34a; background: #dcfce7; color: #14532d; }
+.lc-opt.wrong { border-color: #ef4444; box-shadow: 0 4px 0 #dc2626; background: #fee2e2; color: #7f1d1d; }
+.bd-tile { border-radius: 14px; font-weight: 800; }
+.bd-tile:disabled { box-shadow: none; transform: translateY(4px); }
+.bd-tile.placed { box-shadow: 0 4px 0 color-mix(in srgb, var(--accent) 45%, var(--edge)); }
+.swap-chip.on, .chip.on { box-shadow: 0 4px 0 var(--lip); border-color: var(--accent); }
+.chip.on { background: var(--accent); color: #fff; }
+.fc-btn.got { box-shadow: 0 5px 0 var(--lip); border-radius: 18px; }
+.fc-btn.got:active { transform: translateY(5px); box-shadow: 0 0 0 var(--lip); }
+.fc-btn.again { border-radius: 18px; }
+
+/* Round action buttons (play, mic): a deeper 3D disc */
+.mic-big, .round-btn.lk-play { box-shadow: 0 6px 0 var(--lip), 0 10px 22px color-mix(in srgb, var(--accent) 25%, transparent); transition: transform .06s, box-shadow .06s; }
+.mic-big:active, .round-btn.lk-play:active { transform: translateY(6px); box-shadow: 0 0 0 var(--lip); }
+.mic-big.rec { box-shadow: 0 6px 0 #991b1b; }
+.mic-big.rec.warming { box-shadow: 0 6px 0 #b45309; }
+
+/* Cards and panels: thick outline with a bottom lip, bigger corners */
+.card, .pp-phrase, .next-step, .sit-row, .board > div, .week-card, .chart, .group, .scen-card, .lang-hero, .working {
+  border: 2px solid var(--edge); border-bottom-width: 5px; border-radius: var(--radius);
+}
+.next-step { box-shadow: none; border-color: color-mix(in srgb, var(--accent) 40%, var(--edge)); }
+.sit-row, .week-card { transition: transform .06s; }
+.sit-row:active, .week-card:active { transform: translateY(3px); }
+
+/* Progress bar: chunky with a shine */
+.fc-progress { height: 16px; border-radius: 99px; background: var(--surface-2); border: 2px solid var(--edge); }
+.fc-progress span { border-radius: 99px; background: linear-gradient(var(--accent), var(--accent)) padding-box; position: relative; }
+.fc-progress span::after { content: ""; position: absolute; left: 8px; right: 8px; top: 3px; height: 3px; border-radius: 99px; background: rgb(255 255 255 / .45); }
+.ready-bar { height: 8px; }
+
+/* Feedback panel: bigger, rounder, with the mascot */
+.fb { border-radius: 26px 26px 0 0; gap: 10px; padding-top: 16px; }
+.fb-head { font-size: 22px; font-weight: 900; }
+.fb .cta { box-shadow: 0 5px 0 rgb(0 0 0 / .25); }
+.fb-mascot { width: 54px; height: 54px; flex: none; margin: -4px 0; }
+
+/* Squish on press for anything tappable that doesn't have its own */
+.row:active, .stamp:active { transform: scale(.98); }
+.done-burst { font-size: 0; }
+.done-mascot { width: 120px; height: 120px; margin: 0 auto 6px; display: block; animation: bob 1.6s ease-in-out infinite; }
+@keyframes bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-8px) rotate(2deg); } }
+@media (prefers-reduced-motion: reduce) { .done-mascot { animation: none; } .cta, .more-btn, .pill-btn, .lc-opt, .bd-tile, .swap-chip, .mic-big { transition: none; } }

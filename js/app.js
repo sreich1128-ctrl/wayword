@@ -455,6 +455,7 @@ function viewDashboard() {
       </div>
     </section>
     ${nextStepCard()}
+    ${weekCard()}
 
     ${section('Need a phrase now?', `<div class="scen-row">${sits.map(({ sit }) => `<a class="scen-btn" href="#/${code}/scenario/${sit.id}"><span class="scen-ic">${sit.icon}</span>${esc(sit.label)}</a>`).join('')}</div>`)}
 
@@ -496,6 +497,19 @@ function nextStepCard() {
     <p class="ns-sub">${parts} · about ${mins} minutes. Listen, say it, compare yourself with the native voice.</p>
     <a class="cta" href="#/${code}/session">${icon('play')} ${started ? 'Continue' : 'Start'}</a>
   </section>`;
+}
+
+// This week at a glance, linking to Progress.
+function weekCard() {
+  const hist = historyFor(L.lang.code);
+  if (!hist.length) return '';
+  const since = Date.now() - 7 * 86400000;
+  const week = hist.filter((h) => h.at >= since);
+  const days = new Set(week.map((h) => h.d)).size;
+  return `<a class="week-card" href="#/${L.lang.code}/progress">
+      <span class="week-ic">📈</span>
+      <span class="week-text"><b>This week</b><small>${week.length} session${week.length === 1 ? '' : 's'} · ${week.reduce((a, h) => a + h.right, 0)} right · ${days} day${days === 1 ? '' : 's'}</small></span>
+      ${icon('chev', 'row-chev')}</a>`;
 }
 
 // Pick the situation Continue teaches from (or leave it automatic).
@@ -558,6 +572,50 @@ function reminderGoogle() {
   window.open(`https://calendar.google.com/calendar/render?${q}`, '_blank', 'noopener');
 }
 
+// Progress over time: a 14-day chart, recent sessions, phrases by stage, situations.
+function historyFor(code) { return (store.prefs().history || {})[code] || []; }
+function viewProgress() {
+  const lang = L.lang;
+  const code = lang.code;
+  const hist = historyFor(code);
+  const days = [];
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const iso = todayIso(d.getTime());
+    const list = hist.filter((h) => h.d === iso);
+    days.push({ iso, d, right: list.reduce((a, h) => a + h.right, 0), n: list.length });
+  }
+  const max = Math.max(4, ...days.map((x) => x.right));
+  const pool = L.phrases.filter((p) => !p.missing);
+  const locked = pool.filter((p) => store.status(p.key) === 'locked').length;
+  const learning = pool.filter((p) => store.status(p.key) === 'learning').length;
+  const fresh = pool.length - locked - learning;
+  const pct = (n) => `${(n / pool.length) * 100}%`;
+  const week = days.slice(7);
+  const sits = C.scenarios.map((sit) => ({ sit, r: sitReady(sit) })).filter(({ r }) => r.n);
+  page('more', `
+    <section class="page-head"><h1>Progress</h1><p>${esc(lang.name)} · ${hist.length} session${hist.length === 1 ? '' : 's'} so far</p></section>
+    <div class="board big">
+      <div><b>${week.reduce((a, x) => a + x.n, 0)}</b><small>sessions this week</small></div>
+      <div><b>${week.reduce((a, x) => a + x.right, 0)}</b><small>right this week</small></div>
+      <div><b>${week.filter((x) => x.n).length}/7</b><small>days this week</small></div>
+    </div>
+    ${section('Right answers, last 14 days', `<div class="chart" role="img" aria-label="Right answers per day for the last 14 days">${days.map((x) => `
+        <div class="cbar ${x.iso === todayIso() ? 'today' : ''}"><span class="cbar-n">${x.right || ''}</span><span class="cbar-track"><span class="cbar-fill" style="height:${Math.round((x.right / max) * 100)}%"></span></span><span class="cbar-d">${'SMTWTFS'[x.d.getDay()]}</span></div>`).join('')}
+      </div>`)}
+    ${section('Your phrases', `<div class="stages"><span class="st-locked" style="width:${pct(locked)}"></span><span class="st-learning" style="width:${pct(learning)}"></span></div>
+      <div class="stage-keys"><span><i class="k-locked"></i>${locked} Locked in</span><span><i class="k-learning"></i>${learning} Learning</span><span><i class="k-new"></i>${fresh} not started</span></div>`)}
+    ${hist.length ? section('Recent sessions', `<div class="group">${hist.slice(-10).reverse().map((h) => `
+        <div class="row static"><span class="row-ic ${h.answered && h.right === h.answered ? 'ok' : ''}">${icon(h.answered && h.right === h.answered ? 'check' : 'play')}</span>
+          <span class="row-text"><span class="row-title">${h.answered ? `${h.right}/${h.answered} right` : 'Learning session'} · ${fmtTime(h.ms)}</span>
+          <span class="row-sub">${new Date(h.at).toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' })}${h.combo >= 2 ? ` · 🔥 ${h.combo}` : ''}${h.newly ? ` · ${h.newly} new` : ''}${h.locked ? ` · ${h.locked} locked in` : ''}</span></span></div>`).join('')}</div>`) : '<p class="fine">Finish a session and it shows up here.</p>'}
+    ${section('Situations', `<div class="sit-list">${sits.map(({ sit, r }) => `
+      <a class="sit-row ${r.ready === r.n ? 'done' : ''}" href="#/${code}/scenario/${sit.id}"><span class="scen-ic">${sit.icon}</span>
+        <span class="sit-text"><b>${esc(sit.label)}</b><small>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</small>${readyBar(r)}</span></a>`).join('')}</div>`)}
+    ${scoreboardHtml()}
+  `, { back: `#/${code}` });
+}
+
 // Your scoreboard for this language: personal bests, no leaderboard, no streak to lose.
 function scoreboardHtml() {
   const code = L.lang.code;
@@ -587,6 +645,7 @@ function viewMore() {
   const patterns = L.phrases.filter((p) => p.type === 'pattern' && !p.missing).length;
   page('more', `
     <section class="page-head"><h1>More</h1></section>
+    ${section('Your progress', `<div class="group">${row({ href: `#/${code}/progress`, ic: 'list', title: 'Progress', sub: 'Every session, the last 14 days, and your phrases by stage' })}</div>`)}
     ${scoreboardHtml()}
     ${section('Stay on it', `<div class="group">
       ${row({ action: 'toggle-sfx', ic: 'sound', title: 'Sounds', sub: sfx.enabled() ? 'On: a ding for right, a soft note for not quite' : 'Off', attrs: 'id="sfx-row"' })}
@@ -991,6 +1050,7 @@ function drawSession() {
     if (recall) Object.assign(pl, { ask: st.ask, reply: st.reply });
   }
   page('home', `${top}<div id="pp" class="pp">${playerInner()}</div>`, { back: home, focus: true });
+  warmMicSoon();
 }
 
 function drawSessionDone() {
@@ -1022,7 +1082,7 @@ function drawSessionDone() {
     <span class="row-text"><span class="row-title">${withSlots(p.english)}</span><span class="row-sub" ${nativeAttrs(lang)}>${withSlots(p.target)}</span></span></div>`;
   page('home', `
     <section class="done">
-      <div class="done-burst">${again.length ? '👏' : '🎉'}</div>
+      ${mascot(again.length ? 'happy' : 'cheer', 'done-mascot')}
       <h1>${got.length ? 'You can now say' : 'Nice work'}</h1>
       ${notes ? `<p>${notes}</p>` : ''}
     </section>
@@ -1030,6 +1090,7 @@ function drawSessionDone() {
     ${got.length || again.length || learnedOnly.length ? `<div class="group session-summary">${got.map((p) => row(p, true)).join('')}${again.map((p) => row(p, false)).join('')}${learnedOnly.map((p) => row(p, true)).join('')}</div>` : ''}
     <div class="done-actions">
       <button class="cta" data-action="ss-another">${icon('play')} Keep going</button>
+      <a class="more-btn" href="#/${lang.code}/progress">See your progress</a>
       <a class="more-btn" href="${home}">Done</a>
     </div>
   `, { back: home, focus: true });
@@ -1066,7 +1127,7 @@ function viewRace() {
   }
   if (!race) {
     page('home', `<section class="race-intro">
-        <div class="done-burst">🏁</div><h1>Swap race</h1>
+        ${mascot('happy', 'done-mascot')}<h1>🏁 Swap race</h1>
         <p>Hear a sentence, tap the word that was swapped into the blank. ${RACE_ROUNDS} rounds, as fast as you can.</p>
         ${best.best != null ? `<div class="board"><div><b>${best.best}/${RACE_ROUNDS}</b><small>best score</small></div><div><b>${best.fastest ? fmtTime(best.fastest) : '–'}</b><small>fastest perfect</small></div><div><b>${best.plays || 0}</b><small>races</small></div></div>` : ''}
         <button class="cta" data-action="race-start">${icon('play')} Start</button>
@@ -1075,7 +1136,7 @@ function viewRace() {
   }
   if (race.done) {
     page('home', `<section class="done">
-        <div class="done-burst">${race.right === RACE_ROUNDS ? '🏆' : '🏁'}</div>
+        ${mascot(race.right === RACE_ROUNDS ? 'cheer' : race.right >= RACE_ROUNDS / 2 ? 'happy' : 'oops', 'done-mascot')}
         <h1>${race.right}/${RACE_ROUNDS}</h1>
         <p>${fmtTime(race.ms)}${race.pb ? ' · <b>new personal best!</b>' : ''}</p>
       </section>
@@ -1130,6 +1191,31 @@ function raceNext() {
 
 /* ---------- the game feel: one feedback panel, sounds, combo, scoreboard ---------- */
 
+// The mascot: a round little speech bubble in the language's colour. Moods: happy, oops, cheer.
+function mascot(mood = 'happy', cls = '') {
+  const eyes = mood === 'happy'
+    ? '<path d="M38 50q5-6 10 0M62 50q5-6 10 0" stroke="#1d1d1f" stroke-width="4" fill="none" stroke-linecap="round"/>'
+    : '<circle cx="43" cy="49" r="5.5" fill="#1d1d1f"/><circle cx="67" cy="49" r="5.5" fill="#1d1d1f"/><circle cx="45" cy="47" r="1.8" fill="#fff"/><circle cx="69" cy="47" r="1.8" fill="#fff"/>';
+  const mouth = mood === 'oops'
+    ? '<ellipse cx="55" cy="66" rx="5" ry="6" fill="#7f1d1d"/>'
+    : mood === 'cheer'
+      ? '<path d="M41 61q14 16 28 0z" fill="#7f1d1d"/><path d="M47 66q8 5 16 0" stroke="#f87171" stroke-width="4" fill="none" stroke-linecap="round"/>'
+      : '<path d="M43 62q12 11 24 0" stroke="#1d1d1f" stroke-width="4" fill="none" stroke-linecap="round"/>';
+  const extra = mood === 'oops'
+    ? '<path d="M84 30q5 8 0 11q-5-3 0-11z" fill="#60a5fa"/>'
+    : mood === 'cheer'
+      ? '<path d="M20 50q-12-10-8-24" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M90 50q12-10 8-24" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M8 18l4 6M18 10l1 7M102 18l-4 6M92 10l-1 7" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>'
+      : '';
+  return `<svg class="mascot ${cls}" viewBox="0 0 110 100" aria-hidden="true" style="color:var(--accent)">
+    ${extra}
+    <path d="M55 12c24 0 40 14 40 34s-16 34-40 34c-5 0-10-1-14-2l-14 10 3-15C19 66 15 57 15 46c0-20 16-34 40-34z" fill="currentColor" stroke="color-mix(in srgb, currentColor 60%, #000)" stroke-width="4"/>
+    <ellipse cx="45" cy="30" rx="12" ry="5" fill="#fff" opacity=".35"/>
+    <circle cx="33" cy="60" r="6" fill="#fb7185" opacity=".55"/><circle cx="77" cy="60" r="6" fill="#fb7185" opacity=".55"/>
+    <circle cx="55" cy="50" r="27" fill="#fff" opacity=".0"/>
+    ${eyes}${mouth}
+  </svg>`;
+}
+
 const PRAISE = ['Nice!', 'Spot on!', 'Exactly!', 'Great!', 'Yes!'];
 // The panel that slides up after every graded answer: same place, same Continue, every time.
 function feedbackSheet(ok, { sub = '', action }) {
@@ -1138,7 +1224,7 @@ function feedbackSheet(ok, { sub = '', action }) {
   const title = ok ? PRAISE[(s?.i || 0) % PRAISE.length] : 'Not quite';
   document.body.classList.add('has-fb');
   return `<div class="fb ${ok ? 'ok' : 'no'}" role="status">
-      <div class="fb-head"><span class="fb-ic">${ok ? '✓' : '↻'}</span><b>${title}</b>${combo}</div>
+      <div class="fb-head">${mascot(ok ? 'happy' : 'oops', 'fb-mascot')}<b>${title}</b>${combo}</div>
       ${sub ? `<p class="fb-sub">${sub}</p>` : ''}
       <button class="cta fb-go" data-action="${action}">Continue</button>
     </div>`;
@@ -1182,6 +1268,9 @@ function recordSession(s) {
     race: prev.race || null,
   };
   store.setPref('scores', { ...(store.prefs().scores || {}), [code]: next });
+  const hist = (store.prefs().history || {})[code] || [];
+  const entry = { d: today, at: Date.now(), right: s.right || 0, answered: s.answered || 0, ms, combo: s.bestCombo || 0, newly: s.newly || 0, locked: s.newlyLocked || 0 };
+  store.setPref('history', { ...(store.prefs().history || {}), [code]: [...hist, entry].slice(-120) });
   return { ms, perfect, pb: prev.sessions ? pb : [] }; // no "personal best" fanfare on the very first session
 }
 const fmtTime = (ms) => { const t = Math.round(ms / 1000); return `${Math.floor(t / 60)}:${String(t % 60).padStart(2, '0')}`; };
@@ -1190,7 +1279,13 @@ const fmtTime = (ms) => { const t = Math.round(ms / 1000); return `${Math.floor(
 // the quick check of brand-new phrases is always "say it".
 function askFor(st) {
   const canBuild = canBuildPhrase(st.p.target, !!L.lang.meta.no_spaces);
-  if (st.kind === 'check') return canBuild ? 'build' : 'say'; // right after learning: rebuild it, graded
+  if (st.kind === 'check') {
+    // Right after learning, graded: alternate Build and Write; single words (nothing to build) are written.
+    const canType = st.p.type !== 'pattern';
+    const nth = session.steps.slice(0, session.i).filter((x) => x.kind === 'check').length;
+    if (!canBuild) return canType ? 'type' : 'say';
+    return canType && nth % 2 === 1 ? 'type' : 'build';
+  }
   if (st.kind !== 'review' && st.kind !== 'practice') return 'say';
   const r = store.get().srs[st.p.key];
   const fits = canSpeak() ? L.replies.filter((x) => x.answer_with.includes(st.p.id)) : [];
@@ -1851,6 +1946,16 @@ function drawPlayer() {
   if (!el || !pl) return;
   el.innerHTML = playerInner();
   syncListen();
+  warmMicSoon();
+}
+
+// A mic button is on screen and nothing is playing: open the mic now, so the tap records at once.
+function warmMicSoon() {
+  if (!pl || pl.rec || !document.querySelector('#pp [data-action="pp-mic"]')) return;
+  setTimeout(() => {
+    const st = tts.getState().status;
+    if (pl && !pl.rec && st !== 'playing' && document.querySelector('#pp [data-action="pp-mic"]')) mic.prewarm();
+  }, 400);
 }
 
 // native → you → native, highlighting each part as it plays.
@@ -1970,6 +2075,7 @@ function openSheet(html) {
 
 function closeSheet() {
   capture?.stop();
+  mic.releaseWarm();
   if (pl?.where === 'sheet') { stopPlayerAudio(); pl = null; }
   document.getElementById('sheet')?.classList.remove('open');
   document.body.classList.remove('sheet-open');
@@ -2411,6 +2517,7 @@ document.addEventListener('pointercancel', (e) => endDrag(e, false));
 /* ---------- router ---------- */
 
 async function route() {
+  mic.releaseWarm();
   document.body.classList.remove('has-fb');
   clearInterval(raceTimer);
   tts.stop();
@@ -2445,6 +2552,7 @@ async function route() {
   else if (sectionName === 'scenario') viewScenario(arg);
   else if (sectionName === 'more') viewMore();
   else if (sectionName === 'race') viewRace();
+  else if (sectionName === 'progress') viewProgress();
   else if (sectionName === 'patterns') viewPatterns();
   else if (sectionName === 'sounds') await viewSounds();
   else if (sectionName === 'mic') viewMicCheck();

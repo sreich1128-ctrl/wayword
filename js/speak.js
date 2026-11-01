@@ -30,6 +30,42 @@ export function setAudioSession(type) {
   try { if (navigator.audioSession) navigator.audioSession.type = type; } catch { /* unsupported */ }
 }
 
+/* ---------- warm mic: open it while you read, so the tap records straight away ---------- */
+// Opening the microphone is the slow part (on iPhone: switching the audio mode, then the mic itself).
+// prewarm() opens it when a mic button appears, but only if permission is already granted (never
+// prompts without a tap). The next capture() takes the open stream; an unused one closes after 20 s.
+let warm = null; // { stream, timer }
+let sharedCtx = null; // one sound meter context, reused
+
+export async function prewarm() {
+  if (!canRecord || warm || prewarming) return;
+  prewarming = true;
+  try {
+    const perm = await navigator.permissions?.query?.({ name: 'microphone' }).catch(() => null);
+    if (!perm || perm.state !== 'granted') return;
+    setAudioSession('play-and-record');
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
+    warm = { stream, timer: setTimeout(releaseWarm, 20000) };
+  } catch { warm = null; } finally { prewarming = false; }
+}
+let prewarming = false;
+
+export function releaseWarm() {
+  if (!warm) return;
+  clearTimeout(warm.timer);
+  warm.stream.getTracks().forEach((t) => t.stop());
+  warm = null;
+  setAudioSession('playback');
+}
+
+function takeWarm() {
+  if (!warm || !warm.stream.active) { warm = null; return null; }
+  clearTimeout(warm.timer);
+  const s = warm.stream;
+  warm = null;
+  return s;
+}
+
 function pickMime() {
   for (const t of ['audio/mp4', 'audio/webm;codecs=opus', 'audio/webm', 'audio/ogg']) {
     if (window.MediaRecorder?.isTypeSupported?.(t)) return t;
@@ -62,7 +98,9 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
   const done = new Promise((r) => { resolveDone = r; });
   const chunks = [];
   let recLive = !useRec;
-  let srLive = !useSR;
+  // When recording, "Speak now" doesn't wait for the speech check: the recording is what you compare,
+  // and the check catches up. Without recording, the check itself must be live.
+  let srLive = !useSR || useRec;
   let readyFired = false;
   const ready = () => {
     if (readyFired || finished || stopping || !(recLive && srLive)) return;
@@ -78,7 +116,7 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
     clearTimeout(maxTimer);
     clearTimeout(readyTimer);
     cancelAnimationFrame(raf);
-    try { ctx?.close(); } catch { /* ignore */ }
+    // (the shared level-meter context stays open for the next take)
     stream?.getTracks().forEach((t) => t.stop());
     setAudioSession('playback');
     report.transcript = report.transcript.trim();
@@ -100,9 +138,10 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
 
   if (useRec) {
     setAudioSession('play-and-record');
-    // Create the audio context inside the tap so iOS lets it run.
-    try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch { ctx = null; }
-    navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } }).then((s) => {
+    // One audio context for the level meter, created inside the first tap so iOS lets it run, then reused.
+    try { sharedCtx ||= new (window.AudioContext || window.webkitAudioContext)(); ctx = sharedCtx; } catch { ctx = null; }
+    const pre = takeWarm();
+    (pre ? Promise.resolve(pre) : navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } })).then((s) => {
       stream = s;
       // Stopped while the permission prompt / mic was still opening: release it right away,
       // or the mic stays on and the next try finds it busy.
@@ -122,7 +161,7 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
       recorder.start(250); // small slices, so a quick stop still has audio
       started = Date.now();
       // The recorder needs a beat after start() before it captures sound.
-      setTimeout(() => { recLive = true; ready(); }, 150);
+      setTimeout(() => { recLive = true; ready(); }, 60);
 
       if (ctx) {
         ctx.resume?.();
