@@ -328,7 +328,7 @@ function bottomNav(active) {
     ['more', `#/${code}/more`, 'dots', 'More'],
   ];
   return `<nav class="bottomnav" aria-label="Sections">${items.map(([id, href, ic, label]) =>
-    `<a href="${href}" class="${active === id ? 'on' : ''}" ${active === id ? 'aria-current="page"' : ''}>${icon(ic)}<span>${label}</span></a>`).join('')}</nav>`;
+    `<a href="${href}" class="nav-${id} ${active === id ? 'on' : ''}" ${active === id ? 'aria-current="page"' : ''}>${icon(ic)}<span>${label}</span></a>`).join('')}</nav>`;
 }
 
 function page(active, body, hdr = {}) {
@@ -360,7 +360,7 @@ function viewHome() {
   <main class="main home">
     <section class="home-hero">
       <p class="eyebrow">Wayword · finding your way with words</p>
-      <h1>Where to next?</h1>
+      <div class="say home-say">${mascot('wave', 'say-m')}<h1 class="say-b">Where to next?</h1></div>
       ${last ? `<a class="continue" href="#/${encodeURIComponent(last.code)}" style="--accent:${last.meta.accent}">Continue with ${esc(last.name)} ${icon('chev')}</a>` : ''}
     </section>
     ${dueLangs.length ? `<section class="due-strip"><span class="due-k">${icon('lock')} Due today</span>${dueLangs.map((l) =>
@@ -372,7 +372,7 @@ function viewHome() {
         const c = store.counts(l.code);
         const due = dueByLang[l.code] || 0;
         const foot = due ? `${due} due today` : c.started ? [c.learning ? `${c.learning} learning` : '', c.locked ? `${c.locked} locked in` : ''].filter(Boolean).join(' · ') : 'First visit';
-        return `<a class="stamp shape-${i % 3}" href="#/${encodeURIComponent(l.code)}" data-stamp style="--accent:${l.meta.accent};--rot:${STAMP_TILT[i % STAMP_TILT.length]}deg">
+        return `<a class="stamp shape-${i % 3}" href="#/${encodeURIComponent(l.code)}" data-stamp style="--accent:${l.meta.accent};--rot:${STAMP_TILT[i % STAMP_TILT.length]}deg;--i:${i}">
           <span class="stamp-region">${esc(l.region)}</span>
           <span class="stamp-glyph" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.meta.glyph)}</span>
           <span class="stamp-native" lang="${esc(l.meta.bcp47)}" dir="${esc(l.direction)}">${esc(l.native_name)}</span>
@@ -453,7 +453,9 @@ function viewDashboard() {
         <h1 class="hero-native" ${nativeAttrs(lang)}>${esc(lang.native_name)}</h1>
         <p class="hero-counts">${ready} of ${pool.length} phrases ready</p>
       </div>
+      ${mascot('wave', 'hero-m')}
     </section>
+    ${todaySay(ready)}
     ${nextStepCard()}
     ${weekCard()}
 
@@ -461,7 +463,7 @@ function viewDashboard() {
 
     ${section('Your situations', `<div class="sit-list">${sits.map(({ sit, r }) => `
       <a class="sit-row ${r.ready === r.n ? 'done' : ''}" href="#/${code}/scenario/${sit.id}">
-        <span class="scen-ic">${sit.icon}</span>
+        <span class="scen-ic badge">${sit.icon}</span>
         <span class="sit-text"><b>${esc(sit.label)}</b><small>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</small>${readyBar(r)}</span>
         ${icon('chev', 'row-chev')}
       </a>`).join('')}</div>`)}
@@ -507,9 +509,28 @@ function weekCard() {
   const week = hist.filter((h) => h.at >= since);
   const days = new Set(week.map((h) => h.d)).size;
   return `<a class="week-card" href="#/${L.lang.code}/progress">
-      <span class="week-ic">📈</span>
-      <span class="week-text"><b>This week</b><small>${week.length} session${week.length === 1 ? '' : 's'} · ${week.reduce((a, h) => a + h.right, 0)} right · ${days} day${days === 1 ? '' : 's'}</small></span>
-      ${icon('chev', 'row-chev')}</a>`;
+      <span class="week-top"><span class="week-text"><b>This week</b><small>${week.length} session${week.length === 1 ? '' : 's'} · ${week.reduce((a, h) => a + h.right, 0)} right · ${days} day${days === 1 ? '' : 's'}</small></span>
+      ${icon('chev', 'row-chev')}</span>${weekDots(L.lang.code)}</a>`;
+}
+
+// The last 7 days as circles, ticked on days you practised. Nothing to lose, just a picture of the week.
+function weekDots(code) {
+  const on = new Set(historyFor(code).map((h) => h.d));
+  const out = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    const done = on.has(todayIso(d.getTime()));
+    out.push(`<span class="wd ${done ? 'on' : ''} ${i === 0 ? 'today' : ''}"><i>${done ? '✓' : ''}</i><small>${'SMTWTFS'[d.getDay()]}</small></span>`);
+  }
+  return `<span class="week-dots" role="img" aria-label="Days practised in the last 7 days: ${[...on].filter((x) => x >= todayIso(Date.now() - 6 * 86400000)).length}">${out.join('')}</span>`;
+}
+
+// Today's speech bubble: hello in the language, then what's waiting.
+function todaySay(ready) {
+  const hello = L.phrases.find((p) => p.id === 'hello' && !p.missing);
+  const due = dueItems().length;
+  const msg = !ready ? 'Let’s learn your first phrase!' : due ? `${due} phrase${due === 1 ? ' is' : 's are'} ready to review.` : 'All caught up. Fancy a few new ones?';
+  return `<div class="say today-say"><p class="say-b">${hello ? `<b ${nativeAttrs(L.lang)}>${esc(hello.target.replace(/[.!]$/, ''))}!</b> ` : ''}${msg}</p></div>`;
 }
 
 // Pick the situation Continue teaches from (or leave it automatic).
@@ -595,6 +616,7 @@ function viewProgress() {
   const sits = C.scenarios.map((sit) => ({ sit, r: sitReady(sit) })).filter(({ r }) => r.n);
   page('more', `
     <section class="page-head"><h1>Progress</h1><p>${esc(lang.name)} · ${hist.length} session${hist.length === 1 ? '' : 's'} so far</p></section>
+    <div class="week-card static">${weekDots(code)}</div>
     <div class="board big">
       <div><b>${week.reduce((a, x) => a + x.n, 0)}</b><small>sessions this week</small></div>
       <div><b>${week.reduce((a, x) => a + x.right, 0)}</b><small>right this week</small></div>
@@ -610,7 +632,7 @@ function viewProgress() {
           <span class="row-text"><span class="row-title">${h.answered ? `${h.right}/${h.answered} right` : 'Learning session'} · ${fmtTime(h.ms)}</span>
           <span class="row-sub">${new Date(h.at).toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' })}${h.combo >= 2 ? ` · 🔥 ${h.combo}` : ''}${h.newly ? ` · ${h.newly} new` : ''}${h.locked ? ` · ${h.locked} locked in` : ''}</span></span></div>`).join('')}</div>`) : '<p class="fine">Finish a session and it shows up here.</p>'}
     ${section('Situations', `<div class="sit-list">${sits.map(({ sit, r }) => `
-      <a class="sit-row ${r.ready === r.n ? 'done' : ''}" href="#/${code}/scenario/${sit.id}"><span class="scen-ic">${sit.icon}</span>
+      <a class="sit-row ${r.ready === r.n ? 'done' : ''}" href="#/${code}/scenario/${sit.id}"><span class="scen-ic badge">${sit.icon}</span>
         <span class="sit-text"><b>${esc(sit.label)}</b><small>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</small>${readyBar(r)}</span></a>`).join('')}</div>`)}
     ${scoreboardHtml()}
   `, { back: `#/${code}` });
@@ -1017,7 +1039,7 @@ function drawSession() {
     // Recognising isn't enough: once you've picked, you repeat it (production beats recognition).
     if (picked != null && (!pl || pl.p !== p)) Object.assign(mountPlayer(p, 'session', 'learn'), { step: canPracticeAloud() ? 'say' : 'done', echo: true });
     page('home', `${top}
-      <article class="pp-phrase pp-prompt"><span class="fc-label">What did they say?</span>
+      <article class="pp-phrase pp-prompt">${promptHead(`What did they say?`)}
         <div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button>
         <span class="pp-hint">Listen, then pick the meaning</span></div>
       </article>
@@ -1033,7 +1055,7 @@ function drawSession() {
     const picked = st.picked;
     const ok = picked != null && st.options[picked].ok;
     page('home', `${top}
-      <article class="pp-phrase pp-prompt"><span class="fc-label">What does this mean?</span>
+      <article class="pp-phrase pp-prompt">${promptHead(`What does this mean?`)}
         <p class="native lg" ${nativeAttrs(L.lang)}>${withSlots(p.target)}</p>${readingLine(p, 'lg')}
         ${canSpeak() ? `<div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>` : ''}
       </article>
@@ -1151,7 +1173,7 @@ function viewRace() {
   page('home', `
     <div class="fc-progress"><span style="width:${Math.round((race.i / RACE_ROUNDS) * 100)}%"></span></div>
     <p class="fc-meta race-meta"><span>Round ${race.i + 1} of ${RACE_ROUNDS} · ${race.right} right</span><span id="race-time">${fmtTime(Date.now() - race.start)}</span></p>
-    <article class="pp-phrase pp-prompt"><span class="fc-label">Which word was swapped in?</span>
+    <article class="pp-phrase pp-prompt">${promptHead(`Which word was swapped in?`)}
       <p class="native" ${nativeAttrs(lang)}>${withSlots(r.f.target)}</p>
       <p class="en">${withSlots(r.f.english)}</p>
       <div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(r.ans.id)}" data-key="${esc(r.ans.key)}" data-state="idle" aria-label="Hear it">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>
@@ -1193,7 +1215,7 @@ function raceNext() {
 
 // The mascot: a round little speech bubble in the language's colour. Moods: happy, oops, cheer.
 function mascot(mood = 'happy', cls = '') {
-  const eyes = mood === 'happy'
+  const eyes = mood === 'happy' || mood === 'wave'
     ? '<path d="M38 50q5-6 10 0M62 50q5-6 10 0" stroke="#1d1d1f" stroke-width="4" fill="none" stroke-linecap="round"/>'
     : '<circle cx="43" cy="49" r="5.5" fill="#1d1d1f"/><circle cx="67" cy="49" r="5.5" fill="#1d1d1f"/><circle cx="45" cy="47" r="1.8" fill="#fff"/><circle cx="69" cy="47" r="1.8" fill="#fff"/>';
   const mouth = mood === 'oops'
@@ -1201,7 +1223,9 @@ function mascot(mood = 'happy', cls = '') {
     : mood === 'cheer'
       ? '<path d="M41 61q14 16 28 0z" fill="#7f1d1d"/><path d="M47 66q8 5 16 0" stroke="#f87171" stroke-width="4" fill="none" stroke-linecap="round"/>'
       : '<path d="M43 62q12 11 24 0" stroke="#1d1d1f" stroke-width="4" fill="none" stroke-linecap="round"/>';
-  const extra = mood === 'oops'
+  const extra = mood === 'wave'
+    ? '<path class="m-arm" d="M92 52q14-6 12-22" stroke="currentColor" stroke-width="9" fill="none" stroke-linecap="round"/>'
+    : mood === 'oops'
     ? '<path d="M84 30q5 8 0 11q-5-3 0-11z" fill="#60a5fa"/>'
     : mood === 'cheer'
       ? '<path d="M20 50q-12-10-8-24" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M90 50q12-10 8-24" stroke="currentColor" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M8 18l4 6M18 10l1 7M102 18l-4 6M92 10l-1 7" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>'
@@ -1215,6 +1239,9 @@ function mascot(mood = 'happy', cls = '') {
     ${eyes}${mouth}
   </svg>`;
 }
+
+// The mascot with a speech bubble: prompts in sessions read as the mascot talking to you.
+const promptHead = (text, cls = '') => `<div class="say prompt-say ${cls}">${mascot('happy', 'say-m')}${text ? `<span class="fc-label say-b">${text}</span>` : ''}</div>`;
 
 const PRAISE = ['Nice!', 'Spot on!', 'Exactly!', 'Great!', 'Yes!'];
 // The panel that slides up after every graded answer: same place, same Continue, every time.
@@ -1754,7 +1781,7 @@ function promptInner() {
     const { tiles, picked } = pl.build;
     const byId = new Map(tiles.map((t) => [t.id, t]));
     const hasDecoy = tiles.some((t) => t.decoy);
-    return `<article class="pp-phrase pp-prompt"><span class="fc-label">Build it in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>
+    return `<article class="pp-phrase pp-prompt">${promptHead(`Build it in ${esc(lang.name)}`)}<p class="fc-en">${withSlots(p.english)}</p>
         <div class="bd-answer ${picked.length ? '' : 'empty'}" ${nativeAttrs(lang)} aria-label="Your sentence">${picked.length
           ? picked.map((id, i) => `<button class="bd-tile placed" data-action="bd-unpick" data-i="${i}">${esc(byId.get(id).text)}</button>`).join('')
           : '<span class="bd-placeholder">Tap the words in order</span>'}</div>
@@ -1765,7 +1792,7 @@ function promptInner() {
       <button class="more-btn pp-next" data-action="pp-reveal">Show me</button>`;
   }
   if (ask === 'type') {
-    return `<article class="pp-phrase pp-prompt"><span class="fc-label">Type it in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>
+    return `<article class="pp-phrase pp-prompt">${promptHead(`Type it in ${esc(lang.name)}`)}<p class="fc-en">${withSlots(p.english)}</p>
         <form class="type-form" data-pp-type>
           <input class="type-input" id="pp-type-input" ${nativeAttrs(lang)} autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="done" placeholder="Type it here">
           <button class="cta" type="submit">Check</button>
@@ -1782,7 +1809,7 @@ function promptInner() {
          <div><b class="reply-native" ${nativeAttrs(lang)}>${withSlots(reply.target)}</b><small data-peek="en">${withSlots(reply.english)}</small></div></div>
        <span class="fc-label">Answer: say this in ${esc(lang.name)}</span><p class="fc-en">${withSlots(p.english)}</p>`
     : `<span class="fc-label">How do you say this in ${esc(lang.name)}?</span><p class="fc-en">${withSlots(p.english)}</p>`;
-  return `<article class="pp-phrase pp-prompt">${head}</article>
+  return `<article class="pp-phrase pp-prompt">${promptHead('', 'mini')}${head}</article>
     ${canPracticeAloud() ? `<div class="pp-stage">
       <button class="mic-big pp-big ${pl.rec ? (pl.live ? 'rec' : 'rec warming') : ''} ${pl.finishing ? 'finishing' : ''}" data-action="pp-mic" aria-label="${pl.rec ? 'Stop' : 'Start speaking'}">${icon(pl.rec ? 'stop' : 'mic')}</button>
       <span class="pp-hint">${micState(pl.rec, pl.finishing, pl.interim, idle, pl.live)}</span>
@@ -1883,7 +1910,7 @@ function playerInner() {
   // First phrase ever: how to read the three lines (replaces the old welcome tour).
   const howto = !store.prefs().readHint && pl.mode === 'learn'
     ? `<p class="pp-howto">How to read it: <b>how it’s written</b> · <b class="pron-k">how to say it</b>${/[A-Z]{2}/.test(p.pron || '') ? ' (CAPITALS = stress)' : ''} · <b>what it means</b></p>` : '';
-  return `${howto}<article class="pp-phrase">${phraseLines(p, { size: 'lg', nativeHtml: hl })}
+  return `${howto}<article class="pp-phrase">${pl.where === 'session' && pl.mode === 'learn' ? promptHead('New phrase! Say it with me.') : ''}${phraseLines(p, { size: 'lg', nativeHtml: hl })}
       ${p.draft ? `<p class="pp-draft">${draftTag(p)} ${p.native_match ? 'A native speaker wrote this exact sentence (Tatoeba).' : 'Not yet checked by a native speaker.'}</p>` : ''}
       ${cue ? `<p class="pp-cue"><span class="note-k">Listen for</span>${cue} <a class="note-link" href="#/${L.lang.code}/sounds">Sound guide</a></p>` : ''}
       ${notes ? `<div class="notes">${notes}</div>` : ''}
