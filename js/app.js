@@ -149,11 +149,15 @@ const canSpeak = () => !!(L && ((L.lang.meta.tts && tts.speechSupported) || tts.
 const voiceText = () => { const t = tts.voiceLabel(langCtx()); return t ? (t.includes(' · ') ? t : shortVoiceName(t)) : null; };
 const canPracticeAloud = () => mic.canRecord || mic.canRecognize;
 
+// Karaoke hooks on a phrase's native line: words light up as it plays, and (tap = true) a tapped word
+// plays on its own. Off for languages written without spaces (Japanese): no reliable word split yet.
+const sayAttrs = (p, tap) => (L.lang.meta.no_spaces || !p.key ? '' : `data-say="${esc(p.key)}" data-id="${esc(p.id)}"${tap ? ' data-tap' : ''}`);
+
 // Every phrase, everywhere, reads the same way: native script, then the easy
 // pronunciation, then the meaning. `nativeHtml` lets a caller add highlights.
 function phraseLines(p, { size = '', nativeHtml } = {}) {
   if (p.missing) return '<p class="native missing">Not in the dataset yet</p>';
-  return `<p class="native ${size}" ${nativeAttrs(L.lang)}>${nativeHtml ?? withSlots(p.target)}</p>
+  return `<p class="native ${size}" ${nativeAttrs(L.lang)} ${sayAttrs(p, size !== 'sm')}>${nativeHtml ?? withSlots(p.target)}</p>
     ${readingLine(p, size)}
     <p class="pron ${size}" data-peek="pron">${withSlots(p.pron)}</p>
     <p class="en ${size}" data-peek="en">${withSlots(p.english)}</p>`;
@@ -1056,7 +1060,7 @@ function drawSession() {
     const ok = picked != null && st.options[picked].ok;
     page('home', `${top}
       <article class="pp-phrase pp-prompt">${promptHead(`What does this mean?`)}
-        <p class="native lg" ${nativeAttrs(L.lang)}>${withSlots(p.target)}</p>${readingLine(p, 'lg')}
+        <p class="native lg" ${nativeAttrs(L.lang)} ${sayAttrs(p, true)}>${withSlots(p.target)}</p>${readingLine(p, 'lg')}
         ${canSpeak() ? `<div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>` : ''}
       </article>
       <div class="lc-opts">${st.options.map((o, i) => `<button class="lc-opt ${picked == null ? '' : o.ok ? 'right pop' : picked === i ? 'wrong shake' : ''}" data-action="rc-pick" data-i="${i}" ${picked == null ? '' : 'disabled'}>${withSlots(o.text)}</button>`).join('')}</div>
@@ -2161,7 +2165,67 @@ function syncListen() {
   document.querySelectorAll('[data-action="set-speed"]').forEach((b) => b.classList.toggle('on', b.dataset.speed === tts.speed().id));
 }
 
-tts.subscribe(() => { syncListen(); renderPlayer(); plSync(); });
+tts.subscribe(() => { syncListen(); renderPlayer(); plSync(); karaokeRun(); });
+
+/* ---------- karaoke ---------- */
+
+// Wrap each word of a karaoke line in <span class="kw" data-w=i>, walking text nodes so highlights
+// (<mark>) and blanks (<bdi class="slot">) stay as they are. A word split by a <mark> gets two spans
+// with the same index. Word i matches js/karaoke.js displayWords.
+function wrapWords(line) {
+  line.dataset.wrapped = '1';
+  let i = -1;
+  let boundary = true;
+  const walk = (node) => {
+    for (const n of [...node.childNodes]) {
+      if (n.nodeType === 1) { if (!n.classList.contains('slot')) walk(n); else boundary = true; continue; }
+      if (n.nodeType !== 3) continue;
+      const frag = document.createDocumentFragment();
+      for (const piece of n.textContent.split(/(\s+)/)) {
+        if (!piece) continue;
+        if (/^\s+$/.test(piece)) { boundary = true; frag.append(piece); continue; }
+        if (!/[\p{L}\p{N}]/u.test(piece)) { frag.append(piece); continue; }
+        if (boundary) { i++; boundary = false; }
+        const sp = document.createElement('span');
+        sp.className = 'kw';
+        sp.dataset.w = i;
+        sp.textContent = piece;
+        frag.append(sp);
+      }
+      n.replaceWith(frag);
+    }
+  };
+  walk(line);
+}
+const wrapAll = () => document.querySelectorAll('.native[data-say]:not([data-wrapped])').forEach(wrapWords);
+let kLast = '';
+new MutationObserver(() => { wrapAll(); kLast = ''; }).observe(document.getElementById('app'), { childList: true, subtree: true });
+
+// Light up the word being said, on every line showing that phrase. Runs once per frame while audio plays.
+let kRaf = 0;
+function karaokePaint() {
+  const cw = tts.currentWord();
+  const sig = cw ? `${cw.key}|${cw.i}` : '';
+  if (sig === kLast) return;
+  kLast = sig;
+  document.querySelectorAll('.kw.kw-on, .kw.kw-past').forEach((el) => el.classList.remove('kw-on', 'kw-past'));
+  if (!cw) return;
+  document.querySelectorAll(`.native[data-say="${CSS.escape(cw.key)}"] .kw`).forEach((el) => {
+    const w = Number(el.dataset.w);
+    if (w === cw.i) el.classList.add('kw-on');
+    else if (w < cw.i) el.classList.add('kw-past');
+  });
+}
+function karaokeRun() {
+  if (kRaf) return;
+  const tick = () => {
+    karaokePaint();
+    const live = tts.currentWord() || ['playing', 'paused'].includes(tts.getState().status); // length may not be known yet
+    kRaf = live ? requestAnimationFrame(tick) : 0;
+    if (!kRaf) karaokePaint();
+  };
+  kRaf = requestAnimationFrame(tick);
+}
 tts.onVoices(() => {
   const vr = document.getElementById('voice-row');
   if (vr && L) {

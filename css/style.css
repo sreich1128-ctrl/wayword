@@ -1222,3 +1222,9 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 .say-b.fc-label { text-transform: none; letter-spacing: 0; font-size: 15px; font-weight: 800; color: var(--ink); }
 .prompt-say .say-m { width: 56px; height: 51px; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .stamp::after { background: rgb(255 255 255 / .22); } }
+
+/* Karaoke (js/karaoke.js): the word being said lights up; tappable words have a faint dotted line */
+.kw { border-radius: 6px; transition: background-color .12s, color .12s, box-shadow .12s; }
+.kw.kw-past { color: color-mix(in srgb, var(--accent) 70%, var(--ink)); }
+.kw.kw-on { color: var(--accent-ink); background: color-mix(in srgb, var(--accent) 22%, transparent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 22%, transparent), 0 3px 0 2px color-mix(in srgb, var(--accent) 40%, transparent); text-decoration-color: transparent; }
+@media (prefers-reduced-motion: reduce) { .kw { transition: none; } }

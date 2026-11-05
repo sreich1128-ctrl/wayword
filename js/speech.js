@@ -4,6 +4,7 @@
 // Anything can subscribe() to playback changes (the mini player and Listen buttons do).
 import { store } from './store.js';
 import { voiceGender } from './voices.js';
+import { displayWords, estimateTimes, wordAt, wordAtChar } from './karaoke.js';
 
 export const SPEEDS = [
   { id: 'x050', label: '0.5×', rate: 0.5 },
@@ -61,6 +62,7 @@ export function voicesFor(lang) {
 
 // Manifest: { source, voices: [{ id, name, gender, native? }], files: { <conceptId>: { <voiceId>: 'f/hello.mp3' } } }
 const natural = new Map();
+const timings = new Map(); // code → { voices: { <voiceId>: { <id>: [[start, end], …] } } }
 export async function loadNatural(code) {
   if (natural.has(code)) return natural.get(code);
   let m = null;
@@ -69,6 +71,9 @@ export async function loadNatural(code) {
     if (r.ok) m = await r.json();
   } catch { m = null; }
   if (m && !(m.voices && m.voices.length)) m = null;
+  if (m) { // word times for karaoke (optional: without them the timing is estimated)
+    try { const r = await fetch(`./content/audio/${code}/timings.json`); if (r.ok) timings.set(code, await r.json()); } catch { /* estimate */ }
+  }
   natural.set(code, m);
   return m;
 }
@@ -155,6 +160,7 @@ function finished(item, id, onDone) {
 
 function start(item, onDone) {
   clearTimeout(loopTimer);
+  endClip();
   const url = naturalUrl(item);
   if (url) { startAudio(item, url, onDone); return; }
   startSpeech(item, onDone);
@@ -182,10 +188,15 @@ function startSpeech(item, onDone) {
   speechSynthesis.cancel();
   state.engine = 'speech';
   const id = ++utterId;
-  const u = new SpeechSynthesisUtterance(item.text.replace(/_{2,}/g, ' … '));
+  const text = item.text.replace(/_{2,}/g, ' … ');
+  const u = new SpeechSynthesisUtterance(text);
   u.lang = item.lang.bcp47;
   u.voice = chosenVoice(item.lang);
   u.rate = speed().rate;
+  // Karaoke: the phone's word events where it sends them (not reliable on iPhone), else an estimate.
+  sp = { text, i: -1, got: false, t0: 0, pausedAt: 0, times: estimateTimes(item.text, (text.length * 0.068) / u.rate) };
+  u.onstart = () => { sp.t0 = performance.now(); };
+  u.onboundary = (e) => { if (e.name && e.name !== 'word') return; sp.got = true; sp.i = wordAtChar(text, e.charIndex); };
   u.onend = () => finished(item, id, onDone);
   u.onerror = () => { if (id === utterId) set('done'); };
   state.item = item;
@@ -208,6 +219,7 @@ export function play(item, onDone) { if (canPlay(item.lang) && item.text) start(
 
 export function pause() {
   if (state.status === 'gap') { clearTimeout(loopTimer); set('paused'); return; }
+  if (sp) sp.pausedAt = performance.now();
   if (state.engine === 'audio') audioEl?.pause();
   else speechSynthesis.pause();
   set('paused');
@@ -216,7 +228,10 @@ export function pause() {
 export function resume() {
   if (state.engine === 'audio' && audioEl && audioEl.src && !audioEl.ended) { audioEl.play().catch(() => replay()); set('playing'); return; }
   // Some browsers treat pause as stop; replay the phrase in that case.
-  if (speechSupported && speechSynthesis.paused && speechSynthesis.speaking) { speechSynthesis.resume(); set('playing'); }
+  if (speechSupported && speechSynthesis.paused && speechSynthesis.speaking) {
+    if (sp?.pausedAt) { sp.t0 += performance.now() - sp.pausedAt; sp.pausedAt = 0; }
+    speechSynthesis.resume(); set('playing');
+  }
   else replay();
 }
 
@@ -230,6 +245,7 @@ export function setLoop(on) {
 
 export function stop() {
   clearTimeout(loopTimer);
+  endClip();
   utterId++;
   if (speechSupported) speechSynthesis.cancel();
   audioEl?.pause();
@@ -237,4 +253,40 @@ export function stop() {
   state.engine = null;
   state.loop = false;
   set('idle');
+}
+
+/* ---------- karaoke and tap-to-hear ---------- */
+
+let sp = null;   // the phone voice's current utterance: word events or an estimated clock
+let clip = null; // a single word playing: { key, i, end }
+
+function recordedTimes(item) {
+  const v = naturalChoice(item.lang);
+  return (v && timings.get(item.lang.code)?.voices?.[v.id]?.[item.id]) || null;
+}
+
+// The word being said right now: { key, i } (i = word index, -1 before the first), or null.
+export function currentWord() {
+  if (clip) return { key: clip.key, i: clip.i };
+  const it = state.item;
+  if (!it || (state.status !== 'playing' && state.status !== 'paused')) return null;
+  if (state.engine === 'audio' && audioEl) {
+    const d = audioEl.duration;
+    const times = recordedTimes(it) || (Number.isFinite(d) && d > 0 ? estimateTimes(it.text, d * 0.94) : null);
+    return times ? { key: it.key, i: wordAt(times, audioEl.currentTime) } : null;
+  }
+  if (state.engine === 'speech' && sp) {
+    if (sp.got) return { key: it.key, i: sp.i };
+    if (!sp.t0) return { key: it.key, i: -1 };
+    const now = sp.pausedAt || performance.now();
+    return { key: it.key, i: wordAt(sp.times, (now - sp.t0) / 1000) };
+  }
+  return null;
+}
+
+function endClip() {
+  if (!clip) return;
+  clip = null;
+  audioEl?.pause();
+  emit();
 }
