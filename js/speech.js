@@ -158,9 +158,13 @@ function finished(item, id, onDone) {
   } else set('done');
 }
 
+// iPhone: play as media (full volume, ignores the silent switch), not in the quieter call mode.
+const mediaMode = () => { try { if (navigator.audioSession && navigator.audioSession.type !== 'playback') navigator.audioSession.type = 'playback'; } catch { /* unsupported */ } };
+
 function start(item, onDone) {
   clearTimeout(loopTimer);
   endClip();
+  mediaMode();
   const url = naturalUrl(item);
   if (url) { startAudio(item, url, onDone); return; }
   startSpeech(item, onDone);
@@ -297,6 +301,7 @@ export function playWord(item, i) {
   const word = displayWords(item.text)[i];
   if (!word) return;
   stop();
+  mediaMode();
   const url = naturalUrl(item);
   const times = url && recordedTimes(item);
   if (times && times[i]) {

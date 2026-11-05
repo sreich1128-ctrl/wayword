@@ -83,6 +83,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Karaoke, tap to hear, hear then build 2026-11-05 (v42):** see `docs/KARAOKE_NOTES.md` and `docs/PRINCIPLES.md`. Words light up as a phrase plays (`js/karaoke.js`, `tts.currentWord()`), a tapped word plays alone (`tts.playWord`), and Build reviews take turns between reading the English and hearing the phrase (`buildPrompt` in plan.js). Portuguese word timings (`scripts/align-audio.mjs` → `content/audio/pt-PT/timings.json`) wait on the ElevenLabs key getting the Forced Alignment permission; until then timing is estimated.
 
+**Playback volume fix 2026-11-05 (v43):** the mic is no longer opened ahead of time (v40's `mic.prewarm`, still in speak.js but unused): an open mic put phones in call mode, so phrases played quieter and their start was clipped. Every playback now switches iOS to media mode (`navigator.audioSession.type = 'playback'`) and closes any open mic first. Cost: tapping the mic waits ~0.3 s for it to open.
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**

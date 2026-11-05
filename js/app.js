@@ -1076,7 +1076,6 @@ function drawSession() {
     if (recall) Object.assign(pl, { ask: st.ask, reply: st.reply, hear: !!st.hear });
   }
   page('home', `${top}<div id="pp" class="pp">${playerInner()}</div>`, { back: home, focus: true });
-  warmMicSoon();
 }
 
 function drawSessionDone() {
@@ -1986,17 +1985,9 @@ function drawPlayer() {
   if (!el || !pl) return;
   el.innerHTML = playerInner();
   syncListen();
-  warmMicSoon();
 }
-
-// A mic button is on screen and nothing is playing: open the mic now, so the tap records at once.
-function warmMicSoon() {
-  if (!pl || pl.rec || !document.querySelector('#pp [data-action="pp-mic"]')) return;
-  setTimeout(() => {
-    const st = tts.getState().status;
-    if (pl && !pl.rec && st !== 'playing' && document.querySelector('#pp [data-action="pp-mic"]')) mic.prewarm();
-  }, 400);
-}
+// The mic is no longer opened ahead of time (mic.prewarm): an open mic puts phones in "call" mode,
+// which turns playback down and clips the start of each phrase. Listening matters more than 0.3 s.
 
 // native → you → native, highlighting each part as it plays.
 function plGuide() {
@@ -2174,7 +2165,11 @@ function syncListen() {
   document.querySelectorAll('[data-action="set-speed"]').forEach((b) => b.classList.toggle('on', b.dataset.speed === tts.speed().id));
 }
 
-tts.subscribe(() => { syncListen(); renderPlayer(); plSync(); karaokeRun(); });
+tts.subscribe((st) => {
+  // Playback always in media mode, at full volume: close a stray open mic first (never mid-recording).
+  if (st.status === 'playing' && !pl?.rec) mic.releaseWarm();
+  syncListen(); renderPlayer(); plSync(); karaokeRun();
+});
 
 /* ---------- karaoke ---------- */
 
