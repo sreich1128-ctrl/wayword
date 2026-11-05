@@ -81,6 +81,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **App-wide cartoony pass 2026-11-01 (v41):** passport stamps are now chunky stickers (fill, white ring, 3D lip, gloss, solid glyph badge, staggered sticker-in); the mascot waves and talks in speech bubbles (`promptHead(text)` on every session prompt and new phrase, `todaySay()` on Today says hello in the language, the home greeting); bottom nav has a colour per tab with a raised active pill; situation icons sit in round 3D badges; More rows get coloured icon tiles; chunky coloured numbers on boards; `weekDots(code)` shows the last 7 days as ticked circles (Today's week card and Progress), no streak; list items pop in. CSS block "App-wide cartoony pass" at the end of css/style.css; respects reduced motion and dark mode. Animations use `backwards` fill so press-down transforms still work.
 
+**Karaoke, tap to hear, hear then build 2026-11-05 (v42):** see `docs/KARAOKE_NOTES.md` and `docs/PRINCIPLES.md`. Words light up as a phrase plays (`js/karaoke.js`, `tts.currentWord()`), a tapped word plays alone (`tts.playWord`), and Build reviews take turns between reading the English and hearing the phrase (`buildPrompt` in plan.js). Portuguese word timings (`scripts/align-audio.mjs` → `content/audio/pt-PT/timings.json`) wait on the ElevenLabs key getting the Forced Alignment permission; until then timing is estimated.
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**
