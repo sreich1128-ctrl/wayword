@@ -290,3 +290,44 @@ function endClip() {
   audioEl?.pause();
   emit();
 }
+
+// Tap a word: play just that word. From the phrase recording when there are word times (the sound
+// inside the phrase, as you'd hear it), else the phone's voice says the word on its own.
+export function playWord(item, i) {
+  const word = displayWords(item.text)[i];
+  if (!word) return;
+  stop();
+  const url = naturalUrl(item);
+  const times = url && recordedTimes(item);
+  if (times && times[i]) {
+    const [s, e] = times[i];
+    audioEl ||= new Audio();
+    const a = audioEl;
+    const id = ++utterId;
+    clip = { key: item.key, i, end: e + 0.06 };
+    a.onended = () => { if (id === utterId) endClip(); };
+    a.onerror = null;
+    const go = () => {
+      if (id !== utterId) return;
+      a.currentTime = Math.max(0, s - 0.04);
+      a.playbackRate = (AUDIO_RATE[speed().id] || 1) * (e - s < 0.25 ? 0.85 : 1); // very short words: a touch slower
+      a.play().catch(() => endClip());
+      const watch = () => { if (clip && id === utterId) { if (a.currentTime >= clip.end) endClip(); else requestAnimationFrame(watch); } };
+      requestAnimationFrame(watch);
+    };
+    if (!a.src.endsWith(url.replace(/^\./, ''))) { a.src = url; a.preservesPitch = true; a.addEventListener('loadedmetadata', go, { once: true }); a.load(); } else go();
+    emit();
+    return;
+  }
+  if (!speechSupported) return;
+  speechSynthesis.cancel();
+  const id = ++utterId;
+  const u = new SpeechSynthesisUtterance(word.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, ''));
+  u.lang = item.lang.bcp47;
+  u.voice = chosenVoice(item.lang);
+  u.rate = speed().rate * 0.9;
+  clip = { key: item.key, i, end: Infinity };
+  u.onend = u.onerror = () => { if (id === utterId) endClip(); };
+  speechSynthesis.speak(u);
+  emit();
+}

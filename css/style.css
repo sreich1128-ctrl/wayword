@@ -1225,6 +1225,7 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 
 /* Karaoke (js/karaoke.js): the word being said lights up; tappable words have a faint dotted line */
 .kw { border-radius: 6px; transition: background-color .12s, color .12s, box-shadow .12s; }
+.native[data-tap] .kw { cursor: pointer; text-decoration: underline dotted color-mix(in srgb, var(--accent) 30%, transparent); text-decoration-thickness: 2px; text-underline-offset: .22em; -webkit-tap-highlight-color: transparent; }
 .kw.kw-past { color: color-mix(in srgb, var(--accent) 70%, var(--ink)); }
 .kw.kw-on { color: var(--accent-ink); background: color-mix(in srgb, var(--accent) 22%, transparent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 22%, transparent), 0 3px 0 2px color-mix(in srgb, var(--accent) 40%, transparent); text-decoration-color: transparent; }
 @media (prefers-reduced-motion: reduce) { .kw { transition: none; } }

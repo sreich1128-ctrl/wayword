@@ -2302,6 +2302,13 @@ document.addEventListener('click', (e) => {
     setTimeout(() => { location.hash = stamp.getAttribute('href'); }, 420);
     return;
   }
+  const word = e.target.closest('.native[data-tap] .kw');
+  if (word) {
+    const line = word.closest('.native');
+    const p = L.byId.get(line.dataset.id) || L.extraById.get(line.dataset.id);
+    if (p) tts.playWord(speechItem(p), Number(word.dataset.w));
+    return;
+  }
   const btn = e.target.closest('[data-action]');
   if (!btn) {
     // Tap a hidden English/pronunciation line to peek at it.
