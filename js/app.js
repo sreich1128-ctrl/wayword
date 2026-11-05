@@ -6,7 +6,7 @@ import { shortVoiceName } from './voices.js';
 import { sfx } from './sfx.js';
 import { checkTyped, checkTypedChars } from './typecheck.js';
 import { DAY, gapFor, lockTime, parseDate, daysUntil, todayIso, endOfToday } from './schedule.js';
-import { planSession, requeue, readiness, reviewMode, LADDER, buildTiles, buildIsRight, canBuildPhrase } from './plan.js';
+import { planSession, requeue, readiness, reviewMode, LADDER, buildTiles, buildIsRight, canBuildPhrase, buildPrompt } from './plan.js';
 
 const $app = document.getElementById('app');
 let C = null; // content model
@@ -1073,7 +1073,7 @@ function drawSession() {
   if (recall && !st.ask) st.ask = askFor(st);
   if (!pl || pl.p !== st.p || pl.where !== 'session') {
     mountPlayer(st.p, 'session', recall ? 'recall' : 'learn');
-    if (recall) Object.assign(pl, { ask: st.ask, reply: st.reply });
+    if (recall) Object.assign(pl, { ask: st.ask, reply: st.reply, hear: !!st.hear });
   }
   page('home', `${top}<div id="pp" class="pp">${playerInner()}</div>`, { back: home, focus: true });
   warmMicSoon();
@@ -1323,6 +1323,11 @@ function askFor(st) {
   if (fits.length) st.reply = fits[Math.floor(Math.random() * fits.length)];
   const mode = reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern', canBuild });
   if (mode === 'recognize') st.options = recognizeOptions(st.p);
+  if (mode === 'build' && st.kind === 'review') {
+    // Reviews only: every other Build is heard instead of read (turns carry over between sessions).
+    const nth = session.steps.slice(0, session.i).filter((x) => x.kind === 'review' && x.ask === 'build').length + (scoresFor(L.lang.code).sessions || 0);
+    st.hear = buildPrompt({ canHear: canSpeak(), nth }) === 'hear';
+  }
   return mode;
 }
 
@@ -1785,7 +1790,11 @@ function promptInner() {
     const { tiles, picked } = pl.build;
     const byId = new Map(tiles.map((t) => [t.id, t]));
     const hasDecoy = tiles.some((t) => t.decoy);
-    return `<article class="pp-phrase pp-prompt">${promptHead(`Build it in ${esc(lang.name)}`)}<p class="fc-en">${withSlots(p.english)}</p>
+    if (pl.hear && !pl.heard) { pl.heard = true; setTimeout(() => { if (pl?.p === p && pl.step === 'prompt') tts.play(speechItem(p)); }, 350); }
+    const prompt = pl.hear
+      ? `${promptHead('Listen, then build what you heard')}<div class="pp-stage"><button class="mic-big listen pp-big" data-action="speak" data-id="${esc(p.id)}" data-key="${esc(p.key)}" data-state="idle" aria-label="Listen">${icon('play', 'i-play')}${icon('pause', 'i-pause')}</button></div>`
+      : `${promptHead(`Build it in ${esc(lang.name)}`)}<p class="fc-en">${withSlots(p.english)}</p>`;
+    return `<article class="pp-phrase pp-prompt">${prompt}
         <div class="bd-answer ${picked.length ? '' : 'empty'}" ${nativeAttrs(lang)} aria-label="Your sentence">${picked.length
           ? picked.map((id, i) => `<button class="bd-tile placed" data-action="bd-unpick" data-i="${i}">${esc(byId.get(id).text)}</button>`).join('')
           : '<span class="bd-placeholder">Tap the words in order</span>'}</div>

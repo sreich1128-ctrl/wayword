@@ -79,6 +79,10 @@ export function reviewMode({ box = 1, keep = false, stage = 0, hasReply = false,
   return mode;
 }
 
+// Build it in reviews asks two ways, taking turns: read the English, or hear the phrase (when there's
+// audio). nth = how many review Builds came before this one. Right after learning it's always "read".
+export const buildPrompt = ({ canHear = false, nth = 0 } = {}) => (canHear && nth % 2 === 0 ? 'hear' : 'read');
+
 /* ---------- Build it: put the words in order ---------- */
 
 // The words of a phrase as tiles, without punctuation ("¿Dónde está el baño?" → Dónde · está · el · baño).

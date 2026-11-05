@@ -113,3 +113,9 @@ test('build it: right only in the right order; one word, frames and Japanese are
   assert.equal(canBuildPhrase('バス停はどこですか？', true), false);
   assert.equal(canBuildPhrase('Com licença'), true);
 });
+
+test('Build in reviews takes turns: heard, then read; always read without audio', async () => {
+  const { buildPrompt } = await import('../js/plan.js');
+  assert.deepEqual([0, 1, 2, 3].map((nth) => buildPrompt({ canHear: true, nth })), ['hear', 'read', 'hear', 'read']);
+  assert.deepEqual([0, 1].map((nth) => buildPrompt({ canHear: false, nth })), ['read', 'read']);
+});
