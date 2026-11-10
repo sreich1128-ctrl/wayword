@@ -945,6 +945,22 @@ function typeResult(s) {
   </div>`;
 }
 
+// Typing is hard without the right keyboard, or before you know the spelling: offer the same
+// recall another way (tiles or out loud). Both still count only if you get it right.
+const OWN_SCRIPT = new Set(['ru', 'ar', 'he', 'ja']); // languages that need their own keyboard
+function typeOut(p) {
+  const build = canBuildPhrase(p.target, !!L.lang.meta.no_spaces);
+  const say = canPracticeAloud();
+  if (!build && !say) return '';
+  return `<div class="type-out">
+      <p class="type-out-k">${OWN_SCRIPT.has(L.lang.meta.bcp47.split('-')[0]) ? `No ${esc(L.lang.name)} keyboard, or not sure how it’s spelled?` : 'Not sure how it’s spelled?'}</p>
+      <div class="type-out-btns">
+        ${build ? `<button class="pill-btn" data-action="pp-ask-build">${icon('puzzle')} Build it with tiles</button>` : ''}
+        ${say ? `<button class="pill-btn" data-action="pp-ask-say">${icon('mic')} Say it instead</button>` : ''}
+      </div>
+    </div>`;
+}
+
 function typeHint(p) {
   const lang = L.lang;
   const base = lang.meta.bcp47.split('-')[0];
@@ -1810,9 +1826,8 @@ function promptInner() {
           <button class="cta" type="submit">Check</button>
         </form>${typeHint(p)}
       </article>
-      <p class="fine center">Writing it out from memory is the strongest practice there is. Accents count.</p>
-      <button class="more-btn pp-next" data-action="pp-reveal">Show me</button>
-      ${canPracticeAloud() ? '<button class="link-btn center" data-action="pp-ask-say">No keyboard for this? Say it instead</button>' : ''}`;
+      ${typeOut(p)}
+      <button class="more-btn pp-next" data-action="pp-reveal">Show me</button>`;
   }
   const idle = failed ? esc(mic.explain(pl.take) || 'Nothing came through. Try again.') : ask === 'answer' ? 'Answer out loud, then hear the right version' : 'Say it out loud, then hear the right version';
   const head = ask === 'answer' && reply
@@ -2512,6 +2527,12 @@ document.addEventListener('click', (e) => {
     drawPlayer();
   } else if (a === 'bd-check') {
     plBuildCheck();
+  } else if (a === 'pp-ask-build') {
+    if (!pl) return;
+    pl.ask = 'build';
+    pl.build = null;
+    if (session?.steps[session.i]) session.steps[session.i].ask = 'build';
+    drawPlayer();
   } else if (a === 'pp-ask-say') {
     if (!pl) return;
     pl.ask = 'say';

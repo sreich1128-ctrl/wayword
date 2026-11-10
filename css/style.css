@@ -1229,3 +1229,10 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 .kw.kw-past { color: color-mix(in srgb, var(--accent) 70%, var(--ink)); }
 .kw.kw-on { color: var(--accent-ink); background: color-mix(in srgb, var(--accent) 22%, transparent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 22%, transparent), 0 3px 0 2px color-mix(in srgb, var(--accent) 40%, transparent); text-decoration-color: transparent; }
 @media (prefers-reduced-motion: reduce) { .kw { transition: none; } }
+
+/* Typing step: the way out when there's no keyboard (or no idea of the spelling) */
+.type-out { margin: 4px 0 2px; padding: 12px 14px; border-radius: 18px; background: color-mix(in srgb, var(--accent) 8%, var(--surface)); border: 2px dashed color-mix(in srgb, var(--accent) 35%, var(--edge)); display: grid; gap: 10px; }
+.type-out-k { font-weight: 800; font-size: 15px; text-align: center; }
+.type-out-btns { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.type-out-btns .pill-btn { display: inline-flex; align-items: center; gap: 6px; }
+.type-out-btns .ic { width: 18px; height: 18px; }
