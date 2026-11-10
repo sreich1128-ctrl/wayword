@@ -146,6 +146,13 @@ export function capture({ asrLang, mode = micMode(), maxMs = 10000, onLevel, onI
       // Stopped while the permission prompt / mic was still opening: release it right away,
       // or the mic stays on and the next try finds it busy.
       if (stopping || finished) { s.getTracks().forEach((t) => t.stop()); recDone = true; maybeFinish(); return; }
+      // The mic can vanish mid-take when audio switches device (a Bluetooth hearing aid or headphones
+      // connecting or disconnecting). Say so, rather than leaving a silent or empty recording.
+      const lost = () => { if (!finished && !stopping) { report.recError = 'device-changed'; stop(); } };
+      (s.getAudioTracks?.() || []).forEach((t) => {
+        t.onended = lost;
+        t.onmute = () => setTimeout(() => { if (t.muted) lost(); }, 700);
+      });
       const mime = pickMime();
       report.mime = mime;
       recorder = new MediaRecorder(s, mime ? { mimeType: mime } : undefined);
@@ -235,9 +242,10 @@ export function explain(r) {
   if (blocked.includes(r.recError) || (!r.url && ['not-allowed', 'service-not-allowed'].includes(r.srError))) {
     return 'Microphone access is blocked. On iPhone: Settings → Safari → Microphone → Allow (or tap “aA” in the address bar → Website Settings → Microphone).';
   }
+  if (r.recError === 'device-changed') return 'The microphone switched while you were speaking (a hearing aid or Bluetooth headphones connecting or disconnecting). Tap the mic and say it again.';
   if (r.recError === 'NotReadableError' || r.recError === 'NotFoundError') return 'Another app is using the microphone, or none was found. Close calls or voice memos and try again.';
   if (!r.url && r.recError === 'empty') return 'The microphone sent no sound. Close other apps that might be using it, then try again (or restart Safari).';
-  if (r.url && r.peak < 0.03) return 'The recording is almost silent. Check that nothing is covering the mic, then speak a little louder.';
+  if (r.url && r.peak < 0.03) return 'The recording is almost silent. Check that nothing is covering the mic, then speak a little louder. With a hearing aid or Bluetooth headphones connected, the phone may be listening through them: try again, or run the Mic check in More.';
   const sr = {
     'audio-capture': 'the speech check couldn’t get the microphone. Run the Mic check to find the setting that works on this phone.',
     'not-allowed': 'the speech check isn’t allowed. On iPhone it needs Settings → General → Keyboard → Enable Dictation.',

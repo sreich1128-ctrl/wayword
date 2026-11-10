@@ -87,6 +87,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Typing way-out 2026-11-09 (v44–45):** the typing step shows a clear box under the input (`typeOut`): 'Not sure how it's spelled?' (or 'No <language> keyboard…' for ru/ar/he/ja) with Build it with tiles / Say it instead, both still graded. 'Don't ask me to type in <language>' sets `prefs.noType[code]`: typing reviews and keep checks become Say, the quick check becomes Build. Switch back in More → Stay on it → Typing in <language>. The More → Type it practice mode is unaffected (you chose it).
 
+**Hearing aid / Bluetooth mic switch 2026-11-09 (v46):** owner's dad (Bluetooth hearing aid) found recording didn't hear him after switching between the hearing aid and the phone. Not reproduced. `capture()` now ends a take with `recError: 'device-changed'` if the mic track ends or stays muted (>0.7 s), and `explain()` says the mic switched; the near-silent message mentions hearing aids and the Mic check. Waiting on: phone + hearing aid model, and which Mic check step fails in each state.
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**
