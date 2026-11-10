@@ -119,3 +119,10 @@ test('Build in reviews takes turns: heard, then read; always read without audio'
   assert.deepEqual([0, 1, 2, 3].map((nth) => buildPrompt({ canHear: true, nth })), ['hear', 'read', 'hear', 'read']);
   assert.deepEqual([0, 1].map((nth) => buildPrompt({ canHear: false, nth })), ['read', 'read']);
 });
+
+test('typing turned off: typing reviews and keep checks ask you to say it', async () => {
+  const { reviewMode } = await import('../js/plan.js');
+  assert.equal(reviewMode({ box: 4, canType: true }), 'type');
+  assert.equal(reviewMode({ box: 4, canType: false }), 'say');
+  assert.equal(reviewMode({ keep: true, stage: 1, canType: false }), 'say');
+});

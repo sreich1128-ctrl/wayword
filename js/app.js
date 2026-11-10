@@ -73,6 +73,7 @@ const ICONS = {
   expand: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   download: '<path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/>',
   bell: '<path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15L6 16Z"/><path d="M10 20a2 2 0 0 0 4 0"/>',
+  keyboard: '<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6 10h.01M9.5 10h.01M13 10h.01M16.5 10h.01M6.5 14h11"/>',
   dots: '<circle cx="5" cy="12" r="1.4"/><circle cx="12" cy="12" r="1.4"/><circle cx="19" cy="12" r="1.4"/>',
 };
 const icon = (name, cls = '') => `<svg class="ic ${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[name]}</svg>`;
@@ -674,6 +675,7 @@ function viewMore() {
     ${section('Your progress', `<div class="group">${row({ href: `#/${code}/progress`, ic: 'list', title: 'Progress', sub: 'Every session, the last 14 days, and your phrases by stage' })}</div>`)}
     ${scoreboardHtml()}
     ${section('Stay on it', `<div class="group">
+      ${row({ action: 'toggle-type', ic: 'keyboard', title: `Typing in ${esc(lang.name)}`, sub: typingSub(), attrs: 'id="type-row"' })}
       ${row({ action: 'toggle-sfx', ic: 'sound', title: 'Sounds', sub: sfx.enabled() ? 'On: a ding for right, a soft note for not quite' : 'Off', attrs: 'id="sfx-row"' })}
       ${row({ action: 'reminder-sheet', ic: 'bell', title: 'Daily reminder', sub: store.prefs().reminder ? `Set for ${esc(store.prefs().reminder)} · add it again to change the time` : 'A repeating calendar reminder, so reviews happen on the day they’re due' })}
     </div>`)}
@@ -947,6 +949,10 @@ function typeResult(s) {
 
 // Typing is hard without the right keyboard, or before you know the spelling: offer the same
 // recall another way (tiles or out loud). Both still count only if you get it right.
+// "Don't ask me to type in X": typing reviews become Say (Build in the quick check). Per language.
+const typingOn = (code = L.lang.code) => !(store.prefs().noType || {})[code];
+const typingSub = () => (typingOn() ? 'On: some reviews ask you to type the phrase' : 'Off: those reviews ask you to say it instead');
+
 const OWN_SCRIPT = new Set(['ru', 'ar', 'he', 'ja']); // languages that need their own keyboard
 function typeOut(p) {
   const build = canBuildPhrase(p.target, !!L.lang.meta.no_spaces);
@@ -958,6 +964,7 @@ function typeOut(p) {
         ${build ? `<button class="pill-btn" data-action="pp-ask-build">${icon('puzzle')} Build it with tiles</button>` : ''}
         ${say ? `<button class="pill-btn" data-action="pp-ask-say">${icon('mic')} Say it instead</button>` : ''}
       </div>
+      <button class="link-btn center" data-action="no-type">Don’t ask me to type in ${esc(L.lang.name)}</button>
     </div>`;
 }
 
@@ -1327,7 +1334,7 @@ function askFor(st) {
   const canBuild = canBuildPhrase(st.p.target, !!L.lang.meta.no_spaces);
   if (st.kind === 'check') {
     // Right after learning, graded: alternate Build and Write; single words (nothing to build) are written.
-    const canType = st.p.type !== 'pattern';
+    const canType = st.p.type !== 'pattern' && typingOn();
     const nth = session.steps.slice(0, session.i).filter((x) => x.kind === 'check').length;
     if (!canBuild) return canType ? 'type' : 'say';
     return canType && nth % 2 === 1 ? 'type' : 'build';
@@ -1336,7 +1343,7 @@ function askFor(st) {
   const r = store.get().srs[st.p.key];
   const fits = canSpeak() ? L.replies.filter((x) => x.answer_with.includes(st.p.id)) : [];
   if (fits.length) st.reply = fits[Math.floor(Math.random() * fits.length)];
-  const mode = reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern', canBuild });
+  const mode = reviewMode({ box: r?.box || 1, keep: !!r?.keep, stage: r?.stage || 0, hasReply: !!fits.length, canType: st.p.type !== 'pattern' && typingOn(), canBuild });
   if (mode === 'recognize') st.options = recognizeOptions(st.p);
   if (mode === 'build' && st.kind === 'review') {
     // Reviews only: every other Build is heard instead of read (turns carry over between sessions).
@@ -2444,6 +2451,22 @@ document.addEventListener('click', (e) => {
     if (ok) { race.right++; sfx.right(); } else sfx.wrong();
     viewRace();
     setTimeout(raceNext, ok ? 650 : 1500);
+  } else if (a === 'no-type' || a === 'toggle-type') {
+    const code = L.lang.code;
+    store.setPref('noType', { ...(store.prefs().noType || {}), [code]: typingOn() });
+    if (a === 'no-type') {
+      toast(`Typing is off for ${L.lang.name}. Turn it back on in More.`);
+      if (pl) { // this step: tiles if the phrase has them, else say it
+        const build = canBuildPhrase(pl.p.target, !!L.lang.meta.no_spaces);
+        pl.ask = build ? 'build' : 'say';
+        pl.build = null;
+        if (session?.steps[session.i]) session.steps[session.i].ask = pl.ask;
+        drawPlayer();
+      }
+    } else {
+      const sub = document.querySelector('#type-row .row-sub');
+      if (sub) sub.textContent = typingSub();
+    }
   } else if (a === 'toggle-sfx') {
     sfx.set(!sfx.enabled());
     sfx.right(); // so you hear what you turned on

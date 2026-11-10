@@ -85,6 +85,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Playback volume fix 2026-11-05 (v43):** the mic is no longer opened ahead of time (v40's `mic.prewarm`, still in speak.js but unused): an open mic put phones in call mode, so phrases played quieter and their start was clipped. Every playback now switches iOS to media mode (`navigator.audioSession.type = 'playback'`) and closes any open mic first. Cost: tapping the mic waits ~0.3 s for it to open.
 
+**Typing way-out 2026-11-09 (v44–45):** the typing step shows a clear box under the input (`typeOut`): 'Not sure how it's spelled?' (or 'No <language> keyboard…' for ru/ar/he/ja) with Build it with tiles / Say it instead, both still graded. 'Don't ask me to type in <language>' sets `prefs.noType[code]`: typing reviews and keep checks become Say, the quick check becomes Build. Switch back in More → Stay on it → Typing in <language>. The More → Type it practice mode is unaffected (you chose it).
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**
