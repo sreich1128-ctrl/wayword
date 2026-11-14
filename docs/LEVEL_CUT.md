@@ -2,7 +2,7 @@
 
 Input: ChatGPT's `level1_gap_candidates.json` (61 lines) and `level2_english_exchanges.json` (244 lines = 61 exchanges × say / hear / follow-up / recovery), following `CLAUDE_CODE_HANDOFF.md`. Checked against the live content: 123 phrases, 14 replies, 73 vocab words, pattern variants.
 
-**Status: proposal. No content file has been changed and nothing is translated. Waiting for the owner's approval of this English list.**
+**Status: Part A (Level 1) approved by the owner and shipped 2026-11-14 as v47, with small changes noted in docs/HANDOFF.md (new words became whole-sentence variations, not vocab words; "How long are you staying?" reuses the phrase "How long are you here for?"; the two number replies use a plain number). Part B (Level 2) is still a proposal.**
 
 Rules applied: the 123 existing phrases and their translations are untouched; a candidate that an existing phrase, variant or reply already covers is **reused**, not rewritten; a "Where is ___?"-type candidate becomes a new **word** for the existing frame rather than a new phrase; anything marginal for a tourist is **cut**.
 

@@ -783,12 +783,18 @@ function viewScenario(id) {
   if (!sit) return go(`#/${lang.code}`);
   const ps = sitPhrases(sit);
   const r = sitReady(sit);
+  // The situation's own phrases first (the ones its readiness counts); general ones fold away below.
+  const mine = new Set(sit.counts || sit.concepts);
+  const own = ps.filter((p) => mine.has(p.id));
+  const shared = ps.filter((p) => !mine.has(p.id));
   page('home', `
     <section class="page-head scen-head"><span class="scen-ic huge">${sit.icon}</span><div><h1>${esc(sit.label)}</h1><p>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</p>${readyBar(r)}</div></section>
     ${sit.note ? `<p class="callout">${esc(sit.note)}</p>` : ''}
     ${r.ready < r.n ? `<button class="cta sit-cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Get ready for ${esc(sit.label === 'The basics' ? 'the basics' : sit.label)}</button>` : ''}
     ${audioUrls(ps).length ? `<button class="pill-btn offline-btn" data-action="save-offline" data-id="${sit.id}">${icon('download')}<span>Save for offline</span></button>` : ''}
-    <div class="list">${ps.map((p) => phraseCard(p)).join('')}</div>
+    <div class="list">${own.map((p) => phraseCard(p)).join('')}</div>
+    ${shared.length ? `<details class="also"><summary><span>Also useful here <b>${shared.length}</b></span><small>General phrases from The basics and other situations</small></summary>
+      <div class="list">${shared.map((p) => phraseCard(p)).join('')}</div></details>` : ''}
     ${repliesFor(sit).length ? section('You might hear', `<div class="group pad hear-list">${repliesFor(sit).map((x) => exampleRow(x).replace('<small>', `${draftTag(x)}<small>`)).join('')}</div>`) : ''}
   `, { back: `#/${lang.code}` });
   refreshOfflineBtn(ps);

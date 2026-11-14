@@ -1236,3 +1236,13 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 .type-out-btns { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
 .type-out-btns .pill-btn { display: inline-flex; align-items: center; gap: 6px; }
 .type-out-btns .ic { width: 18px; height: 18px; }
+
+/* A situation's general phrases, folded under its own */
+.also { margin-top: 14px; }
+.also > summary { list-style: none; cursor: pointer; display: grid; gap: 2px; padding: 12px 16px; border-radius: 18px; background: var(--surface); border: 2px dashed var(--edge); font-weight: 800; }
+.also > summary::-webkit-details-marker { display: none; }
+.also > summary span::after { content: " ▾"; color: var(--faint); }
+.also[open] > summary span::after { content: " ▴"; }
+.also > summary b { display: inline-block; min-width: 24px; padding: 0 7px; border-radius: 99px; background: var(--tint); color: var(--accent-ink); text-align: center; font-size: 13px; }
+.also > summary small { font-weight: 600; color: var(--muted); font-size: 13px; }
+.also > .list { margin-top: 10px; }
