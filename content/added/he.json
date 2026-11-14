@@ -386,6 +386,174 @@
       "target": "איפה אפשר ___?",
       "pronunciation_easy": "EY-fo ef-SHAR ___",
       "qa": "Literally 'Where is it possible to ___?'. Blank takes an infinitive; gender-neutral."
+    },
+    {
+      "id": "look_beautiful",
+      "target": "את יפה מאוד. / אתה נראה מעולה.",
+      "pronunciation_easy": "at ya-FA me-OD / a-TA nir-E me-u-LE",
+      "qa": "First form to a woman, second to a man."
+    },
+    {
+      "id": "love_outfit",
+      "target": "אהבתי את הלבוש שלך.",
+      "pronunciation_easy": "a-HAV-tee et ha-le-VOOSH shel-KHA",
+      "qa": "Other lines follow this set's rule: masculine \"you\" in the pronunciation line. To a woman: shel-AKH, le-AKH, ot-AKH, at pnuya."
+    },
+    {
+      "id": "beautiful_smile",
+      "target": "יש לך חיוך יפה.",
+      "pronunciation_easy": "yesh le-KHA khee-YUKH ya-FE"
+    },
+    {
+      "id": "like_style",
+      "target": "אני אוהב את הסגנון שלך.",
+      "pronunciation_easy": "a-NEE o-HEV et ha-sig-NON shel-KHA"
+    },
+    {
+      "id": "get_coffee",
+      "target": "רוצה ללכת לשתות קפה?",
+      "pronunciation_easy": "ro-TSE la-LE-khet lish-TOT ka-FE"
+    },
+    {
+      "id": "buy_drink",
+      "target": "אפשר להזמין אותך למשקה?",
+      "pronunciation_easy": "ef-SHAR le-haz-MEEN ot-KHA le-mash-KE"
+    },
+    {
+      "id": "see_again",
+      "target": "אני רוצה לראות אותך שוב.",
+      "pronunciation_easy": "a-NEE ro-TSE lir-OT ot-KHA shoov"
+    },
+    {
+      "id": "free_tomorrow",
+      "target": "אתה פנוי מחר?",
+      "pronunciation_easy": "a-TA pa-NUY ma-KHAR"
+    },
+    {
+      "id": "your_number",
+      "target": "אפשר לקבל את המספר שלך?",
+      "pronunciation_easy": "ef-SHAR le-ka-BEL et ha-mis-PAR shel-KHA"
+    },
+    {
+      "id": "with_friends",
+      "target": "אתה פה עם חברים?",
+      "pronunciation_easy": "a-TA po im kha-ve-REEM"
+    },
+    {
+      "id": "great_time",
+      "target": "היה לי ממש כיף.",
+      "pronunciation_easy": "ha-YA lee ma-MASH kef"
+    },
+    {
+      "id": "not_interested",
+      "target": "תודה, אבל אני לא מעוניין.",
+      "pronunciation_easy": "to-DA, a-VAL a-NEE lo me-un-YAN",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "leave_me_alone",
+      "target": "תעזוב אותי בבקשה.",
+      "pronunciation_easy": "ta-a-ZOV o-TEE be-va-ka-SHA",
+      "qa": "PRIORITY REVIEW. To a woman: תעזבי אותי."
+    },
+    {
+      "id": "my_name_is",
+      "target": "קוראים לי ___.",
+      "pronunciation_easy": "kor-EEM lee ___"
+    },
+    {
+      "id": "im_from",
+      "target": "אני מ___.",
+      "pronunciation_easy": "a-NEE mi-___"
+    },
+    {
+      "id": "how_long_here",
+      "target": "כמה זמן אתה פה?",
+      "pronunciation_easy": "KA-ma zman a-TA po"
+    },
+    {
+      "id": "cheers",
+      "target": "לחיים!",
+      "pronunciation_easy": "le-KHA-yim"
+    },
+    {
+      "id": "need_ambulance",
+      "target": "אני צריך אמבולנס.",
+      "pronunciation_easy": "a-NEE tsa-REEKH AM-boo-lans",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "hurts_here",
+      "target": "כואב לי פה.",
+      "pronunciation_easy": "ko-EV lee po",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "been_robbed",
+      "target": "שדדו אותי.",
+      "pronunciation_easy": "shad-DOO o-TEE"
+    },
+    {
+      "id": "medicine_for",
+      "target": "אני צריך תרופה ל___.",
+      "pronunciation_easy": "a-NEE tsa-REEKH troo-FA le-___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "trouble_breathing",
+      "target": "קשה לי לנשום.",
+      "pronunciation_easy": "ka-SHE lee lin-SHOM",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "luggage_missing",
+      "target": "המזוודה שלי לא הגיעה.",
+      "pronunciation_easy": "ha-miz-va-DA she-LEE lo hi-GEE-a"
+    },
+    {
+      "id": "flight_delayed",
+      "target": "הטיסה שלי מתעכבת?",
+      "pronunciation_easy": "ha-tee-SA she-LEE mit-a-KE-vet"
+    },
+    {
+      "id": "connecting_flight",
+      "target": "יש לי טיסת המשך.",
+      "pronunciation_easy": "yesh lee tee-SAT hem-SHEKH"
+    },
+    {
+      "id": "tickets_please",
+      "target": "___ כרטיסים, בבקשה.",
+      "pronunciation_easy": "___ kar-tee-SEEM, be-va-ka-SHA"
+    },
+    {
+      "id": "what_time_open",
+      "target": "מתי זה נפתח?",
+      "pronunciation_easy": "ma-TAI ze nif-TAKH"
+    },
+    {
+      "id": "what_time_close",
+      "target": "מתי זה נסגר?",
+      "pronunciation_easy": "ma-TAI ze nis-GAR"
+    },
+    {
+      "id": "tour_english",
+      "target": "יש סיור מודרך באנגלית?",
+      "pronunciation_easy": "yesh see-YUR mud-RAKH be-an-GLEET"
+    },
+    {
+      "id": "on_tap",
+      "target": "איזו בירה יש מהחבית?",
+      "pronunciation_easy": "EY-zo BEE-ra yesh me-ha-kha-VEET"
+    },
+    {
+      "id": "non_alcoholic",
+      "target": "משהו בלי אלכוהול, בבקשה.",
+      "pronunciation_easy": "MA-she-hu blee AL-ko-hol, be-va-ka-SHA"
+    },
+    {
+      "id": "what_time_is_it",
+      "target": "מה השעה?",
+      "pronunciation_easy": "ma ha-sha-A"
     }
   ],
   "vocab": {
@@ -727,6 +895,26 @@
         "word": "word_exit",
         "target": "איפה היציאה?",
         "pronunciation_easy": "EY-fo ha-ye-tsee-A"
+      },
+      {
+        "word": "hospital",
+        "target": "איפה בית החולים?",
+        "pronunciation_easy": "EY-fo beyt ha-kho-LEEM"
+      },
+      {
+        "word": "checkin",
+        "target": "איפה הצ'ק-אין?",
+        "pronunciation_easy": "EY-fo ha-chek-EEN"
+      },
+      {
+        "word": "baggage",
+        "target": "איפה איסוף המזוודות?",
+        "pronunciation_easy": "EY-fo ee-SOOF ha-miz-va-DOT"
+      },
+      {
+        "word": "gate",
+        "target": "איפה השער?",
+        "pronunciation_easy": "EY-fo ha-SHA-ar"
       }
     ],
     "nearest": [
@@ -845,6 +1033,16 @@
         "word": "word_water",
         "target": "אני רוצה מים, בבקשה.",
         "pronunciation_easy": "a-NEE ro-TSE MA-yim, be-va-ka-SHA"
+      },
+      {
+        "word": "red_wine",
+        "target": "אני רוצה כוס יין אדום, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE kos YA-yin a-DOM, be-va-ka-SHA"
+      },
+      {
+        "word": "white_wine",
+        "target": "אני רוצה כוס יין לבן, בבקשה.",
+        "pronunciation_easy": "a-NEE ro-TSE kos YA-yin la-VAN, be-va-ka-SHA"
       }
     ],
     "table_for": [
@@ -1281,6 +1479,77 @@
         "target": "איפה אפשר לקנות כרטיס סים?",
         "pronunciation_easy": "EY-fo ef-SHAR lik-NOT kar-TEES sim"
       }
+    ],
+    "im_from": [
+      {
+        "word": "usa",
+        "target": "אני מארצות הברית.",
+        "pronunciation_easy": "a-NEE me-ar-TSOT ha-BREET"
+      },
+      {
+        "word": "canada",
+        "target": "אני מקנדה.",
+        "pronunciation_easy": "a-NEE mi-KA-na-da"
+      },
+      {
+        "word": "uk",
+        "target": "אני מבריטניה.",
+        "pronunciation_easy": "a-NEE mi-bri-TAN-ya"
+      },
+      {
+        "word": "israel",
+        "target": "אני מישראל.",
+        "pronunciation_easy": "a-NEE mi-yis-ra-EL"
+      },
+      {
+        "word": "australia",
+        "target": "אני מאוסטרליה.",
+        "pronunciation_easy": "a-NEE me-os-TRAL-ya"
+      }
+    ],
+    "medicine_for": [
+      {
+        "word": "pain",
+        "target": "אני צריך תרופה לכאבים.",
+        "pronunciation_easy": "a-NEE tsa-REEKH troo-FA le-ke-e-VEEM"
+      },
+      {
+        "word": "fever",
+        "target": "אני צריך תרופה לחום.",
+        "pronunciation_easy": "a-NEE tsa-REEKH troo-FA le-KHOM"
+      },
+      {
+        "word": "cough",
+        "target": "אני צריך תרופה לשיעול.",
+        "pronunciation_easy": "a-NEE tsa-REEKH troo-FA le-shee-UL"
+      },
+      {
+        "word": "allergies",
+        "target": "אני צריך תרופה לאלרגיה.",
+        "pronunciation_easy": "a-NEE tsa-REEKH troo-FA le-a-LER-gya"
+      }
+    ],
+    "tickets_please": [
+      {
+        "word": "one",
+        "target": "כרטיס אחד, בבקשה.",
+        "pronunciation_easy": "kar-TEES e-KHAD, be-va-ka-SHA"
+      },
+      {
+        "word": "two",
+        "target": "שני כרטיסים, בבקשה.",
+        "pronunciation_easy": "shney kar-tee-SEEM, be-va-ka-SHA"
+      },
+      {
+        "word": "three",
+        "target": "שלושה כרטיסים, בבקשה.",
+        "pronunciation_easy": "shlo-SHA kar-tee-SEEM, be-va-ka-SHA"
+      },
+      {
+        "word": "four",
+        "target": "ארבעה כרטיסים, בבקשה.",
+        "pronunciation_easy": "ar-ba-A kar-tee-SEEM, be-va-ka-SHA"
+      }
     ]
   },
   "replies": {
@@ -1343,6 +1612,81 @@
       "target": "איך אתה רוצה שנספר אותך?",
       "pronunciation_easy": "ekh a-TA ro-TSE she-ne-sa-PER ot-KHA",
       "qa": "Literally 'How to cut?'. Also: איך אתה רוצה את זה? (to a man). [Fixed 2026-10-14 per ChatGPT review.]"
+    },
+    "id_love_to": {
+      "target": "בשמחה.",
+      "pronunciation_easy": "be-sim-KHA"
+    },
+    "maybe_another_time": {
+      "target": "אולי בפעם אחרת.",
+      "pronunciation_easy": "u-LAI be-FA-am a-KHE-ret"
+    },
+    "sorry_i_cant": {
+      "target": "סליחה, אני לא יכולה.",
+      "pronunciation_easy": "slee-KHA, a-NEE lo ye-kho-LA",
+      "qa": "Said by a woman. A man: לא יכול (lo ya-KHOL)."
+    },
+    "seeing_someone": {
+      "target": "יש לי מישהו.",
+      "pronunciation_easy": "yesh lee MEE-she-hu",
+      "qa": "Or מישהי (MEE-she-hee) for a woman."
+    },
+    "here_for_a_week": {
+      "target": "אני פה לשבוע.",
+      "pronunciation_easy": "a-NEE po le-sha-VU-a"
+    },
+    "like_it_here": {
+      "target": "טוב לך פה?",
+      "pronunciation_easy": "tov le-KHA po"
+    },
+    "what_happened": {
+      "target": "מה קרה?",
+      "pronunciation_easy": "ma ka-RA"
+    },
+    "where_hurt": {
+      "target": "איפה כואב לך?",
+      "pronunciation_easy": "EY-fo ko-EV le-KHA"
+    },
+    "wait_here": {
+      "target": "חכה פה.",
+      "pronunciation_easy": "kha-KE po"
+    },
+    "passport_please": {
+      "target": "דרכון, בבקשה.",
+      "pronunciation_easy": "dar-KON, be-va-ka-SHA"
+    },
+    "boarding_started": {
+      "target": "העלייה למטוס התחילה.",
+      "pronunciation_easy": "ha-a-lee-YA la-ma-TOS hit-KHEE-la"
+    },
+    "gate_changed": {
+      "target": "השער שלך השתנה.",
+      "pronunciation_easy": "ha-SHA-ar shel-KHA hish-ta-NA"
+    },
+    "sold_out": {
+      "target": "הכרטיסים אזלו.",
+      "pronunciation_easy": "ha-kar-tee-SEEM az-LU"
+    },
+    "follow_me": {
+      "target": "בוא אחריי.",
+      "pronunciation_easy": "bo a-kha-RAI"
+    },
+    "what_can_i_get": {
+      "target": "מה בשבילך?",
+      "pronunciation_easy": "ma bish-veel-KHA"
+    },
+    "last_call": {
+      "target": "הזמנה אחרונה.",
+      "pronunciation_easy": "haz-ma-NA a-kha-ro-NA"
+    },
+    "thats_altogether": {
+      "target": "זה עשרים בסך הכול.",
+      "pronunciation_easy": "ze es-REEM be-SAKH ha-KOL",
+      "qa": "A price heard at a till, with a plain number so it fits any currency."
+    },
+    "starts_at": {
+      "target": "זה מתחיל בעשר.",
+      "pronunciation_easy": "ze mat-KHEEL be-E-ser"
     }
   }
 }

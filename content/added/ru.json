@@ -385,6 +385,174 @@
       "target": "Где можно ___?",
       "pronunciation_easy": "gdyeh MOZH-nah",
       "qa": "Lit. 'Where is it possible to ___?' + infinitive. Gender-neutral."
+    },
+    {
+      "id": "look_beautiful",
+      "target": "Ты очень красивая/красивый.",
+      "pronunciation_easy": "ty OH-cheen krah-SEE-vah-yah/krah-SEE-vy",
+      "qa": "Said to someone you are flirting with; both gender forms are shown where the language changes with who you talk to."
+    },
+    {
+      "id": "love_outfit",
+      "target": "Мне нравится, как ты одета/одет.",
+      "pronunciation_easy": "mnyeh NRAH-veet-sah, kak ty ah-DYEH-tah/ah-DYET"
+    },
+    {
+      "id": "beautiful_smile",
+      "target": "У тебя красивая улыбка.",
+      "pronunciation_easy": "oo tee-BYAH krah-SEE-vah-yah oo-LYP-kah"
+    },
+    {
+      "id": "like_style",
+      "target": "Мне нравится твой стиль.",
+      "pronunciation_easy": "mnyeh NRAH-veet-sah tvoy steel"
+    },
+    {
+      "id": "get_coffee",
+      "target": "Хочешь выпить кофе?",
+      "pronunciation_easy": "KHOH-chesh VY-peet KOH-feh"
+    },
+    {
+      "id": "buy_drink",
+      "target": "Можно тебя угостить?",
+      "pronunciation_easy": "MOZH-nah tee-BYAH oo-gahs-TEET"
+    },
+    {
+      "id": "see_again",
+      "target": "Я хочу увидеть тебя снова.",
+      "pronunciation_easy": "ya khah-CHOO oo-VEE-deet tee-BYAH SNOH-vah"
+    },
+    {
+      "id": "free_tomorrow",
+      "target": "Ты свободна/свободен завтра?",
+      "pronunciation_easy": "ty svah-BOD-nah/svah-BOH-deen ZAHF-trah"
+    },
+    {
+      "id": "your_number",
+      "target": "Можно твой номер?",
+      "pronunciation_easy": "MOZH-nah tvoy NOH-meer"
+    },
+    {
+      "id": "with_friends",
+      "target": "Ты здесь с друзьями?",
+      "pronunciation_easy": "ty zdyes s drooz-YAH-mee"
+    },
+    {
+      "id": "great_time",
+      "target": "Мне было очень хорошо.",
+      "pronunciation_easy": "mnyeh BY-lah OH-cheen khah-rah-SHOH"
+    },
+    {
+      "id": "not_interested",
+      "target": "Спасибо, но мне это не интересно.",
+      "pronunciation_easy": "spah-SEE-bah, noh mnyeh EH-tah nee een-tee-RYES-nah",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "leave_me_alone",
+      "target": "Оставьте меня в покое, пожалуйста.",
+      "pronunciation_easy": "ah-STAHV-tyeh mee-NYAH f pah-KOH-yeh, pah-ZHAH-loo-stah",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "my_name_is",
+      "target": "Меня зовут ___.",
+      "pronunciation_easy": "mee-NYAH zah-VOOT"
+    },
+    {
+      "id": "im_from",
+      "target": "Я из ___.",
+      "pronunciation_easy": "ya eez"
+    },
+    {
+      "id": "how_long_here",
+      "target": "Ты здесь надолго?",
+      "pronunciation_easy": "ty zdyes nah-DOL-gah"
+    },
+    {
+      "id": "cheers",
+      "target": "За здоровье!",
+      "pronunciation_easy": "zah zdah-ROH-vyeh",
+      "qa": "The toast foreigners know. Among Russians a toast is usually to something: \"За встречу!\" (to our meeting)."
+    },
+    {
+      "id": "need_ambulance",
+      "target": "Мне нужна скорая помощь.",
+      "pronunciation_easy": "mnyeh noozh-NAH SKOH-rah-yah POH-mahshch",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "hurts_here",
+      "target": "У меня болит здесь.",
+      "pronunciation_easy": "oo mee-NYAH bah-LEET zdyes",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "been_robbed",
+      "target": "Меня ограбили.",
+      "pronunciation_easy": "mee-NYAH ah-GRAH-bee-lee"
+    },
+    {
+      "id": "medicine_for",
+      "target": "Мне нужно лекарство от ___.",
+      "pronunciation_easy": "mnyeh NOOZH-nah lee-KAHRST-vah aht",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "trouble_breathing",
+      "target": "Мне трудно дышать.",
+      "pronunciation_easy": "mnyeh TROOD-nah dy-SHAT",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "luggage_missing",
+      "target": "Мой багаж не прилетел.",
+      "pronunciation_easy": "moy bah-GAHSH nee pree-lee-TYEL"
+    },
+    {
+      "id": "flight_delayed",
+      "target": "Мой рейс задерживается?",
+      "pronunciation_easy": "moy ryays zah-DYEHR-zhee-vah-yet-sah"
+    },
+    {
+      "id": "connecting_flight",
+      "target": "У меня пересадка.",
+      "pronunciation_easy": "oo mee-NYAH pee-ree-SAHT-kah"
+    },
+    {
+      "id": "tickets_please",
+      "target": "___ билета, пожалуйста.",
+      "pronunciation_easy": "bee-LYEH-tah, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "what_time_open",
+      "target": "Во сколько открывается?",
+      "pronunciation_easy": "vah SKOL-kah aht-kry-VAH-yet-sah"
+    },
+    {
+      "id": "what_time_close",
+      "target": "Во сколько закрывается?",
+      "pronunciation_easy": "vah SKOL-kah zah-kry-VAH-yet-sah"
+    },
+    {
+      "id": "tour_english",
+      "target": "Есть экскурсия на английском?",
+      "pronunciation_easy": "yest eks-KOOR-see-yah nah ahn-GLEES-kahm"
+    },
+    {
+      "id": "on_tap",
+      "target": "Какое у вас разливное пиво?",
+      "pronunciation_easy": "kah-KOH-yeh oo vahs rahz-leev-NOH-yeh PEE-vah"
+    },
+    {
+      "id": "non_alcoholic",
+      "target": "Что-нибудь безалкогольное, пожалуйста.",
+      "pronunciation_easy": "SHTOH-nee-boot byez-ahl-kah-GOL-nah-yeh, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "what_time_is_it",
+      "target": "Который час?",
+      "pronunciation_easy": "kah-TOH-ry chahs"
     }
   ],
   "vocab": {
@@ -712,6 +880,26 @@
         "word": "word_exit",
         "target": "Где выход?",
         "pronunciation_easy": "gdyeh VY-khat"
+      },
+      {
+        "word": "hospital",
+        "target": "Где больница?",
+        "pronunciation_easy": "gdyeh bahl-NEE-tsah"
+      },
+      {
+        "word": "checkin",
+        "target": "Где регистрация?",
+        "pronunciation_easy": "gdyeh ree-ghee-STRAH-tsy-yah"
+      },
+      {
+        "word": "baggage",
+        "target": "Где выдача багажа?",
+        "pronunciation_easy": "gdyeh VY-dah-chah bah-gah-ZHAH"
+      },
+      {
+        "word": "gate",
+        "target": "Где выход на посадку?",
+        "pronunciation_easy": "gdyeh VY-khaht nah pah-SAHT-koo"
       }
     ],
     "nearest": [
@@ -830,6 +1018,16 @@
         "word": "word_water",
         "target": "Я бы хотел воды, пожалуйста.",
         "pronunciation_easy": "ya by khah-TYEL vah-DY, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "red_wine",
+        "target": "Я бы хотел бокал красного вина, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL bah-KAHL KRAHS-nah-vah vee-NAH, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "white_wine",
+        "target": "Я бы хотел бокал белого вина, пожалуйста.",
+        "pronunciation_easy": "ya by khah-TYEL bah-KAHL BYEH-lah-vah vee-NAH, pah-ZHAH-loo-stah"
       }
     ],
     "table_for": [
@@ -1265,6 +1463,77 @@
         "pronunciation_easy": "gdyeh MOZH-nah koo-PEET seem-KAR-too",
         "qa": "Foreigners need a passport to buy a SIM in Russia."
       }
+    ],
+    "im_from": [
+      {
+        "word": "usa",
+        "target": "Я из США.",
+        "pronunciation_easy": "ya ees seh-sheh-AH"
+      },
+      {
+        "word": "canada",
+        "target": "Я из Канады.",
+        "pronunciation_easy": "ya ees kah-NAH-dy"
+      },
+      {
+        "word": "uk",
+        "target": "Я из Великобритании.",
+        "pronunciation_easy": "ya eez vee-lee-kah-bree-TAH-nee-ee"
+      },
+      {
+        "word": "israel",
+        "target": "Я из Израиля.",
+        "pronunciation_easy": "ya eez eez-RAH-ee-lyah"
+      },
+      {
+        "word": "australia",
+        "target": "Я из Австралии.",
+        "pronunciation_easy": "ya eez ahf-STRAH-lee-ee"
+      }
+    ],
+    "medicine_for": [
+      {
+        "word": "pain",
+        "target": "Мне нужно лекарство от боли.",
+        "pronunciation_easy": "mnyeh NOOZH-nah lee-KAHRST-vah aht BOH-lee"
+      },
+      {
+        "word": "fever",
+        "target": "Мне нужно лекарство от температуры.",
+        "pronunciation_easy": "mnyeh NOOZH-nah lee-KAHRST-vah aht teem-pee-rah-TOO-ry"
+      },
+      {
+        "word": "cough",
+        "target": "Мне нужно лекарство от кашля.",
+        "pronunciation_easy": "mnyeh NOOZH-nah lee-KAHRST-vah aht KAHSH-lyah"
+      },
+      {
+        "word": "allergies",
+        "target": "Мне нужно лекарство от аллергии.",
+        "pronunciation_easy": "mnyeh NOOZH-nah lee-KAHRST-vah aht ah-leer-GHEE-ee"
+      }
+    ],
+    "tickets_please": [
+      {
+        "word": "one",
+        "target": "Один билет, пожалуйста.",
+        "pronunciation_easy": "ah-DEEN bee-LYET, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "two",
+        "target": "Два билета, пожалуйста.",
+        "pronunciation_easy": "dvah bee-LYEH-tah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "three",
+        "target": "Три билета, пожалуйста.",
+        "pronunciation_easy": "tree bee-LYEH-tah, pah-ZHAH-loo-stah"
+      },
+      {
+        "word": "four",
+        "target": "Четыре билета, пожалуйста.",
+        "pronunciation_easy": "chee-TY-ree bee-LYEH-tah, pah-ZHAH-loo-stah"
+      }
     ]
   },
   "replies": {
@@ -1319,6 +1588,79 @@
     "how_would_you_like_it": {
       "target": "Как вас подстричь?",
       "pronunciation_easy": "kak vahs paht-STREECH"
+    },
+    "id_love_to": {
+      "target": "С удовольствием.",
+      "pronunciation_easy": "s oo-dah-VOL-stvee-yem"
+    },
+    "maybe_another_time": {
+      "target": "Может, в другой раз.",
+      "pronunciation_easy": "MOH-zhet, v droo-GOY rahs"
+    },
+    "sorry_i_cant": {
+      "target": "Извини, не могу.",
+      "pronunciation_easy": "eez-vee-NEE, nee mah-GOO"
+    },
+    "seeing_someone": {
+      "target": "У меня кто-то есть.",
+      "pronunciation_easy": "oo mee-NYAH KTOH-tah yest"
+    },
+    "here_for_a_week": {
+      "target": "Я здесь на неделю.",
+      "pronunciation_easy": "ya zdyes nah nee-DYEH-lyoo"
+    },
+    "like_it_here": {
+      "target": "Тебе здесь нравится?",
+      "pronunciation_easy": "tee-BYEH zdyes NRAH-veet-sah"
+    },
+    "what_happened": {
+      "target": "Что случилось?",
+      "pronunciation_easy": "shtoh sloo-CHEE-lahs"
+    },
+    "where_hurt": {
+      "target": "Где болит?",
+      "pronunciation_easy": "gdyeh bah-LEET"
+    },
+    "wait_here": {
+      "target": "Подождите здесь.",
+      "pronunciation_easy": "pah-dahzh-DEE-tyeh zdyes"
+    },
+    "passport_please": {
+      "target": "Паспорт, пожалуйста.",
+      "pronunciation_easy": "PAHS-pahrt, pah-ZHAH-loo-stah"
+    },
+    "boarding_started": {
+      "target": "Посадка началась.",
+      "pronunciation_easy": "pah-SAHT-kah nah-chah-LAHS"
+    },
+    "gate_changed": {
+      "target": "Ваш выход изменился.",
+      "pronunciation_easy": "vahsh VY-khaht eez-mee-NEEL-sah"
+    },
+    "sold_out": {
+      "target": "Билетов нет.",
+      "pronunciation_easy": "bee-LYEH-tahf nyet"
+    },
+    "follow_me": {
+      "target": "Идите за мной.",
+      "pronunciation_easy": "ee-DEE-tyeh zah mnoy"
+    },
+    "what_can_i_get": {
+      "target": "Что будете?",
+      "pronunciation_easy": "shtoh BOO-dee-tyeh"
+    },
+    "last_call": {
+      "target": "Последние заказы.",
+      "pronunciation_easy": "pahs-LYED-nee-yeh zah-KAH-zy"
+    },
+    "thats_altogether": {
+      "target": "С вас двадцать.",
+      "pronunciation_easy": "s vahs DVAH-tsat",
+      "qa": "Literally \"From you, twenty\": how a total is said at a till."
+    },
+    "starts_at": {
+      "target": "Начало в десять.",
+      "pronunciation_easy": "nah-CHAH-lah v DYEH-seet"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-29",
+  "generated": "2026-11-14",
   "source": "Tatoeba (tatoeba.org), sentences translated by native-speaker volunteers. CC BY 2.0 FR. Used here to check drafts, not copied into the app.",
   "statuses": {
     "match": "A native-written translation is identical (ignoring punctuation and case).",
@@ -10,68 +10,68 @@
   },
   "summary": {
     "pt-PT": {
-      "match": 28,
-      "close": 9,
-      "differs": 20,
-      "none": 105,
-      "total": 162
+      "match": 40,
+      "close": 12,
+      "differs": 33,
+      "none": 142,
+      "total": 227
     },
     "es": {
-      "match": 42,
-      "close": 10,
-      "differs": 11,
-      "none": 99,
-      "total": 162
+      "match": 58,
+      "close": 15,
+      "differs": 21,
+      "none": 133,
+      "total": 227
     },
     "fr": {
-      "match": 40,
-      "close": 6,
-      "differs": 17,
-      "none": 99,
-      "total": 162
+      "match": 58,
+      "close": 11,
+      "differs": 28,
+      "none": 130,
+      "total": 227
     },
     "it": {
-      "match": 40,
-      "close": 7,
-      "differs": 13,
-      "none": 102,
-      "total": 162
+      "match": 60,
+      "close": 12,
+      "differs": 20,
+      "none": 135,
+      "total": 227
     },
     "ro": {
-      "match": 16,
-      "close": 4,
-      "differs": 6,
-      "none": 136,
-      "total": 162
+      "match": 19,
+      "close": 6,
+      "differs": 8,
+      "none": 194,
+      "total": 227
     },
     "ru": {
-      "match": 43,
-      "close": 7,
-      "differs": 19,
-      "none": 93,
-      "total": 162
+      "match": 64,
+      "close": 8,
+      "differs": 33,
+      "none": 122,
+      "total": 227
     },
     "ja": {
-      "match": 15,
-      "close": 3,
-      "differs": 32,
-      "none": 112,
-      "total": 162
+      "match": 24,
+      "close": 5,
+      "differs": 44,
+      "none": 154,
+      "total": 227
     },
     "he": {
-      "match": 20,
-      "close": 3,
-      "differs": 9,
-      "none": 130,
-      "total": 162
+      "match": 29,
+      "close": 6,
+      "differs": 17,
+      "none": 175,
+      "total": 227
     },
     "ar-levantine": {
-      "match": 8,
+      "match": 12,
       "close": 2,
-      "differs": 2,
-      "none": 136,
-      "total": 162,
-      "formal-only": 14
+      "differs": 3,
+      "none": 184,
+      "total": 227,
+      "formal-only": 26
     }
   },
   "results": {
@@ -672,6 +672,347 @@
         "draft": "Preciso de ligar a alguém.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "differs",
+        "english": "You look beautiful.",
+        "draft": "Está muito bonita/bonito.",
+        "native": [
+          {
+            "text": "Você está bonita.",
+            "lang": "por",
+            "id": 1299207
+          },
+          {
+            "text": "Você está linda.",
+            "lang": "por",
+            "id": 5290836
+          },
+          {
+            "text": "Você é bonito.",
+            "lang": "por",
+            "id": 1198199
+          },
+          {
+            "text": "Você é bonita.",
+            "lang": "por",
+            "id": 1199954
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "none",
+        "english": "I love your outfit.",
+        "draft": "Adoro a sua roupa.",
+        "native": []
+      },
+      "beautiful_smile": {
+        "status": "differs",
+        "english": "You have a beautiful smile.",
+        "draft": "Tem um sorriso lindo.",
+        "native": [
+          {
+            "text": "Você tem um belo sorriso.",
+            "lang": "por",
+            "id": 5598715
+          },
+          {
+            "text": "Tens um belo sorriso.",
+            "lang": "por",
+            "id": 5598716
+          }
+        ]
+      },
+      "like_style": {
+        "status": "close",
+        "english": "I like your style.",
+        "draft": "Gosto do seu estilo.",
+        "native": [
+          {
+            "text": "Eu gosto do seu estilo.",
+            "lang": "por",
+            "id": 4775047
+          }
+        ]
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "Quer ir tomar um café?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "differs",
+        "english": "Can I buy you a drink?",
+        "draft": "Posso oferecer-lhe uma bebida?",
+        "native": [
+          {
+            "text": "Posso te pagar uma bebida?",
+            "lang": "por",
+            "id": 2192283
+          },
+          {
+            "text": "Eu posso te pagar uma bebida?",
+            "lang": "por",
+            "id": 6804755
+          }
+        ]
+      },
+      "see_again": {
+        "status": "differs",
+        "english": "I'd like to see you again.",
+        "draft": "Gostava de voltar a vê-lo/la.",
+        "native": [
+          {
+            "text": "Quero revê-lo.",
+            "lang": "por",
+            "id": 1234170
+          },
+          {
+            "text": "Quero revê-la.",
+            "lang": "por",
+            "id": 1234171
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "differs",
+        "english": "Are you free tomorrow?",
+        "draft": "Está livre amanhã?",
+        "native": [
+          {
+            "text": "Você está livre amanhã?",
+            "lang": "por",
+            "id": 1331758
+          },
+          {
+            "text": "Vocês estão livres amanhã?",
+            "lang": "por",
+            "id": 1331759
+          },
+          {
+            "text": "Você vai ter tempo amanhã?",
+            "lang": "por",
+            "id": 2530366
+          },
+          {
+            "text": "Você tem tempo amanhã?",
+            "lang": "por",
+            "id": 2530369
+          }
+        ]
+      },
+      "your_number": {
+        "status": "none",
+        "english": "Can I have your number?",
+        "draft": "Pode dar-me o seu número?",
+        "native": []
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "Está aqui com amigos?",
+        "native": []
+      },
+      "great_time": {
+        "status": "none",
+        "english": "I had a great time.",
+        "draft": "Diverti-me muito.",
+        "native": []
+      },
+      "not_interested": {
+        "status": "close",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "Obrigado/a, mas não estou interessado/a.",
+        "native": [
+          {
+            "text": "Obrigado, mas não estou interessado.",
+            "lang": "por",
+            "id": 4864253
+          }
+        ]
+      },
+      "leave_me_alone": {
+        "status": "differs",
+        "english": "Please leave me alone.",
+        "draft": "Deixe-me em paz, por favor.",
+        "native": [
+          {
+            "text": "Por favor, me deixe em paz.",
+            "lang": "por",
+            "id": 975920
+          },
+          {
+            "text": "Por favor, me deixe em paz.",
+            "lang": "por",
+            "id": 975920
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "differs",
+        "english": "How long are you here for?",
+        "draft": "Quanto tempo vai ficar cá?",
+        "native": [
+          {
+            "text": "Por quanto tempo você estará aqui?",
+            "lang": "por",
+            "id": 2436478
+          }
+        ]
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "Saúde!",
+        "native": [
+          {
+            "text": "Saúde!",
+            "lang": "por",
+            "id": 1139460
+          },
+          {
+            "text": "À sua saúde!",
+            "lang": "por",
+            "id": 1139454
+          },
+          {
+            "text": "Obrigado!",
+            "lang": "por",
+            "id": 380436
+          },
+          {
+            "text": "Obrigada!",
+            "lang": "por",
+            "id": 748782
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "none",
+        "english": "I need an ambulance.",
+        "draft": "Preciso de uma ambulância.",
+        "native": []
+      },
+      "hurts_here": {
+        "status": "match",
+        "english": "It hurts here.",
+        "draft": "Dói-me aqui.",
+        "native": [
+          {
+            "text": "Dói-me aqui.",
+            "lang": "por",
+            "id": 985163
+          },
+          {
+            "text": "Estou com dor aqui.",
+            "lang": "por",
+            "id": 1311464
+          },
+          {
+            "text": "Eu tenho dor aqui.",
+            "lang": "por",
+            "id": 1311465
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "none",
+        "english": "I've been robbed.",
+        "draft": "Fui assaltado/a.",
+        "native": []
+      },
+      "trouble_breathing": {
+        "status": "none",
+        "english": "I'm having trouble breathing.",
+        "draft": "Tenho dificuldade em respirar.",
+        "native": []
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "A minha bagagem não chegou.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "O meu voo está atrasado?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "Tenho um voo de ligação.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "none",
+        "english": "What time does it open?",
+        "draft": "A que horas abre?",
+        "native": []
+      },
+      "what_time_close": {
+        "status": "match",
+        "english": "What time does it close?",
+        "draft": "A que horas fecha?",
+        "native": [
+          {
+            "text": "A que horas fecha?",
+            "lang": "por",
+            "id": 892292
+          },
+          {
+            "text": "Quando você fecha?",
+            "lang": "por",
+            "id": 11099244
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "Há visitas guiadas em inglês?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "Que cervejas têm à pressão?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "Algo sem álcool, por favor.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "Que horas são?",
+        "native": [
+          {
+            "text": "Que horas são?",
+            "lang": "por",
+            "id": 405089
+          },
+          {
+            "text": "Que horas são agora?",
+            "lang": "por",
+            "id": 455378
+          },
+          {
+            "text": "Que horas?",
+            "lang": "por",
+            "id": 1571841
+          },
+          {
+            "text": "Que hora é agora?",
+            "lang": "por",
+            "id": 2569254
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "differs",
         "english": "Where is the train station?",
@@ -740,6 +1081,52 @@
         "english": "",
         "draft": "Onde fica a saída?",
         "native": []
+      },
+      "where_is~hospital": {
+        "status": "match",
+        "english": "Where is the hospital?",
+        "draft": "Onde fica o hospital?",
+        "native": [
+          {
+            "text": "Onde é o hospital?",
+            "lang": "por",
+            "id": 2063700
+          },
+          {
+            "text": "Onde fica o hospital?",
+            "lang": "por",
+            "id": 2474620
+          }
+        ]
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "Onde fica o check-in?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "Onde fica a recolha de bagagem?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "differs",
+        "english": "Where is the gate?",
+        "draft": "Onde fica a porta de embarque?",
+        "native": [
+          {
+            "text": "Onde está a porta?",
+            "lang": "por",
+            "id": 4850514
+          },
+          {
+            "text": "Onde fica a porta?",
+            "lang": "por",
+            "id": 4850515
+          }
+        ]
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -923,6 +1310,24 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "Queria uma água, por favor.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "differs",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "Queria um copo de vinho tinto, por favor.",
+        "native": [
+          {
+            "text": "Eu gostaria de uma taça de vinho tinto, por favor.",
+            "lang": "por",
+            "id": 2623624
+          }
+        ]
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "Queria um copo de vinho branco, por favor.",
         "native": []
       },
       "table_for~word_one": {
@@ -1601,6 +2006,164 @@
         "draft": "Onde posso comprar um cartão SIM?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "match",
+        "english": "I'm from the United States.",
+        "draft": "Sou dos Estados Unidos.",
+        "native": [
+          {
+            "text": "Eu sou dos Estados Unidos.",
+            "lang": "por",
+            "id": 1879918
+          },
+          {
+            "text": "Sou dos Estados Unidos.",
+            "lang": "por",
+            "id": 7790121
+          },
+          {
+            "text": "Eu sou dos Estados Unidos da América.",
+            "lang": "por",
+            "id": 7790122
+          },
+          {
+            "text": "Sou dos Estados Unidos da América.",
+            "lang": "por",
+            "id": 7790123
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "Sou do Canadá.",
+        "native": [
+          {
+            "text": "Eu venho do Canadá.",
+            "lang": "por",
+            "id": 1236393
+          },
+          {
+            "text": "Eu sou do Canadá.",
+            "lang": "por",
+            "id": 1879919
+          },
+          {
+            "text": "Sou do Canadá.",
+            "lang": "por",
+            "id": 5119608
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "Sou do Reino Unido.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "Sou de Israel.",
+        "native": [
+          {
+            "text": "Eu sou de Israel.",
+            "lang": "por",
+            "id": 7790249
+          },
+          {
+            "text": "Sou de Israel.",
+            "lang": "por",
+            "id": 7790250
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "Sou da Austrália.",
+        "native": [
+          {
+            "text": "Eu sou da Austrália.",
+            "lang": "por",
+            "id": 1306959
+          },
+          {
+            "text": "Eu venho da Austrália.",
+            "lang": "por",
+            "id": 1368208
+          },
+          {
+            "text": "Venho da Austrália.",
+            "lang": "por",
+            "id": 4821870
+          },
+          {
+            "text": "Sou da Austrália.",
+            "lang": "por",
+            "id": 4821871
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "Preciso de um medicamento para as dores.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "Preciso de um medicamento para a febre.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "Preciso de um medicamento para a tosse.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "Preciso de um medicamento para as alergias.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "Um bilhete, por favor.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "match",
+        "english": "Two tickets, please.",
+        "draft": "Dois bilhetes, por favor.",
+        "native": [
+          {
+            "text": "Dois ingressos, por favor.",
+            "lang": "por",
+            "id": 6399701
+          },
+          {
+            "text": "Dois bilhetes, por favor.",
+            "lang": "por",
+            "id": 6399704
+          }
+        ]
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "Três bilhetes, por favor.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "Quatro bilhetes, por favor.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -1743,6 +2306,216 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "Como é que quer o corte?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "Adorava.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "Talvez noutra altura.",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "Desculpe, não posso.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "Estou com alguém.",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "Estou cá uma semana.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "differs",
+        "english": "Do you like it here?",
+        "draft": "Está a gostar de cá estar?",
+        "native": [
+          {
+            "text": "Você gosta daqui?",
+            "lang": "por",
+            "id": 6014766
+          },
+          {
+            "text": "Vocês gostam daqui?",
+            "lang": "por",
+            "id": 6014767
+          }
+        ]
+      },
+      "reply~what_happened": {
+        "status": "match",
+        "english": "What happened?",
+        "draft": "O que aconteceu?",
+        "native": [
+          {
+            "text": "O que aconteceu?",
+            "lang": "por",
+            "id": 340581
+          },
+          {
+            "text": "O que houve?",
+            "lang": "por",
+            "id": 2036533
+          },
+          {
+            "text": "Que foi que aconteceu?",
+            "lang": "por",
+            "id": 2652912
+          },
+          {
+            "text": "O que foi que aconteceu?",
+            "lang": "por",
+            "id": 6817181
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "differs",
+        "english": "Where does it hurt?",
+        "draft": "Onde lhe dói?",
+        "native": [
+          {
+            "text": "Onde dói?",
+            "lang": "por",
+            "id": 530810
+          },
+          {
+            "text": "Onde é que doi?",
+            "lang": "por",
+            "id": 9977412
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "match",
+        "english": "Wait here.",
+        "draft": "Espere aqui.",
+        "native": [
+          {
+            "text": "Esperem aqui.",
+            "lang": "por",
+            "id": 2147048
+          },
+          {
+            "text": "Espere aqui.",
+            "lang": "por",
+            "id": 4360718
+          },
+          {
+            "text": "Espera aqui.",
+            "lang": "por",
+            "id": 6743091
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "close",
+        "english": "Passport, please.",
+        "draft": "O passaporte, por favor.",
+        "native": [
+          {
+            "text": "Passaporte, por favor.",
+            "lang": "por",
+            "id": 973417
+          },
+          {
+            "text": "Mostre-me o passaporte, por favor.",
+            "lang": "por",
+            "id": 394300
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "O embarque já começou.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "A sua porta mudou.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "Está esgotado.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "differs",
+        "english": "Follow me.",
+        "draft": "Venha comigo.",
+        "native": [
+          {
+            "text": "Siga-me.",
+            "lang": "por",
+            "id": 896077
+          },
+          {
+            "text": "Siga-me!",
+            "lang": "por",
+            "id": 983582
+          },
+          {
+            "text": "Sigam-me!",
+            "lang": "por",
+            "id": 983583
+          },
+          {
+            "text": "Me siga!",
+            "lang": "por",
+            "id": 4936988
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "O que deseja?",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "differs",
+        "english": "Last call.",
+        "draft": "Últimos pedidos.",
+        "native": [
+          {
+            "text": "Última chamada!",
+            "lang": "por",
+            "id": 944133
+          },
+          {
+            "text": "Última rodada!",
+            "lang": "por",
+            "id": 944132
+          }
+        ]
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "São vinte no total.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "Começa às dez.",
         "native": []
       }
     },
@@ -2375,6 +3148,392 @@
         "draft": "Necesito llamar a alguien.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "differs",
+        "english": "You look beautiful.",
+        "draft": "Estás muy guapa/o.",
+        "native": [
+          {
+            "text": "Estás guapa.",
+            "lang": "spa",
+            "id": 2454156
+          },
+          {
+            "text": "Te ves hermosa.",
+            "lang": "spa",
+            "id": 10349204
+          },
+          {
+            "text": "Estás muy linda.",
+            "lang": "spa",
+            "id": 2914129
+          },
+          {
+            "text": "Eres muy bonita.",
+            "lang": "spa",
+            "id": 3850914
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "close",
+        "english": "I love your outfit.",
+        "draft": "Me encanta tu ropa.",
+        "native": [
+          {
+            "text": "Me encanta tu grupo.",
+            "lang": "spa",
+            "id": 6067499
+          }
+        ]
+      },
+      "beautiful_smile": {
+        "status": "differs",
+        "english": "You have a beautiful smile.",
+        "draft": "Tienes una sonrisa preciosa.",
+        "native": [
+          {
+            "text": "Tienes una linda sonrisa.",
+            "lang": "spa",
+            "id": 3037421
+          }
+        ]
+      },
+      "like_style": {
+        "status": "match",
+        "english": "I like your style.",
+        "draft": "Me gusta tu estilo.",
+        "native": [
+          {
+            "text": "Me gusta tu estilo.",
+            "lang": "spa",
+            "id": 2438231
+          }
+        ]
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "¿Quieres tomar un café?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "differs",
+        "english": "Can I buy you a drink?",
+        "draft": "¿Te puedo invitar a tomar algo?",
+        "native": [
+          {
+            "text": "¿Puedo comprarte una bebida?",
+            "lang": "spa",
+            "id": 1424691
+          }
+        ]
+      },
+      "see_again": {
+        "status": "differs",
+        "english": "I'd like to see you again.",
+        "draft": "Me gustaría verte otra vez.",
+        "native": [
+          {
+            "text": "Quiero volver a verte.",
+            "lang": "spa",
+            "id": 668329
+          },
+          {
+            "text": "Quiere verte de nuevo.",
+            "lang": "spa",
+            "id": 2117663
+          },
+          {
+            "text": "Quiero verte otra vez.",
+            "lang": "spa",
+            "id": 2117664
+          },
+          {
+            "text": "Quisiera volver a verte otra vez.",
+            "lang": "spa",
+            "id": 2113088
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "close",
+        "english": "Are you free tomorrow?",
+        "draft": "¿Estás libre mañana?",
+        "native": [
+          {
+            "text": "¿Tienes libre mañana?",
+            "lang": "spa",
+            "id": 1513008
+          },
+          {
+            "text": "¿Estáis libres mañana?",
+            "lang": "spa",
+            "id": 2220580
+          }
+        ]
+      },
+      "your_number": {
+        "status": "none",
+        "english": "Can I have your number?",
+        "draft": "¿Me das tu número?",
+        "native": []
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "¿Estás aquí con amigos?",
+        "native": []
+      },
+      "great_time": {
+        "status": "close",
+        "english": "I had a great time.",
+        "draft": "Lo pasé muy bien.",
+        "native": [
+          {
+            "text": "Me lo pasé muy bien.",
+            "lang": "spa",
+            "id": 5567683
+          },
+          {
+            "text": "Me lo pasé la mar de bien.",
+            "lang": "spa",
+            "id": 5567679
+          }
+        ]
+      },
+      "not_interested": {
+        "status": "none",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "Gracias, pero no me interesa.",
+        "native": []
+      },
+      "leave_me_alone": {
+        "status": "differs",
+        "english": "Please leave me alone.",
+        "draft": "Déjame en paz, por favor.",
+        "native": [
+          {
+            "text": "Por favor, déjame en paz.",
+            "lang": "spa",
+            "id": 722523
+          },
+          {
+            "text": "Por favor, déjeme en paz.",
+            "lang": "spa",
+            "id": 723060
+          },
+          {
+            "text": "Por favor, déjame tranquilo.",
+            "lang": "spa",
+            "id": 1751768
+          },
+          {
+            "text": "Por favor, déjame en paz.",
+            "lang": "spa",
+            "id": 722523
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "differs",
+        "english": "How long are you here for?",
+        "draft": "¿Cuánto tiempo te quedas?",
+        "native": [
+          {
+            "text": "¿Cuánto tiempo vas a estar aquí?",
+            "lang": "spa",
+            "id": 1215494
+          }
+        ]
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "¡Salud!",
+        "native": [
+          {
+            "text": "¡Salud!",
+            "lang": "spa",
+            "id": 434329
+          },
+          {
+            "text": "¡Chinchín!",
+            "lang": "spa",
+            "id": 6985992
+          },
+          {
+            "text": "¡A vuestra salud!",
+            "lang": "spa",
+            "id": 6985994
+          },
+          {
+            "text": "¡A tu salud!",
+            "lang": "spa",
+            "id": 872346
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "match",
+        "english": "I need an ambulance.",
+        "draft": "Necesito una ambulancia.",
+        "native": [
+          {
+            "text": "Necesito una ambulancia.",
+            "lang": "spa",
+            "id": 2856565
+          }
+        ]
+      },
+      "hurts_here": {
+        "status": "match",
+        "english": "It hurts here.",
+        "draft": "Me duele aquí.",
+        "native": [
+          {
+            "text": "Me duele aquí.",
+            "lang": "spa",
+            "id": 456098
+          },
+          {
+            "text": "Aquí duele.",
+            "lang": "spa",
+            "id": 1666848
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "differs",
+        "english": "I've been robbed.",
+        "draft": "Me robaron.",
+        "native": [
+          {
+            "text": "He sido robado.",
+            "lang": "spa",
+            "id": 5534265
+          }
+        ]
+      },
+      "trouble_breathing": {
+        "status": "match",
+        "english": "I'm having trouble breathing.",
+        "draft": "Me cuesta respirar.",
+        "native": [
+          {
+            "text": "Me dificulta respirar.",
+            "lang": "spa",
+            "id": 712034
+          },
+          {
+            "text": "Me cuesta respirar.",
+            "lang": "spa",
+            "id": 712046
+          }
+        ]
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "Mi equipaje no llegó.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "¿Mi vuelo está retrasado?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "Tengo un vuelo de conexión.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "match",
+        "english": "What time does it open?",
+        "draft": "¿A qué hora abre?",
+        "native": [
+          {
+            "text": "¿A qué hora abre?",
+            "lang": "spa",
+            "id": 1712677
+          },
+          {
+            "text": "¿A qué hora abren?",
+            "lang": "spa",
+            "id": 346408
+          },
+          {
+            "text": "¿Cuándo abren?",
+            "lang": "spa",
+            "id": 743076
+          }
+        ]
+      },
+      "what_time_close": {
+        "status": "match",
+        "english": "What time does it close?",
+        "draft": "¿A qué hora cierra?",
+        "native": [
+          {
+            "text": "¿A qué hora cierra?",
+            "lang": "spa",
+            "id": 434285
+          },
+          {
+            "text": "¿Cuándo cierra?",
+            "lang": "spa",
+            "id": 1726414
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "¿Hay visitas guiadas en inglés?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "¿Qué cervezas de barril tienen?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "Algo sin alcohol, por favor.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "¿Qué hora es?",
+        "native": [
+          {
+            "text": "¿Qué hora es?",
+            "lang": "spa",
+            "id": 2830
+          },
+          {
+            "text": "¿Qué hora tienes tú?",
+            "lang": "spa",
+            "id": 336778
+          },
+          {
+            "text": "¿Qué hora es ahora?",
+            "lang": "spa",
+            "id": 455666
+          },
+          {
+            "text": "¿Me puedes decir la hora?",
+            "lang": "spa",
+            "id": 1221917
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -2453,6 +3612,52 @@
         "english": "",
         "draft": "¿Dónde está la salida?",
         "native": []
+      },
+      "where_is~hospital": {
+        "status": "match",
+        "english": "Where is the hospital?",
+        "draft": "¿Dónde está el hospital?",
+        "native": [
+          {
+            "text": "¿Dónde está el hospital?",
+            "lang": "spa",
+            "id": 2465765
+          },
+          {
+            "text": "¿Dónde queda el hospital?",
+            "lang": "spa",
+            "id": 12327482
+          }
+        ]
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "¿Dónde está el check-in?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "¿Dónde está la recogida de equipaje?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "match",
+        "english": "Where is the gate?",
+        "draft": "¿Dónde está la puerta de embarque?",
+        "native": [
+          {
+            "text": "¿Dónde está la puerta de embarque?",
+            "lang": "spa",
+            "id": 687651
+          },
+          {
+            "text": "¿Dónde está la puerta?",
+            "lang": "spa",
+            "id": 10017731
+          }
+        ]
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -2662,6 +3867,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "Quisiera agua, por favor.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "Quisiera una copa de vino tinto, por favor.",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "Quisiera una copa de vino blanco, por favor.",
         "native": []
       },
       "table_for~word_one": {
@@ -3412,6 +4629,117 @@
         "draft": "¿Dónde puedo comprar una tarjeta SIM?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "close",
+        "english": "I'm from the United States.",
+        "draft": "Soy de Estados Unidos.",
+        "native": [
+          {
+            "text": "Soy de los Estados Unidos.",
+            "lang": "spa",
+            "id": 875180
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "Soy de Canadá.",
+        "native": [
+          {
+            "text": "Vengo de Canadá.",
+            "lang": "spa",
+            "id": 1236868
+          },
+          {
+            "text": "Soy de Canadá.",
+            "lang": "spa",
+            "id": 1283182
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "Soy del Reino Unido.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "none",
+        "english": "I'm from Israel.",
+        "draft": "Soy de Israel.",
+        "native": []
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "Soy de Australia.",
+        "native": [
+          {
+            "text": "Soy de Australia.",
+            "lang": "spa",
+            "id": 4508688
+          },
+          {
+            "text": "Vengo de Australia.",
+            "lang": "spa",
+            "id": 1266281
+          },
+          {
+            "text": "Soy australiano.",
+            "lang": "spa",
+            "id": 2184036
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "Necesito un medicamento para el dolor.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "Necesito un medicamento para la fiebre.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "Necesito un medicamento para la tos.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "Necesito un medicamento para la alergia.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "Una entrada, por favor.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "none",
+        "english": "Two tickets, please.",
+        "draft": "Dos entradas, por favor.",
+        "native": []
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "Tres entradas, por favor.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "Cuatro entradas, por favor.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "close",
         "english": "For here or to go?",
@@ -3550,6 +4878,222 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "¿Cómo se lo corto?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "Me encantaría.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "differs",
+        "english": "Maybe another time.",
+        "draft": "Quizás otro día.",
+        "native": [
+          {
+            "text": "Tal vez en otra ocasión.",
+            "lang": "spa",
+            "id": 2327973
+          }
+        ]
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "Lo siento, no puedo.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "Estoy saliendo con alguien.",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "Estoy aquí una semana.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "differs",
+        "english": "Do you like it here?",
+        "draft": "¿Te gusta aquí?",
+        "native": [
+          {
+            "text": "¿Te gusta estar aquí?",
+            "lang": "spa",
+            "id": 8982627
+          }
+        ]
+      },
+      "reply~what_happened": {
+        "status": "match",
+        "english": "What happened?",
+        "draft": "¿Qué pasó?",
+        "native": [
+          {
+            "text": "¿Qué ocurrió?",
+            "lang": "spa",
+            "id": 2611
+          },
+          {
+            "text": "¿Qué pasó?",
+            "lang": "spa",
+            "id": 375826
+          },
+          {
+            "text": "¿Qué ha pasado?",
+            "lang": "spa",
+            "id": 477219
+          },
+          {
+            "text": "¿Qué sucedió?",
+            "lang": "spa",
+            "id": 1454206
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "match",
+        "english": "Where does it hurt?",
+        "draft": "¿Dónde le duele?",
+        "native": [
+          {
+            "text": "¿Dónde te duele?",
+            "lang": "spa",
+            "id": 345728
+          },
+          {
+            "text": "¿Dónde le duele?",
+            "lang": "spa",
+            "id": 1749154
+          },
+          {
+            "text": "¿Dónde duele?",
+            "lang": "spa",
+            "id": 10610408
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "match",
+        "english": "Wait here.",
+        "draft": "Espere aquí.",
+        "native": [
+          {
+            "text": "¡Esperen aquí!",
+            "lang": "spa",
+            "id": 9513913
+          },
+          {
+            "text": "¡Esperad aquí!",
+            "lang": "spa",
+            "id": 9513927
+          },
+          {
+            "text": "¡Espera aquí!",
+            "lang": "spa",
+            "id": 13755728
+          },
+          {
+            "text": "¡Espere aquí!",
+            "lang": "spa",
+            "id": 13755730
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "close",
+        "english": "Passport, please.",
+        "draft": "El pasaporte, por favor.",
+        "native": [
+          {
+            "text": "Pasaporte, por favor.",
+            "lang": "spa",
+            "id": 571814
+          },
+          {
+            "text": "¿Me permite ver su pasaporte?",
+            "lang": "spa",
+            "id": 434387
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "Ya empezó el embarque.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "Su puerta ha cambiado.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "Están agotadas.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "match",
+        "english": "Follow me.",
+        "draft": "Sígame.",
+        "native": [
+          {
+            "text": "¡Sígame!",
+            "lang": "spa",
+            "id": 884828
+          },
+          {
+            "text": "¡Síganme!",
+            "lang": "spa",
+            "id": 884829
+          },
+          {
+            "text": "¡Sígueme!",
+            "lang": "spa",
+            "id": 1125816
+          },
+          {
+            "text": "¡Seguime!",
+            "lang": "spa",
+            "id": 3664866
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "¿Qué va a tomar?",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "differs",
+        "english": "Last call.",
+        "draft": "Última ronda.",
+        "native": [
+          {
+            "text": "¡Última llamada!",
+            "lang": "spa",
+            "id": 3687385
+          }
+        ]
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "Son veinte en total.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "Empieza a las diez.",
         "native": []
       }
     },
@@ -4211,6 +5755,463 @@
         "draft": "Je dois appeler quelqu'un.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "differs",
+        "english": "You look beautiful.",
+        "draft": "Tu es très beau/belle.",
+        "native": [
+          {
+            "text": "Tu es très belle.",
+            "lang": "fra",
+            "id": 1113915
+          },
+          {
+            "text": "Tu es très beau.",
+            "lang": "fra",
+            "id": 1113916
+          },
+          {
+            "text": "Tu es beau.",
+            "lang": "fra",
+            "id": 575783
+          },
+          {
+            "text": "Tu es belle.",
+            "lang": "fra",
+            "id": 575784
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "differs",
+        "english": "I love your outfit.",
+        "draft": "J'adore ta tenue.",
+        "native": [
+          {
+            "text": "J'aime votre tenue.",
+            "lang": "fra",
+            "id": 2383837
+          }
+        ]
+      },
+      "beautiful_smile": {
+        "status": "close",
+        "english": "You have a beautiful smile.",
+        "draft": "Tu as un très beau sourire.",
+        "native": [
+          {
+            "text": "Tu as un beau sourire.",
+            "lang": "fra",
+            "id": 3574530
+          }
+        ]
+      },
+      "like_style": {
+        "status": "differs",
+        "english": "I like your style.",
+        "draft": "J'aime bien ton style.",
+        "native": [
+          {
+            "text": "J'aime ton style.",
+            "lang": "fra",
+            "id": 1330086
+          },
+          {
+            "text": "J'aime votre style.",
+            "lang": "fra",
+            "id": 1330087
+          },
+          {
+            "text": "J'apprécie votre style.",
+            "lang": "fra",
+            "id": 2383587
+          },
+          {
+            "text": "J'apprécie ton style.",
+            "lang": "fra",
+            "id": 2383588
+          }
+        ]
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "Ça te dit d'aller prendre un café ?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "close",
+        "english": "Can I buy you a drink?",
+        "draft": "Je peux t'offrir un verre ?",
+        "native": [
+          {
+            "text": "Je peux vous offrir un verre ?",
+            "lang": "fra",
+            "id": 11378996
+          }
+        ]
+      },
+      "see_again": {
+        "status": "close",
+        "english": "I'd like to see you again.",
+        "draft": "J'aimerais bien te revoir.",
+        "native": [
+          {
+            "text": "J'aimerais te revoir.",
+            "lang": "fra",
+            "id": 3660289
+          },
+          {
+            "text": "J'aimerais vous revoir.",
+            "lang": "fra",
+            "id": 3660290
+          },
+          {
+            "text": "Je veux te revoir.",
+            "lang": "fra",
+            "id": 549748
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "match",
+        "english": "Are you free tomorrow?",
+        "draft": "Tu es libre demain ?",
+        "native": [
+          {
+            "text": "Es-tu libre demain ?",
+            "lang": "fra",
+            "id": 10436
+          },
+          {
+            "text": "Seras-tu libre demain ?",
+            "lang": "fra",
+            "id": 2851088
+          },
+          {
+            "text": "Tu es libre, demain ?",
+            "lang": "fra",
+            "id": 4722677
+          },
+          {
+            "text": "Serez-vous libre demain ?",
+            "lang": "fra",
+            "id": 10461636
+          }
+        ]
+      },
+      "your_number": {
+        "status": "differs",
+        "english": "Can I have your number?",
+        "draft": "Je peux avoir ton numéro ?",
+        "native": [
+          {
+            "text": "Merci de me donner votre numéro.",
+            "lang": "fra",
+            "id": 5321580
+          },
+          {
+            "text": "Puis-je avoir ton numéro ?",
+            "lang": "fra",
+            "id": 2423504
+          }
+        ]
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "Tu es là avec des amis ?",
+        "native": []
+      },
+      "great_time": {
+        "status": "differs",
+        "english": "I had a great time.",
+        "draft": "J'ai passé un super moment.",
+        "native": [
+          {
+            "text": "Je me suis bien amusé !",
+            "lang": "fra",
+            "id": 1853253
+          },
+          {
+            "text": "Je me suis bien amusée !",
+            "lang": "fra",
+            "id": 1853255
+          },
+          {
+            "text": "J'ai passé du très bon temps.",
+            "lang": "fra",
+            "id": 2428276
+          }
+        ]
+      },
+      "not_interested": {
+        "status": "differs",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "Merci, mais ça ne m'intéresse pas.",
+        "native": [
+          {
+            "text": "Merci, mais je ne suis pas intéressé.",
+            "lang": "fra",
+            "id": 5373747
+          }
+        ]
+      },
+      "leave_me_alone": {
+        "status": "close",
+        "english": "Please leave me alone.",
+        "draft": "Laissez-moi tranquille, s'il vous plaît.",
+        "native": [
+          {
+            "text": "S'il vous plaît, laissez-moi tranquille.",
+            "lang": "fra",
+            "id": 783812
+          },
+          {
+            "text": "S'il vous plaît, laissez-moi tranquille.",
+            "lang": "fra",
+            "id": 783812
+          },
+          {
+            "text": "Merci de me laisser tranquille.",
+            "lang": "fra",
+            "id": 461805
+          },
+          {
+            "text": "Laissez-moi seule, s'il vous plaît.",
+            "lang": "fra",
+            "id": 1405671
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "none",
+        "english": "How long are you here for?",
+        "draft": "Tu restes combien de temps ?",
+        "native": []
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "Santé !",
+        "native": [
+          {
+            "text": "Santé !",
+            "lang": "fra",
+            "id": 9385
+          },
+          {
+            "text": "À votre santé !",
+            "lang": "fra",
+            "id": 11581
+          },
+          {
+            "text": "Merci !",
+            "lang": "fra",
+            "id": 374826
+          },
+          {
+            "text": "À la tienne !",
+            "lang": "fra",
+            "id": 487007
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "match",
+        "english": "I need an ambulance.",
+        "draft": "J'ai besoin d'une ambulance.",
+        "native": [
+          {
+            "text": "J'ai besoin d'une ambulance.",
+            "lang": "fra",
+            "id": 9766052
+          }
+        ]
+      },
+      "hurts_here": {
+        "status": "match",
+        "english": "It hurts here.",
+        "draft": "J'ai mal ici.",
+        "native": [
+          {
+            "text": "J'ai mal ici.",
+            "lang": "fra",
+            "id": 11168
+          },
+          {
+            "text": "Ça fait mal ici.",
+            "lang": "fra",
+            "id": 4901027
+          },
+          {
+            "text": "C’est douloureux ici.",
+            "lang": "fra",
+            "id": 10705262
+          },
+          {
+            "text": "C'est ici que ça fait mal.",
+            "lang": "fra",
+            "id": 10705264
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "differs",
+        "english": "I've been robbed.",
+        "draft": "Je me suis fait voler.",
+        "native": [
+          {
+            "text": "On m'a volé.",
+            "lang": "fra",
+            "id": 10699644
+          },
+          {
+            "text": "J’ai été cambriolé.",
+            "lang": "fra",
+            "id": 10705572
+          },
+          {
+            "text": "J’ai été cambriolée.",
+            "lang": "fra",
+            "id": 10705573
+          },
+          {
+            "text": "Ils m'ont dépouillée.",
+            "lang": "fra",
+            "id": 1679411
+          }
+        ]
+      },
+      "trouble_breathing": {
+        "status": "match",
+        "english": "I'm having trouble breathing.",
+        "draft": "J'ai du mal à respirer.",
+        "native": [
+          {
+            "text": "J'ai du mal à respirer.",
+            "lang": "fra",
+            "id": 2966728
+          },
+          {
+            "text": "J'ai des difficultés à respirer.",
+            "lang": "fra",
+            "id": 8582814
+          }
+        ]
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "Mes bagages ne sont pas arrivés.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "Mon vol est en retard ?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "J'ai une correspondance.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "match",
+        "english": "What time does it open?",
+        "draft": "Ça ouvre à quelle heure ?",
+        "native": [
+          {
+            "text": "Ça ouvre à quelle heure ?",
+            "lang": "fra",
+            "id": 428963
+          },
+          {
+            "text": "À quelle heure est-ce que ça ouvre ?",
+            "lang": "fra",
+            "id": 484020
+          },
+          {
+            "text": "À quelle heure cela ouvre-t-il ?",
+            "lang": "fra",
+            "id": 484022
+          },
+          {
+            "text": "À quelle heure ça ouvre ?",
+            "lang": "fra",
+            "id": 12250761
+          }
+        ]
+      },
+      "what_time_close": {
+        "status": "differs",
+        "english": "What time does it close?",
+        "draft": "Ça ferme à quelle heure ?",
+        "native": [
+          {
+            "text": "À quelle heure ça ferme ?",
+            "lang": "fra",
+            "id": 624696
+          },
+          {
+            "text": "À quelle heure ferme-t-il ?",
+            "lang": "fra",
+            "id": 1576784
+          },
+          {
+            "text": "Quand est-ce qu’il ferme ?",
+            "lang": "fra",
+            "id": 1725620
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "Il y a une visite guidée en anglais ?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "Qu'est-ce que vous avez à la pression ?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "Quelque chose sans alcool, s'il vous plaît.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "Quelle heure est-il ?",
+        "native": [
+          {
+            "text": "Quelle heure est-il ?",
+            "lang": "fra",
+            "id": 3474
+          },
+          {
+            "text": "Quelle heure est-il à présent ?",
+            "lang": "fra",
+            "id": 455673
+          },
+          {
+            "text": "Quelle heure as-tu ?",
+            "lang": "fra",
+            "id": 465191
+          },
+          {
+            "text": "Il est quelle heure, là ?",
+            "lang": "fra",
+            "id": 583791
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -4288,6 +6289,42 @@
         "english": "",
         "draft": "Où est la sortie ?",
         "native": []
+      },
+      "where_is~hospital": {
+        "status": "match",
+        "english": "Where is the hospital?",
+        "draft": "Où est l'hôpital ?",
+        "native": [
+          {
+            "text": "Où est l'hôpital ?",
+            "lang": "fra",
+            "id": 3627804
+          }
+        ]
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "Où est l'enregistrement ?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "Où est la livraison des bagages ?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "match",
+        "english": "Where is the gate?",
+        "draft": "Où est la porte d'embarquement ?",
+        "native": [
+          {
+            "text": "Où est la porte d'embarquement ?",
+            "lang": "fra",
+            "id": 3627451
+          }
+        ]
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -4543,6 +6580,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "Je voudrais de l'eau, s'il vous plaît.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "Je voudrais un verre de vin rouge, s'il vous plaît.",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "Je voudrais un verre de vin blanc, s'il vous plaît.",
         "native": []
       },
       "table_for~word_one": {
@@ -5279,6 +7328,123 @@
         "draft": "Où est-ce que je peux acheter une carte SIM ?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "match",
+        "english": "I'm from the United States.",
+        "draft": "Je viens des États-Unis.",
+        "native": [
+          {
+            "text": "Je viens des États-Unis.",
+            "lang": "fra",
+            "id": 5557312
+          },
+          {
+            "text": "Je viens d'Amérique.",
+            "lang": "fra",
+            "id": 2231216
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "Je viens du Canada.",
+        "native": [
+          {
+            "text": "Je viens du Canada.",
+            "lang": "fra",
+            "id": 10978
+          },
+          {
+            "text": "Je suis Canadienne.",
+            "lang": "fra",
+            "id": 6468711
+          },
+          {
+            "text": "Je suis Canadien.",
+            "lang": "fra",
+            "id": 6468712
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "Je viens du Royaume-Uni.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "Je viens d'Israël.",
+        "native": [
+          {
+            "text": "Je viens d'Israël.",
+            "lang": "fra",
+            "id": 13231126
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "Je viens d'Australie.",
+        "native": [
+          {
+            "text": "Je viens d'Australie.",
+            "lang": "fra",
+            "id": 390247
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "J'ai besoin d'un médicament contre la douleur.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "J'ai besoin d'un médicament contre la fièvre.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "J'ai besoin d'un médicament contre la toux.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "J'ai besoin d'un médicament contre les allergies.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "Un billet, s'il vous plaît.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "none",
+        "english": "Two tickets, please.",
+        "draft": "Deux billets, s'il vous plaît.",
+        "native": []
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "Trois billets, s'il vous plaît.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "Quatre billets, s'il vous plaît.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -5462,6 +7628,273 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "Je vous les coupe comment ?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "Avec plaisir.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "Peut-être une autre fois.",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "Désolé, je ne peux pas.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "differs",
+        "english": "I'm seeing someone.",
+        "draft": "J'ai quelqu'un.",
+        "native": [
+          {
+            "text": "Je vois quelqu'un.",
+            "lang": "fra",
+            "id": 5599813
+          }
+        ]
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "Je suis là pour une semaine.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "match",
+        "english": "Do you like it here?",
+        "draft": "Tu te plais ici ?",
+        "native": [
+          {
+            "text": "Est-ce que tu te plais ici ?",
+            "lang": "fra",
+            "id": 8643793
+          },
+          {
+            "text": "Ça te plaît ici ?",
+            "lang": "fra",
+            "id": 12611948
+          },
+          {
+            "text": "Tu te plais ici ?",
+            "lang": "fra",
+            "id": 7667293
+          }
+        ]
+      },
+      "reply~what_happened": {
+        "status": "match",
+        "english": "What happened?",
+        "draft": "Qu'est-ce qui s'est passé ?",
+        "native": [
+          {
+            "text": "Qu'est-ce qui s'est passé ?",
+            "lang": "fra",
+            "id": 3221
+          },
+          {
+            "text": "Que s'est-il passé ?",
+            "lang": "fra",
+            "id": 837577
+          },
+          {
+            "text": "Qu'est-il advenu ?",
+            "lang": "fra",
+            "id": 2136040
+          },
+          {
+            "text": "Qui y a-t-il ?",
+            "lang": "fra",
+            "id": 10663497
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "match",
+        "english": "Where does it hurt?",
+        "draft": "Où avez-vous mal ?",
+        "native": [
+          {
+            "text": "Où avez-vous mal ?",
+            "lang": "fra",
+            "id": 332028
+          },
+          {
+            "text": "Où est-ce que ça fait mal ?",
+            "lang": "fra",
+            "id": 10610663
+          },
+          {
+            "text": "Où as-tu mal ?",
+            "lang": "fra",
+            "id": 1328947
+          },
+          {
+            "text": "Où se situe la douleur ?",
+            "lang": "fra",
+            "id": 1314488
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "match",
+        "english": "Wait here.",
+        "draft": "Attendez ici.",
+        "native": [
+          {
+            "text": "Attends ici.",
+            "lang": "fra",
+            "id": 1845892
+          },
+          {
+            "text": "Attendez ici.",
+            "lang": "fra",
+            "id": 1845895
+          },
+          {
+            "text": "Attendez ici !",
+            "lang": "fra",
+            "id": 7757334
+          },
+          {
+            "text": "Attends ici.",
+            "lang": "fra",
+            "id": 1845892
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "close",
+        "english": "Passport, please.",
+        "draft": "Votre passeport, s'il vous plaît.",
+        "native": [
+          {
+            "text": "Montrez-moi votre passeport, s'il vous plaît.",
+            "lang": "fra",
+            "id": 395561
+          },
+          {
+            "text": "Passeport, s’il vous plaît.",
+            "lang": "fra",
+            "id": 12241135
+          },
+          {
+            "text": "Passeport, s'il vous plaît.",
+            "lang": "fra",
+            "id": 679430
+          },
+          {
+            "text": "Votre passeport, je vous prie !",
+            "lang": "fra",
+            "id": 4930333
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "L'embarquement a commencé.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "Votre porte a changé.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "C'est complet.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "match",
+        "english": "Follow me.",
+        "draft": "Suivez-moi.",
+        "native": [
+          {
+            "text": "Suis-moi !",
+            "lang": "fra",
+            "id": 1132826
+          },
+          {
+            "text": "Suivez-moi !",
+            "lang": "fra",
+            "id": 1132827
+          },
+          {
+            "text": "Suivez-moi !",
+            "lang": "fra",
+            "id": 10015049
+          },
+          {
+            "text": "Suis-moi !",
+            "lang": "fra",
+            "id": 10015050
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "differs",
+        "english": "What can I get you?",
+        "draft": "Qu'est-ce que je vous sers ?",
+        "native": [
+          {
+            "text": "Que puis-je aller te chercher ?",
+            "lang": "fra",
+            "id": 1847528
+          },
+          {
+            "text": "Que puis-je aller vous chercher ?",
+            "lang": "fra",
+            "id": 1847529
+          }
+        ]
+      },
+      "reply~last_call": {
+        "status": "differs",
+        "english": "Last call.",
+        "draft": "Dernières commandes.",
+        "native": [
+          {
+            "text": "Dernier appel !",
+            "lang": "fra",
+            "id": 944100
+          },
+          {
+            "text": "Dernière tournée !",
+            "lang": "fra",
+            "id": 944101
+          },
+          {
+            "text": "Embarquement immédiat !",
+            "lang": "fra",
+            "id": 10154448
+          },
+          {
+            "text": "Dernier appel !",
+            "lang": "fra",
+            "id": 12242920
+          }
+        ]
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "Ça fait vingt en tout.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "Ça commence à dix heures.",
         "native": []
       }
     },
@@ -6087,6 +8520,421 @@
         "draft": "Devo chiamare qualcuno.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "close",
+        "english": "You look beautiful.",
+        "draft": "Sei bellissima/o.",
+        "native": [
+          {
+            "text": "Sei bellissima.",
+            "lang": "ita",
+            "id": 1325630
+          },
+          {
+            "text": "Hai un bell'aspetto.",
+            "lang": "ita",
+            "id": 5481803
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "none",
+        "english": "I love your outfit.",
+        "draft": "Mi piace come sei vestita/o.",
+        "native": []
+      },
+      "beautiful_smile": {
+        "status": "differs",
+        "english": "You have a beautiful smile.",
+        "draft": "Hai un sorriso bellissimo.",
+        "native": [
+          {
+            "text": "Hai un bel sorriso.",
+            "lang": "ita",
+            "id": 3009380
+          },
+          {
+            "text": "Tu hai un bel sorriso.",
+            "lang": "ita",
+            "id": 3009381
+          },
+          {
+            "text": "Ha un bel sorriso.",
+            "lang": "ita",
+            "id": 3009382
+          },
+          {
+            "text": "Lei ha un bel sorriso.",
+            "lang": "ita",
+            "id": 3009383
+          }
+        ]
+      },
+      "like_style": {
+        "status": "match",
+        "english": "I like your style.",
+        "draft": "Mi piace il tuo stile.",
+        "native": [
+          {
+            "text": "Mi piace il tuo stile.",
+            "lang": "ita",
+            "id": 1330103
+          },
+          {
+            "text": "A me piace il tuo stile.",
+            "lang": "ita",
+            "id": 2377785
+          }
+        ]
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "Ti va di prendere un caffè?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "close",
+        "english": "Can I buy you a drink?",
+        "draft": "Posso offrirti da bere?",
+        "native": [
+          {
+            "text": "Posso comprarti da bere?",
+            "lang": "ita",
+            "id": 823828
+          }
+        ]
+      },
+      "see_again": {
+        "status": "differs",
+        "english": "I'd like to see you again.",
+        "draft": "Mi piacerebbe rivederti.",
+        "native": [
+          {
+            "text": "Mi piacerebbe vederti ancora.",
+            "lang": "ita",
+            "id": 1966552
+          },
+          {
+            "text": "Mi piacerebbe vederti di nuovo.",
+            "lang": "ita",
+            "id": 1966553
+          },
+          {
+            "text": "Mi piacerebbe vedervi ancora.",
+            "lang": "ita",
+            "id": 1966554
+          },
+          {
+            "text": "Mi piacerebbe vedervi di nuovo.",
+            "lang": "ita",
+            "id": 1966555
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "close",
+        "english": "Are you free tomorrow?",
+        "draft": "Sei libera/o domani?",
+        "native": [
+          {
+            "text": "Sei libero domani?",
+            "lang": "ita",
+            "id": 373958
+          },
+          {
+            "text": "È libero domani?",
+            "lang": "ita",
+            "id": 1253868
+          },
+          {
+            "text": "È libera domani?",
+            "lang": "ita",
+            "id": 1253870
+          },
+          {
+            "text": "Sei libera domani?",
+            "lang": "ita",
+            "id": 1253871
+          }
+        ]
+      },
+      "your_number": {
+        "status": "differs",
+        "english": "Can I have your number?",
+        "draft": "Mi dai il tuo numero?",
+        "native": [
+          {
+            "text": "Posso avere il tuo numero?",
+            "lang": "ita",
+            "id": 3515477
+          },
+          {
+            "text": "Posso avere il suo numero?",
+            "lang": "ita",
+            "id": 3515478
+          },
+          {
+            "text": "Posso avere il vostro numero?",
+            "lang": "ita",
+            "id": 3515479
+          }
+        ]
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "Sei qui con amici?",
+        "native": []
+      },
+      "great_time": {
+        "status": "differs",
+        "english": "I had a great time.",
+        "draft": "Sono stata/o benissimo.",
+        "native": [
+          {
+            "text": "MI sono divertito molto.",
+            "lang": "ita",
+            "id": 6889560
+          }
+        ]
+      },
+      "not_interested": {
+        "status": "close",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "Grazie, ma non mi interessa.",
+        "native": [
+          {
+            "text": "Grazie, ma non sono interessato.",
+            "lang": "ita",
+            "id": 7453920
+          },
+          {
+            "text": "Grazie, ma non sono interessata.",
+            "lang": "ita",
+            "id": 7453921
+          },
+          {
+            "text": "Grazie, però non sono interessato.",
+            "lang": "ita",
+            "id": 7453924
+          },
+          {
+            "text": "Grazie, però non sono interessata.",
+            "lang": "ita",
+            "id": 7453925
+          }
+        ]
+      },
+      "leave_me_alone": {
+        "status": "differs",
+        "english": "Please leave me alone.",
+        "draft": "Mi lasci in pace, per favore.",
+        "native": [
+          {
+            "text": "Per favore, lasciami da solo.",
+            "lang": "ita",
+            "id": 2096018
+          },
+          {
+            "text": "Per favore, lasciami da sola.",
+            "lang": "ita",
+            "id": 2096019
+          },
+          {
+            "text": "Per piacere, lasciami da solo.",
+            "lang": "ita",
+            "id": 2096020
+          },
+          {
+            "text": "Per piacere, lasciami da sola.",
+            "lang": "ita",
+            "id": 2096021
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "none",
+        "english": "How long are you here for?",
+        "draft": "Quanto tempo resti?",
+        "native": []
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "Salute!",
+        "native": [
+          {
+            "text": "Alla vostra!",
+            "lang": "ita",
+            "id": 991587
+          },
+          {
+            "text": "Salute!",
+            "lang": "ita",
+            "id": 991588
+          },
+          {
+            "text": "Alla tua!",
+            "lang": "ita",
+            "id": 1741493
+          },
+          {
+            "text": "Alla sua!",
+            "lang": "ita",
+            "id": 1814985
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "match",
+        "english": "I need an ambulance.",
+        "draft": "Ho bisogno di un'ambulanza.",
+        "native": [
+          {
+            "text": "Mi serve un'ambulanza.",
+            "lang": "ita",
+            "id": 2571135
+          },
+          {
+            "text": "Ho bisogno di un'ambulanza.",
+            "lang": "ita",
+            "id": 2571136
+          }
+        ]
+      },
+      "hurts_here": {
+        "status": "match",
+        "english": "It hurts here.",
+        "draft": "Mi fa male qui.",
+        "native": [
+          {
+            "text": "Mi fa male qui.",
+            "lang": "ita",
+            "id": 1535826
+          },
+          {
+            "text": "Ho male qui.",
+            "lang": "ita",
+            "id": 1535827
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "none",
+        "english": "I've been robbed.",
+        "draft": "Mi hanno derubato/a.",
+        "native": []
+      },
+      "trouble_breathing": {
+        "status": "differs",
+        "english": "I'm having trouble breathing.",
+        "draft": "Faccio fatica a respirare.",
+        "native": [
+          {
+            "text": "Sto avendo dei problemi a respirare.",
+            "lang": "ita",
+            "id": 5467285
+          },
+          {
+            "text": "Io sto avendo dei problemi a respirare.",
+            "lang": "ita",
+            "id": 5467286
+          }
+        ]
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "Il mio bagaglio non è arrivato.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "Il mio volo è in ritardo?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "Ho una coincidenza.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "match",
+        "english": "What time does it open?",
+        "draft": "A che ora apre?",
+        "native": [
+          {
+            "text": "A che ora apre?",
+            "lang": "ita",
+            "id": 1204366
+          }
+        ]
+      },
+      "what_time_close": {
+        "status": "match",
+        "english": "What time does it close?",
+        "draft": "A che ora chiude?",
+        "native": [
+          {
+            "text": "A che ora chiude?",
+            "lang": "ita",
+            "id": 1545227
+          },
+          {
+            "text": "A che ora si chiude?",
+            "lang": "ita",
+            "id": 1607359
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "C'è una visita guidata in inglese?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "Che birre avete alla spina?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "Qualcosa di analcolico, per favore.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "Che ore sono?",
+        "native": [
+          {
+            "text": "Che ore sono?",
+            "lang": "ita",
+            "id": 4426
+          },
+          {
+            "text": "Che ora è adesso?",
+            "lang": "ita",
+            "id": 656413
+          },
+          {
+            "text": "Che ora è ora?",
+            "lang": "ita",
+            "id": 842741
+          },
+          {
+            "text": "Che ore sono adesso?",
+            "lang": "ita",
+            "id": 1649932
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -6155,6 +9003,57 @@
         "english": "",
         "draft": "Dov'è l'uscita?",
         "native": []
+      },
+      "where_is~hospital": {
+        "status": "match",
+        "english": "Where is the hospital?",
+        "draft": "Dov'è l'ospedale?",
+        "native": [
+          {
+            "text": "Dov'è l'ospedale?",
+            "lang": "ita",
+            "id": 2286956
+          }
+        ]
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "Dov'è il check-in?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "Dov'è il ritiro bagagli?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "match",
+        "english": "Where is the gate?",
+        "draft": "Dov'è il gate?",
+        "native": [
+          {
+            "text": "Dov'è la porta di imbarco?",
+            "lang": "ita",
+            "id": 1397543
+          },
+          {
+            "text": "Dov'è il gate?",
+            "lang": "ita",
+            "id": 1397544
+          },
+          {
+            "text": "Dov'è il cancello?",
+            "lang": "ita",
+            "id": 3131970
+          },
+          {
+            "text": "Dov'è la porta?",
+            "lang": "ita",
+            "id": 2286955
+          }
+        ]
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -6342,6 +9241,39 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "Vorrei dell'acqua, per favore.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "match",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "Vorrei un bicchiere di vino rosso, per favore.",
+        "native": [
+          {
+            "text": "Vorrei un bicchiere di vino rosso, per favore.",
+            "lang": "ita",
+            "id": 2602337
+          },
+          {
+            "text": "Io vorrei un bicchiere di vino rosso, per favore.",
+            "lang": "ita",
+            "id": 2602338
+          },
+          {
+            "text": "Vorrei un bicchiere di vino rosso, per piacere.",
+            "lang": "ita",
+            "id": 2602339
+          },
+          {
+            "text": "Io vorrei un bicchiere di vino rosso, per piacere.",
+            "lang": "ita",
+            "id": 2602340
+          }
+        ]
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "Vorrei un bicchiere di vino bianco, per favore.",
         "native": []
       },
       "table_for~word_one": {
@@ -7067,6 +9999,154 @@
         "draft": "Dove posso comprare una SIM?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "match",
+        "english": "I'm from the United States.",
+        "draft": "Vengo dagli Stati Uniti.",
+        "native": [
+          {
+            "text": "Vengo dagli Stati Uniti.",
+            "lang": "ita",
+            "id": 5330935
+          },
+          {
+            "text": "Io vengo dagli Stati Uniti.",
+            "lang": "ita",
+            "id": 5330936
+          },
+          {
+            "text": "Vengo dagli Stati Uniti d'America.",
+            "lang": "ita",
+            "id": 5330937
+          },
+          {
+            "text": "Io vengo dagli Stati Uniti d'America.",
+            "lang": "ita",
+            "id": 5330938
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "Vengo dal Canada.",
+        "native": [
+          {
+            "text": "Vengo dal Canada.",
+            "lang": "ita",
+            "id": 5808721
+          },
+          {
+            "text": "Io vengo dal Canada.",
+            "lang": "ita",
+            "id": 5808722
+          },
+          {
+            "text": "Sono canadese.",
+            "lang": "ita",
+            "id": 5282820
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "Vengo dal Regno Unito.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "Vengo da Israele.",
+        "native": [
+          {
+            "text": "Vengo da Israele.",
+            "lang": "ita",
+            "id": 2573704
+          },
+          {
+            "text": "Io vengo da Israele.",
+            "lang": "ita",
+            "id": 2573705
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "Vengo dall'Australia.",
+        "native": [
+          {
+            "text": "Vengo dall'Australia.",
+            "lang": "ita",
+            "id": 763758
+          },
+          {
+            "text": "Io vengo dall'Australia.",
+            "lang": "ita",
+            "id": 1566784
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "Ho bisogno di una medicina per il dolore.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "Ho bisogno di una medicina per la febbre.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "Ho bisogno di una medicina per la tosse.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "Ho bisogno di una medicina per l'allergia.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "Un biglietto, per favore.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "match",
+        "english": "Two tickets, please.",
+        "draft": "Due biglietti, per favore.",
+        "native": [
+          {
+            "text": "Due biglietti, per favore.",
+            "lang": "ita",
+            "id": 7496316
+          },
+          {
+            "text": "Due biglietti, per piacere.",
+            "lang": "ita",
+            "id": 7496317
+          }
+        ]
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "Tre biglietti, per favore.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "Quattro biglietti, per favore.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "differs",
         "english": "For here or to go?",
@@ -7241,6 +10321,216 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "Come li tagliamo?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "Volentieri.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "Magari un'altra volta.",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "Mi dispiace, non posso.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "Sto con qualcuno.",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "Resto una settimana.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "match",
+        "english": "Do you like it here?",
+        "draft": "Ti piace qui?",
+        "native": [
+          {
+            "text": "Ti piace qui?",
+            "lang": "ita",
+            "id": 5496627
+          },
+          {
+            "text": "Vi piace qui?",
+            "lang": "ita",
+            "id": 5496625
+          }
+        ]
+      },
+      "reply~what_happened": {
+        "status": "match",
+        "english": "What happened?",
+        "draft": "Cos'è successo?",
+        "native": [
+          {
+            "text": "Che cos'è successo?",
+            "lang": "ita",
+            "id": 388816
+          },
+          {
+            "text": "Cos'è successo?",
+            "lang": "ita",
+            "id": 2917316
+          },
+          {
+            "text": "Che è successo?",
+            "lang": "ita",
+            "id": 3311841
+          },
+          {
+            "text": "Che cosa è successo?",
+            "lang": "ita",
+            "id": 4976999
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "close",
+        "english": "Where does it hurt?",
+        "draft": "Dove le fa male?",
+        "native": [
+          {
+            "text": "Dove ti fa male?",
+            "lang": "ita",
+            "id": 395954
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "match",
+        "english": "Wait here.",
+        "draft": "Aspetti qui.",
+        "native": [
+          {
+            "text": "Aspetta qui.",
+            "lang": "ita",
+            "id": 4564818
+          },
+          {
+            "text": "Aspettate qui.",
+            "lang": "ita",
+            "id": 4564820
+          },
+          {
+            "text": "Aspetti qui.",
+            "lang": "ita",
+            "id": 4564821
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "match",
+        "english": "Passport, please.",
+        "draft": "Passaporto, per favore.",
+        "native": [
+          {
+            "text": "Passaporto, per favore.",
+            "lang": "ita",
+            "id": 1563303
+          },
+          {
+            "text": "Passaporto, per piacere.",
+            "lang": "ita",
+            "id": 1563304
+          },
+          {
+            "text": "Mi mostri il passaporto, per favore.",
+            "lang": "ita",
+            "id": 395565
+          },
+          {
+            "text": "Mostrami il passaporto, per favore.",
+            "lang": "ita",
+            "id": 395566
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "L'imbarco è iniziato.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "Il suo gate è cambiato.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "È tutto esaurito.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "match",
+        "english": "Follow me.",
+        "draft": "Mi segua.",
+        "native": [
+          {
+            "text": "Seguitemi!",
+            "lang": "ita",
+            "id": 1136249
+          },
+          {
+            "text": "Mi segua!",
+            "lang": "ita",
+            "id": 1136250
+          },
+          {
+            "text": "Seguimi!",
+            "lang": "ita",
+            "id": 1136252
+          },
+          {
+            "text": "Seguimi.",
+            "lang": "ita",
+            "id": 894736
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "Cosa le porto?",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "differs",
+        "english": "Last call.",
+        "draft": "Ultimo giro.",
+        "native": [
+          {
+            "text": "Ultima chiamata!",
+            "lang": "ita",
+            "id": 4560332
+          }
+        ]
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "Sono venti in tutto.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "Inizia alle dieci.",
         "native": []
       }
     },
@@ -7682,6 +10972,239 @@
         "draft": "Trebuie să sun pe cineva.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "none",
+        "english": "You look beautiful.",
+        "draft": "Ești foarte frumoasă / frumos.",
+        "native": []
+      },
+      "love_outfit": {
+        "status": "none",
+        "english": "I love your outfit.",
+        "draft": "Îmi place cum ești îmbrăcată / îmbrăcat.",
+        "native": []
+      },
+      "beautiful_smile": {
+        "status": "close",
+        "english": "You have a beautiful smile.",
+        "draft": "Ai un zâmbet frumos.",
+        "native": [
+          {
+            "text": "Tu ai un zâmbet frumos.",
+            "lang": "ron",
+            "id": 3608132
+          }
+        ]
+      },
+      "like_style": {
+        "status": "none",
+        "english": "I like your style.",
+        "draft": "Îmi place stilul tău.",
+        "native": []
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "Vrei să bem o cafea?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "none",
+        "english": "Can I buy you a drink?",
+        "draft": "Pot să-ți ofer ceva de băut?",
+        "native": []
+      },
+      "see_again": {
+        "status": "none",
+        "english": "I'd like to see you again.",
+        "draft": "Mi-ar plăcea să te mai văd.",
+        "native": []
+      },
+      "free_tomorrow": {
+        "status": "differs",
+        "english": "Are you free tomorrow?",
+        "draft": "Ești liberă / liber mâine?",
+        "native": [
+          {
+            "text": "Ești liber mâine?",
+            "lang": "ron",
+            "id": 13506662
+          },
+          {
+            "text": "Ești liberă mâine?",
+            "lang": "ron",
+            "id": 13506668
+          }
+        ]
+      },
+      "your_number": {
+        "status": "none",
+        "english": "Can I have your number?",
+        "draft": "Îmi dai numărul tău?",
+        "native": []
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "Ești aici cu prietenii?",
+        "native": []
+      },
+      "great_time": {
+        "status": "none",
+        "english": "I had a great time.",
+        "draft": "M-am simțit foarte bine.",
+        "native": []
+      },
+      "not_interested": {
+        "status": "none",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "Mulțumesc, dar nu sunt interesată / interesat.",
+        "native": []
+      },
+      "leave_me_alone": {
+        "status": "none",
+        "english": "Please leave me alone.",
+        "draft": "Lăsați-mă în pace, vă rog.",
+        "native": []
+      },
+      "how_long_here": {
+        "status": "none",
+        "english": "How long are you here for?",
+        "draft": "Cât timp stai aici?",
+        "native": []
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "Noroc!",
+        "native": [
+          {
+            "text": "Noroc!",
+            "lang": "ron",
+            "id": 582952
+          },
+          {
+            "text": "Sănătate!",
+            "lang": "ron",
+            "id": 3159544
+          },
+          {
+            "text": "Noroc bun!",
+            "lang": "ron",
+            "id": 3609903
+          },
+          {
+            "text": "Mulțumesc!",
+            "lang": "ron",
+            "id": 399606
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "none",
+        "english": "I need an ambulance.",
+        "draft": "Am nevoie de o ambulanță.",
+        "native": []
+      },
+      "hurts_here": {
+        "status": "none",
+        "english": "It hurts here.",
+        "draft": "Mă doare aici.",
+        "native": []
+      },
+      "been_robbed": {
+        "status": "differs",
+        "english": "I've been robbed.",
+        "draft": "Am fost jefuită / jefuit.",
+        "native": [
+          {
+            "text": "Am fost jefuit.",
+            "lang": "ron",
+            "id": 10844648
+          },
+          {
+            "text": "Am fost jefuită.",
+            "lang": "ron",
+            "id": 10844649
+          }
+        ]
+      },
+      "trouble_breathing": {
+        "status": "none",
+        "english": "I'm having trouble breathing.",
+        "draft": "Respir greu.",
+        "native": []
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "Bagajul meu nu a ajuns.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "Zborul meu are întârziere?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "Am un zbor de legătură.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "none",
+        "english": "What time does it open?",
+        "draft": "La ce oră se deschide?",
+        "native": []
+      },
+      "what_time_close": {
+        "status": "none",
+        "english": "What time does it close?",
+        "draft": "La ce oră se închide?",
+        "native": []
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "Există un tur ghidat în engleză?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "Ce bere aveți la draft?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "Ceva fără alcool, vă rog.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "Cât e ceasul?",
+        "native": [
+          {
+            "text": "Cât este ceasul?",
+            "lang": "ron",
+            "id": 488786
+          },
+          {
+            "text": "Cât e ceasul?",
+            "lang": "ron",
+            "id": 1142891
+          },
+          {
+            "text": "Cât este ora?",
+            "lang": "ron",
+            "id": 5908992
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -7743,6 +11266,30 @@
         "status": "none",
         "english": "",
         "draft": "Unde este ieșirea?",
+        "native": []
+      },
+      "where_is~hospital": {
+        "status": "none",
+        "english": "Where is the hospital?",
+        "draft": "Unde este spitalul?",
+        "native": []
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "Unde este check-in-ul?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "Unde este zona de bagaje?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "none",
+        "english": "Where is the gate?",
+        "draft": "Unde este poarta de îmbarcare?",
         "native": []
       },
       "nearest~word_pharmacy": {
@@ -7881,6 +11428,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "Aș dori apă, vă rog.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "Aș dori un pahar de vin roșu, vă rog.",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "Aș dori un pahar de vin alb, vă rog.",
         "native": []
       },
       "table_for~word_one": {
@@ -8386,6 +11945,95 @@
         "draft": "Unde pot să cumpăr o cartelă SIM?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "match",
+        "english": "I'm from the United States.",
+        "draft": "Sunt din Statele Unite.",
+        "native": [
+          {
+            "text": "Sunt din Statele Unite.",
+            "lang": "ron",
+            "id": 8914790
+          },
+          {
+            "text": "Sunt din Statele Unite ale Americii.",
+            "lang": "ron",
+            "id": 8914789
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "none",
+        "english": "I'm from Canada.",
+        "draft": "Sunt din Canada.",
+        "native": []
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "Sunt din Marea Britanie.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "none",
+        "english": "I'm from Israel.",
+        "draft": "Sunt din Israel.",
+        "native": []
+      },
+      "im_from~australia": {
+        "status": "none",
+        "english": "I'm from Australia.",
+        "draft": "Sunt din Australia.",
+        "native": []
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "Am nevoie de un medicament pentru durere.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "Am nevoie de un medicament pentru febră.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "Am nevoie de un medicament pentru tuse.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "Am nevoie de un medicament pentru alergie.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "Un bilet, vă rog.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "none",
+        "english": "Two tickets, please.",
+        "draft": "Două bilete, vă rog.",
+        "native": []
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "Trei bilete, vă rog.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "Patru bilete, vă rog.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -8491,6 +12139,120 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "Cum doriți să vă tund?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "Mi-ar plăcea.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "Poate altă dată.",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "Îmi pare rău, nu pot.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "Am pe cineva.",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "Stau o săptămână.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "none",
+        "english": "Do you like it here?",
+        "draft": "Îți place aici?",
+        "native": []
+      },
+      "reply~what_happened": {
+        "status": "close",
+        "english": "What happened?",
+        "draft": "Ce s-a întâmplat?",
+        "native": [
+          {
+            "text": "Ce s-a'ntâmplat?",
+            "lang": "ron",
+            "id": 408021
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "none",
+        "english": "Where does it hurt?",
+        "draft": "Unde vă doare?",
+        "native": []
+      },
+      "reply~wait_here": {
+        "status": "none",
+        "english": "Wait here.",
+        "draft": "Așteptați aici.",
+        "native": []
+      },
+      "reply~passport_please": {
+        "status": "none",
+        "english": "Passport, please.",
+        "draft": "Pașaportul, vă rog.",
+        "native": []
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "Îmbarcarea a început.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "Poarta dumneavoastră s-a schimbat.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "Nu mai sunt bilete.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "none",
+        "english": "Follow me.",
+        "draft": "Veniți după mine.",
+        "native": []
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "Ce doriți?",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "none",
+        "english": "Last call.",
+        "draft": "Ultima comandă.",
+        "native": []
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "Douăzeci în total.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "Începe la zece.",
         "native": []
       }
     },
@@ -9199,6 +12961,484 @@
         "draft": "Мне нужно кому-то позвонить.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "differs",
+        "english": "You look beautiful.",
+        "draft": "Ты очень красивая/красивый.",
+        "native": [
+          {
+            "text": "Ты красиво выглядишь.",
+            "lang": "rus",
+            "id": 1513959
+          },
+          {
+            "text": "Ты выглядишь красиво.",
+            "lang": "rus",
+            "id": 3999449
+          },
+          {
+            "text": "Ты прекрасно выглядишь.",
+            "lang": "rus",
+            "id": 5574253
+          },
+          {
+            "text": "Вы прекрасно выглядите.",
+            "lang": "rus",
+            "id": 5574254
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "differs",
+        "english": "I love your outfit.",
+        "draft": "Мне нравится, как ты одета/одет.",
+        "native": [
+          {
+            "text": "Мне нравится Ваш наряд.",
+            "lang": "rus",
+            "id": 12842461
+          }
+        ]
+      },
+      "beautiful_smile": {
+        "status": "match",
+        "english": "You have a beautiful smile.",
+        "draft": "У тебя красивая улыбка.",
+        "native": [
+          {
+            "text": "У тебя красивая улыбка.",
+            "lang": "rus",
+            "id": 5670815
+          },
+          {
+            "text": "У Вас красивая улыбка.",
+            "lang": "rus",
+            "id": 9459030
+          }
+        ]
+      },
+      "like_style": {
+        "status": "match",
+        "english": "I like your style.",
+        "draft": "Мне нравится твой стиль.",
+        "native": [
+          {
+            "text": "Мне нравится твой стиль.",
+            "lang": "rus",
+            "id": 3627859
+          },
+          {
+            "text": "Мне нравится ваш стиль.",
+            "lang": "rus",
+            "id": 10200939
+          },
+          {
+            "text": "Мне нравится Ваш стиль.",
+            "lang": "rus",
+            "id": 10201010
+          }
+        ]
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "Хочешь выпить кофе?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "differs",
+        "english": "Can I buy you a drink?",
+        "draft": "Можно тебя угостить?",
+        "native": [
+          {
+            "text": "Могу ли я купить тебе выпить?",
+            "lang": "rus",
+            "id": 5189502
+          }
+        ]
+      },
+      "see_again": {
+        "status": "differs",
+        "english": "I'd like to see you again.",
+        "draft": "Я хочу увидеть тебя снова.",
+        "native": [
+          {
+            "text": "Я хотел бы ещё тебя увидеть.",
+            "lang": "rus",
+            "id": 4433359
+          },
+          {
+            "text": "Я хотел бы ещё вас увидеть.",
+            "lang": "rus",
+            "id": 4433360
+          },
+          {
+            "text": "Я бы хотел увидеть тебя снова.",
+            "lang": "rus",
+            "id": 4433361
+          },
+          {
+            "text": "Я бы хотел увидеть вас снова.",
+            "lang": "rus",
+            "id": 4433363
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "differs",
+        "english": "Are you free tomorrow?",
+        "draft": "Ты свободна/свободен завтра?",
+        "native": [
+          {
+            "text": "Вы завтра свободны?",
+            "lang": "rus",
+            "id": 2385978
+          },
+          {
+            "text": "Ты завтра свободен?",
+            "lang": "rus",
+            "id": 2887221
+          },
+          {
+            "text": "Ты завтра свободна?",
+            "lang": "rus",
+            "id": 2887230
+          },
+          {
+            "text": "Ты будешь завтра свободен?",
+            "lang": "rus",
+            "id": 2887232
+          }
+        ]
+      },
+      "your_number": {
+        "status": "differs",
+        "english": "Can I have your number?",
+        "draft": "Можно твой номер?",
+        "native": [
+          {
+            "text": "Я могу узнать ваш номер телефона?",
+            "lang": "rus",
+            "id": 7015748
+          }
+        ]
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "Ты здесь с друзьями?",
+        "native": []
+      },
+      "great_time": {
+        "status": "differs",
+        "english": "I had a great time.",
+        "draft": "Мне было очень хорошо.",
+        "native": [
+          {
+            "text": "Я отлично провёл время.",
+            "lang": "rus",
+            "id": 1991565
+          },
+          {
+            "text": "Я прекрасно провёл время.",
+            "lang": "rus",
+            "id": 7829899
+          },
+          {
+            "text": "Я прекрасно провела время.",
+            "lang": "rus",
+            "id": 12669836
+          },
+          {
+            "text": "Я отлично провела время.",
+            "lang": "rus",
+            "id": 12669839
+          }
+        ]
+      },
+      "not_interested": {
+        "status": "match",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "Спасибо, но мне это не интересно.",
+        "native": [
+          {
+            "text": "Спасибо, но мне не интересно.",
+            "lang": "rus",
+            "id": 11507434
+          },
+          {
+            "text": "Спасибо, но меня это не интересует.",
+            "lang": "rus",
+            "id": 4895139
+          },
+          {
+            "text": "Спасибо, но мне это не интересно.",
+            "lang": "rus",
+            "id": 4895140
+          }
+        ]
+      },
+      "leave_me_alone": {
+        "status": "differs",
+        "english": "Please leave me alone.",
+        "draft": "Оставьте меня в покое, пожалуйста.",
+        "native": [
+          {
+            "text": "Пожалуйста, дайте мне побыть одному.",
+            "lang": "rus",
+            "id": 1118470
+          },
+          {
+            "text": "Оставьте меня, пожалуйста, в покое.",
+            "lang": "rus",
+            "id": 5570008
+          },
+          {
+            "text": "Оставь меня, пожалуйста, в покое.",
+            "lang": "rus",
+            "id": 5570009
+          },
+          {
+            "text": "Прошу тебя оставить меня одного.",
+            "lang": "rus",
+            "id": 9096381
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "differs",
+        "english": "How long are you here for?",
+        "draft": "Ты здесь надолго?",
+        "native": [
+          {
+            "text": "Надолго ты здесь?",
+            "lang": "rus",
+            "id": 3052750
+          },
+          {
+            "text": "Вы надолго здесь?",
+            "lang": "rus",
+            "id": 3052751
+          },
+          {
+            "text": "Ты надолго сюда?",
+            "lang": "rus",
+            "id": 3052752
+          },
+          {
+            "text": "Вы надолго сюда?",
+            "lang": "rus",
+            "id": 3052753
+          }
+        ]
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "За здоровье!",
+        "native": [
+          {
+            "text": "За здоровье!",
+            "lang": "rus",
+            "id": 433574
+          },
+          {
+            "text": "За ваше здоровье!",
+            "lang": "rus",
+            "id": 664613
+          },
+          {
+            "text": "За Ваше здоровье!",
+            "lang": "rus",
+            "id": 2017183
+          },
+          {
+            "text": "Будем!",
+            "lang": "rus",
+            "id": 2061131
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "differs",
+        "english": "I need an ambulance.",
+        "draft": "Мне нужна скорая помощь.",
+        "native": [
+          {
+            "text": "Мне нужна скорая.",
+            "lang": "rus",
+            "id": 12375275
+          }
+        ]
+      },
+      "hurts_here": {
+        "status": "match",
+        "english": "It hurts here.",
+        "draft": "У меня болит здесь.",
+        "native": [
+          {
+            "text": "Тут больно.",
+            "lang": "rus",
+            "id": 1060833
+          },
+          {
+            "text": "Здесь болит.",
+            "lang": "rus",
+            "id": 1655524
+          },
+          {
+            "text": "У меня здесь болит.",
+            "lang": "rus",
+            "id": 467459
+          },
+          {
+            "text": "У меня болит здесь.",
+            "lang": "rus",
+            "id": 1060831
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "match",
+        "english": "I've been robbed.",
+        "draft": "Меня ограбили.",
+        "native": [
+          {
+            "text": "Меня ограбили.",
+            "lang": "rus",
+            "id": 5500818
+          }
+        ]
+      },
+      "trouble_breathing": {
+        "status": "match",
+        "english": "I'm having trouble breathing.",
+        "draft": "Мне трудно дышать.",
+        "native": [
+          {
+            "text": "Мне трудно дышать.",
+            "lang": "rus",
+            "id": 797192
+          },
+          {
+            "text": "У меня трудности с дыханием.",
+            "lang": "rus",
+            "id": 10140318
+          }
+        ]
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "Мой багаж не прилетел.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "Мой рейс задерживается?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "У меня пересадка.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "match",
+        "english": "What time does it open?",
+        "draft": "Во сколько открывается?",
+        "native": [
+          {
+            "text": "В какое время он открывается?",
+            "lang": "rus",
+            "id": 583755
+          },
+          {
+            "text": "Во сколько открывается?",
+            "lang": "rus",
+            "id": 12252422
+          },
+          {
+            "text": "Во сколько оно открывается?",
+            "lang": "rus",
+            "id": 599838
+          }
+        ]
+      },
+      "what_time_close": {
+        "status": "close",
+        "english": "What time does it close?",
+        "draft": "Во сколько закрывается?",
+        "native": [
+          {
+            "text": "Во сколько он закрывается?",
+            "lang": "rus",
+            "id": 5333260
+          },
+          {
+            "text": "Во сколько она закрывается?",
+            "lang": "rus",
+            "id": 5333261
+          },
+          {
+            "text": "Во сколько оно закрывается?",
+            "lang": "rus",
+            "id": 5333263
+          },
+          {
+            "text": "Когда закрывается?",
+            "lang": "rus",
+            "id": 468823
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "Есть экскурсия на английском?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "Какое у вас разливное пиво?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "Что-нибудь безалкогольное, пожалуйста.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "Который час?",
+        "native": [
+          {
+            "text": "Который час?",
+            "lang": "rus",
+            "id": 477108
+          },
+          {
+            "text": "Сколько времени?",
+            "lang": "rus",
+            "id": 1480922
+          },
+          {
+            "text": "Сколько сейчас времени?",
+            "lang": "rus",
+            "id": 2463807
+          },
+          {
+            "text": "Время не подскажете?",
+            "lang": "rus",
+            "id": 8053807
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -9287,6 +13527,52 @@
         "english": "",
         "draft": "Где выход?",
         "native": []
+      },
+      "where_is~hospital": {
+        "status": "match",
+        "english": "Where is the hospital?",
+        "draft": "Где больница?",
+        "native": [
+          {
+            "text": "Где находится больница?",
+            "lang": "rus",
+            "id": 3253801
+          },
+          {
+            "text": "Где больница?",
+            "lang": "rus",
+            "id": 4881099
+          }
+        ]
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "Где регистрация?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "Где выдача багажа?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "differs",
+        "english": "Where is the gate?",
+        "draft": "Где выход на посадку?",
+        "native": [
+          {
+            "text": "Где ворота?",
+            "lang": "rus",
+            "id": 5676611
+          },
+          {
+            "text": "Где дверь?",
+            "lang": "rus",
+            "id": 3253800
+          }
+        ]
       },
       "nearest~word_pharmacy": {
         "status": "match",
@@ -9542,6 +13828,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "Я бы хотел воды, пожалуйста.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "Я бы хотел бокал красного вина, пожалуйста.",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "Я бы хотел бокал белого вина, пожалуйста.",
         "native": []
       },
       "table_for~word_one": {
@@ -10330,6 +14628,134 @@
         "draft": "Где можно купить сим-карту?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "match",
+        "english": "I'm from the United States.",
+        "draft": "Я из США.",
+        "native": [
+          {
+            "text": "Я из Америки.",
+            "lang": "rus",
+            "id": 2884052
+          },
+          {
+            "text": "Я из Соединённых Штатов Америки.",
+            "lang": "rus",
+            "id": 8163987
+          },
+          {
+            "text": "Я из США.",
+            "lang": "rus",
+            "id": 2123916
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "Я из Канады.",
+        "native": [
+          {
+            "text": "Я из Канады.",
+            "lang": "rus",
+            "id": 4752082
+          },
+          {
+            "text": "Я канадец.",
+            "lang": "rus",
+            "id": 5238295
+          },
+          {
+            "text": "Я канадка.",
+            "lang": "rus",
+            "id": 5238296
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "Я из Великобритании.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "Я из Израиля.",
+        "native": [
+          {
+            "text": "Я из Израиля.",
+            "lang": "rus",
+            "id": 3421018
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "Я из Австралии.",
+        "native": [
+          {
+            "text": "Я из Австралии.",
+            "lang": "rus",
+            "id": 1677377
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "Мне нужно лекарство от боли.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "Мне нужно лекарство от температуры.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "Мне нужно лекарство от кашля.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "Мне нужно лекарство от аллергии.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "Один билет, пожалуйста.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "match",
+        "english": "Two tickets, please.",
+        "draft": "Два билета, пожалуйста.",
+        "native": [
+          {
+            "text": "Два билета, пожалуйста.",
+            "lang": "rus",
+            "id": 6395689
+          }
+        ]
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "Три билета, пожалуйста.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "Четыре билета, пожалуйста.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -10504,6 +14930,258 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "Как вас подстричь?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "С удовольствием.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "Может, в другой раз.",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "Извини, не могу.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "differs",
+        "english": "I'm seeing someone.",
+        "draft": "У меня кто-то есть.",
+        "native": [
+          {
+            "text": "Я кое с кем встречаюсь.",
+            "lang": "rus",
+            "id": 8918604
+          },
+          {
+            "text": "Я кого-то вижу.",
+            "lang": "rus",
+            "id": 3267733
+          }
+        ]
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "Я здесь на неделю.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "match",
+        "english": "Do you like it here?",
+        "draft": "Тебе здесь нравится?",
+        "native": [
+          {
+            "text": "Тебе тут нравится?",
+            "lang": "rus",
+            "id": 5496089
+          },
+          {
+            "text": "Вам тут нравится?",
+            "lang": "rus",
+            "id": 5496090
+          },
+          {
+            "text": "Тебе здесь нравится?",
+            "lang": "rus",
+            "id": 6285477
+          },
+          {
+            "text": "Вам здесь нравится?",
+            "lang": "rus",
+            "id": 8287451
+          }
+        ]
+      },
+      "reply~what_happened": {
+        "status": "match",
+        "english": "What happened?",
+        "draft": "Что случилось?",
+        "native": [
+          {
+            "text": "Что случилось?",
+            "lang": "rus",
+            "id": 5539
+          },
+          {
+            "text": "Что произошло?",
+            "lang": "rus",
+            "id": 3662798
+          },
+          {
+            "text": "Что стряслось?",
+            "lang": "rus",
+            "id": 2373733
+          },
+          {
+            "text": "Что было?",
+            "lang": "rus",
+            "id": 1580814
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "match",
+        "english": "Where does it hurt?",
+        "draft": "Где болит?",
+        "native": [
+          {
+            "text": "Где больно?",
+            "lang": "rus",
+            "id": 1060830
+          },
+          {
+            "text": "Что у тебя болит?",
+            "lang": "rus",
+            "id": 1936051
+          },
+          {
+            "text": "Где болит?",
+            "lang": "rus",
+            "id": 3019937
+          },
+          {
+            "text": "Что у вас болит?",
+            "lang": "rus",
+            "id": 7553755
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "match",
+        "english": "Wait here.",
+        "draft": "Подождите здесь.",
+        "native": [
+          {
+            "text": "Жди здесь.",
+            "lang": "rus",
+            "id": 2777766
+          },
+          {
+            "text": "Ждите здесь.",
+            "lang": "rus",
+            "id": 2777767
+          },
+          {
+            "text": "Жди тут.",
+            "lang": "rus",
+            "id": 3522169
+          },
+          {
+            "text": "Жди здесь.",
+            "lang": "rus",
+            "id": 2777766
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "match",
+        "english": "Passport, please.",
+        "draft": "Паспорт, пожалуйста.",
+        "native": [
+          {
+            "text": "Паспорт, пожалуйста.",
+            "lang": "rus",
+            "id": 4558726
+          },
+          {
+            "text": "Пожалуйста, покажите свой паспорт.",
+            "lang": "rus",
+            "id": 407503
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "Посадка началась.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "Ваш выход изменился.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "Билетов нет.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "match",
+        "english": "Follow me.",
+        "draft": "Идите за мной.",
+        "native": [
+          {
+            "text": "Иди за мной!",
+            "lang": "rus",
+            "id": 873681
+          },
+          {
+            "text": "Следуй за мной!",
+            "lang": "rus",
+            "id": 3618011
+          },
+          {
+            "text": "Следуйте за мной!",
+            "lang": "rus",
+            "id": 4540034
+          },
+          {
+            "text": "Идите за мной!",
+            "lang": "rus",
+            "id": 4540035
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "differs",
+        "english": "What can I get you?",
+        "draft": "Что будете?",
+        "native": [
+          {
+            "text": "Что мне тебе принести?",
+            "lang": "rus",
+            "id": 2787912
+          },
+          {
+            "text": "Что мне вам принести?",
+            "lang": "rus",
+            "id": 2787913
+          }
+        ]
+      },
+      "reply~last_call": {
+        "status": "differs",
+        "english": "Last call.",
+        "draft": "Последние заказы.",
+        "native": [
+          {
+            "text": "Последний звонок!",
+            "lang": "rus",
+            "id": 5622195
+          }
+        ]
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "С вас двадцать.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "Начало в десять.",
         "native": []
       }
     },
@@ -11134,6 +15812,321 @@
         "draft": "電話をかけないといけません。",
         "native": []
       },
+      "look_beautiful": {
+        "status": "none",
+        "english": "You look beautiful.",
+        "draft": "とてもきれいですね。",
+        "native": []
+      },
+      "love_outfit": {
+        "status": "differs",
+        "english": "I love your outfit.",
+        "draft": "その服、すてきですね。",
+        "native": [
+          {
+            "text": "その服いいね。",
+            "lang": "jpn",
+            "id": 8612286
+          }
+        ]
+      },
+      "beautiful_smile": {
+        "status": "differs",
+        "english": "You have a beautiful smile.",
+        "draft": "笑顔がすてきですね。",
+        "native": [
+          {
+            "text": "笑顔がきれいだね。",
+            "lang": "jpn",
+            "id": 8056966
+          }
+        ]
+      },
+      "like_style": {
+        "status": "none",
+        "english": "I like your style.",
+        "draft": "おしゃれですね。",
+        "native": []
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "コーヒーでも飲みに行きませんか？",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "differs",
+        "english": "Can I buy you a drink?",
+        "draft": "一杯おごらせてください。",
+        "native": [
+          {
+            "text": "一杯ごちそうしようか。",
+            "lang": "jpn",
+            "id": 190218
+          },
+          {
+            "text": "一杯おごるよ。",
+            "lang": "jpn",
+            "id": 12621186
+          }
+        ]
+      },
+      "see_again": {
+        "status": "close",
+        "english": "I'd like to see you again.",
+        "draft": "また会いたいです。",
+        "native": [
+          {
+            "text": "また会いたいな。",
+            "lang": "jpn",
+            "id": 10387208
+          },
+          {
+            "text": "またお会いしたいです。",
+            "lang": "jpn",
+            "id": 10387211
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "differs",
+        "english": "Are you free tomorrow?",
+        "draft": "明日、空いていますか？",
+        "native": [
+          {
+            "text": "あなたは明日お暇ですか。",
+            "lang": "jpn",
+            "id": 231540
+          },
+          {
+            "text": "明日暇？",
+            "lang": "jpn",
+            "id": 4593736
+          }
+        ]
+      },
+      "your_number": {
+        "status": "differs",
+        "english": "Can I have your number?",
+        "draft": "連絡先を教えてもらえますか？",
+        "native": [
+          {
+            "text": "電話番号を伺ってもよろしいですか？",
+            "lang": "jpn",
+            "id": 866812
+          }
+        ]
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "お友達と一緒ですか？",
+        "native": []
+      },
+      "great_time": {
+        "status": "none",
+        "english": "I had a great time.",
+        "draft": "とても楽しかったです。",
+        "native": []
+      },
+      "not_interested": {
+        "status": "none",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "ありがとうございます。でも、結構です。",
+        "native": []
+      },
+      "leave_me_alone": {
+        "status": "differs",
+        "english": "Please leave me alone.",
+        "draft": "やめてください。",
+        "native": [
+          {
+            "text": "私を一人にしておいてください。",
+            "lang": "jpn",
+            "id": 152152
+          },
+          {
+            "text": "どうか、私をほっておいてください。",
+            "lang": "jpn",
+            "id": 201694
+          },
+          {
+            "text": "お願いだから一人にしておいてくれ。",
+            "lang": "jpn",
+            "id": 974001
+          },
+          {
+            "text": "お願いだから独りにして。",
+            "lang": "jpn",
+            "id": 9345721
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "none",
+        "english": "How long are you here for?",
+        "draft": "いつまでいますか？",
+        "native": []
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "乾杯！",
+        "native": [
+          {
+            "text": "乾杯！",
+            "lang": "jpn",
+            "id": 184053
+          },
+          {
+            "text": "ご健康を祝して乾杯。",
+            "lang": "jpn",
+            "id": 217167
+          },
+          {
+            "text": "ありがとう！",
+            "lang": "jpn",
+            "id": 1531875
+          },
+          {
+            "text": "おおきに！",
+            "lang": "jpn",
+            "id": 9462381
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "none",
+        "english": "I need an ambulance.",
+        "draft": "救急車を呼んでください。",
+        "native": []
+      },
+      "hurts_here": {
+        "status": "match",
+        "english": "It hurts here.",
+        "draft": "ここが痛いです。",
+        "native": [
+          {
+            "text": "ここが痛い。",
+            "lang": "jpn",
+            "id": 224715
+          },
+          {
+            "text": "ここが痛いです。",
+            "lang": "jpn",
+            "id": 224714
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "none",
+        "english": "I've been robbed.",
+        "draft": "盗まれました。",
+        "native": []
+      },
+      "trouble_breathing": {
+        "status": "none",
+        "english": "I'm having trouble breathing.",
+        "draft": "息が苦しいです。",
+        "native": []
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "荷物が届いていません。",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "私の便は遅れていますか？",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "乗り継ぎがあります。",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "differs",
+        "english": "What time does it open?",
+        "draft": "何時に開きますか？",
+        "native": [
+          {
+            "text": "何時開店ですか。",
+            "lang": "jpn",
+            "id": 187422
+          }
+        ]
+      },
+      "what_time_close": {
+        "status": "match",
+        "english": "What time does it close?",
+        "draft": "何時に閉まりますか？",
+        "native": [
+          {
+            "text": "何時閉店ですか。",
+            "lang": "jpn",
+            "id": 187410
+          },
+          {
+            "text": "何時に閉まりますか。",
+            "lang": "jpn",
+            "id": 1545518
+          },
+          {
+            "text": "閉店は何時ですか？",
+            "lang": "jpn",
+            "id": 9698925
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "英語のガイドツアーはありますか？",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "生ビールは何がありますか？",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "ノンアルコールのものをお願いします。",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "今、何時ですか？",
+        "native": [
+          {
+            "text": "何時ですか。",
+            "lang": "jpn",
+            "id": 5059
+          },
+          {
+            "text": "今、何時ですか。",
+            "lang": "jpn",
+            "id": 172923
+          },
+          {
+            "text": "何時でしょうか。",
+            "lang": "jpn",
+            "id": 187458
+          },
+          {
+            "text": "いま何時ですか？",
+            "lang": "jpn",
+            "id": 2412106
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -11195,6 +16188,36 @@
         "status": "none",
         "english": "",
         "draft": "出口はどこですか？",
+        "native": []
+      },
+      "where_is~hospital": {
+        "status": "differs",
+        "english": "Where is the hospital?",
+        "draft": "病院はどこですか？",
+        "native": [
+          {
+            "text": "病院は何処ですか？",
+            "lang": "jpn",
+            "id": 2466329
+          }
+        ]
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "チェックインカウンターはどこですか？",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "手荷物受取所はどこですか？",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "none",
+        "english": "Where is the gate?",
+        "draft": "搭乗口はどこですか？",
         "native": []
       },
       "nearest~word_pharmacy": {
@@ -11388,6 +16411,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "お水をお願いします。",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "赤ワインをお願いします。",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "白ワインをお願いします。",
         "native": []
       },
       "table_for~word_one": {
@@ -12037,6 +17072,143 @@
         "draft": "どこでSIMカードを買えますか？",
         "native": []
       },
+      "im_from~usa": {
+        "status": "match",
+        "english": "I'm from the United States.",
+        "draft": "アメリカから来ました。",
+        "native": [
+          {
+            "text": "アメリカから来ました。",
+            "lang": "jpn",
+            "id": 2231208
+          },
+          {
+            "text": "アメリカ出身です。",
+            "lang": "jpn",
+            "id": 10838415
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "カナダから来ました。",
+        "native": [
+          {
+            "text": "カナダの出身です。",
+            "lang": "jpn",
+            "id": 226298
+          },
+          {
+            "text": "出身はカナダです。",
+            "lang": "jpn",
+            "id": 3416645
+          },
+          {
+            "text": "カナダから来ました。",
+            "lang": "jpn",
+            "id": 3416646
+          },
+          {
+            "text": "カナダ出身です。",
+            "lang": "jpn",
+            "id": 13356104
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "イギリスから来ました。",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "イスラエルから来ました。",
+        "native": [
+          {
+            "text": "イスラエルから来ました。",
+            "lang": "jpn",
+            "id": 13231129
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "オーストラリアから来ました。",
+        "native": [
+          {
+            "text": "私はオーストラリア出身です。",
+            "lang": "jpn",
+            "id": 161299
+          },
+          {
+            "text": "私はオーストラリアの出身です。",
+            "lang": "jpn",
+            "id": 161301
+          },
+          {
+            "text": "出身はオーストラリアです。",
+            "lang": "jpn",
+            "id": 2394441
+          },
+          {
+            "text": "オーストラリアから来ました。",
+            "lang": "jpn",
+            "id": 3196469
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "痛み止めをください。",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "熱の薬をください。",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "咳の薬をください。",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "アレルギーの薬をください。",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "チケットを一枚お願いします。",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "none",
+        "english": "Two tickets, please.",
+        "draft": "チケットを二枚お願いします。",
+        "native": []
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "チケットを三枚お願いします。",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "チケットを四枚お願いします。",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "differs",
         "english": "For here or to go?",
@@ -12178,6 +17350,210 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "今日はどうなさいますか？",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "ぜひ。",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "また今度。",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "すみません、ちょっと…。",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "付き合っている人がいます。",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "一週間います。",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "none",
+        "english": "Do you like it here?",
+        "draft": "ここは気に入りましたか？",
+        "native": []
+      },
+      "reply~what_happened": {
+        "status": "close",
+        "english": "What happened?",
+        "draft": "どうしましたか？",
+        "native": [
+          {
+            "text": "何が起きたの？",
+            "lang": "jpn",
+            "id": 4824
+          },
+          {
+            "text": "何が起こったんだ？",
+            "lang": "jpn",
+            "id": 188025
+          },
+          {
+            "text": "何が起こったのですか。",
+            "lang": "jpn",
+            "id": 188026
+          },
+          {
+            "text": "何が起こったの？",
+            "lang": "jpn",
+            "id": 188031
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "match",
+        "english": "Where does it hurt?",
+        "draft": "どこが痛いですか？",
+        "native": [
+          {
+            "text": "どこが痛みますか。",
+            "lang": "jpn",
+            "id": 403282
+          },
+          {
+            "text": "どこが痛むの？",
+            "lang": "jpn",
+            "id": 4836754
+          },
+          {
+            "text": "痛いところはどこ？",
+            "lang": "jpn",
+            "id": 9992496
+          },
+          {
+            "text": "どこが痛いの？",
+            "lang": "jpn",
+            "id": 10610345
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "differs",
+        "english": "Wait here.",
+        "draft": "ここでお待ちください。",
+        "native": [
+          {
+            "text": "ここで待ってろ！",
+            "lang": "jpn",
+            "id": 12433718
+          },
+          {
+            "text": "ここで待って。",
+            "lang": "jpn",
+            "id": 5241325
+          },
+          {
+            "text": "ここで待ってて。",
+            "lang": "jpn",
+            "id": 12433717
+          },
+          {
+            "text": "ここで待ってろ！",
+            "lang": "jpn",
+            "id": 12433718
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "differs",
+        "english": "Passport, please.",
+        "draft": "パスポートをお願いします。",
+        "native": [
+          {
+            "text": "パスポートを見せて下さい。",
+            "lang": "jpn",
+            "id": 198084
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "搭乗を開始しました。",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "搭乗口が変更になりました。",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "売り切れです。",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "differs",
+        "english": "Follow me.",
+        "draft": "ついてきてください。",
+        "native": [
+          {
+            "text": "付いてこい！",
+            "lang": "jpn",
+            "id": 11784937
+          },
+          {
+            "text": "私についてきて。",
+            "lang": "jpn",
+            "id": 164374
+          },
+          {
+            "text": "ついてきて。",
+            "lang": "jpn",
+            "id": 3488025
+          },
+          {
+            "text": "私についてきて。",
+            "lang": "jpn",
+            "id": 164374
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "何になさいますか？",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "differs",
+        "english": "Last call.",
+        "draft": "ラストオーダーです。",
+        "native": [
+          {
+            "text": "最後のチャンス！",
+            "lang": "jpn",
+            "id": 1678497
+          }
+        ]
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "合計で二十です。",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "十時に始まります。",
         "native": []
       }
     },
@@ -12734,6 +18110,299 @@
         "draft": "אני צריך להתקשר למישהו.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "differs",
+        "english": "You look beautiful.",
+        "draft": "את יפה מאוד. / אתה נראה מעולה.",
+        "native": [
+          {
+            "text": "את נראית יפה.",
+            "lang": "heb",
+            "id": 1809867
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "differs",
+        "english": "I love your outfit.",
+        "draft": "אהבתי את הלבוש שלך.",
+        "native": [
+          {
+            "text": "אני אוהב את הלבוש שלך.",
+            "lang": "heb",
+            "id": 2380923
+          },
+          {
+            "text": "אני אוהבת את הלבוש שלך.",
+            "lang": "heb",
+            "id": 2380924
+          },
+          {
+            "text": "אני אוהב את הלבוש שלכם.",
+            "lang": "heb",
+            "id": 2380926
+          },
+          {
+            "text": "אני אוהבת את הלבוש שלכם.",
+            "lang": "heb",
+            "id": 2380927
+          }
+        ]
+      },
+      "beautiful_smile": {
+        "status": "none",
+        "english": "You have a beautiful smile.",
+        "draft": "יש לך חיוך יפה.",
+        "native": []
+      },
+      "like_style": {
+        "status": "none",
+        "english": "I like your style.",
+        "draft": "אני אוהב את הסגנון שלך.",
+        "native": []
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "רוצה ללכת לשתות קפה?",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "none",
+        "english": "Can I buy you a drink?",
+        "draft": "אפשר להזמין אותך למשקה?",
+        "native": []
+      },
+      "see_again": {
+        "status": "none",
+        "english": "I'd like to see you again.",
+        "draft": "אני רוצה לראות אותך שוב.",
+        "native": []
+      },
+      "free_tomorrow": {
+        "status": "match",
+        "english": "Are you free tomorrow?",
+        "draft": "אתה פנוי מחר?",
+        "native": [
+          {
+            "text": "אתה פנוי מחר?",
+            "lang": "heb",
+            "id": 1480238
+          },
+          {
+            "text": "את פנויה מחר?",
+            "lang": "heb",
+            "id": 1872069
+          },
+          {
+            "text": "אתם פנויים מחר?",
+            "lang": "heb",
+            "id": 1872070
+          },
+          {
+            "text": "אתן פנויות מחר?",
+            "lang": "heb",
+            "id": 1872071
+          }
+        ]
+      },
+      "your_number": {
+        "status": "none",
+        "english": "Can I have your number?",
+        "draft": "אפשר לקבל את המספר שלך?",
+        "native": []
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "אתה פה עם חברים?",
+        "native": []
+      },
+      "great_time": {
+        "status": "differs",
+        "english": "I had a great time.",
+        "draft": "היה לי ממש כיף.",
+        "native": [
+          {
+            "text": "נהניתי מאד.",
+            "lang": "heb",
+            "id": 1851893
+          },
+          {
+            "text": "ביליתי נהדר.",
+            "lang": "heb",
+            "id": 1851894
+          }
+        ]
+      },
+      "not_interested": {
+        "status": "none",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "תודה, אבל אני לא מעוניין.",
+        "native": []
+      },
+      "leave_me_alone": {
+        "status": "differs",
+        "english": "Please leave me alone.",
+        "draft": "תעזוב אותי בבקשה.",
+        "native": [
+          {
+            "text": "עזוב אותי במנוחה.",
+            "lang": "heb",
+            "id": 1929902
+          },
+          {
+            "text": "תן לי מנוח.",
+            "lang": "heb",
+            "id": 1929903
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "close",
+        "english": "How long are you here for?",
+        "draft": "כמה זמן אתה פה?",
+        "native": [
+          {
+            "text": "כמה זמן תהיה פה?",
+            "lang": "heb",
+            "id": 1215508
+          },
+          {
+            "text": "כמה זמן תהיי פה?",
+            "lang": "heb",
+            "id": 1215510
+          }
+        ]
+      },
+      "cheers": {
+        "status": "match",
+        "english": "Cheers!",
+        "draft": "לחיים!",
+        "native": [
+          {
+            "text": "לחיים!",
+            "lang": "heb",
+            "id": 1499999
+          },
+          {
+            "text": "תודה!",
+            "lang": "heb",
+            "id": 565042
+          },
+          {
+            "text": "לבריאות!",
+            "lang": "heb",
+            "id": 565623
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "none",
+        "english": "I need an ambulance.",
+        "draft": "אני צריך אמבולנס.",
+        "native": []
+      },
+      "hurts_here": {
+        "status": "differs",
+        "english": "It hurts here.",
+        "draft": "כואב לי פה.",
+        "native": [
+          {
+            "text": "זה כואב כאן.",
+            "lang": "heb",
+            "id": 1399590
+          },
+          {
+            "text": "כואב לי כאן.",
+            "lang": "heb",
+            "id": 1399592
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "none",
+        "english": "I've been robbed.",
+        "draft": "שדדו אותי.",
+        "native": []
+      },
+      "trouble_breathing": {
+        "status": "none",
+        "english": "I'm having trouble breathing.",
+        "draft": "קשה לי לנשום.",
+        "native": []
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "המזוודה שלי לא הגיעה.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "הטיסה שלי מתעכבת?",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "יש לי טיסת המשך.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "none",
+        "english": "What time does it open?",
+        "draft": "מתי זה נפתח?",
+        "native": []
+      },
+      "what_time_close": {
+        "status": "differs",
+        "english": "What time does it close?",
+        "draft": "מתי זה נסגר?",
+        "native": [
+          {
+            "text": "מתי הוא נסגר?",
+            "lang": "heb",
+            "id": 8168246
+          }
+        ]
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "יש סיור מודרך באנגלית?",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "איזו בירה יש מהחבית?",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "משהו בלי אלכוהול, בבקשה.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "match",
+        "english": "What time is it?",
+        "draft": "מה השעה?",
+        "native": [
+          {
+            "text": "מה השעה?",
+            "lang": "heb",
+            "id": 640123
+          },
+          {
+            "text": "מה השעה עכשיו?",
+            "lang": "heb",
+            "id": 1176728
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -12790,6 +18459,30 @@
         "status": "none",
         "english": "",
         "draft": "איפה היציאה?",
+        "native": []
+      },
+      "where_is~hospital": {
+        "status": "none",
+        "english": "Where is the hospital?",
+        "draft": "איפה בית החולים?",
+        "native": []
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "איפה הצ'ק-אין?",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "איפה איסוף המזוודות?",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "none",
+        "english": "Where is the gate?",
+        "draft": "איפה השער?",
         "native": []
       },
       "nearest~word_pharmacy": {
@@ -12944,6 +18637,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "אני רוצה מים, בבקשה.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "אני רוצה כוס יין אדום, בבקשה.",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "אני רוצה כוס יין לבן, בבקשה.",
         "native": []
       },
       "table_for~word_one": {
@@ -13475,6 +19180,108 @@
         "draft": "איפה אפשר לקנות כרטיס סים?",
         "native": []
       },
+      "im_from~usa": {
+        "status": "differs",
+        "english": "I'm from the United States.",
+        "draft": "אני מארצות הברית.",
+        "native": [
+          {
+            "text": "אני מארה\"ב.",
+            "lang": "heb",
+            "id": 2005949
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "אני מקנדה.",
+        "native": [
+          {
+            "text": "אני מקנדה.",
+            "lang": "heb",
+            "id": 6119750
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "אני מבריטניה.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "אני מישראל.",
+        "native": [
+          {
+            "text": "אני מישראל.",
+            "lang": "heb",
+            "id": 2573636
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "אני מאוסטרליה.",
+        "native": [
+          {
+            "text": "אני מאוסטרליה.",
+            "lang": "heb",
+            "id": 6128049
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "אני צריך תרופה לכאבים.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "אני צריך תרופה לחום.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "אני צריך תרופה לשיעול.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "אני צריך תרופה לאלרגיה.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "כרטיס אחד, בבקשה.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "none",
+        "english": "Two tickets, please.",
+        "draft": "שני כרטיסים, בבקשה.",
+        "native": []
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "שלושה כרטיסים, בבקשה.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "ארבעה כרטיסים, בבקשה.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -13569,6 +19376,185 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "איך אתה רוצה שנספר אותך?",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "בשמחה.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "close",
+        "english": "Maybe another time.",
+        "draft": "אולי בפעם אחרת.",
+        "native": [
+          {
+            "text": "אולי פעם אחרת.",
+            "lang": "heb",
+            "id": 1391860
+          }
+        ]
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "סליחה, אני לא יכולה.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "יש לי מישהו.",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "אני פה לשבוע.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "none",
+        "english": "Do you like it here?",
+        "draft": "טוב לך פה?",
+        "native": []
+      },
+      "reply~what_happened": {
+        "status": "match",
+        "english": "What happened?",
+        "draft": "מה קרה?",
+        "native": [
+          {
+            "text": "מה קרה?",
+            "lang": "heb",
+            "id": 558749
+          },
+          {
+            "text": "מה התרחש כאן?",
+            "lang": "heb",
+            "id": 1397811
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "match",
+        "english": "Where does it hurt?",
+        "draft": "איפה כואב לך?",
+        "native": [
+          {
+            "text": "איפה זה כואב?",
+            "lang": "heb",
+            "id": 1563953
+          },
+          {
+            "text": "איפה כואב לך?",
+            "lang": "heb",
+            "id": 1563954
+          },
+          {
+            "text": "איפה מכאיב לך?",
+            "lang": "heb",
+            "id": 1629398
+          },
+          {
+            "text": "איפה כואב?",
+            "lang": "heb",
+            "id": 1863917
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "differs",
+        "english": "Wait here.",
+        "draft": "חכה פה.",
+        "native": [
+          {
+            "text": "תמתין פה.",
+            "lang": "heb",
+            "id": 5406113
+          }
+        ]
+      },
+      "reply~passport_please": {
+        "status": "match",
+        "english": "Passport, please.",
+        "draft": "דרכון, בבקשה.",
+        "native": [
+          {
+            "text": "דרכון בבקשה.",
+            "lang": "heb",
+            "id": 5444399
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "העלייה למטוס התחילה.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "השער שלך השתנה.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "הכרטיסים אזלו.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "close",
+        "english": "Follow me.",
+        "draft": "בוא אחריי.",
+        "native": [
+          {
+            "text": "תעקוב אחריי.",
+            "lang": "heb",
+            "id": 1336346
+          },
+          {
+            "text": "תעקבו אחריי.",
+            "lang": "heb",
+            "id": 1336348
+          },
+          {
+            "text": "עקבי אחריי.",
+            "lang": "heb",
+            "id": 1336350
+          },
+          {
+            "text": "בוא אחרי.",
+            "lang": "heb",
+            "id": 5406192
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "מה בשבילך?",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "none",
+        "english": "Last call.",
+        "draft": "הזמנה אחרונה.",
+        "native": []
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "זה עשרים בסך הכול.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "זה מתחיל בעשר.",
         "native": []
       }
     },
@@ -14053,6 +20039,268 @@
         "draft": "لازم أتصل بحدا.",
         "native": []
       },
+      "look_beautiful": {
+        "status": "formal-only",
+        "english": "You look beautiful.",
+        "draft": "إنتِ كتير حلوة. / إنتَ كتير حلو.",
+        "native": [
+          {
+            "text": "تبدين جميلة.",
+            "lang": "ara",
+            "id": 1431876
+          }
+        ]
+      },
+      "love_outfit": {
+        "status": "none",
+        "english": "I love your outfit.",
+        "draft": "حلو لبسك.",
+        "native": []
+      },
+      "beautiful_smile": {
+        "status": "none",
+        "english": "You have a beautiful smile.",
+        "draft": "ابتسامتك حلوة.",
+        "native": []
+      },
+      "like_style": {
+        "status": "formal-only",
+        "english": "I like your style.",
+        "draft": "عاجبني ستايلك.",
+        "native": [
+          {
+            "text": "يعجبني أسلوبك.",
+            "lang": "ara",
+            "id": 1594510
+          }
+        ]
+      },
+      "get_coffee": {
+        "status": "none",
+        "english": "Would you like to get a coffee?",
+        "draft": "بتحب نشرب قهوة؟",
+        "native": []
+      },
+      "buy_drink": {
+        "status": "none",
+        "english": "Can I buy you a drink?",
+        "draft": "ممكن أعزمك على مشروب؟",
+        "native": []
+      },
+      "see_again": {
+        "status": "formal-only",
+        "english": "I'd like to see you again.",
+        "draft": "بحب أشوفك مرة تانية.",
+        "native": [
+          {
+            "text": "أود رؤيتك مجددا.",
+            "lang": "ara",
+            "id": 3659970
+          },
+          {
+            "text": "أريد أن أراك مرة أخرى.",
+            "lang": "ara",
+            "id": 1595325
+          }
+        ]
+      },
+      "free_tomorrow": {
+        "status": "formal-only",
+        "english": "Are you free tomorrow?",
+        "draft": "فاضي بكرا؟",
+        "native": [
+          {
+            "text": "هل أنت غير مشغول غداً؟",
+            "lang": "ara",
+            "id": 458098
+          }
+        ]
+      },
+      "your_number": {
+        "status": "none",
+        "english": "Can I have your number?",
+        "draft": "ممكن آخد رقمك؟",
+        "native": []
+      },
+      "with_friends": {
+        "status": "none",
+        "english": "Are you here with friends?",
+        "draft": "إنت هون مع صحابك؟",
+        "native": []
+      },
+      "great_time": {
+        "status": "none",
+        "english": "I had a great time.",
+        "draft": "انبسطت كتير.",
+        "native": []
+      },
+      "not_interested": {
+        "status": "none",
+        "english": "Thanks, but I'm not interested.",
+        "draft": "شكراً، بس مش مهتم.",
+        "native": []
+      },
+      "leave_me_alone": {
+        "status": "formal-only",
+        "english": "Please leave me alone.",
+        "draft": "اتركني بحالي، لو سمحت.",
+        "native": [
+          {
+            "text": "من فضلك اتركني وحدي.",
+            "lang": "ara",
+            "id": 384088
+          },
+          {
+            "text": "من فضلك اتركني وحدي.",
+            "lang": "ara",
+            "id": 384088
+          }
+        ]
+      },
+      "how_long_here": {
+        "status": "formal-only",
+        "english": "How long are you here for?",
+        "draft": "قديش باقي هون؟",
+        "native": [
+          {
+            "text": "منذ متى وأنت هنا؟",
+            "lang": "ara",
+            "id": 1372386
+          }
+        ]
+      },
+      "cheers": {
+        "status": "differs",
+        "english": "Cheers!",
+        "draft": "كاسك!",
+        "native": [
+          {
+            "text": "Merci!",
+            "lang": "apc",
+            "id": 8430989
+          },
+          {
+            "text": "في صحتك.",
+            "lang": "ara",
+            "id": 4113375
+          },
+          {
+            "text": "شكراً!",
+            "lang": "ara",
+            "id": 448674
+          },
+          {
+            "text": "شكراً لك",
+            "lang": "ara",
+            "id": 6679448
+          }
+        ]
+      },
+      "need_ambulance": {
+        "status": "none",
+        "english": "I need an ambulance.",
+        "draft": "بدي إسعاف.",
+        "native": []
+      },
+      "hurts_here": {
+        "status": "formal-only",
+        "english": "It hurts here.",
+        "draft": "بيوجعني هون.",
+        "native": [
+          {
+            "text": "أشعر بالألم هنا.",
+            "lang": "ara",
+            "id": 11750681
+          }
+        ]
+      },
+      "been_robbed": {
+        "status": "none",
+        "english": "I've been robbed.",
+        "draft": "انسرقت.",
+        "native": []
+      },
+      "trouble_breathing": {
+        "status": "none",
+        "english": "I'm having trouble breathing.",
+        "draft": "مش قادر أتنفس.",
+        "native": []
+      },
+      "luggage_missing": {
+        "status": "none",
+        "english": "My luggage didn't arrive.",
+        "draft": "شنطتي ما وصلت.",
+        "native": []
+      },
+      "flight_delayed": {
+        "status": "none",
+        "english": "Is my flight delayed?",
+        "draft": "طيارتي متأخرة؟",
+        "native": []
+      },
+      "connecting_flight": {
+        "status": "none",
+        "english": "I have a connecting flight.",
+        "draft": "عندي رحلة ترانزيت.",
+        "native": []
+      },
+      "what_time_open": {
+        "status": "none",
+        "english": "What time does it open?",
+        "draft": "أي ساعة بيفتح؟",
+        "native": []
+      },
+      "what_time_close": {
+        "status": "none",
+        "english": "What time does it close?",
+        "draft": "أي ساعة بيسكّر؟",
+        "native": []
+      },
+      "tour_english": {
+        "status": "none",
+        "english": "Is there a guided tour in English?",
+        "draft": "في جولة مع مرشد بالإنجليزي؟",
+        "native": []
+      },
+      "on_tap": {
+        "status": "none",
+        "english": "What do you have on tap?",
+        "draft": "شو في عندكم بيرة درافت؟",
+        "native": []
+      },
+      "non_alcoholic": {
+        "status": "none",
+        "english": "Something non-alcoholic, please.",
+        "draft": "إشي بدون كحول، لو سمحت.",
+        "native": []
+      },
+      "what_time_is_it": {
+        "status": "formal-only",
+        "english": "What time is it?",
+        "draft": "قديش الساعة؟",
+        "native": [
+          {
+            "text": "ما الساعة الآن؟",
+            "lang": "ara",
+            "id": 381825
+          },
+          {
+            "text": "كم الساعة؟",
+            "lang": "ara",
+            "id": 430233
+          },
+          {
+            "text": "كَم الساعة؟",
+            "lang": "ara",
+            "id": 3577047
+          },
+          {
+            "text": "كم السّاعة؟",
+            "lang": "ara",
+            "id": 6966538
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "none",
         "english": "Where is the train station?",
@@ -14087,6 +20335,30 @@
         "status": "none",
         "english": "",
         "draft": "وين المخرج؟",
+        "native": []
+      },
+      "where_is~hospital": {
+        "status": "none",
+        "english": "Where is the hospital?",
+        "draft": "وين المستشفى؟",
+        "native": []
+      },
+      "where_is~checkin": {
+        "status": "none",
+        "english": "Where is check-in?",
+        "draft": "وين التشيك إن؟",
+        "native": []
+      },
+      "where_is~baggage": {
+        "status": "none",
+        "english": "Where is baggage claim?",
+        "draft": "وين استلام الشنط؟",
+        "native": []
+      },
+      "where_is~gate": {
+        "status": "none",
+        "english": "Where is the gate?",
+        "draft": "وين البوابة؟",
         "native": []
       },
       "nearest~word_pharmacy": {
@@ -14231,6 +20503,18 @@
         "status": "none",
         "english": "I'd like some water, please.",
         "draft": "بدي مي، لو سمحت.",
+        "native": []
+      },
+      "i_would_like~red_wine": {
+        "status": "none",
+        "english": "I'd like a glass of red wine, please.",
+        "draft": "بدي كاسة نبيذ أحمر، لو سمحت.",
+        "native": []
+      },
+      "i_would_like~white_wine": {
+        "status": "none",
+        "english": "I'd like a glass of white wine, please.",
+        "draft": "بدي كاسة نبيذ أبيض، لو سمحت.",
         "native": []
       },
       "table_for~word_one": {
@@ -14735,6 +21019,108 @@
         "draft": "وين فيني أشتري شريحة؟",
         "native": []
       },
+      "im_from~usa": {
+        "status": "formal-only",
+        "english": "I'm from the United States.",
+        "draft": "أنا من أمريكا.",
+        "native": [
+          {
+            "text": "أنا من الولايات المتحدة الأمريكية.",
+            "lang": "ara",
+            "id": 1879764
+          }
+        ]
+      },
+      "im_from~canada": {
+        "status": "match",
+        "english": "I'm from Canada.",
+        "draft": "أنا من كندا.",
+        "native": [
+          {
+            "text": "أنا من كندا.",
+            "lang": "ara",
+            "id": 1879811
+          }
+        ]
+      },
+      "im_from~uk": {
+        "status": "none",
+        "english": "I'm from the UK.",
+        "draft": "أنا من بريطانيا.",
+        "native": []
+      },
+      "im_from~israel": {
+        "status": "match",
+        "english": "I'm from Israel.",
+        "draft": "أنا من إسرائيل.",
+        "native": [
+          {
+            "text": "أنا من إسرائيل.",
+            "lang": "ara",
+            "id": 13231124
+          }
+        ]
+      },
+      "im_from~australia": {
+        "status": "match",
+        "english": "I'm from Australia.",
+        "draft": "أنا من أستراليا.",
+        "native": [
+          {
+            "text": "أنا من أُستراليا.",
+            "lang": "ara",
+            "id": 1879820
+          }
+        ]
+      },
+      "medicine_for~pain": {
+        "status": "none",
+        "english": "I need medicine for pain.",
+        "draft": "بدي دوا للوجع.",
+        "native": []
+      },
+      "medicine_for~fever": {
+        "status": "none",
+        "english": "I need medicine for a fever.",
+        "draft": "بدي دوا للحرارة.",
+        "native": []
+      },
+      "medicine_for~cough": {
+        "status": "none",
+        "english": "I need medicine for a cough.",
+        "draft": "بدي دوا للسعلة.",
+        "native": []
+      },
+      "medicine_for~allergies": {
+        "status": "none",
+        "english": "I need medicine for allergies.",
+        "draft": "بدي دوا للحساسية.",
+        "native": []
+      },
+      "tickets_please~one": {
+        "status": "none",
+        "english": "One ticket, please.",
+        "draft": "تذكرة وحدة، لو سمحت.",
+        "native": []
+      },
+      "tickets_please~two": {
+        "status": "none",
+        "english": "Two tickets, please.",
+        "draft": "تذكرتين، لو سمحت.",
+        "native": []
+      },
+      "tickets_please~three": {
+        "status": "none",
+        "english": "Three tickets, please.",
+        "draft": "تلات تذاكر، لو سمحت.",
+        "native": []
+      },
+      "tickets_please~four": {
+        "status": "none",
+        "english": "Four tickets, please.",
+        "draft": "أربع تذاكر، لو سمحت.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -14834,6 +21220,183 @@
         "status": "none",
         "english": "How would you like it cut?",
         "draft": "كيف بدك القصة؟",
+        "native": []
+      },
+      "reply~id_love_to": {
+        "status": "none",
+        "english": "I'd love to.",
+        "draft": "أكيد، بحب.",
+        "native": []
+      },
+      "reply~maybe_another_time": {
+        "status": "none",
+        "english": "Maybe another time.",
+        "draft": "يمكن مرة تانية.",
+        "native": []
+      },
+      "reply~sorry_i_cant": {
+        "status": "none",
+        "english": "Sorry, I can't.",
+        "draft": "آسفة، ما بقدر.",
+        "native": []
+      },
+      "reply~seeing_someone": {
+        "status": "none",
+        "english": "I'm seeing someone.",
+        "draft": "أنا مرتبطة.",
+        "native": []
+      },
+      "reply~here_for_a_week": {
+        "status": "none",
+        "english": "I'm here for a week.",
+        "draft": "أنا هون لأسبوع.",
+        "native": []
+      },
+      "reply~like_it_here": {
+        "status": "none",
+        "english": "Do you like it here?",
+        "draft": "عاجبك هون؟",
+        "native": []
+      },
+      "reply~what_happened": {
+        "status": "formal-only",
+        "english": "What happened?",
+        "draft": "شو صار؟",
+        "native": [
+          {
+            "text": "ما الذي حصل؟",
+            "lang": "ara",
+            "id": 450148
+          },
+          {
+            "text": "ماذا حدث؟",
+            "lang": "ara",
+            "id": 450149
+          },
+          {
+            "text": "ماذا حصل ؟",
+            "lang": "ara",
+            "id": 5496750
+          },
+          {
+            "text": "What's the matter?",
+            "lang": "ara",
+            "id": 13289973
+          }
+        ]
+      },
+      "reply~where_hurt": {
+        "status": "formal-only",
+        "english": "Where does it hurt?",
+        "draft": "وين بيوجعك؟",
+        "native": [
+          {
+            "text": "أين تحس بالألم؟",
+            "lang": "ara",
+            "id": 617289
+          },
+          {
+            "text": "أين يؤلمك؟",
+            "lang": "ara",
+            "id": 6949014
+          },
+          {
+            "text": "أين تشعر بالألم؟",
+            "lang": "ara",
+            "id": 13192245
+          },
+          {
+            "text": "أين تشعرين بالألم؟",
+            "lang": "ara",
+            "id": 13192246
+          }
+        ]
+      },
+      "reply~wait_here": {
+        "status": "none",
+        "english": "Wait here.",
+        "draft": "استنى هون.",
+        "native": []
+      },
+      "reply~passport_please": {
+        "status": "match",
+        "english": "Passport, please.",
+        "draft": "جواز السفر، لو سمحت.",
+        "native": [
+          {
+            "text": "جواز السفر، لو سمحت.",
+            "lang": "ara",
+            "id": 666334
+          },
+          {
+            "text": "جواز السفر، من فضلك",
+            "lang": "ara",
+            "id": 5496723
+          }
+        ]
+      },
+      "reply~boarding_started": {
+        "status": "none",
+        "english": "Boarding has started.",
+        "draft": "بلّش الصعود للطيارة.",
+        "native": []
+      },
+      "reply~gate_changed": {
+        "status": "none",
+        "english": "Your gate has changed.",
+        "draft": "تغيّرت البوابة.",
+        "native": []
+      },
+      "reply~sold_out": {
+        "status": "none",
+        "english": "It's sold out.",
+        "draft": "خلصت التذاكر.",
+        "native": []
+      },
+      "reply~follow_me": {
+        "status": "formal-only",
+        "english": "Follow me.",
+        "draft": "تعال معي.",
+        "native": [
+          {
+            "text": "اتبعني!",
+            "lang": "ara",
+            "id": 2667683
+          },
+          {
+            "text": "اتبعني!",
+            "lang": "ara",
+            "id": 2667683
+          },
+          {
+            "text": "اتبعني.",
+            "lang": "ara",
+            "id": 11745803
+          }
+        ]
+      },
+      "reply~what_can_i_get": {
+        "status": "none",
+        "english": "What can I get you?",
+        "draft": "شو بتحب تشرب؟",
+        "native": []
+      },
+      "reply~last_call": {
+        "status": "none",
+        "english": "Last call.",
+        "draft": "آخر طلب.",
+        "native": []
+      },
+      "reply~thats_altogether": {
+        "status": "none",
+        "english": "That's twenty altogether.",
+        "draft": "المجموع عشرين.",
+        "native": []
+      },
+      "reply~starts_at": {
+        "status": "none",
+        "english": "It starts at ten.",
+        "draft": "بيبلّش الساعة عشرة.",
         "native": []
       }
     }

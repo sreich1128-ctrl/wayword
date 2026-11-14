@@ -16,7 +16,27 @@
         "word_bus_stop",
         "word_pharmacy",
         "word_atm",
-        "word_supermarket"
+        "word_supermarket",
+        {
+          "id": "hospital",
+          "label": "the hospital",
+          "english": "Where is the hospital?"
+        },
+        {
+          "id": "checkin",
+          "label": "check-in",
+          "english": "Where is check-in?"
+        },
+        {
+          "id": "baggage",
+          "label": "baggage claim",
+          "english": "Where is baggage claim?"
+        },
+        {
+          "id": "gate",
+          "label": "the gate",
+          "english": "Where is the gate?"
+        }
       ]
     },
     "nearest": {
@@ -85,7 +105,17 @@
         "word_beer",
         "word_orange_juice",
         "word_bread",
-        "word_water"
+        "word_water",
+        {
+          "id": "red_wine",
+          "label": "red wine",
+          "english": "I'd like a glass of red wine, please."
+        },
+        {
+          "id": "white_wine",
+          "label": "white wine",
+          "english": "I'd like a glass of white wine, please."
+        }
       ]
     },
     "how_say": {
@@ -515,6 +545,89 @@
           "id": "slowly",
           "label": "speak slowly",
           "same_as": "speak_slowly"
+        }
+      ]
+    },
+    "im_from": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "usa",
+          "label": "the United States",
+          "english": "I'm from the United States."
+        },
+        {
+          "id": "canada",
+          "label": "Canada",
+          "english": "I'm from Canada."
+        },
+        {
+          "id": "uk",
+          "label": "the UK",
+          "english": "I'm from the UK."
+        },
+        {
+          "id": "israel",
+          "label": "Israel",
+          "english": "I'm from Israel."
+        },
+        {
+          "id": "australia",
+          "label": "Australia",
+          "english": "I'm from Australia."
+        }
+      ]
+    },
+    "medicine_for": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "pain",
+          "label": "pain",
+          "english": "I need medicine for pain."
+        },
+        {
+          "id": "fever",
+          "label": "a fever",
+          "english": "I need medicine for a fever."
+        },
+        {
+          "id": "cough",
+          "label": "a cough",
+          "english": "I need medicine for a cough."
+        },
+        {
+          "id": "allergies",
+          "label": "allergies",
+          "english": "I need medicine for allergies."
+        }
+      ]
+    },
+    "tickets_please": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "one",
+          "label": "one",
+          "english": "One ticket, please."
+        },
+        {
+          "id": "two",
+          "label": "two",
+          "english": "Two tickets, please."
+        },
+        {
+          "id": "three",
+          "label": "three",
+          "english": "Three tickets, please."
+        },
+        {
+          "id": "four",
+          "label": "four",
+          "english": "Four tickets, please."
         }
       ]
     }

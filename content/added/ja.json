@@ -454,6 +454,207 @@
       "reading": "どこで___ますか？",
       "pronunciation_easy": "doh-koh deh ___ mahs-kah",
       "qa": "Literally 'Where can (I) ___?' The blank holds the object, its particle and a potential-form verb stem (切符を買え, タクシーに乗れ, 両替でき), so it is not a noun slot. Putting the thing first as a topic (切符はどこで買えますか？) is equally natural."
+    },
+    {
+      "id": "look_beautiful",
+      "target": "とてもきれいですね。",
+      "reading": "とてもきれいですね。",
+      "pronunciation_easy": "toh-teh-moh kee-ray des-neh",
+      "qa": "PRIORITY REVIEW (directness). きれい is said to a woman; to a man: かっこいいですね。 A direct compliment on looks to a stranger is forward in Japanese."
+    },
+    {
+      "id": "love_outfit",
+      "target": "その服、すてきですね。",
+      "reading": "そのふく、すてきですね。",
+      "pronunciation_easy": "soh-noh foo-koo, soo-teh-kee des-neh"
+    },
+    {
+      "id": "beautiful_smile",
+      "target": "笑顔がすてきですね。",
+      "reading": "えがおがすてきですね。",
+      "pronunciation_easy": "eh-gah-oh gah soo-teh-kee des-neh",
+      "qa": "PRIORITY REVIEW (directness)."
+    },
+    {
+      "id": "like_style",
+      "target": "おしゃれですね。",
+      "reading": "おしゃれですね。",
+      "pronunciation_easy": "oh-shah-reh des-neh"
+    },
+    {
+      "id": "get_coffee",
+      "target": "コーヒーでも飲みに行きませんか？",
+      "reading": "こーひーでものみにいきませんか？",
+      "pronunciation_easy": "koh-hee deh-moh noh-mee nee ee-kee-mah-sen-kah"
+    },
+    {
+      "id": "buy_drink",
+      "target": "一杯おごらせてください。",
+      "reading": "いっぱいおごらせてください。",
+      "pronunciation_easy": "eep-pai oh-goh-rah-seh-teh koo-dah-sai"
+    },
+    {
+      "id": "see_again",
+      "target": "また会いたいです。",
+      "reading": "またあいたいです。",
+      "pronunciation_easy": "mah-tah ai-tai des"
+    },
+    {
+      "id": "free_tomorrow",
+      "target": "明日、空いていますか？",
+      "reading": "あした、あいていますか？",
+      "pronunciation_easy": "ah-shee-tah, ai-teh ee-mahs-kah"
+    },
+    {
+      "id": "your_number",
+      "target": "連絡先を教えてもらえますか？",
+      "reading": "れんらくさきをおしえてもらえますか？",
+      "pronunciation_easy": "ren-rah-koo-sah-kee oh oh-shee-eh-teh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "with_friends",
+      "target": "お友達と一緒ですか？",
+      "reading": "おともだちといっしょですか？",
+      "pronunciation_easy": "oh-toh-moh-dah-chee toh ees-shoh des-kah"
+    },
+    {
+      "id": "great_time",
+      "target": "とても楽しかったです。",
+      "reading": "とてもたのしかったです。",
+      "pronunciation_easy": "toh-teh-moh tah-noh-shee-kaht-tah des"
+    },
+    {
+      "id": "not_interested",
+      "target": "ありがとうございます。でも、結構です。",
+      "reading": "ありがとうございます。でも、けっこうです。",
+      "pronunciation_easy": "ah-ree-gah-toh goh-zai-mahs. deh-moh, kek-koh des",
+      "qa": "PRIORITY REVIEW. 結構です is a clear, polite no."
+    },
+    {
+      "id": "leave_me_alone",
+      "target": "やめてください。",
+      "reading": "やめてください。",
+      "pronunciation_easy": "yah-meh-teh koo-dah-sai",
+      "qa": "PRIORITY REVIEW. A firm \"Please stop.\" The literal ほっといてください is harsher. The no must stay clear."
+    },
+    {
+      "id": "my_name_is",
+      "target": "___といいます。",
+      "reading": "___といいます。",
+      "pronunciation_easy": "___ toh ee-mahs",
+      "qa": "Reviewer: or ___です。"
+    },
+    {
+      "id": "im_from",
+      "target": "___から来ました。",
+      "reading": "___からきました。",
+      "pronunciation_easy": "___ kah-rah kee-mah-shee-tah"
+    },
+    {
+      "id": "how_long_here",
+      "target": "いつまでいますか？",
+      "reading": "いつまでいますか？",
+      "pronunciation_easy": "ee-tsoo mah-deh ee-mahs-kah"
+    },
+    {
+      "id": "cheers",
+      "target": "乾杯！",
+      "reading": "かんぱい！",
+      "pronunciation_easy": "kahn-pai"
+    },
+    {
+      "id": "need_ambulance",
+      "target": "救急車を呼んでください。",
+      "reading": "きゅうきゅうしゃをよんでください。",
+      "pronunciation_easy": "kyoo-kyoo-shah oh yon-deh koo-dah-sai",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "hurts_here",
+      "target": "ここが痛いです。",
+      "reading": "ここがいたいです。",
+      "pronunciation_easy": "koh-koh gah ee-tai des",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "been_robbed",
+      "target": "盗まれました。",
+      "reading": "ぬすまれました。",
+      "pronunciation_easy": "noo-soo-mah-reh-mah-shee-tah"
+    },
+    {
+      "id": "medicine_for",
+      "target": "___の薬をください。",
+      "reading": "___のくすりをください。",
+      "pronunciation_easy": "___ noh koo-soo-ree oh koo-dah-sai",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "trouble_breathing",
+      "target": "息が苦しいです。",
+      "reading": "いきがくるしいです。",
+      "pronunciation_easy": "ee-kee gah koo-roo-shee des",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "luggage_missing",
+      "target": "荷物が届いていません。",
+      "reading": "にもつがとどいていません。",
+      "pronunciation_easy": "nee-moh-tsoo gah toh-doh-ee-teh ee-mah-sen"
+    },
+    {
+      "id": "flight_delayed",
+      "target": "私の便は遅れていますか？",
+      "reading": "わたしのびんはおくれていますか？",
+      "pronunciation_easy": "wah-tah-shee noh been wah oh-koo-reh-teh ee-mahs-kah"
+    },
+    {
+      "id": "connecting_flight",
+      "target": "乗り継ぎがあります。",
+      "reading": "のりつぎがあります。",
+      "pronunciation_easy": "noh-ree-tsoo-ghee gah ah-ree-mahs"
+    },
+    {
+      "id": "tickets_please",
+      "target": "チケットを___枚お願いします。",
+      "reading": "ちけっとを___まいおねがいします。",
+      "pronunciation_easy": "chee-ket-toh oh ___ my oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "what_time_open",
+      "target": "何時に開きますか？",
+      "reading": "なんじにあきますか？",
+      "pronunciation_easy": "nan-jee nee ah-kee-mahs-kah"
+    },
+    {
+      "id": "what_time_close",
+      "target": "何時に閉まりますか？",
+      "reading": "なんじにしまりますか？",
+      "pronunciation_easy": "nan-jee nee shee-mah-ree-mahs-kah"
+    },
+    {
+      "id": "tour_english",
+      "target": "英語のガイドツアーはありますか？",
+      "reading": "えいごのがいどつあーはありますか？",
+      "pronunciation_easy": "ay-goh noh guy-doh tsoo-ah wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "on_tap",
+      "target": "生ビールは何がありますか？",
+      "reading": "なまびーるはなにがありますか？",
+      "pronunciation_easy": "nah-mah bee-roo wah nah-nee gah ah-ree-mahs-kah"
+    },
+    {
+      "id": "non_alcoholic",
+      "target": "ノンアルコールのものをお願いします。",
+      "reading": "のんあるこーるのものをおねがいします。",
+      "pronunciation_easy": "non-ah-roo-koh-roo noh moh-noh oh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "what_time_is_it",
+      "target": "今、何時ですか？",
+      "reading": "いま、なんじですか？",
+      "pronunciation_easy": "ee-mah, nan-jee des-kah"
     }
   ],
   "vocab": {
@@ -881,6 +1082,30 @@
         "target": "出口はどこですか？",
         "reading": "でぐちはどこですか？",
         "pronunciation_easy": "deh-goo-chee wah doh-koh des-kah"
+      },
+      {
+        "word": "hospital",
+        "target": "病院はどこですか？",
+        "reading": "びょういんはどこですか？",
+        "pronunciation_easy": "byoh-een wah doh-koh des-kah"
+      },
+      {
+        "word": "checkin",
+        "target": "チェックインカウンターはどこですか？",
+        "reading": "ちぇっくいんかうんたーはどこですか？",
+        "pronunciation_easy": "chek-koo-een kah-oon-tah wah doh-koh des-kah"
+      },
+      {
+        "word": "baggage",
+        "target": "手荷物受取所はどこですか？",
+        "reading": "てにもつうけとりじょはどこですか？",
+        "pronunciation_easy": "teh-nee-moh-tsoo oo-keh-toh-ree-joh wah doh-koh des-kah"
+      },
+      {
+        "word": "gate",
+        "target": "搭乗口はどこですか？",
+        "reading": "とうじょうぐちはどこですか？",
+        "pronunciation_easy": "toh-joh-goo-chee wah doh-koh des-kah"
       }
     ],
     "nearest": [
@@ -1021,6 +1246,18 @@
         "target": "お水をお願いします。",
         "reading": "おみずをおねがいします。",
         "pronunciation_easy": "oh-mee-zoo oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "red_wine",
+        "target": "赤ワインをお願いします。",
+        "reading": "あかわいんをおねがいします。",
+        "pronunciation_easy": "ah-kah wain oh oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "white_wine",
+        "target": "白ワインをお願いします。",
+        "reading": "しろわいんをおねがいします。",
+        "pronunciation_easy": "shee-roh wain oh oh-neh-guy-shee-mahs"
       }
     ],
     "table_for": [
@@ -1536,6 +1773,91 @@
         "reading": "どこでしむかーどをかえますか？",
         "pronunciation_easy": "doh-koh deh shee-moo kah-doh oh kah-eh-mahs-kah"
       }
+    ],
+    "im_from": [
+      {
+        "word": "usa",
+        "target": "アメリカから来ました。",
+        "reading": "あめりかからきました。",
+        "pronunciation_easy": "ah-meh-ree-kah kah-rah kee-mah-shee-tah"
+      },
+      {
+        "word": "canada",
+        "target": "カナダから来ました。",
+        "reading": "かなだからきました。",
+        "pronunciation_easy": "kah-nah-dah kah-rah kee-mah-shee-tah"
+      },
+      {
+        "word": "uk",
+        "target": "イギリスから来ました。",
+        "reading": "いぎりすからきました。",
+        "pronunciation_easy": "ee-ghee-ree-soo kah-rah kee-mah-shee-tah"
+      },
+      {
+        "word": "israel",
+        "target": "イスラエルから来ました。",
+        "reading": "いすらえるからきました。",
+        "pronunciation_easy": "ee-soo-rah-eh-roo kah-rah kee-mah-shee-tah"
+      },
+      {
+        "word": "australia",
+        "target": "オーストラリアから来ました。",
+        "reading": "おーすとらりあからきました。",
+        "pronunciation_easy": "oh-soo-toh-rah-ree-ah kah-rah kee-mah-shee-tah"
+      }
+    ],
+    "medicine_for": [
+      {
+        "word": "pain",
+        "target": "痛み止めをください。",
+        "reading": "いたみどめをください。",
+        "pronunciation_easy": "ee-tah-mee-doh-meh oh koo-dah-sai",
+        "qa": "Natural word for a painkiller, rather than a literal \"medicine for pain\"."
+      },
+      {
+        "word": "fever",
+        "target": "熱の薬をください。",
+        "reading": "ねつのくすりをください。",
+        "pronunciation_easy": "neh-tsoo noh koo-soo-ree oh koo-dah-sai"
+      },
+      {
+        "word": "cough",
+        "target": "咳の薬をください。",
+        "reading": "せきのくすりをください。",
+        "pronunciation_easy": "seh-kee noh koo-soo-ree oh koo-dah-sai"
+      },
+      {
+        "word": "allergies",
+        "target": "アレルギーの薬をください。",
+        "reading": "あれるぎーのくすりをください。",
+        "pronunciation_easy": "ah-reh-roo-ghee noh koo-soo-ree oh koo-dah-sai"
+      }
+    ],
+    "tickets_please": [
+      {
+        "word": "one",
+        "target": "チケットを一枚お願いします。",
+        "reading": "ちけっとをいちまいおねがいします。",
+        "pronunciation_easy": "chee-ket-toh oh ee-chee-my oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "two",
+        "target": "チケットを二枚お願いします。",
+        "reading": "ちけっとをにまいおねがいします。",
+        "pronunciation_easy": "chee-ket-toh oh nee-my oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "three",
+        "target": "チケットを三枚お願いします。",
+        "reading": "ちけっとをさんまいおねがいします。",
+        "pronunciation_easy": "chee-ket-toh oh sahn-my oh-neh-guy-shee-mahs"
+      },
+      {
+        "word": "four",
+        "target": "チケットを四枚お願いします。",
+        "reading": "ちけっとをよんまいおねがいします。",
+        "pronunciation_easy": "chee-ket-toh oh yon-my oh-neh-guy-shee-mahs"
+      }
     ]
   },
   "replies": {
@@ -1610,6 +1932,98 @@
       "reading": "きょうはどうなさいますか？",
       "pronunciation_easy": "kyoh wah doh nah-sai-mahs-kah",
       "qa": "Literally 'What will you have done today?': the usual salon opener."
+    },
+    "id_love_to": {
+      "target": "ぜひ。",
+      "reading": "ぜひ。",
+      "pronunciation_easy": "zeh-hee"
+    },
+    "maybe_another_time": {
+      "target": "また今度。",
+      "reading": "またこんど。",
+      "pronunciation_easy": "mah-tah kon-doh"
+    },
+    "sorry_i_cant": {
+      "target": "すみません、ちょっと…。",
+      "reading": "すみません、ちょっと…。",
+      "pronunciation_easy": "soo-mee-mah-sen, choht-toh",
+      "qa": "The usual soft refusal: literally \"Sorry, it is a little…\". It means no."
+    },
+    "seeing_someone": {
+      "target": "付き合っている人がいます。",
+      "reading": "つきあっているひとがいます。",
+      "pronunciation_easy": "tsoo-kee-aht-teh ee-roo hee-toh gah ee-mahs"
+    },
+    "here_for_a_week": {
+      "target": "一週間います。",
+      "reading": "いっしゅうかんいます。",
+      "pronunciation_easy": "ees-shoo-kahn ee-mahs"
+    },
+    "like_it_here": {
+      "target": "ここは気に入りましたか？",
+      "reading": "ここはきにいりましたか？",
+      "pronunciation_easy": "koh-koh wah kee nee ee-ree-mah-shee-tah-kah"
+    },
+    "what_happened": {
+      "target": "どうしましたか？",
+      "reading": "どうしましたか？",
+      "pronunciation_easy": "doh shee-mah-shee-tah-kah"
+    },
+    "where_hurt": {
+      "target": "どこが痛いですか？",
+      "reading": "どこがいたいですか？",
+      "pronunciation_easy": "doh-koh gah ee-tai des-kah"
+    },
+    "wait_here": {
+      "target": "ここでお待ちください。",
+      "reading": "ここでおまちください。",
+      "pronunciation_easy": "koh-koh deh oh-mah-chee koo-dah-sai"
+    },
+    "passport_please": {
+      "target": "パスポートをお願いします。",
+      "reading": "ぱすぽーとをおねがいします。",
+      "pronunciation_easy": "pah-soo-poh-toh oh oh-neh-guy-shee-mahs"
+    },
+    "boarding_started": {
+      "target": "搭乗を開始しました。",
+      "reading": "とうじょうをかいししました。",
+      "pronunciation_easy": "toh-joh oh kai-shee shee-mah-shee-tah"
+    },
+    "gate_changed": {
+      "target": "搭乗口が変更になりました。",
+      "reading": "とうじょうぐちがへんこうになりました。",
+      "pronunciation_easy": "toh-joh-goo-chee gah hen-koh nee nah-ree-mah-shee-tah"
+    },
+    "sold_out": {
+      "target": "売り切れです。",
+      "reading": "うりきれです。",
+      "pronunciation_easy": "oo-ree-kee-reh des"
+    },
+    "follow_me": {
+      "target": "ついてきてください。",
+      "reading": "ついてきてください。",
+      "pronunciation_easy": "tsoo-ee-teh kee-teh koo-dah-sai"
+    },
+    "what_can_i_get": {
+      "target": "何になさいますか？",
+      "reading": "なにになさいますか？",
+      "pronunciation_easy": "nah-nee nee nah-sai-mahs-kah"
+    },
+    "last_call": {
+      "target": "ラストオーダーです。",
+      "reading": "らすとおーだーです。",
+      "pronunciation_easy": "rah-soo-toh oh-dah des"
+    },
+    "thats_altogether": {
+      "target": "合計で二十です。",
+      "reading": "ごうけいでにじゅうです。",
+      "pronunciation_easy": "goh-kay deh nee-joo des",
+      "qa": "Plain number as in the other languages; in Japan you would hear a yen amount (二千円です)."
+    },
+    "starts_at": {
+      "target": "十時に始まります。",
+      "reading": "じゅうじにはじまります。",
+      "pronunciation_easy": "joo-jee nee hah-jee-mah-ree-mahs"
     }
   }
 }

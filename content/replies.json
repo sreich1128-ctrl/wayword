@@ -103,7 +103,8 @@
       "english": "It's closed.",
       "situations": [
         "shopping",
-        "directions"
+        "directions",
+        "sightseeing"
       ]
     },
     {
@@ -149,6 +150,180 @@
         "shorter_sides",
         "like_this"
       ]
+    },
+    {
+      "id": "id_love_to",
+      "english": "I'd love to.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "maybe_another_time",
+      "english": "Maybe another time.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "sorry_i_cant",
+      "english": "Sorry, I can't.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "seeing_someone",
+      "english": "I'm seeing someone.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "here_for_a_week",
+      "english": "I'm here for a week.",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "how_long_staying",
+      "english": "How long are you staying?",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": [],
+      "same_as": "how_long_here"
+    },
+    {
+      "id": "like_it_here",
+      "english": "Do you like it here?",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": [
+        "yes"
+      ]
+    },
+    {
+      "id": "what_happened",
+      "english": "What happened?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "been_robbed",
+        "not_well"
+      ]
+    },
+    {
+      "id": "where_hurt",
+      "english": "Where does it hurt?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "hurts_here"
+      ]
+    },
+    {
+      "id": "wait_here",
+      "english": "Wait here.",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "okay"
+      ]
+    },
+    {
+      "id": "passport_please",
+      "english": "Passport, please.",
+      "situations": [
+        "airport",
+        "hotel"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "boarding_started",
+      "english": "Boarding has started.",
+      "situations": [
+        "airport"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "gate_changed",
+      "english": "Your gate has changed.",
+      "situations": [
+        "airport"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "sold_out",
+      "english": "It's sold out.",
+      "situations": [
+        "sightseeing"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "follow_me",
+      "english": "Follow me.",
+      "situations": [
+        "sightseeing",
+        "directions"
+      ],
+      "answer_with": [
+        "okay"
+      ]
+    },
+    {
+      "id": "what_can_i_get",
+      "english": "What can I get you?",
+      "situations": [
+        "bar",
+        "cafe"
+      ],
+      "answer_with": [
+        "i_would_like",
+        "on_tap",
+        "non_alcoholic"
+      ]
+    },
+    {
+      "id": "last_call",
+      "english": "Last call.",
+      "situations": [
+        "bar"
+      ],
+      "answer_with": [
+        "another_one"
+      ]
+    },
+    {
+      "id": "thats_altogether",
+      "english": "That's twenty altogether.",
+      "situations": [
+        "numbers"
+      ],
+      "answer_with": []
+    },
+    {
+      "id": "starts_at",
+      "english": "It starts at ten.",
+      "situations": [
+        "numbers",
+        "sightseeing"
+      ],
+      "answer_with": []
     }
   ]
 }

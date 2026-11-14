@@ -1,7 +1,7 @@
 # content/added: draft content, not yet checked
 
 One file per language (`<code>.json`) holding content added after the original dataset:
-the 2026-10-13 expansion (docs/EXPANSION_PLAN.md). Everything here is a **draft**: written by
+the 2026-10-13 expansion (docs/EXPANSION_PLAN.md) and the 2026-11-14 Level 1 repairs (docs/LEVEL_CUT.md). Everything here is a **draft**: written by
 Claude, not yet checked by a native speaker or the owner's dataset tool. The app shows it with a
 "Draft" tag. Once an item is checked, move it into `content/lang/<code>.json` (the vetted dataset)
 and delete it here.

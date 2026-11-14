@@ -396,6 +396,174 @@
       "target": "Dove posso ___?",
       "pronunciation_easy": "DOH-veh POS-soh",
       "qa": "The blank takes an infinitive + object (comprare i biglietti, prendere un taxi)."
+    },
+    {
+      "id": "look_beautiful",
+      "target": "Sei bellissima/o.",
+      "pronunciation_easy": "say bel-LEES-see-mah/moh",
+      "qa": "Said to someone you are flirting with; both gender forms are shown where the language changes with who you talk to."
+    },
+    {
+      "id": "love_outfit",
+      "target": "Mi piace come sei vestita/o.",
+      "pronunciation_easy": "mee PYAH-cheh KOH-meh say ves-TEE-tah/toh",
+      "qa": "Literally \"I like how you are dressed\"."
+    },
+    {
+      "id": "beautiful_smile",
+      "target": "Hai un sorriso bellissimo.",
+      "pronunciation_easy": "eye oon sor-REE-zoh bel-LEES-see-moh"
+    },
+    {
+      "id": "like_style",
+      "target": "Mi piace il tuo stile.",
+      "pronunciation_easy": "mee PYAH-cheh eel TOO-oh STEE-leh"
+    },
+    {
+      "id": "get_coffee",
+      "target": "Ti va di prendere un caffè?",
+      "pronunciation_easy": "tee vah dee PREN-deh-reh oon kahf-FEH"
+    },
+    {
+      "id": "buy_drink",
+      "target": "Posso offrirti da bere?",
+      "pronunciation_easy": "POS-soh of-FREER-tee dah BEH-reh"
+    },
+    {
+      "id": "see_again",
+      "target": "Mi piacerebbe rivederti.",
+      "pronunciation_easy": "mee pyah-cheh-REB-beh ree-veh-DEHR-tee"
+    },
+    {
+      "id": "free_tomorrow",
+      "target": "Sei libera/o domani?",
+      "pronunciation_easy": "say LEE-beh-rah/roh doh-MAH-nee"
+    },
+    {
+      "id": "your_number",
+      "target": "Mi dai il tuo numero?",
+      "pronunciation_easy": "mee dai eel TOO-oh NOO-meh-roh"
+    },
+    {
+      "id": "with_friends",
+      "target": "Sei qui con amici?",
+      "pronunciation_easy": "say kwee kon ah-MEE-chee"
+    },
+    {
+      "id": "great_time",
+      "target": "Sono stata/o benissimo.",
+      "pronunciation_easy": "SOH-noh STAH-tah/toh beh-NEES-see-moh"
+    },
+    {
+      "id": "not_interested",
+      "target": "Grazie, ma non mi interessa.",
+      "pronunciation_easy": "GRAH-tsyeh, mah non mee een-teh-RES-sah",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "leave_me_alone",
+      "target": "Mi lasci in pace, per favore.",
+      "pronunciation_easy": "mee LAH-shee een PAH-cheh, pehr fah-VOH-reh",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "my_name_is",
+      "target": "Mi chiamo ___.",
+      "pronunciation_easy": "mee KYAH-moh"
+    },
+    {
+      "id": "im_from",
+      "target": "Vengo da ___.",
+      "pronunciation_easy": "VEN-goh dah"
+    },
+    {
+      "id": "how_long_here",
+      "target": "Quanto tempo resti?",
+      "pronunciation_easy": "KWAHN-toh TEM-poh RES-tee"
+    },
+    {
+      "id": "cheers",
+      "target": "Salute!",
+      "pronunciation_easy": "sah-LOO-teh"
+    },
+    {
+      "id": "need_ambulance",
+      "target": "Ho bisogno di un'ambulanza.",
+      "pronunciation_easy": "oh bee-ZOH-nyoh dee oon-am-boo-LAHN-tsah",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "hurts_here",
+      "target": "Mi fa male qui.",
+      "pronunciation_easy": "mee fah MAH-leh kwee",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "been_robbed",
+      "target": "Mi hanno derubato/a.",
+      "pronunciation_easy": "mee AHN-noh deh-roo-BAH-toh/tah"
+    },
+    {
+      "id": "medicine_for",
+      "target": "Ho bisogno di una medicina per ___.",
+      "pronunciation_easy": "oh bee-ZOH-nyoh dee OO-nah meh-dee-CHEE-nah pehr",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "trouble_breathing",
+      "target": "Faccio fatica a respirare.",
+      "pronunciation_easy": "FAHT-choh fah-TEE-kah ah res-pee-RAH-reh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "luggage_missing",
+      "target": "Il mio bagaglio non è arrivato.",
+      "pronunciation_easy": "eel MEE-oh bah-GAH-lyoh non eh ar-ree-VAH-toh"
+    },
+    {
+      "id": "flight_delayed",
+      "target": "Il mio volo è in ritardo?",
+      "pronunciation_easy": "eel MEE-oh VOH-loh eh een ree-TAR-doh"
+    },
+    {
+      "id": "connecting_flight",
+      "target": "Ho una coincidenza.",
+      "pronunciation_easy": "oh OO-nah koh-een-chee-DEN-tsah"
+    },
+    {
+      "id": "tickets_please",
+      "target": "___ biglietti, per favore.",
+      "pronunciation_easy": "bee-LYET-tee, pehr fah-VOH-reh"
+    },
+    {
+      "id": "what_time_open",
+      "target": "A che ora apre?",
+      "pronunciation_easy": "ah keh OH-rah AH-preh"
+    },
+    {
+      "id": "what_time_close",
+      "target": "A che ora chiude?",
+      "pronunciation_easy": "ah keh OH-rah KYOO-deh"
+    },
+    {
+      "id": "tour_english",
+      "target": "C'è una visita guidata in inglese?",
+      "pronunciation_easy": "cheh OO-nah VEE-zee-tah gwee-DAH-tah een een-GLEH-zeh"
+    },
+    {
+      "id": "on_tap",
+      "target": "Che birre avete alla spina?",
+      "pronunciation_easy": "keh BEER-reh ah-VEH-teh AHL-lah SPEE-nah"
+    },
+    {
+      "id": "non_alcoholic",
+      "target": "Qualcosa di analcolico, per favore.",
+      "pronunciation_easy": "kwahl-KOH-zah dee ah-nahl-KOH-lee-koh, pehr fah-VOH-reh"
+    },
+    {
+      "id": "what_time_is_it",
+      "target": "Che ore sono?",
+      "pronunciation_easy": "keh OH-reh SOH-noh"
     }
   ],
   "vocab": {
@@ -723,6 +891,26 @@
         "word": "word_exit",
         "target": "Dov'è l'uscita?",
         "pronunciation_easy": "doh-VEH loo-SHEE-tah"
+      },
+      {
+        "word": "hospital",
+        "target": "Dov'è l'ospedale?",
+        "pronunciation_easy": "doh-VEH los-peh-DAH-leh"
+      },
+      {
+        "word": "checkin",
+        "target": "Dov'è il check-in?",
+        "pronunciation_easy": "doh-VEH eel chek-EEN"
+      },
+      {
+        "word": "baggage",
+        "target": "Dov'è il ritiro bagagli?",
+        "pronunciation_easy": "doh-VEH eel ree-TEE-roh bah-GAH-lyee"
+      },
+      {
+        "word": "gate",
+        "target": "Dov'è il gate?",
+        "pronunciation_easy": "doh-VEH eel gate"
       }
     ],
     "nearest": [
@@ -841,6 +1029,16 @@
         "word": "word_water",
         "target": "Vorrei dell'acqua, per favore.",
         "pronunciation_easy": "vor-RAY del-LAHK-kwah, pehr fah-VOH-reh"
+      },
+      {
+        "word": "red_wine",
+        "target": "Vorrei un bicchiere di vino rosso, per favore.",
+        "pronunciation_easy": "vor-RAY oon beek-KYEH-reh dee VEE-noh ROS-soh, pehr fah-VOH-reh"
+      },
+      {
+        "word": "white_wine",
+        "target": "Vorrei un bicchiere di vino bianco, per favore.",
+        "pronunciation_easy": "vor-RAY oon beek-KYEH-reh dee VEE-noh BYAHN-koh, pehr fah-VOH-reh"
       }
     ],
     "table_for": [
@@ -1276,6 +1474,77 @@
         "target": "Dove posso comprare una SIM?",
         "pronunciation_easy": "DOH-veh POS-soh kom-PRAH-reh OO-nah seem"
       }
+    ],
+    "im_from": [
+      {
+        "word": "usa",
+        "target": "Vengo dagli Stati Uniti.",
+        "pronunciation_easy": "VEN-goh DAH-lyee STAH-tee oo-NEE-tee"
+      },
+      {
+        "word": "canada",
+        "target": "Vengo dal Canada.",
+        "pronunciation_easy": "VEN-goh dahl KAH-nah-dah"
+      },
+      {
+        "word": "uk",
+        "target": "Vengo dal Regno Unito.",
+        "pronunciation_easy": "VEN-goh dahl REH-nyoh oo-NEE-toh"
+      },
+      {
+        "word": "israel",
+        "target": "Vengo da Israele.",
+        "pronunciation_easy": "VEN-goh dah eez-rah-EH-leh"
+      },
+      {
+        "word": "australia",
+        "target": "Vengo dall'Australia.",
+        "pronunciation_easy": "VEN-goh dahl-lows-TRAH-lyah"
+      }
+    ],
+    "medicine_for": [
+      {
+        "word": "pain",
+        "target": "Ho bisogno di una medicina per il dolore.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee OO-nah meh-dee-CHEE-nah pehr eel doh-LOH-reh"
+      },
+      {
+        "word": "fever",
+        "target": "Ho bisogno di una medicina per la febbre.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee OO-nah meh-dee-CHEE-nah pehr lah FEB-breh"
+      },
+      {
+        "word": "cough",
+        "target": "Ho bisogno di una medicina per la tosse.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee OO-nah meh-dee-CHEE-nah pehr lah TOS-seh"
+      },
+      {
+        "word": "allergies",
+        "target": "Ho bisogno di una medicina per l'allergia.",
+        "pronunciation_easy": "oh bee-ZOH-nyoh dee OO-nah meh-dee-CHEE-nah pehr lal-lehr-JEE-ah"
+      }
+    ],
+    "tickets_please": [
+      {
+        "word": "one",
+        "target": "Un biglietto, per favore.",
+        "pronunciation_easy": "oon bee-LYET-toh, pehr fah-VOH-reh"
+      },
+      {
+        "word": "two",
+        "target": "Due biglietti, per favore.",
+        "pronunciation_easy": "DOO-eh bee-LYET-tee, pehr fah-VOH-reh"
+      },
+      {
+        "word": "three",
+        "target": "Tre biglietti, per favore.",
+        "pronunciation_easy": "treh bee-LYET-tee, pehr fah-VOH-reh"
+      },
+      {
+        "word": "four",
+        "target": "Quattro biglietti, per favore.",
+        "pronunciation_easy": "KWAHT-troh bee-LYET-tee, pehr fah-VOH-reh"
+      }
     ]
   },
   "replies": {
@@ -1330,6 +1599,79 @@
     "how_would_you_like_it": {
       "target": "Come li tagliamo?",
       "pronunciation_easy": "KOH-meh lee tah-LYAH-moh"
+    },
+    "id_love_to": {
+      "target": "Volentieri.",
+      "pronunciation_easy": "voh-len-TYEH-ree"
+    },
+    "maybe_another_time": {
+      "target": "Magari un'altra volta.",
+      "pronunciation_easy": "mah-GAH-ree oon-AHL-trah VOL-tah"
+    },
+    "sorry_i_cant": {
+      "target": "Mi dispiace, non posso.",
+      "pronunciation_easy": "mee dees-PYAH-cheh, non POS-soh"
+    },
+    "seeing_someone": {
+      "target": "Sto con qualcuno.",
+      "pronunciation_easy": "stoh kon kwahl-KOO-noh"
+    },
+    "here_for_a_week": {
+      "target": "Resto una settimana.",
+      "pronunciation_easy": "RES-toh OO-nah set-tee-MAH-nah"
+    },
+    "like_it_here": {
+      "target": "Ti piace qui?",
+      "pronunciation_easy": "tee PYAH-cheh kwee"
+    },
+    "what_happened": {
+      "target": "Cos'è successo?",
+      "pronunciation_easy": "koh-ZEH soot-CHES-soh"
+    },
+    "where_hurt": {
+      "target": "Dove le fa male?",
+      "pronunciation_easy": "DOH-veh leh fah MAH-leh"
+    },
+    "wait_here": {
+      "target": "Aspetti qui.",
+      "pronunciation_easy": "ah-SPET-tee kwee"
+    },
+    "passport_please": {
+      "target": "Passaporto, per favore.",
+      "pronunciation_easy": "pahs-sah-POR-toh, pehr fah-VOH-reh"
+    },
+    "boarding_started": {
+      "target": "L'imbarco è iniziato.",
+      "pronunciation_easy": "leem-BAR-koh eh ee-nee-TSYAH-toh"
+    },
+    "gate_changed": {
+      "target": "Il suo gate è cambiato.",
+      "pronunciation_easy": "eel SOO-oh gate eh kahm-BYAH-toh"
+    },
+    "sold_out": {
+      "target": "È tutto esaurito.",
+      "pronunciation_easy": "eh TOOT-toh eh-zow-REE-toh"
+    },
+    "follow_me": {
+      "target": "Mi segua.",
+      "pronunciation_easy": "mee SEH-gwah"
+    },
+    "what_can_i_get": {
+      "target": "Cosa le porto?",
+      "pronunciation_easy": "KOH-zah leh POR-toh"
+    },
+    "last_call": {
+      "target": "Ultimo giro.",
+      "pronunciation_easy": "OOL-tee-moh JEE-roh"
+    },
+    "thats_altogether": {
+      "target": "Sono venti in tutto.",
+      "pronunciation_easy": "SOH-noh VEN-tee een TOOT-toh",
+      "qa": "A price heard at a till, with a plain number so it fits any currency."
+    },
+    "starts_at": {
+      "target": "Inizia alle dieci.",
+      "pronunciation_easy": "ee-NEE-tsyah AHL-leh DYEH-chee"
     }
   }
 }

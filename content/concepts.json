@@ -859,5 +859,229 @@
     "priority": "travel",
     "english": "Where can I ___?",
     "type": "pattern"
+  },
+  {
+    "id": "look_beautiful",
+    "category": "connection",
+    "priority": "explore",
+    "english": "You look beautiful.",
+    "type": "phrase"
+  },
+  {
+    "id": "love_outfit",
+    "category": "connection",
+    "priority": "explore",
+    "english": "I love your outfit.",
+    "type": "phrase"
+  },
+  {
+    "id": "beautiful_smile",
+    "category": "connection",
+    "priority": "explore",
+    "english": "You have a beautiful smile.",
+    "type": "phrase"
+  },
+  {
+    "id": "like_style",
+    "category": "connection",
+    "priority": "explore",
+    "english": "I like your style.",
+    "type": "phrase"
+  },
+  {
+    "id": "get_coffee",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Would you like to get a coffee?",
+    "type": "phrase"
+  },
+  {
+    "id": "buy_drink",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Can I buy you a drink?",
+    "type": "phrase"
+  },
+  {
+    "id": "see_again",
+    "category": "connection",
+    "priority": "explore",
+    "english": "I'd like to see you again.",
+    "type": "phrase"
+  },
+  {
+    "id": "free_tomorrow",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Are you free tomorrow?",
+    "type": "phrase"
+  },
+  {
+    "id": "your_number",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Can I have your number?",
+    "type": "phrase"
+  },
+  {
+    "id": "with_friends",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Are you here with friends?",
+    "type": "phrase"
+  },
+  {
+    "id": "great_time",
+    "category": "connection",
+    "priority": "explore",
+    "english": "I had a great time.",
+    "type": "phrase"
+  },
+  {
+    "id": "not_interested",
+    "category": "connection",
+    "priority": "travel",
+    "english": "Thanks, but I'm not interested.",
+    "type": "phrase"
+  },
+  {
+    "id": "leave_me_alone",
+    "category": "emergency",
+    "priority": "core",
+    "english": "Please leave me alone.",
+    "type": "phrase"
+  },
+  {
+    "id": "my_name_is",
+    "category": "social",
+    "priority": "travel",
+    "english": "My name is ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "im_from",
+    "category": "social",
+    "priority": "travel",
+    "english": "I'm from ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "how_long_here",
+    "category": "social",
+    "priority": "travel",
+    "english": "How long are you here for?",
+    "type": "phrase"
+  },
+  {
+    "id": "cheers",
+    "category": "social",
+    "priority": "travel",
+    "english": "Cheers!",
+    "type": "phrase"
+  },
+  {
+    "id": "need_ambulance",
+    "category": "emergency",
+    "priority": "core",
+    "english": "I need an ambulance.",
+    "type": "phrase"
+  },
+  {
+    "id": "hurts_here",
+    "category": "emergency",
+    "priority": "core",
+    "english": "It hurts here.",
+    "type": "phrase"
+  },
+  {
+    "id": "been_robbed",
+    "category": "emergency",
+    "priority": "travel",
+    "english": "I've been robbed.",
+    "type": "phrase"
+  },
+  {
+    "id": "medicine_for",
+    "category": "emergency",
+    "priority": "travel",
+    "english": "I need medicine for ___.",
+    "type": "pattern"
+  },
+  {
+    "id": "trouble_breathing",
+    "category": "emergency",
+    "priority": "travel",
+    "english": "I'm having trouble breathing.",
+    "type": "phrase"
+  },
+  {
+    "id": "luggage_missing",
+    "category": "transportation",
+    "priority": "travel",
+    "english": "My luggage didn't arrive.",
+    "type": "phrase"
+  },
+  {
+    "id": "flight_delayed",
+    "category": "transportation",
+    "priority": "travel",
+    "english": "Is my flight delayed?",
+    "type": "phrase"
+  },
+  {
+    "id": "connecting_flight",
+    "category": "transportation",
+    "priority": "travel",
+    "english": "I have a connecting flight.",
+    "type": "phrase"
+  },
+  {
+    "id": "tickets_please",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "___ tickets, please.",
+    "type": "pattern"
+  },
+  {
+    "id": "what_time_open",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "What time does it open?",
+    "type": "phrase"
+  },
+  {
+    "id": "what_time_close",
+    "category": "navigation",
+    "priority": "travel",
+    "english": "What time does it close?",
+    "type": "phrase"
+  },
+  {
+    "id": "tour_english",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is there a guided tour in English?",
+    "type": "phrase"
+  },
+  {
+    "id": "on_tap",
+    "category": "food",
+    "priority": "explore",
+    "english": "What do you have on tap?",
+    "type": "phrase"
+  },
+  {
+    "id": "non_alcoholic",
+    "category": "food",
+    "priority": "travel",
+    "english": "Something non-alcoholic, please.",
+    "type": "phrase"
+  },
+  {
+    "id": "what_time_is_it",
+    "category": "essentials",
+    "priority": "travel",
+    "english": "What time is it?",
+    "type": "phrase"
   }
 ]

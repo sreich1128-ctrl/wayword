@@ -381,6 +381,173 @@
       "target": "Unde pot să ___?",
       "pronunciation_easy": "OON-deh poht suh ___",
       "qa": "Blank takes a first-person subjunctive verb (să cumpăr, să schimb). Bare infinitive also works: Unde pot cumpăra bilete?"
+    },
+    {
+      "id": "look_beautiful",
+      "target": "Ești foarte frumoasă / frumos.",
+      "pronunciation_easy": "yesht FWAR-teh froo-MWAH-suh / froo-MOS",
+      "qa": "frumoasă to a woman, frumos to a man."
+    },
+    {
+      "id": "love_outfit",
+      "target": "Îmi place cum ești îmbrăcată / îmbrăcat.",
+      "pronunciation_easy": "im PLAH-cheh koom yesht im-bruh-KAH-tuh / im-bruh-KAHT"
+    },
+    {
+      "id": "beautiful_smile",
+      "target": "Ai un zâmbet frumos.",
+      "pronunciation_easy": "eye oon ZUHM-bet froo-MOS"
+    },
+    {
+      "id": "like_style",
+      "target": "Îmi place stilul tău.",
+      "pronunciation_easy": "im PLAH-cheh STEE-lool tuh-oo"
+    },
+    {
+      "id": "get_coffee",
+      "target": "Vrei să bem o cafea?",
+      "pronunciation_easy": "vray suh bem oh kah-FYAH"
+    },
+    {
+      "id": "buy_drink",
+      "target": "Pot să-ți ofer ceva de băut?",
+      "pronunciation_easy": "poht suhts oh-FEHR cheh-VAH deh buh-OOT"
+    },
+    {
+      "id": "see_again",
+      "target": "Mi-ar plăcea să te mai văd.",
+      "pronunciation_easy": "myar pluh-CHAH suh teh my vuhd"
+    },
+    {
+      "id": "free_tomorrow",
+      "target": "Ești liberă / liber mâine?",
+      "pronunciation_easy": "yesht LEE-beh-ruh / LEE-ber MUY-neh"
+    },
+    {
+      "id": "your_number",
+      "target": "Îmi dai numărul tău?",
+      "pronunciation_easy": "im dye NOO-muh-rool tuh-oo"
+    },
+    {
+      "id": "with_friends",
+      "target": "Ești aici cu prietenii?",
+      "pronunciation_easy": "yesht ah-EETCH koo pree-EH-teh-nee"
+    },
+    {
+      "id": "great_time",
+      "target": "M-am simțit foarte bine.",
+      "pronunciation_easy": "mahm seem-TSEET FWAR-teh BEE-neh"
+    },
+    {
+      "id": "not_interested",
+      "target": "Mulțumesc, dar nu sunt interesată / interesat.",
+      "pronunciation_easy": "mool-tsoo-MESK, dar noo soont een-teh-reh-SAH-tuh / een-teh-reh-SAHT",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "leave_me_alone",
+      "target": "Lăsați-mă în pace, vă rog.",
+      "pronunciation_easy": "luh-SAHTS-muh in PAH-cheh, vuh rohg",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "my_name_is",
+      "target": "Mă numesc ___.",
+      "pronunciation_easy": "muh noo-MESK ___"
+    },
+    {
+      "id": "im_from",
+      "target": "Sunt din ___.",
+      "pronunciation_easy": "soont deen ___"
+    },
+    {
+      "id": "how_long_here",
+      "target": "Cât timp stai aici?",
+      "pronunciation_easy": "kuht teemp sty ah-EETCH"
+    },
+    {
+      "id": "cheers",
+      "target": "Noroc!",
+      "pronunciation_easy": "noh-ROK"
+    },
+    {
+      "id": "need_ambulance",
+      "target": "Am nevoie de o ambulanță.",
+      "pronunciation_easy": "ahm neh-VOH-yeh deh oh ahm-boo-LAHN-tsuh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "hurts_here",
+      "target": "Mă doare aici.",
+      "pronunciation_easy": "muh DWAH-reh ah-EETCH",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "been_robbed",
+      "target": "Am fost jefuită / jefuit.",
+      "pronunciation_easy": "ahm fost zheh-foo-EE-tuh / zheh-foo-EET"
+    },
+    {
+      "id": "medicine_for",
+      "target": "Am nevoie de un medicament pentru ___.",
+      "pronunciation_easy": "ahm neh-VOH-yeh deh oon meh-dee-kah-MENT PEN-troo ___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "trouble_breathing",
+      "target": "Respir greu.",
+      "pronunciation_easy": "res-PEER GREH-oo",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "luggage_missing",
+      "target": "Bagajul meu nu a ajuns.",
+      "pronunciation_easy": "bah-GAH-zhool meh-oo noo ah ah-ZHOONS"
+    },
+    {
+      "id": "flight_delayed",
+      "target": "Zborul meu are întârziere?",
+      "pronunciation_easy": "ZBOH-rool meh-oo AH-reh in-tuhr-ZYEH-reh"
+    },
+    {
+      "id": "connecting_flight",
+      "target": "Am un zbor de legătură.",
+      "pronunciation_easy": "ahm oon zbor deh leh-guh-TOO-ruh"
+    },
+    {
+      "id": "tickets_please",
+      "target": "___ bilete, vă rog.",
+      "pronunciation_easy": "___ bee-LEH-teh, vuh rohg"
+    },
+    {
+      "id": "what_time_open",
+      "target": "La ce oră se deschide?",
+      "pronunciation_easy": "lah cheh OH-ruh seh des-KEE-deh"
+    },
+    {
+      "id": "what_time_close",
+      "target": "La ce oră se închide?",
+      "pronunciation_easy": "lah cheh OH-ruh seh in-KEE-deh"
+    },
+    {
+      "id": "tour_english",
+      "target": "Există un tur ghidat în engleză?",
+      "pronunciation_easy": "eg-ZEES-tuh oon toor ghee-DAHT in en-GLEH-zuh"
+    },
+    {
+      "id": "on_tap",
+      "target": "Ce bere aveți la draft?",
+      "pronunciation_easy": "cheh BEH-reh ah-VETS lah draft"
+    },
+    {
+      "id": "non_alcoholic",
+      "target": "Ceva fără alcool, vă rog.",
+      "pronunciation_easy": "cheh-VAH FUH-ruh al-KOHL, vuh rohg"
+    },
+    {
+      "id": "what_time_is_it",
+      "target": "Cât e ceasul?",
+      "pronunciation_easy": "kuht yeh CHAH-sool"
     }
   ],
   "vocab": {
@@ -718,6 +885,26 @@
         "word": "word_exit",
         "target": "Unde este ieșirea?",
         "pronunciation_easy": "OON-deh YES-teh yeh-SHEE-ryah"
+      },
+      {
+        "word": "hospital",
+        "target": "Unde este spitalul?",
+        "pronunciation_easy": "OON-deh YES-teh spee-TAH-lool"
+      },
+      {
+        "word": "checkin",
+        "target": "Unde este check-in-ul?",
+        "pronunciation_easy": "OON-deh YES-teh chek-EEN-ool"
+      },
+      {
+        "word": "baggage",
+        "target": "Unde este zona de bagaje?",
+        "pronunciation_easy": "OON-deh YES-teh ZOH-nah deh bah-GAH-zheh"
+      },
+      {
+        "word": "gate",
+        "target": "Unde este poarta de îmbarcare?",
+        "pronunciation_easy": "OON-deh YES-teh PWAR-tah deh im-bar-KAH-reh"
       }
     ],
     "nearest": [
@@ -836,6 +1023,16 @@
         "word": "word_water",
         "target": "Aș dori apă, vă rog.",
         "pronunciation_easy": "ash doh-REE AH-puh, vuh rohg"
+      },
+      {
+        "word": "red_wine",
+        "target": "Aș dori un pahar de vin roșu, vă rog.",
+        "pronunciation_easy": "ash doh-REE oon pah-HAR deh veen ROH-shoo, vuh rohg"
+      },
+      {
+        "word": "white_wine",
+        "target": "Aș dori un pahar de vin alb, vă rog.",
+        "pronunciation_easy": "ash doh-REE oon pah-HAR deh veen ahlb, vuh rohg"
       }
     ],
     "table_for": [
@@ -1270,6 +1467,77 @@
         "target": "Unde pot să cumpăr o cartelă SIM?",
         "pronunciation_easy": "OON-deh poht suh KOOM-puhr oh kar-TEH-luh seem"
       }
+    ],
+    "im_from": [
+      {
+        "word": "usa",
+        "target": "Sunt din Statele Unite.",
+        "pronunciation_easy": "soont deen STAH-teh-leh oo-NEE-teh"
+      },
+      {
+        "word": "canada",
+        "target": "Sunt din Canada.",
+        "pronunciation_easy": "soont deen KAH-nah-dah"
+      },
+      {
+        "word": "uk",
+        "target": "Sunt din Marea Britanie.",
+        "pronunciation_easy": "soont deen MAH-ryah bree-TAH-nee-eh"
+      },
+      {
+        "word": "israel",
+        "target": "Sunt din Israel.",
+        "pronunciation_easy": "soont deen ees-rah-EL"
+      },
+      {
+        "word": "australia",
+        "target": "Sunt din Australia.",
+        "pronunciation_easy": "soont deen ows-TRAH-lee-ah"
+      }
+    ],
+    "medicine_for": [
+      {
+        "word": "pain",
+        "target": "Am nevoie de un medicament pentru durere.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh oon meh-dee-kah-MENT PEN-troo doo-REH-reh"
+      },
+      {
+        "word": "fever",
+        "target": "Am nevoie de un medicament pentru febră.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh oon meh-dee-kah-MENT PEN-troo FEH-bruh"
+      },
+      {
+        "word": "cough",
+        "target": "Am nevoie de un medicament pentru tuse.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh oon meh-dee-kah-MENT PEN-troo TOO-seh"
+      },
+      {
+        "word": "allergies",
+        "target": "Am nevoie de un medicament pentru alergie.",
+        "pronunciation_easy": "ahm neh-VOH-yeh deh oon meh-dee-kah-MENT PEN-troo ah-ler-JEE-eh"
+      }
+    ],
+    "tickets_please": [
+      {
+        "word": "one",
+        "target": "Un bilet, vă rog.",
+        "pronunciation_easy": "oon bee-LET, vuh rohg"
+      },
+      {
+        "word": "two",
+        "target": "Două bilete, vă rog.",
+        "pronunciation_easy": "DOH-wuh bee-LEH-teh, vuh rohg"
+      },
+      {
+        "word": "three",
+        "target": "Trei bilete, vă rog.",
+        "pronunciation_easy": "tray bee-LEH-teh, vuh rohg"
+      },
+      {
+        "word": "four",
+        "target": "Patru bilete, vă rog.",
+        "pronunciation_easy": "PAH-troo bee-LEH-teh, vuh rohg"
+      }
     ]
   },
   "replies": {
@@ -1325,6 +1593,79 @@
     "how_would_you_like_it": {
       "target": "Cum doriți să vă tund?",
       "pronunciation_easy": "koom doh-REETS suh vuh toond"
+    },
+    "id_love_to": {
+      "target": "Mi-ar plăcea.",
+      "pronunciation_easy": "myar pluh-CHAH"
+    },
+    "maybe_another_time": {
+      "target": "Poate altă dată.",
+      "pronunciation_easy": "PWAH-teh AHL-tuh DAH-tuh"
+    },
+    "sorry_i_cant": {
+      "target": "Îmi pare rău, nu pot.",
+      "pronunciation_easy": "im PAH-reh ruh-oo, noo poht"
+    },
+    "seeing_someone": {
+      "target": "Am pe cineva.",
+      "pronunciation_easy": "ahm peh chee-neh-VAH"
+    },
+    "here_for_a_week": {
+      "target": "Stau o săptămână.",
+      "pronunciation_easy": "stow oh sup-tuh-MUH-nuh"
+    },
+    "like_it_here": {
+      "target": "Îți place aici?",
+      "pronunciation_easy": "its PLAH-cheh ah-EETCH"
+    },
+    "what_happened": {
+      "target": "Ce s-a întâmplat?",
+      "pronunciation_easy": "cheh sah in-tuhm-PLAHT"
+    },
+    "where_hurt": {
+      "target": "Unde vă doare?",
+      "pronunciation_easy": "OON-deh vuh DWAH-reh"
+    },
+    "wait_here": {
+      "target": "Așteptați aici.",
+      "pronunciation_easy": "ash-tep-TAHTS ah-EETCH"
+    },
+    "passport_please": {
+      "target": "Pașaportul, vă rog.",
+      "pronunciation_easy": "pah-shah-POR-tool, vuh rohg"
+    },
+    "boarding_started": {
+      "target": "Îmbarcarea a început.",
+      "pronunciation_easy": "im-bar-KAH-ryah ah in-cheh-POOT"
+    },
+    "gate_changed": {
+      "target": "Poarta dumneavoastră s-a schimbat.",
+      "pronunciation_easy": "PWAR-tah doom-nyah-VWAS-truh sah skeem-BAHT"
+    },
+    "sold_out": {
+      "target": "Nu mai sunt bilete.",
+      "pronunciation_easy": "noo my soont bee-LEH-teh"
+    },
+    "follow_me": {
+      "target": "Veniți după mine.",
+      "pronunciation_easy": "veh-NEETS DOO-puh MEE-neh"
+    },
+    "what_can_i_get": {
+      "target": "Ce doriți?",
+      "pronunciation_easy": "cheh doh-REETS"
+    },
+    "last_call": {
+      "target": "Ultima comandă.",
+      "pronunciation_easy": "OOL-tee-mah koh-MAHN-duh"
+    },
+    "thats_altogether": {
+      "target": "Douăzeci în total.",
+      "pronunciation_easy": "doh-wuh-ZECH in toh-TAHL",
+      "qa": "A price heard at a till, with a plain number so it fits any currency."
+    },
+    "starts_at": {
+      "target": "Începe la zece.",
+      "pronunciation_easy": "in-CHEH-peh lah ZEH-cheh"
     }
   }
 }

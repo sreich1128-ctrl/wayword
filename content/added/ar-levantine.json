@@ -399,6 +399,176 @@
       "target": "وين فيني ___؟",
       "pronunciation_easy": "wayn FEE-nee ___",
       "qa": "Blank takes an 'I' verb form, gender-neutral. منين (min-NAYN, 'from where') is also very natural for buying/getting things: منين بشتري تذاكر؟"
+    },
+    {
+      "id": "look_beautiful",
+      "target": "إنتِ كتير حلوة. / إنتَ كتير حلو.",
+      "pronunciation_easy": "IN-tee kteer HIL-weh / IN-ta kteer HI-loo",
+      "qa": "PRIORITY REVIEW (directness). First form to a woman, second to a man. Forward with a stranger in many settings."
+    },
+    {
+      "id": "love_outfit",
+      "target": "حلو لبسك.",
+      "pronunciation_easy": "HI-loo LIB-sak"
+    },
+    {
+      "id": "beautiful_smile",
+      "target": "ابتسامتك حلوة.",
+      "pronunciation_easy": "ib-ti-SAAM-tak HIL-weh",
+      "qa": "PRIORITY REVIEW (directness)."
+    },
+    {
+      "id": "like_style",
+      "target": "عاجبني ستايلك.",
+      "pronunciation_easy": "AA-jib-nee STAY-lak"
+    },
+    {
+      "id": "get_coffee",
+      "target": "بتحب نشرب قهوة؟",
+      "pronunciation_easy": "bit-HIB NISH-rab AH-weh"
+    },
+    {
+      "id": "buy_drink",
+      "target": "ممكن أعزمك على مشروب؟",
+      "pronunciation_easy": "MUM-kin A'-zmak A-la mash-ROOB",
+      "qa": "مشروب is any drink, not necessarily alcohol."
+    },
+    {
+      "id": "see_again",
+      "target": "بحب أشوفك مرة تانية.",
+      "pronunciation_easy": "ba-HIB a-SHOO-fak MAR-ra TAAN-yeh"
+    },
+    {
+      "id": "free_tomorrow",
+      "target": "فاضي بكرا؟",
+      "pronunciation_easy": "FAA-dee BUK-ra"
+    },
+    {
+      "id": "your_number",
+      "target": "ممكن آخد رقمك؟",
+      "pronunciation_easy": "MUM-kin AA-khod RA'-mak"
+    },
+    {
+      "id": "with_friends",
+      "target": "إنت هون مع صحابك؟",
+      "pronunciation_easy": "IN-ta hoon ma' SHAA-bak"
+    },
+    {
+      "id": "great_time",
+      "target": "انبسطت كتير.",
+      "pronunciation_easy": "in-ba-SATT kteer"
+    },
+    {
+      "id": "not_interested",
+      "target": "شكراً، بس مش مهتم.",
+      "pronunciation_easy": "SHUK-ran, bas mish muh-TAM",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "leave_me_alone",
+      "target": "اتركني بحالي، لو سمحت.",
+      "pronunciation_easy": "IT-rik-nee b-HAA-lee, law sa-MAHT",
+      "qa": "PRIORITY REVIEW. To a woman: اتركيني."
+    },
+    {
+      "id": "my_name_is",
+      "target": "اسمي ___.",
+      "pronunciation_easy": "IS-mee ___"
+    },
+    {
+      "id": "im_from",
+      "target": "أنا من ___.",
+      "pronunciation_easy": "A-na min ___"
+    },
+    {
+      "id": "how_long_here",
+      "target": "قديش باقي هون؟",
+      "pronunciation_easy": "ad-DAYSH BAA-ee hoon"
+    },
+    {
+      "id": "cheers",
+      "target": "كاسك!",
+      "pronunciation_easy": "KAA-sak",
+      "qa": "Only where people are drinking. Do not assume alcohol."
+    },
+    {
+      "id": "need_ambulance",
+      "target": "بدي إسعاف.",
+      "pronunciation_easy": "BAD-dee is-AAF",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "hurts_here",
+      "target": "بيوجعني هون.",
+      "pronunciation_easy": "b-YOO-ja'-nee hoon",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "been_robbed",
+      "target": "انسرقت.",
+      "pronunciation_easy": "in-sa-RA't"
+    },
+    {
+      "id": "medicine_for",
+      "target": "بدي دوا لـ ___.",
+      "pronunciation_easy": "BAD-dee DA-wa la-___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "trouble_breathing",
+      "target": "مش قادر أتنفس.",
+      "pronunciation_easy": "mish AA-der at-NAF-fas",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "luggage_missing",
+      "target": "شنطتي ما وصلت.",
+      "pronunciation_easy": "shan-TIT-ee ma WIS-lat"
+    },
+    {
+      "id": "flight_delayed",
+      "target": "طيارتي متأخرة؟",
+      "pronunciation_easy": "tay-YAAR-tee mit-AKH-ra"
+    },
+    {
+      "id": "connecting_flight",
+      "target": "عندي رحلة ترانزيت.",
+      "pronunciation_easy": "IN-dee RIH-leh tran-ZEET"
+    },
+    {
+      "id": "tickets_please",
+      "target": "___ تذاكر، لو سمحت.",
+      "pronunciation_easy": "___ ta-ZAA-ker, law sa-MAHT"
+    },
+    {
+      "id": "what_time_open",
+      "target": "أي ساعة بيفتح؟",
+      "pronunciation_easy": "ay SAA-a b-YIF-tah"
+    },
+    {
+      "id": "what_time_close",
+      "target": "أي ساعة بيسكّر؟",
+      "pronunciation_easy": "ay SAA-a bi-SAK-ker"
+    },
+    {
+      "id": "tour_english",
+      "target": "في جولة مع مرشد بالإنجليزي؟",
+      "pronunciation_easy": "fee JAW-leh ma' MUR-shid bil-in-GLEE-zee"
+    },
+    {
+      "id": "on_tap",
+      "target": "شو في عندكم بيرة درافت؟",
+      "pronunciation_easy": "shoo fee IN-dkom BEE-ra draft"
+    },
+    {
+      "id": "non_alcoholic",
+      "target": "إشي بدون كحول، لو سمحت.",
+      "pronunciation_easy": "ISH-ee bi-DOON ku-HOOL, law sa-MAHT"
+    },
+    {
+      "id": "what_time_is_it",
+      "target": "قديش الساعة؟",
+      "pronunciation_easy": "ad-DAYSH is-SAA-a"
     }
   ],
   "vocab": {
@@ -728,6 +898,26 @@
         "word": "word_exit",
         "target": "وين المخرج؟",
         "pronunciation_easy": "wayn il-MAKH-raj"
+      },
+      {
+        "word": "hospital",
+        "target": "وين المستشفى؟",
+        "pronunciation_easy": "wayn il-mus-TASH-fa"
+      },
+      {
+        "word": "checkin",
+        "target": "وين التشيك إن؟",
+        "pronunciation_easy": "wayn it-chek-IN"
+      },
+      {
+        "word": "baggage",
+        "target": "وين استلام الشنط؟",
+        "pronunciation_easy": "wayn is-ti-LAAM ish-SHU-nat"
+      },
+      {
+        "word": "gate",
+        "target": "وين البوابة؟",
+        "pronunciation_easy": "wayn il-baw-WAA-beh"
       }
     ],
     "nearest": [
@@ -846,6 +1036,16 @@
         "word": "word_water",
         "target": "بدي مي، لو سمحت.",
         "pronunciation_easy": "BAD-dee may, law sa-MAHT"
+      },
+      {
+        "word": "red_wine",
+        "target": "بدي كاسة نبيذ أحمر، لو سمحت.",
+        "pronunciation_easy": "BAD-dee KAA-set na-BEED AH-mar, law sa-MAHT"
+      },
+      {
+        "word": "white_wine",
+        "target": "بدي كاسة نبيذ أبيض، لو سمحت.",
+        "pronunciation_easy": "BAD-dee KAA-set na-BEED AB-yad, law sa-MAHT"
       }
     ],
     "table_for": [
@@ -1306,6 +1506,77 @@
         "pronunciation_easy": "wayn FEE-nee ash-TI-ree sha-REE-ha",
         "qa": "شريحة = SIM card; سيم كارد also understood."
       }
+    ],
+    "im_from": [
+      {
+        "word": "usa",
+        "target": "أنا من أمريكا.",
+        "pronunciation_easy": "A-na min am-REE-ka"
+      },
+      {
+        "word": "canada",
+        "target": "أنا من كندا.",
+        "pronunciation_easy": "A-na min KA-na-da"
+      },
+      {
+        "word": "uk",
+        "target": "أنا من بريطانيا.",
+        "pronunciation_easy": "A-na min bree-TAAN-ya"
+      },
+      {
+        "word": "israel",
+        "target": "أنا من إسرائيل.",
+        "pronunciation_easy": "A-na min is-raa-EEL"
+      },
+      {
+        "word": "australia",
+        "target": "أنا من أستراليا.",
+        "pronunciation_easy": "A-na min us-TRAAL-ya"
+      }
+    ],
+    "medicine_for": [
+      {
+        "word": "pain",
+        "target": "بدي دوا للوجع.",
+        "pronunciation_easy": "BAD-dee DA-wa lal-WA-ja'"
+      },
+      {
+        "word": "fever",
+        "target": "بدي دوا للحرارة.",
+        "pronunciation_easy": "BAD-dee DA-wa lal-ha-RAA-ra"
+      },
+      {
+        "word": "cough",
+        "target": "بدي دوا للسعلة.",
+        "pronunciation_easy": "BAD-dee DA-wa las-SA'-leh"
+      },
+      {
+        "word": "allergies",
+        "target": "بدي دوا للحساسية.",
+        "pronunciation_easy": "BAD-dee DA-wa lal-ha-saa-SEE-yeh"
+      }
+    ],
+    "tickets_please": [
+      {
+        "word": "one",
+        "target": "تذكرة وحدة، لو سمحت.",
+        "pronunciation_easy": "TAZ-ka-ra WAH-deh, law sa-MAHT"
+      },
+      {
+        "word": "two",
+        "target": "تذكرتين، لو سمحت.",
+        "pronunciation_easy": "taz-kar-TAYN, law sa-MAHT"
+      },
+      {
+        "word": "three",
+        "target": "تلات تذاكر، لو سمحت.",
+        "pronunciation_easy": "ta-LAT ta-ZAA-ker, law sa-MAHT"
+      },
+      {
+        "word": "four",
+        "target": "أربع تذاكر، لو سمحت.",
+        "pronunciation_easy": "AR-ba' ta-ZAA-ker, law sa-MAHT"
+      }
     ]
   },
   "replies": {
@@ -1371,6 +1642,81 @@
       "target": "كيف بدك القصة؟",
       "pronunciation_easy": "keef BAD-dak il-US-sa",
       "qa": "Literal: 'How do you want the cut?' To a male customer (barber context)."
+    },
+    "id_love_to": {
+      "target": "أكيد، بحب.",
+      "pronunciation_easy": "a-KEED, ba-HIB"
+    },
+    "maybe_another_time": {
+      "target": "يمكن مرة تانية.",
+      "pronunciation_easy": "YIM-kin MAR-ra TAAN-yeh"
+    },
+    "sorry_i_cant": {
+      "target": "آسفة، ما بقدر.",
+      "pronunciation_easy": "AAS-feh, ma BA'-dar",
+      "qa": "Said by a woman. A man: آسف (AA-sef)."
+    },
+    "seeing_someone": {
+      "target": "أنا مرتبطة.",
+      "pronunciation_easy": "A-na mir-TIB-ta",
+      "qa": "Said by a woman. A man: مرتبط (mir-TIBet)."
+    },
+    "here_for_a_week": {
+      "target": "أنا هون لأسبوع.",
+      "pronunciation_easy": "A-na hoon la-us-BOO'"
+    },
+    "like_it_here": {
+      "target": "عاجبك هون؟",
+      "pronunciation_easy": "AA-jbak hoon"
+    },
+    "what_happened": {
+      "target": "شو صار؟",
+      "pronunciation_easy": "shoo saar"
+    },
+    "where_hurt": {
+      "target": "وين بيوجعك؟",
+      "pronunciation_easy": "wayn b-YOO-j'ak"
+    },
+    "wait_here": {
+      "target": "استنى هون.",
+      "pronunciation_easy": "is-TAN-na hoon"
+    },
+    "passport_please": {
+      "target": "جواز السفر، لو سمحت.",
+      "pronunciation_easy": "ja-WAAZ is-SA-far, law sa-MAHT"
+    },
+    "boarding_started": {
+      "target": "بلّش الصعود للطيارة.",
+      "pronunciation_easy": "BAL-lash is-su-OOD lat-tay-YAA-ra"
+    },
+    "gate_changed": {
+      "target": "تغيّرت البوابة.",
+      "pronunciation_easy": "tghay-YA-rat il-baw-WAA-beh"
+    },
+    "sold_out": {
+      "target": "خلصت التذاكر.",
+      "pronunciation_easy": "KHIL-sat it-ta-ZAA-ker"
+    },
+    "follow_me": {
+      "target": "تعال معي.",
+      "pronunciation_easy": "ta-AAL MA-ee"
+    },
+    "what_can_i_get": {
+      "target": "شو بتحب تشرب؟",
+      "pronunciation_easy": "shoo bit-HIB TISH-rab"
+    },
+    "last_call": {
+      "target": "آخر طلب.",
+      "pronunciation_easy": "AA-kher TA-lab"
+    },
+    "thats_altogether": {
+      "target": "المجموع عشرين.",
+      "pronunciation_easy": "il-maj-MOO' ish-REEN",
+      "qa": "A price heard at a till, with a plain number so it fits any currency."
+    },
+    "starts_at": {
+      "target": "بيبلّش الساعة عشرة.",
+      "pronunciation_easy": "bi-BAL-lesh is-SAA-a A-sha-ra"
     }
   }
 }
