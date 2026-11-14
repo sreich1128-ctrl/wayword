@@ -16,20 +16,20 @@ ChatGPT's own QA reported zero overlaps with existing content. That check was ex
 
 | Situation | New to say | New to understand | New words for existing frames | Reused from what exists |
 |---|---|---|---|---|
-| Flirting | 10 | 4 | – | You're funny · I like talking to you · Can I get your Instagram? |
+| Flirting | 13 | 4 | – | You're funny · I like talking to you · Can I get your Instagram? |
 | Meeting People | 4 | 3 | 5 countries | What do you recommend? · I'm learning by trying to speak (moved from Flirting) |
 | Help & emergencies | 5 | 3 | hospital + 4 (pain, a fever, a cough, allergies) | Where is ___? · Please leave me alone (shared with Flirting) |
 | Airport (new) | 3 | 3 | check-in, baggage claim, gate | Where is ___? · passport, ticket |
 | Sightseeing (new) | 4 | 2 | – | Can I take photos here? · Where is ___? + entrance · It's closed. |
 | Bar (new) | 2 | 2 | red wine, white wine | beer / glass of wine via I'd like ___ · Another one, please · Cheers! |
 | Numbers, times, prices (new) | 1 | 2 | – | the 13 number words already in vocab |
-| **Total** | **29** | **19** | **15** | |
+| **Total** | **32** | **19** | **15** | |
 
-48 new lines and 15 words, × 9 languages as drafts.
+51 new lines and 15 words, × 9 languages as drafts.
 
 ### The lists
 
-**Flirting** — say: I like your style. · Would you like to get a coffee? · Can I buy you a drink? *(added: missing from ChatGPT's list)* · I'd like to see you again. · Are you free tomorrow? · Can I have your number? · Are you here with friends? · I had a great time. *(added)* · Thanks, but I'm not interested. ⚑ · Please leave me alone. ⚑
+**Flirting** — say: You look beautiful. / You look handsome. ⚑ · I love your outfit. · You have a beautiful smile. ⚑ *(these three added at the owner's request, 2026-11-14; both gender forms written the way the app already shows them; Japanese and Levantine Arabic get a directness note)* · I like your style. · Would you like to get a coffee? · Can I buy you a drink? *(added: missing from ChatGPT's list)* · I'd like to see you again. · Are you free tomorrow? · Can I have your number? · Are you here with friends? · I had a great time. *(added)* · Thanks, but I'm not interested. ⚑ · Please leave me alone. ⚑
 Understand: I'd love to. · Maybe another time. · Sorry, I can't. · I'm seeing someone.
 Flirting stops counting the 9 Meeting People phrases as its own.
 
@@ -138,6 +138,6 @@ Everything medical and allergy-related (emergency, pharmacy, "Does this contain 
 
 ## What I need from the owner
 
-1. Approve, cut or add to the Level 1 list (48 lines + 15 words).
+1. Approve, cut or add to the Level 1 list (51 lines + 15 words).
 2. Approve the Level 2 shape: 52 exchanges, a shared recovery kit, about 181 lines.
 3. Order of work: Level 1 repairs (content + display fix) first, shipped; then Level 2 situation by situation.
