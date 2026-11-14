@@ -1,0 +1,478 @@
+[
+  {
+    "situation": "flirting",
+    "goal": "make a light compliment",
+    "role": "say",
+    "english": "I like your style.",
+    "level": 1,
+    "risk_note": "Use context-sensitive, non-body-focused compliments. Unsolicited flirting can be unwelcome in any language; register and social setting matter in Japanese and Levantine Arabic."
+  },
+  {
+    "situation": "flirting",
+    "goal": "invite for coffee",
+    "role": "say",
+    "english": "Would you like to get coffee sometime?",
+    "level": 1,
+    "risk_note": "Keep invitations low-pressure, and accept a no without further negotiation."
+  },
+  {
+    "situation": "flirting",
+    "goal": "show interest",
+    "role": "say",
+    "english": "I'd like to see you again.",
+    "level": 1
+  },
+  {
+    "situation": "flirting",
+    "goal": "check availability",
+    "role": "say",
+    "english": "Are you free tomorrow?",
+    "level": 1
+  },
+  {
+    "situation": "flirting",
+    "goal": "ask for contact details",
+    "role": "say",
+    "english": "Can I have your number?",
+    "level": 1
+  },
+  {
+    "situation": "flirting",
+    "goal": "check social context",
+    "role": "say",
+    "english": "Are you here with friends?",
+    "level": 1,
+    "risk_note": "Ask respectfully. The question could feel intrusive in some contexts."
+  },
+  {
+    "situation": "flirting",
+    "goal": "decline politely",
+    "role": "say",
+    "english": "Thanks, but I'm not interested.",
+    "level": 1,
+    "risk_note": "Keep the refusal unambiguous. Japanese indirectness must not erase a clear no."
+  },
+  {
+    "situation": "flirting",
+    "goal": "end an unwanted approach",
+    "role": "say",
+    "english": "Please leave me alone.",
+    "level": 1,
+    "risk_note": "Do not soften the boundary so much that the message loses its force."
+  },
+  {
+    "situation": "flirting",
+    "goal": "understand interest",
+    "role": "hear",
+    "english": "I'd love to.",
+    "level": 1
+  },
+  {
+    "situation": "flirting",
+    "goal": "understand hesitation",
+    "role": "hear",
+    "english": "Maybe another time.",
+    "level": 1
+  },
+  {
+    "situation": "flirting",
+    "goal": "understand refusal",
+    "role": "hear",
+    "english": "Sorry, I can't.",
+    "level": 1
+  },
+  {
+    "situation": "flirting",
+    "goal": "understand relationship boundary",
+    "role": "hear",
+    "english": "I'm seeing someone.",
+    "level": 1
+  },
+  {
+    "situation": "meeting",
+    "goal": "introduce yourself",
+    "role": "say",
+    "english": "My name is ___.",
+    "level": 1,
+    "blank_words": [
+      "Alex",
+      "Sam",
+      "Steven"
+    ],
+    "risk_note": "Japanese typically uses surnames and honorifics differently; localize introductions naturally."
+  },
+  {
+    "situation": "meeting",
+    "goal": "explain where you are from",
+    "role": "say",
+    "english": "I'm from ___.",
+    "level": 1,
+    "blank_words": [
+      "the United States",
+      "Canada",
+      "Israel",
+      "Australia"
+    ]
+  },
+  {
+    "situation": "meeting",
+    "goal": "ask length of visit",
+    "role": "say",
+    "english": "How long are you here for?",
+    "level": 1
+  },
+  {
+    "situation": "meeting",
+    "goal": "ask about the city",
+    "role": "say",
+    "english": "What should I see while I am here?",
+    "level": 1
+  },
+  {
+    "situation": "meeting",
+    "goal": "raise a toast",
+    "role": "say",
+    "english": "Cheers!",
+    "level": 1
+  },
+  {
+    "situation": "meeting",
+    "goal": "understand visit plans",
+    "role": "hear",
+    "english": "I'm here for a week.",
+    "level": 1
+  },
+  {
+    "situation": "meeting",
+    "goal": "understand a return question",
+    "role": "hear",
+    "english": "How long are you staying?",
+    "level": 1
+  },
+  {
+    "situation": "meeting",
+    "goal": "understand a reaction",
+    "role": "hear",
+    "english": "Do you like it here?",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "request ambulance",
+    "role": "say",
+    "english": "I need an ambulance.",
+    "level": 1,
+    "risk_note": "Native review is high priority due to urgent safety implications."
+  },
+  {
+    "situation": "emergency",
+    "goal": "find hospital",
+    "role": "say",
+    "english": "Where is the hospital?",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "indicate pain",
+    "role": "say",
+    "english": "It hurts here.",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "report a robbery",
+    "role": "say",
+    "english": "I've been robbed.",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "ask for medicine",
+    "role": "say",
+    "english": "I need medicine for ___.",
+    "level": 1,
+    "blank_words": [
+      "pain",
+      "a fever",
+      "a cough",
+      "allergies"
+    ]
+  },
+  {
+    "situation": "emergency",
+    "goal": "describe breathing trouble",
+    "role": "say",
+    "english": "I'm having trouble breathing.",
+    "level": 1,
+    "risk_note": "Medical urgency must be retained precisely in all localizations."
+  },
+  {
+    "situation": "emergency",
+    "goal": "understand an emergency question",
+    "role": "hear",
+    "english": "What happened?",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "understand a medical question",
+    "role": "hear",
+    "english": "Where does it hurt?",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "understand an insurance question",
+    "role": "hear",
+    "english": "Do you have insurance?",
+    "level": 1
+  },
+  {
+    "situation": "emergency",
+    "goal": "understand an instruction",
+    "role": "hear",
+    "english": "Wait here.",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "find check-in",
+    "role": "say",
+    "english": "Where is check-in?",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "find gate",
+    "role": "say",
+    "english": "Where is gate ___?",
+    "level": 1,
+    "blank_words": [
+      "A12",
+      "B5",
+      "C20",
+      "D8"
+    ]
+  },
+  {
+    "situation": "airport",
+    "goal": "report missing baggage",
+    "role": "say",
+    "english": "My luggage didn't arrive.",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "check delay",
+    "role": "say",
+    "english": "Is my flight delayed?",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "explain connection",
+    "role": "say",
+    "english": "I have a connecting flight.",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "find baggage claim",
+    "role": "say",
+    "english": "Where is baggage claim?",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "understand document request",
+    "role": "hear",
+    "english": "Passport, please.",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "understand boarding status",
+    "role": "hear",
+    "english": "Boarding has started.",
+    "level": 1
+  },
+  {
+    "situation": "airport",
+    "goal": "understand a gate change",
+    "role": "hear",
+    "english": "Your gate has changed.",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "buy entrance tickets",
+    "role": "say",
+    "english": "Two adult tickets, please.",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "check hours",
+    "role": "say",
+    "english": "What time does it open?",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "check closing time",
+    "role": "say",
+    "english": "What time does it close?",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "ask photo permission",
+    "role": "say",
+    "english": "Can I take photos here?",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "find entrance",
+    "role": "say",
+    "english": "Where is the entrance?",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "ask about tour language",
+    "role": "say",
+    "english": "Is there a guided tour in English?",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "understand closure",
+    "role": "hear",
+    "english": "It's closed today.",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "understand sell-out",
+    "role": "hear",
+    "english": "It's sold out.",
+    "level": 1
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "understand guide instruction",
+    "role": "hear",
+    "english": "Follow me.",
+    "level": 1
+  },
+  {
+    "situation": "bar",
+    "goal": "ask about tap drinks",
+    "role": "say",
+    "english": "What do you have on tap?",
+    "level": 1
+  },
+  {
+    "situation": "bar",
+    "goal": "order a beer",
+    "role": "say",
+    "english": "A beer, please.",
+    "level": 1
+  },
+  {
+    "situation": "bar",
+    "goal": "choose wine",
+    "role": "say",
+    "english": "A glass of ___ wine, please.",
+    "level": 1,
+    "blank_words": [
+      "red",
+      "white",
+      "rosé"
+    ]
+  },
+  {
+    "situation": "bar",
+    "goal": "order without alcohol",
+    "role": "say",
+    "english": "Something nonalcoholic, please.",
+    "level": 1,
+    "risk_note": "Useful in all nine languages. Do not assume a bar serves alcohol in every setting."
+  },
+  {
+    "situation": "bar",
+    "goal": "understand bartender question",
+    "role": "hear",
+    "english": "What can I get you?",
+    "level": 1
+  },
+  {
+    "situation": "bar",
+    "goal": "understand last service",
+    "role": "hear",
+    "english": "Last call.",
+    "level": 1
+  },
+  {
+    "situation": "bar",
+    "goal": "understand opening tab",
+    "role": "hear",
+    "english": "Would you like to open a tab?",
+    "level": 1
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "check amount",
+    "role": "say",
+    "english": "Is that the total?",
+    "level": 1
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "check time",
+    "role": "say",
+    "english": "What time is it?",
+    "level": 1
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "check time of day",
+    "role": "say",
+    "english": "Is that in the morning or evening?",
+    "level": 1
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "understand price",
+    "role": "hear",
+    "english": "That's ___ altogether.",
+    "level": 1,
+    "blank_words": [
+      "ten",
+      "twenty",
+      "fifty",
+      "one hundred"
+    ]
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "understand timing",
+    "role": "hear",
+    "english": "It starts at ___.",
+    "level": 1,
+    "blank_words": [
+      "nine",
+      "ten thirty",
+      "noon",
+      "six fifteen"
+    ]
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "understand price unit",
+    "role": "hear",
+    "english": "That's per person.",
+    "level": 1
+  }
+]

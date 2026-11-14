@@ -1,0 +1,40 @@
+{
+  "existing_123_count": 123,
+  "existing_reply_count": 14,
+  "level1_records": 61,
+  "level2_records": 244,
+  "level2_goals": 61,
+  "level2_situations": 15,
+  "level1_vs_existing": [],
+  "level2_vs_existing": [],
+  "level2_vs_level1": [],
+  "level1_internal_duplicates": [],
+  "level2_internal_duplicates": [],
+  "missing_frame_word_examples": [],
+  "level1_situations": {
+    "flirting": 12,
+    "meeting": 8,
+    "emergency": 10,
+    "airport": 9,
+    "sightseeing": 9,
+    "bar": 7,
+    "numbers_times_prices": 6
+  },
+  "level2_situation_counts": {
+    "basics": 16,
+    "emergency": 16,
+    "cafe": 16,
+    "restaurant": 16,
+    "transport": 16,
+    "directions": 16,
+    "hotel": 16,
+    "shopping": 16,
+    "meeting": 16,
+    "flirting": 16,
+    "barber": 16,
+    "airport": 20,
+    "sightseeing": 16,
+    "bar": 16,
+    "numbers_times_prices": 16
+  }
+}

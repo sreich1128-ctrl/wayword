@@ -1,0 +1,1876 @@
+[
+  {
+    "situation": "basics",
+    "goal": "explain a communication problem",
+    "role": "say",
+    "english": "I didn't catch the last part.",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "explain a communication problem",
+    "role": "hear",
+    "english": "Which part was unclear?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "explain a communication problem",
+    "role": "follow_up",
+    "english": "Could you say the last word again?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "explain a communication problem",
+    "role": "recovery",
+    "english": "Could you type it on my phone?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "check understanding",
+    "role": "say",
+    "english": "So you mean ___, right?",
+    "level": 2,
+    "blank_words": [
+      "today",
+      "tomorrow",
+      "the next street",
+      "the second stop"
+    ]
+  },
+  {
+    "situation": "basics",
+    "goal": "check understanding",
+    "role": "hear",
+    "english": "Yes, that's right.",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "check understanding",
+    "role": "follow_up",
+    "english": "And then what happens?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "check understanding",
+    "role": "recovery",
+    "english": "Could you explain it another way?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "ask for a language alternative",
+    "role": "say",
+    "english": "Is there someone who speaks English?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "ask for a language alternative",
+    "role": "hear",
+    "english": "My colleague does.",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "ask for a language alternative",
+    "role": "follow_up",
+    "english": "Could you ask them to help?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "ask for a language alternative",
+    "role": "recovery",
+    "english": "Could we use a translation app?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "end a confusing exchange politely",
+    "role": "say",
+    "english": "I think I understand now.",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "end a confusing exchange politely",
+    "role": "hear",
+    "english": "Are you sure?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "end a confusing exchange politely",
+    "role": "follow_up",
+    "english": "Can I check one more thing?",
+    "level": 2
+  },
+  {
+    "situation": "basics",
+    "goal": "end a confusing exchange politely",
+    "role": "recovery",
+    "english": "I'll show you what I mean.",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "give location to responders",
+    "role": "say",
+    "english": "I'm near ___.",
+    "level": 2,
+    "blank_words": [
+      "the hotel",
+      "the train station",
+      "the airport",
+      "the pharmacy"
+    ]
+  },
+  {
+    "situation": "emergency",
+    "goal": "give location to responders",
+    "role": "hear",
+    "english": "Are you somewhere safe?",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "give location to responders",
+    "role": "follow_up",
+    "english": "Can you send an ambulance here?",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "give location to responders",
+    "role": "recovery",
+    "english": "I can share my location.",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "describe worsening symptoms",
+    "role": "say",
+    "english": "My ___ is getting worse.",
+    "level": 2,
+    "blank_words": [
+      "headache",
+      "stomach pain",
+      "chest pain",
+      "breathing"
+    ],
+    "risk_note": "High-stakes medical content. Use precise natural phrasing, not grammatical word swaps."
+  },
+  {
+    "situation": "emergency",
+    "goal": "describe worsening symptoms",
+    "role": "hear",
+    "english": "When did it start?",
+    "level": 2,
+    "risk_note": "High-stakes medical content. Use precise natural phrasing, not grammatical word swaps."
+  },
+  {
+    "situation": "emergency",
+    "goal": "describe worsening symptoms",
+    "role": "follow_up",
+    "english": "It started ___ ago.",
+    "level": 2,
+    "blank_words": [
+      "an hour",
+      "two hours",
+      "a day",
+      "three days"
+    ],
+    "risk_note": "High-stakes medical content. Use precise natural phrasing, not grammatical word swaps."
+  },
+  {
+    "situation": "emergency",
+    "goal": "describe worsening symptoms",
+    "role": "recovery",
+    "english": "I need urgent medical attention.",
+    "level": 2,
+    "risk_note": "High-stakes medical content. Use precise natural phrasing, not grammatical word swaps."
+  },
+  {
+    "situation": "emergency",
+    "goal": "get help with a theft",
+    "role": "say",
+    "english": "My passport was stolen.",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "get help with a theft",
+    "role": "hear",
+    "english": "Where did you last have it?",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "get help with a theft",
+    "role": "follow_up",
+    "english": "Where can I file a report?",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "get help with a theft",
+    "role": "recovery",
+    "english": "I don't know exactly when it happened.",
+    "level": 2
+  },
+  {
+    "situation": "emergency",
+    "goal": "ask pharmacist about medication",
+    "role": "say",
+    "english": "I need something for ___.",
+    "level": 2,
+    "blank_words": [
+      "a headache",
+      "a fever",
+      "a cough",
+      "an allergy"
+    ],
+    "risk_note": "Medical and allergy phrases need native review and must not imply a medicine is safe."
+  },
+  {
+    "situation": "emergency",
+    "goal": "ask pharmacist about medication",
+    "role": "hear",
+    "english": "Do you have any allergies?",
+    "level": 2,
+    "risk_note": "Medical and allergy phrases need native review and must not imply a medicine is safe."
+  },
+  {
+    "situation": "emergency",
+    "goal": "ask pharmacist about medication",
+    "role": "follow_up",
+    "english": "How often should I take it?",
+    "level": 2,
+    "risk_note": "Medical and allergy phrases need native review and must not imply a medicine is safe."
+  },
+  {
+    "situation": "emergency",
+    "goal": "ask pharmacist about medication",
+    "role": "recovery",
+    "english": "I need to speak to a pharmacist.",
+    "level": 2,
+    "risk_note": "Medical and allergy phrases need native review and must not imply a medicine is safe."
+  },
+  {
+    "situation": "cafe",
+    "goal": "customize a drink",
+    "role": "say",
+    "english": "Could I get it with oat milk?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "customize a drink",
+    "role": "hear",
+    "english": "Hot or iced?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "customize a drink",
+    "role": "follow_up",
+    "english": "Iced, please.",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "customize a drink",
+    "role": "recovery",
+    "english": "I can't have dairy.",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "adjust sweetness",
+    "role": "say",
+    "english": "Could you make it less sweet?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "adjust sweetness",
+    "role": "hear",
+    "english": "No problem.",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "adjust sweetness",
+    "role": "follow_up",
+    "english": "Without syrup, please.",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "adjust sweetness",
+    "role": "recovery",
+    "english": "Could you remake it?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "find somewhere to sit",
+    "role": "say",
+    "english": "Can I sit outside?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "find somewhere to sit",
+    "role": "hear",
+    "english": "Only inside right now.",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "find somewhere to sit",
+    "role": "follow_up",
+    "english": "How long is the wait?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "find somewhere to sit",
+    "role": "recovery",
+    "english": "I'll take it to go instead.",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "check a missing order",
+    "role": "say",
+    "english": "Did my order go through?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "check a missing order",
+    "role": "hear",
+    "english": "What's your order number?",
+    "level": 2
+  },
+  {
+    "situation": "cafe",
+    "goal": "check a missing order",
+    "role": "follow_up",
+    "english": "It's number ___.",
+    "level": 2,
+    "blank_words": [
+      "twelve",
+      "twenty-four",
+      "thirty-five",
+      "forty-two"
+    ]
+  },
+  {
+    "situation": "cafe",
+    "goal": "check a missing order",
+    "role": "recovery",
+    "english": "Could you check the order?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "join a waitlist",
+    "role": "say",
+    "english": "How long is the wait for a table?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "join a waitlist",
+    "role": "hear",
+    "english": "About twenty minutes.",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "join a waitlist",
+    "role": "follow_up",
+    "english": "Can you put our names down?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "join a waitlist",
+    "role": "recovery",
+    "english": "We'll come back later.",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "check ingredients before ordering",
+    "role": "say",
+    "english": "Does this contain ___?",
+    "level": 2,
+    "blank_words": [
+      "nuts",
+      "milk",
+      "egg",
+      "shellfish",
+      "gluten"
+    ],
+    "risk_note": "Allergen terms are safety-critical. Recipes and cross-contact require clarification beyond a phrasebook line."
+  },
+  {
+    "situation": "restaurant",
+    "goal": "check ingredients before ordering",
+    "role": "hear",
+    "english": "Yes, it has butter.",
+    "level": 2,
+    "risk_note": "Allergen terms are safety-critical. Recipes and cross-contact require clarification beyond a phrasebook line."
+  },
+  {
+    "situation": "restaurant",
+    "goal": "check ingredients before ordering",
+    "role": "follow_up",
+    "english": "Can you make it without ___?",
+    "level": 2,
+    "blank_words": [
+      "milk",
+      "butter",
+      "cheese",
+      "nuts"
+    ],
+    "risk_note": "Allergen terms are safety-critical. Recipes and cross-contact require clarification beyond a phrasebook line."
+  },
+  {
+    "situation": "restaurant",
+    "goal": "check ingredients before ordering",
+    "role": "recovery",
+    "english": "I can't eat dairy.",
+    "level": 2,
+    "risk_note": "Allergen terms are safety-critical. Recipes and cross-contact require clarification beyond a phrasebook line."
+  },
+  {
+    "situation": "restaurant",
+    "goal": "choose a dish",
+    "role": "say",
+    "english": "What's your most popular dish?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "choose a dish",
+    "role": "hear",
+    "english": "The grilled fish.",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "choose a dish",
+    "role": "follow_up",
+    "english": "Is it spicy?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "choose a dish",
+    "role": "recovery",
+    "english": "Could you suggest something milder?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "fix a bill mistake",
+    "role": "say",
+    "english": "I think there's a mistake on the bill.",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "fix a bill mistake",
+    "role": "hear",
+    "english": "Which item is wrong?",
+    "level": 2
+  },
+  {
+    "situation": "restaurant",
+    "goal": "fix a bill mistake",
+    "role": "follow_up",
+    "english": "We didn't order ___.",
+    "level": 2,
+    "blank_words": [
+      "this drink",
+      "the dessert",
+      "another meal",
+      "a second coffee"
+    ]
+  },
+  {
+    "situation": "restaurant",
+    "goal": "fix a bill mistake",
+    "role": "recovery",
+    "english": "Could you check it again?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "understand a transfer",
+    "role": "say",
+    "english": "Do I need to change trains?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "understand a transfer",
+    "role": "hear",
+    "english": "Yes, at the next station.",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "understand a transfer",
+    "role": "follow_up",
+    "english": "Which platform do I change at?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "understand a transfer",
+    "role": "recovery",
+    "english": "Could you show me the transfer?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "buy a valid ticket",
+    "role": "say",
+    "english": "Can I buy a ticket on board?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "buy a valid ticket",
+    "role": "hear",
+    "english": "Only at the machine.",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "buy a valid ticket",
+    "role": "follow_up",
+    "english": "Where's the ticket machine?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "buy a valid ticket",
+    "role": "recovery",
+    "english": "Is there another way to pay?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "avoid missing a service",
+    "role": "say",
+    "english": "Is this the last bus?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "avoid missing a service",
+    "role": "hear",
+    "english": "No, there's one at midnight.",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "avoid missing a service",
+    "role": "follow_up",
+    "english": "What happens if I miss it?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "avoid missing a service",
+    "role": "recovery",
+    "english": "Is there another route?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "confirm a taxi fare",
+    "role": "say",
+    "english": "Could you use the meter?",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "confirm a taxi fare",
+    "role": "hear",
+    "english": "It's a fixed price.",
+    "level": 2
+  },
+  {
+    "situation": "transport",
+    "goal": "confirm a taxi fare",
+    "role": "follow_up",
+    "english": "How much to ___?",
+    "level": 2,
+    "blank_words": [
+      "the airport",
+      "the hotel",
+      "the station",
+      "the city center"
+    ]
+  },
+  {
+    "situation": "transport",
+    "goal": "confirm a taxi fare",
+    "role": "recovery",
+    "english": "Could you show me the fare?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "verify a route",
+    "role": "say",
+    "english": "Am I going the right way?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "verify a route",
+    "role": "hear",
+    "english": "Turn left at the traffic light.",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "verify a route",
+    "role": "follow_up",
+    "english": "After the intersection?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "verify a route",
+    "role": "recovery",
+    "english": "Could you point to it?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "decide whether to walk",
+    "role": "say",
+    "english": "Can I walk there from here?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "decide whether to walk",
+    "role": "hear",
+    "english": "It's about ten minutes away.",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "decide whether to walk",
+    "role": "follow_up",
+    "english": "Is there a quicker way?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "decide whether to walk",
+    "role": "recovery",
+    "english": "Would a taxi be easier?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "find the right station exit",
+    "role": "say",
+    "english": "Which exit should I take?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "find the right station exit",
+    "role": "hear",
+    "english": "Use exit three.",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "find the right station exit",
+    "role": "follow_up",
+    "english": "Is there an elevator?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "find the right station exit",
+    "role": "recovery",
+    "english": "I can't find exit ___.",
+    "level": 2,
+    "blank_words": [
+      "one",
+      "two",
+      "three",
+      "four"
+    ]
+  },
+  {
+    "situation": "directions",
+    "goal": "confirm a location on a map",
+    "role": "say",
+    "english": "Can you mark it on my phone?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "confirm a location on a map",
+    "role": "hear",
+    "english": "Sure, open your map.",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "confirm a location on a map",
+    "role": "follow_up",
+    "english": "Is it on this street?",
+    "level": 2
+  },
+  {
+    "situation": "directions",
+    "goal": "confirm a location on a map",
+    "role": "recovery",
+    "english": "I still can't find it.",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "confirm booking details",
+    "role": "say",
+    "english": "My booking is for ___ nights.",
+    "level": 2,
+    "blank_words": [
+      "one",
+      "two",
+      "three",
+      "four",
+      "five"
+    ]
+  },
+  {
+    "situation": "hotel",
+    "goal": "confirm booking details",
+    "role": "hear",
+    "english": "Can I see your passport?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "confirm booking details",
+    "role": "follow_up",
+    "english": "What time is breakfast?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "confirm booking details",
+    "role": "recovery",
+    "english": "Could you check my booking?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "arrange early arrival",
+    "role": "say",
+    "english": "Is early check-in possible?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "arrange early arrival",
+    "role": "hear",
+    "english": "Your room isn't ready yet.",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "arrange early arrival",
+    "role": "follow_up",
+    "english": "When will it be ready?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "arrange early arrival",
+    "role": "recovery",
+    "english": "Could you message me when it's ready?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request a room change",
+    "role": "say",
+    "english": "My room is too noisy.",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request a room change",
+    "role": "hear",
+    "english": "We can move you.",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request a room change",
+    "role": "follow_up",
+    "english": "Is there a quieter room?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request a room change",
+    "role": "recovery",
+    "english": "Could I speak to the manager?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request late checkout",
+    "role": "say",
+    "english": "Can I check out later?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request late checkout",
+    "role": "hear",
+    "english": "There's an extra fee.",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request late checkout",
+    "role": "follow_up",
+    "english": "How much would that cost?",
+    "level": 2
+  },
+  {
+    "situation": "hotel",
+    "goal": "request late checkout",
+    "role": "recovery",
+    "english": "I'll keep the original checkout time.",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "get the right fit",
+    "role": "say",
+    "english": "Does this come in ___?",
+    "level": 2,
+    "blank_words": [
+      "small",
+      "medium",
+      "large",
+      "black",
+      "blue"
+    ]
+  },
+  {
+    "situation": "shopping",
+    "goal": "get the right fit",
+    "role": "hear",
+    "english": "Let me check.",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "get the right fit",
+    "role": "follow_up",
+    "english": "Can I try a larger size?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "get the right fit",
+    "role": "recovery",
+    "english": "This one doesn't fit.",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "compare choices",
+    "role": "say",
+    "english": "What's the difference between these?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "compare choices",
+    "role": "hear",
+    "english": "This one is more durable.",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "compare choices",
+    "role": "follow_up",
+    "english": "Which would you recommend?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "compare choices",
+    "role": "recovery",
+    "english": "Could you show me a cheaper option?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "ask about returns",
+    "role": "say",
+    "english": "Can I return this?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "ask about returns",
+    "role": "hear",
+    "english": "Only within fourteen days.",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "ask about returns",
+    "role": "follow_up",
+    "english": "Do I need the receipt?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "ask about returns",
+    "role": "recovery",
+    "english": "Can I exchange it instead?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "use contactless payment",
+    "role": "say",
+    "english": "Do you accept contactless payment?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "use contactless payment",
+    "role": "hear",
+    "english": "Yes, tap here.",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "use contactless payment",
+    "role": "follow_up",
+    "english": "Can I split the payment?",
+    "level": 2
+  },
+  {
+    "situation": "shopping",
+    "goal": "use contactless payment",
+    "role": "recovery",
+    "english": "I'll use a different card.",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "ask why someone is visiting",
+    "role": "say",
+    "english": "What brings you here?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "ask why someone is visiting",
+    "role": "hear",
+    "english": "I'm here for work.",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "ask why someone is visiting",
+    "role": "follow_up",
+    "english": "How long will you stay?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "ask why someone is visiting",
+    "role": "recovery",
+    "english": "Maybe we can catch up another time.",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "get local recommendations",
+    "role": "say",
+    "english": "What do you like most about this city?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "get local recommendations",
+    "role": "hear",
+    "english": "The food and the people.",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "get local recommendations",
+    "role": "follow_up",
+    "english": "Any favorite places?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "get local recommendations",
+    "role": "recovery",
+    "english": "Could you recommend just one place?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "talk about hobbies",
+    "role": "say",
+    "english": "What do you do on weekends?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "talk about hobbies",
+    "role": "hear",
+    "english": "I usually go hiking.",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "talk about hobbies",
+    "role": "follow_up",
+    "english": "Do you like ___ too?",
+    "level": 2,
+    "blank_words": [
+      "music",
+      "dancing",
+      "hiking",
+      "travel",
+      "sports"
+    ]
+  },
+  {
+    "situation": "meeting",
+    "goal": "talk about hobbies",
+    "role": "recovery",
+    "english": "What are you more interested in?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "make group plans",
+    "role": "say",
+    "english": "Would you like to join us?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "make group plans",
+    "role": "hear",
+    "english": "Maybe. What time?",
+    "level": 2
+  },
+  {
+    "situation": "meeting",
+    "goal": "make group plans",
+    "role": "follow_up",
+    "english": "We're meeting at ___.",
+    "level": 2,
+    "blank_words": [
+      "seven",
+      "eight thirty",
+      "the station",
+      "the hotel"
+    ]
+  },
+  {
+    "situation": "meeting",
+    "goal": "make group plans",
+    "role": "recovery",
+    "english": "No worries if you're busy.",
+    "level": 2
+  },
+  {
+    "situation": "flirting",
+    "goal": "ask for a date",
+    "role": "say",
+    "english": "Would you like to go on a date?",
+    "level": 2,
+    "risk_note": "Some audiences prefer indirect invitations. Keep the meaning clear and respect a refusal immediately."
+  },
+  {
+    "situation": "flirting",
+    "goal": "ask for a date",
+    "role": "hear",
+    "english": "I'm already seeing someone.",
+    "level": 2,
+    "risk_note": "Some audiences prefer indirect invitations. Keep the meaning clear and respect a refusal immediately."
+  },
+  {
+    "situation": "flirting",
+    "goal": "ask for a date",
+    "role": "follow_up",
+    "english": "Would next weekend work?",
+    "level": 2,
+    "risk_note": "Some audiences prefer indirect invitations. Keep the meaning clear and respect a refusal immediately."
+  },
+  {
+    "situation": "flirting",
+    "goal": "ask for a date",
+    "role": "recovery",
+    "english": "Of course. No pressure.",
+    "level": 2,
+    "risk_note": "Some audiences prefer indirect invitations. Keep the meaning clear and respect a refusal immediately."
+  },
+  {
+    "situation": "flirting",
+    "goal": "suggest a casual plan",
+    "role": "say",
+    "english": "Would you like to do something this weekend?",
+    "level": 2
+  },
+  {
+    "situation": "flirting",
+    "goal": "suggest a casual plan",
+    "role": "hear",
+    "english": "I'm busy this weekend.",
+    "level": 2
+  },
+  {
+    "situation": "flirting",
+    "goal": "suggest a casual plan",
+    "role": "follow_up",
+    "english": "What about next week?",
+    "level": 2
+  },
+  {
+    "situation": "flirting",
+    "goal": "suggest a casual plan",
+    "role": "recovery",
+    "english": "No worries, another time.",
+    "level": 2
+  },
+  {
+    "situation": "flirting",
+    "goal": "check mutual interest",
+    "role": "say",
+    "english": "Can I message you tomorrow?",
+    "level": 2,
+    "risk_note": "Never treat a refusal as an invitation to suggest another contact channel."
+  },
+  {
+    "situation": "flirting",
+    "goal": "check mutual interest",
+    "role": "hear",
+    "english": "Sure, here's my number.",
+    "level": 2,
+    "risk_note": "Never treat a refusal as an invitation to suggest another contact channel."
+  },
+  {
+    "situation": "flirting",
+    "goal": "check mutual interest",
+    "role": "follow_up",
+    "english": "What's the best way to reach you?",
+    "level": 2,
+    "risk_note": "Never treat a refusal as an invitation to suggest another contact channel."
+  },
+  {
+    "situation": "flirting",
+    "goal": "check mutual interest",
+    "role": "recovery",
+    "english": "Only if you're comfortable with that.",
+    "level": 2,
+    "risk_note": "Never treat a refusal as an invitation to suggest another contact channel."
+  },
+  {
+    "situation": "flirting",
+    "goal": "keep or set a boundary",
+    "role": "say",
+    "english": "I'd rather stay with my friends.",
+    "level": 2,
+    "risk_note": "A firm boundary must survive localization across Japanese, Hebrew and Levantine Arabic."
+  },
+  {
+    "situation": "flirting",
+    "goal": "keep or set a boundary",
+    "role": "hear",
+    "english": "Oh, sorry. I understand.",
+    "level": 2,
+    "risk_note": "A firm boundary must survive localization across Japanese, Hebrew and Levantine Arabic."
+  },
+  {
+    "situation": "flirting",
+    "goal": "keep or set a boundary",
+    "role": "follow_up",
+    "english": "Thanks for understanding.",
+    "level": 2,
+    "risk_note": "A firm boundary must survive localization across Japanese, Hebrew and Levantine Arabic."
+  },
+  {
+    "situation": "flirting",
+    "goal": "keep or set a boundary",
+    "role": "recovery",
+    "english": "Please give me some space.",
+    "level": 2,
+    "risk_note": "A firm boundary must survive localization across Japanese, Hebrew and Levantine Arabic."
+  },
+  {
+    "situation": "barber",
+    "goal": "specify the length",
+    "role": "say",
+    "english": "Keep the length on top, please.",
+    "level": 2,
+    "risk_note": "Centimeters work in these locales, but expressions and clipping-guard numbers vary."
+  },
+  {
+    "situation": "barber",
+    "goal": "specify the length",
+    "role": "hear",
+    "english": "How short on the sides?",
+    "level": 2,
+    "risk_note": "Centimeters work in these locales, but expressions and clipping-guard numbers vary."
+  },
+  {
+    "situation": "barber",
+    "goal": "specify the length",
+    "role": "follow_up",
+    "english": "About ___ centimeters.",
+    "level": 2,
+    "blank_words": [
+      "one",
+      "two",
+      "three",
+      "four"
+    ],
+    "risk_note": "Centimeters work in these locales, but expressions and clipping-guard numbers vary."
+  },
+  {
+    "situation": "barber",
+    "goal": "specify the length",
+    "role": "recovery",
+    "english": "Could you show me first?",
+    "level": 2,
+    "risk_note": "Centimeters work in these locales, but expressions and clipping-guard numbers vary."
+  },
+  {
+    "situation": "barber",
+    "goal": "shape a beard",
+    "role": "say",
+    "english": "Just shape the beard, please.",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "shape a beard",
+    "role": "hear",
+    "english": "Should I trim the mustache?",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "shape a beard",
+    "role": "follow_up",
+    "english": "Keep the mustache longer.",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "shape a beard",
+    "role": "recovery",
+    "english": "That's short enough, thanks.",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "use a reference photo",
+    "role": "say",
+    "english": "Can you match this photo?",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "use a reference photo",
+    "role": "hear",
+    "english": "Do you want it exactly like this?",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "use a reference photo",
+    "role": "follow_up",
+    "english": "Keep a little more length here.",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "use a reference photo",
+    "role": "recovery",
+    "english": "Please stop there.",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "find an appointment",
+    "role": "say",
+    "english": "Do you take walk-ins?",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "find an appointment",
+    "role": "hear",
+    "english": "We're fully booked today.",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "find an appointment",
+    "role": "follow_up",
+    "english": "Is there an opening later?",
+    "level": 2
+  },
+  {
+    "situation": "barber",
+    "goal": "find an appointment",
+    "role": "recovery",
+    "english": "I'll come back tomorrow.",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "check a bag",
+    "role": "say",
+    "english": "Can I check this bag?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "check a bag",
+    "role": "hear",
+    "english": "It's over the weight limit.",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "check a bag",
+    "role": "follow_up",
+    "english": "How much is the extra fee?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "check a bag",
+    "role": "recovery",
+    "english": "Can I rearrange my luggage?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "handle a gate change",
+    "role": "say",
+    "english": "Has the gate changed?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "handle a gate change",
+    "role": "hear",
+    "english": "It's now gate B12.",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "handle a gate change",
+    "role": "follow_up",
+    "english": "How long do I have to get there?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "handle a gate change",
+    "role": "recovery",
+    "english": "Could you check the departure screen?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "protect a connection",
+    "role": "say",
+    "english": "Will I make my connection?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "protect a connection",
+    "role": "hear",
+    "english": "Boarding closes in twenty minutes.",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "protect a connection",
+    "role": "follow_up",
+    "english": "Do I need to go through security again?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "protect a connection",
+    "role": "recovery",
+    "english": "Who can help me rebook?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "track delayed baggage",
+    "role": "say",
+    "english": "How can I track my bag?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "track delayed baggage",
+    "role": "hear",
+    "english": "We can deliver it tomorrow.",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "track delayed baggage",
+    "role": "follow_up",
+    "english": "Do you need my hotel address?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "track delayed baggage",
+    "role": "recovery",
+    "english": "Can I get a reference number?",
+    "level": 2
+  },
+  {
+    "situation": "airport",
+    "goal": "answer border questions",
+    "role": "say",
+    "english": "I'm here for tourism.",
+    "level": 2,
+    "risk_note": "Border interviews vary by country. Use truthful statements only, never a scripted answer that misrepresents travel plans."
+  },
+  {
+    "situation": "airport",
+    "goal": "answer border questions",
+    "role": "hear",
+    "english": "When are you flying home?",
+    "level": 2,
+    "risk_note": "Border interviews vary by country. Use truthful statements only, never a scripted answer that misrepresents travel plans."
+  },
+  {
+    "situation": "airport",
+    "goal": "answer border questions",
+    "role": "follow_up",
+    "english": "I'm leaving on ___.",
+    "level": 2,
+    "blank_words": [
+      "Monday",
+      "Tuesday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "risk_note": "Border interviews vary by country. Use truthful statements only, never a scripted answer that misrepresents travel plans."
+  },
+  {
+    "situation": "airport",
+    "goal": "answer border questions",
+    "role": "recovery",
+    "english": "I can show you my return ticket.",
+    "level": 2,
+    "risk_note": "Border interviews vary by country. Use truthful statements only, never a scripted answer that misrepresents travel plans."
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "reserve a visit",
+    "role": "say",
+    "english": "Do I need to book ahead?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "reserve a visit",
+    "role": "hear",
+    "english": "Today's tickets are sold out.",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "reserve a visit",
+    "role": "follow_up",
+    "english": "Is there another time available?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "reserve a visit",
+    "role": "recovery",
+    "english": "Can I book for tomorrow?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "rent an audio guide",
+    "role": "say",
+    "english": "Is there an audio guide in English?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "rent an audio guide",
+    "role": "hear",
+    "english": "Yes, at the entrance.",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "rent an audio guide",
+    "role": "follow_up",
+    "english": "How much does it cost?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "rent an audio guide",
+    "role": "recovery",
+    "english": "I'll explore without one.",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "check accessibility",
+    "role": "say",
+    "english": "Are all the floors accessible?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "check accessibility",
+    "role": "hear",
+    "english": "The upper floor has stairs only.",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "check accessibility",
+    "role": "follow_up",
+    "english": "Is there a step-free route?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "check accessibility",
+    "role": "recovery",
+    "english": "Is there another accessible entrance?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "ask about a guided tour",
+    "role": "say",
+    "english": "How long is the guided tour?",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "ask about a guided tour",
+    "role": "hear",
+    "english": "About an hour.",
+    "level": 2
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "ask about a guided tour",
+    "role": "follow_up",
+    "english": "Does it include ___?",
+    "level": 2,
+    "blank_words": [
+      "the museum",
+      "the garden",
+      "the exhibition",
+      "the boat ride"
+    ]
+  },
+  {
+    "situation": "sightseeing",
+    "goal": "ask about a guided tour",
+    "role": "recovery",
+    "english": "I'll explore on my own.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "choose an alcohol-free drink",
+    "role": "say",
+    "english": "Do you have any mocktails?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "choose an alcohol-free drink",
+    "role": "hear",
+    "english": "We have three without alcohol.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "choose an alcohol-free drink",
+    "role": "follow_up",
+    "english": "Which one is less sweet?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "choose an alcohol-free drink",
+    "role": "recovery",
+    "english": "Could I get sparkling water instead?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "ask about a local specialty",
+    "role": "say",
+    "english": "What's your local specialty?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "ask about a local specialty",
+    "role": "hear",
+    "english": "Try our house cocktail.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "ask about a local specialty",
+    "role": "follow_up",
+    "english": "How strong is it?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "ask about a local specialty",
+    "role": "recovery",
+    "english": "I'd prefer something lighter.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "check entertainment",
+    "role": "say",
+    "english": "Is there live music tonight?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "check entertainment",
+    "role": "hear",
+    "english": "The band starts at nine.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "check entertainment",
+    "role": "follow_up",
+    "english": "Is there an entry fee?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "check entertainment",
+    "role": "recovery",
+    "english": "I'll come back later.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "arrange a safe ride",
+    "role": "say",
+    "english": "Could you call me a taxi?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "arrange a safe ride",
+    "role": "hear",
+    "english": "It'll be here in ten minutes.",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "arrange a safe ride",
+    "role": "follow_up",
+    "english": "Where should I wait?",
+    "level": 2
+  },
+  {
+    "situation": "bar",
+    "goal": "arrange a safe ride",
+    "role": "recovery",
+    "english": "I need a safe way home.",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "confirm a full price",
+    "role": "say",
+    "english": "Is that the total price?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "confirm a full price",
+    "role": "hear",
+    "english": "Tax is extra.",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "confirm a full price",
+    "role": "follow_up",
+    "english": "How much is it including tax?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "confirm a full price",
+    "role": "recovery",
+    "english": "Could you write the final amount?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a time",
+    "role": "say",
+    "english": "Is that ___ AM or PM?",
+    "level": 2,
+    "blank_words": [
+      "seven",
+      "eight",
+      "nine",
+      "ten"
+    ]
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a time",
+    "role": "hear",
+    "english": "It starts at seven in the evening.",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a time",
+    "role": "follow_up",
+    "english": "How early should I arrive?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a time",
+    "role": "recovery",
+    "english": "Could you show me the time?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a per-person charge",
+    "role": "say",
+    "english": "Is that price per person?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a per-person charge",
+    "role": "hear",
+    "english": "Yes, per person.",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a per-person charge",
+    "role": "follow_up",
+    "english": "How many tickets are included?",
+    "level": 2
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "clarify a per-person charge",
+    "role": "recovery",
+    "english": "I only need ___ tickets.",
+    "level": 2,
+    "blank_words": [
+      "one",
+      "two",
+      "three",
+      "four"
+    ]
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "ask for change",
+    "role": "say",
+    "english": "Do you have change for ___?",
+    "level": 2,
+    "blank_words": [
+      "a twenty",
+      "a fifty",
+      "a hundred"
+    ],
+    "risk_note": "Cash denominations/currencies vary; use local examples and avoid assuming euros everywhere."
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "ask for change",
+    "role": "hear",
+    "english": "I only have small bills.",
+    "level": 2,
+    "risk_note": "Cash denominations/currencies vary; use local examples and avoid assuming euros everywhere."
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "ask for change",
+    "role": "follow_up",
+    "english": "Can you give me smaller bills?",
+    "level": 2,
+    "risk_note": "Cash denominations/currencies vary; use local examples and avoid assuming euros everywhere."
+  },
+  {
+    "situation": "numbers_times_prices",
+    "goal": "ask for change",
+    "role": "recovery",
+    "english": "I'll get change somewhere else.",
+    "level": 2,
+    "risk_note": "Cash denominations/currencies vary; use local examples and avoid assuming euros everywhere."
+  }
+]
