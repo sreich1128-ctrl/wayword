@@ -116,13 +116,41 @@ function sitReady(sit) {
   return readiness(sit, (id) => store.isLearned(L.byId.get(id).key), ok);
 }
 
+/* ---------- levels ---------- */
+// Level 1 (Basic) is always open. A situation's Level 2 (Communicative) opens when every Level 1
+// phrase of its own is started (Learning or Locked in), or when you pass its quiz.
+const LEVELS = { 1: 'Basic', 2: 'Communicative' };
+const QUIZ_PASS = 0.8;
+const sitL2 = (sit) => (sit.level2 || []).filter((id) => { const p = L.byId.get(id); return p && !p.missing; });
+function level2Open(sit) {
+  if (!sit || !sitL2(sit).length) return false;
+  if ((store.prefs().unlocked || {})[L.lang.code]?.[sit.id]) return true;
+  const r = sitReady(sit);
+  return r.n > 0 && r.ready === r.n;
+}
+function sitReady2(sit) {
+  const ids = sitL2(sit);
+  return { n: ids.length, ready: ids.filter((id) => store.isLearned(L.byId.get(id).key)).length };
+}
+// Narrow the language's phrases and replies to the levels that are open. Call after loading a
+// language and whenever something might have unlocked.
+function applyLevels() {
+  if (!L) return;
+  const open = new Set(C.scenarios.filter(level2Open).map((x) => x.id));
+  const ok = (x, sits) => x.level !== 2 || sits.some((id) => open.has(id));
+  L.phrases = L.allPhrases.filter((p) => ok(p, [p.sit]));
+  L.replies = L.allReplies.filter((r) => ok(r, r.situations));
+}
+
 // The situation Continue teaches from: the one you picked, or automatically The basics first,
 // then the situation closest to ready (a near goal), in list order on ties.
 function focusSituation() {
   const picked = (store.prefs().focus || {})[L.lang.code];
   const sit = picked && C.scenarios.find((x) => x.id === picked);
   if (sit) return { sit, auto: false };
-  const open = C.scenarios.map((x) => ({ x, r: sitReady(x) })).filter(({ r }) => r.n && r.ready < r.n);
+  // Open = still has something to learn: Level 1, or Level 2 once that's unlocked.
+  const left = (x) => { const r = sitReady(x); if (r.ready < r.n || !level2Open(x)) return r; const r2 = sitReady2(x); return { n: r.n + r2.n, ready: r.ready + r2.ready }; };
+  const open = C.scenarios.map((x) => ({ x, r: left(x) })).filter(({ r }) => r.n && r.ready < r.n);
   const basics = open.find(({ x }) => x.id === 'basics');
   const best = basics || open.sort((a, b) => b.r.ready / b.r.n - a.r.ready / a.r.n)[0];
   return { sit: best ? best.x : null, auto: true };
@@ -777,27 +805,48 @@ function viewScenarios() {
   `, { back: `#/${lang.code}` });
 }
 
+const sitLevel = {}; // which level's page you're looking at, per situation (this visit only)
 function viewScenario(id) {
   const lang = L.lang;
   const sit = C.scenarios.find((x) => x.id === id);
   if (!sit) return go(`#/${lang.code}`);
+  applyLevels();
+  const has2 = sitL2(sit).length > 0;
+  const open2 = level2Open(sit);
+  const lvl = has2 && sitLevel[sit.id] === 2 ? 2 : 1;
   const ps = sitPhrases(sit);
   const r = sitReady(sit);
+  const r2 = sitReady2(sit);
+  const cur = lvl === 2 ? r2 : r;
   // The situation's own phrases first (the ones its readiness counts); general ones fold away below.
   const mine = new Set(sit.counts || sit.concepts);
-  const own = ps.filter((p) => mine.has(p.id));
-  const shared = ps.filter((p) => !mine.has(p.id));
-  page('home', `
-    <section class="page-head scen-head"><span class="scen-ic huge">${sit.icon}</span><div><h1>${esc(sit.label)}</h1><p>${r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`}</p>${readyBar(r)}</div></section>
-    ${sit.note ? `<p class="callout">${esc(sit.note)}</p>` : ''}
-    ${r.ready < r.n ? `<button class="cta sit-cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Get ready for ${esc(sit.label === 'The basics' ? 'the basics' : sit.label)}</button>` : ''}
-    ${audioUrls(ps).length ? `<button class="pill-btn offline-btn" data-action="save-offline" data-id="${sit.id}">${icon('download')}<span>Save for offline</span></button>` : ''}
+  const own = lvl === 2 ? sitL2(sit).map((x) => L.byId.get(x)) : ps.filter((p) => mine.has(p.id));
+  const shared = lvl === 2 ? [] : ps.filter((p) => !mine.has(p.id));
+  const hear = L.allReplies.filter((x) => x.situations.includes(sit.id) && x.level === lvl);
+  const tabs = has2 ? `<div class="seg level-seg">${[1, 2].map((n) => `<button class="seg-btn ${lvl === n ? 'on' : ''}" data-action="sit-level" data-id="${sit.id}" data-level="${n}">Level ${n} · ${LEVELS[n]}${n === 2 && !open2 ? ' 🔒' : ''}</button>`).join('')}</div>` : '';
+  const locked = lvl === 2 && !open2;
+  const body = locked ? `
+    <section class="next-step lock-card">
+      <p class="ns-k">🔒 Level 2 · ${LEVELS[2]}</p>
+      <h2>Ask, understand the answer, follow up.</h2>
+      <p class="ns-sub">${r2.n} longer phrases and ${hear.length} replies for ${esc(sit.label)}. It opens when all ${r.n} Level 1 phrases here are started (${r.ready} of ${r.n} so far), or when you pass the quiz.</p>
+      <button class="cta" data-action="sit-quiz" data-id="${sit.id}">${icon('check')} Take the quiz to skip ahead</button>
+      <p class="fine">${Math.min(8, r.n)} questions from Level 1. You build, type or pick each answer; ${Math.ceil(Math.min(8, r.n) * QUIZ_PASS)} right opens Level 2.</p>
+      ${r.ready < r.n ? `<button class="more-btn" data-action="practise-sit" data-id="${sit.id}">Keep learning Level 1</button>` : ''}
+    </section>` : `
+    ${cur.ready < cur.n ? `<button class="cta sit-cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} ${lvl === 2 ? `Practise Level 2` : `Get ready for ${esc(sit.label === 'The basics' ? 'the basics' : sit.label)}`}</button>` : ''}
+    ${audioUrls(own).length ? `<button class="pill-btn offline-btn" data-action="save-offline" data-id="${sit.id}">${icon('download')}<span>Save for offline</span></button>` : ''}
     <div class="list">${own.map((p) => phraseCard(p)).join('')}</div>
     ${shared.length ? `<details class="also"><summary><span>Also useful here <b>${shared.length}</b></span><small>General phrases from The basics and other situations</small></summary>
       <div class="list">${shared.map((p) => phraseCard(p)).join('')}</div></details>` : ''}
-    ${repliesFor(sit).length ? section('You might hear', `<div class="group pad hear-list">${repliesFor(sit).map((x) => exampleRow(x).replace('<small>', `${draftTag(x)}<small>`)).join('')}</div>`) : ''}
+    ${hear.length ? section('You might hear', `<div class="group pad hear-list">${hear.map((x) => exampleRow(x).replace('<small>', `${draftTag(x)}<small>`)).join('')}</div>`) : ''}`;
+  page('home', `
+    <section class="page-head scen-head"><span class="scen-ic huge">${sit.icon}</span><div><h1>${esc(sit.label)}</h1><p>${locked ? 'Locked' : cur.ready === cur.n ? 'Ready ✓' : `${cur.ready} of ${cur.n} ready`}${has2 ? ` · Level ${lvl}` : ''}</p>${locked ? '' : readyBar(cur)}</div></section>
+    ${tabs}
+    ${lvl === 1 && sit.note ? `<p class="callout">${esc(sit.note)}</p>` : ''}
+    ${body}
   `, { back: `#/${lang.code}` });
-  refreshOfflineBtn(ps);
+  if (!locked) refreshOfflineBtn(own);
 }
 
 function viewPatterns() {
@@ -962,7 +1011,8 @@ const typingSub = () => (typingOn() ? 'On: some reviews ask you to type the phra
 const OWN_SCRIPT = new Set(['ru', 'ar', 'he', 'ja']); // languages that need their own keyboard
 function typeOut(p) {
   const build = canBuildPhrase(p.target, !!L.lang.meta.no_spaces);
-  const say = canPracticeAloud();
+  const quiz = session?.steps[session.i]?.kind === 'quiz';
+  const say = canPracticeAloud() && !quiz; // a quiz only takes answers the app can mark
   if (!build && !say) return '';
   return `<div class="type-out">
       <p class="type-out-k">${OWN_SCRIPT.has(L.lang.meta.bcp47.split('-')[0]) ? `No ${esc(L.lang.name)} keyboard, or not sure how it’s spelled?` : 'Not sure how it’s spelled?'}</p>
@@ -970,7 +1020,7 @@ function typeOut(p) {
         ${build ? `<button class="pill-btn" data-action="pp-ask-build">${icon('puzzle')} Build it with tiles</button>` : ''}
         ${say ? `<button class="pill-btn" data-action="pp-ask-say">${icon('mic')} Say it instead</button>` : ''}
       </div>
-      <button class="link-btn center" data-action="no-type">Don’t ask me to type in ${esc(L.lang.name)}</button>
+      ${quiz ? '' : `<button class="link-btn center" data-action="no-type">Don’t ask me to type in ${esc(L.lang.name)}</button>`}
     </div>`;
 }
 
@@ -1023,8 +1073,11 @@ function freshPool(coreOnly = false) {
   if (!sit) return pool;
   // The situation's own phrases first (its `counts`), then its general ones, then everything else.
   const own = new Set(sit.counts || sit.concepts);
-  const inSit = new Set(sit.concepts);
-  return [...pool.filter((p) => own.has(p.id)), ...pool.filter((p) => inSit.has(p.id) && !own.has(p.id)), ...pool.filter((p) => !inSit.has(p.id))];
+  const l2 = level2Open(sit) ? sitL2(sit) : []; // in exchange order
+  const inSit = new Set([...sit.concepts, ...l2]);
+  const fresh2 = l2.map((id) => pool.find((p) => p.id === id)).filter(Boolean);
+  // Level 2 open: it goes first (you either finished Level 1 here or tested out of it).
+  return [...fresh2, ...pool.filter((p) => own.has(p.id)), ...pool.filter((p) => inSit.has(p.id) && !own.has(p.id) && p.level !== 2), ...pool.filter((p) => !inSit.has(p.id))];
 }
 
 function sessionPlanFor(query) {
@@ -1042,6 +1095,7 @@ function sessionPlanFor(query) {
 
 function viewSession(query) {
   const sig = `${L.lang.code}|${focusSituation().sit?.id || ''}|${query.get('mode') === 'flight' ? 'flight' : ''}`;
+  if (session?.quiz && session.lang === L.lang.code && session.i < session.steps.length) { pl = null; drawSession(); return; } // a quiz in progress
   const stale = !session || session.sig !== sig || session.i >= session.steps.length || Date.now() - session.at > 3 * 3600000;
   if (stale) {
     session = { sig, at: Date.now(), steps: sessionPlanFor(query), i: 0, results: {}, missed: new Set(), newly: 0, newlyLocked: 0, picked: null };
@@ -1051,7 +1105,7 @@ function viewSession(query) {
   drawSession();
 }
 
-const STEP_LABEL = { review: 'Review', again: 'Once more', new: 'New phrase', check: 'Quick check', listen: 'Listening', practice: 'Practice' };
+const STEP_LABEL = { quiz: 'Quiz', review: 'Review', again: 'Once more', new: 'New phrase', check: 'Quick check', listen: 'Listening', practice: 'Practice' };
 
 function drawSession() {
   const lang = L.lang;
@@ -1065,6 +1119,7 @@ function drawSession() {
   const st = s.steps[s.i];
   const top = `<div class="fc-progress"><span style="width:${Math.round((s.i / s.steps.length) * 100)}%"></span></div>
     <p class="fc-meta">${s.combo >= 2 ? `<span class="combo-chip">🔥 ${s.combo}</span>` : ''}${STEP_LABEL[st.kind]} · ${s.i + 1} of ${s.steps.length} ${['review', 'practice', 'check'].includes(st.kind) ? ladderHtml(st.ask || (st.ask = askFor(st))) : ''}</p>`;
+  if (st.kind === 'quiz' && !st.ask) st.ask = askFor(st);
 
   if (st.kind === 'listen') {
     const p = st.p;
@@ -1107,7 +1162,55 @@ function drawSession() {
   page('home', `${top}<div id="pp" class="pp">${playerInner()}</div>`, { back: home, focus: true });
 }
 
+// Start a situation's quiz: up to 8 of its own Level 1 phrases, each asked once.
+function startQuiz(sitId) {
+  const sit = C.scenarios.find((x) => x.id === sitId);
+  if (!sit) return;
+  const own = new Set(sit.counts || sit.concepts);
+  const ps = shuffle(sitPhrases(sit).filter((p) => own.has(p.id))).slice(0, 8);
+  if (!ps.length) return;
+  session = { quiz: sit.id, lang: L.lang.code, sig: `${L.lang.code}|quiz:${sit.id}`, at: Date.now(), steps: ps.map((p) => ({ kind: 'quiz', p })), i: 0, results: {}, missed: new Set(), newly: 0, newlyLocked: 0, picked: null };
+  go(`#/${L.lang.code}/session`);
+}
+
+function drawQuizDone() {
+  const lang = L.lang;
+  const s = session;
+  const sit = C.scenarios.find((x) => x.id === s.quiz);
+  const right = s.right || 0;
+  const n = s.steps.length;
+  const need = Math.ceil(n * QUIZ_PASS);
+  const pass = right >= need;
+  if (!s.result) {
+    s.result = { pass };
+    if (pass) {
+      const u = store.prefs().unlocked || {};
+      store.setPref('unlocked', { ...u, [lang.code]: { ...(u[lang.code] || {}), [sit.id]: Date.now() } });
+      // What you got right, you know: it starts its reviews like anything else you've learned.
+      for (const st of s.steps) if (s.results[st.p.key] === 'got' && !store.isLearned(st.p.key)) store.setLearned(st.p.key, true, 'quiz');
+      applyLevels();
+      sfx.done();
+    } else sfx.tap();
+  }
+  const row = (p, ok) => `<div class="row static"><span class="row-ic ${ok ? 'ok' : ''}">${icon(ok ? 'check' : 'replay')}</span>
+    <span class="row-text"><span class="row-title">${withSlots(p.english)}</span><span class="row-sub" ${nativeAttrs(lang)}>${withSlots(p.target)}</span></span></div>`;
+  page('home', `
+    <section class="done">
+      ${mascot(pass ? 'cheer' : 'happy', 'done-mascot')}
+      <h1>${pass ? `Level 2 unlocked: ${esc(sit.label)}` : 'Not this time'}</h1>
+      <p>${pass ? `${right} of ${n} right. ${esc(sit.label)} · Level 2 · ${LEVELS[2]} is open.` : `${right} of ${n} right. You need ${need}. The ones marked ↻ are the ones to work on.`}</p>
+    </section>
+    <div class="group session-summary">${s.steps.map((st) => row(st.p, s.results[st.p.key] === 'got')).join('')}</div>
+    <div class="done-actions">
+      ${pass ? `<button class="cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Start Level 2</button>`
+        : `<button class="cta" data-action="practise-sit" data-id="${sit.id}">${icon('play')} Practise ${esc(sit.label)}</button>
+           <button class="more-btn" data-action="sit-quiz" data-id="${sit.id}">Try the quiz again</button>`}
+      <a class="more-btn" href="#/${lang.code}/scenario/${sit.id}">Back to ${esc(sit.label)}</a>
+    </div>`, { back: `#/${lang.code}/scenario/${sit.id}`, focus: true });
+}
+
 function drawSessionDone() {
+  if (session.quiz) { drawQuizDone(); return; }
   const lang = L.lang;
   const s = session;
   const home = `#/${lang.code}`;
@@ -1338,6 +1441,15 @@ const fmtTime = (ms) => { const t = Math.round(ms / 1000); return `${Math.floor(
 // the quick check of brand-new phrases is always "say it".
 function askFor(st) {
   const canBuild = canBuildPhrase(st.p.target, !!L.lang.meta.no_spaces);
+  if (st.kind === 'quiz') {
+    // Only ways the app can mark itself: build, type, or pick the meaning. No self-rating.
+    const nth = session.steps.slice(0, session.i).filter((x) => x.kind === 'quiz').length;
+    const canType = st.p.type !== 'pattern' && typingOn();
+    const want = ['build', 'recognize', 'type'][nth % 3];
+    const mode = want === 'build' && canBuild ? 'build' : want === 'type' && canType ? 'type' : want === 'type' && canBuild ? 'build' : 'recognize';
+    if (mode === 'recognize') st.options = recognizeOptions(st.p);
+    return mode;
+  }
   if (st.kind === 'check') {
     // Right after learning, graded: alternate Build and Write; single words (nothing to build) are written.
     const canType = st.p.type !== 'pattern' && typingOn();
@@ -1428,7 +1540,8 @@ function sessionRate(got) {
     store.setLearned(p.key, true, 'session');
     s.newly++;
   }
-  if (st.kind !== 'again') {
+  if (st.kind === 'quiz') s.results[p.key] = got ? 'got' : 'again'; // one try each, nothing comes back
+  else if (st.kind !== 'again') {
     if (got && !s.missed.has(p.key)) s.results[p.key] = 'got';
     if (!got) { s.missed.add(p.key); s.results[p.key] = 'again'; requeue(s.steps, s.i, st); }
   }
@@ -2495,6 +2608,11 @@ document.addEventListener('click', (e) => {
     setFocus(btn.dataset.id);
     session = null;
     go(`#/${L.lang.code}/session`);
+  } else if (a === 'sit-quiz') {
+    startQuiz(btn.dataset.id);
+  } else if (a === 'sit-level') {
+    sitLevel[btn.dataset.id] = Number(btn.dataset.level);
+    viewScenario(btn.dataset.id);
   } else if (a === 'toggle-en') {
     store.setPref('showEnglish', !store.prefs().showEnglish);
     applyTheme(L && L.lang);
@@ -2694,6 +2812,7 @@ async function route() {
     await tts.loadNatural(code);
     practice = null;
   }
+  applyLevels();
   store.setPref('lastLang', code);
   applyTheme(L.lang);
 

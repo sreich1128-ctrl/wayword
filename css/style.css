@@ -1246,3 +1246,11 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 .also > summary b { display: inline-block; min-width: 24px; padding: 0 7px; border-radius: 99px; background: var(--tint); color: var(--accent-ink); text-align: center; font-size: 13px; }
 .also > summary small { font-weight: 600; color: var(--muted); font-size: 13px; }
 .also > .list { margin-top: 10px; }
+
+/* Levels on a situation page */
+.level-seg { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 2px 0 14px; background: none; padding: 0; border: 0; }
+.level-seg .seg-btn { padding: 11px 8px; border-radius: 16px; font-weight: 800; font-size: 14px; background: var(--surface); color: var(--muted); border: 2px solid var(--edge); box-shadow: 0 4px 0 var(--edge); transition: transform .06s, box-shadow .06s; }
+.level-seg .seg-btn:active { transform: translateY(4px); box-shadow: 0 0 0 var(--edge); }
+.level-seg .seg-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 4px 0 var(--lip); }
+.lock-card { display: grid; gap: 10px; }
+.lock-card h2 { font-size: 20px; }

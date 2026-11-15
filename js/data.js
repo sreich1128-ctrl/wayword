@@ -109,7 +109,9 @@ export async function loadLanguage(content, code) {
       priority: c.priority,
       type: c.type,
       english: c.english,
+      level: c.level || 1, // Wayword level (1 Basic, 2 Communicative); level 2 belongs to one situation
     };
+    if (c.situation) base.sit = c.situation;
     if (!e) return { ...base, missing: true };
     const p = { ...base, target: e.target, pron: slotPron(e.target, e.pronunciation_easy) };
     for (const f of OPTIONAL_FIELDS) if (e[f]) p[f] = e[f];
@@ -148,7 +150,7 @@ export async function loadLanguage(content, code) {
   for (const r of content.replies) {
     const own = r.same_as ? entryById.get(r.same_as) : added?.replies?.[r.id];
     if (!own?.target) continue;
-    const item = { id: `reply~${r.id}`, key: `${code}:reply~${r.id}`, target: own.target, pron: own.pronunciation_easy, english: r.english, situations: r.situations || [], answer_with: r.answer_with || [], draft: !!(own.draft || !r.same_as) };
+    const item = { id: `reply~${r.id}`, key: `${code}:reply~${r.id}`, target: own.target, pron: own.pronunciation_easy, english: r.english, situations: r.situations || [], answer_with: r.answer_with || [], level: r.level || 1, draft: !!(own.draft || !r.same_as) };
     if (own.reading) item.reading = own.reading;
     if (checked[item.id]?.status === 'match') item.native_match = true;
     extraById.set(item.id, item);
@@ -159,6 +161,8 @@ export async function loadLanguage(content, code) {
     lang,
     file,
     phrases,
+    allPhrases: phrases, // every level; `phrases` and `replies` get narrowed to what's unlocked (app.js applyLevels)
+    allReplies: replies,
     byId: byIdAll,
     extraById,
     examples,
