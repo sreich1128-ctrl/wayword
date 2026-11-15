@@ -1,0 +1,50 @@
+l2_im_near | ___の近くにいます。 | ___のちかくにいます。 | ___ noh chee-kah-koo nee ee-mahs
+l2_send_ambulance | ここに救急車をお願いできますか？ | ここにきゅうきゅうしゃをおねがいできますか？ | koh-koh nee kyoo-kyoo-shah oh oh-neh-guy deh-kee-mahs-kah
+l2_share_location | 位置情報を共有できます。 | いちじょうほうをきょうゆうできます。 | ee-chee joh-hoh oh kyoh-yoo deh-kee-mahs
+l2_getting_worse | 悪くなっています。 | わるくなっています。 | wah-roo-koo naht-teh ee-mahs
+l2_started_ago | ___前に始まりました。 | ___まえにはじまりました。 | ___ mah-eh nee hah-jee-mah-ree-mah-shee-tah
+l2_urgent_help | すぐに治療が必要です。 | すぐにちりょうがひつようです。 | soo-goo nee chee-ryoh gah hee-tsoo-yoh des
+l2_passport_stolen | パスポートを盗まれました。 | ぱすぽーとをぬすまれました。 | pah-soo-poh-toh oh noo-soo-mah-reh-mah-shee-tah
+l2_file_report | 被害届はどこで出せますか？ | ひがいとどけはどこでだせますか？ | hee-guy-toh-doh-keh wah doh-koh deh dah-seh-mahs-kah
+l2_dont_know_when | いつかははっきり分かりません。 | いつかははっきりわかりません。 | ee-tsoo-kah wah hahk-kee-ree wah-kah-ree-mah-sen
+l2_how_often | どのくらいの間隔で飲めばいいですか？ | どのくらいのかんかくでのめばいいですか？ | doh-noh koo-rai noh kahn-kah-koo deh noh-meh-bah ee des-kah
+l2_speak_pharmacist | 薬剤師と話したいです。 | やくざいしとはなしたいです。 | yah-koo-zai-shee toh hah-nah-shee-tai des
+l2_booking_nights | ___泊で予約しています。 | ___はくでよやくしています。 | ___ hah-koo deh yoh-yah-koo shee-teh ee-mahs
+l2_breakfast_time | 朝食は何時ですか？ | ちょうしょくはなんじですか？ | choh-shoh-koo wah nan-jee des-kah
+l2_early_checkin | 早めにチェックインできますか？ | はやめにちぇっくいんできますか？ | hah-yah-meh nee chek-koo-een deh-kee-mahs-kah
+l2_when_ready | いつ準備できますか？ | いつじゅんびできますか？ | ee-tsoo joon-bee deh-kee-mahs-kah
+l2_room_noisy | 部屋がうるさいです。 | へやがうるさいです。 | heh-yah gah oo-roo-sai des
+l2_quieter_room | もっと静かな部屋はありますか？ | もっとしずかなへやはありますか？ | moht-toh shee-zoo-kah-nah heh-yah wah ah-ree-mahs-kah
+l2_speak_manager | 責任者の方と話せますか？ | せきにんしゃのかたとはなせますか？ | seh-kee-neen-shah noh kah-tah toh hah-nah-seh-mahs-kah
+l2_late_checkout | チェックアウトを遅くできますか？ | ちぇっくあうとをおそくできますか？ | chek-koo-ah-oo-toh oh oh-soh-koo deh-kee-mahs-kah
+l2_how_much_extra | 追加でいくらですか？ | ついかでいくらですか？ | tsoo-ee-kah deh ee-koo-rah des-kah
+l2_right_way | この道で合っていますか？ | このみちであっていますか？ | koh-noh mee-chee deh aht-teh ee-mahs-kah
+l2_after_intersection | 交差点の先ですか？ | こうさてんのさきですか？ | koh-sah-ten noh sah-kee des-kah
+l2_walk_there | ここから歩いて行けますか？ | ここからあるいていけますか？ | koh-koh kah-rah ah-roo-ee-teh ee-keh-mahs-kah
+l2_quicker_way | もっと早い行き方はありますか？ | もっとはやいいきかたはありますか？ | moht-toh hah-yai ee-kee-kah-tah wah ah-ree-mahs-kah
+l2_which_exit | どの出口から出ればいいですか？ | どのでぐちからでればいいですか？ | doh-noh deh-goo-chee kah-rah deh-reh-bah ee des-kah
+l2_is_elevator | エレベーターはありますか？ | えれべーたーはありますか？ | eh-reh-beh-tah wah ah-ree-mahs-kah
+r:l2_are_you_safe | 安全な場所にいますか？ | あんぜんなばしょにいますか？ | ahn-zen nah bah-shoh nee ee-mahs-kah
+r:l2_when_start | いつからですか？ | いつからですか？ | ee-tsoo kah-rah des-kah
+r:l2_where_last | 最後に見たのはどこですか？ | さいごにみたのはどこですか？ | sai-goh nee mee-tah noh wah doh-koh des-kah
+r:l2_any_allergies | アレルギーはありますか？ | あれるぎーはありますか？ | ah-reh-roo-ghee wah ah-ree-mahs-kah
+r:l2_have_insurance | 保険に入っていますか？ | ほけんにはいっていますか？ | hoh-ken nee hait-teh ee-mahs-kah
+r:l2_see_passport | パスポートを拝見できますか？ | ぱすぽーとをはいけんできますか？ | pah-soo-poh-toh oh hai-ken deh-kee-mahs-kah
+r:l2_room_not_ready | お部屋はまだ準備中です。 | おへやはまだじゅんびちゅうです。 | oh-heh-yah wah mah-dah joon-bee-choo des
+r:l2_can_move_you | お部屋を変更できます。 | おへやをへんこうできます。 | oh-heh-yah oh hen-koh deh-kee-mahs
+r:l2_extra_fee | 追加料金がかかります。 | ついかりょうきんがかかります。 | tsoo-ee-kah ryoh-keen gah kah-kah-ree-mahs
+r:l2_left_at_light | 信号を左に曲がってください。 | しんごうをひだりにまがってください。 | sheen-goh oh hee-dah-ree nee mah-gaht-teh koo-dah-sai
+r:l2_ten_minutes | 十分ほどです。 | じゅっぷんほどです。 | joop-poon hoh-doh des
+r:l2_exit_three | 三番出口を使ってください。 | さんばんでぐちをつかってください。 | sahn-bahn deh-goo-chee oh tsoo-kaht-teh koo-dah-sai
+x:l2_im_near~hotel | ホテルの近くにいます。 | ほてるのちかくにいます。 | hoh-teh-roo noh chee-kah-koo nee ee-mahs
+x:l2_im_near~station | 駅の近くにいます。 | えきのちかくにいます。 | eh-kee noh chee-kah-koo nee ee-mahs
+x:l2_im_near~airport | 空港の近くにいます。 | くうこうのちかくにいます。 | koo-koh noh chee-kah-koo nee ee-mahs
+x:l2_im_near~pharmacy | 薬局の近くにいます。 | やっきょくのちかくにいます。 | yak-kyoh-koo noh chee-kah-koo nee ee-mahs
+x:l2_started_ago~hour | 一時間前に始まりました。 | いちじかんまえにはじまりました。 | ee-chee-jee-kahn mah-eh nee hah-jee-mah-ree-mah-shee-tah
+x:l2_started_ago~two_hours | 二時間前に始まりました。 | にじかんまえにはじまりました。 | nee-jee-kahn mah-eh nee hah-jee-mah-ree-mah-shee-tah
+x:l2_started_ago~day | 一日前に始まりました。 | いちにちまえにはじまりました。 | ee-chee-nee-chee mah-eh nee hah-jee-mah-ree-mah-shee-tah
+x:l2_started_ago~three_days | 三日前に始まりました。 | みっかまえにはじまりました。 | meek-kah mah-eh nee hah-jee-mah-ree-mah-shee-tah
+x:l2_booking_nights~two | 二泊で予約しています。 | にはくでよやくしています。 | nee-hah-koo deh yoh-yah-koo shee-teh ee-mahs
+x:l2_booking_nights~three | 三泊で予約しています。 | さんぱくでよやくしています。 | sahn-pah-koo deh yoh-yah-koo shee-teh ee-mahs
+x:l2_booking_nights~four | 四泊で予約しています。 | よんはくでよやくしています。 | yon-hah-koo deh yoh-yah-koo shee-teh ee-mahs
+x:l2_booking_nights~five | 五泊で予約しています。 | ごはくでよやくしています。 | goh-hah-koo deh yoh-yah-koo shee-teh ee-mahs

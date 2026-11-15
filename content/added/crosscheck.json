@@ -10,68 +10,68 @@
   },
   "summary": {
     "pt-PT": {
-      "match": 43,
-      "close": 13,
-      "differs": 34,
-      "none": 192,
-      "total": 282
+      "match": 45,
+      "close": 16,
+      "differs": 37,
+      "none": 231,
+      "total": 329
     },
     "es": {
-      "match": 60,
-      "close": 16,
+      "match": 64,
+      "close": 19,
       "differs": 24,
-      "none": 182,
-      "total": 282
+      "none": 222,
+      "total": 329
     },
     "fr": {
-      "match": 60,
-      "close": 12,
-      "differs": 32,
-      "none": 178,
-      "total": 282
+      "match": 61,
+      "close": 13,
+      "differs": 40,
+      "none": 215,
+      "total": 329
     },
     "it": {
-      "match": 63,
+      "match": 69,
       "close": 12,
-      "differs": 21,
-      "none": 186,
-      "total": 282
+      "differs": 23,
+      "none": 225,
+      "total": 329
     },
     "ro": {
       "match": 20,
       "close": 6,
-      "differs": 10,
-      "none": 246,
-      "total": 282
+      "differs": 11,
+      "none": 292,
+      "total": 329
     },
     "ru": {
-      "match": 67,
+      "match": 75,
       "close": 9,
-      "differs": 35,
-      "none": 171,
-      "total": 282
+      "differs": 37,
+      "none": 208,
+      "total": 329
     },
     "ja": {
-      "match": 24,
-      "close": 5,
-      "differs": 48,
-      "none": 205,
-      "total": 282
+      "match": 26,
+      "close": 6,
+      "differs": 49,
+      "none": 248,
+      "total": 329
     },
     "he": {
-      "match": 30,
+      "match": 32,
       "close": 7,
-      "differs": 19,
-      "none": 226,
-      "total": 282
+      "differs": 21,
+      "none": 269,
+      "total": 329
     },
     "ar-levantine": {
       "match": 12,
       "close": 2,
       "differs": 3,
-      "none": 237,
-      "total": 282,
-      "formal-only": 28
+      "none": 282,
+      "total": 329,
+      "formal-only": 30
     }
   },
   "results": {
@@ -1238,6 +1238,179 @@
         "english": "Could you use the meter?",
         "draft": "Pode ligar o taxímetro?",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "Pode mandar uma ambulância para aqui?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "Posso partilhar a minha localização.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "differs",
+        "english": "It's getting worse.",
+        "draft": "Está a piorar.",
+        "native": [
+          {
+            "text": "Está piorando.",
+            "lang": "por",
+            "id": 5711838
+          }
+        ]
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "Preciso de assistência médica urgente.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "Roubaram-me o passaporte.",
+        "native": [
+          {
+            "text": "Roubaram-me o passaporte.",
+            "lang": "por",
+            "id": 1143776
+          },
+          {
+            "text": "Alguém roubou o meu passaporte.",
+            "lang": "por",
+            "id": 952954
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "Onde posso apresentar queixa?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "Não sei exatamente quando.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "De quanto em quanto tempo devo tomar?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "Preciso de falar com um farmacêutico.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "none",
+        "english": "What time is breakfast?",
+        "draft": "A que horas é o pequeno-almoço?",
+        "native": []
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "É possível fazer o check-in mais cedo?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "close",
+        "english": "When will it be ready?",
+        "draft": "Quando estará pronto?",
+        "native": [
+          {
+            "text": "Quando ficará pronto?",
+            "lang": "por",
+            "id": 1150405
+          }
+        ]
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "O meu quarto é muito barulhento.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "Há um quarto mais sossegado?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "Posso falar com o gerente?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "Posso fazer o check-out mais tarde?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "Quanto é a mais?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "differs",
+        "english": "Am I going the right way?",
+        "draft": "Estou a ir no caminho certo?",
+        "native": [
+          {
+            "text": "Estou indo na direção certa?",
+            "lang": "por",
+            "id": 2431112
+          }
+        ]
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "Depois do cruzamento?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "Dá para ir a pé daqui?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "Há um caminho mais rápido?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "Que saída devo usar?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "match",
+        "english": "Is there an elevator?",
+        "draft": "Há elevador?",
+        "native": [
+          {
+            "text": "Há elevador?",
+            "lang": "por",
+            "id": 383816
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "differs",
@@ -2492,6 +2665,78 @@
         "draft": "Quanto é até ao centro?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "Estou perto do hotel.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "none",
+        "english": "I'm near the train station.",
+        "draft": "Estou perto da estação de comboios.",
+        "native": []
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "Estou perto do aeroporto.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "Estou perto da farmácia.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "Começou há uma hora.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "Começou há duas horas.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "Começou há um dia.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "Começou há três dias.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "A minha reserva é para duas noites.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "A minha reserva é para três noites.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "A minha reserva é para quatro noites.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "A minha reserva é para cinco noites.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -2916,6 +3161,116 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "É preço fixo.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "Está num sítio seguro?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "none",
+        "english": "When did it start?",
+        "draft": "Quando começou?",
+        "native": []
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "Onde o viu pela última vez?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "close",
+        "english": "Do you have any allergies?",
+        "draft": "Tem alguma alergia?",
+        "native": [
+          {
+            "text": "Você tem alguma alergia?",
+            "lang": "por",
+            "id": 3174375
+          },
+          {
+            "text": "Vocês têm alguma alergia?",
+            "lang": "por",
+            "id": 3174376
+          },
+          {
+            "text": "Tens alguma alergia?",
+            "lang": "por",
+            "id": 3174374
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "differs",
+        "english": "Do you have insurance?",
+        "draft": "Tem seguro?",
+        "native": [
+          {
+            "text": "Você tem seguro?",
+            "lang": "por",
+            "id": 8575216
+          },
+          {
+            "text": "Vocês têm seguro?",
+            "lang": "por",
+            "id": 8575220
+          }
+        ]
+      },
+      "reply~l2_see_passport": {
+        "status": "close",
+        "english": "Can I see your passport?",
+        "draft": "Posso ver o seu passaporte?",
+        "native": [
+          {
+            "text": "Posso ver seu passaporte?",
+            "lang": "por",
+            "id": 405348
+          },
+          {
+            "text": "Eu posso ver seu passaporte?",
+            "lang": "por",
+            "id": 11099260
+          }
+        ]
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "O seu quarto ainda não está pronto.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "Podemos mudá-lo de quarto.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "Há uma taxa adicional.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "Vire à esquerda no semáforo.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "Fica a uns dez minutos.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "Use a saída três.",
         "native": []
       }
     },
@@ -4170,6 +4525,209 @@
         "english": "Could you use the meter?",
         "draft": "¿Puede poner el taxímetro?",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "¿Puede mandar una ambulancia aquí?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "Puedo compartir mi ubicación.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "match",
+        "english": "It's getting worse.",
+        "draft": "Está empeorando.",
+        "native": [
+          {
+            "text": "Está empeorando cada vez más.",
+            "lang": "spa",
+            "id": 2192803
+          },
+          {
+            "text": "Va de mal en peor.",
+            "lang": "spa",
+            "id": 2192804
+          },
+          {
+            "text": "Empeora.",
+            "lang": "spa",
+            "id": 1638687
+          },
+          {
+            "text": "Está empeorando.",
+            "lang": "spa",
+            "id": 5715453
+          }
+        ]
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "Necesito atención médica urgente.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "Me robaron el pasaporte.",
+        "native": [
+          {
+            "text": "Me han robado el pasaporte.",
+            "lang": "spa",
+            "id": 534046
+          },
+          {
+            "text": "Alguien me ha robado el pasaporte.",
+            "lang": "spa",
+            "id": 2031468
+          },
+          {
+            "text": "Me robaron el pasaporte.",
+            "lang": "spa",
+            "id": 6699364
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "¿Dónde puedo poner una denuncia?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "No sé exactamente cuándo.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "¿Cada cuánto debo tomarlo?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "Necesito hablar con un farmacéutico.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "match",
+        "english": "What time is breakfast?",
+        "draft": "¿A qué hora es el desayuno?",
+        "native": [
+          {
+            "text": "¿A qué hora es el desayuno?",
+            "lang": "spa",
+            "id": 6678901
+          },
+          {
+            "text": "¿A qué hora desayunamos?",
+            "lang": "spa",
+            "id": 656133
+          }
+        ]
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "¿Es posible hacer el check-in antes?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "close",
+        "english": "When will it be ready?",
+        "draft": "¿Cuándo estará lista?",
+        "native": [
+          {
+            "text": "¿Cuándo estará listo?",
+            "lang": "spa",
+            "id": 1435729
+          }
+        ]
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "Mi habitación es muy ruidosa.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "¿Hay una habitación más tranquila?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "¿Puedo hablar con el gerente?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "¿Puedo dejar la habitación más tarde?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "¿Cuánto más cuesta?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "none",
+        "english": "Am I going the right way?",
+        "draft": "¿Voy por buen camino?",
+        "native": []
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "¿Después del cruce?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "¿Se puede ir caminando desde aquí?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "¿Hay un camino más rápido?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "¿Qué salida debo tomar?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "match",
+        "english": "Is there an elevator?",
+        "draft": "¿Hay ascensor?",
+        "native": [
+          {
+            "text": "¿Hay ascensor?",
+            "lang": "spa",
+            "id": 456066
+          },
+          {
+            "text": "¿Hay un ascensor?",
+            "lang": "spa",
+            "id": 5130088
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -5479,6 +6037,78 @@
         "draft": "¿Cuánto cuesta hasta el centro?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "Estoy cerca del hotel.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "none",
+        "english": "I'm near the train station.",
+        "draft": "Estoy cerca de la estación de tren.",
+        "native": []
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "Estoy cerca del aeropuerto.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "Estoy cerca de la farmacia.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "Empezó hace una hora.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "Empezó hace dos horas.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "Empezó hace un día.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "Empezó hace tres días.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "Mi reserva es para dos noches.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "Mi reserva es para tres noches.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "Mi reserva es para cuatro noches.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "Mi reserva es para cinco noches.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "close",
         "english": "For here or to go?",
@@ -5920,6 +6550,105 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "Es precio fijo.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "¿Está en un lugar seguro?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "none",
+        "english": "When did it start?",
+        "draft": "¿Cuándo empezó?",
+        "native": []
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "¿Dónde lo tuvo por última vez?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "close",
+        "english": "Do you have any allergies?",
+        "draft": "¿Tiene alguna alergia?",
+        "native": [
+          {
+            "text": "¿Tienes alguna alergia?",
+            "lang": "spa",
+            "id": 6694199
+          },
+          {
+            "text": "¿Tenéis alguna alergia?",
+            "lang": "spa",
+            "id": 1984648
+          },
+          {
+            "text": "¿Eres alérgica a algo?",
+            "lang": "spa",
+            "id": 3302362
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "none",
+        "english": "Do you have insurance?",
+        "draft": "¿Tiene seguro?",
+        "native": []
+      },
+      "reply~l2_see_passport": {
+        "status": "close",
+        "english": "Can I see your passport?",
+        "draft": "¿Me permite su pasaporte?",
+        "native": [
+          {
+            "text": "¿Me permite ver su pasaporte?",
+            "lang": "spa",
+            "id": 434387
+          },
+          {
+            "text": "¿Puedo ver su pasaporte?",
+            "lang": "spa",
+            "id": 507364
+          }
+        ]
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "Su habitación todavía no está lista.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "Podemos cambiarlo de habitación.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "Hay un cargo adicional.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "Gire a la izquierda en el semáforo.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "Está a unos diez minutos.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "Use la salida tres.",
         "native": []
       }
     },
@@ -7258,6 +7987,180 @@
         "english": "Could you use the meter?",
         "draft": "Vous pouvez mettre le compteur ?",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "Vous pouvez envoyer une ambulance ici ?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "Je peux partager ma position.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "differs",
+        "english": "It's getting worse.",
+        "draft": "Ça empire.",
+        "native": [
+          {
+            "text": "C'est de pire en pire.",
+            "lang": "fra",
+            "id": 1000803
+          }
+        ]
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "J'ai besoin de soins médicaux urgents.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "On m'a volé mon passeport.",
+        "native": [
+          {
+            "text": "On m'a volé mon passeport.",
+            "lang": "fra",
+            "id": 15109
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "Où est-ce que je peux porter plainte ?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "Je ne sais pas exactement quand.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "Je dois le prendre tous les combien ?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "J'ai besoin de parler à un pharmacien.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "differs",
+        "english": "What time is breakfast?",
+        "draft": "Le petit-déjeuner est à quelle heure ?",
+        "native": [
+          {
+            "text": "À quelle heure est le petit-déjeuner ?",
+            "lang": "fra",
+            "id": 2206649
+          }
+        ]
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "Est-ce qu'on peut arriver plus tôt ?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "differs",
+        "english": "When will it be ready?",
+        "draft": "Elle sera prête quand ?",
+        "native": [
+          {
+            "text": "Quand sera-ce prêt ?",
+            "lang": "fra",
+            "id": 1159322
+          }
+        ]
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "Ma chambre est trop bruyante.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "Il y a une chambre plus calme ?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "Je peux parler au responsable ?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "Je peux libérer la chambre plus tard ?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "C'est combien en plus ?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "differs",
+        "english": "Am I going the right way?",
+        "draft": "Je vais dans la bonne direction ?",
+        "native": [
+          {
+            "text": "Suis-je sur la bonne voie ?",
+            "lang": "fra",
+            "id": 11429
+          }
+        ]
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "Après le carrefour ?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "On peut y aller à pied d'ici ?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "Il y a un chemin plus rapide ?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "Je prends quelle sortie ?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "differs",
+        "english": "Is there an elevator?",
+        "draft": "Il y a un ascenseur ?",
+        "native": [
+          {
+            "text": "Y a-t-il un ascenseur ?",
+            "lang": "fra",
+            "id": 383818
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -8600,6 +9503,84 @@
         "draft": "C'est combien jusqu'au centre ?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "Je suis près de l'hôtel.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "close",
+        "english": "I'm near the train station.",
+        "draft": "Je suis près de la gare.",
+        "native": [
+          {
+            "text": "Je suis proche de la gare.",
+            "lang": "fra",
+            "id": 12900954
+          }
+        ]
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "Je suis près de l'aéroport.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "Je suis près de la pharmacie.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "Ça a commencé il y a une heure.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "Ça a commencé il y a deux heures.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "Ça a commencé il y a un jour.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "Ça a commencé il y a trois jours.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "Ma réservation est pour deux nuits.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "Ma réservation est pour trois nuits.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "Ma réservation est pour quatre nuits.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "Ma réservation est pour cinq nuits.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -9158,6 +10139,111 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "C'est un prix fixe.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "Vous êtes en sécurité ?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "differs",
+        "english": "When did it start?",
+        "draft": "Ça a commencé quand ?",
+        "native": [
+          {
+            "text": "Quand cela a-t-il commencé ?",
+            "lang": "fra",
+            "id": 13116199
+          }
+        ]
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "Où l'avez-vous vu pour la dernière fois ?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "differs",
+        "english": "Do you have any allergies?",
+        "draft": "Vous avez des allergies ?",
+        "native": [
+          {
+            "text": "Avez-vous de quelconques allergies ?",
+            "lang": "fra",
+            "id": 553059
+          },
+          {
+            "text": "As-tu la moindre allergie ?",
+            "lang": "fra",
+            "id": 4601850
+          },
+          {
+            "text": "Avez-vous des allergies ?",
+            "lang": "fra",
+            "id": 7702035
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "none",
+        "english": "Do you have insurance?",
+        "draft": "Vous avez une assurance ?",
+        "native": []
+      },
+      "reply~l2_see_passport": {
+        "status": "differs",
+        "english": "Can I see your passport?",
+        "draft": "Je peux voir votre passeport ?",
+        "native": [
+          {
+            "text": "Puis-je voir votre passeport ?",
+            "lang": "fra",
+            "id": 13096
+          },
+          {
+            "text": "Puis-je voir votre passeport ?",
+            "lang": "fra",
+            "id": 3047340
+          }
+        ]
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "Votre chambre n'est pas encore prête.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "On peut vous changer de chambre.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "Il y a un supplément.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "Tournez à gauche au feu.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "C'est à dix minutes environ.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "Prenez la sortie trois.",
         "native": []
       }
     },
@@ -10402,6 +11488,183 @@
         "english": "Could you use the meter?",
         "draft": "Può accendere il tassametro?",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "Può mandare un'ambulanza qui?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "Posso condividere la mia posizione.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "match",
+        "english": "It's getting worse.",
+        "draft": "Sta peggiorando.",
+        "native": [
+          {
+            "text": "Sta peggiorando.",
+            "lang": "ita",
+            "id": 5545987
+          }
+        ]
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "Ho bisogno di cure mediche urgenti.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "Mi hanno rubato il passaporto.",
+        "native": [
+          {
+            "text": "Mi è stato rubato il passaporto.",
+            "lang": "ita",
+            "id": 2843276
+          },
+          {
+            "text": "Qualcuno mi ha rubato il passaporto.",
+            "lang": "ita",
+            "id": 1710161
+          },
+          {
+            "text": "Qualcuno mi rubò il portafoglio.",
+            "lang": "ita",
+            "id": 1710162
+          },
+          {
+            "text": "Mi hanno fregato il passaporto.",
+            "lang": "ita",
+            "id": 4279542
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "Dove posso fare la denuncia?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "Non so esattamente quando.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "Ogni quanto devo prenderlo?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "Ho bisogno di parlare con un farmacista.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "match",
+        "english": "What time is breakfast?",
+        "draft": "A che ora è la colazione?",
+        "native": [
+          {
+            "text": "A che ora è la colazione?",
+            "lang": "ita",
+            "id": 11728472
+          }
+        ]
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "È possibile fare il check-in in anticipo?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "none",
+        "english": "When will it be ready?",
+        "draft": "Quando sarà pronta?",
+        "native": []
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "La mia camera è troppo rumorosa.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "C'è una camera più tranquilla?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "Posso parlare con il direttore?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "Posso fare il check-out più tardi?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "Quanto costa in più?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "none",
+        "english": "Am I going the right way?",
+        "draft": "Sto andando nella direzione giusta?",
+        "native": []
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "Dopo l'incrocio?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "Ci si arriva a piedi da qui?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "C'è una strada più veloce?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "Quale uscita devo prendere?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "match",
+        "english": "Is there an elevator?",
+        "draft": "C'è un ascensore?",
+        "native": [
+          {
+            "text": "C'è un ascensore?",
+            "lang": "ita",
+            "id": 1142911
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -11717,6 +12980,84 @@
         "draft": "Quanto costa fino al centro?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "Sono vicino/a all'hotel.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "differs",
+        "english": "I'm near the train station.",
+        "draft": "Sono vicino/a alla stazione.",
+        "native": [
+          {
+            "text": "Sono vicino alla stazione ferroviaria.",
+            "lang": "ita",
+            "id": 12900955
+          }
+        ]
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "Sono vicino/a all'aeroporto.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "Sono vicino/a alla farmacia.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "È iniziato un'ora fa.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "È iniziato due ore fa.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "È iniziato un giorno fa.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "È iniziato tre giorni fa.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "La mia prenotazione è per due notti.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "La mia prenotazione è per tre notti.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "La mia prenotazione è per quattro notti.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "La mia prenotazione è per cinque notti.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "differs",
         "english": "For here or to go?",
@@ -12188,6 +13529,131 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "È un prezzo fisso.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "È in un posto sicuro?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "differs",
+        "english": "When did it start?",
+        "draft": "Quando è iniziato?",
+        "native": [
+          {
+            "text": "Quando è cominciato?",
+            "lang": "ita",
+            "id": 5505834
+          },
+          {
+            "text": "Quando è cominciata?",
+            "lang": "ita",
+            "id": 5505836
+          }
+        ]
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "Dove l'ha visto l'ultima volta?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "match",
+        "english": "Do you have any allergies?",
+        "draft": "Ha qualche allergia?",
+        "native": [
+          {
+            "text": "Hai delle allergie?",
+            "lang": "ita",
+            "id": 2838407
+          },
+          {
+            "text": "Tu hai delle allergie?",
+            "lang": "ita",
+            "id": 2838408
+          },
+          {
+            "text": "Ha delle allergie?",
+            "lang": "ita",
+            "id": 2838410
+          },
+          {
+            "text": "Lei ha delle allergie?",
+            "lang": "ita",
+            "id": 2838411
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "match",
+        "english": "Do you have insurance?",
+        "draft": "Ha un'assicurazione?",
+        "native": [
+          {
+            "text": "Hai un'assicurazione?",
+            "lang": "ita",
+            "id": 5546125
+          },
+          {
+            "text": "Tu hai un'assicurazione?",
+            "lang": "ita",
+            "id": 5546126
+          },
+          {
+            "text": "Ha un'assicurazione?",
+            "lang": "ita",
+            "id": 5546127
+          },
+          {
+            "text": "Lei ha un'assicurazione?",
+            "lang": "ita",
+            "id": 5546129
+          }
+        ]
+      },
+      "reply~l2_see_passport": {
+        "status": "none",
+        "english": "Can I see your passport?",
+        "draft": "Posso vedere il suo passaporto?",
+        "native": []
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "La sua camera non è ancora pronta.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "Possiamo cambiarle camera.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "C'è un supplemento.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "Giri a sinistra al semaforo.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "È a circa dieci minuti.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "Prenda l'uscita tre.",
         "native": []
       }
     },
@@ -13033,6 +14499,144 @@
         "status": "none",
         "english": "Could you use the meter?",
         "draft": "Puteți porni aparatul de taxat?",
+        "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "Puteți trimite o ambulanță aici?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "Pot să vă trimit locația mea.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "none",
+        "english": "It's getting worse.",
+        "draft": "Se înrăutățește.",
+        "native": []
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "Am nevoie urgentă de îngrijiri medicale.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "none",
+        "english": "My passport was stolen.",
+        "draft": "Mi s-a furat pașaportul.",
+        "native": []
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "Unde pot depune o plângere?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "Nu știu exact când.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "Cât de des trebuie să îl iau?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "Trebuie să vorbesc cu un farmacist.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "none",
+        "english": "What time is breakfast?",
+        "draft": "La ce oră este micul dejun?",
+        "native": []
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "Se poate face check-in mai devreme?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "none",
+        "english": "When will it be ready?",
+        "draft": "Când va fi gata?",
+        "native": []
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "Camera mea este prea zgomotoasă.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "Aveți o cameră mai liniștită?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "Pot vorbi cu managerul?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "Pot face check-out mai târziu?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "Cât costă în plus?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "none",
+        "english": "Am I going the right way?",
+        "draft": "Merg în direcția bună?",
+        "native": []
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "După intersecție?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "Pot merge pe jos de aici?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "Există un drum mai rapid?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "Pe ce ieșire să o iau?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "none",
+        "english": "Is there an elevator?",
+        "draft": "Există lift?",
         "native": []
       },
       "where_is~word_train_station": {
@@ -13972,6 +15576,78 @@
         "draft": "Cât costă până în centru?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "Sunt lângă hotel.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "none",
+        "english": "I'm near the train station.",
+        "draft": "Sunt lângă gară.",
+        "native": []
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "Sunt lângă aeroport.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "Sunt lângă farmacie.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "A început acum o oră.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "A început acum două ore.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "A început acum o zi.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "A început acum trei zile.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "Rezervarea mea este pentru două nopți.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "Rezervarea mea este pentru trei nopți.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "Rezervarea mea este pentru patru nopți.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "Rezervarea mea este pentru cinci nopți.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -14263,6 +15939,84 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "E preț fix.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "Sunteți într-un loc sigur?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "none",
+        "english": "When did it start?",
+        "draft": "Când a început?",
+        "native": []
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "Unde l-ați avut ultima dată?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "differs",
+        "english": "Do you have any allergies?",
+        "draft": "Aveți vreo alergie?",
+        "native": [
+          {
+            "text": "Aveți alergii?",
+            "lang": "ron",
+            "id": 13741706
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "none",
+        "english": "Do you have insurance?",
+        "draft": "Aveți asigurare?",
+        "native": []
+      },
+      "reply~l2_see_passport": {
+        "status": "none",
+        "english": "Can I see your passport?",
+        "draft": "Pot să văd pașaportul?",
+        "native": []
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "Camera dumneavoastră nu este gata încă.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "Vă putem muta.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "Există o taxă suplimentară.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "Faceți stânga la semafor.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "Sunt cam zece minute.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "Luați-o pe ieșirea trei.",
         "native": []
       }
     },
@@ -15669,6 +17423,220 @@
         "english": "Could you use the meter?",
         "draft": "Включите счётчик, пожалуйста.",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "Можете прислать сюда скорую?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "Я могу отправить геолокацию.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "match",
+        "english": "It's getting worse.",
+        "draft": "Становится хуже.",
+        "native": [
+          {
+            "text": "Становится хуже.",
+            "lang": "rus",
+            "id": 5545939
+          },
+          {
+            "text": "Становится всё хуже и хуже.",
+            "lang": "rus",
+            "id": 2800588
+          },
+          {
+            "text": "Это становится ещё хуже.",
+            "lang": "rus",
+            "id": 3647175
+          }
+        ]
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "Мне нужна срочная медицинская помощь.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "У меня украли паспорт.",
+        "native": [
+          {
+            "text": "У меня паспорт украли.",
+            "lang": "rus",
+            "id": 2424539
+          },
+          {
+            "text": "Кто-то украл мой паспорт.",
+            "lang": "rus",
+            "id": 1464567
+          },
+          {
+            "text": "Кто-то украл у меня паспорт.",
+            "lang": "rus",
+            "id": 6140379
+          },
+          {
+            "text": "У меня украли паспорт.",
+            "lang": "rus",
+            "id": 572302
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "Где можно написать заявление?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "Не знаю точно когда.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "Как часто его принимать?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "Мне нужно поговорить с фармацевтом.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "match",
+        "english": "What time is breakfast?",
+        "draft": "Во сколько завтрак?",
+        "native": [
+          {
+            "text": "Во сколько завтрак?",
+            "lang": "rus",
+            "id": 4332834
+          }
+        ]
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "Можно заселиться пораньше?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "match",
+        "english": "When will it be ready?",
+        "draft": "Когда он будет готов?",
+        "native": [
+          {
+            "text": "Когда будет готово?",
+            "lang": "rus",
+            "id": 2732890
+          },
+          {
+            "text": "Когда он будет готов?",
+            "lang": "rus",
+            "id": 5285930
+          }
+        ]
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "В моём номере слишком шумно.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "Есть номер потише?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "Можно поговорить с менеджером?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "Можно выехать позже?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "Сколько это будет стоить?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "match",
+        "english": "Am I going the right way?",
+        "draft": "Я правильно иду?",
+        "native": [
+          {
+            "text": "Я иду верной дорогой?",
+            "lang": "rus",
+            "id": 4229435
+          },
+          {
+            "text": "Я правильно иду?",
+            "lang": "rus",
+            "id": 4229446
+          }
+        ]
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "После перекрёстка?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "Туда можно дойти пешком?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "Есть путь быстрее?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "Какой выход мне нужен?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "match",
+        "english": "Is there an elevator?",
+        "draft": "Здесь есть лифт?",
+        "native": [
+          {
+            "text": "Здесь есть лифт?",
+            "lang": "rus",
+            "id": 3572499
+          },
+          {
+            "text": "Лифт есть?",
+            "lang": "rus",
+            "id": 5130087
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -17095,6 +19063,78 @@
         "draft": "Сколько стоит до центра?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "Я рядом с отелем.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "none",
+        "english": "I'm near the train station.",
+        "draft": "Я рядом с вокзалом.",
+        "native": []
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "Я рядом с аэропортом.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "Я рядом с аптекой.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "Это началось час назад.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "Это началось два часа назад.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "Это началось день назад.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "Это началось три дня назад.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "У меня бронь на две ночи.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "У меня бронь на три ночи.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "У меня бронь на четыре ночи.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "У меня бронь на пять ночей.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -17608,6 +19648,137 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "Цена фиксированная.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "Вы в безопасном месте?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "match",
+        "english": "When did it start?",
+        "draft": "Когда это началось?",
+        "native": [
+          {
+            "text": "Когда это началось?",
+            "lang": "rus",
+            "id": 4694929
+          },
+          {
+            "text": "Когда он начался?",
+            "lang": "rus",
+            "id": 5505456
+          },
+          {
+            "text": "Когда она началась?",
+            "lang": "rus",
+            "id": 5505457
+          },
+          {
+            "text": "Когда оно началось?",
+            "lang": "rus",
+            "id": 5505458
+          }
+        ]
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "Где вы его видели в последний раз?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "differs",
+        "english": "Do you have any allergies?",
+        "draft": "У вас есть аллергия?",
+        "native": [
+          {
+            "text": "У вас есть аллергия на что-нибудь?",
+            "lang": "rus",
+            "id": 514203
+          },
+          {
+            "text": "У тебя есть аллергия на что-нибудь?",
+            "lang": "rus",
+            "id": 5217802
+          },
+          {
+            "text": "У Вас есть на что-нибудь аллергия?",
+            "lang": "rus",
+            "id": 8641872
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "match",
+        "english": "Do you have insurance?",
+        "draft": "У вас есть страховка?",
+        "native": [
+          {
+            "text": "У тебя есть страховка?",
+            "lang": "rus",
+            "id": 4765442
+          },
+          {
+            "text": "У вас есть страховка?",
+            "lang": "rus",
+            "id": 4765443
+          }
+        ]
+      },
+      "reply~l2_see_passport": {
+        "status": "differs",
+        "english": "Can I see your passport?",
+        "draft": "Можно ваш паспорт?",
+        "native": [
+          {
+            "text": "Могу я увидеть Ваш паспорт?",
+            "lang": "rus",
+            "id": 6593465
+          },
+          {
+            "text": "Могу я увидеть ваш паспорт?",
+            "lang": "rus",
+            "id": 4327526
+          }
+        ]
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "Ваш номер ещё не готов.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "Мы можем вас переселить.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "Это за дополнительную плату.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "На светофоре поверните налево.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "Это минут десять отсюда.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "Вам нужен третий выход.",
         "native": []
       }
     },
@@ -18747,6 +20918,161 @@
         "english": "Could you use the meter?",
         "draft": "メーターを使ってもらえますか？",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "ここに救急車をお願いできますか？",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "位置情報を共有できます。",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "none",
+        "english": "It's getting worse.",
+        "draft": "悪くなっています。",
+        "native": []
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "すぐに治療が必要です。",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "パスポートを盗まれました。",
+        "native": [
+          {
+            "text": "パスポートを盗まれました。",
+            "lang": "jpn",
+            "id": 198080
+          },
+          {
+            "text": "パスポートが盗まれました。",
+            "lang": "jpn",
+            "id": 2423918
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "被害届はどこで出せますか？",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "いつかははっきり分かりません。",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "どのくらいの間隔で飲めばいいですか？",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "薬剤師と話したいです。",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "none",
+        "english": "What time is breakfast?",
+        "draft": "朝食は何時ですか？",
+        "native": []
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "早めにチェックインできますか？",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "none",
+        "english": "When will it be ready?",
+        "draft": "いつ準備できますか？",
+        "native": []
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "部屋がうるさいです。",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "もっと静かな部屋はありますか？",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "責任者の方と話せますか？",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "チェックアウトを遅くできますか？",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "追加でいくらですか？",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "none",
+        "english": "Am I going the right way?",
+        "draft": "この道で合っていますか？",
+        "native": []
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "交差点の先ですか？",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "ここから歩いて行けますか？",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "もっと早い行き方はありますか？",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "どの出口から出ればいいですか？",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "match",
+        "english": "Is there an elevator?",
+        "draft": "エレベーターはありますか？",
+        "native": [
+          {
+            "text": "エレベーターはありますか？",
+            "lang": "jpn",
+            "id": 1142909
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -19932,6 +22258,78 @@
         "draft": "中心街までいくらですか？",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "ホテルの近くにいます。",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "none",
+        "english": "I'm near the train station.",
+        "draft": "駅の近くにいます。",
+        "native": []
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "空港の近くにいます。",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "薬局の近くにいます。",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "一時間前に始まりました。",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "二時間前に始まりました。",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "一日前に始まりました。",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "三日前に始まりました。",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "二泊で予約しています。",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "三泊で予約しています。",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "四泊で予約しています。",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "五泊で予約しています。",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "differs",
         "english": "For here or to go?",
@@ -20359,6 +22757,100 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "定額です。",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "安全な場所にいますか？",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "none",
+        "english": "When did it start?",
+        "draft": "いつからですか？",
+        "native": []
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "最後に見たのはどこですか？",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "close",
+        "english": "Do you have any allergies?",
+        "draft": "アレルギーはありますか？",
+        "native": [
+          {
+            "text": "アレルギー体質ですか。",
+            "lang": "jpn",
+            "id": 229634
+          },
+          {
+            "text": "何かアレルギーはありますか？",
+            "lang": "jpn",
+            "id": 2838403
+          }
+        ]
+      },
+      "reply~l2_have_insurance": {
+        "status": "none",
+        "english": "Do you have insurance?",
+        "draft": "保険に入っていますか？",
+        "native": []
+      },
+      "reply~l2_see_passport": {
+        "status": "differs",
+        "english": "Can I see your passport?",
+        "draft": "パスポートを拝見できますか？",
+        "native": [
+          {
+            "text": "パスポートを見せてくれませんか？",
+            "lang": "jpn",
+            "id": 1019476
+          },
+          {
+            "text": "パスポートを見せてもらえますか。",
+            "lang": "jpn",
+            "id": 2353821
+          }
+        ]
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "お部屋はまだ準備中です。",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "お部屋を変更できます。",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "追加料金がかかります。",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "信号を左に曲がってください。",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "十分ほどです。",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "三番出口を使ってください。",
         "native": []
       }
     },
@@ -21403,6 +23895,187 @@
         "draft": "אפשר להפעיל מונה?",
         "native": []
       },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "אפשר לשלוח לפה אמבולנס?",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "אני יכול לשתף את המיקום שלי.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "none",
+        "english": "It's getting worse.",
+        "draft": "זה מחמיר.",
+        "native": []
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "אני צריך טיפול רפואי דחוף.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "match",
+        "english": "My passport was stolen.",
+        "draft": "גנבו לי את הדרכון.",
+        "native": [
+          {
+            "text": "גנבו לי את הדרכון.",
+            "lang": "heb",
+            "id": 1991124
+          },
+          {
+            "text": "גנבו ממני את הדרכון.",
+            "lang": "heb",
+            "id": 1991125
+          },
+          {
+            "text": "הדרכון שלי נגנב.",
+            "lang": "heb",
+            "id": 1997039
+          },
+          {
+            "text": "מישהו גנב את הדרכון שלי.",
+            "lang": "heb",
+            "id": 1464557
+          }
+        ]
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "איפה אפשר להגיש תלונה?",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "אני לא יודע בדיוק מתי.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "כל כמה זמן לקחת את זה?",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "אני צריך לדבר עם רוקח.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "differs",
+        "english": "What time is breakfast?",
+        "draft": "באיזו שעה ארוחת הבוקר?",
+        "native": [
+          {
+            "text": "מתי ארוחת הבוקר?",
+            "lang": "heb",
+            "id": 6134425
+          }
+        ]
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "אפשר לעשות צ'ק-אין מוקדם?",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "none",
+        "english": "When will it be ready?",
+        "draft": "מתי הוא יהיה מוכן?",
+        "native": []
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "החדר שלי רועש מדי.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "יש חדר שקט יותר?",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "אפשר לדבר עם המנהל?",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "אפשר לעשות צ'ק-אאוט מאוחר?",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "כמה זה עולה בנוסף?",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "none",
+        "english": "Am I going the right way?",
+        "draft": "אני בכיוון הנכון?",
+        "native": []
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "אחרי הצומת?",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "אפשר ללכת לשם ברגל מפה?",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "יש דרך מהירה יותר?",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "באיזו יציאה לצאת?",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "match",
+        "english": "Is there an elevator?",
+        "draft": "יש מעלית?",
+        "native": [
+          {
+            "text": "יש מעלית?",
+            "lang": "heb",
+            "id": 695321
+          },
+          {
+            "text": "יש כאן מעלית?",
+            "lang": "heb",
+            "id": 1443352
+          },
+          {
+            "text": "יש שם מעלית?",
+            "lang": "heb",
+            "id": 1547351
+          }
+        ]
+      },
       "where_is~word_train_station": {
         "status": "match",
         "english": "Where is the train station?",
@@ -22384,6 +25057,84 @@
         "draft": "כמה עולה עד מרכז העיר?",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "אני ליד המלון.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "differs",
+        "english": "I'm near the train station.",
+        "draft": "אני ליד תחנת הרכבת.",
+        "native": [
+          {
+            "text": "אני בקרבת תחנת הרכבת.",
+            "lang": "heb",
+            "id": 1405246
+          }
+        ]
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "אני ליד שדה התעופה.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "אני ליד בית המרקחת.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "זה התחיל לפני שעה.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "זה התחיל לפני שעתיים.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "זה התחיל לפני יום.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "זה התחיל לפני שלושה ימים.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "ההזמנה שלי היא לשני לילות.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "ההזמנה שלי היא לשלושה לילות.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "ההזמנה שלי היא לארבעה לילות.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "ההזמנה שלי היא לחמישה לילות.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -22734,6 +25485,78 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "זה מחיר קבוע.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "אתה במקום בטוח?",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "none",
+        "english": "When did it start?",
+        "draft": "מתי זה התחיל?",
+        "native": []
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "איפה ראית אותו בפעם האחרונה?",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "none",
+        "english": "Do you have any allergies?",
+        "draft": "יש לך אלרגיות?",
+        "native": []
+      },
+      "reply~l2_have_insurance": {
+        "status": "none",
+        "english": "Do you have insurance?",
+        "draft": "יש לך ביטוח?",
+        "native": []
+      },
+      "reply~l2_see_passport": {
+        "status": "none",
+        "english": "Can I see your passport?",
+        "draft": "אפשר לראות את הדרכון?",
+        "native": []
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "החדר שלך עוד לא מוכן.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "אפשר להעביר אותך חדר.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "יש תוספת תשלום.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "תפנה שמאלה ברמזור.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "זה בערך עשר דקות מפה.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "צא ביציאה שלוש.",
         "native": []
       }
     },
@@ -23652,6 +26475,155 @@
         "english": "Could you use the meter?",
         "draft": "ممكن تشغّل العدّاد؟",
         "native": []
+      },
+      "l2_send_ambulance": {
+        "status": "none",
+        "english": "Can you send an ambulance here?",
+        "draft": "ممكن تبعتوا إسعاف لهون؟",
+        "native": []
+      },
+      "l2_share_location": {
+        "status": "none",
+        "english": "I can share my location.",
+        "draft": "بقدر أبعت موقعي.",
+        "native": []
+      },
+      "l2_getting_worse": {
+        "status": "none",
+        "english": "It's getting worse.",
+        "draft": "عم يزيد.",
+        "native": []
+      },
+      "l2_urgent_help": {
+        "status": "none",
+        "english": "I need urgent medical attention.",
+        "draft": "بدي علاج طبي ضروري.",
+        "native": []
+      },
+      "l2_passport_stolen": {
+        "status": "none",
+        "english": "My passport was stolen.",
+        "draft": "انسرق جواز سفري.",
+        "native": []
+      },
+      "l2_file_report": {
+        "status": "none",
+        "english": "Where can I file a report?",
+        "draft": "وين بقدر أقدّم بلاغ؟",
+        "native": []
+      },
+      "l2_dont_know_when": {
+        "status": "none",
+        "english": "I don't know exactly when.",
+        "draft": "ما بعرف بالزبط إيمتى.",
+        "native": []
+      },
+      "l2_how_often": {
+        "status": "none",
+        "english": "How often should I take it?",
+        "draft": "كل قديش لازم آخده؟",
+        "native": []
+      },
+      "l2_speak_pharmacist": {
+        "status": "none",
+        "english": "I need to speak to a pharmacist.",
+        "draft": "لازم أحكي مع صيدلاني.",
+        "native": []
+      },
+      "l2_breakfast_time": {
+        "status": "none",
+        "english": "What time is breakfast?",
+        "draft": "أي ساعة الفطور؟",
+        "native": []
+      },
+      "l2_early_checkin": {
+        "status": "none",
+        "english": "Is early check-in possible?",
+        "draft": "ممكن أعمل تشيك إن بكير؟",
+        "native": []
+      },
+      "l2_when_ready": {
+        "status": "none",
+        "english": "When will it be ready?",
+        "draft": "إيمتى بتكون جاهزة؟",
+        "native": []
+      },
+      "l2_room_noisy": {
+        "status": "none",
+        "english": "My room is too noisy.",
+        "draft": "غرفتي فيها ضجة كتير.",
+        "native": []
+      },
+      "l2_quieter_room": {
+        "status": "none",
+        "english": "Is there a quieter room?",
+        "draft": "في غرفة أهدى؟",
+        "native": []
+      },
+      "l2_speak_manager": {
+        "status": "none",
+        "english": "Could I speak to the manager?",
+        "draft": "ممكن أحكي مع المدير؟",
+        "native": []
+      },
+      "l2_late_checkout": {
+        "status": "none",
+        "english": "Can I check out later?",
+        "draft": "ممكن أطلع من الغرفة متأخر؟",
+        "native": []
+      },
+      "l2_how_much_extra": {
+        "status": "none",
+        "english": "How much extra?",
+        "draft": "قديش الزيادة؟",
+        "native": []
+      },
+      "l2_right_way": {
+        "status": "none",
+        "english": "Am I going the right way?",
+        "draft": "أنا ماشي صح؟",
+        "native": []
+      },
+      "l2_after_intersection": {
+        "status": "none",
+        "english": "After the intersection?",
+        "draft": "بعد التقاطع؟",
+        "native": []
+      },
+      "l2_walk_there": {
+        "status": "none",
+        "english": "Can I walk there from here?",
+        "draft": "بقدر أروح مشي من هون؟",
+        "native": []
+      },
+      "l2_quicker_way": {
+        "status": "none",
+        "english": "Is there a quicker way?",
+        "draft": "في طريق أسرع؟",
+        "native": []
+      },
+      "l2_which_exit": {
+        "status": "none",
+        "english": "Which exit should I take?",
+        "draft": "من أي مخرج أطلع؟",
+        "native": []
+      },
+      "l2_is_elevator": {
+        "status": "formal-only",
+        "english": "Is there an elevator?",
+        "draft": "في مصعد؟",
+        "native": [
+          {
+            "text": "هل هناك مصعد؟",
+            "lang": "ara",
+            "id": 458411
+          },
+          {
+            "text": "هل يوجد مصعد؟",
+            "lang": "ara",
+            "id": 458412
+          }
+        ]
       },
       "where_is~word_train_station": {
         "status": "none",
@@ -24575,6 +27547,78 @@
         "draft": "قديش لحد وسط البلد؟",
         "native": []
       },
+      "l2_im_near~hotel": {
+        "status": "none",
+        "english": "I'm near the hotel.",
+        "draft": "أنا قريب من الفندق.",
+        "native": []
+      },
+      "l2_im_near~station": {
+        "status": "none",
+        "english": "I'm near the train station.",
+        "draft": "أنا قريب من محطة القطار.",
+        "native": []
+      },
+      "l2_im_near~airport": {
+        "status": "none",
+        "english": "I'm near the airport.",
+        "draft": "أنا قريب من المطار.",
+        "native": []
+      },
+      "l2_im_near~pharmacy": {
+        "status": "none",
+        "english": "I'm near the pharmacy.",
+        "draft": "أنا قريب من الصيدلية.",
+        "native": []
+      },
+      "l2_started_ago~hour": {
+        "status": "none",
+        "english": "It started an hour ago.",
+        "draft": "بلّش من ساعة.",
+        "native": []
+      },
+      "l2_started_ago~two_hours": {
+        "status": "none",
+        "english": "It started two hours ago.",
+        "draft": "بلّش من ساعتين.",
+        "native": []
+      },
+      "l2_started_ago~day": {
+        "status": "none",
+        "english": "It started a day ago.",
+        "draft": "بلّش من يوم.",
+        "native": []
+      },
+      "l2_started_ago~three_days": {
+        "status": "none",
+        "english": "It started three days ago.",
+        "draft": "بلّش من تلات أيام.",
+        "native": []
+      },
+      "l2_booking_nights~two": {
+        "status": "none",
+        "english": "My booking is for two nights.",
+        "draft": "حجزي لليلتين.",
+        "native": []
+      },
+      "l2_booking_nights~three": {
+        "status": "none",
+        "english": "My booking is for three nights.",
+        "draft": "حجزي لتلات ليالي.",
+        "native": []
+      },
+      "l2_booking_nights~four": {
+        "status": "none",
+        "english": "My booking is for four nights.",
+        "draft": "حجزي لأربع ليالي.",
+        "native": []
+      },
+      "l2_booking_nights~five": {
+        "status": "none",
+        "english": "My booking is for five nights.",
+        "draft": "حجزي لخمس ليالي.",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -24923,6 +27967,89 @@
         "status": "none",
         "english": "It's a fixed price.",
         "draft": "السعر ثابت.",
+        "native": []
+      },
+      "reply~l2_are_you_safe": {
+        "status": "none",
+        "english": "Are you somewhere safe?",
+        "draft": "إنت بمكان آمن؟",
+        "native": []
+      },
+      "reply~l2_when_start": {
+        "status": "none",
+        "english": "When did it start?",
+        "draft": "إيمتى بلّش؟",
+        "native": []
+      },
+      "reply~l2_where_last": {
+        "status": "none",
+        "english": "Where did you last have it?",
+        "draft": "وين آخر مرة شفته؟",
+        "native": []
+      },
+      "reply~l2_any_allergies": {
+        "status": "none",
+        "english": "Do you have any allergies?",
+        "draft": "عندك حساسية؟",
+        "native": []
+      },
+      "reply~l2_have_insurance": {
+        "status": "none",
+        "english": "Do you have insurance?",
+        "draft": "عندك تأمين؟",
+        "native": []
+      },
+      "reply~l2_see_passport": {
+        "status": "formal-only",
+        "english": "Can I see your passport?",
+        "draft": "ممكن أشوف جواز السفر؟",
+        "native": [
+          {
+            "text": "هل لي أن أرى جواز سفرك؟",
+            "lang": "ara",
+            "id": 419633
+          },
+          {
+            "text": "هل أستطيع أن أرى جواز سفرك؟",
+            "lang": "ara",
+            "id": 666337
+          }
+        ]
+      },
+      "reply~l2_room_not_ready": {
+        "status": "none",
+        "english": "Your room isn't ready yet.",
+        "draft": "غرفتك لسا مش جاهزة.",
+        "native": []
+      },
+      "reply~l2_can_move_you": {
+        "status": "none",
+        "english": "We can move you.",
+        "draft": "بنقدر نغيّرلك الغرفة.",
+        "native": []
+      },
+      "reply~l2_extra_fee": {
+        "status": "none",
+        "english": "There's an extra fee.",
+        "draft": "في رسوم زيادة.",
+        "native": []
+      },
+      "reply~l2_left_at_light": {
+        "status": "none",
+        "english": "Turn left at the traffic light.",
+        "draft": "لفّ شمال عند الإشارة.",
+        "native": []
+      },
+      "reply~l2_ten_minutes": {
+        "status": "none",
+        "english": "It's about ten minutes away.",
+        "draft": "حوالي عشر دقايق من هون.",
+        "native": []
+      },
+      "reply~l2_exit_three": {
+        "status": "none",
+        "english": "Use exit three.",
+        "draft": "اطلع من مخرج تلاتة.",
         "native": []
       }
     }

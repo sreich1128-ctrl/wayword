@@ -42,9 +42,11 @@ Not built yet: a certificate for finishing a level.
 | Batch | Situations | Per language | Status |
 |---|---|---|---|
 | 1 | The basics (3 exchanges + 8 recovery phrases), Restaurant (4), Transportation (4) | 31 phrases, 11 replies, 17 variations | Shipped v48 |
-| 2 | Help & emergencies, Hotel, Lost / Directions | | Next |
-| 3 | Café, Shopping, Barber, Meeting People | | |
+| 2 | Help & emergencies (4 exchanges), Hotel (4), Lost / Directions (3) | 26 phrases, 12 replies, 12 variations | Shipped v50 |
+| 3 | Café, Shopping, Barber, Meeting People | | Next |
 | 4 | Flirting, Airport, Sightseeing, Bar, Numbers & time | | |
+
+Changes from LEVEL_CUT.md in batch 2: "My ___ is getting worse" became the fixed "It's getting worse."; the pharmacy exchange opens with Level 1's "I need medicine for ___."; "Do you have insurance?" is a reply here.
 
 Changes from LEVEL_CUT.md in batch 1: "We didn't order ___" became the fixed "We didn't order this."; the one-off replies became typical ones ("Yes, it does.", "This one is very popular.", "Which item?").
 

@@ -703,6 +703,142 @@
       "id": "l2_how_much_to",
       "target": "C'est combien jusqu'à ___ ?",
       "pronunciation_easy": "say kohm-BYEN zhews-KAH ___"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "Je suis près de ___.",
+      "pronunciation_easy": "zhuh swee preh duh ___"
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "Vous pouvez envoyer une ambulance ici ?",
+      "pronunciation_easy": "voo poo-vay ahn-vwah-YAY ewn ahn-bew-LAHNSS ee-SEE",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "Je peux partager ma position.",
+      "pronunciation_easy": "zhuh puh par-tah-ZHAY mah poh-zee-SYOHN"
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "Ça empire.",
+      "pronunciation_easy": "sah ahn-PEER",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "Ça a commencé il y a ___.",
+      "pronunciation_easy": "sah ah koh-mahn-SAY eel yah ___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "J'ai besoin de soins médicaux urgents.",
+      "pronunciation_easy": "zhay buh-ZWAN duh swan may-dee-KOH ewr-ZHAHN",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "On m'a volé mon passeport.",
+      "pronunciation_easy": "ohn mah voh-LAY mohn pahss-POR"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "Où est-ce que je peux porter plainte ?",
+      "pronunciation_easy": "oo ess kuh zhuh puh por-TAY PLANT"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "Je ne sais pas exactement quand.",
+      "pronunciation_easy": "zhuh nuh say pah eg-zak-tuh-MAHN KAHN"
+    },
+    {
+      "id": "l2_how_often",
+      "target": "Je dois le prendre tous les combien ?",
+      "pronunciation_easy": "zhuh dwah luh PRAHN-druh too lay kohm-BYEN",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "J'ai besoin de parler à un pharmacien.",
+      "pronunciation_easy": "zhay buh-ZWAN duh par-LAY ah uhn far-mah-SYAN",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "Ma réservation est pour ___ nuits.",
+      "pronunciation_easy": "mah ray-zehr-vah-SYOHN eh poor ___ NWEE"
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "Le petit-déjeuner est à quelle heure ?",
+      "pronunciation_easy": "luh puh-tee day-zhuh-NAY eh tah kel UHR"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "Est-ce qu'on peut arriver plus tôt ?",
+      "pronunciation_easy": "ess kohn puh ah-ree-VAY plew TOH"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "Elle sera prête quand ?",
+      "pronunciation_easy": "el suh-rah PRET kahn"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "Ma chambre est trop bruyante.",
+      "pronunciation_easy": "mah SHAHN-bruh eh troh brwee-YAHNT"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "Il y a une chambre plus calme ?",
+      "pronunciation_easy": "eel yah ewn SHAHN-bruh plew KALM"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "Je peux parler au responsable ?",
+      "pronunciation_easy": "zhuh puh par-LAY oh ress-pohn-SAH-bluh"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "Je peux libérer la chambre plus tard ?",
+      "pronunciation_easy": "zhuh puh lee-bay-RAY lah SHAHN-bruh plew TAR"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "C'est combien en plus ?",
+      "pronunciation_easy": "say kohm-BYEN ahn PLEWSS"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "Je vais dans la bonne direction ?",
+      "pronunciation_easy": "zhuh vay dahn lah bon dee-rek-SYOHN"
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "Après le carrefour ?",
+      "pronunciation_easy": "ah-PREH luh kar-FOOR"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "On peut y aller à pied d'ici ?",
+      "pronunciation_easy": "ohn puh ee ah-LAY ah PYAY dee-SEE"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "Il y a un chemin plus rapide ?",
+      "pronunciation_easy": "eel yah uhn shuh-MAN plew rah-PEED"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "Je prends quelle sortie ?",
+      "pronunciation_easy": "zhuh prahn kel sor-TEE"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "Il y a un ascenseur ?",
+      "pronunciation_easy": "eel yah uhn ah-sahn-SUHR"
     }
   ],
   "vocab": {
@@ -1778,6 +1914,72 @@
         "target": "C'est combien jusqu'au centre ?",
         "pronunciation_easy": "say kohm-BYEN zhews-KOH SAHN-truh"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "Je suis près de l'hôtel.",
+        "pronunciation_easy": "zhuh swee preh duh loh-TEL"
+      },
+      {
+        "word": "station",
+        "target": "Je suis près de la gare.",
+        "pronunciation_easy": "zhuh swee preh duh lah GAR"
+      },
+      {
+        "word": "airport",
+        "target": "Je suis près de l'aéroport.",
+        "pronunciation_easy": "zhuh swee preh duh lah-ay-roh-POR"
+      },
+      {
+        "word": "pharmacy",
+        "target": "Je suis près de la pharmacie.",
+        "pronunciation_easy": "zhuh swee preh duh lah far-mah-SEE"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "Ça a commencé il y a une heure.",
+        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah ewn UHR"
+      },
+      {
+        "word": "two_hours",
+        "target": "Ça a commencé il y a deux heures.",
+        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah duh ZUHR"
+      },
+      {
+        "word": "day",
+        "target": "Ça a commencé il y a un jour.",
+        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah uhn ZHOOR"
+      },
+      {
+        "word": "three_days",
+        "target": "Ça a commencé il y a trois jours.",
+        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah trwah ZHOOR"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "Ma réservation est pour deux nuits.",
+        "pronunciation_easy": "mah ray-zehr-vah-SYOHN eh poor duh NWEE"
+      },
+      {
+        "word": "three",
+        "target": "Ma réservation est pour trois nuits.",
+        "pronunciation_easy": "mah ray-zehr-vah-SYOHN eh poor trwah NWEE"
+      },
+      {
+        "word": "four",
+        "target": "Ma réservation est pour quatre nuits.",
+        "pronunciation_easy": "mah ray-zehr-vah-SYOHN eh poor KAH-truh NWEE"
+      },
+      {
+        "word": "five",
+        "target": "Ma réservation est pour cinq nuits.",
+        "pronunciation_easy": "mah ray-zehr-vah-SYOHN eh poor sank NWEE"
+      }
     ]
   },
   "replies": {
@@ -1956,6 +2158,54 @@
     "l2_fixed_price": {
       "target": "C'est un prix fixe.",
       "pronunciation_easy": "say tuhn pree FEEKS"
+    },
+    "l2_are_you_safe": {
+      "target": "Vous êtes en sécurité ?",
+      "pronunciation_easy": "voo zet ahn say-kew-ree-TAY"
+    },
+    "l2_when_start": {
+      "target": "Ça a commencé quand ?",
+      "pronunciation_easy": "sah ah koh-mahn-SAY KAHN"
+    },
+    "l2_where_last": {
+      "target": "Où l'avez-vous vu pour la dernière fois ?",
+      "pronunciation_easy": "oo lah-vay voo VEW poor lah dehr-NYEHR FWAH"
+    },
+    "l2_any_allergies": {
+      "target": "Vous avez des allergies ?",
+      "pronunciation_easy": "voo zah-vay day zah-lehr-ZHEE"
+    },
+    "l2_have_insurance": {
+      "target": "Vous avez une assurance ?",
+      "pronunciation_easy": "voo zah-vay ewn ah-sew-RAHNSS"
+    },
+    "l2_see_passport": {
+      "target": "Je peux voir votre passeport ?",
+      "pronunciation_easy": "zhuh puh vwahr voh-truh pahss-POR"
+    },
+    "l2_room_not_ready": {
+      "target": "Votre chambre n'est pas encore prête.",
+      "pronunciation_easy": "voh-truh SHAHN-bruh nay pah zahn-kor PRET"
+    },
+    "l2_can_move_you": {
+      "target": "On peut vous changer de chambre.",
+      "pronunciation_easy": "ohn puh voo shahn-ZHAY duh SHAHN-bruh"
+    },
+    "l2_extra_fee": {
+      "target": "Il y a un supplément.",
+      "pronunciation_easy": "eel yah uhn sew-play-MAHN"
+    },
+    "l2_left_at_light": {
+      "target": "Tournez à gauche au feu.",
+      "pronunciation_easy": "toor-nay ah GOHSH oh FUH"
+    },
+    "l2_ten_minutes": {
+      "target": "C'est à dix minutes environ.",
+      "pronunciation_easy": "say tah dee mee-NEWT ahn-vee-ROHN"
+    },
+    "l2_exit_three": {
+      "target": "Prenez la sortie trois.",
+      "pronunciation_easy": "pruh-nay lah sor-TEE TRWAH"
     }
   }
 }

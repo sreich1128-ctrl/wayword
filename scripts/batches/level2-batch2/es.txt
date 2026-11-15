@@ -1,0 +1,50 @@
+l2_im_near | Estoy cerca de ___. | es-TOY SEHR-kah deh ___
+l2_send_ambulance | ¿Puede mandar una ambulancia aquí? | PWEH-deh man-DAR OO-nah am-boo-LAN-syah ah-KEE
+l2_share_location | Puedo compartir mi ubicación. | PWEH-doh kom-par-TEER mee oo-bee-kah-SYON
+l2_getting_worse | Está empeorando. | es-TAH em-peh-oh-RAN-doh
+l2_started_ago | Empezó hace ___. | em-peh-SOH AH-seh ___
+l2_urgent_help | Necesito atención médica urgente. | neh-seh-SEE-toh ah-ten-SYON MEH-dee-kah oor-HEN-teh
+l2_passport_stolen | Me robaron el pasaporte. | meh roh-BAH-ron el pah-sah-POR-teh
+l2_file_report | ¿Dónde puedo poner una denuncia? | DON-deh PWEH-doh poh-NEHR OO-nah deh-NOON-syah
+l2_dont_know_when | No sé exactamente cuándo. | noh seh ek-sak-tah-MEN-teh KWAN-doh
+l2_how_often | ¿Cada cuánto debo tomarlo? | KAH-dah KWAN-toh DEH-boh toh-MAR-loh
+l2_speak_pharmacist | Necesito hablar con un farmacéutico. | neh-seh-SEE-toh ah-BLAR kon oon far-mah-SEH-oo-tee-koh
+l2_booking_nights | Mi reserva es para ___ noches. | mee reh-SEHR-vah es PAH-rah ___ NOH-ches
+l2_breakfast_time | ¿A qué hora es el desayuno? | ah keh OH-rah es el deh-sah-YOO-noh
+l2_early_checkin | ¿Es posible hacer el check-in antes? | es poh-SEE-bleh ah-SEHR el check-in AN-tes
+l2_when_ready | ¿Cuándo estará lista? | KWAN-doh es-tah-RAH LEES-tah
+l2_room_noisy | Mi habitación es muy ruidosa. | mee ah-bee-tah-SYON es mwee rwee-DOH-sah
+l2_quieter_room | ¿Hay una habitación más tranquila? | eye OO-nah ah-bee-tah-SYON mas tran-KEE-lah
+l2_speak_manager | ¿Puedo hablar con el gerente? | PWEH-doh ah-BLAR kon el heh-REN-teh
+l2_late_checkout | ¿Puedo dejar la habitación más tarde? | PWEH-doh deh-HAR lah ah-bee-tah-SYON mas TAR-deh
+l2_how_much_extra | ¿Cuánto más cuesta? | KWAN-toh mas KWES-tah
+l2_right_way | ¿Voy por buen camino? | voy por bwen kah-MEE-noh
+l2_after_intersection | ¿Después del cruce? | des-PWES del KROO-seh
+l2_walk_there | ¿Se puede ir caminando desde aquí? | seh PWEH-deh eer kah-mee-NAN-doh DES-deh ah-KEE
+l2_quicker_way | ¿Hay un camino más rápido? | eye oon kah-MEE-noh mas RAH-pee-doh
+l2_which_exit | ¿Qué salida debo tomar? | keh sah-LEE-dah DEH-boh toh-MAR
+l2_is_elevator | ¿Hay ascensor? | eye ah-sen-SOR
+r:l2_are_you_safe | ¿Está en un lugar seguro? | es-TAH en oon loo-GAR seh-GOO-roh
+r:l2_when_start | ¿Cuándo empezó? | KWAN-doh em-peh-SOH
+r:l2_where_last | ¿Dónde lo tuvo por última vez? | DON-deh loh TOO-voh por OOL-tee-mah ves
+r:l2_any_allergies | ¿Tiene alguna alergia? | TYEH-neh al-GOO-nah ah-LEHR-hyah
+r:l2_have_insurance | ¿Tiene seguro? | TYEH-neh seh-GOO-roh
+r:l2_see_passport | ¿Me permite su pasaporte? | meh pehr-MEE-teh soo pah-sah-POR-teh
+r:l2_room_not_ready | Su habitación todavía no está lista. | soo ah-bee-tah-SYON toh-dah-VEE-ah noh es-TAH LEES-tah
+r:l2_can_move_you | Podemos cambiarlo de habitación. | poh-DEH-mos kam-BYAR-loh deh ah-bee-tah-SYON
+r:l2_extra_fee | Hay un cargo adicional. | eye oon KAR-goh ah-dee-syoh-NAL
+r:l2_left_at_light | Gire a la izquierda en el semáforo. | HEE-reh ah lah ees-KYEHR-dah en el seh-MAH-foh-roh
+r:l2_ten_minutes | Está a unos diez minutos. | es-TAH ah OO-nos dyes mee-NOO-tos
+r:l2_exit_three | Use la salida tres. | OO-seh lah sah-LEE-dah tres
+x:l2_im_near~hotel | Estoy cerca del hotel. | es-TOY SEHR-kah del oh-TEL
+x:l2_im_near~station | Estoy cerca de la estación de tren. | es-TOY SEHR-kah deh lah es-tah-SYON deh tren
+x:l2_im_near~airport | Estoy cerca del aeropuerto. | es-TOY SEHR-kah del ah-eh-roh-PWEHR-toh
+x:l2_im_near~pharmacy | Estoy cerca de la farmacia. | es-TOY SEHR-kah deh lah far-MAH-syah
+x:l2_started_ago~hour | Empezó hace una hora. | em-peh-SOH AH-seh OO-nah OH-rah
+x:l2_started_ago~two_hours | Empezó hace dos horas. | em-peh-SOH AH-seh dos OH-ras
+x:l2_started_ago~day | Empezó hace un día. | em-peh-SOH AH-seh oon DEE-ah
+x:l2_started_ago~three_days | Empezó hace tres días. | em-peh-SOH AH-seh tres DEE-as
+x:l2_booking_nights~two | Mi reserva es para dos noches. | mee reh-SEHR-vah es PAH-rah dos NOH-ches
+x:l2_booking_nights~three | Mi reserva es para tres noches. | mee reh-SEHR-vah es PAH-rah tres NOH-ches
+x:l2_booking_nights~four | Mi reserva es para cuatro noches. | mee reh-SEHR-vah es PAH-rah KWAH-troh NOH-ches
+x:l2_booking_nights~five | Mi reserva es para cinco noches. | mee reh-SEHR-vah es PAH-rah SEEN-koh NOH-ches

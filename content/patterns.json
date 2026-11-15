@@ -739,6 +739,84 @@
           "english": "How much to the city centre?"
         }
       ]
+    },
+    "l2_im_near": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "hotel",
+          "label": "the hotel",
+          "english": "I'm near the hotel."
+        },
+        {
+          "id": "station",
+          "label": "the train station",
+          "english": "I'm near the train station."
+        },
+        {
+          "id": "airport",
+          "label": "the airport",
+          "english": "I'm near the airport."
+        },
+        {
+          "id": "pharmacy",
+          "label": "the pharmacy",
+          "english": "I'm near the pharmacy."
+        }
+      ]
+    },
+    "l2_started_ago": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "hour",
+          "label": "an hour",
+          "english": "It started an hour ago."
+        },
+        {
+          "id": "two_hours",
+          "label": "two hours",
+          "english": "It started two hours ago."
+        },
+        {
+          "id": "day",
+          "label": "a day",
+          "english": "It started a day ago."
+        },
+        {
+          "id": "three_days",
+          "label": "three days",
+          "english": "It started three days ago."
+        }
+      ]
+    },
+    "l2_booking_nights": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "two",
+          "label": "two",
+          "english": "My booking is for two nights."
+        },
+        {
+          "id": "three",
+          "label": "three",
+          "english": "My booking is for three nights."
+        },
+        {
+          "id": "four",
+          "label": "four",
+          "english": "My booking is for four nights."
+        },
+        {
+          "id": "five",
+          "label": "five",
+          "english": "My booking is for five nights."
+        }
+      ]
     }
   }
 }

@@ -844,6 +844,168 @@
       "target": "___までいくらですか？",
       "reading": "___までいくらですか？",
       "pronunciation_easy": "___ mah-deh ee-koo-rah des-kah"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "___の近くにいます。",
+      "reading": "___のちかくにいます。",
+      "pronunciation_easy": "___ noh chee-kah-koo nee ee-mahs"
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "ここに救急車をお願いできますか？",
+      "reading": "ここにきゅうきゅうしゃをおねがいできますか？",
+      "pronunciation_easy": "koh-koh nee kyoo-kyoo-shah oh oh-neh-guy deh-kee-mahs-kah",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "位置情報を共有できます。",
+      "reading": "いちじょうほうをきょうゆうできます。",
+      "pronunciation_easy": "ee-chee joh-hoh oh kyoh-yoo deh-kee-mahs"
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "悪くなっています。",
+      "reading": "わるくなっています。",
+      "pronunciation_easy": "wah-roo-koo naht-teh ee-mahs",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "___前に始まりました。",
+      "reading": "___まえにはじまりました。",
+      "pronunciation_easy": "___ mah-eh nee hah-jee-mah-ree-mah-shee-tah",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "すぐに治療が必要です。",
+      "reading": "すぐにちりょうがひつようです。",
+      "pronunciation_easy": "soo-goo nee chee-ryoh gah hee-tsoo-yoh des",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "パスポートを盗まれました。",
+      "reading": "ぱすぽーとをぬすまれました。",
+      "pronunciation_easy": "pah-soo-poh-toh oh noo-soo-mah-reh-mah-shee-tah"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "被害届はどこで出せますか？",
+      "reading": "ひがいとどけはどこでだせますか？",
+      "pronunciation_easy": "hee-guy-toh-doh-keh wah doh-koh deh dah-seh-mahs-kah"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "いつかははっきり分かりません。",
+      "reading": "いつかははっきりわかりません。",
+      "pronunciation_easy": "ee-tsoo-kah wah hahk-kee-ree wah-kah-ree-mah-sen"
+    },
+    {
+      "id": "l2_how_often",
+      "target": "どのくらいの間隔で飲めばいいですか？",
+      "reading": "どのくらいのかんかくでのめばいいですか？",
+      "pronunciation_easy": "doh-noh koo-rai noh kahn-kah-koo deh noh-meh-bah ee des-kah",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "薬剤師と話したいです。",
+      "reading": "やくざいしとはなしたいです。",
+      "pronunciation_easy": "yah-koo-zai-shee toh hah-nah-shee-tai des",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "___泊で予約しています。",
+      "reading": "___はくでよやくしています。",
+      "pronunciation_easy": "___ hah-koo deh yoh-yah-koo shee-teh ee-mahs"
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "朝食は何時ですか？",
+      "reading": "ちょうしょくはなんじですか？",
+      "pronunciation_easy": "choh-shoh-koo wah nan-jee des-kah"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "早めにチェックインできますか？",
+      "reading": "はやめにちぇっくいんできますか？",
+      "pronunciation_easy": "hah-yah-meh nee chek-koo-een deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "いつ準備できますか？",
+      "reading": "いつじゅんびできますか？",
+      "pronunciation_easy": "ee-tsoo joon-bee deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "部屋がうるさいです。",
+      "reading": "へやがうるさいです。",
+      "pronunciation_easy": "heh-yah gah oo-roo-sai des"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "もっと静かな部屋はありますか？",
+      "reading": "もっとしずかなへやはありますか？",
+      "pronunciation_easy": "moht-toh shee-zoo-kah-nah heh-yah wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "責任者の方と話せますか？",
+      "reading": "せきにんしゃのかたとはなせますか？",
+      "pronunciation_easy": "seh-kee-neen-shah noh kah-tah toh hah-nah-seh-mahs-kah"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "チェックアウトを遅くできますか？",
+      "reading": "ちぇっくあうとをおそくできますか？",
+      "pronunciation_easy": "chek-koo-ah-oo-toh oh oh-soh-koo deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "追加でいくらですか？",
+      "reading": "ついかでいくらですか？",
+      "pronunciation_easy": "tsoo-ee-kah deh ee-koo-rah des-kah"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "この道で合っていますか？",
+      "reading": "このみちであっていますか？",
+      "pronunciation_easy": "koh-noh mee-chee deh aht-teh ee-mahs-kah"
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "交差点の先ですか？",
+      "reading": "こうさてんのさきですか？",
+      "pronunciation_easy": "koh-sah-ten noh sah-kee des-kah"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "ここから歩いて行けますか？",
+      "reading": "ここからあるいていけますか？",
+      "pronunciation_easy": "koh-koh kah-rah ah-roo-ee-teh ee-keh-mahs-kah"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "もっと早い行き方はありますか？",
+      "reading": "もっとはやいいきかたはありますか？",
+      "pronunciation_easy": "moht-toh hah-yai ee-kee-kah-tah wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "どの出口から出ればいいですか？",
+      "reading": "どのでぐちからでればいいですか？",
+      "pronunciation_easy": "doh-noh deh-goo-chee kah-rah deh-reh-bah ee des-kah"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "エレベーターはありますか？",
+      "reading": "えれべーたーはありますか？",
+      "pronunciation_easy": "eh-reh-beh-tah wah ah-ree-mahs-kah"
     }
   ],
   "vocab": {
@@ -2157,6 +2319,84 @@
         "reading": "ちゅうしんがいまでいくらですか？",
         "pronunciation_easy": "choo-sheen-guy mah-deh ee-koo-rah des-kah"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "ホテルの近くにいます。",
+        "reading": "ほてるのちかくにいます。",
+        "pronunciation_easy": "hoh-teh-roo noh chee-kah-koo nee ee-mahs"
+      },
+      {
+        "word": "station",
+        "target": "駅の近くにいます。",
+        "reading": "えきのちかくにいます。",
+        "pronunciation_easy": "eh-kee noh chee-kah-koo nee ee-mahs"
+      },
+      {
+        "word": "airport",
+        "target": "空港の近くにいます。",
+        "reading": "くうこうのちかくにいます。",
+        "pronunciation_easy": "koo-koh noh chee-kah-koo nee ee-mahs"
+      },
+      {
+        "word": "pharmacy",
+        "target": "薬局の近くにいます。",
+        "reading": "やっきょくのちかくにいます。",
+        "pronunciation_easy": "yak-kyoh-koo noh chee-kah-koo nee ee-mahs"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "一時間前に始まりました。",
+        "reading": "いちじかんまえにはじまりました。",
+        "pronunciation_easy": "ee-chee-jee-kahn mah-eh nee hah-jee-mah-ree-mah-shee-tah"
+      },
+      {
+        "word": "two_hours",
+        "target": "二時間前に始まりました。",
+        "reading": "にじかんまえにはじまりました。",
+        "pronunciation_easy": "nee-jee-kahn mah-eh nee hah-jee-mah-ree-mah-shee-tah"
+      },
+      {
+        "word": "day",
+        "target": "一日前に始まりました。",
+        "reading": "いちにちまえにはじまりました。",
+        "pronunciation_easy": "ee-chee-nee-chee mah-eh nee hah-jee-mah-ree-mah-shee-tah"
+      },
+      {
+        "word": "three_days",
+        "target": "三日前に始まりました。",
+        "reading": "みっかまえにはじまりました。",
+        "pronunciation_easy": "meek-kah mah-eh nee hah-jee-mah-ree-mah-shee-tah"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "二泊で予約しています。",
+        "reading": "にはくでよやくしています。",
+        "pronunciation_easy": "nee-hah-koo deh yoh-yah-koo shee-teh ee-mahs"
+      },
+      {
+        "word": "three",
+        "target": "三泊で予約しています。",
+        "reading": "さんぱくでよやくしています。",
+        "pronunciation_easy": "sahn-pah-koo deh yoh-yah-koo shee-teh ee-mahs"
+      },
+      {
+        "word": "four",
+        "target": "四泊で予約しています。",
+        "reading": "よんはくでよやくしています。",
+        "pronunciation_easy": "yon-hah-koo deh yoh-yah-koo shee-teh ee-mahs"
+      },
+      {
+        "word": "five",
+        "target": "五泊で予約しています。",
+        "reading": "ごはくでよやくしています。",
+        "pronunciation_easy": "goh-hah-koo deh yoh-yah-koo shee-teh ee-mahs"
+      }
     ]
   },
   "replies": {
@@ -2378,6 +2618,66 @@
       "target": "定額です。",
       "reading": "ていがくです。",
       "pronunciation_easy": "tay-gah-koo des"
+    },
+    "l2_are_you_safe": {
+      "target": "安全な場所にいますか？",
+      "reading": "あんぜんなばしょにいますか？",
+      "pronunciation_easy": "ahn-zen nah bah-shoh nee ee-mahs-kah"
+    },
+    "l2_when_start": {
+      "target": "いつからですか？",
+      "reading": "いつからですか？",
+      "pronunciation_easy": "ee-tsoo kah-rah des-kah"
+    },
+    "l2_where_last": {
+      "target": "最後に見たのはどこですか？",
+      "reading": "さいごにみたのはどこですか？",
+      "pronunciation_easy": "sai-goh nee mee-tah noh wah doh-koh des-kah"
+    },
+    "l2_any_allergies": {
+      "target": "アレルギーはありますか？",
+      "reading": "あれるぎーはありますか？",
+      "pronunciation_easy": "ah-reh-roo-ghee wah ah-ree-mahs-kah"
+    },
+    "l2_have_insurance": {
+      "target": "保険に入っていますか？",
+      "reading": "ほけんにはいっていますか？",
+      "pronunciation_easy": "hoh-ken nee hait-teh ee-mahs-kah"
+    },
+    "l2_see_passport": {
+      "target": "パスポートを拝見できますか？",
+      "reading": "ぱすぽーとをはいけんできますか？",
+      "pronunciation_easy": "pah-soo-poh-toh oh hai-ken deh-kee-mahs-kah"
+    },
+    "l2_room_not_ready": {
+      "target": "お部屋はまだ準備中です。",
+      "reading": "おへやはまだじゅんびちゅうです。",
+      "pronunciation_easy": "oh-heh-yah wah mah-dah joon-bee-choo des"
+    },
+    "l2_can_move_you": {
+      "target": "お部屋を変更できます。",
+      "reading": "おへやをへんこうできます。",
+      "pronunciation_easy": "oh-heh-yah oh hen-koh deh-kee-mahs"
+    },
+    "l2_extra_fee": {
+      "target": "追加料金がかかります。",
+      "reading": "ついかりょうきんがかかります。",
+      "pronunciation_easy": "tsoo-ee-kah ryoh-keen gah kah-kah-ree-mahs"
+    },
+    "l2_left_at_light": {
+      "target": "信号を左に曲がってください。",
+      "reading": "しんごうをひだりにまがってください。",
+      "pronunciation_easy": "sheen-goh oh hee-dah-ree nee mah-gaht-teh koo-dah-sai"
+    },
+    "l2_ten_minutes": {
+      "target": "十分ほどです。",
+      "reading": "じゅっぷんほどです。",
+      "pronunciation_easy": "joop-poon hoh-doh des"
+    },
+    "l2_exit_three": {
+      "target": "三番出口を使ってください。",
+      "reading": "さんばんでぐちをつかってください。",
+      "pronunciation_easy": "sahn-bahn deh-goo-chee oh tsoo-kaht-teh koo-dah-sai"
     }
   }
 }

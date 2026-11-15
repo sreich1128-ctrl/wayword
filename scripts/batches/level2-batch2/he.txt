@@ -1,0 +1,50 @@
+l2_im_near | אני ליד ___. | a-NEE le-YAD ___
+l2_send_ambulance | אפשר לשלוח לפה אמבולנס? | ef-SHAR lish-LO-akh le-FO AM-boo-lans
+l2_share_location | אני יכול לשתף את המיקום שלי. | a-NEE ya-KHOL le-sha-TEF et ha-mee-KOOM she-LEE
+l2_getting_worse | זה מחמיר. | ze makh-MEER
+l2_started_ago | זה התחיל לפני ___. | ze hit-KHEEL lif-NEY ___
+l2_urgent_help | אני צריך טיפול רפואי דחוף. | a-NEE tsa-REEKH tee-POOL re-fu-EE da-KHOOF
+l2_passport_stolen | גנבו לי את הדרכון. | gan-VOO lee et ha-dar-KON
+l2_file_report | איפה אפשר להגיש תלונה? | EY-fo ef-SHAR le-ha-GEESH tlu-NA
+l2_dont_know_when | אני לא יודע בדיוק מתי. | a-NEE lo yo-DE-a be-dee-YUK ma-TAI
+l2_how_often | כל כמה זמן לקחת את זה? | kol KA-ma zman la-KA-khat et ze
+l2_speak_pharmacist | אני צריך לדבר עם רוקח. | a-NEE tsa-REEKH le-da-BER im ro-KE-akh
+l2_booking_nights | ההזמנה שלי היא ל___ לילות. | ha-haz-ma-NA she-LEE hee le-___ ley-LOT
+l2_breakfast_time | באיזו שעה ארוחת הבוקר? | be-EY-zo sha-A a-ru-KHAT ha-BO-ker
+l2_early_checkin | אפשר לעשות צ'ק-אין מוקדם? | ef-SHAR la-a-SOT chek-EEN muk-DAM
+l2_when_ready | מתי הוא יהיה מוכן? | ma-TAI hu yih-YE mu-KHAN
+l2_room_noisy | החדר שלי רועש מדי. | ha-KHE-der she-LEE ro-ESH mi-DAI
+l2_quieter_room | יש חדר שקט יותר? | yesh KHE-der sha-KET yo-TER
+l2_speak_manager | אפשר לדבר עם המנהל? | ef-SHAR le-da-BER im ha-me-na-HEL
+l2_late_checkout | אפשר לעשות צ'ק-אאוט מאוחר? | ef-SHAR la-a-SOT chek-AUT me-u-KHAR
+l2_how_much_extra | כמה זה עולה בנוסף? | KA-ma ze o-LE be-no-SAF
+l2_right_way | אני בכיוון הנכון? | a-NEE ba-kee-VOON ha-na-KHON
+l2_after_intersection | אחרי הצומת? | a-kha-REY ha-TSO-met
+l2_walk_there | אפשר ללכת לשם ברגל מפה? | ef-SHAR la-LE-khet le-SHAM ba-RE-gel mi-PO
+l2_quicker_way | יש דרך מהירה יותר? | yesh DE-rekh me-hee-RA yo-TER
+l2_which_exit | באיזו יציאה לצאת? | be-EY-zo ye-tsee-A la-TSET
+l2_is_elevator | יש מעלית? | yesh ma-a-LEET
+r:l2_are_you_safe | אתה במקום בטוח? | a-TA be-ma-KOM ba-TU-akh
+r:l2_when_start | מתי זה התחיל? | ma-TAI ze hit-KHEEL
+r:l2_where_last | איפה ראית אותו בפעם האחרונה? | EY-fo ra-EE-ta o-TO ba-PA-am ha-a-kha-ro-NA
+r:l2_any_allergies | יש לך אלרגיות? | yesh le-KHA a-LER-gyot
+r:l2_have_insurance | יש לך ביטוח? | yesh le-KHA bee-TU-akh
+r:l2_see_passport | אפשר לראות את הדרכון? | ef-SHAR lir-OT et ha-dar-KON
+r:l2_room_not_ready | החדר שלך עוד לא מוכן. | ha-KHE-der shel-KHA od lo mu-KHAN
+r:l2_can_move_you | אפשר להעביר אותך חדר. | ef-SHAR le-ha-a-VEER ot-KHA KHE-der
+r:l2_extra_fee | יש תוספת תשלום. | yesh to-SE-fet tash-LOOM
+r:l2_left_at_light | תפנה שמאלה ברמזור. | tif-NE SMO-la ba-ram-ZOR
+r:l2_ten_minutes | זה בערך עשר דקות מפה. | ze be-E-rekh E-ser da-KOT mi-PO
+r:l2_exit_three | צא ביציאה שלוש. | tse ba-ye-tsee-A sha-LOSH
+x:l2_im_near~hotel | אני ליד המלון. | a-NEE le-YAD ha-ma-LON
+x:l2_im_near~station | אני ליד תחנת הרכבת. | a-NEE le-YAD ta-kha-NAT ha-ra-KE-vet
+x:l2_im_near~airport | אני ליד שדה התעופה. | a-NEE le-YAD sde ha-te-u-FA
+x:l2_im_near~pharmacy | אני ליד בית המרקחת. | a-NEE le-YAD beyt ha-mir-KA-khat
+x:l2_started_ago~hour | זה התחיל לפני שעה. | ze hit-KHEEL lif-NEY sha-A
+x:l2_started_ago~two_hours | זה התחיל לפני שעתיים. | ze hit-KHEEL lif-NEY sha-a-TA-yim
+x:l2_started_ago~day | זה התחיל לפני יום. | ze hit-KHEEL lif-NEY yom
+x:l2_started_ago~three_days | זה התחיל לפני שלושה ימים. | ze hit-KHEEL lif-NEY shlo-SHA ya-MEEM
+x:l2_booking_nights~two | ההזמנה שלי היא לשני לילות. | ha-haz-ma-NA she-LEE hee lish-NEY ley-LOT
+x:l2_booking_nights~three | ההזמנה שלי היא לשלושה לילות. | ha-haz-ma-NA she-LEE hee lish-lo-SHA ley-LOT
+x:l2_booking_nights~four | ההזמנה שלי היא לארבעה לילות. | ha-haz-ma-NA she-LEE hee le-ar-ba-A ley-LOT
+x:l2_booking_nights~five | ההזמנה שלי היא לחמישה לילות. | ha-haz-ma-NA she-LEE hee la-kha-mee-SHA ley-LOT

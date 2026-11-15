@@ -1,0 +1,50 @@
+l2_im_near | أنا قريب من ___. | A-na a-REEB min ___
+l2_send_ambulance | ممكن تبعتوا إسعاف لهون؟ | MUM-kin tib-A-too is-AAF la-HOON
+l2_share_location | بقدر أبعت موقعي. | BA'-dar AB-'at MAW-'ee
+l2_getting_worse | عم يزيد. | am y-ZEED
+l2_started_ago | بلّش من ___. | BAL-lash min ___
+l2_urgent_help | بدي علاج طبي ضروري. | BAD-dee i-LAAJ TIB-bee da-ROO-ree
+l2_passport_stolen | انسرق جواز سفري. | in-SA-ra' ja-WAAZ SA-fa-ree
+l2_file_report | وين بقدر أقدّم بلاغ؟ | wayn BA'-dar a-AD-dem ba-LAAGH
+l2_dont_know_when | ما بعرف بالزبط إيمتى. | ma BA'-ref biz-ZABT EEM-ta
+l2_how_often | كل قديش لازم آخده؟ | kul ad-DAYSH LAA-zim AA-khdoh
+l2_speak_pharmacist | لازم أحكي مع صيدلاني. | LAA-zim AH-kee ma' say-da-LAA-nee
+l2_booking_nights | حجزي لـ ___ ليالي. | HAJ-zee la-___ la-YAA-lee
+l2_breakfast_time | أي ساعة الفطور؟ | ay SAA-a il-f-TOOR
+l2_early_checkin | ممكن أعمل تشيك إن بكير؟ | MUM-kin A'-mal chek-IN b-KEER
+l2_when_ready | إيمتى بتكون جاهزة؟ | EEM-ta bit-KOON JAAH-zeh
+l2_room_noisy | غرفتي فيها ضجة كتير. | ghur-FIT-ee FEE-ha DAJ-jeh kteer
+l2_quieter_room | في غرفة أهدى؟ | fee GHUR-feh AH-da
+l2_speak_manager | ممكن أحكي مع المدير؟ | MUM-kin AH-kee ma' il-mu-DEER
+l2_late_checkout | ممكن أطلع من الغرفة متأخر؟ | MUM-kin AT-la' min il-GHUR-feh mit-AKH-kher
+l2_how_much_extra | قديش الزيادة؟ | ad-DAYSH iz-zee-YAA-deh
+l2_right_way | أنا ماشي صح؟ | A-na MAA-shee sah
+l2_after_intersection | بعد التقاطع؟ | ba'd it-ta-AA-to'
+l2_walk_there | بقدر أروح مشي من هون؟ | BA'-dar a-ROOH MA-shee min hoon
+l2_quicker_way | في طريق أسرع؟ | fee ta-REE' AS-ra'
+l2_which_exit | من أي مخرج أطلع؟ | min ay MAKH-raj AT-la'
+l2_is_elevator | في مصعد؟ | fee MAS-'ad
+r:l2_are_you_safe | إنت بمكان آمن؟ | IN-ta b-ma-KAAN AA-men
+r:l2_when_start | إيمتى بلّش؟ | EEM-ta BAL-lash
+r:l2_where_last | وين آخر مرة شفته؟ | wayn AA-kher MAR-ra SHUF-toh
+r:l2_any_allergies | عندك حساسية؟ | IN-dak ha-saa-SEE-yeh
+r:l2_have_insurance | عندك تأمين؟ | IN-dak ta'-MEEN
+r:l2_see_passport | ممكن أشوف جواز السفر؟ | MUM-kin a-SHOOF ja-WAAZ is-SA-far
+r:l2_room_not_ready | غرفتك لسا مش جاهزة. | GHURF-tak LIS-sa mish JAAH-zeh
+r:l2_can_move_you | بنقدر نغيّرلك الغرفة. | b-NI'-dar n-ghay-YER-lak il-GHUR-feh
+r:l2_extra_fee | في رسوم زيادة. | fee ru-SOOM zee-YAA-deh
+r:l2_left_at_light | لفّ شمال عند الإشارة. | liff shmaal ind il-i-SHAA-ra
+r:l2_ten_minutes | حوالي عشر دقايق من هون. | ha-WAA-lee A-shar da-AA-ye' min hoon
+r:l2_exit_three | اطلع من مخرج تلاتة. | IT-la' min MAKH-raj ta-LAA-teh
+x:l2_im_near~hotel | أنا قريب من الفندق. | A-na a-REEB min il-FUN-du'
+x:l2_im_near~station | أنا قريب من محطة القطار. | A-na a-REEB min ma-HAT-tit il-i-TAAR
+x:l2_im_near~airport | أنا قريب من المطار. | A-na a-REEB min il-ma-TAAR
+x:l2_im_near~pharmacy | أنا قريب من الصيدلية. | A-na a-REEB min is-say-da-LEE-yeh
+x:l2_started_ago~hour | بلّش من ساعة. | BAL-lash min SAA-a
+x:l2_started_ago~two_hours | بلّش من ساعتين. | BAL-lash min saa-TAYN
+x:l2_started_ago~day | بلّش من يوم. | BAL-lash min yom
+x:l2_started_ago~three_days | بلّش من تلات أيام. | BAL-lash min ta-LAT tee-YAAM
+x:l2_booking_nights~two | حجزي لليلتين. | HAJ-zee la-layl-TAYN
+x:l2_booking_nights~three | حجزي لتلات ليالي. | HAJ-zee la-ta-LAT la-YAA-lee
+x:l2_booking_nights~four | حجزي لأربع ليالي. | HAJ-zee la-AR-ba' la-YAA-lee
+x:l2_booking_nights~five | حجزي لخمس ليالي. | HAJ-zee la-KHAMS la-YAA-lee

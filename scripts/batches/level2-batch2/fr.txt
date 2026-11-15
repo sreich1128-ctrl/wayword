@@ -1,0 +1,50 @@
+l2_im_near | Je suis près de ___. | zhuh swee preh duh ___
+l2_send_ambulance | Vous pouvez envoyer une ambulance ici ? | voo poo-vay ahn-vwah-YAY ewn ahn-bew-LAHNSS ee-SEE
+l2_share_location | Je peux partager ma position. | zhuh puh par-tah-ZHAY mah poh-zee-SYOHN
+l2_getting_worse | Ça empire. | sah ahn-PEER
+l2_started_ago | Ça a commencé il y a ___. | sah ah koh-mahn-SAY eel yah ___
+l2_urgent_help | J'ai besoin de soins médicaux urgents. | zhay buh-ZWAN duh swan may-dee-KOH ewr-ZHAHN
+l2_passport_stolen | On m'a volé mon passeport. | ohn mah voh-LAY mohn pahss-POR
+l2_file_report | Où est-ce que je peux porter plainte ? | oo ess kuh zhuh puh por-TAY PLANT
+l2_dont_know_when | Je ne sais pas exactement quand. | zhuh nuh say pah eg-zak-tuh-MAHN KAHN
+l2_how_often | Je dois le prendre tous les combien ? | zhuh dwah luh PRAHN-druh too lay kohm-BYEN
+l2_speak_pharmacist | J'ai besoin de parler à un pharmacien. | zhay buh-ZWAN duh par-LAY ah uhn far-mah-SYAN
+l2_booking_nights | Ma réservation est pour ___ nuits. | mah ray-zehr-vah-SYOHN eh poor ___ NWEE
+l2_breakfast_time | Le petit-déjeuner est à quelle heure ? | luh puh-tee day-zhuh-NAY eh tah kel UHR
+l2_early_checkin | Est-ce qu'on peut arriver plus tôt ? | ess kohn puh ah-ree-VAY plew TOH
+l2_when_ready | Elle sera prête quand ? | el suh-rah PRET kahn
+l2_room_noisy | Ma chambre est trop bruyante. | mah SHAHN-bruh eh troh brwee-YAHNT
+l2_quieter_room | Il y a une chambre plus calme ? | eel yah ewn SHAHN-bruh plew KALM
+l2_speak_manager | Je peux parler au responsable ? | zhuh puh par-LAY oh ress-pohn-SAH-bluh
+l2_late_checkout | Je peux libérer la chambre plus tard ? | zhuh puh lee-bay-RAY lah SHAHN-bruh plew TAR
+l2_how_much_extra | C'est combien en plus ? | say kohm-BYEN ahn PLEWSS
+l2_right_way | Je vais dans la bonne direction ? | zhuh vay dahn lah bon dee-rek-SYOHN
+l2_after_intersection | Après le carrefour ? | ah-PREH luh kar-FOOR
+l2_walk_there | On peut y aller à pied d'ici ? | ohn puh ee ah-LAY ah PYAY dee-SEE
+l2_quicker_way | Il y a un chemin plus rapide ? | eel yah uhn shuh-MAN plew rah-PEED
+l2_which_exit | Je prends quelle sortie ? | zhuh prahn kel sor-TEE
+l2_is_elevator | Il y a un ascenseur ? | eel yah uhn ah-sahn-SUHR
+r:l2_are_you_safe | Vous êtes en sécurité ? | voo zet ahn say-kew-ree-TAY
+r:l2_when_start | Ça a commencé quand ? | sah ah koh-mahn-SAY KAHN
+r:l2_where_last | Où l'avez-vous vu pour la dernière fois ? | oo lah-vay voo VEW poor lah dehr-NYEHR FWAH
+r:l2_any_allergies | Vous avez des allergies ? | voo zah-vay day zah-lehr-ZHEE
+r:l2_have_insurance | Vous avez une assurance ? | voo zah-vay ewn ah-sew-RAHNSS
+r:l2_see_passport | Je peux voir votre passeport ? | zhuh puh vwahr voh-truh pahss-POR
+r:l2_room_not_ready | Votre chambre n'est pas encore prête. | voh-truh SHAHN-bruh nay pah zahn-kor PRET
+r:l2_can_move_you | On peut vous changer de chambre. | ohn puh voo shahn-ZHAY duh SHAHN-bruh
+r:l2_extra_fee | Il y a un supplément. | eel yah uhn sew-play-MAHN
+r:l2_left_at_light | Tournez à gauche au feu. | toor-nay ah GOHSH oh FUH
+r:l2_ten_minutes | C'est à dix minutes environ. | say tah dee mee-NEWT ahn-vee-ROHN
+r:l2_exit_three | Prenez la sortie trois. | pruh-nay lah sor-TEE TRWAH
+x:l2_im_near~hotel | Je suis près de l'hôtel. | zhuh swee preh duh loh-TEL
+x:l2_im_near~station | Je suis près de la gare. | zhuh swee preh duh lah GAR
+x:l2_im_near~airport | Je suis près de l'aéroport. | zhuh swee preh duh lah-ay-roh-POR
+x:l2_im_near~pharmacy | Je suis près de la pharmacie. | zhuh swee preh duh lah far-mah-SEE
+x:l2_started_ago~hour | Ça a commencé il y a une heure. | sah ah koh-mahn-SAY eel yah ewn UHR
+x:l2_started_ago~two_hours | Ça a commencé il y a deux heures. | sah ah koh-mahn-SAY eel yah duh ZUHR
+x:l2_started_ago~day | Ça a commencé il y a un jour. | sah ah koh-mahn-SAY eel yah uhn ZHOOR
+x:l2_started_ago~three_days | Ça a commencé il y a trois jours. | sah ah koh-mahn-SAY eel yah trwah ZHOOR
+x:l2_booking_nights~two | Ma réservation est pour deux nuits. | mah ray-zehr-vah-SYOHN eh poor duh NWEE
+x:l2_booking_nights~three | Ma réservation est pour trois nuits. | mah ray-zehr-vah-SYOHN eh poor trwah NWEE
+x:l2_booking_nights~four | Ma réservation est pour quatre nuits. | mah ray-zehr-vah-SYOHN eh poor KAH-truh NWEE
+x:l2_booking_nights~five | Ma réservation est pour cinq nuits. | mah ray-zehr-vah-SYOHN eh poor sank NWEE

@@ -713,6 +713,143 @@
       "id": "l2_how_much_to",
       "target": "Сколько стоит до ___?",
       "pronunciation_easy": "SKOL-kah STOH-eet dah ___"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "Я рядом с ___.",
+      "pronunciation_easy": "ya RYAH-dahm s ___"
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "Можете прислать сюда скорую?",
+      "pronunciation_easy": "MOH-zhuh-tyeh pree-SLAT syoo-DAH SKOH-roo-yoo",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "Я могу отправить геолокацию.",
+      "pronunciation_easy": "ya mah-GOO aht-PRAH-veet gheh-oh-lah-KAH-tsy-yoo"
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "Становится хуже.",
+      "pronunciation_easy": "stah-NOH-veet-sah KHOO-zheh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "Это началось ___ назад.",
+      "pronunciation_easy": "EH-tah nah-chah-LOS ___ nah-ZAHT",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "Мне нужна срочная медицинская помощь.",
+      "pronunciation_easy": "mnyeh noozh-NAH SROCH-nah-yah mee-dee-TSEEN-skah-yah POH-mahshch",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "У меня украли паспорт.",
+      "pronunciation_easy": "oo mee-NYAH oo-KRAH-lee PAHS-pahrt"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "Где можно написать заявление?",
+      "pronunciation_easy": "gdyeh MOZH-nah nah-pee-SAT zah-yahv-LYEH-nee-yeh"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "Не знаю точно когда.",
+      "pronunciation_easy": "nee ZNAH-yoo TOCH-nah kahg-DAH"
+    },
+    {
+      "id": "l2_how_often",
+      "target": "Как часто его принимать?",
+      "pronunciation_easy": "kak CHAHS-tah yee-VOH pree-nee-MAT",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "Мне нужно поговорить с фармацевтом.",
+      "pronunciation_easy": "mnyeh NOOZH-nah pah-gah-vah-REET s fahr-mah-TSEF-tahm",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "У меня бронь на ___ ночи.",
+      "pronunciation_easy": "oo mee-NYAH bron nah ___ NOH-chee",
+      "qa": "The noun changes with the number: две/три/четыре ночи, пять ночей (see the variations)."
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "Во сколько завтрак?",
+      "pronunciation_easy": "vah SKOL-kah ZAHF-trahk"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "Можно заселиться пораньше?",
+      "pronunciation_easy": "MOZH-nah zah-see-LEET-sah pah-RAHN-sheh"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "Когда он будет готов?",
+      "pronunciation_easy": "kahg-DAH on BOO-deet gah-TOF"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "В моём номере слишком шумно.",
+      "pronunciation_easy": "v mah-YOM NOH-mee-ryeh SLEESH-kahm SHOOM-nah"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "Есть номер потише?",
+      "pronunciation_easy": "yest NOH-meer pah-TEE-sheh"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "Можно поговорить с менеджером?",
+      "pronunciation_easy": "MOZH-nah pah-gah-vah-REET s MEH-ned-zheh-rahm"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "Можно выехать позже?",
+      "pronunciation_easy": "MOZH-nah VY-yeh-khat POH-zheh"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "Сколько это будет стоить?",
+      "pronunciation_easy": "SKOL-kah EH-tah BOO-deet STOH-eet"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "Я правильно иду?",
+      "pronunciation_easy": "ya PRAH-veel-nah ee-DOO"
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "После перекрёстка?",
+      "pronunciation_easy": "POS-lyeh pee-ree-KRYOST-kah"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "Туда можно дойти пешком?",
+      "pronunciation_easy": "too-DAH MOZH-nah dai-TEE peesh-KOM"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "Есть путь быстрее?",
+      "pronunciation_easy": "yest poot by-STRYEH-yeh"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "Какой выход мне нужен?",
+      "pronunciation_easy": "kah-KOY VY-khaht mnyeh NOO-zheen"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "Здесь есть лифт?",
+      "pronunciation_easy": "zdyes yest leeft"
     }
   ],
   "vocab": {
@@ -1787,6 +1924,72 @@
         "target": "Сколько стоит до центра?",
         "pronunciation_easy": "SKOL-kah STOH-eet dah TSEN-trah"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "Я рядом с отелем.",
+        "pronunciation_easy": "ya RYAH-dahm s ah-TEH-lyem"
+      },
+      {
+        "word": "station",
+        "target": "Я рядом с вокзалом.",
+        "pronunciation_easy": "ya RYAH-dahm s vahk-ZAH-lahm"
+      },
+      {
+        "word": "airport",
+        "target": "Я рядом с аэропортом.",
+        "pronunciation_easy": "ya RYAH-dahm s ah-eh-rah-POR-tahm"
+      },
+      {
+        "word": "pharmacy",
+        "target": "Я рядом с аптекой.",
+        "pronunciation_easy": "ya RYAH-dahm s ahp-TYEH-koy"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "Это началось час назад.",
+        "pronunciation_easy": "EH-tah nah-chah-LOS chahs nah-ZAHT"
+      },
+      {
+        "word": "two_hours",
+        "target": "Это началось два часа назад.",
+        "pronunciation_easy": "EH-tah nah-chah-LOS dvah chah-SAH nah-ZAHT"
+      },
+      {
+        "word": "day",
+        "target": "Это началось день назад.",
+        "pronunciation_easy": "EH-tah nah-chah-LOS dyen nah-ZAHT"
+      },
+      {
+        "word": "three_days",
+        "target": "Это началось три дня назад.",
+        "pronunciation_easy": "EH-tah nah-chah-LOS tree dnyah nah-ZAHT"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "У меня бронь на две ночи.",
+        "pronunciation_easy": "oo mee-NYAH bron nah dvyeh NOH-chee"
+      },
+      {
+        "word": "three",
+        "target": "У меня бронь на три ночи.",
+        "pronunciation_easy": "oo mee-NYAH bron nah tree NOH-chee"
+      },
+      {
+        "word": "four",
+        "target": "У меня бронь на четыре ночи.",
+        "pronunciation_easy": "oo mee-NYAH bron nah chee-TY-ree NOH-chee"
+      },
+      {
+        "word": "five",
+        "target": "У меня бронь на пять ночей.",
+        "pronunciation_easy": "oo mee-NYAH bron nah pyat nah-CHEY"
+      }
     ]
   },
   "replies": {
@@ -1958,6 +2161,54 @@
     "l2_fixed_price": {
       "target": "Цена фиксированная.",
       "pronunciation_easy": "tsee-NAH fee-KSEE-rah-vah-nah-yah"
+    },
+    "l2_are_you_safe": {
+      "target": "Вы в безопасном месте?",
+      "pronunciation_easy": "vy v bee-zah-PAHS-nahm MYES-tyeh"
+    },
+    "l2_when_start": {
+      "target": "Когда это началось?",
+      "pronunciation_easy": "kahg-DAH EH-tah nah-chah-LOS"
+    },
+    "l2_where_last": {
+      "target": "Где вы его видели в последний раз?",
+      "pronunciation_easy": "gdyeh vy yee-VOH VEE-dee-lee f pahs-LYED-nee rahs"
+    },
+    "l2_any_allergies": {
+      "target": "У вас есть аллергия?",
+      "pronunciation_easy": "oo vahs yest ah-leer-GHEE-yah"
+    },
+    "l2_have_insurance": {
+      "target": "У вас есть страховка?",
+      "pronunciation_easy": "oo vahs yest strah-KHOF-kah"
+    },
+    "l2_see_passport": {
+      "target": "Можно ваш паспорт?",
+      "pronunciation_easy": "MOZH-nah vahsh PAHS-pahrt"
+    },
+    "l2_room_not_ready": {
+      "target": "Ваш номер ещё не готов.",
+      "pronunciation_easy": "vahsh NOH-meer yee-SHCHYO nee gah-TOF"
+    },
+    "l2_can_move_you": {
+      "target": "Мы можем вас переселить.",
+      "pronunciation_easy": "my MOH-zhem vahs pee-ree-see-LEET"
+    },
+    "l2_extra_fee": {
+      "target": "Это за дополнительную плату.",
+      "pronunciation_easy": "EH-tah zah dah-pahl-NEE-teel-noo-yoo PLAH-too"
+    },
+    "l2_left_at_light": {
+      "target": "На светофоре поверните налево.",
+      "pronunciation_easy": "nah svee-tah-FOH-ryeh pah-veer-NEE-tyeh nah-LYEH-vah"
+    },
+    "l2_ten_minutes": {
+      "target": "Это минут десять отсюда.",
+      "pronunciation_easy": "EH-tah mee-NOOT DYEH-seet aht-SYOO-dah"
+    },
+    "l2_exit_three": {
+      "target": "Вам нужен третий выход.",
+      "pronunciation_easy": "vahm NOO-zheen TRYEH-tee VY-khaht"
     }
   }
 }

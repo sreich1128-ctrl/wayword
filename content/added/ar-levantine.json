@@ -728,6 +728,144 @@
       "id": "l2_how_much_to",
       "target": "قديش لحد ___؟",
       "pronunciation_easy": "ad-DAYSH la-HAD ___"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "أنا قريب من ___.",
+      "pronunciation_easy": "A-na a-REEB min ___",
+      "qa": "Said by a man; a woman: قريبة (a-REE-beh)."
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "ممكن تبعتوا إسعاف لهون؟",
+      "pronunciation_easy": "MUM-kin tib-A-too is-AAF la-HOON",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "بقدر أبعت موقعي.",
+      "pronunciation_easy": "BA'-dar AB-'at MAW-'ee"
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "عم يزيد.",
+      "pronunciation_easy": "am y-ZEED",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "بلّش من ___.",
+      "pronunciation_easy": "BAL-lash min ___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "بدي علاج طبي ضروري.",
+      "pronunciation_easy": "BAD-dee i-LAAJ TIB-bee da-ROO-ree",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "انسرق جواز سفري.",
+      "pronunciation_easy": "in-SA-ra' ja-WAAZ SA-fa-ree"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "وين بقدر أقدّم بلاغ؟",
+      "pronunciation_easy": "wayn BA'-dar a-AD-dem ba-LAAGH"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "ما بعرف بالزبط إيمتى.",
+      "pronunciation_easy": "ma BA'-ref biz-ZABT EEM-ta"
+    },
+    {
+      "id": "l2_how_often",
+      "target": "كل قديش لازم آخده؟",
+      "pronunciation_easy": "kul ad-DAYSH LAA-zim AA-khdoh",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "لازم أحكي مع صيدلاني.",
+      "pronunciation_easy": "LAA-zim AH-kee ma' say-da-LAA-nee",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "حجزي لـ ___ ليالي.",
+      "pronunciation_easy": "HAJ-zee la-___ la-YAA-lee"
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "أي ساعة الفطور؟",
+      "pronunciation_easy": "ay SAA-a il-f-TOOR"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "ممكن أعمل تشيك إن بكير؟",
+      "pronunciation_easy": "MUM-kin A'-mal chek-IN b-KEER"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "إيمتى بتكون جاهزة؟",
+      "pronunciation_easy": "EEM-ta bit-KOON JAAH-zeh"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "غرفتي فيها ضجة كتير.",
+      "pronunciation_easy": "ghur-FIT-ee FEE-ha DAJ-jeh kteer"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "في غرفة أهدى؟",
+      "pronunciation_easy": "fee GHUR-feh AH-da"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "ممكن أحكي مع المدير؟",
+      "pronunciation_easy": "MUM-kin AH-kee ma' il-mu-DEER"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "ممكن أطلع من الغرفة متأخر؟",
+      "pronunciation_easy": "MUM-kin AT-la' min il-GHUR-feh mit-AKH-kher"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "قديش الزيادة؟",
+      "pronunciation_easy": "ad-DAYSH iz-zee-YAA-deh"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "أنا ماشي صح؟",
+      "pronunciation_easy": "A-na MAA-shee sah",
+      "qa": "Said by a man; a woman: ماشية (MAASH-yeh)."
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "بعد التقاطع؟",
+      "pronunciation_easy": "ba'd it-ta-AA-to'"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "بقدر أروح مشي من هون؟",
+      "pronunciation_easy": "BA'-dar a-ROOH MA-shee min hoon"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "في طريق أسرع؟",
+      "pronunciation_easy": "fee ta-REE' AS-ra'"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "من أي مخرج أطلع؟",
+      "pronunciation_easy": "min ay MAKH-raj AT-la'"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "في مصعد؟",
+      "pronunciation_easy": "fee MAS-'ad"
     }
   ],
   "vocab": {
@@ -1829,6 +1967,72 @@
         "target": "قديش لحد وسط البلد؟",
         "pronunciation_easy": "ad-DAYSH la-HAD WA-sat il-BA-lad"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "أنا قريب من الفندق.",
+        "pronunciation_easy": "A-na a-REEB min il-FUN-du'"
+      },
+      {
+        "word": "station",
+        "target": "أنا قريب من محطة القطار.",
+        "pronunciation_easy": "A-na a-REEB min ma-HAT-tit il-i-TAAR"
+      },
+      {
+        "word": "airport",
+        "target": "أنا قريب من المطار.",
+        "pronunciation_easy": "A-na a-REEB min il-ma-TAAR"
+      },
+      {
+        "word": "pharmacy",
+        "target": "أنا قريب من الصيدلية.",
+        "pronunciation_easy": "A-na a-REEB min is-say-da-LEE-yeh"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "بلّش من ساعة.",
+        "pronunciation_easy": "BAL-lash min SAA-a"
+      },
+      {
+        "word": "two_hours",
+        "target": "بلّش من ساعتين.",
+        "pronunciation_easy": "BAL-lash min saa-TAYN"
+      },
+      {
+        "word": "day",
+        "target": "بلّش من يوم.",
+        "pronunciation_easy": "BAL-lash min yom"
+      },
+      {
+        "word": "three_days",
+        "target": "بلّش من تلات أيام.",
+        "pronunciation_easy": "BAL-lash min ta-LAT tee-YAAM"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "حجزي لليلتين.",
+        "pronunciation_easy": "HAJ-zee la-layl-TAYN"
+      },
+      {
+        "word": "three",
+        "target": "حجزي لتلات ليالي.",
+        "pronunciation_easy": "HAJ-zee la-ta-LAT la-YAA-lee"
+      },
+      {
+        "word": "four",
+        "target": "حجزي لأربع ليالي.",
+        "pronunciation_easy": "HAJ-zee la-AR-ba' la-YAA-lee"
+      },
+      {
+        "word": "five",
+        "target": "حجزي لخمس ليالي.",
+        "pronunciation_easy": "HAJ-zee la-KHAMS la-YAA-lee"
+      }
     ]
   },
   "replies": {
@@ -2013,6 +2217,54 @@
     "l2_fixed_price": {
       "target": "السعر ثابت.",
       "pronunciation_easy": "is-SI'r SAA-bet"
+    },
+    "l2_are_you_safe": {
+      "target": "إنت بمكان آمن؟",
+      "pronunciation_easy": "IN-ta b-ma-KAAN AA-men"
+    },
+    "l2_when_start": {
+      "target": "إيمتى بلّش؟",
+      "pronunciation_easy": "EEM-ta BAL-lash"
+    },
+    "l2_where_last": {
+      "target": "وين آخر مرة شفته؟",
+      "pronunciation_easy": "wayn AA-kher MAR-ra SHUF-toh"
+    },
+    "l2_any_allergies": {
+      "target": "عندك حساسية؟",
+      "pronunciation_easy": "IN-dak ha-saa-SEE-yeh"
+    },
+    "l2_have_insurance": {
+      "target": "عندك تأمين؟",
+      "pronunciation_easy": "IN-dak ta'-MEEN"
+    },
+    "l2_see_passport": {
+      "target": "ممكن أشوف جواز السفر؟",
+      "pronunciation_easy": "MUM-kin a-SHOOF ja-WAAZ is-SA-far"
+    },
+    "l2_room_not_ready": {
+      "target": "غرفتك لسا مش جاهزة.",
+      "pronunciation_easy": "GHURF-tak LIS-sa mish JAAH-zeh"
+    },
+    "l2_can_move_you": {
+      "target": "بنقدر نغيّرلك الغرفة.",
+      "pronunciation_easy": "b-NI'-dar n-ghay-YER-lak il-GHUR-feh"
+    },
+    "l2_extra_fee": {
+      "target": "في رسوم زيادة.",
+      "pronunciation_easy": "fee ru-SOOM zee-YAA-deh"
+    },
+    "l2_left_at_light": {
+      "target": "لفّ شمال عند الإشارة.",
+      "pronunciation_easy": "liff shmaal ind il-i-SHAA-ra"
+    },
+    "l2_ten_minutes": {
+      "target": "حوالي عشر دقايق من هون.",
+      "pronunciation_easy": "ha-WAA-lee A-shar da-AA-ye' min hoon"
+    },
+    "l2_exit_three": {
+      "target": "اطلع من مخرج تلاتة.",
+      "pronunciation_easy": "IT-la' min MAKH-raj ta-LAA-teh"
     }
   }
 }

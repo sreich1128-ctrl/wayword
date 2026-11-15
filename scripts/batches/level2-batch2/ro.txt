@@ -1,0 +1,50 @@
+l2_im_near | Sunt lângă ___. | soont LUHN-guh ___
+l2_send_ambulance | Puteți trimite o ambulanță aici? | poo-TETS tree-MEE-teh oh ahm-boo-LAHN-tsuh ah-EETCH
+l2_share_location | Pot să vă trimit locația mea. | poht suh vuh tree-MEET loh-KAH-tsyah myah
+l2_getting_worse | Se înrăutățește. | seh in-ruh-oo-tuh-TSESH-teh
+l2_started_ago | A început acum ___. | ah in-cheh-POOT ah-KOOM ___
+l2_urgent_help | Am nevoie urgentă de îngrijiri medicale. | ahm neh-VOH-yeh oor-JEN-tuh deh in-gree-ZHEER meh-dee-KAH-leh
+l2_passport_stolen | Mi s-a furat pașaportul. | mee sah foo-RAHT pah-shah-POR-tool
+l2_file_report | Unde pot depune o plângere? | OON-deh poht deh-POO-neh oh PLUHN-jeh-reh
+l2_dont_know_when | Nu știu exact când. | noo shtee-oo eg-ZAKT kuhnd
+l2_how_often | Cât de des trebuie să îl iau? | kuht deh des TREH-boo-yeh suh il yow
+l2_speak_pharmacist | Trebuie să vorbesc cu un farmacist. | TREH-boo-yeh suh vor-BESK koo oon far-mah-CHEEST
+l2_booking_nights | Rezervarea mea este pentru ___ nopți. | reh-zehr-VAH-ryah myah YES-teh PEN-troo ___ nopts
+l2_breakfast_time | La ce oră este micul dejun? | lah cheh OH-ruh YES-teh MEE-kool deh-ZHOON
+l2_early_checkin | Se poate face check-in mai devreme? | seh PWAH-teh FAH-cheh chek-EEN my deh-VREH-meh
+l2_when_ready | Când va fi gata? | kuhnd vah fee GAH-tah
+l2_room_noisy | Camera mea este prea zgomotoasă. | KAH-meh-rah myah YES-teh pryah zgoh-moh-TWAH-suh
+l2_quieter_room | Aveți o cameră mai liniștită? | ah-VETS oh KAH-meh-ruh my lee-neesh-TEE-tuh
+l2_speak_manager | Pot vorbi cu managerul? | poht vor-BEE koo MEH-neh-jeh-rool
+l2_late_checkout | Pot face check-out mai târziu? | poht FAH-cheh chek-OWT my tuhr-ZEE-oo
+l2_how_much_extra | Cât costă în plus? | kuht KOS-tuh in ploos
+l2_right_way | Merg în direcția bună? | merg in dee-REK-tsyah BOO-nuh
+l2_after_intersection | După intersecție? | DOO-puh een-tehr-SEK-tsyeh
+l2_walk_there | Pot merge pe jos de aici? | poht MEHR-jeh peh zhos deh ah-EETCH
+l2_quicker_way | Există un drum mai rapid? | eg-ZEES-tuh oon droom my rah-PEED
+l2_which_exit | Pe ce ieșire să o iau? | peh cheh yeh-SHEE-reh suh oh yow
+l2_is_elevator | Există lift? | eg-ZEES-tuh leeft
+r:l2_are_you_safe | Sunteți într-un loc sigur? | SOON-tets IN-troon lok see-GOOR
+r:l2_when_start | Când a început? | kuhnd ah in-cheh-POOT
+r:l2_where_last | Unde l-ați avut ultima dată? | OON-deh lahts ah-VOOT OOL-tee-mah DAH-tuh
+r:l2_any_allergies | Aveți vreo alergie? | ah-VETS vreh-oh ah-ler-JEE-eh
+r:l2_have_insurance | Aveți asigurare? | ah-VETS ah-see-goo-RAH-reh
+r:l2_see_passport | Pot să văd pașaportul? | poht suh vuhd pah-shah-POR-tool
+r:l2_room_not_ready | Camera dumneavoastră nu este gata încă. | KAH-meh-rah doom-nyah-VWAS-truh noo YES-teh GAH-tah IN-kuh
+r:l2_can_move_you | Vă putem muta. | vuh poo-TEM moo-TAH
+r:l2_extra_fee | Există o taxă suplimentară. | eg-ZEES-tuh oh TAK-suh soo-plee-men-TAH-ruh
+r:l2_left_at_light | Faceți stânga la semafor. | FAH-chets STUHN-gah lah seh-mah-FOR
+r:l2_ten_minutes | Sunt cam zece minute. | soont kahm ZEH-cheh mee-NOO-teh
+r:l2_exit_three | Luați-o pe ieșirea trei. | LWAH-tsee-oh peh yeh-SHEE-ryah tray
+x:l2_im_near~hotel | Sunt lângă hotel. | soont LUHN-guh hoh-TEL
+x:l2_im_near~station | Sunt lângă gară. | soont LUHN-guh GAH-ruh
+x:l2_im_near~airport | Sunt lângă aeroport. | soont LUHN-guh ah-eh-roh-PORT
+x:l2_im_near~pharmacy | Sunt lângă farmacie. | soont LUHN-guh far-mah-CHEE-eh
+x:l2_started_ago~hour | A început acum o oră. | ah in-cheh-POOT ah-KOOM oh OH-ruh
+x:l2_started_ago~two_hours | A început acum două ore. | ah in-cheh-POOT ah-KOOM DOH-wuh OH-reh
+x:l2_started_ago~day | A început acum o zi. | ah in-cheh-POOT ah-KOOM oh zee
+x:l2_started_ago~three_days | A început acum trei zile. | ah in-cheh-POOT ah-KOOM tray ZEE-leh
+x:l2_booking_nights~two | Rezervarea mea este pentru două nopți. | reh-zehr-VAH-ryah myah YES-teh PEN-troo DOH-wuh nopts
+x:l2_booking_nights~three | Rezervarea mea este pentru trei nopți. | reh-zehr-VAH-ryah myah YES-teh PEN-troo tray nopts
+x:l2_booking_nights~four | Rezervarea mea este pentru patru nopți. | reh-zehr-VAH-ryah myah YES-teh PEN-troo PAH-troo nopts
+x:l2_booking_nights~five | Rezervarea mea este pentru cinci nopți. | reh-zehr-VAH-ryah myah YES-teh PEN-troo cheench nopts

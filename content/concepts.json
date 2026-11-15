@@ -1362,5 +1362,239 @@
     "type": "pattern",
     "level": 2,
     "situation": "transport"
+  },
+  {
+    "id": "l2_im_near",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "I'm near ___.",
+    "type": "pattern",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_send_ambulance",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "Can you send an ambulance here?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_share_location",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "I can share my location.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_getting_worse",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "It's getting worse.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_started_ago",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "It started ___ ago.",
+    "type": "pattern",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_urgent_help",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "I need urgent medical attention.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_passport_stolen",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "My passport was stolen.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_file_report",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "Where can I file a report?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_dont_know_when",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "I don't know exactly when.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_how_often",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "How often should I take it?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_speak_pharmacist",
+    "category": "emergency",
+    "priority": "explore",
+    "english": "I need to speak to a pharmacist.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "emergency"
+  },
+  {
+    "id": "l2_booking_nights",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "My booking is for ___ nights.",
+    "type": "pattern",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_breakfast_time",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "What time is breakfast?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_early_checkin",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "Is early check-in possible?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_when_ready",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "When will it be ready?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_room_noisy",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "My room is too noisy.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_quieter_room",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "Is there a quieter room?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_speak_manager",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "Could I speak to the manager?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_late_checkout",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "Can I check out later?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_how_much_extra",
+    "category": "hotel",
+    "priority": "explore",
+    "english": "How much extra?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "hotel"
+  },
+  {
+    "id": "l2_right_way",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Am I going the right way?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "directions"
+  },
+  {
+    "id": "l2_after_intersection",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "After the intersection?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "directions"
+  },
+  {
+    "id": "l2_walk_there",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Can I walk there from here?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "directions"
+  },
+  {
+    "id": "l2_quicker_way",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is there a quicker way?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "directions"
+  },
+  {
+    "id": "l2_which_exit",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Which exit should I take?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "directions"
+  },
+  {
+    "id": "l2_is_elevator",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is there an elevator?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "directions"
   }
 ]

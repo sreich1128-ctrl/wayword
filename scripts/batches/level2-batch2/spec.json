@@ -1,0 +1,58 @@
+{
+  "title": "Level 2 (Communicative), batch 2: Help & emergencies, Hotel, Lost / Directions",
+  "source_note": "English from docs/LEVEL_CUT.md Part B. Changes: \"My ___ is getting worse\" became the fixed \"It's getting worse.\" (safer than a body-part frame); the pharmacy exchange opens with Level 1's \"I need medicine for ___.\"",
+  "concepts": [
+    ["l2_im_near", "emergency", "I'm near ___.", "pattern", "emergency"],
+    ["l2_send_ambulance", "emergency", "Can you send an ambulance here?", "phrase", "emergency"],
+    ["l2_share_location", "emergency", "I can share my location.", "phrase", "emergency"],
+    ["l2_getting_worse", "emergency", "It's getting worse.", "phrase", "emergency"],
+    ["l2_started_ago", "emergency", "It started ___ ago.", "pattern", "emergency"],
+    ["l2_urgent_help", "emergency", "I need urgent medical attention.", "phrase", "emergency"],
+    ["l2_passport_stolen", "emergency", "My passport was stolen.", "phrase", "emergency"],
+    ["l2_file_report", "emergency", "Where can I file a report?", "phrase", "emergency"],
+    ["l2_dont_know_when", "emergency", "I don't know exactly when.", "phrase", "emergency"],
+    ["l2_how_often", "emergency", "How often should I take it?", "phrase", "emergency"],
+    ["l2_speak_pharmacist", "emergency", "I need to speak to a pharmacist.", "phrase", "emergency"],
+    ["l2_booking_nights", "hotel", "My booking is for ___ nights.", "pattern", "hotel"],
+    ["l2_breakfast_time", "hotel", "What time is breakfast?", "phrase", "hotel"],
+    ["l2_early_checkin", "hotel", "Is early check-in possible?", "phrase", "hotel"],
+    ["l2_when_ready", "hotel", "When will it be ready?", "phrase", "hotel"],
+    ["l2_room_noisy", "hotel", "My room is too noisy.", "phrase", "hotel"],
+    ["l2_quieter_room", "hotel", "Is there a quieter room?", "phrase", "hotel"],
+    ["l2_speak_manager", "hotel", "Could I speak to the manager?", "phrase", "hotel"],
+    ["l2_late_checkout", "hotel", "Can I check out later?", "phrase", "hotel"],
+    ["l2_how_much_extra", "hotel", "How much extra?", "phrase", "hotel"],
+    ["l2_right_way", "navigation", "Am I going the right way?", "phrase", "directions"],
+    ["l2_after_intersection", "navigation", "After the intersection?", "phrase", "directions"],
+    ["l2_walk_there", "navigation", "Can I walk there from here?", "phrase", "directions"],
+    ["l2_quicker_way", "navigation", "Is there a quicker way?", "phrase", "directions"],
+    ["l2_which_exit", "navigation", "Which exit should I take?", "phrase", "directions"],
+    ["l2_is_elevator", "navigation", "Is there an elevator?", "phrase", "directions"]
+  ],
+  "replies": [
+    ["l2_are_you_safe", "Are you somewhere safe?", ["emergency"], ["yes", "no"]],
+    ["l2_when_start", "When did it start?", ["emergency"], ["l2_started_ago"]],
+    ["l2_where_last", "Where did you last have it?", ["emergency"], ["l2_dont_know_when"]],
+    ["l2_any_allergies", "Do you have any allergies?", ["emergency"], ["yes", "no", "allergic_to"]],
+    ["l2_have_insurance", "Do you have insurance?", ["emergency"], ["yes", "no"]],
+    ["l2_see_passport", "Can I see your passport?", ["hotel"], ["okay"]],
+    ["l2_room_not_ready", "Your room isn't ready yet.", ["hotel"], ["l2_when_ready"]],
+    ["l2_can_move_you", "We can move you.", ["hotel"], ["l2_quieter_room", "thank_you"]],
+    ["l2_extra_fee", "There's an extra fee.", ["hotel"], ["l2_how_much_extra"]],
+    ["l2_left_at_light", "Turn left at the traffic light.", ["directions"], ["l2_after_intersection"]],
+    ["l2_ten_minutes", "It's about ten minutes away.", ["directions"], ["l2_quicker_way"]],
+    ["l2_exit_three", "Use exit three.", ["directions"], ["l2_is_elevator"]]
+  ],
+  "examples": {
+    "l2_im_near": [["hotel", "the hotel", "I'm near the hotel."], ["station", "the train station", "I'm near the train station."], ["airport", "the airport", "I'm near the airport."], ["pharmacy", "the pharmacy", "I'm near the pharmacy."]],
+    "l2_started_ago": [["hour", "an hour", "It started an hour ago."], ["two_hours", "two hours", "It started two hours ago."], ["day", "a day", "It started a day ago."], ["three_days", "three days", "It started three days ago."]],
+    "l2_booking_nights": [["two", "two", "My booking is for two nights."], ["three", "three", "My booking is for three nights."], ["four", "four", "My booking is for four nights."], ["five", "five", "My booking is for five nights."]]
+  },
+  "qa": {
+    "*": {"l2_send_ambulance": "PRIORITY REVIEW (medical).", "l2_getting_worse": "PRIORITY REVIEW (medical).", "l2_started_ago": "PRIORITY REVIEW (medical).", "l2_urgent_help": "PRIORITY REVIEW (medical).", "l2_how_often": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed.", "l2_speak_pharmacist": "PRIORITY REVIEW (medical)."},
+    "it": {"l2_im_near": "vicino said by a man, vicina by a woman."},
+    "he": {"l2_dont_know_when": "Said by a man; a woman: יודעת (yo-DA-at).", "l2_share_location": "Said by a man; a woman: יכולה (ye-kho-LA)."},
+    "ar-levantine": {"l2_im_near": "Said by a man; a woman: قريبة (a-REE-beh).", "l2_right_way": "Said by a man; a woman: ماشية (MAASH-yeh)."},
+    "ru": {"l2_booking_nights": "The noun changes with the number: две/три/четыре ночи, пять ночей (see the variations)."}
+  }
+}

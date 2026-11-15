@@ -713,6 +713,144 @@
       "id": "l2_how_much_to",
       "target": "כמה עולה עד ___?",
       "pronunciation_easy": "KA-ma o-LE ad ___"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "אני ליד ___.",
+      "pronunciation_easy": "a-NEE le-YAD ___"
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "אפשר לשלוח לפה אמבולנס?",
+      "pronunciation_easy": "ef-SHAR lish-LO-akh le-FO AM-boo-lans",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "אני יכול לשתף את המיקום שלי.",
+      "pronunciation_easy": "a-NEE ya-KHOL le-sha-TEF et ha-mee-KOOM she-LEE",
+      "qa": "Said by a man; a woman: יכולה (ye-kho-LA)."
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "זה מחמיר.",
+      "pronunciation_easy": "ze makh-MEER",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "זה התחיל לפני ___.",
+      "pronunciation_easy": "ze hit-KHEEL lif-NEY ___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "אני צריך טיפול רפואי דחוף.",
+      "pronunciation_easy": "a-NEE tsa-REEKH tee-POOL re-fu-EE da-KHOOF",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "גנבו לי את הדרכון.",
+      "pronunciation_easy": "gan-VOO lee et ha-dar-KON"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "איפה אפשר להגיש תלונה?",
+      "pronunciation_easy": "EY-fo ef-SHAR le-ha-GEESH tlu-NA"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "אני לא יודע בדיוק מתי.",
+      "pronunciation_easy": "a-NEE lo yo-DE-a be-dee-YUK ma-TAI",
+      "qa": "Said by a man; a woman: יודעת (yo-DA-at)."
+    },
+    {
+      "id": "l2_how_often",
+      "target": "כל כמה זמן לקחת את זה?",
+      "pronunciation_easy": "kol KA-ma zman la-KA-khat et ze",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "אני צריך לדבר עם רוקח.",
+      "pronunciation_easy": "a-NEE tsa-REEKH le-da-BER im ro-KE-akh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "ההזמנה שלי היא ל___ לילות.",
+      "pronunciation_easy": "ha-haz-ma-NA she-LEE hee le-___ ley-LOT"
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "באיזו שעה ארוחת הבוקר?",
+      "pronunciation_easy": "be-EY-zo sha-A a-ru-KHAT ha-BO-ker"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "אפשר לעשות צ'ק-אין מוקדם?",
+      "pronunciation_easy": "ef-SHAR la-a-SOT chek-EEN muk-DAM"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "מתי הוא יהיה מוכן?",
+      "pronunciation_easy": "ma-TAI hu yih-YE mu-KHAN"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "החדר שלי רועש מדי.",
+      "pronunciation_easy": "ha-KHE-der she-LEE ro-ESH mi-DAI"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "יש חדר שקט יותר?",
+      "pronunciation_easy": "yesh KHE-der sha-KET yo-TER"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "אפשר לדבר עם המנהל?",
+      "pronunciation_easy": "ef-SHAR le-da-BER im ha-me-na-HEL"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "אפשר לעשות צ'ק-אאוט מאוחר?",
+      "pronunciation_easy": "ef-SHAR la-a-SOT chek-AUT me-u-KHAR"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "כמה זה עולה בנוסף?",
+      "pronunciation_easy": "KA-ma ze o-LE be-no-SAF"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "אני בכיוון הנכון?",
+      "pronunciation_easy": "a-NEE ba-kee-VOON ha-na-KHON"
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "אחרי הצומת?",
+      "pronunciation_easy": "a-kha-REY ha-TSO-met"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "אפשר ללכת לשם ברגל מפה?",
+      "pronunciation_easy": "ef-SHAR la-LE-khet le-SHAM ba-RE-gel mi-PO"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "יש דרך מהירה יותר?",
+      "pronunciation_easy": "yesh DE-rekh me-hee-RA yo-TER"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "באיזו יציאה לצאת?",
+      "pronunciation_easy": "be-EY-zo ye-tsee-A la-TSET"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "יש מעלית?",
+      "pronunciation_easy": "yesh ma-a-LEET"
     }
   ],
   "vocab": {
@@ -1802,6 +1940,72 @@
         "target": "כמה עולה עד מרכז העיר?",
         "pronunciation_easy": "KA-ma o-LE ad mer-KAZ ha-EER"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "אני ליד המלון.",
+        "pronunciation_easy": "a-NEE le-YAD ha-ma-LON"
+      },
+      {
+        "word": "station",
+        "target": "אני ליד תחנת הרכבת.",
+        "pronunciation_easy": "a-NEE le-YAD ta-kha-NAT ha-ra-KE-vet"
+      },
+      {
+        "word": "airport",
+        "target": "אני ליד שדה התעופה.",
+        "pronunciation_easy": "a-NEE le-YAD sde ha-te-u-FA"
+      },
+      {
+        "word": "pharmacy",
+        "target": "אני ליד בית המרקחת.",
+        "pronunciation_easy": "a-NEE le-YAD beyt ha-mir-KA-khat"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "זה התחיל לפני שעה.",
+        "pronunciation_easy": "ze hit-KHEEL lif-NEY sha-A"
+      },
+      {
+        "word": "two_hours",
+        "target": "זה התחיל לפני שעתיים.",
+        "pronunciation_easy": "ze hit-KHEEL lif-NEY sha-a-TA-yim"
+      },
+      {
+        "word": "day",
+        "target": "זה התחיל לפני יום.",
+        "pronunciation_easy": "ze hit-KHEEL lif-NEY yom"
+      },
+      {
+        "word": "three_days",
+        "target": "זה התחיל לפני שלושה ימים.",
+        "pronunciation_easy": "ze hit-KHEEL lif-NEY shlo-SHA ya-MEEM"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "ההזמנה שלי היא לשני לילות.",
+        "pronunciation_easy": "ha-haz-ma-NA she-LEE hee lish-NEY ley-LOT"
+      },
+      {
+        "word": "three",
+        "target": "ההזמנה שלי היא לשלושה לילות.",
+        "pronunciation_easy": "ha-haz-ma-NA she-LEE hee lish-lo-SHA ley-LOT"
+      },
+      {
+        "word": "four",
+        "target": "ההזמנה שלי היא לארבעה לילות.",
+        "pronunciation_easy": "ha-haz-ma-NA she-LEE hee le-ar-ba-A ley-LOT"
+      },
+      {
+        "word": "five",
+        "target": "ההזמנה שלי היא לחמישה לילות.",
+        "pronunciation_easy": "ha-haz-ma-NA she-LEE hee la-kha-mee-SHA ley-LOT"
+      }
     ]
   },
   "replies": {
@@ -1983,6 +2187,54 @@
     "l2_fixed_price": {
       "target": "זה מחיר קבוע.",
       "pronunciation_easy": "ze me-KHEER ka-VU-a"
+    },
+    "l2_are_you_safe": {
+      "target": "אתה במקום בטוח?",
+      "pronunciation_easy": "a-TA be-ma-KOM ba-TU-akh"
+    },
+    "l2_when_start": {
+      "target": "מתי זה התחיל?",
+      "pronunciation_easy": "ma-TAI ze hit-KHEEL"
+    },
+    "l2_where_last": {
+      "target": "איפה ראית אותו בפעם האחרונה?",
+      "pronunciation_easy": "EY-fo ra-EE-ta o-TO ba-PA-am ha-a-kha-ro-NA"
+    },
+    "l2_any_allergies": {
+      "target": "יש לך אלרגיות?",
+      "pronunciation_easy": "yesh le-KHA a-LER-gyot"
+    },
+    "l2_have_insurance": {
+      "target": "יש לך ביטוח?",
+      "pronunciation_easy": "yesh le-KHA bee-TU-akh"
+    },
+    "l2_see_passport": {
+      "target": "אפשר לראות את הדרכון?",
+      "pronunciation_easy": "ef-SHAR lir-OT et ha-dar-KON"
+    },
+    "l2_room_not_ready": {
+      "target": "החדר שלך עוד לא מוכן.",
+      "pronunciation_easy": "ha-KHE-der shel-KHA od lo mu-KHAN"
+    },
+    "l2_can_move_you": {
+      "target": "אפשר להעביר אותך חדר.",
+      "pronunciation_easy": "ef-SHAR le-ha-a-VEER ot-KHA KHE-der"
+    },
+    "l2_extra_fee": {
+      "target": "יש תוספת תשלום.",
+      "pronunciation_easy": "yesh to-SE-fet tash-LOOM"
+    },
+    "l2_left_at_light": {
+      "target": "תפנה שמאלה ברמזור.",
+      "pronunciation_easy": "tif-NE SMO-la ba-ram-ZOR"
+    },
+    "l2_ten_minutes": {
+      "target": "זה בערך עשר דקות מפה.",
+      "pronunciation_easy": "ze be-E-rekh E-ser da-KOT mi-PO"
+    },
+    "l2_exit_three": {
+      "target": "צא ביציאה שלוש.",
+      "pronunciation_easy": "tse ba-ye-tsee-A sha-LOSH"
     }
   }
 }

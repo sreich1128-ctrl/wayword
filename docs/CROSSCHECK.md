@@ -9,15 +9,15 @@ Generated 2026-11-15 by `node scripts/crosscheck.mjs`. Source: [Tatoeba](https:/
 
 | Language | Drafts | Match | Close | Differs | None |
 |---|---|---|---|---|---|
-| European Portuguese | 282 | 43 | 13 | 34 | 192 |
-| Spanish | 282 | 60 | 16 | 24 | 182 |
-| French | 282 | 60 | 12 | 32 | 178 |
-| Italian | 282 | 63 | 12 | 21 | 186 |
-| Romanian | 282 | 20 | 6 | 10 | 246 |
-| Russian | 282 | 67 | 9 | 35 | 171 |
-| Japanese | 282 | 24 | 5 | 48 | 205 |
-| Hebrew | 282 | 30 | 7 | 19 | 226 |
-| Levantine Arabic | 282 | 12 | 2 | 31 (28 formal-only) | 237 |
+| European Portuguese | 329 | 45 | 16 | 37 | 231 |
+| Spanish | 329 | 64 | 19 | 24 | 222 |
+| French | 329 | 61 | 13 | 40 | 215 |
+| Italian | 329 | 69 | 12 | 23 | 225 |
+| Romanian | 329 | 20 | 6 | 11 | 292 |
+| Russian | 329 | 75 | 9 | 37 | 208 |
+| Japanese | 329 | 26 | 6 | 49 | 248 |
+| Hebrew | 329 | 32 | 7 | 21 | 269 |
+| Levantine Arabic | 329 | 12 | 2 | 33 (30 formal-only) | 282 |
 
 ## European Portuguese
 
@@ -41,6 +41,9 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Please leave me alone. | Deixe-me em paz, por favor. | Por favor, me deixe em paz. · Por favor, me deixe em paz. | differs |
 | How long are you here for? | Quanto tempo vai ficar cá? | Por quanto tempo você estará aqui? | differs |
 | We didn't order this. | Não pedimos isto. | Nós não pedimos isto. · Nós não encomendamos isto. | close |
+| It's getting worse. | Está a piorar. | Está piorando. | differs |
+| When will it be ready? | Quando estará pronto? | Quando ficará pronto? | close |
+| Am I going the right way? | Estou a ir no caminho certo? | Estou indo na direção certa? | differs |
 | Where is the train station? | Onde fica a estação de comboios? | Onde é a estação? · Onde fica a estação? | differs |
 | Where is the bus stop? | Onde fica a paragem de autocarro? | Onde é o ponto de ônibus? · Onde fica o ponto de ônibus? | differs |
 | Where is an ATM? | Onde fica o multibanco? | Onde há um caixa eletrônico? · Onde tem um caixa eletrônico? | differs |
@@ -72,6 +75,9 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Follow me. | Venha comigo. | Siga-me. · Siga-me! | differs |
 | Last call. | Últimos pedidos. | Última chamada! · Última rodada! | differs |
 | Yes, that's right. | Sim, exatamente. | Sim, está correto. | differs |
+| Do you have any allergies? | Tem alguma alergia? | Você tem alguma alergia? · Vocês têm alguma alergia? | close |
+| Do you have insurance? | Tem seguro? | Você tem seguro? · Vocês têm seguro? | differs |
+| Can I see your passport? | Posso ver o seu passaporte? | Posso ver seu passaporte? · Eu posso ver seu passaporte? | close |
 
 ## Spanish
 
@@ -96,6 +102,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | And then? | ¿Y después? | ¿Entonces qué? · ¿Y qué? | differs |
 | I'll come back later. | Vuelvo más tarde. | Volveré más tarde. · Luego vuelvo. | differs |
 | Is it spicy? | ¿Es picante? | ¿Está picante? | close |
+| When will it be ready? | ¿Cuándo estará lista? | ¿Cuándo estará listo? | close |
 | Where is an ATM? | ¿Dónde está el cajero automático? | ¿Dónde hay un cajero automático? | close |
 | How do I get to the beach? | ¿Cómo llego a la playa? | ¿Cómo puedo llegar a la playa? | differs |
 | I'm allergic to nuts. | Soy alérgico a los frutos secos. | Soy alérgico a las nueces. | differs |
@@ -117,6 +124,8 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Passport, please. | El pasaporte, por favor. | Pasaporte, por favor. · ¿Me permite ver su pasaporte? | close |
 | Last call. | Última ronda. | ¡Última llamada! | differs |
 | Yes, that's right. | Sí, eso es. | Sí, así es. · Sí, eso es correcto. | differs |
+| Do you have any allergies? | ¿Tiene alguna alergia? | ¿Tienes alguna alergia? · ¿Tenéis alguna alergia? | close |
+| Can I see your passport? | ¿Me permite su pasaporte? | ¿Me permite ver su pasaporte? · ¿Puedo ver su pasaporte? | close |
 
 ## French
 
@@ -140,6 +149,11 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | What time does it close? | Ça ferme à quelle heure ? | À quelle heure ça ferme ? · À quelle heure ferme-t-il ? | differs |
 | Is there someone who speaks English? | Il y a quelqu'un qui parle anglais ? | Y a-t-il quelqu'un qui parle anglais ? · Est-ce qu'il y a quelqu'un ici qui parle l'anglais ? | close |
 | We didn't order this. | On n'a pas commandé ça. | Nous n'avons pas commandé ça. | differs |
+| It's getting worse. | Ça empire. | C'est de pire en pire. | differs |
+| What time is breakfast? | Le petit-déjeuner est à quelle heure ? | À quelle heure est le petit-déjeuner ? | differs |
+| When will it be ready? | Elle sera prête quand ? | Quand sera-ce prêt ? | differs |
+| Am I going the right way? | Je vais dans la bonne direction ? | Suis-je sur la bonne voie ? | differs |
+| Is there an elevator? | Il y a un ascenseur ? | Y a-t-il un ascenseur ? | differs |
 | Where is the nearest bus stop? | Où est l'arrêt de bus le plus proche ? | Où se trouve l'arrêt de bus le plus proche ? | close |
 | How do I get to the airport? | Comment aller à l'aéroport ? | Comment puis-je parvenir à l'aéroport ? | differs |
 | How do I get to the train station? | Comment aller à la gare ? | Comment puis-je parvenir à la gare ? · Comment puis-je me rendre à la gare ? | differs |
@@ -157,6 +171,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Where can I get a taxi? | Où est-ce que je peux prendre un taxi ? | Où puis-je prendre un taxi ? · Où puis-je trouver un taxi ? | differs |
 | Where can I change money? | Où est-ce que je peux changer de l'argent ? | Où peux-je changer de l'argent ? · Où puis-je changer de l'argent ? | differs |
 | Does this contain gluten? | Est-ce qu'il y a du gluten dedans ? | Y a-t-il du gluten ? | differs |
+| I'm near the train station. | Je suis près de la gare. | Je suis proche de la gare. | close |
 | How many people? | Vous êtes combien ? | Combien de personnes ? | differs |
 | Do you have a reservation? | Vous avez une réservation ? | Avez-vous réservé ? · Vous avez réservé ? | differs |
 | Would you like a receipt? | Vous voulez le ticket ? | Vous voulez un reçu ? | differs |
@@ -166,6 +181,9 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Last call. | Dernières commandes. | Dernier appel ! · Dernière tournée ! | differs |
 | Yes, that's right. | Oui, c'est ça. | Oui, c'est vrai. · Oui, c'est comme ça. | differs |
 | Yes, it does. | Oui, il y en a. | Bien sûr ! · Bien sûr. | differs |
+| When did it start? | Ça a commencé quand ? | Quand cela a-t-il commencé ? | differs |
+| Do you have any allergies? | Vous avez des allergies ? | Avez-vous de quelconques allergies ? · As-tu la moindre allergie ? | differs |
+| Can I see your passport? | Je peux voir votre passeport ? | Puis-je voir votre passeport ? · Puis-je voir votre passeport ? | differs |
 
 ## Italian
 
@@ -196,6 +214,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Is there a pharmacy nearby? | C'è una farmacia qui vicino? | C'è una farmacia da queste parti? | differs |
 | Is there a supermarket nearby? | C'è un supermercato qui vicino? | C'è un supermercato nei paraggi? · C'è un supermercato nei dintorni? | differs |
 | Where can I buy tickets? | Dove posso comprare i biglietti? | Dove posso comprare dei biglietti? · Mi puoi dire dove comprare dei biglietti? | close |
+| I'm near the train station. | Sono vicino/a alla stazione. | Sono vicino alla stazione ferroviaria. | differs |
 | For here or to go? | Qui o da portare via? | È per asporto o lo mangia qui? | differs |
 | Anything else? | Altro? | Qualcos'altro? | differs |
 | Here you go. | Ecco a lei. | Tieni. · Ecco. | differs |
@@ -204,6 +223,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Where does it hurt? | Dove le fa male? | Dove ti fa male? | close |
 | Last call. | Ultimo giro. | Ultima chiamata! | differs |
 | Yes, that's right. | Sì, esatto. | L'hai detto! · L'hai detta! | differs |
+| When did it start? | Quando è iniziato? | Quando è cominciato? · Quando è cominciata? | differs |
 
 ## Romanian
 
@@ -225,6 +245,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | How many people? | Pentru câte persoane? | Câți oameni? | differs |
 | What happened? | Ce s-a întâmplat? | Ce s-a'ntâmplat? | close |
 | Yes, that's right. | Da, exact. | Da. Așa e. | differs |
+| Do you have any allergies? | Aveți vreo alergie? | Aveți alergii? | differs |
 
 ## Russian
 
@@ -274,6 +295,8 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | What can I get you? | Что будете? | Что мне тебе принести? · Что мне вам принести? | differs |
 | Last call. | Последние заказы. | Последний звонок! | differs |
 | Yes, that's right. | Да, верно. | Да, это так. · Да, это правда. | differs |
+| Do you have any allergies? | У вас есть аллергия? | У вас есть аллергия на что-нибудь? · У тебя есть аллергия на что-нибудь? | differs |
+| Can I see your passport? | Можно ваш паспорт? | Могу я увидеть Ваш паспорт? · Могу я увидеть ваш паспорт? | differs |
 
 ## Japanese
 
@@ -332,6 +355,8 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Follow me. | ついてきてください。 | 付いてこい！ · 私についてきて。 | differs |
 | Last call. | ラストオーダーです。 | 最後のチャンス！ | differs |
 | Yes, that's right. | はい、そうです。 | そう！その通り。 · ええ。その通りです。 | differs |
+| Do you have any allergies? | アレルギーはありますか？ | アレルギー体質ですか。 · 何かアレルギーはありますか？ | close |
+| Can I see your passport? | パスポートを拝見できますか？ | パスポートを見せてくれませんか？ · パスポートを見せてもらえますか。 | differs |
 
 ## Hebrew
 
@@ -348,6 +373,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | What time does it close? | מתי זה נסגר? | מתי הוא נסגר? | differs |
 | Is there someone who speaks English? | יש מישהו שמדבר אנגלית? | יש מישהו דובר אנגלית? | close |
 | I'll come back later. | אני אחזור אחר כך. | אחזור אחר כך. | differs |
+| What time is breakfast? | באיזו שעה ארוחת הבוקר? | מתי ארוחת הבוקר? | differs |
 | How do I get to the train station? | איך מגיעים לתחנת הרכבת? | איך אני מגיע לתחנת הרכבת? | differs |
 | I'm allergic to milk. | אני אלרגי לחלב. | יש לי רגישות לחלב. · יש לי אלרגיה לחלב. | differs |
 | The shower doesn't work. | המקלחת לא עובדת. | המקלחת מקולקלת. | differs |
@@ -357,6 +383,7 @@ _Tatoeba mixes Brazilian and European Portuguese, so a "differs" can just be Bra
 | Where can I buy tickets? | איפה אפשר לקנות כרטיסים? | איפה אני יכול לקנות כרטיסים? · איפה אני יכולה לקנות כרטיסים? | differs |
 | Where can I get a taxi? | איפה אפשר לתפוס מונית? | איפה אוכל להשיג מונית? | differs |
 | I'm from the United States. | אני מארצות הברית. | אני מארה"ב. | differs |
+| I'm near the train station. | אני ליד תחנת הרכבת. | אני בקרבת תחנת הרכבת. | differs |
 | How many people? | כמה אתם? | כמה אנשים? | differs |
 | This way. | מכאן, בבקשה. | לכאן. | differs |
 | Maybe another time. | אולי בפעם אחרת. | אולי פעם אחרת. | close |

@@ -446,6 +446,143 @@
         "l2_how_much_to"
       ],
       "level": 2
+    },
+    {
+      "id": "l2_are_you_safe",
+      "english": "Are you somewhere safe?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "yes",
+        "no"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_when_start",
+      "english": "When did it start?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "l2_started_ago"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_where_last",
+      "english": "Where did you last have it?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "l2_dont_know_when"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_any_allergies",
+      "english": "Do you have any allergies?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "yes",
+        "no",
+        "allergic_to"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_have_insurance",
+      "english": "Do you have insurance?",
+      "situations": [
+        "emergency"
+      ],
+      "answer_with": [
+        "yes",
+        "no"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_see_passport",
+      "english": "Can I see your passport?",
+      "situations": [
+        "hotel"
+      ],
+      "answer_with": [
+        "okay"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_room_not_ready",
+      "english": "Your room isn't ready yet.",
+      "situations": [
+        "hotel"
+      ],
+      "answer_with": [
+        "l2_when_ready"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_can_move_you",
+      "english": "We can move you.",
+      "situations": [
+        "hotel"
+      ],
+      "answer_with": [
+        "l2_quieter_room",
+        "thank_you"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_extra_fee",
+      "english": "There's an extra fee.",
+      "situations": [
+        "hotel"
+      ],
+      "answer_with": [
+        "l2_how_much_extra"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_left_at_light",
+      "english": "Turn left at the traffic light.",
+      "situations": [
+        "directions"
+      ],
+      "answer_with": [
+        "l2_after_intersection"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_ten_minutes",
+      "english": "It's about ten minutes away.",
+      "situations": [
+        "directions"
+      ],
+      "answer_with": [
+        "l2_quicker_way"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_exit_three",
+      "english": "Use exit three.",
+      "situations": [
+        "directions"
+      ],
+      "answer_with": [
+        "l2_is_elevator"
+      ],
+      "level": 2
     }
   ]
 }

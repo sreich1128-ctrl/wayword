@@ -722,6 +722,143 @@
       "id": "l2_how_much_to",
       "target": "Quanto costa fino a ___?",
       "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh ah ___"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "Sono vicino/a a ___.",
+      "pronunciation_easy": "SOH-noh vee-CHEE-noh/nah ah ___",
+      "qa": "vicino said by a man, vicina by a woman."
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "Può mandare un'ambulanza qui?",
+      "pronunciation_easy": "pwoh mahn-DAH-reh oon-am-boo-LAHN-tsah kwee",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "Posso condividere la mia posizione.",
+      "pronunciation_easy": "POS-soh kon-dee-VEE-deh-reh lah MEE-ah poh-zee-TSYOH-neh"
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "Sta peggiorando.",
+      "pronunciation_easy": "stah ped-joh-RAHN-doh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "È iniziato ___ fa.",
+      "pronunciation_easy": "eh ee-nee-TSYAH-toh ___ fah",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "Ho bisogno di cure mediche urgenti.",
+      "pronunciation_easy": "oh bee-ZOH-nyoh dee KOO-reh MEH-dee-keh oor-JEN-tee",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "Mi hanno rubato il passaporto.",
+      "pronunciation_easy": "mee AHN-noh roo-BAH-toh eel pahs-sah-POR-toh"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "Dove posso fare la denuncia?",
+      "pronunciation_easy": "DOH-veh POS-soh FAH-reh lah deh-NOON-chah"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "Non so esattamente quando.",
+      "pronunciation_easy": "non soh eh-zaht-tah-MEN-teh KWAHN-doh"
+    },
+    {
+      "id": "l2_how_often",
+      "target": "Ogni quanto devo prenderlo?",
+      "pronunciation_easy": "OH-nyee KWAHN-toh DEH-voh PREN-dehr-loh",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "Ho bisogno di parlare con un farmacista.",
+      "pronunciation_easy": "oh bee-ZOH-nyoh dee par-LAH-reh kon oon far-mah-CHEES-tah",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "La mia prenotazione è per ___ notti.",
+      "pronunciation_easy": "lah MEE-ah preh-noh-tah-TSYOH-neh eh pehr ___ NOT-tee"
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "A che ora è la colazione?",
+      "pronunciation_easy": "ah keh OH-rah eh lah koh-lah-TSYOH-neh"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "È possibile fare il check-in in anticipo?",
+      "pronunciation_easy": "eh pos-SEE-bee-leh FAH-reh eel chek-EEN een ahn-TEE-chee-poh"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "Quando sarà pronta?",
+      "pronunciation_easy": "KWAHN-doh sah-RAH PRON-tah"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "La mia camera è troppo rumorosa.",
+      "pronunciation_easy": "lah MEE-ah KAH-meh-rah eh TROP-poh roo-moh-ROH-zah"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "C'è una camera più tranquilla?",
+      "pronunciation_easy": "cheh OO-nah KAH-meh-rah pyoo trahn-KWEEL-lah"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "Posso parlare con il direttore?",
+      "pronunciation_easy": "POS-soh par-LAH-reh kon eel dee-ret-TOH-reh"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "Posso fare il check-out più tardi?",
+      "pronunciation_easy": "POS-soh FAH-reh eel chek-OWT pyoo TAR-dee"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "Quanto costa in più?",
+      "pronunciation_easy": "KWAHN-toh KOS-tah een PYOO"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "Sto andando nella direzione giusta?",
+      "pronunciation_easy": "stoh ahn-DAHN-doh NEL-lah dee-reh-TSYOH-neh JOOS-tah"
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "Dopo l'incrocio?",
+      "pronunciation_easy": "DOH-poh leen-KROH-choh"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "Ci si arriva a piedi da qui?",
+      "pronunciation_easy": "chee see ar-REE-vah ah PYEH-dee dah kwee"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "C'è una strada più veloce?",
+      "pronunciation_easy": "cheh OO-nah STRAH-dah pyoo veh-LOH-cheh"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "Quale uscita devo prendere?",
+      "pronunciation_easy": "KWAH-leh oo-SHEE-tah DEH-voh PREN-deh-reh"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "C'è un ascensore?",
+      "pronunciation_easy": "cheh oon ah-shen-SOH-reh"
     }
   ],
   "vocab": {
@@ -1796,6 +1933,72 @@
         "target": "Quanto costa fino al centro?",
         "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh ahl CHEN-troh"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "Sono vicino/a all'hotel.",
+        "pronunciation_easy": "SOH-noh vee-CHEE-noh/nah ahl-loh-TEL"
+      },
+      {
+        "word": "station",
+        "target": "Sono vicino/a alla stazione.",
+        "pronunciation_easy": "SOH-noh vee-CHEE-noh/nah AHL-lah stah-TSYOH-neh"
+      },
+      {
+        "word": "airport",
+        "target": "Sono vicino/a all'aeroporto.",
+        "pronunciation_easy": "SOH-noh vee-CHEE-noh/nah ahl-lah-eh-roh-POR-toh"
+      },
+      {
+        "word": "pharmacy",
+        "target": "Sono vicino/a alla farmacia.",
+        "pronunciation_easy": "SOH-noh vee-CHEE-noh/nah AHL-lah far-mah-CHEE-ah"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "È iniziato un'ora fa.",
+        "pronunciation_easy": "eh ee-nee-TSYAH-toh oon-OH-rah fah"
+      },
+      {
+        "word": "two_hours",
+        "target": "È iniziato due ore fa.",
+        "pronunciation_easy": "eh ee-nee-TSYAH-toh DOO-eh OH-reh fah"
+      },
+      {
+        "word": "day",
+        "target": "È iniziato un giorno fa.",
+        "pronunciation_easy": "eh ee-nee-TSYAH-toh oon JOR-noh fah"
+      },
+      {
+        "word": "three_days",
+        "target": "È iniziato tre giorni fa.",
+        "pronunciation_easy": "eh ee-nee-TSYAH-toh treh JOR-nee fah"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "La mia prenotazione è per due notti.",
+        "pronunciation_easy": "lah MEE-ah preh-noh-tah-TSYOH-neh eh pehr DOO-eh NOT-tee"
+      },
+      {
+        "word": "three",
+        "target": "La mia prenotazione è per tre notti.",
+        "pronunciation_easy": "lah MEE-ah preh-noh-tah-TSYOH-neh eh pehr treh NOT-tee"
+      },
+      {
+        "word": "four",
+        "target": "La mia prenotazione è per quattro notti.",
+        "pronunciation_easy": "lah MEE-ah preh-noh-tah-TSYOH-neh eh pehr KWAHT-troh NOT-tee"
+      },
+      {
+        "word": "five",
+        "target": "La mia prenotazione è per cinque notti.",
+        "pronunciation_easy": "lah MEE-ah preh-noh-tah-TSYOH-neh eh pehr CHEEN-kweh NOT-tee"
+      }
     ]
   },
   "replies": {
@@ -1967,6 +2170,54 @@
     "l2_fixed_price": {
       "target": "È un prezzo fisso.",
       "pronunciation_easy": "eh oon PRET-tsoh FEES-soh"
+    },
+    "l2_are_you_safe": {
+      "target": "È in un posto sicuro?",
+      "pronunciation_easy": "eh een oon POS-toh see-KOO-roh"
+    },
+    "l2_when_start": {
+      "target": "Quando è iniziato?",
+      "pronunciation_easy": "KWAHN-doh eh ee-nee-TSYAH-toh"
+    },
+    "l2_where_last": {
+      "target": "Dove l'ha visto l'ultima volta?",
+      "pronunciation_easy": "DOH-veh lah VEES-toh LOOL-tee-mah VOL-tah"
+    },
+    "l2_any_allergies": {
+      "target": "Ha qualche allergia?",
+      "pronunciation_easy": "ah KWAHL-keh al-lehr-JEE-ah"
+    },
+    "l2_have_insurance": {
+      "target": "Ha un'assicurazione?",
+      "pronunciation_easy": "ah oon-ahs-see-koo-rah-TSYOH-neh"
+    },
+    "l2_see_passport": {
+      "target": "Posso vedere il suo passaporto?",
+      "pronunciation_easy": "POS-soh veh-DEH-reh eel SOO-oh pahs-sah-POR-toh"
+    },
+    "l2_room_not_ready": {
+      "target": "La sua camera non è ancora pronta.",
+      "pronunciation_easy": "lah SOO-ah KAH-meh-rah non eh ahn-KOH-rah PRON-tah"
+    },
+    "l2_can_move_you": {
+      "target": "Possiamo cambiarle camera.",
+      "pronunciation_easy": "pos-SYAH-moh kahm-BYAR-leh KAH-meh-rah"
+    },
+    "l2_extra_fee": {
+      "target": "C'è un supplemento.",
+      "pronunciation_easy": "cheh oon soop-pleh-MEN-toh"
+    },
+    "l2_left_at_light": {
+      "target": "Giri a sinistra al semaforo.",
+      "pronunciation_easy": "JEE-ree ah see-NEES-trah ahl seh-MAH-foh-roh"
+    },
+    "l2_ten_minutes": {
+      "target": "È a circa dieci minuti.",
+      "pronunciation_easy": "eh ah CHEER-kah DYEH-chee mee-NOO-tee"
+    },
+    "l2_exit_three": {
+      "target": "Prenda l'uscita tre.",
+      "pronunciation_easy": "PREN-dah loo-SHEE-tah treh"
     }
   }
 }

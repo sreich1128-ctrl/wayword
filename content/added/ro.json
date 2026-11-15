@@ -707,6 +707,142 @@
       "id": "l2_how_much_to",
       "target": "Cât costă până la ___?",
       "pronunciation_easy": "kuht KOS-tuh PUH-nuh lah ___"
+    },
+    {
+      "id": "l2_im_near",
+      "target": "Sunt lângă ___.",
+      "pronunciation_easy": "soont LUHN-guh ___"
+    },
+    {
+      "id": "l2_send_ambulance",
+      "target": "Puteți trimite o ambulanță aici?",
+      "pronunciation_easy": "poo-TETS tree-MEE-teh oh ahm-boo-LAHN-tsuh ah-EETCH",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_share_location",
+      "target": "Pot să vă trimit locația mea.",
+      "pronunciation_easy": "poht suh vuh tree-MEET loh-KAH-tsyah myah"
+    },
+    {
+      "id": "l2_getting_worse",
+      "target": "Se înrăutățește.",
+      "pronunciation_easy": "seh in-ruh-oo-tuh-TSESH-teh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_started_ago",
+      "target": "A început acum ___.",
+      "pronunciation_easy": "ah in-cheh-POOT ah-KOOM ___",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_urgent_help",
+      "target": "Am nevoie urgentă de îngrijiri medicale.",
+      "pronunciation_easy": "ahm neh-VOH-yeh oor-JEN-tuh deh in-gree-ZHEER meh-dee-KAH-leh",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_passport_stolen",
+      "target": "Mi s-a furat pașaportul.",
+      "pronunciation_easy": "mee sah foo-RAHT pah-shah-POR-tool"
+    },
+    {
+      "id": "l2_file_report",
+      "target": "Unde pot depune o plângere?",
+      "pronunciation_easy": "OON-deh poht deh-POO-neh oh PLUHN-jeh-reh"
+    },
+    {
+      "id": "l2_dont_know_when",
+      "target": "Nu știu exact când.",
+      "pronunciation_easy": "noo shtee-oo eg-ZAKT kuhnd"
+    },
+    {
+      "id": "l2_how_often",
+      "target": "Cât de des trebuie să îl iau?",
+      "pronunciation_easy": "kuht deh des TREH-boo-yeh suh il yow",
+      "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
+    },
+    {
+      "id": "l2_speak_pharmacist",
+      "target": "Trebuie să vorbesc cu un farmacist.",
+      "pronunciation_easy": "TREH-boo-yeh suh vor-BESK koo oon far-mah-CHEEST",
+      "qa": "PRIORITY REVIEW (medical)."
+    },
+    {
+      "id": "l2_booking_nights",
+      "target": "Rezervarea mea este pentru ___ nopți.",
+      "pronunciation_easy": "reh-zehr-VAH-ryah myah YES-teh PEN-troo ___ nopts"
+    },
+    {
+      "id": "l2_breakfast_time",
+      "target": "La ce oră este micul dejun?",
+      "pronunciation_easy": "lah cheh OH-ruh YES-teh MEE-kool deh-ZHOON"
+    },
+    {
+      "id": "l2_early_checkin",
+      "target": "Se poate face check-in mai devreme?",
+      "pronunciation_easy": "seh PWAH-teh FAH-cheh chek-EEN my deh-VREH-meh"
+    },
+    {
+      "id": "l2_when_ready",
+      "target": "Când va fi gata?",
+      "pronunciation_easy": "kuhnd vah fee GAH-tah"
+    },
+    {
+      "id": "l2_room_noisy",
+      "target": "Camera mea este prea zgomotoasă.",
+      "pronunciation_easy": "KAH-meh-rah myah YES-teh pryah zgoh-moh-TWAH-suh"
+    },
+    {
+      "id": "l2_quieter_room",
+      "target": "Aveți o cameră mai liniștită?",
+      "pronunciation_easy": "ah-VETS oh KAH-meh-ruh my lee-neesh-TEE-tuh"
+    },
+    {
+      "id": "l2_speak_manager",
+      "target": "Pot vorbi cu managerul?",
+      "pronunciation_easy": "poht vor-BEE koo MEH-neh-jeh-rool"
+    },
+    {
+      "id": "l2_late_checkout",
+      "target": "Pot face check-out mai târziu?",
+      "pronunciation_easy": "poht FAH-cheh chek-OWT my tuhr-ZEE-oo"
+    },
+    {
+      "id": "l2_how_much_extra",
+      "target": "Cât costă în plus?",
+      "pronunciation_easy": "kuht KOS-tuh in ploos"
+    },
+    {
+      "id": "l2_right_way",
+      "target": "Merg în direcția bună?",
+      "pronunciation_easy": "merg in dee-REK-tsyah BOO-nuh"
+    },
+    {
+      "id": "l2_after_intersection",
+      "target": "După intersecție?",
+      "pronunciation_easy": "DOO-puh een-tehr-SEK-tsyeh"
+    },
+    {
+      "id": "l2_walk_there",
+      "target": "Pot merge pe jos de aici?",
+      "pronunciation_easy": "poht MEHR-jeh peh zhos deh ah-EETCH"
+    },
+    {
+      "id": "l2_quicker_way",
+      "target": "Există un drum mai rapid?",
+      "pronunciation_easy": "eg-ZEES-tuh oon droom my rah-PEED"
+    },
+    {
+      "id": "l2_which_exit",
+      "target": "Pe ce ieșire să o iau?",
+      "pronunciation_easy": "peh cheh yeh-SHEE-reh suh oh yow"
+    },
+    {
+      "id": "l2_is_elevator",
+      "target": "Există lift?",
+      "pronunciation_easy": "eg-ZEES-tuh leeft"
     }
   ],
   "vocab": {
@@ -1790,6 +1926,72 @@
         "target": "Cât costă până în centru?",
         "pronunciation_easy": "kuht KOS-tuh PUH-nuh in CHEN-troo"
       }
+    ],
+    "l2_im_near": [
+      {
+        "word": "hotel",
+        "target": "Sunt lângă hotel.",
+        "pronunciation_easy": "soont LUHN-guh hoh-TEL"
+      },
+      {
+        "word": "station",
+        "target": "Sunt lângă gară.",
+        "pronunciation_easy": "soont LUHN-guh GAH-ruh"
+      },
+      {
+        "word": "airport",
+        "target": "Sunt lângă aeroport.",
+        "pronunciation_easy": "soont LUHN-guh ah-eh-roh-PORT"
+      },
+      {
+        "word": "pharmacy",
+        "target": "Sunt lângă farmacie.",
+        "pronunciation_easy": "soont LUHN-guh far-mah-CHEE-eh"
+      }
+    ],
+    "l2_started_ago": [
+      {
+        "word": "hour",
+        "target": "A început acum o oră.",
+        "pronunciation_easy": "ah in-cheh-POOT ah-KOOM oh OH-ruh"
+      },
+      {
+        "word": "two_hours",
+        "target": "A început acum două ore.",
+        "pronunciation_easy": "ah in-cheh-POOT ah-KOOM DOH-wuh OH-reh"
+      },
+      {
+        "word": "day",
+        "target": "A început acum o zi.",
+        "pronunciation_easy": "ah in-cheh-POOT ah-KOOM oh zee"
+      },
+      {
+        "word": "three_days",
+        "target": "A început acum trei zile.",
+        "pronunciation_easy": "ah in-cheh-POOT ah-KOOM tray ZEE-leh"
+      }
+    ],
+    "l2_booking_nights": [
+      {
+        "word": "two",
+        "target": "Rezervarea mea este pentru două nopți.",
+        "pronunciation_easy": "reh-zehr-VAH-ryah myah YES-teh PEN-troo DOH-wuh nopts"
+      },
+      {
+        "word": "three",
+        "target": "Rezervarea mea este pentru trei nopți.",
+        "pronunciation_easy": "reh-zehr-VAH-ryah myah YES-teh PEN-troo tray nopts"
+      },
+      {
+        "word": "four",
+        "target": "Rezervarea mea este pentru patru nopți.",
+        "pronunciation_easy": "reh-zehr-VAH-ryah myah YES-teh PEN-troo PAH-troo nopts"
+      },
+      {
+        "word": "five",
+        "target": "Rezervarea mea este pentru cinci nopți.",
+        "pronunciation_easy": "reh-zehr-VAH-ryah myah YES-teh PEN-troo cheench nopts"
+      }
     ]
   },
   "replies": {
@@ -1962,6 +2164,54 @@
     "l2_fixed_price": {
       "target": "E preț fix.",
       "pronunciation_easy": "yeh prets feeks"
+    },
+    "l2_are_you_safe": {
+      "target": "Sunteți într-un loc sigur?",
+      "pronunciation_easy": "SOON-tets IN-troon lok see-GOOR"
+    },
+    "l2_when_start": {
+      "target": "Când a început?",
+      "pronunciation_easy": "kuhnd ah in-cheh-POOT"
+    },
+    "l2_where_last": {
+      "target": "Unde l-ați avut ultima dată?",
+      "pronunciation_easy": "OON-deh lahts ah-VOOT OOL-tee-mah DAH-tuh"
+    },
+    "l2_any_allergies": {
+      "target": "Aveți vreo alergie?",
+      "pronunciation_easy": "ah-VETS vreh-oh ah-ler-JEE-eh"
+    },
+    "l2_have_insurance": {
+      "target": "Aveți asigurare?",
+      "pronunciation_easy": "ah-VETS ah-see-goo-RAH-reh"
+    },
+    "l2_see_passport": {
+      "target": "Pot să văd pașaportul?",
+      "pronunciation_easy": "poht suh vuhd pah-shah-POR-tool"
+    },
+    "l2_room_not_ready": {
+      "target": "Camera dumneavoastră nu este gata încă.",
+      "pronunciation_easy": "KAH-meh-rah doom-nyah-VWAS-truh noo YES-teh GAH-tah IN-kuh"
+    },
+    "l2_can_move_you": {
+      "target": "Vă putem muta.",
+      "pronunciation_easy": "vuh poo-TEM moo-TAH"
+    },
+    "l2_extra_fee": {
+      "target": "Există o taxă suplimentară.",
+      "pronunciation_easy": "eg-ZEES-tuh oh TAK-suh soo-plee-men-TAH-ruh"
+    },
+    "l2_left_at_light": {
+      "target": "Faceți stânga la semafor.",
+      "pronunciation_easy": "FAH-chets STUHN-gah lah seh-mah-FOR"
+    },
+    "l2_ten_minutes": {
+      "target": "Sunt cam zece minute.",
+      "pronunciation_easy": "soont kahm ZEH-cheh mee-NOO-teh"
+    },
+    "l2_exit_three": {
+      "target": "Luați-o pe ieșirea trei.",
+      "pronunciation_easy": "LWAH-tsee-oh peh yeh-SHEE-ryah tray"
     }
   }
 }

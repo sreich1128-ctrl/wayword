@@ -1,0 +1,50 @@
+l2_im_near | Я рядом с ___. | ya RYAH-dahm s ___
+l2_send_ambulance | Можете прислать сюда скорую? | MOH-zhuh-tyeh pree-SLAT syoo-DAH SKOH-roo-yoo
+l2_share_location | Я могу отправить геолокацию. | ya mah-GOO aht-PRAH-veet gheh-oh-lah-KAH-tsy-yoo
+l2_getting_worse | Становится хуже. | stah-NOH-veet-sah KHOO-zheh
+l2_started_ago | Это началось ___ назад. | EH-tah nah-chah-LOS ___ nah-ZAHT
+l2_urgent_help | Мне нужна срочная медицинская помощь. | mnyeh noozh-NAH SROCH-nah-yah mee-dee-TSEEN-skah-yah POH-mahshch
+l2_passport_stolen | У меня украли паспорт. | oo mee-NYAH oo-KRAH-lee PAHS-pahrt
+l2_file_report | Где можно написать заявление? | gdyeh MOZH-nah nah-pee-SAT zah-yahv-LYEH-nee-yeh
+l2_dont_know_when | Не знаю точно когда. | nee ZNAH-yoo TOCH-nah kahg-DAH
+l2_how_often | Как часто его принимать? | kak CHAHS-tah yee-VOH pree-nee-MAT
+l2_speak_pharmacist | Мне нужно поговорить с фармацевтом. | mnyeh NOOZH-nah pah-gah-vah-REET s fahr-mah-TSEF-tahm
+l2_booking_nights | У меня бронь на ___ ночи. | oo mee-NYAH bron nah ___ NOH-chee
+l2_breakfast_time | Во сколько завтрак? | vah SKOL-kah ZAHF-trahk
+l2_early_checkin | Можно заселиться пораньше? | MOZH-nah zah-see-LEET-sah pah-RAHN-sheh
+l2_when_ready | Когда он будет готов? | kahg-DAH on BOO-deet gah-TOF
+l2_room_noisy | В моём номере слишком шумно. | v mah-YOM NOH-mee-ryeh SLEESH-kahm SHOOM-nah
+l2_quieter_room | Есть номер потише? | yest NOH-meer pah-TEE-sheh
+l2_speak_manager | Можно поговорить с менеджером? | MOZH-nah pah-gah-vah-REET s MEH-ned-zheh-rahm
+l2_late_checkout | Можно выехать позже? | MOZH-nah VY-yeh-khat POH-zheh
+l2_how_much_extra | Сколько это будет стоить? | SKOL-kah EH-tah BOO-deet STOH-eet
+l2_right_way | Я правильно иду? | ya PRAH-veel-nah ee-DOO
+l2_after_intersection | После перекрёстка? | POS-lyeh pee-ree-KRYOST-kah
+l2_walk_there | Туда можно дойти пешком? | too-DAH MOZH-nah dai-TEE peesh-KOM
+l2_quicker_way | Есть путь быстрее? | yest poot by-STRYEH-yeh
+l2_which_exit | Какой выход мне нужен? | kah-KOY VY-khaht mnyeh NOO-zheen
+l2_is_elevator | Здесь есть лифт? | zdyes yest leeft
+r:l2_are_you_safe | Вы в безопасном месте? | vy v bee-zah-PAHS-nahm MYES-tyeh
+r:l2_when_start | Когда это началось? | kahg-DAH EH-tah nah-chah-LOS
+r:l2_where_last | Где вы его видели в последний раз? | gdyeh vy yee-VOH VEE-dee-lee f pahs-LYED-nee rahs
+r:l2_any_allergies | У вас есть аллергия? | oo vahs yest ah-leer-GHEE-yah
+r:l2_have_insurance | У вас есть страховка? | oo vahs yest strah-KHOF-kah
+r:l2_see_passport | Можно ваш паспорт? | MOZH-nah vahsh PAHS-pahrt
+r:l2_room_not_ready | Ваш номер ещё не готов. | vahsh NOH-meer yee-SHCHYO nee gah-TOF
+r:l2_can_move_you | Мы можем вас переселить. | my MOH-zhem vahs pee-ree-see-LEET
+r:l2_extra_fee | Это за дополнительную плату. | EH-tah zah dah-pahl-NEE-teel-noo-yoo PLAH-too
+r:l2_left_at_light | На светофоре поверните налево. | nah svee-tah-FOH-ryeh pah-veer-NEE-tyeh nah-LYEH-vah
+r:l2_ten_minutes | Это минут десять отсюда. | EH-tah mee-NOOT DYEH-seet aht-SYOO-dah
+r:l2_exit_three | Вам нужен третий выход. | vahm NOO-zheen TRYEH-tee VY-khaht
+x:l2_im_near~hotel | Я рядом с отелем. | ya RYAH-dahm s ah-TEH-lyem
+x:l2_im_near~station | Я рядом с вокзалом. | ya RYAH-dahm s vahk-ZAH-lahm
+x:l2_im_near~airport | Я рядом с аэропортом. | ya RYAH-dahm s ah-eh-rah-POR-tahm
+x:l2_im_near~pharmacy | Я рядом с аптекой. | ya RYAH-dahm s ahp-TYEH-koy
+x:l2_started_ago~hour | Это началось час назад. | EH-tah nah-chah-LOS chahs nah-ZAHT
+x:l2_started_ago~two_hours | Это началось два часа назад. | EH-tah nah-chah-LOS dvah chah-SAH nah-ZAHT
+x:l2_started_ago~day | Это началось день назад. | EH-tah nah-chah-LOS dyen nah-ZAHT
+x:l2_started_ago~three_days | Это началось три дня назад. | EH-tah nah-chah-LOS tree dnyah nah-ZAHT
+x:l2_booking_nights~two | У меня бронь на две ночи. | oo mee-NYAH bron nah dvyeh NOH-chee
+x:l2_booking_nights~three | У меня бронь на три ночи. | oo mee-NYAH bron nah tree NOH-chee
+x:l2_booking_nights~four | У меня бронь на четыре ночи. | oo mee-NYAH bron nah chee-TY-ree NOH-chee
+x:l2_booking_nights~five | У меня бронь на пять ночей. | oo mee-NYAH bron nah pyat nah-CHEY

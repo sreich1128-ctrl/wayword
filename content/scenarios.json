@@ -87,6 +87,19 @@
       "trouble_breathing",
       "been_robbed",
       "medicine_for"
+    ],
+    "level2": [
+      "l2_im_near",
+      "l2_send_ambulance",
+      "l2_share_location",
+      "l2_getting_worse",
+      "l2_started_ago",
+      "l2_urgent_help",
+      "l2_passport_stolen",
+      "l2_file_report",
+      "l2_dont_know_when",
+      "l2_how_often",
+      "l2_speak_pharmacist"
     ]
   },
   {
@@ -282,6 +295,14 @@
       "is_far",
       "is_there_nearby",
       "looking_for"
+    ],
+    "level2": [
+      "l2_right_way",
+      "l2_after_intersection",
+      "l2_walk_there",
+      "l2_quicker_way",
+      "l2_which_exit",
+      "l2_is_elevator"
     ]
   },
   {
@@ -324,6 +345,17 @@
       "doesnt_work",
       "another_towel",
       "is_included"
+    ],
+    "level2": [
+      "l2_booking_nights",
+      "l2_breakfast_time",
+      "l2_early_checkin",
+      "l2_when_ready",
+      "l2_room_noisy",
+      "l2_quieter_room",
+      "l2_speak_manager",
+      "l2_late_checkout",
+      "l2_how_much_extra"
     ]
   },
   {
