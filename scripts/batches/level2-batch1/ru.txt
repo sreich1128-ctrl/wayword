@@ -1,0 +1,59 @@
+l2_didnt_catch | Я не расслышал/расслышала конец. | ya nee rahs-SLY-shahl/rahs-SLY-shah-lah kah-NYETS
+l2_last_word | Повторите последнее слово, пожалуйста. | pahf-tah-REE-tyeh pahs-LYED-nyeh-yeh SLOH-vah, pah-ZHAH-loo-stah
+l2_so_you_mean | То есть ___, да? | toh yest ___, dah
+l2_and_then | А потом? | ah pah-TOM
+l2_someone_english | Кто-нибудь говорит по-английски? | KTOH-nee-boot gah-vah-REET pah ahn-GLEES-kee
+l2_ask_them | Можете попросить их помочь? | MOH-zhuh-tyeh pah-prah-SEET eekh pah-MOCH
+l2_type_phone | Можете написать в моём телефоне? | MOH-zhuh-tyeh nah-pee-SAT v mah-YOM tee-lee-FOH-nyeh
+l2_another_way | Можете объяснить по-другому? | MOH-zhuh-tyeh ahb-yees-NEET pah droo-GOH-moo
+l2_show_me | Можете показать? | MOH-zhuh-tyeh pah-kah-ZAT
+l2_check_again | Можете проверить ещё раз? | MOH-zhuh-tyeh prah-VYEH-reet yee-SHCHYO rahs
+l2_write_down | Можете это написать? | MOH-zhuh-tyeh EH-tah nah-pee-SAT
+l2_translation_app | Давайте через переводчик? | dah-VAI-tyeh CHEH-rees pee-ree-VOT-cheek
+l2_come_back | Я зайду позже. | ya zai-DOO POH-zheh
+l2_never_mind | Ничего, спасибо. | nee-chee-VOH, spah-SEE-bah
+l2_wait_table | Сколько ждать столик? | SKOL-kah zhdat STOH-leek
+l2_name_down | Можете нас записать? | MOH-zhuh-tyeh nahs zah-pee-SAT
+l2_contain | Здесь есть ___? | zdyes yest ___
+l2_make_without | Можно без ___? | MOZH-nah byez ___
+l2_cant_eat_dairy | Мне нельзя молочное. | mnyeh neel-ZYAH mah-LOCH-nah-yeh
+l2_popular_dish | Какое блюдо у вас самое популярное? | kah-KOH-yeh BLYOO-dah oo vahs SAH-mah-yeh pah-poo-LYAR-nah-yeh
+l2_is_it_spicy | Это острое? | EH-tah OS-trah-yeh
+l2_bill_mistake | Кажется, в счёте ошибка. | KAH-zhet-sah, f SHCHYO-tyeh ah-SHYP-kah
+l2_didnt_order | Мы это не заказывали. | my EH-tah nee zah-KAH-zy-vah-lee
+l2_change_trains | Мне нужно делать пересадку? | mnyeh NOOZH-nah DYEH-lat pee-ree-SAHT-koo
+l2_platform_change | На какой платформе пересадка? | nah kah-KOY plaht-FOR-myeh pee-ree-SAHT-kah
+l2_ticket_on_board | Билет можно купить внутри? | bee-LYET MOZH-nah koo-PEET vnoo-TREE
+l2_ticket_machine | Где автомат с билетами? | gdyeh ahf-tah-MAHT s bee-LYEH-tah-mee
+l2_last_bus | Это последний автобус? | EH-tah pahs-LYED-nee ahf-TOH-boos
+l2_miss_it | А если я опоздаю? | ah YES-lee ya ah-pahz-DAH-yoo
+l2_use_meter | Включите счётчик, пожалуйста. | fklyoo-CHEE-tyeh SHCHYOT-cheek, pah-ZHAH-loo-stah
+l2_how_much_to | Сколько стоит до ___? | SKOL-kah STOH-eet dah ___
+r:l2_which_part | Какую часть? | kah-KOO-yoo chahst
+r:l2_thats_right | Да, верно. | dah, VYEHR-nah
+r:l2_let_me_ask | Сейчас спрошу. | see-CHAHS sprah-SHOO
+r:l2_about_twenty | Минут двадцать. | mee-NOOT DVAH-tsat
+r:l2_yes_it_does | Да, есть. | dah, yest
+r:l2_very_popular | Это очень популярное. | EH-tah OH-cheen pah-poo-LYAR-nah-yeh
+r:l2_which_item | Какая позиция? | kah-KAH-yah pah-ZEE-tsy-yah
+r:l2_next_station | Да, на следующей станции. | dah, nah SLYEH-doo-yoo-shchey STAHN-tsy-ee
+r:l2_only_machine | Только в автомате. | TOL-kah v ahf-tah-MAH-tyeh
+r:l2_one_at_midnight | Нет, есть ещё в полночь. | nyet, yest yee-SHCHYO f POL-nahch
+r:l2_fixed_price | Цена фиксированная. | tsee-NAH fee-KSEE-rah-vah-nah-yah
+x:l2_so_you_mean~today | То есть сегодня, да? | toh yest see-VOD-nyah, dah
+x:l2_so_you_mean~tomorrow | То есть завтра, да? | toh yest ZAHF-trah, dah
+x:l2_so_you_mean~next_street | То есть следующая улица, да? | toh yest SLYEH-doo-yoo-shchah-yah OO-lee-tsah, dah
+x:l2_so_you_mean~second_stop | То есть вторая остановка, да? | toh yest ftah-RAH-yah ah-stah-NOF-kah, dah
+x:l2_contain~nuts | Здесь есть орехи? | zdyes yest ah-RYEH-khee
+x:l2_contain~milk | Здесь есть молоко? | zdyes yest mah-lah-KOH
+x:l2_contain~egg | Здесь есть яйца? | zdyes yest YAI-tsah
+x:l2_contain~shellfish | Здесь есть морепродукты? | zdyes yest moh-ryeh-prah-DOOK-ty
+x:l2_contain~gluten | Здесь есть глютен? | zdyes yest glyoo-TEN
+x:l2_make_without~milk | Можно без молока? | MOZH-nah byez mah-lah-KAH
+x:l2_make_without~butter | Можно без масла? | MOZH-nah byez MAHS-lah
+x:l2_make_without~cheese | Можно без сыра? | MOZH-nah byez SY-rah
+x:l2_make_without~nuts | Можно без орехов? | MOZH-nah byez ah-RYEH-khahf
+x:l2_how_much_to~airport | Сколько стоит до аэропорта? | SKOL-kah STOH-eet dah ah-eh-rah-POR-tah
+x:l2_how_much_to~hotel | Сколько стоит до отеля? | SKOL-kah STOH-eet dah ah-TEH-lyah
+x:l2_how_much_to~station | Сколько стоит до вокзала? | SKOL-kah STOH-eet dah vahk-ZAH-lah
+x:l2_how_much_to~centre | Сколько стоит до центра? | SKOL-kah STOH-eet dah TSEN-trah

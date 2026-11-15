@@ -324,6 +324,128 @@
         "sightseeing"
       ],
       "answer_with": []
+    },
+    {
+      "id": "l2_which_part",
+      "english": "Which part?",
+      "situations": [
+        "basics"
+      ],
+      "answer_with": [
+        "l2_last_word"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_thats_right",
+      "english": "Yes, that's right.",
+      "situations": [
+        "basics"
+      ],
+      "answer_with": [
+        "l2_and_then"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_let_me_ask",
+      "english": "Let me ask.",
+      "situations": [
+        "basics"
+      ],
+      "answer_with": [
+        "thank_you"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_about_twenty",
+      "english": "About twenty minutes.",
+      "situations": [
+        "restaurant"
+      ],
+      "answer_with": [
+        "l2_name_down"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_yes_it_does",
+      "english": "Yes, it does.",
+      "situations": [
+        "restaurant"
+      ],
+      "answer_with": [
+        "l2_make_without",
+        "l2_cant_eat_dairy"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_very_popular",
+      "english": "This one is very popular.",
+      "situations": [
+        "restaurant"
+      ],
+      "answer_with": [
+        "l2_is_it_spicy"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_which_item",
+      "english": "Which item?",
+      "situations": [
+        "restaurant"
+      ],
+      "answer_with": [
+        "l2_didnt_order"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_next_station",
+      "english": "Yes, at the next station.",
+      "situations": [
+        "transport"
+      ],
+      "answer_with": [
+        "l2_platform_change"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_only_machine",
+      "english": "Only at the machine.",
+      "situations": [
+        "transport"
+      ],
+      "answer_with": [
+        "l2_ticket_machine"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_one_at_midnight",
+      "english": "No, there's one at midnight.",
+      "situations": [
+        "transport"
+      ],
+      "answer_with": [
+        "l2_miss_it"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_fixed_price",
+      "english": "It's a fixed price.",
+      "situations": [
+        "transport"
+      ],
+      "answer_with": [
+        "l2_how_much_to"
+      ],
+      "level": 2
     }
   ]
 }

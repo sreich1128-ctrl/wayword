@@ -564,6 +564,164 @@
       "id": "what_time_is_it",
       "target": "Che ore sono?",
       "pronunciation_easy": "keh OH-reh SOH-noh"
+    },
+    {
+      "id": "l2_didnt_catch",
+      "target": "Non ho capito l'ultima parte.",
+      "pronunciation_easy": "non oh kah-PEE-toh LOOL-tee-mah PAR-teh"
+    },
+    {
+      "id": "l2_last_word",
+      "target": "Può ripetere l'ultima parola?",
+      "pronunciation_easy": "pwoh ree-PEH-teh-reh LOOL-tee-mah pah-ROH-lah"
+    },
+    {
+      "id": "l2_so_you_mean",
+      "target": "Quindi intende ___, giusto?",
+      "pronunciation_easy": "KWEEN-dee een-TEN-deh ___, JOOS-toh"
+    },
+    {
+      "id": "l2_and_then",
+      "target": "E poi?",
+      "pronunciation_easy": "eh poy"
+    },
+    {
+      "id": "l2_someone_english",
+      "target": "C'è qualcuno che parla inglese?",
+      "pronunciation_easy": "cheh kwahl-KOO-noh keh PAR-lah een-GLEH-zeh"
+    },
+    {
+      "id": "l2_ask_them",
+      "target": "Può chiedergli aiuto?",
+      "pronunciation_easy": "pwoh KYEH-dehr-lyee ah-YOO-toh"
+    },
+    {
+      "id": "l2_type_phone",
+      "target": "Può scriverlo sul mio telefono?",
+      "pronunciation_easy": "pwoh SKREE-vehr-loh sool MEE-oh teh-LEH-foh-noh"
+    },
+    {
+      "id": "l2_another_way",
+      "target": "Può spiegarlo in un altro modo?",
+      "pronunciation_easy": "pwoh spyeh-GAR-loh een oon AHL-troh MOH-doh"
+    },
+    {
+      "id": "l2_show_me",
+      "target": "Può farmi vedere?",
+      "pronunciation_easy": "pwoh FAR-mee veh-DEH-reh"
+    },
+    {
+      "id": "l2_check_again",
+      "target": "Può controllare di nuovo?",
+      "pronunciation_easy": "pwoh kon-trol-LAH-reh dee NWOH-voh"
+    },
+    {
+      "id": "l2_write_down",
+      "target": "Può scriverlo?",
+      "pronunciation_easy": "pwoh SKREE-vehr-loh"
+    },
+    {
+      "id": "l2_translation_app",
+      "target": "Possiamo usare un traduttore?",
+      "pronunciation_easy": "pos-SYAH-moh oo-ZAH-reh oon trah-doot-TOH-reh"
+    },
+    {
+      "id": "l2_come_back",
+      "target": "Torno più tardi.",
+      "pronunciation_easy": "TOR-noh pyoo TAR-dee"
+    },
+    {
+      "id": "l2_never_mind",
+      "target": "Non importa, grazie.",
+      "pronunciation_easy": "non eem-POR-tah, GRAH-tsyeh"
+    },
+    {
+      "id": "l2_wait_table",
+      "target": "Quanto c'è da aspettare per un tavolo?",
+      "pronunciation_easy": "KWAHN-toh cheh dah ah-spet-TAH-reh pehr oon TAH-voh-loh"
+    },
+    {
+      "id": "l2_name_down",
+      "target": "Può segnare il nostro nome?",
+      "pronunciation_easy": "pwoh seh-NYAH-reh eel NOS-troh NOH-meh"
+    },
+    {
+      "id": "l2_contain",
+      "target": "Contiene ___?",
+      "pronunciation_easy": "kon-TYEH-neh ___",
+      "qa": "PRIORITY REVIEW (allergy). A yes/no answer is not a guarantee about how the food was prepared."
+    },
+    {
+      "id": "l2_make_without",
+      "target": "Può farlo senza ___?",
+      "pronunciation_easy": "pwoh FAR-loh SEN-tsah ___",
+      "qa": "PRIORITY REVIEW (allergy)."
+    },
+    {
+      "id": "l2_cant_eat_dairy",
+      "target": "Non posso mangiare latticini.",
+      "pronunciation_easy": "non POS-soh mahn-JAH-reh laht-tee-CHEE-nee",
+      "qa": "PRIORITY REVIEW (allergy)."
+    },
+    {
+      "id": "l2_popular_dish",
+      "target": "Qual è il piatto più richiesto?",
+      "pronunciation_easy": "kwah-LEH eel PYAHT-toh pyoo ree-KYES-toh"
+    },
+    {
+      "id": "l2_is_it_spicy",
+      "target": "È piccante?",
+      "pronunciation_easy": "eh peek-KAHN-teh"
+    },
+    {
+      "id": "l2_bill_mistake",
+      "target": "Credo ci sia un errore nel conto.",
+      "pronunciation_easy": "KREH-doh chee SEE-ah oon ehr-ROH-reh nel KON-toh"
+    },
+    {
+      "id": "l2_didnt_order",
+      "target": "Questo non l'abbiamo ordinato.",
+      "pronunciation_easy": "KWEH-stoh non lahb-BYAH-moh or-dee-NAH-toh"
+    },
+    {
+      "id": "l2_change_trains",
+      "target": "Devo cambiare treno?",
+      "pronunciation_easy": "DEH-voh kahm-BYAH-reh TREH-noh"
+    },
+    {
+      "id": "l2_platform_change",
+      "target": "A che binario cambio?",
+      "pronunciation_easy": "ah keh bee-NAH-ryoh KAHM-byoh"
+    },
+    {
+      "id": "l2_ticket_on_board",
+      "target": "Posso fare il biglietto a bordo?",
+      "pronunciation_easy": "POS-soh FAH-reh eel bee-LYET-toh ah BOR-doh"
+    },
+    {
+      "id": "l2_ticket_machine",
+      "target": "Dov'è la biglietteria automatica?",
+      "pronunciation_easy": "doh-VEH lah bee-lyet-teh-REE-ah ow-toh-MAH-tee-kah"
+    },
+    {
+      "id": "l2_last_bus",
+      "target": "È l'ultimo autobus?",
+      "pronunciation_easy": "eh LOOL-tee-moh OW-toh-boos"
+    },
+    {
+      "id": "l2_miss_it",
+      "target": "E se lo perdo?",
+      "pronunciation_easy": "eh seh loh PEHR-doh"
+    },
+    {
+      "id": "l2_use_meter",
+      "target": "Può accendere il tassametro?",
+      "pronunciation_easy": "pwoh aht-CHEN-deh-reh eel tahs-SAH-meh-troh"
+    },
+    {
+      "id": "l2_how_much_to",
+      "target": "Quanto costa fino a ___?",
+      "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh ah ___"
     }
   ],
   "vocab": {
@@ -1545,6 +1703,99 @@
         "target": "Quattro biglietti, per favore.",
         "pronunciation_easy": "KWAHT-troh bee-LYET-tee, pehr fah-VOH-reh"
       }
+    ],
+    "l2_so_you_mean": [
+      {
+        "word": "today",
+        "target": "Quindi intende oggi, giusto?",
+        "pronunciation_easy": "KWEEN-dee een-TEN-deh OD-jee, JOOS-toh"
+      },
+      {
+        "word": "tomorrow",
+        "target": "Quindi intende domani, giusto?",
+        "pronunciation_easy": "KWEEN-dee een-TEN-deh doh-MAH-nee, JOOS-toh"
+      },
+      {
+        "word": "next_street",
+        "target": "Quindi intende la prossima via, giusto?",
+        "pronunciation_easy": "KWEEN-dee een-TEN-deh lah PROS-see-mah VEE-ah, JOOS-toh"
+      },
+      {
+        "word": "second_stop",
+        "target": "Quindi intende la seconda fermata, giusto?",
+        "pronunciation_easy": "KWEEN-dee een-TEN-deh lah seh-KON-dah fehr-MAH-tah, JOOS-toh"
+      }
+    ],
+    "l2_contain": [
+      {
+        "word": "nuts",
+        "target": "Contiene frutta a guscio?",
+        "pronunciation_easy": "kon-TYEH-neh FROOT-tah ah GOO-shoh"
+      },
+      {
+        "word": "milk",
+        "target": "Contiene latte?",
+        "pronunciation_easy": "kon-TYEH-neh LAHT-teh"
+      },
+      {
+        "word": "egg",
+        "target": "Contiene uova?",
+        "pronunciation_easy": "kon-TYEH-neh WOH-vah"
+      },
+      {
+        "word": "shellfish",
+        "target": "Contiene crostacei?",
+        "pronunciation_easy": "kon-TYEH-neh kros-TAH-cheh-ee"
+      },
+      {
+        "word": "gluten",
+        "target": "Contiene glutine?",
+        "pronunciation_easy": "kon-TYEH-neh GLOO-tee-neh"
+      }
+    ],
+    "l2_make_without": [
+      {
+        "word": "milk",
+        "target": "Può farlo senza latte?",
+        "pronunciation_easy": "pwoh FAR-loh SEN-tsah LAHT-teh"
+      },
+      {
+        "word": "butter",
+        "target": "Può farlo senza burro?",
+        "pronunciation_easy": "pwoh FAR-loh SEN-tsah BOOR-roh"
+      },
+      {
+        "word": "cheese",
+        "target": "Può farlo senza formaggio?",
+        "pronunciation_easy": "pwoh FAR-loh SEN-tsah for-MAHD-joh"
+      },
+      {
+        "word": "nuts",
+        "target": "Può farlo senza frutta a guscio?",
+        "pronunciation_easy": "pwoh FAR-loh SEN-tsah FROOT-tah ah GOO-shoh"
+      }
+    ],
+    "l2_how_much_to": [
+      {
+        "word": "airport",
+        "target": "Quanto costa fino all'aeroporto?",
+        "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh ahl-lah-eh-roh-POR-toh"
+      },
+      {
+        "word": "hotel",
+        "target": "Quanto costa fino all'hotel?",
+        "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh ahl-loh-TEL"
+      },
+      {
+        "word": "station",
+        "target": "Quanto costa fino alla stazione?",
+        "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh AHL-lah stah-TSYOH-neh"
+      },
+      {
+        "word": "centre",
+        "target": "Quanto costa fino al centro?",
+        "pronunciation_easy": "KWAHN-toh KOS-tah FEE-noh ahl CHEN-troh"
+      }
     ]
   },
   "replies": {
@@ -1672,6 +1923,50 @@
     "starts_at": {
       "target": "Inizia alle dieci.",
       "pronunciation_easy": "ee-NEE-tsyah AHL-leh DYEH-chee"
+    },
+    "l2_which_part": {
+      "target": "Quale parte?",
+      "pronunciation_easy": "KWAH-leh PAR-teh"
+    },
+    "l2_thats_right": {
+      "target": "Sì, esatto.",
+      "pronunciation_easy": "see, eh-ZAHT-toh"
+    },
+    "l2_let_me_ask": {
+      "target": "Chiedo subito.",
+      "pronunciation_easy": "KYEH-doh SOO-bee-toh"
+    },
+    "l2_about_twenty": {
+      "target": "Circa venti minuti.",
+      "pronunciation_easy": "CHEER-kah VEN-tee mee-NOO-tee"
+    },
+    "l2_yes_it_does": {
+      "target": "Sì, c'è.",
+      "pronunciation_easy": "see, cheh"
+    },
+    "l2_very_popular": {
+      "target": "Questo è molto richiesto.",
+      "pronunciation_easy": "KWEH-stoh eh MOL-toh ree-KYES-toh"
+    },
+    "l2_which_item": {
+      "target": "Quale?",
+      "pronunciation_easy": "KWAH-leh"
+    },
+    "l2_next_station": {
+      "target": "Sì, alla prossima stazione.",
+      "pronunciation_easy": "see, AHL-lah PROS-see-mah stah-TSYOH-neh"
+    },
+    "l2_only_machine": {
+      "target": "Solo alla macchinetta.",
+      "pronunciation_easy": "SOH-loh AHL-lah mahk-kee-NET-tah"
+    },
+    "l2_one_at_midnight": {
+      "target": "No, ce n'è uno a mezzanotte.",
+      "pronunciation_easy": "noh, cheh NEH OO-noh ah med-zah-NOT-teh"
+    },
+    "l2_fixed_price": {
+      "target": "È un prezzo fisso.",
+      "pronunciation_easy": "eh oon PRET-tsoh FEES-soh"
     }
   }
 }

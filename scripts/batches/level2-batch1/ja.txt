@@ -1,0 +1,59 @@
+l2_didnt_catch | 最後のところが聞き取れませんでした。 | さいごのところがききとれませんでした。 | sai-goh noh toh-koh-roh gah kee-kee-toh-reh-mah-sen deh-shee-tah
+l2_last_word | 最後の言葉をもう一度お願いします。 | さいごのことばをもういちどおねがいします。 | sai-goh noh koh-toh-bah oh moh ee-chee-doh oh-neh-guy-shee-mahs
+l2_so_you_mean | つまり、___ということですね？ | つまり、___ということですね？ | tsoo-mah-ree, ___ toh ee-oo koh-toh des-neh
+l2_and_then | それから？ | それから？ | soh-reh-kah-rah
+l2_someone_english | 英語を話せる人はいますか？ | えいごをはなせるひとはいますか？ | ay-goh oh hah-nah-seh-roo hee-toh wah ee-mahs-kah
+l2_ask_them | その方に手伝ってもらえますか？ | そのかたにてつだってもらえますか？ | soh-noh kah-tah nee teh-tsoo-daht-teh moh-rah-eh-mahs-kah
+l2_type_phone | 私のスマホに打ってもらえますか？ | わたしのすまほにうってもらえますか？ | wah-tah-shee noh soo-mah-hoh nee oot-teh moh-rah-eh-mahs-kah
+l2_another_way | 別の言い方で説明してもらえますか？ | べつのいいかたでせつめいしてもらえますか？ | beh-tsoo noh ee-kah-tah deh seh-tsoo-may shee-teh moh-rah-eh-mahs-kah
+l2_show_me | 見せてもらえますか？ | みせてもらえますか？ | mee-seh-teh moh-rah-eh-mahs-kah
+l2_check_again | もう一度確認してもらえますか？ | もういちどかくにんしてもらえますか？ | moh ee-chee-doh kah-koo-neen shee-teh moh-rah-eh-mahs-kah
+l2_write_down | 書いてもらえますか？ | かいてもらえますか？ | kai-teh moh-rah-eh-mahs-kah
+l2_translation_app | 翻訳アプリを使ってもいいですか？ | ほんやくあぷりをつかってもいいですか？ | hon-yah-koo ah-poo-ree oh tsoo-kaht-teh moh ee des-kah
+l2_come_back | また後で来ます。 | またあとできます。 | mah-tah ah-toh deh kee-mahs
+l2_never_mind | 大丈夫です。ありがとうございます。 | だいじょうぶです。ありがとうございます。 | dai-joh-boo des. ah-ree-gah-toh goh-zai-mahs
+l2_wait_table | 待ち時間はどのくらいですか？ | まちじかんはどのくらいですか？ | mah-chee-jee-kahn wah doh-noh koo-rai des-kah
+l2_name_down | 名前を書いておいてもらえますか？ | なまえをかいておいてもらえますか？ | nah-mah-eh oh kai-teh oh-ee-teh moh-rah-eh-mahs-kah
+l2_contain | これに___は入っていますか？ | これに___ははいっていますか？ | koh-reh nee ___ wah hait-teh ee-mahs-kah
+l2_make_without | ___抜きでできますか？ | ___ぬきでできますか？ | ___ noo-kee deh deh-kee-mahs-kah
+l2_cant_eat_dairy | 乳製品が食べられません。 | にゅうせいひんがたべられません。 | nyoo-say-heen gah tah-beh-rah-reh-mah-sen
+l2_popular_dish | 一番人気の料理は何ですか？ | いちばんにんきのりょうりはなんですか？ | ee-chee-bahn neen-kee noh ryoh-ree wah nan des-kah
+l2_is_it_spicy | 辛いですか？ | からいですか？ | kah-rai des-kah
+l2_bill_mistake | お会計が間違っているようです。 | おかいけいがまちがっているようです。 | oh-kai-kay gah mah-chee-gaht-teh ee-roo yoh des
+l2_didnt_order | これは注文していません。 | これはちゅうもんしていません。 | koh-reh wah choo-mon shee-teh ee-mah-sen
+l2_change_trains | 乗り換えは必要ですか？ | のりかえはひつようですか？ | noh-ree-kah-eh wah hee-tsoo-yoh des-kah
+l2_platform_change | 何番線で乗り換えますか？ | なんばんせんでのりかえますか？ | nan-bahn-sen deh noh-ree-kah-eh-mahs-kah
+l2_ticket_on_board | 車内で切符を買えますか？ | しゃないできっぷをかえますか？ | shah-nai deh keep-poo oh kah-eh-mahs-kah
+l2_ticket_machine | 券売機はどこですか？ | けんばいきはどこですか？ | ken-bai-kee wah doh-koh des-kah
+l2_last_bus | これが最終バスですか？ | これがさいしゅうばすですか？ | koh-reh gah sai-shoo bah-soo des-kah
+l2_miss_it | 乗り遅れたらどうなりますか？ | のりおくれたらどうなりますか？ | noh-ree-oh-koo-reh-tah-rah doh nah-ree-mahs-kah
+l2_use_meter | メーターを使ってもらえますか？ | めーたーをつかってもらえますか？ | meh-tah oh tsoo-kaht-teh moh-rah-eh-mahs-kah
+l2_how_much_to | ___までいくらですか？ | ___までいくらですか？ | ___ mah-deh ee-koo-rah des-kah
+r:l2_which_part | どの部分ですか？ | どのぶぶんですか？ | doh-noh boo-boon des-kah
+r:l2_thats_right | はい、そうです。 | はい、そうです。 | hai, soh des
+r:l2_let_me_ask | 聞いてみます。 | きいてみます。 | kee-teh mee-mahs
+r:l2_about_twenty | 二十分ほどです。 | にじゅっぷんほどです。 | nee-joop-poon hoh-doh des
+r:l2_yes_it_does | はい、入っています。 | はい、はいっています。 | hai, hait-teh ee-mahs
+r:l2_very_popular | こちらが人気です。 | こちらがにんきです。 | koh-chee-rah gah neen-kee des
+r:l2_which_item | どちらですか？ | どちらですか？ | doh-chee-rah des-kah
+r:l2_next_station | はい、次の駅です。 | はい、つぎのえきです。 | hai, tsoo-ghee noh eh-kee des
+r:l2_only_machine | 券売機だけです。 | けんばいきだけです。 | ken-bai-kee dah-keh des
+r:l2_one_at_midnight | いいえ、十二時にもう一本あります。 | いいえ、じゅうにじにもういっぽんあります。 | ee-eh, joo-nee-jee nee moh eep-pon ah-ree-mahs
+r:l2_fixed_price | 定額です。 | ていがくです。 | tay-gah-koo des
+x:l2_so_you_mean~today | つまり、今日ということですね？ | つまり、きょうということですね？ | tsoo-mah-ree, kyoh toh ee-oo koh-toh des-neh
+x:l2_so_you_mean~tomorrow | つまり、明日ということですね？ | つまり、あしたということですね？ | tsoo-mah-ree, ah-shee-tah toh ee-oo koh-toh des-neh
+x:l2_so_you_mean~next_street | つまり、次の通りということですね？ | つまり、つぎのとおりということですね？ | tsoo-mah-ree, tsoo-ghee noh toh-ree toh ee-oo koh-toh des-neh
+x:l2_so_you_mean~second_stop | つまり、二つ目の停留所ということですね？ | つまり、ふたつめのていりゅうじょということですね？ | tsoo-mah-ree, foo-tah-tsoo-meh noh tay-ryoo-joh toh ee-oo koh-toh des-neh
+x:l2_contain~nuts | これにナッツは入っていますか？ | これになっつははいっていますか？ | koh-reh nee naht-tsoo wah hait-teh ee-mahs-kah
+x:l2_contain~milk | これに牛乳は入っていますか？ | これにぎゅうにゅうははいっていますか？ | koh-reh nee gyoo-nyoo wah hait-teh ee-mahs-kah
+x:l2_contain~egg | これに卵は入っていますか？ | これにたまごははいっていますか？ | koh-reh nee tah-mah-goh wah hait-teh ee-mahs-kah
+x:l2_contain~shellfish | これに甲殻類は入っていますか？ | これにこうかくるいははいっていますか？ | koh-reh nee koh-kah-koo-roo-ee wah hait-teh ee-mahs-kah
+x:l2_contain~gluten | これにグルテンは入っていますか？ | これにぐるてんははいっていますか？ | koh-reh nee goo-roo-ten wah hait-teh ee-mahs-kah
+x:l2_make_without~milk | 牛乳抜きでできますか？ | ぎゅうにゅうぬきでできますか？ | gyoo-nyoo noo-kee deh deh-kee-mahs-kah
+x:l2_make_without~butter | バター抜きでできますか？ | ばたーぬきでできますか？ | bah-tah noo-kee deh deh-kee-mahs-kah
+x:l2_make_without~cheese | チーズ抜きでできますか？ | ちーずぬきでできますか？ | chee-zoo noo-kee deh deh-kee-mahs-kah
+x:l2_make_without~nuts | ナッツ抜きでできますか？ | なっつぬきでできますか？ | naht-tsoo noo-kee deh deh-kee-mahs-kah
+x:l2_how_much_to~airport | 空港までいくらですか？ | くうこうまでいくらですか？ | koo-koh mah-deh ee-koo-rah des-kah
+x:l2_how_much_to~hotel | ホテルまでいくらですか？ | ほてるまでいくらですか？ | hoh-teh-roo mah-deh ee-koo-rah des-kah
+x:l2_how_much_to~station | 駅までいくらですか？ | えきまでいくらですか？ | eh-kee mah-deh ee-koo-rah des-kah
+x:l2_how_much_to~centre | 中心街までいくらですか？ | ちゅうしんがいまでいくらですか？ | choo-sheen-guy mah-deh ee-koo-rah des-kah

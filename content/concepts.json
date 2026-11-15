@@ -1083,5 +1083,284 @@
     "priority": "travel",
     "english": "What time is it?",
     "type": "phrase"
+  },
+  {
+    "id": "l2_didnt_catch",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "I didn't catch the last part.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_last_word",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you say the last word again?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_so_you_mean",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "So you mean ___, right?",
+    "type": "pattern",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_and_then",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "And then?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_someone_english",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Is there someone who speaks English?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_ask_them",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you ask them to help?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_type_phone",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you type it on my phone?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_another_way",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you explain it another way?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_show_me",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you show me?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_check_again",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you check it again?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_write_down",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could you write it down?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_translation_app",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Could we use a translation app?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_come_back",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "I'll come back later.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_never_mind",
+    "category": "language_rescue",
+    "priority": "explore",
+    "english": "Never mind, thank you.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "basics"
+  },
+  {
+    "id": "l2_wait_table",
+    "category": "food",
+    "priority": "explore",
+    "english": "How long is the wait for a table?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_name_down",
+    "category": "food",
+    "priority": "explore",
+    "english": "Can you put our name down?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_contain",
+    "category": "food",
+    "priority": "explore",
+    "english": "Does this contain ___?",
+    "type": "pattern",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_make_without",
+    "category": "food",
+    "priority": "explore",
+    "english": "Can you make it without ___?",
+    "type": "pattern",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_cant_eat_dairy",
+    "category": "food",
+    "priority": "explore",
+    "english": "I can't eat dairy.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_popular_dish",
+    "category": "food",
+    "priority": "explore",
+    "english": "What's your most popular dish?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_is_it_spicy",
+    "category": "food",
+    "priority": "explore",
+    "english": "Is it spicy?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_bill_mistake",
+    "category": "food",
+    "priority": "explore",
+    "english": "I think there's a mistake on the bill.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_didnt_order",
+    "category": "food",
+    "priority": "explore",
+    "english": "We didn't order this.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "restaurant"
+  },
+  {
+    "id": "l2_change_trains",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Do I need to change trains?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_platform_change",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Which platform do I change at?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_ticket_on_board",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Can I buy a ticket on board?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_ticket_machine",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Where's the ticket machine?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_last_bus",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Is this the last bus?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_miss_it",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "What if I miss it?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_use_meter",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Could you use the meter?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "transport"
+  },
+  {
+    "id": "l2_how_much_to",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "How much to ___?",
+    "type": "pattern",
+    "level": 2,
+    "situation": "transport"
   }
 ]

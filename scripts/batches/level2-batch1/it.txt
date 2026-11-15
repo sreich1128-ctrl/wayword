@@ -1,0 +1,59 @@
+l2_didnt_catch | Non ho capito l'ultima parte. | non oh kah-PEE-toh LOOL-tee-mah PAR-teh
+l2_last_word | Può ripetere l'ultima parola? | pwoh ree-PEH-teh-reh LOOL-tee-mah pah-ROH-lah
+l2_so_you_mean | Quindi intende ___, giusto? | KWEEN-dee een-TEN-deh ___, JOOS-toh
+l2_and_then | E poi? | eh poy
+l2_someone_english | C'è qualcuno che parla inglese? | cheh kwahl-KOO-noh keh PAR-lah een-GLEH-zeh
+l2_ask_them | Può chiedergli aiuto? | pwoh KYEH-dehr-lyee ah-YOO-toh
+l2_type_phone | Può scriverlo sul mio telefono? | pwoh SKREE-vehr-loh sool MEE-oh teh-LEH-foh-noh
+l2_another_way | Può spiegarlo in un altro modo? | pwoh spyeh-GAR-loh een oon AHL-troh MOH-doh
+l2_show_me | Può farmi vedere? | pwoh FAR-mee veh-DEH-reh
+l2_check_again | Può controllare di nuovo? | pwoh kon-trol-LAH-reh dee NWOH-voh
+l2_write_down | Può scriverlo? | pwoh SKREE-vehr-loh
+l2_translation_app | Possiamo usare un traduttore? | pos-SYAH-moh oo-ZAH-reh oon trah-doot-TOH-reh
+l2_come_back | Torno più tardi. | TOR-noh pyoo TAR-dee
+l2_never_mind | Non importa, grazie. | non eem-POR-tah, GRAH-tsyeh
+l2_wait_table | Quanto c'è da aspettare per un tavolo? | KWAHN-toh cheh dah ah-spet-TAH-reh pehr oon TAH-voh-loh
+l2_name_down | Può segnare il nostro nome? | pwoh seh-NYAH-reh eel NOS-troh NOH-meh
+l2_contain | Contiene ___? | kon-TYEH-neh ___
+l2_make_without | Può farlo senza ___? | pwoh FAR-loh SEN-tsah ___
+l2_cant_eat_dairy | Non posso mangiare latticini. | non POS-soh mahn-JAH-reh laht-tee-CHEE-nee
+l2_popular_dish | Qual è il piatto più richiesto? | kwah-LEH eel PYAHT-toh pyoo ree-KYES-toh
+l2_is_it_spicy | È piccante? | eh peek-KAHN-teh
+l2_bill_mistake | Credo ci sia un errore nel conto. | KREH-doh chee SEE-ah oon ehr-ROH-reh nel KON-toh
+l2_didnt_order | Questo non l'abbiamo ordinato. | KWEH-stoh non lahb-BYAH-moh or-dee-NAH-toh
+l2_change_trains | Devo cambiare treno? | DEH-voh kahm-BYAH-reh TREH-noh
+l2_platform_change | A che binario cambio? | ah keh bee-NAH-ryoh KAHM-byoh
+l2_ticket_on_board | Posso fare il biglietto a bordo? | POS-soh FAH-reh eel bee-LYET-toh ah BOR-doh
+l2_ticket_machine | Dov'è la biglietteria automatica? | doh-VEH lah bee-lyet-teh-REE-ah ow-toh-MAH-tee-kah
+l2_last_bus | È l'ultimo autobus? | eh LOOL-tee-moh OW-toh-boos
+l2_miss_it | E se lo perdo? | eh seh loh PEHR-doh
+l2_use_meter | Può accendere il tassametro? | pwoh aht-CHEN-deh-reh eel tahs-SAH-meh-troh
+l2_how_much_to | Quanto costa fino a ___? | KWAHN-toh KOS-tah FEE-noh ah ___
+r:l2_which_part | Quale parte? | KWAH-leh PAR-teh
+r:l2_thats_right | Sì, esatto. | see, eh-ZAHT-toh
+r:l2_let_me_ask | Chiedo subito. | KYEH-doh SOO-bee-toh
+r:l2_about_twenty | Circa venti minuti. | CHEER-kah VEN-tee mee-NOO-tee
+r:l2_yes_it_does | Sì, c'è. | see, cheh
+r:l2_very_popular | Questo è molto richiesto. | KWEH-stoh eh MOL-toh ree-KYES-toh
+r:l2_which_item | Quale? | KWAH-leh
+r:l2_next_station | Sì, alla prossima stazione. | see, AHL-lah PROS-see-mah stah-TSYOH-neh
+r:l2_only_machine | Solo alla macchinetta. | SOH-loh AHL-lah mahk-kee-NET-tah
+r:l2_one_at_midnight | No, ce n'è uno a mezzanotte. | noh, cheh NEH OO-noh ah med-zah-NOT-teh
+r:l2_fixed_price | È un prezzo fisso. | eh oon PRET-tsoh FEES-soh
+x:l2_so_you_mean~today | Quindi intende oggi, giusto? | KWEEN-dee een-TEN-deh OD-jee, JOOS-toh
+x:l2_so_you_mean~tomorrow | Quindi intende domani, giusto? | KWEEN-dee een-TEN-deh doh-MAH-nee, JOOS-toh
+x:l2_so_you_mean~next_street | Quindi intende la prossima via, giusto? | KWEEN-dee een-TEN-deh lah PROS-see-mah VEE-ah, JOOS-toh
+x:l2_so_you_mean~second_stop | Quindi intende la seconda fermata, giusto? | KWEEN-dee een-TEN-deh lah seh-KON-dah fehr-MAH-tah, JOOS-toh
+x:l2_contain~nuts | Contiene frutta a guscio? | kon-TYEH-neh FROOT-tah ah GOO-shoh
+x:l2_contain~milk | Contiene latte? | kon-TYEH-neh LAHT-teh
+x:l2_contain~egg | Contiene uova? | kon-TYEH-neh WOH-vah
+x:l2_contain~shellfish | Contiene crostacei? | kon-TYEH-neh kros-TAH-cheh-ee
+x:l2_contain~gluten | Contiene glutine? | kon-TYEH-neh GLOO-tee-neh
+x:l2_make_without~milk | Può farlo senza latte? | pwoh FAR-loh SEN-tsah LAHT-teh
+x:l2_make_without~butter | Può farlo senza burro? | pwoh FAR-loh SEN-tsah BOOR-roh
+x:l2_make_without~cheese | Può farlo senza formaggio? | pwoh FAR-loh SEN-tsah for-MAHD-joh
+x:l2_make_without~nuts | Può farlo senza frutta a guscio? | pwoh FAR-loh SEN-tsah FROOT-tah ah GOO-shoh
+x:l2_how_much_to~airport | Quanto costa fino all'aeroporto? | KWAHN-toh KOS-tah FEE-noh ahl-lah-eh-roh-POR-toh
+x:l2_how_much_to~hotel | Quanto costa fino all'hotel? | KWAHN-toh KOS-tah FEE-noh ahl-loh-TEL
+x:l2_how_much_to~station | Quanto costa fino alla stazione? | KWAHN-toh KOS-tah FEE-noh AHL-lah stah-TSYOH-neh
+x:l2_how_much_to~centre | Quanto costa fino al centro? | KWAHN-toh KOS-tah FEE-noh ahl CHEN-troh

@@ -1,0 +1,59 @@
+l2_didnt_catch | לא הבנתי את החלק האחרון. | lo he-VAN-tee et ha-KHE-lek ha-a-kha-RON
+l2_last_word | אפשר לחזור על המילה האחרונה? | ef-SHAR la-kha-ZOR al ha-mee-LA ha-a-kha-ro-NA
+l2_so_you_mean | אז אתה מתכוון ___, נכון? | az a-TA mit-ka-VEN ___, na-KHON
+l2_and_then | ואז? | ve-AZ
+l2_someone_english | יש מישהו שמדבר אנגלית? | yesh MEE-she-hu she-me-da-BER an-GLEET
+l2_ask_them | אפשר לבקש ממנו לעזור? | ef-SHAR le-va-KESH mi-ME-nu la-a-ZOR
+l2_type_phone | אפשר לכתוב את זה בטלפון שלי? | ef-SHAR likh-TOV et ze ba-TE-le-fon she-LEE
+l2_another_way | אפשר להסביר בדרך אחרת? | ef-SHAR le-has-BEER be-DE-rekh a-KHE-ret
+l2_show_me | אפשר להראות לי? | ef-SHAR le-har-OT lee
+l2_check_again | אפשר לבדוק שוב? | ef-SHAR liv-DOK shoov
+l2_write_down | אפשר לכתוב את זה? | ef-SHAR likh-TOV et ze
+l2_translation_app | אפשר להשתמש באפליקציית תרגום? | ef-SHAR le-hish-ta-MESH be-a-pli-KATS-yat tir-GOOM
+l2_come_back | אני אחזור אחר כך. | a-NEE akh-ZOR a-KHAR kakh
+l2_never_mind | לא משנה, תודה. | lo me-sha-NE, to-DA
+l2_wait_table | כמה זמן מחכים לשולחן? | KA-ma zman me-kha-KEEM le-shul-KHAN
+l2_name_down | אפשר לרשום אותנו? | ef-SHAR lir-SHOM o-TA-nu
+l2_contain | יש בזה ___? | yesh be-ZE ___
+l2_make_without | אפשר בלי ___? | ef-SHAR blee ___
+l2_cant_eat_dairy | אני לא יכול לאכול מוצרי חלב. | a-NEE lo ya-KHOL le-e-KHOL mots-REY kha-LAV
+l2_popular_dish | מה המנה הכי פופולרית? | ma ha-ma-NA ha-KHEE po-pu-LA-reet
+l2_is_it_spicy | זה חריף? | ze kha-REEF
+l2_bill_mistake | נראה לי שיש טעות בחשבון. | nir-E lee she-YESH ta-OOT ba-khesh-BON
+l2_didnt_order | לא הזמנו את זה. | lo hiz-MAN-nu et ze
+l2_change_trains | צריך להחליף רכבת? | tsa-REEKH le-hakh-LEEF ra-KE-vet
+l2_platform_change | באיזה רציף מחליפים? | be-EY-ze ra-TSEEF makh-lee-FEEM
+l2_ticket_on_board | אפשר לקנות כרטיס בפנים? | ef-SHAR lik-NOT kar-TEES bif-NEEM
+l2_ticket_machine | איפה מכונת הכרטיסים? | EY-fo me-kho-NAT ha-kar-tee-SEEM
+l2_last_bus | זה האוטובוס האחרון? | ze ha-O-to-boos ha-a-kha-RON
+l2_miss_it | ומה אם אפספס אותו? | u-MA im a-fas-FES o-TO
+l2_use_meter | אפשר להפעיל מונה? | ef-SHAR le-haf-EEL mo-NE
+l2_how_much_to | כמה עולה עד ___? | KA-ma o-LE ad ___
+r:l2_which_part | איזה חלק? | EY-ze KHE-lek
+r:l2_thats_right | כן, נכון. | ken, na-KHON
+r:l2_let_me_ask | אני אשאל. | a-NEE esh-AL
+r:l2_about_twenty | בערך עשרים דקות. | be-E-rekh es-REEM da-KOT
+r:l2_yes_it_does | כן, יש. | ken, yesh
+r:l2_very_popular | זו מנה מאוד פופולרית. | zo ma-NA me-OD po-pu-LA-reet
+r:l2_which_item | איזה פריט? | EY-ze pa-REET
+r:l2_next_station | כן, בתחנה הבאה. | ken, ba-ta-kha-NA ha-ba-A
+r:l2_only_machine | רק במכונה. | rak ba-me-kho-NA
+r:l2_one_at_midnight | לא, יש עוד אחד בחצות. | lo, yesh od e-KHAD ba-kha-TSOT
+r:l2_fixed_price | זה מחיר קבוע. | ze me-KHEER ka-VU-a
+x:l2_so_you_mean~today | אז אתה מתכוון היום, נכון? | az a-TA mit-ka-VEN ha-YOM, na-KHON
+x:l2_so_you_mean~tomorrow | אז אתה מתכוון מחר, נכון? | az a-TA mit-ka-VEN ma-KHAR, na-KHON
+x:l2_so_you_mean~next_street | אז אתה מתכוון לרחוב הבא, נכון? | az a-TA mit-ka-VEN la-re-KHOV ha-BA, na-KHON
+x:l2_so_you_mean~second_stop | אז אתה מתכוון לתחנה השנייה, נכון? | az a-TA mit-ka-VEN la-ta-kha-NA ha-shnee-YA, na-KHON
+x:l2_contain~nuts | יש בזה אגוזים? | yesh be-ZE e-go-ZEEM
+x:l2_contain~milk | יש בזה חלב? | yesh be-ZE kha-LAV
+x:l2_contain~egg | יש בזה ביצים? | yesh be-ZE bey-TSEEM
+x:l2_contain~shellfish | יש בזה פירות ים? | yesh be-ZE pey-ROT yam
+x:l2_contain~gluten | יש בזה גלוטן? | yesh be-ZE GLOO-ten
+x:l2_make_without~milk | אפשר בלי חלב? | ef-SHAR blee kha-LAV
+x:l2_make_without~butter | אפשר בלי חמאה? | ef-SHAR blee khem-A
+x:l2_make_without~cheese | אפשר בלי גבינה? | ef-SHAR blee gvee-NA
+x:l2_make_without~nuts | אפשר בלי אגוזים? | ef-SHAR blee e-go-ZEEM
+x:l2_how_much_to~airport | כמה עולה עד שדה התעופה? | KA-ma o-LE ad sde ha-te-u-FA
+x:l2_how_much_to~hotel | כמה עולה עד המלון? | KA-ma o-LE ad ha-ma-LON
+x:l2_how_much_to~station | כמה עולה עד התחנה? | KA-ma o-LE ad ha-ta-kha-NA
+x:l2_how_much_to~centre | כמה עולה עד מרכז העיר? | KA-ma o-LE ad mer-KAZ ha-EER

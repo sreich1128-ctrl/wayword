@@ -1,0 +1,59 @@
+l2_didnt_catch | Não percebi a última parte. | nowng puhr-suh-BEE ah OOL-tee-mah PAR-tuh
+l2_last_word | Pode repetir a última palavra? | POH-duh ruh-puh-TEER ah OOL-tee-mah pah-LAH-vrah
+l2_so_you_mean | Então quer dizer ___, certo? | en-TOWNG kehr dee-ZEHR ___, SEHR-too
+l2_and_then | E depois? | ee duh-POYSH
+l2_someone_english | Há alguém que fale inglês? | ah al-GENG kuh FAH-luh een-GLESH
+l2_ask_them | Pode pedir-lhe ajuda? | POH-duh puh-DEER-lyuh ah-ZHOO-dah
+l2_type_phone | Pode escrever no meu telemóvel? | POH-duh shkruh-VEHR noo meh-oo tuh-luh-MOH-vel
+l2_another_way | Pode explicar de outra maneira? | POH-duh shplee-KAR duh OH-trah mah-NAY-rah
+l2_show_me | Pode mostrar-me? | POH-duh moosh-TRAR-muh
+l2_check_again | Pode verificar outra vez? | POH-duh vuh-ree-fee-KAR OH-trah vesh
+l2_write_down | Pode escrever isso? | POH-duh shkruh-VEHR EE-soo
+l2_translation_app | Podemos usar um tradutor? | poo-DEH-moosh oo-ZAR oong trah-doo-TOR
+l2_come_back | Volto mais tarde. | VOL-too mysh TAR-duh
+l2_never_mind | Não faz mal, obrigado/a. | nowng fash mal, oh-bree-GAH-doo/dah
+l2_wait_table | Quanto tempo de espera para uma mesa? | KWAN-too TEN-poo duh SHPEH-rah PAH-rah OO-mah MEH-zah
+l2_name_down | Pode pôr o nosso nome na lista? | POH-duh por oo NOH-soo NOH-muh nah LEESH-tah
+l2_contain | Isto tem ___? | EESH-too teng ___
+l2_make_without | Pode fazer sem ___? | POH-duh fah-ZEHR seng ___
+l2_cant_eat_dairy | Não posso comer lacticínios. | nowng POH-soo koo-MEHR lak-tee-SEE-nee-oosh
+l2_popular_dish | Qual é o prato mais pedido? | kwal eh oo PRAH-too mysh puh-DEE-doo
+l2_is_it_spicy | É picante? | eh pee-KAN-tuh
+l2_bill_mistake | Acho que há um erro na conta. | AH-shoo kuh ah oong EH-roo nah KON-tah
+l2_didnt_order | Não pedimos isto. | nowng puh-DEE-moosh EESH-too
+l2_change_trains | Tenho de mudar de comboio? | TEN-yoo duh moo-DAR duh kong-BOY-oo
+l2_platform_change | Em que linha mudo? | eng kuh LEE-nyah MOO-doo
+l2_ticket_on_board | Posso comprar o bilhete a bordo? | POH-soo kong-PRAR oo bee-LYEH-tuh ah BOR-doo
+l2_ticket_machine | Onde fica a máquina de bilhetes? | ON-duh FEE-kah ah MAH-kee-nah duh bee-LYEH-tush
+l2_last_bus | Este é o último autocarro? | EHSH-tuh eh oo OOL-tee-moo ow-toh-KAH-roo
+l2_miss_it | E se eu o perder? | ee suh eh-oo oo puhr-DEHR
+l2_use_meter | Pode ligar o taxímetro? | POH-duh lee-GAR oo tak-SEE-muh-troo
+l2_how_much_to | Quanto é até ___? | KWAN-too eh ah-TEH ___
+r:l2_which_part | Que parte? | kuh PAR-tuh
+r:l2_thats_right | Sim, exatamente. | seeng, ee-zah-tah-MEN-tuh
+r:l2_let_me_ask | Vou perguntar. | voh puhr-goon-TAR
+r:l2_about_twenty | Cerca de vinte minutos. | SEHR-kah duh VEEN-tuh mee-NOO-toosh
+r:l2_yes_it_does | Sim, tem. | seeng, teng
+r:l2_very_popular | Este é muito pedido. | EHSH-tuh eh MOOY-too puh-DEE-doo
+r:l2_which_item | Qual deles? | kwal DEH-lush
+r:l2_next_station | Sim, na próxima estação. | seeng, nah PROH-see-mah shtah-SOWNG
+r:l2_only_machine | Só na máquina. | soh nah MAH-kee-nah
+r:l2_one_at_midnight | Não, há um à meia-noite. | nowng, ah oong ah MAY-ah NOY-tuh
+r:l2_fixed_price | É preço fixo. | eh PREH-soo FEEK-soo
+x:l2_so_you_mean~today | Então quer dizer hoje, certo? | en-TOWNG kehr dee-ZEHR OH-zhuh, SEHR-too
+x:l2_so_you_mean~tomorrow | Então quer dizer amanhã, certo? | en-TOWNG kehr dee-ZEHR ah-mah-NYAH, SEHR-too
+x:l2_so_you_mean~next_street | Então quer dizer a próxima rua, certo? | en-TOWNG kehr dee-ZEHR ah PROH-see-mah ROO-ah, SEHR-too
+x:l2_so_you_mean~second_stop | Então quer dizer a segunda paragem, certo? | en-TOWNG kehr dee-ZEHR ah suh-GOON-dah pah-RAH-zhayng, SEHR-too
+x:l2_contain~nuts | Isto tem frutos secos? | EESH-too teng FROO-toosh SEH-koosh
+x:l2_contain~milk | Isto tem leite? | EESH-too teng LAY-tuh
+x:l2_contain~egg | Isto tem ovo? | EESH-too teng OH-voo
+x:l2_contain~shellfish | Isto tem marisco? | EESH-too teng mah-REESH-koo
+x:l2_contain~gluten | Isto tem glúten? | EESH-too teng GLOO-ten
+x:l2_make_without~milk | Pode fazer sem leite? | POH-duh fah-ZEHR seng LAY-tuh
+x:l2_make_without~butter | Pode fazer sem manteiga? | POH-duh fah-ZEHR seng man-TAY-gah
+x:l2_make_without~cheese | Pode fazer sem queijo? | POH-duh fah-ZEHR seng KAY-zhoo
+x:l2_make_without~nuts | Pode fazer sem frutos secos? | POH-duh fah-ZEHR seng FROO-toosh SEH-koosh
+x:l2_how_much_to~airport | Quanto é até ao aeroporto? | KWAN-too eh ah-TEH ow ah-eh-roo-POR-too
+x:l2_how_much_to~hotel | Quanto é até ao hotel? | KWAN-too eh ah-TEH ow oh-TEL
+x:l2_how_much_to~station | Quanto é até à estação? | KWAN-too eh ah-TEH ah shtah-SOWNG
+x:l2_how_much_to~centre | Quanto é até ao centro? | KWAN-too eh ah-TEH ow SEN-troo

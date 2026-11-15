@@ -1,0 +1,59 @@
+l2_didnt_catch | ما فهمت آخر جزء. | ma f-HIMT AA-kher juz'
+l2_last_word | ممكن تعيد آخر كلمة؟ | MUM-kin t-EED AA-kher KIL-meh
+l2_so_you_mean | يعني قصدك ___، صح؟ | YA'-nee AS-dak ___, sah
+l2_and_then | وبعدين؟ | oo-ba'-DAYN
+l2_someone_english | في حدا بيحكي إنجليزي؟ | fee HA-da b-YIH-kee in-GLEE-zee
+l2_ask_them | ممكن تطلب منه يساعد؟ | MUM-kin TUT-lub MIN-noh y-SAA-ed
+l2_type_phone | ممكن تكتبها على تلفوني؟ | MUM-kin tik-TIB-ha A-la ti-li-FOH-nee
+l2_another_way | ممكن تشرحها بطريقة تانية؟ | MUM-kin tish-RAH-ha b-ta-REE-a TAAN-yeh
+l2_show_me | ممكن تفرجيني؟ | MUM-kin tfar-JEE-nee
+l2_check_again | ممكن تتأكد مرة تانية؟ | MUM-kin tit-AK-kad MAR-ra TAAN-yeh
+l2_write_down | ممكن تكتبها؟ | MUM-kin tik-TIB-ha
+l2_translation_app | ممكن نستعمل تطبيق ترجمة؟ | MUM-kin nis-TA'-mel tat-BEE' TAR-ja-meh
+l2_come_back | برجع بعدين. | BAR-ja' ba'-DAYN
+l2_never_mind | مش مشكلة، شكراً. | mish MUSH-ki-leh, SHUK-ran
+l2_wait_table | قديش لازم نستنى لطاولة؟ | ad-DAYSH LAA-zim nis-TAN-na la-TAAW-leh
+l2_name_down | ممكن تسجّل اسمنا؟ | MUM-kin t-SAJ-jel IS-im-na
+l2_contain | هاد فيه ___؟ | haad feeh ___
+l2_make_without | ممكن بدون ___؟ | MUM-kin bi-DOON ___
+l2_cant_eat_dairy | ما بقدر آكل ألبان. | ma BA'-dar AA-kol al-BAAN
+l2_popular_dish | شو أكتر طبق مطلوب عندكم؟ | shoo AK-tar TA-ba' mat-LOOB IN-dkom
+l2_is_it_spicy | هاد حار؟ | haad haar
+l2_bill_mistake | بظن في غلط بالحساب. | ba-ZUN fee GHA-lat bil-hi-SAAB
+l2_didnt_order | ما طلبنا هاد. | ma ta-LAB-na haad
+l2_change_trains | لازم أغيّر القطار؟ | LAA-zim a-GHAY-yer il-i-TAAR
+l2_platform_change | على أي رصيف بغيّر؟ | A-la ay ra-SEEF ba-GHAY-yer
+l2_ticket_on_board | بقدر أشتري تذكرة جوّا؟ | BA'-dar ash-TI-ree TAZ-ka-ra JUW-wa
+l2_ticket_machine | وين مكنة التذاكر؟ | wayn MAK-nit it-ta-ZAA-ker
+l2_last_bus | هاد آخر باص؟ | haad AA-kher baas
+l2_miss_it | وإذا راح عليّ؟ | w-I-za raah a-LAY-ya
+l2_use_meter | ممكن تشغّل العدّاد؟ | MUM-kin t-SHAGH-ghel il-ad-DAAD
+l2_how_much_to | قديش لحد ___؟ | ad-DAYSH la-HAD ___
+r:l2_which_part | أي جزء؟ | ay juz'
+r:l2_thats_right | آه، صح. | aah, sah
+r:l2_let_me_ask | خليني أسأل. | khal-LEE-nee AS-al
+r:l2_about_twenty | حوالي عشرين دقيقة. | ha-WAA-lee ish-REEN da-EE-a
+r:l2_yes_it_does | آه، فيه. | aah, feeh
+r:l2_very_popular | هاد كتير مطلوب. | haad kteer mat-LOOB
+r:l2_which_item | أي واحد؟ | ay WAA-hed
+r:l2_next_station | آه، بالمحطة الجاية. | aah, bil-ma-HAT-ta ij-JAA-yeh
+r:l2_only_machine | بس من المكنة. | bas min il-MAK-neh
+r:l2_one_at_midnight | لأ، في واحد نص الليل. | la', fee WAA-hed nuss il-LAYL
+r:l2_fixed_price | السعر ثابت. | is-SI'r SAA-bet
+x:l2_so_you_mean~today | يعني قصدك اليوم، صح؟ | YA'-nee AS-dak il-YOM, sah
+x:l2_so_you_mean~tomorrow | يعني قصدك بكرا، صح؟ | YA'-nee AS-dak BUK-ra, sah
+x:l2_so_you_mean~next_street | يعني قصدك الشارع الجاي، صح؟ | YA'-nee AS-dak ish-SHAA-re' ij-JAAY, sah
+x:l2_so_you_mean~second_stop | يعني قصدك تاني موقف، صح؟ | YA'-nee AS-dak TAA-nee MAW-af, sah
+x:l2_contain~nuts | هاد فيه مكسرات؟ | haad feeh mkas-sa-RAAT
+x:l2_contain~milk | هاد فيه حليب؟ | haad feeh ha-LEEB
+x:l2_contain~egg | هاد فيه بيض؟ | haad feeh bayd
+x:l2_contain~shellfish | هاد فيه مأكولات بحرية؟ | haad feeh ma'-koo-LAAT bah-REE-yeh
+x:l2_contain~gluten | هاد فيه جلوتين؟ | haad feeh gloo-TEEN
+x:l2_make_without~milk | ممكن بدون حليب؟ | MUM-kin bi-DOON ha-LEEB
+x:l2_make_without~butter | ممكن بدون زبدة؟ | MUM-kin bi-DOON ZIB-deh
+x:l2_make_without~cheese | ممكن بدون جبنة؟ | MUM-kin bi-DOON JIB-neh
+x:l2_make_without~nuts | ممكن بدون مكسرات؟ | MUM-kin bi-DOON mkas-sa-RAAT
+x:l2_how_much_to~airport | قديش لحد المطار؟ | ad-DAYSH la-HAD il-ma-TAAR
+x:l2_how_much_to~hotel | قديش لحد الفندق؟ | ad-DAYSH la-HAD il-FUN-du'
+x:l2_how_much_to~station | قديش لحد المحطة؟ | ad-DAYSH la-HAD il-ma-HAT-ta
+x:l2_how_much_to~centre | قديش لحد وسط البلد؟ | ad-DAYSH la-HAD WA-sat il-BA-lad

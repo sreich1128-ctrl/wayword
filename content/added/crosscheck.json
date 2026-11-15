@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14",
+  "generated": "2026-11-15",
   "source": "Tatoeba (tatoeba.org), sentences translated by native-speaker volunteers. CC BY 2.0 FR. Used here to check drafts, not copied into the app.",
   "statuses": {
     "match": "A native-written translation is identical (ignoring punctuation and case).",
@@ -10,68 +10,68 @@
   },
   "summary": {
     "pt-PT": {
-      "match": 40,
-      "close": 12,
-      "differs": 33,
-      "none": 142,
-      "total": 227
+      "match": 43,
+      "close": 13,
+      "differs": 34,
+      "none": 192,
+      "total": 282
     },
     "es": {
-      "match": 58,
-      "close": 15,
-      "differs": 21,
-      "none": 133,
-      "total": 227
+      "match": 60,
+      "close": 16,
+      "differs": 24,
+      "none": 182,
+      "total": 282
     },
     "fr": {
-      "match": 58,
-      "close": 11,
-      "differs": 28,
-      "none": 130,
-      "total": 227
-    },
-    "it": {
       "match": 60,
       "close": 12,
-      "differs": 20,
-      "none": 135,
-      "total": 227
+      "differs": 32,
+      "none": 178,
+      "total": 282
+    },
+    "it": {
+      "match": 63,
+      "close": 12,
+      "differs": 21,
+      "none": 186,
+      "total": 282
     },
     "ro": {
-      "match": 19,
+      "match": 20,
       "close": 6,
-      "differs": 8,
-      "none": 194,
-      "total": 227
+      "differs": 10,
+      "none": 246,
+      "total": 282
     },
     "ru": {
-      "match": 64,
-      "close": 8,
-      "differs": 33,
-      "none": 122,
-      "total": 227
+      "match": 67,
+      "close": 9,
+      "differs": 35,
+      "none": 171,
+      "total": 282
     },
     "ja": {
       "match": 24,
       "close": 5,
-      "differs": 44,
-      "none": 154,
-      "total": 227
+      "differs": 48,
+      "none": 205,
+      "total": 282
     },
     "he": {
-      "match": 29,
-      "close": 6,
-      "differs": 17,
-      "none": 175,
-      "total": 227
+      "match": 30,
+      "close": 7,
+      "differs": 19,
+      "none": 226,
+      "total": 282
     },
     "ar-levantine": {
       "match": 12,
       "close": 2,
       "differs": 3,
-      "none": 184,
-      "total": 227,
-      "formal-only": 26
+      "none": 237,
+      "total": 282,
+      "formal-only": 28
     }
   },
   "results": {
@@ -1012,6 +1012,232 @@
             "id": 2569254
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "Não percebi a última parte.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "Pode repetir a última palavra?",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "match",
+        "english": "And then?",
+        "draft": "E depois?",
+        "native": [
+          {
+            "text": "E então?",
+            "lang": "por",
+            "id": 1198123
+          },
+          {
+            "text": "E daí?",
+            "lang": "por",
+            "id": 397626
+          },
+          {
+            "text": "E agora?",
+            "lang": "por",
+            "id": 397627
+          },
+          {
+            "text": "E depois?",
+            "lang": "por",
+            "id": 1198146
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "match",
+        "english": "Is there someone who speaks English?",
+        "draft": "Há alguém que fale inglês?",
+        "native": [
+          {
+            "text": "Há alguém que fale inglês?",
+            "lang": "por",
+            "id": 1137871
+          },
+          {
+            "text": "Tem alguém que fala inglês?",
+            "lang": "por",
+            "id": 948817
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "Pode pedir-lhe ajuda?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "Pode escrever no meu telemóvel?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "Pode explicar de outra maneira?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "Pode mostrar-me?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "Pode verificar outra vez?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "Pode escrever isso?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "Podemos usar um tradutor?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "match",
+        "english": "I'll come back later.",
+        "draft": "Volto mais tarde.",
+        "native": [
+          {
+            "text": "Voltarei depois.",
+            "lang": "por",
+            "id": 1151309
+          },
+          {
+            "text": "Voltarei mais tarde.",
+            "lang": "por",
+            "id": 1151311
+          },
+          {
+            "text": "Volto mais tarde.",
+            "lang": "por",
+            "id": 6950433
+          },
+          {
+            "text": "Eu volto mais tarde.",
+            "lang": "por",
+            "id": 6950434
+          }
+        ]
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "Não faz mal, obrigado/a.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "Quanto tempo de espera para uma mesa?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "Pode pôr o nosso nome na lista?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "Não posso comer lacticínios.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "Qual é o prato mais pedido?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "none",
+        "english": "Is it spicy?",
+        "draft": "É picante?",
+        "native": []
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "Acho que há um erro na conta.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "close",
+        "english": "We didn't order this.",
+        "draft": "Não pedimos isto.",
+        "native": [
+          {
+            "text": "Nós não pedimos isto.",
+            "lang": "por",
+            "id": 4800482
+          },
+          {
+            "text": "Nós não encomendamos isto.",
+            "lang": "por",
+            "id": 4800483
+          }
+        ]
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "Tenho de mudar de comboio?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "Em que linha mudo?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "Posso comprar o bilhete a bordo?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "Onde fica a máquina de bilhetes?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "Este é o último autocarro?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "E se eu o perder?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "Pode ligar o taxímetro?",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "differs",
@@ -2164,6 +2390,108 @@
         "draft": "Quatro bilhetes, por favor.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "Então quer dizer hoje, certo?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "Então quer dizer amanhã, certo?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "Então quer dizer a próxima rua, certo?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "Então quer dizer a segunda paragem, certo?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "Isto tem frutos secos?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "Isto tem leite?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "Isto tem ovo?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "Isto tem marisco?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "none",
+        "english": "Does this contain gluten?",
+        "draft": "Isto tem glúten?",
+        "native": []
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "Pode fazer sem leite?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "Pode fazer sem manteiga?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "Pode fazer sem queijo?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "Pode fazer sem frutos secos?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "Quanto é até ao aeroporto?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "Quanto é até ao hotel?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "Quanto é até à estação?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "Quanto é até ao centro?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -2516,6 +2844,78 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "Começa às dez.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "Que parte?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "Sim, exatamente.",
+        "native": [
+          {
+            "text": "Sim, está correto.",
+            "lang": "por",
+            "id": 576754
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "Vou perguntar.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "Cerca de vinte minutos.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "Sim, tem.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "Este é muito pedido.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "Qual deles?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "Sim, na próxima estação.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "Só na máquina.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "Não, há um à meia-noite.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "É preço fixo.",
         "native": []
       }
     },
@@ -3533,6 +3933,243 @@
             "id": 1221917
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "No entendí la última parte.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "¿Puede repetir la última palabra?",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "differs",
+        "english": "And then?",
+        "draft": "¿Y después?",
+        "native": [
+          {
+            "text": "¿Entonces qué?",
+            "lang": "spa",
+            "id": 2546
+          },
+          {
+            "text": "¿Y qué?",
+            "lang": "spa",
+            "id": 456973
+          },
+          {
+            "text": "¿Y luego?",
+            "lang": "spa",
+            "id": 663859
+          },
+          {
+            "text": "¿Y entonces?",
+            "lang": "spa",
+            "id": 761875
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "match",
+        "english": "Is there someone who speaks English?",
+        "draft": "¿Hay alguien que hable inglés?",
+        "native": [
+          {
+            "text": "¿Hay alguien que hable inglés?",
+            "lang": "spa",
+            "id": 342734
+          },
+          {
+            "text": "¿Hay alguien aquí que hable inglés?",
+            "lang": "spa",
+            "id": 434639
+          },
+          {
+            "text": "¿Hay aquí alguien que hable inglés?",
+            "lang": "spa",
+            "id": 13505192
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "¿Puede pedirle ayuda?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "¿Puede escribirlo en mi teléfono?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "¿Puede explicarlo de otra manera?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "¿Me lo puede mostrar?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "¿Puede revisarlo otra vez?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "¿Puede escribirlo?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "¿Podemos usar un traductor?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "differs",
+        "english": "I'll come back later.",
+        "draft": "Vuelvo más tarde.",
+        "native": [
+          {
+            "text": "Volveré más tarde.",
+            "lang": "spa",
+            "id": 1151748
+          },
+          {
+            "text": "Luego vuelvo.",
+            "lang": "spa",
+            "id": 10185681
+          },
+          {
+            "text": "Volveré luego.",
+            "lang": "spa",
+            "id": 640422
+          },
+          {
+            "text": "Vuelvo luego.",
+            "lang": "spa",
+            "id": 6588092
+          }
+        ]
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "No importa, gracias.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "¿Cuánto hay que esperar para una mesa?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "¿Puede anotar nuestro nombre?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "No puedo comer lácteos.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "¿Cuál es el plato más popular?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "close",
+        "english": "Is it spicy?",
+        "draft": "¿Es picante?",
+        "native": [
+          {
+            "text": "¿Está picante?",
+            "lang": "spa",
+            "id": 11773082
+          }
+        ]
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "Creo que hay un error en la cuenta.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "match",
+        "english": "We didn't order this.",
+        "draft": "No pedimos esto.",
+        "native": [
+          {
+            "text": "No pedimos esto.",
+            "lang": "spa",
+            "id": 10029014
+          },
+          {
+            "text": "No hemos pedido eso.",
+            "lang": "spa",
+            "id": 3035016
+          }
+        ]
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "¿Tengo que cambiar de tren?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "¿En qué andén cambio?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "¿Puedo comprar el boleto a bordo?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "¿Dónde está la máquina de boletos?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "¿Este es el último autobús?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "¿Y si lo pierdo?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "¿Puede poner el taxímetro?",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -4740,6 +5377,108 @@
         "draft": "Cuatro entradas, por favor.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "Entonces quiere decir hoy, ¿verdad?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "Entonces quiere decir mañana, ¿verdad?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "Entonces quiere decir la próxima calle, ¿verdad?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "Entonces quiere decir la segunda parada, ¿verdad?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "¿Esto lleva frutos secos?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "¿Esto lleva leche?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "¿Esto lleva huevo?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "¿Esto lleva mariscos?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "none",
+        "english": "Does this contain gluten?",
+        "draft": "¿Esto lleva gluten?",
+        "native": []
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "¿Lo puede hacer sin leche?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "¿Lo puede hacer sin mantequilla?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "¿Lo puede hacer sin queso?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "¿Lo puede hacer sin frutos secos?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "¿Cuánto cuesta hasta el aeropuerto?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "¿Cuánto cuesta hasta el hotel?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "¿Cuánto cuesta hasta la estación?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "¿Cuánto cuesta hasta el centro?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "close",
         "english": "For here or to go?",
@@ -5094,6 +5833,93 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "Empieza a las diez.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "¿Qué parte?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "Sí, eso es.",
+        "native": [
+          {
+            "text": "Sí, así es.",
+            "lang": "spa",
+            "id": 5127940
+          },
+          {
+            "text": "Sí, eso es correcto.",
+            "lang": "spa",
+            "id": 12015312
+          },
+          {
+            "text": "Sí, es correcto.",
+            "lang": "spa",
+            "id": 2209095
+          },
+          {
+            "text": "¡Así! Exactamente así.",
+            "lang": "spa",
+            "id": 1306053
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "Voy a preguntar.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "Unos veinte minutos.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "Sí, lleva.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "Este es muy popular.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "¿Cuál?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "Sí, en la próxima estación.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "Solo en la máquina.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "No, hay uno a medianoche.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "Es precio fijo.",
         "native": []
       }
     },
@@ -6211,6 +7037,227 @@
             "id": 583791
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "Je n'ai pas compris la fin.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "Vous pouvez répéter le dernier mot ?",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "match",
+        "english": "And then?",
+        "draft": "Et ensuite ?",
+        "native": [
+          {
+            "text": "Et puis !",
+            "lang": "fra",
+            "id": 5969889
+          },
+          {
+            "text": "Et alors ?",
+            "lang": "fra",
+            "id": 3156
+          },
+          {
+            "text": "Et après ?",
+            "lang": "fra",
+            "id": 458847
+          },
+          {
+            "text": "Et ensuite ?",
+            "lang": "fra",
+            "id": 8085247
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "close",
+        "english": "Is there someone who speaks English?",
+        "draft": "Il y a quelqu'un qui parle anglais ?",
+        "native": [
+          {
+            "text": "Y a-t-il quelqu'un qui parle anglais ?",
+            "lang": "fra",
+            "id": 488430
+          },
+          {
+            "text": "Est-ce qu'il y a quelqu'un ici qui parle l'anglais ?",
+            "lang": "fra",
+            "id": 483682
+          },
+          {
+            "text": "Y a t-il quelqu'un ici qui parle anglais ?",
+            "lang": "fra",
+            "id": 4721120
+          },
+          {
+            "text": "Y a-t-il quelqu'un ici qui parle anglais ?",
+            "lang": "fra",
+            "id": 11150070
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "Vous pouvez lui demander de l'aide ?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "Vous pouvez l'écrire sur mon téléphone ?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "Vous pouvez l'expliquer autrement ?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "Vous pouvez me montrer ?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "Vous pouvez revérifier ?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "Vous pouvez l'écrire ?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "On peut utiliser un traducteur ?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "match",
+        "english": "I'll come back later.",
+        "draft": "Je reviendrai plus tard.",
+        "native": [
+          {
+            "text": "Je reviens après.",
+            "lang": "fra",
+            "id": 1156540
+          },
+          {
+            "text": "Je reviendrai plus tard.",
+            "lang": "fra",
+            "id": 12489946
+          }
+        ]
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "Ce n'est pas grave, merci.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "Il y a combien d'attente pour une table ?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "Vous pouvez noter notre nom ?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "Je ne peux pas manger de produits laitiers.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "Quel est votre plat le plus populaire ?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "none",
+        "english": "Is it spicy?",
+        "draft": "C'est épicé ?",
+        "native": []
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "Je crois qu'il y a une erreur sur l'addition.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "differs",
+        "english": "We didn't order this.",
+        "draft": "On n'a pas commandé ça.",
+        "native": [
+          {
+            "text": "Nous n'avons pas commandé ça.",
+            "lang": "fra",
+            "id": 8285889
+          }
+        ]
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "Je dois changer de train ?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "Je change sur quel quai ?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "Je peux acheter un billet à bord ?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "Où est le distributeur de billets ?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "C'est le dernier bus ?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "Et si je le rate ?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "Vous pouvez mettre le compteur ?",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -7445,6 +8492,114 @@
         "draft": "Quatre billets, s'il vous plaît.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "Donc vous voulez dire aujourd'hui, c'est ça ?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "Donc vous voulez dire demain, c'est ça ?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "Donc vous voulez dire la prochaine rue, c'est ça ?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "Donc vous voulez dire le deuxième arrêt, c'est ça ?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "Est-ce qu'il y a des fruits à coque dedans ?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "Est-ce qu'il y a du lait dedans ?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "Est-ce qu'il y a de l'œuf dedans ?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "Est-ce qu'il y a des fruits de mer dedans ?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "differs",
+        "english": "Does this contain gluten?",
+        "draft": "Est-ce qu'il y a du gluten dedans ?",
+        "native": [
+          {
+            "text": "Y a-t-il du gluten ?",
+            "lang": "fra",
+            "id": 10849364
+          }
+        ]
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "Vous pouvez le faire sans lait ?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "Vous pouvez le faire sans beurre ?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "Vous pouvez le faire sans fromage ?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "Vous pouvez le faire sans fruits à coque ?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "C'est combien jusqu'à l'aéroport ?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "C'est combien jusqu'à l'hôtel ?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "C'est combien jusqu'à la gare ?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "C'est combien jusqu'au centre ?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -7895,6 +9050,114 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "Ça commence à dix heures.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "Quelle partie ?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "Oui, c'est ça.",
+        "native": [
+          {
+            "text": "Oui, c'est vrai.",
+            "lang": "fra",
+            "id": 12045066
+          },
+          {
+            "text": "Oui, c'est comme ça.",
+            "lang": "fra",
+            "id": 11083826
+          },
+          {
+            "text": "C'est ça.",
+            "lang": "fra",
+            "id": 477741
+          },
+          {
+            "text": "C'est vrai.",
+            "lang": "fra",
+            "id": 618798
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "Je vais demander.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "Environ vingt minutes.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "differs",
+        "english": "Yes, it does.",
+        "draft": "Oui, il y en a.",
+        "native": [
+          {
+            "text": "Bien sûr !",
+            "lang": "fra",
+            "id": 13673
+          },
+          {
+            "text": "Bien sûr.",
+            "lang": "fra",
+            "id": 897511
+          },
+          {
+            "text": "Pour sûr.",
+            "lang": "fra",
+            "id": 1043643
+          },
+          {
+            "text": "Pardi !",
+            "lang": "fra",
+            "id": 5502032
+          }
+        ]
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "Celui-ci est très demandé.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "Lequel ?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "Oui, à la prochaine gare.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "Seulement au distributeur.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "Non, il y en a un à minuit.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "C'est un prix fixe.",
         "native": []
       }
     },
@@ -8934,6 +10197,211 @@
             "id": 1649932
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "Non ho capito l'ultima parte.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "Può ripetere l'ultima parola?",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "match",
+        "english": "And then?",
+        "draft": "E poi?",
+        "native": [
+          {
+            "text": "E allora?",
+            "lang": "ita",
+            "id": 4380
+          },
+          {
+            "text": "E poi?",
+            "lang": "ita",
+            "id": 4271736
+          },
+          {
+            "text": "E quindi?",
+            "lang": "ita",
+            "id": 1426846
+          },
+          {
+            "text": "Quindi cosa?",
+            "lang": "ita",
+            "id": 2485856
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "match",
+        "english": "Is there someone who speaks English?",
+        "draft": "C'è qualcuno che parla inglese?",
+        "native": [
+          {
+            "text": "C'è qualcuno che parla inglese?",
+            "lang": "ita",
+            "id": 1137903
+          },
+          {
+            "text": "C'è qualcuno che parla l'inglese?",
+            "lang": "ita",
+            "id": 1137905
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "Può chiedergli aiuto?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "Può scriverlo sul mio telefono?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "Può spiegarlo in un altro modo?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "Può farmi vedere?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "Può controllare di nuovo?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "Può scriverlo?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "Possiamo usare un traduttore?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "none",
+        "english": "I'll come back later.",
+        "draft": "Torno più tardi.",
+        "native": []
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "Non importa, grazie.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "Quanto c'è da aspettare per un tavolo?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "Può segnare il nostro nome?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "Non posso mangiare latticini.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "Qual è il piatto più richiesto?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "match",
+        "english": "Is it spicy?",
+        "draft": "È piccante?",
+        "native": [
+          {
+            "text": "È piccante?",
+            "lang": "ita",
+            "id": 1831016
+          },
+          {
+            "text": "Questo è piccante?",
+            "lang": "ita",
+            "id": 6536931
+          }
+        ]
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "Credo ci sia un errore nel conto.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "none",
+        "english": "We didn't order this.",
+        "draft": "Questo non l'abbiamo ordinato.",
+        "native": []
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "Devo cambiare treno?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "A che binario cambio?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "Posso fare il biglietto a bordo?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "Dov'è la biglietteria automatica?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "È l'ultimo autobus?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "E se lo perdo?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "Può accendere il tassametro?",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -10147,6 +11615,108 @@
         "draft": "Quattro biglietti, per favore.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "Quindi intende oggi, giusto?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "Quindi intende domani, giusto?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "Quindi intende la prossima via, giusto?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "Quindi intende la seconda fermata, giusto?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "Contiene frutta a guscio?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "Contiene latte?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "Contiene uova?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "Contiene crostacei?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "none",
+        "english": "Does this contain gluten?",
+        "draft": "Contiene glutine?",
+        "native": []
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "Può farlo senza latte?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "Può farlo senza burro?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "Può farlo senza formaggio?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "Può farlo senza frutta a guscio?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "Quanto costa fino all'aeroporto?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "Quanto costa fino all'hotel?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "Quanto costa fino alla stazione?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "Quanto costa fino al centro?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "differs",
         "english": "For here or to go?",
@@ -10531,6 +12101,93 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "Inizia alle dieci.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "Quale parte?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "Sì, esatto.",
+        "native": [
+          {
+            "text": "L'hai detto!",
+            "lang": "ita",
+            "id": 11444074
+          },
+          {
+            "text": "L'hai detta!",
+            "lang": "ita",
+            "id": 11444075
+          },
+          {
+            "text": "L'ha detto!",
+            "lang": "ita",
+            "id": 11444076
+          },
+          {
+            "text": "L'ha detta!",
+            "lang": "ita",
+            "id": 11444077
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "Chiedo subito.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "Circa venti minuti.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "Sì, c'è.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "Questo è molto richiesto.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "Quale?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "Sì, alla prossima stazione.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "Solo alla macchinetta.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "No, ce n'è uno a mezzanotte.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "È un prezzo fisso.",
         "native": []
       }
     },
@@ -11204,6 +12861,179 @@
             "id": 5908992
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "Nu am înțeles ultima parte.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "Puteți repeta ultimul cuvânt?",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "match",
+        "english": "And then?",
+        "draft": "Și apoi?",
+        "native": [
+          {
+            "text": "Și apoi?",
+            "lang": "ron",
+            "id": 8383485
+          },
+          {
+            "text": "Așa, și?",
+            "lang": "ron",
+            "id": 11163137
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "none",
+        "english": "Is there someone who speaks English?",
+        "draft": "Vorbește cineva engleză?",
+        "native": []
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "Puteți să îi cereți ajutorul?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "Puteți scrie pe telefonul meu?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "Puteți explica altfel?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "Puteți să-mi arătați?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "Puteți verifica din nou?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "Puteți să scrieți asta?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "Putem folosi un translator?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "none",
+        "english": "I'll come back later.",
+        "draft": "Revin mai târziu.",
+        "native": []
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "Nu contează, mulțumesc.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "Cât se așteaptă pentru o masă?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "Ne puteți trece pe listă?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "Nu pot mânca lactate.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "Care este cel mai cerut fel de mâncare?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "none",
+        "english": "Is it spicy?",
+        "draft": "Este picant?",
+        "native": []
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "Cred că e o greșeală pe notă.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "none",
+        "english": "We didn't order this.",
+        "draft": "Nu am comandat asta.",
+        "native": []
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "Trebuie să schimb trenul?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "La ce peron schimb?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "Pot cumpăra biletul la bord?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "Unde este automatul de bilete?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "Acesta e ultimul autobuz?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "Și dacă îl pierd?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "Puteți porni aparatul de taxat?",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -12034,6 +13864,114 @@
         "draft": "Patru bilete, vă rog.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "Deci vreți să spuneți azi, da?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "Deci vreți să spuneți mâine, da?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "Deci vreți să spuneți strada următoare, da?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "Deci vreți să spuneți a doua stație, da?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "Conține nuci?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "Conține lapte?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "Conține ou?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "Conține fructe de mare?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "differs",
+        "english": "Does this contain gluten?",
+        "draft": "Conține gluten?",
+        "native": [
+          {
+            "text": "Conține asta gluten?",
+            "lang": "ron",
+            "id": 6574583
+          }
+        ]
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "Se poate fără lapte?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "Se poate fără unt?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "Se poate fără brânză?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "Se poate fără nuci?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "Cât costă până la aeroport?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "Cât costă până la hotel?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "Cât costă până la gară?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "Cât costă până în centru?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -12253,6 +14191,78 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "Începe la zece.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "Care parte?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "Da, exact.",
+        "native": [
+          {
+            "text": "Da. Așa e.",
+            "lang": "ron",
+            "id": 11512273
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "Să întreb.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "Cam douăzeci de minute.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "Da, conține.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "Acesta e foarte cerut.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "Care anume?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "Da, la următoarea stație.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "Doar la automat.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "Nu, mai e unul la miezul nopții.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "E preț fix.",
         "native": []
       }
     },
@@ -13438,6 +15448,227 @@
             "id": 8053807
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "Я не расслышал/расслышала конец.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "Повторите последнее слово, пожалуйста.",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "match",
+        "english": "And then?",
+        "draft": "А потом?",
+        "native": [
+          {
+            "text": "А потом?",
+            "lang": "rus",
+            "id": 407081
+          },
+          {
+            "text": "И что дальше?",
+            "lang": "rus",
+            "id": 2146671
+          },
+          {
+            "text": "Так что?",
+            "lang": "rus",
+            "id": 5474
+          },
+          {
+            "text": "Ну?",
+            "lang": "rus",
+            "id": 651181
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "match",
+        "english": "Is there someone who speaks English?",
+        "draft": "Кто-нибудь говорит по-английски?",
+        "native": [
+          {
+            "text": "Здесь есть кто-нибудь, кто говорит по-английски?",
+            "lang": "rus",
+            "id": 1792807
+          },
+          {
+            "text": "Кто-нибудь говорит по-английски?",
+            "lang": "rus",
+            "id": 1006967
+          },
+          {
+            "text": "Здесь кто-нибудь говорит по-английски?",
+            "lang": "rus",
+            "id": 3902640
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "Можете попросить их помочь?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "Можете написать в моём телефоне?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "Можете объяснить по-другому?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "Можете показать?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "Можете проверить ещё раз?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "Можете это написать?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "Давайте через переводчик?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "differs",
+        "english": "I'll come back later.",
+        "draft": "Я зайду позже.",
+        "native": [
+          {
+            "text": "Я вернусь позже.",
+            "lang": "rus",
+            "id": 3132344
+          },
+          {
+            "text": "Я ещё вернусь.",
+            "lang": "rus",
+            "id": 5219677
+          },
+          {
+            "text": "Я ещё попозже приду.",
+            "lang": "rus",
+            "id": 12490047
+          }
+        ]
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "Ничего, спасибо.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "Сколько ждать столик?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "Можете нас записать?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "Мне нельзя молочное.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "Какое блюдо у вас самое популярное?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "none",
+        "english": "Is it spicy?",
+        "draft": "Это острое?",
+        "native": []
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "Кажется, в счёте ошибка.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "close",
+        "english": "We didn't order this.",
+        "draft": "Мы это не заказывали.",
+        "native": [
+          {
+            "text": "Мы этого не заказывали.",
+            "lang": "rus",
+            "id": 3040235
+          }
+        ]
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "Мне нужно делать пересадку?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "На какой платформе пересадка?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "Билет можно купить внутри?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "Где автомат с билетами?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "Это последний автобус?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "А если я опоздаю?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "Включите счётчик, пожалуйста.",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -14756,6 +16987,114 @@
         "draft": "Четыре билета, пожалуйста.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "То есть сегодня, да?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "То есть завтра, да?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "То есть следующая улица, да?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "То есть вторая остановка, да?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "Здесь есть орехи?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "Здесь есть молоко?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "Здесь есть яйца?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "Здесь есть морепродукты?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "match",
+        "english": "Does this contain gluten?",
+        "draft": "Здесь есть глютен?",
+        "native": [
+          {
+            "text": "Здесь есть глютен?",
+            "lang": "rus",
+            "id": 11623761
+          }
+        ]
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "Можно без молока?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "Можно без масла?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "Можно без сыра?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "Можно без орехов?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "Сколько стоит до аэропорта?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "Сколько стоит до отеля?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "Сколько стоит до вокзала?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "Сколько стоит до центра?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "match",
         "english": "For here or to go?",
@@ -15182,6 +17521,93 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "Начало в десять.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "Какую часть?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "Да, верно.",
+        "native": [
+          {
+            "text": "Да, это так.",
+            "lang": "rus",
+            "id": 667008
+          },
+          {
+            "text": "Да, это правда.",
+            "lang": "rus",
+            "id": 12045058
+          },
+          {
+            "text": "Да, правда.",
+            "lang": "rus",
+            "id": 12975142
+          },
+          {
+            "text": "Именно так.",
+            "lang": "rus",
+            "id": 1895960
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "Сейчас спрошу.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "Минут двадцать.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "Да, есть.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "Это очень популярное.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "Какая позиция?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "Да, на следующей станции.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "Только в автомате.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "Нет, есть ещё в полночь.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "Цена фиксированная.",
         "native": []
       }
     },
@@ -16126,6 +18552,201 @@
             "id": 2412106
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "最後のところが聞き取れませんでした。",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "最後の言葉をもう一度お願いします。",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "differs",
+        "english": "And then?",
+        "draft": "それから？",
+        "native": [
+          {
+            "text": "だから何？",
+            "lang": "jpn",
+            "id": 4765
+          },
+          {
+            "text": "じゃあ何？",
+            "lang": "jpn",
+            "id": 215732
+          },
+          {
+            "text": "だから、なに？",
+            "lang": "jpn",
+            "id": 10635020
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "differs",
+        "english": "Is there someone who speaks English?",
+        "draft": "英語を話せる人はいますか？",
+        "native": [
+          {
+            "text": "誰か英語を話す人はいますか。",
+            "lang": "jpn",
+            "id": 74827
+          },
+          {
+            "text": "こちらに英語を話せる人はいますか？",
+            "lang": "jpn",
+            "id": 4715158
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "その方に手伝ってもらえますか？",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "私のスマホに打ってもらえますか？",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "別の言い方で説明してもらえますか？",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "見せてもらえますか？",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "もう一度確認してもらえますか？",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "書いてもらえますか？",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "翻訳アプリを使ってもいいですか？",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "none",
+        "english": "I'll come back later.",
+        "draft": "また後で来ます。",
+        "native": []
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "大丈夫です。ありがとうございます。",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "待ち時間はどのくらいですか？",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "名前を書いておいてもらえますか？",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "乳製品が食べられません。",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "一番人気の料理は何ですか？",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "differs",
+        "english": "Is it spicy?",
+        "draft": "辛いですか？",
+        "native": [
+          {
+            "text": "辛い？",
+            "lang": "jpn",
+            "id": 8688655
+          }
+        ]
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "お会計が間違っているようです。",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "none",
+        "english": "We didn't order this.",
+        "draft": "これは注文していません。",
+        "native": []
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "乗り換えは必要ですか？",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "何番線で乗り換えますか？",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "車内で切符を買えますか？",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "券売機はどこですか？",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "これが最終バスですか？",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "乗り遅れたらどうなりますか？",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "メーターを使ってもらえますか？",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -17209,6 +19830,108 @@
         "draft": "チケットを四枚お願いします。",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "つまり、今日ということですね？",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "つまり、明日ということですね？",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "つまり、次の通りということですね？",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "つまり、二つ目の停留所ということですね？",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "これにナッツは入っていますか？",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "これに牛乳は入っていますか？",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "これに卵は入っていますか？",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "これに甲殻類は入っていますか？",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "none",
+        "english": "Does this contain gluten?",
+        "draft": "これにグルテンは入っていますか？",
+        "native": []
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "牛乳抜きでできますか？",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "バター抜きでできますか？",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "チーズ抜きでできますか？",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "ナッツ抜きでできますか？",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "空港までいくらですか？",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "ホテルまでいくらですか？",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "駅までいくらですか？",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "中心街までいくらですか？",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "differs",
         "english": "For here or to go?",
@@ -17554,6 +20277,88 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "十時に始まります。",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "どの部分ですか？",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "はい、そうです。",
+        "native": [
+          {
+            "text": "そう！その通り。",
+            "lang": "jpn",
+            "id": 213971
+          },
+          {
+            "text": "ええ。その通りです。",
+            "lang": "jpn",
+            "id": 10185797
+          },
+          {
+            "text": "はい、当たってる。",
+            "lang": "jpn",
+            "id": 13881245
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "聞いてみます。",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "二十分ほどです。",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "はい、入っています。",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "こちらが人気です。",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "どちらですか？",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "はい、次の駅です。",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "券売機だけです。",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "いいえ、十二時にもう一本あります。",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "定額です。",
         "native": []
       }
     },
@@ -18402,6 +21207,201 @@
             "id": 1176728
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "לא הבנתי את החלק האחרון.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "אפשר לחזור על המילה האחרונה?",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "match",
+        "english": "And then?",
+        "draft": "ואז?",
+        "native": [
+          {
+            "text": "ואז?",
+            "lang": "heb",
+            "id": 643331
+          },
+          {
+            "text": "נו, ו...?",
+            "lang": "heb",
+            "id": 694370
+          },
+          {
+            "text": "נו, אז מה?",
+            "lang": "heb",
+            "id": 694371
+          },
+          {
+            "text": "ובכן?",
+            "lang": "heb",
+            "id": 1982955
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "close",
+        "english": "Is there someone who speaks English?",
+        "draft": "יש מישהו שמדבר אנגלית?",
+        "native": [
+          {
+            "text": "יש מישהו דובר אנגלית?",
+            "lang": "heb",
+            "id": 1911125
+          }
+        ]
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "אפשר לבקש ממנו לעזור?",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "אפשר לכתוב את זה בטלפון שלי?",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "אפשר להסביר בדרך אחרת?",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "אפשר להראות לי?",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "אפשר לבדוק שוב?",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "אפשר לכתוב את זה?",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "אפשר להשתמש באפליקציית תרגום?",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "differs",
+        "english": "I'll come back later.",
+        "draft": "אני אחזור אחר כך.",
+        "native": [
+          {
+            "text": "אחזור אחר כך.",
+            "lang": "heb",
+            "id": 1299793
+          }
+        ]
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "לא משנה, תודה.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "כמה זמן מחכים לשולחן?",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "אפשר לרשום אותנו?",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "אני לא יכול לאכול מוצרי חלב.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "מה המנה הכי פופולרית?",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "none",
+        "english": "Is it spicy?",
+        "draft": "זה חריף?",
+        "native": []
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "נראה לי שיש טעות בחשבון.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "none",
+        "english": "We didn't order this.",
+        "draft": "לא הזמנו את זה.",
+        "native": []
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "צריך להחליף רכבת?",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "באיזה רציף מחליפים?",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "אפשר לקנות כרטיס בפנים?",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "איפה מכונת הכרטיסים?",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "זה האוטובוס האחרון?",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "ומה אם אפספס אותו?",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "אפשר להפעיל מונה?",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "match",
@@ -19282,6 +22282,108 @@
         "draft": "ארבעה כרטיסים, בבקשה.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "אז אתה מתכוון היום, נכון?",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "אז אתה מתכוון מחר, נכון?",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "אז אתה מתכוון לרחוב הבא, נכון?",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "אז אתה מתכוון לתחנה השנייה, נכון?",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "יש בזה אגוזים?",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "יש בזה חלב?",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "יש בזה ביצים?",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "יש בזה פירות ים?",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "none",
+        "english": "Does this contain gluten?",
+        "draft": "יש בזה גלוטן?",
+        "native": []
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "אפשר בלי חלב?",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "אפשר בלי חמאה?",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "אפשר בלי גבינה?",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "אפשר בלי אגוזים?",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "כמה עולה עד שדה התעופה?",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "כמה עולה עד המלון?",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "כמה עולה עד התחנה?",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "כמה עולה עד מרכז העיר?",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -19555,6 +22657,83 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "זה מתחיל בעשר.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "איזה חלק?",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "differs",
+        "english": "Yes, that's right.",
+        "draft": "כן, נכון.",
+        "native": [
+          {
+            "text": "אתה אמרת!",
+            "lang": "heb",
+            "id": 5449612
+          },
+          {
+            "text": "כן. זה נכון.",
+            "lang": "heb",
+            "id": 8168587
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "אני אשאל.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "בערך עשרים דקות.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "כן, יש.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "זו מנה מאוד פופולרית.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "איזה פריט?",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "כן, בתחנה הבאה.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "רק במכונה.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "לא, יש עוד אחד בחצות.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "זה מחיר קבוע.",
         "native": []
       }
     },
@@ -20300,6 +23479,179 @@
             "id": 6966538
           }
         ]
+      },
+      "l2_didnt_catch": {
+        "status": "none",
+        "english": "I didn't catch the last part.",
+        "draft": "ما فهمت آخر جزء.",
+        "native": []
+      },
+      "l2_last_word": {
+        "status": "none",
+        "english": "Could you say the last word again?",
+        "draft": "ممكن تعيد آخر كلمة؟",
+        "native": []
+      },
+      "l2_and_then": {
+        "status": "formal-only",
+        "english": "And then?",
+        "draft": "وبعدين؟",
+        "native": [
+          {
+            "text": "ثم ماذا؟",
+            "lang": "ara",
+            "id": 372186
+          },
+          {
+            "text": "ماذا بعد ذلك؟",
+            "lang": "ara",
+            "id": 372187
+          }
+        ]
+      },
+      "l2_someone_english": {
+        "status": "none",
+        "english": "Is there someone who speaks English?",
+        "draft": "في حدا بيحكي إنجليزي؟",
+        "native": []
+      },
+      "l2_ask_them": {
+        "status": "none",
+        "english": "Could you ask them to help?",
+        "draft": "ممكن تطلب منه يساعد؟",
+        "native": []
+      },
+      "l2_type_phone": {
+        "status": "none",
+        "english": "Could you type it on my phone?",
+        "draft": "ممكن تكتبها على تلفوني؟",
+        "native": []
+      },
+      "l2_another_way": {
+        "status": "none",
+        "english": "Could you explain it another way?",
+        "draft": "ممكن تشرحها بطريقة تانية؟",
+        "native": []
+      },
+      "l2_show_me": {
+        "status": "none",
+        "english": "Could you show me?",
+        "draft": "ممكن تفرجيني؟",
+        "native": []
+      },
+      "l2_check_again": {
+        "status": "none",
+        "english": "Could you check it again?",
+        "draft": "ممكن تتأكد مرة تانية؟",
+        "native": []
+      },
+      "l2_write_down": {
+        "status": "none",
+        "english": "Could you write it down?",
+        "draft": "ممكن تكتبها؟",
+        "native": []
+      },
+      "l2_translation_app": {
+        "status": "none",
+        "english": "Could we use a translation app?",
+        "draft": "ممكن نستعمل تطبيق ترجمة؟",
+        "native": []
+      },
+      "l2_come_back": {
+        "status": "none",
+        "english": "I'll come back later.",
+        "draft": "برجع بعدين.",
+        "native": []
+      },
+      "l2_never_mind": {
+        "status": "none",
+        "english": "Never mind, thank you.",
+        "draft": "مش مشكلة، شكراً.",
+        "native": []
+      },
+      "l2_wait_table": {
+        "status": "none",
+        "english": "How long is the wait for a table?",
+        "draft": "قديش لازم نستنى لطاولة؟",
+        "native": []
+      },
+      "l2_name_down": {
+        "status": "none",
+        "english": "Can you put our name down?",
+        "draft": "ممكن تسجّل اسمنا؟",
+        "native": []
+      },
+      "l2_cant_eat_dairy": {
+        "status": "none",
+        "english": "I can't eat dairy.",
+        "draft": "ما بقدر آكل ألبان.",
+        "native": []
+      },
+      "l2_popular_dish": {
+        "status": "none",
+        "english": "What's your most popular dish?",
+        "draft": "شو أكتر طبق مطلوب عندكم؟",
+        "native": []
+      },
+      "l2_is_it_spicy": {
+        "status": "none",
+        "english": "Is it spicy?",
+        "draft": "هاد حار؟",
+        "native": []
+      },
+      "l2_bill_mistake": {
+        "status": "none",
+        "english": "I think there's a mistake on the bill.",
+        "draft": "بظن في غلط بالحساب.",
+        "native": []
+      },
+      "l2_didnt_order": {
+        "status": "none",
+        "english": "We didn't order this.",
+        "draft": "ما طلبنا هاد.",
+        "native": []
+      },
+      "l2_change_trains": {
+        "status": "none",
+        "english": "Do I need to change trains?",
+        "draft": "لازم أغيّر القطار؟",
+        "native": []
+      },
+      "l2_platform_change": {
+        "status": "none",
+        "english": "Which platform do I change at?",
+        "draft": "على أي رصيف بغيّر؟",
+        "native": []
+      },
+      "l2_ticket_on_board": {
+        "status": "none",
+        "english": "Can I buy a ticket on board?",
+        "draft": "بقدر أشتري تذكرة جوّا؟",
+        "native": []
+      },
+      "l2_ticket_machine": {
+        "status": "none",
+        "english": "Where's the ticket machine?",
+        "draft": "وين مكنة التذاكر؟",
+        "native": []
+      },
+      "l2_last_bus": {
+        "status": "none",
+        "english": "Is this the last bus?",
+        "draft": "هاد آخر باص؟",
+        "native": []
+      },
+      "l2_miss_it": {
+        "status": "none",
+        "english": "What if I miss it?",
+        "draft": "وإذا راح عليّ؟",
+        "native": []
+      },
+      "l2_use_meter": {
+        "status": "none",
+        "english": "Could you use the meter?",
+        "draft": "ممكن تشغّل العدّاد؟",
+        "native": []
       },
       "where_is~word_train_station": {
         "status": "none",
@@ -21121,6 +24473,108 @@
         "draft": "أربع تذاكر، لو سمحت.",
         "native": []
       },
+      "l2_so_you_mean~today": {
+        "status": "none",
+        "english": "So you mean today, right?",
+        "draft": "يعني قصدك اليوم، صح؟",
+        "native": []
+      },
+      "l2_so_you_mean~tomorrow": {
+        "status": "none",
+        "english": "So you mean tomorrow, right?",
+        "draft": "يعني قصدك بكرا، صح؟",
+        "native": []
+      },
+      "l2_so_you_mean~next_street": {
+        "status": "none",
+        "english": "So you mean the next street, right?",
+        "draft": "يعني قصدك الشارع الجاي، صح؟",
+        "native": []
+      },
+      "l2_so_you_mean~second_stop": {
+        "status": "none",
+        "english": "So you mean the second stop, right?",
+        "draft": "يعني قصدك تاني موقف، صح؟",
+        "native": []
+      },
+      "l2_contain~nuts": {
+        "status": "none",
+        "english": "Does this contain nuts?",
+        "draft": "هاد فيه مكسرات؟",
+        "native": []
+      },
+      "l2_contain~milk": {
+        "status": "none",
+        "english": "Does this contain milk?",
+        "draft": "هاد فيه حليب؟",
+        "native": []
+      },
+      "l2_contain~egg": {
+        "status": "none",
+        "english": "Does this contain egg?",
+        "draft": "هاد فيه بيض؟",
+        "native": []
+      },
+      "l2_contain~shellfish": {
+        "status": "none",
+        "english": "Does this contain shellfish?",
+        "draft": "هاد فيه مأكولات بحرية؟",
+        "native": []
+      },
+      "l2_contain~gluten": {
+        "status": "none",
+        "english": "Does this contain gluten?",
+        "draft": "هاد فيه جلوتين؟",
+        "native": []
+      },
+      "l2_make_without~milk": {
+        "status": "none",
+        "english": "Can you make it without milk?",
+        "draft": "ممكن بدون حليب؟",
+        "native": []
+      },
+      "l2_make_without~butter": {
+        "status": "none",
+        "english": "Can you make it without butter?",
+        "draft": "ممكن بدون زبدة؟",
+        "native": []
+      },
+      "l2_make_without~cheese": {
+        "status": "none",
+        "english": "Can you make it without cheese?",
+        "draft": "ممكن بدون جبنة؟",
+        "native": []
+      },
+      "l2_make_without~nuts": {
+        "status": "none",
+        "english": "Can you make it without nuts?",
+        "draft": "ممكن بدون مكسرات؟",
+        "native": []
+      },
+      "l2_how_much_to~airport": {
+        "status": "none",
+        "english": "How much to the airport?",
+        "draft": "قديش لحد المطار؟",
+        "native": []
+      },
+      "l2_how_much_to~hotel": {
+        "status": "none",
+        "english": "How much to the hotel?",
+        "draft": "قديش لحد الفندق؟",
+        "native": []
+      },
+      "l2_how_much_to~station": {
+        "status": "none",
+        "english": "How much to the station?",
+        "draft": "قديش لحد المحطة؟",
+        "native": []
+      },
+      "l2_how_much_to~centre": {
+        "status": "none",
+        "english": "How much to the city centre?",
+        "draft": "قديش لحد وسط البلد؟",
+        "native": []
+      },
       "reply~for_here_or_to_go": {
         "status": "none",
         "english": "For here or to go?",
@@ -21397,6 +24851,78 @@
         "status": "none",
         "english": "It starts at ten.",
         "draft": "بيبلّش الساعة عشرة.",
+        "native": []
+      },
+      "reply~l2_which_part": {
+        "status": "none",
+        "english": "Which part?",
+        "draft": "أي جزء؟",
+        "native": []
+      },
+      "reply~l2_thats_right": {
+        "status": "formal-only",
+        "english": "Yes, that's right.",
+        "draft": "آه، صح.",
+        "native": [
+          {
+            "text": "نعم، ذلك صحيح.",
+            "lang": "ara",
+            "id": 586958
+          }
+        ]
+      },
+      "reply~l2_let_me_ask": {
+        "status": "none",
+        "english": "Let me ask.",
+        "draft": "خليني أسأل.",
+        "native": []
+      },
+      "reply~l2_about_twenty": {
+        "status": "none",
+        "english": "About twenty minutes.",
+        "draft": "حوالي عشرين دقيقة.",
+        "native": []
+      },
+      "reply~l2_yes_it_does": {
+        "status": "none",
+        "english": "Yes, it does.",
+        "draft": "آه، فيه.",
+        "native": []
+      },
+      "reply~l2_very_popular": {
+        "status": "none",
+        "english": "This one is very popular.",
+        "draft": "هاد كتير مطلوب.",
+        "native": []
+      },
+      "reply~l2_which_item": {
+        "status": "none",
+        "english": "Which item?",
+        "draft": "أي واحد؟",
+        "native": []
+      },
+      "reply~l2_next_station": {
+        "status": "none",
+        "english": "Yes, at the next station.",
+        "draft": "آه، بالمحطة الجاية.",
+        "native": []
+      },
+      "reply~l2_only_machine": {
+        "status": "none",
+        "english": "Only at the machine.",
+        "draft": "بس من المكنة.",
+        "native": []
+      },
+      "reply~l2_one_at_midnight": {
+        "status": "none",
+        "english": "No, there's one at midnight.",
+        "draft": "لأ، في واحد نص الليل.",
+        "native": []
+      },
+      "reply~l2_fixed_price": {
+        "status": "none",
+        "english": "It's a fixed price.",
+        "draft": "السعر ثابت.",
         "native": []
       }
     }

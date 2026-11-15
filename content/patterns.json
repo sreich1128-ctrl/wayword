@@ -630,6 +630,115 @@
           "english": "Four tickets, please."
         }
       ]
+    },
+    "l2_so_you_mean": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "today",
+          "label": "today",
+          "english": "So you mean today, right?"
+        },
+        {
+          "id": "tomorrow",
+          "label": "tomorrow",
+          "english": "So you mean tomorrow, right?"
+        },
+        {
+          "id": "next_street",
+          "label": "the next street",
+          "english": "So you mean the next street, right?"
+        },
+        {
+          "id": "second_stop",
+          "label": "the second stop",
+          "english": "So you mean the second stop, right?"
+        }
+      ]
+    },
+    "l2_contain": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "nuts",
+          "label": "nuts",
+          "english": "Does this contain nuts?"
+        },
+        {
+          "id": "milk",
+          "label": "milk",
+          "english": "Does this contain milk?"
+        },
+        {
+          "id": "egg",
+          "label": "egg",
+          "english": "Does this contain egg?"
+        },
+        {
+          "id": "shellfish",
+          "label": "shellfish",
+          "english": "Does this contain shellfish?"
+        },
+        {
+          "id": "gluten",
+          "label": "gluten",
+          "english": "Does this contain gluten?"
+        }
+      ]
+    },
+    "l2_make_without": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "milk",
+          "label": "milk",
+          "english": "Can you make it without milk?"
+        },
+        {
+          "id": "butter",
+          "label": "butter",
+          "english": "Can you make it without butter?"
+        },
+        {
+          "id": "cheese",
+          "label": "cheese",
+          "english": "Can you make it without cheese?"
+        },
+        {
+          "id": "nuts",
+          "label": "nuts",
+          "english": "Can you make it without nuts?"
+        }
+      ]
+    },
+    "l2_how_much_to": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "airport",
+          "label": "the airport",
+          "english": "How much to the airport?"
+        },
+        {
+          "id": "hotel",
+          "label": "the hotel",
+          "english": "How much to the hotel?"
+        },
+        {
+          "id": "station",
+          "label": "the station",
+          "english": "How much to the station?"
+        },
+        {
+          "id": "centre",
+          "label": "the city centre",
+          "english": "How much to the city centre?"
+        }
+      ]
     }
   }
 }

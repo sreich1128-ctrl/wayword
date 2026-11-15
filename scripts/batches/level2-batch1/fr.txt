@@ -1,0 +1,59 @@
+l2_didnt_catch | Je n'ai pas compris la fin. | zhuh nay pah kohm-PREE lah FAN
+l2_last_word | Vous pouvez répéter le dernier mot ? | voo poo-vay ray-pay-TAY luh dehr-nyay MOH
+l2_so_you_mean | Donc vous voulez dire ___, c'est ça ? | dohnk voo voo-lay DEER ___, say SAH
+l2_and_then | Et ensuite ? | ay ahn-SWEET
+l2_someone_english | Il y a quelqu'un qui parle anglais ? | eel yah kel-KUHN kee parl ahn-GLEH
+l2_ask_them | Vous pouvez lui demander de l'aide ? | voo poo-vay lwee duh-mahn-DAY duh LED
+l2_type_phone | Vous pouvez l'écrire sur mon téléphone ? | voo poo-vay lay-KREER sewr mohn tay-lay-FON
+l2_another_way | Vous pouvez l'expliquer autrement ? | voo poo-vay lek-splee-KAY oh-truh-MAHN
+l2_show_me | Vous pouvez me montrer ? | voo poo-vay muh mohn-TRAY
+l2_check_again | Vous pouvez revérifier ? | voo poo-vay ruh-vay-ree-FYAY
+l2_write_down | Vous pouvez l'écrire ? | voo poo-vay lay-KREER
+l2_translation_app | On peut utiliser un traducteur ? | ohn puh ew-tee-lee-ZAY uhn trah-dewk-TUHR
+l2_come_back | Je reviendrai plus tard. | zhuh ruh-vyan-DRAY plew TAR
+l2_never_mind | Ce n'est pas grave, merci. | suh nay pah GRAHV, mehr-SEE
+l2_wait_table | Il y a combien d'attente pour une table ? | eel yah kohm-byen dah-TAHNT poor ewn TAH-bluh
+l2_name_down | Vous pouvez noter notre nom ? | voo poo-vay noh-TAY noh-truh NOHN
+l2_contain | Est-ce qu'il y a ___ dedans ? | ess keel yah ___ duh-DAHN
+l2_make_without | Vous pouvez le faire sans ___ ? | voo poo-vay luh FEHR sahn ___
+l2_cant_eat_dairy | Je ne peux pas manger de produits laitiers. | zhuh nuh puh pah mahn-ZHAY duh proh-dwee leh-TYAY
+l2_popular_dish | Quel est votre plat le plus populaire ? | kel eh voh-truh PLAH luh plew poh-pew-LEHR
+l2_is_it_spicy | C'est épicé ? | say tay-pee-SAY
+l2_bill_mistake | Je crois qu'il y a une erreur sur l'addition. | zhuh krwah keel yah ewn eh-RUHR sewr lah-dee-SYOHN
+l2_didnt_order | On n'a pas commandé ça. | ohn nah pah koh-mahn-DAY sah
+l2_change_trains | Je dois changer de train ? | zhuh dwah shahn-ZHAY duh TRAN
+l2_platform_change | Je change sur quel quai ? | zhuh shahnzh sewr kel KAY
+l2_ticket_on_board | Je peux acheter un billet à bord ? | zhuh puh ash-TAY uhn bee-YEH ah BOR
+l2_ticket_machine | Où est le distributeur de billets ? | oo eh luh dees-tree-bew-TUHR duh bee-YEH
+l2_last_bus | C'est le dernier bus ? | say luh dehr-nyay BEWSS
+l2_miss_it | Et si je le rate ? | ay see zhuh luh RAHT
+l2_use_meter | Vous pouvez mettre le compteur ? | voo poo-vay MET-ruh luh kohn-TUHR
+l2_how_much_to | C'est combien jusqu'à ___ ? | say kohm-BYEN zhews-KAH ___
+r:l2_which_part | Quelle partie ? | kel par-TEE
+r:l2_thats_right | Oui, c'est ça. | wee, say SAH
+r:l2_let_me_ask | Je vais demander. | zhuh vay duh-mahn-DAY
+r:l2_about_twenty | Environ vingt minutes. | ahn-vee-ROHN van mee-NEWT
+r:l2_yes_it_does | Oui, il y en a. | wee, eel yahn NAH
+r:l2_very_popular | Celui-ci est très demandé. | suh-lwee-SEE eh treh duh-mahn-DAY
+r:l2_which_item | Lequel ? | luh-KEL
+r:l2_next_station | Oui, à la prochaine gare. | wee, ah lah proh-SHEN GAR
+r:l2_only_machine | Seulement au distributeur. | suhl-MAHN oh dees-tree-bew-TUHR
+r:l2_one_at_midnight | Non, il y en a un à minuit. | nohn, eel yahn nah uhn ah mee-NWEE
+r:l2_fixed_price | C'est un prix fixe. | say tuhn pree FEEKS
+x:l2_so_you_mean~today | Donc vous voulez dire aujourd'hui, c'est ça ? | dohnk voo voo-lay DEER oh-zhoor-DWEE, say SAH
+x:l2_so_you_mean~tomorrow | Donc vous voulez dire demain, c'est ça ? | dohnk voo voo-lay DEER duh-MAN, say SAH
+x:l2_so_you_mean~next_street | Donc vous voulez dire la prochaine rue, c'est ça ? | dohnk voo voo-lay DEER lah proh-SHEN REW, say SAH
+x:l2_so_you_mean~second_stop | Donc vous voulez dire le deuxième arrêt, c'est ça ? | dohnk voo voo-lay DEER luh duh-ZYEM ah-REH, say SAH
+x:l2_contain~nuts | Est-ce qu'il y a des fruits à coque dedans ? | ess keel yah day frwee ah KOK duh-DAHN
+x:l2_contain~milk | Est-ce qu'il y a du lait dedans ? | ess keel yah dew LEH duh-DAHN
+x:l2_contain~egg | Est-ce qu'il y a de l'œuf dedans ? | ess keel yah duh LUHF duh-DAHN
+x:l2_contain~shellfish | Est-ce qu'il y a des fruits de mer dedans ? | ess keel yah day frwee duh MEHR duh-DAHN
+x:l2_contain~gluten | Est-ce qu'il y a du gluten dedans ? | ess keel yah dew glew-TEN duh-DAHN
+x:l2_make_without~milk | Vous pouvez le faire sans lait ? | voo poo-vay luh FEHR sahn LEH
+x:l2_make_without~butter | Vous pouvez le faire sans beurre ? | voo poo-vay luh FEHR sahn BUHR
+x:l2_make_without~cheese | Vous pouvez le faire sans fromage ? | voo poo-vay luh FEHR sahn froh-MAZH
+x:l2_make_without~nuts | Vous pouvez le faire sans fruits à coque ? | voo poo-vay luh FEHR sahn frwee ah KOK
+x:l2_how_much_to~airport | C'est combien jusqu'à l'aéroport ? | say kohm-BYEN zhews-KAH lah-ay-roh-POR
+x:l2_how_much_to~hotel | C'est combien jusqu'à l'hôtel ? | say kohm-BYEN zhews-KAH loh-TEL
+x:l2_how_much_to~station | C'est combien jusqu'à la gare ? | say kohm-BYEN zhews-KAH lah GAR
+x:l2_how_much_to~centre | C'est combien jusqu'au centre ? | say kohm-BYEN zhews-KOH SAHN-truh

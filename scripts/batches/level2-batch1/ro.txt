@@ -1,0 +1,59 @@
+l2_didnt_catch | Nu am înțeles ultima parte. | noo ahm in-tseh-LES OOL-tee-mah PAR-teh
+l2_last_word | Puteți repeta ultimul cuvânt? | poo-TETS reh-peh-TAH OOL-tee-mool koo-VUHNT
+l2_so_you_mean | Deci vreți să spuneți ___, da? | dech vrets suh SPOO-nets ___, dah
+l2_and_then | Și apoi? | shee ah-POY
+l2_someone_english | Vorbește cineva engleză? | vor-BESH-teh chee-neh-VAH en-GLEH-zuh
+l2_ask_them | Puteți să îi cereți ajutorul? | poo-TETS suh ee CHEH-rets ah-zhoo-TOH-rool
+l2_type_phone | Puteți scrie pe telefonul meu? | poo-TETS SKREE-eh peh teh-leh-FOH-nool meh-oo
+l2_another_way | Puteți explica altfel? | poo-TETS eks-plee-KAH AHLT-fel
+l2_show_me | Puteți să-mi arătați? | poo-TETS suhm ah-ruh-TAHTS
+l2_check_again | Puteți verifica din nou? | poo-TETS veh-ree-fee-KAH deen noh
+l2_write_down | Puteți să scrieți asta? | poo-TETS suh SKREE-ets AS-tah
+l2_translation_app | Putem folosi un translator? | poo-TEM foh-loh-SEE oon trans-LAH-tor
+l2_come_back | Revin mai târziu. | reh-VEEN my tuhr-ZEE-oo
+l2_never_mind | Nu contează, mulțumesc. | noo kon-TYAH-zuh, mool-tsoo-MESK
+l2_wait_table | Cât se așteaptă pentru o masă? | kuht seh ash-TYAP-tuh PEN-troo oh MAH-suh
+l2_name_down | Ne puteți trece pe listă? | neh poo-TETS TREH-cheh peh LEES-tuh
+l2_contain | Conține ___? | kon-TSEE-neh ___
+l2_make_without | Se poate fără ___? | seh PWAH-teh FUH-ruh ___
+l2_cant_eat_dairy | Nu pot mânca lactate. | noo poht muhn-KAH lak-TAH-teh
+l2_popular_dish | Care este cel mai cerut fel de mâncare? | KAH-reh YES-teh chel my cheh-ROOT fel deh muhn-KAH-reh
+l2_is_it_spicy | Este picant? | YES-teh pee-KAHNT
+l2_bill_mistake | Cred că e o greșeală pe notă. | kred kuh yeh oh greh-SHAH-luh peh NOH-tuh
+l2_didnt_order | Nu am comandat asta. | noo ahm koh-mahn-DAHT AS-tah
+l2_change_trains | Trebuie să schimb trenul? | TREH-boo-yeh suh skeemb TREH-nool
+l2_platform_change | La ce peron schimb? | lah cheh peh-RON skeemb
+l2_ticket_on_board | Pot cumpăra biletul la bord? | poht koom-puh-RAH bee-LEH-tool lah bord
+l2_ticket_machine | Unde este automatul de bilete? | OON-deh YES-teh ow-toh-MAH-tool deh bee-LEH-teh
+l2_last_bus | Acesta e ultimul autobuz? | ah-CHES-tah yeh OOL-tee-mool ow-toh-BOOZ
+l2_miss_it | Și dacă îl pierd? | shee DAH-kuh il pyerd
+l2_use_meter | Puteți porni aparatul de taxat? | poo-TETS por-NEE ah-pah-RAH-tool deh tak-SAHT
+l2_how_much_to | Cât costă până la ___? | kuht KOS-tuh PUH-nuh lah ___
+r:l2_which_part | Care parte? | KAH-reh PAR-teh
+r:l2_thats_right | Da, exact. | dah, eg-ZAKT
+r:l2_let_me_ask | Să întreb. | suh in-TREB
+r:l2_about_twenty | Cam douăzeci de minute. | kahm doh-wuh-ZECH deh mee-NOO-teh
+r:l2_yes_it_does | Da, conține. | dah, kon-TSEE-neh
+r:l2_very_popular | Acesta e foarte cerut. | ah-CHES-tah yeh FWAR-teh cheh-ROOT
+r:l2_which_item | Care anume? | KAH-reh ah-NOO-meh
+r:l2_next_station | Da, la următoarea stație. | dah, lah oor-muh-TWAH-ryah STAH-tsyeh
+r:l2_only_machine | Doar la automat. | dwar lah ow-toh-MAHT
+r:l2_one_at_midnight | Nu, mai e unul la miezul nopții. | noo, my yeh OO-nool lah MYEH-zool NOP-tsee
+r:l2_fixed_price | E preț fix. | yeh prets feeks
+x:l2_so_you_mean~today | Deci vreți să spuneți azi, da? | dech vrets suh SPOO-nets ahz, dah
+x:l2_so_you_mean~tomorrow | Deci vreți să spuneți mâine, da? | dech vrets suh SPOO-nets MUY-neh, dah
+x:l2_so_you_mean~next_street | Deci vreți să spuneți strada următoare, da? | dech vrets suh SPOO-nets STRAH-dah oor-muh-TWAH-reh, dah
+x:l2_so_you_mean~second_stop | Deci vreți să spuneți a doua stație, da? | dech vrets suh SPOO-nets ah DOH-wah STAH-tsyeh, dah
+x:l2_contain~nuts | Conține nuci? | kon-TSEE-neh nooch
+x:l2_contain~milk | Conține lapte? | kon-TSEE-neh LAHP-teh
+x:l2_contain~egg | Conține ou? | kon-TSEE-neh oh
+x:l2_contain~shellfish | Conține fructe de mare? | kon-TSEE-neh FROOK-teh deh MAH-reh
+x:l2_contain~gluten | Conține gluten? | kon-TSEE-neh gloo-TEN
+x:l2_make_without~milk | Se poate fără lapte? | seh PWAH-teh FUH-ruh LAHP-teh
+x:l2_make_without~butter | Se poate fără unt? | seh PWAH-teh FUH-ruh oont
+x:l2_make_without~cheese | Se poate fără brânză? | seh PWAH-teh FUH-ruh BRUHN-zuh
+x:l2_make_without~nuts | Se poate fără nuci? | seh PWAH-teh FUH-ruh nooch
+x:l2_how_much_to~airport | Cât costă până la aeroport? | kuht KOS-tuh PUH-nuh lah ah-eh-roh-PORT
+x:l2_how_much_to~hotel | Cât costă până la hotel? | kuht KOS-tuh PUH-nuh lah hoh-TEL
+x:l2_how_much_to~station | Cât costă până la gară? | kuht KOS-tuh PUH-nuh lah GAH-ruh
+x:l2_how_much_to~centre | Cât costă până în centru? | kuht KOS-tuh PUH-nuh in CHEN-troo
