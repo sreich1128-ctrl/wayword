@@ -12,15 +12,15 @@ Nothing about the teaching changed. Level 2 phrases go through the same session 
 
 | Question | Choice | Why |
 |---|---|---|
-| What unlocks Level 2? | **Per situation.** Restaurant · Level 2 opens when every Level 1 phrase of Restaurant's own is started (Learning or Locked in), or when you pass Restaurant's quiz. | A nearer goal than finishing all 155 phrases; you get Level 2 where you're actually going. |
-| The quiz | Up to 8 of the situation's own Level 1 phrases, each asked once. Only answers the app can mark: build with tiles, type, or pick the meaning. No self-rating, "Say it instead" is hidden, "Show me" counts as wrong. 80% passes (7 of 8). | "Authentic": you can't tap your way through. |
-| After passing | Level 2 is open for that situation; the phrases you got right count as learned and start reviews. Fail: nothing changes, retry any time. | |
-| What Continue teaches | Once a situation's Level 2 is open, its Level 2 phrases come first, in exchange order. | |
+| What unlocks Level 2? | **Course-wide, per language** (owner's decision 2026-11-14, replacing my per-situation default). Level 2 opens for the whole language when every Level 1 phrase is started (Learning or Locked in), or when you pass the Level 2 test. | The owner wants Level 2 to be the next page of the course, not a per-topic unlock. |
+| The Level 2 test | 20 Level 1 phrases spread across every situation, each asked once. Only answers the app can mark: build with tiles, type, or pick the meaning. No self-rating, "Say it instead" is hidden, "Show me" counts as wrong. 80% passes (16 of 20). | "Authentic": you can't tap your way through. The owner asked for a way to jump ahead by test. |
+| After passing | Level 2 is open in every situation that has it; the phrases you got right count as learned and start reviews. Fail: nothing changes, retry any time. Finishing Level 1 the long way shows "Level 1 complete" once, at the end of that session. | |
+| What Continue teaches | Once Level 2 is open, the situation you're working on teaches its Level 2 phrases first, in exchange order. | |
 | Recovery phrases | 8 shared ones taught once, as Level 2 of The basics. | LEVEL_CUT.md |
 | Names | "Level 1 · Basic", "Level 2 · Communicative". No CEFR claims, no certificate yet. | Owner's decision. |
-| Locked content | Not in search, counts, sessions or listening until its situation unlocks. | |
+| Locked content | Not in search, counts, sessions or listening until Level 2 opens. Today shows a level card: Level 1 progress and the test link, then Level 2 progress. | |
 
-Not built yet: a whole-course "Level 1 complete" moment or certificate, and a single "test out of everything" quiz.
+Not built yet: a certificate for finishing a level.
 
 ## How it's stored
 
@@ -28,7 +28,7 @@ Not built yet: a whole-course "Level 1 complete" moment or certificate, and a si
 - `content/replies.json`: `"level": 2`; `answer_with` names the follow-up.
 - `content/scenarios.json`: `"level2": [ids]` in exchange order.
 - Translations: drafts in `content/added/<code>.json`, like everything new.
-- Progress: `prefs.unlocked[lang][situation] = time` (quiz passes). Readiness-based unlocks are computed, not stored.
+- Progress: `prefs.unlocked[lang].course = time` (test passed); finishing Level 1 is computed, not stored. `prefs.levelSeen[lang] = 2` once the level-up was shown.
 - Code: `js/app.js` "levels" section (`level2Open`, `applyLevels`, `startQuiz`, `drawQuizDone`, `viewScenario` tabs); `js/data.js` adds `level`, `sit`, `allPhrases`, `allReplies`.
 
 ## Adding a batch

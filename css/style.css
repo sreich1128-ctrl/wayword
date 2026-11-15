@@ -1254,3 +1254,9 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 .level-seg .seg-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 4px 0 var(--lip); }
 .lock-card { display: grid; gap: 10px; }
 .lock-card h2 { font-size: 20px; }
+.level-card { display: flex; align-items: flex-start; gap: 12px; margin-top: 12px; padding: 12px 14px; border-radius: var(--radius); background: var(--surface); border: 2px solid var(--edge); border-bottom-width: 5px; }
+.level-card .week-text { flex: 1; min-width: 0; display: grid; gap: 4px; }
+.level-card small { color: var(--muted); font-weight: 600; font-size: 13px; }
+.level-card .link-btn { justify-self: start; padding: 4px 0 0; font-size: 14px; }
+.level-badge { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 20px; box-shadow: 0 4px 0 var(--lip); }
+.ready-bar.big { height: 12px; }
