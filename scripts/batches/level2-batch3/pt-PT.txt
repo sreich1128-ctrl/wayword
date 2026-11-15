@@ -1,0 +1,58 @@
+l2_oat_milk | Pode ser com leite de aveia? | POH-duh sehr kong LAY-tuh duh ah-VAY-ah
+l2_iced_please | Frio, por favor. | FREE-oo, poor fah-VOR
+l2_sit_outside | Posso sentar-me lá fora? | POH-soo sen-TAR-muh lah FOH-rah
+l2_how_long_wait | Quanto tempo de espera? | KWAN-too TEN-poo duh SHPEH-rah
+l2_to_go_instead | Então é para levar. | en-TOWNG eh PAH-rah luh-VAR
+l2_come_in | Tem isto em ___? | teng EESH-too eng ___
+l2_larger_size | Posso experimentar um tamanho maior? | POH-soo shpuh-ree-men-TAR oong tah-MAH-nyoo my-OR
+l2_doesnt_fit | Este não me serve. | EHSH-tuh nowng muh SEHR-vuh
+l2_difference | Qual é a diferença entre estes? | kwal eh ah dee-fuh-REN-sah EN-truh EHSH-tush
+l2_which_recommend | Qual recomenda? | kwal ruh-koo-MEN-dah
+l2_cheaper_option | Pode mostrar-me um mais barato? | POH-duh moosh-TRAR-muh oong mysh bah-RAH-too
+l2_return_this | Posso devolver isto? | POH-soo duh-vol-VEHR EESH-too
+l2_need_receipt | Preciso do recibo? | pruh-SEE-zoo doo ruh-SEE-boo
+l2_exchange_instead | Posso trocar em vez disso? | POH-soo troo-KAR eng vesh DEE-soo
+l2_keep_top | Mantenha o comprimento em cima, por favor. | man-TEN-yah oo kong-pree-MEN-too eng SEE-mah, poor fah-VOR
+l2_little_shorter | Um pouco mais curto. | oong POH-koo mysh KOOR-too
+l2_shape_beard | Só acertar a barba, por favor. | soh ah-suhr-TAR ah BAR-bah, poor fah-VOR
+l2_mustache_longer | Deixe o bigode mais comprido. | DAY-shuh oo bee-GOH-duh mysh kong-PREE-doo
+l2_short_enough | Assim está bom, obrigado/a. | ah-SEENG shtah bong, oh-bree-GAH-doo/dah
+l2_match_photo | Consegue fazer como nesta foto? | kon-SEH-guh fah-ZEHR KOH-moo NESH-tah FOH-too
+l2_more_length_here | Um pouco mais comprido aqui. | oong POH-koo mysh kong-PREE-doo ah-KEE
+l2_walk_ins | Atendem sem marcação? | ah-TEN-deng seng mar-kah-SOWNG
+l2_opening_later | Há vaga mais tarde? | ah VAH-gah mysh TAR-duh
+l2_what_brings | O que o/a traz cá? | oo keh oo/ah trash kah
+l2_like_most | Do que mais gosta nesta cidade? | doo keh mysh GOSH-tah NESH-tah see-DAH-duh
+l2_favorite_places | Tem sítios preferidos? | teng SEE-tee-oosh pruh-fuh-REE-doosh
+l2_weekends | O que faz aos fins de semana? | oo keh fash owsh feengsh duh suh-MAH-nah
+l2_like_too | Também gosta de ___? | tang-BENG GOSH-tah duh ___
+l2_join_us | Quer vir connosco? | kehr veer kon-NOSH-koo
+l2_meeting_at | Encontramo-nos ___. | en-kon-TRAH-moo-noosh ___
+l2_no_worries | Não faz mal se não puder. | nowng fash mal suh nowng poo-DEHR
+r:l2_hot_or_iced | Quente ou frio? | KEN-tuh oh FREE-oo
+r:l2_only_inside | Agora só lá dentro. | ah-GOH-rah soh lah DEN-troo
+r:l2_let_me_check | Vou verificar. | voh vuh-ree-fee-KAR
+r:l2_this_better | Este é de melhor qualidade. | EHSH-tuh eh duh muh-LYOR kwah-lee-DAH-duh
+r:l2_within_days | Só no prazo de catorze dias. | soh noo PRAH-zoo duh kah-TOR-zuh DEE-ahsh
+r:l2_how_short_sides | Quão curto dos lados? | kwowng KOOR-too doosh LAH-doosh
+r:l2_trim_mustache | Aparo o bigode? | ah-PAH-roo oo bee-GOH-duh
+r:l2_exactly_like | Exatamente assim? | ee-zah-tah-MEN-tuh ah-SEENG
+r:l2_fully_booked | Hoje estamos cheios. | OH-zhuh SHTAH-moosh SHAY-oosh
+r:l2_here_for_work | Estou cá em trabalho. | shtoh kah eng trah-BAH-lyoo
+r:l2_food_people | A comida e as pessoas. | ah koo-MEE-dah ee ahsh puh-SOH-ahsh
+r:l2_go_hiking | Costumo fazer caminhadas. | koosh-TOO-moo fah-ZEHR kah-mee-NYAH-dahsh
+r:l2_maybe_what_time | Talvez. A que horas? | tal-VESH. ah keh OH-rahsh
+x:l2_come_in~small | Tem isto em tamanho pequeno? | teng EESH-too eng tah-MAH-nyoo puh-KEH-noo
+x:l2_come_in~medium | Tem isto em tamanho médio? | teng EESH-too eng tah-MAH-nyoo MEH-dee-oo
+x:l2_come_in~large | Tem isto em tamanho grande? | teng EESH-too eng tah-MAH-nyoo GRAN-duh
+x:l2_come_in~black | Tem isto em preto? | teng EESH-too eng PREH-too
+x:l2_come_in~blue | Tem isto em azul? | teng EESH-too eng ah-ZOOL
+x:l2_like_too~music | Também gosta de música? | tang-BENG GOSH-tah duh MOO-zee-kah
+x:l2_like_too~dancing | Também gosta de dançar? | tang-BENG GOSH-tah duh dan-SAR
+x:l2_like_too~hiking | Também gosta de caminhadas? | tang-BENG GOSH-tah duh kah-mee-NYAH-dahsh
+x:l2_like_too~travel | Também gosta de viajar? | tang-BENG GOSH-tah duh vee-ah-ZHAR
+x:l2_like_too~sports | Também gosta de desporto? | tang-BENG GOSH-tah duh dush-POR-too
+x:l2_meeting_at~seven | Encontramo-nos às sete. | en-kon-TRAH-moo-noosh ahsh SEH-tuh
+x:l2_meeting_at~eight_thirty | Encontramo-nos às oito e meia. | en-kon-TRAH-moo-noosh ahz OY-too ee MAY-ah
+x:l2_meeting_at~station | Encontramo-nos na estação. | en-kon-TRAH-moo-noosh nah shtah-SOWNG
+x:l2_meeting_at~hotel | Encontramo-nos no hotel. | en-kon-TRAH-moo-noosh noo oh-TEL

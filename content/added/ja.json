@@ -1006,6 +1006,195 @@
       "target": "エレベーターはありますか？",
       "reading": "えれべーたーはありますか？",
       "pronunciation_easy": "eh-reh-beh-tah wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_oat_milk",
+      "target": "オーツミルクに変更できますか？",
+      "reading": "おーつみるくにへんこうできますか？",
+      "pronunciation_easy": "oh-tsoo mee-roo-koo nee hen-koh deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_iced_please",
+      "target": "アイスでお願いします。",
+      "reading": "あいすでおねがいします。",
+      "pronunciation_easy": "ai-soo deh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "l2_sit_outside",
+      "target": "外の席に座ってもいいですか？",
+      "reading": "そとのせきにすわってもいいですか？",
+      "pronunciation_easy": "soh-toh noh seh-kee nee soo-waht-teh moh ee des-kah"
+    },
+    {
+      "id": "l2_how_long_wait",
+      "target": "どのくらい待ちますか？",
+      "reading": "どのくらいまちますか？",
+      "pronunciation_easy": "doh-noh koo-rai mah-chee-mahs-kah"
+    },
+    {
+      "id": "l2_to_go_instead",
+      "target": "では、持ち帰りにします。",
+      "reading": "では、もちかえりにします。",
+      "pronunciation_easy": "deh-wah, moh-chee-kah-eh-ree nee shee-mahs"
+    },
+    {
+      "id": "l2_come_in",
+      "target": "これの___はありますか？",
+      "reading": "これの___はありますか？",
+      "pronunciation_easy": "koh-reh noh ___ wah ah-ree-mahs-kah",
+      "qa": "Sizes are said S / M / L in Japanese shops."
+    },
+    {
+      "id": "l2_larger_size",
+      "target": "大きいサイズを試着できますか？",
+      "reading": "おおきいさいずをしちゃくできますか？",
+      "pronunciation_easy": "oh-kee sai-zoo oh shee-chah-koo deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_doesnt_fit",
+      "target": "これはサイズが合いません。",
+      "reading": "これはさいずがあいません。",
+      "pronunciation_easy": "koh-reh wah sai-zoo gah ai-mah-sen"
+    },
+    {
+      "id": "l2_difference",
+      "target": "この二つの違いは何ですか？",
+      "reading": "このふたつのちがいはなんですか？",
+      "pronunciation_easy": "koh-noh foo-tah-tsoo noh chee-guy wah nan des-kah"
+    },
+    {
+      "id": "l2_which_recommend",
+      "target": "どちらがおすすめですか？",
+      "reading": "どちらがおすすめですか？",
+      "pronunciation_easy": "doh-chee-rah gah oh-soo-soo-meh des-kah"
+    },
+    {
+      "id": "l2_cheaper_option",
+      "target": "もう少し安いものはありますか？",
+      "reading": "もうすこしやすいものはありますか？",
+      "pronunciation_easy": "moh soo-koh-shee yah-soo-ee moh-noh wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_return_this",
+      "target": "これは返品できますか？",
+      "reading": "これはへんぴんできますか？",
+      "pronunciation_easy": "koh-reh wah hen-peen deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_need_receipt",
+      "target": "レシートは必要ですか？",
+      "reading": "れしーとはひつようですか？",
+      "pronunciation_easy": "reh-shee-toh wah hee-tsoo-yoh des-kah"
+    },
+    {
+      "id": "l2_exchange_instead",
+      "target": "代わりに交換できますか？",
+      "reading": "かわりにこうかんできますか？",
+      "pronunciation_easy": "kah-wah-ree nee koh-kahn deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_keep_top",
+      "target": "上は長さを残してください。",
+      "reading": "うえはながさをのこしてください。",
+      "pronunciation_easy": "oo-eh wah nah-gah-sah oh noh-koh-shee-teh koo-dah-sai"
+    },
+    {
+      "id": "l2_little_shorter",
+      "target": "もう少し短く。",
+      "reading": "もうすこしみじかく。",
+      "pronunciation_easy": "moh soo-koh-shee mee-jee-kah-koo"
+    },
+    {
+      "id": "l2_shape_beard",
+      "target": "ひげを整えるだけでお願いします。",
+      "reading": "ひげをととのえるだけでおねがいします。",
+      "pronunciation_easy": "hee-geh oh toh-toh-noh-eh-roo dah-keh deh oh-neh-guy-shee-mahs"
+    },
+    {
+      "id": "l2_mustache_longer",
+      "target": "口ひげは長めに残してください。",
+      "reading": "くちひげはながめにのこしてください。",
+      "pronunciation_easy": "koo-chee-hee-geh wah nah-gah-meh nee noh-koh-shee-teh koo-dah-sai"
+    },
+    {
+      "id": "l2_short_enough",
+      "target": "その長さで大丈夫です。ありがとう。",
+      "reading": "そのながさでだいじょうぶです。ありがとう。",
+      "pronunciation_easy": "soh-noh nah-gah-sah deh dai-joh-boo des. ah-ree-gah-toh"
+    },
+    {
+      "id": "l2_match_photo",
+      "target": "この写真のようにできますか？",
+      "reading": "このしゃしんのようにできますか？",
+      "pronunciation_easy": "koh-noh shah-sheen noh yoh nee deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_more_length_here",
+      "target": "ここはもう少し長めで。",
+      "reading": "ここはもうすこしながめで。",
+      "pronunciation_easy": "koh-koh wah moh soo-koh-shee nah-gah-meh deh"
+    },
+    {
+      "id": "l2_walk_ins",
+      "target": "予約なしでも大丈夫ですか？",
+      "reading": "よやくなしでもだいじょうぶですか？",
+      "pronunciation_easy": "yoh-yah-koo nah-shee deh-moh dai-joh-boo des-kah"
+    },
+    {
+      "id": "l2_opening_later",
+      "target": "後で空きはありますか？",
+      "reading": "あとであきはありますか？",
+      "pronunciation_easy": "ah-toh deh ah-kee wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_what_brings",
+      "target": "どうしてこちらに来たんですか？",
+      "reading": "どうしてこちらにきたんですか？",
+      "pronunciation_easy": "doh-shee-teh koh-chee-rah nee kee-tahn des-kah",
+      "qa": "Reviewer: this can sound direct; softer: どうしてこちらに？"
+    },
+    {
+      "id": "l2_like_most",
+      "target": "この街の一番好きなところは何ですか？",
+      "reading": "このまちのいちばんすきなところはなんですか？",
+      "pronunciation_easy": "koh-noh mah-chee noh ee-chee-bahn soo-kee nah toh-koh-roh wah nan des-kah"
+    },
+    {
+      "id": "l2_favorite_places",
+      "target": "お気に入りの場所はありますか？",
+      "reading": "おきにいりのばしょはありますか？",
+      "pronunciation_easy": "oh-kee-nee-ee-ree noh bah-shoh wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_weekends",
+      "target": "週末は何をしていますか？",
+      "reading": "しゅうまつはなにをしていますか？",
+      "pronunciation_easy": "shoo-mah-tsoo wah nah-nee oh shee-teh ee-mahs-kah"
+    },
+    {
+      "id": "l2_like_too",
+      "target": "___も好きですか？",
+      "reading": "___もすきですか？",
+      "pronunciation_easy": "___ moh soo-kee des-kah"
+    },
+    {
+      "id": "l2_join_us",
+      "target": "一緒に来ませんか？",
+      "reading": "いっしょにきませんか？",
+      "pronunciation_easy": "ees-shoh nee kee-mah-sen-kah"
+    },
+    {
+      "id": "l2_meeting_at",
+      "target": "___に集まります。",
+      "reading": "___にあつまります。",
+      "pronunciation_easy": "___ nee ah-tsoo-mah-ree-mahs",
+      "qa": "The blank holds the whole time or place with its little word (\"at seven\", \"at the station\"), because that word changes in most languages."
+    },
+    {
+      "id": "l2_no_worries",
+      "target": "忙しかったら大丈夫ですよ。",
+      "reading": "いそがしかったらだいじょうぶですよ。",
+      "pronunciation_easy": "ee-soh-gah-shee-kaht-tah-rah dai-joh-boo des-yoh"
     }
   ],
   "vocab": {
@@ -2397,6 +2586,96 @@
         "reading": "ごはくでよやくしています。",
         "pronunciation_easy": "goh-hah-koo deh yoh-yah-koo shee-teh ee-mahs"
       }
+    ],
+    "l2_come_in": [
+      {
+        "word": "small",
+        "target": "これのSサイズはありますか？",
+        "reading": "これのえすさいずはありますか？",
+        "pronunciation_easy": "koh-reh noh es-soo sai-zoo wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "medium",
+        "target": "これのMサイズはありますか？",
+        "reading": "これのえむさいずはありますか？",
+        "pronunciation_easy": "koh-reh noh em-moo sai-zoo wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "large",
+        "target": "これのLサイズはありますか？",
+        "reading": "これのえるさいずはありますか？",
+        "pronunciation_easy": "koh-reh noh eh-roo sai-zoo wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "black",
+        "target": "これの黒はありますか？",
+        "reading": "これのくろはありますか？",
+        "pronunciation_easy": "koh-reh noh koo-roh wah ah-ree-mahs-kah"
+      },
+      {
+        "word": "blue",
+        "target": "これの青はありますか？",
+        "reading": "これのあおはありますか？",
+        "pronunciation_easy": "koh-reh noh ah-oh wah ah-ree-mahs-kah"
+      }
+    ],
+    "l2_like_too": [
+      {
+        "word": "music",
+        "target": "音楽も好きですか？",
+        "reading": "おんがくもすきですか？",
+        "pronunciation_easy": "on-gah-koo moh soo-kee des-kah"
+      },
+      {
+        "word": "dancing",
+        "target": "ダンスも好きですか？",
+        "reading": "だんすもすきですか？",
+        "pronunciation_easy": "dahn-soo moh soo-kee des-kah"
+      },
+      {
+        "word": "hiking",
+        "target": "ハイキングも好きですか？",
+        "reading": "はいきんぐもすきですか？",
+        "pronunciation_easy": "hai-keen-goo moh soo-kee des-kah"
+      },
+      {
+        "word": "travel",
+        "target": "旅行も好きですか？",
+        "reading": "りょこうもすきですか？",
+        "pronunciation_easy": "ryoh-koh moh soo-kee des-kah"
+      },
+      {
+        "word": "sports",
+        "target": "スポーツも好きですか？",
+        "reading": "すぽーつもすきですか？",
+        "pronunciation_easy": "soo-poh-tsoo moh soo-kee des-kah"
+      }
+    ],
+    "l2_meeting_at": [
+      {
+        "word": "seven",
+        "target": "七時に集まります。",
+        "reading": "しちじにあつまります。",
+        "pronunciation_easy": "shee-chee-jee nee ah-tsoo-mah-ree-mahs"
+      },
+      {
+        "word": "eight_thirty",
+        "target": "八時半に集まります。",
+        "reading": "はちじはんにあつまります。",
+        "pronunciation_easy": "hah-chee-jee hahn nee ah-tsoo-mah-ree-mahs"
+      },
+      {
+        "word": "station",
+        "target": "駅に集まります。",
+        "reading": "えきにあつまります。",
+        "pronunciation_easy": "eh-kee nee ah-tsoo-mah-ree-mahs"
+      },
+      {
+        "word": "hotel",
+        "target": "ホテルに集まります。",
+        "reading": "ほてるにあつまります。",
+        "pronunciation_easy": "hoh-teh-roo nee ah-tsoo-mah-ree-mahs"
+      }
     ]
   },
   "replies": {
@@ -2678,6 +2957,71 @@
       "target": "三番出口を使ってください。",
       "reading": "さんばんでぐちをつかってください。",
       "pronunciation_easy": "sahn-bahn deh-goo-chee oh tsoo-kaht-teh koo-dah-sai"
+    },
+    "l2_hot_or_iced": {
+      "target": "ホットですか、アイスですか？",
+      "reading": "ほっとですか、あいすですか？",
+      "pronunciation_easy": "hot-toh des-kah, ai-soo des-kah"
+    },
+    "l2_only_inside": {
+      "target": "今は店内だけです。",
+      "reading": "いまはてんないだけです。",
+      "pronunciation_easy": "ee-mah wah ten-nai dah-keh des"
+    },
+    "l2_let_me_check": {
+      "target": "確認します。",
+      "reading": "かくにんします。",
+      "pronunciation_easy": "kah-koo-neen shee-mahs"
+    },
+    "l2_this_better": {
+      "target": "こちらの方が質がいいです。",
+      "reading": "こちらのほうがしつがいいです。",
+      "pronunciation_easy": "koh-chee-rah noh hoh gah shee-tsoo gah ee des"
+    },
+    "l2_within_days": {
+      "target": "十四日以内だけです。",
+      "reading": "じゅうよっかいないだけです。",
+      "pronunciation_easy": "joo-yok-kah ee-nai dah-keh des"
+    },
+    "l2_how_short_sides": {
+      "target": "横はどのくらい短くしますか？",
+      "reading": "よこはどのくらいみじかくしますか？",
+      "pronunciation_easy": "yoh-koh wah doh-noh koo-rai mee-jee-kah-koo shee-mahs-kah"
+    },
+    "l2_trim_mustache": {
+      "target": "口ひげも整えますか？",
+      "reading": "くちひげもととのえますか？",
+      "pronunciation_easy": "koo-chee-hee-geh moh toh-toh-noh-eh-mahs-kah"
+    },
+    "l2_exactly_like": {
+      "target": "この通りでいいですか？",
+      "reading": "このとおりでいいですか？",
+      "pronunciation_easy": "koh-noh toh-ree deh ee des-kah"
+    },
+    "l2_fully_booked": {
+      "target": "本日は予約でいっぱいです。",
+      "reading": "ほんじつはよやくでいっぱいです。",
+      "pronunciation_easy": "hon-jee-tsoo wah yoh-yah-koo deh eep-pai des"
+    },
+    "l2_here_for_work": {
+      "target": "仕事で来ています。",
+      "reading": "しごとできています。",
+      "pronunciation_easy": "shee-goh-toh deh kee-teh ee-mahs"
+    },
+    "l2_food_people": {
+      "target": "食べ物と人です。",
+      "reading": "たべものとひとです。",
+      "pronunciation_easy": "tah-beh-moh-noh toh hee-toh des"
+    },
+    "l2_go_hiking": {
+      "target": "よくハイキングに行きます。",
+      "reading": "よくはいきんぐにいきます。",
+      "pronunciation_easy": "yoh-koo hai-keen-goo nee ee-kee-mahs"
+    },
+    "l2_maybe_what_time": {
+      "target": "たぶん。何時ですか？",
+      "reading": "たぶん。なんじですか？",
+      "pronunciation_easy": "tah-boon. nan-jee des-kah"
     }
   }
 }

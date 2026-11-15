@@ -1596,5 +1596,284 @@
     "type": "phrase",
     "level": 2,
     "situation": "directions"
+  },
+  {
+    "id": "l2_oat_milk",
+    "category": "food",
+    "priority": "explore",
+    "english": "Could I get it with oat milk?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "cafe"
+  },
+  {
+    "id": "l2_iced_please",
+    "category": "food",
+    "priority": "explore",
+    "english": "Iced, please.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "cafe"
+  },
+  {
+    "id": "l2_sit_outside",
+    "category": "food",
+    "priority": "explore",
+    "english": "Can I sit outside?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "cafe"
+  },
+  {
+    "id": "l2_how_long_wait",
+    "category": "food",
+    "priority": "explore",
+    "english": "How long is the wait?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "cafe"
+  },
+  {
+    "id": "l2_to_go_instead",
+    "category": "food",
+    "priority": "explore",
+    "english": "I'll take it to go instead.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "cafe"
+  },
+  {
+    "id": "l2_come_in",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Does this come in ___?",
+    "type": "pattern",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_larger_size",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Can I try a larger size?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_doesnt_fit",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "This one doesn't fit.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_difference",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "What's the difference between these?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_which_recommend",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Which would you recommend?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_cheaper_option",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Could you show me a cheaper one?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_return_this",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Can I return this?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_need_receipt",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Do I need the receipt?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_exchange_instead",
+    "category": "shopping",
+    "priority": "explore",
+    "english": "Can I exchange it instead?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "shopping"
+  },
+  {
+    "id": "l2_keep_top",
+    "category": "barber",
+    "priority": "explore",
+    "english": "Keep the length on top, please.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_little_shorter",
+    "category": "barber",
+    "priority": "explore",
+    "english": "A little shorter.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_shape_beard",
+    "category": "barber",
+    "priority": "explore",
+    "english": "Just shape the beard, please.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_mustache_longer",
+    "category": "barber",
+    "priority": "explore",
+    "english": "Keep the mustache longer.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_short_enough",
+    "category": "barber",
+    "priority": "explore",
+    "english": "That's short enough, thanks.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_match_photo",
+    "category": "barber",
+    "priority": "explore",
+    "english": "Can you match this photo?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_more_length_here",
+    "category": "barber",
+    "priority": "explore",
+    "english": "A little more length here.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_walk_ins",
+    "category": "barber",
+    "priority": "explore",
+    "english": "Do you take walk-ins?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_opening_later",
+    "category": "barber",
+    "priority": "explore",
+    "english": "Is there an opening later?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "barber"
+  },
+  {
+    "id": "l2_what_brings",
+    "category": "social",
+    "priority": "explore",
+    "english": "What brings you here?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_like_most",
+    "category": "social",
+    "priority": "explore",
+    "english": "What do you like most about this city?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_favorite_places",
+    "category": "social",
+    "priority": "explore",
+    "english": "Any favourite places?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_weekends",
+    "category": "social",
+    "priority": "explore",
+    "english": "What do you do on weekends?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_like_too",
+    "category": "social",
+    "priority": "explore",
+    "english": "Do you like ___ too?",
+    "type": "pattern",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_join_us",
+    "category": "social",
+    "priority": "explore",
+    "english": "Would you like to join us?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_meeting_at",
+    "category": "social",
+    "priority": "explore",
+    "english": "We're meeting ___.",
+    "type": "pattern",
+    "level": 2,
+    "situation": "meeting"
+  },
+  {
+    "id": "l2_no_worries",
+    "category": "social",
+    "priority": "explore",
+    "english": "No worries if you're busy.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "meeting"
   }
 ]

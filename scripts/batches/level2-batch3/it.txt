@@ -1,0 +1,58 @@
+l2_oat_milk | Posso averlo con latte d'avena? | POS-soh ah-VEHR-loh kon LAHT-teh dah-VEH-nah
+l2_iced_please | Freddo, per favore. | FRED-doh, pehr fah-VOH-reh
+l2_sit_outside | Posso sedermi fuori? | POS-soh seh-DEHR-mee FWOH-ree
+l2_how_long_wait | Quanto c'è da aspettare? | KWAHN-toh cheh dah ah-spet-TAH-reh
+l2_to_go_instead | Allora lo prendo da portare via. | ahl-LOH-rah loh PREN-doh dah por-TAH-reh VEE-ah
+l2_come_in | Ce l'ha in ___? | cheh LAH een ___
+l2_larger_size | Posso provare una taglia più grande? | POS-soh proh-VAH-reh OO-nah TAH-lyah pyoo GRAHN-deh
+l2_doesnt_fit | Questo non mi va bene. | KWEH-stoh non mee vah BEH-neh
+l2_difference | Che differenza c'è tra questi? | keh deef-feh-REN-tsah cheh trah KWEH-stee
+l2_which_recommend | Quale mi consiglia? | KWAH-leh mee kon-SEE-lyah
+l2_cheaper_option | Può mostrarmene uno meno caro? | pwoh mos-TRAR-meh-neh OO-noh MEH-noh KAH-roh
+l2_return_this | Posso restituirlo? | POS-soh res-tee-too-EER-loh
+l2_need_receipt | Mi serve lo scontrino? | mee SEHR-veh loh skon-TREE-noh
+l2_exchange_instead | Posso cambiarlo, invece? | POS-soh kahm-BYAR-loh, een-VEH-cheh
+l2_keep_top | Lasci la lunghezza sopra, per favore. | LAH-shee lah loon-GET-tsah SOH-prah, pehr fah-VOH-reh
+l2_little_shorter | Un po' più corti. | oon poh pyoo KOR-tee
+l2_shape_beard | Solo una sistemata alla barba, per favore. | SOH-loh OO-nah sees-teh-MAH-tah AHL-lah BAR-bah, pehr fah-VOH-reh
+l2_mustache_longer | Lasci i baffi più lunghi. | LAH-shee ee BAHF-fee pyoo LOON-ghee
+l2_short_enough | Così va bene, grazie. | koh-ZEE vah BEH-neh, GRAH-tsyeh
+l2_match_photo | Può farli come in questa foto? | pwoh FAR-lee KOH-meh een KWEH-stah FOH-toh
+l2_more_length_here | Un po' più lunghi qui. | oon poh pyoo LOON-ghee kwee
+l2_walk_ins | Si può venire senza appuntamento? | see pwoh veh-NEE-reh SEN-tsah ahp-poon-tah-MEN-toh
+l2_opening_later | C'è posto più tardi? | cheh POS-toh pyoo TAR-dee
+l2_what_brings | Cosa ti porta qui? | KOH-zah tee POR-tah kwee
+l2_like_most | Cosa ti piace di più di questa città? | KOH-zah tee PYAH-cheh dee pyoo dee KWEH-stah cheet-TAH
+l2_favorite_places | Hai dei posti preferiti? | eye day POS-tee preh-feh-REE-tee
+l2_weekends | Cosa fai nel fine settimana? | KOH-zah fai nel FEE-neh set-tee-MAH-nah
+l2_like_too | Anche a te piace ___? | AHN-keh ah teh PYAH-cheh ___
+l2_join_us | Vuoi venire con noi? | vwoy veh-NEE-reh kon noy
+l2_meeting_at | Ci vediamo ___. | chee veh-DYAH-moh ___
+l2_no_worries | Nessun problema se non puoi. | nes-SOON proh-BLEH-mah seh non pwoy
+r:l2_hot_or_iced | Caldo o freddo? | KAHL-doh oh FRED-doh
+r:l2_only_inside | Per ora solo dentro. | pehr OH-rah SOH-loh DEN-troh
+r:l2_let_me_check | Controllo subito. | kon-TROL-loh SOO-bee-toh
+r:l2_this_better | Questo è di qualità migliore. | KWEH-stoh eh dee kwah-lee-TAH mee-LYOH-reh
+r:l2_within_days | Solo entro quattordici giorni. | SOH-loh EN-troh kwaht-TOR-dee-chee JOR-nee
+r:l2_how_short_sides | Quanto corti ai lati? | KWAHN-toh KOR-tee eye LAH-tee
+r:l2_trim_mustache | Accorcio i baffi? | ahk-KOR-choh ee BAHF-fee
+r:l2_exactly_like | Esattamente così? | eh-zaht-tah-MEN-teh koh-ZEE
+r:l2_fully_booked | Oggi siamo al completo. | OD-jee SYAH-moh ahl kom-PLEH-toh
+r:l2_here_for_work | Sono qui per lavoro. | SOH-noh kwee pehr lah-VOH-roh
+r:l2_food_people | Il cibo e la gente. | eel CHEE-boh eh lah JEN-teh
+r:l2_go_hiking | Di solito faccio escursioni. | dee SOH-lee-toh FAHT-choh es-koor-SYOH-nee
+r:l2_maybe_what_time | Forse. A che ora? | FOR-seh. ah keh OH-rah
+x:l2_come_in~small | Ce l'ha in taglia piccola? | cheh LAH een TAH-lyah PEEK-koh-lah
+x:l2_come_in~medium | Ce l'ha in taglia media? | cheh LAH een TAH-lyah MEH-dyah
+x:l2_come_in~large | Ce l'ha in taglia grande? | cheh LAH een TAH-lyah GRAHN-deh
+x:l2_come_in~black | Ce l'ha in nero? | cheh LAH een NEH-roh
+x:l2_come_in~blue | Ce l'ha in blu? | cheh LAH een bloo
+x:l2_like_too~music | Anche a te piace la musica? | AHN-keh ah teh PYAH-cheh lah MOO-zee-kah
+x:l2_like_too~dancing | Anche a te piace ballare? | AHN-keh ah teh PYAH-cheh bahl-LAH-reh
+x:l2_like_too~hiking | Anche a te piace fare escursioni? | AHN-keh ah teh PYAH-cheh FAH-reh es-koor-SYOH-nee
+x:l2_like_too~travel | Anche a te piace viaggiare? | AHN-keh ah teh PYAH-cheh vyahd-JAH-reh
+x:l2_like_too~sports | Anche a te piace lo sport? | AHN-keh ah teh PYAH-cheh loh sport
+x:l2_meeting_at~seven | Ci vediamo alle sette. | chee veh-DYAH-moh AHL-leh SET-teh
+x:l2_meeting_at~eight_thirty | Ci vediamo alle otto e mezza. | chee veh-DYAH-moh AHL-leh OT-toh eh MED-zah
+x:l2_meeting_at~station | Ci vediamo alla stazione. | chee veh-DYAH-moh AHL-lah stah-TSYOH-neh
+x:l2_meeting_at~hotel | Ci vediamo all'hotel. | chee veh-DYAH-moh ahl-loh-TEL

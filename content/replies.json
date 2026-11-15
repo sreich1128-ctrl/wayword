@@ -583,6 +583,152 @@
         "l2_is_elevator"
       ],
       "level": 2
+    },
+    {
+      "id": "l2_hot_or_iced",
+      "english": "Hot or iced?",
+      "situations": [
+        "cafe"
+      ],
+      "answer_with": [
+        "l2_iced_please"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_only_inside",
+      "english": "Only inside right now.",
+      "situations": [
+        "cafe"
+      ],
+      "answer_with": [
+        "l2_how_long_wait",
+        "l2_to_go_instead"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_let_me_check",
+      "english": "Let me check.",
+      "situations": [
+        "shopping"
+      ],
+      "answer_with": [
+        "thank_you"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_this_better",
+      "english": "This one is better quality.",
+      "situations": [
+        "shopping"
+      ],
+      "answer_with": [
+        "l2_which_recommend",
+        "l2_cheaper_option"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_within_days",
+      "english": "Only within fourteen days.",
+      "situations": [
+        "shopping"
+      ],
+      "answer_with": [
+        "l2_need_receipt"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_how_short_sides",
+      "english": "How short on the sides?",
+      "situations": [
+        "barber"
+      ],
+      "answer_with": [
+        "l2_little_shorter"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_trim_mustache",
+      "english": "Should I trim the mustache?",
+      "situations": [
+        "barber"
+      ],
+      "answer_with": [
+        "l2_mustache_longer"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_exactly_like",
+      "english": "Exactly like this?",
+      "situations": [
+        "barber"
+      ],
+      "answer_with": [
+        "l2_more_length_here",
+        "yes"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_fully_booked",
+      "english": "We're fully booked today.",
+      "situations": [
+        "barber"
+      ],
+      "answer_with": [
+        "l2_opening_later"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_here_for_work",
+      "english": "I'm here for work.",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": [
+        "how_long_here"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_food_people",
+      "english": "The food and the people.",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": [
+        "l2_favorite_places"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_go_hiking",
+      "english": "I usually go hiking.",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": [
+        "l2_like_too"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_maybe_what_time",
+      "english": "Maybe. What time?",
+      "situations": [
+        "meeting"
+      ],
+      "answer_with": [
+        "l2_meeting_at"
+      ],
+      "level": 2
     }
   ]
 }

@@ -1,0 +1,58 @@
+l2_oat_milk | Se poate cu lapte de ovăz? | seh PWAH-teh koo LAHP-teh deh oh-VUHZ
+l2_iced_please | Rece, vă rog. | REH-cheh, vuh rohg
+l2_sit_outside | Pot să stau afară? | poht suh stow ah-FAH-ruh
+l2_how_long_wait | Cât trebuie să aștept? | kuht TREH-boo-yeh suh ash-TEPT
+l2_to_go_instead | Atunci îl iau la pachet. | ah-TOONCH il yow lah pah-KET
+l2_come_in | Aveți asta pe ___? | ah-VETS AS-tah peh ___
+l2_larger_size | Pot proba o mărime mai mare? | poht proh-BAH oh muh-REE-meh my MAH-reh
+l2_doesnt_fit | Asta nu îmi vine bine. | AS-tah noo im VEE-neh BEE-neh
+l2_difference | Care e diferența dintre acestea? | KAH-reh yeh dee-feh-REN-tsah DEEN-treh ah-CHES-tyah
+l2_which_recommend | Pe care mi-o recomandați? | peh KAH-reh mee-oh reh-koh-mahn-DAHTS
+l2_cheaper_option | Îmi puteți arăta ceva mai ieftin? | im poo-TETS ah-ruh-TAH cheh-VAH my YEF-teen
+l2_return_this | Pot returna asta? | poht reh-toor-NAH AS-tah
+l2_need_receipt | Am nevoie de bon? | ahm neh-VOH-yeh deh bon
+l2_exchange_instead | Pot să o schimb, în loc? | poht suh oh skeemb, in lok
+l2_keep_top | Păstrați lungimea sus, vă rog. | puhs-TRAHTS loon-JEE-myah soos, vuh rohg
+l2_little_shorter | Puțin mai scurt. | poo-TSEEN my skoort
+l2_shape_beard | Doar conturați barba, vă rog. | dwar kon-too-RAHTS BAR-bah, vuh rohg
+l2_mustache_longer | Lăsați mustața mai lungă. | luh-SAHTS moos-TAH-tsah my LOON-guh
+l2_short_enough | E destul de scurt, mulțumesc. | yeh des-TOOL deh skoort, mool-tsoo-MESK
+l2_match_photo | Puteți face ca în poza asta? | poo-TETS FAH-cheh kah in POH-zah AS-tah
+l2_more_length_here | Puțin mai lung aici. | poo-TSEEN my loong ah-EETCH
+l2_walk_ins | Primiți și fără programare? | pree-MEETS shee FUH-ruh proh-grah-MAH-reh
+l2_opening_later | Aveți un loc liber mai târziu? | ah-VETS oon lok LEE-ber my tuhr-ZEE-oo
+l2_what_brings | Ce te aduce aici? | cheh teh ah-DOO-cheh ah-EETCH
+l2_like_most | Ce îți place cel mai mult la orașul ăsta? | cheh its PLAH-cheh chel my moolt lah oh-RAH-shool UHS-tah
+l2_favorite_places | Ai locuri preferate? | eye LOH-koor preh-feh-RAH-teh
+l2_weekends | Ce faci în weekend? | cheh fahch in week-END
+l2_like_too | Și ție îți place ___? | shee TSEE-eh its PLAH-cheh ___
+l2_join_us | Vrei să vii cu noi? | vray suh vee koo noy
+l2_meeting_at | Ne întâlnim ___. | neh in-tuhl-NEEM ___
+l2_no_worries | Nicio problemă dacă nu poți. | NEE-choh proh-BLEH-muh DAH-kuh noo pots
+r:l2_hot_or_iced | Cald sau rece? | kahld sow REH-cheh
+r:l2_only_inside | Momentan doar înăuntru. | moh-men-TAHN dwar in-uh-OON-troo
+r:l2_let_me_check | Să verific. | suh veh-REE-feek
+r:l2_this_better | Acesta e de calitate mai bună. | ah-CHES-tah yeh deh kah-lee-TAH-teh my BOO-nuh
+r:l2_within_days | Doar în paisprezece zile. | dwar in pie-spreh-ZEH-cheh ZEE-leh
+r:l2_how_short_sides | Cât de scurt pe lateral? | kuht deh skoort peh lah-teh-RAHL
+r:l2_trim_mustache | Scurtez și mustața? | skoor-TEZ shee moos-TAH-tsah
+r:l2_exactly_like | Exact așa? | eg-ZAKT ah-SHAH
+r:l2_fully_booked | Azi suntem plini. | ahz SOON-tem pleen
+r:l2_here_for_work | Sunt aici cu munca. | soont ah-EETCH koo MOON-kah
+r:l2_food_people | Mâncarea și oamenii. | muhn-KAH-ryah shee WAH-meh-nee
+r:l2_go_hiking | De obicei merg pe munte. | deh oh-bee-CHAY merg peh MOON-teh
+r:l2_maybe_what_time | Poate. La ce oră? | PWAH-teh. lah cheh OH-ruh
+x:l2_come_in~small | Aveți asta pe mărimea mică? | ah-VETS AS-tah peh muh-REE-myah MEE-kuh
+x:l2_come_in~medium | Aveți asta pe mărimea medie? | ah-VETS AS-tah peh muh-REE-myah MEH-dee-eh
+x:l2_come_in~large | Aveți asta pe mărimea mare? | ah-VETS AS-tah peh muh-REE-myah MAH-reh
+x:l2_come_in~black | Aveți asta pe negru? | ah-VETS AS-tah peh NEH-groo
+x:l2_come_in~blue | Aveți asta pe albastru? | ah-VETS AS-tah peh al-BAS-troo
+x:l2_like_too~music | Și ție îți place muzica? | shee TSEE-eh its PLAH-cheh MOO-zee-kah
+x:l2_like_too~dancing | Și ție îți place să dansezi? | shee TSEE-eh its PLAH-cheh suh dahn-SEZ
+x:l2_like_too~hiking | Și ție îți place să mergi pe munte? | shee TSEE-eh its PLAH-cheh suh merj peh MOON-teh
+x:l2_like_too~travel | Și ție îți place să călătorești? | shee TSEE-eh its PLAH-cheh suh kuh-luh-toh-RESHT
+x:l2_like_too~sports | Și ție îți place sportul? | shee TSEE-eh its PLAH-cheh SPOR-tool
+x:l2_meeting_at~seven | Ne întâlnim la șapte. | neh in-tuhl-NEEM lah SHAHP-teh
+x:l2_meeting_at~eight_thirty | Ne întâlnim la opt și jumătate. | neh in-tuhl-NEEM lah opt shee zhoo-muh-TAH-teh
+x:l2_meeting_at~station | Ne întâlnim la gară. | neh in-tuhl-NEEM lah GAH-ruh
+x:l2_meeting_at~hotel | Ne întâlnim la hotel. | neh in-tuhl-NEEM lah hoh-TEL

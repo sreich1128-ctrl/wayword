@@ -143,6 +143,13 @@
       "dairy",
       "bill",
       "like_without"
+    ],
+    "level2": [
+      "l2_oat_milk",
+      "l2_iced_please",
+      "l2_sit_outside",
+      "l2_how_long_wait",
+      "l2_to_go_instead"
     ]
   },
   {
@@ -394,6 +401,17 @@
       "another_size",
       "bag_please",
       "how_much"
+    ],
+    "level2": [
+      "l2_come_in",
+      "l2_larger_size",
+      "l2_doesnt_fit",
+      "l2_difference",
+      "l2_which_recommend",
+      "l2_cheaper_option",
+      "l2_return_this",
+      "l2_need_receipt",
+      "l2_exchange_instead"
     ]
   },
   {
@@ -445,6 +463,16 @@
       "im_from",
       "how_long_here",
       "learning_by_trying"
+    ],
+    "level2": [
+      "l2_what_brings",
+      "l2_like_most",
+      "l2_favorite_places",
+      "l2_weekends",
+      "l2_like_too",
+      "l2_join_us",
+      "l2_meeting_at",
+      "l2_no_worries"
     ]
   },
   {
@@ -531,6 +559,17 @@
       "shorter_sides",
       "like_this",
       "beard_trim"
+    ],
+    "level2": [
+      "l2_keep_top",
+      "l2_little_shorter",
+      "l2_shape_beard",
+      "l2_mustache_longer",
+      "l2_short_enough",
+      "l2_match_photo",
+      "l2_more_length_here",
+      "l2_walk_ins",
+      "l2_opening_later"
     ]
   },
   {

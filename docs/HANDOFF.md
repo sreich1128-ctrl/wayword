@@ -95,6 +95,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Level 2 course-wide + batch 2, 2026-11-14 (v49–v50):** owner chose one course-wide Level 2 per language: it opens when every Level 1 phrase is started, or by a 20-question Level 2 test (16 right). Today has a level card. Batch 2 (Help & emergencies, Hotel, Lost / Directions) is live; batches 3–4 remain. Batch 2 was validated but not clicked through in the browser (the owner was using the preview tab; the mechanism was tested on batch 1).
 
+**Level 2 batch 3, 2026-11-14 (v51):** Café, Shopping, Barber, Meeting People live in 9 languages as drafts (88 Level 2 phrases, 36 replies so far). Only batch 4 remains (Flirting, Airport, Sightseeing, Bar, Numbers & time). Validated, not clicked through in the browser.
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**

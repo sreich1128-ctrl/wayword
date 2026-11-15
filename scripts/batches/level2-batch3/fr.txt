@@ -1,0 +1,58 @@
+l2_oat_milk | Je peux l'avoir avec du lait d'avoine ? | zhuh puh lah-VWAHR ah-VEK dew leh dah-VWAHN
+l2_iced_please | Glacé, s'il vous plaît. | glah-SAY, seel voo PLEH
+l2_sit_outside | Je peux m'asseoir dehors ? | zhuh puh mah-SWAHR duh-OR
+l2_how_long_wait | Il y a combien d'attente ? | eel yah kohm-byen dah-TAHNT
+l2_to_go_instead | Je vais le prendre à emporter, alors. | zhuh vay luh PRAHN-druh ah ahn-por-TAY, ah-LOR
+l2_come_in | Vous l'avez en ___ ? | voo lah-VAY ahn ___
+l2_larger_size | Je peux essayer la taille au-dessus ? | zhuh puh eh-say-YAY lah TY oh duh-SEW
+l2_doesnt_fit | Celui-ci ne me va pas. | suh-lwee-SEE nuh muh vah PAH
+l2_difference | Quelle est la différence entre les deux ? | kel eh lah dee-fay-RAHNSS ahn-truh lay DUH
+l2_which_recommend | Vous me conseillez lequel ? | voo muh kohn-say-YAY luh-KEL
+l2_cheaper_option | Vous pouvez me montrer moins cher ? | voo poo-vay muh mohn-TRAY mwan SHEHR
+l2_return_this | Je peux le rendre ? | zhuh puh luh RAHN-druh
+l2_need_receipt | Il me faut le ticket de caisse ? | eel muh foh luh tee-KEH duh KESS
+l2_exchange_instead | Je peux plutôt l'échanger ? | zhuh puh plew-TOH lay-shahn-ZHAY
+l2_keep_top | Gardez de la longueur sur le dessus, s'il vous plaît. | gar-day duh lah lohn-GUHR sewr luh duh-SEW, seel voo PLEH
+l2_little_shorter | Un peu plus court. | uhn puh plew KOOR
+l2_shape_beard | Juste tailler la barbe, s'il vous plaît. | zhewst ty-YAY lah BARB, seel voo PLEH
+l2_mustache_longer | Laissez la moustache plus longue. | leh-say lah moos-TASH plew LOHNG
+l2_short_enough | C'est assez court, merci. | say tah-say KOOR, mehr-SEE
+l2_match_photo | Vous pouvez faire comme sur cette photo ? | voo poo-vay FEHR kom sewr set foh-TOH
+l2_more_length_here | Un peu plus long ici. | uhn puh plew LOHN ee-SEE
+l2_walk_ins | Vous prenez sans rendez-vous ? | voo pruh-NAY sahn rahn-day-VOO
+l2_opening_later | Il y a de la place plus tard ? | eel yah duh lah PLAHSS plew TAR
+l2_what_brings | Qu'est-ce qui t'amène ici ? | kess kee tah-MEN ee-SEE
+l2_like_most | Qu'est-ce que tu préfères dans cette ville ? | kess kuh tew pray-FEHR dahn set VEEL
+l2_favorite_places | Tu as des endroits préférés ? | tew ah day zahn-DRWAH pray-fay-RAY
+l2_weekends | Tu fais quoi le week-end ? | tew feh KWAH luh week-END
+l2_like_too | Toi aussi, tu aimes ___ ? | twah oh-SEE, tew em ___
+l2_join_us | Tu veux venir avec nous ? | tew vuh vuh-NEER ah-VEK NOO
+l2_meeting_at | On se retrouve ___. | ohn suh ruh-TROOV ___
+l2_no_worries | Pas de souci si tu ne peux pas. | pah duh soo-SEE see tew nuh puh PAH
+r:l2_hot_or_iced | Chaud ou glacé ? | shoh oo glah-SAY
+r:l2_only_inside | Seulement à l'intérieur pour l'instant. | suhl-MAHN ah lan-tay-RYUHR poor lan-STAHN
+r:l2_let_me_check | Je vais vérifier. | zhuh vay vay-ree-FYAY
+r:l2_this_better | Celui-ci est de meilleure qualité. | suh-lwee-SEE eh duh may-YUHR kah-lee-TAY
+r:l2_within_days | Seulement sous quatorze jours. | suhl-MAHN soo kah-TORZ ZHOOR
+r:l2_how_short_sides | Court comment sur les côtés ? | koor koh-MAHN sewr lay koh-TAY
+r:l2_trim_mustache | Je taille la moustache ? | zhuh TY lah moos-TASH
+r:l2_exactly_like | Exactement comme ça ? | eg-zak-tuh-MAHN kom SAH
+r:l2_fully_booked | On est complet aujourd'hui. | ohn eh kohm-PLEH oh-zhoor-DWEE
+r:l2_here_for_work | Je suis là pour le travail. | zhuh swee lah poor luh trah-VY
+r:l2_food_people | La cuisine et les gens. | lah kwee-ZEEN ay lay ZHAHN
+r:l2_go_hiking | Je fais souvent de la randonnée. | zhuh feh soo-VAHN duh lah rahn-doh-NAY
+r:l2_maybe_what_time | Peut-être. À quelle heure ? | puh-TEH-truh. ah kel UHR
+x:l2_come_in~small | Vous l'avez en petite taille ? | voo lah-VAY ahn puh-TEET TY
+x:l2_come_in~medium | Vous l'avez en taille moyenne ? | voo lah-VAY ahn ty mwah-YEN
+x:l2_come_in~large | Vous l'avez en grande taille ? | voo lah-VAY ahn grahnd TY
+x:l2_come_in~black | Vous l'avez en noir ? | voo lah-VAY ahn NWAHR
+x:l2_come_in~blue | Vous l'avez en bleu ? | voo lah-VAY ahn BLUH
+x:l2_like_too~music | Toi aussi, tu aimes la musique ? | twah oh-SEE, tew em lah mew-ZEEK
+x:l2_like_too~dancing | Toi aussi, tu aimes danser ? | twah oh-SEE, tew em dahn-SAY
+x:l2_like_too~hiking | Toi aussi, tu aimes la randonnée ? | twah oh-SEE, tew em lah rahn-doh-NAY
+x:l2_like_too~travel | Toi aussi, tu aimes voyager ? | twah oh-SEE, tew em vwah-yah-ZHAY
+x:l2_like_too~sports | Toi aussi, tu aimes le sport ? | twah oh-SEE, tew em luh SPOR
+x:l2_meeting_at~seven | On se retrouve à sept heures. | ohn suh ruh-TROOV ah set UHR
+x:l2_meeting_at~eight_thirty | On se retrouve à huit heures et demie. | ohn suh ruh-TROOV ah weet UHR ay duh-MEE
+x:l2_meeting_at~station | On se retrouve à la gare. | ohn suh ruh-TROOV ah lah GAR
+x:l2_meeting_at~hotel | On se retrouve à l'hôtel. | ohn suh ruh-TROOV ah loh-TEL

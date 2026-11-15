@@ -850,6 +850,162 @@
       "id": "l2_is_elevator",
       "target": "Здесь есть лифт?",
       "pronunciation_easy": "zdyes yest leeft"
+    },
+    {
+      "id": "l2_oat_milk",
+      "target": "Можно на овсяном молоке?",
+      "pronunciation_easy": "MOZH-nah nah ahf-SYAH-nahm mah-lah-KYEH"
+    },
+    {
+      "id": "l2_iced_please",
+      "target": "Холодный, пожалуйста.",
+      "pronunciation_easy": "khah-LOD-ny, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "l2_sit_outside",
+      "target": "Можно сесть на улице?",
+      "pronunciation_easy": "MOZH-nah syest nah OO-lee-tseh"
+    },
+    {
+      "id": "l2_how_long_wait",
+      "target": "Сколько ждать?",
+      "pronunciation_easy": "SKOL-kah zhdat"
+    },
+    {
+      "id": "l2_to_go_instead",
+      "target": "Тогда я возьму с собой.",
+      "pronunciation_easy": "tahg-DAH ya vahz-MOO s sah-BOY"
+    },
+    {
+      "id": "l2_come_in",
+      "target": "У вас есть это ___?",
+      "pronunciation_easy": "oo vahs yest EH-tah ___"
+    },
+    {
+      "id": "l2_larger_size",
+      "target": "Можно примерить размер побольше?",
+      "pronunciation_easy": "MOZH-nah pree-MYEH-reet rahz-MYER pah-BOL-sheh"
+    },
+    {
+      "id": "l2_doesnt_fit",
+      "target": "Это мне не подходит.",
+      "pronunciation_easy": "EH-tah mnyeh nee paht-KHOH-deet"
+    },
+    {
+      "id": "l2_difference",
+      "target": "Чем они отличаются?",
+      "pronunciation_easy": "chem ah-NEE aht-lee-CHAH-yoot-sah"
+    },
+    {
+      "id": "l2_which_recommend",
+      "target": "Что вы посоветуете?",
+      "pronunciation_easy": "shtoh vy pah-sah-VYEH-too-yeh-tyeh"
+    },
+    {
+      "id": "l2_cheaper_option",
+      "target": "Можете показать что-нибудь подешевле?",
+      "pronunciation_easy": "MOH-zhuh-tyeh pah-kah-ZAT SHTOH-nee-boot pah-dee-SHEV-lyeh"
+    },
+    {
+      "id": "l2_return_this",
+      "target": "Это можно вернуть?",
+      "pronunciation_easy": "EH-tah MOZH-nah veer-NOOT"
+    },
+    {
+      "id": "l2_need_receipt",
+      "target": "Нужен чек?",
+      "pronunciation_easy": "NOO-zheen chek"
+    },
+    {
+      "id": "l2_exchange_instead",
+      "target": "А обменять можно?",
+      "pronunciation_easy": "ah ahb-mee-NYAT MOZH-nah"
+    },
+    {
+      "id": "l2_keep_top",
+      "target": "Сверху длину оставьте, пожалуйста.",
+      "pronunciation_easy": "SVYEHR-khoo dlee-NOO ah-STAHV-tyeh, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "l2_little_shorter",
+      "target": "Чуть короче.",
+      "pronunciation_easy": "choot kah-ROH-cheh"
+    },
+    {
+      "id": "l2_shape_beard",
+      "target": "Только подровнять бороду, пожалуйста.",
+      "pronunciation_easy": "TOL-kah pah-drahv-NYAT BOH-rah-doo, pah-ZHAH-loo-stah"
+    },
+    {
+      "id": "l2_mustache_longer",
+      "target": "Усы оставьте подлиннее.",
+      "pronunciation_easy": "oo-SY ah-STAHV-tyeh pah-dlee-NYEH-yeh"
+    },
+    {
+      "id": "l2_short_enough",
+      "target": "Так достаточно, спасибо.",
+      "pronunciation_easy": "tak dah-STAH-tahch-nah, spah-SEE-bah"
+    },
+    {
+      "id": "l2_match_photo",
+      "target": "Можете сделать как на этом фото?",
+      "pronunciation_easy": "MOH-zhuh-tyeh ZDYEH-lat kak nah EH-tahm FOH-tah"
+    },
+    {
+      "id": "l2_more_length_here",
+      "target": "Здесь чуть длиннее.",
+      "pronunciation_easy": "zdyes choot dlee-NYEH-yeh"
+    },
+    {
+      "id": "l2_walk_ins",
+      "target": "Можно без записи?",
+      "pronunciation_easy": "MOZH-nah byez ZAH-pee-see"
+    },
+    {
+      "id": "l2_opening_later",
+      "target": "Есть время попозже?",
+      "pronunciation_easy": "yest VRYEH-myah pah-POH-zheh"
+    },
+    {
+      "id": "l2_what_brings",
+      "target": "Что тебя сюда привело?",
+      "pronunciation_easy": "shtoh tee-BYAH syoo-DAH pree-vee-LOH"
+    },
+    {
+      "id": "l2_like_most",
+      "target": "Что тебе больше всего нравится в этом городе?",
+      "pronunciation_easy": "shtoh tee-BYEH BOL-sheh fsee-VOH NRAH-veet-sah v EH-tahm GOH-rah-dyeh"
+    },
+    {
+      "id": "l2_favorite_places",
+      "target": "Есть любимые места?",
+      "pronunciation_easy": "yest lyoo-BEE-my-yeh mees-TAH"
+    },
+    {
+      "id": "l2_weekends",
+      "target": "Что ты делаешь по выходным?",
+      "pronunciation_easy": "shtoh ty DYEH-lah-yesh pah vy-khahd-NYM"
+    },
+    {
+      "id": "l2_like_too",
+      "target": "Тебе тоже нравится ___?",
+      "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah ___"
+    },
+    {
+      "id": "l2_join_us",
+      "target": "Хочешь пойти с нами?",
+      "pronunciation_easy": "KHOH-chesh pai-TEE s NAH-mee"
+    },
+    {
+      "id": "l2_meeting_at",
+      "target": "Мы встречаемся ___.",
+      "pronunciation_easy": "my fstree-CHAH-yem-sah ___",
+      "qa": "The blank holds the whole time or place with its little word (\"at seven\", \"at the station\"), because that word changes in most languages."
+    },
+    {
+      "id": "l2_no_worries",
+      "target": "Ничего страшного, если не сможешь.",
+      "pronunciation_easy": "nee-chee-VOH STRAHSH-nah-vah, YES-lee nee SMOH-zhesh"
     }
   ],
   "vocab": {
@@ -1990,6 +2146,82 @@
         "target": "У меня бронь на пять ночей.",
         "pronunciation_easy": "oo mee-NYAH bron nah pyat nah-CHEY"
       }
+    ],
+    "l2_come_in": [
+      {
+        "word": "small",
+        "target": "У вас есть это маленького размера?",
+        "pronunciation_easy": "oo vahs yest EH-tah MAH-leen-kah-vah rahz-MYEH-rah"
+      },
+      {
+        "word": "medium",
+        "target": "У вас есть это среднего размера?",
+        "pronunciation_easy": "oo vahs yest EH-tah SRYED-nee-vah rahz-MYEH-rah"
+      },
+      {
+        "word": "large",
+        "target": "У вас есть это большого размера?",
+        "pronunciation_easy": "oo vahs yest EH-tah bahl-SHOH-vah rahz-MYEH-rah"
+      },
+      {
+        "word": "black",
+        "target": "У вас есть это в чёрном цвете?",
+        "pronunciation_easy": "oo vahs yest EH-tah f CHOR-nahm TSVYEH-tyeh"
+      },
+      {
+        "word": "blue",
+        "target": "У вас есть это в синем цвете?",
+        "pronunciation_easy": "oo vahs yest EH-tah f SEE-nyem TSVYEH-tyeh"
+      }
+    ],
+    "l2_like_too": [
+      {
+        "word": "music",
+        "target": "Тебе тоже нравится музыка?",
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah MOO-zy-kah"
+      },
+      {
+        "word": "dancing",
+        "target": "Тебе тоже нравится танцевать?",
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah tahn-tseh-VAT"
+      },
+      {
+        "word": "hiking",
+        "target": "Тебе тоже нравится ходить в походы?",
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah khah-DEET f pah-KHOH-dy"
+      },
+      {
+        "word": "travel",
+        "target": "Тебе тоже нравится путешествовать?",
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah poo-tee-SHEST-vah-vat"
+      },
+      {
+        "word": "sports",
+        "target": "Тебе тоже нравится спорт?",
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah sport"
+      }
+    ],
+    "l2_meeting_at": [
+      {
+        "word": "seven",
+        "target": "Мы встречаемся в семь.",
+        "pronunciation_easy": "my fstree-CHAH-yem-sah f syem"
+      },
+      {
+        "word": "eight_thirty",
+        "target": "Мы встречаемся в восемь тридцать.",
+        "pronunciation_easy": "my fstree-CHAH-yem-sah v VOH-seem TREE-tsat"
+      },
+      {
+        "word": "station",
+        "target": "Мы встречаемся на вокзале.",
+        "pronunciation_easy": "my fstree-CHAH-yem-sah nah vahk-ZAH-lyeh"
+      },
+      {
+        "word": "hotel",
+        "target": "Мы встречаемся в отеле.",
+        "pronunciation_easy": "my fstree-CHAH-yem-sah v ah-TEH-lyeh"
+      }
     ]
   },
   "replies": {
@@ -2209,6 +2441,58 @@
     "l2_exit_three": {
       "target": "Вам нужен третий выход.",
       "pronunciation_easy": "vahm NOO-zheen TRYEH-tee VY-khaht"
+    },
+    "l2_hot_or_iced": {
+      "target": "Горячий или холодный?",
+      "pronunciation_easy": "gah-RYAH-chee EE-lee khah-LOD-ny"
+    },
+    "l2_only_inside": {
+      "target": "Сейчас только внутри.",
+      "pronunciation_easy": "see-CHAHS TOL-kah vnoo-TREE"
+    },
+    "l2_let_me_check": {
+      "target": "Сейчас посмотрю.",
+      "pronunciation_easy": "see-CHAHS pah-smah-TRYOO"
+    },
+    "l2_this_better": {
+      "target": "Этот более качественный.",
+      "pronunciation_easy": "EH-taht BOH-lyeh-yeh KAH-chest-vee-ny"
+    },
+    "l2_within_days": {
+      "target": "Только в течение четырнадцати дней.",
+      "pronunciation_easy": "TOL-kah f tee-CHEH-nee-ee chee-TYR-nah-tsah-tee dnyey"
+    },
+    "l2_how_short_sides": {
+      "target": "Насколько коротко по бокам?",
+      "pronunciation_easy": "nah-SKOL-kah KOH-raht-kah pah bah-KAHM"
+    },
+    "l2_trim_mustache": {
+      "target": "Усы подровнять?",
+      "pronunciation_easy": "oo-SY pah-drahv-NYAT"
+    },
+    "l2_exactly_like": {
+      "target": "Точно так же?",
+      "pronunciation_easy": "TOCH-nah tak zheh"
+    },
+    "l2_fully_booked": {
+      "target": "Сегодня всё занято.",
+      "pronunciation_easy": "see-VOD-nyah fsyo ZAH-nee-tah"
+    },
+    "l2_here_for_work": {
+      "target": "Я здесь по работе.",
+      "pronunciation_easy": "ya zdyes pah rah-BOH-tyeh"
+    },
+    "l2_food_people": {
+      "target": "Еда и люди.",
+      "pronunciation_easy": "yee-DAH ee LYOO-dee"
+    },
+    "l2_go_hiking": {
+      "target": "Обычно хожу в походы.",
+      "pronunciation_easy": "ah-BYCH-nah khah-ZHOO f pah-KHOH-dy"
+    },
+    "l2_maybe_what_time": {
+      "target": "Может быть. Во сколько?",
+      "pronunciation_easy": "MOH-zhet byt. vah SKOL-kah"
     }
   }
 }

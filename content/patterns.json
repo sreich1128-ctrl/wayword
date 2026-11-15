@@ -817,6 +817,94 @@
           "english": "My booking is for five nights."
         }
       ]
+    },
+    "l2_come_in": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "small",
+          "label": "small",
+          "english": "Does this come in small?"
+        },
+        {
+          "id": "medium",
+          "label": "medium",
+          "english": "Does this come in medium?"
+        },
+        {
+          "id": "large",
+          "label": "large",
+          "english": "Does this come in large?"
+        },
+        {
+          "id": "black",
+          "label": "black",
+          "english": "Does this come in black?"
+        },
+        {
+          "id": "blue",
+          "label": "blue",
+          "english": "Does this come in blue?"
+        }
+      ]
+    },
+    "l2_like_too": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "music",
+          "label": "music",
+          "english": "Do you like music too?"
+        },
+        {
+          "id": "dancing",
+          "label": "dancing",
+          "english": "Do you like dancing too?"
+        },
+        {
+          "id": "hiking",
+          "label": "hiking",
+          "english": "Do you like hiking too?"
+        },
+        {
+          "id": "travel",
+          "label": "travelling",
+          "english": "Do you like travelling too?"
+        },
+        {
+          "id": "sports",
+          "label": "sports",
+          "english": "Do you like sports too?"
+        }
+      ]
+    },
+    "l2_meeting_at": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "seven",
+          "label": "at seven",
+          "english": "We're meeting at seven."
+        },
+        {
+          "id": "eight_thirty",
+          "label": "at eight thirty",
+          "english": "We're meeting at eight thirty."
+        },
+        {
+          "id": "station",
+          "label": "at the station",
+          "english": "We're meeting at the station."
+        },
+        {
+          "id": "hotel",
+          "label": "at the hotel",
+          "english": "We're meeting at the hotel."
+        }
+      ]
     }
   }
 }

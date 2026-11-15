@@ -43,8 +43,10 @@ Not built yet: a certificate for finishing a level.
 |---|---|---|---|
 | 1 | The basics (3 exchanges + 8 recovery phrases), Restaurant (4), Transportation (4) | 31 phrases, 11 replies, 17 variations | Shipped v48 |
 | 2 | Help & emergencies (4 exchanges), Hotel (4), Lost / Directions (3) | 26 phrases, 12 replies, 12 variations | Shipped v50 |
-| 3 | Café, Shopping, Barber, Meeting People | | Next |
-| 4 | Flirting, Airport, Sightseeing, Bar, Numbers & time | | |
+| 3 | Café (2 exchanges), Shopping (3), Barber (4), Meeting People (4) | 31 phrases, 13 replies, 14 variations | Shipped v51 |
+| 4 | Flirting, Airport, Sightseeing, Bar, Numbers & time | | Next |
+
+Changes from LEVEL_CUT.md in batch 3: barber "About ___ centimeters" became "A little shorter."; "We're meeting at ___" became "We're meeting ___." with the little word inside the blank; Meeting People's first follow-up reuses Level 1's "How long are you here for?"; generic recoveries (show me first, come back tomorrow) are left to the shared kit.
 
 Changes from LEVEL_CUT.md in batch 2: "My ___ is getting worse" became the fixed "It's getting worse."; the pharmacy exchange opens with Level 1's "I need medicine for ___."; "Do you have insurance?" is a reply here.
 

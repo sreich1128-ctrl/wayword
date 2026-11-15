@@ -853,6 +853,164 @@
       "id": "l2_is_elevator",
       "target": "¿Hay ascensor?",
       "pronunciation_easy": "eye ah-sen-SOR"
+    },
+    {
+      "id": "l2_oat_milk",
+      "target": "¿Me lo puede poner con leche de avena?",
+      "pronunciation_easy": "meh loh PWEH-deh poh-NEHR kon LEH-cheh deh ah-VEH-nah"
+    },
+    {
+      "id": "l2_iced_please",
+      "target": "Frío, por favor.",
+      "pronunciation_easy": "FREE-oh, por fah-VOR"
+    },
+    {
+      "id": "l2_sit_outside",
+      "target": "¿Puedo sentarme afuera?",
+      "pronunciation_easy": "PWEH-doh sen-TAR-meh ah-FWEH-rah",
+      "qa": "Latin America. Spain: \"fuera\"."
+    },
+    {
+      "id": "l2_how_long_wait",
+      "target": "¿Cuánto hay que esperar?",
+      "pronunciation_easy": "KWAN-toh eye keh es-peh-RAR"
+    },
+    {
+      "id": "l2_to_go_instead",
+      "target": "Mejor para llevar.",
+      "pronunciation_easy": "meh-HOR PAH-rah yeh-VAR"
+    },
+    {
+      "id": "l2_come_in",
+      "target": "¿Tiene esto en ___?",
+      "pronunciation_easy": "TYEH-neh ES-toh en ___"
+    },
+    {
+      "id": "l2_larger_size",
+      "target": "¿Puedo probarme una talla más grande?",
+      "pronunciation_easy": "PWEH-doh proh-BAR-meh OO-nah TAH-yah mas GRAN-deh"
+    },
+    {
+      "id": "l2_doesnt_fit",
+      "target": "Este no me queda bien.",
+      "pronunciation_easy": "ES-teh noh meh KEH-dah byen"
+    },
+    {
+      "id": "l2_difference",
+      "target": "¿Cuál es la diferencia entre estos?",
+      "pronunciation_easy": "kwal es lah dee-feh-REN-syah EN-treh ES-tos"
+    },
+    {
+      "id": "l2_which_recommend",
+      "target": "¿Cuál me recomienda?",
+      "pronunciation_easy": "kwal meh reh-koh-MYEN-dah"
+    },
+    {
+      "id": "l2_cheaper_option",
+      "target": "¿Me puede enseñar uno más barato?",
+      "pronunciation_easy": "meh PWEH-deh en-seh-NYAR OO-noh mas bah-RAH-toh"
+    },
+    {
+      "id": "l2_return_this",
+      "target": "¿Puedo devolver esto?",
+      "pronunciation_easy": "PWEH-doh deh-vol-VEHR ES-toh"
+    },
+    {
+      "id": "l2_need_receipt",
+      "target": "¿Necesito el recibo?",
+      "pronunciation_easy": "neh-seh-SEE-toh el reh-SEE-boh"
+    },
+    {
+      "id": "l2_exchange_instead",
+      "target": "¿Puedo cambiarlo mejor?",
+      "pronunciation_easy": "PWEH-doh kam-BYAR-loh meh-HOR"
+    },
+    {
+      "id": "l2_keep_top",
+      "target": "Deje el largo arriba, por favor.",
+      "pronunciation_easy": "DEH-heh el LAR-goh ah-REE-bah, por fah-VOR"
+    },
+    {
+      "id": "l2_little_shorter",
+      "target": "Un poco más corto.",
+      "pronunciation_easy": "oon POH-koh mas KOR-toh"
+    },
+    {
+      "id": "l2_shape_beard",
+      "target": "Solo perfilar la barba, por favor.",
+      "pronunciation_easy": "SOH-loh pehr-fee-LAR lah BAR-bah, por fah-VOR"
+    },
+    {
+      "id": "l2_mustache_longer",
+      "target": "Deje el bigote más largo.",
+      "pronunciation_easy": "DEH-heh el bee-GOH-teh mas LAR-goh"
+    },
+    {
+      "id": "l2_short_enough",
+      "target": "Así está bien, gracias.",
+      "pronunciation_easy": "ah-SEE es-TAH byen, GRAH-syas"
+    },
+    {
+      "id": "l2_match_photo",
+      "target": "¿Puede hacerlo como en esta foto?",
+      "pronunciation_easy": "PWEH-deh ah-SEHR-loh KOH-moh en ES-tah FOH-toh"
+    },
+    {
+      "id": "l2_more_length_here",
+      "target": "Un poco más largo aquí.",
+      "pronunciation_easy": "oon POH-koh mas LAR-goh ah-KEE"
+    },
+    {
+      "id": "l2_walk_ins",
+      "target": "¿Atienden sin cita?",
+      "pronunciation_easy": "ah-TYEN-den seen SEE-tah"
+    },
+    {
+      "id": "l2_opening_later",
+      "target": "¿Hay hueco más tarde?",
+      "pronunciation_easy": "eye WEH-koh mas TAR-deh",
+      "qa": "Spain. Latin America: \"¿Tiene espacio más tarde?\""
+    },
+    {
+      "id": "l2_what_brings",
+      "target": "¿Qué te trae por aquí?",
+      "pronunciation_easy": "keh teh TRAH-eh por ah-KEE"
+    },
+    {
+      "id": "l2_like_most",
+      "target": "¿Qué es lo que más te gusta de esta ciudad?",
+      "pronunciation_easy": "keh es loh keh mas teh GOOS-tah deh ES-tah syoo-DAD"
+    },
+    {
+      "id": "l2_favorite_places",
+      "target": "¿Algún lugar favorito?",
+      "pronunciation_easy": "al-GOON loo-GAR fah-voh-REE-toh"
+    },
+    {
+      "id": "l2_weekends",
+      "target": "¿Qué haces los fines de semana?",
+      "pronunciation_easy": "keh AH-ses los FEE-nes deh seh-MAH-nah"
+    },
+    {
+      "id": "l2_like_too",
+      "target": "¿A ti también te gusta ___?",
+      "pronunciation_easy": "ah tee tam-BYEN teh GOOS-tah ___"
+    },
+    {
+      "id": "l2_join_us",
+      "target": "¿Quieres venir con nosotros?",
+      "pronunciation_easy": "KYEH-res veh-NEER kon noh-SOH-tros"
+    },
+    {
+      "id": "l2_meeting_at",
+      "target": "Nos vemos ___.",
+      "pronunciation_easy": "nos VEH-mos ___",
+      "qa": "Neutral. Spain: \"Quedamos ___.\""
+    },
+    {
+      "id": "l2_no_worries",
+      "target": "No pasa nada si no puedes.",
+      "pronunciation_easy": "noh PAH-sah NAH-dah see noh PWEH-des"
     }
   ],
   "vocab": {
@@ -1988,6 +2146,82 @@
         "target": "Mi reserva es para cinco noches.",
         "pronunciation_easy": "mee reh-SEHR-vah es PAH-rah SEEN-koh NOH-ches"
       }
+    ],
+    "l2_come_in": [
+      {
+        "word": "small",
+        "target": "¿Tiene esto en talla pequeña?",
+        "pronunciation_easy": "TYEH-neh ES-toh en TAH-yah peh-KEH-nyah"
+      },
+      {
+        "word": "medium",
+        "target": "¿Tiene esto en talla mediana?",
+        "pronunciation_easy": "TYEH-neh ES-toh en TAH-yah meh-DYAH-nah"
+      },
+      {
+        "word": "large",
+        "target": "¿Tiene esto en talla grande?",
+        "pronunciation_easy": "TYEH-neh ES-toh en TAH-yah GRAN-deh"
+      },
+      {
+        "word": "black",
+        "target": "¿Tiene esto en negro?",
+        "pronunciation_easy": "TYEH-neh ES-toh en NEH-groh"
+      },
+      {
+        "word": "blue",
+        "target": "¿Tiene esto en azul?",
+        "pronunciation_easy": "TYEH-neh ES-toh en ah-SOOL"
+      }
+    ],
+    "l2_like_too": [
+      {
+        "word": "music",
+        "target": "¿A ti también te gusta la música?",
+        "pronunciation_easy": "ah tee tam-BYEN teh GOOS-tah lah MOO-see-kah"
+      },
+      {
+        "word": "dancing",
+        "target": "¿A ti también te gusta bailar?",
+        "pronunciation_easy": "ah tee tam-BYEN teh GOOS-tah by-LAR"
+      },
+      {
+        "word": "hiking",
+        "target": "¿A ti también te gusta el senderismo?",
+        "pronunciation_easy": "ah tee tam-BYEN teh GOOS-tah el sen-deh-REES-moh"
+      },
+      {
+        "word": "travel",
+        "target": "¿A ti también te gusta viajar?",
+        "pronunciation_easy": "ah tee tam-BYEN teh GOOS-tah vyah-HAR"
+      },
+      {
+        "word": "sports",
+        "target": "¿A ti también te gusta el deporte?",
+        "pronunciation_easy": "ah tee tam-BYEN teh GOOS-tah el deh-POR-teh"
+      }
+    ],
+    "l2_meeting_at": [
+      {
+        "word": "seven",
+        "target": "Nos vemos a las siete.",
+        "pronunciation_easy": "nos VEH-mos ah las SYEH-teh"
+      },
+      {
+        "word": "eight_thirty",
+        "target": "Nos vemos a las ocho y media.",
+        "pronunciation_easy": "nos VEH-mos ah las OH-choh ee MEH-dyah"
+      },
+      {
+        "word": "station",
+        "target": "Nos vemos en la estación.",
+        "pronunciation_easy": "nos VEH-mos en lah es-tah-SYON"
+      },
+      {
+        "word": "hotel",
+        "target": "Nos vemos en el hotel.",
+        "pronunciation_easy": "nos VEH-mos en el oh-TEL"
+      }
     ]
   },
   "replies": {
@@ -2207,6 +2441,58 @@
     "l2_exit_three": {
       "target": "Use la salida tres.",
       "pronunciation_easy": "OO-seh lah sah-LEE-dah tres"
+    },
+    "l2_hot_or_iced": {
+      "target": "¿Caliente o frío?",
+      "pronunciation_easy": "kah-LYEN-teh oh FREE-oh"
+    },
+    "l2_only_inside": {
+      "target": "Ahora solo adentro.",
+      "pronunciation_easy": "ah-OH-rah SOH-loh ah-DEN-troh"
+    },
+    "l2_let_me_check": {
+      "target": "Déjeme ver.",
+      "pronunciation_easy": "DEH-heh-meh vehr"
+    },
+    "l2_this_better": {
+      "target": "Este es de mejor calidad.",
+      "pronunciation_easy": "ES-teh es deh meh-HOR kah-lee-DAD"
+    },
+    "l2_within_days": {
+      "target": "Solo dentro de catorce días.",
+      "pronunciation_easy": "SOH-loh DEN-troh deh kah-TOR-seh DEE-as"
+    },
+    "l2_how_short_sides": {
+      "target": "¿Qué tan corto a los lados?",
+      "pronunciation_easy": "keh tan KOR-toh ah los LAH-dos"
+    },
+    "l2_trim_mustache": {
+      "target": "¿Recorto el bigote?",
+      "pronunciation_easy": "reh-KOR-toh el bee-GOH-teh"
+    },
+    "l2_exactly_like": {
+      "target": "¿Exactamente así?",
+      "pronunciation_easy": "ek-sak-tah-MEN-teh ah-SEE"
+    },
+    "l2_fully_booked": {
+      "target": "Hoy estamos completos.",
+      "pronunciation_easy": "oy es-TAH-mos kom-PLEH-tos"
+    },
+    "l2_here_for_work": {
+      "target": "Estoy aquí por trabajo.",
+      "pronunciation_easy": "es-TOY ah-KEE por trah-BAH-hoh"
+    },
+    "l2_food_people": {
+      "target": "La comida y la gente.",
+      "pronunciation_easy": "lah koh-MEE-dah ee lah HEN-teh"
+    },
+    "l2_go_hiking": {
+      "target": "Suelo hacer senderismo.",
+      "pronunciation_easy": "SWEH-loh ah-SEHR sen-deh-REES-moh"
+    },
+    "l2_maybe_what_time": {
+      "target": "Quizás. ¿A qué hora?",
+      "pronunciation_easy": "kee-SAS. ah keh OH-rah"
     }
   }
 }

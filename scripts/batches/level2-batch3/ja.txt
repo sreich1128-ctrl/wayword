@@ -1,0 +1,58 @@
+l2_oat_milk | オーツミルクに変更できますか？ | おーつみるくにへんこうできますか？ | oh-tsoo mee-roo-koo nee hen-koh deh-kee-mahs-kah
+l2_iced_please | アイスでお願いします。 | あいすでおねがいします。 | ai-soo deh oh-neh-guy-shee-mahs
+l2_sit_outside | 外の席に座ってもいいですか？ | そとのせきにすわってもいいですか？ | soh-toh noh seh-kee nee soo-waht-teh moh ee des-kah
+l2_how_long_wait | どのくらい待ちますか？ | どのくらいまちますか？ | doh-noh koo-rai mah-chee-mahs-kah
+l2_to_go_instead | では、持ち帰りにします。 | では、もちかえりにします。 | deh-wah, moh-chee-kah-eh-ree nee shee-mahs
+l2_come_in | これの___はありますか？ | これの___はありますか？ | koh-reh noh ___ wah ah-ree-mahs-kah
+l2_larger_size | 大きいサイズを試着できますか？ | おおきいさいずをしちゃくできますか？ | oh-kee sai-zoo oh shee-chah-koo deh-kee-mahs-kah
+l2_doesnt_fit | これはサイズが合いません。 | これはさいずがあいません。 | koh-reh wah sai-zoo gah ai-mah-sen
+l2_difference | この二つの違いは何ですか？ | このふたつのちがいはなんですか？ | koh-noh foo-tah-tsoo noh chee-guy wah nan des-kah
+l2_which_recommend | どちらがおすすめですか？ | どちらがおすすめですか？ | doh-chee-rah gah oh-soo-soo-meh des-kah
+l2_cheaper_option | もう少し安いものはありますか？ | もうすこしやすいものはありますか？ | moh soo-koh-shee yah-soo-ee moh-noh wah ah-ree-mahs-kah
+l2_return_this | これは返品できますか？ | これはへんぴんできますか？ | koh-reh wah hen-peen deh-kee-mahs-kah
+l2_need_receipt | レシートは必要ですか？ | れしーとはひつようですか？ | reh-shee-toh wah hee-tsoo-yoh des-kah
+l2_exchange_instead | 代わりに交換できますか？ | かわりにこうかんできますか？ | kah-wah-ree nee koh-kahn deh-kee-mahs-kah
+l2_keep_top | 上は長さを残してください。 | うえはながさをのこしてください。 | oo-eh wah nah-gah-sah oh noh-koh-shee-teh koo-dah-sai
+l2_little_shorter | もう少し短く。 | もうすこしみじかく。 | moh soo-koh-shee mee-jee-kah-koo
+l2_shape_beard | ひげを整えるだけでお願いします。 | ひげをととのえるだけでおねがいします。 | hee-geh oh toh-toh-noh-eh-roo dah-keh deh oh-neh-guy-shee-mahs
+l2_mustache_longer | 口ひげは長めに残してください。 | くちひげはながめにのこしてください。 | koo-chee-hee-geh wah nah-gah-meh nee noh-koh-shee-teh koo-dah-sai
+l2_short_enough | その長さで大丈夫です。ありがとう。 | そのながさでだいじょうぶです。ありがとう。 | soh-noh nah-gah-sah deh dai-joh-boo des. ah-ree-gah-toh
+l2_match_photo | この写真のようにできますか？ | このしゃしんのようにできますか？ | koh-noh shah-sheen noh yoh nee deh-kee-mahs-kah
+l2_more_length_here | ここはもう少し長めで。 | ここはもうすこしながめで。 | koh-koh wah moh soo-koh-shee nah-gah-meh deh
+l2_walk_ins | 予約なしでも大丈夫ですか？ | よやくなしでもだいじょうぶですか？ | yoh-yah-koo nah-shee deh-moh dai-joh-boo des-kah
+l2_opening_later | 後で空きはありますか？ | あとであきはありますか？ | ah-toh deh ah-kee wah ah-ree-mahs-kah
+l2_what_brings | どうしてこちらに来たんですか？ | どうしてこちらにきたんですか？ | doh-shee-teh koh-chee-rah nee kee-tahn des-kah
+l2_like_most | この街の一番好きなところは何ですか？ | このまちのいちばんすきなところはなんですか？ | koh-noh mah-chee noh ee-chee-bahn soo-kee nah toh-koh-roh wah nan des-kah
+l2_favorite_places | お気に入りの場所はありますか？ | おきにいりのばしょはありますか？ | oh-kee-nee-ee-ree noh bah-shoh wah ah-ree-mahs-kah
+l2_weekends | 週末は何をしていますか？ | しゅうまつはなにをしていますか？ | shoo-mah-tsoo wah nah-nee oh shee-teh ee-mahs-kah
+l2_like_too | ___も好きですか？ | ___もすきですか？ | ___ moh soo-kee des-kah
+l2_join_us | 一緒に来ませんか？ | いっしょにきませんか？ | ees-shoh nee kee-mah-sen-kah
+l2_meeting_at | ___に集まります。 | ___にあつまります。 | ___ nee ah-tsoo-mah-ree-mahs
+l2_no_worries | 忙しかったら大丈夫ですよ。 | いそがしかったらだいじょうぶですよ。 | ee-soh-gah-shee-kaht-tah-rah dai-joh-boo des-yoh
+r:l2_hot_or_iced | ホットですか、アイスですか？ | ほっとですか、あいすですか？ | hot-toh des-kah, ai-soo des-kah
+r:l2_only_inside | 今は店内だけです。 | いまはてんないだけです。 | ee-mah wah ten-nai dah-keh des
+r:l2_let_me_check | 確認します。 | かくにんします。 | kah-koo-neen shee-mahs
+r:l2_this_better | こちらの方が質がいいです。 | こちらのほうがしつがいいです。 | koh-chee-rah noh hoh gah shee-tsoo gah ee des
+r:l2_within_days | 十四日以内だけです。 | じゅうよっかいないだけです。 | joo-yok-kah ee-nai dah-keh des
+r:l2_how_short_sides | 横はどのくらい短くしますか？ | よこはどのくらいみじかくしますか？ | yoh-koh wah doh-noh koo-rai mee-jee-kah-koo shee-mahs-kah
+r:l2_trim_mustache | 口ひげも整えますか？ | くちひげもととのえますか？ | koo-chee-hee-geh moh toh-toh-noh-eh-mahs-kah
+r:l2_exactly_like | この通りでいいですか？ | このとおりでいいですか？ | koh-noh toh-ree deh ee des-kah
+r:l2_fully_booked | 本日は予約でいっぱいです。 | ほんじつはよやくでいっぱいです。 | hon-jee-tsoo wah yoh-yah-koo deh eep-pai des
+r:l2_here_for_work | 仕事で来ています。 | しごとできています。 | shee-goh-toh deh kee-teh ee-mahs
+r:l2_food_people | 食べ物と人です。 | たべものとひとです。 | tah-beh-moh-noh toh hee-toh des
+r:l2_go_hiking | よくハイキングに行きます。 | よくはいきんぐにいきます。 | yoh-koo hai-keen-goo nee ee-kee-mahs
+r:l2_maybe_what_time | たぶん。何時ですか？ | たぶん。なんじですか？ | tah-boon. nan-jee des-kah
+x:l2_come_in~small | これのSサイズはありますか？ | これのえすさいずはありますか？ | koh-reh noh es-soo sai-zoo wah ah-ree-mahs-kah
+x:l2_come_in~medium | これのMサイズはありますか？ | これのえむさいずはありますか？ | koh-reh noh em-moo sai-zoo wah ah-ree-mahs-kah
+x:l2_come_in~large | これのLサイズはありますか？ | これのえるさいずはありますか？ | koh-reh noh eh-roo sai-zoo wah ah-ree-mahs-kah
+x:l2_come_in~black | これの黒はありますか？ | これのくろはありますか？ | koh-reh noh koo-roh wah ah-ree-mahs-kah
+x:l2_come_in~blue | これの青はありますか？ | これのあおはありますか？ | koh-reh noh ah-oh wah ah-ree-mahs-kah
+x:l2_like_too~music | 音楽も好きですか？ | おんがくもすきですか？ | on-gah-koo moh soo-kee des-kah
+x:l2_like_too~dancing | ダンスも好きですか？ | だんすもすきですか？ | dahn-soo moh soo-kee des-kah
+x:l2_like_too~hiking | ハイキングも好きですか？ | はいきんぐもすきですか？ | hai-keen-goo moh soo-kee des-kah
+x:l2_like_too~travel | 旅行も好きですか？ | りょこうもすきですか？ | ryoh-koh moh soo-kee des-kah
+x:l2_like_too~sports | スポーツも好きですか？ | すぽーつもすきですか？ | soo-poh-tsoo moh soo-kee des-kah
+x:l2_meeting_at~seven | 七時に集まります。 | しちじにあつまります。 | shee-chee-jee nee ah-tsoo-mah-ree-mahs
+x:l2_meeting_at~eight_thirty | 八時半に集まります。 | はちじはんにあつまります。 | hah-chee-jee hahn nee ah-tsoo-mah-ree-mahs
+x:l2_meeting_at~station | 駅に集まります。 | えきにあつまります。 | eh-kee nee ah-tsoo-mah-ree-mahs
+x:l2_meeting_at~hotel | ホテルに集まります。 | ほてるにあつまります。 | hoh-teh-roo nee ah-tsoo-mah-ree-mahs

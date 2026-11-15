@@ -1,0 +1,58 @@
+l2_oat_milk | ممكن مع حليب شوفان؟ | MUM-kin ma' ha-LEEB shoo-FAAN
+l2_iced_please | بارد، لو سمحت. | BAA-red, law sa-MAHT
+l2_sit_outside | ممكن أقعد برّا؟ | MUM-kin A'-od BAR-ra
+l2_how_long_wait | قديش لازم أستنى؟ | ad-DAYSH LAA-zim as-TAN-na
+l2_to_go_instead | خلص، باخده سفري. | kha-LAS, BAA-khdoh SAF-ree
+l2_come_in | في من هاد ___؟ | fee min haad ___
+l2_larger_size | ممكن أجرّب مقاس أكبر؟ | MUM-kin a-JAR-reb ma-AAS AK-bar
+l2_doesnt_fit | هاد مش زابط عليّ. | haad mish ZAA-bet a-LAY-ya
+l2_difference | شو الفرق بين هدول؟ | shoo il-FAR' bayn ha-DOHL
+l2_which_recommend | بأي واحد بتنصحني؟ | b-AY WAA-hed btin-SAH-nee
+l2_cheaper_option | ممكن تفرجيني إشي أرخص؟ | MUM-kin tfar-JEE-nee ISH-ee AR-khas
+l2_return_this | ممكن أرجّع هاد؟ | MUM-kin a-RAJ-je' haad
+l2_need_receipt | لازم الفاتورة؟ | LAA-zim il-faa-TOO-ra
+l2_exchange_instead | ممكن أبدّله بدل هيك؟ | MUM-kin a-BAD-d-loh BA-dal hayk
+l2_keep_top | خلّي الطول من فوق، لو سمحت. | KHAL-lee it-TOOL min foh', law sa-MAHT
+l2_little_shorter | أقصر شوي. | A'-sar SHWAY
+l2_shape_beard | بس رتّب الدقن، لو سمحت. | bas RAT-teb id-DA'n, law sa-MAHT
+l2_mustache_longer | خلّي الشنب أطول. | KHAL-lee ish-SHA-nab AT-wal
+l2_short_enough | هيك منيح، شكراً. | hayk mneeH, SHUK-ran
+l2_match_photo | ممكن تعملها زي هالصورة؟ | MUM-kin ti'-MAL-ha zay has-SOO-ra
+l2_more_length_here | أطول شوي هون. | AT-wal SHWAY hoon
+l2_walk_ins | بتستقبلوا بدون موعد؟ | btis-ta'-BI-loo bi-DOON MAW-'ed
+l2_opening_later | في موعد فاضي بعدين؟ | fee MAW-'ed FAA-dee ba'-DAYN
+l2_what_brings | شو جابك لهون؟ | shoo JAA-bak la-HOON
+l2_like_most | شو أكتر إشي بتحبه بهالمدينة؟ | shoo AK-tar ISH-ee bit-HIB-boh b-hal-ma-DEE-neh
+l2_favorite_places | عندك أماكن مفضّلة؟ | IN-dak a-MAA-ken m-FAD-da-leh
+l2_weekends | شو بتعمل بنهاية الأسبوع؟ | shoo BTI'-mal b-ni-HAA-yit il-us-BOO'
+l2_like_too | إنت كمان بتحب ___؟ | IN-ta ka-MAAN bit-HIB ___
+l2_join_us | بتحب تيجي معنا؟ | bit-HIB TEE-jee MA'-na
+l2_meeting_at | رح نتلاقى ___. | rah nit-LAA-a ___
+l2_no_worries | مش مشكلة إذا مشغول. | mish MUSH-ki-leh I-za mash-GHOOL
+r:l2_hot_or_iced | سخن ولا بارد؟ | sukhn WAL-la BAA-red
+r:l2_only_inside | هلأ بس جوّا. | HAL-la' bas JUW-wa
+r:l2_let_me_check | خليني أشوف. | khal-LEE-nee a-SHOOF
+r:l2_this_better | هاد نوعيته أحسن. | haad naw-'EE-toh AH-san
+r:l2_within_days | بس خلال أربعطعشر يوم. | bas khi-LAAL ar-ba'-TA'-shar yom
+r:l2_how_short_sides | قديش أقصّر من الجناب؟ | ad-DAYSH a-AS-ser min le-JNAAB
+r:l2_trim_mustache | أخفّف الشنب؟ | a-KHAF-fef ish-SHA-nab
+r:l2_exactly_like | بالزبط هيك؟ | biz-ZABT hayk
+r:l2_fully_booked | اليوم كله محجوز. | il-YOM KUL-loh mah-JOOZ
+r:l2_here_for_work | أنا هون للشغل. | A-na hoon lash-SHUGHL
+r:l2_food_people | الأكل والناس. | il-AKL win-NAAS
+r:l2_go_hiking | عادةً بطلع مشي بالطبيعة. | AA-da-tan BAT-la' MA-shee bit-ta-BEE-'a
+r:l2_maybe_what_time | يمكن. أي ساعة؟ | YIM-kin. ay SAA-a
+x:l2_come_in~small | في من هاد مقاس صغير؟ | fee min haad ma-AAS z-GHEER
+x:l2_come_in~medium | في من هاد مقاس وسط؟ | fee min haad ma-AAS WA-sat
+x:l2_come_in~large | في من هاد مقاس كبير؟ | fee min haad ma-AAS k-BEER
+x:l2_come_in~black | في من هاد باللون الأسود؟ | fee min haad bil-LOHN il-AS-wad
+x:l2_come_in~blue | في من هاد باللون الأزرق؟ | fee min haad bil-LOHN il-AZ-ra'
+x:l2_like_too~music | إنت كمان بتحب الموسيقى؟ | IN-ta ka-MAAN bit-HIB il-moo-SEE-a
+x:l2_like_too~dancing | إنت كمان بتحب الرقص؟ | IN-ta ka-MAAN bit-HIB ir-RA's
+x:l2_like_too~hiking | إنت كمان بتحب المشي بالطبيعة؟ | IN-ta ka-MAAN bit-HIB il-MA-shee bit-ta-BEE-'a
+x:l2_like_too~travel | إنت كمان بتحب السفر؟ | IN-ta ka-MAAN bit-HIB is-SA-far
+x:l2_like_too~sports | إنت كمان بتحب الرياضة؟ | IN-ta ka-MAAN bit-HIB ir-ree-YAA-da
+x:l2_meeting_at~seven | رح نتلاقى الساعة سبعة. | rah nit-LAA-a is-SAA-a SAB-'a
+x:l2_meeting_at~eight_thirty | رح نتلاقى الساعة تمانية ونص. | rah nit-LAA-a is-SAA-a ta-MAAN-yeh oo-NUSS
+x:l2_meeting_at~station | رح نتلاقى عند المحطة. | rah nit-LAA-a ind il-ma-HAT-ta
+x:l2_meeting_at~hotel | رح نتلاقى عند الفندق. | rah nit-LAA-a ind il-FUN-du'

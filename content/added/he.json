@@ -851,6 +851,164 @@
       "id": "l2_is_elevator",
       "target": "יש מעלית?",
       "pronunciation_easy": "yesh ma-a-LEET"
+    },
+    {
+      "id": "l2_oat_milk",
+      "target": "אפשר עם חלב שיבולת שועל?",
+      "pronunciation_easy": "ef-SHAR im kha-LAV shee-BO-let shu-AL"
+    },
+    {
+      "id": "l2_iced_please",
+      "target": "קר, בבקשה.",
+      "pronunciation_easy": "kar, be-va-ka-SHA"
+    },
+    {
+      "id": "l2_sit_outside",
+      "target": "אפשר לשבת בחוץ?",
+      "pronunciation_easy": "ef-SHAR la-SHE-vet ba-KHUTS"
+    },
+    {
+      "id": "l2_how_long_wait",
+      "target": "כמה זמן מחכים?",
+      "pronunciation_easy": "KA-ma zman me-kha-KEEM"
+    },
+    {
+      "id": "l2_to_go_instead",
+      "target": "אז אקח טייק אוויי.",
+      "pronunciation_easy": "az e-KAKH teyk-e-WEY",
+      "qa": "Israelis say \"take away\" for to-go."
+    },
+    {
+      "id": "l2_come_in",
+      "target": "יש את זה ב___?",
+      "pronunciation_easy": "yesh et ze be-___"
+    },
+    {
+      "id": "l2_larger_size",
+      "target": "אפשר למדוד מידה גדולה יותר?",
+      "pronunciation_easy": "ef-SHAR lim-DOD mee-DA gdo-LA yo-TER"
+    },
+    {
+      "id": "l2_doesnt_fit",
+      "target": "זה לא מתאים לי.",
+      "pronunciation_easy": "ze lo mat-EEM lee"
+    },
+    {
+      "id": "l2_difference",
+      "target": "מה ההבדל בין אלה?",
+      "pronunciation_easy": "ma ha-hev-DEL beyn E-le"
+    },
+    {
+      "id": "l2_which_recommend",
+      "target": "על מה אתה ממליץ?",
+      "pronunciation_easy": "al ma a-TA mam-LEETS",
+      "qa": "Masculine \"you\" as in the rest of this set. To a woman: את ממליצה (at mam-lee-TSA)."
+    },
+    {
+      "id": "l2_cheaper_option",
+      "target": "אפשר לראות משהו זול יותר?",
+      "pronunciation_easy": "ef-SHAR lir-OT MA-she-hu zol yo-TER"
+    },
+    {
+      "id": "l2_return_this",
+      "target": "אפשר להחזיר את זה?",
+      "pronunciation_easy": "ef-SHAR le-hakh-ZEER et ze"
+    },
+    {
+      "id": "l2_need_receipt",
+      "target": "צריך את הקבלה?",
+      "pronunciation_easy": "tsa-REEKH et ha-ka-ba-LA"
+    },
+    {
+      "id": "l2_exchange_instead",
+      "target": "אפשר להחליף במקום?",
+      "pronunciation_easy": "ef-SHAR le-hakh-LEEF bim-KOM"
+    },
+    {
+      "id": "l2_keep_top",
+      "target": "תשאיר את האורך למעלה, בבקשה.",
+      "pronunciation_easy": "tash-EER et ha-O-rekh le-MA-la, be-va-ka-SHA"
+    },
+    {
+      "id": "l2_little_shorter",
+      "target": "קצת יותר קצר.",
+      "pronunciation_easy": "ktsat yo-TER ka-TSAR"
+    },
+    {
+      "id": "l2_shape_beard",
+      "target": "רק לסדר את הזקן, בבקשה.",
+      "pronunciation_easy": "rak le-sa-DER et ha-za-KAN, be-va-ka-SHA"
+    },
+    {
+      "id": "l2_mustache_longer",
+      "target": "תשאיר את השפם ארוך יותר.",
+      "pronunciation_easy": "tash-EER et ha-sa-FAM a-ROKH yo-TER"
+    },
+    {
+      "id": "l2_short_enough",
+      "target": "זה מספיק קצר, תודה.",
+      "pronunciation_easy": "ze mas-PEEK ka-TSAR, to-DA"
+    },
+    {
+      "id": "l2_match_photo",
+      "target": "אפשר לעשות כמו בתמונה הזאת?",
+      "pronunciation_easy": "ef-SHAR la-a-SOT kmo ba-tmu-NA ha-ZOT"
+    },
+    {
+      "id": "l2_more_length_here",
+      "target": "קצת יותר ארוך כאן.",
+      "pronunciation_easy": "ktsat yo-TER a-ROKH kan"
+    },
+    {
+      "id": "l2_walk_ins",
+      "target": "אפשר לבוא בלי תור?",
+      "pronunciation_easy": "ef-SHAR la-VO blee tor"
+    },
+    {
+      "id": "l2_opening_later",
+      "target": "יש תור פנוי מאוחר יותר?",
+      "pronunciation_easy": "yesh tor pa-NUY me-u-KHAR yo-TER"
+    },
+    {
+      "id": "l2_what_brings",
+      "target": "מה מביא אותך לכאן?",
+      "pronunciation_easy": "ma me-VEE ot-KHA le-KHAN"
+    },
+    {
+      "id": "l2_like_most",
+      "target": "מה אתה הכי אוהב בעיר הזאת?",
+      "pronunciation_easy": "ma a-TA ha-KHEE o-HEV ba-EER ha-ZOT"
+    },
+    {
+      "id": "l2_favorite_places",
+      "target": "יש לך מקומות אהובים?",
+      "pronunciation_easy": "yesh le-KHA me-ko-MOT a-hu-VEEM"
+    },
+    {
+      "id": "l2_weekends",
+      "target": "מה אתה עושה בסופי שבוע?",
+      "pronunciation_easy": "ma a-TA o-SE be-so-FEY sha-VU-a"
+    },
+    {
+      "id": "l2_like_too",
+      "target": "גם אתה אוהב ___?",
+      "pronunciation_easy": "gam a-TA o-HEV ___"
+    },
+    {
+      "id": "l2_join_us",
+      "target": "רוצה להצטרף אלינו?",
+      "pronunciation_easy": "ro-TSE le-hits-ta-REF e-LEY-nu"
+    },
+    {
+      "id": "l2_meeting_at",
+      "target": "אנחנו נפגשים ___.",
+      "pronunciation_easy": "a-NAKH-nu nif-ga-SHEEM ___",
+      "qa": "The blank holds the whole time or place with its little word (\"at seven\", \"at the station\"), because that word changes in most languages."
+    },
+    {
+      "id": "l2_no_worries",
+      "target": "אין בעיה אם אתה עסוק.",
+      "pronunciation_easy": "eyn be-a-YA im a-TA a-SOOK"
     }
   ],
   "vocab": {
@@ -2006,6 +2164,82 @@
         "target": "ההזמנה שלי היא לחמישה לילות.",
         "pronunciation_easy": "ha-haz-ma-NA she-LEE hee la-kha-mee-SHA ley-LOT"
       }
+    ],
+    "l2_come_in": [
+      {
+        "word": "small",
+        "target": "יש את זה במידה קטנה?",
+        "pronunciation_easy": "yesh et ze be-mee-DA kta-NA"
+      },
+      {
+        "word": "medium",
+        "target": "יש את זה במידה בינונית?",
+        "pronunciation_easy": "yesh et ze be-mee-DA bey-no-NEET"
+      },
+      {
+        "word": "large",
+        "target": "יש את זה במידה גדולה?",
+        "pronunciation_easy": "yesh et ze be-mee-DA gdo-LA"
+      },
+      {
+        "word": "black",
+        "target": "יש את זה בשחור?",
+        "pronunciation_easy": "yesh et ze be-sha-KHOR"
+      },
+      {
+        "word": "blue",
+        "target": "יש את זה בכחול?",
+        "pronunciation_easy": "yesh et ze be-ka-KHOL"
+      }
+    ],
+    "l2_like_too": [
+      {
+        "word": "music",
+        "target": "גם אתה אוהב מוזיקה?",
+        "pronunciation_easy": "gam a-TA o-HEV MOO-zee-ka"
+      },
+      {
+        "word": "dancing",
+        "target": "גם אתה אוהב לרקוד?",
+        "pronunciation_easy": "gam a-TA o-HEV lir-KOD"
+      },
+      {
+        "word": "hiking",
+        "target": "גם אתה אוהב טיולי שטח?",
+        "pronunciation_easy": "gam a-TA o-HEV tee-yu-LEY SHE-takh"
+      },
+      {
+        "word": "travel",
+        "target": "גם אתה אוהב לטייל בעולם?",
+        "pronunciation_easy": "gam a-TA o-HEV le-ta-YEL ba-o-LAM"
+      },
+      {
+        "word": "sports",
+        "target": "גם אתה אוהב ספורט?",
+        "pronunciation_easy": "gam a-TA o-HEV sport"
+      }
+    ],
+    "l2_meeting_at": [
+      {
+        "word": "seven",
+        "target": "אנחנו נפגשים בשבע.",
+        "pronunciation_easy": "a-NAKH-nu nif-ga-SHEEM be-SHE-va"
+      },
+      {
+        "word": "eight_thirty",
+        "target": "אנחנו נפגשים בשמונה וחצי.",
+        "pronunciation_easy": "a-NAKH-nu nif-ga-SHEEM bi-SHMO-ne va-KHE-tsee"
+      },
+      {
+        "word": "station",
+        "target": "אנחנו נפגשים בתחנה.",
+        "pronunciation_easy": "a-NAKH-nu nif-ga-SHEEM ba-ta-kha-NA"
+      },
+      {
+        "word": "hotel",
+        "target": "אנחנו נפגשים במלון.",
+        "pronunciation_easy": "a-NAKH-nu nif-ga-SHEEM ba-ma-LON"
+      }
     ]
   },
   "replies": {
@@ -2235,6 +2469,58 @@
     "l2_exit_three": {
       "target": "צא ביציאה שלוש.",
       "pronunciation_easy": "tse ba-ye-tsee-A sha-LOSH"
+    },
+    "l2_hot_or_iced": {
+      "target": "חם או קר?",
+      "pronunciation_easy": "kham o kar"
+    },
+    "l2_only_inside": {
+      "target": "כרגע רק בפנים.",
+      "pronunciation_easy": "ka-RE-ga rak bif-NEEM"
+    },
+    "l2_let_me_check": {
+      "target": "אני אבדוק.",
+      "pronunciation_easy": "a-NEE ev-DOK"
+    },
+    "l2_this_better": {
+      "target": "זה באיכות טובה יותר.",
+      "pronunciation_easy": "ze be-ey-KHOOT to-VA yo-TER"
+    },
+    "l2_within_days": {
+      "target": "רק תוך ארבעה עשר יום.",
+      "pronunciation_easy": "rak tokh ar-ba-A a-SAR yom"
+    },
+    "l2_how_short_sides": {
+      "target": "כמה קצר בצדדים?",
+      "pronunciation_easy": "KA-ma ka-TSAR ba-tsda-DEEM"
+    },
+    "l2_trim_mustache": {
+      "target": "לקצר גם את השפם?",
+      "pronunciation_easy": "le-ka-TSER gam et ha-sa-FAM"
+    },
+    "l2_exactly_like": {
+      "target": "בדיוק ככה?",
+      "pronunciation_easy": "be-dee-YUK KA-kha"
+    },
+    "l2_fully_booked": {
+      "target": "היום אנחנו מלאים.",
+      "pronunciation_easy": "ha-YOM a-NAKH-nu mle-EEM"
+    },
+    "l2_here_for_work": {
+      "target": "אני פה בשביל העבודה.",
+      "pronunciation_easy": "a-NEE po bish-VEEL ha-a-vo-DA"
+    },
+    "l2_food_people": {
+      "target": "האוכל והאנשים.",
+      "pronunciation_easy": "ha-O-khel ve-ha-a-na-SHEEM"
+    },
+    "l2_go_hiking": {
+      "target": "בדרך כלל אני יוצא לטיולים.",
+      "pronunciation_easy": "be-DE-rekh klal a-NEE yo-TSE le-tee-yu-LEEM"
+    },
+    "l2_maybe_what_time": {
+      "target": "אולי. באיזו שעה?",
+      "pronunciation_easy": "u-LAI. be-EY-zo sha-A"
     }
   }
 }

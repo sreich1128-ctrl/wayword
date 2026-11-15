@@ -1,0 +1,58 @@
+l2_oat_milk | אפשר עם חלב שיבולת שועל? | ef-SHAR im kha-LAV shee-BO-let shu-AL
+l2_iced_please | קר, בבקשה. | kar, be-va-ka-SHA
+l2_sit_outside | אפשר לשבת בחוץ? | ef-SHAR la-SHE-vet ba-KHUTS
+l2_how_long_wait | כמה זמן מחכים? | KA-ma zman me-kha-KEEM
+l2_to_go_instead | אז אקח טייק אוויי. | az e-KAKH teyk-e-WEY
+l2_come_in | יש את זה ב___? | yesh et ze be-___
+l2_larger_size | אפשר למדוד מידה גדולה יותר? | ef-SHAR lim-DOD mee-DA gdo-LA yo-TER
+l2_doesnt_fit | זה לא מתאים לי. | ze lo mat-EEM lee
+l2_difference | מה ההבדל בין אלה? | ma ha-hev-DEL beyn E-le
+l2_which_recommend | על מה אתה ממליץ? | al ma a-TA mam-LEETS
+l2_cheaper_option | אפשר לראות משהו זול יותר? | ef-SHAR lir-OT MA-she-hu zol yo-TER
+l2_return_this | אפשר להחזיר את זה? | ef-SHAR le-hakh-ZEER et ze
+l2_need_receipt | צריך את הקבלה? | tsa-REEKH et ha-ka-ba-LA
+l2_exchange_instead | אפשר להחליף במקום? | ef-SHAR le-hakh-LEEF bim-KOM
+l2_keep_top | תשאיר את האורך למעלה, בבקשה. | tash-EER et ha-O-rekh le-MA-la, be-va-ka-SHA
+l2_little_shorter | קצת יותר קצר. | ktsat yo-TER ka-TSAR
+l2_shape_beard | רק לסדר את הזקן, בבקשה. | rak le-sa-DER et ha-za-KAN, be-va-ka-SHA
+l2_mustache_longer | תשאיר את השפם ארוך יותר. | tash-EER et ha-sa-FAM a-ROKH yo-TER
+l2_short_enough | זה מספיק קצר, תודה. | ze mas-PEEK ka-TSAR, to-DA
+l2_match_photo | אפשר לעשות כמו בתמונה הזאת? | ef-SHAR la-a-SOT kmo ba-tmu-NA ha-ZOT
+l2_more_length_here | קצת יותר ארוך כאן. | ktsat yo-TER a-ROKH kan
+l2_walk_ins | אפשר לבוא בלי תור? | ef-SHAR la-VO blee tor
+l2_opening_later | יש תור פנוי מאוחר יותר? | yesh tor pa-NUY me-u-KHAR yo-TER
+l2_what_brings | מה מביא אותך לכאן? | ma me-VEE ot-KHA le-KHAN
+l2_like_most | מה אתה הכי אוהב בעיר הזאת? | ma a-TA ha-KHEE o-HEV ba-EER ha-ZOT
+l2_favorite_places | יש לך מקומות אהובים? | yesh le-KHA me-ko-MOT a-hu-VEEM
+l2_weekends | מה אתה עושה בסופי שבוע? | ma a-TA o-SE be-so-FEY sha-VU-a
+l2_like_too | גם אתה אוהב ___? | gam a-TA o-HEV ___
+l2_join_us | רוצה להצטרף אלינו? | ro-TSE le-hits-ta-REF e-LEY-nu
+l2_meeting_at | אנחנו נפגשים ___. | a-NAKH-nu nif-ga-SHEEM ___
+l2_no_worries | אין בעיה אם אתה עסוק. | eyn be-a-YA im a-TA a-SOOK
+r:l2_hot_or_iced | חם או קר? | kham o kar
+r:l2_only_inside | כרגע רק בפנים. | ka-RE-ga rak bif-NEEM
+r:l2_let_me_check | אני אבדוק. | a-NEE ev-DOK
+r:l2_this_better | זה באיכות טובה יותר. | ze be-ey-KHOOT to-VA yo-TER
+r:l2_within_days | רק תוך ארבעה עשר יום. | rak tokh ar-ba-A a-SAR yom
+r:l2_how_short_sides | כמה קצר בצדדים? | KA-ma ka-TSAR ba-tsda-DEEM
+r:l2_trim_mustache | לקצר גם את השפם? | le-ka-TSER gam et ha-sa-FAM
+r:l2_exactly_like | בדיוק ככה? | be-dee-YUK KA-kha
+r:l2_fully_booked | היום אנחנו מלאים. | ha-YOM a-NAKH-nu mle-EEM
+r:l2_here_for_work | אני פה בשביל העבודה. | a-NEE po bish-VEEL ha-a-vo-DA
+r:l2_food_people | האוכל והאנשים. | ha-O-khel ve-ha-a-na-SHEEM
+r:l2_go_hiking | בדרך כלל אני יוצא לטיולים. | be-DE-rekh klal a-NEE yo-TSE le-tee-yu-LEEM
+r:l2_maybe_what_time | אולי. באיזו שעה? | u-LAI. be-EY-zo sha-A
+x:l2_come_in~small | יש את זה במידה קטנה? | yesh et ze be-mee-DA kta-NA
+x:l2_come_in~medium | יש את זה במידה בינונית? | yesh et ze be-mee-DA bey-no-NEET
+x:l2_come_in~large | יש את זה במידה גדולה? | yesh et ze be-mee-DA gdo-LA
+x:l2_come_in~black | יש את זה בשחור? | yesh et ze be-sha-KHOR
+x:l2_come_in~blue | יש את זה בכחול? | yesh et ze be-ka-KHOL
+x:l2_like_too~music | גם אתה אוהב מוזיקה? | gam a-TA o-HEV MOO-zee-ka
+x:l2_like_too~dancing | גם אתה אוהב לרקוד? | gam a-TA o-HEV lir-KOD
+x:l2_like_too~hiking | גם אתה אוהב טיולי שטח? | gam a-TA o-HEV tee-yu-LEY SHE-takh
+x:l2_like_too~travel | גם אתה אוהב לטייל בעולם? | gam a-TA o-HEV le-ta-YEL ba-o-LAM
+x:l2_like_too~sports | גם אתה אוהב ספורט? | gam a-TA o-HEV sport
+x:l2_meeting_at~seven | אנחנו נפגשים בשבע. | a-NAKH-nu nif-ga-SHEEM be-SHE-va
+x:l2_meeting_at~eight_thirty | אנחנו נפגשים בשמונה וחצי. | a-NAKH-nu nif-ga-SHEEM bi-SHMO-ne va-KHE-tsee
+x:l2_meeting_at~station | אנחנו נפגשים בתחנה. | a-NAKH-nu nif-ga-SHEEM ba-ta-kha-NA
+x:l2_meeting_at~hotel | אנחנו נפגשים במלון. | a-NAKH-nu nif-ga-SHEEM ba-ma-LON

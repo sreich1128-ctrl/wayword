@@ -866,6 +866,163 @@
       "id": "l2_is_elevator",
       "target": "في مصعد؟",
       "pronunciation_easy": "fee MAS-'ad"
+    },
+    {
+      "id": "l2_oat_milk",
+      "target": "ممكن مع حليب شوفان؟",
+      "pronunciation_easy": "MUM-kin ma' ha-LEEB shoo-FAAN"
+    },
+    {
+      "id": "l2_iced_please",
+      "target": "بارد، لو سمحت.",
+      "pronunciation_easy": "BAA-red, law sa-MAHT"
+    },
+    {
+      "id": "l2_sit_outside",
+      "target": "ممكن أقعد برّا؟",
+      "pronunciation_easy": "MUM-kin A'-od BAR-ra"
+    },
+    {
+      "id": "l2_how_long_wait",
+      "target": "قديش لازم أستنى؟",
+      "pronunciation_easy": "ad-DAYSH LAA-zim as-TAN-na"
+    },
+    {
+      "id": "l2_to_go_instead",
+      "target": "خلص، باخده سفري.",
+      "pronunciation_easy": "kha-LAS, BAA-khdoh SAF-ree"
+    },
+    {
+      "id": "l2_come_in",
+      "target": "في من هاد ___؟",
+      "pronunciation_easy": "fee min haad ___"
+    },
+    {
+      "id": "l2_larger_size",
+      "target": "ممكن أجرّب مقاس أكبر؟",
+      "pronunciation_easy": "MUM-kin a-JAR-reb ma-AAS AK-bar"
+    },
+    {
+      "id": "l2_doesnt_fit",
+      "target": "هاد مش زابط عليّ.",
+      "pronunciation_easy": "haad mish ZAA-bet a-LAY-ya"
+    },
+    {
+      "id": "l2_difference",
+      "target": "شو الفرق بين هدول؟",
+      "pronunciation_easy": "shoo il-FAR' bayn ha-DOHL"
+    },
+    {
+      "id": "l2_which_recommend",
+      "target": "بأي واحد بتنصحني؟",
+      "pronunciation_easy": "b-AY WAA-hed btin-SAH-nee"
+    },
+    {
+      "id": "l2_cheaper_option",
+      "target": "ممكن تفرجيني إشي أرخص؟",
+      "pronunciation_easy": "MUM-kin tfar-JEE-nee ISH-ee AR-khas"
+    },
+    {
+      "id": "l2_return_this",
+      "target": "ممكن أرجّع هاد؟",
+      "pronunciation_easy": "MUM-kin a-RAJ-je' haad"
+    },
+    {
+      "id": "l2_need_receipt",
+      "target": "لازم الفاتورة؟",
+      "pronunciation_easy": "LAA-zim il-faa-TOO-ra"
+    },
+    {
+      "id": "l2_exchange_instead",
+      "target": "ممكن أبدّله بدل هيك؟",
+      "pronunciation_easy": "MUM-kin a-BAD-d-loh BA-dal hayk"
+    },
+    {
+      "id": "l2_keep_top",
+      "target": "خلّي الطول من فوق، لو سمحت.",
+      "pronunciation_easy": "KHAL-lee it-TOOL min foh', law sa-MAHT"
+    },
+    {
+      "id": "l2_little_shorter",
+      "target": "أقصر شوي.",
+      "pronunciation_easy": "A'-sar SHWAY"
+    },
+    {
+      "id": "l2_shape_beard",
+      "target": "بس رتّب الدقن، لو سمحت.",
+      "pronunciation_easy": "bas RAT-teb id-DA'n, law sa-MAHT"
+    },
+    {
+      "id": "l2_mustache_longer",
+      "target": "خلّي الشنب أطول.",
+      "pronunciation_easy": "KHAL-lee ish-SHA-nab AT-wal"
+    },
+    {
+      "id": "l2_short_enough",
+      "target": "هيك منيح، شكراً.",
+      "pronunciation_easy": "hayk mneeH, SHUK-ran"
+    },
+    {
+      "id": "l2_match_photo",
+      "target": "ممكن تعملها زي هالصورة؟",
+      "pronunciation_easy": "MUM-kin ti'-MAL-ha zay has-SOO-ra"
+    },
+    {
+      "id": "l2_more_length_here",
+      "target": "أطول شوي هون.",
+      "pronunciation_easy": "AT-wal SHWAY hoon"
+    },
+    {
+      "id": "l2_walk_ins",
+      "target": "بتستقبلوا بدون موعد؟",
+      "pronunciation_easy": "btis-ta'-BI-loo bi-DOON MAW-'ed"
+    },
+    {
+      "id": "l2_opening_later",
+      "target": "في موعد فاضي بعدين؟",
+      "pronunciation_easy": "fee MAW-'ed FAA-dee ba'-DAYN"
+    },
+    {
+      "id": "l2_what_brings",
+      "target": "شو جابك لهون؟",
+      "pronunciation_easy": "shoo JAA-bak la-HOON",
+      "qa": "To a woman: جابِك (JAA-bek)."
+    },
+    {
+      "id": "l2_like_most",
+      "target": "شو أكتر إشي بتحبه بهالمدينة؟",
+      "pronunciation_easy": "shoo AK-tar ISH-ee bit-HIB-boh b-hal-ma-DEE-neh"
+    },
+    {
+      "id": "l2_favorite_places",
+      "target": "عندك أماكن مفضّلة؟",
+      "pronunciation_easy": "IN-dak a-MAA-ken m-FAD-da-leh"
+    },
+    {
+      "id": "l2_weekends",
+      "target": "شو بتعمل بنهاية الأسبوع؟",
+      "pronunciation_easy": "shoo BTI'-mal b-ni-HAA-yit il-us-BOO'"
+    },
+    {
+      "id": "l2_like_too",
+      "target": "إنت كمان بتحب ___؟",
+      "pronunciation_easy": "IN-ta ka-MAAN bit-HIB ___"
+    },
+    {
+      "id": "l2_join_us",
+      "target": "بتحب تيجي معنا؟",
+      "pronunciation_easy": "bit-HIB TEE-jee MA'-na"
+    },
+    {
+      "id": "l2_meeting_at",
+      "target": "رح نتلاقى ___.",
+      "pronunciation_easy": "rah nit-LAA-a ___",
+      "qa": "The blank holds the whole time or place with its little word (\"at seven\", \"at the station\"), because that word changes in most languages."
+    },
+    {
+      "id": "l2_no_worries",
+      "target": "مش مشكلة إذا مشغول.",
+      "pronunciation_easy": "mish MUSH-ki-leh I-za mash-GHOOL"
     }
   ],
   "vocab": {
@@ -2033,6 +2190,82 @@
         "target": "حجزي لخمس ليالي.",
         "pronunciation_easy": "HAJ-zee la-KHAMS la-YAA-lee"
       }
+    ],
+    "l2_come_in": [
+      {
+        "word": "small",
+        "target": "في من هاد مقاس صغير؟",
+        "pronunciation_easy": "fee min haad ma-AAS z-GHEER"
+      },
+      {
+        "word": "medium",
+        "target": "في من هاد مقاس وسط؟",
+        "pronunciation_easy": "fee min haad ma-AAS WA-sat"
+      },
+      {
+        "word": "large",
+        "target": "في من هاد مقاس كبير؟",
+        "pronunciation_easy": "fee min haad ma-AAS k-BEER"
+      },
+      {
+        "word": "black",
+        "target": "في من هاد باللون الأسود؟",
+        "pronunciation_easy": "fee min haad bil-LOHN il-AS-wad"
+      },
+      {
+        "word": "blue",
+        "target": "في من هاد باللون الأزرق؟",
+        "pronunciation_easy": "fee min haad bil-LOHN il-AZ-ra'"
+      }
+    ],
+    "l2_like_too": [
+      {
+        "word": "music",
+        "target": "إنت كمان بتحب الموسيقى؟",
+        "pronunciation_easy": "IN-ta ka-MAAN bit-HIB il-moo-SEE-a"
+      },
+      {
+        "word": "dancing",
+        "target": "إنت كمان بتحب الرقص؟",
+        "pronunciation_easy": "IN-ta ka-MAAN bit-HIB ir-RA's"
+      },
+      {
+        "word": "hiking",
+        "target": "إنت كمان بتحب المشي بالطبيعة؟",
+        "pronunciation_easy": "IN-ta ka-MAAN bit-HIB il-MA-shee bit-ta-BEE-'a"
+      },
+      {
+        "word": "travel",
+        "target": "إنت كمان بتحب السفر؟",
+        "pronunciation_easy": "IN-ta ka-MAAN bit-HIB is-SA-far"
+      },
+      {
+        "word": "sports",
+        "target": "إنت كمان بتحب الرياضة؟",
+        "pronunciation_easy": "IN-ta ka-MAAN bit-HIB ir-ree-YAA-da"
+      }
+    ],
+    "l2_meeting_at": [
+      {
+        "word": "seven",
+        "target": "رح نتلاقى الساعة سبعة.",
+        "pronunciation_easy": "rah nit-LAA-a is-SAA-a SAB-'a"
+      },
+      {
+        "word": "eight_thirty",
+        "target": "رح نتلاقى الساعة تمانية ونص.",
+        "pronunciation_easy": "rah nit-LAA-a is-SAA-a ta-MAAN-yeh oo-NUSS"
+      },
+      {
+        "word": "station",
+        "target": "رح نتلاقى عند المحطة.",
+        "pronunciation_easy": "rah nit-LAA-a ind il-ma-HAT-ta"
+      },
+      {
+        "word": "hotel",
+        "target": "رح نتلاقى عند الفندق.",
+        "pronunciation_easy": "rah nit-LAA-a ind il-FUN-du'"
+      }
     ]
   },
   "replies": {
@@ -2265,6 +2498,59 @@
     "l2_exit_three": {
       "target": "اطلع من مخرج تلاتة.",
       "pronunciation_easy": "IT-la' min MAKH-raj ta-LAA-teh"
+    },
+    "l2_hot_or_iced": {
+      "target": "سخن ولا بارد؟",
+      "pronunciation_easy": "sukhn WAL-la BAA-red"
+    },
+    "l2_only_inside": {
+      "target": "هلأ بس جوّا.",
+      "pronunciation_easy": "HAL-la' bas JUW-wa"
+    },
+    "l2_let_me_check": {
+      "target": "خليني أشوف.",
+      "pronunciation_easy": "khal-LEE-nee a-SHOOF"
+    },
+    "l2_this_better": {
+      "target": "هاد نوعيته أحسن.",
+      "pronunciation_easy": "haad naw-'EE-toh AH-san"
+    },
+    "l2_within_days": {
+      "target": "بس خلال أربعطعشر يوم.",
+      "pronunciation_easy": "bas khi-LAAL ar-ba'-TA'-shar yom",
+      "qa": "Reviewer: confirm أربعطعشر for fourteen in this dialect."
+    },
+    "l2_how_short_sides": {
+      "target": "قديش أقصّر من الجناب؟",
+      "pronunciation_easy": "ad-DAYSH a-AS-ser min le-JNAAB"
+    },
+    "l2_trim_mustache": {
+      "target": "أخفّف الشنب؟",
+      "pronunciation_easy": "a-KHAF-fef ish-SHA-nab"
+    },
+    "l2_exactly_like": {
+      "target": "بالزبط هيك؟",
+      "pronunciation_easy": "biz-ZABT hayk"
+    },
+    "l2_fully_booked": {
+      "target": "اليوم كله محجوز.",
+      "pronunciation_easy": "il-YOM KUL-loh mah-JOOZ"
+    },
+    "l2_here_for_work": {
+      "target": "أنا هون للشغل.",
+      "pronunciation_easy": "A-na hoon lash-SHUGHL"
+    },
+    "l2_food_people": {
+      "target": "الأكل والناس.",
+      "pronunciation_easy": "il-AKL win-NAAS"
+    },
+    "l2_go_hiking": {
+      "target": "عادةً بطلع مشي بالطبيعة.",
+      "pronunciation_easy": "AA-da-tan BAT-la' MA-shee bit-ta-BEE-'a"
+    },
+    "l2_maybe_what_time": {
+      "target": "يمكن. أي ساعة؟",
+      "pronunciation_easy": "YIM-kin. ay SAA-a"
     }
   }
 }

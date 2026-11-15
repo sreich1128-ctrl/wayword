@@ -1,0 +1,58 @@
+l2_oat_milk | Можно на овсяном молоке? | MOZH-nah nah ahf-SYAH-nahm mah-lah-KYEH
+l2_iced_please | Холодный, пожалуйста. | khah-LOD-ny, pah-ZHAH-loo-stah
+l2_sit_outside | Можно сесть на улице? | MOZH-nah syest nah OO-lee-tseh
+l2_how_long_wait | Сколько ждать? | SKOL-kah zhdat
+l2_to_go_instead | Тогда я возьму с собой. | tahg-DAH ya vahz-MOO s sah-BOY
+l2_come_in | У вас есть это ___? | oo vahs yest EH-tah ___
+l2_larger_size | Можно примерить размер побольше? | MOZH-nah pree-MYEH-reet rahz-MYER pah-BOL-sheh
+l2_doesnt_fit | Это мне не подходит. | EH-tah mnyeh nee paht-KHOH-deet
+l2_difference | Чем они отличаются? | chem ah-NEE aht-lee-CHAH-yoot-sah
+l2_which_recommend | Что вы посоветуете? | shtoh vy pah-sah-VYEH-too-yeh-tyeh
+l2_cheaper_option | Можете показать что-нибудь подешевле? | MOH-zhuh-tyeh pah-kah-ZAT SHTOH-nee-boot pah-dee-SHEV-lyeh
+l2_return_this | Это можно вернуть? | EH-tah MOZH-nah veer-NOOT
+l2_need_receipt | Нужен чек? | NOO-zheen chek
+l2_exchange_instead | А обменять можно? | ah ahb-mee-NYAT MOZH-nah
+l2_keep_top | Сверху длину оставьте, пожалуйста. | SVYEHR-khoo dlee-NOO ah-STAHV-tyeh, pah-ZHAH-loo-stah
+l2_little_shorter | Чуть короче. | choot kah-ROH-cheh
+l2_shape_beard | Только подровнять бороду, пожалуйста. | TOL-kah pah-drahv-NYAT BOH-rah-doo, pah-ZHAH-loo-stah
+l2_mustache_longer | Усы оставьте подлиннее. | oo-SY ah-STAHV-tyeh pah-dlee-NYEH-yeh
+l2_short_enough | Так достаточно, спасибо. | tak dah-STAH-tahch-nah, spah-SEE-bah
+l2_match_photo | Можете сделать как на этом фото? | MOH-zhuh-tyeh ZDYEH-lat kak nah EH-tahm FOH-tah
+l2_more_length_here | Здесь чуть длиннее. | zdyes choot dlee-NYEH-yeh
+l2_walk_ins | Можно без записи? | MOZH-nah byez ZAH-pee-see
+l2_opening_later | Есть время попозже? | yest VRYEH-myah pah-POH-zheh
+l2_what_brings | Что тебя сюда привело? | shtoh tee-BYAH syoo-DAH pree-vee-LOH
+l2_like_most | Что тебе больше всего нравится в этом городе? | shtoh tee-BYEH BOL-sheh fsee-VOH NRAH-veet-sah v EH-tahm GOH-rah-dyeh
+l2_favorite_places | Есть любимые места? | yest lyoo-BEE-my-yeh mees-TAH
+l2_weekends | Что ты делаешь по выходным? | shtoh ty DYEH-lah-yesh pah vy-khahd-NYM
+l2_like_too | Тебе тоже нравится ___? | tee-BYEH TOH-zheh NRAH-veet-sah ___
+l2_join_us | Хочешь пойти с нами? | KHOH-chesh pai-TEE s NAH-mee
+l2_meeting_at | Мы встречаемся ___. | my fstree-CHAH-yem-sah ___
+l2_no_worries | Ничего страшного, если не сможешь. | nee-chee-VOH STRAHSH-nah-vah, YES-lee nee SMOH-zhesh
+r:l2_hot_or_iced | Горячий или холодный? | gah-RYAH-chee EE-lee khah-LOD-ny
+r:l2_only_inside | Сейчас только внутри. | see-CHAHS TOL-kah vnoo-TREE
+r:l2_let_me_check | Сейчас посмотрю. | see-CHAHS pah-smah-TRYOO
+r:l2_this_better | Этот более качественный. | EH-taht BOH-lyeh-yeh KAH-chest-vee-ny
+r:l2_within_days | Только в течение четырнадцати дней. | TOL-kah f tee-CHEH-nee-ee chee-TYR-nah-tsah-tee dnyey
+r:l2_how_short_sides | Насколько коротко по бокам? | nah-SKOL-kah KOH-raht-kah pah bah-KAHM
+r:l2_trim_mustache | Усы подровнять? | oo-SY pah-drahv-NYAT
+r:l2_exactly_like | Точно так же? | TOCH-nah tak zheh
+r:l2_fully_booked | Сегодня всё занято. | see-VOD-nyah fsyo ZAH-nee-tah
+r:l2_here_for_work | Я здесь по работе. | ya zdyes pah rah-BOH-tyeh
+r:l2_food_people | Еда и люди. | yee-DAH ee LYOO-dee
+r:l2_go_hiking | Обычно хожу в походы. | ah-BYCH-nah khah-ZHOO f pah-KHOH-dy
+r:l2_maybe_what_time | Может быть. Во сколько? | MOH-zhet byt. vah SKOL-kah
+x:l2_come_in~small | У вас есть это маленького размера? | oo vahs yest EH-tah MAH-leen-kah-vah rahz-MYEH-rah
+x:l2_come_in~medium | У вас есть это среднего размера? | oo vahs yest EH-tah SRYED-nee-vah rahz-MYEH-rah
+x:l2_come_in~large | У вас есть это большого размера? | oo vahs yest EH-tah bahl-SHOH-vah rahz-MYEH-rah
+x:l2_come_in~black | У вас есть это в чёрном цвете? | oo vahs yest EH-tah f CHOR-nahm TSVYEH-tyeh
+x:l2_come_in~blue | У вас есть это в синем цвете? | oo vahs yest EH-tah f SEE-nyem TSVYEH-tyeh
+x:l2_like_too~music | Тебе тоже нравится музыка? | tee-BYEH TOH-zheh NRAH-veet-sah MOO-zy-kah
+x:l2_like_too~dancing | Тебе тоже нравится танцевать? | tee-BYEH TOH-zheh NRAH-veet-sah tahn-tseh-VAT
+x:l2_like_too~hiking | Тебе тоже нравится ходить в походы? | tee-BYEH TOH-zheh NRAH-veet-sah khah-DEET f pah-KHOH-dy
+x:l2_like_too~travel | Тебе тоже нравится путешествовать? | tee-BYEH TOH-zheh NRAH-veet-sah poo-tee-SHEST-vah-vat
+x:l2_like_too~sports | Тебе тоже нравится спорт? | tee-BYEH TOH-zheh NRAH-veet-sah sport
+x:l2_meeting_at~seven | Мы встречаемся в семь. | my fstree-CHAH-yem-sah f syem
+x:l2_meeting_at~eight_thirty | Мы встречаемся в восемь тридцать. | my fstree-CHAH-yem-sah v VOH-seem TREE-tsat
+x:l2_meeting_at~station | Мы встречаемся на вокзале. | my fstree-CHAH-yem-sah nah vahk-ZAH-lyeh
+x:l2_meeting_at~hotel | Мы встречаемся в отеле. | my fstree-CHAH-yem-sah v ah-TEH-lyeh
