@@ -1016,6 +1016,221 @@
       "id": "l2_no_worries",
       "target": "Nessun problema se non puoi.",
       "pronunciation_easy": "nes-SOON proh-BLEH-mah seh non pwoy"
+    },
+    {
+      "id": "l2_do_something",
+      "target": "Ti va di fare qualcosa questo fine settimana?",
+      "pronunciation_easy": "tee vah dee FAH-reh kwahl-KOH-zah KWEH-stoh FEE-neh set-tee-MAH-nah"
+    },
+    {
+      "id": "l2_next_week",
+      "target": "E la settimana prossima?",
+      "pronunciation_easy": "eh lah set-tee-MAH-nah PROS-see-mah",
+      "qa": "Only after a 'busy' answer. If the answer was a no, say 'No worries, another time.' instead."
+    },
+    {
+      "id": "l2_another_time",
+      "target": "Nessun problema, un'altra volta.",
+      "pronunciation_easy": "nes-SOON proh-BLEH-mah, oon-AHL-trah VOL-tah"
+    },
+    {
+      "id": "l2_message_tomorrow",
+      "target": "Posso scriverti domani?",
+      "pronunciation_easy": "POS-soh SKREE-vehr-tee doh-MAH-nee"
+    },
+    {
+      "id": "l2_best_way_reach",
+      "target": "Qual è il modo migliore per contattarti?",
+      "pronunciation_easy": "kwah-LEH eel MOH-doh mee-LYOH-reh pehr kon-taht-TAR-tee"
+    },
+    {
+      "id": "l2_only_if_comfortable",
+      "target": "Solo se ti va.",
+      "pronunciation_easy": "SOH-loh seh tee vah"
+    },
+    {
+      "id": "l2_stay_with_friends",
+      "target": "Preferisco restare con i miei amici.",
+      "pronunciation_easy": "preh-feh-REES-koh res-TAH-reh kon ee myay ah-MEE-chee",
+      "qa": "PRIORITY REVIEW (a boundary: a clear, polite no)."
+    },
+    {
+      "id": "l2_thanks_understanding",
+      "target": "Grazie per la comprensione.",
+      "pronunciation_easy": "GRAH-tsyeh pehr lah kom-pren-SYOH-neh"
+    },
+    {
+      "id": "l2_give_space",
+      "target": "Mi lasci un po' di spazio, per favore.",
+      "pronunciation_easy": "mee LAH-shee oon poh dee SPAH-tsyoh, pehr fah-VOH-reh",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "l2_check_bag",
+      "target": "Posso imbarcare questa valigia?",
+      "pronunciation_easy": "POS-soh eem-bar-KAH-reh KWEH-stah vah-LEE-jah"
+    },
+    {
+      "id": "l2_rearrange",
+      "target": "Posso sistemare diversamente il bagaglio?",
+      "pronunciation_easy": "POS-soh sees-teh-MAH-reh dee-vehr-sah-MEN-teh eel bah-GAH-lyoh"
+    },
+    {
+      "id": "l2_make_connection",
+      "target": "Riesco a prendere la coincidenza?",
+      "pronunciation_easy": "RYES-koh ah PREN-deh-reh lah koh-een-chee-DEN-tsah"
+    },
+    {
+      "id": "l2_security_again",
+      "target": "Devo rifare i controlli di sicurezza?",
+      "pronunciation_easy": "DEH-voh ree-FAH-reh ee kon-TROL-lee dee see-koo-RET-tsah"
+    },
+    {
+      "id": "l2_rebook",
+      "target": "Chi può aiutarmi a cambiare volo?",
+      "pronunciation_easy": "kee pwoh ah-yoo-TAR-mee ah kahm-BYAH-reh VOH-loh"
+    },
+    {
+      "id": "l2_track_bag",
+      "target": "Come posso rintracciare la mia valigia?",
+      "pronunciation_easy": "KOH-meh POS-soh reen-traht-CHAH-reh lah MEE-ah vah-LEE-jah"
+    },
+    {
+      "id": "l2_hotel_address",
+      "target": "Le serve l'indirizzo del mio hotel?",
+      "pronunciation_easy": "leh SEHR-veh leen-dee-REET-tsoh del MEE-oh oh-TEL"
+    },
+    {
+      "id": "l2_reference_number",
+      "target": "Posso avere un numero di pratica?",
+      "pronunciation_easy": "POS-soh ah-VEH-reh oon NOO-meh-roh dee PRAH-tee-kah"
+    },
+    {
+      "id": "l2_here_tourism",
+      "target": "Sono qui per turismo.",
+      "pronunciation_easy": "SOH-noh kwee pehr too-REEZ-moh",
+      "qa": "Border questions: say only what is true for your trip."
+    },
+    {
+      "id": "l2_leaving_on",
+      "target": "Riparto ___.",
+      "pronunciation_easy": "ree-PAR-toh ___"
+    },
+    {
+      "id": "l2_return_ticket",
+      "target": "Posso mostrarle il biglietto di ritorno.",
+      "pronunciation_easy": "POS-soh mos-TRAR-leh eel bee-LYET-toh dee ree-TOR-noh"
+    },
+    {
+      "id": "l2_book_ahead",
+      "target": "Bisogna prenotare in anticipo?",
+      "pronunciation_easy": "bee-ZOH-nyah preh-noh-TAH-reh een ahn-TEE-chee-poh"
+    },
+    {
+      "id": "l2_another_time_slot",
+      "target": "C'è un altro orario disponibile?",
+      "pronunciation_easy": "cheh oon AHL-troh oh-RAH-ryoh dees-poh-NEE-bee-leh"
+    },
+    {
+      "id": "l2_book_tomorrow",
+      "target": "Posso prenotare per domani?",
+      "pronunciation_easy": "POS-soh preh-noh-TAH-reh pehr doh-MAH-nee"
+    },
+    {
+      "id": "l2_audio_guide",
+      "target": "C'è un'audioguida in inglese?",
+      "pronunciation_easy": "cheh oon-ow-dyoh-GWEE-dah een een-GLEH-zeh"
+    },
+    {
+      "id": "l2_accessible",
+      "target": "È accessibile in sedia a rotelle?",
+      "pronunciation_easy": "eh aht-ches-SEE-bee-leh een SEH-dyah ah roh-TEL-leh"
+    },
+    {
+      "id": "l2_step_free",
+      "target": "C'è un percorso senza gradini?",
+      "pronunciation_easy": "cheh oon pehr-KOR-soh SEN-tsah grah-DEE-nee"
+    },
+    {
+      "id": "l2_local_specialty",
+      "target": "Qual è la specialità della casa?",
+      "pronunciation_easy": "kwah-LEH lah speh-chah-lee-TAH DEL-lah KAH-zah"
+    },
+    {
+      "id": "l2_how_strong",
+      "target": "È molto forte?",
+      "pronunciation_easy": "eh MOL-toh FOR-teh"
+    },
+    {
+      "id": "l2_something_lighter",
+      "target": "Preferisco qualcosa di più leggero.",
+      "pronunciation_easy": "preh-feh-REES-koh kwahl-KOH-zah dee pyoo led-JEH-roh"
+    },
+    {
+      "id": "l2_live_music",
+      "target": "C'è musica dal vivo stasera?",
+      "pronunciation_easy": "cheh MOO-zee-kah dahl VEE-voh stah-SEH-rah"
+    },
+    {
+      "id": "l2_entry_fee",
+      "target": "Si paga l'ingresso?",
+      "pronunciation_easy": "see PAH-gah leen-GRES-soh"
+    },
+    {
+      "id": "l2_call_taxi",
+      "target": "Può chiamarmi un taxi?",
+      "pronunciation_easy": "pwoh kyah-MAR-mee oon TAK-see"
+    },
+    {
+      "id": "l2_where_wait",
+      "target": "Dove aspetto?",
+      "pronunciation_easy": "DOH-veh ah-SPET-toh"
+    },
+    {
+      "id": "l2_safe_way_home",
+      "target": "Ho bisogno di tornare a casa in sicurezza.",
+      "pronunciation_easy": "oh bee-ZOH-nyoh dee tor-NAH-reh ah KAH-zah een see-koo-RET-tsah",
+      "qa": "PRIORITY REVIEW (safety)."
+    },
+    {
+      "id": "l2_total_price",
+      "target": "È il prezzo totale?",
+      "pronunciation_easy": "eh eel PRET-tsoh toh-TAH-leh"
+    },
+    {
+      "id": "l2_including_tax",
+      "target": "Quant'è tasse incluse?",
+      "pronunciation_easy": "kwahn-TEH TAHS-seh een-KLOO-zeh"
+    },
+    {
+      "id": "l2_morning_evening",
+      "target": "Di mattina o di sera?",
+      "pronunciation_easy": "dee maht-TEE-nah oh dee SEH-rah"
+    },
+    {
+      "id": "l2_how_early",
+      "target": "Quanto prima devo arrivare?",
+      "pronunciation_easy": "KWAHN-toh PREE-mah DEH-voh ar-ree-VAH-reh"
+    },
+    {
+      "id": "l2_per_person",
+      "target": "Il prezzo è a persona?",
+      "pronunciation_easy": "eel PRET-tsoh eh ah pehr-SOH-nah"
+    },
+    {
+      "id": "l2_only_need_tickets",
+      "target": "Mi servono solo ___ biglietti.",
+      "pronunciation_easy": "mee SEHR-voh-noh SOH-loh ___ bee-LYET-tee"
+    },
+    {
+      "id": "l2_change_for",
+      "target": "Ha da cambiare questa?",
+      "pronunciation_easy": "ah dah kahm-BYAH-reh KWEH-stah"
+    },
+    {
+      "id": "l2_pay_card_then",
+      "target": "Allora pago con la carta.",
+      "pronunciation_easy": "ahl-LOH-rah PAH-goh kon lah KAR-tah"
     }
   ],
   "vocab": {
@@ -2232,6 +2447,45 @@
         "target": "Ci vediamo all'hotel.",
         "pronunciation_easy": "chee veh-DYAH-moh ahl-loh-TEL"
       }
+    ],
+    "l2_leaving_on": [
+      {
+        "word": "monday",
+        "target": "Riparto lunedì.",
+        "pronunciation_easy": "ree-PAR-toh loo-neh-DEE"
+      },
+      {
+        "word": "friday",
+        "target": "Riparto venerdì.",
+        "pronunciation_easy": "ree-PAR-toh veh-nehr-DEE"
+      },
+      {
+        "word": "saturday",
+        "target": "Riparto sabato.",
+        "pronunciation_easy": "ree-PAR-toh SAH-bah-toh"
+      },
+      {
+        "word": "sunday",
+        "target": "Riparto domenica.",
+        "pronunciation_easy": "ree-PAR-toh doh-MEH-nee-kah"
+      }
+    ],
+    "l2_only_need_tickets": [
+      {
+        "word": "two",
+        "target": "Mi servono solo due biglietti.",
+        "pronunciation_easy": "mee SEHR-voh-noh SOH-loh DOO-eh bee-LYET-tee"
+      },
+      {
+        "word": "three",
+        "target": "Mi servono solo tre biglietti.",
+        "pronunciation_easy": "mee SEHR-voh-noh SOH-loh treh bee-LYET-tee"
+      },
+      {
+        "word": "four",
+        "target": "Mi servono solo quattro biglietti.",
+        "pronunciation_easy": "mee SEHR-voh-noh SOH-loh KWAHT-troh bee-LYET-tee"
+      }
     ]
   },
   "replies": {
@@ -2503,6 +2757,74 @@
     "l2_maybe_what_time": {
       "target": "Forse. A che ora?",
       "pronunciation_easy": "FOR-seh. ah keh OH-rah"
+    },
+    "l2_busy_weekend": {
+      "target": "Questo fine settimana sono impegnata/o.",
+      "pronunciation_easy": "KWEH-stoh FEE-neh set-tee-MAH-nah SOH-noh eem-peh-NYAH-tah/toh"
+    },
+    "l2_heres_number": {
+      "target": "Certo, ecco il mio numero.",
+      "pronunciation_easy": "CHEHR-toh, EK-koh eel MEE-oh NOO-meh-roh"
+    },
+    "l2_sorry_understand": {
+      "target": "Oh, scusa. Capisco.",
+      "pronunciation_easy": "oh, SKOO-zah. kah-PEES-koh"
+    },
+    "l2_over_weight": {
+      "target": "Supera il limite di peso.",
+      "pronunciation_easy": "SOO-peh-rah eel LEE-mee-teh dee PEH-zoh"
+    },
+    "l2_boarding_closes": {
+      "target": "L'imbarco chiude tra venti minuti.",
+      "pronunciation_easy": "leem-BAR-koh KYOO-deh trah VEN-tee mee-NOO-tee"
+    },
+    "l2_deliver_tomorrow": {
+      "target": "Possiamo consegnarla domani.",
+      "pronunciation_easy": "pos-SYAH-moh kon-seh-NYAR-lah doh-MAH-nee"
+    },
+    "l2_flying_home": {
+      "target": "Quando riparte?",
+      "pronunciation_easy": "KWAHN-doh ree-PAR-teh"
+    },
+    "l2_sold_out_today": {
+      "target": "I biglietti di oggi sono esauriti.",
+      "pronunciation_easy": "ee bee-LYET-tee dee OD-jee SOH-noh eh-zow-REE-tee"
+    },
+    "l2_at_entrance": {
+      "target": "Sì, all'ingresso.",
+      "pronunciation_easy": "see, ahl-leen-GRES-soh"
+    },
+    "l2_stairs_only": {
+      "target": "Il piano di sopra ha solo le scale.",
+      "pronunciation_easy": "eel PYAH-noh dee SOH-prah ah SOH-loh leh SKAH-leh"
+    },
+    "l2_house_cocktail": {
+      "target": "Provi il cocktail della casa.",
+      "pronunciation_easy": "PROH-vee eel KOK-tel DEL-lah KAH-zah"
+    },
+    "l2_band_at_nine": {
+      "target": "Il gruppo inizia alle nove.",
+      "pronunciation_easy": "eel GROOP-poh ee-NEE-tsyah AHL-leh NOH-veh"
+    },
+    "l2_ten_minutes_here": {
+      "target": "Arriva tra dieci minuti.",
+      "pronunciation_easy": "ar-REE-vah trah DYEH-chee mee-NOO-tee"
+    },
+    "l2_tax_extra": {
+      "target": "Le tasse sono a parte.",
+      "pronunciation_easy": "leh TAHS-seh SOH-noh ah PAR-teh"
+    },
+    "l2_seven_evening": {
+      "target": "Inizia alle sette di sera.",
+      "pronunciation_easy": "ee-NEE-tsyah AHL-leh SET-teh dee SEH-rah"
+    },
+    "l2_yes_per_person": {
+      "target": "Sì, a persona.",
+      "pronunciation_easy": "see, ah pehr-SOH-nah"
+    },
+    "l2_no_change": {
+      "target": "Mi dispiace, non ho da cambiare.",
+      "pronunciation_easy": "mee dees-PYAH-cheh, non oh dah kahm-BYAH-reh"
     }
   }
 }

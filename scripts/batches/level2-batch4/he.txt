@@ -1,0 +1,66 @@
+l2_do_something | רוצה לעשות משהו בסוף השבוע? | ro-TSE la-a-SOT MA-she-hu be-SOF ha-sha-VU-a
+l2_next_week | ומה עם שבוע הבא? | u-MA im sha-VU-a ha-BA
+l2_another_time | אין בעיה, בפעם אחרת. | eyn be-a-YA, be-FA-am a-KHE-ret
+l2_message_tomorrow | אפשר לכתוב לך מחר? | ef-SHAR likh-TOV le-KHA ma-KHAR
+l2_best_way_reach | מה הדרך הכי טובה ליצור איתך קשר? | ma ha-DE-rekh ha-KHEE to-VA lits-OR it-KHA KE-sher
+l2_only_if_comfortable | רק אם נוח לך. | rak im NO-akh le-KHA
+l2_stay_with_friends | אני מעדיף להישאר עם החברים שלי. | a-NEE ma-a-DEEF le-hi-sha-ER im ha-kha-ve-REEM she-LEE
+l2_thanks_understanding | תודה על ההבנה. | to-DA al ha-ha-va-NA
+l2_give_space | תן לי קצת מרחב, בבקשה. | ten lee ktsat mer-KHAV, be-va-ka-SHA
+l2_check_bag | אפשר לשלוח את התיק הזה לבטן המטוס? | ef-SHAR lish-LO-akh et ha-TEEK ha-ZE le-VE-ten ha-ma-TOS
+l2_rearrange | אפשר לסדר מחדש את המזוודה? | ef-SHAR le-sa-DER me-kha-DASH et ha-miz-va-DA
+l2_make_connection | אני אספיק לטיסת ההמשך? | a-NEE as-PEEK le-tee-SAT ha-hem-SHEKH
+l2_security_again | צריך לעבור שוב בידוק ביטחוני? | tsa-REEKH la-a-VOR shoov bee-DUK bee-ta-kho-NEE
+l2_rebook | מי יכול לעזור לי להחליף טיסה? | mee ya-KHOL la-a-ZOR lee le-hakh-LEEF tee-SA
+l2_track_bag | איך אפשר לעקוב אחרי המזוודה? | ekh ef-SHAR la-a-KOV a-kha-REY ha-miz-va-DA
+l2_hotel_address | צריך את הכתובת של המלון שלי? | tsa-REEKH et ha-KTO-vet shel ha-ma-LON she-LEE
+l2_reference_number | אפשר לקבל מספר פנייה? | ef-SHAR le-ka-BEL mis-PAR pnee-YA
+l2_here_tourism | אני פה בתור תייר. | a-NEE po be-TOR ta-YAR
+l2_leaving_on | אני עוזב ___. | a-NEE o-ZEV ___
+l2_return_ticket | אני יכול להראות את כרטיס החזור. | a-NEE ya-KHOL le-har-OT et kar-TEES ha-kha-ZOR
+l2_book_ahead | צריך להזמין מראש? | tsa-REEKH le-haz-MEEN me-ROSH
+l2_another_time_slot | יש שעה אחרת פנויה? | yesh sha-A a-KHE-ret pnu-YA
+l2_book_tomorrow | אפשר להזמין למחר? | ef-SHAR le-haz-MEEN le-ma-KHAR
+l2_audio_guide | יש מדריך קולי באנגלית? | yesh mad-REEKH ko-LEE be-an-GLEET
+l2_accessible | זה נגיש לכיסא גלגלים? | ze na-GEESH le-khee-SE gal-ga-LEEM
+l2_step_free | יש מסלול בלי מדרגות? | yesh mas-LOOL blee mad-re-GOT
+l2_local_specialty | מה המשקה המיוחד שלכם? | ma ha-mash-KE ha-me-yu-KHAD shel-a-KHEM
+l2_how_strong | זה חזק? | ze kha-ZAK
+l2_something_lighter | אני מעדיף משהו קל יותר. | a-NEE ma-a-DEEF MA-she-hu kal yo-TER
+l2_live_music | יש הופעה חיה הערב? | yesh ho-fa-A kha-YA ha-E-rev
+l2_entry_fee | יש דמי כניסה? | yesh dmey knee-SA
+l2_call_taxi | אפשר להזמין לי מונית? | ef-SHAR le-haz-MEEN lee mo-NEET
+l2_where_wait | איפה לחכות? | EY-fo le-kha-KOT
+l2_safe_way_home | אני צריך דרך בטוחה לחזור הביתה. | a-NEE tsa-REEKH DE-rekh be-tu-KHA la-kha-ZOR ha-BAI-ta
+l2_total_price | זה המחיר הסופי? | ze ha-me-KHEER ha-so-FEE
+l2_including_tax | כמה זה כולל מס? | KA-ma ze ko-LEL mas
+l2_morning_evening | בבוקר או בערב? | ba-BO-ker o ba-E-rev
+l2_how_early | כמה זמן לפני צריך להגיע? | KA-ma zman lif-NEY tsa-REEKH le-ha-GEE-a
+l2_per_person | זה המחיר לאדם? | ze ha-me-KHEER le-a-DAM
+l2_only_need_tickets | אני צריך רק ___ כרטיסים. | a-NEE tsa-REEKH rak ___ kar-tee-SEEM
+l2_change_for | יש לך עודף מזה? | yesh le-KHA O-def mi-ZE
+l2_pay_card_then | אז אשלם בכרטיס. | az a-sha-LEM be-khar-TEES
+r:l2_busy_weekend | אני עסוקה בסוף השבוע. | a-NEE a-su-KA be-SOF ha-sha-VU-a
+r:l2_heres_number | בטח, זה המספר שלי. | BE-takh, ze ha-mis-PAR she-LEE
+r:l2_sorry_understand | אה, סליחה. הבנתי. | ah, slee-KHA. he-VAN-tee
+r:l2_over_weight | זה מעל מגבלת המשקל. | ze me-AL mig-BE-let ha-mish-KAL
+r:l2_boarding_closes | העלייה למטוס נסגרת בעוד עשרים דקות. | ha-a-lee-YA la-ma-TOS nis-GE-ret be-OD es-REEM da-KOT
+r:l2_deliver_tomorrow | נוכל להביא אותה מחר. | nu-KHAL le-ha-VEE o-TA ma-KHAR
+r:l2_flying_home | מתי אתה טס הביתה? | ma-TAI a-TA tas ha-BAI-ta
+r:l2_sold_out_today | הכרטיסים להיום אזלו. | ha-kar-tee-SEEM le-ha-YOM az-LU
+r:l2_at_entrance | כן, בכניסה. | ken, ba-knee-SA
+r:l2_stairs_only | בקומה העליונה יש רק מדרגות. | ba-ko-MA ha-el-yo-NA yesh rak mad-re-GOT
+r:l2_house_cocktail | תנסה את קוקטייל הבית. | te-na-SE et kok-TEYL ha-BA-yit
+r:l2_band_at_nine | הלהקה מתחילה בתשע. | ha-la-ha-KA mat-khee-LA be-TE-sha
+r:l2_ten_minutes_here | היא תגיע בעוד עשר דקות. | hee ta-GEE-a be-OD E-ser da-KOT
+r:l2_tax_extra | המס לא כלול. | ha-MAS lo ka-LOOL
+r:l2_seven_evening | זה מתחיל בשבע בערב. | ze mat-KHEEL be-SHE-va ba-E-rev
+r:l2_yes_per_person | כן, לאדם. | ken, le-a-DAM
+r:l2_no_change | סליחה, אין לי עודף. | slee-KHA, eyn lee O-def
+x:l2_leaving_on~monday | אני עוזב ביום שני. | a-NEE o-ZEV be-YOM she-NEE
+x:l2_leaving_on~friday | אני עוזב ביום שישי. | a-NEE o-ZEV be-YOM shee-SHEE
+x:l2_leaving_on~saturday | אני עוזב בשבת. | a-NEE o-ZEV be-sha-BAT
+x:l2_leaving_on~sunday | אני עוזב ביום ראשון. | a-NEE o-ZEV be-YOM ri-SHON
+x:l2_only_need_tickets~two | אני צריך רק שני כרטיסים. | a-NEE tsa-REEKH rak shney kar-tee-SEEM
+x:l2_only_need_tickets~three | אני צריך רק שלושה כרטיסים. | a-NEE tsa-REEKH rak shlo-SHA kar-tee-SEEM
+x:l2_only_need_tickets~four | אני צריך רק ארבעה כרטיסים. | a-NEE tsa-REEKH rak ar-ba-A kar-tee-SEEM

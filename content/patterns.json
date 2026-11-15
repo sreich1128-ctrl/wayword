@@ -905,6 +905,53 @@
           "english": "We're meeting at the hotel."
         }
       ]
+    },
+    "l2_leaving_on": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "monday",
+          "label": "on Monday",
+          "english": "I'm leaving on Monday."
+        },
+        {
+          "id": "friday",
+          "label": "on Friday",
+          "english": "I'm leaving on Friday."
+        },
+        {
+          "id": "saturday",
+          "label": "on Saturday",
+          "english": "I'm leaving on Saturday."
+        },
+        {
+          "id": "sunday",
+          "label": "on Sunday",
+          "english": "I'm leaving on Sunday."
+        }
+      ]
+    },
+    "l2_only_need_tickets": {
+      "related": [],
+      "substitutions": {},
+      "examples": [
+        {
+          "id": "two",
+          "label": "two",
+          "english": "I only need two tickets."
+        },
+        {
+          "id": "three",
+          "label": "three",
+          "english": "I only need three tickets."
+        },
+        {
+          "id": "four",
+          "label": "four",
+          "english": "I only need four tickets."
+        }
+      ]
     }
   }
 }

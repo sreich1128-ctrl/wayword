@@ -1195,6 +1195,264 @@
       "target": "忙しかったら大丈夫ですよ。",
       "reading": "いそがしかったらだいじょうぶですよ。",
       "pronunciation_easy": "ee-soh-gah-shee-kaht-tah-rah dai-joh-boo des-yoh"
+    },
+    {
+      "id": "l2_do_something",
+      "target": "今週末、何か一緒にしませんか？",
+      "reading": "こんしゅうまつ、なにかいっしょにしませんか？",
+      "pronunciation_easy": "kon-shoo-mah-tsoo, nah-nee-kah ees-shoh nee shee-mah-sen-kah"
+    },
+    {
+      "id": "l2_next_week",
+      "target": "来週はどうですか？",
+      "reading": "らいしゅうはどうですか？",
+      "pronunciation_easy": "rai-shoo wah doh des-kah",
+      "qa": "Only after a 'busy' answer. If the answer was a no, say 'No worries, another time.' instead."
+    },
+    {
+      "id": "l2_another_time",
+      "target": "大丈夫です。また今度。",
+      "reading": "だいじょうぶです。またこんど。",
+      "pronunciation_easy": "dai-joh-boo des. mah-tah kon-doh"
+    },
+    {
+      "id": "l2_message_tomorrow",
+      "target": "明日、連絡してもいいですか？",
+      "reading": "あした、れんらくしてもいいですか？",
+      "pronunciation_easy": "ah-shee-tah, ren-rah-koo shee-teh moh ee des-kah"
+    },
+    {
+      "id": "l2_best_way_reach",
+      "target": "連絡は何が一番いいですか？",
+      "reading": "れんらくはなにがいちばんいいですか？",
+      "pronunciation_easy": "ren-rah-koo wah nah-nee gah ee-chee-bahn ee des-kah"
+    },
+    {
+      "id": "l2_only_if_comfortable",
+      "target": "よければで大丈夫です。",
+      "reading": "よければでだいじょうぶです。",
+      "pronunciation_easy": "yoh-keh-reh-bah deh dai-joh-boo des",
+      "qa": "Literally 'only if it suits you': the natural way to take pressure off."
+    },
+    {
+      "id": "l2_stay_with_friends",
+      "target": "友達と一緒にいたいです。",
+      "reading": "ともだちといっしょにいたいです。",
+      "pronunciation_easy": "toh-moh-dah-chee toh ees-shoh nee ee-tai des",
+      "qa": "PRIORITY REVIEW (a boundary: a clear, polite no)."
+    },
+    {
+      "id": "l2_thanks_understanding",
+      "target": "分かってくれてありがとう。",
+      "reading": "わかってくれてありがとう。",
+      "pronunciation_easy": "wah-kaht-teh koo-reh-teh ah-ree-gah-toh"
+    },
+    {
+      "id": "l2_give_space",
+      "target": "少し距離を置いてください。",
+      "reading": "すこしきょりをおいてください。",
+      "pronunciation_easy": "soo-koh-shee kyoh-ree oh oh-ee-teh koo-dah-sai",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm). Literally 'Please keep a little distance.' Reviewer: is this firm enough?"
+    },
+    {
+      "id": "l2_check_bag",
+      "target": "このバッグを預けられますか？",
+      "reading": "このばっぐをあずけられますか？",
+      "pronunciation_easy": "koh-noh bahg-goo oh ah-zoo-keh-rah-reh-mahs-kah"
+    },
+    {
+      "id": "l2_rearrange",
+      "target": "荷物を詰め直してもいいですか？",
+      "reading": "にもつをつめなおしてもいいですか？",
+      "pronunciation_easy": "nee-moh-tsoo oh tsoo-meh-nah-oh-shee-teh moh ee des-kah"
+    },
+    {
+      "id": "l2_make_connection",
+      "target": "乗り継ぎに間に合いますか？",
+      "reading": "のりつぎにまにあいますか？",
+      "pronunciation_easy": "noh-ree-tsoo-ghee nee mah-nee-ai-mahs-kah"
+    },
+    {
+      "id": "l2_security_again",
+      "target": "もう一度保安検査を通りますか？",
+      "reading": "もういちどほあんけんさをとおりますか？",
+      "pronunciation_easy": "moh ee-chee-doh hoh-ahn ken-sah oh toh-ree-mahs-kah"
+    },
+    {
+      "id": "l2_rebook",
+      "target": "便の変更は誰に頼めばいいですか？",
+      "reading": "びんのへんこうはだれにたのめばいいですか？",
+      "pronunciation_easy": "been noh hen-koh wah dah-reh nee tah-noh-meh-bah ee des-kah"
+    },
+    {
+      "id": "l2_track_bag",
+      "target": "荷物はどうやって追跡できますか？",
+      "reading": "にもつはどうやってついせきできますか？",
+      "pronunciation_easy": "nee-moh-tsoo wah doh-yaht-teh tsoo-ee-seh-kee deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_hotel_address",
+      "target": "ホテルの住所は必要ですか？",
+      "reading": "ほてるのじゅうしょはひつようですか？",
+      "pronunciation_easy": "hoh-teh-roo noh joo-shoh wah hee-tsoo-yoh des-kah"
+    },
+    {
+      "id": "l2_reference_number",
+      "target": "受付番号をもらえますか？",
+      "reading": "うけつけばんごうをもらえますか？",
+      "pronunciation_easy": "oo-keh-tsoo-keh bahn-goh oh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "l2_here_tourism",
+      "target": "観光で来ました。",
+      "reading": "かんこうできました。",
+      "pronunciation_easy": "kahn-koh deh kee-mah-shee-tah",
+      "qa": "Border questions: say only what is true for your trip."
+    },
+    {
+      "id": "l2_leaving_on",
+      "target": "___に出発します。",
+      "reading": "___にしゅっぱつします。",
+      "pronunciation_easy": "___ nee shoop-pah-tsoo shee-mahs"
+    },
+    {
+      "id": "l2_return_ticket",
+      "target": "帰りの航空券をお見せできます。",
+      "reading": "かえりのこうくうけんをおみせできます。",
+      "pronunciation_easy": "kah-eh-ree noh koh-koo-ken oh oh-mee-seh deh-kee-mahs"
+    },
+    {
+      "id": "l2_book_ahead",
+      "target": "事前予約は必要ですか？",
+      "reading": "じぜんよやくはひつようですか？",
+      "pronunciation_easy": "jee-zen yoh-yah-koo wah hee-tsoo-yoh des-kah"
+    },
+    {
+      "id": "l2_another_time_slot",
+      "target": "他の時間は空いていますか？",
+      "reading": "ほかのじかんはあいていますか？",
+      "pronunciation_easy": "hoh-kah noh jee-kahn wah ai-teh ee-mahs-kah"
+    },
+    {
+      "id": "l2_book_tomorrow",
+      "target": "明日の予約はできますか？",
+      "reading": "あしたのよやくはできますか？",
+      "pronunciation_easy": "ah-shee-tah noh yoh-yah-koo wah deh-kee-mahs-kah"
+    },
+    {
+      "id": "l2_audio_guide",
+      "target": "英語の音声ガイドはありますか？",
+      "reading": "えいごのおんせいがいどはありますか？",
+      "pronunciation_easy": "ay-goh noh on-say guy-doh wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_accessible",
+      "target": "車椅子で入れますか？",
+      "reading": "くるまいすではいれますか？",
+      "pronunciation_easy": "koo-roo-mah-ee-soo deh hai-reh-mahs-kah"
+    },
+    {
+      "id": "l2_step_free",
+      "target": "段差のないルートはありますか？",
+      "reading": "だんさのないるーとはありますか？",
+      "pronunciation_easy": "dahn-sah noh nai roo-toh wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_local_specialty",
+      "target": "この店の名物は何ですか？",
+      "reading": "このみせのめいぶつはなんですか？",
+      "pronunciation_easy": "koh-noh mee-seh noh may-boo-tsoo wah nan des-kah"
+    },
+    {
+      "id": "l2_how_strong",
+      "target": "強いですか？",
+      "reading": "つよいですか？",
+      "pronunciation_easy": "tsoo-yoy des-kah"
+    },
+    {
+      "id": "l2_something_lighter",
+      "target": "もう少し軽いものがいいです。",
+      "reading": "もうすこしかるいものがいいです。",
+      "pronunciation_easy": "moh soo-koh-shee kah-roo-ee moh-noh gah ee des"
+    },
+    {
+      "id": "l2_live_music",
+      "target": "今夜、生演奏はありますか？",
+      "reading": "こんや、なまえんそうはありますか？",
+      "pronunciation_easy": "kon-yah, nah-mah en-soh wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_entry_fee",
+      "target": "入場料はかかりますか？",
+      "reading": "にゅうじょうりょうはかかりますか？",
+      "pronunciation_easy": "nyoo-joh-ryoh wah kah-kah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_call_taxi",
+      "target": "タクシーを呼んでもらえますか？",
+      "reading": "たくしーをよんでもらえますか？",
+      "pronunciation_easy": "tah-koo-shee oh yon-deh moh-rah-eh-mahs-kah"
+    },
+    {
+      "id": "l2_where_wait",
+      "target": "どこで待てばいいですか？",
+      "reading": "どこでまてばいいですか？",
+      "pronunciation_easy": "doh-koh deh mah-teh-bah ee des-kah"
+    },
+    {
+      "id": "l2_safe_way_home",
+      "target": "安全に帰る方法が必要です。",
+      "reading": "あんぜんにかえるほうほうがひつようです。",
+      "pronunciation_easy": "ahn-zen nee kah-eh-roo hoh-hoh gah hee-tsoo-yoh des",
+      "qa": "PRIORITY REVIEW (safety)."
+    },
+    {
+      "id": "l2_total_price",
+      "target": "これは合計の値段ですか？",
+      "reading": "これはごうけいのねだんですか？",
+      "pronunciation_easy": "koh-reh wah goh-kay noh neh-dahn des-kah"
+    },
+    {
+      "id": "l2_including_tax",
+      "target": "税込みでいくらですか？",
+      "reading": "ぜいこみでいくらですか？",
+      "pronunciation_easy": "zay-koh-mee deh ee-koo-rah des-kah"
+    },
+    {
+      "id": "l2_morning_evening",
+      "target": "朝ですか、夜ですか？",
+      "reading": "あさですか、よるですか？",
+      "pronunciation_easy": "ah-sah des-kah, yoh-roo des-kah"
+    },
+    {
+      "id": "l2_how_early",
+      "target": "どのくらい前に着けばいいですか？",
+      "reading": "どのくらいまえにつけばいいですか？",
+      "pronunciation_easy": "doh-noh koo-rai mah-eh nee tsoo-keh-bah ee des-kah"
+    },
+    {
+      "id": "l2_per_person",
+      "target": "これは一人分の値段ですか？",
+      "reading": "これはひとりぶんのねだんですか？",
+      "pronunciation_easy": "koh-reh wah hee-toh-ree-boon noh neh-dahn des-kah"
+    },
+    {
+      "id": "l2_only_need_tickets",
+      "target": "チケットは___枚だけ必要です。",
+      "reading": "ちけっとは___まいだけひつようです。",
+      "pronunciation_easy": "chee-ket-toh wah ___ my dah-keh hee-tsoo-yoh des"
+    },
+    {
+      "id": "l2_change_for",
+      "target": "これでお釣りはありますか？",
+      "reading": "これでおつりはありますか？",
+      "pronunciation_easy": "koh-reh deh oh-tsoo-ree wah ah-ree-mahs-kah"
+    },
+    {
+      "id": "l2_pay_card_then",
+      "target": "では、カードで払います。",
+      "reading": "では、かーどではらいます。",
+      "pronunciation_easy": "deh-wah, kah-doh deh hah-rai-mahs"
     }
   ],
   "vocab": {
@@ -2676,6 +2934,52 @@
         "reading": "ほてるにあつまります。",
         "pronunciation_easy": "hoh-teh-roo nee ah-tsoo-mah-ree-mahs"
       }
+    ],
+    "l2_leaving_on": [
+      {
+        "word": "monday",
+        "target": "月曜日に出発します。",
+        "reading": "げつようびにしゅっぱつします。",
+        "pronunciation_easy": "geh-tsoo-yoh-bee nee shoop-pah-tsoo shee-mahs"
+      },
+      {
+        "word": "friday",
+        "target": "金曜日に出発します。",
+        "reading": "きんようびにしゅっぱつします。",
+        "pronunciation_easy": "keen-yoh-bee nee shoop-pah-tsoo shee-mahs"
+      },
+      {
+        "word": "saturday",
+        "target": "土曜日に出発します。",
+        "reading": "どようびにしゅっぱつします。",
+        "pronunciation_easy": "doh-yoh-bee nee shoop-pah-tsoo shee-mahs"
+      },
+      {
+        "word": "sunday",
+        "target": "日曜日に出発します。",
+        "reading": "にちようびにしゅっぱつします。",
+        "pronunciation_easy": "nee-chee-yoh-bee nee shoop-pah-tsoo shee-mahs"
+      }
+    ],
+    "l2_only_need_tickets": [
+      {
+        "word": "two",
+        "target": "チケットは二枚だけ必要です。",
+        "reading": "ちけっとはにまいだけひつようです。",
+        "pronunciation_easy": "chee-ket-toh wah nee-my dah-keh hee-tsoo-yoh des"
+      },
+      {
+        "word": "three",
+        "target": "チケットは三枚だけ必要です。",
+        "reading": "ちけっとはさんまいだけひつようです。",
+        "pronunciation_easy": "chee-ket-toh wah sahn-my dah-keh hee-tsoo-yoh des"
+      },
+      {
+        "word": "four",
+        "target": "チケットは四枚だけ必要です。",
+        "reading": "ちけっとはよんまいだけひつようです。",
+        "pronunciation_easy": "chee-ket-toh wah yon-my dah-keh hee-tsoo-yoh des"
+      }
     ]
   },
   "replies": {
@@ -3022,6 +3326,91 @@
       "target": "たぶん。何時ですか？",
       "reading": "たぶん。なんじですか？",
       "pronunciation_easy": "tah-boon. nan-jee des-kah"
+    },
+    "l2_busy_weekend": {
+      "target": "今週末は忙しいです。",
+      "reading": "こんしゅうまつはいそがしいです。",
+      "pronunciation_easy": "kon-shoo-mah-tsoo wah ee-soh-gah-shee des"
+    },
+    "l2_heres_number": {
+      "target": "もちろん、これが番号です。",
+      "reading": "もちろん、これがばんごうです。",
+      "pronunciation_easy": "moh-chee-ron, koh-reh gah bahn-goh des"
+    },
+    "l2_sorry_understand": {
+      "target": "あ、すみません。分かりました。",
+      "reading": "あ、すみません。わかりました。",
+      "pronunciation_easy": "ah, soo-mee-mah-sen. wah-kah-ree-mah-shee-tah"
+    },
+    "l2_over_weight": {
+      "target": "重量制限を超えています。",
+      "reading": "じゅうりょうせいげんをこえています。",
+      "pronunciation_easy": "joo-ryoh say-gen oh koh-eh-teh ee-mahs"
+    },
+    "l2_boarding_closes": {
+      "target": "搭乗は二十分後に締め切ります。",
+      "reading": "とうじょうはにじゅっぷんごにしめきります。",
+      "pronunciation_easy": "toh-joh wah nee-joop-poon goh nee shee-meh-kee-ree-mahs"
+    },
+    "l2_deliver_tomorrow": {
+      "target": "明日お届けできます。",
+      "reading": "あしたおとどけできます。",
+      "pronunciation_easy": "ah-shee-tah oh-toh-doh-keh deh-kee-mahs"
+    },
+    "l2_flying_home": {
+      "target": "いつ帰国しますか？",
+      "reading": "いつきこくしますか？",
+      "pronunciation_easy": "ee-tsoo kee-koh-koo shee-mahs-kah"
+    },
+    "l2_sold_out_today": {
+      "target": "本日のチケットは売り切れです。",
+      "reading": "ほんじつのちけっとはうりきれです。",
+      "pronunciation_easy": "hon-jee-tsoo noh chee-ket-toh wah oo-ree-kee-reh des"
+    },
+    "l2_at_entrance": {
+      "target": "はい、入口にあります。",
+      "reading": "はい、いりぐちにあります。",
+      "pronunciation_easy": "hai, ee-ree-goo-chee nee ah-ree-mahs"
+    },
+    "l2_stairs_only": {
+      "target": "上の階は階段だけです。",
+      "reading": "うえのかいはかいだんだけです。",
+      "pronunciation_easy": "oo-eh noh kai wah kai-dahn dah-keh des"
+    },
+    "l2_house_cocktail": {
+      "target": "当店のオリジナルカクテルをどうぞ。",
+      "reading": "とうてんのおりじなるかくてるをどうぞ。",
+      "pronunciation_easy": "toh-ten noh oh-ree-jee-nah-roo kah-koo-teh-roo oh doh-zoh"
+    },
+    "l2_band_at_nine": {
+      "target": "バンドは九時に始まります。",
+      "reading": "ばんどはくじにはじまります。",
+      "pronunciation_easy": "bahn-doh wah koo-jee nee hah-jee-mah-ree-mahs"
+    },
+    "l2_ten_minutes_here": {
+      "target": "十分ほどで来ます。",
+      "reading": "じゅっぷんほどできます。",
+      "pronunciation_easy": "joop-poon hoh-doh deh kee-mahs"
+    },
+    "l2_tax_extra": {
+      "target": "税は別です。",
+      "reading": "ぜいはべつです。",
+      "pronunciation_easy": "zay wah beh-tsoo des"
+    },
+    "l2_seven_evening": {
+      "target": "夜七時に始まります。",
+      "reading": "よるしちじにはじまります。",
+      "pronunciation_easy": "yoh-roo shee-chee-jee nee hah-jee-mah-ree-mahs"
+    },
+    "l2_yes_per_person": {
+      "target": "はい、お一人様の値段です。",
+      "reading": "はい、おひとりさまのねだんです。",
+      "pronunciation_easy": "hai, oh-hee-toh-ree-sah-mah noh neh-dahn des"
+    },
+    "l2_no_change": {
+      "target": "すみません、お釣りがありません。",
+      "reading": "すみません、おつりがありません。",
+      "pronunciation_easy": "soo-mee-mah-sen, oh-tsoo-ree gah ah-ree-mah-sen"
     }
   }
 }

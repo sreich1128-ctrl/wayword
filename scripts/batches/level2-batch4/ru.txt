@@ -1,0 +1,66 @@
+l2_do_something | Хочешь что-нибудь поделать в выходные? | KHOH-chesh SHTOH-nee-boot pah-DYEH-lat v vy-khahd-NY-yeh
+l2_next_week | А на следующей неделе? | ah nah SLYEH-doo-yoo-shchey nee-DYEH-lyeh
+l2_another_time | Ничего страшного, в другой раз. | nee-chee-VOH STRAHSH-nah-vah, v droo-GOY rahs
+l2_message_tomorrow | Можно я напишу тебе завтра? | MOZH-nah ya nah-pee-SHOO tee-BYEH ZAHF-trah
+l2_best_way_reach | Как с тобой лучше связаться? | kak s tah-BOY LOOCH-sheh svyah-ZAT-sah
+l2_only_if_comfortable | Только если тебе удобно. | TOL-kah YES-lee tee-BYEH oo-DOB-nah
+l2_stay_with_friends | Я лучше останусь с друзьями. | ya LOOCH-sheh ah-STAH-noos s drooz-YAH-mee
+l2_thanks_understanding | Спасибо за понимание. | spah-SEE-bah zah pah-nee-MAH-nee-yeh
+l2_give_space | Пожалуйста, оставьте меня. | pah-ZHAH-loo-stah, ah-STAHV-tyeh mee-NYAH
+l2_check_bag | Можно сдать эту сумку в багаж? | MOZH-nah zdat EH-too SOOM-koo v bah-GAHSH
+l2_rearrange | Можно я переложу вещи? | MOZH-nah ya pee-ree-lah-ZHOO VYEH-shchee
+l2_make_connection | Я успею на пересадку? | ya oos-PYEH-yoo nah pee-ree-SAHT-koo
+l2_security_again | Нужно снова проходить досмотр? | NOOZH-nah SNOH-vah prah-khah-DEET dah-SMOTR
+l2_rebook | Кто может помочь поменять рейс? | ktoh MOH-zhet pah-MOCH pah-mee-NYAT ryays
+l2_track_bag | Как отследить мой багаж? | kak aht-slee-DEET moy bah-GAHSH
+l2_hotel_address | Вам нужен адрес моего отеля? | vahm NOO-zheen AH-drees mah-yee-VOH ah-TEH-lyah
+l2_reference_number | Можно получить номер заявки? | MOZH-nah pah-loo-CHEET NOH-meer zah-YAHF-kee
+l2_here_tourism | Я здесь как турист. | ya zdyes kak too-REEST
+l2_leaving_on | Я уезжаю ___. | ya oo-yez-ZHAH-yoo ___
+l2_return_ticket | Могу показать обратный билет. | mah-GOO pah-kah-ZAT ah-BRAHT-ny bee-LYET
+l2_book_ahead | Нужно бронировать заранее? | NOOZH-nah brah-NEE-rah-vat zah-RAH-nyeh-yeh
+l2_another_time_slot | Есть другое время? | yest droo-GOH-yeh VRYEH-myah
+l2_book_tomorrow | Можно забронировать на завтра? | MOZH-nah zah-brah-NEE-rah-vat nah ZAHF-trah
+l2_audio_guide | Есть аудиогид на английском? | yest ow-dee-oh-GHEET nah ahn-GLEES-kahm
+l2_accessible | Здесь можно проехать на инвалидной коляске? | zdyes MOZH-nah prah-YEH-khat nah een-vah-LEED-noy kah-LYAS-kyeh
+l2_step_free | Есть путь без ступенек? | yest poot byes stoo-PYEH-nyek
+l2_local_specialty | Какой у вас фирменный напиток? | kah-KOY oo vahs FEER-meen-ny nah-PEE-tahk
+l2_how_strong | Он крепкий? | on KRYEP-kee
+l2_something_lighter | Мне бы что-нибудь полегче. | mnyeh by SHTOH-nee-boot pah-LYEKH-cheh
+l2_live_music | Сегодня есть живая музыка? | see-VOD-nyah yest zhee-VAH-yah MOO-zy-kah
+l2_entry_fee | Вход платный? | fkhot PLAHT-ny
+l2_call_taxi | Можете вызвать мне такси? | MOH-zhuh-tyeh VYZ-vat mnyeh tahk-SEE
+l2_where_wait | Где мне ждать? | gdyeh mnyeh zhdat
+l2_safe_way_home | Мне нужно безопасно добраться домой. | mnyeh NOOZH-nah bee-zah-PAHS-nah dah-BRAHT-sah dah-MOY
+l2_total_price | Это полная цена? | EH-tah POL-nah-yah tsee-NAH
+l2_including_tax | Сколько это с налогом? | SKOL-kah EH-tah s nah-LOH-gahm
+l2_morning_evening | Утром или вечером? | OO-trahm EE-lee VYEH-chee-rahm
+l2_how_early | За сколько нужно прийти? | zah SKOL-kah NOOZH-nah pree-TEE
+l2_per_person | Это цена за человека? | EH-tah tsee-NAH zah chee-lah-VYEH-kah
+l2_only_need_tickets | Мне нужно только ___ билета. | mnyeh NOOZH-nah TOL-kah ___ bee-LYEH-tah
+l2_change_for | У вас будет сдача с этого? | oo vahs BOO-deet ZDAH-chah s EH-tah-vah
+l2_pay_card_then | Тогда я заплачу картой. | tahg-DAH ya zah-plah-CHOO KAR-toy
+r:l2_busy_weekend | В эти выходные я занята/занят. | v EH-tee vy-khahd-NY-yeh ya zah-nee-TAH/ZAH-nyat
+r:l2_heres_number | Конечно, вот мой номер. | kah-NYESH-nah, vot moy NOH-meer
+r:l2_sorry_understand | Ой, извини. Я понял. | oy, eez-vee-NEE. ya POH-nyal
+r:l2_over_weight | Превышен лимит веса. | pree-VY-shen lee-MEET VYEH-sah
+r:l2_boarding_closes | Посадка заканчивается через двадцать минут. | pah-SAHT-kah zah-KAHN-chee-vah-yet-sah CHEH-rees DVAH-tsat mee-NOOT
+r:l2_deliver_tomorrow | Мы можем доставить его завтра. | my MOH-zhem dah-STAH-veet yee-VOH ZAHF-trah
+r:l2_flying_home | Когда вы улетаете домой? | kahg-DAH vy oo-lee-TAH-yeh-tyeh dah-MOY
+r:l2_sold_out_today | На сегодня билеты распроданы. | nah see-VOD-nyah bee-LYEH-ty rahs-PROH-dah-ny
+r:l2_at_entrance | Да, у входа. | dah, oo FKHOH-dah
+r:l2_stairs_only | На верхний этаж только лестница. | nah VYEHRKH-nee eh-TAHSH TOL-kah LYES-nee-tsah
+r:l2_house_cocktail | Попробуйте наш фирменный коктейль. | pah-PROH-booy-tyeh nahsh FEER-meen-ny kahk-TEYL
+r:l2_band_at_nine | Группа начинает в девять. | GROO-pah nah-chee-NAH-yet v DYEH-veet
+r:l2_ten_minutes_here | Будет через десять минут. | BOO-deet CHEH-rees DYEH-seet mee-NOOT
+r:l2_tax_extra | Налог считается отдельно. | nah-LOK shchee-TAH-yet-sah aht-DYEL-nah
+r:l2_seven_evening | Начало в семь вечера. | nah-CHAH-lah f syem VYEH-chee-rah
+r:l2_yes_per_person | Да, за человека. | dah, zah chee-lah-VYEH-kah
+r:l2_no_change | Извините, сдачи нет. | eez-vee-NEE-tyeh, ZDAH-chee nyet
+x:l2_leaving_on~monday | Я уезжаю в понедельник. | ya oo-yez-ZHAH-yoo f pah-nee-DYEL-neek
+x:l2_leaving_on~friday | Я уезжаю в пятницу. | ya oo-yez-ZHAH-yoo f PYAT-nee-tsoo
+x:l2_leaving_on~saturday | Я уезжаю в субботу. | ya oo-yez-ZHAH-yoo f soo-BOH-too
+x:l2_leaving_on~sunday | Я уезжаю в воскресенье. | ya oo-yez-ZHAH-yoo v vahs-kree-SYEN-yeh
+x:l2_only_need_tickets~two | Мне нужно только два билета. | mnyeh NOOZH-nah TOL-kah dvah bee-LYEH-tah
+x:l2_only_need_tickets~three | Мне нужно только три билета. | mnyeh NOOZH-nah TOL-kah tree bee-LYEH-tah
+x:l2_only_need_tickets~four | Мне нужно только четыре билета. | mnyeh NOOZH-nah TOL-kah chee-TY-ree bee-LYEH-tah

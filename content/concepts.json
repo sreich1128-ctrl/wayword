@@ -1875,5 +1875,383 @@
     "type": "phrase",
     "level": 2,
     "situation": "meeting"
+  },
+  {
+    "id": "l2_do_something",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Would you like to do something this weekend?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_next_week",
+    "category": "connection",
+    "priority": "explore",
+    "english": "What about next week?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_another_time",
+    "category": "connection",
+    "priority": "explore",
+    "english": "No worries, another time.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_message_tomorrow",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Can I message you tomorrow?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_best_way_reach",
+    "category": "connection",
+    "priority": "explore",
+    "english": "What's the best way to reach you?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_only_if_comfortable",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Only if you're comfortable with that.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_stay_with_friends",
+    "category": "connection",
+    "priority": "explore",
+    "english": "I'd rather stay with my friends.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_thanks_understanding",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Thanks for understanding.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_give_space",
+    "category": "connection",
+    "priority": "explore",
+    "english": "Please give me some space.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "flirting"
+  },
+  {
+    "id": "l2_check_bag",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Can I check this bag?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_rearrange",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Can I rearrange my luggage?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_make_connection",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Will I make my connection?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_security_again",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Do I need to go through security again?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_rebook",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Who can help me rebook?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_track_bag",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "How can I track my bag?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_hotel_address",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Do you need my hotel address?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_reference_number",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "Can I get a reference number?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_here_tourism",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "I'm here for tourism.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_leaving_on",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "I'm leaving ___.",
+    "type": "pattern",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_return_ticket",
+    "category": "transportation",
+    "priority": "explore",
+    "english": "I can show you my return ticket.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "airport"
+  },
+  {
+    "id": "l2_book_ahead",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Do I need to book ahead?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "sightseeing"
+  },
+  {
+    "id": "l2_another_time_slot",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is there another time available?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "sightseeing"
+  },
+  {
+    "id": "l2_book_tomorrow",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Can I book for tomorrow?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "sightseeing"
+  },
+  {
+    "id": "l2_audio_guide",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is there an audio guide in English?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "sightseeing"
+  },
+  {
+    "id": "l2_accessible",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is it wheelchair accessible?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "sightseeing"
+  },
+  {
+    "id": "l2_step_free",
+    "category": "navigation",
+    "priority": "explore",
+    "english": "Is there a step-free route?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "sightseeing"
+  },
+  {
+    "id": "l2_local_specialty",
+    "category": "food",
+    "priority": "explore",
+    "english": "What's your local specialty?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_how_strong",
+    "category": "food",
+    "priority": "explore",
+    "english": "How strong is it?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_something_lighter",
+    "category": "food",
+    "priority": "explore",
+    "english": "I'd prefer something lighter.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_live_music",
+    "category": "food",
+    "priority": "explore",
+    "english": "Is there live music tonight?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_entry_fee",
+    "category": "food",
+    "priority": "explore",
+    "english": "Is there an entry fee?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_call_taxi",
+    "category": "food",
+    "priority": "explore",
+    "english": "Could you call me a taxi?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_where_wait",
+    "category": "food",
+    "priority": "explore",
+    "english": "Where should I wait?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_safe_way_home",
+    "category": "food",
+    "priority": "explore",
+    "english": "I need a safe way home.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "bar"
+  },
+  {
+    "id": "l2_total_price",
+    "category": "money",
+    "priority": "explore",
+    "english": "Is that the total price?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_including_tax",
+    "category": "money",
+    "priority": "explore",
+    "english": "How much is it including tax?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_morning_evening",
+    "category": "money",
+    "priority": "explore",
+    "english": "In the morning or in the evening?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_how_early",
+    "category": "money",
+    "priority": "explore",
+    "english": "How early should I arrive?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_per_person",
+    "category": "money",
+    "priority": "explore",
+    "english": "Is that price per person?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_only_need_tickets",
+    "category": "money",
+    "priority": "explore",
+    "english": "I only need ___ tickets.",
+    "type": "pattern",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_change_for",
+    "category": "money",
+    "priority": "explore",
+    "english": "Do you have change for this?",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
+  },
+  {
+    "id": "l2_pay_card_then",
+    "category": "money",
+    "priority": "explore",
+    "english": "I'll pay by card, then.",
+    "type": "phrase",
+    "level": 2,
+    "situation": "numbers"
   }
 ]

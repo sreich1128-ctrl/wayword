@@ -1023,6 +1023,222 @@
       "id": "l2_no_worries",
       "target": "مش مشكلة إذا مشغول.",
       "pronunciation_easy": "mish MUSH-ki-leh I-za mash-GHOOL"
+    },
+    {
+      "id": "l2_do_something",
+      "target": "بتحب نعمل إشي نهاية الأسبوع؟",
+      "pronunciation_easy": "bit-HIB NI'-mal ISH-ee ni-HAA-yit il-us-BOO'"
+    },
+    {
+      "id": "l2_next_week",
+      "target": "طيب، الأسبوع الجاي؟",
+      "pronunciation_easy": "TAY-yeb, il-us-BOO' ij-JAAY",
+      "qa": "Only after a 'busy' answer. If the answer was a no, say 'No worries, another time.' instead."
+    },
+    {
+      "id": "l2_another_time",
+      "target": "ولا يهمك، مرة تانية.",
+      "pronunciation_easy": "WA-la y-HIM-mak, MAR-ra TAAN-yeh"
+    },
+    {
+      "id": "l2_message_tomorrow",
+      "target": "ممكن أبعتلك رسالة بكرا؟",
+      "pronunciation_easy": "MUM-kin ab-'AT-lak ri-SAA-leh BUK-ra"
+    },
+    {
+      "id": "l2_best_way_reach",
+      "target": "شو أحسن طريقة أتواصل معك؟",
+      "pronunciation_easy": "shoo AH-san ta-REE-a at-WAA-sal MA-'ak"
+    },
+    {
+      "id": "l2_only_if_comfortable",
+      "target": "بس إذا إنت مرتاح.",
+      "pronunciation_easy": "bas I-za IN-ta mir-TAAH"
+    },
+    {
+      "id": "l2_stay_with_friends",
+      "target": "بفضّل أضل مع صحابي.",
+      "pronunciation_easy": "b-FAD-del a-DAL ma' SHAA-bee",
+      "qa": "PRIORITY REVIEW (a boundary: a clear, polite no)."
+    },
+    {
+      "id": "l2_thanks_understanding",
+      "target": "شكراً لتفهّمك.",
+      "pronunciation_easy": "SHUK-ran la-ta-FAH-hu-mak"
+    },
+    {
+      "id": "l2_give_space",
+      "target": "اتركلي مساحة، لو سمحت.",
+      "pronunciation_easy": "it-RIK-lee ma-SAA-ha, law sa-MAHT",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm). To a woman: اتركيلي."
+    },
+    {
+      "id": "l2_check_bag",
+      "target": "ممكن أشحن هالشنطة؟",
+      "pronunciation_easy": "MUM-kin ASH-han hash-SHAN-ta"
+    },
+    {
+      "id": "l2_rearrange",
+      "target": "ممكن أرتّب أغراضي من جديد؟",
+      "pronunciation_easy": "MUM-kin a-RAT-teb agh-RAA-dee min j-DEED"
+    },
+    {
+      "id": "l2_make_connection",
+      "target": "بلحّق رحلة الترانزيت؟",
+      "pronunciation_easy": "b-LAH-he' RIH-lit it-tran-ZEET"
+    },
+    {
+      "id": "l2_security_again",
+      "target": "لازم أمرّ على التفتيش مرة تانية؟",
+      "pronunciation_easy": "LAA-zim a-MURR A-la it-taf-TEESH MAR-ra TAAN-yeh"
+    },
+    {
+      "id": "l2_rebook",
+      "target": "مين بقدر يساعدني أغيّر الرحلة؟",
+      "pronunciation_easy": "meen BYI'-dar y-saa-'ID-nee a-GHAY-yer ir-RIH-leh"
+    },
+    {
+      "id": "l2_track_bag",
+      "target": "كيف بقدر أتابع شنطتي؟",
+      "pronunciation_easy": "keef BA'-dar a-TAA-be' shan-TIT-ee"
+    },
+    {
+      "id": "l2_hotel_address",
+      "target": "بدك عنوان الفندق؟",
+      "pronunciation_easy": "BAD-dak un-WAAN il-FUN-du'"
+    },
+    {
+      "id": "l2_reference_number",
+      "target": "ممكن آخد رقم مرجعي؟",
+      "pronunciation_easy": "MUM-kin AA-khod RA-'am MAR-ji-'ee"
+    },
+    {
+      "id": "l2_here_tourism",
+      "target": "أنا هون سياحة.",
+      "pronunciation_easy": "A-na hoon see-YAA-ha",
+      "qa": "Border questions: say only what is true for your trip."
+    },
+    {
+      "id": "l2_leaving_on",
+      "target": "مسافر ___.",
+      "pronunciation_easy": "m-SAA-fer ___"
+    },
+    {
+      "id": "l2_return_ticket",
+      "target": "بقدر أفرجيك تذكرة الرجعة.",
+      "pronunciation_easy": "BA'-dar a-far-JEEK TAZ-ka-rit ir-RAJ-'a"
+    },
+    {
+      "id": "l2_book_ahead",
+      "target": "لازم أحجز من قبل؟",
+      "pronunciation_easy": "LAA-zim AH-jiz min abl"
+    },
+    {
+      "id": "l2_another_time_slot",
+      "target": "في وقت تاني فاضي؟",
+      "pronunciation_easy": "fee wa't TAA-nee FAA-dee"
+    },
+    {
+      "id": "l2_book_tomorrow",
+      "target": "ممكن أحجز لبكرا؟",
+      "pronunciation_easy": "MUM-kin AH-jiz la-BUK-ra"
+    },
+    {
+      "id": "l2_audio_guide",
+      "target": "في دليل صوتي بالإنجليزي؟",
+      "pronunciation_easy": "fee da-LEEL SAW-tee bil-in-GLEE-zee"
+    },
+    {
+      "id": "l2_accessible",
+      "target": "المكان مناسب للكرسي المتحرك؟",
+      "pronunciation_easy": "il-ma-KAAN m-NAA-seb lal-KUR-see il-mit-HAR-rek"
+    },
+    {
+      "id": "l2_step_free",
+      "target": "في طريق بدون درج؟",
+      "pronunciation_easy": "fee ta-REE' bi-DOON DA-raj"
+    },
+    {
+      "id": "l2_local_specialty",
+      "target": "شو المشروب المميّز عندكم؟",
+      "pronunciation_easy": "shoo il-mash-ROOB il-m-MAY-yaz IN-dkom"
+    },
+    {
+      "id": "l2_how_strong",
+      "target": "هو قوي؟",
+      "pronunciation_easy": "HOO-weh A-wee"
+    },
+    {
+      "id": "l2_something_lighter",
+      "target": "بفضّل إشي أخف.",
+      "pronunciation_easy": "b-FAD-del ISH-ee a-KHAFF"
+    },
+    {
+      "id": "l2_live_music",
+      "target": "في موسيقى حيّة الليلة؟",
+      "pronunciation_easy": "fee moo-SEE-a HAY-yeh il-LAY-leh",
+      "qa": "Bars and alcohol are not a given everywhere; this set is for places that have them."
+    },
+    {
+      "id": "l2_entry_fee",
+      "target": "في رسم دخول؟",
+      "pronunciation_easy": "fee rasm du-KHOOL"
+    },
+    {
+      "id": "l2_call_taxi",
+      "target": "ممكن تطلبلي تاكسي؟",
+      "pronunciation_easy": "MUM-kin tut-LUB-lee TAK-see"
+    },
+    {
+      "id": "l2_where_wait",
+      "target": "وين أستنى؟",
+      "pronunciation_easy": "wayn as-TAN-na"
+    },
+    {
+      "id": "l2_safe_way_home",
+      "target": "بدي طريقة آمنة أرجع فيها عالبيت.",
+      "pronunciation_easy": "BAD-dee ta-REE-a AAM-neh AR-ja' FEE-ha al-BAYT",
+      "qa": "PRIORITY REVIEW (safety)."
+    },
+    {
+      "id": "l2_total_price",
+      "target": "هاد السعر الكلي؟",
+      "pronunciation_easy": "haad is-SI'r il-KUL-lee"
+    },
+    {
+      "id": "l2_including_tax",
+      "target": "قديش مع الضريبة؟",
+      "pronunciation_easy": "ad-DAYSH ma' id-da-REE-beh"
+    },
+    {
+      "id": "l2_morning_evening",
+      "target": "الصبح ولا المسا؟",
+      "pronunciation_easy": "is-SUB-h WAL-la il-MA-sa"
+    },
+    {
+      "id": "l2_how_early",
+      "target": "قبل بقديش لازم أوصل؟",
+      "pronunciation_easy": "abl b-ad-DAYSH LAA-zim OO-sal"
+    },
+    {
+      "id": "l2_per_person",
+      "target": "هاد السعر للشخص؟",
+      "pronunciation_easy": "haad is-SI'r lash-SHAKHS"
+    },
+    {
+      "id": "l2_only_need_tickets",
+      "target": "بدي بس ___ تذاكر.",
+      "pronunciation_easy": "BAD-dee bas ___ ta-ZAA-ker"
+    },
+    {
+      "id": "l2_change_for",
+      "target": "معك فكّة لهاي؟",
+      "pronunciation_easy": "MA-'ak FAK-keh la-HAAY"
+    },
+    {
+      "id": "l2_pay_card_then",
+      "target": "خلص، بدفع بالكرت.",
+      "pronunciation_easy": "kha-LAS, BAD-fa' bil-KART"
     }
   ],
   "vocab": {
@@ -2266,6 +2482,45 @@
         "target": "رح نتلاقى عند الفندق.",
         "pronunciation_easy": "rah nit-LAA-a ind il-FUN-du'"
       }
+    ],
+    "l2_leaving_on": [
+      {
+        "word": "monday",
+        "target": "مسافر يوم التنين.",
+        "pronunciation_easy": "m-SAA-fer yom it-TNAYN"
+      },
+      {
+        "word": "friday",
+        "target": "مسافر يوم الجمعة.",
+        "pronunciation_easy": "m-SAA-fer yom ij-JUM-'a"
+      },
+      {
+        "word": "saturday",
+        "target": "مسافر يوم السبت.",
+        "pronunciation_easy": "m-SAA-fer yom is-SABT"
+      },
+      {
+        "word": "sunday",
+        "target": "مسافر يوم الأحد.",
+        "pronunciation_easy": "m-SAA-fer yom il-A-had"
+      }
+    ],
+    "l2_only_need_tickets": [
+      {
+        "word": "two",
+        "target": "بدي بس تذكرتين.",
+        "pronunciation_easy": "BAD-dee bas taz-kar-TAYN"
+      },
+      {
+        "word": "three",
+        "target": "بدي بس تلات تذاكر.",
+        "pronunciation_easy": "BAD-dee bas ta-LAT ta-ZAA-ker"
+      },
+      {
+        "word": "four",
+        "target": "بدي بس أربع تذاكر.",
+        "pronunciation_easy": "BAD-dee bas AR-ba' ta-ZAA-ker"
+      }
     ]
   },
   "replies": {
@@ -2551,6 +2806,75 @@
     "l2_maybe_what_time": {
       "target": "يمكن. أي ساعة؟",
       "pronunciation_easy": "YIM-kin. ay SAA-a"
+    },
+    "l2_busy_weekend": {
+      "target": "مشغولة هالأسبوع.",
+      "pronunciation_easy": "mash-GHOO-leh hal-us-BOO'",
+      "qa": "Said by a woman. A man: مشغول (mash-GHOOL)."
+    },
+    "l2_heres_number": {
+      "target": "أكيد، هاد رقمي.",
+      "pronunciation_easy": "a-KEED, haad RA'-mee"
+    },
+    "l2_sorry_understand": {
+      "target": "آه، آسف. فهمت.",
+      "pronunciation_easy": "aah, AA-sef. f-HIMT"
+    },
+    "l2_over_weight": {
+      "target": "وزنها زايد عن المسموح.",
+      "pronunciation_easy": "WAZ-n-ha ZAA-yed an il-mas-MOOH"
+    },
+    "l2_boarding_closes": {
+      "target": "الصعود للطيارة بيسكّر بعد عشرين دقيقة.",
+      "pronunciation_easy": "is-su-OOD lat-tay-YAA-ra bi-SAK-ker ba'd ish-REEN da-EE-a"
+    },
+    "l2_deliver_tomorrow": {
+      "target": "بنقدر نوصّلها بكرا.",
+      "pronunciation_easy": "b-NI'-dar n-was-SIL-ha BUK-ra"
+    },
+    "l2_flying_home": {
+      "target": "إيمتى راجع عبلدك؟",
+      "pronunciation_easy": "EEM-ta RAA-je' a-BA-la-dak"
+    },
+    "l2_sold_out_today": {
+      "target": "تذاكر اليوم خلصت.",
+      "pronunciation_easy": "ta-ZAA-ker il-YOM KHIL-sat"
+    },
+    "l2_at_entrance": {
+      "target": "آه، عند المدخل.",
+      "pronunciation_easy": "aah, ind il-MAD-khal"
+    },
+    "l2_stairs_only": {
+      "target": "الطابق الفوقاني بس درج.",
+      "pronunciation_easy": "it-TAA-be' il-foh-AA-nee bas DA-raj"
+    },
+    "l2_house_cocktail": {
+      "target": "جرّب كوكتيل المحل.",
+      "pronunciation_easy": "JAR-reb kok-TAYL il-ma-HALL"
+    },
+    "l2_band_at_nine": {
+      "target": "الفرقة بتبلّش الساعة تسعة.",
+      "pronunciation_easy": "il-FIR-a bit-BAL-lesh is-SAA-a TIS-'a"
+    },
+    "l2_ten_minutes_here": {
+      "target": "بيوصل بعد عشر دقايق.",
+      "pronunciation_easy": "b-YOO-sal ba'd A-shar da-AA-ye'"
+    },
+    "l2_tax_extra": {
+      "target": "الضريبة مش محسوبة.",
+      "pronunciation_easy": "id-da-REE-beh mish mah-SOO-beh"
+    },
+    "l2_seven_evening": {
+      "target": "بيبلّش الساعة سبعة المسا.",
+      "pronunciation_easy": "bi-BAL-lesh is-SAA-a SAB-'a il-MA-sa"
+    },
+    "l2_yes_per_person": {
+      "target": "آه، للشخص.",
+      "pronunciation_easy": "aah, lash-SHAKHS"
+    },
+    "l2_no_change": {
+      "target": "آسف، ما معي فكّة.",
+      "pronunciation_easy": "AA-sef, ma MA-'ee FAK-keh"
     }
   }
 }

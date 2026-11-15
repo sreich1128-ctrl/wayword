@@ -729,6 +729,201 @@
         "l2_meeting_at"
       ],
       "level": 2
+    },
+    {
+      "id": "l2_busy_weekend",
+      "english": "I'm busy this weekend.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": [
+        "l2_next_week",
+        "l2_another_time"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_heres_number",
+      "english": "Sure, here's my number.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": [
+        "l2_best_way_reach",
+        "thank_you"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_sorry_understand",
+      "english": "Oh, sorry. I understand.",
+      "situations": [
+        "flirting"
+      ],
+      "answer_with": [
+        "l2_thanks_understanding"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_over_weight",
+      "english": "It's over the weight limit.",
+      "situations": [
+        "airport"
+      ],
+      "answer_with": [
+        "l2_how_much_extra",
+        "l2_rearrange"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_boarding_closes",
+      "english": "Boarding closes in twenty minutes.",
+      "situations": [
+        "airport"
+      ],
+      "answer_with": [
+        "l2_security_again",
+        "l2_rebook"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_deliver_tomorrow",
+      "english": "We can deliver it tomorrow.",
+      "situations": [
+        "airport"
+      ],
+      "answer_with": [
+        "l2_hotel_address",
+        "l2_reference_number"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_flying_home",
+      "english": "When are you flying home?",
+      "situations": [
+        "airport"
+      ],
+      "answer_with": [
+        "l2_leaving_on",
+        "l2_return_ticket"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_sold_out_today",
+      "english": "Today's tickets are sold out.",
+      "situations": [
+        "sightseeing"
+      ],
+      "answer_with": [
+        "l2_another_time_slot",
+        "l2_book_tomorrow"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_at_entrance",
+      "english": "Yes, at the entrance.",
+      "situations": [
+        "sightseeing"
+      ],
+      "answer_with": [
+        "how_much"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_stairs_only",
+      "english": "The upper floor has stairs only.",
+      "situations": [
+        "sightseeing"
+      ],
+      "answer_with": [
+        "l2_step_free"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_house_cocktail",
+      "english": "Try our house cocktail.",
+      "situations": [
+        "bar"
+      ],
+      "answer_with": [
+        "l2_how_strong",
+        "l2_something_lighter"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_band_at_nine",
+      "english": "The band starts at nine.",
+      "situations": [
+        "bar"
+      ],
+      "answer_with": [
+        "l2_entry_fee"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_ten_minutes_here",
+      "english": "It'll be here in ten minutes.",
+      "situations": [
+        "bar"
+      ],
+      "answer_with": [
+        "l2_where_wait"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_tax_extra",
+      "english": "Tax is extra.",
+      "situations": [
+        "numbers"
+      ],
+      "answer_with": [
+        "l2_including_tax"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_seven_evening",
+      "english": "It starts at seven in the evening.",
+      "situations": [
+        "numbers"
+      ],
+      "answer_with": [
+        "l2_how_early"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_yes_per_person",
+      "english": "Yes, per person.",
+      "situations": [
+        "numbers"
+      ],
+      "answer_with": [
+        "l2_only_need_tickets"
+      ],
+      "level": 2
+    },
+    {
+      "id": "l2_no_change",
+      "english": "Sorry, I don't have change.",
+      "situations": [
+        "numbers"
+      ],
+      "answer_with": [
+        "l2_pay_card_then"
+      ],
+      "level": 2
     }
   ]
 }

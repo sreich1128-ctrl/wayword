@@ -44,7 +44,9 @@ Not built yet: a certificate for finishing a level.
 | 1 | The basics (3 exchanges + 8 recovery phrases), Restaurant (4), Transportation (4) | 31 phrases, 11 replies, 17 variations | Shipped v48 |
 | 2 | Help & emergencies (4 exchanges), Hotel (4), Lost / Directions (3) | 26 phrases, 12 replies, 12 variations | Shipped v50 |
 | 3 | Café (2 exchanges), Shopping (3), Barber (4), Meeting People (4) | 31 phrases, 13 replies, 14 variations | Shipped v51 |
-| 4 | Flirting, Airport, Sightseeing, Bar, Numbers & time | | Next |
+| 4 | Flirting (3 exchanges), Airport (4), Sightseeing (3), Bar (3), Numbers & time (4) | 42 phrases, 17 replies, 7 variations | Shipped v52 |
+
+All four batches are live: 130 Level 2 phrases and 53 replies per language. Batches 2–4 were spot-checked unlocked in the browser (Romanian and Levantine Arabic, 12 situation pages, on 127.0.0.1 so the owner's localhost progress is untouched). Still to do: Tatoeba cross-check for batches 3–4 (`node scripts/crosscheck.mjs`, slow on 2026-11-14), a ChatGPT review pass, native review of PRIORITY REVIEW lines, recordings.
 
 Changes from LEVEL_CUT.md in batch 3: barber "About ___ centimeters" became "A little shorter."; "We're meeting at ___" became "We're meeting ___." with the little word inside the blank; Meeting People's first follow-up reuses Level 1's "How long are you here for?"; generic recoveries (show me first, come back tomorrow) are left to the shared kit.
 

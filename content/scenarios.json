@@ -523,7 +523,18 @@
       "not_interested",
       "leave_me_alone"
     ],
-    "note": "Friendly and respectful. The last two are for saying no."
+    "note": "Friendly and respectful. The last two are for saying no.",
+    "level2": [
+      "l2_do_something",
+      "l2_next_week",
+      "l2_another_time",
+      "l2_message_tomorrow",
+      "l2_best_way_reach",
+      "l2_only_if_comfortable",
+      "l2_stay_with_friends",
+      "l2_thanks_understanding",
+      "l2_give_space"
+    ]
   },
   {
     "id": "barber",
@@ -591,6 +602,19 @@
       "luggage_missing",
       "flight_delayed",
       "connecting_flight"
+    ],
+    "level2": [
+      "l2_check_bag",
+      "l2_rearrange",
+      "l2_make_connection",
+      "l2_security_again",
+      "l2_rebook",
+      "l2_track_bag",
+      "l2_hotel_address",
+      "l2_reference_number",
+      "l2_here_tourism",
+      "l2_leaving_on",
+      "l2_return_ticket"
     ]
   },
   {
@@ -612,6 +636,14 @@
       "what_time_open",
       "what_time_close",
       "tour_english"
+    ],
+    "level2": [
+      "l2_book_ahead",
+      "l2_another_time_slot",
+      "l2_book_tomorrow",
+      "l2_audio_guide",
+      "l2_accessible",
+      "l2_step_free"
     ]
   },
   {
@@ -631,6 +663,16 @@
       "on_tap",
       "non_alcoholic",
       "cheers"
+    ],
+    "level2": [
+      "l2_local_specialty",
+      "l2_how_strong",
+      "l2_something_lighter",
+      "l2_live_music",
+      "l2_entry_fee",
+      "l2_call_taxi",
+      "l2_where_wait",
+      "l2_safe_way_home"
     ]
   },
   {
@@ -646,6 +688,16 @@
     ],
     "counts": [
       "what_time_is_it"
+    ],
+    "level2": [
+      "l2_total_price",
+      "l2_including_tax",
+      "l2_morning_evening",
+      "l2_how_early",
+      "l2_per_person",
+      "l2_only_need_tickets",
+      "l2_change_for",
+      "l2_pay_card_then"
     ]
   }
 ]

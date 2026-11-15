@@ -1,0 +1,66 @@
+l2_do_something | Ça te dit de faire quelque chose ce week-end ? | sah tuh DEE duh fehr kel-kuh SHOHZ suh week-END
+l2_next_week | Et la semaine prochaine ? | ay lah suh-MEN proh-SHEN
+l2_another_time | Pas de souci, une autre fois. | pah duh soo-SEE, ewn OH-truh FWAH
+l2_message_tomorrow | Je peux t'écrire demain ? | zhuh puh tay-KREER duh-MAN
+l2_best_way_reach | C'est quoi le mieux pour te joindre ? | say KWAH luh MYUH poor tuh ZHWAN-druh
+l2_only_if_comfortable | Seulement si tu es à l'aise. | suhl-MAHN see tew eh ah LEZ
+l2_stay_with_friends | Je préfère rester avec mes amis. | zhuh pray-FEHR ress-TAY ah-VEK may zah-MEE
+l2_thanks_understanding | Merci de comprendre. | mehr-SEE duh kohm-PRAHN-druh
+l2_give_space | Laissez-moi un peu d'espace, s'il vous plaît. | leh-say MWAH uhn puh dess-PASS, seel voo PLEH
+l2_check_bag | Je peux enregistrer ce bagage ? | zhuh puh ahn-ruh-zhee-STRAY suh bah-GAZH
+l2_rearrange | Je peux réorganiser mes bagages ? | zhuh puh ray-or-gah-nee-ZAY may bah-GAZH
+l2_make_connection | Est-ce que je vais avoir ma correspondance ? | ess kuh zhuh vay ah-VWAHR mah koh-ress-pohn-DAHNSS
+l2_security_again | Je dois repasser la sécurité ? | zhuh dwah ruh-pah-SAY lah say-kew-ree-TAY
+l2_rebook | Qui peut m'aider à changer de vol ? | kee puh may-DAY ah shahn-ZHAY duh VOL
+l2_track_bag | Comment je peux suivre mon bagage ? | koh-MAHN zhuh puh SWEE-vruh mohn bah-GAZH
+l2_hotel_address | Vous avez besoin de l'adresse de mon hôtel ? | voo zah-vay buh-ZWAN duh lah-DRESS duh mohn noh-TEL
+l2_reference_number | Je peux avoir un numéro de dossier ? | zhuh puh ah-VWAHR uhn new-may-ROH duh doh-SYAY
+l2_here_tourism | Je suis là pour le tourisme. | zhuh swee lah poor luh too-REEZ-muh
+l2_leaving_on | Je repars ___. | zhuh ruh-PAR ___
+l2_return_ticket | Je peux vous montrer mon billet retour. | zhuh puh voo mohn-TRAY mohn bee-YEH ruh-TOOR
+l2_book_ahead | Il faut réserver à l'avance ? | eel foh ray-zehr-VAY ah lah-VAHNSS
+l2_another_time_slot | Il y a un autre créneau ? | eel yah uhn OH-truh kray-NOH
+l2_book_tomorrow | Je peux réserver pour demain ? | zhuh puh ray-zehr-VAY poor duh-MAN
+l2_audio_guide | Il y a un audioguide en anglais ? | eel yah uhn oh-dyoh-GEED ahn nahn-GLEH
+l2_accessible | C'est accessible en fauteuil roulant ? | say tak-seh-SEE-bluh ahn foh-TUHY roo-LAHN
+l2_step_free | Il y a un accès sans marches ? | eel yah uhn ak-SEH sahn MARSH
+l2_local_specialty | C'est quoi votre spécialité ? | say KWAH voh-truh spay-syah-lee-TAY
+l2_how_strong | C'est fort ? | say FOR
+l2_something_lighter | Je préfère quelque chose de plus léger. | zhuh pray-FEHR kel-kuh SHOHZ duh plew lay-ZHAY
+l2_live_music | Il y a un concert ce soir ? | eel yah uhn kohn-SEHR suh SWAHR
+l2_entry_fee | L'entrée est payante ? | lahn-TRAY eh pay-YAHNT
+l2_call_taxi | Vous pouvez m'appeler un taxi ? | voo poo-vay mah-PLAY uhn tak-SEE
+l2_where_wait | J'attends où ? | zhah-TAHN OO
+l2_safe_way_home | J'ai besoin de rentrer en sécurité. | zhay buh-ZWAN duh rahn-TRAY ahn say-kew-ree-TAY
+l2_total_price | C'est le prix total ? | say luh pree toh-TAL
+l2_including_tax | Ça fait combien, taxes comprises ? | sah feh kohm-BYEN, taks kohm-PREEZ
+l2_morning_evening | Le matin ou le soir ? | luh mah-TAN oo luh SWAHR
+l2_how_early | Il faut arriver combien de temps avant ? | eel foh ah-ree-VAY kohm-byen duh TAHN ah-VAHN
+l2_per_person | C'est le prix par personne ? | say luh pree par pehr-SON
+l2_only_need_tickets | J'ai juste besoin de ___ billets. | zhay zhewst buh-ZWAN duh ___ bee-YEH
+l2_change_for | Vous avez la monnaie là-dessus ? | voo zah-vay lah moh-NEH lah-duh-SEW
+l2_pay_card_then | Alors je paie par carte. | ah-LOR zhuh peh par KART
+r:l2_busy_weekend | Je suis pris ce week-end. | zhuh swee PREE suh week-END
+r:l2_heres_number | Bien sûr, voilà mon numéro. | byan SEWR, vwah-LAH mohn new-may-ROH
+r:l2_sorry_understand | Oh, pardon. Je comprends. | oh, par-DOHN. zhuh kohm-PRAHN
+r:l2_over_weight | Il dépasse le poids autorisé. | eel day-PASS luh PWAH oh-toh-ree-ZAY
+r:l2_boarding_closes | L'embarquement ferme dans vingt minutes. | lahn-bar-kuh-MAHN fehrm dahn van mee-NEWT
+r:l2_deliver_tomorrow | On peut vous le livrer demain. | ohn puh voo luh lee-VRAY duh-MAN
+r:l2_flying_home | Vous repartez quand ? | voo ruh-par-TAY KAHN
+r:l2_sold_out_today | Les billets d'aujourd'hui sont épuisés. | lay bee-YEH doh-zhoor-DWEE sohn tay-pwee-ZAY
+r:l2_at_entrance | Oui, à l'entrée. | wee, ah lahn-TRAY
+r:l2_stairs_only | L'étage n'a que des escaliers. | lay-TAZH nah kuh day zess-kah-LYAY
+r:l2_house_cocktail | Goûtez notre cocktail maison. | goo-TAY noh-truh kok-TEL meh-ZOHN
+r:l2_band_at_nine | Le groupe commence à neuf heures. | luh GROOP koh-MAHNSS ah nuh VUHR
+r:l2_ten_minutes_here | Il arrive dans dix minutes. | eel ah-REEV dahn dee mee-NEWT
+r:l2_tax_extra | Les taxes sont en plus. | lay TAKS sohn tahn PLEWSS
+r:l2_seven_evening | Ça commence à sept heures du soir. | sah koh-MAHNSS ah set UHR dew SWAHR
+r:l2_yes_per_person | Oui, par personne. | wee, par pehr-SON
+r:l2_no_change | Désolé, je n'ai pas de monnaie. | day-zoh-LAY, zhuh nay pah duh moh-NEH
+x:l2_leaving_on~monday | Je repars lundi. | zhuh ruh-PAR luhn-DEE
+x:l2_leaving_on~friday | Je repars vendredi. | zhuh ruh-PAR vahn-druh-DEE
+x:l2_leaving_on~saturday | Je repars samedi. | zhuh ruh-PAR sahm-DEE
+x:l2_leaving_on~sunday | Je repars dimanche. | zhuh ruh-PAR dee-MAHNSH
+x:l2_only_need_tickets~two | J'ai juste besoin de deux billets. | zhay zhewst buh-ZWAN duh duh bee-YEH
+x:l2_only_need_tickets~three | J'ai juste besoin de trois billets. | zhay zhewst buh-ZWAN duh trwah bee-YEH
+x:l2_only_need_tickets~four | J'ai juste besoin de quatre billets. | zhay zhewst buh-ZWAN duh KAH-truh bee-YEH

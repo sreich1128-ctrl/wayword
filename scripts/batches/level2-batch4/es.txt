@@ -1,0 +1,66 @@
+l2_do_something | ¿Quieres hacer algo este fin de semana? | KYEH-res ah-SEHR AL-goh ES-teh feen deh seh-MAH-nah
+l2_next_week | ¿Y la semana que viene? | ee lah seh-MAH-nah keh VYEH-neh
+l2_another_time | No pasa nada, otro día. | noh PAH-sah NAH-dah, OH-troh DEE-ah
+l2_message_tomorrow | ¿Te puedo escribir mañana? | teh PWEH-doh es-kree-BEER mah-NYAH-nah
+l2_best_way_reach | ¿Cuál es la mejor forma de contactarte? | kwal es lah meh-HOR FOR-mah deh kon-tak-TAR-teh
+l2_only_if_comfortable | Solo si te sientes a gusto. | SOH-loh see teh SYEN-tes ah GOOS-toh
+l2_stay_with_friends | Prefiero quedarme con mis amigos. | preh-FYEH-roh keh-DAR-meh kon mees ah-MEE-gos
+l2_thanks_understanding | Gracias por entender. | GRAH-syas por en-ten-DEHR
+l2_give_space | Dame espacio, por favor. | DAH-meh es-PAH-syoh, por fah-VOR
+l2_check_bag | ¿Puedo facturar esta maleta? | PWEH-doh fak-too-RAR ES-tah mah-LEH-tah
+l2_rearrange | ¿Puedo reorganizar mi equipaje? | PWEH-doh reh-or-gah-nee-SAR mee eh-kee-PAH-heh
+l2_make_connection | ¿Voy a alcanzar mi conexión? | voy ah al-kan-SAR mee koh-nek-SYON
+l2_security_again | ¿Tengo que pasar seguridad otra vez? | TEN-goh keh pah-SAR seh-goo-ree-DAD OH-trah ves
+l2_rebook | ¿Quién me puede ayudar a cambiar el vuelo? | kyen meh PWEH-deh ah-yoo-DAR ah kam-BYAR el VWEH-loh
+l2_track_bag | ¿Cómo puedo rastrear mi maleta? | KOH-moh PWEH-doh ras-treh-AR mee mah-LEH-tah
+l2_hotel_address | ¿Necesita la dirección de mi hotel? | neh-seh-SEE-tah lah dee-rek-SYON deh mee oh-TEL
+l2_reference_number | ¿Me puede dar un número de referencia? | meh PWEH-deh dar oon NOO-meh-roh deh reh-feh-REN-syah
+l2_here_tourism | Vengo de turismo. | VEN-goh deh too-REES-moh
+l2_leaving_on | Me voy ___. | meh voy ___
+l2_return_ticket | Puedo mostrarle mi boleto de regreso. | PWEH-doh mos-TRAR-leh mee boh-LEH-toh deh reh-GREH-soh
+l2_book_ahead | ¿Hay que reservar con antelación? | eye keh reh-sehr-VAR kon an-teh-lah-SYON
+l2_another_time_slot | ¿Hay otro horario disponible? | eye OH-troh oh-RAH-ryoh dees-poh-NEE-bleh
+l2_book_tomorrow | ¿Puedo reservar para mañana? | PWEH-doh reh-sehr-VAR PAH-rah mah-NYAH-nah
+l2_audio_guide | ¿Hay audioguía en inglés? | eye ow-dyoh-GEE-ah en een-GLES
+l2_accessible | ¿Es accesible para silla de ruedas? | es ak-seh-SEE-bleh PAH-rah SEE-yah deh RWEH-das
+l2_step_free | ¿Hay una ruta sin escalones? | eye OO-nah ROO-tah seen es-kah-LOH-nes
+l2_local_specialty | ¿Cuál es la especialidad de la casa? | kwal es lah es-peh-syah-lee-DAD deh lah KAH-sah
+l2_how_strong | ¿Es muy fuerte? | es mwee FWEHR-teh
+l2_something_lighter | Prefiero algo más suave. | preh-FYEH-roh AL-goh mas SWAH-veh
+l2_live_music | ¿Hay música en vivo esta noche? | eye MOO-see-kah en VEE-voh ES-tah NOH-cheh
+l2_entry_fee | ¿Se paga entrada? | seh PAH-gah en-TRAH-dah
+l2_call_taxi | ¿Me puede pedir un taxi? | meh PWEH-deh peh-DEER oon TAK-see
+l2_where_wait | ¿Dónde espero? | DON-deh es-PEH-roh
+l2_safe_way_home | Necesito una forma segura de volver. | neh-seh-SEE-toh OO-nah FOR-mah seh-GOO-rah deh vol-VEHR
+l2_total_price | ¿Ese es el precio total? | EH-seh es el PREH-syoh toh-TAL
+l2_including_tax | ¿Cuánto es con impuestos? | KWAN-toh es kon eem-PWES-tos
+l2_morning_evening | ¿Por la mañana o por la noche? | por lah mah-NYAH-nah oh por lah NOH-cheh
+l2_how_early | ¿Con cuánta anticipación debo llegar? | kon KWAN-tah an-tee-see-pah-SYON DEH-boh yeh-GAR
+l2_per_person | ¿Ese precio es por persona? | EH-seh PREH-syoh es por pehr-SOH-nah
+l2_only_need_tickets | Solo necesito ___ entradas. | SOH-loh neh-seh-SEE-toh ___ en-TRAH-das
+l2_change_for | ¿Tiene cambio para esto? | TYEH-neh KAM-byoh PAH-rah ES-toh
+l2_pay_card_then | Entonces pago con tarjeta. | en-TON-ses PAH-goh kon tar-HEH-tah
+r:l2_busy_weekend | Este fin de semana no puedo. | ES-teh feen deh seh-MAH-nah noh PWEH-doh
+r:l2_heres_number | Claro, este es mi número. | KLAH-roh, ES-teh es mee NOO-meh-roh
+r:l2_sorry_understand | Ah, perdón. Lo entiendo. | ah, pehr-DON. loh en-TYEN-doh
+r:l2_over_weight | Excede el límite de peso. | ek-SEH-deh el LEE-mee-teh deh PEH-soh
+r:l2_boarding_closes | El embarque cierra en veinte minutos. | el em-BAR-keh SYEH-rah en VAYN-teh mee-NOO-tos
+r:l2_deliver_tomorrow | Podemos entregársela mañana. | poh-DEH-mos en-treh-GAR-seh-lah mah-NYAH-nah
+r:l2_flying_home | ¿Cuándo regresa a su país? | KWAN-doh reh-GREH-sah ah soo pah-EES
+r:l2_sold_out_today | Las entradas de hoy están agotadas. | las en-TRAH-das deh oy es-TAN ah-goh-TAH-das
+r:l2_at_entrance | Sí, en la entrada. | see, en lah en-TRAH-dah
+r:l2_stairs_only | El piso de arriba solo tiene escaleras. | el PEE-soh deh ah-REE-bah SOH-loh TYEH-neh es-kah-LEH-ras
+r:l2_house_cocktail | Pruebe el cóctel de la casa. | PRWEH-beh el KOK-tel deh lah KAH-sah
+r:l2_band_at_nine | La banda empieza a las nueve. | lah BAN-dah em-PYEH-sah ah las NWEH-veh
+r:l2_ten_minutes_here | Llega en diez minutos. | YEH-gah en dyes mee-NOO-tos
+r:l2_tax_extra | Los impuestos van aparte. | los eem-PWES-tos van ah-PAR-teh
+r:l2_seven_evening | Empieza a las siete de la tarde. | em-PYEH-sah ah las SYEH-teh deh lah TAR-deh
+r:l2_yes_per_person | Sí, por persona. | see, por pehr-SOH-nah
+r:l2_no_change | Lo siento, no tengo cambio. | loh SYEN-toh, noh TEN-goh KAM-byoh
+x:l2_leaving_on~monday | Me voy el lunes. | meh voy el LOO-nes
+x:l2_leaving_on~friday | Me voy el viernes. | meh voy el VYEHR-nes
+x:l2_leaving_on~saturday | Me voy el sábado. | meh voy el SAH-bah-doh
+x:l2_leaving_on~sunday | Me voy el domingo. | meh voy el doh-MEEN-goh
+x:l2_only_need_tickets~two | Solo necesito dos entradas. | SOH-loh neh-seh-SEE-toh dos en-TRAH-das
+x:l2_only_need_tickets~three | Solo necesito tres entradas. | SOH-loh neh-seh-SEE-toh tres en-TRAH-das
+x:l2_only_need_tickets~four | Solo necesito cuatro entradas. | SOH-loh neh-seh-SEE-toh KWAH-troh en-TRAH-das

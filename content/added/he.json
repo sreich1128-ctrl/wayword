@@ -1009,6 +1009,221 @@
       "id": "l2_no_worries",
       "target": "אין בעיה אם אתה עסוק.",
       "pronunciation_easy": "eyn be-a-YA im a-TA a-SOOK"
+    },
+    {
+      "id": "l2_do_something",
+      "target": "רוצה לעשות משהו בסוף השבוע?",
+      "pronunciation_easy": "ro-TSE la-a-SOT MA-she-hu be-SOF ha-sha-VU-a"
+    },
+    {
+      "id": "l2_next_week",
+      "target": "ומה עם שבוע הבא?",
+      "pronunciation_easy": "u-MA im sha-VU-a ha-BA",
+      "qa": "Only after a 'busy' answer. If the answer was a no, say 'No worries, another time.' instead."
+    },
+    {
+      "id": "l2_another_time",
+      "target": "אין בעיה, בפעם אחרת.",
+      "pronunciation_easy": "eyn be-a-YA, be-FA-am a-KHE-ret"
+    },
+    {
+      "id": "l2_message_tomorrow",
+      "target": "אפשר לכתוב לך מחר?",
+      "pronunciation_easy": "ef-SHAR likh-TOV le-KHA ma-KHAR"
+    },
+    {
+      "id": "l2_best_way_reach",
+      "target": "מה הדרך הכי טובה ליצור איתך קשר?",
+      "pronunciation_easy": "ma ha-DE-rekh ha-KHEE to-VA lits-OR it-KHA KE-sher"
+    },
+    {
+      "id": "l2_only_if_comfortable",
+      "target": "רק אם נוח לך.",
+      "pronunciation_easy": "rak im NO-akh le-KHA"
+    },
+    {
+      "id": "l2_stay_with_friends",
+      "target": "אני מעדיף להישאר עם החברים שלי.",
+      "pronunciation_easy": "a-NEE ma-a-DEEF le-hi-sha-ER im ha-kha-ve-REEM she-LEE",
+      "qa": "PRIORITY REVIEW (a boundary: a clear, polite no)."
+    },
+    {
+      "id": "l2_thanks_understanding",
+      "target": "תודה על ההבנה.",
+      "pronunciation_easy": "to-DA al ha-ha-va-NA"
+    },
+    {
+      "id": "l2_give_space",
+      "target": "תן לי קצת מרחב, בבקשה.",
+      "pronunciation_easy": "ten lee ktsat mer-KHAV, be-va-ka-SHA",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm). To a woman: תני לי (tnee lee)."
+    },
+    {
+      "id": "l2_check_bag",
+      "target": "אפשר לשלוח את התיק הזה לבטן המטוס?",
+      "pronunciation_easy": "ef-SHAR lish-LO-akh et ha-TEEK ha-ZE le-VE-ten ha-ma-TOS"
+    },
+    {
+      "id": "l2_rearrange",
+      "target": "אפשר לסדר מחדש את המזוודה?",
+      "pronunciation_easy": "ef-SHAR le-sa-DER me-kha-DASH et ha-miz-va-DA"
+    },
+    {
+      "id": "l2_make_connection",
+      "target": "אני אספיק לטיסת ההמשך?",
+      "pronunciation_easy": "a-NEE as-PEEK le-tee-SAT ha-hem-SHEKH"
+    },
+    {
+      "id": "l2_security_again",
+      "target": "צריך לעבור שוב בידוק ביטחוני?",
+      "pronunciation_easy": "tsa-REEKH la-a-VOR shoov bee-DUK bee-ta-kho-NEE"
+    },
+    {
+      "id": "l2_rebook",
+      "target": "מי יכול לעזור לי להחליף טיסה?",
+      "pronunciation_easy": "mee ya-KHOL la-a-ZOR lee le-hakh-LEEF tee-SA"
+    },
+    {
+      "id": "l2_track_bag",
+      "target": "איך אפשר לעקוב אחרי המזוודה?",
+      "pronunciation_easy": "ekh ef-SHAR la-a-KOV a-kha-REY ha-miz-va-DA"
+    },
+    {
+      "id": "l2_hotel_address",
+      "target": "צריך את הכתובת של המלון שלי?",
+      "pronunciation_easy": "tsa-REEKH et ha-KTO-vet shel ha-ma-LON she-LEE"
+    },
+    {
+      "id": "l2_reference_number",
+      "target": "אפשר לקבל מספר פנייה?",
+      "pronunciation_easy": "ef-SHAR le-ka-BEL mis-PAR pnee-YA"
+    },
+    {
+      "id": "l2_here_tourism",
+      "target": "אני פה בתור תייר.",
+      "pronunciation_easy": "a-NEE po be-TOR ta-YAR",
+      "qa": "Border questions: say only what is true for your trip."
+    },
+    {
+      "id": "l2_leaving_on",
+      "target": "אני עוזב ___.",
+      "pronunciation_easy": "a-NEE o-ZEV ___"
+    },
+    {
+      "id": "l2_return_ticket",
+      "target": "אני יכול להראות את כרטיס החזור.",
+      "pronunciation_easy": "a-NEE ya-KHOL le-har-OT et kar-TEES ha-kha-ZOR"
+    },
+    {
+      "id": "l2_book_ahead",
+      "target": "צריך להזמין מראש?",
+      "pronunciation_easy": "tsa-REEKH le-haz-MEEN me-ROSH"
+    },
+    {
+      "id": "l2_another_time_slot",
+      "target": "יש שעה אחרת פנויה?",
+      "pronunciation_easy": "yesh sha-A a-KHE-ret pnu-YA"
+    },
+    {
+      "id": "l2_book_tomorrow",
+      "target": "אפשר להזמין למחר?",
+      "pronunciation_easy": "ef-SHAR le-haz-MEEN le-ma-KHAR"
+    },
+    {
+      "id": "l2_audio_guide",
+      "target": "יש מדריך קולי באנגלית?",
+      "pronunciation_easy": "yesh mad-REEKH ko-LEE be-an-GLEET"
+    },
+    {
+      "id": "l2_accessible",
+      "target": "זה נגיש לכיסא גלגלים?",
+      "pronunciation_easy": "ze na-GEESH le-khee-SE gal-ga-LEEM"
+    },
+    {
+      "id": "l2_step_free",
+      "target": "יש מסלול בלי מדרגות?",
+      "pronunciation_easy": "yesh mas-LOOL blee mad-re-GOT"
+    },
+    {
+      "id": "l2_local_specialty",
+      "target": "מה המשקה המיוחד שלכם?",
+      "pronunciation_easy": "ma ha-mash-KE ha-me-yu-KHAD shel-a-KHEM"
+    },
+    {
+      "id": "l2_how_strong",
+      "target": "זה חזק?",
+      "pronunciation_easy": "ze kha-ZAK"
+    },
+    {
+      "id": "l2_something_lighter",
+      "target": "אני מעדיף משהו קל יותר.",
+      "pronunciation_easy": "a-NEE ma-a-DEEF MA-she-hu kal yo-TER"
+    },
+    {
+      "id": "l2_live_music",
+      "target": "יש הופעה חיה הערב?",
+      "pronunciation_easy": "yesh ho-fa-A kha-YA ha-E-rev"
+    },
+    {
+      "id": "l2_entry_fee",
+      "target": "יש דמי כניסה?",
+      "pronunciation_easy": "yesh dmey knee-SA"
+    },
+    {
+      "id": "l2_call_taxi",
+      "target": "אפשר להזמין לי מונית?",
+      "pronunciation_easy": "ef-SHAR le-haz-MEEN lee mo-NEET"
+    },
+    {
+      "id": "l2_where_wait",
+      "target": "איפה לחכות?",
+      "pronunciation_easy": "EY-fo le-kha-KOT"
+    },
+    {
+      "id": "l2_safe_way_home",
+      "target": "אני צריך דרך בטוחה לחזור הביתה.",
+      "pronunciation_easy": "a-NEE tsa-REEKH DE-rekh be-tu-KHA la-kha-ZOR ha-BAI-ta",
+      "qa": "PRIORITY REVIEW (safety)."
+    },
+    {
+      "id": "l2_total_price",
+      "target": "זה המחיר הסופי?",
+      "pronunciation_easy": "ze ha-me-KHEER ha-so-FEE"
+    },
+    {
+      "id": "l2_including_tax",
+      "target": "כמה זה כולל מס?",
+      "pronunciation_easy": "KA-ma ze ko-LEL mas"
+    },
+    {
+      "id": "l2_morning_evening",
+      "target": "בבוקר או בערב?",
+      "pronunciation_easy": "ba-BO-ker o ba-E-rev"
+    },
+    {
+      "id": "l2_how_early",
+      "target": "כמה זמן לפני צריך להגיע?",
+      "pronunciation_easy": "KA-ma zman lif-NEY tsa-REEKH le-ha-GEE-a"
+    },
+    {
+      "id": "l2_per_person",
+      "target": "זה המחיר לאדם?",
+      "pronunciation_easy": "ze ha-me-KHEER le-a-DAM"
+    },
+    {
+      "id": "l2_only_need_tickets",
+      "target": "אני צריך רק ___ כרטיסים.",
+      "pronunciation_easy": "a-NEE tsa-REEKH rak ___ kar-tee-SEEM"
+    },
+    {
+      "id": "l2_change_for",
+      "target": "יש לך עודף מזה?",
+      "pronunciation_easy": "yesh le-KHA O-def mi-ZE"
+    },
+    {
+      "id": "l2_pay_card_then",
+      "target": "אז אשלם בכרטיס.",
+      "pronunciation_easy": "az a-sha-LEM be-khar-TEES"
     }
   ],
   "vocab": {
@@ -2240,6 +2455,45 @@
         "target": "אנחנו נפגשים במלון.",
         "pronunciation_easy": "a-NAKH-nu nif-ga-SHEEM ba-ma-LON"
       }
+    ],
+    "l2_leaving_on": [
+      {
+        "word": "monday",
+        "target": "אני עוזב ביום שני.",
+        "pronunciation_easy": "a-NEE o-ZEV be-YOM she-NEE"
+      },
+      {
+        "word": "friday",
+        "target": "אני עוזב ביום שישי.",
+        "pronunciation_easy": "a-NEE o-ZEV be-YOM shee-SHEE"
+      },
+      {
+        "word": "saturday",
+        "target": "אני עוזב בשבת.",
+        "pronunciation_easy": "a-NEE o-ZEV be-sha-BAT"
+      },
+      {
+        "word": "sunday",
+        "target": "אני עוזב ביום ראשון.",
+        "pronunciation_easy": "a-NEE o-ZEV be-YOM ri-SHON"
+      }
+    ],
+    "l2_only_need_tickets": [
+      {
+        "word": "two",
+        "target": "אני צריך רק שני כרטיסים.",
+        "pronunciation_easy": "a-NEE tsa-REEKH rak shney kar-tee-SEEM"
+      },
+      {
+        "word": "three",
+        "target": "אני צריך רק שלושה כרטיסים.",
+        "pronunciation_easy": "a-NEE tsa-REEKH rak shlo-SHA kar-tee-SEEM"
+      },
+      {
+        "word": "four",
+        "target": "אני צריך רק ארבעה כרטיסים.",
+        "pronunciation_easy": "a-NEE tsa-REEKH rak ar-ba-A kar-tee-SEEM"
+      }
     ]
   },
   "replies": {
@@ -2521,6 +2775,75 @@
     "l2_maybe_what_time": {
       "target": "אולי. באיזו שעה?",
       "pronunciation_easy": "u-LAI. be-EY-zo sha-A"
+    },
+    "l2_busy_weekend": {
+      "target": "אני עסוקה בסוף השבוע.",
+      "pronunciation_easy": "a-NEE a-su-KA be-SOF ha-sha-VU-a",
+      "qa": "Said by a woman. A man: עסוק (a-SOOK)."
+    },
+    "l2_heres_number": {
+      "target": "בטח, זה המספר שלי.",
+      "pronunciation_easy": "BE-takh, ze ha-mis-PAR she-LEE"
+    },
+    "l2_sorry_understand": {
+      "target": "אה, סליחה. הבנתי.",
+      "pronunciation_easy": "ah, slee-KHA. he-VAN-tee"
+    },
+    "l2_over_weight": {
+      "target": "זה מעל מגבלת המשקל.",
+      "pronunciation_easy": "ze me-AL mig-BE-let ha-mish-KAL"
+    },
+    "l2_boarding_closes": {
+      "target": "העלייה למטוס נסגרת בעוד עשרים דקות.",
+      "pronunciation_easy": "ha-a-lee-YA la-ma-TOS nis-GE-ret be-OD es-REEM da-KOT"
+    },
+    "l2_deliver_tomorrow": {
+      "target": "נוכל להביא אותה מחר.",
+      "pronunciation_easy": "nu-KHAL le-ha-VEE o-TA ma-KHAR"
+    },
+    "l2_flying_home": {
+      "target": "מתי אתה טס הביתה?",
+      "pronunciation_easy": "ma-TAI a-TA tas ha-BAI-ta"
+    },
+    "l2_sold_out_today": {
+      "target": "הכרטיסים להיום אזלו.",
+      "pronunciation_easy": "ha-kar-tee-SEEM le-ha-YOM az-LU"
+    },
+    "l2_at_entrance": {
+      "target": "כן, בכניסה.",
+      "pronunciation_easy": "ken, ba-knee-SA"
+    },
+    "l2_stairs_only": {
+      "target": "בקומה העליונה יש רק מדרגות.",
+      "pronunciation_easy": "ba-ko-MA ha-el-yo-NA yesh rak mad-re-GOT"
+    },
+    "l2_house_cocktail": {
+      "target": "תנסה את קוקטייל הבית.",
+      "pronunciation_easy": "te-na-SE et kok-TEYL ha-BA-yit"
+    },
+    "l2_band_at_nine": {
+      "target": "הלהקה מתחילה בתשע.",
+      "pronunciation_easy": "ha-la-ha-KA mat-khee-LA be-TE-sha"
+    },
+    "l2_ten_minutes_here": {
+      "target": "היא תגיע בעוד עשר דקות.",
+      "pronunciation_easy": "hee ta-GEE-a be-OD E-ser da-KOT"
+    },
+    "l2_tax_extra": {
+      "target": "המס לא כלול.",
+      "pronunciation_easy": "ha-MAS lo ka-LOOL"
+    },
+    "l2_seven_evening": {
+      "target": "זה מתחיל בשבע בערב.",
+      "pronunciation_easy": "ze mat-KHEEL be-SHE-va ba-E-rev"
+    },
+    "l2_yes_per_person": {
+      "target": "כן, לאדם.",
+      "pronunciation_easy": "ken, le-a-DAM"
+    },
+    "l2_no_change": {
+      "target": "סליחה, אין לי עודף.",
+      "pronunciation_easy": "slee-KHA, eyn lee O-def"
     }
   }
 }

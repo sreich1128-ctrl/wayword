@@ -1,0 +1,66 @@
+l2_do_something | بتحب نعمل إشي نهاية الأسبوع؟ | bit-HIB NI'-mal ISH-ee ni-HAA-yit il-us-BOO'
+l2_next_week | طيب، الأسبوع الجاي؟ | TAY-yeb, il-us-BOO' ij-JAAY
+l2_another_time | ولا يهمك، مرة تانية. | WA-la y-HIM-mak, MAR-ra TAAN-yeh
+l2_message_tomorrow | ممكن أبعتلك رسالة بكرا؟ | MUM-kin ab-'AT-lak ri-SAA-leh BUK-ra
+l2_best_way_reach | شو أحسن طريقة أتواصل معك؟ | shoo AH-san ta-REE-a at-WAA-sal MA-'ak
+l2_only_if_comfortable | بس إذا إنت مرتاح. | bas I-za IN-ta mir-TAAH
+l2_stay_with_friends | بفضّل أضل مع صحابي. | b-FAD-del a-DAL ma' SHAA-bee
+l2_thanks_understanding | شكراً لتفهّمك. | SHUK-ran la-ta-FAH-hu-mak
+l2_give_space | اتركلي مساحة، لو سمحت. | it-RIK-lee ma-SAA-ha, law sa-MAHT
+l2_check_bag | ممكن أشحن هالشنطة؟ | MUM-kin ASH-han hash-SHAN-ta
+l2_rearrange | ممكن أرتّب أغراضي من جديد؟ | MUM-kin a-RAT-teb agh-RAA-dee min j-DEED
+l2_make_connection | بلحّق رحلة الترانزيت؟ | b-LAH-he' RIH-lit it-tran-ZEET
+l2_security_again | لازم أمرّ على التفتيش مرة تانية؟ | LAA-zim a-MURR A-la it-taf-TEESH MAR-ra TAAN-yeh
+l2_rebook | مين بقدر يساعدني أغيّر الرحلة؟ | meen BYI'-dar y-saa-'ID-nee a-GHAY-yer ir-RIH-leh
+l2_track_bag | كيف بقدر أتابع شنطتي؟ | keef BA'-dar a-TAA-be' shan-TIT-ee
+l2_hotel_address | بدك عنوان الفندق؟ | BAD-dak un-WAAN il-FUN-du'
+l2_reference_number | ممكن آخد رقم مرجعي؟ | MUM-kin AA-khod RA-'am MAR-ji-'ee
+l2_here_tourism | أنا هون سياحة. | A-na hoon see-YAA-ha
+l2_leaving_on | مسافر ___. | m-SAA-fer ___
+l2_return_ticket | بقدر أفرجيك تذكرة الرجعة. | BA'-dar a-far-JEEK TAZ-ka-rit ir-RAJ-'a
+l2_book_ahead | لازم أحجز من قبل؟ | LAA-zim AH-jiz min abl
+l2_another_time_slot | في وقت تاني فاضي؟ | fee wa't TAA-nee FAA-dee
+l2_book_tomorrow | ممكن أحجز لبكرا؟ | MUM-kin AH-jiz la-BUK-ra
+l2_audio_guide | في دليل صوتي بالإنجليزي؟ | fee da-LEEL SAW-tee bil-in-GLEE-zee
+l2_accessible | المكان مناسب للكرسي المتحرك؟ | il-ma-KAAN m-NAA-seb lal-KUR-see il-mit-HAR-rek
+l2_step_free | في طريق بدون درج؟ | fee ta-REE' bi-DOON DA-raj
+l2_local_specialty | شو المشروب المميّز عندكم؟ | shoo il-mash-ROOB il-m-MAY-yaz IN-dkom
+l2_how_strong | هو قوي؟ | HOO-weh A-wee
+l2_something_lighter | بفضّل إشي أخف. | b-FAD-del ISH-ee a-KHAFF
+l2_live_music | في موسيقى حيّة الليلة؟ | fee moo-SEE-a HAY-yeh il-LAY-leh
+l2_entry_fee | في رسم دخول؟ | fee rasm du-KHOOL
+l2_call_taxi | ممكن تطلبلي تاكسي؟ | MUM-kin tut-LUB-lee TAK-see
+l2_where_wait | وين أستنى؟ | wayn as-TAN-na
+l2_safe_way_home | بدي طريقة آمنة أرجع فيها عالبيت. | BAD-dee ta-REE-a AAM-neh AR-ja' FEE-ha al-BAYT
+l2_total_price | هاد السعر الكلي؟ | haad is-SI'r il-KUL-lee
+l2_including_tax | قديش مع الضريبة؟ | ad-DAYSH ma' id-da-REE-beh
+l2_morning_evening | الصبح ولا المسا؟ | is-SUB-h WAL-la il-MA-sa
+l2_how_early | قبل بقديش لازم أوصل؟ | abl b-ad-DAYSH LAA-zim OO-sal
+l2_per_person | هاد السعر للشخص؟ | haad is-SI'r lash-SHAKHS
+l2_only_need_tickets | بدي بس ___ تذاكر. | BAD-dee bas ___ ta-ZAA-ker
+l2_change_for | معك فكّة لهاي؟ | MA-'ak FAK-keh la-HAAY
+l2_pay_card_then | خلص، بدفع بالكرت. | kha-LAS, BAD-fa' bil-KART
+r:l2_busy_weekend | مشغولة هالأسبوع. | mash-GHOO-leh hal-us-BOO'
+r:l2_heres_number | أكيد، هاد رقمي. | a-KEED, haad RA'-mee
+r:l2_sorry_understand | آه، آسف. فهمت. | aah, AA-sef. f-HIMT
+r:l2_over_weight | وزنها زايد عن المسموح. | WAZ-n-ha ZAA-yed an il-mas-MOOH
+r:l2_boarding_closes | الصعود للطيارة بيسكّر بعد عشرين دقيقة. | is-su-OOD lat-tay-YAA-ra bi-SAK-ker ba'd ish-REEN da-EE-a
+r:l2_deliver_tomorrow | بنقدر نوصّلها بكرا. | b-NI'-dar n-was-SIL-ha BUK-ra
+r:l2_flying_home | إيمتى راجع عبلدك؟ | EEM-ta RAA-je' a-BA-la-dak
+r:l2_sold_out_today | تذاكر اليوم خلصت. | ta-ZAA-ker il-YOM KHIL-sat
+r:l2_at_entrance | آه، عند المدخل. | aah, ind il-MAD-khal
+r:l2_stairs_only | الطابق الفوقاني بس درج. | it-TAA-be' il-foh-AA-nee bas DA-raj
+r:l2_house_cocktail | جرّب كوكتيل المحل. | JAR-reb kok-TAYL il-ma-HALL
+r:l2_band_at_nine | الفرقة بتبلّش الساعة تسعة. | il-FIR-a bit-BAL-lesh is-SAA-a TIS-'a
+r:l2_ten_minutes_here | بيوصل بعد عشر دقايق. | b-YOO-sal ba'd A-shar da-AA-ye'
+r:l2_tax_extra | الضريبة مش محسوبة. | id-da-REE-beh mish mah-SOO-beh
+r:l2_seven_evening | بيبلّش الساعة سبعة المسا. | bi-BAL-lesh is-SAA-a SAB-'a il-MA-sa
+r:l2_yes_per_person | آه، للشخص. | aah, lash-SHAKHS
+r:l2_no_change | آسف، ما معي فكّة. | AA-sef, ma MA-'ee FAK-keh
+x:l2_leaving_on~monday | مسافر يوم التنين. | m-SAA-fer yom it-TNAYN
+x:l2_leaving_on~friday | مسافر يوم الجمعة. | m-SAA-fer yom ij-JUM-'a
+x:l2_leaving_on~saturday | مسافر يوم السبت. | m-SAA-fer yom is-SABT
+x:l2_leaving_on~sunday | مسافر يوم الأحد. | m-SAA-fer yom il-A-had
+x:l2_only_need_tickets~two | بدي بس تذكرتين. | BAD-dee bas taz-kar-TAYN
+x:l2_only_need_tickets~three | بدي بس تلات تذاكر. | BAD-dee bas ta-LAT ta-ZAA-ker
+x:l2_only_need_tickets~four | بدي بس أربع تذاكر. | BAD-dee bas AR-ba' ta-ZAA-ker

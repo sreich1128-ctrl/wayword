@@ -1000,6 +1000,221 @@
       "id": "l2_no_worries",
       "target": "Nicio problemă dacă nu poți.",
       "pronunciation_easy": "NEE-choh proh-BLEH-muh DAH-kuh noo pots"
+    },
+    {
+      "id": "l2_do_something",
+      "target": "Vrei să facem ceva în weekend?",
+      "pronunciation_easy": "vray suh FAH-chem cheh-VAH in week-END"
+    },
+    {
+      "id": "l2_next_week",
+      "target": "Dar săptămâna viitoare?",
+      "pronunciation_easy": "dar sup-tuh-MUH-nah vee-ee-TWAH-reh",
+      "qa": "Only after a 'busy' answer. If the answer was a no, say 'No worries, another time.' instead."
+    },
+    {
+      "id": "l2_another_time",
+      "target": "Nicio problemă, altă dată.",
+      "pronunciation_easy": "NEE-choh proh-BLEH-muh, AHL-tuh DAH-tuh"
+    },
+    {
+      "id": "l2_message_tomorrow",
+      "target": "Pot să-ți scriu mâine?",
+      "pronunciation_easy": "poht suhts skree-oo MUY-neh"
+    },
+    {
+      "id": "l2_best_way_reach",
+      "target": "Cum e cel mai bine să te contactez?",
+      "pronunciation_easy": "koom yeh chel my BEE-neh suh teh kon-tak-TEZ"
+    },
+    {
+      "id": "l2_only_if_comfortable",
+      "target": "Doar dacă ești de acord.",
+      "pronunciation_easy": "dwar DAH-kuh yesht deh ah-KORD"
+    },
+    {
+      "id": "l2_stay_with_friends",
+      "target": "Prefer să rămân cu prietenii mei.",
+      "pronunciation_easy": "preh-FEHR suh ruh-MUHN koo pree-EH-teh-nee may",
+      "qa": "PRIORITY REVIEW (a boundary: a clear, polite no)."
+    },
+    {
+      "id": "l2_thanks_understanding",
+      "target": "Mulțumesc pentru înțelegere.",
+      "pronunciation_easy": "mool-tsoo-MESK PEN-troo in-tseh-LEH-jeh-reh"
+    },
+    {
+      "id": "l2_give_space",
+      "target": "Lăsați-mi puțin spațiu, vă rog.",
+      "pronunciation_easy": "luh-SAHTS-mee poo-TSEEN SPAH-tsyoo, vuh rohg",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "l2_check_bag",
+      "target": "Pot preda bagajul acesta la cală?",
+      "pronunciation_easy": "poht preh-DAH bah-GAH-zhool ah-CHES-tah lah KAH-luh"
+    },
+    {
+      "id": "l2_rearrange",
+      "target": "Pot să-mi rearanjez bagajul?",
+      "pronunciation_easy": "poht suhm reh-ah-rahn-ZHEZ bah-GAH-zhool"
+    },
+    {
+      "id": "l2_make_connection",
+      "target": "Prind legătura?",
+      "pronunciation_easy": "preend leh-guh-TOO-rah"
+    },
+    {
+      "id": "l2_security_again",
+      "target": "Trebuie să trec din nou prin controlul de securitate?",
+      "pronunciation_easy": "TREH-boo-yeh suh trek deen noh preen kon-TROH-lool deh seh-koo-ree-TAH-teh"
+    },
+    {
+      "id": "l2_rebook",
+      "target": "Cine mă poate ajuta să schimb zborul?",
+      "pronunciation_easy": "CHEE-neh muh PWAH-teh ah-zhoo-TAH suh skeemb ZBOH-rool"
+    },
+    {
+      "id": "l2_track_bag",
+      "target": "Cum pot urmări bagajul?",
+      "pronunciation_easy": "koom poht oor-muh-REE bah-GAH-zhool"
+    },
+    {
+      "id": "l2_hotel_address",
+      "target": "Aveți nevoie de adresa hotelului?",
+      "pronunciation_easy": "ah-VETS neh-VOH-yeh deh ah-DREH-sah hoh-TEH-loo-looy"
+    },
+    {
+      "id": "l2_reference_number",
+      "target": "Îmi puteți da un număr de referință?",
+      "pronunciation_easy": "im poo-TETS dah oon NOO-muhr deh reh-feh-REEN-tsuh"
+    },
+    {
+      "id": "l2_here_tourism",
+      "target": "Sunt aici ca turist.",
+      "pronunciation_easy": "soont ah-EETCH kah too-REEST",
+      "qa": "Border questions: say only what is true for your trip."
+    },
+    {
+      "id": "l2_leaving_on",
+      "target": "Plec ___.",
+      "pronunciation_easy": "plek ___"
+    },
+    {
+      "id": "l2_return_ticket",
+      "target": "Vă pot arăta biletul de întoarcere.",
+      "pronunciation_easy": "vuh poht ah-ruh-TAH bee-LEH-tool deh in-TWAR-cheh-reh"
+    },
+    {
+      "id": "l2_book_ahead",
+      "target": "Trebuie să rezerv dinainte?",
+      "pronunciation_easy": "TREH-boo-yeh suh reh-ZERV deen-ah-EEN-teh"
+    },
+    {
+      "id": "l2_another_time_slot",
+      "target": "Mai e altă oră disponibilă?",
+      "pronunciation_easy": "my yeh AHL-tuh OH-ruh dees-poh-NEE-bee-luh"
+    },
+    {
+      "id": "l2_book_tomorrow",
+      "target": "Pot rezerva pentru mâine?",
+      "pronunciation_easy": "poht reh-zehr-VAH PEN-troo MUY-neh"
+    },
+    {
+      "id": "l2_audio_guide",
+      "target": "Există ghid audio în engleză?",
+      "pronunciation_easy": "eg-ZEES-tuh gheed OW-dee-oh in en-GLEH-zuh"
+    },
+    {
+      "id": "l2_accessible",
+      "target": "Este accesibil cu scaunul rulant?",
+      "pronunciation_easy": "YES-teh ak-cheh-SEE-beel koo SKOW-nool roo-LAHNT"
+    },
+    {
+      "id": "l2_step_free",
+      "target": "Există un traseu fără trepte?",
+      "pronunciation_easy": "eg-ZEES-tuh oon trah-SEH-oo FUH-ruh TREP-teh"
+    },
+    {
+      "id": "l2_local_specialty",
+      "target": "Care e specialitatea casei?",
+      "pronunciation_easy": "KAH-reh yeh speh-chah-lee-TAH-tyah KAH-say"
+    },
+    {
+      "id": "l2_how_strong",
+      "target": "E foarte tare?",
+      "pronunciation_easy": "yeh FWAR-teh TAH-reh"
+    },
+    {
+      "id": "l2_something_lighter",
+      "target": "Prefer ceva mai ușor.",
+      "pronunciation_easy": "preh-FEHR cheh-VAH my oo-SHOR"
+    },
+    {
+      "id": "l2_live_music",
+      "target": "Este muzică live în seara asta?",
+      "pronunciation_easy": "YES-teh MOO-zee-kuh laiv in SYAH-rah AS-tah"
+    },
+    {
+      "id": "l2_entry_fee",
+      "target": "Se plătește intrarea?",
+      "pronunciation_easy": "seh pluh-TESH-teh een-TRAH-ryah"
+    },
+    {
+      "id": "l2_call_taxi",
+      "target": "Îmi puteți chema un taxi?",
+      "pronunciation_easy": "im poo-TETS keh-MAH oon tak-SEE"
+    },
+    {
+      "id": "l2_where_wait",
+      "target": "Unde să aștept?",
+      "pronunciation_easy": "OON-deh suh ash-TEPT"
+    },
+    {
+      "id": "l2_safe_way_home",
+      "target": "Am nevoie să ajung acasă în siguranță.",
+      "pronunciation_easy": "ahm neh-VOH-yeh suh ah-ZHOONG ah-KAH-suh in see-goo-RAHN-tsuh",
+      "qa": "PRIORITY REVIEW (safety)."
+    },
+    {
+      "id": "l2_total_price",
+      "target": "Acesta e prețul total?",
+      "pronunciation_easy": "ah-CHES-tah yeh PREH-tsool toh-TAHL"
+    },
+    {
+      "id": "l2_including_tax",
+      "target": "Cât este cu taxe incluse?",
+      "pronunciation_easy": "kuht YES-teh koo TAK-seh een-KLOO-seh"
+    },
+    {
+      "id": "l2_morning_evening",
+      "target": "Dimineața sau seara?",
+      "pronunciation_easy": "dee-mee-NYAH-tsah sow SYAH-rah"
+    },
+    {
+      "id": "l2_how_early",
+      "target": "Cu cât timp înainte să vin?",
+      "pronunciation_easy": "koo kuht teemp in-ah-EEN-teh suh veen"
+    },
+    {
+      "id": "l2_per_person",
+      "target": "Prețul este de persoană?",
+      "pronunciation_easy": "PREH-tsool YES-teh deh per-SWAH-nuh"
+    },
+    {
+      "id": "l2_only_need_tickets",
+      "target": "Am nevoie doar de ___ bilete.",
+      "pronunciation_easy": "ahm neh-VOH-yeh dwar deh ___ bee-LEH-teh"
+    },
+    {
+      "id": "l2_change_for",
+      "target": "Aveți să-mi schimbați asta?",
+      "pronunciation_easy": "ah-VETS suhm skeem-BAHTS AS-tah"
+    },
+    {
+      "id": "l2_pay_card_then",
+      "target": "Atunci plătesc cu cardul.",
+      "pronunciation_easy": "ah-TOONCH pluh-TESK koo KAR-dool"
     }
   ],
   "vocab": {
@@ -2225,6 +2440,45 @@
         "target": "Ne întâlnim la hotel.",
         "pronunciation_easy": "neh in-tuhl-NEEM lah hoh-TEL"
       }
+    ],
+    "l2_leaving_on": [
+      {
+        "word": "monday",
+        "target": "Plec luni.",
+        "pronunciation_easy": "plek loon"
+      },
+      {
+        "word": "friday",
+        "target": "Plec vineri.",
+        "pronunciation_easy": "plek VEE-neh-ree"
+      },
+      {
+        "word": "saturday",
+        "target": "Plec sâmbătă.",
+        "pronunciation_easy": "plek SUHM-buh-tuh"
+      },
+      {
+        "word": "sunday",
+        "target": "Plec duminică.",
+        "pronunciation_easy": "plek doo-MEE-nee-kuh"
+      }
+    ],
+    "l2_only_need_tickets": [
+      {
+        "word": "two",
+        "target": "Am nevoie doar de două bilete.",
+        "pronunciation_easy": "ahm neh-VOH-yeh dwar deh DOH-wuh bee-LEH-teh"
+      },
+      {
+        "word": "three",
+        "target": "Am nevoie doar de trei bilete.",
+        "pronunciation_easy": "ahm neh-VOH-yeh dwar deh tray bee-LEH-teh"
+      },
+      {
+        "word": "four",
+        "target": "Am nevoie doar de patru bilete.",
+        "pronunciation_easy": "ahm neh-VOH-yeh dwar deh PAH-troo bee-LEH-teh"
+      }
     ]
   },
   "replies": {
@@ -2497,6 +2751,74 @@
     "l2_maybe_what_time": {
       "target": "Poate. La ce oră?",
       "pronunciation_easy": "PWAH-teh. lah cheh OH-ruh"
+    },
+    "l2_busy_weekend": {
+      "target": "Sunt ocupată / ocupat în weekend.",
+      "pronunciation_easy": "soont oh-koo-PAH-tuh / oh-koo-PAHT in week-END"
+    },
+    "l2_heres_number": {
+      "target": "Sigur, uite numărul meu.",
+      "pronunciation_easy": "see-GOOR, OOY-teh NOO-muh-rool meh-oo"
+    },
+    "l2_sorry_understand": {
+      "target": "A, scuze. Înțeleg.",
+      "pronunciation_easy": "ah, SKOO-zeh. in-tseh-LEG"
+    },
+    "l2_over_weight": {
+      "target": "Depășește limita de greutate.",
+      "pronunciation_easy": "deh-puh-SHESH-teh LEE-mee-tah deh greh-oo-TAH-teh"
+    },
+    "l2_boarding_closes": {
+      "target": "Îmbarcarea se închide în douăzeci de minute.",
+      "pronunciation_easy": "im-bar-KAH-ryah seh in-KEE-deh in doh-wuh-ZECH deh mee-NOO-teh"
+    },
+    "l2_deliver_tomorrow": {
+      "target": "Vi-l putem livra mâine.",
+      "pronunciation_easy": "veel poo-TEM lee-VRAH MUY-neh"
+    },
+    "l2_flying_home": {
+      "target": "Când plecați acasă?",
+      "pronunciation_easy": "kuhnd pleh-KAHTS ah-KAH-suh"
+    },
+    "l2_sold_out_today": {
+      "target": "Biletele de azi s-au epuizat.",
+      "pronunciation_easy": "bee-LEH-teh-leh deh ahz sow eh-poo-ee-ZAHT"
+    },
+    "l2_at_entrance": {
+      "target": "Da, la intrare.",
+      "pronunciation_easy": "dah, lah een-TRAH-reh"
+    },
+    "l2_stairs_only": {
+      "target": "La etaj sunt doar scări.",
+      "pronunciation_easy": "lah eh-TAHZH soont dwar skuhr"
+    },
+    "l2_house_cocktail": {
+      "target": "Încercați cocktailul casei.",
+      "pronunciation_easy": "in-chehr-KAHTS KOK-tay-lool KAH-say"
+    },
+    "l2_band_at_nine": {
+      "target": "Trupa începe la nouă.",
+      "pronunciation_easy": "TROO-pah in-CHEH-peh lah NOH-wuh"
+    },
+    "l2_ten_minutes_here": {
+      "target": "Ajunge în zece minute.",
+      "pronunciation_easy": "ah-ZHOON-jeh in ZEH-cheh mee-NOO-teh"
+    },
+    "l2_tax_extra": {
+      "target": "Taxa se adaugă separat.",
+      "pronunciation_easy": "TAK-sah seh ah-DOW-guh seh-pah-RAHT"
+    },
+    "l2_seven_evening": {
+      "target": "Începe la șapte seara.",
+      "pronunciation_easy": "in-CHEH-peh lah SHAHP-teh SYAH-rah"
+    },
+    "l2_yes_per_person": {
+      "target": "Da, de persoană.",
+      "pronunciation_easy": "dah, deh per-SWAH-nuh"
+    },
+    "l2_no_change": {
+      "target": "Îmi pare rău, nu am să vă schimb.",
+      "pronunciation_easy": "im PAH-reh ruh-oo, noo ahm suh vuh skeemb"
     }
   }
 }

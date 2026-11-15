@@ -1006,6 +1006,222 @@
       "id": "l2_no_worries",
       "target": "Ничего страшного, если не сможешь.",
       "pronunciation_easy": "nee-chee-VOH STRAHSH-nah-vah, YES-lee nee SMOH-zhesh"
+    },
+    {
+      "id": "l2_do_something",
+      "target": "Хочешь что-нибудь поделать в выходные?",
+      "pronunciation_easy": "KHOH-chesh SHTOH-nee-boot pah-DYEH-lat v vy-khahd-NY-yeh"
+    },
+    {
+      "id": "l2_next_week",
+      "target": "А на следующей неделе?",
+      "pronunciation_easy": "ah nah SLYEH-doo-yoo-shchey nee-DYEH-lyeh",
+      "qa": "Only after a 'busy' answer. If the answer was a no, say 'No worries, another time.' instead."
+    },
+    {
+      "id": "l2_another_time",
+      "target": "Ничего страшного, в другой раз.",
+      "pronunciation_easy": "nee-chee-VOH STRAHSH-nah-vah, v droo-GOY rahs"
+    },
+    {
+      "id": "l2_message_tomorrow",
+      "target": "Можно я напишу тебе завтра?",
+      "pronunciation_easy": "MOZH-nah ya nah-pee-SHOO tee-BYEH ZAHF-trah"
+    },
+    {
+      "id": "l2_best_way_reach",
+      "target": "Как с тобой лучше связаться?",
+      "pronunciation_easy": "kak s tah-BOY LOOCH-sheh svyah-ZAT-sah"
+    },
+    {
+      "id": "l2_only_if_comfortable",
+      "target": "Только если тебе удобно.",
+      "pronunciation_easy": "TOL-kah YES-lee tee-BYEH oo-DOB-nah"
+    },
+    {
+      "id": "l2_stay_with_friends",
+      "target": "Я лучше останусь с друзьями.",
+      "pronunciation_easy": "ya LOOCH-sheh ah-STAH-noos s drooz-YAH-mee",
+      "qa": "PRIORITY REVIEW (a boundary: a clear, polite no)."
+    },
+    {
+      "id": "l2_thanks_understanding",
+      "target": "Спасибо за понимание.",
+      "pronunciation_easy": "spah-SEE-bah zah pah-nee-MAH-nee-yeh"
+    },
+    {
+      "id": "l2_give_space",
+      "target": "Пожалуйста, оставьте меня.",
+      "pronunciation_easy": "pah-ZHAH-loo-stah, ah-STAHV-tyeh mee-NYAH",
+      "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
+    },
+    {
+      "id": "l2_check_bag",
+      "target": "Можно сдать эту сумку в багаж?",
+      "pronunciation_easy": "MOZH-nah zdat EH-too SOOM-koo v bah-GAHSH"
+    },
+    {
+      "id": "l2_rearrange",
+      "target": "Можно я переложу вещи?",
+      "pronunciation_easy": "MOZH-nah ya pee-ree-lah-ZHOO VYEH-shchee"
+    },
+    {
+      "id": "l2_make_connection",
+      "target": "Я успею на пересадку?",
+      "pronunciation_easy": "ya oos-PYEH-yoo nah pee-ree-SAHT-koo"
+    },
+    {
+      "id": "l2_security_again",
+      "target": "Нужно снова проходить досмотр?",
+      "pronunciation_easy": "NOOZH-nah SNOH-vah prah-khah-DEET dah-SMOTR"
+    },
+    {
+      "id": "l2_rebook",
+      "target": "Кто может помочь поменять рейс?",
+      "pronunciation_easy": "ktoh MOH-zhet pah-MOCH pah-mee-NYAT ryays"
+    },
+    {
+      "id": "l2_track_bag",
+      "target": "Как отследить мой багаж?",
+      "pronunciation_easy": "kak aht-slee-DEET moy bah-GAHSH"
+    },
+    {
+      "id": "l2_hotel_address",
+      "target": "Вам нужен адрес моего отеля?",
+      "pronunciation_easy": "vahm NOO-zheen AH-drees mah-yee-VOH ah-TEH-lyah"
+    },
+    {
+      "id": "l2_reference_number",
+      "target": "Можно получить номер заявки?",
+      "pronunciation_easy": "MOZH-nah pah-loo-CHEET NOH-meer zah-YAHF-kee"
+    },
+    {
+      "id": "l2_here_tourism",
+      "target": "Я здесь как турист.",
+      "pronunciation_easy": "ya zdyes kak too-REEST",
+      "qa": "Border questions: say only what is true for your trip."
+    },
+    {
+      "id": "l2_leaving_on",
+      "target": "Я уезжаю ___.",
+      "pronunciation_easy": "ya oo-yez-ZHAH-yoo ___"
+    },
+    {
+      "id": "l2_return_ticket",
+      "target": "Могу показать обратный билет.",
+      "pronunciation_easy": "mah-GOO pah-kah-ZAT ah-BRAHT-ny bee-LYET"
+    },
+    {
+      "id": "l2_book_ahead",
+      "target": "Нужно бронировать заранее?",
+      "pronunciation_easy": "NOOZH-nah brah-NEE-rah-vat zah-RAH-nyeh-yeh"
+    },
+    {
+      "id": "l2_another_time_slot",
+      "target": "Есть другое время?",
+      "pronunciation_easy": "yest droo-GOH-yeh VRYEH-myah"
+    },
+    {
+      "id": "l2_book_tomorrow",
+      "target": "Можно забронировать на завтра?",
+      "pronunciation_easy": "MOZH-nah zah-brah-NEE-rah-vat nah ZAHF-trah"
+    },
+    {
+      "id": "l2_audio_guide",
+      "target": "Есть аудиогид на английском?",
+      "pronunciation_easy": "yest ow-dee-oh-GHEET nah ahn-GLEES-kahm"
+    },
+    {
+      "id": "l2_accessible",
+      "target": "Здесь можно проехать на инвалидной коляске?",
+      "pronunciation_easy": "zdyes MOZH-nah prah-YEH-khat nah een-vah-LEED-noy kah-LYAS-kyeh"
+    },
+    {
+      "id": "l2_step_free",
+      "target": "Есть путь без ступенек?",
+      "pronunciation_easy": "yest poot byes stoo-PYEH-nyek"
+    },
+    {
+      "id": "l2_local_specialty",
+      "target": "Какой у вас фирменный напиток?",
+      "pronunciation_easy": "kah-KOY oo vahs FEER-meen-ny nah-PEE-tahk"
+    },
+    {
+      "id": "l2_how_strong",
+      "target": "Он крепкий?",
+      "pronunciation_easy": "on KRYEP-kee"
+    },
+    {
+      "id": "l2_something_lighter",
+      "target": "Мне бы что-нибудь полегче.",
+      "pronunciation_easy": "mnyeh by SHTOH-nee-boot pah-LYEKH-cheh"
+    },
+    {
+      "id": "l2_live_music",
+      "target": "Сегодня есть живая музыка?",
+      "pronunciation_easy": "see-VOD-nyah yest zhee-VAH-yah MOO-zy-kah"
+    },
+    {
+      "id": "l2_entry_fee",
+      "target": "Вход платный?",
+      "pronunciation_easy": "fkhot PLAHT-ny"
+    },
+    {
+      "id": "l2_call_taxi",
+      "target": "Можете вызвать мне такси?",
+      "pronunciation_easy": "MOH-zhuh-tyeh VYZ-vat mnyeh tahk-SEE"
+    },
+    {
+      "id": "l2_where_wait",
+      "target": "Где мне ждать?",
+      "pronunciation_easy": "gdyeh mnyeh zhdat"
+    },
+    {
+      "id": "l2_safe_way_home",
+      "target": "Мне нужно безопасно добраться домой.",
+      "pronunciation_easy": "mnyeh NOOZH-nah bee-zah-PAHS-nah dah-BRAHT-sah dah-MOY",
+      "qa": "PRIORITY REVIEW (safety)."
+    },
+    {
+      "id": "l2_total_price",
+      "target": "Это полная цена?",
+      "pronunciation_easy": "EH-tah POL-nah-yah tsee-NAH"
+    },
+    {
+      "id": "l2_including_tax",
+      "target": "Сколько это с налогом?",
+      "pronunciation_easy": "SKOL-kah EH-tah s nah-LOH-gahm"
+    },
+    {
+      "id": "l2_morning_evening",
+      "target": "Утром или вечером?",
+      "pronunciation_easy": "OO-trahm EE-lee VYEH-chee-rahm"
+    },
+    {
+      "id": "l2_how_early",
+      "target": "За сколько нужно прийти?",
+      "pronunciation_easy": "zah SKOL-kah NOOZH-nah pree-TEE"
+    },
+    {
+      "id": "l2_per_person",
+      "target": "Это цена за человека?",
+      "pronunciation_easy": "EH-tah tsee-NAH zah chee-lah-VYEH-kah"
+    },
+    {
+      "id": "l2_only_need_tickets",
+      "target": "Мне нужно только ___ билета.",
+      "pronunciation_easy": "mnyeh NOOZH-nah TOL-kah ___ bee-LYEH-tah",
+      "qa": "два/три/четыре билета; with five or more the noun changes (билетов)."
+    },
+    {
+      "id": "l2_change_for",
+      "target": "У вас будет сдача с этого?",
+      "pronunciation_easy": "oo vahs BOO-deet ZDAH-chah s EH-tah-vah"
+    },
+    {
+      "id": "l2_pay_card_then",
+      "target": "Тогда я заплачу картой.",
+      "pronunciation_easy": "tahg-DAH ya zah-plah-CHOO KAR-toy"
     }
   ],
   "vocab": {
@@ -2222,6 +2438,45 @@
         "target": "Мы встречаемся в отеле.",
         "pronunciation_easy": "my fstree-CHAH-yem-sah v ah-TEH-lyeh"
       }
+    ],
+    "l2_leaving_on": [
+      {
+        "word": "monday",
+        "target": "Я уезжаю в понедельник.",
+        "pronunciation_easy": "ya oo-yez-ZHAH-yoo f pah-nee-DYEL-neek"
+      },
+      {
+        "word": "friday",
+        "target": "Я уезжаю в пятницу.",
+        "pronunciation_easy": "ya oo-yez-ZHAH-yoo f PYAT-nee-tsoo"
+      },
+      {
+        "word": "saturday",
+        "target": "Я уезжаю в субботу.",
+        "pronunciation_easy": "ya oo-yez-ZHAH-yoo f soo-BOH-too"
+      },
+      {
+        "word": "sunday",
+        "target": "Я уезжаю в воскресенье.",
+        "pronunciation_easy": "ya oo-yez-ZHAH-yoo v vahs-kree-SYEN-yeh"
+      }
+    ],
+    "l2_only_need_tickets": [
+      {
+        "word": "two",
+        "target": "Мне нужно только два билета.",
+        "pronunciation_easy": "mnyeh NOOZH-nah TOL-kah dvah bee-LYEH-tah"
+      },
+      {
+        "word": "three",
+        "target": "Мне нужно только три билета.",
+        "pronunciation_easy": "mnyeh NOOZH-nah TOL-kah tree bee-LYEH-tah"
+      },
+      {
+        "word": "four",
+        "target": "Мне нужно только четыре билета.",
+        "pronunciation_easy": "mnyeh NOOZH-nah TOL-kah chee-TY-ree bee-LYEH-tah"
+      }
     ]
   },
   "replies": {
@@ -2493,6 +2748,75 @@
     "l2_maybe_what_time": {
       "target": "Может быть. Во сколько?",
       "pronunciation_easy": "MOH-zhet byt. vah SKOL-kah"
+    },
+    "l2_busy_weekend": {
+      "target": "В эти выходные я занята/занят.",
+      "pronunciation_easy": "v EH-tee vy-khahd-NY-yeh ya zah-nee-TAH/ZAH-nyat",
+      "qa": "занята said by a woman, занят by a man."
+    },
+    "l2_heres_number": {
+      "target": "Конечно, вот мой номер.",
+      "pronunciation_easy": "kah-NYESH-nah, vot moy NOH-meer"
+    },
+    "l2_sorry_understand": {
+      "target": "Ой, извини. Я понял.",
+      "pronunciation_easy": "oy, eez-vee-NEE. ya POH-nyal"
+    },
+    "l2_over_weight": {
+      "target": "Превышен лимит веса.",
+      "pronunciation_easy": "pree-VY-shen lee-MEET VYEH-sah"
+    },
+    "l2_boarding_closes": {
+      "target": "Посадка заканчивается через двадцать минут.",
+      "pronunciation_easy": "pah-SAHT-kah zah-KAHN-chee-vah-yet-sah CHEH-rees DVAH-tsat mee-NOOT"
+    },
+    "l2_deliver_tomorrow": {
+      "target": "Мы можем доставить его завтра.",
+      "pronunciation_easy": "my MOH-zhem dah-STAH-veet yee-VOH ZAHF-trah"
+    },
+    "l2_flying_home": {
+      "target": "Когда вы улетаете домой?",
+      "pronunciation_easy": "kahg-DAH vy oo-lee-TAH-yeh-tyeh dah-MOY"
+    },
+    "l2_sold_out_today": {
+      "target": "На сегодня билеты распроданы.",
+      "pronunciation_easy": "nah see-VOD-nyah bee-LYEH-ty rahs-PROH-dah-ny"
+    },
+    "l2_at_entrance": {
+      "target": "Да, у входа.",
+      "pronunciation_easy": "dah, oo FKHOH-dah"
+    },
+    "l2_stairs_only": {
+      "target": "На верхний этаж только лестница.",
+      "pronunciation_easy": "nah VYEHRKH-nee eh-TAHSH TOL-kah LYES-nee-tsah"
+    },
+    "l2_house_cocktail": {
+      "target": "Попробуйте наш фирменный коктейль.",
+      "pronunciation_easy": "pah-PROH-booy-tyeh nahsh FEER-meen-ny kahk-TEYL"
+    },
+    "l2_band_at_nine": {
+      "target": "Группа начинает в девять.",
+      "pronunciation_easy": "GROO-pah nah-chee-NAH-yet v DYEH-veet"
+    },
+    "l2_ten_minutes_here": {
+      "target": "Будет через десять минут.",
+      "pronunciation_easy": "BOO-deet CHEH-rees DYEH-seet mee-NOOT"
+    },
+    "l2_tax_extra": {
+      "target": "Налог считается отдельно.",
+      "pronunciation_easy": "nah-LOK shchee-TAH-yet-sah aht-DYEL-nah"
+    },
+    "l2_seven_evening": {
+      "target": "Начало в семь вечера.",
+      "pronunciation_easy": "nah-CHAH-lah f syem VYEH-chee-rah"
+    },
+    "l2_yes_per_person": {
+      "target": "Да, за человека.",
+      "pronunciation_easy": "dah, zah chee-lah-VYEH-kah"
+    },
+    "l2_no_change": {
+      "target": "Извините, сдачи нет.",
+      "pronunciation_easy": "eez-vee-NEE-tyeh, ZDAH-chee nyet"
     }
   }
 }
