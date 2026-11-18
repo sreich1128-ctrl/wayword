@@ -11,6 +11,7 @@
 //     node scripts/generate-audio.mjs                        # every language in content/audio-voices.json
 //     node scripts/generate-audio.mjs --lang=pt-PT --force --only=id1,id2   # redo just these phrases
 //     node scripts/generate-audio.mjs --lang=pt-PT --swaps                 # also Swap it frames + variant sentences
+//     node scripts/generate-audio.mjs --lang=es --all                      # everything: drafts (both levels), variations, replies
 //   Voices and skipped languages are set in content/audio-voices.json -> "elevenlabs".
 //
 //   Azure:  AZURE_SPEECH_KEY=...  AZURE_SPEECH_REGION=westeurope
@@ -166,6 +167,17 @@ function swapEntries(code, have) {
   return out;
 }
 
+// Which Wayword level a recording belongs to: phrases from concepts.json, a variation from its
+// frame (where_is~hospital → where_is), a reply (reply~<id>) from replies.json.
+let levels = null;
+function levelOf(id) {
+  if (!levels) {
+    levels = new Map(read('content/concepts.json').map((c) => [c.id, c.level || 1]));
+    for (const r of read('content/replies.json').replies) levels.set(`reply~${r.id}`, r.level || 1);
+  }
+  return levels.get(id) ?? levels.get(id.split('~')[0]) ?? 1;
+}
+
 /* ---------- main ---------- */
 
 function writeManifest(code, voice, files, source, note) {
@@ -222,16 +234,29 @@ async function main() {
     const entries = read(`content/lang/${code}.json`).entries;
     // --swaps: also the Swap it material: draft pattern frames and every variant sentence
     // (saved under the id the app plays it by, e.g. where_is~word_pharmacy).
-    if (args.swaps) entries.push(...swapEntries(code, new Set(entries.map((e) => e.id))));
+    if (args.swaps || args.all) entries.push(...swapEntries(code, new Set(entries.map((e) => e.id))));
+    // --all: everything the app can play: also every draft phrase (both levels) and the replies you hear
+    // (saved as reply~<id>, the id the app plays them by).
+    if (args.all) {
+      const addedPath = join(root, 'content/added', `${code}.json`);
+      const added = existsSync(addedPath) ? JSON.parse(readFileSync(addedPath, 'utf8')) : {};
+      const have = new Set(entries.map((e) => e.id));
+      for (const e of added.entries || []) if (!have.has(e.id) && e.target) { entries.push({ id: e.id, target: e.target }); have.add(e.id); }
+      for (const [id, r] of Object.entries(added.replies || {})) if (r.target) entries.push({ id: `reply~${id}`, target: r.target });
+    }
     const jobs = [];
     if (engine === 'elevenlabs') {
-      const pick = (el.voices || {})[code] || (el.voices || {})['*'];
-      if (!pick) { console.log(`- ${code}: no ElevenLabs voice set in content/audio-voices.json, skipped`); continue; }
-      const v = resolve ? resolve(pick.name) : { name: pick.name, voice_id: '(dry run)', labels: {} };
-      const gender = pick.gender || v.labels?.gender || '';
-      jobs.push({ slot: pick.slot || (gender === 'male' ? 'm' : 'f'), name: pick.label || v.name, gender, engineId: `elevenlabs:${v.voice_id}`,
-        synth: (text) => elevenSynth({ key: e.ELEVENLABS_API_KEY, voiceId: v.voice_id, model: pick.model || el.model || 'eleven_multilingual_v2', text, opts: pick }),
-        style: 'plain', source: 'ElevenLabs', trim: true, note: pick.note || cfg[code]?.note });
+      // One voice, or a list of voices. A voice with "level" records only that Wayword level
+      // (Spanish: Nelly for Level 1, Camilo for Level 2).
+      const picks = [].concat((el.voices || {})[code] || (el.voices || {})['*'] || []);
+      if (!picks.length) { console.log(`- ${code}: no ElevenLabs voice set in content/audio-voices.json, skipped`); continue; }
+      for (const pick of picks) {
+        const v = resolve ? resolve(pick.name) : { name: pick.name, voice_id: '(dry run)', labels: {} };
+        const gender = pick.gender || v.labels?.gender || '';
+        jobs.push({ slot: pick.slot || (gender === 'male' ? 'm' : 'f'), name: pick.label || v.name, gender, engineId: `elevenlabs:${v.voice_id}`, level: pick.level || 0,
+          synth: (text) => elevenSynth({ key: e.ELEVENLABS_API_KEY, voiceId: v.voice_id, model: pick.model || el.model || 'eleven_multilingual_v2', text, opts: pick }),
+          style: 'plain', source: 'ElevenLabs', trim: true, note: pick.note || cfg[code]?.note });
+      }
     } else {
       const c = cfg[code];
       if (!c) { console.log(`- ${code}: no Azure voices configured, skipped`); continue; }
@@ -245,6 +270,7 @@ async function main() {
       mkdirSync(join(root, 'content/audio', code, job.slot), { recursive: true });
       const only = args.only ? String(args.only).split(',') : null;
       for (const entry of entries) {
+        if (job.level && levelOf(entry.id) !== job.level) continue;
         if (only && !only.includes(entry.id)) { if (existsSync(join(root, 'content/audio', code, job.slot, `${entry.id}.mp3`))) files[entry.id] = { [job.slot]: `${job.slot}/${entry.id}.mp3` }; continue; }
         const rel = `${job.slot}/${entry.id}.mp3`;
         const out = join(root, 'content/audio', code, rel);
@@ -261,7 +287,7 @@ async function main() {
       if (!args['dry-run']) {
         writeManifest(code, { id: job.slot, name: job.name, gender: job.gender, engine: job.engineId }, files, job.source, job.note);
         console.log(`\n✓ ${code} · ${job.name}: ${Object.keys(files).length} phrases`);
-      } else console.log(`- ${code} · ${job.name}: ${entries.length} phrases`);
+      } else console.log(`- ${code} · ${job.name}: ${entries.filter((x) => !job.level || levelOf(x.id) === job.level).length} phrases`);
     }
   }
   console.log(`${args['dry-run'] ? 'Would use' : 'Used'} ~${chars} characters · generated ${made} · already there ${skipped}`);

@@ -121,12 +121,21 @@
         "label": "Laloosh",
         "gender": "female"
       },
-      "es": {
-        "name": "Matilda Paz - Young Spanish woman",
-        "label": "Matilda",
-        "gender": "female",
-        "note": "Spanish voice from Spain: she says c/z as “th” (GRAH-thyas). The pronunciation line uses the Latin American “s”. Both are correct."
-      },
+      "es": [
+        {
+          "name": "Nelly - Warm Peruvian Spanish",
+          "label": "Nelly",
+          "gender": "female",
+          "level": 1,
+          "_why": "Owner's choice 2026-11-18: Latin American voices to match the text and pronunciation lines; the standard model (eleven_multilingual_v2) beat eleven_v3 in the listening test. Nelly (clearer) speaks Level 1; Camilo (a bit faster) speaks Level 2, so the two levels sound different."
+        },
+        {
+          "name": "Camilo - Spanish Friendly Narrator",
+          "label": "Camilo",
+          "gender": "male",
+          "level": 2
+        }
+      ],
       "fr": {
         "name": "Greg - Authentic French Voice",
         "label": "Greg",

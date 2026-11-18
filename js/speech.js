@@ -92,7 +92,9 @@ function naturalChoice(lang) {
 // The recording a phrase would play (null if it uses the device voice). Also used to save audio for offline.
 export function naturalUrl(item) {
   const v = naturalChoice(item.lang);
-  const file = v && naturalFor(item.lang.code)?.files?.[item.id]?.[v.id];
+  const byVoice = v && naturalFor(item.lang.code)?.files?.[item.id];
+  // The chosen voice's recording, or whichever voice recorded this phrase (Spanish: one voice per level).
+  const file = byVoice && (byVoice[v.id] || Object.values(byVoice)[0]);
   return file ? `./content/audio/${item.lang.code}/${file}` : null;
 }
 

@@ -1,0 +1,1629 @@
+{
+  "source": "ElevenLabs",
+  "generated": "2026-11-18",
+  "note": "",
+  "voices": [
+    {
+      "id": "f",
+      "name": "Nelly",
+      "gender": "female",
+      "engine": "elevenlabs:34EkeMY6ezBFj41NQj1f"
+    },
+    {
+      "id": "m",
+      "name": "Camilo",
+      "gender": "male",
+      "engine": "elevenlabs:VDgmHvDX3FGlfm5y206M"
+    }
+  ],
+  "files": {
+    "hello": {
+      "f": "f/hello.mp3"
+    },
+    "good_morning": {
+      "f": "f/good_morning.mp3"
+    },
+    "how_are_you": {
+      "f": "f/how_are_you.mp3"
+    },
+    "please": {
+      "f": "f/please.mp3"
+    },
+    "thank_you": {
+      "f": "f/thank_you.mp3"
+    },
+    "excuse_me": {
+      "f": "f/excuse_me.mp3"
+    },
+    "yes": {
+      "f": "f/yes.mp3"
+    },
+    "no": {
+      "f": "f/no.mp3"
+    },
+    "speak_english": {
+      "f": "f/speak_english.mp3"
+    },
+    "dont_speak_well": {
+      "f": "f/dont_speak_well.mp3"
+    },
+    "know_a_little": {
+      "f": "f/know_a_little.mp3"
+    },
+    "dont_understand": {
+      "f": "f/dont_understand.mp3"
+    },
+    "say_again": {
+      "f": "f/say_again.mp3"
+    },
+    "speak_slowly": {
+      "f": "f/speak_slowly.mp3"
+    },
+    "what_mean": {
+      "f": "f/what_mean.mp3"
+    },
+    "how_say": {
+      "f": "f/how_say.mp3"
+    },
+    "learning_language": {
+      "f": "f/learning_language.mp3"
+    },
+    "learning_by_trying": {
+      "f": "f/learning_by_trying.mp3"
+    },
+    "where_is": {
+      "f": "f/where_is.mp3"
+    },
+    "nearest": {
+      "f": "f/nearest.mp3"
+    },
+    "bathroom": {
+      "f": "f/bathroom.mp3"
+    },
+    "how_get": {
+      "f": "f/how_get.mp3"
+    },
+    "is_far": {
+      "f": "f/is_far.mp3"
+    },
+    "help_me": {
+      "f": "f/help_me.mp3"
+    },
+    "can_i_have": {
+      "f": "f/can_i_have.mp3"
+    },
+    "i_would_like": {
+      "f": "f/i_would_like.mp3"
+    },
+    "coffee": {
+      "f": "f/coffee.mp3"
+    },
+    "water": {
+      "f": "f/water.mp3"
+    },
+    "whats_in_this": {
+      "f": "f/whats_in_this.mp3"
+    },
+    "dairy": {
+      "f": "f/dairy.mp3"
+    },
+    "recommend_food": {
+      "f": "f/recommend_food.mp3"
+    },
+    "bill": {
+      "f": "f/bill.mp3"
+    },
+    "how_much": {
+      "f": "f/how_much.mp3"
+    },
+    "pay_card": {
+      "f": "f/pay_card.mp3"
+    },
+    "apple_pay": {
+      "f": "f/apple_pay.mp3"
+    },
+    "cash_or_card": {
+      "f": "f/cash_or_card.mp3"
+    },
+    "tip_included": {
+      "f": "f/tip_included.mp3"
+    },
+    "people_tip": {
+      "f": "f/people_tip.mp3"
+    },
+    "your_name": {
+      "f": "f/your_name.mp3"
+    },
+    "where_from": {
+      "f": "f/where_from.mp3"
+    },
+    "live_here": {
+      "f": "f/live_here.mp3"
+    },
+    "what_do_you_do": {
+      "f": "f/what_do_you_do.mp3"
+    },
+    "been_america": {
+      "f": "f/been_america.mp3"
+    },
+    "im_visiting": {
+      "f": "f/im_visiting.mp3"
+    },
+    "im_new_here": {
+      "f": "f/im_new_here.mp3"
+    },
+    "love_languages": {
+      "f": "f/love_languages.mp3"
+    },
+    "really": {
+      "f": "f/really.mp3"
+    },
+    "interesting": {
+      "f": "f/interesting.mp3"
+    },
+    "me_too": {
+      "f": "f/me_too.mp3"
+    },
+    "and_you": {
+      "f": "f/and_you.mp3"
+    },
+    "nice_meeting": {
+      "f": "f/nice_meeting.mp3"
+    },
+    "youre_funny": {
+      "f": "f/youre_funny.mp3"
+    },
+    "like_talking": {
+      "f": "f/like_talking.mp3"
+    },
+    "instagram": {
+      "f": "f/instagram.mp3"
+    },
+    "very_helpful": {
+      "f": "f/very_helpful.mp3"
+    },
+    "thanks_help": {
+      "f": "f/thanks_help.mp3"
+    },
+    "table_for": {
+      "f": "f/table_for.mp3"
+    },
+    "allergic_to": {
+      "f": "f/allergic_to.mp3"
+    },
+    "without": {
+      "f": "f/without.mp3"
+    },
+    "ticket_to": {
+      "f": "f/ticket_to.mp3"
+    },
+    "does_this_go_to": {
+      "f": "f/does_this_go_to.mp3"
+    },
+    "take_me_to": {
+      "f": "f/take_me_to.mp3"
+    },
+    "doesnt_work": {
+      "f": "f/doesnt_work.mp3"
+    },
+    "lost_my": {
+      "f": "f/lost_my.mp3"
+    },
+    "do_you_have": {
+      "f": "f/do_you_have.mp3"
+    },
+    "how_much_is": {
+      "f": "f/how_much_is.mp3"
+    },
+    "i_need": {
+      "f": "f/i_need.mp3"
+    },
+    "is_there_nearby": {
+      "f": "f/is_there_nearby.mp3"
+    },
+    "pay_with": {
+      "f": "f/pay_with.mp3"
+    },
+    "can_you": {
+      "f": "f/can_you.mp3"
+    },
+    "like_without": {
+      "f": "f/like_without.mp3"
+    },
+    "can_i_here": {
+      "f": "f/can_i_here.mp3"
+    },
+    "looking_for": {
+      "f": "f/looking_for.mp3"
+    },
+    "is_included": {
+      "f": "f/is_included.mp3"
+    },
+    "where_can_i": {
+      "f": "f/where_can_i.mp3"
+    },
+    "im_from": {
+      "f": "f/im_from.mp3"
+    },
+    "medicine_for": {
+      "f": "f/medicine_for.mp3"
+    },
+    "tickets_please": {
+      "f": "f/tickets_please.mp3"
+    },
+    "where_is~word_train_station": {
+      "f": "f/where_is~word_train_station.mp3"
+    },
+    "where_is~word_bus_stop": {
+      "f": "f/where_is~word_bus_stop.mp3"
+    },
+    "where_is~word_pharmacy": {
+      "f": "f/where_is~word_pharmacy.mp3"
+    },
+    "where_is~word_atm": {
+      "f": "f/where_is~word_atm.mp3"
+    },
+    "where_is~word_supermarket": {
+      "f": "f/where_is~word_supermarket.mp3"
+    },
+    "where_is~hospital": {
+      "f": "f/where_is~hospital.mp3"
+    },
+    "where_is~checkin": {
+      "f": "f/where_is~checkin.mp3"
+    },
+    "where_is~baggage": {
+      "f": "f/where_is~baggage.mp3"
+    },
+    "where_is~gate": {
+      "f": "f/where_is~gate.mp3"
+    },
+    "nearest~word_pharmacy": {
+      "f": "f/nearest~word_pharmacy.mp3"
+    },
+    "nearest~word_atm": {
+      "f": "f/nearest~word_atm.mp3"
+    },
+    "nearest~word_supermarket": {
+      "f": "f/nearest~word_supermarket.mp3"
+    },
+    "nearest~word_metro_station": {
+      "f": "f/nearest~word_metro_station.mp3"
+    },
+    "nearest~word_bus_stop": {
+      "f": "f/nearest~word_bus_stop.mp3"
+    },
+    "how_get~word_airport": {
+      "f": "f/how_get~word_airport.mp3"
+    },
+    "how_get~word_train_station": {
+      "f": "f/how_get~word_train_station.mp3"
+    },
+    "how_get~word_city_centre": {
+      "f": "f/how_get~word_city_centre.mp3"
+    },
+    "how_get~word_beach": {
+      "f": "f/how_get~word_beach.mp3"
+    },
+    "how_get~word_hotel": {
+      "f": "f/how_get~word_hotel.mp3"
+    },
+    "can_i_have~word_tea": {
+      "f": "f/can_i_have~word_tea.mp3"
+    },
+    "can_i_have~word_beer": {
+      "f": "f/can_i_have~word_beer.mp3"
+    },
+    "can_i_have~word_glass_of_wine": {
+      "f": "f/can_i_have~word_glass_of_wine.mp3"
+    },
+    "can_i_have~word_menu": {
+      "f": "f/can_i_have~word_menu.mp3"
+    },
+    "can_i_have~word_receipt": {
+      "f": "f/can_i_have~word_receipt.mp3"
+    },
+    "i_would_like~word_tea": {
+      "f": "f/i_would_like~word_tea.mp3"
+    },
+    "i_would_like~word_beer": {
+      "f": "f/i_would_like~word_beer.mp3"
+    },
+    "i_would_like~word_orange_juice": {
+      "f": "f/i_would_like~word_orange_juice.mp3"
+    },
+    "i_would_like~word_bread": {
+      "f": "f/i_would_like~word_bread.mp3"
+    },
+    "i_would_like~word_water": {
+      "f": "f/i_would_like~word_water.mp3"
+    },
+    "i_would_like~red_wine": {
+      "f": "f/i_would_like~red_wine.mp3"
+    },
+    "i_would_like~white_wine": {
+      "f": "f/i_would_like~white_wine.mp3"
+    },
+    "table_for~word_one": {
+      "f": "f/table_for~word_one.mp3"
+    },
+    "table_for~word_two": {
+      "f": "f/table_for~word_two.mp3"
+    },
+    "table_for~word_three": {
+      "f": "f/table_for~word_three.mp3"
+    },
+    "table_for~word_four": {
+      "f": "f/table_for~word_four.mp3"
+    },
+    "allergic_to~word_nuts": {
+      "f": "f/allergic_to~word_nuts.mp3"
+    },
+    "allergic_to~word_peanuts": {
+      "f": "f/allergic_to~word_peanuts.mp3"
+    },
+    "allergic_to~word_gluten": {
+      "f": "f/allergic_to~word_gluten.mp3"
+    },
+    "allergic_to~word_shellfish": {
+      "f": "f/allergic_to~word_shellfish.mp3"
+    },
+    "allergic_to~word_milk": {
+      "f": "f/allergic_to~word_milk.mp3"
+    },
+    "without~word_meat": {
+      "f": "f/without~word_meat.mp3"
+    },
+    "without~word_milk": {
+      "f": "f/without~word_milk.mp3"
+    },
+    "without~word_gluten": {
+      "f": "f/without~word_gluten.mp3"
+    },
+    "without~word_ice": {
+      "f": "f/without~word_ice.mp3"
+    },
+    "without~word_nuts": {
+      "f": "f/without~word_nuts.mp3"
+    },
+    "ticket_to~word_airport": {
+      "f": "f/ticket_to~word_airport.mp3"
+    },
+    "ticket_to~word_city_centre": {
+      "f": "f/ticket_to~word_city_centre.mp3"
+    },
+    "ticket_to~word_beach": {
+      "f": "f/ticket_to~word_beach.mp3"
+    },
+    "ticket_to~word_train_station": {
+      "f": "f/ticket_to~word_train_station.mp3"
+    },
+    "does_this_go_to~word_airport": {
+      "f": "f/does_this_go_to~word_airport.mp3"
+    },
+    "does_this_go_to~word_city_centre": {
+      "f": "f/does_this_go_to~word_city_centre.mp3"
+    },
+    "does_this_go_to~word_beach": {
+      "f": "f/does_this_go_to~word_beach.mp3"
+    },
+    "does_this_go_to~word_train_station": {
+      "f": "f/does_this_go_to~word_train_station.mp3"
+    },
+    "take_me_to~word_airport": {
+      "f": "f/take_me_to~word_airport.mp3"
+    },
+    "take_me_to~word_hotel": {
+      "f": "f/take_me_to~word_hotel.mp3"
+    },
+    "take_me_to~word_train_station": {
+      "f": "f/take_me_to~word_train_station.mp3"
+    },
+    "take_me_to~word_city_centre": {
+      "f": "f/take_me_to~word_city_centre.mp3"
+    },
+    "take_me_to~word_beach": {
+      "f": "f/take_me_to~word_beach.mp3"
+    },
+    "doesnt_work~word_air_conditioning": {
+      "f": "f/doesnt_work~word_air_conditioning.mp3"
+    },
+    "doesnt_work~word_shower": {
+      "f": "f/doesnt_work~word_shower.mp3"
+    },
+    "doesnt_work~word_wi_fi": {
+      "f": "f/doesnt_work~word_wi_fi.mp3"
+    },
+    "doesnt_work~word_tv": {
+      "f": "f/doesnt_work~word_tv.mp3"
+    },
+    "doesnt_work~word_hot_water": {
+      "f": "f/doesnt_work~word_hot_water.mp3"
+    },
+    "lost_my~word_passport": {
+      "f": "f/lost_my~word_passport.mp3"
+    },
+    "lost_my~word_phone": {
+      "f": "f/lost_my~word_phone.mp3"
+    },
+    "lost_my~word_wallet": {
+      "f": "f/lost_my~word_wallet.mp3"
+    },
+    "lost_my~word_keys": {
+      "f": "f/lost_my~word_keys.mp3"
+    },
+    "lost_my~word_room_key": {
+      "f": "f/lost_my~word_room_key.mp3"
+    },
+    "do_you_have~wifi": {
+      "f": "f/do_you_have~wifi.mp3"
+    },
+    "do_you_have~vegetarian_food": {
+      "f": "f/do_you_have~vegetarian_food.mp3"
+    },
+    "do_you_have~charger": {
+      "f": "f/do_you_have~charger.mp3"
+    },
+    "do_you_have~map": {
+      "f": "f/do_you_have~map.mp3"
+    },
+    "how_much_is~ticket": {
+      "f": "f/how_much_is~ticket.mp3"
+    },
+    "how_much_is~coffee": {
+      "f": "f/how_much_is~coffee.mp3"
+    },
+    "how_much_is~room": {
+      "f": "f/how_much_is~room.mp3"
+    },
+    "i_need~help": {
+      "f": "f/i_need~help.mp3"
+    },
+    "i_need~water": {
+      "f": "f/i_need~water.mp3"
+    },
+    "i_need~taxi": {
+      "f": "f/i_need~taxi.mp3"
+    },
+    "need_doctor": {
+      "f": "f/need_doctor.mp3"
+    },
+    "is_there_nearby~bathroom": {
+      "f": "f/is_there_nearby~bathroom.mp3"
+    },
+    "is_there_nearby~pharmacy": {
+      "f": "f/is_there_nearby~pharmacy.mp3"
+    },
+    "is_there_nearby~atm": {
+      "f": "f/is_there_nearby~atm.mp3"
+    },
+    "is_there_nearby~supermarket": {
+      "f": "f/is_there_nearby~supermarket.mp3"
+    },
+    "pay_with~cash": {
+      "f": "f/pay_with~cash.mp3"
+    },
+    "pay_with~phone": {
+      "f": "f/pay_with~phone.mp3"
+    },
+    "like_without~coffee_milk": {
+      "f": "f/like_without~coffee_milk.mp3"
+    },
+    "like_without~tea_sugar": {
+      "f": "f/like_without~tea_sugar.mp3"
+    },
+    "like_without~water_ice": {
+      "f": "f/like_without~water_ice.mp3"
+    },
+    "can_i_here~sit": {
+      "f": "f/can_i_here~sit.mp3"
+    },
+    "can_i_here~park": {
+      "f": "f/can_i_here~park.mp3"
+    },
+    "can_i_here~photos": {
+      "f": "f/can_i_here~photos.mp3"
+    },
+    "can_i_here~charge": {
+      "f": "f/can_i_here~charge.mp3"
+    },
+    "looking_for~my_hotel": {
+      "f": "f/looking_for~my_hotel.mp3"
+    },
+    "looking_for~entrance": {
+      "f": "f/looking_for~entrance.mp3"
+    },
+    "looking_for~restaurant": {
+      "f": "f/looking_for~restaurant.mp3"
+    },
+    "looking_for~exit": {
+      "f": "f/looking_for~exit.mp3"
+    },
+    "is_included~breakfast": {
+      "f": "f/is_included~breakfast.mp3"
+    },
+    "is_included~tax": {
+      "f": "f/is_included~tax.mp3"
+    },
+    "is_included~wifi": {
+      "f": "f/is_included~wifi.mp3"
+    },
+    "is_included~luggage": {
+      "f": "f/is_included~luggage.mp3"
+    },
+    "where_can_i~buy_tickets": {
+      "f": "f/where_can_i~buy_tickets.mp3"
+    },
+    "where_can_i~taxi": {
+      "f": "f/where_can_i~taxi.mp3"
+    },
+    "where_can_i~change_money": {
+      "f": "f/where_can_i~change_money.mp3"
+    },
+    "where_can_i~sim": {
+      "f": "f/where_can_i~sim.mp3"
+    },
+    "can_you~write": {
+      "f": "f/can_you~write.mp3"
+    },
+    "im_from~usa": {
+      "f": "f/im_from~usa.mp3"
+    },
+    "im_from~canada": {
+      "f": "f/im_from~canada.mp3"
+    },
+    "im_from~uk": {
+      "f": "f/im_from~uk.mp3"
+    },
+    "im_from~israel": {
+      "f": "f/im_from~israel.mp3"
+    },
+    "im_from~australia": {
+      "f": "f/im_from~australia.mp3"
+    },
+    "medicine_for~pain": {
+      "f": "f/medicine_for~pain.mp3"
+    },
+    "medicine_for~fever": {
+      "f": "f/medicine_for~fever.mp3"
+    },
+    "medicine_for~cough": {
+      "f": "f/medicine_for~cough.mp3"
+    },
+    "medicine_for~allergies": {
+      "f": "f/medicine_for~allergies.mp3"
+    },
+    "tickets_please~one": {
+      "f": "f/tickets_please~one.mp3"
+    },
+    "tickets_please~two": {
+      "f": "f/tickets_please~two.mp3"
+    },
+    "tickets_please~three": {
+      "f": "f/tickets_please~three.mp3"
+    },
+    "tickets_please~four": {
+      "f": "f/tickets_please~four.mp3"
+    },
+    "goodbye": {
+      "f": "f/goodbye.mp3"
+    },
+    "sorry": {
+      "f": "f/sorry.mp3"
+    },
+    "youre_welcome": {
+      "f": "f/youre_welcome.mp3"
+    },
+    "no_thank_you": {
+      "f": "f/no_thank_you.mp3"
+    },
+    "okay": {
+      "f": "f/okay.mp3"
+    },
+    "good_evening": {
+      "f": "f/good_evening.mp3"
+    },
+    "menu_please": {
+      "f": "f/menu_please.mp3"
+    },
+    "vegetarian": {
+      "f": "f/vegetarian.mp3"
+    },
+    "to_go": {
+      "f": "f/to_go.mp3"
+    },
+    "for_here": {
+      "f": "f/for_here.mp3"
+    },
+    "delicious": {
+      "f": "f/delicious.mp3"
+    },
+    "another_one": {
+      "f": "f/another_one.mp3"
+    },
+    "stop_here": {
+      "f": "f/stop_here.mp3"
+    },
+    "next_departure": {
+      "f": "f/next_departure.mp3"
+    },
+    "which_platform": {
+      "f": "f/which_platform.mp3"
+    },
+    "how_long_trip": {
+      "f": "f/how_long_trip.mp3"
+    },
+    "one_way_or_return": {
+      "f": "f/one_way_or_return.mp3"
+    },
+    "left": {
+      "f": "f/left.mp3"
+    },
+    "right": {
+      "f": "f/right.mp3"
+    },
+    "straight_ahead": {
+      "f": "f/straight_ahead.mp3"
+    },
+    "im_lost": {
+      "f": "f/im_lost.mp3"
+    },
+    "show_on_map": {
+      "f": "f/show_on_map.mp3"
+    },
+    "near_here": {
+      "f": "f/near_here.mp3"
+    },
+    "have_reservation": {
+      "f": "f/have_reservation.mp3"
+    },
+    "under_name": {
+      "f": "f/under_name.mp3"
+    },
+    "wifi_password": {
+      "f": "f/wifi_password.mp3"
+    },
+    "checkout_time": {
+      "f": "f/checkout_time.mp3"
+    },
+    "leave_bags": {
+      "f": "f/leave_bags.mp3"
+    },
+    "another_towel": {
+      "f": "f/another_towel.mp3"
+    },
+    "just_looking": {
+      "f": "f/just_looking.mp3"
+    },
+    "ill_take_it": {
+      "f": "f/ill_take_it.mp3"
+    },
+    "too_expensive": {
+      "f": "f/too_expensive.mp3"
+    },
+    "try_it_on": {
+      "f": "f/try_it_on.mp3"
+    },
+    "another_size": {
+      "f": "f/another_size.mp3"
+    },
+    "bag_please": {
+      "f": "f/bag_please.mp3"
+    },
+    "haircut": {
+      "f": "f/haircut.mp3"
+    },
+    "just_trim": {
+      "f": "f/just_trim.mp3"
+    },
+    "not_too_short": {
+      "f": "f/not_too_short.mp3"
+    },
+    "shorter_sides": {
+      "f": "f/shorter_sides.mp3"
+    },
+    "like_this": {
+      "f": "f/like_this.mp3"
+    },
+    "beard_trim": {
+      "f": "f/beard_trim.mp3"
+    },
+    "help_shout": {
+      "f": "f/help_shout.mp3"
+    },
+    "call_police": {
+      "f": "f/call_police.mp3"
+    },
+    "where_pharmacy": {
+      "f": "f/where_pharmacy.mp3"
+    },
+    "its_emergency": {
+      "f": "f/its_emergency.mp3"
+    },
+    "not_well": {
+      "f": "f/not_well.mp3"
+    },
+    "call_someone": {
+      "f": "f/call_someone.mp3"
+    },
+    "look_beautiful": {
+      "f": "f/look_beautiful.mp3"
+    },
+    "love_outfit": {
+      "f": "f/love_outfit.mp3"
+    },
+    "beautiful_smile": {
+      "f": "f/beautiful_smile.mp3"
+    },
+    "like_style": {
+      "f": "f/like_style.mp3"
+    },
+    "get_coffee": {
+      "f": "f/get_coffee.mp3"
+    },
+    "buy_drink": {
+      "f": "f/buy_drink.mp3"
+    },
+    "see_again": {
+      "f": "f/see_again.mp3"
+    },
+    "free_tomorrow": {
+      "f": "f/free_tomorrow.mp3"
+    },
+    "your_number": {
+      "f": "f/your_number.mp3"
+    },
+    "with_friends": {
+      "f": "f/with_friends.mp3"
+    },
+    "great_time": {
+      "f": "f/great_time.mp3"
+    },
+    "not_interested": {
+      "f": "f/not_interested.mp3"
+    },
+    "leave_me_alone": {
+      "f": "f/leave_me_alone.mp3"
+    },
+    "my_name_is": {
+      "f": "f/my_name_is.mp3"
+    },
+    "how_long_here": {
+      "f": "f/how_long_here.mp3"
+    },
+    "cheers": {
+      "f": "f/cheers.mp3"
+    },
+    "need_ambulance": {
+      "f": "f/need_ambulance.mp3"
+    },
+    "hurts_here": {
+      "f": "f/hurts_here.mp3"
+    },
+    "been_robbed": {
+      "f": "f/been_robbed.mp3"
+    },
+    "trouble_breathing": {
+      "f": "f/trouble_breathing.mp3"
+    },
+    "luggage_missing": {
+      "f": "f/luggage_missing.mp3"
+    },
+    "flight_delayed": {
+      "f": "f/flight_delayed.mp3"
+    },
+    "connecting_flight": {
+      "f": "f/connecting_flight.mp3"
+    },
+    "what_time_open": {
+      "f": "f/what_time_open.mp3"
+    },
+    "what_time_close": {
+      "f": "f/what_time_close.mp3"
+    },
+    "tour_english": {
+      "f": "f/tour_english.mp3"
+    },
+    "on_tap": {
+      "f": "f/on_tap.mp3"
+    },
+    "non_alcoholic": {
+      "f": "f/non_alcoholic.mp3"
+    },
+    "what_time_is_it": {
+      "f": "f/what_time_is_it.mp3"
+    },
+    "reply~for_here_or_to_go": {
+      "f": "f/reply~for_here_or_to_go.mp3"
+    },
+    "reply~anything_else": {
+      "f": "f/reply~anything_else.mp3"
+    },
+    "reply~here_you_go": {
+      "f": "f/reply~here_you_go.mp3"
+    },
+    "reply~inside_or_outside": {
+      "f": "f/reply~inside_or_outside.mp3"
+    },
+    "reply~how_many_people": {
+      "f": "f/reply~how_many_people.mp3"
+    },
+    "reply~have_booking": {
+      "f": "f/reply~have_booking.mp3"
+    },
+    "reply~this_way": {
+      "f": "f/reply~this_way.mp3"
+    },
+    "reply~next_stop": {
+      "f": "f/reply~next_stop.mp3"
+    },
+    "reply~its_closed": {
+      "f": "f/reply~its_closed.mp3"
+    },
+    "reply~one_moment": {
+      "f": "f/reply~one_moment.mp3"
+    },
+    "reply~what_size": {
+      "f": "f/reply~what_size.mp3"
+    },
+    "reply~receipt_question": {
+      "f": "f/reply~receipt_question.mp3"
+    },
+    "reply~how_would_you_like_it": {
+      "f": "f/reply~how_would_you_like_it.mp3"
+    },
+    "reply~id_love_to": {
+      "f": "f/reply~id_love_to.mp3"
+    },
+    "reply~maybe_another_time": {
+      "f": "f/reply~maybe_another_time.mp3"
+    },
+    "reply~sorry_i_cant": {
+      "f": "f/reply~sorry_i_cant.mp3"
+    },
+    "reply~seeing_someone": {
+      "f": "f/reply~seeing_someone.mp3"
+    },
+    "reply~here_for_a_week": {
+      "f": "f/reply~here_for_a_week.mp3"
+    },
+    "reply~like_it_here": {
+      "f": "f/reply~like_it_here.mp3"
+    },
+    "reply~what_happened": {
+      "f": "f/reply~what_happened.mp3"
+    },
+    "reply~where_hurt": {
+      "f": "f/reply~where_hurt.mp3"
+    },
+    "reply~wait_here": {
+      "f": "f/reply~wait_here.mp3"
+    },
+    "reply~passport_please": {
+      "f": "f/reply~passport_please.mp3"
+    },
+    "reply~boarding_started": {
+      "f": "f/reply~boarding_started.mp3"
+    },
+    "reply~gate_changed": {
+      "f": "f/reply~gate_changed.mp3"
+    },
+    "reply~sold_out": {
+      "f": "f/reply~sold_out.mp3"
+    },
+    "reply~follow_me": {
+      "f": "f/reply~follow_me.mp3"
+    },
+    "reply~what_can_i_get": {
+      "f": "f/reply~what_can_i_get.mp3"
+    },
+    "reply~last_call": {
+      "f": "f/reply~last_call.mp3"
+    },
+    "reply~thats_altogether": {
+      "f": "f/reply~thats_altogether.mp3"
+    },
+    "reply~starts_at": {
+      "f": "f/reply~starts_at.mp3"
+    },
+    "l2_so_you_mean": {
+      "m": "m/l2_so_you_mean.mp3"
+    },
+    "l2_contain": {
+      "m": "m/l2_contain.mp3"
+    },
+    "l2_make_without": {
+      "m": "m/l2_make_without.mp3"
+    },
+    "l2_how_much_to": {
+      "m": "m/l2_how_much_to.mp3"
+    },
+    "l2_im_near": {
+      "m": "m/l2_im_near.mp3"
+    },
+    "l2_started_ago": {
+      "m": "m/l2_started_ago.mp3"
+    },
+    "l2_booking_nights": {
+      "m": "m/l2_booking_nights.mp3"
+    },
+    "l2_come_in": {
+      "m": "m/l2_come_in.mp3"
+    },
+    "l2_like_too": {
+      "m": "m/l2_like_too.mp3"
+    },
+    "l2_meeting_at": {
+      "m": "m/l2_meeting_at.mp3"
+    },
+    "l2_leaving_on": {
+      "m": "m/l2_leaving_on.mp3"
+    },
+    "l2_only_need_tickets": {
+      "m": "m/l2_only_need_tickets.mp3"
+    },
+    "l2_so_you_mean~today": {
+      "m": "m/l2_so_you_mean~today.mp3"
+    },
+    "l2_so_you_mean~tomorrow": {
+      "m": "m/l2_so_you_mean~tomorrow.mp3"
+    },
+    "l2_so_you_mean~next_street": {
+      "m": "m/l2_so_you_mean~next_street.mp3"
+    },
+    "l2_so_you_mean~second_stop": {
+      "m": "m/l2_so_you_mean~second_stop.mp3"
+    },
+    "l2_contain~nuts": {
+      "m": "m/l2_contain~nuts.mp3"
+    },
+    "l2_contain~milk": {
+      "m": "m/l2_contain~milk.mp3"
+    },
+    "l2_contain~egg": {
+      "m": "m/l2_contain~egg.mp3"
+    },
+    "l2_contain~shellfish": {
+      "m": "m/l2_contain~shellfish.mp3"
+    },
+    "l2_contain~gluten": {
+      "m": "m/l2_contain~gluten.mp3"
+    },
+    "l2_make_without~milk": {
+      "m": "m/l2_make_without~milk.mp3"
+    },
+    "l2_make_without~butter": {
+      "m": "m/l2_make_without~butter.mp3"
+    },
+    "l2_make_without~cheese": {
+      "m": "m/l2_make_without~cheese.mp3"
+    },
+    "l2_make_without~nuts": {
+      "m": "m/l2_make_without~nuts.mp3"
+    },
+    "l2_how_much_to~airport": {
+      "m": "m/l2_how_much_to~airport.mp3"
+    },
+    "l2_how_much_to~hotel": {
+      "m": "m/l2_how_much_to~hotel.mp3"
+    },
+    "l2_how_much_to~station": {
+      "m": "m/l2_how_much_to~station.mp3"
+    },
+    "l2_how_much_to~centre": {
+      "m": "m/l2_how_much_to~centre.mp3"
+    },
+    "l2_im_near~hotel": {
+      "m": "m/l2_im_near~hotel.mp3"
+    },
+    "l2_im_near~station": {
+      "m": "m/l2_im_near~station.mp3"
+    },
+    "l2_im_near~airport": {
+      "m": "m/l2_im_near~airport.mp3"
+    },
+    "l2_im_near~pharmacy": {
+      "m": "m/l2_im_near~pharmacy.mp3"
+    },
+    "l2_started_ago~hour": {
+      "m": "m/l2_started_ago~hour.mp3"
+    },
+    "l2_started_ago~two_hours": {
+      "m": "m/l2_started_ago~two_hours.mp3"
+    },
+    "l2_started_ago~day": {
+      "m": "m/l2_started_ago~day.mp3"
+    },
+    "l2_started_ago~three_days": {
+      "m": "m/l2_started_ago~three_days.mp3"
+    },
+    "l2_booking_nights~two": {
+      "m": "m/l2_booking_nights~two.mp3"
+    },
+    "l2_booking_nights~three": {
+      "m": "m/l2_booking_nights~three.mp3"
+    },
+    "l2_booking_nights~four": {
+      "m": "m/l2_booking_nights~four.mp3"
+    },
+    "l2_booking_nights~five": {
+      "m": "m/l2_booking_nights~five.mp3"
+    },
+    "l2_come_in~small": {
+      "m": "m/l2_come_in~small.mp3"
+    },
+    "l2_come_in~medium": {
+      "m": "m/l2_come_in~medium.mp3"
+    },
+    "l2_come_in~large": {
+      "m": "m/l2_come_in~large.mp3"
+    },
+    "l2_come_in~black": {
+      "m": "m/l2_come_in~black.mp3"
+    },
+    "l2_come_in~blue": {
+      "m": "m/l2_come_in~blue.mp3"
+    },
+    "l2_like_too~music": {
+      "m": "m/l2_like_too~music.mp3"
+    },
+    "l2_like_too~dancing": {
+      "m": "m/l2_like_too~dancing.mp3"
+    },
+    "l2_like_too~hiking": {
+      "m": "m/l2_like_too~hiking.mp3"
+    },
+    "l2_like_too~travel": {
+      "m": "m/l2_like_too~travel.mp3"
+    },
+    "l2_like_too~sports": {
+      "m": "m/l2_like_too~sports.mp3"
+    },
+    "l2_meeting_at~seven": {
+      "m": "m/l2_meeting_at~seven.mp3"
+    },
+    "l2_meeting_at~eight_thirty": {
+      "m": "m/l2_meeting_at~eight_thirty.mp3"
+    },
+    "l2_meeting_at~station": {
+      "m": "m/l2_meeting_at~station.mp3"
+    },
+    "l2_meeting_at~hotel": {
+      "m": "m/l2_meeting_at~hotel.mp3"
+    },
+    "l2_leaving_on~monday": {
+      "m": "m/l2_leaving_on~monday.mp3"
+    },
+    "l2_leaving_on~friday": {
+      "m": "m/l2_leaving_on~friday.mp3"
+    },
+    "l2_leaving_on~saturday": {
+      "m": "m/l2_leaving_on~saturday.mp3"
+    },
+    "l2_leaving_on~sunday": {
+      "m": "m/l2_leaving_on~sunday.mp3"
+    },
+    "l2_only_need_tickets~two": {
+      "m": "m/l2_only_need_tickets~two.mp3"
+    },
+    "l2_only_need_tickets~three": {
+      "m": "m/l2_only_need_tickets~three.mp3"
+    },
+    "l2_only_need_tickets~four": {
+      "m": "m/l2_only_need_tickets~four.mp3"
+    },
+    "l2_didnt_catch": {
+      "m": "m/l2_didnt_catch.mp3"
+    },
+    "l2_last_word": {
+      "m": "m/l2_last_word.mp3"
+    },
+    "l2_and_then": {
+      "m": "m/l2_and_then.mp3"
+    },
+    "l2_someone_english": {
+      "m": "m/l2_someone_english.mp3"
+    },
+    "l2_ask_them": {
+      "m": "m/l2_ask_them.mp3"
+    },
+    "l2_type_phone": {
+      "m": "m/l2_type_phone.mp3"
+    },
+    "l2_another_way": {
+      "m": "m/l2_another_way.mp3"
+    },
+    "l2_show_me": {
+      "m": "m/l2_show_me.mp3"
+    },
+    "l2_check_again": {
+      "m": "m/l2_check_again.mp3"
+    },
+    "l2_write_down": {
+      "m": "m/l2_write_down.mp3"
+    },
+    "l2_translation_app": {
+      "m": "m/l2_translation_app.mp3"
+    },
+    "l2_come_back": {
+      "m": "m/l2_come_back.mp3"
+    },
+    "l2_never_mind": {
+      "m": "m/l2_never_mind.mp3"
+    },
+    "l2_wait_table": {
+      "m": "m/l2_wait_table.mp3"
+    },
+    "l2_name_down": {
+      "m": "m/l2_name_down.mp3"
+    },
+    "l2_cant_eat_dairy": {
+      "m": "m/l2_cant_eat_dairy.mp3"
+    },
+    "l2_popular_dish": {
+      "m": "m/l2_popular_dish.mp3"
+    },
+    "l2_is_it_spicy": {
+      "m": "m/l2_is_it_spicy.mp3"
+    },
+    "l2_bill_mistake": {
+      "m": "m/l2_bill_mistake.mp3"
+    },
+    "l2_didnt_order": {
+      "m": "m/l2_didnt_order.mp3"
+    },
+    "l2_change_trains": {
+      "m": "m/l2_change_trains.mp3"
+    },
+    "l2_platform_change": {
+      "m": "m/l2_platform_change.mp3"
+    },
+    "l2_ticket_on_board": {
+      "m": "m/l2_ticket_on_board.mp3"
+    },
+    "l2_ticket_machine": {
+      "m": "m/l2_ticket_machine.mp3"
+    },
+    "l2_last_bus": {
+      "m": "m/l2_last_bus.mp3"
+    },
+    "l2_miss_it": {
+      "m": "m/l2_miss_it.mp3"
+    },
+    "l2_use_meter": {
+      "m": "m/l2_use_meter.mp3"
+    },
+    "l2_send_ambulance": {
+      "m": "m/l2_send_ambulance.mp3"
+    },
+    "l2_share_location": {
+      "m": "m/l2_share_location.mp3"
+    },
+    "l2_getting_worse": {
+      "m": "m/l2_getting_worse.mp3"
+    },
+    "l2_urgent_help": {
+      "m": "m/l2_urgent_help.mp3"
+    },
+    "l2_passport_stolen": {
+      "m": "m/l2_passport_stolen.mp3"
+    },
+    "l2_file_report": {
+      "m": "m/l2_file_report.mp3"
+    },
+    "l2_dont_know_when": {
+      "m": "m/l2_dont_know_when.mp3"
+    },
+    "l2_how_often": {
+      "m": "m/l2_how_often.mp3"
+    },
+    "l2_speak_pharmacist": {
+      "m": "m/l2_speak_pharmacist.mp3"
+    },
+    "l2_breakfast_time": {
+      "m": "m/l2_breakfast_time.mp3"
+    },
+    "l2_early_checkin": {
+      "m": "m/l2_early_checkin.mp3"
+    },
+    "l2_when_ready": {
+      "m": "m/l2_when_ready.mp3"
+    },
+    "l2_room_noisy": {
+      "m": "m/l2_room_noisy.mp3"
+    },
+    "l2_quieter_room": {
+      "m": "m/l2_quieter_room.mp3"
+    },
+    "l2_speak_manager": {
+      "m": "m/l2_speak_manager.mp3"
+    },
+    "l2_late_checkout": {
+      "m": "m/l2_late_checkout.mp3"
+    },
+    "l2_how_much_extra": {
+      "m": "m/l2_how_much_extra.mp3"
+    },
+    "l2_right_way": {
+      "m": "m/l2_right_way.mp3"
+    },
+    "l2_after_intersection": {
+      "m": "m/l2_after_intersection.mp3"
+    },
+    "l2_walk_there": {
+      "m": "m/l2_walk_there.mp3"
+    },
+    "l2_quicker_way": {
+      "m": "m/l2_quicker_way.mp3"
+    },
+    "l2_which_exit": {
+      "m": "m/l2_which_exit.mp3"
+    },
+    "l2_is_elevator": {
+      "m": "m/l2_is_elevator.mp3"
+    },
+    "l2_oat_milk": {
+      "m": "m/l2_oat_milk.mp3"
+    },
+    "l2_iced_please": {
+      "m": "m/l2_iced_please.mp3"
+    },
+    "l2_sit_outside": {
+      "m": "m/l2_sit_outside.mp3"
+    },
+    "l2_how_long_wait": {
+      "m": "m/l2_how_long_wait.mp3"
+    },
+    "l2_to_go_instead": {
+      "m": "m/l2_to_go_instead.mp3"
+    },
+    "l2_larger_size": {
+      "m": "m/l2_larger_size.mp3"
+    },
+    "l2_doesnt_fit": {
+      "m": "m/l2_doesnt_fit.mp3"
+    },
+    "l2_difference": {
+      "m": "m/l2_difference.mp3"
+    },
+    "l2_which_recommend": {
+      "m": "m/l2_which_recommend.mp3"
+    },
+    "l2_cheaper_option": {
+      "m": "m/l2_cheaper_option.mp3"
+    },
+    "l2_return_this": {
+      "m": "m/l2_return_this.mp3"
+    },
+    "l2_need_receipt": {
+      "m": "m/l2_need_receipt.mp3"
+    },
+    "l2_exchange_instead": {
+      "m": "m/l2_exchange_instead.mp3"
+    },
+    "l2_keep_top": {
+      "m": "m/l2_keep_top.mp3"
+    },
+    "l2_little_shorter": {
+      "m": "m/l2_little_shorter.mp3"
+    },
+    "l2_shape_beard": {
+      "m": "m/l2_shape_beard.mp3"
+    },
+    "l2_mustache_longer": {
+      "m": "m/l2_mustache_longer.mp3"
+    },
+    "l2_short_enough": {
+      "m": "m/l2_short_enough.mp3"
+    },
+    "l2_match_photo": {
+      "m": "m/l2_match_photo.mp3"
+    },
+    "l2_more_length_here": {
+      "m": "m/l2_more_length_here.mp3"
+    },
+    "l2_walk_ins": {
+      "m": "m/l2_walk_ins.mp3"
+    },
+    "l2_opening_later": {
+      "m": "m/l2_opening_later.mp3"
+    },
+    "l2_what_brings": {
+      "m": "m/l2_what_brings.mp3"
+    },
+    "l2_like_most": {
+      "m": "m/l2_like_most.mp3"
+    },
+    "l2_favorite_places": {
+      "m": "m/l2_favorite_places.mp3"
+    },
+    "l2_weekends": {
+      "m": "m/l2_weekends.mp3"
+    },
+    "l2_join_us": {
+      "m": "m/l2_join_us.mp3"
+    },
+    "l2_no_worries": {
+      "m": "m/l2_no_worries.mp3"
+    },
+    "l2_do_something": {
+      "m": "m/l2_do_something.mp3"
+    },
+    "l2_next_week": {
+      "m": "m/l2_next_week.mp3"
+    },
+    "l2_another_time": {
+      "m": "m/l2_another_time.mp3"
+    },
+    "l2_message_tomorrow": {
+      "m": "m/l2_message_tomorrow.mp3"
+    },
+    "l2_best_way_reach": {
+      "m": "m/l2_best_way_reach.mp3"
+    },
+    "l2_only_if_comfortable": {
+      "m": "m/l2_only_if_comfortable.mp3"
+    },
+    "l2_stay_with_friends": {
+      "m": "m/l2_stay_with_friends.mp3"
+    },
+    "l2_thanks_understanding": {
+      "m": "m/l2_thanks_understanding.mp3"
+    },
+    "l2_give_space": {
+      "m": "m/l2_give_space.mp3"
+    },
+    "l2_check_bag": {
+      "m": "m/l2_check_bag.mp3"
+    },
+    "l2_rearrange": {
+      "m": "m/l2_rearrange.mp3"
+    },
+    "l2_make_connection": {
+      "m": "m/l2_make_connection.mp3"
+    },
+    "l2_security_again": {
+      "m": "m/l2_security_again.mp3"
+    },
+    "l2_rebook": {
+      "m": "m/l2_rebook.mp3"
+    },
+    "l2_track_bag": {
+      "m": "m/l2_track_bag.mp3"
+    },
+    "l2_hotel_address": {
+      "m": "m/l2_hotel_address.mp3"
+    },
+    "l2_reference_number": {
+      "m": "m/l2_reference_number.mp3"
+    },
+    "l2_here_tourism": {
+      "m": "m/l2_here_tourism.mp3"
+    },
+    "l2_return_ticket": {
+      "m": "m/l2_return_ticket.mp3"
+    },
+    "l2_book_ahead": {
+      "m": "m/l2_book_ahead.mp3"
+    },
+    "l2_another_time_slot": {
+      "m": "m/l2_another_time_slot.mp3"
+    },
+    "l2_book_tomorrow": {
+      "m": "m/l2_book_tomorrow.mp3"
+    },
+    "l2_audio_guide": {
+      "m": "m/l2_audio_guide.mp3"
+    },
+    "l2_accessible": {
+      "m": "m/l2_accessible.mp3"
+    },
+    "l2_step_free": {
+      "m": "m/l2_step_free.mp3"
+    },
+    "l2_local_specialty": {
+      "m": "m/l2_local_specialty.mp3"
+    },
+    "l2_how_strong": {
+      "m": "m/l2_how_strong.mp3"
+    },
+    "l2_something_lighter": {
+      "m": "m/l2_something_lighter.mp3"
+    },
+    "l2_live_music": {
+      "m": "m/l2_live_music.mp3"
+    },
+    "l2_entry_fee": {
+      "m": "m/l2_entry_fee.mp3"
+    },
+    "l2_call_taxi": {
+      "m": "m/l2_call_taxi.mp3"
+    },
+    "l2_where_wait": {
+      "m": "m/l2_where_wait.mp3"
+    },
+    "l2_safe_way_home": {
+      "m": "m/l2_safe_way_home.mp3"
+    },
+    "l2_total_price": {
+      "m": "m/l2_total_price.mp3"
+    },
+    "l2_including_tax": {
+      "m": "m/l2_including_tax.mp3"
+    },
+    "l2_morning_evening": {
+      "m": "m/l2_morning_evening.mp3"
+    },
+    "l2_how_early": {
+      "m": "m/l2_how_early.mp3"
+    },
+    "l2_per_person": {
+      "m": "m/l2_per_person.mp3"
+    },
+    "l2_change_for": {
+      "m": "m/l2_change_for.mp3"
+    },
+    "l2_pay_card_then": {
+      "m": "m/l2_pay_card_then.mp3"
+    },
+    "reply~l2_which_part": {
+      "m": "m/reply~l2_which_part.mp3"
+    },
+    "reply~l2_thats_right": {
+      "m": "m/reply~l2_thats_right.mp3"
+    },
+    "reply~l2_let_me_ask": {
+      "m": "m/reply~l2_let_me_ask.mp3"
+    },
+    "reply~l2_about_twenty": {
+      "m": "m/reply~l2_about_twenty.mp3"
+    },
+    "reply~l2_yes_it_does": {
+      "m": "m/reply~l2_yes_it_does.mp3"
+    },
+    "reply~l2_very_popular": {
+      "m": "m/reply~l2_very_popular.mp3"
+    },
+    "reply~l2_which_item": {
+      "m": "m/reply~l2_which_item.mp3"
+    },
+    "reply~l2_next_station": {
+      "m": "m/reply~l2_next_station.mp3"
+    },
+    "reply~l2_only_machine": {
+      "m": "m/reply~l2_only_machine.mp3"
+    },
+    "reply~l2_one_at_midnight": {
+      "m": "m/reply~l2_one_at_midnight.mp3"
+    },
+    "reply~l2_fixed_price": {
+      "m": "m/reply~l2_fixed_price.mp3"
+    },
+    "reply~l2_are_you_safe": {
+      "m": "m/reply~l2_are_you_safe.mp3"
+    },
+    "reply~l2_when_start": {
+      "m": "m/reply~l2_when_start.mp3"
+    },
+    "reply~l2_where_last": {
+      "m": "m/reply~l2_where_last.mp3"
+    },
+    "reply~l2_any_allergies": {
+      "m": "m/reply~l2_any_allergies.mp3"
+    },
+    "reply~l2_have_insurance": {
+      "m": "m/reply~l2_have_insurance.mp3"
+    },
+    "reply~l2_see_passport": {
+      "m": "m/reply~l2_see_passport.mp3"
+    },
+    "reply~l2_room_not_ready": {
+      "m": "m/reply~l2_room_not_ready.mp3"
+    },
+    "reply~l2_can_move_you": {
+      "m": "m/reply~l2_can_move_you.mp3"
+    },
+    "reply~l2_extra_fee": {
+      "m": "m/reply~l2_extra_fee.mp3"
+    },
+    "reply~l2_left_at_light": {
+      "m": "m/reply~l2_left_at_light.mp3"
+    },
+    "reply~l2_ten_minutes": {
+      "m": "m/reply~l2_ten_minutes.mp3"
+    },
+    "reply~l2_exit_three": {
+      "m": "m/reply~l2_exit_three.mp3"
+    },
+    "reply~l2_hot_or_iced": {
+      "m": "m/reply~l2_hot_or_iced.mp3"
+    },
+    "reply~l2_only_inside": {
+      "m": "m/reply~l2_only_inside.mp3"
+    },
+    "reply~l2_let_me_check": {
+      "m": "m/reply~l2_let_me_check.mp3"
+    },
+    "reply~l2_this_better": {
+      "m": "m/reply~l2_this_better.mp3"
+    },
+    "reply~l2_within_days": {
+      "m": "m/reply~l2_within_days.mp3"
+    },
+    "reply~l2_how_short_sides": {
+      "m": "m/reply~l2_how_short_sides.mp3"
+    },
+    "reply~l2_trim_mustache": {
+      "m": "m/reply~l2_trim_mustache.mp3"
+    },
+    "reply~l2_exactly_like": {
+      "m": "m/reply~l2_exactly_like.mp3"
+    },
+    "reply~l2_fully_booked": {
+      "m": "m/reply~l2_fully_booked.mp3"
+    },
+    "reply~l2_here_for_work": {
+      "m": "m/reply~l2_here_for_work.mp3"
+    },
+    "reply~l2_food_people": {
+      "m": "m/reply~l2_food_people.mp3"
+    },
+    "reply~l2_go_hiking": {
+      "m": "m/reply~l2_go_hiking.mp3"
+    },
+    "reply~l2_maybe_what_time": {
+      "m": "m/reply~l2_maybe_what_time.mp3"
+    },
+    "reply~l2_busy_weekend": {
+      "m": "m/reply~l2_busy_weekend.mp3"
+    },
+    "reply~l2_heres_number": {
+      "m": "m/reply~l2_heres_number.mp3"
+    },
+    "reply~l2_sorry_understand": {
+      "m": "m/reply~l2_sorry_understand.mp3"
+    },
+    "reply~l2_over_weight": {
+      "m": "m/reply~l2_over_weight.mp3"
+    },
+    "reply~l2_boarding_closes": {
+      "m": "m/reply~l2_boarding_closes.mp3"
+    },
+    "reply~l2_deliver_tomorrow": {
+      "m": "m/reply~l2_deliver_tomorrow.mp3"
+    },
+    "reply~l2_flying_home": {
+      "m": "m/reply~l2_flying_home.mp3"
+    },
+    "reply~l2_sold_out_today": {
+      "m": "m/reply~l2_sold_out_today.mp3"
+    },
+    "reply~l2_at_entrance": {
+      "m": "m/reply~l2_at_entrance.mp3"
+    },
+    "reply~l2_stairs_only": {
+      "m": "m/reply~l2_stairs_only.mp3"
+    },
+    "reply~l2_house_cocktail": {
+      "m": "m/reply~l2_house_cocktail.mp3"
+    },
+    "reply~l2_band_at_nine": {
+      "m": "m/reply~l2_band_at_nine.mp3"
+    },
+    "reply~l2_ten_minutes_here": {
+      "m": "m/reply~l2_ten_minutes_here.mp3"
+    },
+    "reply~l2_tax_extra": {
+      "m": "m/reply~l2_tax_extra.mp3"
+    },
+    "reply~l2_seven_evening": {
+      "m": "m/reply~l2_seven_evening.mp3"
+    },
+    "reply~l2_yes_per_person": {
+      "m": "m/reply~l2_yes_per_person.mp3"
+    },
+    "reply~l2_no_change": {
+      "m": "m/reply~l2_no_change.mp3"
+    }
+  }
+}
