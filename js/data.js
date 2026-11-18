@@ -90,6 +90,10 @@ export async function loadLanguage(content, code) {
     getJSON(`added/${code}.json`).catch(() => null), // drafts, not yet checked (content/added/README.md)
     crosscheck(),
   ]);
+  // Corrected pronunciation lines for vetted phrases (scripts/fix-pron.py). The vetted file itself is
+  // never edited; this overlay replaces only the easy-pronunciation line.
+  const pronFix = await getJSON(`pron/${code}.json`).catch(() => ({}));
+  file.entries = file.entries.map((e) => (pronFix[e.id] ? { ...e, pronunciation_easy: pronFix[e.id] } : e));
   const checked = crossCache?.results?.[code] || {}; // drafts that match a native-written sentence (scripts/crosscheck.mjs)
   const tips = guide?.tips || {}; // "How it's said" coaching, written for Wayword (not dataset text)
   // The first Sound guide entry that uses a phrase as an example: the player's "Listen for" cue.

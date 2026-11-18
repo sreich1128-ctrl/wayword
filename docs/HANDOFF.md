@@ -97,6 +97,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Level 2 batch 3, 2026-11-14 (v51):** Café, Shopping, Barber, Meeting People live in 9 languages as drafts (88 Level 2 phrases, 36 replies so far). Only batch 4 remains (Flirting, Airport, Sightseeing, Bar, Numbers & time). Validated, not clicked through in the browser.
 
+**Level 2 batch 4 + pronunciation audit, 2026-11-14/18 (v52–v53):** all Level 2 content is live (130 phrases, 53 replies per language). Pronunciation lines audited and corrected in 8 languages: read `docs/PRON_AUDIT.md`. Vetted lines are corrected through the overlay `content/pron/<code>.json` (the vetted files stay untouched); `scripts/fix-pron.py` holds the rules. Next: Spanish recorded voice (needs a Latin American voice in the owner's ElevenLabs account; the account only has Spain-accent Spanish voices, and the text and pronunciation lines are Latin American).
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**

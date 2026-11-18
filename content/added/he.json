@@ -11,7 +11,7 @@
     {
       "id": "sorry",
       "target": "סליחה.",
-      "pronunciation_easy": "sli-KHA",
+      "pronunciation_easy": "slee-KHA",
       "qa": "Same word as excuse_me; Israelis use סליחה for most apologies. For a fuller apology: אני מצטער (a-NEE mits-ta-ER), masculine; feminine אני מצטערת (mits-ta-E-ret)."
     },
     {
@@ -232,7 +232,7 @@
     {
       "id": "another_size",
       "target": "יש את זה במידה אחרת?",
-      "pronunciation_easy": "yesh et ze be-mi-DA a-khe-RET"
+      "pronunciation_easy": "yesh et ze be-mee-DA a-KHE-ret"
     },
     {
       "id": "bag_please",
@@ -248,7 +248,7 @@
     {
       "id": "just_trim",
       "target": "רק לקצר קצת.",
-      "pronunciation_easy": "rak le-ka-TSER KT-sat",
+      "pronunciation_easy": "rak le-ka-TSER ktsat",
       "qa": "Literally 'just to shorten a little'. Reviewer: check against barber usage; רק לסדר (rak le-sa-DER, 'just tidy it') is also common."
     },
     {
@@ -1618,7 +1618,7 @@
       {
         "word": "word_airport",
         "target": "איך מגיעים לשדה התעופה?",
-        "pronunciation_easy": "ekh ma-gee-EEM li-SDE ha-te-oo-FA"
+        "pronunciation_easy": "ekh ma-gee-EEM li-SDE ha-te-u-FA"
       },
       {
         "word": "word_train_station",
@@ -1800,7 +1800,7 @@
       {
         "word": "word_airport",
         "target": "כרטיס לשדה התעופה, בבקשה.",
-        "pronunciation_easy": "kar-TEES li-SDE ha-te-oo-FA, be-va-ka-SHA"
+        "pronunciation_easy": "kar-TEES li-SDE ha-te-u-FA, be-va-ka-SHA"
       },
       {
         "word": "word_city_centre",
@@ -1822,7 +1822,7 @@
       {
         "word": "word_airport",
         "target": "זה מגיע לשדה התעופה?",
-        "pronunciation_easy": "ze ma-GEE-a li-SDE ha-te-oo-FA"
+        "pronunciation_easy": "ze ma-GEE-a li-SDE ha-te-u-FA"
       },
       {
         "word": "word_city_centre",
@@ -1844,7 +1844,7 @@
       {
         "word": "word_airport",
         "target": "תיקח אותי לשדה התעופה, בבקשה.",
-        "pronunciation_easy": "ti-KAKH o-TEE li-SDE ha-te-oo-FA, be-va-ka-SHA"
+        "pronunciation_easy": "ti-KAKH o-TEE li-SDE ha-te-u-FA, be-va-ka-SHA"
       },
       {
         "word": "word_hotel",
@@ -2142,7 +2142,7 @@
       {
         "word": "change_money",
         "target": "איפה אפשר להחליף כסף?",
-        "pronunciation_easy": "EY-fo ef-SHAR le-ha-kha-LEEF KE-sef"
+        "pronunciation_easy": "EY-fo ef-SHAR le-hakh-LEEF KE-sef"
       },
       {
         "word": "sim",
@@ -2503,7 +2503,7 @@
     },
     "anything_else": {
       "target": "עוד משהו?",
-      "pronunciation_easy": "od MASH-hu"
+      "pronunciation_easy": "od MA-she-hu"
     },
     "here_you_go": {
       "target": "בבקשה.",
@@ -2512,7 +2512,7 @@
     },
     "inside_or_outside": {
       "target": "בפנים או בחוץ?",
-      "pronunciation_easy": "bif-NEEM o ba-KHOOTS"
+      "pronunciation_easy": "bif-NEEM o ba-KHUTS"
     },
     "how_many_people": {
       "target": "כמה אתם?",
@@ -2545,7 +2545,7 @@
     },
     "what_size": {
       "target": "איזו מידה?",
-      "pronunciation_easy": "EY-zo mi-DA"
+      "pronunciation_easy": "EY-zo mee-DA"
     },
     "receipt_question": {
       "target": "צריך קבלה?",

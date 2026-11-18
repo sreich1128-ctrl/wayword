@@ -52,7 +52,7 @@
     {
       "id": "allergic_to",
       "target": "عندي حساسية من ___.",
-      "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min ___",
+      "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min ___",
       "qa": "ALLERGY. Literal: 'I have an allergy from ___' (= I'm allergic to ___). حساسية على ___ is also heard. Blank takes the allergen with the article (المكسرات, البيض). Gender-neutral."
     },
     {
@@ -100,13 +100,13 @@
     {
       "id": "does_this_go_to",
       "target": "هاد بيروح على ___؟",
-      "pronunciation_easy": "haad bi-ROOH a-la ___",
+      "pronunciation_easy": "haad bi-ROOH A-la ___",
       "qa": "هاد/بيروح assume a masculine vehicle (باص, سرفيس, قطار). For a feminine noun (e.g. السيارة) هاي بتروح. على + ال contracts to عال (عالمطار)."
     },
     {
       "id": "take_me_to",
       "target": "وصّلني على ___، لو سمحت.",
-      "pronunciation_easy": "was-SIL-nee a-la ___, law sa-MAHT",
+      "pronunciation_easy": "was-SIL-nee A-la ___, law sa-MAHT",
       "qa": "Masculine form (file convention: masculine speaker/listener). Addressed to a male driver; to a female driver وصّليني (was-si-LEE-nee). ودّيني على ___ is also common in Palestine/Jordan. على + ال contracts to عال."
     },
     {
@@ -177,7 +177,7 @@
     {
       "id": "have_reservation",
       "target": "عندي حجز.",
-      "pronunciation_easy": "AN-dee HAJZ"
+      "pronunciation_easy": "IN-dee HAJZ"
     },
     {
       "id": "under_name",
@@ -224,7 +224,7 @@
     {
       "id": "ill_take_it",
       "target": "باخده.",
-      "pronunciation_easy": "BAA-khdo",
+      "pronunciation_easy": "BAA-khdoh",
       "qa": "Object pronoun agrees with the item: باخدها (BAAKH-d-ha) for a feminine item."
     },
     {
@@ -337,7 +337,7 @@
     {
       "id": "do_you_have",
       "target": "عندكم ___؟",
-      "pronunciation_easy": "in-DKUM ___",
+      "pronunciation_easy": "IN-dkom ___",
       "qa": "Plural 'you' (عندكم), the normal way to ask a shop, café or hotel, and gender-neutral. To one person: عندك (IN-dak to a man, IN-dik to a woman). Blank takes the noun with no article."
     },
     {
@@ -385,7 +385,7 @@
     {
       "id": "looking_for",
       "target": "عم دوّر على ___.",
-      "pronunciation_easy": "am DOW-wir a-la ___",
+      "pronunciation_easy": "am DOW-wir A-la ___",
       "qa": "Gender-neutral. على + ال contracts to عال (عالمدخل), like take_me_to. Jordan/Palestine often بدوّر على (ba-DOW-wir) instead of عم دوّر."
     },
     {
@@ -604,7 +604,7 @@
     {
       "id": "l2_type_phone",
       "target": "ممكن تكتبها على تلفوني؟",
-      "pronunciation_easy": "MUM-kin tik-TIB-ha A-la ti-li-FOH-nee"
+      "pronunciation_easy": "MUM-kin tik-TIB-ha A-la tal-FOH-nee"
     },
     {
       "id": "l2_another_way",
@@ -1203,7 +1203,7 @@
     {
       "id": "l2_total_price",
       "target": "هاد السعر الكلي؟",
-      "pronunciation_easy": "haad is-SI'r il-KUL-lee"
+      "pronunciation_easy": "haad is-SI'-er il-KUL-lee"
     },
     {
       "id": "l2_including_tax",
@@ -1223,7 +1223,7 @@
     {
       "id": "l2_per_person",
       "target": "هاد السعر للشخص؟",
-      "pronunciation_easy": "haad is-SI'r lash-SHAKHS"
+      "pronunciation_easy": "haad is-SI'-er lash-SHAKHS"
     },
     {
       "id": "l2_only_need_tickets",
@@ -1626,12 +1626,12 @@
       {
         "word": "word_train_station",
         "target": "كيف بروح على محطة القطار؟",
-        "pronunciation_easy": "keef ba-ROOH a-la ma-HAT-tit il-i-TAAR"
+        "pronunciation_easy": "keef ba-ROOH A-la ma-HAT-tit il-i-TAAR"
       },
       {
         "word": "word_city_centre",
         "target": "كيف بروح على وسط البلد؟",
-        "pronunciation_easy": "keef ba-ROOH a-la WUST il-BA-lad"
+        "pronunciation_easy": "keef ba-ROOH A-la WUST il-BA-lad"
       },
       {
         "word": "word_beach",
@@ -1673,7 +1673,7 @@
       {
         "word": "word_receipt",
         "target": "ممكن تعطيني الفاتورة، لو سمحت؟",
-        "pronunciation_easy": "MUM-kin ta-TEE-nee il-FAA-too-ra, law sa-MAHT"
+        "pronunciation_easy": "MUM-kin ta-TEE-nee il-faa-TOO-ra, law sa-MAHT"
       }
     ],
     "i_would_like": [
@@ -1747,37 +1747,37 @@
       {
         "word": "word_nuts",
         "target": "عندي حساسية من المكسرات.",
-        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-mu-kas-sa-RAAT",
+        "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min il-mu-kas-sa-RAAT",
         "qa": "ALLERGY. Literal: 'I have an allergy from nuts (mixed nuts)'."
       },
       {
         "word": "word_peanuts",
         "target": "عندي حساسية من الفستق السوداني.",
-        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-FUS-tu' is-soo-DAA-nee",
+        "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min il-FUS-tu' is-soo-DAA-nee",
         "qa": "ALLERGY. Literal: 'I have an allergy from peanuts ('Sudanese pistachio'). Lebanese also say فستق عبيد; plain فستق means pistachio, so keep سوداني'."
       },
       {
         "word": "word_gluten",
         "target": "عندي حساسية من الغلوتين.",
-        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-ghloo-TEEN",
+        "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min il-ghloo-TEEN",
         "qa": "ALLERGY. Literal: 'I have an allergy from gluten (loanword; staff may not know it, add القمح 'wheat' if needed)'."
       },
       {
         "word": "word_shellfish",
         "target": "عندي حساسية من ثمار البحر.",
-        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min tha-MAAR il-BAHR",
+        "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min tha-MAAR il-BAHR",
         "qa": "ALLERGY. Literal: 'I have an allergy from 'fruits of the sea' = shellfish/seafood; may be taken to include fish. Crustaceans specifically: القشريات'."
       },
       {
         "word": "word_milk",
         "target": "عندي حساسية من الحليب.",
-        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-ha-LEEB",
+        "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min il-ha-LEEB",
         "qa": "ALLERGY. Literal: 'I have an allergy from milk'."
       },
       {
         "word": "word_eggs",
         "target": "عندي حساسية من البيض.",
-        "pronunciation_easy": "AN-dee ha-saa-SEE-yeh min il-BAYD",
+        "pronunciation_easy": "IN-dee ha-saa-SEE-yeh min il-BAYD",
         "qa": "ALLERGY. Literal: 'I have an allergy from eggs'."
       }
     ],
@@ -1809,7 +1809,7 @@
       {
         "word": "word_nuts",
         "target": "بدون مكسرات، لو سمحت.",
-        "pronunciation_easy": "bi-DOON mu-kas-sa-RAAT, law sa-MAHT",
+        "pronunciation_easy": "bi-DOON mkas-sa-RAAT, law sa-MAHT",
         "qa": "DIET. Literal: 'Without nuts, please.'"
       }
     ],
@@ -1844,7 +1844,7 @@
       {
         "word": "word_city_centre",
         "target": "هاد بيروح على وسط البلد؟",
-        "pronunciation_easy": "haad bi-ROOH a-la WUST il-BA-lad"
+        "pronunciation_easy": "haad bi-ROOH A-la WUST il-BA-lad"
       },
       {
         "word": "word_beach",
@@ -1854,7 +1854,7 @@
       {
         "word": "word_train_station",
         "target": "هاد بيروح على محطة القطار؟",
-        "pronunciation_easy": "haad bi-ROOH a-la ma-HAT-tit il-i-TAAR"
+        "pronunciation_easy": "haad bi-ROOH A-la ma-HAT-tit il-i-TAAR"
       }
     ],
     "take_me_to": [
@@ -1871,12 +1871,12 @@
       {
         "word": "word_train_station",
         "target": "وصّلني على محطة القطار، لو سمحت.",
-        "pronunciation_easy": "was-SIL-nee a-la ma-HAT-tit il-i-TAAR, law sa-MAHT"
+        "pronunciation_easy": "was-SIL-nee A-la ma-HAT-tit il-i-TAAR, law sa-MAHT"
       },
       {
         "word": "word_city_centre",
         "target": "وصّلني على وسط البلد، لو سمحت.",
-        "pronunciation_easy": "was-SIL-nee a-la WUST il-BA-lad, law sa-MAHT"
+        "pronunciation_easy": "was-SIL-nee A-la WUST il-BA-lad, law sa-MAHT"
       },
       {
         "word": "word_beach",
@@ -1928,7 +1928,7 @@
       {
         "word": "word_phone",
         "target": "ضيّعت تلفوني.",
-        "pronunciation_easy": "day-YA'T tal-FOO-nee",
+        "pronunciation_easy": "day-YA'T tal-FOH-nee",
         "qa": "EMERGENCY. Literal: 'I lost my phone. Jordan/Palestine also جوالي / موبايلي'."
       },
       {
@@ -1965,17 +1965,17 @@
       {
         "word": "vegetarian_food",
         "target": "عندكم أكل نباتي؟",
-        "pronunciation_easy": "in-DKUM akl na-BAA-tee"
+        "pronunciation_easy": "IN-dkom akl na-BAA-tee"
       },
       {
         "word": "charger",
         "target": "عندكم شاحن تلفون؟",
-        "pronunciation_easy": "in-DKUM SHAA-hen til-FOON"
+        "pronunciation_easy": "IN-dkom SHAA-hen til-FOON"
       },
       {
         "word": "map",
         "target": "عندكم خريطة؟",
-        "pronunciation_easy": "in-DKUM kha-REE-ta"
+        "pronunciation_easy": "IN-dkom kha-REE-ta"
       }
     ],
     "how_much_is": [
@@ -2102,7 +2102,7 @@
       {
         "word": "charge",
         "target": "فيني أشحن تلفوني هون؟",
-        "pronunciation_easy": "FEE-nee ASH-han tal-FOO-nee hoon"
+        "pronunciation_easy": "FEE-nee ASH-han tal-FOH-nee hoon"
       }
     ],
     "looking_for": [
@@ -2120,7 +2120,7 @@
       {
         "word": "restaurant",
         "target": "عم دوّر على مطعم.",
-        "pronunciation_easy": "am DOW-wir a-la MAT-am"
+        "pronunciation_easy": "am DOW-wir A-la MAT-am"
       },
       {
         "word": "exit",
@@ -2132,7 +2132,7 @@
       {
         "word": "breakfast",
         "target": "الفطور ضمن السعر؟",
-        "pronunciation_easy": "il-fu-TOOR DUM-n is-SI'-er",
+        "pronunciation_easy": "il-f-TOOR DUM-n is-SI'-er",
         "qa": "Hotels also: الفطور مع الغرفة؟ ('Is breakfast with the room?')."
       },
       {
@@ -2156,7 +2156,7 @@
       {
         "word": "buy_tickets",
         "target": "وين فيني أشتري تذاكر؟",
-        "pronunciation_easy": "wayn FEE-nee ash-TI-ree ta-ZAA-kir"
+        "pronunciation_easy": "wayn FEE-nee ash-TI-ree ta-ZAA-ker"
       },
       {
         "word": "taxi",
@@ -2549,7 +2549,7 @@
     },
     "have_booking": {
       "target": "عندك حجز؟",
-      "pronunciation_easy": "AN-dak HAJZ",
+      "pronunciation_easy": "IN-dak HAJZ",
       "qa": "To a male guest; to a female: عندِك (AN-dek)."
     },
     "this_way": {
@@ -2559,7 +2559,7 @@
     },
     "next_stop": {
       "target": "المحطة الجاية.",
-      "pronunciation_easy": "il-ma-HAT-ta ij-JAY-yeh",
+      "pronunciation_easy": "il-ma-HAT-ta ij-JAA-yeh",
       "qa": "Spoken form; recorded announcements use formal المحطة القادمة."
     },
     "its_closed": {
@@ -2579,7 +2579,7 @@
     },
     "receipt_question": {
       "target": "بدك الفاتورة؟",
-      "pronunciation_easy": "BAD-dak il-FAA-too-ra",
+      "pronunciation_easy": "BAD-dak il-faa-TOO-ra",
       "qa": "To a male customer; female: بدِك. Jordan/Palestine also say الوصل (il-WASL) for receipt."
     },
     "how_would_you_like_it": {
@@ -2643,7 +2643,7 @@
     },
     "follow_me": {
       "target": "تعال معي.",
-      "pronunciation_easy": "ta-AAL MA-ee"
+      "pronunciation_easy": "ta-AAL MA-'ee"
     },
     "what_can_i_get": {
       "target": "شو بتحب تشرب؟",
@@ -2704,7 +2704,7 @@
     },
     "l2_fixed_price": {
       "target": "السعر ثابت.",
-      "pronunciation_easy": "is-SI'r SAA-bet"
+      "pronunciation_easy": "is-SI'-er SAA-bet"
     },
     "l2_are_you_safe": {
       "target": "إنت بمكان آمن؟",

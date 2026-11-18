@@ -468,7 +468,7 @@
     {
       "id": "im_from",
       "target": "Soy de ___.",
-      "pronunciation_easy": "soy deh"
+      "pronunciation_easy": "SOY deh ___"
     },
     {
       "id": "how_long_here",
@@ -1110,7 +1110,7 @@
     {
       "id": "l2_leaving_on",
       "target": "Me voy ___.",
-      "pronunciation_easy": "meh voy ___"
+      "pronunciation_easy": "meh VOY ___"
     },
     {
       "id": "l2_return_ticket",
@@ -1175,7 +1175,7 @@
     {
       "id": "l2_call_taxi",
       "target": "¿Me puede pedir un taxi?",
-      "pronunciation_easy": "meh PWEH-deh peh-DEER oon TAK-see"
+      "pronunciation_easy": "meh PWEH-deh peh-DEER oon TAHK-see"
     },
     {
       "id": "l2_where_wait",
@@ -2006,7 +2006,7 @@
       {
         "word": "cash",
         "target": "¿Puedo pagar en efectivo?",
-        "pronunciation_easy": "PWEH-doh pah-GAR en eh-fek-TEE-boh"
+        "pronunciation_easy": "PWEH-doh pah-GAR en eh-fek-TEE-voh"
       },
       {
         "word": "phone",
@@ -2582,7 +2582,7 @@
     },
     "sold_out": {
       "target": "Están agotadas.",
-      "pronunciation_easy": "es-TAN ah-goh-TAH-das"
+      "pronunciation_easy": "es-TAHN ah-goh-TAH-das"
     },
     "follow_me": {
       "target": "Sígame.",
@@ -2779,7 +2779,7 @@
     },
     "l2_sold_out_today": {
       "target": "Las entradas de hoy están agotadas.",
-      "pronunciation_easy": "las en-TRAH-das deh oy es-TAN ah-goh-TAH-das"
+      "pronunciation_easy": "las en-TRAH-das deh oy es-TAHN ah-goh-TAH-das"
     },
     "l2_at_entrance": {
       "target": "Sí, en la entrada.",

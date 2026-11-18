@@ -304,7 +304,7 @@
     {
       "id": "not_well",
       "target": "Je ne me sens pas bien.",
-      "pronunciation_easy": "zhuh nuh muh sahn pah BYEN",
+      "pronunciation_easy": "zhuhn muh sahn pah BYAN",
       "qa": "SAFETY. Back-translation: 'I don't feel myself well.' = I don't feel well. Same for male and female speakers."
     },
     {
@@ -334,7 +334,7 @@
     {
       "id": "is_there_nearby",
       "target": "Il y a ___ près d'ici ?",
-      "pronunciation_easy": "eel yah ... preh dee-SEE",
+      "pronunciation_easy": "ee-yah ... preh dee-SEE",
       "qa": "Blank takes the article as well as the noun (un/une/des), since gender and number vary: 'des toilettes' is plural in French. The English frame has 'a' before the blank; in French the article goes inside it."
     },
     {
@@ -376,13 +376,13 @@
     {
       "id": "where_can_i",
       "target": "Où est-ce que je peux ___ ?",
-      "pronunciation_easy": "oo es-kuh zhuh PUH",
+      "pronunciation_easy": "oo esk zhuh PUH",
       "qa": "Blank takes an infinitive phrase. 'Où est-ce que je peux' is neutral and polite; 'Où puis-je ___ ?' is more formal, 'Où je peux ___ ?' more casual."
     },
     {
       "id": "look_beautiful",
       "target": "Tu es très beau/belle.",
-      "pronunciation_easy": "tew eh treh boh/bel",
+      "pronunciation_easy": "tew eh treh BOH/BEL",
       "qa": "beau to a man, belle to a woman."
     },
     {
@@ -398,7 +398,7 @@
     {
       "id": "like_style",
       "target": "J'aime bien ton style.",
-      "pronunciation_easy": "zhem byen tohn STEEL"
+      "pronunciation_easy": "zhem byan tohn STEEL"
     },
     {
       "id": "get_coffee",
@@ -413,7 +413,7 @@
     {
       "id": "see_again",
       "target": "J'aimerais bien te revoir.",
-      "pronunciation_easy": "zhem-reh byen tuh ruh-VWAHR"
+      "pronunciation_easy": "zhem-reh byan tuh ruh-VWAHR"
     },
     {
       "id": "free_tomorrow",
@@ -499,7 +499,7 @@
     {
       "id": "luggage_missing",
       "target": "Mes bagages ne sont pas arrivés.",
-      "pronunciation_easy": "may bah-GAZH nuh sohn pah zah-ree-VAY"
+      "pronunciation_easy": "may bah-GAHZH nuh sohn pah zah-ree-VAY"
     },
     {
       "id": "flight_delayed",
@@ -529,12 +529,12 @@
     {
       "id": "tour_english",
       "target": "Il y a une visite guidée en anglais ?",
-      "pronunciation_easy": "eel yah ewn vee-ZEET ghee-DAY ahn nahn-GLEH"
+      "pronunciation_easy": "ee-yah ewn vee-ZEET ghee-DAY ahn nahn-GLEH"
     },
     {
       "id": "on_tap",
       "target": "Qu'est-ce que vous avez à la pression ?",
-      "pronunciation_easy": "kess kuh voo zah-VAY ah lah press-YOHN"
+      "pronunciation_easy": "kesk voo zah-VAY ah lah press-YOHN"
     },
     {
       "id": "non_alcoholic",
@@ -549,7 +549,7 @@
     {
       "id": "l2_didnt_catch",
       "target": "Je n'ai pas compris la fin.",
-      "pronunciation_easy": "zhuh nay pah kohm-PREE lah FAN"
+      "pronunciation_easy": "zhuh nay pah kohn-PREE lah FAN"
     },
     {
       "id": "l2_last_word",
@@ -569,7 +569,7 @@
     {
       "id": "l2_someone_english",
       "target": "Il y a quelqu'un qui parle anglais ?",
-      "pronunciation_easy": "eel yah kel-KUHN kee parl ahn-GLEH"
+      "pronunciation_easy": "ee-yah kel-KUHN kee parl ahn-GLEH"
     },
     {
       "id": "l2_ask_them",
@@ -619,7 +619,7 @@
     {
       "id": "l2_wait_table",
       "target": "Il y a combien d'attente pour une table ?",
-      "pronunciation_easy": "eel yah kohm-byen dah-TAHNT poor ewn TAH-bluh"
+      "pronunciation_easy": "ee-yah kohm-byen dah-TAHNT poor ewn TAH-bluh"
     },
     {
       "id": "l2_name_down",
@@ -629,7 +629,7 @@
     {
       "id": "l2_contain",
       "target": "Est-ce qu'il y a ___ dedans ?",
-      "pronunciation_easy": "ess keel yah ___ duh-DAHN",
+      "pronunciation_easy": "es-kee-yah ___ duh-DAHN",
       "qa": "PRIORITY REVIEW (allergy). A yes/no answer is not a guarantee about how the food was prepared."
     },
     {
@@ -641,7 +641,7 @@
     {
       "id": "l2_cant_eat_dairy",
       "target": "Je ne peux pas manger de produits laitiers.",
-      "pronunciation_easy": "zhuh nuh puh pah mahn-ZHAY duh proh-dwee leh-TYAY",
+      "pronunciation_easy": "zhuhn puh pah mahn-ZHAY duh proh-dwee leh-TYAY",
       "qa": "PRIORITY REVIEW (allergy)."
     },
     {
@@ -657,7 +657,7 @@
     {
       "id": "l2_bill_mistake",
       "target": "Je crois qu'il y a une erreur sur l'addition.",
-      "pronunciation_easy": "zhuh krwah keel yah ewn eh-RUHR sewr lah-dee-SYOHN"
+      "pronunciation_easy": "zhuh krwah kee-yah ewn eh-RUHR sewr lah-dee-SYOHN"
     },
     {
       "id": "l2_didnt_order",
@@ -729,7 +729,7 @@
     {
       "id": "l2_started_ago",
       "target": "Ça a commencé il y a ___.",
-      "pronunciation_easy": "sah ah koh-mahn-SAY eel yah ___",
+      "pronunciation_easy": "sah ah koh-mahn-SAY ee-yah ___",
       "qa": "PRIORITY REVIEW (medical)."
     },
     {
@@ -746,12 +746,12 @@
     {
       "id": "l2_file_report",
       "target": "Où est-ce que je peux porter plainte ?",
-      "pronunciation_easy": "oo ess kuh zhuh puh por-TAY PLANT"
+      "pronunciation_easy": "oo esk zhuh puh por-TAY PLANT"
     },
     {
       "id": "l2_dont_know_when",
       "target": "Je ne sais pas exactement quand.",
-      "pronunciation_easy": "zhuh nuh say pah eg-zak-tuh-MAHN KAHN"
+      "pronunciation_easy": "zhuhn say pah eg-zak-tuh-MAHN KAHN"
     },
     {
       "id": "l2_how_often",
@@ -793,7 +793,7 @@
     {
       "id": "l2_quieter_room",
       "target": "Il y a une chambre plus calme ?",
-      "pronunciation_easy": "eel yah ewn SHAHN-bruh plew KALM"
+      "pronunciation_easy": "ee-yah ewn SHAHN-bruh plew KALM"
     },
     {
       "id": "l2_speak_manager",
@@ -828,7 +828,7 @@
     {
       "id": "l2_quicker_way",
       "target": "Il y a un chemin plus rapide ?",
-      "pronunciation_easy": "eel yah uhn shuh-MAN plew rah-PEED"
+      "pronunciation_easy": "ee-yah uhn shuh-MAN plew rah-PEED"
     },
     {
       "id": "l2_which_exit",
@@ -838,7 +838,7 @@
     {
       "id": "l2_is_elevator",
       "target": "Il y a un ascenseur ?",
-      "pronunciation_easy": "eel yah uhn ah-sahn-SUHR"
+      "pronunciation_easy": "ee-yah uhn ah-sahn-SUHR"
     },
     {
       "id": "l2_oat_milk",
@@ -858,7 +858,7 @@
     {
       "id": "l2_how_long_wait",
       "target": "Il y a combien d'attente ?",
-      "pronunciation_easy": "eel yah kohm-byen dah-TAHNT"
+      "pronunciation_easy": "ee-yah kohm-byen dah-TAHNT"
     },
     {
       "id": "l2_to_go_instead",
@@ -953,7 +953,7 @@
     {
       "id": "l2_opening_later",
       "target": "Il y a de la place plus tard ?",
-      "pronunciation_easy": "eel yah duh lah PLAHSS plew TAR"
+      "pronunciation_easy": "ee-yah duh lah PLAHSS plew TAR"
     },
     {
       "id": "l2_what_brings",
@@ -963,7 +963,7 @@
     {
       "id": "l2_like_most",
       "target": "Qu'est-ce que tu préfères dans cette ville ?",
-      "pronunciation_easy": "kess kuh tew pray-FEHR dahn set VEEL"
+      "pronunciation_easy": "kesk tew pray-FEHR dahn set VEEL"
     },
     {
       "id": "l2_favorite_places",
@@ -1052,12 +1052,12 @@
     {
       "id": "l2_rearrange",
       "target": "Je peux réorganiser mes bagages ?",
-      "pronunciation_easy": "zhuh puh ray-or-gah-nee-ZAY may bah-GAZH"
+      "pronunciation_easy": "zhuh puh ray-or-gah-nee-ZAY may bah-GAHZH"
     },
     {
       "id": "l2_make_connection",
       "target": "Est-ce que je vais avoir ma correspondance ?",
-      "pronunciation_easy": "ess kuh zhuh vay ah-VWAHR mah koh-ress-pohn-DAHNSS"
+      "pronunciation_easy": "esk zhuh vay ah-VWAHR mah koh-ress-pohn-DAHNSS"
     },
     {
       "id": "l2_security_again",
@@ -1108,7 +1108,7 @@
     {
       "id": "l2_another_time_slot",
       "target": "Il y a un autre créneau ?",
-      "pronunciation_easy": "eel yah uhn OH-truh kray-NOH"
+      "pronunciation_easy": "ee-yah uhn OH-truh kray-NOH"
     },
     {
       "id": "l2_book_tomorrow",
@@ -1118,7 +1118,7 @@
     {
       "id": "l2_audio_guide",
       "target": "Il y a un audioguide en anglais ?",
-      "pronunciation_easy": "eel yah uhn oh-dyoh-GEED ahn nahn-GLEH"
+      "pronunciation_easy": "ee-yah uhn oh-dyoh-GEED ahn nahn-GLEH"
     },
     {
       "id": "l2_accessible",
@@ -1128,7 +1128,7 @@
     {
       "id": "l2_step_free",
       "target": "Il y a un accès sans marches ?",
-      "pronunciation_easy": "eel yah uhn ak-SEH sahn MARSH"
+      "pronunciation_easy": "ee-yah uhn ak-SEH sahn MARSH"
     },
     {
       "id": "l2_local_specialty",
@@ -1148,7 +1148,7 @@
     {
       "id": "l2_live_music",
       "target": "Il y a un concert ce soir ?",
-      "pronunciation_easy": "eel yah uhn kohn-SEHR suh SWAHR"
+      "pronunciation_easy": "ee-yah uhn kohn-SEHR suh SWAHR"
     },
     {
       "id": "l2_entry_fee",
@@ -1158,7 +1158,7 @@
     {
       "id": "l2_call_taxi",
       "target": "Vous pouvez m'appeler un taxi ?",
-      "pronunciation_easy": "voo poo-vay mah-PLAY uhn tak-SEE"
+      "pronunciation_easy": "voo poo-vay mah-PLAY uhn tahk-SEE"
     },
     {
       "id": "l2_where_wait",
@@ -1179,7 +1179,7 @@
     {
       "id": "l2_including_tax",
       "target": "Ça fait combien, taxes comprises ?",
-      "pronunciation_easy": "sah feh kohm-BYEN, taks kohm-PREEZ"
+      "pronunciation_easy": "sah feh kohm-BYEN, tahks kohn-PREEZ"
     },
     {
       "id": "l2_morning_evening",
@@ -1551,7 +1551,7 @@
       {
         "word": "baggage",
         "target": "Où est la livraison des bagages ?",
-        "pronunciation_easy": "oo eh lah lee-vreh-ZOHN day bah-GAZH"
+        "pronunciation_easy": "oo eh lah lee-vreh-ZOHN day bah-GAHZH"
       },
       {
         "word": "gate",
@@ -1970,24 +1970,24 @@
       {
         "word": "bathroom",
         "target": "Il y a des toilettes près d'ici ?",
-        "pronunciation_easy": "eel yah day twah-LET preh dee-SEE",
+        "pronunciation_easy": "ee-yah day twah-LET preh dee-SEE",
         "qa": "'toilettes' is always plural in this sense, hence 'des'."
       },
       {
         "word": "pharmacy",
         "target": "Il y a une pharmacie près d'ici ?",
-        "pronunciation_easy": "eel yah ewn far-mah-SEE preh dee-SEE"
+        "pronunciation_easy": "ee-yah ewn far-mah-SEE preh dee-SEE"
       },
       {
         "word": "atm",
         "target": "Il y a un distributeur de billets près d'ici ?",
-        "pronunciation_easy": "eel yah uhn dees-tree-bew-TUHR duh bee-YEH preh dee-SEE",
+        "pronunciation_easy": "ee-yah uhn dees-tree-bew-TUHR duh bee-YEH preh dee-SEE",
         "qa": "Matches the vetted ATM word; 'un distributeur' alone and 'un DAB' are also heard."
       },
       {
         "word": "supermarket",
         "target": "Il y a un supermarché près d'ici ?",
-        "pronunciation_easy": "eel yah uhn sew-pehr-mar-SHAY preh dee-SEE"
+        "pronunciation_easy": "ee-yah uhn sew-pehr-mar-SHAY preh dee-SEE"
       }
     ],
     "pay_with": [
@@ -2103,23 +2103,23 @@
       {
         "word": "buy_tickets",
         "target": "Où est-ce que je peux acheter des billets ?",
-        "pronunciation_easy": "oo es-kuh zhuh puh ahsh-TAY day bee-YEH"
+        "pronunciation_easy": "oo esk zhuh puh ahsh-TAY day bee-YEH"
       },
       {
         "word": "taxi",
         "target": "Où est-ce que je peux prendre un taxi ?",
-        "pronunciation_easy": "oo es-kuh zhuh puh prahn-druh uhn tahk-SEE",
+        "pronunciation_easy": "oo esk zhuh puh prahn-druh uhn tahk-SEE",
         "qa": "'prendre un taxi' (take a taxi) is the natural verb for 'get a taxi'."
       },
       {
         "word": "change_money",
         "target": "Où est-ce que je peux changer de l'argent ?",
-        "pronunciation_easy": "oo es-kuh zhuh puh shahn-zhay duh lar-ZHAHN"
+        "pronunciation_easy": "oo esk zhuh puh shahn-zhay duh lar-ZHAHN"
       },
       {
         "word": "sim",
         "target": "Où est-ce que je peux acheter une carte SIM ?",
-        "pronunciation_easy": "oo es-kuh zhuh puh ahsh-tay ewn kart SEEM"
+        "pronunciation_easy": "oo esk zhuh puh ahsh-tay ewn kart SEEM"
       }
     ],
     "im_from": [
@@ -2219,27 +2219,27 @@
       {
         "word": "nuts",
         "target": "Est-ce qu'il y a des fruits à coque dedans ?",
-        "pronunciation_easy": "ess keel yah day frwee ah KOK duh-DAHN"
+        "pronunciation_easy": "es-kee-yah day frwee ah KOK duh-DAHN"
       },
       {
         "word": "milk",
         "target": "Est-ce qu'il y a du lait dedans ?",
-        "pronunciation_easy": "ess keel yah dew LEH duh-DAHN"
+        "pronunciation_easy": "es-kee-yah dew LEH duh-DAHN"
       },
       {
         "word": "egg",
         "target": "Est-ce qu'il y a de l'œuf dedans ?",
-        "pronunciation_easy": "ess keel yah duh LUHF duh-DAHN"
+        "pronunciation_easy": "es-kee-yah duh LUHF duh-DAHN"
       },
       {
         "word": "shellfish",
         "target": "Est-ce qu'il y a des fruits de mer dedans ?",
-        "pronunciation_easy": "ess keel yah day frwee duh MEHR duh-DAHN"
+        "pronunciation_easy": "es-kee-yah day frwee duh MEHR duh-DAHN"
       },
       {
         "word": "gluten",
         "target": "Est-ce qu'il y a du gluten dedans ?",
-        "pronunciation_easy": "ess keel yah dew glew-TEN duh-DAHN"
+        "pronunciation_easy": "es-kee-yah dew glew-TEN duh-DAHN"
       }
     ],
     "l2_make_without": [
@@ -2312,22 +2312,22 @@
       {
         "word": "hour",
         "target": "Ça a commencé il y a une heure.",
-        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah ewn UHR"
+        "pronunciation_easy": "sah ah koh-mahn-SAY ee-yah ewn UHR"
       },
       {
         "word": "two_hours",
         "target": "Ça a commencé il y a deux heures.",
-        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah duh ZUHR"
+        "pronunciation_easy": "sah ah koh-mahn-SAY ee-yah duh ZUHR"
       },
       {
         "word": "day",
         "target": "Ça a commencé il y a un jour.",
-        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah uhn ZHOOR"
+        "pronunciation_easy": "sah ah koh-mahn-SAY ee-yah uhn ZHOOR"
       },
       {
         "word": "three_days",
         "target": "Ça a commencé il y a trois jours.",
-        "pronunciation_easy": "sah ah koh-mahn-SAY eel yah trwah ZHOOR"
+        "pronunciation_easy": "sah ah koh-mahn-SAY ee-yah trwah ZHOOR"
       }
     ],
     "l2_booking_nights": [
@@ -2356,17 +2356,17 @@
       {
         "word": "small",
         "target": "Vous l'avez en petite taille ?",
-        "pronunciation_easy": "voo lah-VAY ahn puh-TEET TY"
+        "pronunciation_easy": "voo lah-VAY ahn puh-TEET TIE"
       },
       {
         "word": "medium",
         "target": "Vous l'avez en taille moyenne ?",
-        "pronunciation_easy": "voo lah-VAY ahn ty mwah-YEN"
+        "pronunciation_easy": "voo lah-VAY ahn tie mwah-YEN"
       },
       {
         "word": "large",
         "target": "Vous l'avez en grande taille ?",
-        "pronunciation_easy": "voo lah-VAY ahn grahnd TY"
+        "pronunciation_easy": "voo lah-VAY ahn grahnd TIE"
       },
       {
         "word": "black",
@@ -2537,7 +2537,7 @@
     },
     "sorry_i_cant": {
       "target": "Désolé, je ne peux pas.",
-      "pronunciation_easy": "day-zoh-LAY, zhuh nuh puh PAH",
+      "pronunciation_easy": "day-zoh-LAY, zhuhn puh PAH",
       "qa": "A woman writes \"Désolée\"; it sounds the same."
     },
     "seeing_someone": {
@@ -2586,7 +2586,7 @@
     },
     "what_can_i_get": {
       "target": "Qu'est-ce que je vous sers ?",
-      "pronunciation_easy": "kess kuh zhuh voo SEHR"
+      "pronunciation_easy": "kesk zhuh voo SEHR"
     },
     "last_call": {
       "target": "Dernières commandes.",
@@ -2679,7 +2679,7 @@
     },
     "l2_extra_fee": {
       "target": "Il y a un supplément.",
-      "pronunciation_easy": "eel yah uhn sew-play-MAHN"
+      "pronunciation_easy": "ee-yah uhn sew-play-MAHN"
     },
     "l2_left_at_light": {
       "target": "Tournez à gauche au feu.",
@@ -2719,7 +2719,7 @@
     },
     "l2_trim_mustache": {
       "target": "Je taille la moustache ?",
-      "pronunciation_easy": "zhuh TY lah moos-TASH"
+      "pronunciation_easy": "zhuh TIE lah moos-TASH"
     },
     "l2_exactly_like": {
       "target": "Exactement comme ça ?",
@@ -2755,7 +2755,7 @@
     },
     "l2_sorry_understand": {
       "target": "Oh, pardon. Je comprends.",
-      "pronunciation_easy": "oh, par-DOHN. zhuh kohm-PRAHN"
+      "pronunciation_easy": "oh, par-DOHN. zhuh kohn-PRAHN"
     },
     "l2_over_weight": {
       "target": "Il dépasse le poids autorisé.",
@@ -2799,7 +2799,7 @@
     },
     "l2_tax_extra": {
       "target": "Les taxes sont en plus.",
-      "pronunciation_easy": "lay TAKS sohn tahn PLEWSS"
+      "pronunciation_easy": "lay TAHKS sohn tahn PLEWSS"
     },
     "l2_seven_evening": {
       "target": "Ça commence à sept heures du soir.",

@@ -11,7 +11,7 @@
     {
       "id": "sorry",
       "target": "Îmi pare rău.",
-      "pronunciation_easy": "im PAH-reh ruhw",
+      "pronunciation_easy": "im PAH-reh RUH-oo",
       "qa": "Apology ('I'm sorry'). To get past someone or after bumping into them, Pardon! or Scuze! is more natural."
     },
     {
@@ -145,7 +145,7 @@
     {
       "id": "straight_ahead",
       "target": "Drept înainte.",
-      "pronunciation_easy": "drept ih-nah-EEN-teh"
+      "pronunciation_easy": "drept in-ah-EEN-teh"
     },
     {
       "id": "im_lost",
@@ -225,7 +225,7 @@
     {
       "id": "another_size",
       "target": "Aveți și altă mărime?",
-      "pronunciation_easy": "ah-VETS shee AL-tuh muh-REE-meh"
+      "pronunciation_easy": "ah-VETS shee AHL-tuh muh-REE-meh"
     },
     {
       "id": "bag_please",
@@ -502,12 +502,12 @@
     {
       "id": "luggage_missing",
       "target": "Bagajul meu nu a ajuns.",
-      "pronunciation_easy": "bah-GAH-zhool meh-oo noo ah ah-ZHOONS"
+      "pronunciation_easy": "bah-GAH-zhool MEH-oo noo ah ah-ZHOONS"
     },
     {
       "id": "flight_delayed",
       "target": "Zborul meu are întârziere?",
-      "pronunciation_easy": "ZBOH-rool meh-oo AH-reh in-tuhr-ZYEH-reh"
+      "pronunciation_easy": "ZBOH-rool MEH-oo AH-reh in-tuhr-ZYEH-reh"
     },
     {
       "id": "connecting_flight",
@@ -582,7 +582,7 @@
     {
       "id": "l2_type_phone",
       "target": "Puteți scrie pe telefonul meu?",
-      "pronunciation_easy": "poo-TETS SKREE-eh peh teh-leh-FOH-nool meh-oo"
+      "pronunciation_easy": "poo-TETS SKREE-eh peh teh-leh-FOH-nool MEH-oo"
     },
     {
       "id": "l2_another_way",
@@ -597,7 +597,7 @@
     {
       "id": "l2_check_again",
       "target": "Puteți verifica din nou?",
-      "pronunciation_easy": "poo-TETS veh-ree-fee-KAH deen noh"
+      "pronunciation_easy": "poo-TETS veh-ree-fee-KAH deen NOH-oo"
     },
     {
       "id": "l2_write_down",
@@ -1067,7 +1067,7 @@
     {
       "id": "l2_security_again",
       "target": "Trebuie să trec din nou prin controlul de securitate?",
-      "pronunciation_easy": "TREH-boo-yeh suh trek deen noh preen kon-TROH-lool deh seh-koo-ree-TAH-teh"
+      "pronunciation_easy": "TREH-boo-yeh suh trek deen NOH-oo preen kon-TROH-lool deh seh-koo-ree-TAH-teh"
     },
     {
       "id": "l2_rebook",
@@ -1738,7 +1738,7 @@
       {
         "word": "word_gluten",
         "target": "Sunt alergic la gluten.",
-        "pronunciation_easy": "soont ah-LER-jeek lah GLOO-ten"
+        "pronunciation_easy": "soont ah-LER-jeek lah gloo-TEN"
       },
       {
         "word": "word_shellfish",
@@ -1770,7 +1770,7 @@
       {
         "word": "word_gluten",
         "target": "Fără gluten, vă rog.",
-        "pronunciation_easy": "FUH-ruh GLOO-ten, vuh rohg"
+        "pronunciation_easy": "FUH-ruh gloo-TEN, vuh rohg"
       },
       {
         "word": "word_ice",
@@ -1983,13 +1983,13 @@
       {
         "word": "bathroom",
         "target": "Este vreo toaletă pe aproape?",
-        "pronunciation_easy": "YES-teh vryoh toh-ah-LEH-tuh peh ah-PRWAH-peh",
+        "pronunciation_easy": "YES-teh VREH-oh toh-ah-LEH-tuh peh ah-PRWAH-peh",
         "qa": "Toaletă is the neutral word; signs often say WC."
       },
       {
         "word": "pharmacy",
         "target": "Este vreo farmacie pe aproape?",
-        "pronunciation_easy": "YES-teh vryoh far-mah-CHEE-eh peh ah-PRWAH-peh"
+        "pronunciation_easy": "YES-teh VREH-oh far-mah-CHEE-eh peh ah-PRWAH-peh"
       },
       {
         "word": "atm",
@@ -2019,7 +2019,7 @@
       {
         "word": "write",
         "target": "Puteți să-mi scrieți, vă rog?",
-        "pronunciation_easy": "poo-TETS suh-mee SKREE-ets, vuh rohg",
+        "pronunciation_easy": "poo-TETS suhm SKREE-ets, vuh rohg",
         "qa": "Literal: 'Can you write (it) for me, please?' Object left out so it fits any thing (price, address); unsure if a reviewer prefers Mi-l puteți scrie? / Puteți să-mi scrieți asta?"
       }
     ],
@@ -2062,14 +2062,14 @@
       {
         "word": "charge",
         "target": "Pot să-mi încarc telefonul aici?",
-        "pronunciation_easy": "poht suh-mee in-KARK teh-leh-FOH-nool ah-EETCH"
+        "pronunciation_easy": "poht suhm in-KARK teh-leh-FOH-nool ah-EETCH"
       }
     ],
     "looking_for": [
       {
         "word": "my_hotel",
         "target": "Caut hotelul meu.",
-        "pronunciation_easy": "KAH-oot hoh-TEH-lool mehw"
+        "pronunciation_easy": "KAH-oot hoh-TEH-lool MEH-oo"
       },
       {
         "word": "entrance",
@@ -2545,7 +2545,7 @@
     },
     "sorry_i_cant": {
       "target": "Îmi pare rău, nu pot.",
-      "pronunciation_easy": "im PAH-reh ruh-oo, noo poht"
+      "pronunciation_easy": "im PAH-reh RUH-oo, noo poht"
     },
     "seeing_someone": {
       "target": "Am pe cineva.",
@@ -2666,7 +2666,7 @@
     },
     "l2_any_allergies": {
       "target": "Aveți vreo alergie?",
-      "pronunciation_easy": "ah-VETS vreh-oh ah-ler-JEE-eh"
+      "pronunciation_easy": "ah-VETS VREH-oh ah-ler-JEE-eh"
     },
     "l2_have_insurance": {
       "target": "Aveți asigurare?",
@@ -2758,7 +2758,7 @@
     },
     "l2_heres_number": {
       "target": "Sigur, uite numărul meu.",
-      "pronunciation_easy": "see-GOOR, OOY-teh NOO-muh-rool meh-oo"
+      "pronunciation_easy": "see-GOOR, OOY-teh NOO-muh-rool MEH-oo"
     },
     "l2_sorry_understand": {
       "target": "A, scuze. Înțeleg.",
@@ -2818,7 +2818,7 @@
     },
     "l2_no_change": {
       "target": "Îmi pare rău, nu am să vă schimb.",
-      "pronunciation_easy": "im PAH-reh ruh-oo, noo ahm suh vuh skeemb"
+      "pronunciation_easy": "im PAH-reh RUH-oo, noo ahm suh vuh skeemb"
     }
   }
 }

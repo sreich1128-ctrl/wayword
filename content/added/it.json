@@ -269,7 +269,7 @@
     {
       "id": "shorter_sides",
       "target": "Più corti ai lati.",
-      "pronunciation_easy": "pyoo KOR-tee ai LAH-tee"
+      "pronunciation_easy": "pyoo KOR-tee eye LAH-tee"
     },
     {
       "id": "like_this",
@@ -340,7 +340,7 @@
     {
       "id": "how_much_is",
       "target": "Quanto costa ___?",
-      "pronunciation_easy": "KWAN-toh KOS-tah",
+      "pronunciation_easy": "KWAHN-toh KOS-tah",
       "qa": "The blank takes the noun with its article (un biglietto, la camera). A plural noun needs 'Quanto costano ___?' (KWAN-toh KOS-tah-noh)."
     },
     {
@@ -583,7 +583,7 @@
     {
       "id": "l2_and_then",
       "target": "E poi?",
-      "pronunciation_easy": "eh poy"
+      "pronunciation_easy": "eh POY"
     },
     {
       "id": "l2_someone_english",
@@ -1179,7 +1179,7 @@
     {
       "id": "l2_call_taxi",
       "target": "Può chiamarmi un taxi?",
-      "pronunciation_easy": "pwoh kyah-MAR-mee oon TAK-see"
+      "pronunciation_easy": "pwoh kyah-MAR-mee oon TAHK-see"
     },
     {
       "id": "l2_where_wait",
@@ -1611,7 +1611,7 @@
       {
         "word": "word_airport",
         "target": "Come arrivo all'aeroporto?",
-        "pronunciation_easy": "KOH-meh ar-REE-voh al-lah-eh-roh-POR-toh"
+        "pronunciation_easy": "KOH-meh ar-REE-voh ahl-lah-eh-roh-POR-toh"
       },
       {
         "word": "word_train_station",
@@ -1631,7 +1631,7 @@
       {
         "word": "word_hotel",
         "target": "Come arrivo all'hotel?",
-        "pronunciation_easy": "KOH-meh ar-REE-voh al-loh-TEL"
+        "pronunciation_easy": "KOH-meh ar-REE-voh ahl-loh-TEL"
       }
     ],
     "can_i_have": [
@@ -1690,7 +1690,7 @@
       {
         "word": "word_bread",
         "target": "Vorrei del pane, per favore.",
-        "pronunciation_easy": "vor-RAY dehl PAH-neh, pehr fah-VOH-reh"
+        "pronunciation_easy": "vor-RAY del PAH-neh, pehr fah-VOH-reh"
       },
       {
         "word": "word_water",
@@ -1749,7 +1749,7 @@
       {
         "word": "word_shellfish",
         "target": "Sono allergico ai frutti di mare.",
-        "pronunciation_easy": "SOH-noh al-LEHR-jee-koh ai FROOT-tee dee MAH-reh"
+        "pronunciation_easy": "SOH-noh al-LEHR-jee-koh eye FROOT-tee dee MAH-reh"
       },
       {
         "word": "word_milk",
@@ -1781,7 +1781,7 @@
       {
         "word": "word_ice",
         "target": "Senza ghiaccio, per favore.",
-        "pronunciation_easy": "SEN-tsah GYAHCH-choh, pehr fah-VOH-reh"
+        "pronunciation_easy": "SEN-tsah GYAHT-choh, pehr fah-VOH-reh"
       },
       {
         "word": "word_nuts",
@@ -1815,7 +1815,7 @@
       {
         "word": "word_airport",
         "target": "Questo va all'aeroporto?",
-        "pronunciation_easy": "KWEH-stoh vah al-lah-eh-roh-POR-toh"
+        "pronunciation_easy": "KWEH-stoh vah ahl-lah-eh-roh-POR-toh"
       },
       {
         "word": "word_city_centre",
@@ -1837,12 +1837,12 @@
       {
         "word": "word_airport",
         "target": "Mi porti all'aeroporto, per favore.",
-        "pronunciation_easy": "mee POR-tee al-lah-eh-roh-POR-toh, pehr fah-VOH-reh"
+        "pronunciation_easy": "mee POR-tee ahl-lah-eh-roh-POR-toh, pehr fah-VOH-reh"
       },
       {
         "word": "word_hotel",
         "target": "Mi porti all'hotel, per favore.",
-        "pronunciation_easy": "mee POR-tee al-loh-TEL, pehr fah-VOH-reh"
+        "pronunciation_easy": "mee POR-tee ahl-loh-TEL, pehr fah-VOH-reh"
       },
       {
         "word": "word_train_station",
@@ -1884,7 +1884,7 @@
       {
         "word": "word_hot_water",
         "target": "Non c'è acqua calda.",
-        "pronunciation_easy": "non cheh AH-kwah KAHL-dah"
+        "pronunciation_easy": "non cheh AHK-kwah KAHL-dah"
       },
       {
         "word": "word_door_lock",
@@ -1952,17 +1952,17 @@
       {
         "word": "ticket",
         "target": "Quanto costa un biglietto?",
-        "pronunciation_easy": "KWAN-toh KOS-tah oon bee-LYET-toh"
+        "pronunciation_easy": "KWAHN-toh KOS-tah oon bee-LYET-toh"
       },
       {
         "word": "coffee",
         "target": "Quanto costa un caffè?",
-        "pronunciation_easy": "KWAN-toh KOS-tah oon kahf-FEH"
+        "pronunciation_easy": "KWAHN-toh KOS-tah oon kahf-FEH"
       },
       {
         "word": "room",
         "target": "Quanto costa la camera?",
-        "pronunciation_easy": "KWAN-toh KOS-tah lah KAH-meh-rah",
+        "pronunciation_easy": "KWAHN-toh KOS-tah lah KAH-meh-rah",
         "qa": "Add 'a notte' (ah NOT-teh) for 'per night'."
       }
     ],
@@ -2081,7 +2081,7 @@
       {
         "word": "entrance",
         "target": "Cerco l'ingresso.",
-        "pronunciation_easy": "CHEHR-koh leen-GREHS-soh",
+        "pronunciation_easy": "CHEHR-koh leen-GRES-soh",
         "qa": "'l'entrata' is also used."
       },
       {
@@ -2632,7 +2632,7 @@
     },
     "l2_yes_it_does": {
       "target": "Sì, c'è.",
-      "pronunciation_easy": "see, cheh"
+      "pronunciation_easy": "SEE, CHEH"
     },
     "l2_very_popular": {
       "target": "Questo è molto richiesto.",

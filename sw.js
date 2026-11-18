@@ -1,5 +1,5 @@
 // Offline cache. Bump VERSION whenever app or content files change so phones pick up the update.
-const VERSION = 'wayword-v52';
+const VERSION = 'wayword-v53';
 const AUDIO = 'wayword-audio';
 const LANGS = ['pt-PT', 'es', 'fr', 'it', 'ru', 'ar-levantine', 'he', 'ja', 'ro'];
 const PRECACHE = [
@@ -11,6 +11,7 @@ const PRECACHE = [
   ...LANGS.map((c) => `content/sounds/${c}.json`),
   'content/vocab.json', 'content/replies.json',
   ...LANGS.map((c) => `content/added/${c}.json`), 'content/added/crosscheck.json',
+  ...LANGS.map((c) => `content/pron/${c}.json`),
 ];
 
 self.addEventListener('install', (e) => {

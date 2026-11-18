@@ -29,7 +29,7 @@
     {
       "id": "okay",
       "target": "Está bem.",
-      "pronunciation_easy": "esh-TAH beng",
+      "pronunciation_easy": "SHTAH beng",
       "qa": "Neutral agreement. In speech often shortened to 'Tá bem.'; 'OK' is also widely used."
     },
     {
@@ -82,7 +82,7 @@
     {
       "id": "delicious",
       "target": "Estava delicioso.",
-      "pronunciation_easy": "esh-TAH-vah duh-lee-see-OH-zoo",
+      "pronunciation_easy": "SHTAH-vah duh-lee-see-OH-zoo",
       "qa": "Also very common: 'Estava ótimo' or 'Estava muito bom.'"
     },
     {
@@ -134,12 +134,12 @@
     {
       "id": "one_way_or_return",
       "target": "Só ida ou ida e volta?",
-      "pronunciation_easy": "saw EE-dah oh EE-dah ee VOL-tah"
+      "pronunciation_easy": "soh EE-dah oh EE-dah ee VOL-tah"
     },
     {
       "id": "left",
       "target": "À esquerda.",
-      "pronunciation_easy": "ah esh-KEHR-dah"
+      "pronunciation_easy": "ah SHKEHR-dah"
     },
     {
       "id": "right",
@@ -155,7 +155,7 @@
     {
       "id": "im_lost",
       "target": "Estou perdido.",
-      "pronunciation_easy": "esh-TOH puhr-DEE-doo",
+      "pronunciation_easy": "SHTOH puhr-DEE-doo",
       "qa": "Masculine speaker; a woman says 'Estou perdida.'"
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "have_reservation",
       "target": "Tenho uma reserva.",
-      "pronunciation_easy": "TAYN-yoo OO-mah ruh-ZEHR-vah"
+      "pronunciation_easy": "TEN-yoo OO-mah ruh-ZEHR-vah"
     },
     {
       "id": "under_name",
@@ -188,7 +188,7 @@
     {
       "id": "checkout_time",
       "target": "A que horas é o check-out?",
-      "pronunciation_easy": "ah keh OH-rahsh eh oo check-out"
+      "pronunciation_easy": "ah kee OH-rahsh eh oo check-out"
     },
     {
       "id": "leave_bags",
@@ -210,7 +210,7 @@
     {
       "id": "just_looking",
       "target": "Estou só a ver.",
-      "pronunciation_easy": "esh-TOH saw ah VEHR"
+      "pronunciation_easy": "SHTOH soh ah VEHR"
     },
     {
       "id": "ill_take_it",
@@ -227,7 +227,7 @@
     {
       "id": "try_it_on",
       "target": "Posso experimentar?",
-      "pronunciation_easy": "POH-soo esh-puh-ree-men-TAR"
+      "pronunciation_easy": "POH-soo shpuh-ree-men-TAR"
     },
     {
       "id": "another_size",
@@ -247,13 +247,13 @@
     {
       "id": "just_trim",
       "target": "Só aparar as pontas.",
-      "pronunciation_easy": "saw ah-pah-RAR ahsh PON-tahsh",
+      "pronunciation_easy": "soh ah-pah-RAR ahsh PON-tahsh",
       "qa": "Literally 'Just trim the ends.' Natural at a hairdresser; a barber would also understand 'Só aparar.'"
     },
     {
       "id": "not_too_short",
       "target": "Não muito curto.",
-      "pronunciation_easy": "nowng MWEEN-too KOOR-too"
+      "pronunciation_easy": "nowng MOOYN-too KOOR-too"
     },
     {
       "id": "shorter_sides",
@@ -316,7 +316,7 @@
     {
       "id": "call_someone",
       "target": "Preciso de ligar a alguém.",
-      "pronunciation_easy": "pruh-SEE-zoo duh lee-GAR ah al-GAYNG",
+      "pronunciation_easy": "pruh-SEE-zoo duh lee-GAR ah al-GENG",
       "qa": "SAFETY. Literal: 'I need to call (phone) someone.' 'Ligar a' = phone; 'telefonar a alguém' is an equivalent."
     },
     {
@@ -370,13 +370,13 @@
     {
       "id": "looking_for",
       "target": "Estou à procura ___.",
-      "pronunciation_easy": "esh-TOH ah proo-KOO-rah",
+      "pronunciation_easy": "SHTOH ah proo-KOO-rah",
       "qa": "'à procura de' contracts with the article, so 'de' goes inside the blank: do meu hotel, da entrada, da saída, de um restaurante. 'Procuro ___' (no preposition) is a shorter alternative. 'Estou à procura' is the Portugal form (Brazil: 'Estou procurando')."
     },
     {
       "id": "is_included",
       "target": "___ está incluído/a?",
-      "pronunciation_easy": "esh-TAH een-kloo-EE-doo/dah",
+      "pronunciation_easy": "SHTAH een-kloo-EE-doo/dah",
       "qa": "The blank is the noun with its article, and incluído agrees with it: O pequeno-almoço está incluído? / A bagagem está incluída? (as in the vetted 'A gorjeta está incluída?'). Plural: incluídos/incluídas."
     },
     {
@@ -388,7 +388,7 @@
     {
       "id": "look_beautiful",
       "target": "Está muito bonita/bonito.",
-      "pronunciation_easy": "esh-TAH MOOY-too boo-NEE-tah/boo-NEE-too",
+      "pronunciation_easy": "SHTAH MOOYN-too boo-NEE-tah/boo-NEE-too",
       "qa": "Formal register like the other social phrases in this set (bonita to a woman, bonito to a man). Informal: Estás muito bonita/bonito."
     },
     {
@@ -404,7 +404,7 @@
     {
       "id": "like_style",
       "target": "Gosto do seu estilo.",
-      "pronunciation_easy": "GOSH-too doo seh-oo esh-TEE-loo"
+      "pronunciation_easy": "GOSH-too doo seh-oo SHTEE-loo"
     },
     {
       "id": "get_coffee",
@@ -424,7 +424,7 @@
     {
       "id": "free_tomorrow",
       "target": "Está livre amanhã?",
-      "pronunciation_easy": "esh-TAH LEE-vruh ah-mah-NYAH"
+      "pronunciation_easy": "SHTAH LEE-vruh ah-mah-NYAH"
     },
     {
       "id": "your_number",
@@ -434,17 +434,17 @@
     {
       "id": "with_friends",
       "target": "Está aqui com amigos?",
-      "pronunciation_easy": "esh-TAH ah-KEE kong ah-MEE-goosh"
+      "pronunciation_easy": "SHTAH ah-KEE kong ah-MEE-goosh"
     },
     {
       "id": "great_time",
       "target": "Diverti-me muito.",
-      "pronunciation_easy": "dee-vuhr-TEE-muh MOOY-too"
+      "pronunciation_easy": "dee-vuhr-TEE-muh MOOYN-too"
     },
     {
       "id": "not_interested",
       "target": "Obrigado/a, mas não estou interessado/a.",
-      "pronunciation_easy": "oh-bree-GAH-doo/dah, mahsh nowng shtoh een-tuh-ruh-SAH-doo/dah",
+      "pronunciation_easy": "oh-bree-GAH-doo/dah, mahsh nowng SHTOH een-tuh-ruh-SAH-doo/dah",
       "qa": "PRIORITY REVIEW (a boundary that must stay firm)."
     },
     {
@@ -461,7 +461,7 @@
     {
       "id": "im_from",
       "target": "Sou de ___.",
-      "pronunciation_easy": "soh duh"
+      "pronunciation_easy": "SOH duh ___"
     },
     {
       "id": "how_long_here",
@@ -510,7 +510,7 @@
     {
       "id": "flight_delayed",
       "target": "O meu voo está atrasado?",
-      "pronunciation_easy": "oo meh-oo VOH-oo esh-TAH ah-trah-ZAH-doo"
+      "pronunciation_easy": "oo MEH-oo VOH-oo SHTAH ah-trah-ZAH-doo"
     },
     {
       "id": "connecting_flight",
@@ -525,12 +525,12 @@
     {
       "id": "what_time_open",
       "target": "A que horas abre?",
-      "pronunciation_easy": "ah keh OH-rahsh AH-bruh"
+      "pronunciation_easy": "ah kee OH-rahsh AH-bruh"
     },
     {
       "id": "what_time_close",
       "target": "A que horas fecha?",
-      "pronunciation_easy": "ah keh OH-rahsh FAY-shah"
+      "pronunciation_easy": "ah kee OH-rahsh FAY-shah"
     },
     {
       "id": "tour_english",
@@ -540,7 +540,7 @@
     {
       "id": "on_tap",
       "target": "Que cervejas têm à pressão?",
-      "pronunciation_easy": "keh suhr-VAY-zhahsh TAY-eng ah pruh-SOWNG"
+      "pronunciation_easy": "kuh suhr-VAY-zhahsh TAY-eng ah pruh-SOWNG"
     },
     {
       "id": "non_alcoholic",
@@ -550,7 +550,7 @@
     {
       "id": "what_time_is_it",
       "target": "Que horas são?",
-      "pronunciation_easy": "keh OH-rahsh sowng"
+      "pronunciation_easy": "kuh OH-rahsh sowng"
     },
     {
       "id": "l2_didnt_catch",
@@ -585,7 +585,7 @@
     {
       "id": "l2_type_phone",
       "target": "Pode escrever no meu telemóvel?",
-      "pronunciation_easy": "POH-duh shkruh-VEHR noo meh-oo tuh-luh-MOH-vel"
+      "pronunciation_easy": "POH-duh shkruh-VEHR noo MEH-oo tuh-luh-MOH-vel"
     },
     {
       "id": "l2_another_way",
@@ -713,7 +713,7 @@
     {
       "id": "l2_im_near",
       "target": "Estou perto de ___.",
-      "pronunciation_easy": "shtoh PEHR-too duh ___"
+      "pronunciation_easy": "SHTOH PEHR-too duh ___"
     },
     {
       "id": "l2_send_ambulance",
@@ -729,7 +729,7 @@
     {
       "id": "l2_getting_worse",
       "target": "Está a piorar.",
-      "pronunciation_easy": "shtah ah pee-oo-RAR",
+      "pronunciation_easy": "SHTAH ah pee-oo-RAR",
       "qa": "PRIORITY REVIEW (medical)."
     },
     {
@@ -794,7 +794,7 @@
     {
       "id": "l2_room_noisy",
       "target": "O meu quarto é muito barulhento.",
-      "pronunciation_easy": "oo meh-oo KWAR-too eh MOOY-too bah-roo-LYEN-too"
+      "pronunciation_easy": "oo MEH-oo KWAR-too eh MOOYN-too bah-roo-LYEN-too"
     },
     {
       "id": "l2_quieter_room",
@@ -819,7 +819,7 @@
     {
       "id": "l2_right_way",
       "target": "Estou a ir no caminho certo?",
-      "pronunciation_easy": "shtoh ah eer noo kah-MEE-nyoo SEHR-too"
+      "pronunciation_easy": "SHTOH ah eer noo kah-MEE-nyoo SEHR-too"
     },
     {
       "id": "l2_after_intersection",
@@ -940,7 +940,7 @@
     {
       "id": "l2_short_enough",
       "target": "Assim está bom, obrigado/a.",
-      "pronunciation_easy": "ah-SEENG shtah bong, oh-bree-GAH-doo/dah"
+      "pronunciation_easy": "ah-SEENG SHTAH bong, oh-bree-GAH-doo/dah"
     },
     {
       "id": "l2_match_photo",
@@ -965,13 +965,13 @@
     {
       "id": "l2_what_brings",
       "target": "O que o/a traz cá?",
-      "pronunciation_easy": "oo keh oo/ah trash kah",
+      "pronunciation_easy": "oo kuh oo/ah TRASH kah",
       "qa": "o to a man, a to a woman. Formal, like the other social phrases in this set."
     },
     {
       "id": "l2_like_most",
       "target": "Do que mais gosta nesta cidade?",
-      "pronunciation_easy": "doo keh mysh GOSH-tah NESH-tah see-DAH-duh"
+      "pronunciation_easy": "doo kuh mysh GOSH-tah NESH-tah see-DAH-duh"
     },
     {
       "id": "l2_favorite_places",
@@ -981,7 +981,7 @@
     {
       "id": "l2_weekends",
       "target": "O que faz aos fins de semana?",
-      "pronunciation_easy": "oo keh fash owsh feengsh duh suh-MAH-nah"
+      "pronunciation_easy": "oo kuh FASH owsh feengsh duh suh-MAH-nah"
     },
     {
       "id": "l2_like_too",
@@ -1086,7 +1086,7 @@
     {
       "id": "l2_hotel_address",
       "target": "Precisa da morada do meu hotel?",
-      "pronunciation_easy": "pruh-SEE-zah dah moo-RAH-dah doo meh-oo oh-TEL"
+      "pronunciation_easy": "pruh-SEE-zah dah moo-RAH-dah doo MEH-oo oh-TEL"
     },
     {
       "id": "l2_reference_number",
@@ -1096,7 +1096,7 @@
     {
       "id": "l2_here_tourism",
       "target": "Estou cá em turismo.",
-      "pronunciation_easy": "shtoh kah eng too-REEZH-moo",
+      "pronunciation_easy": "SHTOH kah eng too-REEZH-moo",
       "qa": "Border questions: say only what is true for your trip."
     },
     {
@@ -1147,7 +1147,7 @@
     {
       "id": "l2_how_strong",
       "target": "É muito forte?",
-      "pronunciation_easy": "eh MOOY-too FOR-tuh"
+      "pronunciation_easy": "eh MOOYN-too FOR-tuh"
     },
     {
       "id": "l2_something_lighter",
@@ -1522,7 +1522,7 @@
       {
         "word": "word_train_station",
         "target": "Onde fica a estação de comboios?",
-        "pronunciation_easy": "ON-duh FEE-kah ah esh-tah-SOWNG duh kong-BOY-oosh"
+        "pronunciation_easy": "ON-duh FEE-kah ah shtah-SOWNG duh kong-BOY-oosh"
       },
       {
         "word": "word_bus_stop",
@@ -1589,7 +1589,7 @@
       {
         "word": "word_metro_station",
         "target": "Onde fica a estação de metro mais próxima?",
-        "pronunciation_easy": "ON-duh FEE-kah ah esh-tah-SOWNG duh MEH-troo mysh PROH-see-mah"
+        "pronunciation_easy": "ON-duh FEE-kah ah shtah-SOWNG duh MEH-troo mysh PROH-see-mah"
       },
       {
         "word": "word_bus_stop",
@@ -1606,7 +1606,7 @@
       {
         "word": "word_train_station",
         "target": "Como chego à estação de comboios?",
-        "pronunciation_easy": "KOH-moo SHEH-goo ah esh-tah-SOWNG duh kong-BOY-oosh"
+        "pronunciation_easy": "KOH-moo SHEH-goo ah shtah-SOWNG duh kong-BOY-oosh"
       },
       {
         "word": "word_city_centre",
@@ -1798,7 +1798,7 @@
       {
         "word": "word_train_station",
         "target": "Um bilhete para a estação de comboios, por favor.",
-        "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah ah esh-tah-SOWNG duh kong-BOY-oosh, poor fah-VOR"
+        "pronunciation_easy": "oong bee-LYEH-tuh PAH-rah ah shtah-SOWNG duh kong-BOY-oosh, poor fah-VOR"
       }
     ],
     "does_this_go_to": [
@@ -1820,7 +1820,7 @@
       {
         "word": "word_train_station",
         "target": "Vai para a estação de comboios?",
-        "pronunciation_easy": "vy PAH-rah ah esh-tah-SOWNG duh kong-BOY-oosh"
+        "pronunciation_easy": "vy PAH-rah ah shtah-SOWNG duh kong-BOY-oosh"
       }
     ],
     "take_me_to": [
@@ -1837,7 +1837,7 @@
       {
         "word": "word_train_station",
         "target": "Leve-me à estação de comboios, por favor.",
-        "pronunciation_easy": "LEH-vuh-muh ah esh-tah-SOWNG duh kong-BOY-oosh, poor fah-VOR"
+        "pronunciation_easy": "LEH-vuh-muh ah shtah-SOWNG duh kong-BOY-oosh, poor fah-VOR"
       },
       {
         "word": "word_city_centre",
@@ -2017,7 +2017,7 @@
       {
         "word": "write",
         "target": "Pode escrever isso, por favor?",
-        "pronunciation_easy": "POH-duh esh-kruh-VEHR EE-soo, poor fah-VOR",
+        "pronunciation_easy": "POH-duh shkruh-VEHR EE-soo, poor fah-VOR",
         "qa": "Literal: 'Can you write that, please?' ('down' is implied). 'Pode escrever-me isso?' (write it for me) is also common."
       }
     ],
@@ -2050,7 +2050,7 @@
       {
         "word": "park",
         "target": "Posso estacionar aqui?",
-        "pronunciation_easy": "POH-soo esh-tah-see-oo-NAR ah-KEE"
+        "pronunciation_easy": "POH-soo shtah-see-oo-NAR ah-KEE"
       },
       {
         "word": "photos",
@@ -2069,22 +2069,22 @@
       {
         "word": "my_hotel",
         "target": "Estou à procura do meu hotel.",
-        "pronunciation_easy": "esh-TOH ah proo-KOO-rah doo MEH-oo oh-TEL"
+        "pronunciation_easy": "SHTOH ah proo-KOO-rah doo MEH-oo oh-TEL"
       },
       {
         "word": "entrance",
         "target": "Estou à procura da entrada.",
-        "pronunciation_easy": "esh-TOH ah proo-KOO-rah dah en-TRAH-dah"
+        "pronunciation_easy": "SHTOH ah proo-KOO-rah dah en-TRAH-dah"
       },
       {
         "word": "restaurant",
         "target": "Estou à procura de um restaurante.",
-        "pronunciation_easy": "esh-TOH ah proo-KOO-rah duh oong rush-tow-RAN-tuh"
+        "pronunciation_easy": "SHTOH ah proo-KOO-rah duh oong rush-tow-RAN-tuh"
       },
       {
         "word": "exit",
         "target": "Estou à procura da saída.",
-        "pronunciation_easy": "esh-TOH ah proo-KOO-rah dah sah-EE-dah"
+        "pronunciation_easy": "SHTOH ah proo-KOO-rah dah sah-EE-dah"
       }
     ],
     "is_included": [
@@ -2097,18 +2097,18 @@
       {
         "word": "tax",
         "target": "O IVA está incluído?",
-        "pronunciation_easy": "oo EE-vah esh-TAH een-kloo-EE-doo",
+        "pronunciation_easy": "oo EE-vah SHTAH een-kloo-EE-doo",
         "qa": "IVA = VAT, normally already in Portuguese prices. At hotels the likelier question is 'A taxa turística está incluída?' (city tourist tax); reviewer to choose."
       },
       {
         "word": "wifi",
         "target": "O Wi-Fi está incluído?",
-        "pronunciation_easy": "oo WY-fy esh-TAH een-kloo-EE-doo"
+        "pronunciation_easy": "oo WY-fy SHTAH een-kloo-EE-doo"
       },
       {
         "word": "luggage",
         "target": "A bagagem está incluída?",
-        "pronunciation_easy": "ah bah-GAH-zhayng esh-TAH een-kloo-EE-dah",
+        "pronunciation_easy": "ah bah-GAH-zhayng SHTAH een-kloo-EE-dah",
         "qa": "For flights, 'bagagem de porão' is checked luggage and 'bagagem de mão' is hand luggage."
       }
     ],
@@ -2116,7 +2116,7 @@
       {
         "word": "buy_tickets",
         "target": "Onde posso comprar bilhetes?",
-        "pronunciation_easy": "ON-duh POH-soo kon-PRAR bee-LYEH-tush"
+        "pronunciation_easy": "ON-duh POH-soo kong-PRAR bee-LYEH-tush"
       },
       {
         "word": "taxi",
@@ -2132,14 +2132,14 @@
       {
         "word": "sim",
         "target": "Onde posso comprar um cartão SIM?",
-        "pronunciation_easy": "ON-duh POH-soo kon-PRAR oong kar-TAWNG seem"
+        "pronunciation_easy": "ON-duh POH-soo kong-PRAR oong kar-TOWNG seeng"
       }
     ],
     "im_from": [
       {
         "word": "usa",
         "target": "Sou dos Estados Unidos.",
-        "pronunciation_easy": "soh doosh esh-TAH-dooz oo-NEE-doosh"
+        "pronunciation_easy": "soh doosh SHTAH-dooz oo-NEE-doosh"
       },
       {
         "word": "canada",
@@ -2303,22 +2303,22 @@
       {
         "word": "hotel",
         "target": "Estou perto do hotel.",
-        "pronunciation_easy": "shtoh PEHR-too doo oh-TEL"
+        "pronunciation_easy": "SHTOH PEHR-too doo oh-TEL"
       },
       {
         "word": "station",
         "target": "Estou perto da estação de comboios.",
-        "pronunciation_easy": "shtoh PEHR-too dah shtah-SOWNG duh kong-BOY-oosh"
+        "pronunciation_easy": "SHTOH PEHR-too dah shtah-SOWNG duh kong-BOY-oosh"
       },
       {
         "word": "airport",
         "target": "Estou perto do aeroporto.",
-        "pronunciation_easy": "shtoh PEHR-too doo ah-eh-roo-POR-too"
+        "pronunciation_easy": "SHTOH PEHR-too doo ah-eh-roo-POR-too"
       },
       {
         "word": "pharmacy",
         "target": "Estou perto da farmácia.",
-        "pronunciation_easy": "shtoh PEHR-too dah far-MAH-see-ah"
+        "pronunciation_easy": "SHTOH PEHR-too dah far-MAH-see-ah"
       }
     ],
     "l2_started_ago": [
@@ -2496,7 +2496,7 @@
     },
     "inside_or_outside": {
       "target": "Dentro ou na esplanada?",
-      "pronunciation_easy": "DEN-troo oh nah esh-plah-NAH-dah"
+      "pronunciation_easy": "DEN-troo oh nah shplah-NAH-dah"
     },
     "how_many_people": {
       "target": "Quantas pessoas?",
@@ -2516,7 +2516,7 @@
     },
     "its_closed": {
       "target": "Está fechado.",
-      "pronunciation_easy": "esh-TAH fuh-SHAH-doo"
+      "pronunciation_easy": "SHTAH fuh-SHAH-doo"
     },
     "one_moment": {
       "target": "Um momento, por favor.",
@@ -2524,7 +2524,7 @@
     },
     "what_size": {
       "target": "Que tamanho veste?",
-      "pronunciation_easy": "keh tah-MAH-nyoo VESH-tuh"
+      "pronunciation_easy": "kuh tah-MAH-nyoo VESH-tuh"
     },
     "receipt_question": {
       "target": "Quer fatura?",
@@ -2532,7 +2532,7 @@
     },
     "how_would_you_like_it": {
       "target": "Como é que quer o corte?",
-      "pronunciation_easy": "KOH-moo eh keh kehr oo KOR-tuh"
+      "pronunciation_easy": "KOH-moo eh kuh kehr oo KOR-tuh"
     },
     "id_love_to": {
       "target": "Adorava.",
@@ -2548,20 +2548,20 @@
     },
     "seeing_someone": {
       "target": "Estou com alguém.",
-      "pronunciation_easy": "shtoh kong al-GENG"
+      "pronunciation_easy": "SHTOH kong al-GENG"
     },
     "here_for_a_week": {
       "target": "Estou cá uma semana.",
-      "pronunciation_easy": "shtoh kah OO-mah suh-MAH-nah"
+      "pronunciation_easy": "SHTOH kah OO-mah suh-MAH-nah"
     },
     "like_it_here": {
       "target": "Está a gostar de cá estar?",
-      "pronunciation_easy": "esh-TAH ah goosh-TAR duh kah shtar",
+      "pronunciation_easy": "SHTAH ah goosh-TAR duh kah shtar",
       "qa": "Reviewer: or simply \"Está a gostar?\""
     },
     "what_happened": {
       "target": "O que aconteceu?",
-      "pronunciation_easy": "oo keh ah-kon-tuh-SEH-oo"
+      "pronunciation_easy": "oo kuh ah-kon-tuh-SEH-oo"
     },
     "where_hurt": {
       "target": "Onde lhe dói?",
@@ -2569,7 +2569,7 @@
     },
     "wait_here": {
       "target": "Espere aqui.",
-      "pronunciation_easy": "esh-PEH-ruh ah-KEE"
+      "pronunciation_easy": "SHPEH-ruh ah-KEE"
     },
     "passport_please": {
       "target": "O passaporte, por favor.",
@@ -2585,7 +2585,7 @@
     },
     "sold_out": {
       "target": "Está esgotado.",
-      "pronunciation_easy": "esh-TAH esh-goo-TAH-doo"
+      "pronunciation_easy": "SHTAH esh-goo-TAH-doo"
     },
     "follow_me": {
       "target": "Venha comigo.",
@@ -2593,7 +2593,7 @@
     },
     "what_can_i_get": {
       "target": "O que deseja?",
-      "pronunciation_easy": "oo keh duh-ZAY-zhah"
+      "pronunciation_easy": "oo kuh duh-ZAY-zhah"
     },
     "last_call": {
       "target": "Últimos pedidos.",
@@ -2626,11 +2626,11 @@
     },
     "l2_yes_it_does": {
       "target": "Sim, tem.",
-      "pronunciation_easy": "seeng, teng"
+      "pronunciation_easy": "SEENG, TENG"
     },
     "l2_very_popular": {
       "target": "Este é muito pedido.",
-      "pronunciation_easy": "EHSH-tuh eh MOOY-too puh-DEE-doo"
+      "pronunciation_easy": "EHSH-tuh eh MOOYN-too puh-DEE-doo"
     },
     "l2_which_item": {
       "target": "Qual deles?",
@@ -2654,7 +2654,7 @@
     },
     "l2_are_you_safe": {
       "target": "Está num sítio seguro?",
-      "pronunciation_easy": "shtah noong SEE-tee-oo suh-GOO-roo"
+      "pronunciation_easy": "SHTAH noong SEE-tee-oo suh-GOO-roo"
     },
     "l2_when_start": {
       "target": "Quando começou?",
@@ -2678,7 +2678,7 @@
     },
     "l2_room_not_ready": {
       "target": "O seu quarto ainda não está pronto.",
-      "pronunciation_easy": "oo seh-oo KWAR-too ah-EEN-dah nowng shtah PRON-too"
+      "pronunciation_easy": "oo seh-oo KWAR-too ah-EEN-dah nowng SHTAH PRON-too"
     },
     "l2_can_move_you": {
       "target": "Podemos mudá-lo de quarto.",
@@ -2738,7 +2738,7 @@
     },
     "l2_here_for_work": {
       "target": "Estou cá em trabalho.",
-      "pronunciation_easy": "shtoh kah eng trah-BAH-lyoo"
+      "pronunciation_easy": "SHTOH kah eng trah-BAH-lyoo"
     },
     "l2_food_people": {
       "target": "A comida e as pessoas.",
@@ -2750,7 +2750,7 @@
     },
     "l2_maybe_what_time": {
       "target": "Talvez. A que horas?",
-      "pronunciation_easy": "tal-VESH. ah keh OH-rahsh"
+      "pronunciation_easy": "tal-VESH. ah kee OH-rahsh"
     },
     "l2_busy_weekend": {
       "target": "Este fim de semana não posso.",
@@ -2758,7 +2758,7 @@
     },
     "l2_heres_number": {
       "target": "Claro, tome o meu número.",
-      "pronunciation_easy": "KLAH-roo, TOH-muh oo meh-oo NOO-muh-roo"
+      "pronunciation_easy": "KLAH-roo, TOH-muh oo MEH-oo NOO-muh-roo"
     },
     "l2_sorry_understand": {
       "target": "Ah, desculpe. Compreendo.",
@@ -2782,7 +2782,7 @@
     },
     "l2_sold_out_today": {
       "target": "Os bilhetes de hoje estão esgotados.",
-      "pronunciation_easy": "oosh bee-LYEH-tush duh OH-zhuh shtowng esh-goo-TAH-doosh"
+      "pronunciation_easy": "oosh bee-LYEH-tush duh OH-zhuh SHTOWNG esh-goo-TAH-doosh"
     },
     "l2_at_entrance": {
       "target": "Sim, à entrada.",

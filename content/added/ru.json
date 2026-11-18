@@ -50,7 +50,7 @@
     {
       "id": "allergic_to",
       "target": "У меня аллергия на ___.",
-      "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah",
+      "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah",
       "qa": "Back-translation: 'I have an allergy to ___' (lit. 'at me [is] allergy on ___'). The allergen takes the accusative case (на орехи, на молоко, на яйца). Gender-neutral."
     },
     {
@@ -96,7 +96,7 @@
     {
       "id": "does_this_go_to",
       "target": "Этот идёт до ___?",
-      "pronunciation_easy": "EH-tat ee-DYOT dah",
+      "pronunciation_easy": "EH-taht ee-DYOT dah",
       "qa": "Lit. 'Does this one go to ___?', said pointing at a bus or train (автобус, поезд, трамвай are masculine). For a commuter train (электричка, feminine) it would be Эта идёт до ___? To a driver: Вы едете до ___? (Are you going to ___?). Not sure which is best as a single default."
     },
     {
@@ -181,7 +181,7 @@
     {
       "id": "wifi_password",
       "target": "Какой пароль от Wi-Fi?",
-      "pronunciation_easy": "kah-KOY pah-ROL at vai-FAI",
+      "pronunciation_easy": "kah-KOY pah-ROL aht vai-FAI",
       "qa": "Wi-Fi is said 'вайфай' (vai-FAI) and often written in Latin letters."
     },
     {
@@ -588,7 +588,7 @@
     {
       "id": "l2_type_phone",
       "target": "Можете написать в моём телефоне?",
-      "pronunciation_easy": "MOH-zhuh-tyeh nah-pee-SAT v mah-YOM tee-lee-FOH-nyeh"
+      "pronunciation_easy": "MOH-zhuh-tyeh nah-pee-SAHT v mah-YOM tee-lee-FOH-nyeh"
     },
     {
       "id": "l2_another_way",
@@ -598,7 +598,7 @@
     {
       "id": "l2_show_me",
       "target": "Можете показать?",
-      "pronunciation_easy": "MOH-zhuh-tyeh pah-kah-ZAT"
+      "pronunciation_easy": "MOH-zhuh-tyeh pah-kah-ZAHT"
     },
     {
       "id": "l2_check_again",
@@ -608,7 +608,7 @@
     {
       "id": "l2_write_down",
       "target": "Можете это написать?",
-      "pronunciation_easy": "MOH-zhuh-tyeh EH-tah nah-pee-SAT"
+      "pronunciation_easy": "MOH-zhuh-tyeh EH-tah nah-pee-SAHT"
     },
     {
       "id": "l2_translation_app",
@@ -628,12 +628,12 @@
     {
       "id": "l2_wait_table",
       "target": "Сколько ждать столик?",
-      "pronunciation_easy": "SKOL-kah zhdat STOH-leek"
+      "pronunciation_easy": "SKOL-kah zhdaht STOH-leek"
     },
     {
       "id": "l2_name_down",
       "target": "Можете нас записать?",
-      "pronunciation_easy": "MOH-zhuh-tyeh nahs zah-pee-SAT"
+      "pronunciation_easy": "MOH-zhuh-tyeh nahs zah-pee-SAHT"
     },
     {
       "id": "l2_contain",
@@ -676,7 +676,7 @@
     {
       "id": "l2_change_trains",
       "target": "Мне нужно делать пересадку?",
-      "pronunciation_easy": "mnyeh NOOZH-nah DYEH-lat pee-ree-SAHT-koo"
+      "pronunciation_easy": "mnyeh NOOZH-nah DYEH-laht pee-ree-SAHT-koo"
     },
     {
       "id": "l2_platform_change",
@@ -722,7 +722,7 @@
     {
       "id": "l2_send_ambulance",
       "target": "Можете прислать сюда скорую?",
-      "pronunciation_easy": "MOH-zhuh-tyeh pree-SLAT syoo-DAH SKOH-roo-yoo",
+      "pronunciation_easy": "MOH-zhuh-tyeh pree-SLAHT syoo-DAH SKOH-roo-yoo",
       "qa": "PRIORITY REVIEW (medical)."
     },
     {
@@ -756,7 +756,7 @@
     {
       "id": "l2_file_report",
       "target": "Где можно написать заявление?",
-      "pronunciation_easy": "gdyeh MOZH-nah nah-pee-SAT zah-yahv-LYEH-nee-yeh"
+      "pronunciation_easy": "gdyeh MOZH-nah nah-pee-SAHT zah-yahv-LYEH-nee-yeh"
     },
     {
       "id": "l2_dont_know_when",
@@ -766,7 +766,7 @@
     {
       "id": "l2_how_often",
       "target": "Как часто его принимать?",
-      "pronunciation_easy": "kak CHAHS-tah yee-VOH pree-nee-MAT",
+      "pronunciation_easy": "kak CHAHS-tah yee-VOH pree-nee-MAHT",
       "qa": "PRIORITY REVIEW (medical). The answer about a dose must come from the pharmacist, not be guessed."
     },
     {
@@ -869,7 +869,7 @@
     {
       "id": "l2_how_long_wait",
       "target": "Сколько ждать?",
-      "pronunciation_easy": "SKOL-kah zhdat"
+      "pronunciation_easy": "SKOL-kah zhdaht"
     },
     {
       "id": "l2_to_go_instead",
@@ -904,7 +904,7 @@
     {
       "id": "l2_cheaper_option",
       "target": "Можете показать что-нибудь подешевле?",
-      "pronunciation_easy": "MOH-zhuh-tyeh pah-kah-ZAT SHTOH-nee-boot pah-dee-SHEV-lyeh"
+      "pronunciation_easy": "MOH-zhuh-tyeh pah-kah-ZAHT SHTOH-nee-boot pah-dee-SHEV-lyeh"
     },
     {
       "id": "l2_return_this",
@@ -919,7 +919,7 @@
     {
       "id": "l2_exchange_instead",
       "target": "А обменять можно?",
-      "pronunciation_easy": "ah ahb-mee-NYAT MOZH-nah"
+      "pronunciation_easy": "ah ahb-mee-NYAHT MOZH-nah"
     },
     {
       "id": "l2_keep_top",
@@ -934,7 +934,7 @@
     {
       "id": "l2_shape_beard",
       "target": "Только подровнять бороду, пожалуйста.",
-      "pronunciation_easy": "TOL-kah pah-drahv-NYAT BOH-rah-doo, pah-ZHAH-loo-stah"
+      "pronunciation_easy": "TOL-kah pah-drahv-NYAHT BOH-rah-doo, pah-ZHAH-loo-stah"
     },
     {
       "id": "l2_mustache_longer",
@@ -944,12 +944,12 @@
     {
       "id": "l2_short_enough",
       "target": "Так достаточно, спасибо.",
-      "pronunciation_easy": "tak dah-STAH-tahch-nah, spah-SEE-bah"
+      "pronunciation_easy": "tahk dah-STAH-tahch-nah, spah-SEE-bah"
     },
     {
       "id": "l2_match_photo",
       "target": "Можете сделать как на этом фото?",
-      "pronunciation_easy": "MOH-zhuh-tyeh ZDYEH-lat kak nah EH-tahm FOH-tah"
+      "pronunciation_easy": "MOH-zhuh-tyeh ZDYEH-laht kak nah EH-tahm FOH-tah"
     },
     {
       "id": "l2_more_length_here",
@@ -1010,7 +1010,7 @@
     {
       "id": "l2_do_something",
       "target": "Хочешь что-нибудь поделать в выходные?",
-      "pronunciation_easy": "KHOH-chesh SHTOH-nee-boot pah-DYEH-lat v vy-khahd-NY-yeh"
+      "pronunciation_easy": "KHOH-chesh SHTOH-nee-boot pah-DYEH-laht v vy-khahd-NY-yeh"
     },
     {
       "id": "l2_next_week",
@@ -1058,7 +1058,7 @@
     {
       "id": "l2_check_bag",
       "target": "Можно сдать эту сумку в багаж?",
-      "pronunciation_easy": "MOZH-nah zdat EH-too SOOM-koo v bah-GAHSH"
+      "pronunciation_easy": "MOZH-nah zdaht EH-too SOOM-koo v bah-GAHSH"
     },
     {
       "id": "l2_rearrange",
@@ -1078,7 +1078,7 @@
     {
       "id": "l2_rebook",
       "target": "Кто может помочь поменять рейс?",
-      "pronunciation_easy": "ktoh MOH-zhet pah-MOCH pah-mee-NYAT ryays"
+      "pronunciation_easy": "ktoh MOH-zhet pah-MOCH pah-mee-NYAHT ryays"
     },
     {
       "id": "l2_track_bag",
@@ -1109,12 +1109,12 @@
     {
       "id": "l2_return_ticket",
       "target": "Могу показать обратный билет.",
-      "pronunciation_easy": "mah-GOO pah-kah-ZAT ah-BRAHT-ny bee-LYET"
+      "pronunciation_easy": "mah-GOO pah-kah-ZAHT ah-BRAHT-ny bee-LYET"
     },
     {
       "id": "l2_book_ahead",
       "target": "Нужно бронировать заранее?",
-      "pronunciation_easy": "NOOZH-nah brah-NEE-rah-vat zah-RAH-nyeh-yeh"
+      "pronunciation_easy": "NOOZH-nah brah-NEE-rah-vaht zah-RAH-nyeh-yeh"
     },
     {
       "id": "l2_another_time_slot",
@@ -1124,7 +1124,7 @@
     {
       "id": "l2_book_tomorrow",
       "target": "Можно забронировать на завтра?",
-      "pronunciation_easy": "MOZH-nah zah-brah-NEE-rah-vat nah ZAHF-trah"
+      "pronunciation_easy": "MOZH-nah zah-brah-NEE-rah-vaht nah ZAHF-trah"
     },
     {
       "id": "l2_audio_guide",
@@ -1139,7 +1139,7 @@
     {
       "id": "l2_step_free",
       "target": "Есть путь без ступенек?",
-      "pronunciation_easy": "yest poot byes stoo-PYEH-nyek"
+      "pronunciation_easy": "yest poot byez stoo-PYEH-nyek"
     },
     {
       "id": "l2_local_specialty",
@@ -1169,12 +1169,12 @@
     {
       "id": "l2_call_taxi",
       "target": "Можете вызвать мне такси?",
-      "pronunciation_easy": "MOH-zhuh-tyeh VYZ-vat mnyeh tahk-SEE"
+      "pronunciation_easy": "MOH-zhuh-tyeh VYZ-vaht mnyeh tahk-SEE"
     },
     {
       "id": "l2_where_wait",
       "target": "Где мне ждать?",
-      "pronunciation_easy": "gdyeh mnyeh zhdat"
+      "pronunciation_easy": "gdyeh mnyeh zhdaht"
     },
     {
       "id": "l2_safe_way_home",
@@ -1548,7 +1548,7 @@
       {
         "word": "word_exit",
         "target": "Где выход?",
-        "pronunciation_easy": "gdyeh VY-khat"
+        "pronunciation_easy": "gdyeh VY-khaht"
       },
       {
         "word": "hospital",
@@ -1725,32 +1725,32 @@
       {
         "word": "word_nuts",
         "target": "У меня аллергия на орехи.",
-        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah ah-RYEH-khee"
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah ah-RYEH-khee"
       },
       {
         "word": "word_peanuts",
         "target": "У меня аллергия на арахис.",
-        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah ah-RAH-khees"
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah ah-RAH-khees"
       },
       {
         "word": "word_gluten",
         "target": "У меня аллергия на глютен.",
-        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah glyoo-TEN"
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah glyoo-TEN"
       },
       {
         "word": "word_shellfish",
         "target": "У меня аллергия на морепродукты.",
-        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah mah-ree-prah-DOOK-ty"
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah mah-ree-prah-DOOK-ty"
       },
       {
         "word": "word_milk",
         "target": "У меня аллергия на молоко.",
-        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah mah-lah-KOH"
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah mah-lah-KOH"
       },
       {
         "word": "word_eggs",
         "target": "У меня аллергия на яйца.",
-        "pronunciation_easy": "oo mee-NYAH ah-leer-GEE-yah nah YAI-tsah"
+        "pronunciation_easy": "oo mee-NYAH ah-leer-GHEE-yah nah YAI-tsah"
       }
     ],
     "without": [
@@ -1777,7 +1777,7 @@
       {
         "word": "word_nuts",
         "target": "Без орехов, пожалуйста.",
-        "pronunciation_easy": "byez ah-RYEH-khaf, pah-ZHAH-loo-stah"
+        "pronunciation_easy": "byez ah-RYEH-khahf, pah-ZHAH-loo-stah"
       }
     ],
     "ticket_to": [
@@ -1806,22 +1806,22 @@
       {
         "word": "word_airport",
         "target": "Этот идёт до аэропорта?",
-        "pronunciation_easy": "EH-tat ee-DYOT dah ah-eh-rah-POR-tah"
+        "pronunciation_easy": "EH-taht ee-DYOT dah ah-eh-rah-POR-tah"
       },
       {
         "word": "word_city_centre",
         "target": "Этот идёт до центра города?",
-        "pronunciation_easy": "EH-tat ee-DYOT dah TSEN-trah GOH-rah-dah"
+        "pronunciation_easy": "EH-taht ee-DYOT dah TSEN-trah GOH-rah-dah"
       },
       {
         "word": "word_beach",
         "target": "Этот идёт до пляжа?",
-        "pronunciation_easy": "EH-tat ee-DYOT dah PLYAH-zhah"
+        "pronunciation_easy": "EH-taht ee-DYOT dah PLYAH-zhah"
       },
       {
         "word": "word_train_station",
         "target": "Этот идёт до вокзала?",
-        "pronunciation_easy": "EH-tat ee-DYOT dah vahk-ZAH-lah"
+        "pronunciation_easy": "EH-taht ee-DYOT dah vahk-ZAH-lah"
       }
     ],
     "take_me_to": [
@@ -1912,7 +1912,7 @@
       {
         "word": "word_room_key",
         "target": "Я потерял/потеряла ключ от номера.",
-        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah klyooch at NOH-mee-rah"
+        "pronunciation_easy": "ya pah-tee-RYAHL/pah-tee-RYAH-lah klyooch aht NOH-mee-rah"
       }
     ],
     "do_you_have": [
@@ -1948,7 +1948,7 @@
       {
         "word": "coffee",
         "target": "Сколько стоит кофе?",
-        "pronunciation_easy": "SKOL-kah STOH-eet KOH-fyeh"
+        "pronunciation_easy": "SKOL-kah STOH-eet KOH-feh"
       },
       {
         "word": "room",
@@ -2024,7 +2024,7 @@
       {
         "word": "coffee_milk",
         "target": "Мне кофе без молока, пожалуйста.",
-        "pronunciation_easy": "mnyeh KOH-fyeh byez mah-lah-KAH, pah-ZHAH-loo-stah"
+        "pronunciation_easy": "mnyeh KOH-feh byez mah-lah-KAH, pah-ZHAH-loo-stah"
       },
       {
         "word": "tea_sugar",
@@ -2052,7 +2052,7 @@
       {
         "word": "photos",
         "target": "Можно здесь фотографировать?",
-        "pronunciation_easy": "MOZH-nah zdyes fah-tah-grah-FEE-rah-vat"
+        "pronunciation_easy": "MOZH-nah zdyes fah-tah-grah-FEE-rah-vaht"
       },
       {
         "word": "charge",
@@ -2081,14 +2081,14 @@
       {
         "word": "exit",
         "target": "Я ищу выход.",
-        "pronunciation_easy": "ya ee-SHCHOO VY-khat"
+        "pronunciation_easy": "ya ee-SHCHOO VY-khaht"
       }
     ],
     "is_included": [
       {
         "word": "breakfast",
         "target": "Завтрак входит в стоимость?",
-        "pronunciation_easy": "ZAHF-trak FKHOH-deet f STOH-ee-mahst",
+        "pronunciation_easy": "ZAHF-trahk FKHOH-deet f STOH-ee-mahst",
         "qa": "Hotels equally say Завтрак включён? (ZAHF-trak fklyoo-CHYON)."
       },
       {
@@ -2245,7 +2245,7 @@
       {
         "word": "shellfish",
         "target": "Здесь есть морепродукты?",
-        "pronunciation_easy": "zdyes yest moh-ryeh-prah-DOOK-ty"
+        "pronunciation_easy": "zdyes yest mah-ree-prah-DOOK-ty"
       },
       {
         "word": "gluten",
@@ -2360,7 +2360,7 @@
       {
         "word": "five",
         "target": "У меня бронь на пять ночей.",
-        "pronunciation_easy": "oo mee-NYAH bron nah pyat nah-CHEY"
+        "pronunciation_easy": "oo mee-NYAH bron nah pyaht nah-CHEY"
       }
     ],
     "l2_come_in": [
@@ -2399,7 +2399,7 @@
       {
         "word": "dancing",
         "target": "Тебе тоже нравится танцевать?",
-        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah tahn-tseh-VAT"
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah tahn-tseh-VAHT"
       },
       {
         "word": "hiking",
@@ -2409,7 +2409,7 @@
       {
         "word": "travel",
         "target": "Тебе тоже нравится путешествовать?",
-        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah poo-tee-SHEST-vah-vat"
+        "pronunciation_easy": "tee-BYEH TOH-zheh NRAH-veet-sah poo-tee-SHEST-vah-vaht"
       },
       {
         "word": "sports",
@@ -2426,7 +2426,7 @@
       {
         "word": "eight_thirty",
         "target": "Мы встречаемся в восемь тридцать.",
-        "pronunciation_easy": "my fstree-CHAH-yem-sah v VOH-seem TREE-tsat"
+        "pronunciation_easy": "my fstree-CHAH-yem-sah v VOH-seem TREE-tsaht"
       },
       {
         "word": "station",
@@ -2598,7 +2598,7 @@
     },
     "thats_altogether": {
       "target": "С вас двадцать.",
-      "pronunciation_easy": "s vahs DVAH-tsat",
+      "pronunciation_easy": "s vahs DVAH-tsaht",
       "qa": "Literally \"From you, twenty\": how a total is said at a till."
     },
     "starts_at": {
@@ -2619,7 +2619,7 @@
     },
     "l2_about_twenty": {
       "target": "Минут двадцать.",
-      "pronunciation_easy": "mee-NOOT DVAH-tsat"
+      "pronunciation_easy": "mee-NOOT DVAH-tsaht"
     },
     "l2_yes_it_does": {
       "target": "Да, есть.",
@@ -2723,11 +2723,11 @@
     },
     "l2_trim_mustache": {
       "target": "Усы подровнять?",
-      "pronunciation_easy": "oo-SY pah-drahv-NYAT"
+      "pronunciation_easy": "oo-SY pah-drahv-NYAHT"
     },
     "l2_exactly_like": {
       "target": "Точно так же?",
-      "pronunciation_easy": "TOCH-nah tak zheh"
+      "pronunciation_easy": "TOCH-nah tahk zheh"
     },
     "l2_fully_booked": {
       "target": "Сегодня всё занято.",
@@ -2768,7 +2768,7 @@
     },
     "l2_boarding_closes": {
       "target": "Посадка заканчивается через двадцать минут.",
-      "pronunciation_easy": "pah-SAHT-kah zah-KAHN-chee-vah-yet-sah CHEH-rees DVAH-tsat mee-NOOT"
+      "pronunciation_easy": "pah-SAHT-kah zah-KAHN-chee-vah-yet-sah CHEH-rees DVAH-tsaht mee-NOOT"
     },
     "l2_deliver_tomorrow": {
       "target": "Мы можем доставить его завтра.",
