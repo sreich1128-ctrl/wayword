@@ -1260,3 +1260,10 @@ h1, h2, .row-title, .fc-en, .native { letter-spacing: -.01em; }
 .level-card .link-btn { justify-self: start; padding: 4px 0 0; font-size: 14px; }
 .level-badge { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 900; font-size: 20px; box-shadow: 0 4px 0 var(--lip); }
 .ready-bar.big { height: 12px; }
+
+/* Backup */
+.backup-file { width: 100%; padding: 10px; border-radius: 14px; border: 2px dashed var(--edge); background: var(--surface); font: inherit; color: var(--ink); }
+.backup-text { width: 100%; margin: 8px 0; padding: 10px 12px; border-radius: 14px; border: 2px solid var(--edge); background: var(--surface); font: 13px/1.4 ui-monospace, monospace; color: var(--ink); resize: vertical; }
+.backup-nudge { display: flex; align-items: center; gap: 12px; width: 100%; margin-top: 12px; padding: 12px 14px; text-align: left; border-radius: var(--radius); background: color-mix(in srgb, var(--c-sun) 12%, var(--surface)); border: 2px solid color-mix(in srgb, var(--c-sun) 45%, var(--edge)); border-bottom-width: 5px; color: var(--ink); }
+.backup-nudge .ic { width: 24px; height: 24px; flex: none; color: color-mix(in srgb, var(--c-sun) 80%, var(--ink)); }
+.backup-nudge span { display: grid; } .backup-nudge small { color: var(--muted); font-weight: 600; font-size: 13px; }

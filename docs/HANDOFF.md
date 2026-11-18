@@ -99,6 +99,8 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 
 **Level 2 batch 4 + pronunciation audit, 2026-11-14/18 (v52–v53):** all Level 2 content is live (130 phrases, 53 replies per language). Pronunciation lines audited and corrected in 8 languages: read `docs/PRON_AUDIT.md`. Vetted lines are corrected through the overlay `content/pron/<code>.json` (the vetted files stay untouched); `scripts/fix-pron.py` holds the rules. Next: Spanish recorded voice (needs a Latin American voice in the owner's ElevenLabs account; the account only has Spain-accent Spanish voices, and the text and pronunciation lines are Latin American).
 
+**Spanish recorded voices + backup, 2026-11-18 (v54):** Spanish now plays ElevenLabs recordings (standard model, eleven_multilingual_v2): Nelly for Level 1 (303 clips), Camilo for Level 2 (233 clips), the owner's choice. `generate-audio.mjs --lang=es --all` records everything the app can play (drafts, variations, replies); a voice in `content/audio-voices.json` can carry `level`. The app plays whichever voice recorded a phrase (`naturalUrl` in speech.js). The owner removed the app from his iPhone to force an update and lost all progress, so: More → Back up or restore progress (file or text; `store.exportData/importData`, tests/backup.test.mjs), a backup nudge on Today after 10 phrases, and More → Check for updates. No word timings for Spanish yet (karaoke uses the estimate).
+
 **After all phases: a language-corrections task.** The owner wants every small language correction logged in DATA_REVIEW.md as we go, then fixed in one pass once the redesign is done (dataset fixes come from the owner's dataset tool; never edit lang files by hand).
 
 **Other open threads**

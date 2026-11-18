@@ -419,7 +419,7 @@ function viewHome() {
       }).join('')}
       </div>
     </section>
-    <p class="fine">Progress is saved on this device only.</p>
+    <p class="fine">Progress is saved on this device only. Removing the app deletes it: back it up first (More → Back up).</p>
   </main>`;
   maybeIntro();
 }
@@ -496,6 +496,7 @@ function viewDashboard() {
     ${nextStepCard()}
     ${weekCard()}
     ${levelCard()}
+    ${backupNudge()}
 
     ${section('Need a phrase now?', `<div class="scen-row">${sits.map(({ sit }) => `<a class="scen-btn" href="#/${code}/scenario/${sit.id}"><span class="scen-ic">${sit.icon}</span>${esc(sit.label)}</a>`).join('')}</div>`)}
 
@@ -537,6 +538,14 @@ function nextStepCard() {
     <p class="ns-sub">${parts} · about ${mins} minutes. Listen, say it, compare yourself with the native voice.</p>
     <a class="cta" href="#/${code}/session">${icon('play')} ${started ? 'Continue' : 'Start'}</a>
   </section>`;
+}
+
+// Once there's progress worth keeping and no recent backup, say so (it lives on this phone only).
+function backupNudge() {
+  const n = Object.keys(store.get().learned).length;
+  const t = store.prefs().lastBackup || 0;
+  if (n < 10 || Date.now() - t < 14 * 86400000) return '';
+  return `<button class="backup-nudge" data-action="backup-sheet">${icon('download')}<span><b>Back up your progress</b><small>${n} phrases started, stored only on this phone${t ? '' : '. Never backed up'}</small></span></button>`;
 }
 
 // Where you are in the course: Level 1 until every phrase is started, then Level 2.
@@ -598,6 +607,56 @@ function focusSheetHtml() {
       ${rowFor('', '✨', 'Automatic', 'The basics first, then whichever situation is closest to ready')}
       ${C.scenarios.map((sit) => { const r = sitReady(sit); return r.n ? rowFor(sit.id, sit.icon, esc(sit.label), r.ready === r.n ? 'Ready ✓' : `${r.ready} of ${r.n} ready`) : ''; }).join('')}
     </div>`;
+}
+
+// Backup and restore: progress lives only on this phone, and removing the app deletes it.
+const backupSub = () => { const t = store.prefs().lastBackup; return t ? `Last backup ${new Date(t).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })}. Save a copy before removing the app or changing phones` : 'Never backed up. Progress lives on this phone only: save a copy before removing the app or changing phones'; };
+function backupSheetHtml() {
+  const n = Object.keys(store.get().learned).length;
+  return `<div class="sheet-head"><h2>Back up your progress</h2><button class="icon-btn quiet" data-action="close-sheet" aria-label="Close">${icon('x')}</button></div>
+    <p class="help-lead">Your progress (${n} phrase${n === 1 ? '' : 's'} started, every language, your levels and settings) is stored only on this phone. If you remove Wayword from your Home Screen, clear Safari’s data or change phones, it’s gone unless you have a backup.</p>
+    <button class="cta" data-action="backup-save">${icon('download')} Save a backup file</button>
+    <button class="more-btn" data-action="backup-copy">Copy the backup as text</button>
+    <p class="fine">Keep the file in Files or iCloud, or paste the text into Notes.</p>
+    <div class="sheet-head"><h2>Restore</h2></div>
+    <p class="help-lead">Choose a backup file, or paste the backup text. This replaces the progress on this phone.</p>
+    <input type="file" id="backup-file" accept=".json,application/json,text/plain" class="backup-file">
+    <textarea id="backup-text" class="backup-text" rows="3" placeholder="…or paste the backup text here" autocomplete="off" autocapitalize="none" spellcheck="false"></textarea>
+    <button class="more-btn" data-action="backup-restore">Restore this backup</button>`;
+}
+async function backupSave() {
+  const name = `wayword-backup-${todayIso()}.json`;
+  const text = store.exportData();
+  const done = () => { store.setPref('lastBackup', Date.now()); toast('Backup saved. Keep it somewhere safe (Files, iCloud or Notes).'); };
+  try {
+    const file = new File([text], name, { type: 'application/json' });
+    if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], title: 'Wayword backup' }); done(); return; }
+  } catch (err) { if (err?.name === 'AbortError') return; /* fall through to a download */ }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+  done();
+}
+async function backupRestore() {
+  const file = document.getElementById('backup-file')?.files?.[0];
+  const text = file ? await file.text() : (document.getElementById('backup-text')?.value || '').trim();
+  if (!text) { toast('Choose a backup file or paste the backup text first.'); return; }
+  let n;
+  try { JSON.parse(text); } catch { toast('That isn’t a Wayword backup (it may be cut off). Nothing was changed.'); return; }
+  if (!window.confirm('Replace the progress on this phone with this backup?')) return;
+  try { n = store.importData(text); } catch { toast('That isn’t a Wayword backup. Nothing was changed.'); return; }
+  toast(`Restored: ${n} phrase${n === 1 ? '' : 's'} started.`);
+  setTimeout(() => location.reload(), 900);
+}
+async function checkUpdate() {
+  const reg = await navigator.serviceWorker?.getRegistration?.();
+  if (!reg) { toast('Updates need the installed app or the website over https.'); return; }
+  toast('Checking…', 2000);
+  try { await reg.update(); } catch { toast('Couldn’t check: are you offline?'); return; }
+  setTimeout(() => { if (reg.installing || reg.waiting) toast('Updating now…'); else toast('You have the latest version.'); }, 1500);
 }
 
 // Daily reminder: a repeating calendar event that opens today's session. No account or server:
@@ -720,7 +779,11 @@ function viewMore() {
   const patterns = L.phrases.filter((p) => p.type === 'pattern' && !p.missing).length;
   page('more', `
     <section class="page-head"><h1>More</h1></section>
-    ${section('Your progress', `<div class="group">${row({ href: `#/${code}/progress`, ic: 'list', title: 'Progress', sub: 'Every session, the last 14 days, and your phrases by stage' })}</div>`)}
+    ${section('Your progress', `<div class="group">
+      ${row({ href: `#/${code}/progress`, ic: 'list', title: 'Progress', sub: 'Every session, the last 14 days, and your phrases by stage' })}
+      ${row({ action: 'backup-sheet', ic: 'download', title: 'Back up or restore progress', sub: backupSub() })}
+      ${row({ action: 'check-update', ic: 'replay', title: 'Check for updates', sub: 'Updates arrive on their own. You never need to remove the app' })}
+    </div>`)}
     ${scoreboardHtml()}
     ${section('Stay on it', `<div class="group">
       ${row({ action: 'toggle-type', ic: 'keyboard', title: `Typing in ${esc(lang.name)}`, sub: typingSub(), attrs: 'id="type-row"' })}
@@ -743,7 +806,7 @@ function viewMore() {
       ${L.generalNotes.map((n) => `<p class="about-row"><span class="note-k">${esc(n.key)}</span>${esc(n.text)}</p>`).join('')}
     </div>`) : ''}
     <div class="group">${row({ action: 'help', ic: 'help', title: 'How Wayword works' })}</div>
-    <p class="fine">Progress is saved on this device only. <span id="app-version"></span></p>
+    <p class="fine">Progress is saved on this device only. Removing the app from your Home Screen deletes it, so back it up first. <span id="app-version"></span></p>
   `);
   fetch('./sw.js').then((r) => r.text()).then((t) => {
     const v = t.match(/wayword-v(\d+)/);
@@ -2618,6 +2681,16 @@ document.addEventListener('click', (e) => {
     sfx.right(); // so you hear what you turned on
     const sub = document.querySelector('#sfx-row .row-sub');
     if (sub) sub.textContent = sfx.enabled() ? 'On: a ding for right, a soft note for not quite' : 'Off';
+  } else if (a === 'backup-sheet') {
+    openSheet(backupSheetHtml());
+  } else if (a === 'backup-save') {
+    backupSave();
+  } else if (a === 'backup-copy') {
+    navigator.clipboard?.writeText(store.exportData()).then(() => { store.setPref('lastBackup', Date.now()); toast('Backup copied. Paste it into Notes or an email to yourself.'); }, () => toast('Couldn’t copy. Use “Save a backup file” instead.'));
+  } else if (a === 'backup-restore') {
+    backupRestore();
+  } else if (a === 'check-update') {
+    checkUpdate();
   } else if (a === 'reminder-sheet') {
     openSheet(reminderSheetHtml());
   } else if (a === 'reminder-ics') {

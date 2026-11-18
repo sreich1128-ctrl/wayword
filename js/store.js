@@ -80,6 +80,20 @@ save();
 
 export const store = {
   get: () => state,
+
+  // Backup: everything (progress in every language, settings) as one piece of text. Progress lives
+  // only in this browser, and removing the app from the Home Screen deletes it.
+  exportData() { return JSON.stringify({ app: 'wayword', exported: new Date().toISOString(), ...state }); },
+  // Replace what's here with a backup. Throws if the text isn't a Wayword backup.
+  importData(text) {
+    const s = JSON.parse(text);
+    if (!s || s.app !== 'wayword' || typeof s.learned !== 'object' || typeof s.srs !== 'object') throw new Error('Not a Wayword backup');
+    delete s.app; delete s.exported;
+    localStorage.setItem(KEY, JSON.stringify(s));
+    state = read();
+    save();
+    return Object.keys(state.learned).length;
+  },
   prefs: () => state.prefs,
   setPref(k, v) { state.prefs[k] = v; save(); },
   isFav: (key) => !!state.fav[key],
