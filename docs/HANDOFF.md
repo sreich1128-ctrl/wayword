@@ -1,6 +1,46 @@
-# Wayword handoff, updated 2026-10-08
+# Wayword handoff, updated 2026-11-20 (v54)
 
-A short orientation for whoever picks this up next (human or AI).
+A short orientation for whoever picks this up next (human or AI). **Read "Current state" first.** The sections below it were written in October and are kept for the code map and history; where they disagree with "Current state", "Current state" wins.
+
+## Current state (2026-11-20, v54)
+
+**What the app is now.** A speaking-first travel phrasebook in 9 languages, with a cartoony, game-like feel (mascot, 3D buttons, sounds, combo, scoreboard). Two levels per language:
+- **Level 1 · Basic:** 155 phrases in 15 situations, with swap-in variations and replies you'll hear.
+- **Level 2 · Communicative:** 130 phrases and 53 replies as short exchanges (say → hear → follow up). It opens per language when every Level 1 phrase is started, or by a 20-question test the app marks itself (16 right).
+
+**Deploy.** Push to `main` updates GitHub Pages. Vercel is **not** git-connected any more: deploy from a clean worktree (`git worktree add -f <tmp> HEAD --detach && cp -R .vercel <tmp>/ && (cd <tmp> && vercel deploy --prod --yes)`), then check `sw.js` VERSION on both sites.
+
+**Rules that changed since October.**
+- New content is allowed as **labelled drafts** in `content/added/<code>.json` (the app shows a Draft tag). `content/lang/*.json` (vetted) is still never edited.
+- Corrections to vetted pronunciation lines go in the overlay `content/pron/<code>.json`, never in the vetted file (`scripts/fix-pron.py`).
+- Principles every change answers to: `docs/PRINCIPLES.md`.
+- Never tell the owner to remove or reinstall the app: on iPhone that deletes all progress (it happened on 2026-11-18). Updates arrive when the app is closed and reopened; More has "Check for updates".
+- The owner uses the preview at `localhost:5180` himself. Test in a separate tab at `http://127.0.0.1:5180` (its own storage) so his progress is never touched.
+
+**Where things are documented.**
+
+| Topic | File |
+|---|---|
+| Principles | `docs/PRINCIPLES.md` |
+| Level 2: unlock rules, storage, batches, how to add content | `docs/LEVEL2.md` |
+| Topic audit and the approved English lists (Level 1 repairs, Level 2) | `docs/TOPIC_AUDIT.md`, `docs/LEVEL_CUT.md` |
+| Pronunciation-line audit and rules | `docs/PRON_AUDIT.md` |
+| Karaoke, tap a word, hear-then-build | `docs/KARAOKE_NOTES.md` |
+| Retention and the review ladder | `docs/lock-it-in.md` |
+| Drafts and how they're checked | `content/added/README.md`, `docs/CROSSCHECK.md`, `docs/REVIEW_RESULTS.md` |
+
+**Audio.** Recorded ElevenLabs voices: European Portuguese (Claudia, Level 1 only; drafts and all of Level 2 still use the phone voice) and Spanish (Nelly for Level 1, Camilo for Level 2, everything recorded). The other 7 languages use the phone voice. Record with `node scripts/generate-audio.mjs --lang=<code> --all`; voices and per-level voices are set in `content/audio-voices.json`. The key file `Wayword.keys.info.local` is never printed or committed.
+
+**Open items, in rough priority.**
+1. **Owner's lost progress.** Offered: a restore file marking Level 1 as learned in the languages he had at Level 2 (Spanish and Portuguese; Hebrew and French in progress). Waiting for him to say which.
+2. **Quality of the drafts.** Everything added since October is unchecked by a native speaker: about 229 draft phrases, 84 replies and 173 variations per language. Not yet done: a ChatGPT review pass of Level 1 repairs and Level 2 (review sheets: `node scripts/review-sheets.mjs`), the Tatoeba check for Level 2 batches 3–4 (`node scripts/crosscheck.mjs`, slow), native review of lines whose `qa` starts with PRIORITY REVIEW.
+3. **More recorded voices.** Portuguese drafts and Level 2; then the other languages (the owner's ElevenLabs account has voices for fr, it, ru, ja, ar, ro; Hebrew failed an earlier listening test). Ask before spending credits and do a 3-phrase listening test first.
+4. **Karaoke word timings.** `scripts/align-audio.mjs` is ready, but the ElevenLabs key lacks the Forced Alignment permission; until then timing is estimated.
+5. **Hearing-aid mic bug** (owner's dad): not reproduced; the app now says when the mic switches mid-take. Needs his phone and hearing-aid details and a Mic check result.
+6. **Not built yet from the owner's plan:** a certificate or "level complete" page, Level 3 · Conversational (pilot in Spanish), accounts and sync, publication. Also the Claude Design pass (mascot poses, stamp emblems, situation icons): the brief was given in chat and no assets have come back.
+7. Batches 2–4 of Level 2 and the pronunciation audit were checked by scripts and spot-checks, not line by line by ear.
+
+**Tests.** `npm test` (47 passing), `npm run validate` (content consistency).
 
 ## What it is
 
@@ -48,7 +88,7 @@ A mobile-first travel phrasebook for 9 languages: European Portuguese, Spanish, 
 - `tests/mic-stress.html`: open on localhost and press Run. 20 checks on the real capture code with a simulated mic.
 - **No automated UI tests.** Browser checks were done by hand in the preview pane at 375px, light and dark, Spanish, Arabic (right-to-left) and Japanese. Real microphones only work on a device; the owner's iPhone confirmed recording and the speech check work.
 
-## Where we left off (2026-10-09)
+## History: where we left off, session by session (from 2026-10-09)
 
 **Natural audio rollout (in progress)**
 - The owner has an **ElevenLabs Starter** plan (bought 2026-10-08 for $1; renews at $6 around Nov 8). A Google Calendar reminder to cancel is set for **2026-11-05 10:00**. The plan allows Voice Library voices through the API; the free plan doesn't (it returned error 402).
